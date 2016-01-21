@@ -10,8 +10,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="o1ru" ref="r:e7f09c0f-692b-4c7e-84ea-94ca0875b041(StructuredGraph_Extension.intentions)" />
-    <import index="65ct" ref="r:adb9496e-d064-4933-b164-bfd74c95fc17(StructuredGraph_Extension.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="v9cq" ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)" implicit="true" />
   </imports>
@@ -286,8 +284,8 @@
             <node concept="2OqwBi" id="5uSfll6Rh1E" role="2Oq$k0">
               <node concept="2Sf5sV" id="5uSfll6Rh07" role="2Oq$k0" />
               <node concept="3CFZ6_" id="5uSfll6Rh3X" role="2OqNvi">
-                <node concept="3CFYIy" id="5uSfll6Rh4T" role="3CFYIz">
-                  <ref role="3CFYIx" to="65ct:6QcN0V3eTYC" resolve="VariationPointReference" />
+                <node concept="3CFYIy" id="7Ufy5VQF9a1" role="3CFYIz">
+                  <ref role="3CFYIx" to="v9cq:6K8EDSn5e6T" resolve="VPRef" />
                 </node>
               </node>
             </node>
