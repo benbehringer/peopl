@@ -7,21 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3e8d1446-1f34-4d7b-b207-650e45837250" name="Default" comment="First commit Jochen">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/behavior/Test2_BehaviorDescriptor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/behavior/Test2_BehaviorDescriptor.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/behavior/Test_BehaviorDescriptor.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/structure/StructureAspectDescriptor.class" afterPath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/structure/StructureAspectDescriptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/migration.xml" afterPath="$PROJECT_DIR$/.mps/migration.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.mps/workspace.xml" afterPath="$PROJECT_DIR$/.mps/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/structure/trace.info" afterPath="$PROJECT_DIR$/languages/PEoPLang/classes_gen/PEoPLang/structure/trace.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/models/editor.mps" afterPath="$PROJECT_DIR$/languages/PEoPLang/models/editor.mps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/models/structure.mps" afterPath="$PROJECT_DIR$/languages/PEoPLang/models/structure.mps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/behavior/dependencies" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/behavior/dependencies" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/generated" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/structure/generated" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen.caches/PEoPLang/structure/generated" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/behavior/trace.info" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/behavior/trace.info" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/structure/StructureAspectDescriptor.java" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/structure/StructureAspectDescriptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/structure/trace.info" afterPath="$PROJECT_DIR$/languages/PEoPLang/source_gen/PEoPLang/structure/trace.info" />
     </list>
     <ignored path="peopl.iws" />
     <ignored path=".mps/workspace.xml" />
@@ -62,13 +50,61 @@
         <entry file="mps://node://PEoPLang/PEoPLang.structure/Module">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <node />
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="70" />
+                    <property name="caretX" value="85" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                      <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878697452" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <collapsed />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <collapsed />
+              </inspectorMemento>
+              <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878697452" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test3" pinned="false" current-in-tab="true">
-        <entry file="mps://node://PEoPLang/PEoPLang.structure/test3">
+      <file leaf-file-name="CreateAlternative" pinned="false" current-in-tab="false">
+        <entry file="mps://node://PEoPLang/PEoPLang.intentions/CreateAlternative">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="35" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="empty_isApplicableFunction" cellNumber="0" isInList="false">
+                      <node node_reference="r:96d1b1f1-59b0-46fb-b85e-b834ca633714(PEoPLang.intentions)/1949370557428256899" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <collapsed />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <collapsed />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VP" pinned="false" current-in-tab="false">
+        <entry file="mps://node://PEoPLang/PEoPLang.structure/VP">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
@@ -79,33 +115,14 @@
                     <property name="caretX" value="15" />
                     <property name="sideSelectDirection" value="NONE" />
                     <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" />
+                      <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701469" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
                 <errorMarkers />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <collapsed />
-              </inspectorMemento>
-              <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VP" pinned="false" current-in-tab="false">
-        <entry file="mps://node://PEoPLang/PEoPLang.structure/VP">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <collapsed />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <collapsed />
@@ -115,21 +132,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VPRef" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VPRef" pinned="false" current-in-tab="true">
         <entry file="mps://node://PEoPLang/PEoPLang.structure/VPRef">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="15" />
+                    <property name="caretX" value="316" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                      <node node_reference="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
                 <errorMarkers />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <collapsed />
               </inspectorMemento>
-              <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701497" />
+              <node node_ref="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276484" />
             </state>
           </provider>
         </entry>
@@ -139,11 +166,21 @@
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento viewPositionX="0" viewPositionY="0">
-                <selectionStack />
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="15" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                      <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701498" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
                 <errorMarkers />
                 <collapsed />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <collapsed />
@@ -181,10 +218,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1680" />
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="1027" />
+    <option name="width" value="2493" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -272,6 +308,14 @@
               <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestPackage" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -286,10 +330,6 @@
               <option name="myItemId" value="PEoPLang" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:464fb8bd-9859-4d46-8a62-188aecedf67c(PEoPLang.sandbox) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/sandbox/models/PEoPLang/sandbox.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -301,45 +341,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:63168cc3-f4cf-4f7d-8432-d7151e1b13d5(PEoPLang.typesystem) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/typesystem.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestPackage" />
+              <option name="myItemId" value="r:1073078c-5ebb-4289-914d-d05e2990dbac(PEoPLang.behavior) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/behavior.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,7 +379,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:1073078c-5ebb-4289-914d-d05e2990dbac(PEoPLang.behavior) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/behavior.mps}" />
+              <option name="myItemId" value="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/structure.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -390,8 +392,10 @@
               <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:96d1b1f1-59b0-46fb-b85e-b834ca633714(PEoPLang.intentions) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/intentions.mps}" />
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,6 +410,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="PEoPLang" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:464fb8bd-9859-4d46-8a62-188aecedf67c(PEoPLang.sandbox) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/sandbox/models/PEoPLang/sandbox.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:63168cc3-f4cf-4f7d-8432-d7151e1b13d5(PEoPLang.typesystem) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/typesystem.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,6 +446,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Base" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:96d1b1f1-59b0-46fb-b85e-b834ca633714(PEoPLang.intentions) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/intentions.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,6 +488,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="a84aa018-9566-4f1d-9095-f51984717a5d(PEoPLang)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure) in IdeaFile{file:///Users/emrolab/Documents/peopl/languages/PEoPLang/models/structure.mps}" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Base" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="7784659551878701497" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
@@ -518,20 +566,20 @@
     <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1680" y="23" width="1680" height="1027" extended-state="6" />
+    <frame x="0" y="23" width="2493" height="1417" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.5069319" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23385301" sideWeight="0.50606793" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291536" sideWeight="0.4930681" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23385301" sideWeight="0.49393204" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Generation Tracer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24954791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16747573" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -581,7 +629,8 @@
     <MESSAGE value="Added CreateAlternative Intention" />
     <MESSAGE value="Test Git integreation by adding Test3 in structure" />
     <MESSAGE value="Test Git Integration&#10;Adding files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Git Integration&#10;Adding files" />
+    <MESSAGE value="Another test of the git integration in MPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Another test of the git integration in MPS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="mps://node://PEoPLang/PEoPLang.structure/Module">
@@ -1127,7 +1176,27 @@
     <entry file="mps://node://PEoPLang/PEoPLang.structure/Module">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <node />
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="70" />
+                <property name="caretX" value="85" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878697452" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <collapsed />
+          </inspectorMemento>
+          <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878697452" />
         </state>
       </provider>
     </entry>
@@ -1135,11 +1204,21 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="15" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
+                  <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701469" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <collapsed />
@@ -1152,37 +1231,30 @@
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="15" />
+                <property name="caretX" value="316" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
+                  <node node_reference="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
             <errorMarkers />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <collapsed />
           </inspectorMemento>
-          <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701497" />
+          <node node_ref="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276484" />
         </state>
       </provider>
     </entry>
     <entry file="mps://node://PEoPLang/PEoPLang.structure/VPRefToVPConnector">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <collapsed />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <collapsed />
-          </inspectorMemento>
-          <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701498" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://PEoPLang/PEoPLang.structure/test3">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento viewPositionX="0" viewPositionY="0">
@@ -1193,19 +1265,45 @@
                 <property name="caretX" value="15" />
                 <property name="sideSelectDirection" value="NONE" />
                 <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" />
+                  <node node_reference="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701498" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
             <errorMarkers />
             <collapsed />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <collapsed />
           </inspectorMemento>
-          <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/1949370557428270972" />
+          <node node_ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)/7784659551878701498" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://PEoPLang/PEoPLang.intentions/CreateAlternative">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="35" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="empty_isApplicableFunction" cellNumber="0" isInList="false">
+                  <node node_reference="r:96d1b1f1-59b0-46fb-b85e-b834ca633714(PEoPLang.intentions)/1949370557428256899" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <collapsed />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:60665c63-26e7-4ac6-abe4-4849b0419040(PEoPLang.editor)/1949370557428276602" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <collapsed />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>
