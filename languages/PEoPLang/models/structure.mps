@@ -119,5 +119,11 @@
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="VPRef" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6K8EDSn5ehr">
+    <property role="1pbfSe" value="2095214855" />
+    <property role="TrG5h" value="Test" />
+    <property role="3GE5qa" value="TestPackage" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 
