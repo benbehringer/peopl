@@ -22,6 +22,7 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
@@ -117,6 +118,23 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="vpRef" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="VPRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7Ufy5VQFkPw">
+    <property role="1pbfSe" value="1966921150" />
+    <property role="TrG5h" value="ModuleDefinition" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Module definition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7Ufy5VQFkRE" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modules" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+    <node concept="PrWs8" id="7Ufy5VQFkRH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
