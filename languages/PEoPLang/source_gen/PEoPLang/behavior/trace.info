@@ -16,6 +16,9 @@
     <file name="VP_BehaviorDescriptor.java">
       <unit at="14,0,26,0" name="PEoPLang.behavior.VP_BehaviorDescriptor" />
     </file>
+    <file name="test3_BehaviorDescriptor.java">
+      <unit at="12,0,21,0" name="PEoPLang.behavior.test3_BehaviorDescriptor" />
+    </file>
   </root>
 </debug-info>
 

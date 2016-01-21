@@ -17,16 +17,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptVP = new ConceptDescriptorBuilder("PEoPLang.structure.VP", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e19dL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(7784659551878701502L, "vpConnector", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e1baL), false, true, false)).children(new String[]{"vpConnector"}, new boolean[]{true}).create();
   /*package*/ final ConceptDescriptor myConceptVPRef = new ConceptDescriptorBuilder("PEoPLang.structure.VPRef", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e1b9L)).super_("jetbrains.mps.lang.core.structure.NodeAttribute").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L)).parents("jetbrains.mps.lang.core.structure.NodeAttribute").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da54L)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(7784659551878701521L, "vpConnector", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e1baL), false), new ConceptDescriptorBuilder.Ref(7784659551878701524L, "module", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714d1ecL), false)).references("vpConnector", "module").create();
   /*package*/ final ConceptDescriptor myConceptVPRefToVPConnector = new ConceptDescriptorBuilder("PEoPLang.structure.VPRefToVPConnector", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e1baL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).referenceDescriptors(new ConceptDescriptorBuilder.Ref(7784659551878701499L, "vpRef", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x6c08aa9e1714e1b9L), true)).references("vpRef").create();
+  /*package*/ final ConceptDescriptor myConcepttest3 = new ConceptDescriptorBuilder("PEoPLang.structure.test3", MetaIdFactory.conceptId(0xa84aa01895664f1dL, 0x9095f51984717a5dL, 0x1b0d8e319b1e077cL)).super_("jetbrains.mps.lang.core.structure.BaseConcept").super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptModule, myConceptTest, myConceptVP, myConceptVPRef, myConceptVPRefToVPConnector);
+    return Arrays.asList(myConceptModule, myConceptTest, myConceptVP, myConceptVPRef, myConceptVPRefToVPConnector, myConcepttest3);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0j, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0k, conceptFqName)) {
       case 0:
         return myConceptModule;
       case 1:
@@ -37,9 +38,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptVPRef;
       case 4:
         return myConceptVPRefToVPConnector;
+      case 5:
+        return myConcepttest3;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0j = new String[]{"PEoPLang.structure.Module", "PEoPLang.structure.Test", "PEoPLang.structure.VP", "PEoPLang.structure.VPRef", "PEoPLang.structure.VPRefToVPConnector"};
+  private static String[] stringSwitchCases_1htk8d_a0a0k = new String[]{"PEoPLang.structure.Module", "PEoPLang.structure.Test", "PEoPLang.structure.VP", "PEoPLang.structure.VPRef", "PEoPLang.structure.VPRefToVPConnector", "PEoPLang.structure.test3"};
 }
