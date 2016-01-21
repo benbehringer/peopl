@@ -1,10 +1,2 @@
 *.iws
 .gitattributes
-languages/PEoPL/source_gen/**
-languages/PEoPL/source_gen.caches/**
-languages/PEoPL/classes_gen/**
-languages/PEoPL/sandbox/source_gen.caches/**
-languages/PEoPL/sandbox/source_gen/**
-languages/PEoPL/generator/classes_gen/**
-languages/PEoPL/generator/source_gen.caches/**
-languages/PEoPL/generator/source_gen/**
