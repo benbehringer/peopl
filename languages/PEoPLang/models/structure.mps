@@ -98,15 +98,21 @@
     </node>
     <node concept="1TJgyj" id="6K8EDSn5e7h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="vpConnector" />
+      <property role="20kJfa" value="vpFragmentConnector" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VP_FragmentConnector" />
     </node>
     <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="moduleConnector" />
+      <property role="20kJfa" value="moduleFragmentConnector" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5qz55Ysv7DE" resolve="Module_FragmentConnector" />
+    </node>
+    <node concept="1TJgyj" id="3bTHxkSSvaM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="chosenModule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6U">
@@ -116,7 +122,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="vpRef" />
+      <property role="20kJfa" value="fragment" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
   </node>
@@ -144,7 +150,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="vpRef" />
+      <property role="20kJfa" value="fragment" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
