@@ -149,5 +149,55 @@
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
   </node>
+  <node concept="1TIwiD" id="_uCk0nlJLH">
+    <property role="1pbfSe" value="548773293" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="ProductLineConfig" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Product line configuration" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="_uCk0nlSot" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="moduleConnector" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="_uCk0nlSow" resolve="ModuleConnector" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSop">
+    <property role="1pbfSe" value="548808537" />
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <property role="TrG5h" value="Operation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSoq">
+    <property role="1pbfSe" value="548808538" />
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <property role="TrG5h" value="Addition" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSor">
+    <property role="1pbfSe" value="548808539" />
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <property role="TrG5h" value="Subtraction" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSos">
+    <property role="1pbfSe" value="548808540" />
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <property role="TrG5h" value="Overriding" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSow">
+    <property role="1pbfSe" value="548808544" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="ModuleConnector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="_uCk0nlSox" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="connectedModule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+  </node>
 </model>
 
