@@ -59,11 +59,11 @@
     <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="6K8EDSn5e7p" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="vpRef" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="VPRef" />
+    <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="connectors" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="Module_FragmentConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6t">
@@ -75,7 +75,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="vpConnector" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VPRefToVPConnector" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VP_FragmentConnector" />
     </node>
     <node concept="PrWs8" id="6K8EDSn5e71" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -84,10 +84,10 @@
   <node concept="1TIwiD" id="6K8EDSn5e6T">
     <property role="1pbfSe" value="2095215529" />
     <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="VPRef" />
+    <property role="TrG5h" value="Fragment" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="6K8EDSn5e74" role="lGtFl">
-      <property role="Hh88m" value="VPRef" />
+      <property role="Hh88m" value="Fragment" />
       <node concept="trNpa" id="6K8EDSn5e7d" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
@@ -99,24 +99,36 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="vpConnector" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VPRefToVPConnector" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VP_FragmentConnector" />
     </node>
-    <node concept="1TJgyj" id="6K8EDSn5e7k" role="1TKVEi">
+    <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="module" />
+      <property role="20kJfa" value="moduleConnector" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="Module_FragmentConnector" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6U">
     <property role="1pbfSe" value="2095215528" />
     <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="VPRefToVPConnector" />
+    <property role="TrG5h" value="VP_FragmentConnector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="vpRef" />
-      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="VPRef" />
+      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5qz55Ysv7DE">
+    <property role="1pbfSe" value="216035639" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Module_FragmentConnector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="vpRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
   </node>
 </model>
