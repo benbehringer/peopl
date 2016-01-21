@@ -2,7 +2,7 @@
 <model ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -129,6 +129,12 @@
     <property role="1pbfSe" value="1238657619" />
     <property role="3GE5qa" value="Base" />
     <property role="TrG5h" value="test3" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="6K8EDSn5h$U">
+    <property role="1pbfSe" value="2095201320" />
+    <property role="3GE5qa" value="TestPackage" />
+    <property role="TrG5h" value="Test2" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
