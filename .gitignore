@@ -1,3 +1,4 @@
+workspace.xml
 *.iws
 .gitattributes
 **/source_gen/**
