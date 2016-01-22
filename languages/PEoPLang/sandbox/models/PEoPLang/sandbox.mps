@@ -86,14 +86,14 @@
   <node concept="312cEu" id="3bTHxkSSa9a">
     <property role="TrG5h" value="TestClass" />
     <property role="3GE5qa" value="Implementation" />
-    <node concept="3clFb_" id="_uCk0nmdnu" role="jymVt">
+    <node concept="3clFb_" id="_uCk0nmupI" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="foo" />
+      <property role="TrG5h" value="foobar_lullebull" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="_uCk0nmdnx" role="3clF47" />
-      <node concept="3cqZAl" id="_uCk0nmdnh" role="3clF45" />
+      <node concept="3clFbS" id="_uCk0nmupL" role="3clF47" />
+      <node concept="3cqZAl" id="_uCk0nmupx" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="3bTHxkSSa9b" role="1B3o_S" />
   </node>
