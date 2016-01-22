@@ -218,5 +218,71 @@
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2LgBOmLVkOn">
+    <property role="1pbfSe" value="566367140" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="PlaceHolder" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2LgBOmLVkOo" role="lGtFl">
+      <property role="Hh88m" value="PlaceHolder" />
+      <node concept="tn0Fv" id="2LgBOmLVkOq" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2LgBOmLVkOs" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="2LgBOmLVkOu" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="vpConnector" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceHolder_VPConnector" />
+    </node>
+    <node concept="1TJgyj" id="2LgBOmLVOSa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="choosenContent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVOS7" resolve="Content" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVkOw">
+    <property role="1pbfSe" value="566367131" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="PlaceHolder_VPConnector" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LgBOmLVkOx" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="placeHolder" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVkOn" resolve="PlaceHolder" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVOS4">
+    <property role="1pbfSe" value="566235831" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="ReusableContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LgBOmLVOS5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVOS7" resolve="Content" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVOS7">
+    <property role="1pbfSe" value="566235828" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Content" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LgBOmLVOS8" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="contentLink" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="PrWs8" id="2LgBOmLVRaz" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
