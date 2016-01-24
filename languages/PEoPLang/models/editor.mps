@@ -177,5 +177,64 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5L3eIBSVjp1">
+    <property role="3GE5qa" value="Base" />
+    <ref role="1XX52x" to="v9cq:2LgBOmLVkOn" resolve="PlaceHolder" />
+    <node concept="3EZMnI" id="5L3eIBSVjp8" role="2wV5jI">
+      <node concept="3F0ifn" id="5L3eIBSVjpf" role="3EZMnx">
+        <property role="3F0ifm" value="Placeholder:" />
+      </node>
+      <node concept="1iCGBv" id="5L3eIBSVuYT" role="3EZMnx">
+        <ref role="1NtTu8" to="v9cq:2LgBOmLVOSa" />
+        <node concept="1sVBvm" id="5L3eIBSVuYV" role="1sWHZn">
+          <node concept="1iCGBv" id="5L3eIBSV$n9" role="2wV5jI">
+            <ref role="1NtTu8" to="v9cq:5L3eIBSVoti" />
+            <node concept="1sVBvm" id="5L3eIBSV$nb" role="1sWHZn">
+              <node concept="3F2HdR" id="5L3eIBSV$ni" role="2wV5jI">
+                <ref role="1NtTu8" to="v9cq:6K8EDSn5e6Y" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5L3eIBSVjpb" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5L3eIBSV$mh">
+    <property role="3GE5qa" value="Base" />
+    <ref role="1XX52x" to="v9cq:6K8EDSn5e6U" resolve="VP_FragmentConnector" />
+    <node concept="3EZMnI" id="5L3eIBSV$mj" role="2wV5jI">
+      <node concept="1iCGBv" id="5L3eIBSV$mq" role="3EZMnx">
+        <ref role="1NtTu8" to="v9cq:6K8EDSn5e6V" />
+        <node concept="1sVBvm" id="5L3eIBSV$ms" role="1sWHZn">
+          <node concept="2SsqMj" id="5L3eIBSV$mz" role="2wV5jI" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="5L3eIBSV$mm" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5L3eIBSV$mF">
+    <property role="3GE5qa" value="Base" />
+    <ref role="1XX52x" to="v9cq:2LgBOmLVkOw" resolve="PlaceHolder_VPConnector" />
+    <node concept="3F0ifn" id="5L3eIBSV$mH" role="2wV5jI">
+      <property role="3F0ifm" value="PlaceholderVPConnector" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5L3eIBSV$mS">
+    <property role="3GE5qa" value="Base" />
+    <ref role="1XX52x" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+    <node concept="3EZMnI" id="5L3eIBSV$mU" role="2wV5jI">
+      <node concept="3F2HdR" id="5L3eIBSV$n1" role="3EZMnx">
+        <ref role="1NtTu8" to="v9cq:6K8EDSn5e6Y" />
+        <node concept="l2Vlx" id="5L3eIBSV$n4" role="2czzBx" />
+      </node>
+      <node concept="l2Vlx" id="5L3eIBSV$mX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5L3eIBSVDST">
+    <property role="3GE5qa" value="Base" />
+    <ref role="1XX52x" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+    <node concept="2SsqMj" id="5L3eIBSVDSV" role="2wV5jI" />
+  </node>
 </model>
 
