@@ -6,6 +6,9 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">c7d01124-66d5-486d-8b50-7fdccb60b839(jetbrains.mps.baseLanguage.util)</dependency>
+  </dependencies>
   <languageVersions>
     <language id="a84aa018-9566-4f1d-9095-f51984717a5d" fqName="PEoPLang" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -15,6 +18,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="d68b3c37-24a2-42a7-9d89-f55b351a6a46(PEoPLang.sandbox)" version="0" />
+    <module reference="c7d01124-66d5-486d-8b50-7fdccb60b839(jetbrains.mps.baseLanguage.util)" version="0" />
   </dependencyVersions>
 </solution>
 

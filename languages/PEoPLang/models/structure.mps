@@ -66,6 +66,12 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5qz55Ysv7DE" resolve="ModuleIntermediate" />
     </node>
+    <node concept="1TJgyj" id="4RpwnfCLxt_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="color" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4RpwnfCLxtr" resolve="Color" />
+    </node>
     <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -292,6 +298,24 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="reuseable" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4RpwnfCLxtr">
+    <property role="1pbfSe" value="916429006" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Color" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
+      <property role="TrG5h" value="red" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtu" role="1TKVEl">
+      <property role="TrG5h" value="green" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
+      <property role="TrG5h" value="blue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
