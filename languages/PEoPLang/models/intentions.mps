@@ -61,12 +61,13 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -77,6 +78,10 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
@@ -602,8 +607,18 @@
         </node>
         <node concept="3clFbF" id="_uCk0nmzKN" role="3cqZAp">
           <node concept="37vLTI" id="_uCk0nmzZ7" role="3clFbG">
-            <node concept="Xl_RD" id="_uCk0nm$0$" role="37vLTx">
-              <property role="Xl_RC" value="foobar_lullebull" />
+            <node concept="3cpWs3" id="1qo4eUnaWWQ" role="37vLTx">
+              <node concept="2OqwBi" id="1qo4eUnaWSn" role="3uHU7B">
+                <node concept="37vLTw" id="1qo4eUnaWOU" role="2Oq$k0">
+                  <ref role="3cqZAo" node="_uCk0nmuwU" resolve="myNode" />
+                </node>
+                <node concept="3TrcHB" id="1qo4eUnaWVx" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="_uCk0nm$0$" role="3uHU7w">
+                <property role="Xl_RC" value="_uniqueID" />
+              </node>
             </node>
             <node concept="2OqwBi" id="_uCk0nmzNi" role="37vLTJ">
               <node concept="37vLTw" id="_uCk0nmzKL" role="2Oq$k0">

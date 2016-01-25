@@ -11,7 +11,11 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -21,13 +25,10 @@
       <concept id="9119657711895399776" name="PEoPLang.structure.ModuleDefinition" flags="ng" index="288GkY">
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
-      <concept id="675154290793708653" name="PEoPLang.structure.ProductLineConfig" flags="ng" index="u25OH">
-        <child id="675154290793743901" name="moduleConnector" index="u2itt" />
+      <concept id="675154290793708653" name="PEoPLang.structure.ProductLineConfig" flags="ng" index="u25OH" />
+      <concept id="7784659551878697452" name="PEoPLang.structure.Module" flags="ng" index="1V77HM">
+        <property id="1628069882218961985" name="id" index="21H4MJ" />
       </concept>
-      <concept id="675154290793743904" name="PEoPLang.structure.ModuleConnector" flags="ng" index="u2itw">
-        <reference id="675154290793743905" name="connectedModule" index="u2itx" />
-      </concept>
-      <concept id="7784659551878697452" name="PEoPLang.structure.Module" flags="ng" index="1V77HM" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -41,34 +42,22 @@
   <node concept="288GkY" id="7Ufy5VQFo$f">
     <property role="TrG5h" value="Sample module list" />
     <property role="3GE5qa" value="Configuration" />
-    <node concept="1V77HM" id="_uCk0nlJIq" role="288GmO">
+    <node concept="1V77HM" id="1qo4eUnc2yQ" role="288GmO">
+      <property role="21H4MJ" value="1628069882219210934" />
       <property role="TrG5h" value="Base" />
     </node>
-    <node concept="1V77HM" id="_uCk0nlJIt" role="288GmO">
+    <node concept="1V77HM" id="1qo4eUnc2yW" role="288GmO">
+      <property role="21H4MJ" value="1628069882219210940" />
       <property role="TrG5h" value="Feature" />
-    </node>
-    <node concept="1V77HM" id="3bTHxkSS9fu" role="288GmO">
-      <property role="TrG5h" value="A" />
-    </node>
-    <node concept="1V77HM" id="3bTHxkSS9f_" role="288GmO">
-      <property role="TrG5h" value="B" />
     </node>
   </node>
   <node concept="u25OH" id="_uCk0nm58_">
     <property role="3GE5qa" value="Configuration" />
-    <node concept="u2itw" id="_uCk0nma2f" role="u2itt">
-      <ref role="u2itx" node="_uCk0nlJIq" resolve="Base" />
-    </node>
-    <node concept="u2itw" id="3bTHxkSS9as" role="u2itt">
-      <ref role="u2itx" node="_uCk0nlJIt" resolve="Feature" />
-    </node>
-    <node concept="u2itw" id="3bTHxkSS9g8" role="u2itt">
-      <ref role="u2itx" node="3bTHxkSS9fu" resolve="A" />
-    </node>
   </node>
   <node concept="312cEu" id="3bTHxkSSa9a">
-    <property role="TrG5h" value="TestClass" />
+    <property role="TrG5h" value="test" />
     <property role="3GE5qa" value="Implementation" />
+    <node concept="2tJIrI" id="1qo4eUnc2$C" role="jymVt" />
     <node concept="3Tm1VV" id="3bTHxkSSa9b" role="1B3o_S" />
   </node>
 </model>
