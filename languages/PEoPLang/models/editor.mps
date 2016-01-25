@@ -293,7 +293,7 @@
   </node>
   <node concept="24kQdi" id="5L3eIBSV$mh">
     <property role="3GE5qa" value="Base" />
-    <ref role="1XX52x" to="v9cq:6K8EDSn5e6U" resolve="FragmentIntermediate" />
+    <ref role="1XX52x" to="v9cq:6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
     <node concept="3EZMnI" id="5L3eIBSV$mj" role="2wV5jI">
       <node concept="1iCGBv" id="5L3eIBSV$mq" role="3EZMnx">
         <ref role="1NtTu8" to="v9cq:6K8EDSn5e6V" />
@@ -306,7 +306,7 @@
   </node>
   <node concept="24kQdi" id="5L3eIBSV$mF">
     <property role="3GE5qa" value="Base" />
-    <ref role="1XX52x" to="v9cq:2LgBOmLVkOw" resolve="PlaceHolderIntermediate" />
+    <ref role="1XX52x" to="v9cq:2LgBOmLVkOw" resolve="PlaceHolderVPIntermediate" />
     <node concept="3F0ifn" id="5L3eIBSV$mH" role="2wV5jI">
       <property role="3F0ifm" value="PlaceholderVPConnector" />
     </node>
