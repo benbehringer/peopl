@@ -157,7 +157,7 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="2SsqMj" id="1Gdzz6r7xPf" role="3EZMnx" />
+      <node concept="2SsqMj" id="50X1GL42O_0" role="3EZMnx" />
       <node concept="l2Vlx" id="1Gdzz6r7xOd" role="2iSdaV" />
       <node concept="Veino" id="4RpwnfCMA6g" role="3F10Kt">
         <node concept="3ZlJ5R" id="4RpwnfCMA9D" role="VblUZ">
@@ -259,6 +259,7 @@
     <property role="3GE5qa" value="Base" />
     <ref role="1XX52x" to="v9cq:6K8EDSn5d7G" resolve="Module" />
     <node concept="3F0A7n" id="7Ufy5VQFo$u" role="2wV5jI">
+      <property role="1$x2rV" value="Give me a module name" />
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
