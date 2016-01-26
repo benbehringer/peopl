@@ -19,7 +19,6 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
-      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
@@ -34,6 +33,7 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -151,10 +151,8 @@
       </node>
       <node concept="3F0ifn" id="4RpwnfCN36O" role="3EZMnx">
         <property role="3F0ifm" value=":" />
-      </node>
-      <node concept="3F0ifn" id="4RpwnfCMYo4" role="3EZMnx">
-        <node concept="ljvvj" id="4RpwnfCMYrC" role="3F10Kt">
-          <property role="VOm3f" value="true" />
+        <node concept="VPxyj" id="2BKSxwraiuq" role="3F10Kt">
+          <property role="VOm3f" value="false" />
         </node>
       </node>
       <node concept="2SsqMj" id="1Gdzz6r7xPf" role="3EZMnx" />
@@ -235,14 +233,14 @@
                     <node concept="2ShNRf" id="78fQGNfmwKl" role="3cqZAk">
                       <node concept="1pGfFk" id="78fQGNfmwKk" role="2ShVmc">
                         <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
-                        <node concept="3cmrfG" id="78fQGNfmwOe" role="37wK5m">
-                          <property role="3cmrfH" value="255" />
+                        <node concept="3cmrfG" id="2BKSxwraMnU" role="37wK5m">
+                          <property role="3cmrfH" value="152" />
                         </node>
-                        <node concept="3cmrfG" id="78fQGNfmxsS" role="37wK5m">
-                          <property role="3cmrfH" value="255" />
+                        <node concept="3cmrfG" id="2BKSxwraMt2" role="37wK5m">
+                          <property role="3cmrfH" value="152" />
                         </node>
-                        <node concept="3cmrfG" id="78fQGNfmxFy" role="37wK5m">
-                          <property role="3cmrfH" value="255" />
+                        <node concept="3cmrfG" id="2BKSxwraMya" role="37wK5m">
+                          <property role="3cmrfH" value="152" />
                         </node>
                       </node>
                     </node>
