@@ -340,7 +340,7 @@
       <node concept="3clFbS" id="1Gdzz6r7t27" role="2VODD2">
         <node concept="3clFbF" id="1Gdzz6r7t3s" role="3cqZAp">
           <node concept="Xl_RD" id="1Gdzz6r7t3r" role="3clFbG">
-            <property role="Xl_RC" value="Create Alternative" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Create alternative" />
           </node>
         </node>
       </node>
@@ -363,7 +363,7 @@
       <node concept="3clFbS" id="_uCk0nmr5j" role="2VODD2">
         <node concept="3clFbF" id="_uCk0nmr6K" role="3cqZAp">
           <node concept="Xl_RD" id="_uCk0nmr6J" role="3clFbG">
-            <property role="Xl_RC" value="Print Name" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Print name" />
           </node>
         </node>
       </node>
@@ -386,17 +386,21 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="_uCk0nmzKN" role="3cqZAp">
-          <node concept="37vLTI" id="_uCk0nmzZ7" role="3clFbG">
-            <node concept="Xl_RD" id="_uCk0nm$0$" role="37vLTx">
-              <property role="Xl_RC" value="foobar_lullebull" />
-            </node>
-            <node concept="2OqwBi" id="_uCk0nmzNi" role="37vLTJ">
-              <node concept="37vLTw" id="_uCk0nmzKL" role="2Oq$k0">
-                <ref role="3cqZAo" node="_uCk0nmuwU" resolve="myNode" />
+        <node concept="1X3_iC" id="5$T2IgTbcW9" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="_uCk0nmzKN" role="8Wnug">
+            <node concept="37vLTI" id="_uCk0nmzZ7" role="3clFbG">
+              <node concept="Xl_RD" id="_uCk0nm$0$" role="37vLTx">
+                <property role="Xl_RC" value="foobar_lullebull" />
               </node>
-              <node concept="3TrcHB" id="_uCk0nmzPQ" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2OqwBi" id="_uCk0nmzNi" role="37vLTJ">
+                <node concept="37vLTw" id="_uCk0nmzKL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="_uCk0nmuwU" resolve="myNode" />
+                </node>
+                <node concept="3TrcHB" id="_uCk0nmzPQ" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>
@@ -423,7 +427,7 @@
       <node concept="3clFbS" id="2LgBOmLVkO_" role="2VODD2">
         <node concept="3clFbF" id="2LgBOmLVkQ0" role="3cqZAp">
           <node concept="Xl_RD" id="2LgBOmLVkPZ" role="3clFbG">
-            <property role="Xl_RC" value="Reuse Content" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Reuse selected content here" />
           </node>
         </node>
       </node>
@@ -456,7 +460,7 @@
             <node concept="34ab3g" id="3osquRAo_7" role="3cqZAp">
               <property role="35gtTG" value="error" />
               <node concept="Xl_RD" id="3osquRAo_9" role="34bqiv">
-                <property role="Xl_RC" value="No VP to resuse" />
+                <property role="Xl_RC" value="No VP to reuse" />
               </node>
             </node>
           </node>
@@ -497,7 +501,7 @@
       <node concept="3clFbS" id="2LgBOmLVkZi" role="2VODD2">
         <node concept="3clFbF" id="2LgBOmLVR1V" role="3cqZAp">
           <node concept="Xl_RD" id="2LgBOmLVR1U" role="3clFbG">
-            <property role="Xl_RC" value="MakeContentReusable" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Reuse this content" />
           </node>
         </node>
       </node>
@@ -603,13 +607,13 @@
   </node>
   <node concept="2S6QgY" id="6HY7eyr$Fc5">
     <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="makenull" />
+    <property role="TrG5h" value="ResetVPDataStorage" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="6HY7eyr$Fc6" role="2ZfVej">
       <node concept="3clFbS" id="6HY7eyr$Fc7" role="2VODD2">
         <node concept="3clFbF" id="6HY7eyr$O8E" role="3cqZAp">
           <node concept="Xl_RD" id="6HY7eyr$O8D" role="3clFbG">
-            <property role="Xl_RC" value="MaKE NULL" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Reset VP Data Storage" />
           </node>
         </node>
       </node>
@@ -673,7 +677,7 @@
       <node concept="3clFbS" id="5$T2IgTajmE" role="2VODD2">
         <node concept="3clFbF" id="5$T2IgTak2H" role="3cqZAp">
           <node concept="Xl_RD" id="5$T2IgTak5J" role="3clFbG">
-            <property role="Xl_RC" value="Assign to module" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Assign to module" />
           </node>
         </node>
       </node>

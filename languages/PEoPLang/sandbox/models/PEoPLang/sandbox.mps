@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
@@ -86,7 +85,15 @@
   <node concept="312cEu" id="3bTHxkSSa9a">
     <property role="TrG5h" value="TestClass" />
     <property role="3GE5qa" value="Implementation" />
-    <node concept="2tJIrI" id="2Uo$6Ff8KOc" role="jymVt" />
+    <node concept="3clFb_" id="5lmr_Imf_3u" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="foo" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5lmr_Imf_3x" role="3clF47" />
+      <node concept="3cqZAl" id="5lmr_Imf_3h" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="3bTHxkSSa9b" role="1B3o_S" />
     <node concept="1V74GB" id="5$T2IgTaHpn" role="lGtFl">
       <ref role="1V74Hf" node="5$T2IgTaHpp" />
@@ -149,6 +156,12 @@
           <ref role="1V74G_" node="5$T2IgTb6oI" />
         </node>
       </node>
+      <node concept="1V74G3" id="5lmr_ImgfdS" role="2$Fqj6">
+        <property role="TrG5h" value="6149223680862909304" />
+        <node concept="1V74G$" id="5lmr_ImgfdT" role="1V74Gw">
+          <ref role="1V74G_" node="5lmr_ImgfdR" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5$T2IgTb5$c">
@@ -174,6 +187,10 @@
       <node concept="37vLTG" id="5$T2IgTb5AN" role="3clF46">
         <property role="TrG5h" value="y" />
         <node concept="10Oyi0" id="5$T2IgTb5B9" role="1tU5fm" />
+      </node>
+      <node concept="1V74GB" id="5lmr_ImgfdR" role="lGtFl">
+        <ref role="1V74Hf" node="5lmr_ImgfdT" />
+        <ref role="a64iB" node="2Uo$6Ff3Qsz" resolve="A" />
       </node>
     </node>
   </node>
