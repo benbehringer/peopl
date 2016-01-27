@@ -29,6 +29,7 @@
       </concept>
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404574412" name="jetbrains.mps.lang.editor.structure.BackgroundColorStyleClassItem" flags="ln" index="Veino" />
@@ -181,6 +182,9 @@
         <node concept="VSNWy" id="2Uo$6Ff87xd" role="3F10Kt">
           <property role="1lJzqX" value="11" />
         </node>
+        <node concept="Veino" id="5$T2IgTaR1d" role="3F10Kt">
+          <property role="Vb096" value="WHITE" />
+        </node>
         <node concept="1sVBvm" id="3bTHxkSSvcY" role="1sWHZn">
           <node concept="1HlG4h" id="3bTHxkSSvdc" role="2wV5jI">
             <node concept="1HfYo3" id="3bTHxkSSvde" role="1HlULh">
@@ -202,10 +206,16 @@
       </node>
       <node concept="3F0ifn" id="4RpwnfCN36O" role="3EZMnx">
         <property role="3F0ifm" value=":" />
+        <node concept="Veino" id="5$T2IgTaVRa" role="3F10Kt">
+          <property role="Vb096" value="WHITE" />
+        </node>
       </node>
       <node concept="3F0ifn" id="4RpwnfCMYo4" role="3EZMnx">
         <node concept="ljvvj" id="4RpwnfCMYrC" role="3F10Kt">
           <property role="VOm3f" value="true" />
+        </node>
+        <node concept="Veino" id="5$T2IgTb0Ip" role="3F10Kt">
+          <property role="Vb096" value="WHITE" />
         </node>
       </node>
       <node concept="2SsqMj" id="50X1GL42O_0" role="3EZMnx">

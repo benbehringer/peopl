@@ -665,5 +665,87 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="5$T2IgTajmC">
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="AssignToModule" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="5$T2IgTajmD" role="2ZfVej">
+      <node concept="3clFbS" id="5$T2IgTajmE" role="2VODD2">
+        <node concept="3clFbF" id="5$T2IgTak2H" role="3cqZAp">
+          <node concept="Xl_RD" id="5$T2IgTak5J" role="3clFbG">
+            <property role="Xl_RC" value="Assign to module" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5$T2IgTajmF" role="2ZfgGD">
+      <node concept="3clFbS" id="5$T2IgTajmG" role="2VODD2">
+        <node concept="3cpWs8" id="5$T2IgTakpT" role="3cqZAp">
+          <node concept="3cpWsn" id="5$T2IgTakpW" role="3cpWs9">
+            <property role="TrG5h" value="vp" />
+            <node concept="3Tqbb2" id="5$T2IgTakpS" role="1tU5fm">
+              <ref role="ehGHo" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5$T2IgTaktt" role="3cqZAp">
+          <node concept="3clFbS" id="5$T2IgTaktv" role="3clFbx">
+            <node concept="3clFbF" id="5$T2IgTansF" role="3cqZAp">
+              <node concept="37vLTI" id="5$T2IgTanuP" role="3clFbG">
+                <node concept="2OqwBi" id="5$T2IgTaqzV" role="37vLTx">
+                  <node concept="2OqwBi" id="5$T2IgTaqio" role="2Oq$k0">
+                    <node concept="35c_gC" id="5$T2IgTaqeM" role="2Oq$k0">
+                      <ref role="35c_gD" to="v9cq:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                    <node concept="2qgKlT" id="5$T2IgTaquE" role="2OqNvi">
+                      <ref role="37wK5l" to="xzp3:3osquR_uQ4" resolve="annotate" />
+                      <node concept="2Sf5sV" id="5$T2IgTaqwk" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="2qgKlT" id="5$T2IgTaqKz" role="2OqNvi">
+                    <ref role="37wK5l" to="xzp3:3osquR$0y2" resolve="createVPandConnect" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5$T2IgTansD" role="37vLTJ">
+                  <ref role="3cqZAo" node="5$T2IgTakpW" resolve="vp" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5$T2IgTal6b" role="3clFbw">
+            <node concept="2OqwBi" id="5$T2IgTakv8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="5$T2IgTaktX" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="5$T2IgTakxx" role="2OqNvi">
+                <node concept="3CFYIy" id="5$T2IgTakyt" role="3CFYIz">
+                  <ref role="3CFYIx" to="v9cq:6K8EDSn5e6T" resolve="Fragment" />
+                </node>
+              </node>
+            </node>
+            <node concept="1v1jN8" id="5$T2IgTanoA" role="2OqNvi" />
+          </node>
+          <node concept="9aQIb" id="5$T2IgTaqV3" role="9aQIa">
+            <node concept="3clFbS" id="5$T2IgTaqV4" role="9aQI4">
+              <node concept="34ab3g" id="5$T2IgTar1h" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="5$T2IgTar1j" role="34bqiv">
+                  <property role="Xl_RC" value="Variational operation not permitted. We can just assign exactly one module per fragment" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5$T2IgTar98" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5$T2IgTakea" role="2ZfVeh">
+      <node concept="3clFbS" id="5$T2IgTakeb" role="2VODD2">
+        <node concept="3clFbF" id="5$T2IgTakih" role="3cqZAp">
+          <node concept="3clFbT" id="5$T2IgTakig" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
