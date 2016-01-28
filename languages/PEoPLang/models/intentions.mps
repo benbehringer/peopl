@@ -18,6 +18,7 @@
   </languages>
   <imports>
     <import index="v9cq" ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xzp3" ref="r:1073078c-5ebb-4289-914d-d05e2990dbac(PEoPLang.behavior)" implicit="true" />
   </imports>
@@ -317,7 +318,7 @@
                   <node concept="1uHKPH" id="7NIKQmrABr4" role="2OqNvi" />
                 </node>
                 <node concept="2qgKlT" id="7NIKQmrAB_b" role="2OqNvi">
-                  <ref role="37wK5l" to="xzp3:7NIKQmrAahW" resolve="addChangeListenerForModelRef" />
+                  <ref role="37wK5l" to="xzp3:7NIKQmrAahW" resolve="addChangeListenerForModuleRef" />
                 </node>
               </node>
             </node>
@@ -471,11 +472,11 @@
             <node concept="3w_OXm" id="3osquRAo$6" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3clFbF" id="3osquRArLR" role="3cqZAp">
+        <node concept="3clFbF" id="5AXGYflbRrd" role="3cqZAp">
           <node concept="2OqwBi" id="3osquRAwiR" role="3clFbG">
             <node concept="2OqwBi" id="3osquRAvUe" role="2Oq$k0">
               <node concept="35c_gC" id="3osquRArLP" role="2Oq$k0">
-                <ref role="35c_gD" to="v9cq:2LgBOmLVkOn" resolve="PlaceHolder" />
+                <ref role="35c_gD" to="v9cq:2LgBOmLVkOn" resolve="Placeholder" />
               </node>
               <node concept="2qgKlT" id="3osquRAwdS" role="2OqNvi">
                 <ref role="37wK5l" to="xzp3:3osquRAoH0" resolve="annotate" />
@@ -738,7 +739,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5$T2IgTar98" role="3cqZAp" />
       </node>
     </node>
     <node concept="2SaL7w" id="5$T2IgTakea" role="2ZfVeh">
