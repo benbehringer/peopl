@@ -306,8 +306,8 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
     </node>
-    <node concept="1TJgyj" id="5L3eIBSVDSL" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
+    <node concept="1TJgyj" id="3N55tyoWt1w" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="referencedVP" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
     </node>
