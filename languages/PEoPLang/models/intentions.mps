@@ -278,7 +278,7 @@
               </node>
             </node>
             <node concept="2qgKlT" id="3osquR_Km8" role="2OqNvi">
-              <ref role="37wK5l" to="xzp3:3osquR$feg" resolve="connectToExistingVP" />
+              <ref role="37wK5l" to="xzp3:3osquR$1F4" resolve="connectToVP" />
               <node concept="37vLTw" id="3osquR_Kox" role="37wK5m">
                 <ref role="3cqZAo" node="3osquR$Q$D" resolve="vp" />
               </node>
