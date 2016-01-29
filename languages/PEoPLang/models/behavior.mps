@@ -40,6 +40,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
+        <child id="1076505808688" name="condition" index="2$JKZa" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -102,7 +105,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -232,6 +235,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1237467461002" name="jetbrains.mps.baseLanguage.collections.structure.GetIteratorOperation" flags="nn" index="uNJiE" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -881,8 +885,22 @@
       </node>
       <node concept="3cqZAl" id="7NIKQmrAasa" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6nmwsNvnhya" role="13h7CS">
+      <property role="TrG5h" value="restartListener" />
+      <node concept="3Tm1VV" id="6nmwsNvnhyb" role="1B3o_S" />
+      <node concept="3clFbS" id="6nmwsNvnhyc" role="3clF47">
+        <node concept="3clFbF" id="6nmwsNvnsYx" role="3cqZAp">
+          <node concept="BsUDl" id="6nmwsNvnsYw" role="3clFbG">
+            <ref role="37wK5l" node="7NIKQmrAahW" resolve="addChangeListenerForModuleRef" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6nmwsNvnhOq" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="36tKSlW0Mnt" role="13h7CW">
-      <node concept="3clFbS" id="36tKSlW0Mnu" role="2VODD2" />
+      <node concept="3clFbS" id="36tKSlW0Mnu" role="2VODD2">
+        <node concept="3clFbH" id="6nmwsNvnsx_" role="3cqZAp" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="3osquRAxzk">
@@ -986,6 +1004,72 @@
   <node concept="13h7C7" id="4RpwnfCL9zG">
     <property role="3GE5qa" value="Base" />
     <ref role="13h7C2" to="v9cq:6K8EDSn5d7G" resolve="Module" />
+    <node concept="13i0hz" id="6nmwsNvn5zK" role="13h7CS">
+      <property role="TrG5h" value="restartFragmentListener" />
+      <node concept="3Tm1VV" id="6nmwsNvn5zL" role="1B3o_S" />
+      <node concept="3clFbS" id="6nmwsNvn5zM" role="3clF47">
+        <node concept="3cpWs8" id="6nmwsNvnCBV" role="3cqZAp">
+          <node concept="3cpWsn" id="6nmwsNvnCBW" role="3cpWs9">
+            <property role="TrG5h" value="iterator" />
+            <node concept="3uibUv" id="6nmwsNvnCBX" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~ListIterator" resolve="ListIterator" />
+            </node>
+            <node concept="2OqwBi" id="6nmwsNvnDmL" role="33vP2m">
+              <node concept="2OqwBi" id="6nmwsNvnCHz" role="2Oq$k0">
+                <node concept="13iPFW" id="6nmwsNvnCFz" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6nmwsNvnCOD" role="2OqNvi">
+                  <ref role="3TtcxE" to="v9cq:5qz55Ysv7E5" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6nmwsNvnF1d" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.listIterator():java.util.ListIterator" resolve="listIterator" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2$JKZl" id="6nmwsNvn8SS" role="3cqZAp">
+          <node concept="3clFbS" id="6nmwsNvn8SU" role="2LFqv$">
+            <node concept="34ab3g" id="6reN0UV3oTI" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="6reN0UV3oTK" role="34bqiv">
+                <property role="Xl_RC" value="module : restart next" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6nmwsNvnCwM" role="3cqZAp">
+              <node concept="2OqwBi" id="6nmwsNvnFrO" role="3clFbG">
+                <node concept="1eOMI4" id="6nmwsNvnFpc" role="2Oq$k0">
+                  <node concept="10QFUN" id="6nmwsNvnFlm" role="1eOMHV">
+                    <node concept="3Tqbb2" id="6nmwsNvnFm1" role="10QFUM">
+                      <ref role="ehGHo" to="v9cq:5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
+                    </node>
+                    <node concept="2OqwBi" id="6nmwsNvnFdU" role="10QFUP">
+                      <node concept="37vLTw" id="6nmwsNvnFd7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6nmwsNvnCBW" resolve="iterator" />
+                      </node>
+                      <node concept="liA8E" id="6nmwsNvnFiM" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~ListIterator.next():java.lang.Object" resolve="next" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="6nmwsNvnFw_" role="2OqNvi">
+                  <ref role="37wK5l" node="6nmwsNvngLt" resolve="restartFragmentListener" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6nmwsNvnCfP" role="2$JKZa">
+            <node concept="37vLTw" id="6nmwsNvnFci" role="2Oq$k0">
+              <ref role="3cqZAo" node="6nmwsNvnCBW" resolve="iterator" />
+            </node>
+            <node concept="liA8E" id="6nmwsNvnCtz" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ListIterator.hasNext():boolean" resolve="hasNext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6nmwsNvn5A8" role="3clF45" />
+    </node>
     <node concept="13hLZK" id="4RpwnfCL9zH" role="13h7CW">
       <node concept="3clFbS" id="4RpwnfCL9zI" role="2VODD2">
         <node concept="3cpWs8" id="4RpwnfCLieg" role="3cqZAp">
@@ -1364,6 +1448,83 @@
       <node concept="3Tqbb2" id="3osquR_LCU" role="3clF45">
         <ref role="ehGHo" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
       </node>
+    </node>
+    <node concept="13i0hz" id="6nmwsNvn3mD" role="13h7CS">
+      <property role="TrG5h" value="restartFragmentListener" />
+      <node concept="3Tm1VV" id="6nmwsNvn3mE" role="1B3o_S" />
+      <node concept="3clFbS" id="6nmwsNvn3mF" role="3clF47">
+        <node concept="3cpWs8" id="6nmwsNvn3H8" role="3cqZAp">
+          <node concept="3cpWsn" id="6nmwsNvn3Hb" role="3cpWs9">
+            <property role="TrG5h" value="modulDef" />
+            <node concept="3Tqbb2" id="6nmwsNvn3H7" role="1tU5fm">
+              <ref role="ehGHo" to="v9cq:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+            </node>
+            <node concept="10QFUN" id="6nmwsNvn3X8" role="33vP2m">
+              <node concept="2OqwBi" id="6nmwsNvn3Kf" role="10QFUP">
+                <node concept="13iPFW" id="6nmwsNvn3HL" role="2Oq$k0" />
+                <node concept="1mfA1w" id="6nmwsNvn3Th" role="2OqNvi" />
+              </node>
+              <node concept="3Tqbb2" id="6nmwsNvn3X9" role="10QFUM">
+                <ref role="ehGHo" to="v9cq:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7Q9NY46NM4x" role="3cqZAp">
+          <node concept="3cpWsn" id="7Q9NY46NM4y" role="3cpWs9">
+            <property role="TrG5h" value="iterator" />
+            <node concept="3uibUv" id="7Q9NY46NM4z" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
+            </node>
+            <node concept="2OqwBi" id="7Q9NY46NMMu" role="33vP2m">
+              <node concept="2OqwBi" id="7Q9NY46NM9R" role="2Oq$k0">
+                <node concept="37vLTw" id="7Q9NY46NM7S" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6nmwsNvn3Hb" resolve="modulDef" />
+                </node>
+                <node concept="3Tsc0h" id="7Q9NY46NMgW" role="2OqNvi">
+                  <ref role="3TtcxE" to="v9cq:7Ufy5VQFkRE" />
+                </node>
+              </node>
+              <node concept="uNJiE" id="7Q9NY46NOsI" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="2$JKZl" id="7Q9NY46NJxo" role="3cqZAp">
+          <node concept="3clFbS" id="7Q9NY46NJxq" role="2LFqv$">
+            <node concept="3clFbF" id="7Q9NY46NOw3" role="3cqZAp">
+              <node concept="2OqwBi" id="7Q9NY46NOEK" role="3clFbG">
+                <node concept="1eOMI4" id="7Q9NY46NOBU" role="2Oq$k0">
+                  <node concept="10QFUN" id="7Q9NY46NO$_" role="1eOMHV">
+                    <node concept="3Tqbb2" id="7Q9NY46NO_8" role="10QFUM">
+                      <ref role="ehGHo" to="v9cq:6K8EDSn5d7G" resolve="Module" />
+                    </node>
+                    <node concept="2OqwBi" id="7Q9NY46NOww" role="10QFUP">
+                      <node concept="37vLTw" id="7Q9NY46NOw2" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7Q9NY46NM4y" resolve="iterator" />
+                      </node>
+                      <node concept="liA8E" id="7Q9NY46NOyA" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7Q9NY46NOJp" role="2OqNvi">
+                  <ref role="37wK5l" node="6nmwsNvn5zK" resolve="restartFragmentListener" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7Q9NY46NLU7" role="2$JKZa">
+            <node concept="37vLTw" id="7Q9NY46NOud" role="2Oq$k0">
+              <ref role="3cqZAo" node="7Q9NY46NM4y" resolve="iterator" />
+            </node>
+            <node concept="liA8E" id="7Q9NY46NOvF" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6nmwsNvn3xM" role="3clF45" />
     </node>
     <node concept="13i0hz" id="3osquR_QaJ" role="13h7CS">
       <property role="TrG5h" value="annotate" />
@@ -1865,6 +2026,32 @@
         </node>
       </node>
       <node concept="3cqZAl" id="4FcpRplPEnu" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6nmwsNvngLt" role="13h7CS">
+      <property role="TrG5h" value="restartFragmentListener" />
+      <node concept="3Tm1VV" id="6nmwsNvngLu" role="1B3o_S" />
+      <node concept="3clFbS" id="6nmwsNvngLv" role="3clF47">
+        <node concept="34ab3g" id="6reN0UV3oEn" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="6reN0UV3oEp" role="34bqiv">
+            <property role="Xl_RC" value="FragModInter : restart" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6nmwsNvnt_t" role="3cqZAp">
+          <node concept="2OqwBi" id="6nmwsNvntLy" role="3clFbG">
+            <node concept="2OqwBi" id="6nmwsNvntCw" role="2Oq$k0">
+              <node concept="13iPFW" id="6nmwsNvnt_s" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6nmwsNvntGa" role="2OqNvi">
+                <ref role="3Tt5mk" to="v9cq:5qz55Ysv7DF" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6nmwsNvntR4" role="2OqNvi">
+              <ref role="37wK5l" node="6nmwsNvnhya" resolve="restartListener" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6nmwsNvnh9b" role="3clF45" />
     </node>
     <node concept="13hLZK" id="2BKSxwr7cr$" role="13h7CW">
       <node concept="3clFbS" id="2BKSxwr7cr_" role="2VODD2" />

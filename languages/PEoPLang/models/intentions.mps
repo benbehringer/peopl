@@ -277,9 +277,9 @@
                 </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="3osquR_Km8" role="2OqNvi">
-              <ref role="37wK5l" to="xzp3:3osquR$feg" resolve="connectToExistingVP" />
-              <node concept="37vLTw" id="3osquR_Kox" role="37wK5m">
+            <node concept="2qgKlT" id="6nmwsNvm1$$" role="2OqNvi">
+              <ref role="37wK5l" to="xzp3:3osquR$1F4" resolve="connectToVP" />
+              <node concept="37vLTw" id="6nmwsNvm8f_" role="37wK5m">
                 <ref role="3cqZAo" node="3osquR$Q$D" resolve="vp" />
               </node>
             </node>
@@ -746,6 +746,39 @@
         <node concept="3clFbF" id="5$T2IgTakih" role="3cqZAp">
           <node concept="3clFbT" id="5$T2IgTakig" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6nmwsNvn2ct">
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="RestartFragmentListener" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="6nmwsNvn2cu" role="2ZfVej">
+      <node concept="3clFbS" id="6nmwsNvn2cv" role="2VODD2">
+        <node concept="3clFbF" id="6nmwsNvn2gQ" role="3cqZAp">
+          <node concept="Xl_RD" id="6nmwsNvn2gP" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL -&gt; Listener Restart" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6nmwsNvn2cw" role="2ZfgGD">
+      <node concept="3clFbS" id="6nmwsNvn2cx" role="2VODD2">
+        <node concept="3clFbF" id="6reN0UV3pnI" role="3cqZAp">
+          <node concept="2OqwBi" id="6reN0UV3pD5" role="3clFbG">
+            <node concept="2OqwBi" id="6reN0UV3pqp" role="2Oq$k0">
+              <node concept="35c_gC" id="6reN0UV3pnH" role="2Oq$k0">
+                <ref role="35c_gD" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+              </node>
+              <node concept="2qgKlT" id="6reN0UV3pA9" role="2OqNvi">
+                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVDStorage" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6reN0UV3pOW" role="2OqNvi">
+              <ref role="37wK5l" to="xzp3:6nmwsNvn3mD" resolve="restartFragmentListener" />
+            </node>
           </node>
         </node>
       </node>
