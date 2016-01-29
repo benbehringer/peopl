@@ -841,5 +841,22 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="3N55tyoXpwF">
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="AssignWrapperToModules" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="3N55tyoXpwG" role="2ZfVej">
+      <node concept="3clFbS" id="3N55tyoXpwH" role="2VODD2">
+        <node concept="3clFbF" id="3N55tyoXp_c" role="3cqZAp">
+          <node concept="Xl_RD" id="3N55tyoXp_b" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL -&gt; Create structure for module to wrappee assignment" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3N55tyoXpwI" role="2ZfgGD">
+      <node concept="3clFbS" id="3N55tyoXpwJ" role="2VODD2" />
+    </node>
+  </node>
 </model>
 
