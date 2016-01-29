@@ -21,8 +21,14 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xzp3" ref="r:1073078c-5ebb-4289-914d-d05e2990dbac(PEoPLang.behavior)" implicit="true" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
+    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -31,6 +37,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -746,6 +753,111 @@
         <node concept="3clFbF" id="5$T2IgTakih" role="3cqZAp">
           <node concept="3clFbT" id="5$T2IgTakig" role="3clFbG">
             <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6G$gu4cu6db">
+    <property role="TrG5h" value="CreateNewModule" />
+    <property role="3GE5qa" value="Base" />
+    <ref role="2ZfgGC" to="v9cq:6K8EDSn5e6T" resolve="Fragment" />
+    <node concept="2S6ZIM" id="6G$gu4cu6dc" role="2ZfVej">
+      <node concept="3clFbS" id="6G$gu4cu6dd" role="2VODD2">
+        <node concept="3clFbF" id="6G$gu4cu6i3" role="3cqZAp">
+          <node concept="Xl_RD" id="6G$gu4cu6i2" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL -&gt; createNewModule" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6G$gu4cu6de" role="2ZfgGD">
+      <node concept="3clFbS" id="6G$gu4cu6df" role="2VODD2">
+        <node concept="3cpWs8" id="6G$gu4cu6Mc" role="3cqZAp">
+          <node concept="3cpWsn" id="6G$gu4cu6Mf" role="3cpWs9">
+            <property role="TrG5h" value="modulDef" />
+            <node concept="3Tqbb2" id="6G$gu4cu6Ma" role="1tU5fm">
+              <ref role="ehGHo" to="v9cq:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6G$gu4cu6DI" role="3cqZAp">
+          <node concept="37vLTI" id="6G$gu4cu6DJ" role="3clFbG">
+            <node concept="2OqwBi" id="6G$gu4cu6DK" role="37vLTx">
+              <node concept="2OqwBi" id="6G$gu4cu6DL" role="2Oq$k0">
+                <node concept="BaHAS" id="6G$gu4cu6DM" role="2Oq$k0">
+                  <property role="BaHAW" value="PEoPLang.sandbox" />
+                  <property role="BaGAP" value="" />
+                </node>
+                <node concept="2SmgA7" id="6G$gu4cu6DN" role="2OqNvi">
+                  <node concept="chp4Y" id="6G$gu4cu6DO" role="1dBWTz">
+                    <ref role="cht4Q" to="v9cq:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="6G$gu4cu6DP" role="2OqNvi" />
+            </node>
+            <node concept="37vLTw" id="6G$gu4cu6Nj" role="37vLTJ">
+              <ref role="3cqZAo" node="6G$gu4cu6Mf" resolve="modulDef" />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="6G$gu4culq4" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="6G$gu4culq6" role="34bqiv">
+            <property role="Xl_RC" value="CreateNewModule" />
+          </node>
+        </node>
+        <node concept="34ab3g" id="6G$gu4cuTXH" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="2OqwBi" id="6G$gu4cv4P5" role="34bqiv">
+            <node concept="2OqwBi" id="6G$gu4cv4M9" role="2Oq$k0">
+              <node concept="2OqwBi" id="6G$gu4cuTZf" role="2Oq$k0">
+                <node concept="1XNTG" id="6G$gu4cv4HU" role="2Oq$k0" />
+                <node concept="liA8E" id="6G$gu4cuUoy" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getContextCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getContextCell" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6G$gu4cv4O0" role="2OqNvi">
+                <ref role="37wK5l" to="f4zo:~EditorCell.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6G$gu4cv4Ri" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="6G$gu4cuExw">
+    <property role="TrG5h" value="RestartListener" />
+    <property role="3GE5qa" value="Base" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="6G$gu4cuExx" role="2ZfVej">
+      <node concept="3clFbS" id="6G$gu4cuExy" role="2VODD2">
+        <node concept="3clFbF" id="6G$gu4cuE_T" role="3cqZAp">
+          <node concept="Xl_RD" id="6G$gu4cuE_S" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL -&gt; Restart Listener" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6G$gu4cuExz" role="2ZfgGD">
+      <node concept="3clFbS" id="6G$gu4cuEx$" role="2VODD2">
+        <node concept="3clFbF" id="6G$gu4cuJpK" role="3cqZAp">
+          <node concept="2OqwBi" id="6G$gu4cuJFb" role="3clFbG">
+            <node concept="2OqwBi" id="6G$gu4cuJsr" role="2Oq$k0">
+              <node concept="35c_gC" id="6G$gu4cuJpJ" role="2Oq$k0">
+                <ref role="35c_gD" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+              </node>
+              <node concept="2qgKlT" id="6G$gu4cuJCd" role="2OqNvi">
+                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVDStorage" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6G$gu4cuKgw" role="2OqNvi">
+              <ref role="37wK5l" to="xzp3:6nmwsNvn3mD" resolve="restartFragmentListener" />
+            </node>
           </node>
         </node>
       </node>
