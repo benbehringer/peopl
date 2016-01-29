@@ -97,10 +97,6 @@
     <property role="TrG5h" value="Test" />
     <property role="3GE5qa" value="Implementation" />
     <node concept="2tJIrI" id="3N55tyoWrsf" role="jymVt" />
-    <node concept="2tJIrI" id="3N55tyoWJCo" role="jymVt" />
-    <node concept="2tJIrI" id="3N55tyoWJpj" role="jymVt" />
-    <node concept="2tJIrI" id="3N55tyoWJAp" role="jymVt" />
-    <node concept="2tJIrI" id="3N55tyoWsFT" role="jymVt" />
     <node concept="3Tm1VV" id="3N55tyoWldW" role="1B3o_S" />
   </node>
 </model>
