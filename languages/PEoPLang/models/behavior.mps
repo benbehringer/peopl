@@ -1008,22 +1008,20 @@
       <property role="TrG5h" value="restartFragmentListener" />
       <node concept="3Tm1VV" id="6nmwsNvn5zL" role="1B3o_S" />
       <node concept="3clFbS" id="6nmwsNvn5zM" role="3clF47">
-        <node concept="3cpWs8" id="6nmwsNvnCBV" role="3cqZAp">
-          <node concept="3cpWsn" id="6nmwsNvnCBW" role="3cpWs9">
+        <node concept="3cpWs8" id="6G$gu4cvDCW" role="3cqZAp">
+          <node concept="3cpWsn" id="6G$gu4cvDCX" role="3cpWs9">
             <property role="TrG5h" value="iterator" />
-            <node concept="3uibUv" id="6nmwsNvnCBX" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~ListIterator" resolve="ListIterator" />
+            <node concept="3uibUv" id="6G$gu4cvDCY" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~Iterator" resolve="Iterator" />
             </node>
-            <node concept="2OqwBi" id="6nmwsNvnDmL" role="33vP2m">
-              <node concept="2OqwBi" id="6nmwsNvnCHz" role="2Oq$k0">
-                <node concept="13iPFW" id="6nmwsNvnCFz" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="6nmwsNvnCOD" role="2OqNvi">
+            <node concept="2OqwBi" id="6G$gu4cvEFa" role="33vP2m">
+              <node concept="2OqwBi" id="6G$gu4cvDH5" role="2Oq$k0">
+                <node concept="13iPFW" id="6G$gu4cvDF5" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6G$gu4cvDKO" role="2OqNvi">
                   <ref role="3TtcxE" to="v9cq:5qz55Ysv7E5" />
                 </node>
               </node>
-              <node concept="liA8E" id="6nmwsNvnF1d" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.listIterator():java.util.ListIterator" resolve="listIterator" />
-              </node>
+              <node concept="uNJiE" id="6G$gu4cvGlG" role="2OqNvi" />
             </node>
           </node>
         </node>
@@ -1043,11 +1041,11 @@
                       <ref role="ehGHo" to="v9cq:5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
                     </node>
                     <node concept="2OqwBi" id="6nmwsNvnFdU" role="10QFUP">
-                      <node concept="37vLTw" id="6nmwsNvnFd7" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6nmwsNvnCBW" resolve="iterator" />
+                      <node concept="37vLTw" id="6G$gu4cvGo8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6G$gu4cvDCX" resolve="iterator" />
                       </node>
                       <node concept="liA8E" id="6nmwsNvnFiM" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~ListIterator.next():java.lang.Object" resolve="next" />
+                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
                       </node>
                     </node>
                   </node>
@@ -1059,11 +1057,11 @@
             </node>
           </node>
           <node concept="2OqwBi" id="6nmwsNvnCfP" role="2$JKZa">
-            <node concept="37vLTw" id="6nmwsNvnFci" role="2Oq$k0">
-              <ref role="3cqZAo" node="6nmwsNvnCBW" resolve="iterator" />
+            <node concept="37vLTw" id="6G$gu4cvGnn" role="2Oq$k0">
+              <ref role="3cqZAo" node="6G$gu4cvDCX" resolve="iterator" />
             </node>
             <node concept="liA8E" id="6nmwsNvnCtz" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~ListIterator.hasNext():boolean" resolve="hasNext" />
+              <ref role="37wK5l" to="33ny:~Iterator.hasNext():boolean" resolve="hasNext" />
             </node>
           </node>
         </node>
@@ -1489,8 +1487,20 @@
             </node>
           </node>
         </node>
+        <node concept="34ab3g" id="6G$gu4cvptm" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="6G$gu4cvpto" role="34bqiv">
+            <property role="Xl_RC" value="restarting" />
+          </node>
+        </node>
         <node concept="2$JKZl" id="7Q9NY46NJxo" role="3cqZAp">
           <node concept="3clFbS" id="7Q9NY46NJxq" role="2LFqv$">
+            <node concept="34ab3g" id="6G$gu4cvp_6" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="6G$gu4cvp_8" role="34bqiv">
+                <property role="Xl_RC" value="Var : next" />
+              </node>
+            </node>
             <node concept="3clFbF" id="7Q9NY46NOw3" role="3cqZAp">
               <node concept="2OqwBi" id="7Q9NY46NOEK" role="3clFbG">
                 <node concept="1eOMI4" id="7Q9NY46NOBU" role="2Oq$k0">
