@@ -865,13 +865,13 @@
   </node>
   <node concept="2S6QgY" id="7VYDLKH$c9G">
     <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="deleteBrokenLinks" />
+    <property role="TrG5h" value="RepairBrokenLinks" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="7VYDLKH$c9H" role="2ZfVej">
       <node concept="3clFbS" id="7VYDLKH$c9I" role="2VODD2">
         <node concept="3clFbF" id="7VYDLKH$ceM" role="3cqZAp">
           <node concept="Xl_RD" id="7VYDLKH$ceL" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Delete broken connections " />
+            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Cleanup broken connections " />
           </node>
         </node>
       </node>
@@ -928,6 +928,24 @@
                 </node>
                 <node concept="2qgKlT" id="7VYDLKH$nhd" role="2OqNvi">
                   <ref role="37wK5l" to="xzp3:7VYDLKH$aD2" resolve="deleteBrokenLinksOfVPs" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7VYDLKH_rWr" role="3cqZAp">
+              <node concept="2OqwBi" id="7VYDLKH_s8J" role="3clFbG">
+                <node concept="2OqwBi" id="7VYDLKH_s00" role="2Oq$k0">
+                  <node concept="37vLTw" id="7VYDLKH_rWp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7VYDLKH$cHN" resolve="modulDef" />
+                  </node>
+                  <node concept="3CFZ6_" id="7VYDLKH_s4w" role="2OqNvi">
+                    <node concept="3CFYIy" id="7VYDLKH_s50" role="3CFYIz">
+                      <ref role="3CFYIx" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="7VYDLKH_sgp" role="2OqNvi">
+                  <ref role="37wK5l" to="xzp3:3osquR_SN1" resolve="setReusable" />
+                  <node concept="10Nm6u" id="7VYDLKH_shI" role="37wK5m" />
                 </node>
               </node>
             </node>
