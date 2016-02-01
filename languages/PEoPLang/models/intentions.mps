@@ -865,13 +865,13 @@
   </node>
   <node concept="2S6QgY" id="7VYDLKH$c9G">
     <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="deleteBrokenLinksForModulesAndVPs" />
+    <property role="TrG5h" value="deleteBrokenLinks" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="7VYDLKH$c9H" role="2ZfVej">
       <node concept="3clFbS" id="7VYDLKH$c9I" role="2VODD2">
         <node concept="3clFbF" id="7VYDLKH$ceM" role="3cqZAp">
           <node concept="Xl_RD" id="7VYDLKH$ceL" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; DeleteBrokenLinks " />
+            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Delete broken connections " />
           </node>
         </node>
       </node>
