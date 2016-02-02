@@ -102,6 +102,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -887,9 +888,14 @@
   <node concept="24kQdi" id="_uCk0nlSoD">
     <property role="3GE5qa" value="Configuration" />
     <ref role="1XX52x" to="v9cq:_uCk0nlJLH" resolve="ProductLineConfig" />
-    <node concept="3F2HdR" id="_uCk0nlSoF" role="2wV5jI">
-      <ref role="1NtTu8" to="v9cq:_uCk0nlSot" />
-      <node concept="l2Vlx" id="_uCk0nlSoH" role="2czzBx" />
+    <node concept="3EZMnI" id="4NJLQZxCF2T" role="2wV5jI">
+      <node concept="3F0ifn" id="4NJLQZxCF2V" role="3EZMnx">
+        <property role="3F0ifm" value="configuration: " />
+      </node>
+      <node concept="3F1sOY" id="4NJLQZxCF33" role="3EZMnx">
+        <ref role="1NtTu8" to="v9cq:4NJLQZxCF2M" />
+      </node>
+      <node concept="l2Vlx" id="4NJLQZxCF2W" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="_uCk0nm58P">
@@ -1346,6 +1352,54 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NJLQZxEHl9">
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <ref role="1XX52x" to="v9cq:_uCk0nlSoq" resolve="Addition" />
+    <node concept="3EZMnI" id="7l1ua4yze2G" role="2wV5jI">
+      <node concept="2iRfu4" id="7l1ua4yze2H" role="2iSdaV" />
+      <node concept="3F1sOY" id="7l1ua4yze30" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4s" />
+      </node>
+      <node concept="3F0ifn" id="7l1ua4yze36" role="3EZMnx">
+        <property role="3F0ifm" value="+" />
+      </node>
+      <node concept="3F1sOY" id="7l1ua4yze3j" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4r" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7l1ua4y$qOz">
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <ref role="1XX52x" to="v9cq:_uCk0nlSos" resolve="Overriding" />
+    <node concept="3EZMnI" id="7l1ua4y$qO_" role="2wV5jI">
+      <node concept="3F1sOY" id="7l1ua4y$qOJ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4s" />
+      </node>
+      <node concept="3F0ifn" id="7l1ua4y$qOP" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3F1sOY" id="7l1ua4y$qP2" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4r" />
+      </node>
+      <node concept="2iRfu4" id="7l1ua4y$qOC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7l1ua4y$qPc">
+    <property role="3GE5qa" value="Configuration.Operations" />
+    <ref role="1XX52x" to="v9cq:_uCk0nlSor" resolve="Subtraction" />
+    <node concept="3EZMnI" id="7l1ua4y$qPe" role="2wV5jI">
+      <node concept="3F1sOY" id="7l1ua4y$qPr" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4s" />
+      </node>
+      <node concept="3F0ifn" id="7l1ua4y$qPx" role="3EZMnx">
+        <property role="3F0ifm" value="-" />
+      </node>
+      <node concept="3F1sOY" id="7l1ua4y$qPI" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fJuHU4r" />
+      </node>
+      <node concept="2iRfu4" id="7l1ua4y$qPh" role="2iSdaV" />
     </node>
   </node>
 </model>

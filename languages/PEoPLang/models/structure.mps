@@ -14,6 +14,7 @@
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -176,6 +177,9 @@
     <node concept="PrWs8" id="7Ufy5VQFkRH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="7l1ua4yAdEc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5qz55Ysv7DE">
     <property role="1pbfSe" value="216035639" />
@@ -199,42 +203,47 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Product line configuration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="_uCk0nlSot" role="1TKVEi">
+    <node concept="1TJgyj" id="4NJLQZxCF2M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="moduleConnector" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="_uCk0nlSow" resolve="ModuleConnector" />
+      <property role="20kJfa" value="expression" />
+      <ref role="20lvS9" node="4NJLQZxDJZU" resolve="ModuleExpression" />
+    </node>
+    <node concept="PrWs8" id="7l1ua4y_N_A" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="_uCk0nlSop">
     <property role="1pbfSe" value="548808537" />
     <property role="3GE5qa" value="Configuration.Operations" />
     <property role="TrG5h" value="Operation" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
   <node concept="1TIwiD" id="_uCk0nlSoq">
     <property role="1pbfSe" value="548808538" />
     <property role="3GE5qa" value="Configuration.Operations" />
     <property role="TrG5h" value="Addition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="+" />
+    <ref role="1TJDcQ" node="_uCk0nlSop" resolve="Operation" />
   </node>
   <node concept="1TIwiD" id="_uCk0nlSor">
     <property role="1pbfSe" value="548808539" />
     <property role="3GE5qa" value="Configuration.Operations" />
     <property role="TrG5h" value="Subtraction" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" node="_uCk0nlSop" resolve="Operation" />
   </node>
   <node concept="1TIwiD" id="_uCk0nlSos">
     <property role="1pbfSe" value="548808540" />
     <property role="3GE5qa" value="Configuration.Operations" />
     <property role="TrG5h" value="Overriding" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" node="_uCk0nlSop" resolve="Operation" />
   </node>
   <node concept="1TIwiD" id="_uCk0nlSow">
     <property role="1pbfSe" value="548808544" />
     <property role="3GE5qa" value="Configuration" />
     <property role="TrG5h" value="ModuleConnector" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="_uCk0nlSox" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="connectedModule" />
@@ -328,6 +337,21 @@
     <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
       <property role="TrG5h" value="blue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4NJLQZxDJZU">
+    <property role="1pbfSe" value="781633385" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="ModuleExpression" />
+    <ref role="1TJDcQ" to="tpee:fzclF8j" resolve="ExpressionStatement" />
+    <node concept="1TJgyj" id="7l1ua4yykpX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="_uCk0nlSop" resolve="Operation" />
+    </node>
+    <node concept="PrWs8" id="7l1ua4y_AJd" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>
