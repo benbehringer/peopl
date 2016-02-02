@@ -347,7 +347,7 @@
     <node concept="1TJgyj" id="7l1ua4yykpX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="operation" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="_uCk0nlSop" resolve="Operation" />
     </node>
     <node concept="PrWs8" id="7l1ua4y_AJd" role="PzmwI">
