@@ -90,6 +90,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -1251,109 +1252,6 @@
     <ref role="1XX52x" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
     <node concept="2SsqMj" id="5L3eIBSVDSV" role="2wV5jI" />
   </node>
-  <node concept="1h_SRR" id="6nmwsNvlxaK">
-    <property role="TrG5h" value="FragmentDeleteAction" />
-    <node concept="1hA7zw" id="6nmwsNvlx$5" role="1h_SK8">
-      <node concept="1hAIg9" id="6nmwsNvlx$6" role="1hA7z_">
-        <node concept="3clFbS" id="6nmwsNvlx$7" role="2VODD2">
-          <node concept="34ab3g" id="6nmwsNvlxFx" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="6nmwsNvlxOG" role="34bqiv">
-              <node concept="Xl_RD" id="6nmwsNvlxOJ" role="3uHU7w">
-                <property role="Xl_RC" value=" right" />
-              </node>
-              <node concept="2OqwBi" id="6nmwsNvlxHD" role="3uHU7B">
-                <node concept="0IXxy" id="6nmwsNvlxFT" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6nmwsNvlxLg" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="6nmwsNvlxLX" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="6nmwsNvlxLY" role="1hA7z_">
-        <node concept="3clFbS" id="6nmwsNvlxLZ" role="2VODD2">
-          <node concept="34ab3g" id="6nmwsNvlxSe" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="6nmwsNvlxSf" role="34bqiv">
-              <node concept="Xl_RD" id="6nmwsNvlxSg" role="3uHU7w">
-                <property role="Xl_RC" value=" delete" />
-              </node>
-              <node concept="2OqwBi" id="6nmwsNvlxSh" role="3uHU7B">
-                <node concept="0IXxy" id="6nmwsNvlxSi" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6nmwsNvlxSj" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="6nmwsNvly26" role="1h_SK8">
-      <property role="1hAc7j" value="delete_to_word_end_action_id" />
-      <node concept="1hAIg9" id="6nmwsNvly27" role="1hA7z_">
-        <node concept="3clFbS" id="6nmwsNvly28" role="2VODD2">
-          <node concept="34ab3g" id="6nmwsNvly44" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="6nmwsNvly45" role="34bqiv">
-              <node concept="Xl_RD" id="6nmwsNvly46" role="3uHU7w">
-                <property role="Xl_RC" value=" word end" />
-              </node>
-              <node concept="2OqwBi" id="6nmwsNvly47" role="3uHU7B">
-                <node concept="0IXxy" id="6nmwsNvly48" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6nmwsNvly49" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1hA7zw" id="6nmwsNvmqJu" role="1h_SK8">
-      <property role="1hAc7j" value="left_transform_action_id" />
-      <node concept="1hAIg9" id="6nmwsNvmqJv" role="1hA7z_">
-        <node concept="3clFbS" id="6nmwsNvmqJw" role="2VODD2">
-          <node concept="34ab3g" id="6nmwsNvmqLY" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="6nmwsNvmqLZ" role="34bqiv">
-              <node concept="Xl_RD" id="6nmwsNvmqM0" role="3uHU7w">
-                <property role="Xl_RC" value=" left" />
-              </node>
-              <node concept="2OqwBi" id="6nmwsNvmqM1" role="3uHU7B">
-                <node concept="0IXxy" id="6nmwsNvmqM2" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6nmwsNvmqM3" role="2OqNvi">
-                  <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="6nmwsNvm_fG">
-    <property role="TrG5h" value="ExtendedDeleteClassifierMember" />
-    <ref role="1h_SK9" to="tpee:h9ngReX" resolve="ClassifierMember" />
-    <node concept="1hA7zw" id="6nmwsNvm_Bt" role="1h_SK8">
-      <property role="1hAc7j" value="delete_action_id" />
-      <node concept="1hAIg9" id="6nmwsNvm_Bu" role="1hA7z_">
-        <node concept="3clFbS" id="6nmwsNvm_Bv" role="2VODD2">
-          <node concept="34ab3g" id="6nmwsNvm_Bz" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="6nmwsNvm_B_" role="34bqiv">
-              <property role="Xl_RC" value="CLASS" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="24kQdi" id="4NJLQZxEHl9">
     <property role="3GE5qa" value="Configuration.Operations" />
     <ref role="1XX52x" to="v9cq:_uCk0nlSoq" resolve="Addition" />
@@ -1400,6 +1298,42 @@
         <ref role="1NtTu8" to="tpee:fJuHU4r" />
       </node>
       <node concept="2iRfu4" id="7l1ua4y$qPh" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7LcQBY7lzFL">
+    <property role="3GE5qa" value="Tests" />
+    <ref role="1XX52x" to="v9cq:7LcQBY7ky64" resolve="MyTestAnnotation" />
+    <node concept="3EZMnI" id="7LcQBY7lzFN" role="2wV5jI">
+      <ref role="1ERwB7" node="7LcQBY7lKGC" resolve="MyAnnotationDelete" />
+      <node concept="3F0ifn" id="7LcQBY7lzG3" role="3EZMnx">
+        <property role="3F0ifm" value="MyAnno :" />
+        <ref role="1ERwB7" node="7LcQBY7lKGC" resolve="MyAnnotationDelete" />
+      </node>
+      <node concept="2SsqMj" id="7LcQBY7lzFX" role="3EZMnx">
+        <ref role="1ERwB7" node="7LcQBY7lKGC" resolve="MyAnnotationDelete" />
+      </node>
+      <node concept="l2Vlx" id="7LcQBY7lzFQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="7LcQBY7lKGC">
+    <property role="TrG5h" value="MyAnnotationDelete" />
+    <property role="3GE5qa" value="Tests" />
+    <ref role="1h_SK9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1hA7zw" id="7LcQBY7lKGD" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="7LcQBY7lKGE" role="1hA7z_">
+        <node concept="3clFbS" id="7LcQBY7lKGF" role="2VODD2">
+          <node concept="34ab3g" id="7LcQBY7lKSI" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="2OqwBi" id="7LcQBY7lKTZ" role="34bqiv">
+              <node concept="0IXxy" id="7LcQBY7lKT0" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7LcQBY7lKXA" role="2OqNvi">
+                <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

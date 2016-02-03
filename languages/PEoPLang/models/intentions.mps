@@ -967,5 +967,34 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="7LcQBY7ky6b">
+    <property role="3GE5qa" value="Tests" />
+    <property role="TrG5h" value="MyAnnotateConcept" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="7LcQBY7ky6c" role="2ZfVej">
+      <node concept="3clFbS" id="7LcQBY7ky6d" role="2VODD2">
+        <node concept="3clFbF" id="7LcQBY7kybf" role="3cqZAp">
+          <node concept="Xl_RD" id="7LcQBY7kybe" role="3clFbG">
+            <property role="Xl_RC" value="@Tests -&gt; MyTestAnnotation" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7LcQBY7ky6e" role="2ZfgGD">
+      <node concept="3clFbS" id="7LcQBY7ky6f" role="2VODD2">
+        <node concept="3clFbF" id="7LcQBY7lzu7" role="3cqZAp">
+          <node concept="2OqwBi" id="7LcQBY7lzxv" role="3clFbG">
+            <node concept="35c_gC" id="7LcQBY7lzu6" role="2Oq$k0">
+              <ref role="35c_gD" to="v9cq:7LcQBY7ky64" resolve="MyTestAnnotation" />
+            </node>
+            <node concept="2qgKlT" id="7LcQBY7lzCA" role="2OqNvi">
+              <ref role="37wK5l" to="xzp3:7LcQBY7kyU6" resolve="annotate" />
+              <node concept="2Sf5sV" id="7LcQBY7lzDO" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
