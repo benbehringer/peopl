@@ -21,6 +21,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xzp3" ref="r:1073078c-5ebb-4289-914d-d05e2990dbac(de.htwsaar.peopl.core.behavior)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -87,6 +88,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -111,19 +113,30 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="559557797393017698" name="jetbrains.mps.lang.smodel.structure.ModelReferenceExpression" flags="nn" index="BaHAS">
         <property id="559557797393021807" name="stereotype" index="BaGAP" />
         <property id="559557797393017702" name="name" index="BaHAW" />
       </concept>
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -753,7 +766,7 @@
                   <node concept="1uHKPH" id="7MEoPae8YuW" role="2OqNvi" />
                 </node>
                 <node concept="2qgKlT" id="7MEoPae8ZKf" role="2OqNvi">
-                  <ref role="37wK5l" to="xzp3:7MEoPae8Umu" resolve="replaceNextNodeWithScopeProvider" />
+                  <ref role="37wK5l" to="xzp3:7MEoPae8Umu" resolve="replaceParentNodeForScopeExtension" />
                 </node>
               </node>
             </node>
@@ -1012,6 +1025,45 @@
               <ref role="37wK5l" to="xzp3:7LcQBY7kyU6" resolve="annotate" />
               <node concept="2Sf5sV" id="7LcQBY7lzDO" role="37wK5m" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7MEoPaebOSm">
+    <property role="TrG5h" value="SModelChangeListener" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2Sbjvc" id="7MEoPaebOSn" role="2ZfgGD">
+      <node concept="3clFbS" id="7MEoPaebOSo" role="2VODD2">
+        <node concept="3clFbH" id="7MEoPaebPJZ" role="3cqZAp" />
+        <node concept="3clFbH" id="7MEoPaebPKp" role="3cqZAp" />
+        <node concept="3clFbF" id="7MEoPaebP$a" role="3cqZAp">
+          <node concept="2OqwBi" id="7MEoPaebXOt" role="3clFbG">
+            <node concept="2JrnkZ" id="7MEoPaebX8B" role="2Oq$k0">
+              <node concept="2OqwBi" id="7MEoPaebUL4" role="2JrQYb">
+                <node concept="2OqwBi" id="7MEoPaebP_6" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="7MEoPaebP$8" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="7MEoPaebPDj" role="2OqNvi">
+                    <node concept="1xMEDy" id="7MEoPaebPDl" role="1xVPHs">
+                      <node concept="chp4Y" id="7MEoPaebPE3" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="I4A8Y" id="7MEoPaebVwK" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="1B$H19" id="7MEoPaebY0G" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="7MEoPaebOSp" role="2ZfVej">
+      <node concept="3clFbS" id="7MEoPaebOSq" role="2VODD2">
+        <node concept="3clFbF" id="7MEoPaebOXf" role="3cqZAp">
+          <node concept="Xl_RD" id="7MEoPaebOXe" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL - Test -&gt; Start SModelChangeListener" />
           </node>
         </node>
       </node>
