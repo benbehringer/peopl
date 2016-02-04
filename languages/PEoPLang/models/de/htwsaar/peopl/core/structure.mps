@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(PEoPLang.structure)">
+<model ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(de.htwsaar.peopl.core.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -63,104 +63,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="6K8EDSn5d7G">
-    <property role="1pbfSe" value="2095219574" />
-    <property role="TrG5h" value="Module" />
-    <property role="3GE5qa" value="Base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1qo4eUnb5L1" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="intermediate" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
-    </node>
-    <node concept="1TJgyj" id="4RpwnfCLxt_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4RpwnfCLxtr" resolve="Color" />
-    </node>
-    <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6K8EDSn5e6t">
-    <property role="1pbfSe" value="2095215557" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="VP" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3osquRAe7s" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="6K8EDSn5e6Y" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="fragmentIntermediates" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
-    </node>
-    <node concept="1TJgyj" id="5L3eIBSVdrp" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="placeholderIntermediates" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
-    </node>
-    <node concept="PrWs8" id="6K8EDSn5e71" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6K8EDSn5e6T">
-    <property role="1pbfSe" value="2095215529" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="Fragment" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyi" id="36tKSlW1Xz5" role="1TKVEl">
-      <property role="TrG5h" value="id" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="M6xJ_" id="6K8EDSn5e74" role="lGtFl">
-      <property role="Hh88m" value="Fragment" />
-      <node concept="tn0Fv" id="36tKSlW0N9I" role="HhnKV">
-        <property role="tnX3d" value="true" />
-      </node>
-      <node concept="trNpa" id="6K8EDSn5e7d" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="6K8EDSn5e7h" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fragmentIntermediate" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
-    </node>
-    <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="modulIntermediate" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
-    </node>
-    <node concept="1TJgyj" id="3bTHxkSSvaM" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="chosenModule" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="6K8EDSn5e6U">
-    <property role="1pbfSe" value="2095215528" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="FragmentVPIntermediate" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fragmentReference" />
-      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="7Ufy5VQFkPw">
     <property role="1pbfSe" value="1966921150" />
     <property role="TrG5h" value="ModuleDefinition" />
@@ -179,21 +81,6 @@
     </node>
     <node concept="PrWs8" id="7l1ua4yAdEc" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5qz55Ysv7DE">
-    <property role="1pbfSe" value="216035639" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="FragmentModuleIntermediate" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fragment" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
-    </node>
-    <node concept="PrWs8" id="6nmwsNvm4OK" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="_uCk0nlJLH">
@@ -251,94 +138,6 @@
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2LgBOmLVkOn">
-    <property role="1pbfSe" value="566367140" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="Placeholder" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="2LgBOmLVkOo" role="lGtFl">
-      <property role="Hh88m" value="Placeholder" />
-      <node concept="tn0Fv" id="2LgBOmLVkOq" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="2LgBOmLVkOs" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="2LgBOmLVOSa" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="placeholderIntermediate" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2LgBOmLVkOw">
-    <property role="1pbfSe" value="566367131" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="PlaceholderVPIntermediate" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2LgBOmLVkOx" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="placeholderReference" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2LgBOmLVkOn" resolve="Placeholder" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2LgBOmLVOS4">
-    <property role="1pbfSe" value="566235831" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="ReusableContent" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5L3eIBSVcet" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="linkToVP" />
-      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5L3eIBSVDSC">
-    <property role="1pbfSe" value="1429330193" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="VariabiliyDataStorage" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="5L3eIBSVDSD" role="lGtFl">
-      <property role="Hh88m" value="VariabilityDataStorage" />
-      <node concept="tn0Fv" id="5L3eIBSVDSF" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="5L3eIBSVDSH" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="5L3eIBSVDSJ" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Vps" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
-    </node>
-    <node concept="1TJgyj" id="3N55tyoWt1w" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referencedVP" />
-      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4RpwnfCLxtr">
-    <property role="1pbfSe" value="916429006" />
-    <property role="3GE5qa" value="Base" />
-    <property role="TrG5h" value="Color" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
-      <property role="TrG5h" value="red" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="4RpwnfCLxtu" role="1TKVEl">
-      <property role="TrG5h" value="green" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
-      <property role="TrG5h" value="blue" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="4NJLQZxDJZU">
     <property role="1pbfSe" value="781633385" />
     <property role="3GE5qa" value="Configuration" />
@@ -370,6 +169,207 @@
       <node concept="trNpa" id="7LcQBY7lz6o" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5L3eIBSVDSC">
+    <property role="1pbfSe" value="1429330193" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="VariabiliyDataStorage" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="5L3eIBSVDSD" role="lGtFl">
+      <property role="Hh88m" value="VariabilityDataStorage" />
+      <node concept="tn0Fv" id="5L3eIBSVDSF" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="5L3eIBSVDSH" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="5L3eIBSVDSJ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Vps" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
+    </node>
+    <node concept="1TJgyj" id="3N55tyoWt1w" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referencedVP" />
+      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6K8EDSn5e6t">
+    <property role="1pbfSe" value="2095215557" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="VP" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3osquRAe7s" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="6K8EDSn5e6Y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fragmentIntermediates" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="5L3eIBSVdrp" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="placeholderIntermediates" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
+    </node>
+    <node concept="PrWs8" id="6K8EDSn5e71" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVOS4">
+    <property role="1pbfSe" value="566235831" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="ReusableContent" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5L3eIBSVcet" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="linkToVP" />
+      <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVkOw">
+    <property role="1pbfSe" value="566367131" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="PlaceholderVPIntermediate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2LgBOmLVkOx" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="placeholderReference" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVkOn" resolve="Placeholder" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2LgBOmLVkOn">
+    <property role="1pbfSe" value="566367140" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Placeholder" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="2LgBOmLVkOo" role="lGtFl">
+      <property role="Hh88m" value="Placeholder" />
+      <node concept="tn0Fv" id="2LgBOmLVkOq" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="2LgBOmLVkOs" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="2LgBOmLVOSa" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="placeholderIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6K8EDSn5d7G">
+    <property role="1pbfSe" value="2095219574" />
+    <property role="TrG5h" value="Module" />
+    <property role="3GE5qa" value="Base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1qo4eUnb5L1" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="intermediate" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="4RpwnfCLxt_" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="color" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4RpwnfCLxtr" resolve="Color" />
+    </node>
+    <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6K8EDSn5e6U">
+    <property role="1pbfSe" value="2095215528" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="FragmentVPIntermediate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentReference" />
+      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5qz55Ysv7DE">
+    <property role="1pbfSe" value="216035639" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="FragmentModuleIntermediate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragment" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+    <node concept="PrWs8" id="6nmwsNvm4OK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6K8EDSn5e6T">
+    <property role="1pbfSe" value="2095215529" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Fragment" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="36tKSlW1Xz5" role="1TKVEl">
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="6K8EDSn5e74" role="lGtFl">
+      <property role="Hh88m" value="Fragment" />
+      <node concept="tn0Fv" id="36tKSlW0N9I" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="6K8EDSn5e7d" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="6K8EDSn5e7h" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="modulIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="3bTHxkSSvaM" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="chosenModule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4RpwnfCLxtr">
+    <property role="1pbfSe" value="916429006" />
+    <property role="3GE5qa" value="Base" />
+    <property role="TrG5h" value="Color" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
+      <property role="TrG5h" value="red" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtu" role="1TKVEl">
+      <property role="TrG5h" value="green" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
+      <property role="TrG5h" value="blue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:fe3837c0-5ed5-44e4-b192-7839712f4db8(PEoPLang.refactorings)">
+<model ref="r:fe3837c0-5ed5-44e4-b192-7839712f4db8(de.htwsaar.peopl.core.refactorings)">
   <persistence version="9" />
   <languages>
     <use id="3ecd7c84-cde3-45de-886c-135ecc69b742" name="jetbrains.mps.lang.refactoring" version="0" />

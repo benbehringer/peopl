@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:af18e095-31d3-45c9-8c2e-05bd8237fa3a(PEoPLang.actions)">
+<model ref="r:af18e095-31d3-45c9-8c2e-05bd8237fa3a(de.htwsaar.peopl.core.actions)">
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />

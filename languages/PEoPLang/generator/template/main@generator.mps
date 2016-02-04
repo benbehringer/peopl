@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:990fdaf0-3059-42a3-b125-008fdd672691(PEoPLang.generator.template.main@generator)">
+<model ref="r:990fdaf0-3059-42a3-b125-008fdd672691(de.htwsaar.peopl.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
     <use id="a84aa018-9566-4f1d-9095-f51984717a5d" name="PEoPLang" version="0" />

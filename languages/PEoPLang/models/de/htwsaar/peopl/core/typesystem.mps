@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:63168cc3-f4cf-4f7d-8432-d7151e1b13d5(PEoPLang.typesystem)">
+<model ref="r:63168cc3-f4cf-4f7d-8432-d7151e1b13d5(de.htwsaar.peopl.core.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
