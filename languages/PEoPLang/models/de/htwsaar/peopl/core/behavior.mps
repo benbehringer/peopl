@@ -268,6 +268,12 @@
   <node concept="13h7C7" id="36tKSlW0Mns">
     <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="v9cq:6K8EDSn5e6T" resolve="Fragment" />
+    <node concept="13i0hz" id="7MEoPae8Umu" role="13h7CS">
+      <property role="TrG5h" value="replaceParentNodeForScopeExtension" />
+      <node concept="3Tm1VV" id="7MEoPae8Umv" role="1B3o_S" />
+      <node concept="3cqZAl" id="7MEoPae8Vb3" role="3clF45" />
+      <node concept="3clFbS" id="7MEoPae8Umx" role="3clF47" />
+    </node>
     <node concept="13i0hz" id="3osquR$0y2" role="13h7CS">
       <property role="TrG5h" value="createVPandConnect" />
       <node concept="3Tm1VV" id="3osquR$0y3" role="1B3o_S" />
