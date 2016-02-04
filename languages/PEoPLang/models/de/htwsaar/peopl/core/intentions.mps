@@ -88,7 +88,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -1032,14 +1031,17 @@
   </node>
   <node concept="2S6QgY" id="7MEoPaebOSm">
     <property role="TrG5h" value="SModelChangeListener" />
+    <property role="3GE5qa" value="test" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2Sbjvc" id="7MEoPaebOSn" role="2ZfgGD">
       <node concept="3clFbS" id="7MEoPaebOSo" role="2VODD2">
         <node concept="3clFbH" id="7MEoPaebPJZ" role="3cqZAp" />
         <node concept="3clFbH" id="7MEoPaebPKp" role="3cqZAp" />
-        <node concept="3clFbF" id="7MEoPaebP$a" role="3cqZAp">
-          <node concept="2OqwBi" id="7MEoPaebXOt" role="3clFbG">
-            <node concept="2JrnkZ" id="7MEoPaebX8B" role="2Oq$k0">
+        <node concept="1X3_iC" id="7MEoPaec0$$" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="7MEoPaebP$a" role="8Wnug">
+            <node concept="2JrnkZ" id="7MEoPaebX8B" role="3clFbG">
               <node concept="2OqwBi" id="7MEoPaebUL4" role="2JrQYb">
                 <node concept="2OqwBi" id="7MEoPaebP_6" role="2Oq$k0">
                   <node concept="2Sf5sV" id="7MEoPaebP$8" role="2Oq$k0" />
@@ -1054,7 +1056,6 @@
                 <node concept="I4A8Y" id="7MEoPaebVwK" role="2OqNvi" />
               </node>
             </node>
-            <node concept="1B$H19" id="7MEoPaebY0G" role="2OqNvi" />
           </node>
         </node>
       </node>

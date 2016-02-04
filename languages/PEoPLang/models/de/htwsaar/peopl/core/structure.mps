@@ -63,24 +63,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="7LcQBY7ky64">
-    <property role="1pbfSe" value="60750851" />
-    <property role="TrG5h" value="MyTestAnnotation" />
-    <property role="3GE5qa" value="test" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="PrWs8" id="7LcQBY7ky65" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="M6xJ_" id="7LcQBY7ky67" role="lGtFl">
-      <property role="Hh88m" value="MyTestAnnotation" />
-      <node concept="tn0Fv" id="7LcQBY7ky69" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="7LcQBY7lz6o" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-  </node>
   <node concept="1TIwiD" id="5L3eIBSVDSC">
     <property role="1pbfSe" value="1429330193" />
     <property role="3GE5qa" value="" />
