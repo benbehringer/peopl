@@ -3,7 +3,11 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/PEoPLang/PEoPLang.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/PEoPLang/sandbox/PEoPLang.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/PEoPLang/de.htwsaar.peopl.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/PEoPLang/sandbox/de.htwsaar.peopl.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.config/de.htwsaar.peopl.config.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.langdep.java/de.htwsaar.peopl.langdep.java.mpl" folder="" />
     </projectModules>
   </component>
 </project>

@@ -2,12 +2,13 @@
 <model ref="r:464fb8bd-9859-4d46-8a62-188aecedf67c(PEoPLang.sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="a84aa018-9566-4f1d-9095-f51984717a5d" name="PEoPLang" version="0" />
+    <use id="a84aa018-9566-4f1d-9095-f51984717a5d" name="de.htwsaar.peopl.core" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config" version="0" />
   </languages>
   <imports>
     <import index="pz2c" ref="r:2a308ea0-c7e3-4fa5-a624-ad74ee5cfab5(jetbrains.mps.baseLanguage.util)" />
@@ -92,41 +93,40 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="a84aa018-9566-4f1d-9095-f51984717a5d" name="PEoPLang">
-      <concept id="9119657711895399776" name="PEoPLang.structure.ModuleDefinition" flags="ng" index="288GkY">
+    <language id="a84aa018-9566-4f1d-9095-f51984717a5d" name="de.htwsaar.peopl.core">
+      <concept id="9119657711895399776" name="de.htwsaar.peopl.core.structure.ModuleDefinition" flags="ng" index="288GkY">
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
-      <concept id="3193227257492360471" name="PEoPLang.structure.Placeholder" flags="ng" index="2tJt9i">
+      <concept id="3193227257492360471" name="de.htwsaar.peopl.core.structure.Placeholder" flags="ng" index="2tJt9i">
         <reference id="3193227257492491786" name="placeholderIntermediate" index="2tJX5f" />
       </concept>
-      <concept id="3193227257492360480" name="PEoPLang.structure.PlaceholderVPIntermediate" flags="ng" index="2tJt9_">
+      <concept id="3193227257492360480" name="de.htwsaar.peopl.core.structure.PlaceholderVPIntermediate" flags="ng" index="2tJt9_">
         <reference id="3193227257492360481" name="placeholderReference" index="2tJt9$" />
       </concept>
-      <concept id="675154290793708653" name="PEoPLang.structure.ProductLineConfig" flags="ng" index="u25OH" />
-      <concept id="6648222251507162664" name="PEoPLang.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
+      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
         <child id="6648222251507162671" name="Vps" index="2$Fqj6" />
       </concept>
-      <concept id="5609657145693181787" name="PEoPLang.structure.Color" flags="ng" index="2_7ToC">
+      <concept id="5609657145693181787" name="de.htwsaar.peopl.core.structure.Color" flags="ng" index="2_7ToC">
         <property id="5609657145693181793" name="blue" index="2_7Toi" />
         <property id="5609657145693181790" name="green" index="2_7ToH" />
         <property id="5609657145693181788" name="red" index="2_7ToJ" />
       </concept>
-      <concept id="6242855909345491562" name="PEoPLang.structure.FragmentModuleIntermediate" flags="ng" index="3aRQSP">
+      <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.FragmentModuleIntermediate" flags="ng" index="3aRQSP">
         <reference id="6242855909345491563" name="fragment" index="3aRQSO" />
       </concept>
-      <concept id="7784659551878701469" name="PEoPLang.structure.VP" flags="ng" index="1V74G3">
+      <concept id="7784659551878701469" name="de.htwsaar.peopl.core.structure.VP" flags="ng" index="1V74G3">
         <child id="6648222251507046105" name="placeholderIntermediates" index="2$FYKK" />
         <child id="7784659551878701502" name="fragmentIntermediates" index="1V74Gw" />
       </concept>
-      <concept id="7784659551878701498" name="PEoPLang.structure.FragmentVPIntermediate" flags="ng" index="1V74G$">
+      <concept id="7784659551878701498" name="de.htwsaar.peopl.core.structure.FragmentVPIntermediate" flags="ng" index="1V74G$">
         <reference id="7784659551878701499" name="fragmentReference" index="1V74G_" />
       </concept>
-      <concept id="7784659551878701497" name="PEoPLang.structure.Fragment" flags="ng" index="1V74GB">
+      <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
         <reference id="3673167173362250418" name="chosenModule" index="a64iB" />
         <reference id="6242855909345491595" name="modulIntermediate" index="3aRQVk" />
         <reference id="7784659551878701521" name="fragmentIntermediate" index="1V74Hf" />
       </concept>
-      <concept id="7784659551878697452" name="PEoPLang.structure.Module" flags="ng" index="1V77HM">
+      <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM">
         <child id="5609657145693181797" name="color" index="2_7Tom" />
         <child id="6242855909345491589" name="intermediate" index="3aRQVq" />
       </concept>
@@ -146,10 +146,10 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.config.structure.ProductLineConfig" flags="ng" index="u25OH" />
+    </language>
   </registry>
-  <node concept="u25OH" id="_uCk0nm58_">
-    <property role="3GE5qa" value="Configuration" />
-  </node>
   <node concept="288GkY" id="5AXGYflbIxp">
     <property role="3GE5qa" value="Configuration" />
     <property role="TrG5h" value="Modules" />
@@ -2725,6 +2725,9 @@
       <node concept="3cqZAl" id="4wG5EYdrIYd" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="4wG5EYdrFjU" role="1B3o_S" />
+  </node>
+  <node concept="u25OH" id="7MEoPae7Wts">
+    <property role="3GE5qa" value="Configuration" />
   </node>
 </model>
 

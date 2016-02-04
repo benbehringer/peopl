@@ -10,6 +10,7 @@
     <dependency reexport="false">c7d01124-66d5-486d-8b50-7fdccb60b839(jetbrains.mps.baseLanguage.util)</dependency>
   </dependencies>
   <languageVersions>
+    <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.config" version="0" />
     <language id="a84aa018-9566-4f1d-9095-f51984717a5d" fqName="de.htwsaar.peopl.core" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />

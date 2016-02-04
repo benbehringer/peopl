@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:50fd3d22-adb5-42f9-a917-7c8b03f27f00(de.htwsaar.peopl.langdep.java.generator.template.main@generator)">
+<model ref="r:5e9b2ecc-07ec-4f95-8b08-30e75e041292(de.htwsaar.peopl.langdep.java.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="5171fcf8-9056-403a-9c80-2d516c69b032" name="de.htwsaar.peopl.langdep.java" version="-1" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.langdep.java" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
@@ -19,7 +19,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="5Gm3ZKytbur">
+  <node concept="bUwia" id="7MEoPae8DL7">
     <property role="TrG5h" value="main" />
   </node>
 </model>
