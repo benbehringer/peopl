@@ -8,6 +8,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.config/de.htwsaar.peopl.config.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.langdep.java/de.htwsaar.peopl.langdep.java.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.playground/de.htwsaar.peopl.playground.msd" folder="" />
     </projectModules>
   </component>
 </project>

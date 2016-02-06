@@ -7,7 +7,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
     <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="-1" />
     <use id="a84aa018-9566-4f1d-9095-f51984717a5d" name="de.htwsaar.peopl.core" version="-1" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.langdep.java" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -19,9 +19,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="cmfw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.event(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="i2mm" ref="r:3fe7b356-45db-4c05-a726-50fe35a3fb63(de.htwsaar.peopl.core.plugin)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -277,12 +277,6 @@
   <node concept="13h7C7" id="36tKSlW0Mns">
     <property role="3GE5qa" value="" />
     <ref role="13h7C2" to="v9cq:6K8EDSn5e6T" resolve="Fragment" />
-    <node concept="13i0hz" id="7MEoPae8Umu" role="13h7CS">
-      <property role="TrG5h" value="replaceParentNodeForScopeExtension" />
-      <node concept="3Tm1VV" id="7MEoPae8Umv" role="1B3o_S" />
-      <node concept="3cqZAl" id="7MEoPae8Vb3" role="3clF45" />
-      <node concept="3clFbS" id="7MEoPae8Umx" role="3clF47" />
-    </node>
     <node concept="13i0hz" id="3osquR$0y2" role="13h7CS">
       <property role="TrG5h" value="createVPandConnect" />
       <node concept="3Tm1VV" id="3osquR$0y3" role="1B3o_S" />
