@@ -9,17 +9,14 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config" version="-1" />
+    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.langdep.java" version="0" />
   </languages>
   <imports>
     <import index="pz2c" ref="r:2a308ea0-c7e3-4fa5-a624-ad74ee5cfab5(jetbrains.mps.baseLanguage.util)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
   </imports>
   <registry>
-    <language id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods">
-      <concept id="1894531970723270160" name="jetbrains.mps.baseLanguage.extensionMethods.structure.TypeExtension" flags="ng" index="KRBjq">
-        <child id="1894531970723323134" name="type" index="KRMoO" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -4820,10 +4817,6 @@
   <node concept="u25OH" id="7MEoPae7Wts">
     <property role="3GE5qa" value="Configuration" />
   </node>
-  <node concept="KRBjq" id="7MEoPaea70x">
-    <property role="TrG5h" value="String" />
-    <node concept="17QB3L" id="7MEoPaeabNL" role="KRMoO" />
-  </node>
   <node concept="312cEu" id="7bzdNbiQyJv">
     <property role="3GE5qa" value="Implementation" />
     <property role="TrG5h" value="TestClass2" />
@@ -4861,6 +4854,30 @@
     </node>
     <node concept="2tJIrI" id="7bzdNbiREPt" role="jymVt" />
     <node concept="3Tm1VV" id="7bzdNbiQyJw" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5rJZ0MYHhig">
+    <property role="3GE5qa" value="Implementation" />
+    <property role="TrG5h" value="TypeSystemCheck" />
+    <node concept="2tJIrI" id="4KugE_uMLWZ" role="jymVt" />
+    <node concept="3clFb_" id="4KugE_uZV7u" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="foo" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4KugE_uZV7x" role="3clF47">
+        <node concept="9aQIb" id="4KugE_v04sY" role="3cqZAp">
+          <node concept="3clFbS" id="4KugE_v04sZ" role="9aQI4">
+            <node concept="9aQIb" id="4KugE_v0d79" role="3cqZAp">
+              <node concept="3clFbS" id="4KugE_v0d7a" role="9aQI4" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4KugE_uZV7d" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4KugE_uVfUK" role="jymVt" />
+    <node concept="3Tm1VV" id="5rJZ0MYHhih" role="1B3o_S" />
   </node>
 </model>
 
