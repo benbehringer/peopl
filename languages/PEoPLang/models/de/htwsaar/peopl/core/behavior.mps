@@ -302,6 +302,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5jbJmPfCVLV" role="3cqZAp">
+          <node concept="2OqwBi" id="5jbJmPfCVNW" role="3clFbG">
+            <node concept="37vLTw" id="5jbJmPfCVLT" role="2Oq$k0">
+              <ref role="3cqZAo" node="3osquR$0yh" resolve="vp" />
+            </node>
+            <node concept="2qgKlT" id="5jbJmPfCVV7" role="2OqNvi">
+              <ref role="37wK5l" node="7sNC8lDBOe" resolve="initVP" />
+              <node concept="37vLTw" id="5jbJmPfCVVj" role="37wK5m">
+                <ref role="3cqZAo" node="5jbJmPfCVGW" resolve="currentNode" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="3osquR$1Gb" role="3cqZAp">
           <node concept="BsUDl" id="3osquR$1G9" role="3clFbG">
             <ref role="37wK5l" node="3osquR$1F4" resolve="connectToVP" />
@@ -318,6 +331,12 @@
       </node>
       <node concept="3Tqbb2" id="3osquR$0ya" role="3clF45">
         <ref role="ehGHo" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+      </node>
+      <node concept="37vLTG" id="5jbJmPfCVGW" role="3clF46">
+        <property role="TrG5h" value="currentNode" />
+        <node concept="3Tqbb2" id="5jbJmPfCVGV" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="3osquR$1F4" role="13h7CS">
