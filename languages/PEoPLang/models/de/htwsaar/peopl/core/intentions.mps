@@ -37,6 +37,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -126,6 +129,9 @@
       </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
@@ -180,6 +186,31 @@
         </node>
         <node concept="3clFbJ" id="3osquR$HIm" role="3cqZAp">
           <node concept="3clFbS" id="3osquR$HIn" role="3clFbx">
+            <node concept="3clFbF" id="7sNC8lDT30" role="3cqZAp">
+              <node concept="37vLTI" id="7sNC8lDTrz" role="3clFbG">
+                <node concept="37vLTw" id="7sNC8lDTrY" role="37vLTJ">
+                  <ref role="3cqZAo" node="3osquR$Q$D" resolve="vp" />
+                </node>
+                <node concept="2ShNRf" id="7sNC8lDEFP" role="37vLTx">
+                  <node concept="3zrR0B" id="7sNC8lDQ0Y" role="2ShVmc">
+                    <node concept="3Tqbb2" id="7sNC8lDQ10" role="3zrR0E">
+                      <ref role="ehGHo" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7sNC8lDDHK" role="3cqZAp">
+              <node concept="2OqwBi" id="7sNC8lDDTh" role="3clFbG">
+                <node concept="37vLTw" id="7sNC8lDDHI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3osquR$Q$D" resolve="vp" />
+                </node>
+                <node concept="2qgKlT" id="7sNC8lDE7h" role="2OqNvi">
+                  <ref role="37wK5l" to="xzp3:7sNC8lDBOe" resolve="initVP" />
+                  <node concept="2Sf5sV" id="7sNC8lDE8s" role="37wK5m" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3osquR_JkK" role="3cqZAp">
               <node concept="37vLTI" id="3osquR_JqN" role="3clFbG">
                 <node concept="2OqwBi" id="3osquR_JJ7" role="37vLTx">
@@ -454,7 +485,8 @@
                   <ref role="35c_gD" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
                 </node>
                 <node concept="2qgKlT" id="3osquRAo8g" role="2OqNvi">
-                  <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVDStorage" />
+                  <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVPDataStorage" />
+                  <node concept="2Sf5sV" id="7sNC8lDQyc" role="37wK5m" />
                 </node>
               </node>
               <node concept="2qgKlT" id="3osquRAokZ" role="2OqNvi">
@@ -528,6 +560,31 @@
         <node concept="3clFbH" id="2LgBOmLVCGX" role="3cqZAp" />
         <node concept="3clFbJ" id="2LgBOmLVl0O" role="3cqZAp">
           <node concept="3clFbS" id="2LgBOmLVl0P" role="3clFbx">
+            <node concept="3clFbF" id="7sNC8lDSaL" role="3cqZAp">
+              <node concept="37vLTI" id="7sNC8lDSg8" role="3clFbG">
+                <node concept="2ShNRf" id="7sNC8lDSgX" role="37vLTx">
+                  <node concept="3zrR0B" id="7sNC8lDSgV" role="2ShVmc">
+                    <node concept="3Tqbb2" id="7sNC8lDSgW" role="3zrR0E">
+                      <ref role="ehGHo" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="7sNC8lDSaJ" role="37vLTJ">
+                  <ref role="3cqZAo" node="2LgBOmLVCRM" resolve="vp" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7sNC8lDSl6" role="3cqZAp">
+              <node concept="2OqwBi" id="7sNC8lDSnt" role="3clFbG">
+                <node concept="37vLTw" id="7sNC8lDSl4" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2LgBOmLVCRM" resolve="vp" />
+                </node>
+                <node concept="2qgKlT" id="7sNC8lDSxR" role="2OqNvi">
+                  <ref role="37wK5l" to="xzp3:7sNC8lDBOe" resolve="initVP" />
+                  <node concept="2Sf5sV" id="7sNC8lDSz4" role="37wK5m" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="3osquR_KNB" role="3cqZAp">
               <node concept="37vLTI" id="3osquR_L2m" role="3clFbG">
                 <node concept="2OqwBi" id="3osquR_Lhv" role="37vLTx">
@@ -617,7 +674,8 @@
                 <ref role="35c_gD" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
               </node>
               <node concept="2qgKlT" id="3osquR_V5K" role="2OqNvi">
-                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVDStorage" />
+                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVPDataStorage" />
+                <node concept="2Sf5sV" id="7sNC8lDQDw" role="37wK5m" />
               </node>
             </node>
             <node concept="2qgKlT" id="3osquR_Vgo" role="2OqNvi">
@@ -728,6 +786,31 @@
         </node>
         <node concept="3clFbJ" id="5$T2IgTaktt" role="3cqZAp">
           <node concept="3clFbS" id="5$T2IgTaktv" role="3clFbx">
+            <node concept="3clFbF" id="7sNC8lDTUA" role="3cqZAp">
+              <node concept="37vLTI" id="7sNC8lDUjg" role="3clFbG">
+                <node concept="37vLTw" id="7sNC8lDUjE" role="37vLTJ">
+                  <ref role="3cqZAo" node="5$T2IgTakpW" resolve="vp" />
+                </node>
+                <node concept="2ShNRf" id="7sNC8lDQfT" role="37vLTx">
+                  <node concept="3zrR0B" id="7sNC8lDQoD" role="2ShVmc">
+                    <node concept="3Tqbb2" id="7sNC8lDQoF" role="3zrR0E">
+                      <ref role="ehGHo" to="v9cq:6K8EDSn5e6t" resolve="VP" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7sNC8lDCCL" role="3cqZAp">
+              <node concept="2OqwBi" id="7sNC8lDCK3" role="3clFbG">
+                <node concept="37vLTw" id="7sNC8lDCCJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5$T2IgTakpW" resolve="vp" />
+                </node>
+                <node concept="2qgKlT" id="7sNC8lDCUR" role="2OqNvi">
+                  <ref role="37wK5l" to="xzp3:7sNC8lDBOe" resolve="initVP" />
+                  <node concept="2Sf5sV" id="7sNC8lDCW2" role="37wK5m" />
+                </node>
+              </node>
+            </node>
             <node concept="1X3_iC" id="3QC4V535K_t" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -858,7 +941,8 @@
                 <ref role="35c_gD" to="v9cq:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
               </node>
               <node concept="2qgKlT" id="6G$gu4cuJCd" role="2OqNvi">
-                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVDStorage" />
+                <ref role="37wK5l" to="xzp3:3osquR_LCM" resolve="getVPDataStorage" />
+                <node concept="2Sf5sV" id="7sNC8lDUrC" role="37wK5m" />
               </node>
             </node>
             <node concept="2qgKlT" id="6G$gu4cuKgw" role="2OqNvi">
