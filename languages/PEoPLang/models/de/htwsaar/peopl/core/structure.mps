@@ -228,7 +228,7 @@
     </node>
     <node concept="1TJgyj" id="6K8EDSn5e7h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fragmentIntermediate" />
+      <property role="20kJfa" value="VpIntermediate" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
     </node>
