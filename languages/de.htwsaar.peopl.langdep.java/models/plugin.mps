@@ -2,24 +2,24 @@
 <model ref="r:0d5528c0-94d4-4e31-b0e5-fe9fb61b8942(de.htwsaar.peopl.langdep.java.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
-    <use id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="i2mm" ref="r:3fe7b356-45db-4c05-a726-50fe35a3fb63(de.htwsaar.peopl.core.plugin)" />
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
-    <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.langdep.java.structure)" implicit="true" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.langdep.java.behavior)" implicit="true" />
     <import index="v9cq" ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(de.htwsaar.peopl.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -63,7 +63,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -72,9 +72,9 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
@@ -139,6 +139,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
@@ -169,6 +173,18 @@
   <node concept="1lYeZD" id="4CFdEKN9vZI">
     <property role="TrG5h" value="ext_LangDepJava" />
     <ref role="1lYe$Y" to="i2mm:4CFdEKN9pwR" resolve="extPnt_LangDep" />
+    <node concept="3UR2Jj" id="6RYvVSE5F_p" role="lGtFl">
+      <node concept="TZ5HA" id="6RYvVSE5F_q" role="TZ5H$">
+        <node concept="1dT_AC" id="6RYvVSE5F_r" role="1dT_Ay">
+          <property role="1dT_AB" value="This code is deprecated and should be removed in the near future." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6RYvVSE5FAJ" role="TZ5H$">
+        <node concept="1dT_AC" id="6RYvVSE5FAK" role="1dT_Ay">
+          <property role="1dT_AB" value="We don't reconstruct the AST anymore. Instead we refine baselanguage concepts." />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4CFdEKN9vZJ" role="1B3o_S" />
     <node concept="2tJIrI" id="4CFdEKN9vZK" role="jymVt" />
     <node concept="3tTeZs" id="4CFdEKN9vZL" role="jymVt">
@@ -197,8 +213,10 @@
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
                   <property role="TrG5h" value="reconstructAST" />
+                  <node concept="3Tqbb2" id="5EdYWbALFxT" role="3clF45">
+                    <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                  </node>
                   <node concept="3Tm1VV" id="4CFdEKN9yoP" role="1B3o_S" />
-                  <node concept="3cqZAl" id="4CFdEKN9yoQ" role="3clF45" />
                   <node concept="37vLTG" id="4CFdEKN9yoR" role="3clF46">
                     <property role="TrG5h" value="currentNode" />
                     <node concept="3Tqbb2" id="4CFdEKN9yoS" role="1tU5fm">
@@ -206,10 +224,46 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="4CFdEKN9yoT" role="3clF47">
-                    <node concept="34ab3g" id="4CFdEKN9yuc" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="4CFdEKN9yue" role="34bqiv">
-                        <property role="Xl_RC" value="ext_LangDepJava: trying to reconstruct the AST" />
+                    <node concept="3cpWs6" id="5EdYWbALFBH" role="3cqZAp">
+                      <node concept="2OqwBi" id="5EdYWbAMnpJ" role="3cqZAk">
+                        <node concept="35c_gC" id="5EdYWbAMnjD" role="2Oq$k0">
+                          <ref role="35c_gD" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+                        </node>
+                        <node concept="2qgKlT" id="5EdYWbAMnGP" role="2OqNvi">
+                          <ref role="37wK5l" to="1lrk:7bzdNbiQijX" resolve="exchangeWithBlockStatement" />
+                          <node concept="37vLTw" id="5EdYWbAMnKj" role="37wK5m">
+                            <ref role="3cqZAo" node="4CFdEKN9yoR" resolve="currentNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="gnPVcdBf68" role="jymVt" />
+                <node concept="3clFb_" id="gnPVcdBf2D" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="canBeAttributeded" />
+                  <node concept="3Tm1VV" id="gnPVcdBf2F" role="1B3o_S" />
+                  <node concept="10P_77" id="gnPVcdBf2G" role="3clF45" />
+                  <node concept="37vLTG" id="gnPVcdBf2H" role="3clF46">
+                    <property role="TrG5h" value="node" />
+                    <node concept="3Tqbb2" id="gnPVcdBf2I" role="1tU5fm">
+                      <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="gnPVcdBf2K" role="3clF47">
+                    <node concept="3cpWs6" id="gnPVcdBfeW" role="3cqZAp">
+                      <node concept="2OqwBi" id="gnPVcdBfpT" role="3cqZAk">
+                        <node concept="35c_gC" id="gnPVcdBfib" role="2Oq$k0">
+                          <ref role="35c_gD" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+                        </node>
+                        <node concept="2qgKlT" id="gnPVcdBf_1" role="2OqNvi">
+                          <ref role="37wK5l" to="1lrk:gnPVcdAVkQ" resolve="canBeAttributed" />
+                          <node concept="37vLTw" id="gnPVcdBfDp" role="37wK5m">
+                            <ref role="3cqZAo" node="gnPVcdBf2H" resolve="node" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -222,18 +276,6 @@
       <node concept="q3mfm" id="4CFdEKN9vZT" role="3clF45">
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="4CFdEKN9vZO" resolve="get" />
-      </node>
-    </node>
-    <node concept="3UR2Jj" id="6RYvVSE5F_p" role="lGtFl">
-      <node concept="TZ5HA" id="6RYvVSE5F_q" role="TZ5H$">
-        <node concept="1dT_AC" id="6RYvVSE5F_r" role="1dT_Ay">
-          <property role="1dT_AB" value="This code is deprecated and should be removed in the near future." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="6RYvVSE5FAJ" role="TZ5H$">
-        <node concept="1dT_AC" id="6RYvVSE5FAK" role="1dT_Ay">
-          <property role="1dT_AB" value="We don't reconstruct the AST anymore. Instead we refine baselanguage concepts." />
-        </node>
       </node>
     </node>
   </node>
