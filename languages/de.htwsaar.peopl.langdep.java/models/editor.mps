@@ -12,6 +12,7 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -24,6 +25,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -42,6 +44,16 @@
         <ref role="1NtTu8" to="tpee:fK9aQHS" />
       </node>
       <node concept="l2Vlx" id="3MC9PcmqPLc" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4qvLkVcGXtu">
+    <property role="3GE5qa" value="" />
+    <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+    <node concept="3EZMnI" id="4qvLkVcGXtE" role="2wV5jI">
+      <node concept="2iRkQZ" id="4qvLkVcGXtF" role="2iSdaV" />
+      <node concept="3F2HdR" id="4qvLkVcGXtB" role="3EZMnx">
+        <ref role="1NtTu8" to="uqoo:4qvLkVcGGJq" />
+      </node>
     </node>
   </node>
 </model>
