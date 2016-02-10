@@ -30,12 +30,13 @@
   <node concept="1TIwiD" id="7bzdNbiQijk">
     <property role="1pbfSe" value="1169972230" />
     <property role="TrG5h" value="PeoplBlockStatement" />
+    <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
   </node>
   <node concept="1TIwiD" id="6qqyTRuTqUc">
     <property role="1pbfSe" value="1166031401" />
     <property role="TrG5h" value="PeoplClassConcept" />
-    <property role="3GE5qa" value="extensions" />
+    <property role="3GE5qa" value="" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
   </node>

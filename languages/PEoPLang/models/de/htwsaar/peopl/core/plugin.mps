@@ -56,13 +56,17 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="3HP615" id="4CFdEKN9mKc">
-    <property role="TrG5h" value="ExtPntIn_LangDep" />
+    <property role="TrG5h" value="IExt_Fragment_Behavior" />
+    <property role="3GE5qa" value="extensionPointInterfaces" />
     <node concept="3clFb_" id="4CFdEKN9mOI" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -82,7 +86,7 @@
     <node concept="3clFb_" id="gnPVcdB7TK" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="canBeAttributeded" />
+      <property role="TrG5h" value="canBeAttributed" />
       <node concept="3clFbS" id="gnPVcdB7TN" role="3clF47" />
       <node concept="3Tm1VV" id="gnPVcdB7TO" role="1B3o_S" />
       <node concept="10P_77" id="gnPVcdB7CG" role="3clF45" />
@@ -96,9 +100,10 @@
     <node concept="3Tm1VV" id="4CFdEKN9mKd" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="4CFdEKN9pwR">
-    <property role="TrG5h" value="extPnt_LangDep" />
+    <property role="TrG5h" value="Ext_Fragment_Behavior" />
+    <property role="3GE5qa" value="extensionPoints" />
     <node concept="3uibUv" id="4CFdEKN9vUM" role="luc8K">
-      <ref role="3uigEE" node="4CFdEKN9mKc" resolve="ExtPntIn_LangDep" />
+      <ref role="3uigEE" node="4CFdEKN9mKc" resolve="IExt_Fragment_Behavior" />
     </node>
   </node>
 </model>

@@ -389,6 +389,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4qvLkVcG5Iu" role="3cqZAp">
+          <node concept="37vLTI" id="4qvLkVcG5Ly" role="3clFbG">
+            <node concept="3cmrfG" id="4qvLkVcG5M2" role="37vLTx">
+              <property role="3cmrfH" value="3" />
+            </node>
+            <node concept="37vLTw" id="4qvLkVcG5Is" role="37vLTJ">
+              <ref role="3cqZAo" node="5nKloA8Oxo1" resolve="medal" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="5nKloA87uMr" role="1B3o_S" />
       <node concept="3cqZAl" id="5nKloA87uMA" role="3clF45" />

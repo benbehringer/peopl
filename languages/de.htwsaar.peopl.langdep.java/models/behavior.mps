@@ -164,6 +164,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -178,7 +179,8 @@
     </language>
   </registry>
   <node concept="13h7C7" id="7bzdNbiQijU">
-    <ref role="13h7C2" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+    <property role="3GE5qa" value="" />
+    <ref role="13h7C2" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
     <node concept="13i0hz" id="7bzdNbiQijX" role="13h7CS">
       <property role="TrG5h" value="exchangeWithBlockStatement" />
       <property role="2Ki8OM" value="true" />
@@ -201,7 +203,7 @@
           <node concept="3cpWsn" id="7bzdNbiQi$T" role="3cpWs9">
             <property role="TrG5h" value="blockNode" />
             <node concept="3Tqbb2" id="7bzdNbiQi$O" role="1tU5fm">
-              <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+              <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
             </node>
             <node concept="10Nm6u" id="7bzdNbiQiBj" role="33vP2m" />
           </node>
@@ -215,7 +217,7 @@
                 <node concept="2ShNRf" id="7bzdNbiQj5C" role="37vLTx">
                   <node concept="3zrR0B" id="7bzdNbiQj5A" role="2ShVmc">
                     <node concept="3Tqbb2" id="7bzdNbiQj5B" role="3zrR0E">
-                      <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+                      <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
                     </node>
                   </node>
                 </node>
@@ -326,7 +328,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="7bzdNbiQik5" role="3clF45">
-        <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+        <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
       </node>
       <node concept="37vLTG" id="7bzdNbiQikP" role="3clF46">
         <property role="TrG5h" value="nodeToReplace" />

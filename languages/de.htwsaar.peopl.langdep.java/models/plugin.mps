@@ -166,6 +166,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -178,8 +179,9 @@
     </language>
   </registry>
   <node concept="1lYeZD" id="4CFdEKN9vZI">
-    <property role="TrG5h" value="ext_LangDepJava" />
-    <ref role="1lYe$Y" to="i2mm:4CFdEKN9pwR" resolve="extPnt_LangDep" />
+    <property role="TrG5h" value="ExtDef_Fragment_Behavior" />
+    <property role="3GE5qa" value="extensionPointDefinitions" />
+    <ref role="1lYe$Y" to="i2mm:4CFdEKN9pwR" resolve="Ext_Fragment_Behavior" />
     <node concept="3UR2Jj" id="6RYvVSE5F_p" role="lGtFl">
       <node concept="TZ5HA" id="6RYvVSE5F_q" role="TZ5H$">
         <node concept="1dT_AC" id="6RYvVSE5F_r" role="1dT_Ay">
@@ -213,7 +215,7 @@
             <node concept="YeOm9" id="4CFdEKN9yoI" role="2ShVmc">
               <node concept="1Y3b0j" id="4CFdEKN9yoL" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="i2mm:4CFdEKN9mKc" resolve="ExtPntIn_LangDep" />
+                <ref role="1Y3XeK" to="i2mm:4CFdEKN9mKc" resolve="IExt_Fragment_Behavior" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="4CFdEKN9yoM" role="1B3o_S" />
                 <node concept="3clFb_" id="4CFdEKN9yoN" role="jymVt">
@@ -250,7 +252,7 @@
                 <node concept="3clFb_" id="gnPVcdBf2D" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
-                  <property role="TrG5h" value="canBeAttributeded" />
+                  <property role="TrG5h" value="canBeAttributed" />
                   <node concept="3Tm1VV" id="gnPVcdBf2F" role="1B3o_S" />
                   <node concept="10P_77" id="gnPVcdBf2G" role="3clF45" />
                   <node concept="37vLTG" id="gnPVcdBf2H" role="3clF46">
@@ -288,6 +290,7 @@
   </node>
   <node concept="1lYeZD" id="6RYvVSE5FCI">
     <property role="TrG5h" value="ExtDef_RulesFunctions_BaseLanguage" />
+    <property role="3GE5qa" value="extensionPointDefinitions" />
     <ref role="1lYe$Y" to="tpec:1TRNIlyFLm6" resolve="Ext_RulesFunctions_BaseLanguage" />
     <node concept="3Tm1VV" id="6RYvVSE5FCJ" role="1B3o_S" />
     <node concept="2tJIrI" id="6RYvVSE5FCK" role="jymVt" />
@@ -456,6 +459,7 @@
   </node>
   <node concept="1lYeZD" id="5nKloA8NY0g">
     <property role="TrG5h" value="ExtDef_StatementList_Behavior" />
+    <property role="3GE5qa" value="extensionPointDefinitions" />
     <ref role="1lYe$Y" to="tpec:1TRNIlyOA5T" resolve="Ext_StatementList_Behavior" />
     <node concept="3Tm1VV" id="5nKloA8NY0h" role="1B3o_S" />
     <node concept="2tJIrI" id="5nKloA8NY0i" role="jymVt" />

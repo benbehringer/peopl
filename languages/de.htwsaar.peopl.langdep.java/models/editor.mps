@@ -31,9 +31,15 @@
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="24kQdi" id="7bzdNbiQijF">
-    <ref role="1XX52x" to="uqoo:7bzdNbiQijk" resolve="PEoPLBlockStatement" />
+    <property role="3GE5qa" value="" />
+    <ref role="1XX52x" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
     <node concept="3EZMnI" id="3MC9PcmqPL9" role="2wV5jI">
       <node concept="3F1sOY" id="3MC9PcmqPLj" role="3EZMnx">
         <ref role="1NtTu8" to="tpee:fK9aQHS" />
