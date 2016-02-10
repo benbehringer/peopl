@@ -53,14 +53,14 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="class" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
     <node concept="1TJgyj" id="4qvLkVcGGJq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="classes" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
-    </node>
-    <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
