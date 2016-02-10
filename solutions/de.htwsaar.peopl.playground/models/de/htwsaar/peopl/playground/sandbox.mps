@@ -62,7 +62,7 @@
       <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
         <reference id="3673167173362250418" name="chosenModule" index="a64iB" />
         <reference id="6242855909345491595" name="modulIntermediate" index="3aRQVk" />
-        <reference id="7784659551878701521" name="fragmentIntermediate" index="1V74Hf" />
+        <reference id="7784659551878701521" name="VpIntermediate" index="1V74Hf" />
       </concept>
       <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM">
         <child id="5609657145693181797" name="color" index="2_7Tom" />
@@ -249,7 +249,7 @@
     <node concept="2tJIrI" id="6qqyTRuUath" role="jymVt" />
     <node concept="3clFb_" id="6RYvVSE7I3X" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="foobar" />
+      <property role="TrG5h" value="foho" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
