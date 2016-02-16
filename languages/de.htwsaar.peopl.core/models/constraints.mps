@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:38035866-ce22-4b62-9c76-88e80b5e1ce1(de.htwsaar.peopl.core.constraints)">
+<model ref="r:c415b9c7-4944-44a3-bc24-b843e3831a1d(de.htwsaar.peopl.core.constraints)">
   <persistence version="9" />
   <languages>
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />

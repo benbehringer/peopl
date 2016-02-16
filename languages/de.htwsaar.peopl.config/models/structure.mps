@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="v9cq" ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(de.htwsaar.peopl.core.structure)" />
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -77,7 +77,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="connectedModule" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="v9cq:6K8EDSn5d7G" resolve="Module" />
+      <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     </node>
   </node>
   <node concept="1TIwiD" id="4NJLQZxDJZU">

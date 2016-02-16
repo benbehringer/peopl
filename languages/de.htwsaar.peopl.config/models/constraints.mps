@@ -6,7 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="v9cq" ref="r:f6dd1409-542b-4f07-b417-52b06dd8c6a4(de.htwsaar.peopl.core.structure)" />
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.config.structure)" implicit="true" />
   </imports>
   <registry>
@@ -33,7 +33,7 @@
     <ref role="1M2myG" to="sj65:4NJLQZxDJZU" resolve="ModuleExpression" />
     <node concept="3EP7_v" id="2QN4XY8LCtD" role="1MtirG">
       <node concept="1dDu$B" id="2QN4XY8LCtH" role="3EP$qY">
-        <ref role="1dDu$A" to="v9cq:6K8EDSn5d7G" resolve="Module" />
+        <ref role="1dDu$A" to="xf8r:6K8EDSn5d7G" resolve="Module" />
       </node>
     </node>
   </node>

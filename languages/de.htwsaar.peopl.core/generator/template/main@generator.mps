@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4d559fdb-7efe-480c-a155-6b55812ee180(de.htwsaar.peopl.core.generator.template.main@generator)">
+<model ref="r:c51a4525-74e4-49b4-bb46-a26fd4c2d756(de.htwsaar.peopl.core.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="e9e6e270-cce8-41d5-85bb-c6725df016f2" name="de.htwsaar.peopl.core" version="-1" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />
@@ -19,7 +18,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="5Gm3ZKytbo9">
+  <node concept="bUwia" id="2Ew4jj7duFM">
     <property role="TrG5h" value="main" />
   </node>
 </model>
