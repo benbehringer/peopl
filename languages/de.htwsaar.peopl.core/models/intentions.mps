@@ -909,5 +909,37 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1Sqr8spBe6f">
+    <property role="3GE5qa" value="test" />
+    <property role="TrG5h" value="StartListener" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="1Sqr8spBe6g" role="2ZfVej">
+      <node concept="3clFbS" id="1Sqr8spBe6h" role="2VODD2">
+        <node concept="3clFbF" id="1Sqr8spBe7C" role="3cqZAp">
+          <node concept="Xl_RD" id="1Sqr8spBe7B" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL - test -&gt; StartListener" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1Sqr8spBe6i" role="2ZfgGD">
+      <node concept="3clFbS" id="1Sqr8spBe6j" role="2VODD2">
+        <node concept="3clFbF" id="1xhgcxTCaMx" role="3cqZAp">
+          <node concept="2OqwBi" id="1xhgcxTCaOU" role="3clFbG">
+            <node concept="35c_gC" id="1xhgcxTCaMw" role="2Oq$k0">
+              <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
+            </node>
+            <node concept="2qgKlT" id="1xhgcxTCaWk" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:3OZ$K5miTuq" resolve="addSNodeChangeListener" />
+              <node concept="2OqwBi" id="1xhgcxTCaYt" role="37wK5m">
+                <node concept="2Sf5sV" id="1xhgcxTCaXc" role="2Oq$k0" />
+                <node concept="I4A8Y" id="1xhgcxTCb16" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
