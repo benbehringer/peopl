@@ -309,11 +309,11 @@
                     <node concept="3cpWs6" id="gnPVcdBfeW" role="3cqZAp">
                       <node concept="2OqwBi" id="gnPVcdBfpT" role="3cqZAk">
                         <node concept="35c_gC" id="gnPVcdBfib" role="2Oq$k0">
-                          <ref role="35c_gD" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                          <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
                         </node>
-                        <node concept="2qgKlT" id="gnPVcdBf_1" role="2OqNvi">
-                          <ref role="37wK5l" to="1lrk:gnPVcdAVkQ" resolve="canBeAttributed" />
-                          <node concept="37vLTw" id="gnPVcdBfDp" role="37wK5m">
+                        <node concept="2qgKlT" id="70Uiey1XJxS" role="2OqNvi">
+                          <ref role="37wK5l" to="1lrk:70Uiey1XJax" resolve="isFeaturizable" />
+                          <node concept="37vLTw" id="70Uiey1XJ_7" role="37wK5m">
                             <ref role="3cqZAo" node="gnPVcdBf2H" resolve="node" />
                           </node>
                         </node>
