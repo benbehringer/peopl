@@ -16,6 +16,7 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -62,6 +63,10 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="70Uiey1XJat">
+    <property role="1pbfSe" value="231654523" />
+    <property role="TrG5h" value="VariabilityHelper" />
   </node>
 </model>
 

@@ -261,9 +261,9 @@
           <node concept="9aQIb" id="5$T2IgTaqV3" role="9aQIa">
             <node concept="3clFbS" id="5$T2IgTaqV4" role="9aQI4">
               <node concept="34ab3g" id="5$T2IgTar1h" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
+                <property role="35gtTG" value="error" />
                 <node concept="Xl_RD" id="5$T2IgTar1j" role="34bqiv">
-                  <property role="Xl_RC" value="Variational operation not permitted. We can just assign exactly one module per fragment" />
+                  <property role="Xl_RC" value="Operation not permitted. We can only assign exactly one module per fragment." />
                 </node>
               </node>
             </node>

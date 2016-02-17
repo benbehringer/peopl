@@ -31,6 +31,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
+      <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
@@ -72,6 +73,7 @@
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -167,6 +169,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -512,6 +517,7 @@
     <node concept="3EZMnI" id="1Gdzz6r7xOa" role="2wV5jI">
       <node concept="1iCGBv" id="3bTHxkSSvcW" role="3EZMnx">
         <property role="1$x2rV" value="Choose a module" />
+        <property role="1cu_pB" value="0" />
         <ref role="1NtTu8" to="xf8r:3bTHxkSSvaM" />
         <node concept="3Xmtl4" id="2Uo$6Ff43vi" role="3F10Kt">
           <node concept="1wgc9g" id="2Uo$6Ff43xc" role="3XvnJa">
@@ -707,7 +713,18 @@
               <property role="VOm3f" value="true" />
             </node>
           </node>
-          <node concept="2SsqMj" id="50X1GL42O_0" role="3EZMnx" />
+          <node concept="2SsqMj" id="50X1GL42O_0" role="3EZMnx">
+            <property role="1cu_pB" value="3" />
+            <node concept="pkWqt" id="70Uiey1X7IL" role="cStSX">
+              <node concept="3clFbS" id="70Uiey1X7IM" role="2VODD2">
+                <node concept="3clFbF" id="70Uiey1X7JR" role="3cqZAp">
+                  <node concept="3clFbT" id="70Uiey1X7JQ" role="3clFbG">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3F0ifn" id="5AXGYfladIU" role="3EZMnx">
             <property role="3F0ifm" value=" " />
             <node concept="VPM3Z" id="5AXGYflaz7r" role="3F10Kt">
