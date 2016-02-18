@@ -411,35 +411,47 @@
               </node>
             </node>
           </node>
-          <node concept="22lmx$" id="70Uiey1XJbw" role="3clFbw">
-            <node concept="2OqwBi" id="70Uiey1XJbx" role="3uHU7w">
-              <node concept="37vLTw" id="70Uiey1XJby" role="2Oq$k0">
+          <node concept="22lmx$" id="70Uiey23Ymk" role="3clFbw">
+            <node concept="2OqwBi" id="70Uiey23Yr8" role="3uHU7w">
+              <node concept="37vLTw" id="70Uiey23Ype" role="2Oq$k0">
                 <ref role="3cqZAo" node="70Uiey1XJbm" resolve="nodeConcept" />
               </node>
-              <node concept="2Zo12i" id="70Uiey1XJbz" role="2OqNvi">
-                <node concept="chp4Y" id="70Uiey1XJb$" role="2Zo12j">
-                  <ref role="cht4Q" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
+              <node concept="2Zo12i" id="70Uiey23Yv_" role="2OqNvi">
+                <node concept="chp4Y" id="70Uiey23YwL" role="2Zo12j">
+                  <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                 </node>
               </node>
             </node>
-            <node concept="22lmx$" id="70Uiey1XJb_" role="3uHU7B">
-              <node concept="2OqwBi" id="70Uiey1XJbA" role="3uHU7B">
-                <node concept="37vLTw" id="70Uiey1XJbB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="70Uiey1XJbm" resolve="nodeConcept" />
+            <node concept="22lmx$" id="70Uiey1XJbw" role="3uHU7B">
+              <node concept="22lmx$" id="70Uiey1XJb_" role="3uHU7B">
+                <node concept="2OqwBi" id="70Uiey1XJbA" role="3uHU7B">
+                  <node concept="37vLTw" id="70Uiey1XJbB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="70Uiey1XJbm" resolve="nodeConcept" />
+                  </node>
+                  <node concept="2Zo12i" id="70Uiey1XJbC" role="2OqNvi">
+                    <node concept="chp4Y" id="70Uiey1XJbD" role="2Zo12j">
+                      <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="2Zo12i" id="70Uiey1XJbC" role="2OqNvi">
-                  <node concept="chp4Y" id="70Uiey1XJbD" role="2Zo12j">
-                    <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
+                <node concept="2OqwBi" id="70Uiey1XJbE" role="3uHU7w">
+                  <node concept="37vLTw" id="70Uiey1XJbF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="70Uiey1XJbm" resolve="nodeConcept" />
+                  </node>
+                  <node concept="2Zo12i" id="70Uiey1XJbG" role="2OqNvi">
+                    <node concept="chp4Y" id="70Uiey1Yf_d" role="2Zo12j">
+                      <ref role="cht4Q" to="tpee:6LFqxSRBTg8" resolve="MethodDeclaration" />
+                    </node>
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="70Uiey1XJbE" role="3uHU7w">
-                <node concept="37vLTw" id="70Uiey1XJbF" role="2Oq$k0">
+              <node concept="2OqwBi" id="70Uiey1XJbx" role="3uHU7w">
+                <node concept="37vLTw" id="70Uiey1XJby" role="2Oq$k0">
                   <ref role="3cqZAo" node="70Uiey1XJbm" resolve="nodeConcept" />
                 </node>
-                <node concept="2Zo12i" id="70Uiey1XJbG" role="2OqNvi">
-                  <node concept="chp4Y" id="70Uiey1Yf_d" role="2Zo12j">
-                    <ref role="cht4Q" to="tpee:6LFqxSRBTg8" resolve="MethodDeclaration" />
+                <node concept="2Zo12i" id="70Uiey1XJbz" role="2OqNvi">
+                  <node concept="chp4Y" id="70Uiey1XJb$" role="2Zo12j">
+                    <ref role="cht4Q" to="tpee:4k3qd$cSlJ3" resolve="BaseVariableDeclaration" />
                   </node>
                 </node>
               </node>
