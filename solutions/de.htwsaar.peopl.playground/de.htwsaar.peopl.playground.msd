@@ -7,6 +7,7 @@
   </models>
   <sourcePath />
   <languageVersions>
+    <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.config" version="0" />
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" fqName="de.htwsaar.peopl.core" version="0" />
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.langdep.java" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />

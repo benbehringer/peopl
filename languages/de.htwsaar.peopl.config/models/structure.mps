@@ -99,12 +99,13 @@
   <node concept="1TIwiD" id="_uCk0nlJLH">
     <property role="1pbfSe" value="548773293" />
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="ProductLineConfig" />
-    <property role="34LRSv" value="Product line configuration" />
+    <property role="TrG5h" value="SingleProductLineConfiguration" />
+    <property role="34LRSv" value="Single product line configuration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4NJLQZxCF2M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="expression" />
+      <property role="20kJfa" value="moduleExpression" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4NJLQZxDJZU" resolve="ModuleExpression" />
     </node>
     <node concept="PrWs8" id="7l1ua4y_N_A" role="PzmwI">
@@ -117,19 +118,20 @@
   </node>
   <node concept="1TIwiD" id="1hL$JiAsepr">
     <property role="1pbfSe" value="1159562929" />
-    <property role="TrG5h" value="ListOfProductLineConfigs" />
+    <property role="TrG5h" value="ProductLineConfigurations" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Product line configurations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1hL$JiAseps" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="configs" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="_uCk0nlJLH" resolve="ProductLineConfig" />
+      <ref role="20lvS9" node="_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
     </node>
     <node concept="1TJgyj" id="1hL$JiAsepu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="activeConfig" />
-      <ref role="20lvS9" node="_uCk0nlJLH" resolve="ProductLineConfig" />
+      <ref role="20lvS9" node="_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
     </node>
   </node>
 </model>
