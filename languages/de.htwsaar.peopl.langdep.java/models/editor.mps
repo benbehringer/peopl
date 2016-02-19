@@ -31,6 +31,7 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -70,9 +71,10 @@
       <node concept="3EZMnI" id="62a2r2ctUta" role="3EZMnx">
         <node concept="l2Vlx" id="62a2r2ctUtb" role="2iSdaV" />
         <node concept="3F0ifn" id="62a2r2cu8TW" role="3EZMnx">
-          <property role="3F0ifm" value="Unit name: " />
+          <property role="3F0ifm" value="Container name: " />
         </node>
         <node concept="3F0A7n" id="62a2r2cuf$N" role="3EZMnx">
+          <property role="1$x2rV" value="Should be the classes name" />
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>

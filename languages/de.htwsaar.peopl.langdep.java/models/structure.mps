@@ -53,7 +53,8 @@
     <property role="TrG5h" value="PeoplEntryPoint" />
     <property role="3GE5qa" value="" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="class" />
+    <property role="34LRSv" value="class container" />
+    <property role="R4oN_" value="Container for (multiple, alternative) classes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
