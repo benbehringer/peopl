@@ -82,6 +82,10 @@
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="7uLiVyPheUs" role="1TKVEl">
+      <property role="TrG5h" value="chosenModuleLinkName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="M6xJ_" id="6K8EDSn5e74" role="lGtFl">
       <property role="Hh88m" value="Fragment" />
       <node concept="tn0Fv" id="36tKSlW0N9I" role="HhnKV">
@@ -117,12 +121,16 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="fragment" />
+      <property role="20kJfa" value="fragmentReference" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
     <node concept="PrWs8" id="6nmwsNvm4OK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="7uLiVyPhqEE" role="1TKVEl">
+      <property role="TrG5h" value="fragRefName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6U">
@@ -134,6 +142,10 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fragmentReference" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+    <node concept="1TJgyi" id="7uLiVyPhpI7" role="1TKVEl">
+      <property role="TrG5h" value="fragRefName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5d7G">
@@ -212,6 +224,10 @@
       <property role="20kJfa" value="placeholderReference" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2LgBOmLVkOn" resolve="Placeholder" />
+    </node>
+    <node concept="1TJgyi" id="7uLiVyPhsjG" role="1TKVEl">
+      <property role="TrG5h" value="placeRefName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="2LgBOmLVOS4">
