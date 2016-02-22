@@ -140,27 +140,10 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
     </node>
-    <node concept="1TJgyj" id="5BQdQAJnpSI" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="fillingFragmentsList" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
-    </node>
     <node concept="1TJgyj" id="1hL$JiAsepu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="activeConfig" />
       <ref role="20lvS9" node="_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5BQdQAJnpSM">
-    <property role="1pbfSe" value="156489115" />
-    <property role="TrG5h" value="FragmentsFillingVPsList" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5BQdQAJnpSN" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="list" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5BQdQAJnpSP" resolve="FragmentFillsVP" />
     </node>
   </node>
   <node concept="1TIwiD" id="5BQdQAJnpSP">
@@ -172,8 +155,8 @@
       <node concept="tn0Fv" id="5BQdQAJnrMI" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
-      <node concept="trNpa" id="5BQdQAJnrMK" role="EQaZv">
-        <ref role="trN6q" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+      <node concept="trNpa" id="oGygL6DMT3" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
   </node>
