@@ -12,6 +12,7 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -52,21 +53,29 @@
     <property role="TrG5h" value="PeoplEntryPoint" />
     <property role="3GE5qa" value="" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="class" />
+    <property role="34LRSv" value="class container" />
+    <property role="R4oN_" value="Container for (multiple, alternative) classes" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="4qvLkVcGGJq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="classes" />
+      <property role="20kJfa" value="peoplClasses" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+      <ref role="20lvS9" node="62a2r2cufYE" resolve="PeoplClassConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="70Uiey1XJat">
     <property role="1pbfSe" value="231654523" />
     <property role="TrG5h" value="VariabilityHelper" />
+  </node>
+  <node concept="1TIwiD" id="62a2r2cufYE">
+    <property role="1pbfSe" value="318568102" />
+    <property role="TrG5h" value="PeoplClassConcept" />
+    <property role="34LRSv" value="class" />
+    <property role="R4oN_" value="Class declaration" />
+    <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
   </node>
 </model>
 
