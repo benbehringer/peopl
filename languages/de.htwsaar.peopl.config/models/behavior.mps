@@ -132,6 +132,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -160,6 +161,9 @@
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -1307,8 +1311,120 @@
         <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
       </node>
     </node>
+    <node concept="13i0hz" id="5BQdQAJnrvz" role="13h7CS">
+      <property role="TrG5h" value="calculateAndSetFillingFragments" />
+      <node concept="3Tm1VV" id="5BQdQAJnrv$" role="1B3o_S" />
+      <node concept="3clFbS" id="5BQdQAJnrv_" role="3clF47">
+        <node concept="3cpWs8" id="5BQdQAJoNGQ" role="3cqZAp">
+          <node concept="3cpWsn" id="5BQdQAJoNGT" role="3cpWs9">
+            <property role="TrG5h" value="fragments" />
+            <node concept="2I9FWS" id="5BQdQAJoNGO" role="1tU5fm">
+              <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+            <node concept="2OqwBi" id="5BQdQAJoNJY" role="33vP2m">
+              <node concept="13iPFW" id="5BQdQAJoNIm" role="2Oq$k0" />
+              <node concept="2qgKlT" id="5BQdQAJoNPa" role="2OqNvi">
+                <ref role="37wK5l" node="1hL$JiAwPa4" resolve="getFragmentListFromActiveConfiguration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5BQdQAJoNFX" role="3cqZAp" />
+        <node concept="3clFbH" id="5BQdQAJoNGb" role="3cqZAp" />
+        <node concept="3clFbF" id="5BQdQAJnrzQ" role="3cqZAp">
+          <node concept="2OqwBi" id="5BQdQAJnr_o" role="3clFbG">
+            <node concept="13iPFW" id="5BQdQAJnrzP" role="2Oq$k0" />
+            <node concept="3TrEf2" id="5BQdQAJnrC4" role="2OqNvi">
+              <ref role="3Tt5mk" to="sj65:5BQdQAJnpSI" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5BQdQAJnrxM" role="3clF45">
+        <ref role="ehGHo" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+      </node>
+    </node>
     <node concept="13hLZK" id="1hL$JiAwPa2" role="13h7CW">
-      <node concept="3clFbS" id="1hL$JiAwPa3" role="2VODD2" />
+      <node concept="3clFbS" id="1hL$JiAwPa3" role="2VODD2">
+        <node concept="3clFbF" id="5BQdQAJnqf1" role="3cqZAp">
+          <node concept="37vLTI" id="5BQdQAJnqpv" role="3clFbG">
+            <node concept="2ShNRf" id="5BQdQAJnqqA" role="37vLTx">
+              <node concept="3zrR0B" id="5BQdQAJnrug" role="2ShVmc">
+                <node concept="3Tqbb2" id="5BQdQAJnrui" role="3zrR0E">
+                  <ref role="ehGHo" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5BQdQAJnqj6" role="37vLTJ">
+              <node concept="13iPFW" id="5BQdQAJnqf0" role="2Oq$k0" />
+              <node concept="3TrEf2" id="5BQdQAJnqlM" role="2OqNvi">
+                <ref role="3Tt5mk" to="sj65:5BQdQAJnpSI" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="5BQdQAJnrCW">
+    <ref role="13h7C2" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+    <node concept="13i0hz" id="5BQdQAJnrCZ" role="13h7CS">
+      <property role="TrG5h" value="refreshFillsVP" />
+      <node concept="3Tm1VV" id="5BQdQAJnrD0" role="1B3o_S" />
+      <node concept="3clFbS" id="5BQdQAJnrD1" role="3clF47">
+        <node concept="3clFbH" id="5BQdQAJnrDP" role="3cqZAp" />
+        <node concept="3clFbH" id="5BQdQAJnrES" role="3cqZAp" />
+        <node concept="3cpWs6" id="5BQdQAJnrDp" role="3cqZAp">
+          <node concept="13iPFW" id="5BQdQAJnrDD" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5BQdQAJnrD7" role="3clF45">
+        <ref role="ehGHo" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+      </node>
+      <node concept="37vLTG" id="5BQdQAJnrDb" role="3clF46">
+        <property role="TrG5h" value="fragments" />
+        <node concept="2I9FWS" id="5BQdQAJnrDa" role="1tU5fm">
+          <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="5BQdQAJnrF6" role="13h7CS">
+      <property role="TrG5h" value="deconnectCurrentChildren" />
+      <node concept="3Tm6S6" id="5BQdQAJnrFx" role="1B3o_S" />
+      <node concept="3clFbS" id="5BQdQAJnrF8" role="3clF47">
+        <node concept="3clFbH" id="5BQdQAJnrG5" role="3cqZAp" />
+        <node concept="3clFbH" id="5BQdQAJnrGi" role="3cqZAp" />
+        <node concept="3clFbH" id="5BQdQAJnrGw" role="3cqZAp" />
+        <node concept="3cpWs6" id="5BQdQAJnrFD" role="3cqZAp">
+          <node concept="13iPFW" id="5BQdQAJnrFT" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5BQdQAJnrF$" role="3clF45">
+        <ref role="ehGHo" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5BQdQAJnrKP" role="13h7CS">
+      <property role="TrG5h" value="setNewFillsVP" />
+      <node concept="3Tm1VV" id="5BQdQAJnrKQ" role="1B3o_S" />
+      <node concept="3clFbS" id="5BQdQAJnrKR" role="3clF47">
+        <node concept="3clFbH" id="5BQdQAJnrLW" role="3cqZAp" />
+        <node concept="3clFbH" id="5BQdQAJnrMu" role="3cqZAp" />
+        <node concept="3cpWs6" id="5BQdQAJnrM1" role="3cqZAp">
+          <node concept="13iPFW" id="5BQdQAJnrMi" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="5BQdQAJnrLy" role="3clF45">
+        <ref role="ehGHo" to="sj65:5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+      </node>
+      <node concept="37vLTG" id="5BQdQAJnrLA" role="3clF46">
+        <property role="TrG5h" value="fragments" />
+        <node concept="2I9FWS" id="5BQdQAJnrL_" role="1tU5fm">
+          <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+        </node>
+      </node>
+    </node>
+    <node concept="13hLZK" id="5BQdQAJnrCX" role="13h7CW">
+      <node concept="3clFbS" id="5BQdQAJnrCY" role="2VODD2" />
     </node>
   </node>
 </model>

@@ -12,6 +12,17 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
+        <property id="6054523464626875854" name="value" index="tnX3d" />
+      </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+        <child id="7588428831955550186" name="multiple" index="HhnKV" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
@@ -39,6 +50,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -126,10 +138,41 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="_uCk0nlJLH" resolve="ProductLineConfig" />
     </node>
+    <node concept="1TJgyj" id="5BQdQAJnpSI" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fillingFragmentsList" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5BQdQAJnpSM" resolve="FragmentsFillingVPsList" />
+    </node>
     <node concept="1TJgyj" id="1hL$JiAsepu" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="activeConfig" />
       <ref role="20lvS9" node="_uCk0nlJLH" resolve="ProductLineConfig" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5BQdQAJnpSM">
+    <property role="1pbfSe" value="156489115" />
+    <property role="TrG5h" value="FragmentsFillingVPsList" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5BQdQAJnpSN" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="list" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5BQdQAJnpSP" resolve="FragmentFillsVP" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5BQdQAJnpSP">
+    <property role="1pbfSe" value="156489118" />
+    <property role="TrG5h" value="FragmentFillsVP" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="5BQdQAJnrMG" role="lGtFl">
+      <property role="Hh88m" value="FragmentFillsVP" />
+      <node concept="tn0Fv" id="5BQdQAJnrMI" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="5BQdQAJnrMK" role="EQaZv">
+        <ref role="trN6q" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+      </node>
     </node>
   </node>
 </model>
