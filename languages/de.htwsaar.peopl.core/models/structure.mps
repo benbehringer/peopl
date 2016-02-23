@@ -27,6 +27,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -55,24 +56,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="4RpwnfCLxtr">
-    <property role="1pbfSe" value="916429006" />
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="Color" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
-      <property role="TrG5h" value="red" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="4RpwnfCLxtu" role="1TKVEl">
-      <property role="TrG5h" value="green" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
-      <property role="TrG5h" value="blue" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="6K8EDSn5e6T">
     <property role="1pbfSe" value="2095215529" />
     <property role="3GE5qa" value="" />
@@ -97,13 +80,13 @@
     </node>
     <node concept="1TJgyj" id="6K8EDSn5e7h" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="VpIntermediate" />
+      <property role="20kJfa" value="vpIntermediate" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
     </node>
     <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="modulIntermediate" />
+      <property role="20kJfa" value="moduleIntermediate" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
     </node>
@@ -147,18 +130,15 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="intermediate" />
+      <property role="20kJfa" value="fragmentIntermediate" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
     </node>
-    <node concept="1TJgyj" id="4RpwnfCLxt_" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="color" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4RpwnfCLxtr" resolve="Color" />
-    </node>
     <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="67jSsTBwaAH" role="PzmwI">
+      <ref role="PrY4T" node="67jSsTBwa$C" resolve="IColor" />
     </node>
   </node>
   <node concept="1TIwiD" id="7Ufy5VQFkPw">
@@ -281,6 +261,22 @@
     <property role="TrG5h" value="ListenerFactory" />
     <property role="3GE5qa" value="Helper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="PlHQZ" id="67jSsTBwa$C">
+    <property role="1pbfSe" value="917206282" />
+    <property role="TrG5h" value="IColor" />
+    <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
+      <property role="TrG5h" value="red" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtu" role="1TKVEl">
+      <property role="TrG5h" value="green" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
+      <property role="TrG5h" value="blue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 
