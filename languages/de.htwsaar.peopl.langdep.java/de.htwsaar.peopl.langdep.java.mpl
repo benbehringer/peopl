@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="de.htwsaar.peopl.langdep.java#8983101612966976582" uuid="cbe58ee7-1899-4d23-b6e7-a02cdc06f202">
+    <generator name="" generatorUID="de.htwsaar.peopl.langdep.java#8983101612966976582" uuid="cbe58ee7-1899-4d23-b6e7-a02cdc06f202">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot location="generator/template" />

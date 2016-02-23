@@ -14,6 +14,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.config.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -34,6 +35,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -183,7 +185,7 @@
   </registry>
   <node concept="24kQdi" id="_uCk0nlSoD">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="sj65:_uCk0nlJLH" resolve="ProductLineConfig" />
+    <ref role="1XX52x" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
     <node concept="3EZMnI" id="4NJLQZxCF2T" role="2wV5jI">
       <node concept="gc7cB" id="1hL$JiAug0$" role="3EZMnx">
         <node concept="3VJUX4" id="1hL$JiAug0A" role="3YsKMw">
@@ -268,7 +270,7 @@
                               <node concept="1eOMI4" id="1hL$JiAui_L" role="2Oq$k0">
                                 <node concept="10QFUN" id="1hL$JiAuijg" role="1eOMHV">
                                   <node concept="3Tqbb2" id="1hL$JiAuioF" role="10QFUM">
-                                    <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ListOfProductLineConfigs" />
+                                    <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
                                   </node>
                                   <node concept="2OqwBi" id="1hL$JiAuhT2" role="10QFUP">
                                     <node concept="pncrf" id="1hL$JiAuhLI" role="2Oq$k0" />
@@ -435,7 +437,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1hL$JiAsepA">
-    <ref role="1XX52x" to="sj65:1hL$JiAsepr" resolve="ListOfProductLineConfigs" />
+    <ref role="1XX52x" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
     <node concept="3EZMnI" id="1hL$JiAsepC" role="2wV5jI">
       <node concept="3F0ifn" id="1hL$JiAsepJ" role="3EZMnx">
         <property role="3F0ifm" value="Configurations:" />
@@ -448,6 +450,13 @@
         </node>
       </node>
       <node concept="l2Vlx" id="1hL$JiAsepF" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3GYBd7VnEd5">
+    <ref role="1XX52x" to="sj65:5BQdQAJnpSP" resolve="FragmentFillsVP" />
+    <node concept="3EZMnI" id="3GYBd7VnOFg" role="2wV5jI">
+      <node concept="2SsqMj" id="3GYBd7VnORE" role="3EZMnx" />
+      <node concept="l2Vlx" id="3GYBd7VnOFj" role="2iSdaV" />
     </node>
   </node>
 </model>
