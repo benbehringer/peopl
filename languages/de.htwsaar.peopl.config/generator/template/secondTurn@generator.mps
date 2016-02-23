@@ -77,6 +77,12 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
@@ -168,6 +174,11 @@
                   <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
                 </node>
                 <node concept="10Nm6u" id="3fgD4aX7KFQ" role="33vP2m" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4fRuak3leSO" role="3cqZAp">
+              <node concept="3SKdUq" id="4fRuak3leSQ" role="3SKWNk">
+                <property role="3SKdUp" value="TODO Optimization : the pre-prcess scripts already deletes all non fillsVP Fragments" />
               </node>
             </node>
             <node concept="2Gpval" id="3fgD4aX6Dr0" role="3cqZAp">
