@@ -32,9 +32,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -269,12 +266,6 @@
       <node concept="29HgVG" id="92zQE_CC0Y" role="lGtFl">
         <node concept="3NFfHV" id="92zQE_CD0w" role="3NFExx">
           <node concept="3clFbS" id="92zQE_CD0x" role="2VODD2">
-            <node concept="34ab3g" id="92zQE_EQ7C" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="92zQE_EQ7E" role="34bqiv">
-                <property role="Xl_RC" value="PeoplClassConcept" />
-              </node>
-            </node>
             <node concept="3cpWs8" id="92zQE_FfBv" role="3cqZAp">
               <node concept="3cpWsn" id="92zQE_FfBy" role="3cpWs9">
                 <property role="TrG5h" value="frag" />

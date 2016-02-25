@@ -75,7 +75,6 @@
     <property role="TrG5h" value="PeoplClassConcept" />
     <property role="34LRSv" value="class" />
     <property role="R4oN_" value="Class declaration" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
   </node>
 </model>

@@ -1112,5 +1112,37 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="2KjTdr4LDTO">
+    <property role="3GE5qa" value="test" />
+    <property role="TrG5h" value="AddObserverLister" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="2KjTdr4LDTP" role="2ZfVej">
+      <node concept="3clFbS" id="2KjTdr4LDTQ" role="2VODD2">
+        <node concept="3clFbF" id="2KjTdr4LDVh" role="3cqZAp">
+          <node concept="Xl_RD" id="2KjTdr4LDVg" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL-Test -&gt; Add Observer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2KjTdr4LDTR" role="2ZfgGD">
+      <node concept="3clFbS" id="2KjTdr4LDTS" role="2VODD2">
+        <node concept="3clFbF" id="2KjTdr4LMof" role="3cqZAp">
+          <node concept="2OqwBi" id="2KjTdr4LMqm" role="3clFbG">
+            <node concept="35c_gC" id="2KjTdr4LMoe" role="2Oq$k0">
+              <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
+            </node>
+            <node concept="2qgKlT" id="2KjTdr4LNBz" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:2KjTdr4LF7v" resolve="addVerboseNodeChangeObserver" />
+              <node concept="2OqwBi" id="2KjTdr4LNEr" role="37wK5m">
+                <node concept="2Sf5sV" id="2KjTdr4LNCp" role="2Oq$k0" />
+                <node concept="I4A8Y" id="2KjTdr4LNIn" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

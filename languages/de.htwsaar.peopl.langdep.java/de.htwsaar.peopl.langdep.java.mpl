@@ -56,22 +56,7 @@
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
       </dependencyVersions>
-      <mapping-priorities>
-        <mapping-priority-rule kind="strictly_after">
-          <greater-priority-mapping>
-            <generator generatorUID="cbe58ee7-1899-4d23-b6e7-a02cdc06f202(de.htwsaar.peopl.langdep.java#8983101612966976582)" />
-            <external-mapping>
-              <all-local-mappings />
-            </external-mapping>
-          </greater-priority-mapping>
-          <lesser-priority-mapping>
-            <generator generatorUID="25c04871-4119-41c0-bd98-e7f0992f3991(de.htwsaar.peopl.config#6563451082523326250)" />
-            <external-mapping>
-              <mapping-node modelUID="r:7a8e3c0b-28ee-4eec-beca-afea7fecefef(de.htwsaar.peopl.config.generator.template.main@generator)" nodeID="6563451082523326251" />
-            </external-mapping>
-          </lesser-priority-mapping>
-        </mapping-priority-rule>
-      </mapping-priorities>
+      <mapping-priorities />
     </generator>
   </generators>
   <sourcePath />

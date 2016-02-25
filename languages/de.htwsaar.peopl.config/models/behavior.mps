@@ -160,6 +160,7 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1361,10 +1362,14 @@
                 <node concept="1PgB_6" id="3GYBd7VnHQE" role="2OqNvi" />
               </node>
             </node>
-            <node concept="34ab3g" id="3fgD4aX5Myk" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="3fgD4aX5Mym" role="34bqiv">
-                <property role="Xl_RC" value=" delete" />
+            <node concept="1X3_iC" id="14Zo09OrQEu" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="3fgD4aX5Myk" role="8Wnug">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="3fgD4aX5Mym" role="34bqiv">
+                  <property role="Xl_RC" value=" delete" />
+                </node>
               </node>
             </node>
           </node>
@@ -1395,8 +1400,11 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3GYBd7VnI0s" role="37vLTJ">
-                  <node concept="2GrUjf" id="3GYBd7VnHYv" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="fragment" />
+                  <node concept="2OqwBi" id="14Zo09OrQY8" role="2Oq$k0">
+                    <node concept="2GrUjf" id="3GYBd7VnHYv" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="fragment" />
+                    </node>
+                    <node concept="1mfA1w" id="14Zo09OrR95" role="2OqNvi" />
                   </node>
                   <node concept="3CFZ6_" id="3GYBd7VnI6o" role="2OqNvi">
                     <node concept="3CFYIy" id="3GYBd7VnI7p" role="3CFYIz">
