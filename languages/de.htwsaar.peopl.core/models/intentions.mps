@@ -2,7 +2,7 @@
 <model ref="r:1d1b7c21-78ab-422c-9cd5-20e6bc04ad41(de.htwsaar.peopl.core.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1117,17 +1117,6 @@
       </node>
     </node>
   </node>
-<<<<<<< HEAD
-  <node concept="2S6QgY" id="2KjTdr4LDTO">
-    <property role="3GE5qa" value="test" />
-    <property role="TrG5h" value="AddObserverLister" />
-    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="2S6ZIM" id="2KjTdr4LDTP" role="2ZfVej">
-      <node concept="3clFbS" id="2KjTdr4LDTQ" role="2VODD2">
-        <node concept="3clFbF" id="2KjTdr4LDVh" role="3cqZAp">
-          <node concept="Xl_RD" id="2KjTdr4LDVg" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Test -&gt; Add Observer" />
-=======
   <node concept="2S6QgY" id="3isdMfoDIdg">
     <property role="3GE5qa" value="housekeeping" />
     <property role="TrG5h" value="StartRepositoryListener" />
@@ -1137,25 +1126,10 @@
         <node concept="3clFbF" id="3isdMfoDIfU" role="3cqZAp">
           <node concept="Xl_RD" id="3isdMfoDIqB" role="3clFbG">
             <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Start repository listener" />
->>>>>>> origin/master
           </node>
         </node>
       </node>
     </node>
-<<<<<<< HEAD
-    <node concept="2Sbjvc" id="2KjTdr4LDTR" role="2ZfgGD">
-      <node concept="3clFbS" id="2KjTdr4LDTS" role="2VODD2">
-        <node concept="3clFbF" id="2KjTdr4LMof" role="3cqZAp">
-          <node concept="2OqwBi" id="2KjTdr4LMqm" role="3clFbG">
-            <node concept="35c_gC" id="2KjTdr4LMoe" role="2Oq$k0">
-              <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
-            </node>
-            <node concept="2qgKlT" id="2KjTdr4LNBz" role="2OqNvi">
-              <ref role="37wK5l" to="kpvh:2KjTdr4LF7v" resolve="addVerboseNodeChangeObserver" />
-              <node concept="2OqwBi" id="2KjTdr4LNEr" role="37wK5m">
-                <node concept="2Sf5sV" id="2KjTdr4LNCp" role="2Oq$k0" />
-                <node concept="I4A8Y" id="2KjTdr4LNIn" role="2OqNvi" />
-=======
     <node concept="2Sbjvc" id="3isdMfoDIdj" role="2ZfgGD">
       <node concept="3clFbS" id="3isdMfoDIdk" role="2VODD2">
         <node concept="3clFbF" id="3isdMfoDIyJ" role="3cqZAp">
@@ -1175,7 +1149,38 @@
                 <node concept="liA8E" id="3isdMfoDILq" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SModel.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
                 </node>
->>>>>>> origin/master
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2KjTdr4LDTO">
+    <property role="3GE5qa" value="test" />
+    <property role="TrG5h" value="AddObserverLister" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="2KjTdr4LDTP" role="2ZfVej">
+      <node concept="3clFbS" id="2KjTdr4LDTQ" role="2VODD2">
+        <node concept="3clFbF" id="2KjTdr4LDVh" role="3cqZAp">
+          <node concept="Xl_RD" id="2KjTdr4LDVg" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL-Test -&gt; Add Observer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2KjTdr4LDTR" role="2ZfgGD">
+      <node concept="3clFbS" id="2KjTdr4LDTS" role="2VODD2">
+        <node concept="3clFbF" id="2KjTdr4LMof" role="3cqZAp">
+          <node concept="2OqwBi" id="2KjTdr4LMqm" role="3clFbG">
+            <node concept="35c_gC" id="2KjTdr4LMoe" role="2Oq$k0">
+              <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
+            </node>
+            <node concept="2qgKlT" id="2KjTdr4LNBz" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:2KjTdr4LF7v" resolve="addVerboseNodeChangeObserver" />
+              <node concept="2OqwBi" id="2KjTdr4LNEr" role="37wK5m">
+                <node concept="2Sf5sV" id="2KjTdr4LNCp" role="2Oq$k0" />
+                <node concept="I4A8Y" id="2KjTdr4LNIn" role="2OqNvi" />
               </node>
             </node>
           </node>
