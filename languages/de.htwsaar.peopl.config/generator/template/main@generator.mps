@@ -30,6 +30,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -56,6 +59,12 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
@@ -68,6 +77,12 @@
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
       <concept id="1195502151594" name="jetbrains.mps.lang.generator.structure.MappingScriptReference" flags="lg" index="1puMqW">
         <reference id="1195502167610" name="mappingScript" index="1puQsG" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -118,6 +133,11 @@
     <property role="TrG5h" value="DeleteFragmentsAndContent" />
     <node concept="1pplIY" id="6pDd21EYBIU" role="1pqMTA">
       <node concept="3clFbS" id="6pDd21EYBIV" role="2VODD2">
+        <node concept="3SKdUt" id="4fRuak3leA6" role="3cqZAp">
+          <node concept="3SKdUq" id="4fRuak3leA8" role="3SKWNk">
+            <property role="3SKdUp" value="TODO Optimization : Delets more nodes than necessary" />
+          </node>
+        </node>
         <node concept="2Gpval" id="6pDd21EYBOJ" role="3cqZAp">
           <node concept="2GrKxI" id="6pDd21EYBOK" role="2Gsz3X">
             <property role="TrG5h" value="fragment" />
@@ -125,6 +145,12 @@
           <node concept="3clFbS" id="6pDd21EYBOL" role="2LFqv$">
             <node concept="3clFbJ" id="6pDd21EYBSn" role="3cqZAp">
               <node concept="3clFbS" id="6pDd21EYBSo" role="3clFbx">
+                <node concept="34ab3g" id="92zQE_FoSV" role="3cqZAp">
+                  <property role="35gtTG" value="warn" />
+                  <node concept="Xl_RD" id="92zQE_FoSX" role="34bqiv">
+                    <property role="Xl_RC" value="delete pre process" />
+                  </node>
+                </node>
                 <node concept="3clFbF" id="6pDd21EYCfl" role="3cqZAp">
                   <node concept="2OqwBi" id="6pDd21EYCuR" role="3clFbG">
                     <node concept="2OqwBi" id="6pDd21EYChh" role="2Oq$k0">
