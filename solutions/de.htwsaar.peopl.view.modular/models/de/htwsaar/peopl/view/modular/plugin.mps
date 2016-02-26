@@ -9,6 +9,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="0" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -258,6 +259,15 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview">
+      <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
+        <child id="8309912865649343738" name="label" index="14a853" />
+      </concept>
+      <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <child id="8309912865649284891" name="elements" index="14aYEy" />
+        <child id="4600337039047025779" name="label" index="3GFWDq" />
+      </concept>
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
       <concept id="1213999117680" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldAccessOperation" flags="nn" index="2BZ7hE" />
@@ -297,6 +307,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -346,6 +357,7 @@
     <property role="2bmUCM" value="LEFT" />
     <property role="2XNbzY" value="Modular View" />
     <property role="2XNb$f" value="8" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="2XrIbr" id="1co0m$$ntgN" role="2XNbBy">
       <property role="TrG5h" value="setContent" />
       <node concept="3clFbS" id="1co0m$$ntgO" role="3clF47" />
@@ -476,6 +488,7 @@
     <property role="2uzpH1" value="Show Modular View" />
     <property role="fJN8o" value="true" />
     <property role="72QZ$" value="true" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="mfpdH" id="4hdPQPqIhA3" role="med8o" />
     <node concept="1DS2jV" id="4tklrj8gnmV" role="1NuT2Z">
       <property role="TrG5h" value="myProject" />
@@ -544,6 +557,7 @@
   </node>
   <node concept="312cEu" id="67jSsTBt3X0">
     <property role="TrG5h" value="ModularViewScope" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="312cEg" id="67jSsTBt4jg" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -700,6 +714,7 @@
   </node>
   <node concept="312cEu" id="1co0m$$jmzo">
     <property role="TrG5h" value="ModularViewTree" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="2tJIrI" id="1co0m$$ksm3" role="jymVt" />
     <node concept="312cEg" id="1co0m$$mlIM" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1255,6 +1270,7 @@
   </node>
   <node concept="312cEu" id="1co0m$$lKyP">
     <property role="TrG5h" value="ModularViewPanel" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="312cEg" id="1co0m$$lSCY" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -1928,6 +1944,7 @@
     <property role="TrG5h" value="ModularViewGroup" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Modular View" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="ftmFs" id="67jSsTBn$GX" role="ftER_">
       <node concept="2a7GMi" id="67jSsTBn$H4" role="ftvYc" />
       <node concept="tCFHf" id="67jSsTBn$Hq" role="ftvYc">
@@ -1945,12 +1962,25 @@
   </node>
   <node concept="Zd50a" id="3isdMfoBq3U">
     <property role="TrG5h" value="OpenModularView" />
+    <property role="3GE5qa" value="Old stuff" />
     <node concept="Zd509" id="3isdMfoBq4J" role="Zd508">
       <ref role="1bYAoF" node="4tklrj8eDGV" resolve="ShowModularView" />
       <node concept="pLAjd" id="3isdMfoBq4L" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_F12" />
       </node>
+    </node>
+  </node>
+  <node concept="14aYJB" id="3dIcPvM6TNc">
+    <property role="TrG5h" value="Test" />
+    <node concept="14aYG3" id="3dIcPvM6TPc" role="14aYEy">
+      <property role="TrG5h" value="AnotherTest" />
+      <node concept="Xl_RD" id="3dIcPvM6WR$" role="14a853">
+        <property role="Xl_RC" value="Root" />
+      </node>
+    </node>
+    <node concept="Xl_RD" id="3dIcPvM6TOe" role="3GFWDq">
+      <property role="Xl_RC" value="Test View" />
     </node>
   </node>
 </model>
