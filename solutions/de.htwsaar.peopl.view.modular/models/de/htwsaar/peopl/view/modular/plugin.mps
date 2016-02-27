@@ -48,6 +48,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.langdep.java.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -306,6 +307,7 @@
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
       <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+        <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
         <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
@@ -2050,6 +2052,7 @@
   </node>
   <node concept="14aYJB" id="3dIcPvM6TNc">
     <property role="TrG5h" value="PeoplSDAModularView" />
+    <property role="3aPfAI" value="2" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14a6R6" id="7diJr$RvF9F" role="14bQOc" />
@@ -2536,8 +2539,8 @@
                     </node>
                     <node concept="2Xjw5R" id="43OrCWB2MSz" role="2OqNvi">
                       <node concept="1xMEDy" id="43OrCWB2MS$" role="1xVPHs">
-                        <node concept="chp4Y" id="43OrCWB2MS_" role="ri$Ld">
-                          <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
+                        <node concept="chp4Y" id="43OrCWB5Fp0" role="ri$Ld">
+                          <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
                         </node>
                       </node>
                     </node>
@@ -2564,7 +2567,7 @@
       <node concept="2YIFZM" id="43OrCWB2Mb0" role="3actZa">
         <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
         <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-        <node concept="14b0Wr" id="43OrCWB2MpN" role="37wK5m">
+        <node concept="14b0Wr" id="6xPHzeUxs_W" role="37wK5m">
           <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
         </node>
       </node>
