@@ -34,6 +34,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -62,6 +63,7 @@
     <property role="1pbfSe" value="2095215529" />
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="Fragment" />
+    <property role="MwhBj" value="${module}/icons/peoplFragment.png" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="36tKSlW1Xz5" role="1TKVEl">
       <property role="TrG5h" value="id" />
