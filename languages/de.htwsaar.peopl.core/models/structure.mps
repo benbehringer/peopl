@@ -131,6 +131,7 @@
     <property role="1pbfSe" value="2095219574" />
     <property role="TrG5h" value="Module" />
     <property role="3GE5qa" value="" />
+    <property role="MwhBj" value="${module}/icons/peoplModuleAlternative_javaModule.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -151,6 +152,7 @@
     <property role="3GE5qa" value="" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Module definition" />
+    <property role="MwhBj" value="${module}/icons/peoplModulesAlternative_layout.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7Ufy5VQFkRE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />

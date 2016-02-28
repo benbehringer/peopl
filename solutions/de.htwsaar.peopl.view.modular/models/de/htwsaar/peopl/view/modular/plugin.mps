@@ -2459,6 +2459,13 @@
           </node>
         </node>
       </node>
+      <node concept="2YIFZM" id="1sh5U6QfSFM" role="3actZa">
+        <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+        <node concept="14b0Wr" id="1sh5U6QfSN6" role="37wK5m">
+          <ref role="14b0Uw" node="7diJr$Rx11N" resolve="peoplModuleDefinition" />
+        </node>
+      </node>
     </node>
     <node concept="14aYG3" id="6x2HjBtaqmQ" role="14aYEy">
       <property role="TrG5h" value="peoplConfig" />
@@ -2578,6 +2585,13 @@
         </node>
         <node concept="2qgKlT" id="6x2HjBtetHa" role="2OqNvi">
           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
+        </node>
+      </node>
+      <node concept="2YIFZM" id="1sh5U6QfSPy" role="3actZa">
+        <ref role="37wK5l" to="xnls:~IconManager.getIconFor(org.jetbrains.mps.openapi.model.SNode):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+        <node concept="14b0Wr" id="1sh5U6QfSPz" role="37wK5m">
+          <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
         </node>
       </node>
     </node>
@@ -2830,7 +2844,7 @@
       </node>
     </node>
     <node concept="Xl_RD" id="3dIcPvM6TOe" role="3GFWDq">
-      <property role="Xl_RC" value="Simple Modular View" />
+      <property role="Xl_RC" value="Modular View" />
     </node>
     <node concept="10M0yZ" id="63CrThugI2P" role="37b278">
       <ref role="1PxDUh" to="xnls:~IdeIcons" resolve="IdeIcons" />
