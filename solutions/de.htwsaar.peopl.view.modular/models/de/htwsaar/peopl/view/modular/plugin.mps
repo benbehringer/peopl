@@ -521,7 +521,7 @@
     <property role="2bmUCM" value="LEFT" />
     <property role="2XNbzY" value="Modular View" />
     <property role="2XNb$f" value="8" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="2BZ0e9" id="4tklrj8ecZH" role="2XNbBz">
       <property role="TrG5h" value="myProject" />
       <node concept="3Tm6S6" id="4tklrj8ecZI" role="1B3o_S" />
@@ -631,7 +631,7 @@
     <property role="2uzpH1" value="Show Modular View" />
     <property role="fJN8o" value="true" />
     <property role="72QZ$" value="true" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="mfpdH" id="4hdPQPqIhA3" role="med8o" />
     <node concept="1DS2jV" id="4tklrj8gnmV" role="1NuT2Z">
       <property role="TrG5h" value="myProject" />
@@ -708,7 +708,7 @@
   </node>
   <node concept="312cEu" id="67jSsTBt3X0">
     <property role="TrG5h" value="ModularViewScope" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="312cEg" id="67jSsTBt4jg" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -865,7 +865,7 @@
   </node>
   <node concept="312cEu" id="1co0m$$jmzo">
     <property role="TrG5h" value="ModularViewTree" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="2tJIrI" id="1co0m$$ksm3" role="jymVt" />
     <node concept="312cEg" id="1co0m$$mlIM" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1421,7 +1421,7 @@
   </node>
   <node concept="312cEu" id="1co0m$$lKyP">
     <property role="TrG5h" value="ModularViewPanel" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="312cEg" id="1co0m$$lSCY" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -2095,7 +2095,7 @@
     <property role="TrG5h" value="ModularViewGroup" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Modular View" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <property role="1rdrE6" value="true" />
     <node concept="1X3_iC" id="1sh5U6QaS2Z" role="lGtFl">
       <property role="3V$3am" value="modifier" />
@@ -2127,7 +2127,7 @@
   </node>
   <node concept="Zd50a" id="3isdMfoBq3U">
     <property role="TrG5h" value="OpenModularView" />
-    <property role="3GE5qa" value="Old stuff" />
+    <property role="3GE5qa" value="Deprecated" />
     <node concept="1X3_iC" id="1sh5U6QaS5q" role="lGtFl">
       <property role="3V$3am" value="shortcutChange" />
       <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1562714432501166197/1562714432501166199" />
@@ -2141,7 +2141,7 @@
     </node>
   </node>
   <node concept="14aYJB" id="3dIcPvM6TNc">
-    <property role="TrG5h" value="PeoplSimpleModularView" />
+    <property role="TrG5h" value="PeoplModularView" />
     <property role="3aPfAI" value="2" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
@@ -3419,6 +3419,7 @@
     <property role="TrG5h" value="CreateModule" />
     <property role="2uzpH1" value="New module" />
     <property role="fJN8o" value="true" />
+    <property role="3GE5qa" value="ModuleDefinition" />
     <node concept="tnohg" id="2xB8AYJ5sNi" role="tncku">
       <node concept="3clFbS" id="2xB8AYJ5sNj" role="2VODD2">
         <node concept="3cpWs8" id="2xB8AYJhYA0" role="3cqZAp">
@@ -3613,6 +3614,7 @@
     <property role="TrG5h" value="ModulDefinition" />
     <property role="2f7twF" value="New" />
     <property role="1XlLyE" value="true" />
+    <property role="3GE5qa" value="ModuleDefinition" />
     <node concept="ftmFs" id="2xB8AYJ8u4h" role="ftER_">
       <node concept="2a7GMi" id="2xB8AYJ8u4p" role="ftvYc" />
       <node concept="tCFHf" id="2xB8AYJ8u4k" role="ftvYc">
@@ -3637,6 +3639,7 @@
   </node>
   <node concept="Zd50a" id="2xB8AYJhEsr">
     <property role="TrG5h" value="CreateModule" />
+    <property role="3GE5qa" value="ModuleDefinition" />
     <node concept="Zd509" id="2xB8AYJhEsz" role="Zd508">
       <ref role="1bYAoF" node="2xB8AYJ5sNh" resolve="CreateModule" />
       <node concept="pLAjd" id="2xB8AYJhEs_" role="Zd501">
@@ -3647,6 +3650,7 @@
   </node>
   <node concept="312cEu" id="2xB8AYJhZ8q">
     <property role="TrG5h" value="CreateModuleDialog" />
+    <property role="3GE5qa" value="Dialog" />
     <node concept="2tJIrI" id="2sTGsLqftK_" role="jymVt" />
     <node concept="3clFbW" id="1t_LRy89_1q" role="jymVt">
       <node concept="37vLTG" id="1t_LRy89_1r" role="3clF46">
@@ -3881,6 +3885,7 @@
   </node>
   <node concept="312cEu" id="2xB8AYJkr2B">
     <property role="TrG5h" value="PeoplStringChooserDialog" />
+    <property role="3GE5qa" value="Dialog" />
     <node concept="312cEg" id="1t_LRy89$2l" role="jymVt">
       <property role="TrG5h" value="myPanel" />
       <node concept="3Tmbuc" id="1t_LRy89$2m" role="1B3o_S" />
@@ -4587,6 +4592,7 @@
   </node>
   <node concept="312cEu" id="2xB8AYJktFV">
     <property role="TrG5h" value="PeoplDialog" />
+    <property role="3GE5qa" value="Dialog" />
     <node concept="312cEg" id="1t_LRy89k3n" role="jymVt">
       <property role="TrG5h" value="myRefactorAction" />
       <node concept="3Tmbuc" id="1t_LRy89k3o" role="1B3o_S" />
