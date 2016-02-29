@@ -9,11 +9,8 @@
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="3pbt" ref="r:c521e8e9-9eb4-410d-803b-7861e4ba097c(de.htwsaar.peopl.core.MyApi)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -46,24 +43,13 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
-        <child id="1068580123160" name="condition" index="3clFbw" />
-        <child id="1068580123161" name="ifTrue" index="3clFbx" />
-      </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
-      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
-        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -108,62 +94,38 @@
   <node concept="2uRRBy" id="3iBm9_jtoFi">
     <property role="TrG5h" value="ListenerPlugin" />
     <node concept="2uRRBN" id="3iBm9_jtoL0" role="2uRRB_">
-      <node concept="3clFbS" id="3iBm9_jtoL1" role="2VODD2" />
+      <node concept="3clFbS" id="3iBm9_jtoL1" role="2VODD2">
+        <node concept="34ab3g" id="3QyN4SJpypy" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="3QyN4SJpypz" role="34bqiv">
+            <property role="Xl_RC" value="----------dispose peopleListenerPlugin---------" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2uRRBT" id="3iBm9_jtoFj" role="2uRRB$">
       <node concept="3clFbS" id="3iBm9_jtoFk" role="2VODD2">
+        <node concept="34ab3g" id="3QyN4SJpyiv" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="3QyN4SJpyix" role="34bqiv">
+            <property role="Xl_RC" value="---------INIT peopleListenerPlugin---------" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="4UCkzXvBYGp" role="3cqZAp" />
         <node concept="2Gpval" id="7qo5jFk$_Or" role="3cqZAp">
           <node concept="2GrKxI" id="7qo5jFk$_Ot" role="2Gsz3X">
             <property role="TrG5h" value="model" />
           </node>
           <node concept="3clFbS" id="7qo5jFk$_Ov" role="2LFqv$">
-            <node concept="3clFbJ" id="4HkxJ475bUV" role="3cqZAp">
-              <node concept="3clFbS" id="4HkxJ475bUX" role="3clFbx">
-                <node concept="34ab3g" id="5aVXudkckHY" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="3cpWs3" id="5aVXudkckHZ" role="34bqiv">
-                    <node concept="2OqwBi" id="5aVXudkckI0" role="3uHU7w">
-                      <node concept="2GrUjf" id="5aVXudkckI1" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
-                      </node>
-                      <node concept="liA8E" id="5aVXudkckI2" role="2OqNvi">
-                        <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="5aVXudkckI3" role="3uHU7B">
-                      <property role="Xl_RC" value="Adding Listener to model : " />
-                    </node>
-                  </node>
+            <node concept="3clFbF" id="4UCkzXvBYRw" role="3cqZAp">
+              <node concept="2OqwBi" id="4UCkzXvBYRx" role="3clFbG">
+                <node concept="35c_gC" id="4UCkzXvBYRy" role="2Oq$k0">
+                  <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
                 </node>
-                <node concept="3clFbF" id="7Aapj$fGv8t" role="3cqZAp">
-                  <node concept="2OqwBi" id="7Aapj$fGvbj" role="3clFbG">
-                    <node concept="35c_gC" id="7Aapj$fGv8r" role="2Oq$k0">
-                      <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
-                    </node>
-                    <node concept="2qgKlT" id="7Aapj$fGvjP" role="2OqNvi">
-                      <ref role="37wK5l" to="kpvh:3OZ$K5miTuq" resolve="addSNodeChangeListener" />
-                      <node concept="2GrUjf" id="7Aapj$fGvkF" role="37wK5m">
-                        <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3fqX7Q" id="4HkxJ475p0t" role="3clFbw">
-                <node concept="2OqwBi" id="4HkxJ475p0v" role="3fr31v">
-                  <node concept="2OqwBi" id="4HkxJ475p0w" role="2Oq$k0">
-                    <node concept="2GrUjf" id="4HkxJ475p0x" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
-                    </node>
-                    <node concept="liA8E" id="4HkxJ475p0y" role="2OqNvi">
-                      <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4HkxJ475p0z" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                    <node concept="Xl_RD" id="4HkxJ475p0$" role="37wK5m">
-                      <property role="Xl_RC" value="de.htwsaar.peopl.listenerControl" />
-                    </node>
+                <node concept="2qgKlT" id="4UCkzXvBYRz" role="2OqNvi">
+                  <ref role="37wK5l" to="kpvh:3OZ$K5miTuq" resolve="addSNodeChangeListener" />
+                  <node concept="2GrUjf" id="4UCkzXvBYR$" role="37wK5m">
+                    <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
                   </node>
                 </node>
               </node>
