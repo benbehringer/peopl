@@ -25,9 +25,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
-      </concept>
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -344,20 +341,6 @@
               <node concept="10Oyi0" id="7Pa5h6_P1r4" role="1tU5fm" />
               <node concept="3cmrfG" id="7Pa5h6_P1rF" role="33vP2m">
                 <property role="3cmrfH" value="5" />
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="7Pa5h6_P1sd" role="3cqZAp">
-            <node concept="3cpWsn" id="7Pa5h6_P1sg" role="3cpWs9">
-              <property role="TrG5h" value="z" />
-              <node concept="10Oyi0" id="7Pa5h6_P1sb" role="1tU5fm" />
-              <node concept="u2itq" id="7Pa5h6_P1$I" role="33vP2m">
-                <node concept="37vLTw" id="7Pa5h6_P1_c" role="3uHU7w">
-                  <ref role="3cqZAo" node="7Pa5h6_P1r9" resolve="y" />
-                </node>
-                <node concept="37vLTw" id="7Pa5h6_P1t2" role="3uHU7B">
-                  <ref role="3cqZAo" node="7Pa5h6_P1pQ" resolve="x" />
-                </node>
               </node>
             </node>
           </node>
