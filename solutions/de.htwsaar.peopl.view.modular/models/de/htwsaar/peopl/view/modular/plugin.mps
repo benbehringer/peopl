@@ -54,6 +54,7 @@
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event()" />
     <import index="g1qu" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.ui()" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event()" />
+    <import index="4ay8" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane.favorites()" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.config.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.langdep.java.structure)" implicit="true" />
@@ -3444,6 +3445,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="2xB8AYJhXCE" role="3cqZAp" />
+        <node concept="3clFbH" id="6ailSh_2iAh" role="3cqZAp" />
         <node concept="3clFbJ" id="2xB8AYJj0VN" role="3cqZAp">
           <node concept="3clFbS" id="2xB8AYJj0VP" role="3clFbx">
             <node concept="3cpWs8" id="2xB8AYJj3uZ" role="3cqZAp">
@@ -3619,6 +3621,9 @@
       <node concept="2a7GMi" id="2xB8AYJ8u4p" role="ftvYc" />
       <node concept="tCFHf" id="2xB8AYJ8u4k" role="ftvYc">
         <ref role="tCJdB" node="2xB8AYJ5sNh" resolve="CreateModule" />
+      </node>
+      <node concept="tCFHf" id="6ailSh_1Yu_" role="ftvYc">
+        <ref role="tCJdB" to="tprs:79AZtQxEv2O" resolve="RemoveFromFavorites" />
       </node>
       <node concept="2a7GMi" id="2xB8AYJhpYa" role="ftvYc" />
       <node concept="tCFHf" id="2xB8AYJdtUO" role="ftvYc">
