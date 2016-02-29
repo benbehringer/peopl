@@ -37,6 +37,7 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -4486,6 +4487,15 @@
                 <node concept="Xl_RD" id="4UCkzXvHc7P" role="HW$Y0">
                   <property role="Xl_RC" value="peopl" />
                 </node>
+                <node concept="Xl_RD" id="4UCkzXvOR7_" role="HW$Y0">
+                  <property role="Xl_RC" value="de.htwsaar.peopl.build" />
+                </node>
+                <node concept="Xl_RD" id="6OnhVubj$wA" role="HW$Y0">
+                  <property role="Xl_RC" value="TempModul" />
+                </node>
+                <node concept="Xl_RD" id="6OnhVubjFYN" role="HW$Y0">
+                  <property role="Xl_RC" value="checkpoints" />
+                </node>
               </node>
             </node>
           </node>
@@ -4517,15 +4527,28 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4UCkzXvGZDp" role="3clFbw">
-                <node concept="liA8E" id="4UCkzXvGZDt" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
-                  <node concept="2GrUjf" id="4UCkzXvGZDu" role="37wK5m">
-                    <ref role="2Gs0qQ" node="4UCkzXvGZDh" resolve="name" />
+              <node concept="22lmx$" id="6OnhVubjFar" role="3clFbw">
+                <node concept="2OqwBi" id="6OnhVubjFfK" role="3uHU7w">
+                  <node concept="37vLTw" id="6OnhVubjFc0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UCkzXvGZnu" resolve="searchName" />
+                  </node>
+                  <node concept="liA8E" id="6OnhVubjFPE" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
+                    <node concept="Xl_RD" id="6OnhVubjFRh" role="37wK5m">
+                      <property role="Xl_RC" value="@" />
+                    </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="4UCkzXvH05t" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4UCkzXvGZnu" resolve="searchName" />
+                <node concept="2OqwBi" id="4UCkzXvGZDp" role="3uHU7B">
+                  <node concept="liA8E" id="4UCkzXvGZDt" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+                    <node concept="2GrUjf" id="4UCkzXvGZDu" role="37wK5m">
+                      <ref role="2Gs0qQ" node="4UCkzXvGZDh" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="4UCkzXvH05t" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4UCkzXvGZnu" resolve="searchName" />
+                  </node>
                 </node>
               </node>
             </node>
