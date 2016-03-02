@@ -231,6 +231,11 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
     </node>
+    <node concept="1TJgyj" id="5FNma2fyxoX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="CutNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="1TJgyj" id="3N55tyoWt1w" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="referencedVP" />
@@ -282,6 +287,21 @@
     <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
       <property role="TrG5h" value="blue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5FNma2fyQ8y">
+    <property role="1pbfSe" value="360793406" />
+    <property role="3GE5qa" value="Helper" />
+    <property role="TrG5h" value="ToIgnoreByListener" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="5FNma2fyQ8z" role="lGtFl">
+      <property role="Hh88m" value="ToIgnoreByListener" />
+      <node concept="tn0Fv" id="5FNma2fyQ8_" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="5FNma2fyQ8B" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
     </node>
   </node>
 </model>
