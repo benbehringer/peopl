@@ -4,7 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.config/de.htwsaar.peopl.config.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.langdep.java/de.htwsaar.peopl.langdep.java.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.dep.baselang/de.htwsaar.peopl.dep.baselang.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="mbeddr.Languages" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="mbeddr.Languages" />

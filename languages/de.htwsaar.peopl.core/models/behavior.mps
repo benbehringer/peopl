@@ -4466,8 +4466,11 @@
                 <node concept="Xl_RD" id="4UCkzXvHmIs" role="HW$Y0">
                   <property role="Xl_RC" value="de.htwsaar.peopl.view" />
                 </node>
+                <node concept="Xl_RD" id="5D08eE6XM0k" role="HW$Y0">
+                  <property role="Xl_RC" value="de.htwsaar.peopl.projectview" />
+                </node>
                 <node concept="Xl_RD" id="4UCkzXvHmYT" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.langdep" />
+                  <property role="Xl_RC" value="de.htwsaar.peopl.dep" />
                 </node>
                 <node concept="Xl_RD" id="4UCkzXvJ4Ts" role="HW$Y0">
                   <property role="Xl_RC" value="de.htwsaar.peopl.listenerControl" />
