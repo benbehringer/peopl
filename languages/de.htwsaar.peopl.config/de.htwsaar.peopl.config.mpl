@@ -25,7 +25,7 @@
       </usedDevKits>
       <languageVersions>
         <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.config" version="0" />
-        <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.langdep.java" version="0" />
+        <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.dep.baselang" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -50,7 +50,7 @@
         <module reference="25c04871-4119-41c0-bd98-e7f0992f3991(de.htwsaar.peopl.config#6563451082523326250)" version="0" />
         <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="0" />
         <module reference="c9a56e63-3222-4b77-a7ff-0dd9a6ca29db(de.htwsaar.peopl.core#3071473864244849393)" version="0" />
-        <module reference="cbe58ee7-1899-4d23-b6e7-a02cdc06f202(de.htwsaar.peopl.langdep.java#8983101612966976582)" version="0" />
+        <module reference="cbe58ee7-1899-4d23-b6e7-a02cdc06f202(de.htwsaar.peopl.dep.baselang#8983101612966976582)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
         <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
