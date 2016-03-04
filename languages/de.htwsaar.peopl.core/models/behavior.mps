@@ -96,6 +96,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -4625,32 +4626,13 @@
             <property role="TrG5h" value="notToAddListener" />
             <property role="3TUv4t" value="false" />
             <node concept="_YKpA" id="4UCkzXvGZxj" role="1tU5fm">
-              <node concept="3uibUv" id="4UCkzXvGZxk" role="_ZDj9">
-                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-              </node>
+              <node concept="17QB3L" id="1K53YIzItoN" role="_ZDj9" />
             </node>
             <node concept="2ShNRf" id="4UCkzXvGZyB" role="33vP2m">
               <node concept="Tc6Ow" id="4UCkzXvGZyD" role="2ShVmc">
-                <node concept="3uibUv" id="4UCkzXvGZyE" role="HW$YZ">
-                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                </node>
-                <node concept="Xl_RD" id="4UCkzXvGZyF" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.core" />
-                </node>
-                <node concept="Xl_RD" id="4UCkzXvHmmT" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.config" />
-                </node>
-                <node concept="Xl_RD" id="4UCkzXvHmIs" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.view" />
-                </node>
-                <node concept="Xl_RD" id="5D08eE6XM0k" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.projectview" />
-                </node>
-                <node concept="Xl_RD" id="4UCkzXvHmYT" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.dep" />
-                </node>
-                <node concept="Xl_RD" id="4UCkzXvJ4Ts" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.listenerControl" />
+                <node concept="17QB3L" id="1K53YIzI_ot" role="HW$YZ" />
+                <node concept="Xl_RD" id="1K53YIzItRJ" role="HW$Y0">
+                  <property role="Xl_RC" value="de.htwsaar.peopl" />
                 </node>
                 <node concept="Xl_RD" id="4UCkzXvGZyG" role="HW$Y0">
                   <property role="Xl_RC" value="de.slisson" />
@@ -4667,17 +4649,11 @@
                 <node concept="Xl_RD" id="4UCkzXvHc7P" role="HW$Y0">
                   <property role="Xl_RC" value="peopl" />
                 </node>
-                <node concept="Xl_RD" id="4UCkzXvOR7_" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.build" />
-                </node>
                 <node concept="Xl_RD" id="6OnhVubj$wA" role="HW$Y0">
                   <property role="Xl_RC" value="TempModul" />
                 </node>
                 <node concept="Xl_RD" id="6OnhVubjFYN" role="HW$Y0">
                   <property role="Xl_RC" value="checkpoints" />
-                </node>
-                <node concept="Xl_RD" id="HDlZQSUiqf" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.shortcuts" />
                 </node>
               </node>
             </node>
@@ -4749,9 +4725,7 @@
       <node concept="10P_77" id="4UCkzXvGYIU" role="3clF45" />
       <node concept="37vLTG" id="4UCkzXvGZnu" role="3clF46">
         <property role="TrG5h" value="searchName" />
-        <node concept="3uibUv" id="4UCkzXvGZnt" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="1K53YIzItcR" role="1tU5fm" />
       </node>
     </node>
     <node concept="13hLZK" id="7SfJiX6nJmU" role="13h7CW">

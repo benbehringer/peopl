@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.htwsaar.peopl.playground" uuid="0ca4d807-005b-4b5e-b884-00cd9fb6a5e9" moduleVersion="0" compileInMPS="true">
+<solution name="de.htwsaar.playground" uuid="0ca4d807-005b-4b5e-b884-00cd9fb6a5e9" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -16,7 +16,7 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="0ca4d807-005b-4b5e-b884-00cd9fb6a5e9(de.htwsaar.peopl.playground)" version="0" />
+    <module reference="0ca4d807-005b-4b5e-b884-00cd9fb6a5e9(de.htwsaar.playground)" version="0" />
   </dependencyVersions>
 </solution>
 
