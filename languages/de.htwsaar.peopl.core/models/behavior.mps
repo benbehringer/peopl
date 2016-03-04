@@ -1891,31 +1891,35 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="62a2r2cweLd" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="62a2r2cweLe" role="34bqiv">
-            <node concept="2OqwBi" id="62a2r2cweLf" role="3uHU7w">
-              <node concept="2JrnkZ" id="62a2r2cweLg" role="2Oq$k0">
-                <node concept="2OqwBi" id="62a2r2cweLh" role="2JrQYb">
-                  <node concept="2OqwBi" id="62a2r2cweLi" role="2Oq$k0">
-                    <node concept="2SmgA7" id="62a2r2cweLm" role="2OqNvi">
-                      <node concept="chp4Y" id="62a2r2cweLn" role="1dBWTz">
-                        <ref role="cht4Q" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+        <node concept="1X3_iC" id="5zyTnvZlZ8j" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="62a2r2cweLd" role="8Wnug">
+            <property role="35gtTG" value="info" />
+            <node concept="3cpWs3" id="62a2r2cweLe" role="34bqiv">
+              <node concept="2OqwBi" id="62a2r2cweLf" role="3uHU7w">
+                <node concept="2JrnkZ" id="62a2r2cweLg" role="2Oq$k0">
+                  <node concept="2OqwBi" id="62a2r2cweLh" role="2JrQYb">
+                    <node concept="2OqwBi" id="62a2r2cweLi" role="2Oq$k0">
+                      <node concept="2SmgA7" id="62a2r2cweLm" role="2OqNvi">
+                        <node concept="chp4Y" id="62a2r2cweLn" role="1dBWTz">
+                          <ref role="cht4Q" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="62a2r2cwg1b" role="2Oq$k0">
+                        <ref role="3cqZAo" node="62a2r2cwfv0" resolve="currentModel" />
                       </node>
                     </node>
-                    <node concept="37vLTw" id="62a2r2cwg1b" role="2Oq$k0">
-                      <ref role="3cqZAo" node="62a2r2cwfv0" resolve="currentModel" />
-                    </node>
+                    <node concept="1uHKPH" id="62a2r2cweLo" role="2OqNvi" />
                   </node>
-                  <node concept="1uHKPH" id="62a2r2cweLo" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="62a2r2cweLp" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                 </node>
               </node>
-              <node concept="liA8E" id="62a2r2cweLp" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              <node concept="Xl_RD" id="62a2r2cweLq" role="3uHU7B">
+                <property role="Xl_RC" value="VariabilityDataStorage: node:" />
               </node>
-            </node>
-            <node concept="Xl_RD" id="62a2r2cweLq" role="3uHU7B">
-              <property role="Xl_RC" value="VariabilityDataStorage: node:" />
             </node>
           </node>
         </node>
@@ -4319,6 +4323,269 @@
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="7SfJiX6nJmX" role="1B3o_S" />
       <node concept="3clFbS" id="7SfJiX6nJmY" role="3clF47">
+        <node concept="3cpWs8" id="5zyTnvZm6QQ" role="3cqZAp">
+          <node concept="3cpWsn" id="5zyTnvZm6QR" role="3cpWs9">
+            <property role="TrG5h" value="repoListener" />
+            <node concept="3uibUv" id="5zyTnvZm6QS" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepositoryListener" resolve="SRepositoryListener" />
+            </node>
+            <node concept="2ShNRf" id="5zyTnvZm6T$" role="33vP2m">
+              <node concept="YeOm9" id="5zyTnvZm6TA" role="2ShVmc">
+                <node concept="1Y3b0j" id="5zyTnvZm6TB" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="lui2:~SRepositoryListener" resolve="SRepositoryListener" />
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                  <node concept="2tJIrI" id="5zyTnvZm6TC" role="jymVt" />
+                  <node concept="3Tm1VV" id="5zyTnvZm6TD" role="1B3o_S" />
+                  <node concept="3clFb_" id="5zyTnvZm6TE" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="moduleAdded" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6TF" role="1B3o_S" />
+                    <node concept="3cqZAl" id="5zyTnvZm6TG" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6TH" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6TI" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                      </node>
+                      <node concept="2AHcQZ" id="5zyTnvZm6TJ" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6TK" role="3clF47">
+                      <node concept="3clFbJ" id="5zyTnvZm6TL" role="3cqZAp">
+                        <node concept="3clFbS" id="5zyTnvZm6TM" role="3clFbx">
+                          <node concept="34ab3g" id="5zyTnvZm6TN" role="3cqZAp">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="3cpWs3" id="5zyTnvZm6TO" role="34bqiv">
+                              <node concept="2OqwBi" id="5zyTnvZm6TP" role="3uHU7w">
+                                <node concept="37vLTw" id="5zyTnvZm6TQ" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5zyTnvZm6TH" resolve="p0" />
+                                </node>
+                                <node concept="liA8E" id="5zyTnvZm6TR" role="2OqNvi">
+                                  <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="5zyTnvZm6TS" role="3uHU7B">
+                                <property role="Xl_RC" value="Factory -&gt; RepListener -&gt; moduleAdded , Listener to : " />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="5zyTnvZm6TT" role="3cqZAp">
+                            <node concept="2OqwBi" id="5zyTnvZm6TU" role="3clFbG">
+                              <node concept="35c_gC" id="5zyTnvZm6TV" role="2Oq$k0">
+                                <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
+                              </node>
+                              <node concept="2qgKlT" id="5zyTnvZm6TW" role="2OqNvi">
+                                <ref role="37wK5l" node="3OZ$K5miMsy" resolve="addSModuleListener" />
+                                <node concept="37vLTw" id="5zyTnvZm6TX" role="37wK5m">
+                                  <ref role="3cqZAo" node="5zyTnvZm6TH" resolve="p0" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3fqX7Q" id="5zyTnvZm6TY" role="3clFbw">
+                          <node concept="2OqwBi" id="5zyTnvZm6TZ" role="3fr31v">
+                            <node concept="35c_gC" id="5zyTnvZm6U0" role="2Oq$k0">
+                              <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
+                            </node>
+                            <node concept="2qgKlT" id="5zyTnvZm6U1" role="2OqNvi">
+                              <ref role="37wK5l" node="4UCkzXvGWRB" resolve="isToBeIgnored" />
+                              <node concept="2OqwBi" id="5zyTnvZm6U2" role="37wK5m">
+                                <node concept="37vLTw" id="5zyTnvZm6U3" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5zyTnvZm6TH" resolve="p0" />
+                                </node>
+                                <node concept="liA8E" id="5zyTnvZm6U4" role="2OqNvi">
+                                  <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6U5" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="moduleRemoved" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6U6" role="1B3o_S" />
+                    <node concept="3cqZAl" id="5zyTnvZm6U7" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6U8" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6U9" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
+                      </node>
+                      <node concept="2AHcQZ" id="5zyTnvZm6Ua" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6Ub" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6Uc" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="commandStarted" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6Ud" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6Ue" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6Uf" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6Ug" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6Uh" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6Ui" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6Uj" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6Uk" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6Ul" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6Um" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="commandFinished" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6Un" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6Uo" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6Up" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6Uq" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6Ur" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6Us" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6Ut" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6Uu" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6Uv" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6Uw" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="beforeModuleRemoved" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6Ux" role="1B3o_S" />
+                    <node concept="3cqZAl" id="5zyTnvZm6Uy" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6Uz" role="3clF46">
+                      <property role="TrG5h" value="module" />
+                      <node concept="3uibUv" id="5zyTnvZm6U$" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                      </node>
+                      <node concept="2AHcQZ" id="5zyTnvZm6U_" role="2AJF6D">
+                        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6UA" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6UB" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="updateStarted" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6UC" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6UD" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6UE" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6UF" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6UG" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6UH" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6UI" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6UJ" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6UK" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6UL" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="updateFinished" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6UM" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6UN" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6UO" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6UP" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6UQ" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6UR" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6US" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6UT" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6UU" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6UV" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="repositoryCommandStarted" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6UW" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6UX" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6UY" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6UZ" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6V0" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6V1" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6V2" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6V3" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6V4" role="3clF47" />
+                  </node>
+                  <node concept="3clFb_" id="5zyTnvZm6V5" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="repositoryCommandFinished" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="5zyTnvZm6V6" role="1B3o_S" />
+                    <node concept="2AHcQZ" id="5zyTnvZm6V7" role="2AJF6D">
+                      <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+                    </node>
+                    <node concept="P$JXv" id="5zyTnvZm6V8" role="lGtFl">
+                      <node concept="TZ5HI" id="5zyTnvZm6V9" role="3nqlJM">
+                        <node concept="TZ5HA" id="5zyTnvZm6Va" role="3HnX3l" />
+                      </node>
+                    </node>
+                    <node concept="3cqZAl" id="5zyTnvZm6Vb" role="3clF45" />
+                    <node concept="37vLTG" id="5zyTnvZm6Vc" role="3clF46">
+                      <property role="TrG5h" value="p0" />
+                      <node concept="3uibUv" id="5zyTnvZm6Vd" role="1tU5fm">
+                        <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="5zyTnvZm6Ve" role="3clF47" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7SfJiX6o7Le" role="3cqZAp">
           <node concept="2OqwBi" id="3OZ$K5miItT" role="3clFbG">
             <node concept="37vLTw" id="7SfJiX6o7Ld" role="2Oq$k0">
@@ -4326,266 +4593,21 @@
             </node>
             <node concept="liA8E" id="3OZ$K5miIw7" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~SRepository.addRepositoryListener(org.jetbrains.mps.openapi.module.SRepositoryListener):void" resolve="addRepositoryListener" />
-              <node concept="2ShNRf" id="5CC8MzgwkU7" role="37wK5m">
-                <node concept="YeOm9" id="5CC8MzgwkU8" role="2ShVmc">
-                  <node concept="1Y3b0j" id="5CC8MzgwkU9" role="YeSDq">
-                    <property role="2bfB8j" value="true" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                    <ref role="1Y3XeK" to="lui2:~SRepositoryListener" resolve="SRepositoryListener" />
-                    <node concept="2tJIrI" id="3OZ$K5miKXj" role="jymVt" />
-                    <node concept="3Tm1VV" id="5CC8MzgwkUa" role="1B3o_S" />
-                    <node concept="3clFb_" id="5CC8MzgwkUb" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="moduleAdded" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkUc" role="1B3o_S" />
-                      <node concept="3cqZAl" id="5CC8MzgwkUd" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkUe" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkUf" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-                        </node>
-                        <node concept="2AHcQZ" id="5CC8MzgwkUg" role="2AJF6D">
-                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkUh" role="3clF47">
-                        <node concept="3clFbJ" id="5CC8MzgwkUA" role="3cqZAp">
-                          <node concept="3clFbS" id="5CC8MzgwkUB" role="3clFbx">
-                            <node concept="34ab3g" id="5CC8MzgwkUC" role="3cqZAp">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="3cpWs3" id="5CC8MzgwkUD" role="34bqiv">
-                                <node concept="2OqwBi" id="5CC8MzgwkUE" role="3uHU7w">
-                                  <node concept="37vLTw" id="5CC8MzgwkUF" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5CC8MzgwkUe" resolve="p0" />
-                                  </node>
-                                  <node concept="liA8E" id="5CC8MzgwkUG" role="2OqNvi">
-                                    <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
-                                  </node>
-                                </node>
-                                <node concept="Xl_RD" id="5CC8MzgwkUH" role="3uHU7B">
-                                  <property role="Xl_RC" value="Factory -&gt; RepListener -&gt; moduleAdded , Listener to : " />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbF" id="3OZ$K5miWKk" role="3cqZAp">
-                              <node concept="2OqwBi" id="3OZ$K5miWNb" role="3clFbG">
-                                <node concept="35c_gC" id="3OZ$K5miWKi" role="2Oq$k0">
-                                  <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
-                                </node>
-                                <node concept="2qgKlT" id="3OZ$K5miWVm" role="2OqNvi">
-                                  <ref role="37wK5l" node="3OZ$K5miMsy" resolve="addSModuleListener" />
-                                  <node concept="37vLTw" id="3OZ$K5miWWo" role="37wK5m">
-                                    <ref role="3cqZAo" node="5CC8MzgwkUe" resolve="p0" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3fqX7Q" id="5CC8MzgwkUN" role="3clFbw">
-                            <node concept="2OqwBi" id="4UCkzXvH2eN" role="3fr31v">
-                              <node concept="35c_gC" id="4UCkzXvH2cw" role="2Oq$k0">
-                                <ref role="35c_gD" to="xf8r:7SfJiX6nJmS" resolve="ListenerFactory" />
-                              </node>
-                              <node concept="2qgKlT" id="4UCkzXvH2oi" role="2OqNvi">
-                                <ref role="37wK5l" node="4UCkzXvGWRB" resolve="isToBeIgnored" />
-                                <node concept="2OqwBi" id="4UCkzXvH2ut" role="37wK5m">
-                                  <node concept="37vLTw" id="4UCkzXvH2tp" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="5CC8MzgwkUe" resolve="p0" />
-                                  </node>
-                                  <node concept="liA8E" id="4UCkzXvH2Bl" role="2OqNvi">
-                                    <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkUP" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="moduleRemoved" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkUQ" role="1B3o_S" />
-                      <node concept="3cqZAl" id="5CC8MzgwkUR" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkUS" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkUT" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
-                        </node>
-                        <node concept="2AHcQZ" id="5CC8MzgwkUU" role="2AJF6D">
-                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkUV" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkUW" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="commandStarted" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkUX" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkUY" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkUZ" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkV0" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkV1" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkV2" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkV3" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkV4" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkV5" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkV6" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="commandFinished" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkV7" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkV8" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkV9" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkVa" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkVb" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkVc" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVd" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkVe" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVf" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkVg" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="beforeModuleRemoved" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkVh" role="1B3o_S" />
-                      <node concept="3cqZAl" id="5CC8MzgwkVi" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVj" role="3clF46">
-                        <property role="TrG5h" value="module" />
-                        <node concept="3uibUv" id="5CC8MzgwkVk" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-                        </node>
-                        <node concept="2AHcQZ" id="5CC8MzgwkVl" role="2AJF6D">
-                          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVm" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkVn" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="updateStarted" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkVo" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkVp" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkVq" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkVr" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkVs" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkVt" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVu" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkVv" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVw" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkVx" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="updateFinished" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkVy" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkVz" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkV$" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkV_" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkVA" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkVB" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVC" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkVD" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVE" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkVF" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="repositoryCommandStarted" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkVG" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkVH" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkVI" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkVJ" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkVK" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkVL" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVM" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkVN" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVO" role="3clF47" />
-                    </node>
-                    <node concept="3clFb_" id="5CC8MzgwkVP" role="jymVt">
-                      <property role="1EzhhJ" value="false" />
-                      <property role="TrG5h" value="repositoryCommandFinished" />
-                      <property role="DiZV1" value="false" />
-                      <property role="od$2w" value="false" />
-                      <node concept="3Tm1VV" id="5CC8MzgwkVQ" role="1B3o_S" />
-                      <node concept="2AHcQZ" id="5CC8MzgwkVR" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
-                      </node>
-                      <node concept="P$JXv" id="5CC8MzgwkVS" role="lGtFl">
-                        <node concept="TZ5HI" id="5CC8MzgwkVT" role="3nqlJM">
-                          <node concept="TZ5HA" id="5CC8MzgwkVU" role="3HnX3l" />
-                        </node>
-                      </node>
-                      <node concept="3cqZAl" id="5CC8MzgwkVV" role="3clF45" />
-                      <node concept="37vLTG" id="5CC8MzgwkVW" role="3clF46">
-                        <property role="TrG5h" value="p0" />
-                        <node concept="3uibUv" id="5CC8MzgwkVX" role="1tU5fm">
-                          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
-                        </node>
-                      </node>
-                      <node concept="3clFbS" id="5CC8MzgwkVY" role="3clF47" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="37vLTw" id="5zyTnvZm7X4" role="37wK5m">
+                <ref role="3cqZAo" node="5zyTnvZm6QR" resolve="repoListener" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3cpWs6" id="5zyTnvZm82N" role="3cqZAp">
+          <node concept="37vLTw" id="5zyTnvZm8dI" role="3cqZAk">
+            <ref role="3cqZAo" node="5zyTnvZm6QR" resolve="repoListener" />
+          </node>
+        </node>
       </node>
-      <node concept="3cqZAl" id="7SfJiX6nJTU" role="3clF45" />
+      <node concept="3uibUv" id="5zyTnvZm9Wr" role="3clF45">
+        <ref role="3uigEE" to="lui2:~SRepositoryListener" resolve="SRepositoryListener" />
+      </node>
       <node concept="37vLTG" id="7SfJiX6nJZc" role="3clF46">
         <property role="TrG5h" value="repository" />
         <node concept="3uibUv" id="7SfJiX6o7L9" role="1tU5fm">
