@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.Languages" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.listenerControl/de.htwsaar.peopl.listenerControl.msd" folder="Solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.playground/de.htwsaar.peopl.playground.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="Solutions.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="Solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.shortcuts/de.htwsaar.peopl.shortcuts.msd" folder="Solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr.Solutions" />
