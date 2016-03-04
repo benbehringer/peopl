@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.htwsaar.peopl.listenerControl" uuid="025f762f-786f-4451-80b1-6bae4ee9fdde" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="de.htwsaar.peopl.listener" uuid="025f762f-786f-4451-80b1-6bae4ee9fdde" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -32,7 +32,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="0" />
-    <module reference="025f762f-786f-4451-80b1-6bae4ee9fdde(de.htwsaar.peopl.listenerControl)" version="0" />
+    <module reference="025f762f-786f-4451-80b1-6bae4ee9fdde(de.htwsaar.peopl.listener)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
