@@ -45,12 +45,12 @@
     <node concept="3F0ifn" id="CABSYLJgCe" role="2wV5jI">
       <property role="3F0ifm" value="BAM" />
     </node>
-    <node concept="2aJ2om" id="CABSYLJjR3" role="CpUAK">
+    <node concept="2aJ2om" id="HDlZQT0arY" role="CpUAK">
       <ref role="2$4xQ3" node="CABSYLJjJ8" resolve="ModularView" />
     </node>
   </node>
   <node concept="2ABfQD" id="CABSYLJjJ7">
-    <property role="TrG5h" value="ModularView" />
+    <property role="TrG5h" value="MVHints" />
     <node concept="2BsEeg" id="CABSYLJjJ8" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="ModularView" />

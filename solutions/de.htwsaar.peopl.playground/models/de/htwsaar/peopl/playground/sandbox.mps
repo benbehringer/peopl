@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
     <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config" version="0" />
@@ -86,7 +84,7 @@
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
       <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
-        <child id="6648222251507162671" name="Vps" index="2$Fqj6" />
+        <child id="6648222251507162671" name="vp" index="2$Fqj6" />
       </concept>
       <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.FragmentModuleIntermediate" flags="ng" index="3aRQSP">
         <reference id="6242855909345491563" name="fragmentReference" index="3aRQSO" />
@@ -183,6 +181,10 @@
       <node concept="3aRQSP" id="HDlZQSTxXv" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="HDlZQSQZow" />
+      </node>
+      <node concept="3aRQSP" id="HDlZQSV4sG" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  A" />
+        <ref role="3aRQSO" node="HDlZQSV4rw" />
       </node>
     </node>
     <node concept="1V77HM" id="67jSsTBwxJk" role="288GmO">
@@ -308,6 +310,12 @@
         <property role="TrG5h" value="822285154211591713" />
         <node concept="1V74G$" id="HDlZQSQZoy" role="1V74Gw">
           <ref role="1V74G_" node="HDlZQSQZow" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="HDlZQSV4rx" role="2$Fqj6">
+        <property role="TrG5h" value="822285154212660961" />
+        <node concept="1V74G$" id="HDlZQSV4ry" role="1V74Gw">
+          <ref role="1V74G_" node="HDlZQSV4rw" />
         </node>
       </node>
     </node>
@@ -559,14 +567,24 @@
             </node>
           </node>
           <node concept="3clFbH" id="HDlZQSQWPw" role="3cqZAp" />
-          <node concept="3clFbF" id="HDlZQSQXoi" role="3cqZAp">
-            <node concept="37vLTI" id="HDlZQSQXra" role="3clFbG">
-              <node concept="3cmrfG" id="HDlZQSQXrA" role="37vLTx">
-                <property role="3cmrfH" value="5" />
+          <node concept="2wexfA" id="HDlZQSV4rq" role="3cqZAp">
+            <node concept="3clFbS" id="HDlZQSV4rv" role="9aQI4">
+              <node concept="3clFbF" id="HDlZQSV4rr" role="3cqZAp">
+                <node concept="37vLTI" id="HDlZQSV4rs" role="3clFbG">
+                  <node concept="3cmrfG" id="HDlZQSV4rt" role="37vLTx">
+                    <property role="3cmrfH" value="5" />
+                  </node>
+                  <node concept="37vLTw" id="HDlZQSV4ru" role="37vLTJ">
+                    <ref role="3cqZAo" node="HDlZQSQWPR" resolve="x" />
+                  </node>
+                </node>
               </node>
-              <node concept="37vLTw" id="HDlZQSQXog" role="37vLTJ">
-                <ref role="3cqZAo" node="HDlZQSQWPR" resolve="x" />
-              </node>
+            </node>
+            <node concept="1V74GB" id="HDlZQSV4rw" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <ref role="1V74Hf" node="HDlZQSV4ry" />
+              <ref role="a64iB" node="67jSsTBwxJ5" resolve="A" />
+              <ref role="3aRQVk" node="HDlZQSV4sG" resolve="ConnectedModule :  A" />
             </node>
           </node>
         </node>
