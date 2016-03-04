@@ -16,8 +16,8 @@
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
@@ -102,6 +102,12 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
     </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
@@ -481,25 +487,9 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2gqGZyjSLh7" role="3cqZAp">
-          <node concept="2OqwBi" id="2gqGZyjSS1Z" role="3clFbG">
-            <node concept="2OqwBi" id="2gqGZyjSLFe" role="2Oq$k0">
-              <node concept="35c_gC" id="2gqGZyjSLh5" role="2Oq$k0">
-                <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-              </node>
-              <node concept="2qgKlT" id="2gqGZyjSLZ8" role="2OqNvi">
-                <ref role="37wK5l" to="kpvh:3osquR_uQ4" resolve="annotate" />
-                <node concept="37vLTw" id="2gqGZyjSM21" role="37wK5m">
-                  <ref role="3cqZAo" node="2gqGZyjS_Qg" resolve="pBlock" />
-                </node>
-              </node>
-            </node>
-            <node concept="2qgKlT" id="2gqGZyjSSiR" role="2OqNvi">
-              <ref role="37wK5l" to="kpvh:3osquR$0y2" resolve="createVPandConnect" />
-              <node concept="37vLTw" id="2gqGZyjSSs_" role="37wK5m">
-                <ref role="3cqZAo" node="2gqGZyjS__4" resolve="firstNode" />
-              </node>
-            </node>
+        <node concept="3SKdUt" id="5l3OGileDFb" role="3cqZAp">
+          <node concept="3SKdUq" id="5l3OGileDFd" role="3SKWNk">
+            <property role="3SKdUp" value="TODO : Why is the order of assignments here important for the scope ? OR why is the fragment hanging at another position when assign before the statement list is created" />
           </node>
         </node>
         <node concept="3clFbF" id="2gqGZyjSMjg" role="3cqZAp">
@@ -517,6 +507,27 @@
               </node>
               <node concept="3TrEf2" id="2gqGZyjSN0R" role="2OqNvi">
                 <ref role="3Tt5mk" to="tpee:fK9aQHS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2gqGZyjSLh7" role="3cqZAp">
+          <node concept="2OqwBi" id="2gqGZyjSS1Z" role="3clFbG">
+            <node concept="2OqwBi" id="2gqGZyjSLFe" role="2Oq$k0">
+              <node concept="35c_gC" id="2gqGZyjSLh5" role="2Oq$k0">
+                <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+              </node>
+              <node concept="2qgKlT" id="2gqGZyjSLZ8" role="2OqNvi">
+                <ref role="37wK5l" to="kpvh:3osquR_uQ4" resolve="annotate" />
+                <node concept="37vLTw" id="2gqGZyjSM21" role="37wK5m">
+                  <ref role="3cqZAo" node="2gqGZyjS_Qg" resolve="pBlock" />
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="2gqGZyjSSiR" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:3osquR$0y2" resolve="createVPandConnect" />
+              <node concept="37vLTw" id="2gqGZyjSSs_" role="37wK5m">
+                <ref role="3cqZAo" node="2gqGZyjS__4" resolve="firstNode" />
               </node>
             </node>
           </node>
