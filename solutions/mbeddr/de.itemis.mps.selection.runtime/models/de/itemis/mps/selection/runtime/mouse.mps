@@ -189,6 +189,12 @@
         <child id="1163668922816" name="ifTrue" index="3K4E3e" />
         <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
@@ -2432,6 +2438,11 @@
                     </node>
                   </node>
                   <node concept="3clFbH" id="1ixjcROyBSJ" role="3cqZAp" />
+                  <node concept="3SKdUt" id="5l3OGileVNd" role="3cqZAp">
+                    <node concept="3SKdUq" id="5l3OGileVNf" role="3SKWNk">
+                      <property role="3SKdUp" value="TODO : &quot;else if&quot; part is an addition so that node that have an anotation and an editor for that annotation can be selection as start and endpoint. In peopl case, needed for selecting fragments" />
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="630t2b8eeIK" role="3cqZAp">
                     <node concept="3clFbS" id="630t2b8eeIL" role="3clFbx">
                       <node concept="3clFbF" id="630t2b8eeIM" role="3cqZAp">
