@@ -4654,6 +4654,9 @@
                 <node concept="Xl_RD" id="6OnhVubjFYN" role="HW$Y0">
                   <property role="Xl_RC" value="checkpoints" />
                 </node>
+                <node concept="Xl_RD" id="HDlZQSUiqf" role="HW$Y0">
+                  <property role="Xl_RC" value="de.hwsaar.peopl.shortcuts" />
+                </node>
               </node>
             </node>
           </node>
