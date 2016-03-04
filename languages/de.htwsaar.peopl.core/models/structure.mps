@@ -227,18 +227,18 @@
     </node>
     <node concept="1TJgyj" id="5L3eIBSVDSJ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Vps" />
+      <property role="20kJfa" value="vp" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
     </node>
     <node concept="1TJgyj" id="5FNma2fyxoX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="CutNode" />
+      <property role="20kJfa" value="nodeToCut" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="1TJgyj" id="3N55tyoWt1w" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referencedVP" />
+      <property role="20kJfa" value="refVP" />
       <ref role="20lvS9" node="6K8EDSn5e6t" resolve="VP" />
     </node>
   </node>

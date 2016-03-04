@@ -6991,7 +6991,7 @@
     <node concept="3Tm1VV" id="HDlZQSTy5Z" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="HDlZQSTy81">
-    <property role="TrG5h" value="ExtProjectviewPeoplAwareness" />
+    <property role="TrG5h" value="Ext_ProjectviewPeoplAwareness" />
     <node concept="3uibUv" id="HDlZQSTy89" role="luc8K">
       <ref role="3uigEE" node="HDlZQSTy5Y" resolve="IExt_ProjectviewPeoplAwareness" />
     </node>
