@@ -5,8 +5,8 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.config/de.htwsaar.peopl.config.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="Languages" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.dep.baselang/de.htwsaar.peopl.dep.baselang.mpl" folder="Languages" />
-      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="Languages" />
-      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="Languages" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="Languages.view" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="Languages.view" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="Languages.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="Languages.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="Languages.mbeddr" />
