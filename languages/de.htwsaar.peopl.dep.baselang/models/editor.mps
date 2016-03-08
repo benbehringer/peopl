@@ -15,7 +15,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -31,17 +30,12 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
-        <property id="1073389577007" name="text" index="3F0ifm" />
-      </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -68,18 +62,7 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
     <node concept="3EZMnI" id="62a2r2ctxOr" role="2wV5jI">
-      <node concept="3EZMnI" id="62a2r2ctUta" role="3EZMnx">
-        <node concept="l2Vlx" id="62a2r2ctUtb" role="2iSdaV" />
-        <node concept="3F0ifn" id="62a2r2cu8TW" role="3EZMnx">
-          <property role="3F0ifm" value="Container name: " />
-        </node>
-        <node concept="3F0A7n" id="62a2r2cuf$N" role="3EZMnx">
-          <property role="1$x2rV" value="Should be the classes name" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
       <node concept="3EZMnI" id="62a2r2cy2PP" role="3EZMnx">
-        <node concept="3F0ifn" id="62a2r2cy2Q1" role="3EZMnx" />
         <node concept="3F2HdR" id="62a2r2cy37a" role="3EZMnx">
           <property role="S$F3r" value="true" />
           <property role="2czwfO" value=" " />
