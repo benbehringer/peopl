@@ -234,11 +234,6 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
-      <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
-        <child id="8029776554053057803" name="objectType" index="luc8K" />
-      </concept>
-    </language>
     <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
       <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
@@ -6966,34 +6961,6 @@
       <node concept="2AHcQZ" id="5ivVtWu0_t7" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-    </node>
-  </node>
-  <node concept="3HP615" id="HDlZQSTy5Y">
-    <property role="TrG5h" value="IExt_ProjectviewPeoplAwareness" />
-    <node concept="2tJIrI" id="HDlZQSTya8" role="jymVt" />
-    <node concept="3clFb_" id="HDlZQSTW71" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getNodeToDisplay" />
-      <node concept="3clFbS" id="HDlZQSTW74" role="3clF47" />
-      <node concept="3Tm1VV" id="HDlZQSTW75" role="1B3o_S" />
-      <node concept="3uibUv" id="HDlZQSTW6H" role="3clF45">
-        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-      </node>
-      <node concept="37vLTG" id="HDlZQSTWhw" role="3clF46">
-        <property role="TrG5h" value="currentSNode" />
-        <node concept="3uibUv" id="HDlZQSTWhv" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="HDlZQSTyaa" role="jymVt" />
-    <node concept="3Tm1VV" id="HDlZQSTy5Z" role="1B3o_S" />
-  </node>
-  <node concept="vrV6u" id="HDlZQSTy81">
-    <property role="TrG5h" value="Ext_ProjectviewPeoplAwareness" />
-    <node concept="3uibUv" id="HDlZQSTy89" role="luc8K">
-      <ref role="3uigEE" node="HDlZQSTy5Y" resolve="IExt_ProjectviewPeoplAwareness" />
     </node>
   </node>
 </model>
