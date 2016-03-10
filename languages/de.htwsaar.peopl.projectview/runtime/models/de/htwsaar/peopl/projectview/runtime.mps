@@ -2262,7 +2262,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2c8WkvQkXSD">
-    <property role="TrG5h" value="ModuleExplorerHelper" />
+    <property role="TrG5h" value="OpenNodeHelper" />
     <node concept="2tJIrI" id="2c8WkvQkXVM" role="jymVt" />
     <node concept="2YIFZL" id="2c8WkvQkZzo" role="jymVt">
       <property role="TrG5h" value="openNode" />

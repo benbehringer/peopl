@@ -16,6 +16,7 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -99,6 +100,10 @@
         <node concept="3uibUv" id="6HMA$c5YIoX" role="1tU5fm">
           <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
         </node>
+      </node>
+      <node concept="37vLTG" id="2c8WkvQomqc" role="3clF46">
+        <property role="TrG5h" value="treeElementID" />
+        <node concept="17QB3L" id="2c8WkvQomtR" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="HDlZQSTyaa" role="jymVt" />
