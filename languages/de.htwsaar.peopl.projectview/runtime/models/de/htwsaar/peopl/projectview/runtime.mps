@@ -1969,6 +1969,27 @@
       <node concept="3Tm1VV" id="7AWfER2W4Mh" role="1B3o_S" />
       <node concept="3cqZAl" id="7AWfER2W5$w" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="269xz7Oi$1q" role="jymVt" />
+    <node concept="3clFb_" id="269xz7OiSUc" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getCurrentContextSet" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="269xz7OiSUf" role="3clF47">
+        <node concept="3clFbF" id="269xz7OiWcH" role="3cqZAp">
+          <node concept="37vLTw" id="269xz7OiWDd" role="3clFbG">
+            <ref role="3cqZAo" node="7AWfER2VMcM" resolve="currentEditorCellContexts" />
+          </node>
+        </node>
+      </node>
+      <node concept="2hMVRd" id="269xz7OiRtz" role="3clF45">
+        <node concept="3uibUv" id="269xz7OiSTX" role="2hN53Y">
+          <ref role="3uigEE" to="f4zo:~EditorCellContext" resolve="EditorCellContext" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="269xz7OjptD" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="7AWfER2VTPG" role="jymVt" />
     <node concept="3Tm1VV" id="7AWfER2V8FJ" role="1B3o_S" />
   </node>
