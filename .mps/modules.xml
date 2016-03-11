@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="Languages.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="Languages.view" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="Languages.mbeddr" />
+      <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="Languages.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="Languages.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="Languages.mbeddr" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="Languages.mbeddr" />
@@ -25,6 +26,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="Solutions.mbeddr" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="Solutions.mbeddr" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="Solutions.mbeddr" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="Solutions.mbeddr" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="Solutions.mbeddr" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="Solutions.mbeddr" />

@@ -1424,7 +1424,7 @@
             </node>
             <node concept="2BsdOp" id="35LN$25FUVJ" role="33vP2m">
               <node concept="Xl_RD" id="35LN$25FUYw" role="2BsfMF">
-                <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.modular" />
+                <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.sdaLikeModularity" />
               </node>
             </node>
           </node>
@@ -1432,7 +1432,7 @@
         <node concept="3clFbF" id="2c8WkvQl5rn" role="3cqZAp">
           <node concept="2YIFZM" id="2c8WkvQl5sF" role="3clFbG">
             <ref role="37wK5l" to="u8b7:2c8WkvQkZzo" resolve="openNode" />
-            <ref role="1Pybhc" to="u8b7:2c8WkvQkXSD" resolve="ModuleExplorerHelper" />
+            <ref role="1Pybhc" to="u8b7:2c8WkvQkXSD" resolve="OpenNodeHelper" />
             <node concept="2OqwBi" id="2c8WkvQlpk_" role="37wK5m">
               <node concept="2WthIp" id="2c8WkvQlpkC" role="2Oq$k0" />
               <node concept="1DTwFV" id="2c8WkvQlpkE" role="2OqNvi">
