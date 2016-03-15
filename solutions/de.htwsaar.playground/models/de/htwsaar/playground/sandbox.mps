@@ -171,7 +171,7 @@
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="67jSsTBwasU" />
       </node>
-      <node concept="3aRQSP" id="1k3hL0Sxcla" role="3aRQVq">
+      <node concept="3aRQSP" id="3Vd6OmUc6_7" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="67jSsTBwatw" />
       </node>
@@ -437,8 +437,6 @@
         </node>
       </node>
       <node concept="2tJIrI" id="1k3hL0SwW$9" role="jymVt" />
-      <node concept="2tJIrI" id="1k3hL0SxcqE" role="jymVt" />
-      <node concept="2tJIrI" id="3Vd6OmUaXaR" role="jymVt" />
       <node concept="2tJIrI" id="3Vd6OmUaXbh" role="jymVt" />
       <node concept="3clFb_" id="1VauUtq2Yvl" role="jymVt">
         <property role="1EzhhJ" value="false" />
@@ -484,7 +482,7 @@
         <property role="32Xqk$" value="chosenModule" />
         <ref role="1V74Hf" node="67jSsTBwaty" />
         <ref role="a64iB" node="67jSsTBwxJ5" resolve="A" />
-        <ref role="3aRQVk" node="1k3hL0Sxcla" resolve="ConnectedModule :  A" />
+        <ref role="3aRQVk" node="3Vd6OmUc6_7" resolve="ConnectedModule :  A" />
       </node>
     </node>
   </node>
@@ -654,10 +652,16 @@
       </node>
     </node>
   </node>
-  <node concept="HxVAC" id="3Vd6OmUaWGC">
+  <node concept="HxVAC" id="3Vd6OmUc9kj">
     <property role="TrG5h" value="Base::ThisIsFun" />
-    <property role="3GE5qa" value="tmp.Base" />
+    <property role="3GE5qa" value="tmp.basicModularity.Base" />
     <ref role="HxVAF" node="67jSsTBwxJ3" resolve="Base" />
+    <ref role="HxVAD" node="67jSsTBwatu" resolve="ThisIsFun" />
+  </node>
+  <node concept="HxVAC" id="3Vd6OmUc9sY">
+    <property role="TrG5h" value="A::ThisIsFun" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="67jSsTBwxJ5" resolve="A" />
     <ref role="HxVAD" node="67jSsTBwatu" resolve="ThisIsFun" />
   </node>
 </model>
