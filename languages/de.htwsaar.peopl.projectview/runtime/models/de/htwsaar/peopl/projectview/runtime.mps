@@ -2492,9 +2492,7 @@
                         <node concept="37vLTw" id="2c8WkvQl1C4" role="37wK5m">
                           <ref role="3cqZAo" node="2c8WkvQkZYy" resolve="currenSNode" />
                         </node>
-                        <node concept="3clFbT" id="2c8WkvQj7F4" role="37wK5m">
-                          <property role="3clFbU" value="true" />
-                        </node>
+                        <node concept="3clFbT" id="2c8WkvQj7F4" role="37wK5m" />
                       </node>
                     </node>
                   </node>
