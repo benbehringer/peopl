@@ -91,7 +91,10 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -2604,6 +2607,34 @@
     </node>
     <node concept="2tJIrI" id="2c8WkvQkXVX" role="jymVt" />
     <node concept="3Tm1VV" id="2c8WkvQkXSE" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1k3hL0Su7lA">
+    <property role="TrG5h" value="PeoplHint" />
+    <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
+      <property role="TrG5h" value="MODULE_EXPLORER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
+      <node concept="3uibUv" id="1k3hL0Suk9U" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
+        <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.moduleExplorer" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1k3hL0Su$Qn" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="BASIC_MODULARITY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1k3hL0Su$Jf" role="1B3o_S" />
+      <node concept="3uibUv" id="1k3hL0Su$Qf" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="1k3hL0Su$Vb" role="33vP2m">
+        <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.basicModularity" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1k3hL0Su7lB" role="1B3o_S" />
   </node>
 </model>
 

@@ -1423,8 +1423,9 @@
               <node concept="17QB3L" id="HDlZQSYZ3p" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="35LN$25FUVJ" role="33vP2m">
-              <node concept="Xl_RD" id="35LN$25FUYw" role="2BsfMF">
-                <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.moduleExplorer" />
+              <node concept="10M0yZ" id="1k3hL0SuEct" role="2BsfMF">
+                <ref role="1PxDUh" to="u8b7:1k3hL0Su7lA" resolve="PeoplHint" />
+                <ref role="3cqZAo" to="u8b7:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
               </node>
             </node>
           </node>

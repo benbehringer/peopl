@@ -381,7 +381,7 @@
     <node concept="2BsEeg" id="35LN$25D8Xf" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="moduleExplorer" />
-      <property role="2BUmq6" value="Support for SDA-like editors" />
+      <property role="2BUmq6" value="Support for SDA-like editors " />
     </node>
     <node concept="2BsEeg" id="2c8WkvQiez2" role="2ABdcP">
       <property role="2gpH_U" value="true" />
