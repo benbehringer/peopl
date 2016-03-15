@@ -1424,7 +1424,7 @@
             </node>
             <node concept="2BsdOp" id="35LN$25FUVJ" role="33vP2m">
               <node concept="Xl_RD" id="35LN$25FUYw" role="2BsfMF">
-                <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.sdaLikeModularity" />
+                <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.moduleExplorer" />
               </node>
             </node>
           </node>

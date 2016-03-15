@@ -294,7 +294,7 @@
                                   </node>
                                 </node>
                                 <node concept="Xl_RD" id="2c8WkvQj7Fb" role="37vLTx">
-                                  <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.sdaLikeModularity" />
+                                  <property role="Xl_RC" value="de.htwsaar.peopl.view.modular.editor.Hints.moduleExplorer" />
                                 </node>
                               </node>
                             </node>

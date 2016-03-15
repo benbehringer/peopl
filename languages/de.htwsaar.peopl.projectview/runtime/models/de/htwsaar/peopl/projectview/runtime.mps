@@ -168,6 +168,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -1825,6 +1826,22 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7AWfER2VMp7" role="3clF47">
+        <node concept="34ab3g" id="3dr__0Np1RV" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="3dr__0Np20p" role="34bqiv">
+            <node concept="2OqwBi" id="3dr__0Np2ll" role="3uHU7w">
+              <node concept="37vLTw" id="3dr__0Np2g6" role="2Oq$k0">
+                <ref role="3cqZAo" node="7AWfER2VMFu" resolve="currentContext" />
+              </node>
+              <node concept="liA8E" id="3dr__0Np2mY" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3dr__0Np1RX" role="3uHU7B">
+              <property role="Xl_RC" value="pushed editor cell context: " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7AWfER2VMXx" role="3cqZAp">
           <node concept="2OqwBi" id="7AWfER2VN7q" role="3clFbG">
             <node concept="37vLTw" id="7AWfER2VMXw" role="2Oq$k0">
@@ -1861,6 +1878,22 @@
         </node>
       </node>
       <node concept="3clFbS" id="7AWfER2VO7c" role="3clF47">
+        <node concept="34ab3g" id="3dr__0Np2yp" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="3dr__0Np2yq" role="34bqiv">
+            <node concept="2OqwBi" id="3dr__0Np2yr" role="3uHU7w">
+              <node concept="37vLTw" id="3dr__0Np2ys" role="2Oq$k0">
+                <ref role="3cqZAo" node="7AWfER2VO$O" resolve="currentContext" />
+              </node>
+              <node concept="liA8E" id="3dr__0Np2yt" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3dr__0Np2yu" role="3uHU7B">
+              <property role="Xl_RC" value="removed editor cell context: " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7AWfER2VOWw" role="3cqZAp">
           <node concept="2OqwBi" id="7AWfER2VP5q" role="3clFbG">
             <node concept="37vLTw" id="7AWfER2VOWv" role="2Oq$k0">
@@ -1890,8 +1923,31 @@
         </node>
       </node>
       <node concept="3clFbS" id="7AWfER2VQwH" role="3clF47">
+        <node concept="34ab3g" id="3dr__0Np5h4" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="3dr__0Np5h5" role="34bqiv">
+            <node concept="2OqwBi" id="3dr__0Np5h6" role="3uHU7w">
+              <node concept="37vLTw" id="3dr__0Np5h7" role="2Oq$k0">
+                <ref role="3cqZAo" node="7AWfER2VRi3" resolve="currentContext" />
+              </node>
+              <node concept="liA8E" id="3dr__0Np5h8" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="3dr__0Np5h9" role="3uHU7B">
+              <property role="Xl_RC" value="test whether editor cell context contains: " />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3dr__0Np4QO" role="3cqZAp" />
         <node concept="3clFbJ" id="7AWfER2VRBF" role="3cqZAp">
           <node concept="3clFbS" id="7AWfER2VRBG" role="3clFbx">
+            <node concept="34ab3g" id="3dr__0Np60d" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="3dr__0Np60f" role="34bqiv">
+                <property role="Xl_RC" value="it contains" />
+              </node>
+            </node>
             <node concept="3cpWs6" id="7AWfER2VS$q" role="3cqZAp">
               <node concept="3clFbT" id="7AWfER2VSCL" role="3cqZAk">
                 <property role="3clFbU" value="true" />
@@ -1907,6 +1963,12 @@
                 <ref role="3cqZAo" node="7AWfER2VRi3" resolve="currentContext" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="3dr__0NpaL8" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="3dr__0NpaLa" role="34bqiv">
+            <property role="Xl_RC" value="doesnt contain" />
           </node>
         </node>
         <node concept="3cpWs6" id="7AWfER2VT4R" role="3cqZAp">
@@ -1928,6 +1990,12 @@
       <node concept="3clFbS" id="7AWfER2VUyP" role="3clF47">
         <node concept="3clFbJ" id="7AWfER2VV0n" role="3cqZAp">
           <node concept="3clFbS" id="7AWfER2VV0o" role="3clFbx">
+            <node concept="34ab3g" id="3dr__0Np6Sf" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="3dr__0Np6Sh" role="34bqiv">
+                <property role="Xl_RC" value="editor cell context is empty." />
+              </node>
+            </node>
             <node concept="3cpWs6" id="7AWfER2VVIM" role="3cqZAp">
               <node concept="3clFbT" id="7AWfER2VW9i" role="3cqZAk">
                 <property role="3clFbU" value="true" />
@@ -1939,6 +2007,38 @@
               <ref role="3cqZAo" node="7AWfER2VMcM" resolve="currentEditorCellContexts" />
             </node>
             <node concept="1v1jN8" id="7AWfER2VV$R" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="34ab3g" id="3dr__0Np8oQ" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="3dr__0Np8oS" role="34bqiv">
+            <property role="Xl_RC" value="editor cell context is not empty: " />
+          </node>
+        </node>
+        <node concept="2Gpval" id="3dr__0Np9ag" role="3cqZAp">
+          <node concept="2GrKxI" id="3dr__0Np9ai" role="2Gsz3X">
+            <property role="TrG5h" value="context" />
+          </node>
+          <node concept="3clFbS" id="3dr__0Np9ak" role="2LFqv$">
+            <node concept="34ab3g" id="3dr__0Np9N8" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="3dr__0Np9Pm" role="34bqiv">
+                <node concept="2OqwBi" id="3dr__0Npa3x" role="3uHU7w">
+                  <node concept="2GrUjf" id="3dr__0Np9Ye" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="3dr__0Np9ai" resolve="context" />
+                  </node>
+                  <node concept="liA8E" id="3dr__0Npa7c" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="3dr__0Np9Na" role="3uHU7B">
+                  <property role="Xl_RC" value="context: " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="3dr__0Np9CC" role="2GsD0m">
+            <ref role="3cqZAo" node="7AWfER2VMcM" resolve="currentEditorCellContexts" />
           </node>
         </node>
         <node concept="3cpWs6" id="7AWfER2VWIt" role="3cqZAp">
@@ -1957,6 +2057,12 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7AWfER2W5cQ" role="3clF47">
+        <node concept="34ab3g" id="3dr__0NpbkM" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="3dr__0NpbkO" role="34bqiv">
+            <property role="Xl_RC" value="clear" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7AWfER2W69s" role="3cqZAp">
           <node concept="2OqwBi" id="7AWfER2W6ij" role="3clFbG">
             <node concept="37vLTw" id="7AWfER2W69r" role="2Oq$k0">
