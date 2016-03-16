@@ -664,5 +664,11 @@
     <ref role="HxVAF" node="67jSsTBwxJ5" resolve="A" />
     <ref role="HxVAD" node="67jSsTBwatu" resolve="ThisIsFun" />
   </node>
+  <node concept="HxVAC" id="61l2320I7X8">
+    <property role="TrG5h" value="A::JustAnotherTestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="67jSsTBwxJ5" resolve="A" />
+    <ref role="HxVAD" node="67jSsTBwasS" resolve="JustAnotherTestClass" />
+  </node>
 </model>
 
