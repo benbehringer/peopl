@@ -25,7 +25,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.listener/de.htwsaar.peopl.listener.msd" folder="Solutions.listener" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="Solutions.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="Solutions.projectview" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.runtime/de.htwsaar.peopl.runtime.msd" folder="Solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.shortcuts/de.htwsaar.peopl.shortcuts.msd" folder="Solutions" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="Solutions.mbeddr" />
