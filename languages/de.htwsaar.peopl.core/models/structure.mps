@@ -267,12 +267,6 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
-  <node concept="1TIwiD" id="7SfJiX6nJmS">
-    <property role="1pbfSe" value="999378201" />
-    <property role="TrG5h" value="ListenerFactory" />
-    <property role="3GE5qa" value="Helper" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
   <node concept="PlHQZ" id="67jSsTBwa$C">
     <property role="1pbfSe" value="917206282" />
     <property role="TrG5h" value="IColor" />
@@ -287,21 +281,6 @@
     <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
       <property role="TrG5h" value="blue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="5FNma2fyQ8y">
-    <property role="1pbfSe" value="360793406" />
-    <property role="3GE5qa" value="Helper" />
-    <property role="TrG5h" value="ToIgnoreByListener" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="5FNma2fyQ8z" role="lGtFl">
-      <property role="Hh88m" value="ToIgnoreByListener" />
-      <node concept="tn0Fv" id="5FNma2fyQ8_" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="5FNma2fyQ8B" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
     </node>
   </node>
 </model>
