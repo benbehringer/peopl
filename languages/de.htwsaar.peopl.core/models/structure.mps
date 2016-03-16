@@ -6,9 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="q4oi" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellActions(MPS.Editor/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -281,6 +279,21 @@
     <node concept="1TJgyi" id="4RpwnfCLxtx" role="1TKVEl">
       <property role="TrG5h" value="blue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5FNma2fyQ8y">
+    <property role="1pbfSe" value="360793406" />
+    <property role="3GE5qa" value="Helper" />
+    <property role="TrG5h" value="ToIgnoreByListener" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="5FNma2fyQ8z" role="lGtFl">
+      <property role="Hh88m" value="ToIgnoreByListener" />
+      <node concept="tn0Fv" id="5FNma2fyQ8_" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="5FNma2fyQ8B" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
     </node>
   </node>
 </model>

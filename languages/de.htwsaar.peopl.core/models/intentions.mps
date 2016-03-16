@@ -8,8 +8,6 @@
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
-    <import index="axem" ref="r:eabeac39-da15-43ab-9562-70c395e6d7cf(de.htwsaar.peopl.listener.helper.behavior)" />
-    <import index="e37n" ref="r:ba45a055-c1aa-405e-8959-71860914ca4e(de.htwsaar.peopl.listener.helper.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>

@@ -12,9 +12,8 @@
     <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
-    <import index="e37n" ref="r:ba45a055-c1aa-405e-8959-71860914ca4e(de.htwsaar.peopl.listener.helper.structure)" />
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
-    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -542,7 +541,7 @@
                 <node concept="2ShNRf" id="1_RDRyJm81y" role="37vLTx">
                   <node concept="3zrR0B" id="1_RDRyJm81w" role="2ShVmc">
                     <node concept="3Tqbb2" id="1_RDRyJm81x" role="3zrR0E">
-                      <ref role="ehGHo" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                      <ref role="ehGHo" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                     </node>
                   </node>
                 </node>
@@ -562,7 +561,7 @@
                   </node>
                   <node concept="3CFZ6_" id="1_RDRyJm7VK" role="2OqNvi">
                     <node concept="3CFYIy" id="1_RDRyJm7WX" role="3CFYIz">
-                      <ref role="3CFYIx" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                      <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                     </node>
                   </node>
                 </node>
@@ -616,14 +615,14 @@
                 <node concept="2ShNRf" id="3Zq0qExKtT1" role="37vLTx">
                   <node concept="3zrR0B" id="3Zq0qExKtSj" role="2ShVmc">
                     <node concept="3Tqbb2" id="3Zq0qExKtSk" role="3zrR0E">
-                      <ref role="ehGHo" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                      <ref role="ehGHo" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                     </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3Zq0qExKtKx" role="37vLTJ">
                   <node concept="3CFZ6_" id="3Zq0qExKtMe" role="2OqNvi">
                     <node concept="3CFYIy" id="3Zq0qExKtMV" role="3CFYIz">
-                      <ref role="3CFYIx" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                      <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                     </node>
                   </node>
                   <node concept="1eOMI4" id="1_RDRyJlV$3" role="2Oq$k0">
@@ -672,7 +671,7 @@
                 <node concept="2OqwBi" id="1_RDRyJlWLt" role="37vLTJ">
                   <node concept="3CFZ6_" id="1_RDRyJlWLu" role="2OqNvi">
                     <node concept="3CFYIy" id="1_RDRyJlWLv" role="3CFYIz">
-                      <ref role="3CFYIx" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                      <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                     </node>
                   </node>
                   <node concept="1eOMI4" id="1_RDRyJlWLw" role="2Oq$k0">
@@ -715,7 +714,7 @@
               </node>
               <node concept="3CFZ6_" id="1_RDRyJm83Z" role="2OqNvi">
                 <node concept="3CFYIy" id="1_RDRyJm840" role="3CFYIz">
-                  <ref role="3CFYIx" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                  <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                 </node>
               </node>
             </node>

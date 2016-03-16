@@ -61,7 +61,6 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)</dependency>
     <dependency reexport="false">6d7d9b46-11d1-41f3-b43e-12253328b43f(de.htwsaar.peopl.projectview.modular)</dependency>
     <dependency reexport="false">17c7c1a9-c7e2-4138-8301-ce5e3e52a62a(de.htwsaar.peopl.projectview.runtime)</dependency>
     <dependency reexport="false">0ae47ad3-5abd-486c-ac0f-298884f39393(jetbrains.mps.baseLanguage.constructors)</dependency>

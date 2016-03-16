@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
     <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
   </languages>
   <imports />
@@ -104,16 +104,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.config">
-      <concept id="675154290793708653" name="de.htwsaar.peopl.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743898" name="de.htwsaar.peopl.config.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743904" name="de.htwsaar.peopl.config.structure.ModuleConnector" flags="ng" index="u2itw">
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.config.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
-      <concept id="5543868949657485306" name="de.htwsaar.peopl.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
-      <concept id="1473120132588955227" name="de.htwsaar.peopl.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
+      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
         <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
         <child id="1473120132588955228" name="configs" index="2M0niC" />
       </concept>
@@ -169,35 +169,10 @@
       </node>
     </node>
   </node>
-  <node concept="2M0niJ" id="62a2r2c$oP3">
-    <ref role="2M0niE" node="67jSsTBq$L9" />
-    <node concept="u25OH" id="67jSsTBq$L9" role="2M0niC">
-      <node concept="2Hijyl" id="67jSsTBq$La" role="2Hjnvt">
-        <node concept="u2itq" id="67jSsTBwxK6" role="3clFbG">
-          <node concept="u2itw" id="67jSsTBwxKm" role="3uHU7w">
-            <ref role="u2itx" node="67jSsTBwxJo" resolve="C" />
-          </node>
-          <node concept="u2itq" id="67jSsTBwxJP" role="3uHU7B">
-            <node concept="u2itq" id="67jSsTBwxJC" role="3uHU7B">
-              <node concept="u2itw" id="67jSsTBwxJy" role="3uHU7B">
-                <ref role="u2itx" node="67jSsTBwxJ3" resolve="Base" />
-              </node>
-              <node concept="u2itw" id="67jSsTBwxJJ" role="3uHU7w">
-                <ref role="u2itx" node="67jSsTBwxJ5" resolve="A" />
-              </node>
-            </node>
-            <node concept="u2itw" id="67jSsTBwxK1" role="3uHU7w">
-              <ref role="u2itx" node="67jSsTBwxJk" resolve="B" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2SvMkh" id="2B6$8H1W$19">
-    <property role="TrG5h" value="TestClass" />
+    <property role="TrG5h" value="TestClassi" />
     <node concept="3GWJoq" id="2B6$8H1W$1a" role="2abgUk">
-      <property role="TrG5h" value="TestClass" />
+      <property role="TrG5h" value="TestClassi" />
       <node concept="312cEg" id="2B6$8H1W$1Z" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -236,7 +211,22 @@
     <property role="TrG5h" value="Base::TestClass" />
     <property role="3GE5qa" value="tmp.basicModularity.Base" />
     <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
-    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
+    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClassi" />
+  </node>
+  <node concept="2M0niJ" id="2RNdAfAV$_$">
+    <ref role="2M0niE" node="2RNdAfAV$__" />
+    <node concept="u25OH" id="2RNdAfAV$__" role="2M0niC">
+      <node concept="2Hijyl" id="2RNdAfAV$_A" role="2Hjnvt">
+        <node concept="u2itq" id="2RNdAfAV$_L" role="3clFbG">
+          <node concept="u2itw" id="2RNdAfAV$_F" role="3uHU7B">
+            <ref role="u2itx" node="2B6$8H1W$0t" resolve="Base" />
+          </node>
+          <node concept="u2itw" id="2RNdAfAV$_X" role="3uHU7w">
+            <ref role="u2itx" node="2B6$8H1W$0K" resolve="B" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

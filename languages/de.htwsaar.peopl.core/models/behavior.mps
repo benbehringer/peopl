@@ -13,13 +13,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="cmfw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.event(MPS.OpenAPI/)" />
-    <import index="tgbt" ref="r:c70ee934-afb1-4c02-b6a9-1c4d1908a792(jetbrains.mps.lang.plugin.standalone.structure)" />
-    <import index="e37n" ref="r:ba45a055-c1aa-405e-8959-71860914ca4e(de.htwsaar.peopl.listener.helper.structure)" />
-    <import index="axem" ref="r:eabeac39-da15-43ab-9562-70c395e6d7cf(de.htwsaar.peopl.listener.helper.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -2279,12 +2272,17 @@
       <property role="TrG5h" value="setNodeFromCutAction" />
       <node concept="3Tm1VV" id="5FNma2fyxEC" role="1B3o_S" />
       <node concept="3clFbS" id="5FNma2fyxED" role="3clF47">
+        <node concept="3SKdUt" id="7C3COFHM3Dn" role="3cqZAp">
+          <node concept="3SKdUq" id="7C3COFHM3Do" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Circular dependency resolution!" />
+          </node>
+        </node>
         <node concept="3clFbF" id="5FNma2fyQgN" role="3cqZAp">
           <node concept="37vLTI" id="5FNma2fyQp4" role="3clFbG">
             <node concept="2ShNRf" id="5FNma2fyQqe" role="37vLTx">
               <node concept="3zrR0B" id="5FNma2fyQqc" role="2ShVmc">
                 <node concept="3Tqbb2" id="5FNma2fyQqd" role="3zrR0E">
-                  <ref role="ehGHo" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                  <ref role="ehGHo" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                 </node>
               </node>
             </node>
@@ -2293,8 +2291,8 @@
                 <ref role="3cqZAo" node="5FNma2fyykj" resolve="nodeFromAction" />
               </node>
               <node concept="3CFZ6_" id="5FNma2fyQlb" role="2OqNvi">
-                <node concept="3CFYIy" id="5FNma2fyQlT" role="3CFYIz">
-                  <ref role="3CFYIx" to="e37n:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                <node concept="3CFYIy" id="7C3COFHMBMD" role="3CFYIz">
+                  <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                 </node>
               </node>
             </node>
