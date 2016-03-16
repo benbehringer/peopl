@@ -89,12 +89,6 @@
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
-    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
-      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
-        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
-        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -127,10 +121,6 @@
       <property role="2_7ToH" value="146" />
       <property role="2_7Toi" value="211" />
       <property role="TrG5h" value="Base" />
-      <node concept="3aRQSP" id="2B6$8H1W$1t" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  Base" />
-        <ref role="3aRQSO" node="2B6$8H1W$1c" />
-      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$0H" role="288GmO">
       <property role="2_7ToJ" value="187" />
@@ -143,15 +133,19 @@
       <property role="2_7ToH" value="213" />
       <property role="2_7Toi" value="230" />
       <property role="TrG5h" value="B" />
+      <node concept="3aRQSP" id="2cc8yvsXZ2_" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  B" />
+        <ref role="3aRQSO" node="2B6$8H1W$3b" />
+      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$14" role="288GmO">
       <property role="2_7ToJ" value="200" />
       <property role="2_7ToH" value="184" />
       <property role="2_7Toi" value="162" />
       <property role="TrG5h" value="C" />
-      <node concept="3aRQSP" id="2B6$8H1W$3s" role="3aRQVq">
+      <node concept="3aRQSP" id="2cc8yvsXZ2p" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  C" />
-        <ref role="3aRQSO" node="2B6$8H1W$3b" />
+        <ref role="3aRQSO" node="2B6$8H1W$1c" />
       </node>
     </node>
     <node concept="2$Fqj1" id="2B6$8H1W$1e" role="lGtFl">
@@ -170,9 +164,9 @@
     </node>
   </node>
   <node concept="2SvMkh" id="2B6$8H1W$19">
-    <property role="TrG5h" value="TestClassi" />
+    <property role="TrG5h" value="TestClass" />
     <node concept="3GWJoq" id="2B6$8H1W$1a" role="2abgUk">
-      <property role="TrG5h" value="TestClassi" />
+      <property role="TrG5h" value="TestClass" />
       <node concept="312cEg" id="2B6$8H1W$1Z" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -194,24 +188,18 @@
         <node concept="1V74GB" id="2B6$8H1W$3b" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
           <ref role="1V74Hf" node="2B6$8H1W$3d" />
-          <ref role="a64iB" node="2B6$8H1W$14" resolve="C" />
-          <ref role="3aRQVk" node="2B6$8H1W$3s" resolve="ConnectedModule :  C" />
+          <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
+          <ref role="3aRQVk" node="2cc8yvsXZ2_" resolve="ConnectedModule :  B" />
         </node>
       </node>
       <node concept="3Tm1VV" id="2B6$8H1W$1b" role="1B3o_S" />
       <node concept="1V74GB" id="2B6$8H1W$1c" role="lGtFl">
         <property role="32Xqk$" value="chosenModule" />
         <ref role="1V74Hf" node="2B6$8H1W$1f" />
-        <ref role="a64iB" node="2B6$8H1W$0t" resolve="Base" />
-        <ref role="3aRQVk" node="2B6$8H1W$1t" resolve="ConnectedModule :  Base" />
+        <ref role="a64iB" node="2B6$8H1W$14" resolve="C" />
+        <ref role="3aRQVk" node="2cc8yvsXZ2p" resolve="ConnectedModule :  C" />
       </node>
     </node>
-  </node>
-  <node concept="HxVAC" id="2B6$8H1W$3_">
-    <property role="TrG5h" value="Base::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity.Base" />
-    <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
-    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClassi" />
   </node>
   <node concept="2M0niJ" id="2RNdAfAV$_$">
     <ref role="2M0niE" node="2RNdAfAV$__" />
