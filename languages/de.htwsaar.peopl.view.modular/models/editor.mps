@@ -392,6 +392,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -439,6 +440,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3KxWXtV8faj">
+    <property role="3GE5qa" value="moduleExplorer" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="2aJ2om" id="4wSWA_U_n51" role="CpUAK">
       <ref role="2$4xQ3" node="35LN$25D8Xf" resolve="moduleExplorer" />
@@ -1082,6 +1084,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="17IQzr1hoxZ">
+    <property role="3GE5qa" value="moduleExplorer" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="17IQzr1hoy8" role="CpUAK">
       <ref role="2$4xQ3" node="35LN$25D8Xf" resolve="moduleExplorer" />
@@ -3878,6 +3881,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7VBGp5eZMQ3">
+    <property role="3GE5qa" value="test" />
     <ref role="1XX52x" to="ao9j:3KxWXtV8cDS" resolve="TmpModule" />
     <node concept="3EZMnI" id="7VBGp5eZSiT" role="2wV5jI">
       <node concept="2iRkQZ" id="7VBGp5eZSiU" role="2iSdaV" />
@@ -5568,6 +5572,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0SvipP">
+    <property role="3GE5qa" value="basicModularity" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="1k3hL0Svjgd" role="CpUAK">
       <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
@@ -5709,6 +5714,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0Sw3Iu">
+    <property role="3GE5qa" value="basicModularity" />
     <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
     <node concept="2aJ2om" id="1k3hL0Sw3Iw" role="CpUAK">
       <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
@@ -5877,6 +5883,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0Sx$wt">
+    <property role="3GE5qa" value="basicModularity" />
     <ref role="1XX52x" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
     <node concept="2aJ2om" id="1k3hL0Sx$wN" role="CpUAK">
       <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
@@ -6183,6 +6190,7 @@
   </node>
   <node concept="PKFIW" id="3Vd6OmUgkWQ">
     <property role="TrG5h" value="PeoplClassifierMembers_Component" />
+    <property role="3GE5qa" value="basicModularity" />
     <ref role="1XX52x" to="tpee:g7pOWCK" resolve="Classifier" />
     <node concept="2aJ2om" id="3Vd6OmUgoBD" role="3XTboT">
       <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
@@ -6569,7 +6577,7 @@
                 <node concept="3clFbS" id="4GP8caFar1I" role="3eOfB_">
                   <node concept="3SKdUt" id="4GP8caFcggt" role="3cqZAp">
                     <node concept="3SKdUq" id="4GP8caFcggu" role="3SKWNk">
-                      <property role="3SKdUp" value="we allow when" />
+                      <property role="3SKdUp" value="we allow method declarations that are implicitly defined by the current module" />
                     </node>
                   </node>
                   <node concept="3cpWs6" id="4GP8caFaLDv" role="3cqZAp">
@@ -6618,7 +6626,7 @@
             </node>
             <node concept="3SKdUt" id="61l2320I8hc" role="3cqZAp">
               <node concept="3SKdUq" id="61l2320I8n7" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: Do we need write access here? Is simultaneous access possible?" />
+                <property role="3SKdUp" value="TODO: Do we need (synchronized) write access here? Is simultaneous access possible?" />
               </node>
             </node>
             <node concept="3clFbF" id="61l2320H2NX" role="3cqZAp">
