@@ -88,6 +88,7 @@
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
+      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
         <child id="7348800710862477686" name="contextHints" index="3XTboT" />
@@ -98,11 +99,7 @@
         <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
-        <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
-      </concept>
-      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
-        <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186413799158" name="jetbrains.mps.lang.editor.structure.BracketColorStyleClassItem" flags="ln" index="VLuvy" />
@@ -151,7 +148,6 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
-        <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
@@ -5737,11 +5733,11 @@
           </node>
         </node>
       </node>
-      <node concept="35HoNQ" id="3Vd6OmUanTw" role="1QoVPY">
-        <node concept="VSNWy" id="3Vd6OmUao4r" role="3F10Kt">
+      <node concept="35HoNQ" id="5950iCtKQw0" role="1QoVPY">
+        <node concept="VSNWy" id="5950iCtKQBc" role="3F10Kt">
           <property role="1lJzqX" value="0" />
         </node>
-        <node concept="VPM3Z" id="3Vd6OmUao6d" role="3F10Kt">
+        <node concept="VPM3Z" id="5950iCtKQCX" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
       </node>
@@ -6886,21 +6882,7 @@
         <property role="2czwfN" value="true" />
         <ref role="1NtTu8" to="tpee:fzcqZ_x" />
         <ref role="1ERwB7" to="tpen:5$2zAVjgy05" resolve="StatementList_Actions" />
-        <node concept="3F0ifn" id="hT0KxlS" role="2czzBI">
-          <property role="ilYzB" value="&lt;no statements&gt;" />
-          <node concept="VPM3Z" id="hT0KxlT" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="Vb9p2" id="hT0KxlU" role="3F10Kt">
-            <property role="Vbekb" value="ITALIC" />
-          </node>
-          <node concept="VPxyj" id="hT0KxlV" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="VechU" id="hT0KxlW" role="3F10Kt">
-            <property role="Vb096" value="darkGray" />
-          </node>
-        </node>
+        <node concept="3F0ifn" id="5950iCtLCAX" role="2czzBI" />
         <node concept="VPM3Z" id="hT0KxlX" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -7776,6 +7758,17 @@
           <property role="2V7CMs" value="default_RTransform" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="xUEdTNkhJT">
+    <property role="3GE5qa" value="basicModularity" />
+    <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="3EZMnI" id="xUEdTNkG51" role="2wV5jI">
+      <node concept="2iRkQZ" id="xUEdTNkG52" role="2iSdaV" />
+      <node concept="B$lHz" id="xUEdTNkiVc" role="3EZMnx" />
+    </node>
+    <node concept="2aJ2om" id="xUEdTNkiVa" role="CpUAK">
+      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
     </node>
   </node>
 </model>
