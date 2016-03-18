@@ -192,13 +192,20 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
         <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -421,11 +428,6 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="41j_k9r1_po" role="3clF47">
-        <node concept="3SKdUt" id="41j_k9r1_pp" role="3cqZAp">
-          <node concept="3SKdUq" id="41j_k9r1_pq" role="3SKWNk">
-            <property role="3SKdUp" value="we should use undoable commands like executeCommandInEDT when accessing the model" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="41j_k9r1_pr" role="3cqZAp">
           <node concept="2ShNRf" id="41j_k9r1BkT" role="3cqZAk">
             <node concept="1pGfFk" id="41j_k9r1CUL" role="2ShVmc">
@@ -464,7 +466,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2cc8yvsXIfE" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
               <node concept="1bVj0M" id="2cc8yvsXIfF" role="37wK5m">
                 <node concept="3clFbS" id="2cc8yvsXIfG" role="1bW5cS">
                   <node concept="3clFbF" id="4GP8caFpj2j" role="3cqZAp">
@@ -508,7 +510,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2cc8yvsXI9J" role="2OqNvi">
-                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                         <node concept="1bVj0M" id="2cc8yvsXI9K" role="37wK5m">
                                           <node concept="3clFbS" id="2cc8yvsXI9L" role="1bW5cS">
                                             <node concept="34ab3g" id="4GP8caFpj2y" role="3cqZAp">
@@ -576,7 +578,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2cc8yvsXI5s" role="2OqNvi">
-                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                         <node concept="1bVj0M" id="2cc8yvsXI5t" role="37wK5m">
                                           <node concept="3clFbS" id="2cc8yvsXI5u" role="1bW5cS">
                                             <node concept="34ab3g" id="4GP8caFpj2P" role="3cqZAp">
@@ -644,7 +646,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2cc8yvsXI1$" role="2OqNvi">
-                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                         <node concept="1bVj0M" id="2cc8yvsXI2O" role="37wK5m">
                                           <node concept="3clFbS" id="2cc8yvsXI2P" role="1bW5cS">
                                             <node concept="34ab3g" id="4GP8caFpj38" role="3cqZAp">
@@ -713,7 +715,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2cc8yvsXF_s" role="2OqNvi">
-                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                         <node concept="1bVj0M" id="2cc8yvsXFAG" role="37wK5m">
                                           <node concept="3clFbS" id="2cc8yvsXFAH" role="1bW5cS">
                                             <node concept="3clFbJ" id="7C3COFHMMBf" role="3cqZAp">
@@ -856,7 +858,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2cc8yvsXIt1" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
               <node concept="1bVj0M" id="2cc8yvsXIt2" role="37wK5m">
                 <node concept="3clFbS" id="2cc8yvsXIt3" role="1bW5cS">
                   <node concept="3clFbJ" id="4UCkzXvH2Ua" role="3cqZAp">
@@ -919,7 +921,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="2cc8yvsXPqg" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXPqh" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXPqi" role="1bW5cS">
                                                 <node concept="3clFbJ" id="7U4gdfRvZp7" role="3cqZAp">
@@ -1065,7 +1067,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="2cc8yvsXPcW" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXPcX" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXPcY" role="1bW5cS">
                                                 <node concept="3clFbJ" id="4UCkzXvH3_0" role="3cqZAp">
@@ -1310,7 +1312,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="2cc8yvsXP3o" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXP3p" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXP3q" role="1bW5cS" />
                                             </node>
@@ -1348,7 +1350,7 @@
                                             </node>
                                           </node>
                                           <node concept="liA8E" id="2cc8yvsXMBc" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXMBd" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXMBe" role="1bW5cS">
                                                 <node concept="3clFbJ" id="7C3COFHMP7L" role="3cqZAp">
@@ -1720,7 +1722,7 @@
                                       <node concept="3clFbF" id="41j_k9r1m7z" role="3cqZAp">
                                         <node concept="2OqwBi" id="41j_k9r1m7$" role="3clFbG">
                                           <node concept="liA8E" id="41j_k9r1m7A" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="41j_k9r1m7B" role="37wK5m">
                                               <node concept="3clFbS" id="41j_k9r1m7C" role="1bW5cS">
                                                 <node concept="3clFbF" id="4UCkzXvH3Cw" role="3cqZAp">
@@ -1790,7 +1792,7 @@
                                       <node concept="3clFbF" id="41j_k9r1mao" role="3cqZAp">
                                         <node concept="2OqwBi" id="41j_k9r1map" role="3clFbG">
                                           <node concept="liA8E" id="41j_k9r1mar" role="2OqNvi">
-                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                            <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="41j_k9r1mas" role="37wK5m">
                                               <node concept="3clFbS" id="41j_k9r1mat" role="1bW5cS">
                                                 <node concept="3clFbF" id="4UCkzXvH3CR" role="3cqZAp">
@@ -1912,7 +1914,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2cc8yvsXSH$" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+              <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
               <node concept="1bVj0M" id="2cc8yvsXSH_" role="37wK5m">
                 <node concept="3clFbS" id="2cc8yvsXSHA" role="1bW5cS">
                   <node concept="3clFbF" id="3OZ$K5miNu4" role="3cqZAp">
@@ -1959,7 +1961,7 @@
                                         </node>
                                       </node>
                                       <node concept="liA8E" id="2cc8yvsXSVl" role="2OqNvi">
-                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                        <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                         <node concept="1bVj0M" id="2cc8yvsXSVm" role="37wK5m">
                                           <node concept="3clFbS" id="2cc8yvsXSVn" role="1bW5cS">
                                             <node concept="3clFbJ" id="5CC8Mzgwl$Q" role="3cqZAp">
@@ -2274,6 +2276,11 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="5zyTnvZm6TK" role="3clF47">
+                      <node concept="3SKdUt" id="2CFhHrFQ9U6" role="3cqZAp">
+                        <node concept="3SKdUq" id="2CFhHrFQ9U7" role="3SKWNk">
+                          <property role="3SKdUp" value="Access must be undoable!" />
+                        </node>
+                      </node>
                       <node concept="3clFbF" id="2cc8yvsXTP2" role="3cqZAp">
                         <node concept="2OqwBi" id="2cc8yvsXTSp" role="3clFbG">
                           <node concept="2YIFZM" id="2cc8yvsXTP4" role="2Oq$k0">
@@ -2671,6 +2678,38 @@
     </node>
     <node concept="2tJIrI" id="41j_k9r0E6o" role="jymVt" />
     <node concept="3Tm1VV" id="7U4gdfRvy9p" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2CFhHrFQaYC" role="lGtFl">
+      <node concept="TZ5HA" id="2CFhHrFQaYD" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQaYE" role="1dT_Ay">
+          <property role="1dT_AB" value="Doc says: &quot;Changes to the models require undoable actions, which can be executed through" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2CFhHrFQbyB" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQbyC" role="1dT_Ay">
+          <property role="1dT_AB" value="the executeCommandInEDT() method&quot; [https://confluence.jetbrains.com/display/MPSD34/Progress+indicators]." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2CFhHrFQc4P" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQc4Q" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2CFhHrFQbyM" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQbyN" role="1dT_Ay">
+          <property role="1dT_AB" value="We may need to undo some changes using cmd+z (e.g., accidently deleting a fragment needs to be undoable)" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2CFhHrFQc58" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQc59" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2CFhHrFQbzg" role="TZ5H$">
+        <node concept="1dT_AC" id="2CFhHrFQbzh" role="1dT_Ay">
+          <property role="1dT_AB" value="NOTE: repository stuff must run in EDT command: executeCommandInEDT()" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="3HP615" id="7U4gdfRwe2y">
     <property role="TrG5h" value="IExt_PeoplListenerExtension" />
