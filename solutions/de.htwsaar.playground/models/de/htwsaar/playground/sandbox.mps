@@ -252,6 +252,10 @@
         <property role="TrG5h" value="ConnectedModule :  Base" />
         <ref role="3aRQSO" node="xUEdTNkOFS" />
       </node>
+      <node concept="3aRQSP" id="5cacDZVpkOv" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  Base" />
+        <ref role="3aRQSO" node="xUEdTNkY3I" />
+      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$0H" role="288GmO">
       <property role="2_7ToJ" value="187" />
@@ -290,6 +294,10 @@
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="1DrSvX1J_W2" />
       </node>
+      <node concept="3aRQSP" id="5cacDZVpkPb" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  A" />
+        <ref role="3aRQSO" node="xUEdTNkY5e" />
+      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$0K" role="288GmO">
       <property role="2_7ToJ" value="162" />
@@ -299,10 +307,6 @@
       <node concept="3aRQSP" id="5950iCtIiSO" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  B" />
         <ref role="3aRQSO" node="5mmbC3y8Goh" />
-      </node>
-      <node concept="3aRQSP" id="xUEdTNkY6b" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  B" />
-        <ref role="3aRQSO" node="xUEdTNkY5e" />
       </node>
       <node concept="3aRQSP" id="4XXs7nZYl8J" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  B" />
@@ -325,10 +329,6 @@
       <node concept="3aRQSP" id="xUEdTNkOkU" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  C" />
         <ref role="3aRQSO" node="xUEdTNkOkc" />
-      </node>
-      <node concept="3aRQSP" id="xUEdTNl$FA" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  C" />
-        <ref role="3aRQSO" node="xUEdTNkY3I" />
       </node>
       <node concept="3aRQSP" id="1DrSvX1JCSV" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  C" />
@@ -859,6 +859,11 @@
                   <property role="3SKdUp" value="some code" />
                 </node>
               </node>
+              <node concept="3SKdUt" id="5cacDZVuc2D" role="3cqZAp">
+                <node concept="3SKdUq" id="5cacDZVuc2E" role="3SKWNk">
+                  <property role="3SKdUp" value="that will be visible when Base is chosen" />
+                </node>
+              </node>
             </node>
             <node concept="37vLTw" id="4XXs7nZYkTq" role="3clFbw">
               <ref role="3cqZAo" node="4XXs7nZYkKm" resolve="a" />
@@ -869,6 +874,9 @@
               <ref role="a64iB" node="2B6$8H1W$14" resolve="C" />
               <ref role="3aRQVk" node="4XXs7nZNDDY" resolve="ConnectedModule :  C" />
             </node>
+            <node concept="9aQIb" id="5cacDZVtLpX" role="9aQIa">
+              <node concept="3clFbS" id="5cacDZVtLpY" role="9aQI4" />
+            </node>
           </node>
           <node concept="3clFbH" id="4XXs7nZND_4" role="3cqZAp" />
           <node concept="3clFbH" id="5cacDZVlm1L" role="3cqZAp" />
@@ -877,6 +885,16 @@
               <node concept="3SKdUt" id="4XXs7nZXTFg" role="3cqZAp">
                 <node concept="3SKdUq" id="4XXs7nZXTFh" role="3SKWNk">
                   <property role="3SKdUp" value="this is a long text to test borders" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="5cacDZVuc2J" role="3cqZAp">
+                <node concept="3SKdUq" id="5cacDZVuc2K" role="3SKWNk">
+                  <property role="3SKdUp" value="some code that will be visible" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="5cacDZVuc2Q" role="3cqZAp">
+                <node concept="3SKdUq" id="5cacDZVuc2R" role="3SKWNk">
+                  <property role="3SKdUp" value="when Base is chosen" />
                 </node>
               </node>
             </node>
@@ -907,6 +925,11 @@
                 <node concept="3SKdUt" id="4XXs7nZYl3s" role="3cqZAp">
                   <node concept="3SKdUq" id="4XXs7nZYl3t" role="3SKWNk">
                     <property role="3SKdUp" value="multiple lines" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="5cacDZVuc36" role="3cqZAp">
+                  <node concept="3SKdUq" id="5cacDZVuc37" role="3SKWNk">
+                    <property role="3SKdUp" value="code will be pruned if A is not chosen" />
                   </node>
                 </node>
               </node>
@@ -990,6 +1013,11 @@
                   <node concept="3SKdUt" id="4XXs7o022IL" role="3cqZAp">
                     <node concept="3SKdUq" id="4XXs7o022IM" role="3SKWNk">
                       <property role="3SKdUp" value="a TryCatchStatement" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="5cacDZVv1AJ" role="3cqZAp">
+                    <node concept="3SKdUq" id="5cacDZVv1AK" role="3SKWNk">
+                      <property role="3SKdUp" value="base code will be available although try might be pruned" />
                     </node>
                   </node>
                 </node>
@@ -1109,8 +1137,8 @@
         <node concept="1V74GB" id="xUEdTNkY5e" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
           <ref role="1V74Hf" node="xUEdTNkY5g" />
-          <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
-          <ref role="3aRQVk" node="xUEdTNkY6b" resolve="ConnectedModule :  B" />
+          <ref role="a64iB" node="2B6$8H1W$0H" resolve="A" />
+          <ref role="3aRQVk" node="5cacDZVpkPb" resolve="ConnectedModule :  A" />
         </node>
       </node>
       <node concept="3uibUv" id="xUEdTNkOKv" role="EKbjA">
@@ -1130,8 +1158,8 @@
         <node concept="1V74GB" id="xUEdTNkY3I" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
           <ref role="1V74Hf" node="xUEdTNkY3K" />
-          <ref role="a64iB" node="2B6$8H1W$14" resolve="C" />
-          <ref role="3aRQVk" node="xUEdTNl$FA" resolve="ConnectedModule :  C" />
+          <ref role="a64iB" node="2B6$8H1W$0t" resolve="Base" />
+          <ref role="3aRQVk" node="5cacDZVpkOv" resolve="ConnectedModule :  Base" />
         </node>
       </node>
     </node>
