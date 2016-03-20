@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -350,55 +351,6 @@
             <node concept="3clFbS" id="gnPVcdBnav" role="9aQI4">
               <node concept="3cpWs6" id="gnPVcdBnfR" role="3cqZAp">
                 <node concept="3clFbT" id="gnPVcdBnii" role="3cqZAk" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="3N55tyoXpwF">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="AssignWrapperToModules" />
-    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="2S6ZIM" id="3N55tyoXpwG" role="2ZfVej">
-      <node concept="3clFbS" id="3N55tyoXpwH" role="2VODD2">
-        <node concept="3clFbF" id="3N55tyoXp_c" role="3cqZAp">
-          <node concept="Xl_RD" id="3N55tyoXp_b" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; Create structure for module to wrappee assignment" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="3N55tyoXpwI" role="2ZfgGD">
-      <node concept="3clFbS" id="3N55tyoXpwJ" role="2VODD2" />
-    </node>
-    <node concept="2SaL7w" id="62a2r2c$pc2" role="2ZfVeh">
-      <node concept="3clFbS" id="62a2r2c$pc3" role="2VODD2">
-        <node concept="3clFbJ" id="62a2r2c$pcD" role="3cqZAp">
-          <node concept="3clFbS" id="62a2r2c$pcE" role="3clFbx">
-            <node concept="3cpWs6" id="62a2r2c$pcF" role="3cqZAp">
-              <node concept="3clFbT" id="62a2r2c$pcG" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="3y3z36" id="62a2r2c$pcH" role="3clFbw">
-            <node concept="2OqwBi" id="62a2r2c$pcI" role="3uHU7B">
-              <node concept="35c_gC" id="62a2r2c$pcJ" role="2Oq$k0">
-                <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-              </node>
-              <node concept="2qgKlT" id="62a2r2c$pcK" role="2OqNvi">
-                <ref role="37wK5l" to="kpvh:gnPVcdAXmj" resolve="canBeAttributed" />
-                <node concept="2Sf5sV" id="62a2r2c$pcL" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="62a2r2c$pcM" role="3uHU7w" />
-          </node>
-          <node concept="9aQIb" id="62a2r2c$pcN" role="9aQIa">
-            <node concept="3clFbS" id="62a2r2c$pcO" role="9aQI4">
-              <node concept="3cpWs6" id="62a2r2c$pcP" role="3cqZAp">
-                <node concept="3clFbT" id="62a2r2c$pcQ" role="3cqZAk" />
               </node>
             </node>
           </node>
@@ -1323,11 +1275,21 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="JNlolcmz$l" role="3clFbw">
-            <node concept="2Sf5sV" id="JNlolcmzyE" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="JNlolcmzCz" role="2OqNvi">
-              <node concept="chp4Y" id="JNlolcmzEb" role="cj9EA">
-                <ref role="cht4Q" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+          <node concept="22lmx$" id="1CMrqIaiB78" role="3clFbw">
+            <node concept="2OqwBi" id="JNlolcmz$l" role="3uHU7B">
+              <node concept="2Sf5sV" id="JNlolcmzyE" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="JNlolcmzCz" role="2OqNvi">
+                <node concept="chp4Y" id="JNlolcmzEb" role="cj9EA">
+                  <ref role="cht4Q" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1CMrqIaiB9z" role="3uHU7w">
+              <node concept="2Sf5sV" id="1CMrqIaiB9$" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="1CMrqIaiB9_" role="2OqNvi">
+                <node concept="chp4Y" id="1CMrqIaiBc9" role="cj9EA">
+                  <ref role="cht4Q" to="tpee:i0zv2NF" resolve="IContainsStatementList" />
+                </node>
               </node>
             </node>
           </node>
