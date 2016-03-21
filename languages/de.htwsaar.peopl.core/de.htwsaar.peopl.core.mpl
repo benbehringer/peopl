@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="de.htwsaar.peopl.core" uuid="1a3a0b62-fb00-47d1-8423-98da4001b216" languageVersion="0" moduleVersion="2">
+<language namespace="de.htwsaar.peopl.core" uuid="1a3a0b62-fb00-47d1-8423-98da4001b216" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
