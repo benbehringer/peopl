@@ -49,6 +49,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
+      <concept id="5949640294884234625" name="jetbrains.mps.lang.editor.structure.CellLayout_Table" flags="nn" index="fvoJi" />
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
@@ -4448,7 +4449,7 @@
           </node>
           <node concept="2SsqMj" id="1DrSvX1D1wc" role="1QoS34" />
           <node concept="3EZMnI" id="4XXs7o04hg_" role="1QoVPY">
-            <node concept="2t5PaK" id="5cacDZVvnO4" role="2iSdaV" />
+            <node concept="fvoJi" id="1WismfjxDAb" role="2iSdaV" />
             <node concept="gc7cB" id="4XXs7o02iwU" role="3EZMnx">
               <node concept="3VJUX4" id="4XXs7o02iwW" role="3YsKMw">
                 <node concept="3clFbS" id="4XXs7o02iwY" role="2VODD2">
@@ -6111,7 +6112,7 @@
             </node>
           </node>
           <node concept="3EZMnI" id="5cacDZVr6oy" role="3EZMnx">
-            <node concept="2t5PaK" id="5cacDZVrfBf" role="2iSdaV" />
+            <node concept="fvoJi" id="1WismfjxD_L" role="2iSdaV" />
             <node concept="3F0ifn" id="5cacDZVpkQ0" role="3EZMnx">
               <property role="3F0ifm" value="(" />
               <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
