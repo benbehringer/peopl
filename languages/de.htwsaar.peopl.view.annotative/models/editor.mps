@@ -60,7 +60,6 @@
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
-      <concept id="1886960078078641793" name="jetbrains.mps.lang.editor.structure.CellLayout_Superscript" flags="nn" index="2t5PaK" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -3106,7 +3105,7 @@
             <node concept="l2Vlx" id="5cacDZVspeW" role="2iSdaV" />
           </node>
           <node concept="3EZMnI" id="5cacDZVspeX" role="3EZMnx">
-            <node concept="2t5PaK" id="5cacDZVsXHk" role="2iSdaV" />
+            <node concept="fvoJi" id="1WismfjykuP" role="2iSdaV" />
             <node concept="gc7cB" id="5cacDZVsJ9R" role="3EZMnx">
               <node concept="3VJUX4" id="5cacDZVsJ9S" role="3YsKMw">
                 <node concept="3clFbS" id="5cacDZVsJ9T" role="2VODD2">
@@ -9325,7 +9324,7 @@
                   <property role="VOm3f" value="false" />
                 </node>
               </node>
-              <node concept="2t5PaK" id="5cacDZVudGX" role="2iSdaV" />
+              <node concept="fvoJi" id="1WismfjylZw" role="2iSdaV" />
               <node concept="3EZMnI" id="4XXs7o00yCx" role="3EZMnx">
                 <node concept="l2Vlx" id="4XXs7o00yCy" role="2iSdaV" />
                 <node concept="3F0ifn" id="i212D7P" role="3EZMnx">
@@ -9720,7 +9719,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3F0ifn" id="5cacDZVucVW" role="3EZMnx" />
             </node>
             <node concept="2iRkQZ" id="4XXs7o00ytQ" role="2iSdaV" />
           </node>
@@ -11149,7 +11147,7 @@
             </node>
           </node>
           <node concept="3EZMnI" id="5cacDZVuBBP" role="3EZMnx">
-            <node concept="2t5PaK" id="5cacDZVuPUB" role="2iSdaV" />
+            <node concept="fvoJi" id="1Wismfjynls" role="2iSdaV" />
             <node concept="gc7cB" id="5cacDZVuC9X" role="3EZMnx">
               <node concept="3VJUX4" id="5cacDZVuC9Y" role="3YsKMw">
                 <node concept="3clFbS" id="5cacDZVuC9Z" role="2VODD2">
