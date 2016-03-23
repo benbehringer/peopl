@@ -77,6 +77,7 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="u8b7" ref="r:249bd07a-49a0-4e4d-a50d-08ac47c3b308(de.htwsaar.peopl.projectview.runtime)" />
     <import index="1pr" ref="r:a118750f-1aa8-4cea-9b66-7128373b1f62(de.htwsaar.peopl.projectview.plugin)" />
+    <import index="ynjl" ref="r:61c34d47-0f37-465e-90be-bcb56c58371d(de.htwsaar.peopl.view.runtime)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" implicit="true" />
@@ -1424,16 +1425,16 @@
             </node>
             <node concept="2BsdOp" id="35LN$25FUVJ" role="33vP2m">
               <node concept="10M0yZ" id="1k3hL0SuEct" role="2BsfMF">
-                <ref role="1PxDUh" to="u8b7:1k3hL0Su7lA" resolve="PeoplHint" />
-                <ref role="3cqZAo" to="u8b7:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
+                <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHint" />
+                <ref role="3cqZAo" to="ynjl:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2c8WkvQl5rn" role="3cqZAp">
           <node concept="2YIFZM" id="2c8WkvQl5sF" role="3clFbG">
-            <ref role="37wK5l" to="u8b7:2c8WkvQkZzo" resolve="openNode" />
-            <ref role="1Pybhc" to="u8b7:2c8WkvQkXSD" resolve="OpenNodeHelper" />
+            <ref role="1Pybhc" to="ynjl:2c8WkvQkXSD" resolve="OpenNodeHelper" />
+            <ref role="37wK5l" to="ynjl:2c8WkvQkZzo" resolve="openNode" />
             <node concept="2OqwBi" id="2c8WkvQlpk_" role="37wK5m">
               <node concept="2WthIp" id="2c8WkvQlpkC" role="2Oq$k0" />
               <node concept="1DTwFV" id="2c8WkvQlpkE" role="2OqNvi">

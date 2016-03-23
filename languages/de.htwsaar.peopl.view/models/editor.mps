@@ -26,7 +26,7 @@
     <property role="TrG5h" value="Hints" />
     <node concept="2BsEeg" id="2H0DQTMCRPV" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="HideModuleVP" />
+      <property role="TrG5h" value="hideModuleVP" />
       <property role="2BUmq6" value="Hide the module and the VP" />
     </node>
   </node>

@@ -33,6 +33,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="xfo5" ref="r:dfa2c56b-b183-4ac7-8ae0-e1a0b6082999(de.htwsaar.peopl.projectview.modular.plugin)" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
+    <import index="ynjl" ref="r:61c34d47-0f37-465e-90be-bcb56c58371d(de.htwsaar.peopl.view.runtime)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
@@ -399,8 +400,8 @@
                                   </node>
                                 </node>
                                 <node concept="10M0yZ" id="1k3hL0Su_q$" role="37vLTx">
-                                  <ref role="1PxDUh" to="u8b7:1k3hL0Su7lA" resolve="PeoplHint" />
-                                  <ref role="3cqZAo" to="u8b7:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
+                                  <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHint" />
+                                  <ref role="3cqZAo" to="ynjl:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
                                 </node>
                               </node>
                             </node>
@@ -459,8 +460,8 @@
                               <node concept="3clFbF" id="1k3hL0SuZDB" role="3cqZAp">
                                 <node concept="37vLTI" id="1k3hL0SuZKe" role="3clFbG">
                                   <node concept="10M0yZ" id="1k3hL0SuZMm" role="37vLTx">
-                                    <ref role="1PxDUh" to="u8b7:1k3hL0Su7lA" resolve="PeoplHint" />
-                                    <ref role="3cqZAo" to="u8b7:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+                                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHint" />
+                                    <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                                   </node>
                                   <node concept="AH0OO" id="1k3hL0SuZFY" role="37vLTJ">
                                     <node concept="3cmrfG" id="1k3hL0SuZHU" role="AHEQo">
@@ -1255,8 +1256,8 @@
                     </node>
                     <node concept="3clFbF" id="2c8WkvQl5rn" role="3cqZAp">
                       <node concept="2YIFZM" id="2c8WkvQl5sF" role="3clFbG">
-                        <ref role="37wK5l" to="u8b7:2c8WkvQkZzo" resolve="openNode" />
-                        <ref role="1Pybhc" to="u8b7:2c8WkvQkXSD" resolve="OpenNodeHelper" />
+                        <ref role="1Pybhc" to="ynjl:2c8WkvQkXSD" resolve="OpenNodeHelper" />
+                        <ref role="37wK5l" to="ynjl:2c8WkvQkZzo" resolve="openNode" />
                         <node concept="1eOMI4" id="2c8WkvQl5ur" role="37wK5m">
                           <node concept="10QFUN" id="2c8WkvQl5uo" role="1eOMHV">
                             <node concept="37vLTw" id="2c8WkvQl5_$" role="10QFUP">
