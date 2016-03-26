@@ -122,6 +122,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -166,6 +172,7 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -420,6 +427,47 @@
           </node>
         </node>
         <node concept="3clFbH" id="62a2r2crHcy" role="3cqZAp" />
+        <node concept="3SKdUt" id="6coTyb6l85P" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6l85Q" role="3SKWNk">
+            <property role="3SKdUp" value="not declared within peopl and thus always available (e.g., we treat library calls as mandatory code that is" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6coTyb6l8i$" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6l8i_" role="3SKWNk">
+            <property role="3SKdUp" value="always included and thus always available" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6coTyb6l97v" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6l97x" role="3SKWNk">
+            <property role="3SKdUp" value="or in other words everything outside of peopl is not variable" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6coTyb6l6AR" role="3cqZAp">
+          <node concept="3clFbS" id="6coTyb6l6AT" role="3clFbx">
+            <node concept="3cpWs6" id="6coTyb6l748" role="3cqZAp">
+              <node concept="37vLTw" id="6coTyb6l75Z" role="3cqZAk">
+                <ref role="3cqZAo" node="62a2r2csAQu" resolve="msg" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6coTyb6l6Ty" role="3clFbw">
+            <node concept="2OqwBi" id="6coTyb6l6Lo" role="2Oq$k0">
+              <node concept="37vLTw" id="6coTyb6l7XM" role="2Oq$k0">
+                <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+              </node>
+              <node concept="2Xjw5R" id="6coTyb6l6Qu" role="2OqNvi">
+                <node concept="1xMEDy" id="6coTyb6l6Qw" role="1xVPHs">
+                  <node concept="chp4Y" id="6coTyb6l6Rb" role="ri$Ld">
+                    <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="6coTyb6l731" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6coTyb6l7Dh" role="3cqZAp" />
+        <node concept="3clFbH" id="6coTyb6l7IU" role="3cqZAp" />
         <node concept="3clFbJ" id="62a2r2crteQ" role="3cqZAp">
           <node concept="3eNFk2" id="62a2r2csezs" role="3eNLev">
             <node concept="3clFbS" id="62a2r2csezu" role="3eOfB_">
@@ -911,7 +959,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="62a2r2crLmx" role="3cqZAp" />
+        <node concept="3clFbH" id="6coTyb6l7lF" role="3cqZAp" />
         <node concept="3clFbJ" id="62a2r2crLs8" role="3cqZAp">
           <node concept="3clFbS" id="62a2r2crLs9" role="3clFbx">
             <node concept="3clFbJ" id="62a2r2crLsa" role="3cqZAp">
