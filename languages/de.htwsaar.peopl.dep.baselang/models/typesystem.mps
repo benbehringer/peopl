@@ -71,6 +71,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -211,6 +212,7 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -551,6 +553,64 @@
           </node>
         </node>
         <node concept="3clFbH" id="6coTyb6lrHF" role="3cqZAp" />
+        <node concept="3SKdUt" id="6coTyb6lCEO" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6lCEP" role="3SKWNk">
+            <property role="3SKdUp" value="ref is only in the produced product when its decl is available as well" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6coTyb6lEC$" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6lEC_" role="3SKWNk">
+            <property role="3SKdUp" value="in other words: only siblings are critical" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6coTyb6lGnd" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6lGne" role="3SKWNk">
+            <property role="3SKdUp" value="e.g., a reference refers to a field attribute defined by another module. Yet, the reference is also only" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="6coTyb6lGvR" role="3cqZAp">
+          <node concept="3SKdUq" id="6coTyb6lGvS" role="3SKWNk">
+            <property role="3SKdUp" value="available, when the surrounding class, method, etc. are in the produced products" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6coTyb6lB08" role="3cqZAp">
+          <node concept="3clFbS" id="6coTyb6lB0a" role="3clFbx">
+            <node concept="3cpWs6" id="6coTyb6lCxO" role="3cqZAp">
+              <node concept="37vLTw" id="6coTyb6lCzO" role="3cqZAk">
+                <ref role="3cqZAo" node="62a2r2csAQu" resolve="msg" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6coTyb6lBz6" role="3clFbw">
+            <node concept="2OqwBi" id="6coTyb6lB8w" role="2Oq$k0">
+              <node concept="37vLTw" id="6coTyb6lB5c" role="2Oq$k0">
+                <ref role="3cqZAo" node="62a2r2croWW" resolve="refCurrentNode" />
+              </node>
+              <node concept="z$bX8" id="6coTyb6lBdC" role="2OqNvi" />
+            </node>
+            <node concept="2HwmR7" id="6coTyb6lCd5" role="2OqNvi">
+              <node concept="1bVj0M" id="6coTyb6lCd7" role="23t8la">
+                <node concept="3clFbS" id="6coTyb6lCd8" role="1bW5cS">
+                  <node concept="3clFbF" id="6coTyb6lCfv" role="3cqZAp">
+                    <node concept="3clFbC" id="6coTyb6lCrB" role="3clFbG">
+                      <node concept="37vLTw" id="6coTyb6lCuP" role="3uHU7w">
+                        <ref role="3cqZAo" node="62a2r2crpf5" resolve="declCurrentNode" />
+                      </node>
+                      <node concept="37vLTw" id="6coTyb6lCfu" role="3uHU7B">
+                        <ref role="3cqZAo" node="6coTyb6lCd9" resolve="it" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="6coTyb6lCd9" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="6coTyb6lCda" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6coTyb6lAVx" role="3cqZAp" />
         <node concept="3clFbJ" id="62a2r2crLs8" role="3cqZAp">
           <node concept="3clFbS" id="62a2r2crLs9" role="3clFbx">
             <node concept="3clFbJ" id="62a2r2crLsa" role="3cqZAp">
