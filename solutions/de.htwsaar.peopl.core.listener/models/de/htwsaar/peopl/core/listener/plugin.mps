@@ -1353,6 +1353,22 @@
                                             <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXMBd" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXMBe" role="1bW5cS">
+                                                <node concept="34ab3g" id="6coTyb6m2N$" role="3cqZAp">
+                                                  <property role="35gtTG" value="warn" />
+                                                  <node concept="3cpWs3" id="6coTyb6m8tp" role="34bqiv">
+                                                    <node concept="2OqwBi" id="6coTyb6m8Qf" role="3uHU7w">
+                                                      <node concept="37vLTw" id="6coTyb6m8IZ" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="4UCkzXvH3Au" resolve="p0" />
+                                                      </node>
+                                                      <node concept="liA8E" id="6coTyb6m94$" role="2OqNvi">
+                                                        <ref role="37wK5l" to="cmfw:~SNodeRemoveEvent.getChild():org.jetbrains.mps.openapi.model.SNode" resolve="getChild" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="Xl_RD" id="6coTyb6m2NA" role="3uHU7B">
+                                                      <property role="Xl_RC" value="try to remove node: " />
+                                                    </node>
+                                                  </node>
+                                                </node>
                                                 <node concept="3clFbJ" id="7C3COFHMP7L" role="3cqZAp">
                                                   <node concept="3clFbS" id="7C3COFHMP7M" role="3clFbx">
                                                     <node concept="3clFbJ" id="7C3COFHMP7N" role="3cqZAp">
