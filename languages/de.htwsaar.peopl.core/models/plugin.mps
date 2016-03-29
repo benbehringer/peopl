@@ -84,7 +84,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -546,7 +546,7 @@
     <node concept="3Tm1VV" id="VwUpvpz79q" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="7PFXpItpfae">
-    <property role="TrG5h" value="VPBuffer" />
+    <property role="TrG5h" value="PeoplVPBuffer" />
     <node concept="312cEu" id="7PFXpItpfxG" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -560,11 +560,11 @@
         <property role="3TUv4t" value="true" />
         <node concept="3Tm6S6" id="7PFXpItpf_O" role="1B3o_S" />
         <node concept="3uibUv" id="7PFXpItpfLQ" role="1tU5fm">
-          <ref role="3uigEE" node="7PFXpItpfae" resolve="VPBuffer" />
+          <ref role="3uigEE" node="7PFXpItpfae" resolve="PeoplVPBuffer" />
         </node>
         <node concept="2ShNRf" id="7PFXpItpfNr" role="33vP2m">
           <node concept="HV5vD" id="7PFXpItpfUI" role="2ShVmc">
-            <ref role="HV5vE" node="7PFXpItpfae" resolve="VPBuffer" />
+            <ref role="HV5vE" node="7PFXpItpfae" resolve="PeoplVPBuffer" />
           </node>
         </node>
       </node>
@@ -598,14 +598,14 @@
       <node concept="3clFbS" id="7PFXpItpfnI" role="3clF47">
         <node concept="3clFbF" id="7PFXpItpfZi" role="3cqZAp">
           <node concept="10M0yZ" id="7PFXpItpfZh" role="3clFbG">
-            <ref role="1PxDUh" node="7PFXpItpfxG" resolve="VPBuffer.Holder" />
+            <ref role="1PxDUh" node="7PFXpItpfxG" resolve="PeoplVPBuffer.Holder" />
             <ref role="3cqZAo" node="7PFXpItpfMB" resolve="myInstance" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="7PFXpItpfe2" role="1B3o_S" />
       <node concept="3uibUv" id="7PFXpItpfnx" role="3clF45">
-        <ref role="3uigEE" node="7PFXpItpfae" resolve="VPBuffer" />
+        <ref role="3uigEE" node="7PFXpItpfae" resolve="PeoplVPBuffer" />
       </node>
     </node>
     <node concept="2tJIrI" id="7PFXpItphos" role="jymVt" />
