@@ -1736,77 +1736,85 @@
                   <ref role="37wK5l" to="g51k:~EditorCell_Basic.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode)" resolve="EditorCell_Basic" />
                   <node concept="2tJIrI" id="4XXs7o06rH8" role="jymVt" />
                   <node concept="2tJIrI" id="5cacDZVlkgw" role="jymVt" />
-                  <node concept="3clFb_" id="5cacDZVlkIj" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="paintSelectionIfRequired" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tmbuc" id="5cacDZVlkIk" role="1B3o_S" />
-                    <node concept="3cqZAl" id="5cacDZVlkIm" role="3clF45" />
-                    <node concept="37vLTG" id="5cacDZVlkIn" role="3clF46">
-                      <property role="TrG5h" value="graphics" />
-                      <node concept="3uibUv" id="5cacDZVlkIo" role="1tU5fm">
-                        <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+                  <node concept="1X3_iC" id="Vp$ulwAVwR" role="lGtFl">
+                    <property role="3V$3am" value="member" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+                    <node concept="3clFb_" id="5cacDZVlkIj" role="8Wnug">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="paintSelectionIfRequired" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tmbuc" id="5cacDZVlkIk" role="1B3o_S" />
+                      <node concept="3cqZAl" id="5cacDZVlkIm" role="3clF45" />
+                      <node concept="37vLTG" id="5cacDZVlkIn" role="3clF46">
+                        <property role="TrG5h" value="graphics" />
+                        <node concept="3uibUv" id="5cacDZVlkIo" role="1tU5fm">
+                          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="37vLTG" id="5cacDZVlkIp" role="3clF46">
-                      <property role="TrG5h" value="settings" />
-                      <node concept="3uibUv" id="5cacDZVlkIq" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+                      <node concept="37vLTG" id="5cacDZVlkIp" role="3clF46">
+                        <property role="TrG5h" value="settings" />
+                        <node concept="3uibUv" id="5cacDZVlkIq" role="1tU5fm">
+                          <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="3clFbS" id="5cacDZVlkIs" role="3clF47">
-                      <node concept="3clFbF" id="5cacDZVllhj" role="3cqZAp">
-                        <node concept="1rXfSq" id="5cacDZVllhk" role="3clFbG">
-                          <ref role="37wK5l" node="4XXs7o024zY" resolve="paintContent" />
-                          <node concept="37vLTw" id="5cacDZVllhl" role="37wK5m">
-                            <ref role="3cqZAo" node="5cacDZVlkIn" resolve="graphics" />
-                          </node>
-                          <node concept="37vLTw" id="5cacDZVllhm" role="37wK5m">
-                            <ref role="3cqZAo" node="5cacDZVlkIp" resolve="settings" />
+                      <node concept="3clFbS" id="5cacDZVlkIs" role="3clF47">
+                        <node concept="3clFbF" id="5cacDZVllhj" role="3cqZAp">
+                          <node concept="1rXfSq" id="5cacDZVllhk" role="3clFbG">
+                            <ref role="37wK5l" node="4XXs7o024zY" resolve="paintContent" />
+                            <node concept="37vLTw" id="5cacDZVllhl" role="37wK5m">
+                              <ref role="3cqZAo" node="5cacDZVlkIn" resolve="graphics" />
+                            </node>
+                            <node concept="37vLTw" id="5cacDZVllhm" role="37wK5m">
+                              <ref role="3cqZAo" node="5cacDZVlkIp" resolve="settings" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="2AHcQZ" id="5cacDZVlkIt" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      <node concept="2AHcQZ" id="5cacDZVlkIt" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2tJIrI" id="4XXs7o06_Wc" role="jymVt" />
-                  <node concept="3clFb_" id="5cacDZVleYq" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="paintCell" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tm1VV" id="5cacDZVleYr" role="1B3o_S" />
-                    <node concept="3cqZAl" id="5cacDZVleYt" role="3clF45" />
-                    <node concept="37vLTG" id="5cacDZVleYu" role="3clF46">
-                      <property role="TrG5h" value="graphics" />
-                      <node concept="3uibUv" id="5cacDZVleYv" role="1tU5fm">
-                        <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+                  <node concept="1X3_iC" id="Vp$ulwAVOv" role="lGtFl">
+                    <property role="3V$3am" value="member" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+                    <node concept="3clFb_" id="5cacDZVleYq" role="8Wnug">
+                      <property role="1EzhhJ" value="false" />
+                      <property role="TrG5h" value="paintCell" />
+                      <property role="DiZV1" value="false" />
+                      <property role="od$2w" value="false" />
+                      <node concept="3Tm1VV" id="5cacDZVleYr" role="1B3o_S" />
+                      <node concept="3cqZAl" id="5cacDZVleYt" role="3clF45" />
+                      <node concept="37vLTG" id="5cacDZVleYu" role="3clF46">
+                        <property role="TrG5h" value="graphics" />
+                        <node concept="3uibUv" id="5cacDZVleYv" role="1tU5fm">
+                          <ref role="3uigEE" to="z60i:~Graphics" resolve="Graphics" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="37vLTG" id="5cacDZVleYw" role="3clF46">
-                      <property role="TrG5h" value="settings" />
-                      <node concept="3uibUv" id="5cacDZVleYx" role="1tU5fm">
-                        <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+                      <node concept="37vLTG" id="5cacDZVleYw" role="3clF46">
+                        <property role="TrG5h" value="settings" />
+                        <node concept="3uibUv" id="5cacDZVleYx" role="1tU5fm">
+                          <ref role="3uigEE" to="g51k:~ParentSettings" resolve="ParentSettings" />
+                        </node>
                       </node>
-                    </node>
-                    <node concept="3clFbS" id="5cacDZVleYz" role="3clF47">
-                      <node concept="3clFbF" id="5cacDZVlf_m" role="3cqZAp">
-                        <node concept="1rXfSq" id="5cacDZVlf_k" role="3clFbG">
-                          <ref role="37wK5l" node="4XXs7o024zY" resolve="paintContent" />
-                          <node concept="37vLTw" id="5cacDZVlfHM" role="37wK5m">
-                            <ref role="3cqZAo" node="5cacDZVleYu" resolve="graphics" />
-                          </node>
-                          <node concept="37vLTw" id="5cacDZVlfNr" role="37wK5m">
-                            <ref role="3cqZAo" node="5cacDZVleYw" resolve="settings" />
+                      <node concept="3clFbS" id="5cacDZVleYz" role="3clF47">
+                        <node concept="3clFbF" id="5cacDZVlf_m" role="3cqZAp">
+                          <node concept="1rXfSq" id="5cacDZVlf_k" role="3clFbG">
+                            <ref role="37wK5l" node="4XXs7o024zY" resolve="paintContent" />
+                            <node concept="37vLTw" id="5cacDZVlfHM" role="37wK5m">
+                              <ref role="3cqZAo" node="5cacDZVleYu" resolve="graphics" />
+                            </node>
+                            <node concept="37vLTw" id="5cacDZVlfNr" role="37wK5m">
+                              <ref role="3cqZAo" node="5cacDZVleYw" resolve="settings" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="2AHcQZ" id="5cacDZVleY$" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      <node concept="2AHcQZ" id="5cacDZVleY$" role="2AJF6D">
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                      </node>
                     </node>
                   </node>
                   <node concept="2tJIrI" id="4XXs7o06wwW" role="jymVt" />
@@ -2397,7 +2405,7 @@
                       </node>
                       <node concept="3SKdUt" id="5cacDZVospG" role="3cqZAp">
                         <node concept="3SKdUq" id="5cacDZVospH" role="3SKWNk">
-                          <property role="3SKdUp" value="TODO: just draw relevant lines" />
+                          <property role="3SKdUp" value="TODO: just draw relevant lines, because we are unnecessariliy slowing down the editor" />
                         </node>
                       </node>
                       <node concept="3clFbF" id="5cacDZVoqsS" role="3cqZAp">
