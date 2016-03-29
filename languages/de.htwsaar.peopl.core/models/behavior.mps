@@ -825,7 +825,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="2BKSxwr7h1e" role="13h7CS">
-      <property role="TrG5h" value="removeFormVP" />
+      <property role="TrG5h" value="removeFromVP" />
       <node concept="3Tm1VV" id="6pDd21EUO3z" role="1B3o_S" />
       <node concept="3clFbS" id="2BKSxwr7h1g" role="3clF47">
         <node concept="3clFbF" id="gnPVcdCCU3" role="3cqZAp">

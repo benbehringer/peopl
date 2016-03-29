@@ -116,16 +116,12 @@
         <child id="1206060644605" name="statementList" index="3eOfB_" />
       </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
-      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -191,6 +187,12 @@
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+    </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -327,10 +329,6 @@
         <property role="TrG5h" value="ConnectedModule :  B" />
         <ref role="3aRQSO" node="3VwycMLjooH" />
       </node>
-      <node concept="3aRQSP" id="6cq_xgv5h$T" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  B" />
-        <ref role="3aRQSO" node="2B6$8H1W$1c" />
-      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$14" role="288GmO">
       <property role="2_7ToJ" value="200" />
@@ -356,6 +354,10 @@
       <node concept="3aRQSP" id="6coTyb6lcOt" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  C" />
         <ref role="3aRQSO" node="xUEdTNkOjf" />
+      </node>
+      <node concept="3aRQSP" id="4pxkoukUkRH" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  C" />
+        <ref role="3aRQSO" node="2B6$8H1W$1c" />
       </node>
     </node>
     <node concept="2$Fqj1" id="2B6$8H1W$1e" role="lGtFl">
@@ -595,12 +597,6 @@
               <property role="3SKdUp" value="very nice!" />
             </node>
           </node>
-          <node concept="3clFbH" id="6cq_xgv5b2H" role="3cqZAp" />
-          <node concept="3clFbF" id="6cq_xgv5b3c" role="3cqZAp">
-            <node concept="1rXfSq" id="6cq_xgv5b3a" role="3clFbG">
-              <ref role="37wK5l" node="2B6$8H1W$2T" resolve="foo" />
-            </node>
-          </node>
           <node concept="3clFbH" id="57VpyooxOrE" role="3cqZAp" />
         </node>
         <node concept="3Tm1VV" id="3VwycMLjmQa" role="1B3o_S" />
@@ -610,8 +606,8 @@
       <node concept="1V74GB" id="2B6$8H1W$1c" role="lGtFl">
         <property role="32Xqk$" value="chosenModule" />
         <ref role="1V74Hf" node="2B6$8H1W$1f" />
-        <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
-        <ref role="3aRQVk" node="6cq_xgv5h$T" resolve="ConnectedModule :  B" />
+        <ref role="a64iB" node="2B6$8H1W$14" resolve="C" />
+        <ref role="3aRQVk" node="4pxkoukUkRH" resolve="ConnectedModule :  C" />
       </node>
       <node concept="3QEU_s" id="4dkkQUPa0EA" role="lGtFl" />
     </node>
@@ -1249,6 +1245,12 @@
       </node>
       <node concept="3QEU_s" id="4dkkQUPa0Et" role="lGtFl" />
     </node>
+  </node>
+  <node concept="HxVAC" id="4SGTiITxaSU">
+    <property role="TrG5h" value="A::TestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="2B6$8H1W$0H" resolve="A" />
+    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
   </node>
 </model>
 

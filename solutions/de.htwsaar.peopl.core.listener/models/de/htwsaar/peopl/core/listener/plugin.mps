@@ -22,6 +22,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
@@ -309,6 +310,17 @@
     </node>
     <node concept="2uRRBN" id="3iBm9_jtoL0" role="2uRRB_">
       <node concept="3clFbS" id="3iBm9_jtoL1" role="2VODD2">
+        <node concept="3clFbF" id="6p21fW$7Stm" role="3cqZAp">
+          <node concept="2OqwBi" id="6p21fW$7Sw5" role="3clFbG">
+            <node concept="2YIFZM" id="6p21fW$7SuN" role="2Oq$k0">
+              <ref role="37wK5l" to="zur:7PFXpItpfnF" resolve="getInstance" />
+              <ref role="1Pybhc" to="zur:7PFXpItpfae" resolve="PeoplVPBuffer" />
+            </node>
+            <node concept="liA8E" id="6p21fW$7Szu" role="2OqNvi">
+              <ref role="37wK5l" to="zur:7PFXpItphGL" resolve="clear" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5zyTnvZmh$7" role="3cqZAp">
           <node concept="2OqwBi" id="5zyTnvZmhOA" role="3clFbG">
             <node concept="2OqwBi" id="5zyTnvZmhAj" role="2Oq$k0">
@@ -391,6 +403,8 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6cq_xgv6iHJ" role="3cqZAp" />
+        <node concept="3clFbH" id="6cq_xgv6iMs" role="3cqZAp" />
         <node concept="34ab3g" id="5aVXudkckMY" role="3cqZAp">
           <property role="35gtTG" value="info" />
           <node concept="Xl_RD" id="5aVXudkckN0" role="34bqiv">

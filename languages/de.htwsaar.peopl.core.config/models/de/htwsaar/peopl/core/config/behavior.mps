@@ -849,16 +849,8 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5JY_zDXfSTb" role="3cqZAp" />
         <node concept="3clFbJ" id="7MEoPae84KA" role="3cqZAp">
           <node concept="3clFbS" id="7MEoPae84KC" role="3clFbx">
-            <node concept="3clFbH" id="5JY_zDXglpP" role="3cqZAp" />
-            <node concept="34ab3g" id="5JY_zDXfTeX" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="5JY_zDXfTeZ" role="34bqiv">
-                <property role="Xl_RC" value="1" />
-              </node>
-            </node>
             <node concept="3cpWs8" id="7MEoPae86h3" role="3cqZAp">
               <node concept="3cpWsn" id="7MEoPae86h6" role="3cpWs9">
                 <property role="TrG5h" value="leftConnector" />
@@ -932,7 +924,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="5JY_zDXglas" role="3cqZAp" />
           </node>
           <node concept="1Wc70l" id="7MEoPae85qQ" role="3clFbw">
             <node concept="2OqwBi" id="7MEoPae85Ve" role="3uHU7w">
@@ -1069,7 +1060,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="5JY_zDXgkFN" role="3cqZAp" />
             </node>
           </node>
           <node concept="3eNFk2" id="7MEoPae8iBT" role="3eNLev">
@@ -1119,12 +1109,6 @@
               </node>
             </node>
             <node concept="3clFbS" id="7MEoPae8iBV" role="3eOfB_">
-              <node concept="34ab3g" id="5JY_zDXfUvq" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="5JY_zDXfUvs" role="34bqiv">
-                  <property role="Xl_RC" value="3" />
-                </node>
-              </node>
               <node concept="3cpWs8" id="7MEoPae8lhe" role="3cqZAp">
                 <node concept="3cpWsn" id="7MEoPae8lhh" role="3cpWs9">
                   <property role="TrG5h" value="leftConnector" />
@@ -1251,12 +1235,6 @@
               </node>
             </node>
             <node concept="3clFbS" id="7MEoPae8tXs" role="3eOfB_">
-              <node concept="34ab3g" id="5JY_zDXfUSE" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="5JY_zDXfUSG" role="34bqiv">
-                  <property role="Xl_RC" value="4" />
-                </node>
-              </node>
               <node concept="3cpWs6" id="7MEoPae8wUV" role="3cqZAp">
                 <node concept="BsUDl" id="7MEoPae8xj7" role="3cqZAk">
                   <ref role="37wK5l" node="2QN4XY8NlAn" resolve="plusOperation" />

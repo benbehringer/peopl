@@ -180,6 +180,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -262,7 +263,7 @@
         <node concept="3clFbH" id="3Stpzi4h898" role="3cqZAp" />
         <node concept="3SKdUt" id="4fRuak3leA6" role="3cqZAp">
           <node concept="3SKdUq" id="4fRuak3leA8" role="3SKWNk">
-            <property role="3SKdUp" value="TODO Optimization : Delets more nodes than necessary" />
+            <property role="3SKdUp" value="TODO Optimization : Deletes more nodes than necessary" />
           </node>
         </node>
         <node concept="2Gpval" id="6pDd21EYBOJ" role="3cqZAp">
@@ -358,7 +359,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4vOt5rKlzFu" role="3cqZAp" />
                   </node>
                   <node concept="1Wc70l" id="4vOt5rKlzP9" role="3clFbw">
                     <node concept="2OqwBi" id="4vOt5rKlzI9" role="3uHU7B">
@@ -613,19 +613,60 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="4vOt5rKlE7n" role="3cqZAp">
-                          <node concept="37vLTI" id="4vOt5rKlEnS" role="3clFbG">
-                            <node concept="10Nm6u" id="4vOt5rKlEqj" role="37vLTx" />
-                            <node concept="2OqwBi" id="4vOt5rKlEa0" role="37vLTJ">
-                              <node concept="2GrUjf" id="4vOt5rKlE7l" role="2Oq$k0">
+                        <node concept="3SKdUt" id="4pxkoukUSA$" role="3cqZAp">
+                          <node concept="3SKdUq" id="4pxkoukUSA_" role="3SKWNk">
+                            <property role="3SKdUp" value="TODO: toIgnore = null oder toIgnore.delete?" />
+                          </node>
+                        </node>
+                        <node concept="1X3_iC" id="4pxkoukUSBl" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="3clFbF" id="4vOt5rKlE7n" role="8Wnug">
+                            <node concept="37vLTI" id="4vOt5rKlEnS" role="3clFbG">
+                              <node concept="10Nm6u" id="4vOt5rKlEqj" role="37vLTx" />
+                              <node concept="2OqwBi" id="4vOt5rKlEa0" role="37vLTJ">
+                                <node concept="2GrUjf" id="4vOt5rKlE7l" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
+                                </node>
+                                <node concept="3CFZ6_" id="4vOt5rKlEi3" role="2OqNvi">
+                                  <node concept="3CFYIy" id="4vOt5rKlEie" role="3CFYIz">
+                                    <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="4pxkoukUTCo" role="3cqZAp">
+                          <node concept="3clFbS" id="4pxkoukUTCq" role="3clFbx">
+                            <node concept="3clFbF" id="4pxkoukUTkQ" role="3cqZAp">
+                              <node concept="2OqwBi" id="4pxkoukUTx0" role="3clFbG">
+                                <node concept="2OqwBi" id="4pxkoukUTnL" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="4pxkoukUTkO" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
+                                  </node>
+                                  <node concept="3CFZ6_" id="4pxkoukUTuR" role="2OqNvi">
+                                    <node concept="3CFYIy" id="4pxkoukUTv2" role="3CFYIz">
+                                      <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="1PgB_6" id="4pxkoukUTBu" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="4pxkoukUUfj" role="3clFbw">
+                            <node concept="2OqwBi" id="4pxkoukUTTy" role="2Oq$k0">
+                              <node concept="2GrUjf" id="4pxkoukUTDm" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
                               </node>
-                              <node concept="3CFZ6_" id="4vOt5rKlEi3" role="2OqNvi">
-                                <node concept="3CFYIy" id="4vOt5rKlEie" role="3CFYIz">
+                              <node concept="3CFZ6_" id="4pxkoukUUco" role="2OqNvi">
+                                <node concept="3CFYIy" id="4pxkoukUUcR" role="3CFYIz">
                                   <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
                                 </node>
                               </node>
                             </node>
+                            <node concept="3x8VRR" id="4pxkoukUUqP" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -638,7 +679,6 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4vOt5rKm074" role="3cqZAp" />
                   </node>
                   <node concept="3fqX7Q" id="4vOt5rKl$hC" role="3clFbw">
                     <node concept="37vLTw" id="4vOt5rKl$hS" role="3fr31v">
@@ -646,8 +686,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="4vOt5rKlyAM" role="3cqZAp" />
-                <node concept="3clFbH" id="4vOt5rKly$o" role="3cqZAp" />
                 <node concept="3clFbH" id="4vOt5rKly$B" role="3cqZAp" />
                 <node concept="3SKdUt" id="4vOt5rKly_8" role="3cqZAp">
                   <node concept="3SKdUq" id="4vOt5rKly_a" role="3SKWNk">
@@ -684,6 +722,11 @@
                   <node concept="3SKdUt" id="4vOt5rKlyxi" role="3cqZAp">
                     <node concept="3SKdUq" id="4vOt5rKlyxk" role="3SKWNk">
                       <property role="3SKdUp" value="remove annotation" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="4pxkoukUUrd" role="3cqZAp">
+                    <node concept="3SKdUq" id="4pxkoukUUre" role="3SKWNk">
+                      <property role="3SKdUp" value="TODO: null or delete?" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="14Zo09OtrpL" role="3cqZAp">
@@ -742,6 +785,11 @@
             <node concept="Xl_RD" id="3Stpzi4haph" role="34bqiv">
               <property role="Xl_RC" value="Pre Gen Script : SetFillingFragmentAnnotations" />
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4pxkoukUUtX" role="3cqZAp">
+          <node concept="3SKdUq" id="4pxkoukUUtY" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: why just the first?" />
           </node>
         </node>
         <node concept="3clFbF" id="4OnOvt6u8uV" role="3cqZAp">
