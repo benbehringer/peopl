@@ -48,7 +48,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -149,6 +148,11 @@
         <node concept="3clFbS" id="324faKBR7PZ" role="2VODD2">
           <node concept="3clFbJ" id="2aku2wRhms0" role="3cqZAp">
             <node concept="3clFbS" id="2aku2wRhms2" role="3clFbx">
+              <node concept="3SKdUt" id="51LjPj91_vY" role="3cqZAp">
+                <node concept="3SKdUq" id="51LjPj91_w0" role="3SKWNk">
+                  <property role="3SKdUp" value="Case 1: Paste after Ctrl+x" />
+                </node>
+              </node>
               <node concept="34ab3g" id="2aku2wRhnkP" role="3cqZAp">
                 <property role="35gtTG" value="warn" />
                 <node concept="Xl_RD" id="2aku2wRhnkR" role="34bqiv">
@@ -316,13 +320,144 @@
             </node>
             <node concept="9aQIb" id="2aku2wRhnlX" role="9aQIa">
               <node concept="3clFbS" id="2aku2wRhnlY" role="9aQI4">
+                <node concept="3SKdUt" id="51LjPj91_Rk" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91_Rm" role="3SKWNk">
+                    <property role="3SKdUp" value="Case 2: Paste after Ctrl+c, a copy of the fragment will be created an connected to a new VP" />
+                  </node>
+                </node>
                 <node concept="34ab3g" id="2aku2wRhqus" role="3cqZAp">
                   <property role="35gtTG" value="warn" />
                   <node concept="Xl_RD" id="2aku2wRhquu" role="34bqiv">
                     <property role="Xl_RC" value="copy" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="2aku2wRhvFr" role="3cqZAp" />
+                <node concept="3SKdUt" id="51LjPj91A4w" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91A4y" role="3SKWNk">
+                    <property role="3SKdUp" value="connect pastedNode to the saved module" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhr_Y" role="3cqZAp">
+                  <node concept="2OqwBi" id="2aku2wRhrCo" role="3clFbG">
+                    <node concept="1JFAaq" id="2aku2wRhr_W" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2aku2wRhrN3" role="2OqNvi">
+                      <ref role="37wK5l" to="kpvh:2BKSxwr7b5e" resolve="connectToModule" />
+                      <node concept="2OqwBi" id="2aku2wRhs5F" role="37wK5m">
+                        <node concept="2OqwBi" id="2aku2wRhrSa" role="2Oq$k0">
+                          <node concept="1JFAaq" id="2aku2wRhrOd" role="2Oq$k0" />
+                          <node concept="3CFZ6_" id="2aku2wRhrYK" role="2OqNvi">
+                            <node concept="3CFYIy" id="2aku2wRhs0P" role="3CFYIz">
+                              <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="2aku2wRhsbJ" role="2OqNvi">
+                          <ref role="3Tt5mk" to="py0u:7PFXpItoF1V" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="51LjPj91AhK" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91AhM" role="3SKWNk">
+                    <property role="3SKdUp" value="set chosenModule to the saved module" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhslY" role="3cqZAp">
+                  <node concept="37vLTI" id="2aku2wRhvib" role="3clFbG">
+                    <node concept="2OqwBi" id="2aku2wRhvzv" role="37vLTx">
+                      <node concept="2OqwBi" id="2aku2wRhvna" role="2Oq$k0">
+                        <node concept="1JFAaq" id="2aku2wRhvjA" role="2Oq$k0" />
+                        <node concept="3CFZ6_" id="2aku2wRhvtm" role="2OqNvi">
+                          <node concept="3CFYIy" id="2aku2wRhvv1" role="3CFYIz">
+                            <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="2aku2wRhvD_" role="2OqNvi">
+                        <ref role="3Tt5mk" to="py0u:7PFXpItoF1V" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2aku2wRhsql" role="37vLTJ">
+                      <node concept="1JFAaq" id="2aku2wRhslW" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="2aku2wRhv6U" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="51LjPj91Av4" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91Av6" role="3SKWNk">
+                    <property role="3SKdUp" value="create a new VP and connect the fragment to this VP" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhw92" role="3cqZAp">
+                  <node concept="2OqwBi" id="2aku2wRhwd_" role="3clFbG">
+                    <node concept="1JFAaq" id="2aku2wRhw90" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="2aku2wRhwog" role="2OqNvi">
+                      <ref role="37wK5l" to="kpvh:3osquR$0y2" resolve="createVPandConnect" />
+                      <node concept="1JFAaq" id="2aku2wRhwpq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="51LjPj91BXX" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91BXY" role="3SKWNk">
+                    <property role="3SKdUp" value="remove ToBeIgnoredByListener annotation" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhw_4" role="3cqZAp">
+                  <node concept="2OqwBi" id="2aku2wRhxgo" role="3clFbG">
+                    <node concept="2OqwBi" id="2aku2wRhx4V" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2aku2wRhwQe" role="2Oq$k0">
+                        <node concept="2OqwBi" id="2aku2wRhwGr" role="2Oq$k0">
+                          <node concept="1JFAaq" id="2aku2wRhw_2" role="2Oq$k0" />
+                          <node concept="3CFZ6_" id="2aku2wRhwLU" role="2OqNvi">
+                            <node concept="3CFYIy" id="2aku2wRhwMp" role="3CFYIz">
+                              <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="2aku2wRhwW8" role="2OqNvi">
+                          <ref role="3Tt5mk" to="py0u:7PFXpItoF8k" />
+                        </node>
+                      </node>
+                      <node concept="3CFZ6_" id="2aku2wRhx9T" role="2OqNvi">
+                        <node concept="3CFYIy" id="2aku2wRhxck" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1PgB_6" id="2aku2wRhxu3" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="51LjPj91AEe" role="3cqZAp">
+                  <node concept="3SKdUq" id="51LjPj91AEg" role="3SKWNk">
+                    <property role="3SKdUp" value="remove OriginalNodeInfo annotation from pastedNode, because it is not needed anymore" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhxE4" role="3cqZAp">
+                  <node concept="2OqwBi" id="2aku2wRhxUs" role="3clFbG">
+                    <node concept="2OqwBi" id="2aku2wRhxKx" role="2Oq$k0">
+                      <node concept="1JFAaq" id="2aku2wRhxE2" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="2aku2wRhxQ0" role="2OqNvi">
+                        <node concept="3CFYIy" id="2aku2wRhxR0" role="3CFYIz">
+                          <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1PgB_6" id="2aku2wRhy77" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2aku2wRhyii" role="3cqZAp">
+                  <node concept="2OqwBi" id="2aku2wRhynJ" role="3clFbG">
+                    <node concept="2YIFZM" id="2aku2wRhynd" role="2Oq$k0">
+                      <ref role="1Pybhc" to="zur:7PFXpItpfae" resolve="PeoplVPBuffer" />
+                      <ref role="37wK5l" to="zur:7PFXpItpfnF" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="2aku2wRhyqf" role="2OqNvi">
+                      <ref role="37wK5l" to="zur:7PFXpItphGL" resolve="clear" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
