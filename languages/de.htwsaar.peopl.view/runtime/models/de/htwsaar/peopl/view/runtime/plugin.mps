@@ -218,6 +218,9 @@
       <node concept="tCFHf" id="2H0DQTMG4wc" role="ftvYc">
         <ref role="tCJdB" node="2H0DQTMG4vZ" resolve="ToggleModuleAndVPVisibility" />
       </node>
+      <node concept="tCFHf" id="3Yg59hlbGIr" role="ftvYc">
+        <ref role="tCJdB" node="3Yg59hlbqph" resolve="HideCodeInEditor" />
+      </node>
       <node concept="2a7GMi" id="2H0DQTMG4vR" role="ftvYc" />
     </node>
     <node concept="tT9cl" id="2H0DQTMG5xe" role="2f5YQi">
@@ -518,6 +521,45 @@
       <node concept="pLAjd" id="2H0DQTMI4ly" role="Zd501">
         <property role="pLAjc" value="ctrl+alt" />
         <property role="pLAjf" value="VK_1" />
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="3Yg59hlbqph">
+    <property role="3GE5qa" value="viewMenu" />
+    <property role="TrG5h" value="HideCodeInEditor" />
+    <property role="2uzpH1" value="Toggle Visibility of Code according to PLC" />
+    <node concept="2S4$dB" id="3Yg59hlfoRr" role="1NuT2Z">
+      <property role="TrG5h" value="currentNode" />
+      <node concept="3Tm6S6" id="3Yg59hlfoRs" role="1B3o_S" />
+      <node concept="1oajcY" id="3Yg59hlfoRt" role="1oa70y" />
+      <node concept="3Tqbb2" id="3Yg59hlfoMs" role="1tU5fm" />
+    </node>
+    <node concept="tnohg" id="3Yg59hlbqpi" role="tncku">
+      <node concept="3clFbS" id="3Yg59hlbqpj" role="2VODD2">
+        <node concept="3clFbH" id="3Yg59hlfsoM" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="mfpdH" id="3Yg59hlbFJT" role="med8o" />
+    <node concept="2ScWuX" id="3Yg59hlfflE" role="tmbBb">
+      <node concept="3clFbS" id="3Yg59hlfflF" role="2VODD2">
+        <node concept="3clFbF" id="3Yg59hlffHC" role="3cqZAp">
+          <node concept="2OqwBi" id="3Yg59hlfpD0" role="3clFbG">
+            <node concept="2OqwBi" id="3Yg59hlfpvb" role="2Oq$k0">
+              <node concept="2OqwBi" id="3Yg59hlffKn" role="2Oq$k0">
+                <node concept="2WthIp" id="3Yg59hlffHB" role="2Oq$k0" />
+                <node concept="3gHZIF" id="3Yg59hlfoWQ" role="2OqNvi">
+                  <ref role="2WH_rO" node="3Yg59hlfoRr" resolve="currentNode" />
+                </node>
+              </node>
+              <node concept="2Rxl7S" id="3Yg59hlfp$x" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="3Yg59hlfpI$" role="2OqNvi">
+              <node concept="chp4Y" id="3Yg59hlfpYB" role="cj9EA">
+                <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
