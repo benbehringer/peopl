@@ -49,10 +49,6 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
-        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
-        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
-      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -191,6 +187,10 @@
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="1070046800831857522" name="de.htwsaar.peopl.dep.baselang.structure.MethodDeclarationBaseCodeReference" flags="ng" index="1Iutan">
+        <reference id="1070046800831857525" name="myBaseCode" index="1Iutag" />
+      </concept>
+      <concept id="1070046800831857470" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBaseCodeBlockStatement" flags="ng" index="1Iutbr" />
     </language>
     <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
       <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
@@ -261,11 +261,11 @@
         <property role="TrG5h" value="ConnectedModule :  Base" />
         <ref role="3aRQSO" node="2B6$8H1W$1c" />
       </node>
-      <node concept="3aRQSP" id="Vp$ulwACha" role="3aRQVq">
+      <node concept="3aRQSP" id="3du0jSJ1Xfv" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  Base" />
         <ref role="3aRQSO" node="7YpdsLc76gg" />
       </node>
-      <node concept="3aRQSP" id="Vp$ulwAGMh" role="3aRQVq">
+      <node concept="3aRQSP" id="3du0jSJ1XfP" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  Base" />
         <ref role="3aRQSO" node="7YpdsLc76dH" />
       </node>
@@ -315,6 +315,10 @@
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="5mmbC3y8Goh" />
       </node>
+      <node concept="3aRQSP" id="t5UFt6JV7R" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  A" />
+        <ref role="3aRQSO" node="t5UFt6JV6B" />
+      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$0K" role="288GmO">
       <property role="2_7ToJ" value="162" />
@@ -333,14 +337,6 @@
         <property role="TrG5h" value="ConnectedModule :  B" />
         <ref role="3aRQSO" node="5cacDZVvzrS" />
       </node>
-      <node concept="3aRQSP" id="6cq_xgv5hzo" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  B" />
-        <ref role="3aRQSO" node="3VwycMLjooH" />
-      </node>
-      <node concept="3aRQSP" id="sV5d8W09yK" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  B" />
-        <ref role="3aRQSO" node="sV5d8W09yJ" />
-      </node>
       <node concept="3aRQSP" id="sV5d8W1HmI" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  B" />
         <ref role="3aRQSO" node="sV5d8W1Hll" />
@@ -348,6 +344,10 @@
       <node concept="3aRQSP" id="3a641BGfJVw" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  B" />
         <ref role="3aRQSO" node="xUEdTNkOtJ" />
+      </node>
+      <node concept="3aRQSP" id="3du0jSJ1ZMv" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  B" />
+        <ref role="3aRQSO" node="3du0jSJ1ZJp" />
       </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$14" role="288GmO">
@@ -381,12 +381,6 @@
         <property role="TrG5h" value="3010252328725004365" />
         <node concept="1V74G$" id="2B6$8H1W$1f" role="1V74Gw">
           <ref role="1V74G_" node="2B6$8H1W$1c" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="3VwycMLjooI" role="2$Fqj6">
-        <property role="TrG5h" value="4530771637864072750" />
-        <node concept="1V74G$" id="3VwycMLjooJ" role="1V74Gw">
-          <ref role="1V74G_" node="3VwycMLjooH" />
         </node>
       </node>
       <node concept="1V74G3" id="5mmbC3y8Goi" role="2$Fqj6">
@@ -528,13 +522,6 @@
           <ref role="1V74G_" node="6cq_xgv5bt2" />
         </node>
       </node>
-      <node concept="1V74G3" id="sV5d8W09vS" role="2$Fqj6">
-        <property role="TrG5h" value="521033075073783800" />
-        <node concept="3lu3E2" id="sV5d8W09yC" role="lGtFl" />
-        <node concept="1V74G$" id="sV5d8W09yL" role="1V74Gw">
-          <ref role="1V74G_" node="sV5d8W09yJ" />
-        </node>
-      </node>
       <node concept="1V74G3" id="sV5d8W1Gqp" role="2$Fqj6">
         <property role="TrG5h" value="521033075074188953" />
         <node concept="1V74G$" id="sV5d8W1Gqq" role="1V74Gw">
@@ -547,6 +534,18 @@
           <ref role="1V74G_" node="sV5d8W1Hll" />
         </node>
       </node>
+      <node concept="1V74G3" id="3du0jSJ1ZJq" role="2$Fqj6">
+        <property role="TrG5h" value="3701397310333778906" />
+        <node concept="1V74G$" id="3du0jSJ1ZJr" role="1V74Gw">
+          <ref role="1V74G_" node="3du0jSJ1ZJp" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="t5UFt6JV6C" role="2$Fqj6">
+        <property role="TrG5h" value="524083004545413544" />
+        <node concept="1V74G$" id="t5UFt6JV6D" role="1V74Gw">
+          <ref role="1V74G_" node="t5UFt6JV6B" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2SvMkh" id="2B6$8H1W$19">
@@ -554,46 +553,37 @@
     <node concept="3GWJoq" id="2B6$8H1W$1a" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
       <property role="1sVAO0" value="false" />
-      <node concept="Wx3nA" id="sV5d8W09yD" role="jymVt">
-        <property role="TrG5h" value="x" />
-        <property role="2dlcS1" value="false" />
+      <node concept="2tJIrI" id="3du0jSJ1Zz3" role="jymVt" />
+      <node concept="2tJIrI" id="3du0jSJ2zSp" role="jymVt" />
+      <node concept="312cEg" id="3du0jSJ1ZBH" role="jymVt">
+        <property role="TrG5h" value="z" />
+        <property role="34CwA1" value="false" />
         <property role="3TUv4t" value="false" />
-        <property role="2dld4O" value="false" />
-        <node concept="1V74GB" id="sV5d8W09yJ" role="lGtFl">
-          <property role="32Xqk$" value="chosenModule" />
-          <ref role="3aRQVk" node="sV5d8W09yK" resolve="ConnectedModule :  B" />
-          <ref role="1V74Hf" node="sV5d8W09yL" />
-          <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
+        <property role="eg7rD" value="false" />
+        <node concept="10Oyi0" id="3du0jSJ1ZBL" role="1tU5fm" />
+        <node concept="3cmrfG" id="3du0jSJ1ZBM" role="33vP2m">
+          <property role="3cmrfH" value="5" />
         </node>
-        <node concept="10Oyi0" id="sV5d8W09yF" role="1tU5fm" />
-        <node concept="3Tm1VV" id="sV5d8W09yG" role="1B3o_S" />
+        <node concept="3Tm1VV" id="3du0jSJ1ZBK" role="1B3o_S" />
+        <node concept="1V74GB" id="3du0jSJ1ZJp" role="lGtFl">
+          <property role="32Xqk$" value="chosenModule" />
+          <ref role="1V74Hf" node="3du0jSJ1ZJr" />
+          <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
+          <ref role="3aRQVk" node="3du0jSJ1ZMv" resolve="ConnectedModule :  B" />
+        </node>
       </node>
-      <node concept="312cEg" id="3VwycMLjoof" role="jymVt">
+      <node concept="312cEg" id="Vp$ulwBgSF" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="y" />
+        <property role="TrG5h" value="abc" />
         <property role="3TUv4t" value="false" />
-        <node concept="3Tm1VV" id="3VwycMLjonH" role="1B3o_S" />
-        <node concept="10Oyi0" id="3VwycMLjoo9" role="1tU5fm" />
-        <node concept="1V74GB" id="3VwycMLjooH" role="lGtFl">
-          <property role="32Xqk$" value="chosenModule" />
-          <ref role="1V74Hf" node="3VwycMLjooJ" />
-          <ref role="a64iB" node="2B6$8H1W$0K" resolve="B" />
-          <ref role="3aRQVk" node="6cq_xgv5hzo" resolve="ConnectedModule :  B" />
-        </node>
-        <node concept="3QEU_s" id="4dkkQUPa0Eu" role="lGtFl" />
-      </node>
-      <node concept="Wx3nA" id="sV5d8W10CJ" role="jymVt">
-        <property role="2dlcS1" value="false" />
-        <property role="2dld4O" value="false" />
-        <property role="TrG5h" value="z" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3Tm1VV" id="sV5d8W10BS" role="1B3o_S" />
-        <node concept="10Oyi0" id="sV5d8W10CC" role="1tU5fm" />
-        <node concept="3cmrfG" id="sV5d8W10DM" role="33vP2m">
+        <node concept="3Tm1VV" id="Vp$ulwBgRH" role="1B3o_S" />
+        <node concept="10Oyi0" id="Vp$ulwBgSD" role="1tU5fm" />
+        <node concept="3cmrfG" id="Vp$ulwBgTY" role="33vP2m">
           <property role="3cmrfH" value="5" />
         </node>
       </node>
+      <node concept="2tJIrI" id="Vp$ulwBgO7" role="jymVt" />
       <node concept="3clFb_" id="2B6$8H1W$2T" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="foo" />
@@ -624,11 +614,6 @@
               <node concept="10Oyi0" id="64Ey$uWbZaH" role="1tU5fm" />
             </node>
           </node>
-          <node concept="3SKdUt" id="Vp$ulwAGDo" role="3cqZAp">
-            <node concept="3SKdUq" id="Vp$ulwAGDp" role="3SKWNk">
-              <property role="3SKdUp" value="does this change anything? no-it seems not so.." />
-            </node>
-          </node>
         </node>
         <node concept="3Tm1VV" id="2B6$8H1W$2$" role="1B3o_S" />
         <node concept="3cqZAl" id="2B6$8H1W$2N" role="3clF45" />
@@ -639,6 +624,57 @@
           <ref role="3aRQVk" node="jaREOWismG" resolve="ConnectedModule :  A" />
         </node>
       </node>
+      <node concept="2tJIrI" id="Vp$ulwBhAJ" role="jymVt" />
+      <node concept="3clFb_" id="3du0jSJ2Qff" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="foobar" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="3du0jSJ2Qfi" role="3clF47">
+          <node concept="3SKdUt" id="t5UFt6JV8O" role="3cqZAp">
+            <node concept="3SKdUq" id="t5UFt6JV8P" role="3SKWNk">
+              <property role="3SKdUp" value="base" />
+            </node>
+          </node>
+          <node concept="1Iutbr" id="3du0jSJ4aqp" role="3cqZAp">
+            <node concept="3clFbS" id="3du0jSJ4aqr" role="9aQI4">
+              <node concept="2wexfA" id="t5UFt6JV6$" role="3cqZAp">
+                <node concept="3clFbS" id="t5UFt6JV6A" role="9aQI4">
+                  <node concept="3SKdUt" id="3du0jSJ4bK7" role="3cqZAp">
+                    <node concept="3SKdUq" id="3du0jSJ4bK8" role="3SKWNk">
+                      <property role="3SKdUp" value="base" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1V74GB" id="t5UFt6JV6B" role="lGtFl">
+                  <property role="32Xqk$" value="chosenModule" />
+                  <ref role="1V74Hf" node="t5UFt6JV6D" />
+                  <ref role="a64iB" node="2B6$8H1W$0H" resolve="A" />
+                  <ref role="3aRQVk" node="t5UFt6JV7R" resolve="ConnectedModule :  A" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="3du0jSJ4bKj" role="3cqZAp">
+                <node concept="3SKdUq" id="3du0jSJ4bKk" role="3SKWNk">
+                  <property role="3SKdUp" value="base" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="3du0jSJ4bKz" role="3cqZAp">
+                <node concept="3SKdUq" id="3du0jSJ4bK$" role="3SKWNk">
+                  <property role="3SKdUp" value="base" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="3du0jSJ4bJr" role="3cqZAp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="3du0jSJ2Qem" role="1B3o_S" />
+        <node concept="3cqZAl" id="3du0jSJ2Qfd" role="3clF45" />
+        <node concept="1Iutan" id="3du0jSJ4aqq" role="lGtFl">
+          <ref role="1Iutag" node="3du0jSJ4aqp" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="Vp$ulwBXUp" role="jymVt" />
       <node concept="3clFb_" id="3VwycMLjmQD" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="bar" />
@@ -653,7 +689,11 @@
                   <property role="3SKdUp" value="some B code" />
                 </node>
               </node>
-              <node concept="3clFbH" id="2oHge2_tXuL" role="3cqZAp" />
+              <node concept="3SKdUt" id="Vp$ulwBfUp" role="3cqZAp">
+                <node concept="3SKdUq" id="Vp$ulwBfUq" role="3SKWNk">
+                  <property role="3SKdUp" value="and more B code" />
+                </node>
+              </node>
             </node>
             <node concept="1V74GB" id="sV5d8W1Hll" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
@@ -662,9 +702,9 @@
               <ref role="3aRQVk" node="sV5d8W1HmI" resolve="ConnectedModule :  B" />
             </node>
           </node>
-          <node concept="3SKdUt" id="4WtnmUdBZFX" role="3cqZAp">
-            <node concept="3SKdUq" id="4WtnmUdBZFY" role="3SKWNk">
-              <property role="3SKdUp" value="To hide in refining classes" />
+          <node concept="3SKdUt" id="3du0jSJ1X_4" role="3cqZAp">
+            <node concept="3SKdUq" id="3du0jSJ1X_5" role="3SKWNk">
+              <property role="3SKdUp" value="base code" />
             </node>
           </node>
           <node concept="2wexfA" id="sV5d8W1Gql" role="3cqZAp">
@@ -672,6 +712,11 @@
               <node concept="3SKdUt" id="sV5d8W1GrS" role="3cqZAp">
                 <node concept="3SKdUq" id="sV5d8W1GrT" role="3SKWNk">
                   <property role="3SKdUp" value="some A code" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="Vp$ulwBfUj" role="3cqZAp">
+                <node concept="3SKdUq" id="Vp$ulwBfUk" role="3SKWNk">
+                  <property role="3SKdUp" value="even more A code" />
                 </node>
               </node>
             </node>
@@ -1275,7 +1320,7 @@
               <property role="32Xqk$" value="chosenModule" />
               <ref role="1V74Hf" node="7YpdsLc76gi" />
               <ref role="a64iB" node="2B6$8H1W$0t" resolve="Base" />
-              <ref role="3aRQVk" node="Vp$ulwACha" resolve="ConnectedModule :  Base" />
+              <ref role="3aRQVk" node="3du0jSJ1Xfv" resolve="ConnectedModule :  Base" />
             </node>
             <node concept="3QEU_s" id="4dkkQUPa0Er" role="lGtFl" />
           </node>
@@ -1324,7 +1369,7 @@
           <property role="32Xqk$" value="chosenModule" />
           <ref role="1V74Hf" node="7YpdsLc76dJ" />
           <ref role="a64iB" node="2B6$8H1W$0t" resolve="Base" />
-          <ref role="3aRQVk" node="Vp$ulwAGMh" resolve="ConnectedModule :  Base" />
+          <ref role="3aRQVk" node="3du0jSJ1XfP" resolve="ConnectedModule :  Base" />
         </node>
         <node concept="3QEU_s" id="4dkkQUPa0Es" role="lGtFl" />
       </node>

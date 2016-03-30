@@ -886,5 +886,23 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="3du0jSJ2elN">
+    <property role="TrG5h" value="BaseCodeBlock" />
+    <ref role="2ZfgGC" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="2S6ZIM" id="3du0jSJ2elO" role="2ZfVej">
+      <node concept="3clFbS" id="3du0jSJ2elP" role="2VODD2">
+        <node concept="3clFbF" id="3du0jSJ2gKy" role="3cqZAp">
+          <node concept="Xl_RD" id="3du0jSJ2gK$" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL-dep.baseL -&gt; Create base code block" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3du0jSJ2elQ" role="2ZfgGD">
+      <node concept="3clFbS" id="3du0jSJ2elR" role="2VODD2">
+        <node concept="3clFbH" id="3du0jSJ2n3r" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
 </model>
 
