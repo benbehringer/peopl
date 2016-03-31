@@ -2481,6 +2481,17 @@
         <property role="Xl_RC" value="de.htwsaar.peopl.view.editor.Hints.hideModuleVP" />
       </node>
     </node>
+    <node concept="Wx3nA" id="57rZcVzwvKJ" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PRODUCT_VIEW" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="57rZcVzwv_P" role="1B3o_S" />
+      <node concept="17QB3L" id="57rZcVzwvKD" role="1tU5fm" />
+      <node concept="Xl_RD" id="57rZcVzwvN5" role="33vP2m">
+        <property role="Xl_RC" value="de.htwsaar.peopl.view.product.editor.Hints.productView" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2H0DQTMEUQQ" role="jymVt" />
     <node concept="3Tm1VV" id="1k3hL0Su7lB" role="1B3o_S" />
   </node>
