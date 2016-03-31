@@ -66,9 +66,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -82,12 +79,6 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -116,12 +107,6 @@
         <node concept="3clFbS" id="3D9VpaLnKgU" role="2VODD2">
           <node concept="3clFbJ" id="3D9VpaLnKi2" role="3cqZAp">
             <node concept="3clFbS" id="3D9VpaLnKi3" role="3clFbx">
-              <node concept="34ab3g" id="3D9VpaLnXKu" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="3D9VpaLnXKw" role="34bqiv">
-                  <property role="Xl_RC" value="is not null" />
-                </node>
-              </node>
               <node concept="3cpWs6" id="3D9VpaLnKMd" role="3cqZAp">
                 <node concept="3clFbT" id="3D9VpaLnKPp" role="3cqZAk">
                   <property role="3clFbU" value="true" />
@@ -130,12 +115,6 @@
             </node>
             <node concept="9aQIb" id="3D9VpaLnKS1" role="9aQIa">
               <node concept="3clFbS" id="3D9VpaLnKS2" role="9aQI4">
-                <node concept="34ab3g" id="3D9VpaLnXRs" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="3D9VpaLnXRu" role="34bqiv">
-                    <property role="Xl_RC" value="is null" />
-                  </node>
-                </node>
                 <node concept="3cpWs6" id="3D9VpaLnKUE" role="3cqZAp">
                   <node concept="3clFbT" id="3D9VpaLnKWF" role="3cqZAk">
                     <property role="3clFbU" value="false" />
