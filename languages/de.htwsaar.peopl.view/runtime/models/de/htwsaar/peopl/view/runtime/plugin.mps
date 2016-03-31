@@ -561,7 +561,7 @@
   <node concept="sE7Ow" id="3Yg59hlbqph">
     <property role="3GE5qa" value="viewMenu" />
     <property role="TrG5h" value="HideCodeInEditor" />
-    <property role="2uzpH1" value="Toggle Visibility of Code according to PLC" />
+    <property role="2uzpH1" value="Toggle Product View" />
     <property role="fJN8o" value="true" />
     <node concept="2S4$dB" id="3Yg59hlfoRr" role="1NuT2Z">
       <property role="TrG5h" value="currentNode" />
