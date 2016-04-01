@@ -13,6 +13,7 @@
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -156,6 +157,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -1382,6 +1384,11 @@
       <property role="TrG5h" value="calculateAndSetFillingFragments" />
       <node concept="3Tm1VV" id="5BQdQAJnrv$" role="1B3o_S" />
       <node concept="3clFbS" id="5BQdQAJnrv_" role="3clF47">
+        <node concept="3SKdUt" id="7mDWere2YiZ" role="3cqZAp">
+          <node concept="3SKdUq" id="7mDWere2Yj1" role="3SKWNk">
+            <property role="3SKdUp" value="Method which sets the filling fragments for all fragments in the project" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="5BQdQAJoNGQ" role="3cqZAp">
           <node concept="3cpWsn" id="5BQdQAJoNGT" role="3cpWs9">
             <property role="TrG5h" value="fragments" />
@@ -1468,6 +1475,142 @@
         </node>
       </node>
       <node concept="3cqZAl" id="oGygL6CIZT" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="7mDWere2CXA" role="13h7CS">
+      <property role="TrG5h" value="calculateAndSetFillingFragmentsForClass" />
+      <node concept="3Tm1VV" id="7mDWere2CXB" role="1B3o_S" />
+      <node concept="3clFbS" id="7mDWere2CXC" role="3clF47">
+        <node concept="3SKdUt" id="7mDWere2Yaf" role="3cqZAp">
+          <node concept="3SKdUq" id="7mDWere2Yah" role="3SKWNk">
+            <property role="3SKdUp" value="Method which sets the filling fragments for a specific class" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7mDWere2I5X" role="3cqZAp">
+          <node concept="3cpWsn" id="7mDWere2I60" role="3cpWs9">
+            <property role="TrG5h" value="fragments" />
+            <node concept="2I9FWS" id="7mDWere2I5V" role="1tU5fm">
+              <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+            <node concept="2OqwBi" id="7mDWere2I89" role="33vP2m">
+              <node concept="13iPFW" id="7mDWere2I6z" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7mDWere2Idj" role="2OqNvi">
+                <ref role="37wK5l" node="1hL$JiAwPa4" resolve="getFragmentListFromActiveConfiguration" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7mDWere2HXg" role="3cqZAp">
+          <node concept="2OqwBi" id="7mDWere2HYP" role="3clFbG">
+            <node concept="37vLTw" id="7mDWere2HXf" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mDWere2D7v" resolve="entryPoint" />
+            </node>
+            <node concept="2Rf3mk" id="7mDWere2Iy_" role="2OqNvi">
+              <node concept="1xMEDy" id="7mDWere2IyB" role="1xVPHs">
+                <node concept="chp4Y" id="7mDWere2I$F" role="ri$Ld">
+                  <ref role="cht4Q" to="sj65:5BQdQAJnpSP" resolve="FragmentFillsVP" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7mDWere2IG5" role="3cqZAp">
+          <node concept="2GrKxI" id="7mDWere2IG7" role="2Gsz3X">
+            <property role="TrG5h" value="fillsVP" />
+          </node>
+          <node concept="3clFbS" id="7mDWere2IG9" role="2LFqv$">
+            <node concept="3clFbF" id="7mDWere2J7S" role="3cqZAp">
+              <node concept="2OqwBi" id="7mDWere2J9O" role="3clFbG">
+                <node concept="2GrUjf" id="7mDWere2J7R" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="7mDWere2IG7" resolve="fillsVP" />
+                </node>
+                <node concept="1PgB_6" id="7mDWere2JfY" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7mDWere2Q_2" role="2GsD0m">
+            <node concept="2OqwBi" id="7mDWere2INi" role="2Oq$k0">
+              <node concept="37vLTw" id="7mDWere2IK9" role="2Oq$k0">
+                <ref role="3cqZAo" node="7mDWere2D7v" resolve="entryPoint" />
+              </node>
+              <node concept="2Rf3mk" id="7mDWere2IVm" role="2OqNvi">
+                <node concept="1xMEDy" id="7mDWere2IVo" role="1xVPHs">
+                  <node concept="chp4Y" id="7mDWere2IW7" role="ri$Ld">
+                    <ref role="cht4Q" to="sj65:5BQdQAJnpSP" resolve="FragmentFillsVP" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="7mDWere2RDP" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="7mDWere2Jrd" role="3cqZAp">
+          <node concept="2GrKxI" id="7mDWere2Jrf" role="2Gsz3X">
+            <property role="TrG5h" value="fragment" />
+          </node>
+          <node concept="3clFbS" id="7mDWere2Jrh" role="2LFqv$">
+            <node concept="3clFbJ" id="7mDWere2JGQ" role="3cqZAp">
+              <node concept="3clFbS" id="7mDWere2JGR" role="3clFbx">
+                <node concept="3clFbF" id="7mDWere2Mq2" role="3cqZAp">
+                  <node concept="37vLTI" id="7mDWere2MNL" role="3clFbG">
+                    <node concept="2ShNRf" id="7mDWere2MR$" role="37vLTx">
+                      <node concept="3zrR0B" id="7mDWere2MZo" role="2ShVmc">
+                        <node concept="3Tqbb2" id="7mDWere2MZq" role="3zrR0E">
+                          <ref role="ehGHo" to="sj65:5BQdQAJnpSP" resolve="FragmentFillsVP" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7mDWere2MFN" role="37vLTJ">
+                      <node concept="2OqwBi" id="7mDWere2Msp" role="2Oq$k0">
+                        <node concept="2GrUjf" id="7mDWere2Mq1" role="2Oq$k0">
+                          <ref role="2Gs0qQ" node="7mDWere2Jrf" resolve="fragment" />
+                        </node>
+                        <node concept="1mfA1w" id="7mDWere2MAp" role="2OqNvi" />
+                      </node>
+                      <node concept="3CFZ6_" id="7mDWere2MKg" role="2OqNvi">
+                        <node concept="3CFYIy" id="7mDWere2ML2" role="3CFYIz">
+                          <ref role="3CFYIx" to="sj65:5BQdQAJnpSP" resolve="FragmentFillsVP" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7mDWere2KmW" role="3clFbw">
+                <node concept="37vLTw" id="7mDWere2JNK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7mDWere2I60" resolve="fragments" />
+                </node>
+                <node concept="3JPx81" id="7mDWere2Moe" role="2OqNvi">
+                  <node concept="2GrUjf" id="7mDWere2Mp7" role="25WWJ7">
+                    <ref role="2Gs0qQ" node="7mDWere2Jrf" resolve="fragment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7mDWere2S88" role="2GsD0m">
+            <node concept="2OqwBi" id="7mDWere2JxU" role="2Oq$k0">
+              <node concept="37vLTw" id="7mDWere2JuL" role="2Oq$k0">
+                <ref role="3cqZAo" node="7mDWere2D7v" resolve="entryPoint" />
+              </node>
+              <node concept="2Rf3mk" id="7mDWere2JDY" role="2OqNvi">
+                <node concept="1xMEDy" id="7mDWere2JE0" role="1xVPHs">
+                  <node concept="chp4Y" id="7mDWere2JEJ" role="ri$Ld">
+                    <ref role="cht4Q" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="7mDWere2UcM" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="7mDWere2D2b" role="3clF45" />
+      <node concept="37vLTG" id="7mDWere2D7v" role="3clF46">
+        <property role="TrG5h" value="entryPoint" />
+        <node concept="3Tqbb2" id="7mDWere2D7u" role="1tU5fm">
+          <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+        </node>
+      </node>
     </node>
     <node concept="13hLZK" id="1hL$JiAwPa2" role="13h7CW">
       <node concept="3clFbS" id="1hL$JiAwPa3" role="2VODD2" />
