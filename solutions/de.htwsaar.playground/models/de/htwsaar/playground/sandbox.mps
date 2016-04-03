@@ -323,6 +323,14 @@
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="2spXFYcVBs6" />
       </node>
+      <node concept="3aRQSP" id="6cQVj8zVXFp" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  A" />
+        <ref role="3aRQSO" node="6cQVj8zVXFo" />
+      </node>
+      <node concept="3aRQSP" id="6cQVj8zW6In" role="3aRQVq">
+        <property role="TrG5h" value="ConnectedModule :  A" />
+        <ref role="3aRQSO" node="6cQVj8zW6Im" />
+      </node>
     </node>
     <node concept="1V77HM" id="2B6$8H1W$0K" role="288GmO">
       <property role="2_7ToJ" value="162" />
@@ -587,6 +595,12 @@
           <ref role="1V74G_" node="2spXFYcVBMY" />
         </node>
       </node>
+      <node concept="1V74G3" id="6cQVj8zW6Io" role="2$Fqj6">
+        <property role="TrG5h" value="7149162258104347544" />
+        <node concept="1V74G$" id="6cQVj8zW6Ip" role="1V74Gw">
+          <ref role="1V74G_" node="6cQVj8zW6Im" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2SvMkh" id="2B6$8H1W$19">
@@ -612,6 +626,8 @@
         </node>
       </node>
       <node concept="2tJIrI" id="2spXFYcWrz_" role="jymVt" />
+      <node concept="2tJIrI" id="6cQVj8zW6TF" role="jymVt" />
+      <node concept="2tJIrI" id="6cQVj8zW3LB" role="jymVt" />
       <node concept="3clFb_" id="2B6$8H1W$2T" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="foo" />
@@ -1530,40 +1546,28 @@
       <node concept="3QEU_s" id="4dkkQUPa0Et" role="lGtFl" />
     </node>
   </node>
-  <node concept="HxVAC" id="4SGTiITxaSU">
-    <property role="TrG5h" value="A::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity.A" />
-    <ref role="HxVAF" node="2B6$8H1W$0H" resolve="A" />
-    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
+  <node concept="HxVAC" id="6cQVj8zV3kG">
+    <property role="TrG5h" value="Base::MethodUseCases" />
+    <property role="3GE5qa" value="tmp.basicModularity.Base" />
+    <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
+    <ref role="HxVAD" node="xUEdTNkOh2" resolve="MethodUseCases" />
   </node>
-  <node concept="HxVAC" id="sV5d8W1Gxx">
+  <node concept="HxVAC" id="6cQVj8zV3of">
     <property role="TrG5h" value="Base::TestClass" />
     <property role="3GE5qa" value="tmp.basicModularity.Base" />
     <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
     <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
   </node>
-  <node concept="HxVAC" id="sV5d8W1HaA">
-    <property role="TrG5h" value="B::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity.B" />
-    <ref role="HxVAF" node="2B6$8H1W$0K" resolve="B" />
-    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
-  </node>
-  <node concept="HxVAC" id="2gRkCJLWq_Y">
-    <property role="TrG5h" value="MethodUseCases::MethodUseCases" />
-    <property role="3GE5qa" value="tmp.basicModularity.MethodUseCases" />
-    <ref role="HxVAF" node="xUEdTNkOh1" resolve="MethodUseCases" />
+  <node concept="HxVAC" id="6cQVj8zV3oj">
+    <property role="TrG5h" value="A::MethodUseCases" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="2B6$8H1W$0H" resolve="A" />
     <ref role="HxVAD" node="xUEdTNkOh2" resolve="MethodUseCases" />
   </node>
-  <node concept="HxVAC" id="2gRkCJLWqCp">
-    <property role="TrG5h" value="ClassUseCases::ClassUseCases" />
-    <property role="3GE5qa" value="tmp.basicModularity.ClassUseCases" />
-    <ref role="HxVAF" node="2Yt0WyKWWG6" resolve="ClassUseCases" />
-    <ref role="HxVAD" node="2Yt0WyKWWG7" resolve="ClassUseCases" />
-  </node>
-  <node concept="HxVAC" id="2gRkCJLWqEO">
-    <property role="TrG5h" value="TestClass::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity.TestClass" />
-    <ref role="HxVAF" node="2B6$8H1W$19" resolve="TestClass" />
+  <node concept="HxVAC" id="6cQVj8zVaGa">
+    <property role="TrG5h" value="A::TestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="2B6$8H1W$0H" resolve="A" />
     <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
   </node>
 </model>

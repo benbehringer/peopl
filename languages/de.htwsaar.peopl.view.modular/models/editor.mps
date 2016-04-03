@@ -8631,7 +8631,7 @@
           <node concept="3clFbH" id="4LwOMLVDRo_" role="3cqZAp" />
           <node concept="3SKdUt" id="7xQemBlvQSz" role="3cqZAp">
             <node concept="3SKdUq" id="7xQemBlvQS$" role="3SKWNk">
-              <property role="3SKdUp" value="the current method we're currently working in" />
+              <property role="3SKdUp" value="the method we're currently investigating" />
             </node>
           </node>
           <node concept="3clFbF" id="4LwOMLVB85K" role="3cqZAp">
