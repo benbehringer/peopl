@@ -1495,7 +1495,7 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbH" id="CYoi22ISd" role="3cqZAp" />
+                                      <node concept="3clFbH" id="3qCZdKGXpPC" role="3cqZAp" />
                                       <node concept="3clFbJ" id="7C3COFHMP7N" role="3cqZAp">
                                         <node concept="3clFbS" id="7C3COFHMP7O" role="3clFbx">
                                           <node concept="34ab3g" id="7C3COFHMP80" role="3cqZAp">
@@ -1548,7 +1548,7 @@
                                             <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                             <node concept="1bVj0M" id="2cc8yvsXMBd" role="37wK5m">
                                               <node concept="3clFbS" id="2cc8yvsXMBe" role="1bW5cS">
-                                                <node concept="1X3_iC" id="sV5d8W0dYi" role="lGtFl">
+                                                <node concept="1X3_iC" id="3qCZdKGXT9s" role="lGtFl">
                                                   <property role="3V$3am" value="statement" />
                                                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                                                   <node concept="34ab3g" id="6coTyb6m2N$" role="8Wnug">
@@ -1825,14 +1825,10 @@
                                                         <property role="3SKdUp" value="TODO : Only works if there are no multiply assigned Fragments on a node" />
                                                       </node>
                                                     </node>
-                                                    <node concept="1X3_iC" id="4UCkzXvH3BU" role="lGtFl">
-                                                      <property role="3V$3am" value="statement" />
-                                                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                                      <node concept="34ab3g" id="4UCkzXvH3BV" role="8Wnug">
-                                                        <property role="35gtTG" value="warn" />
-                                                        <node concept="Xl_RD" id="4UCkzXvH3BW" role="34bqiv">
-                                                          <property role="Xl_RC" value="deleting fragment in subtree" />
-                                                        </node>
+                                                    <node concept="34ab3g" id="4UCkzXvH3BV" role="3cqZAp">
+                                                      <property role="35gtTG" value="warn" />
+                                                      <node concept="Xl_RD" id="4UCkzXvH3BW" role="34bqiv">
+                                                        <property role="Xl_RC" value="deleting fragment in subtree" />
                                                       </node>
                                                     </node>
                                                     <node concept="3clFbF" id="4UCkzXvH3BX" role="3cqZAp">
