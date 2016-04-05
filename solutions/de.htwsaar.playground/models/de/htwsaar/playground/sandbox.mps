@@ -1525,5 +1525,23 @@
     <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
     <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
   </node>
+  <node concept="HxVAC" id="DS4tmG1mSM">
+    <property role="TrG5h" value="Base::ClassUseCases" />
+    <property role="3GE5qa" value="tmp.basicModularity.Base" />
+    <ref role="HxVAF" node="2B6$8H1W$0t" resolve="Base" />
+    <ref role="HxVAD" node="2Yt0WyKWWG7" resolve="ClassUseCases" />
+  </node>
+  <node concept="HxVAC" id="DS4tmG1mSN">
+    <property role="TrG5h" value="A::MethodUseCases" />
+    <property role="3GE5qa" value="tmp.basicModularity.A" />
+    <ref role="HxVAF" node="2B6$8H1W$0H" resolve="A" />
+    <ref role="HxVAD" node="xUEdTNkOh2" resolve="MethodUseCases" />
+  </node>
+  <node concept="HxVAC" id="DS4tmG1UVy">
+    <property role="TrG5h" value="B::TestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity.B" />
+    <ref role="HxVAF" node="2B6$8H1W$0K" resolve="B" />
+    <ref role="HxVAD" node="2B6$8H1W$1a" resolve="TestClass" />
+  </node>
 </model>
 
