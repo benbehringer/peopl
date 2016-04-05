@@ -319,10 +319,6 @@
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="4LwOMLVGC0f" />
       </node>
-      <node concept="3aRQSP" id="9EinyMvncb" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  A" />
-        <ref role="3aRQSO" node="9EinyMvnc8" />
-      </node>
       <node concept="3aRQSP" id="9EinyMvob1" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  A" />
         <ref role="3aRQSO" node="9EinyMvo9H" />
@@ -575,12 +571,6 @@
           <ref role="1V74G_" node="2spXFYcVBMY" />
         </node>
       </node>
-      <node concept="1V74G3" id="9EinyMvnc9" role="2$Fqj6">
-        <property role="TrG5h" value="174032318346654473" />
-        <node concept="1V74G$" id="9EinyMvnca" role="1V74Gw">
-          <ref role="1V74G_" node="9EinyMvnc8" />
-        </node>
-      </node>
       <node concept="1V74G3" id="9EinyMvo9I" role="2$Fqj6">
         <property role="TrG5h" value="174032318346658414" />
         <node concept="1V74G$" id="9EinyMvo9J" role="1V74Gw">
@@ -744,19 +734,6 @@
                   <node concept="3cpWs6" id="2spXFYcU9bH" role="3cqZAp">
                     <node concept="37vLTw" id="2spXFYcU9cy" role="3cqZAk">
                       <ref role="3cqZAo" node="75OG4xGZDr7" resolve="a" />
-                    </node>
-                  </node>
-                  <node concept="2wexfA" id="9EinyMvnc6" role="3cqZAp">
-                    <node concept="3clFbS" id="9EinyMvnc7" role="9aQI4">
-                      <node concept="3clFbH" id="9EinyMvo8C" role="3cqZAp" />
-                      <node concept="3clFbH" id="9EinyMvnj2" role="3cqZAp" />
-                      <node concept="3clFbH" id="9EinyMvneJ" role="3cqZAp" />
-                    </node>
-                    <node concept="1V74GB" id="9EinyMvnc8" role="lGtFl">
-                      <property role="32Xqk$" value="chosenModule" />
-                      <ref role="1V74Hf" node="9EinyMvnca" />
-                      <ref role="3aRQVk" node="9EinyMvncb" resolve="ConnectedModule :  A" />
-                      <ref role="a64iB" node="2B6$8H1W$0H" resolve="A" />
                     </node>
                   </node>
                   <node concept="3lLJVk" id="7xQemBlwx1w" role="lGtFl" />
