@@ -281,6 +281,10 @@
       <property role="TrG5h" value="blue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="574BmeO7L4B" role="1TKVEl">
+      <property role="TrG5h" value="hexValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5FNma2fyQ8y">
     <property role="1pbfSe" value="360793406" />
