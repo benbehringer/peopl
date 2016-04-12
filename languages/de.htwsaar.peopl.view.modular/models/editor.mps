@@ -8070,7 +8070,7 @@
       <node concept="3Tqbb2" id="62w2A05frqs" role="1tU5fm" />
     </node>
     <node concept="Wx3nA" id="7xQemBlvWFv" role="jymVt">
-      <property role="TrG5h" value="myRootNode" />
+      <property role="TrG5h" value="tmpPeoplClass" />
       <property role="2dlcS1" value="false" />
       <property role="3TUv4t" value="false" />
       <property role="2dld4O" value="false" />
@@ -8219,7 +8219,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="4LwOMLV_tZu" role="37vLTJ">
-                  <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                  <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                 </node>
               </node>
             </node>
@@ -8253,7 +8253,7 @@
             <node concept="3cpWs3" id="7xQemBlw4Jc" role="34bqiv">
               <node concept="2OqwBi" id="7xQemBlw4N$" role="3uHU7w">
                 <node concept="37vLTw" id="7xQemBlw4Lg" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                  <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                 </node>
                 <node concept="2qgKlT" id="7xQemBlw4Vs" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
@@ -8597,7 +8597,7 @@
       <node concept="312cEg" id="4LwOMLVFMqU" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="numberOfBaseCodeStatementPerMethod" />
+        <property role="TrG5h" value="numberOfBaseCodeStatementPerMethodEnBloc" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm6S6" id="4LwOMLVFLUS" role="1B3o_S" />
         <node concept="10Oyi0" id="4LwOMLVFMqS" role="1tU5fm" />
@@ -8791,7 +8791,7 @@
                     <property role="3cmrfH" value="0" />
                   </node>
                   <node concept="37vLTw" id="5sQNYX86_ab" role="37vLTJ">
-                    <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                    <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                   </node>
                 </node>
               </node>
@@ -9225,6 +9225,16 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="5sQNYX89DRM" role="3cqZAp">
+                <node concept="37vLTI" id="5sQNYX89EuW" role="3clFbG">
+                  <node concept="3cmrfG" id="5sQNYX89ExH" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="5sQNYX89DRK" role="37vLTJ">
+                    <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs6" id="4LwOMLVE3gk" role="3cqZAp">
                 <node concept="1rXfSq" id="4LwOMLVE3gl" role="3cqZAk">
                   <ref role="37wK5l" node="4LwOMLV$C8N" resolve="internalCreateNodeCell" />
@@ -9288,6 +9298,16 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbF" id="5sQNYX89Fbm" role="3cqZAp">
+                <node concept="37vLTI" id="5sQNYX89Fbn" role="3clFbG">
+                  <node concept="3cmrfG" id="5sQNYX89Fbo" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="5sQNYX89Fbp" role="37vLTJ">
+                    <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbJ" id="4LwOMLVFzti" role="3cqZAp">
                 <node concept="3clFbS" id="4LwOMLVFztj" role="3clFbx">
                   <node concept="3SKdUt" id="4LwOMLVFztk" role="3cqZAp">
@@ -9328,7 +9348,7 @@
                   </node>
                   <node concept="2OqwBi" id="4LwOMLVFztz" role="3uHU7w">
                     <node concept="37vLTw" id="4LwOMLVFzt$" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                     </node>
                     <node concept="3TrEf2" id="4LwOMLVFzt_" role="2OqNvi">
                       <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
@@ -9368,6 +9388,16 @@
           </node>
           <node concept="3clFbJ" id="62w2A05g1Ap" role="3cqZAp">
             <node concept="3clFbS" id="62w2A05g1Ar" role="3clFbx">
+              <node concept="3clFbF" id="5sQNYX89GOf" role="3cqZAp">
+                <node concept="37vLTI" id="5sQNYX89GOg" role="3clFbG">
+                  <node concept="3cmrfG" id="5sQNYX89GOh" role="37vLTx">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="5sQNYX89GOi" role="37vLTJ">
+                    <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
+                  </node>
+                </node>
+              </node>
               <node concept="1X3_iC" id="2spXFYcVNXb" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -9418,7 +9448,7 @@
                   </node>
                   <node concept="2OqwBi" id="4LwOMLV_jXK" role="3uHU7w">
                     <node concept="37vLTw" id="4LwOMLV_tT8" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                     </node>
                     <node concept="3TrEf2" id="4LwOMLV_jXP" role="2OqNvi">
                       <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
@@ -9492,6 +9522,16 @@
               </node>
               <node concept="3clFbJ" id="7xQemBlvyfm" role="3cqZAp">
                 <node concept="3clFbS" id="7xQemBlvyfn" role="3clFbx">
+                  <node concept="3clFbF" id="5sQNYX89ItG" role="3cqZAp">
+                    <node concept="37vLTI" id="5sQNYX89ItH" role="3clFbG">
+                      <node concept="3cmrfG" id="5sQNYX89ItI" role="37vLTx">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                      <node concept="37vLTw" id="5sQNYX89ItJ" role="37vLTJ">
+                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3SKdUt" id="7xQemBlvyfo" role="3cqZAp">
                     <node concept="3SKdUq" id="7xQemBlvyfp" role="3SKWNk">
                       <property role="3SKdUp" value="we need to show the statementlist if modules match" />
@@ -9540,7 +9580,7 @@
                   </node>
                   <node concept="2OqwBi" id="7xQemBlvyfB" role="3uHU7w">
                     <node concept="37vLTw" id="7xQemBlvyfC" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                      <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                     </node>
                     <node concept="3TrEf2" id="7xQemBlvyfD" role="2OqNvi">
                       <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
@@ -9608,7 +9648,7 @@
                           <property role="Xl_RC" value="base code[" />
                         </node>
                         <node concept="37vLTw" id="2spXFYcUHRJ" role="3uHU7w">
-                          <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                          <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                         </node>
                       </node>
                       <node concept="Xl_RD" id="2spXFYcUHO5" role="3uHU7w">
@@ -9618,8 +9658,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="4LwOMLVGqp5" role="3cqZAp" />
-              <node concept="3clFbH" id="5sQNYX83_ue" role="3cqZAp" />
               <node concept="3clFbH" id="2spXFYcUGrB" role="3cqZAp" />
               <node concept="3SKdUt" id="4LwOMLVGCsu" role="3cqZAp">
                 <node concept="3SKdUq" id="4LwOMLVGCsv" role="3SKWNk">
@@ -9637,7 +9675,7 @@
                   <node concept="3clFbF" id="4LwOMLVFNbY" role="3cqZAp">
                     <node concept="3uNrnE" id="4LwOMLVFNSq" role="3clFbG">
                       <node concept="37vLTw" id="4LwOMLVFNSs" role="2$L3a6">
-                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                       </node>
                     </node>
                   </node>
@@ -9666,7 +9704,7 @@
                             <property role="Xl_RC" value="numberOfBaseCodeStatements: " />
                           </node>
                           <node concept="37vLTw" id="5sQNYX865i0" role="3uHU7w">
-                            <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                            <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                           </node>
                         </node>
                         <node concept="Xl_RD" id="5sQNYX86f3M" role="3uHU7w">
@@ -9723,7 +9761,7 @@
                     </node>
                     <node concept="3eOVzh" id="5sQNYX85C3I" role="3clFbw">
                       <node concept="37vLTw" id="5sQNYX84HTj" role="3uHU7B">
-                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                       </node>
                       <node concept="37vLTw" id="5sQNYX85My4" role="3uHU7w">
                         <ref role="3cqZAo" node="5sQNYX84nkR" resolve="totalNumberOfBaseCodeStatements" />
@@ -9811,7 +9849,7 @@
                     </node>
                     <node concept="3clFbC" id="4LwOMLVC4XO" role="3clFbw">
                       <node concept="37vLTw" id="4LwOMLVFN5v" role="3uHU7B">
-                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethod" />
+                        <ref role="3cqZAo" node="4LwOMLVFMqU" resolve="numberOfBaseCodeStatementPerMethodEnBloc" />
                       </node>
                       <node concept="3cmrfG" id="4LwOMLVFN9K" role="3uHU7w">
                         <property role="3cmrfH" value="1" />
@@ -9858,7 +9896,7 @@
                                 <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
                               </node>
                               <node concept="37vLTw" id="4LwOMLVGs77" role="2Oq$k0">
-                                <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                                <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="4LwOMLVGjgL" role="3uHU7w">
@@ -9929,7 +9967,7 @@
                               <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
                             </node>
                             <node concept="37vLTw" id="4LwOMLVGtij" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7xQemBlvWFv" resolve="myRootNode" />
+                              <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
                             </node>
                           </node>
                         </node>
@@ -9950,8 +9988,48 @@
                     </node>
                   </node>
                 </node>
-                <node concept="9aQIb" id="5sQNYX848$C" role="9aQIa">
-                  <node concept="3clFbS" id="5sQNYX848$D" role="9aQI4">
+                <node concept="3eNFk2" id="5sQNYX8aVcB" role="3eNLev">
+                  <node concept="3fqX7Q" id="5sQNYX8b9nX" role="3eO9$A">
+                    <node concept="2YIFZM" id="5sQNYX8b9nZ" role="3fr31v">
+                      <ref role="37wK5l" node="3GmnFE_UpAs" resolve="requiresPeoplBlock" />
+                      <ref role="1Pybhc" node="7ASwjV8wra8" resolve="PeoplBlockPositionUtil" />
+                      <node concept="37vLTw" id="5sQNYX8b9o0" role="37wK5m">
+                        <ref role="3cqZAo" node="62w2A05fFHh" resolve="elementNode" />
+                      </node>
+                      <node concept="10QFUN" id="5sQNYX8b9o1" role="37wK5m">
+                        <node concept="3Tqbb2" id="5sQNYX8b9o2" role="10QFUM">
+                          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+                        </node>
+                        <node concept="37vLTw" id="5sQNYX8b9o3" role="10QFUP">
+                          <ref role="3cqZAo" node="62w2A05fFHh" resolve="elementNode" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="5sQNYX8b9o4" role="37wK5m">
+                        <ref role="3cqZAo" node="7xQemBlvWFv" resolve="tmpPeoplClass" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="5sQNYX8aVcD" role="3eOfB_">
+                    <node concept="3SKdUt" id="5sQNYX8aWRA" role="3cqZAp">
+                      <node concept="3SKdUq" id="5sQNYX8aWRB" role="3SKWNk">
+                        <property role="3SKdUp" value="we define and thus allow empty statements" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="5sQNYX8b9s_" role="3cqZAp">
+                      <node concept="1rXfSq" id="5sQNYX8b9sA" role="3cqZAk">
+                        <ref role="37wK5l" node="4LwOMLV$C8N" resolve="internalCreateNodeCell" />
+                        <node concept="37vLTw" id="5sQNYX8b9sB" role="37wK5m">
+                          <ref role="3cqZAo" node="62w2A05fFHf" resolve="editorContext" />
+                        </node>
+                        <node concept="37vLTw" id="5sQNYX8b9sC" role="37wK5m">
+                          <ref role="3cqZAo" node="62w2A05fFHh" resolve="elementNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="9aQIb" id="5sQNYX8aWjS" role="9aQIa">
+                  <node concept="3clFbS" id="5sQNYX8aWjT" role="9aQI4">
                     <node concept="3cpWs6" id="5sQNYX84939" role="3cqZAp">
                       <node concept="1rXfSq" id="5sQNYX8493a" role="3cqZAk">
                         <ref role="37wK5l" node="62w2A05fLBk" resolve="createEmptyCell" />
@@ -9963,6 +10041,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="5sQNYX8aVJi" role="3cqZAp" />
             </node>
             <node concept="1Wc70l" id="4LwOMLV_OW1" role="3clFbw">
               <node concept="1eOMI4" id="3GmnFE_T_nE" role="3uHU7B">
@@ -13540,7 +13619,7 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="3GmnFE_UpoT" role="1B3o_S" />
+      <node concept="3Tm1VV" id="5sQNYX8b8tQ" role="1B3o_S" />
       <node concept="10P_77" id="3GmnFE_UpNn" role="3clF45" />
       <node concept="37vLTG" id="3GmnFE_UqW8" role="3clF46">
         <property role="TrG5h" value="selectedNode" />
