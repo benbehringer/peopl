@@ -26,6 +26,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.tests/de.htwsaar.peopl.core.tests.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="peopl.view.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.view.projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.utils.javaImport/de.htwsaar.peopl.utils.javaImport.msd" folder="peopl.utils" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.utils.peoplConverter/de.htwsaar.peopl.utils.peoplConverter.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.utils.shortcuts/de.htwsaar.peopl.utils.shortcuts.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr.Solutions" />
