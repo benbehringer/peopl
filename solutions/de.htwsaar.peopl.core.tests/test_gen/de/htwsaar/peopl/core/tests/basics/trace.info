@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:c5ff0be2-390d-4569-a3a9-b853483d94d1(de.htwsaar.peopl.core.tests.basics@tests)/4568368941932504761">
+    <file name="FooTest_Test.java">
+      <node id="4568368941932504792" at="9,47,10,37" concept="1" />
+      <node id="4568368941932505515" at="10,37,11,36" concept="1" />
+      <node id="4568368941932504764" at="9,0,13,0" concept="2" trace="test_testFoo#()V" />
+      <scope id="4568368941932504767" at="9,47,11,36" />
+      <scope id="4568368941932504764" at="9,0,13,0" />
+      <unit id="4568368941932504761" at="8,0,14,0" name="de.htwsaar.peopl.core.tests.basics.FooTest_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c5ff0be2-390d-4569-a3a9-b853483d94d1(de.htwsaar.peopl.core.tests.basics@tests)/4568368941932548300">
+    <file name="TypeHello_Test_Test.java">
+      <node id="4568368941932548300" at="15,54,16,117" concept="1" />
+      <node id="4568368941932548300" at="16,117,17,105" concept="1" />
+      <node id="4568368941932548300" at="24,51,25,63" concept="1" />
+      <node id="4568368941932548332" at="25,63,26,27" concept="1" />
+      <node id="4568368941932548300" at="12,0,14,0" concept="0" trace="TypeHello_Test_Test#()V" />
+      <node id="4568368941932548300" at="21,0,23,0" concept="0" trace="TestBody#()V" />
+      <node id="4568368941932548300" at="14,0,19,0" concept="2" trace="test_TypeHello_Test#()V" />
+      <node id="4568368941932548300" at="23,0,28,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="4568368941932548300" at="12,32,12,32" />
+      <scope id="4568368941932548300" at="21,23,21,23" />
+      <scope id="4568368941932548300" at="12,0,14,0" />
+      <scope id="4568368941932548300" at="15,54,17,105" />
+      <scope id="4568368941932548300" at="21,0,23,0" />
+      <scope id="4568368941932548300" at="24,51,26,27" />
+      <scope id="4568368941932548300" at="14,0,19,0" />
+      <scope id="4568368941932548300" at="23,0,28,0" />
+      <unit id="4568368941932548300" at="19,0,29,0" name="de.htwsaar.peopl.core.tests.basics.TypeHello_Test_Test$TestBody" />
+      <unit id="4568368941932548300" at="10,0,30,0" name="de.htwsaar.peopl.core.tests.basics.TypeHello_Test_Test" />
+    </file>
+  </root>
+</debug-info>
+

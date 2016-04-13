@@ -33,6 +33,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
@@ -489,6 +490,19 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbF" id="4U9HhommByI" role="3cqZAp">
+                          <node concept="2OqwBi" id="4U9HhommB_D" role="3clFbG">
+                            <node concept="35c_gC" id="4U9HhommByG" role="2Oq$k0">
+                              <ref role="35c_gD" to="xf8r:4U9HhomlWzF" resolve="ModuleDefintionReference" />
+                            </node>
+                            <node concept="2qgKlT" id="4U9HhommBLn" role="2OqNvi">
+                              <ref role="37wK5l" to="kpvh:4U9Hhommgj5" resolve="annotateModuleWith" />
+                              <node concept="37vLTw" id="4U9HhommBME" role="37wK5m">
+                                <ref role="3cqZAo" node="5CbVY30t5po" resolve="myDef" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                       <node concept="2OqwBi" id="5CbVY30t50h" role="3clFbw">
                         <node concept="2GrUjf" id="5CbVY30t4XZ" role="2Oq$k0">
@@ -696,7 +710,19 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="5CbVY30t2Kd" role="3cqZAp" />
+            <node concept="3clFbF" id="4U9HhommB5K" role="3cqZAp">
+              <node concept="2OqwBi" id="4U9HhommBe3" role="3clFbG">
+                <node concept="35c_gC" id="4U9HhommB5I" role="2Oq$k0">
+                  <ref role="35c_gD" to="xf8r:4U9HhomlWzF" resolve="ModuleDefintionReference" />
+                </node>
+                <node concept="2qgKlT" id="4U9HhommBpH" role="2OqNvi">
+                  <ref role="37wK5l" to="kpvh:4U9Hhommgj5" resolve="annotateModuleWith" />
+                  <node concept="37vLTw" id="4U9HhommBq6" role="37wK5m">
+                    <ref role="3cqZAo" node="5CbVY30sPHE" resolve="moduleDef" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3clFbC" id="1C4KoOqb5Lr" role="3clFbw">
             <node concept="10Nm6u" id="1C4KoOqb5R1" role="3uHU7w" />
