@@ -953,13 +953,16 @@
     </node>
   </node>
   <node concept="tC5Ba" id="28PmW5pX2nT">
-    <property role="TrG5h" value="PEoPLImport" />
+    <property role="TrG5h" value="PEoPL" />
     <property role="1XlLyE" value="true" />
     <property role="1rdrE6" value="true" />
     <property role="3GE5qa" value="Actions" />
     <property role="2f7twF" value="PEoPL" />
     <node concept="ftmFs" id="28PmW5pX2nV" role="ftER_">
       <node concept="2a7GMi" id="28PmW5pX2ob" role="ftvYc" />
+      <node concept="tCFHf" id="6AfKkED_IID" role="ftvYc">
+        <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUp_Empty_PeoplBlocks" />
+      </node>
       <node concept="tCFHf" id="1C4KoOqamid" role="ftvYc">
         <ref role="tCJdB" node="1C4KoOq9YJB" resolve="ConvertToPeoplSolution" />
       </node>
@@ -1312,6 +1315,99 @@
     <node concept="tT9cl" id="20JbTgwFaGL" role="2f5YQi">
       <ref role="2f8Tey" to="tprs:h$X6qIM" resolve="custom" />
       <ref role="tU$_T" to="tprs:hyf4Lqj" resolve="Edit" />
+    </node>
+  </node>
+  <node concept="sE7Ow" id="6AfKkED_I6u">
+    <property role="TrG5h" value="CleanUp_Empty_PeoplBlocks" />
+    <property role="2uzpH1" value="CleanUp PeoplBlocks" />
+    <property role="1WHSii" value="Removes all empty PeoplBlockStatements" />
+    <property role="3GE5qa" value="Actions" />
+    <node concept="2XrIbr" id="6AfKkED_LPM" role="32lrUH">
+      <property role="TrG5h" value="cleanUpPeoplEntryPoint" />
+      <node concept="3clFbS" id="6AfKkED_LPN" role="3clF47" />
+      <node concept="3cqZAl" id="6AfKkED_LXj" role="3clF45" />
+      <node concept="3Tm6S6" id="6AfKkED_LUb" role="1B3o_S" />
+      <node concept="37vLTG" id="6AfKkED_M3V" role="3clF46">
+        <property role="TrG5h" value="entryPoint" />
+        <node concept="3Tqbb2" id="6AfKkED_M3U" role="1tU5fm">
+          <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+        </node>
+      </node>
+    </node>
+    <node concept="tnohg" id="6AfKkED_I6v" role="tncku">
+      <node concept="3clFbS" id="6AfKkED_I6w" role="2VODD2">
+        <node concept="2Gpval" id="6AfKkED_KPJ" role="3cqZAp">
+          <node concept="2GrKxI" id="6AfKkED_KPK" role="2Gsz3X">
+            <property role="TrG5h" value="model" />
+          </node>
+          <node concept="3clFbS" id="6AfKkED_KPL" role="2LFqv$">
+            <node concept="2Gpval" id="6AfKkED_L4D" role="3cqZAp">
+              <node concept="2GrKxI" id="6AfKkED_L4E" role="2Gsz3X">
+                <property role="TrG5h" value="root" />
+              </node>
+              <node concept="3clFbS" id="6AfKkED_L4F" role="2LFqv$">
+                <node concept="3clFbJ" id="6AfKkED_Lgx" role="3cqZAp">
+                  <node concept="3clFbS" id="6AfKkED_Lgy" role="3clFbx">
+                    <node concept="3clFbF" id="6AfKkED_M7$" role="3cqZAp">
+                      <node concept="2OqwBi" id="6AfKkED_M8Q" role="3clFbG">
+                        <node concept="2WthIp" id="6AfKkED_M7z" role="2Oq$k0" />
+                        <node concept="2XshWL" id="6AfKkED_Mgq" role="2OqNvi">
+                          <ref role="2WH_rO" node="6AfKkED_LPM" resolve="cleanUpPeoplEntryPoint" />
+                          <node concept="1eOMI4" id="6AfKkED_Mhg" role="2XxRq1">
+                            <node concept="10QFUN" id="6AfKkED_Mhd" role="1eOMHV">
+                              <node concept="2GrUjf" id="6AfKkED_Mp1" role="10QFUP">
+                                <ref role="2Gs0qQ" node="6AfKkED_L4E" resolve="root" />
+                              </node>
+                              <node concept="3Tqbb2" id="6AfKkED_MnS" role="10QFUM">
+                                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="6AfKkED_LiS" role="3clFbw">
+                    <node concept="2GrUjf" id="6AfKkED_LgQ" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="6AfKkED_L4E" resolve="root" />
+                    </node>
+                    <node concept="liA8E" id="6AfKkED_Lp0" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                      <node concept="35c_gC" id="6AfKkED_LOC" role="37wK5m">
+                        <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6AfKkED_L68" role="2GsD0m">
+                <node concept="2GrUjf" id="6AfKkED_L5K" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6AfKkED_KPK" resolve="model" />
+                </node>
+                <node concept="liA8E" id="6AfKkED_L91" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6AfKkED_KVb" role="2GsD0m">
+            <node concept="2OqwBi" id="6AfKkED_KQw" role="2Oq$k0">
+              <node concept="2WthIp" id="6AfKkED_KQz" role="2Oq$k0" />
+              <node concept="1DTwFV" id="6AfKkED_KQ_" role="2OqNvi">
+                <ref role="2WH_rO" node="6AfKkED_KIU" resolve="currentModule" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6AfKkED_KX0" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="6AfKkED_KIU" role="1NuT2Z">
+      <property role="TrG5h" value="currentModule" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
+      <node concept="1oajcY" id="6AfKkED_KIV" role="1oa70y" />
     </node>
   </node>
 </model>
