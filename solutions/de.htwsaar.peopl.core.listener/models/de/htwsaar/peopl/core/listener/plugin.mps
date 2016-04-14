@@ -516,6 +516,22 @@
       <node concept="3Tm1VV" id="1kEVEWPsu7n" role="1B3o_S" />
       <node concept="3cqZAl" id="1kEVEWPsuZ4" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="1lp5jtqW_6h" role="jymVt" />
+    <node concept="2YIFZL" id="1lp5jtqWAo9" role="jymVt">
+      <property role="TrG5h" value="getStatus" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1lp5jtqWAoc" role="3clF47">
+        <node concept="3cpWs6" id="1lp5jtqWAR0" role="3cqZAp">
+          <node concept="37vLTw" id="1lp5jtqWARq" role="3cqZAk">
+            <ref role="3cqZAo" node="1kEVEWPspOD" resolve="status" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1lp5jtqW_Qz" role="1B3o_S" />
+      <node concept="10Oyi0" id="1lp5jtqWAo7" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="6AfKkED_YkO" role="jymVt" />
     <node concept="2YIFZL" id="41j_k9r1_pm" role="jymVt">
       <property role="TrG5h" value="getModelAccess" />
@@ -1184,8 +1200,21 @@
                                       </node>
                                     </node>
                                     <node concept="3clFbS" id="4UCkzXvH3$X" role="3clF47">
+                                      <node concept="34ab3g" id="bOsZpdgYg6" role="3cqZAp">
+                                        <property role="35gtTG" value="warn" />
+                                        <node concept="Xl_RD" id="bOsZpdgYg8" role="34bqiv">
+                                          <property role="Xl_RC" value="referenceChanged" />
+                                        </node>
+                                      </node>
                                       <node concept="3clFbJ" id="1kEVEWPsxPY" role="3cqZAp">
                                         <node concept="3clFbS" id="1kEVEWPsxQ0" role="3clFbx">
+                                          <node concept="34ab3g" id="bOsZpdgZFt" role="3cqZAp">
+                                            <property role="35gtTG" value="warn" />
+                                            <node concept="Xl_RD" id="bOsZpdgZFu" role="34bqiv">
+                                              <property role="Xl_RC" value="inside referenceChanged" />
+                                            </node>
+                                          </node>
+                                          <node concept="3clFbH" id="bOsZpdgZCL" role="3cqZAp" />
                                           <node concept="3SKdUt" id="1kEVEWPsxUu" role="3cqZAp">
                                             <node concept="3SKdUq" id="1kEVEWPsxUv" role="3SKWNk">
                                               <property role="3SKdUp" value="chosenModule" />
@@ -1542,8 +1571,32 @@
                                       </node>
                                     </node>
                                     <node concept="3clFbS" id="4UCkzXvH3Aq" role="3clF47">
+                                      <node concept="34ab3g" id="bOsZpdgYm$" role="3cqZAp">
+                                        <property role="35gtTG" value="warn" />
+                                        <node concept="3cpWs3" id="bOsZpdhaI3" role="34bqiv">
+                                          <node concept="2OqwBi" id="bOsZpdhaLi" role="3uHU7w">
+                                            <node concept="37vLTw" id="bOsZpdhaJt" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="4UCkzXvH3An" resolve="p0" />
+                                            </node>
+                                            <node concept="liA8E" id="bOsZpdhbdr" role="2OqNvi">
+                                              <ref role="37wK5l" to="cmfw:~SNodeAddEvent.getChild():org.jetbrains.mps.openapi.model.SNode" resolve="getChild" />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="bOsZpdgYm_" role="3uHU7B">
+                                            <property role="Xl_RC" value="nodeAdded: " />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3clFbH" id="bOsZpdgYjV" role="3cqZAp" />
                                       <node concept="3clFbJ" id="1kEVEWPsyW1" role="3cqZAp">
                                         <node concept="3clFbS" id="1kEVEWPsyW3" role="3clFbx">
+                                          <node concept="34ab3g" id="bOsZpdgZ_4" role="3cqZAp">
+                                            <property role="35gtTG" value="warn" />
+                                            <node concept="Xl_RD" id="bOsZpdgZ_5" role="34bqiv">
+                                              <property role="Xl_RC" value="inside nodeAdded" />
+                                            </node>
+                                          </node>
+                                          <node concept="3clFbH" id="bOsZpdgZuJ" role="3cqZAp" />
                                           <node concept="3cpWs8" id="1kEVEWPsz0I" role="3cqZAp">
                                             <node concept="3cpWsn" id="1kEVEWPsz0J" role="3cpWs9">
                                               <property role="TrG5h" value="currenNode" />
@@ -1661,8 +1714,32 @@
                                       </node>
                                     </node>
                                     <node concept="3clFbS" id="4UCkzXvH3Ax" role="3clF47">
+                                      <node concept="34ab3g" id="bOsZpdgYzx" role="3cqZAp">
+                                        <property role="35gtTG" value="warn" />
+                                        <node concept="3cpWs3" id="1lp5jtqWfSZ" role="34bqiv">
+                                          <node concept="2OqwBi" id="1lp5jtqWg3l" role="3uHU7w">
+                                            <node concept="37vLTw" id="1lp5jtqWfZe" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="4UCkzXvH3Au" resolve="p0" />
+                                            </node>
+                                            <node concept="liA8E" id="1lp5jtqWgxK" role="2OqNvi">
+                                              <ref role="37wK5l" to="cmfw:~SNodeRemoveEvent.getChild():org.jetbrains.mps.openapi.model.SNode" resolve="getChild" />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="bOsZpdgYzy" role="3uHU7B">
+                                            <property role="Xl_RC" value="nodeRemoved: " />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3clFbH" id="bOsZpdgYq0" role="3cqZAp" />
                                       <node concept="3clFbJ" id="1kEVEWPszZp" role="3cqZAp">
                                         <node concept="3clFbS" id="1kEVEWPszZr" role="3clFbx">
+                                          <node concept="34ab3g" id="bOsZpdgZhh" role="3cqZAp">
+                                            <property role="35gtTG" value="warn" />
+                                            <node concept="Xl_RD" id="bOsZpdgZhi" role="34bqiv">
+                                              <property role="Xl_RC" value="inside nodeRemoved" />
+                                            </node>
+                                          </node>
+                                          <node concept="3clFbH" id="bOsZpdgYLe" role="3cqZAp" />
                                           <node concept="3cpWs8" id="VwUpvpzSkf" role="3cqZAp">
                                             <node concept="3cpWsn" id="VwUpvpzSki" role="3cpWs9">
                                               <property role="TrG5h" value="currentNode" />
