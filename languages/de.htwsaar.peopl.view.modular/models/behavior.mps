@@ -232,7 +232,21 @@
       </node>
     </node>
     <node concept="13hLZK" id="7boOmZ483Vk" role="13h7CW">
-      <node concept="3clFbS" id="7boOmZ483Vl" role="2VODD2" />
+      <node concept="3clFbS" id="7boOmZ483Vl" role="2VODD2">
+        <node concept="3clFbF" id="1kEVEWPq1hr" role="3cqZAp">
+          <node concept="37vLTI" id="1kEVEWPq1_t" role="3clFbG">
+            <node concept="Xl_RD" id="1kEVEWPq1_J" role="37vLTx">
+              <property role="Xl_RC" value="myModule" />
+            </node>
+            <node concept="2OqwBi" id="1kEVEWPq1p2" role="37vLTJ">
+              <node concept="13iPFW" id="1kEVEWPq1hq" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1kEVEWPq1w3" role="2OqNvi">
+                <ref role="3TsBF5" to="ao9j:1kEVEWPq1hl" resolve="moduleRefName" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
