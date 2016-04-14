@@ -133,5 +133,25 @@
     <property role="TrG5h" value="PeoplPlaceholderStatement" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
+  <node concept="1TIwiD" id="4DWAEpij21t">
+    <property role="1pbfSe" value="1664566525" />
+    <property role="TrG5h" value="PeoplBlockReference" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="4DWAEpij2ku" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="myPeoplBlockStatement" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7bzdNbiQijk" resolve="PeoplBlockStatement" />
+    </node>
+    <node concept="M6xJ_" id="4DWAEpij2ko" role="lGtFl">
+      <property role="Hh88m" value="PeoplBlockReference" />
+      <node concept="tn0Fv" id="4DWAEpij2kq" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="4DWAEpij2ks" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -2163,25 +2163,20 @@
                                 <node concept="37vLTw" id="4DWAEpiexRz" role="37wK5m">
                                   <ref role="3cqZAo" node="4XXs7o024A7" resolve="y" />
                                 </node>
-                                <node concept="3cpWsd" id="4DWAEpifEE7" role="37wK5m">
-                                  <node concept="3cpWsd" id="4DWAEpif6YU" role="3uHU7B">
-                                    <node concept="2OqwBi" id="4DWAEpif6wC" role="3uHU7B">
-                                      <node concept="Xjq3P" id="4DWAEpif6mU" role="2Oq$k0" />
-                                      <node concept="liA8E" id="4DWAEpif6OY" role="2OqNvi">
-                                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
-                                      </node>
-                                    </node>
-                                    <node concept="2OqwBi" id="4DWAEpif7nN" role="3uHU7w">
-                                      <node concept="37vLTw" id="4DWAEpif7FA" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4DWAEpievgk" resolve="baseLineProviderCell" />
-                                      </node>
-                                      <node concept="liA8E" id="4DWAEpif7Lg" role="2OqNvi">
-                                        <ref role="37wK5l" to="f4zo:~EditorCell.getX():int" resolve="getX" />
-                                      </node>
+                                <node concept="3cpWsd" id="4DWAEpif6YU" role="37wK5m">
+                                  <node concept="2OqwBi" id="4DWAEpif6wC" role="3uHU7B">
+                                    <node concept="Xjq3P" id="4DWAEpif6mU" role="2Oq$k0" />
+                                    <node concept="liA8E" id="4DWAEpif6OY" role="2OqNvi">
+                                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getX():int" resolve="getX" />
                                     </node>
                                   </node>
-                                  <node concept="37vLTw" id="4DWAEpif8MH" role="3uHU7w">
-                                    <ref role="3cqZAo" node="4XXs7o024wM" resolve="myLineThickness" />
+                                  <node concept="2OqwBi" id="4DWAEpif7nN" role="3uHU7w">
+                                    <node concept="37vLTw" id="4DWAEpif7FA" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4DWAEpievgk" resolve="baseLineProviderCell" />
+                                    </node>
+                                    <node concept="liA8E" id="4DWAEpif7Lg" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getX():int" resolve="getX" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="4DWAEpieuAe" role="37wK5m">
