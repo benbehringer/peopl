@@ -516,6 +516,49 @@
       <node concept="3Tm1VV" id="1kEVEWPsu7n" role="1B3o_S" />
       <node concept="3cqZAl" id="1kEVEWPsuZ4" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="6AfKkEDAPfb" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="hardTurnOff" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6AfKkEDAPfe" role="3clF47">
+        <node concept="3clFbF" id="6AfKkEDAQ8A" role="3cqZAp">
+          <node concept="37vLTI" id="6AfKkEDAQfO" role="3clFbG">
+            <node concept="3cmrfG" id="6AfKkEDAQgd" role="37vLTx">
+              <property role="3cmrfH" value="0" />
+            </node>
+            <node concept="37vLTw" id="6AfKkEDAQ8_" role="37vLTJ">
+              <ref role="3cqZAo" node="1kEVEWPspOD" resolve="status" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6AfKkEDAOpr" role="1B3o_S" />
+      <node concept="3cqZAl" id="6AfKkEDAPeJ" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6AfKkEDAoqK" role="jymVt" />
+    <node concept="3clFb_" id="6AfKkEDAJVn" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isOn" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6AfKkEDAJVq" role="3clF47">
+        <node concept="3cpWs6" id="6AfKkEDALNJ" role="3cqZAp">
+          <node concept="3clFbC" id="6AfKkEDAN3Y" role="3cqZAk">
+            <node concept="37vLTw" id="6AfKkEDALWo" role="3uHU7B">
+              <ref role="3cqZAo" node="1kEVEWPspOD" resolve="status" />
+            </node>
+            <node concept="3cmrfG" id="6AfKkEDAMz9" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6AfKkEDAJ2m" role="1B3o_S" />
+      <node concept="10P_77" id="6AfKkEDAJUU" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="6AfKkED_YkO" role="jymVt" />
     <node concept="2YIFZL" id="41j_k9r1_pm" role="jymVt">
       <property role="TrG5h" value="getModelAccess" />
