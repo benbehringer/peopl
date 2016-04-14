@@ -2,7 +2,7 @@
 <model ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -351,6 +351,21 @@
       <property role="20kJfa" value="modDefRef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7Ufy5VQFkPw" resolve="ModuleDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4DWAEpi7jwH">
+    <property role="1pbfSe" value="1667640621" />
+    <property role="3GE5qa" value="Helper" />
+    <property role="TrG5h" value="OriginalCode" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="4DWAEpi7jWv" role="lGtFl">
+      <property role="Hh88m" value="OriginalCode" />
+      <node concept="tn0Fv" id="4DWAEpi7jWx" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="4DWAEpi7jWz" role="EQaZv">
+        <ref role="trN6q" to="tpee:fzclF8l" resolve="Statement" />
+      </node>
     </node>
   </node>
 </model>

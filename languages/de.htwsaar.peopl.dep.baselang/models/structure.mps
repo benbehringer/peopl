@@ -61,6 +61,16 @@
     <property role="TrG5h" value="PeoplBlockStatement" />
     <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
+    <node concept="1TJgyj" id="4DWAEpicCW1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingMethod" />
+      <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="4DWAEpicCW3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingClass" />
+      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6qqyTRuTqUc">
     <property role="1pbfSe" value="1166031401" />
