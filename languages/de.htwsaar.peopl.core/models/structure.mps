@@ -282,7 +282,7 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="574BmeO7L4B" role="1TKVEl">
-      <property role="TrG5h" value="hexValue" />
+      <property role="TrG5h" value="intValue" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
