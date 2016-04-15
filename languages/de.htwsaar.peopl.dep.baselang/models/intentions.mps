@@ -19,6 +19,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -28,6 +29,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -111,6 +113,12 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
     </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions">
       <concept id="1192794744107" name="jetbrains.mps.lang.intentions.structure.IntentionDeclaration" flags="ig" index="2S6QgY" />
       <concept id="1192794782375" name="jetbrains.mps.lang.intentions.structure.DescriptionBlock" flags="in" index="2S6ZIM" />
@@ -154,6 +162,9 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -193,9 +204,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -205,6 +220,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1227026082377" name="jetbrains.mps.baseLanguage.collections.structure.RemoveFirstElementOperation" flags="nn" index="2Kt2Hk" />
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
@@ -901,6 +917,63 @@
     <node concept="2Sbjvc" id="3du0jSJ2elQ" role="2ZfgGD">
       <node concept="3clFbS" id="3du0jSJ2elR" role="2VODD2">
         <node concept="3clFbH" id="3du0jSJ2n3r" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1lp5jtrbBUr">
+    <property role="TrG5h" value="PrintPeoplBlockReferenceIDs" />
+    <ref role="2ZfgGC" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+    <node concept="2S6ZIM" id="1lp5jtrbBUs" role="2ZfVej">
+      <node concept="3clFbS" id="1lp5jtrbBUt" role="2VODD2">
+        <node concept="3clFbF" id="1lp5jtrbCnW" role="3cqZAp">
+          <node concept="Xl_RD" id="1lp5jtrbCbd" role="3clFbG">
+            <property role="Xl_RC" value="Print PeoplBlockReference IDs" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1lp5jtrbBUu" role="2ZfgGD">
+      <node concept="3clFbS" id="1lp5jtrbBUv" role="2VODD2">
+        <node concept="3clFbF" id="1lp5jtrbCpd" role="3cqZAp">
+          <node concept="2OqwBi" id="1lp5jtrbDhN" role="3clFbG">
+            <node concept="2OqwBi" id="1lp5jtrbCwL" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1lp5jtrbCpc" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="1lp5jtrbCOx" role="2OqNvi">
+                <node concept="3CFYIy" id="1lp5jtrbCP4" role="3CFYIz">
+                  <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                </node>
+              </node>
+            </node>
+            <node concept="2es0OD" id="1lp5jtrbF9T" role="2OqNvi">
+              <node concept="1bVj0M" id="1lp5jtrbF9V" role="23t8la">
+                <node concept="3clFbS" id="1lp5jtrbF9W" role="1bW5cS">
+                  <node concept="34ab3g" id="1lp5jtr3DWw" role="3cqZAp">
+                    <property role="35gtTG" value="warn" />
+                    <node concept="3cpWs3" id="1lp5jtr3EL7" role="34bqiv">
+                      <node concept="2OqwBi" id="1lp5jtr3FpD" role="3uHU7w">
+                        <node concept="2JrnkZ" id="1lp5jtr3FhP" role="2Oq$k0">
+                          <node concept="37vLTw" id="1lp5jtr3ERH" role="2JrQYb">
+                            <ref role="3cqZAo" node="1lp5jtrbF9X" resolve="it" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1lp5jtr3Fzd" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="1lp5jtr3DWy" role="3uHU7B">
+                        <property role="Xl_RC" value="intention-PeoplBlockReference: " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1lp5jtrbF9X" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1lp5jtrbF9Y" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
