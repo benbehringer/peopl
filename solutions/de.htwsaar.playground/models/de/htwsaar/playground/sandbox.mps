@@ -52,7 +52,6 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
@@ -188,12 +187,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
       <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
       <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
@@ -890,33 +885,7 @@
       <property role="TrG5h" value="TestClass" />
       <property role="1sVAO0" value="false" />
       <node concept="2tJIrI" id="1lp5jtrbBO0" role="jymVt" />
-      <node concept="2YIFZL" id="1lp5jtrbIIr" role="jymVt">
-        <property role="TrG5h" value="foobi" />
-        <property role="DiZV1" value="false" />
-        <property role="od$2w" value="false" />
-        <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="1lp5jtrbIIt" role="3clF47">
-          <node concept="2wexfA" id="1lp5jtrbIIu" role="3cqZAp">
-            <ref role="ojxm_" node="2B6$8H1W$1a" resolve="TestClass" />
-            <ref role="ojxmB" node="1lp5jtrbIIr" resolve="foobi" />
-            <node concept="3clFbS" id="1lp5jtrbIIv" role="9aQI4" />
-            <node concept="1V74GB" id="1lp5jtrbIIw" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <ref role="1V74Hf" node="1lp5jtrbICs" />
-              <ref role="3aRQVk" node="1lp5jtrbICt" resolve="ConnectedModule :  Base" />
-              <ref role="a64iB" node="2B6$8H1W$0t" resolve="Base" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cqZAl" id="1lp5jtrbIIy" role="3clF45" />
-        <node concept="3Tm1VV" id="1lp5jtrbIIx" role="1B3o_S" />
-        <node concept="ocbFV" id="1lp5jtrbIIz" role="lGtFl">
-          <ref role="ocbYS" node="1lp5jtrbIIu" />
-        </node>
-        <node concept="ocbFV" id="1lp5jtrbII_" role="lGtFl">
-          <ref role="ocbYS" to=":^" />
-        </node>
-      </node>
+      <node concept="2tJIrI" id="1Bn6bZVQU27" role="jymVt" />
       <node concept="2tJIrI" id="1lp5jtraZ_e" role="jymVt" />
       <node concept="3clFb_" id="3VwycMLjmQD" role="jymVt">
         <property role="1EzhhJ" value="false" />
