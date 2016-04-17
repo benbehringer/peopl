@@ -13,6 +13,7 @@
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -46,6 +47,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -972,6 +976,33 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="yvbzKMpuiU">
+    <property role="TrG5h" value="ReplaceWithNewStatement" />
+    <ref role="2ZfgGC" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="2Sbjvc" id="yvbzKMpuiV" role="2ZfgGD">
+      <node concept="3clFbS" id="yvbzKMpuiW" role="2VODD2">
+        <node concept="3clFbF" id="yvbzKMpuQN" role="3cqZAp">
+          <node concept="2YIFZM" id="yvbzKMpuTf" role="3clFbG">
+            <ref role="37wK5l" to="i8bi:7U2DyFDnPgG" resolve="replaceWithNewChild" />
+            <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
+            <node concept="2Sf5sV" id="yvbzKMpuTU" role="37wK5m" />
+            <node concept="35c_gC" id="yvbzKMpuWk" role="37wK5m">
+              <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2S6ZIM" id="yvbzKMpuiX" role="2ZfVej">
+      <node concept="3clFbS" id="yvbzKMpuiY" role="2VODD2">
+        <node concept="3clFbF" id="yvbzKMpuzH" role="3cqZAp">
+          <node concept="Xl_RD" id="yvbzKMpuzG" role="3clFbG">
+            <property role="Xl_RC" value="Peopl Test: Replace with Empty Statement" />
           </node>
         </node>
       </node>

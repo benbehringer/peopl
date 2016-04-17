@@ -183,7 +183,6 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
-      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -308,7 +307,7 @@
   </node>
   <node concept="24kQdi" id="5L3eIBSV$mh">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="xf8r:6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
+    <ref role="1XX52x" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     <node concept="3EZMnI" id="5L3eIBSV$mj" role="2wV5jI">
       <node concept="1iCGBv" id="5L3eIBSV$mq" role="3EZMnx">
         <ref role="1NtTu8" to="xf8r:6K8EDSn5e6V" />
@@ -778,19 +777,14 @@
                                     <ref role="3cqZAo" node="24FWzxQ8m" resolve="p0" />
                                   </node>
                                   <node concept="pncrf" id="24FWzyl84" role="37wK5m" />
-                                  <node concept="3cpWs3" id="24FWzyHUB" role="37wK5m">
-                                    <node concept="2OqwBi" id="24FWzyIxK" role="3uHU7w">
-                                      <node concept="2JrnkZ" id="24FWzyIvx" role="2Oq$k0">
-                                        <node concept="37vLTw" id="24FWzyIfo" role="2JrQYb">
-                                          <ref role="3cqZAo" node="24FWzxQFU" resolve="vp" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="24FWzyI_U" role="2OqNvi">
-                                        <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
+                                  <node concept="2OqwBi" id="24FWzyIxK" role="37wK5m">
+                                    <node concept="2JrnkZ" id="24FWzyIvx" role="2Oq$k0">
+                                      <node concept="37vLTw" id="24FWzyIfo" role="2JrQYb">
+                                        <ref role="3cqZAo" node="24FWzxQFU" resolve="vp" />
                                       </node>
                                     </node>
-                                    <node concept="Xl_RD" id="24FWzylbD" role="3uHU7B">
-                                      <property role="Xl_RC" value="VP_" />
+                                    <node concept="liA8E" id="24FWzyI_U" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
                                     </node>
                                   </node>
                                 </node>
@@ -959,7 +953,7 @@
                                   </node>
                                 </node>
                                 <node concept="3TrcHB" id="574BmeO9KoH" role="2OqNvi">
-                                  <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="hexValue" />
+                                  <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="intValue" />
                                 </node>
                               </node>
                             </node>
@@ -1131,7 +1125,7 @@
                               </node>
                             </node>
                             <node concept="3TrcHB" id="574BmeO9NWF" role="2OqNvi">
-                              <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="hexValue" />
+                              <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="intValue" />
                             </node>
                           </node>
                         </node>

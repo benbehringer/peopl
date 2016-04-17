@@ -85,13 +85,13 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="vpIntermediate" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     </node>
     <node concept="1TJgyj" id="5qz55Ysv7Eb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="moduleIntermediate" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
     </node>
     <node concept="1TJgyj" id="3bTHxkSSvaM" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -99,16 +99,19 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
+    <node concept="PrWs8" id="31jQQFwurnr" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5qz55Ysv7DE">
     <property role="1pbfSe" value="216035639" />
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="FragmentModuleIntermediate" />
+    <property role="TrG5h" value="ModuleToFragmentIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fragmentReference" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
     <node concept="PrWs8" id="6nmwsNvm4OK" role="PzmwI">
@@ -118,12 +121,15 @@
   <node concept="1TIwiD" id="6K8EDSn5e6U">
     <property role="1pbfSe" value="2095215528" />
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="FragmentVPIntermediate" />
+    <property role="TrG5h" value="VPToFragmentIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fragmentReference" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+    <node concept="PrWs8" id="31jQQFwusDt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="6K8EDSn5d7G">
@@ -136,7 +142,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fragmentIntermediate" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="FragmentModuleIntermediate" />
+      <ref role="20lvS9" node="5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
     </node>
     <node concept="PrWs8" id="6K8EDSn5d7H" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -184,18 +190,18 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="placeholderIntermediate" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
+      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="VPToPlaceholderIntermediate" />
     </node>
   </node>
   <node concept="1TIwiD" id="2LgBOmLVkOw">
     <property role="1pbfSe" value="566367131" />
     <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="PlaceholderVPIntermediate" />
+    <property role="TrG5h" value="VPToPlaceholderIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2LgBOmLVkOx" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="placeholderReference" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="2LgBOmLVkOn" resolve="Placeholder" />
     </node>
   </node>
@@ -254,13 +260,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fragmentIntermediates" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="FragmentVPIntermediate" />
+      <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     </node>
     <node concept="1TJgyj" id="5L3eIBSVdrp" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="placeholderIntermediates" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="PlaceholderVPIntermediate" />
+      <ref role="20lvS9" node="2LgBOmLVkOw" resolve="VPToPlaceholderIntermediate" />
     </node>
     <node concept="PrWs8" id="6K8EDSn5e71" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
