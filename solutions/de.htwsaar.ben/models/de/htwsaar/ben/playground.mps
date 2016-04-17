@@ -11,44 +11,12 @@
     <use id="8a47a177-aa97-4c20-90cc-ac8ed9e0b8c9" name="de.htwsaar.peopl.projectview" version="0" />
     <use id="e211e030-d3ed-4a00-9fd5-31d2de7b1e8c" name="de.htwsaar.peopl.view" version="0" />
   </languages>
-  <imports>
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-  </imports>
+  <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
-      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
-        <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-      </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
-      </concept>
-      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
-        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -71,7 +39,6 @@
       <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.ModuleToFragmentIntermediate" flags="ng" index="3aRQSP">
         <reference id="6242855909345491563" name="fragmentReference" index="3aRQSO" />
       </concept>
-      <concept id="2609645270097570911" name="de.htwsaar.peopl.core.structure.Wrappee" flags="ng" index="3lLJVk" />
       <concept id="7784659551878701469" name="de.htwsaar.peopl.core.structure.VP" flags="ng" index="1V74G3">
         <child id="7784659551878701502" name="fragmentIntermediates" index="1V74Gw" />
       </concept>
@@ -111,9 +78,9 @@
       <property role="2_7Toi" value="255" />
       <property role="3_QSL4" value="-16737793" />
       <property role="TrG5h" value="Base" />
-      <node concept="3aRQSP" id="31jQQFwzqdH" role="3aRQVq">
+      <node concept="3aRQSP" id="17fl253$HJj" role="3aRQVq">
         <property role="TrG5h" value="ConnectedModule :  Base" />
-        <ref role="3aRQSO" node="31jQQFwyW4_" resolve="Fragment_3482368188967797029" />
+        <ref role="3aRQSO" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
       </node>
     </node>
     <node concept="1V77HM" id="yl5h16lok5" role="288GmO">
@@ -122,75 +89,33 @@
       <property role="2_7Toi" value="39" />
       <property role="3_QSL4" value="6566183" />
       <property role="TrG5h" value="bar" />
-      <node concept="3aRQSP" id="17fl253scC2" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  bar" />
-        <ref role="3aRQSO" node="17fl253sdxY" resolve="Fragment_1283336920665999868" />
-      </node>
     </node>
-    <node concept="2$Fqj1" id="4a4QhOMXwRx" role="lGtFl">
-      <node concept="1V74G3" id="31jQQFwyW4A" role="2$Fqj6">
-        <property role="TrG5h" value="VP_3482368188967797030" />
-        <node concept="1V74G$" id="31jQQFwyW4B" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_3482368188967797031" />
-          <ref role="1V74G_" node="31jQQFwyW4_" resolve="Fragment_3482368188967797029" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="17fl253scBg" role="2$Fqj6">
-        <property role="TrG5h" value="VP_1283336920665999824" />
-        <node concept="1V74G$" id="17fl253scBX" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_1283336920665999869" />
-          <ref role="1V74G_" node="17fl253sdxY" resolve="Fragment_1283336920665999868" />
+    <node concept="2$Fqj1" id="17fl253$njL" role="lGtFl">
+      <node concept="1V74G3" id="17fl253$HJ1" role="2$Fqj6">
+        <property role="TrG5h" value="VP_1283336920668232641" />
+        <node concept="1V74G$" id="17fl253$HJ2" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_1283336920668232642" />
+          <ref role="1V74G_" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
         </node>
       </node>
     </node>
   </node>
-  <node concept="2SvMkh" id="31jQQFwyW4y">
+  <node concept="2SvMkh" id="17fl253$HIX">
     <property role="TrG5h" value="TestClass" />
-    <node concept="3GWJoq" id="31jQQFwyW4z" role="2abgUk">
+    <node concept="3GWJoq" id="17fl253$HIY" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
-      <node concept="2tJIrI" id="31jQQFwyW6G" role="jymVt" />
-      <node concept="3clFb_" id="17fl253sdxT" role="jymVt">
-        <property role="TrG5h" value="test" />
-        <property role="DiZV1" value="false" />
-        <property role="od$2w" value="false" />
-        <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="17fl253sdxV" role="3clF47">
-          <node concept="3clFbH" id="17fl253sdxW" role="3cqZAp" />
-          <node concept="SfApY" id="17fl253sdxX" role="3cqZAp">
-            <node concept="1V74GB" id="17fl253sdxY" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_1283336920665999868" />
-              <ref role="1V74Hf" node="17fl253scBX" resolve="VPToFragment_1283336920665999869" />
-              <ref role="a64iB" node="yl5h16lok5" resolve="bar" />
-              <ref role="3aRQVk" node="17fl253scC2" resolve="ConnectedModule :  bar" />
-            </node>
-            <node concept="3clFbS" id="17fl253sdxZ" role="SfCbr">
-              <node concept="3clFbH" id="17fl253sdy0" role="3cqZAp" />
-              <node concept="3lLJVk" id="17fl253sdy1" role="lGtFl" />
-            </node>
-            <node concept="TDmWw" id="17fl253sdy2" role="TEbGg">
-              <node concept="3cpWsn" id="17fl253sdy3" role="TDEfY">
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="17fl253sdy4" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="17fl253sdy5" role="TDEfX" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="17fl253sdy6" role="3cqZAp" />
-        </node>
-        <node concept="3cqZAl" id="17fl253sdy7" role="3clF45" />
-        <node concept="3Tm1VV" id="17fl253sdy8" role="1B3o_S" />
-      </node>
-      <node concept="2tJIrI" id="31jQQFwyW6L" role="jymVt" />
-      <node concept="3Tm1VV" id="31jQQFwyW4$" role="1B3o_S" />
-      <node concept="1V74GB" id="31jQQFwyW4_" role="lGtFl">
+      <node concept="2tJIrI" id="17fl253$HJJ" role="jymVt" />
+      <node concept="2tJIrI" id="17fl253$HLh" role="jymVt" />
+      <node concept="2tJIrI" id="17fl253$HM7" role="jymVt" />
+      <node concept="2tJIrI" id="17fl253$HM1" role="jymVt" />
+      <node concept="2tJIrI" id="17fl253$HL7" role="jymVt" />
+      <node concept="3Tm1VV" id="17fl253$HIZ" role="1B3o_S" />
+      <node concept="1V74GB" id="17fl253$HJ0" role="lGtFl">
         <property role="32Xqk$" value="chosenModule" />
-        <property role="TrG5h" value="Fragment_3482368188967797029" />
-        <ref role="1V74Hf" node="31jQQFwyW4B" resolve="VPToFragment_3482368188967797031" />
+        <property role="TrG5h" value="Fragment_1283336920668232640" />
+        <ref role="1V74Hf" node="17fl253$HJ2" resolve="VPToFragment_1283336920668232642" />
         <ref role="a64iB" node="2dLMffS5Hav" resolve="Base" />
-        <ref role="3aRQVk" node="31jQQFwzqdH" resolve="ConnectedModule :  Base" />
+        <ref role="3aRQVk" node="17fl253$HJj" resolve="ConnectedModule :  Base" />
       </node>
     </node>
   </node>
