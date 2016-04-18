@@ -370,6 +370,16 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="9AU9SVL5nA" role="3cqZAp">
+                  <node concept="2OqwBi" id="9AU9SVL5wR" role="3clFbG">
+                    <node concept="2GrUjf" id="9AU9SVL5n$" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="5CbVY30tvLX" resolve="classRoot" />
+                    </node>
+                    <node concept="liA8E" id="9AU9SVL5EG" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.delete():void" resolve="delete" />
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="2OqwBi" id="5CbVY30tw79" role="3clFbw">
                 <node concept="2GrUjf" id="5CbVY30tw5d" role="2Oq$k0">
