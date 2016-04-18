@@ -323,26 +323,5 @@
       </node>
     </node>
   </node>
-  <node concept="1TIwiD" id="4U9HhomlWzF">
-    <property role="1pbfSe" value="1692499457" />
-    <property role="3GE5qa" value="Helper" />
-    <property role="TrG5h" value="ModuleDefintionReference" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="4U9HhomlWzG" role="lGtFl">
-      <property role="Hh88m" value="ModuleDefintionReference" />
-      <node concept="tn0Fv" id="4U9HhomlWzI" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
-      <node concept="trNpa" id="4U9Hhomm3nu" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="4U9HhomlWzK" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="modDefRef" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7Ufy5VQFkPw" resolve="ModuleDefinition" />
-    </node>
-  </node>
 </model>
 
