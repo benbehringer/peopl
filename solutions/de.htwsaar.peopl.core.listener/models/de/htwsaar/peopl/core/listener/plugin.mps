@@ -144,7 +144,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7141,6 +7141,11 @@
                                             </node>
                                           </node>
                                           <node concept="3clFbH" id="2NMVKnbESH3" role="3cqZAp" />
+                                          <node concept="3SKdUt" id="1apVoTlmtI8" role="3cqZAp">
+                                            <node concept="3SKdUq" id="1apVoTlmtI9" role="3SKWNk">
+                                              <property role="3SKdUp" value="todo: clear the buffer somewhere else. maybe in an action?" />
+                                            </node>
+                                          </node>
                                           <node concept="3SKdUt" id="2hzf2Ogv1zA" role="3cqZAp">
                                             <node concept="3SKdUq" id="2hzf2Ogv1zB" role="3SKWNk">
                                               <property role="3SKdUp" value="we just clear the buffer when we found no fragments in it as there might be more fragments" />
@@ -7171,30 +7176,25 @@
                                                 </node>
                                               </node>
                                             </node>
-                                            <node concept="1Wc70l" id="17fl253$MqH" role="3clFbw">
-                                              <node concept="1Wc70l" id="2NMVKnbEKRn" role="3uHU7B">
-                                                <node concept="3fqX7Q" id="31jQQFwznSs" role="3uHU7w">
-                                                  <node concept="2OqwBi" id="31jQQFwzo7P" role="3fr31v">
-                                                    <node concept="2OqwBi" id="31jQQFwznSu" role="2Oq$k0">
-                                                      <node concept="37vLTw" id="31jQQFwznSv" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
-                                                      </node>
-                                                      <node concept="2yIwOk" id="31jQQFwzo2B" role="2OqNvi" />
+                                            <node concept="1X3_iC" id="1apVoTlmmg_" role="lGtFl">
+                                              <property role="3V$3am" value="condition" />
+                                              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159/1068580123160" />
+                                              <node concept="1Wc70l" id="2NMVKnbEKRn" role="8Wnug">
+                                                <node concept="2OqwBi" id="31jQQFwzo7P" role="3uHU7w">
+                                                  <node concept="2OqwBi" id="31jQQFwznSu" role="2Oq$k0">
+                                                    <node concept="37vLTw" id="31jQQFwznSv" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
                                                     </node>
-                                                    <node concept="liA8E" id="31jQQFwzof_" role="2OqNvi">
-                                                      <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                                                      <node concept="35c_gC" id="31jQQFwzol$" role="37wK5m">
-                                                        <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
-                                                      </node>
+                                                    <node concept="2yIwOk" id="31jQQFwzo2B" role="2OqNvi" />
+                                                  </node>
+                                                  <node concept="liA8E" id="31jQQFwzof_" role="2OqNvi">
+                                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                                    <node concept="35c_gC" id="31jQQFwzol$" role="37wK5m">
+                                                      <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
                                                     </node>
                                                   </node>
                                                 </node>
                                                 <node concept="1Wc70l" id="2NMVKnbE$So" role="3uHU7B">
-                                                  <node concept="3fqX7Q" id="2NMVKnbE$Lh" role="3uHU7B">
-                                                    <node concept="37vLTw" id="2NMVKnbE$Lj" role="3fr31v">
-                                                      <ref role="3cqZAo" node="31jQQFwtyUu" resolve="foundFragments" />
-                                                    </node>
-                                                  </node>
                                                   <node concept="3fqX7Q" id="2NMVKnbEL1M" role="3uHU7w">
                                                     <node concept="2OqwBi" id="2NMVKnbELgZ" role="3fr31v">
                                                       <node concept="37vLTw" id="2NMVKnbELa2" role="2Oq$k0">
@@ -7207,18 +7207,25 @@
                                                       </node>
                                                     </node>
                                                   </node>
-                                                </node>
-                                              </node>
-                                              <node concept="3fqX7Q" id="17fl253$J32" role="3uHU7w">
-                                                <node concept="2OqwBi" id="17fl253$JgJ" role="3fr31v">
-                                                  <node concept="37vLTw" id="17fl253$J9L" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
-                                                  </node>
-                                                  <node concept="1mIQ4w" id="17fl253$Jqm" role="2OqNvi">
-                                                    <node concept="chp4Y" id="17fl253$JvS" role="cj9EA">
-                                                      <ref role="cht4Q" to="tpee:1hodSy9TH5A" resolve="PlaceholderMember" />
+                                                  <node concept="3fqX7Q" id="2NMVKnbE$Lh" role="3uHU7B">
+                                                    <node concept="37vLTw" id="2NMVKnbE$Lj" role="3fr31v">
+                                                      <ref role="3cqZAo" node="31jQQFwtyUu" resolve="foundFragments" />
                                                     </node>
                                                   </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="2OqwBi" id="1apVoTlmn0y" role="3clFbw">
+                                              <node concept="2OqwBi" id="1apVoTlmmLq" role="2Oq$k0">
+                                                <node concept="37vLTw" id="1apVoTlmmFV" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
+                                                </node>
+                                                <node concept="2yIwOk" id="1apVoTlmmT$" role="2OqNvi" />
+                                              </node>
+                                              <node concept="liA8E" id="1apVoTlmn9L" role="2OqNvi">
+                                                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                                <node concept="35c_gC" id="1apVoTlmpYp" role="37wK5m">
+                                                  <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
                                                 </node>
                                               </node>
                                             </node>
