@@ -243,31 +243,6 @@
                   <property role="3SKdUp" value="remove ToBeIgnoredByListener annotation" />
                 </node>
               </node>
-              <node concept="3clFbF" id="7PFXpItp63A" role="3cqZAp">
-                <node concept="2OqwBi" id="7PFXpItp6$l" role="3clFbG">
-                  <node concept="2OqwBi" id="7PFXpItp6mw" role="2Oq$k0">
-                    <node concept="2OqwBi" id="7PFXpItp63C" role="2Oq$k0">
-                      <node concept="2OqwBi" id="7PFXpItp63D" role="2Oq$k0">
-                        <node concept="1JFAaq" id="7PFXpItp63E" role="2Oq$k0" />
-                        <node concept="3CFZ6_" id="7PFXpItp63F" role="2OqNvi">
-                          <node concept="3CFYIy" id="7PFXpItp63G" role="3CFYIz">
-                            <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3TrEf2" id="7PFXpItp63H" role="2OqNvi">
-                        <ref role="3Tt5mk" to="py0u:7PFXpItoF8k" />
-                      </node>
-                    </node>
-                    <node concept="3CFZ6_" id="7PFXpItp6tY" role="2OqNvi">
-                      <node concept="3CFYIy" id="7PFXpItp6wd" role="3CFYIz">
-                        <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1PgB_6" id="7PFXpItp6KD" role="2OqNvi" />
-                </node>
-              </node>
               <node concept="3SKdUt" id="7PFXpItp9q3" role="3cqZAp">
                 <node concept="3SKdUq" id="7PFXpItp9q5" role="3SKWNk">
                   <property role="3SKdUp" value="remove OriginalNodeInfo annotation from pastedNode, because it is not needed anymore" />
@@ -401,31 +376,6 @@
                 <node concept="3SKdUt" id="51LjPj91BXX" role="3cqZAp">
                   <node concept="3SKdUq" id="51LjPj91BXY" role="3SKWNk">
                     <property role="3SKdUp" value="remove ToBeIgnoredByListener annotation" />
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2aku2wRhw_4" role="3cqZAp">
-                  <node concept="2OqwBi" id="2aku2wRhxgo" role="3clFbG">
-                    <node concept="2OqwBi" id="2aku2wRhx4V" role="2Oq$k0">
-                      <node concept="2OqwBi" id="2aku2wRhwQe" role="2Oq$k0">
-                        <node concept="2OqwBi" id="2aku2wRhwGr" role="2Oq$k0">
-                          <node concept="1JFAaq" id="2aku2wRhw_2" role="2Oq$k0" />
-                          <node concept="3CFZ6_" id="2aku2wRhwLU" role="2OqNvi">
-                            <node concept="3CFYIy" id="2aku2wRhwMp" role="3CFYIz">
-                              <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3TrEf2" id="2aku2wRhwW8" role="2OqNvi">
-                          <ref role="3Tt5mk" to="py0u:7PFXpItoF8k" />
-                        </node>
-                      </node>
-                      <node concept="3CFZ6_" id="2aku2wRhx9T" role="2OqNvi">
-                        <node concept="3CFYIy" id="2aku2wRhxck" role="3CFYIz">
-                          <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1PgB_6" id="2aku2wRhxu3" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="3SKdUt" id="51LjPj91AEe" role="3cqZAp">
@@ -581,37 +531,6 @@
           <node concept="3SKdUt" id="7PFXpItpafQ" role="3cqZAp">
             <node concept="3SKdUq" id="7PFXpItpafS" role="3SKWNk">
               <property role="3SKdUp" value="annotate vp with ToIgnoreByListener" />
-            </node>
-          </node>
-          <node concept="3clFbF" id="7PFXpItp3TA" role="3cqZAp">
-            <node concept="37vLTI" id="7PFXpItp4Jq" role="3clFbG">
-              <node concept="2ShNRf" id="7PFXpItp4OS" role="37vLTx">
-                <node concept="3zrR0B" id="7PFXpItp4OQ" role="2ShVmc">
-                  <node concept="3Tqbb2" id="7PFXpItp4OR" role="3zrR0E">
-                    <ref role="ehGHo" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7PFXpItp4wr" role="37vLTJ">
-                <node concept="2OqwBi" id="7PFXpItp4fr" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7PFXpItp41F" role="2Oq$k0">
-                    <node concept="21Isd9" id="7PFXpItp3T$" role="2Oq$k0" />
-                    <node concept="3CFZ6_" id="7PFXpItp4aD" role="2OqNvi">
-                      <node concept="3CFYIy" id="7PFXpItp4bG" role="3CFYIz">
-                        <ref role="3CFYIx" to="py0u:5zeyXLl18aD" resolve="OriginalNodeInfo" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3TrEf2" id="7PFXpItp4nG" role="2OqNvi">
-                    <ref role="3Tt5mk" to="py0u:7PFXpItoF8k" />
-                  </node>
-                </node>
-                <node concept="3CFZ6_" id="7PFXpItp4D7" role="2OqNvi">
-                  <node concept="3CFYIy" id="7PFXpItp4Fi" role="3CFYIz">
-                    <ref role="3CFYIx" to="xf8r:5FNma2fyQ8y" resolve="ToIgnoreByListener" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node concept="3clFbF" id="2aku2wRhlCj" role="3cqZAp">

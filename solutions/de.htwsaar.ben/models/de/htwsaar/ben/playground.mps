@@ -14,26 +14,9 @@
   <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
-        <child id="1082485599096" name="statements" index="9aQI4" />
-      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
-      <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
-        <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
-        <property id="1181808852946" name="isFinal" index="DiZV1" />
-        <child id="1068580123133" name="returnType" index="3clF45" />
-        <child id="1068580123135" name="body" index="3clF47" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
-        <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
-      </concept>
-      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
-        <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -73,13 +56,6 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
       <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
@@ -106,10 +82,6 @@
         <property role="TrG5h" value="ConnectedModule :  Base" />
         <ref role="3aRQSO" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
       </node>
-      <node concept="3aRQSP" id="2hzf2OgtSIf" role="3aRQVq">
-        <property role="TrG5h" value="ConnectedModule :  Base" />
-        <ref role="3aRQSO" node="2hzf2OgtTd$" resolve="Fragment_2622005572307225484" />
-      </node>
     </node>
     <node concept="1V77HM" id="yl5h16lok5" role="288GmO">
       <property role="2_7ToJ" value="100" />
@@ -126,13 +98,6 @@
           <ref role="1V74G_" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
         </node>
       </node>
-      <node concept="1V74G3" id="2hzf2OgtSId" role="2$Fqj6">
-        <property role="TrG5h" value="VP_2622005572307225485" />
-        <node concept="1V74G$" id="2hzf2OgtSIe" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_2622005572307225486" />
-          <ref role="1V74G_" node="2hzf2OgtTd$" resolve="Fragment_2622005572307225484" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2SvMkh" id="17fl253$HIX">
@@ -140,33 +105,7 @@
     <node concept="3GWJoq" id="17fl253$HIY" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
       <node concept="2tJIrI" id="17fl253$HJJ" role="jymVt" />
-      <node concept="2tJIrI" id="2hzf2OgtrhV" role="jymVt" />
-      <node concept="2YIFZL" id="2hzf2OgtTdv" role="jymVt">
-        <property role="TrG5h" value="foo" />
-        <property role="DiZV1" value="false" />
-        <property role="od$2w" value="false" />
-        <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="2hzf2OgtTdx" role="3clF47">
-          <node concept="2wexfA" id="2hzf2OgtTdy" role="3cqZAp">
-            <ref role="ojxm_" node="17fl253$HIY" resolve="TestClass" />
-            <ref role="ojxmB" node="2hzf2OgtTdv" resolve="foo" />
-            <node concept="3clFbS" id="2hzf2OgtTdz" role="9aQI4" />
-            <node concept="1V74GB" id="2hzf2OgtTd$" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_2622005572307225484" />
-              <ref role="1V74Hf" node="2hzf2OgtSIe" resolve="VPToFragment_2622005572307225486" />
-              <ref role="3aRQVk" node="2hzf2OgtSIf" resolve="ConnectedModule :  Base" />
-              <ref role="a64iB" node="2dLMffS5Hav" resolve="Base" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cqZAl" id="2hzf2OgtTd_" role="3clF45" />
-        <node concept="3Tm1VV" id="2hzf2OgtTdA" role="1B3o_S" />
-        <node concept="ocbFV" id="2hzf2OgtTdL" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_2622005572307227505" />
-          <ref role="ocbYS" node="2hzf2OgtTdy" />
-        </node>
-      </node>
+      <node concept="2tJIrI" id="2hzf2OguVoa" role="jymVt" />
       <node concept="2tJIrI" id="2hzf2OgtrhY" role="jymVt" />
       <node concept="3Tm1VV" id="17fl253$HIZ" role="1B3o_S" />
       <node concept="1V74GB" id="17fl253$HJ0" role="lGtFl">
