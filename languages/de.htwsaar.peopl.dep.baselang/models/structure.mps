@@ -105,6 +105,7 @@
   <node concept="1TIwiD" id="Vp$ulwC4cY">
     <property role="1pbfSe" value="1870255395" />
     <property role="TrG5h" value="PeoplBaseCodeBlockStatement" />
+    <property role="3GE5qa" value="deprecated" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
   </node>
   <node concept="1TIwiD" id="Vp$ulwC4dM">

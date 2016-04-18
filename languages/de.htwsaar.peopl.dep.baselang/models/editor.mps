@@ -140,6 +140,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="Vp$ulwC4d4">
+    <property role="3GE5qa" value="deprecated" />
     <ref role="1XX52x" to="uqoo:Vp$ulwC4cY" resolve="PeoplBaseCodeBlockStatement" />
     <node concept="3EZMnI" id="Vp$ulwC4dc" role="2wV5jI">
       <ref role="1ERwB7" node="7Uom0h4UVOk" resolve="Delete_PeoplBaseCodeBlock" />
@@ -170,6 +171,7 @@
   </node>
   <node concept="1h_SRR" id="7Uom0h4UVOk">
     <property role="TrG5h" value="Delete_PeoplBaseCodeBlock" />
+    <property role="3GE5qa" value="deprecated" />
     <ref role="1h_SK9" to="uqoo:Vp$ulwC4cY" resolve="PeoplBaseCodeBlockStatement" />
     <node concept="1hA7zw" id="7Uom0h4UVOl" role="1h_SK8">
       <property role="1hAc7j" value="delete_action_id" />
