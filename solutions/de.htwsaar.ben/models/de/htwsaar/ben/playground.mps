@@ -105,10 +105,8 @@
     <node concept="3GWJoq" id="17fl253$HIY" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
       <node concept="2tJIrI" id="17fl253$HJJ" role="jymVt" />
-      <node concept="2tJIrI" id="17fl253$HLh" role="jymVt" />
-      <node concept="2tJIrI" id="17fl253$HM7" role="jymVt" />
-      <node concept="2tJIrI" id="17fl253$HM1" role="jymVt" />
-      <node concept="2tJIrI" id="17fl253$HL7" role="jymVt" />
+      <node concept="2tJIrI" id="2hzf2OgsEfz" role="jymVt" />
+      <node concept="2tJIrI" id="2hzf2OgrPXy" role="jymVt" />
       <node concept="3Tm1VV" id="17fl253$HIZ" role="1B3o_S" />
       <node concept="1V74GB" id="17fl253$HJ0" role="lGtFl">
         <property role="32Xqk$" value="chosenModule" />
