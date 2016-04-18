@@ -144,7 +144,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -7002,6 +7002,29 @@
                                                 </node>
                                               </node>
                                               <node concept="3clFbS" id="31jQQFwzBLS" role="3eOfB_">
+                                                <node concept="34ab3g" id="2NMVKnbFgHi" role="3cqZAp">
+                                                  <property role="35gtTG" value="warn" />
+                                                  <node concept="3cpWs3" id="2NMVKnbFiOh" role="34bqiv">
+                                                    <node concept="Xl_RD" id="2NMVKnbFgHk" role="3uHU7B">
+                                                      <property role="Xl_RC" value="node is " />
+                                                    </node>
+                                                    <node concept="2OqwBi" id="2NMVKnbFnIl" role="3uHU7w">
+                                                      <node concept="1eOMI4" id="2NMVKnbFn33" role="2Oq$k0">
+                                                        <node concept="10QFUN" id="2NMVKnbFn30" role="1eOMHV">
+                                                          <node concept="3Tqbb2" id="2NMVKnbFnhG" role="10QFUM">
+                                                            <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                                                          </node>
+                                                          <node concept="37vLTw" id="2NMVKnbFnzh" role="10QFUP">
+                                                            <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
+                                                          </node>
+                                                        </node>
+                                                      </node>
+                                                      <node concept="3TrcHB" id="2NMVKnbFobL" role="2OqNvi">
+                                                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
                                                 <node concept="3clFbF" id="31jQQFwzChp" role="3cqZAp">
                                                   <node concept="37vLTI" id="31jQQFwzCn7" role="3clFbG">
                                                     <node concept="1rXfSq" id="31jQQFwzCso" role="37vLTx">
@@ -7079,6 +7102,7 @@
                                               </node>
                                             </node>
                                           </node>
+                                          <node concept="3clFbH" id="2NMVKnbESH3" role="3cqZAp" />
                                           <node concept="3SKdUt" id="2hzf2Ogv1zA" role="3cqZAp">
                                             <node concept="3SKdUq" id="2hzf2Ogv1zB" role="3SKWNk">
                                               <property role="3SKdUp" value="we just clear the buffer when we found no fragments in it as there might be more fragments" />
