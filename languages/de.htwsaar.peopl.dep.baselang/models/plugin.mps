@@ -1296,6 +1296,19 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="3clFbF" id="6JE$RZ51uP6" role="3cqZAp">
+                              <node concept="2OqwBi" id="6JE$RZ51v2R" role="3clFbG">
+                                <node concept="37vLTw" id="6JE$RZ51uP4" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6JE$RZ50k7Z" resolve="newBaseCodeBlock" />
+                                </node>
+                                <node concept="2qgKlT" id="6JE$RZ51vl_" role="2OqNvi">
+                                  <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlockAtReferringNode" />
+                                  <node concept="37vLTw" id="6JE$RZ51xVS" role="37wK5m">
+                                    <ref role="3cqZAo" node="6JE$RZ51vCN" resolve="baseMethod" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="6JE$RZ4V5Yk" role="3cqZAp">
                               <node concept="2OqwBi" id="6JE$RZ4V7FD" role="3clFbG">
                                 <node concept="2OqwBi" id="6JE$RZ4V6_q" role="2Oq$k0">
@@ -1332,20 +1345,6 @@
                                   <ref role="3cqZAo" node="6JE$RZ4X7nF" resolve="newNode" />
                                 </node>
                                 <node concept="1PgB_6" id="6JE$RZ4ZMDI" role="2OqNvi" />
-                              </node>
-                            </node>
-                            <node concept="3clFbH" id="6JE$RZ51tW8" role="3cqZAp" />
-                            <node concept="3clFbF" id="6JE$RZ51uP6" role="3cqZAp">
-                              <node concept="2OqwBi" id="6JE$RZ51v2R" role="3clFbG">
-                                <node concept="37vLTw" id="6JE$RZ51uP4" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6JE$RZ50k7Z" resolve="newBaseCodeBlock" />
-                                </node>
-                                <node concept="2qgKlT" id="6JE$RZ51vl_" role="2OqNvi">
-                                  <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlockAtReferringNode" />
-                                  <node concept="37vLTw" id="6JE$RZ51xVS" role="37wK5m">
-                                    <ref role="3cqZAo" node="6JE$RZ51vCN" resolve="baseMethod" />
-                                  </node>
-                                </node>
                               </node>
                             </node>
                           </node>
