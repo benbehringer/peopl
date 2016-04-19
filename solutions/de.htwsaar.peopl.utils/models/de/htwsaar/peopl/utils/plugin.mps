@@ -19,6 +19,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="7hqo" ref="r:7b35b5aa-e5d5-49e2-8301-32d20249df0a(de.htwsaar.peopl.core.runtime.plugin)" />
+    <import index="r967" ref="r:990968a2-492a-47df-a0d5-5baee85ecafc(de.htwsaar.peopl.utils.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -966,19 +968,14 @@
     <property role="1rdrE6" value="true" />
     <property role="3GE5qa" value="Actions" />
     <property role="2f7twF" value="PEoPL" />
-    <node concept="ftmFs" id="28PmW5pX2nV" role="ftER_">
-      <node concept="2a7GMi" id="28PmW5pX2ob" role="ftvYc" />
-      <node concept="tCFHf" id="6AfKkED_IID" role="ftvYc">
-        <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUp_Empty_PeoplBlocks" />
-      </node>
-      <node concept="tCFHf" id="1C4KoOqamid" role="ftvYc">
-        <ref role="tCJdB" node="1C4KoOq9YJB" resolve="ConvertToPeoplSolution" />
-      </node>
-      <node concept="2a7GMi" id="28PmW5pX2o3" role="ftvYc" />
-    </node>
     <node concept="tT9cl" id="28PmW5pX2oo" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
       <ref role="2f8Tey" to="tprs:hyalGNA" resolve="solutionNew" />
+    </node>
+    <node concept="ftmFs" id="2yX483RIVpc" role="ftER_">
+      <node concept="tCFHf" id="2yX483RIVpt" role="ftvYc">
+        <ref role="tCJdB" node="1C4KoOq9YJB" resolve="ConvertToPeoplSolution" />
+      </node>
     </node>
   </node>
   <node concept="sE7Ow" id="5FNma2fxS3K">
@@ -1312,7 +1309,7 @@
   </node>
   <node concept="sE7Ow" id="6AfKkED_I6u">
     <property role="TrG5h" value="CleanUp_Empty_PeoplBlocks" />
-    <property role="2uzpH1" value="CleanUp PeoplBlocks" />
+    <property role="2uzpH1" value="CleanUp PeoplBlocks in Solution" />
     <property role="1WHSii" value="Removes all empty PeoplBlockStatements" />
     <property role="3GE5qa" value="Actions" />
     <node concept="2XrIbr" id="6AfKkED_LPM" role="32lrUH">
@@ -1650,6 +1647,25 @@
       <property role="TrG5h" value="currentModule" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MODULE" resolve="MODULE" />
       <node concept="1oajcY" id="6AfKkED_KIV" role="1oa70y" />
+    </node>
+  </node>
+  <node concept="tC5Ba" id="2yX483RIVoo">
+    <property role="3GE5qa" value="Actions" />
+    <property role="TrG5h" value="Housekeeping" />
+    <property role="1XlLyE" value="true" />
+    <property role="2f7twF" value="Housekeeping" />
+    <node concept="ftmFs" id="2yX483RIVoq" role="ftER_">
+      <node concept="2a7GMi" id="2yX483RIZTr" role="ftvYc" />
+      <node concept="tCFHf" id="2yX483RIVot" role="ftvYc">
+        <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUp_Empty_PeoplBlocks" />
+      </node>
+      <node concept="tCFHf" id="2yX483RIVoy" role="ftvYc">
+        <ref role="tCJdB" to="7hqo:2yX483RIDAi" resolve="CleanUpProject" />
+      </node>
+      <node concept="2a7GMi" id="2yX483RIZT_" role="ftvYc" />
+    </node>
+    <node concept="tT9cl" id="2yX483RIXDp" role="2f5YQi">
+      <ref role="tU$_T" node="28PmW5pX2nT" resolve="PEoPL" />
     </node>
   </node>
 </model>
