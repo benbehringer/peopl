@@ -20,7 +20,6 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="7hqo" ref="r:7b35b5aa-e5d5-49e2-8301-32d20249df0a(de.htwsaar.peopl.core.runtime.plugin)" />
-    <import index="r967" ref="r:990968a2-492a-47df-a0d5-5baee85ecafc(de.htwsaar.peopl.utils.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
@@ -1659,7 +1658,7 @@
       <node concept="tCFHf" id="2yX483RIVot" role="ftvYc">
         <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUp_Empty_PeoplBlocks" />
       </node>
-      <node concept="tCFHf" id="2yX483RIVoy" role="ftvYc">
+      <node concept="tCFHf" id="1bppMoCt5RT" role="ftvYc">
         <ref role="tCJdB" to="7hqo:2yX483RIDAi" resolve="CleanUpProject" />
       </node>
       <node concept="2a7GMi" id="2yX483RIZT_" role="ftvYc" />
