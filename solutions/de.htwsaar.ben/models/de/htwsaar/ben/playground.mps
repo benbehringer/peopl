@@ -232,12 +232,7 @@
           <node concept="2wexfA" id="1apVoTlmtvm" role="3cqZAp">
             <ref role="ojxm_" node="17fl253$HIY" resolve="TestClass" />
             <ref role="ojxmB" node="1apVoTlmtvj" resolve="foobar" />
-            <node concept="3clFbS" id="1apVoTlmtvn" role="9aQI4">
-              <node concept="3clFbH" id="1apVoTlmtvo" role="3cqZAp" />
-              <node concept="3clFbH" id="1apVoTlmtvp" role="3cqZAp" />
-              <node concept="3clFbH" id="1apVoTlmtvq" role="3cqZAp" />
-              <node concept="3clFbH" id="1apVoTlmtvr" role="3cqZAp" />
-            </node>
+            <node concept="3clFbS" id="1apVoTlmtvn" role="9aQI4" />
             <node concept="1V74GB" id="1apVoTlmtvs" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_3238913890203899334" />

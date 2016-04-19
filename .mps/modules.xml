@@ -22,8 +22,8 @@
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.Languages" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.Languages" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.jochen/de.htwsaar.jochen.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.tests/de.htwsaar.peopl.core.tests.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="peopl.view.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.view.projectview" />
