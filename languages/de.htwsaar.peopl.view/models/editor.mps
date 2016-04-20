@@ -276,8 +276,8 @@
     </node>
   </node>
   <node concept="312cEu" id="7ASwjV8wra8">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="PeoplBlockPositionUtil" />
+    <property role="3GE5qa" value="deprecated" />
+    <property role="TrG5h" value="Deprecated_PeoplBlockPositionUtil" />
     <node concept="2tJIrI" id="3GmnFE_LF1v" role="jymVt" />
     <node concept="2YIFZL" id="7ASwjV8wzd3" role="jymVt">
       <property role="TrG5h" value="findOrInputNextSiblingPeoplBlock" />
