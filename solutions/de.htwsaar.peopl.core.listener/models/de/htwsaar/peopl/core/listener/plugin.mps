@@ -6030,10 +6030,6 @@
         <property role="TrG5h" value="newNode" />
         <node concept="3Tqbb2" id="6JE$RZ4X74R" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="6JE$RZ4X777" role="3clF46">
-        <property role="TrG5h" value="nodeInAST" />
-        <node concept="3Tqbb2" id="6JE$RZ4X7fa" role="1tU5fm" />
-      </node>
     </node>
     <node concept="3clFb_" id="6JE$RZ51ER4" role="jymVt">
       <property role="1EzhhJ" value="true" />
@@ -7514,12 +7510,6 @@
                                                     <ref role="37wK5l" node="6JE$RZ4X6Wd" resolve="automaticPeoplBaseCodeBlockCreation" />
                                                     <node concept="37vLTw" id="6JE$RZ4ZhZD" role="37wK5m">
                                                       <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
-                                                    </node>
-                                                    <node concept="2OqwBi" id="6JE$RZ4Zie3" role="37wK5m">
-                                                      <node concept="37vLTw" id="6JE$RZ4Zi97" role="2Oq$k0">
-                                                        <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
-                                                      </node>
-                                                      <node concept="1mfA1w" id="6JE$RZ4ZikE" role="2OqNvi" />
                                                     </node>
                                                   </node>
                                                 </node>
