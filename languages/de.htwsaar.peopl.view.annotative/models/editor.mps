@@ -42,6 +42,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
+    <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -130,6 +131,14 @@
       <concept id="1165253627126" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup" flags="ng" index="1exORT">
         <child id="1165253890469" name="parameterObjectType" index="1eyP2E" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -479,6 +488,7 @@
       <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
     </node>
     <node concept="3EZMnI" id="5cacDZVsp5L" role="2wV5jI">
+      <ref role="1ERwB7" node="kX2Y4DxvlX" resolve="ImprovedSelection" />
       <node concept="PMmxH" id="2H0DQTMD3my" role="3EZMnx">
         <ref role="PMmxG" node="2H0DQTMCSaB" resolve="ModuleAndVP_FragmentParents_BaseConcept" />
       </node>
@@ -13634,6 +13644,144 @@
     </node>
     <node concept="2aJ2om" id="3Mm3FE9Skt_" role="CpUAK">
       <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="kX2Y4DxvlX">
+    <property role="TrG5h" value="ImprovedSelection" />
+    <node concept="1hA7zw" id="kX2Y4DxvlY" role="1h_SK8">
+      <property role="1hAc7j" value="select_up_action_id" />
+      <node concept="1hAIg9" id="kX2Y4DxvlZ" role="1hA7z_">
+        <node concept="3clFbS" id="kX2Y4Dxvm0" role="2VODD2">
+          <node concept="3clFbH" id="kX2Y4DBSlC" role="3cqZAp" />
+          <node concept="3clFbH" id="kX2Y4DCA0j" role="3cqZAp" />
+          <node concept="1X3_iC" id="kX2Y4DDkvx" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="kX2Y4Dxvm8" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="kX2Y4Dxvma" role="34bqiv">
+                <property role="Xl_RC" value="Caught select_up" />
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="kX2Y4DDknK" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="kX2Y4DzliT" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="kX2Y4Dzlo2" role="34bqiv">
+                <node concept="Xl_RD" id="kX2Y4DzliV" role="3uHU7B">
+                  <property role="Xl_RC" value="selected : " />
+                </node>
+                <node concept="2OqwBi" id="kX2Y4Dzloy" role="3uHU7w">
+                  <node concept="1Q80Hx" id="kX2Y4Dzloz" role="2Oq$k0" />
+                  <node concept="liA8E" id="kX2Y4Dzlo$" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="kX2Y4DDkqV" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="kX2Y4DzwWe" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="kX2Y4DzwZN" role="34bqiv">
+                <node concept="Xl_RD" id="kX2Y4DzwWg" role="3uHU7B">
+                  <property role="Xl_RC" value=" text : " />
+                </node>
+                <node concept="2OqwBi" id="kX2Y4Dzwwg" role="3uHU7w">
+                  <node concept="2OqwBi" id="kX2Y4Dzwrt" role="2Oq$k0">
+                    <node concept="2OqwBi" id="kX2Y4Dzwme" role="2Oq$k0">
+                      <node concept="1Q80Hx" id="kX2Y4DzwkY" role="2Oq$k0" />
+                      <node concept="liA8E" id="kX2Y4Dzwpx" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="kX2Y4Dzwu8" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.renderText():jetbrains.mps.openapi.editor.TextBuilder" resolve="renderText" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="kX2Y4Dzwzh" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~TextBuilder.getText():java.lang.String" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="kX2Y4DDkk3" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3cpWs8" id="kX2Y4DBS$d" role="8Wnug">
+              <node concept="3cpWsn" id="kX2Y4DBS$g" role="3cpWs9">
+                <property role="TrG5h" value="selectNode" />
+                <node concept="3Tqbb2" id="kX2Y4DBS$b" role="1tU5fm" />
+                <node concept="2OqwBi" id="kX2Y4DC4eH" role="33vP2m">
+                  <node concept="1eOMI4" id="kX2Y4DC4bV" role="2Oq$k0">
+                    <node concept="10QFUN" id="kX2Y4DC45E" role="1eOMHV">
+                      <node concept="3Tqbb2" id="kX2Y4DC4lS" role="10QFUM" />
+                      <node concept="2OqwBi" id="kX2Y4DC3SZ" role="10QFUP">
+                        <node concept="1Q80Hx" id="kX2Y4DC3R6" role="2Oq$k0" />
+                        <node concept="liA8E" id="kX2Y4DC3W$" role="2OqNvi">
+                          <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2Xjw5R" id="kX2Y4DC4pg" role="2OqNvi">
+                    <node concept="1xMEDy" id="kX2Y4DC4pi" role="1xVPHs">
+                      <node concept="chp4Y" id="kX2Y4DC4rg" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:fzclF8n" resolve="IfStatement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1X3_iC" id="kX2Y4DDkfR" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="kX2Y4DBSGJ" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="kX2Y4DBSNn" role="34bqiv">
+                <node concept="37vLTw" id="kX2Y4DBSQr" role="3uHU7w">
+                  <ref role="3cqZAo" node="kX2Y4DBS$g" resolve="selectNode" />
+                </node>
+                <node concept="Xl_RD" id="kX2Y4DBSGL" role="3uHU7B">
+                  <property role="Xl_RC" value="selectNode : " />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="kX2Y4DCMbc" role="3cqZAp">
+            <node concept="2OqwBi" id="kX2Y4DD9li" role="3clFbG">
+              <node concept="2OqwBi" id="kX2Y4DD8uw" role="2Oq$k0">
+                <node concept="1Q80Hx" id="kX2Y4DD8r2" role="2Oq$k0" />
+                <node concept="liA8E" id="kX2Y4DD9kE" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectionManager():jetbrains.mps.openapi.editor.selection.SelectionManager" resolve="getSelectionManager" />
+                </node>
+              </node>
+              <node concept="liA8E" id="kX2Y4DDkzH" role="2OqNvi">
+                <ref role="37wK5l" to="lwvz:~SelectionManager.setSelection(org.jetbrains.mps.openapi.model.SNode):void" resolve="setSelection" />
+                <node concept="2OqwBi" id="kX2Y4DDQ7P" role="37wK5m">
+                  <node concept="2OqwBi" id="kX2Y4DDQ3y" role="2Oq$k0">
+                    <node concept="1Q80Hx" id="kX2Y4DDQ2k" role="2Oq$k0" />
+                    <node concept="liA8E" id="kX2Y4DDQ6D" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSelectedNode" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="kX2Y4DDQcx" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getParent():org.jetbrains.mps.openapi.model.SNode" resolve="getParent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="kX2Y4DBSqX" role="3cqZAp" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
