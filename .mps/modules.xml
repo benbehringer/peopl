@@ -10,6 +10,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.ccp/de.htwsaar.peopl.utils.ccp.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="peopl.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.view" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view/de.htwsaar.peopl.view.mpl" folder="peopl.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.view" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="mbeddr.Languages" />
