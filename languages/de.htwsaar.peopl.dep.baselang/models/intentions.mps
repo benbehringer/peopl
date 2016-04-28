@@ -3440,5 +3440,59 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6N529L4_DQM">
+    <property role="TrG5h" value="OrderClass" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="6N529L4_DQN" role="2ZfVej">
+      <node concept="3clFbS" id="6N529L4_DQO" role="2VODD2">
+        <node concept="3clFbF" id="6N529L4_Fos" role="3cqZAp">
+          <node concept="Xl_RD" id="6N529L4_For" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL-Test-&gt; Order PClass" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6N529L4_DQP" role="2ZfgGD">
+      <node concept="3clFbS" id="6N529L4_DQQ" role="2VODD2">
+        <node concept="3clFbF" id="6N529L4_FGt" role="3cqZAp">
+          <node concept="2OqwBi" id="6N529L4_FPf" role="3clFbG">
+            <node concept="2OqwBi" id="6N529L4_FGv" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6N529L4_FGw" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6N529L4_FGx" role="2OqNvi">
+                <node concept="1xMEDy" id="6N529L4_FGy" role="1xVPHs">
+                  <node concept="chp4Y" id="6N529L4_FGz" role="ri$Ld">
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2qgKlT" id="6N529L4_GcS" role="2OqNvi">
+              <ref role="37wK5l" to="1lrk:6N529L4_yYS" resolve="orderAccordingToModules" />
+              <node concept="10Nm6u" id="6N529L4_GgP" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="6N529L4_FiD" role="2ZfVeh">
+      <node concept="3clFbS" id="6N529L4_FiE" role="2VODD2">
+        <node concept="3cpWs6" id="6N529L4_E9s" role="3cqZAp">
+          <node concept="2OqwBi" id="6N529L4_EuK" role="3cqZAk">
+            <node concept="2OqwBi" id="6N529L4_Ed8" role="2Oq$k0">
+              <node concept="2Sf5sV" id="6N529L4_Ebi" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6N529L4_EhK" role="2OqNvi">
+                <node concept="1xMEDy" id="6N529L4_EhM" role="1xVPHs">
+                  <node concept="chp4Y" id="6N529L4_Ejk" role="ri$Ld">
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6N529L4_FdQ" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
