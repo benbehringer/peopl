@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -322,6 +321,28 @@
       <node concept="trNpa" id="7mKAM8KyPl5" role="EQaZv">
         <ref role="trN6q" to="tpee:fzclF80" resolve="StatementList" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7p8XNs9mIQp">
+    <property role="1pbfSe" value="2141447376" />
+    <property role="TrG5h" value="InteractionModule" />
+    <ref role="1TJDcQ" node="6K8EDSn5d7G" resolve="Module" />
+    <node concept="1TJgyj" id="7p8XNs9n6N9" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="moduleIntermediate" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7p8XNs9n6Nb">
+    <property role="1pbfSe" value="2141545474" />
+    <property role="TrG5h" value="ModuleIntermediate" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7p8XNs9n6Nc" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="modRef" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
   </node>
 </model>

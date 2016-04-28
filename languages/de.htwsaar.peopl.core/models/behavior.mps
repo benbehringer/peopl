@@ -1379,6 +1379,98 @@
         <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
       </node>
     </node>
+    <node concept="13i0hz" id="7p8XNs9nC9p" role="13h7CS">
+      <property role="TrG5h" value="newInteractionModuleFromCurrentModule" />
+      <node concept="3Tm1VV" id="7p8XNs9nC9q" role="1B3o_S" />
+      <node concept="3clFbS" id="7p8XNs9nC9r" role="3clF47">
+        <node concept="3cpWs8" id="7p8XNs9nFya" role="3cqZAp">
+          <node concept="3cpWsn" id="7p8XNs9nFyd" role="3cpWs9">
+            <property role="TrG5h" value="interModule" />
+            <node concept="3Tqbb2" id="7p8XNs9nFy9" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+            </node>
+            <node concept="2ShNRf" id="7p8XNs9nFza" role="33vP2m">
+              <node concept="3zrR0B" id="7p8XNs9nFz8" role="2ShVmc">
+                <node concept="3Tqbb2" id="7p8XNs9nFz9" role="3zrR0E">
+                  <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7p8XNs9nFN8" role="3cqZAp">
+          <node concept="2OqwBi" id="7p8XNs9nGp7" role="3clFbG">
+            <node concept="2OqwBi" id="7p8XNs9nFQb" role="2Oq$k0">
+              <node concept="37vLTw" id="7p8XNs9nFN6" role="2Oq$k0">
+                <ref role="3cqZAo" node="7p8XNs9nFyd" resolve="interModule" />
+              </node>
+              <node concept="3Tsc0h" id="7p8XNs9nFXl" role="2OqNvi">
+                <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="7p8XNs9nIg0" role="2OqNvi">
+              <node concept="2ShNRf" id="7p8XNs9nImh" role="25WWJ7">
+                <node concept="3zrR0B" id="7p8XNs9nJUg" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7p8XNs9nJUi" role="3zrR0E">
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7p8XNs9nK9L" role="3cqZAp">
+          <node concept="37vLTI" id="7p8XNs9nMWz" role="3clFbG">
+            <node concept="13iPFW" id="7p8XNs9nMXR" role="37vLTx" />
+            <node concept="2OqwBi" id="7p8XNs9nMLn" role="37vLTJ">
+              <node concept="2OqwBi" id="7p8XNs9nKSk" role="2Oq$k0">
+                <node concept="2OqwBi" id="7p8XNs9nKf8" role="2Oq$k0">
+                  <node concept="37vLTw" id="7p8XNs9nK9J" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7p8XNs9nFyd" resolve="interModule" />
+                  </node>
+                  <node concept="3Tsc0h" id="7p8XNs9nKt8" role="2OqNvi">
+                    <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="7p8XNs9nLOk" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="7p8XNs9nMQx" role="2OqNvi">
+                <ref role="3Tt5mk" to="xf8r:7p8XNs9n6Nc" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7p8XNs9o1Ms" role="3cqZAp">
+          <node concept="2OqwBi" id="7p8XNs9o2pj" role="3clFbG">
+            <node concept="2OqwBi" id="7p8XNs9o1Qn" role="2Oq$k0">
+              <node concept="37vLTw" id="7p8XNs9o1Mq" role="2Oq$k0">
+                <ref role="3cqZAo" node="7p8XNs9nFyd" resolve="interModule" />
+              </node>
+              <node concept="3Tsc0h" id="7p8XNs9o1Xx" role="2OqNvi">
+                <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="7p8XNs9o3lj" role="2OqNvi">
+              <node concept="2ShNRf" id="7p8XNs9o3rA" role="25WWJ7">
+                <node concept="3zrR0B" id="7p8XNs9o3JJ" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7p8XNs9o3JL" role="3zrR0E">
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7p8XNs9nFA$" role="3cqZAp">
+          <node concept="37vLTw" id="7p8XNs9nFAV" role="3cqZAk">
+            <ref role="3cqZAo" node="7p8XNs9nFyd" resolve="interModule" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7p8XNs9nFof" role="3clF45">
+        <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+      </node>
+    </node>
     <node concept="13hLZK" id="4RpwnfCL9zH" role="13h7CW">
       <node concept="3clFbS" id="4RpwnfCL9zI" role="2VODD2" />
     </node>
@@ -3460,6 +3552,133 @@
     </node>
     <node concept="13hLZK" id="3Sk5uha7YQI" role="13h7CW">
       <node concept="3clFbS" id="3Sk5uha7YQJ" role="2VODD2" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7sP5cmKRepl">
+    <ref role="13h7C2" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+    <node concept="13i0hz" id="7sP5cmKReK3" role="13h7CS">
+      <property role="TrG5h" value="extendInteractionModule" />
+      <node concept="3Tm1VV" id="7sP5cmKReK4" role="1B3o_S" />
+      <node concept="3clFbS" id="7sP5cmKReK5" role="3clF47">
+        <node concept="34ab3g" id="7sP5cmKRNgx" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="Xl_RD" id="7sP5cmKRNgz" role="34bqiv">
+            <property role="Xl_RC" value=" new Inter" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7sP5cmKRfqS" role="3cqZAp">
+          <node concept="3cpWsn" id="7sP5cmKRfqT" role="3cpWs9">
+            <property role="TrG5h" value="interactionModule" />
+            <node concept="3Tqbb2" id="7sP5cmKRfqU" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+            </node>
+            <node concept="2ShNRf" id="7sP5cmKRfqV" role="33vP2m">
+              <node concept="3zrR0B" id="7sP5cmKRfqW" role="2ShVmc">
+                <node concept="3Tqbb2" id="7sP5cmKRfqX" role="3zrR0E">
+                  <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="7sP5cmKRfJx" role="3cqZAp">
+          <node concept="2GrKxI" id="7sP5cmKRfJz" role="2Gsz3X">
+            <property role="TrG5h" value="modInter" />
+          </node>
+          <node concept="3clFbS" id="7sP5cmKRfJ_" role="2LFqv$">
+            <node concept="3cpWs8" id="7sP5cmKRkBi" role="3cqZAp">
+              <node concept="3cpWsn" id="7sP5cmKRkBl" role="3cpWs9">
+                <property role="TrG5h" value="newModInter" />
+                <node concept="3Tqbb2" id="7sP5cmKRkBg" role="1tU5fm">
+                  <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                </node>
+                <node concept="2ShNRf" id="7sP5cmKRkDT" role="33vP2m">
+                  <node concept="3zrR0B" id="7sP5cmKRkDR" role="2ShVmc">
+                    <node concept="3Tqbb2" id="7sP5cmKRkDS" role="3zrR0E">
+                      <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7sP5cmKRkKi" role="3cqZAp">
+              <node concept="37vLTI" id="7sP5cmKRkUV" role="3clFbG">
+                <node concept="2OqwBi" id="7sP5cmKRkYo" role="37vLTx">
+                  <node concept="2GrUjf" id="7sP5cmKRkWg" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="7sP5cmKRfJz" resolve="modInter" />
+                  </node>
+                  <node concept="3TrEf2" id="7sP5cmKRl40" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xf8r:7p8XNs9n6Nc" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7sP5cmKRkLI" role="37vLTJ">
+                  <node concept="37vLTw" id="7sP5cmKRkKg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7sP5cmKRkBl" resolve="newModInter" />
+                  </node>
+                  <node concept="3TrEf2" id="7sP5cmKRkPh" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xf8r:7p8XNs9n6Nc" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7sP5cmKRiQo" role="3cqZAp">
+              <node concept="2OqwBi" id="7sP5cmKRj_5" role="3clFbG">
+                <node concept="2OqwBi" id="7sP5cmKRiSH" role="2Oq$k0">
+                  <node concept="37vLTw" id="7sP5cmKRiQn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7sP5cmKRfqT" resolve="interactionModule" />
+                  </node>
+                  <node concept="3Tsc0h" id="7sP5cmKRj6H" role="2OqNvi">
+                    <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+                  </node>
+                </node>
+                <node concept="TSZUe" id="7sP5cmKRm1e" role="2OqNvi">
+                  <node concept="37vLTw" id="7sP5cmKRm7v" role="25WWJ7">
+                    <ref role="3cqZAo" node="7sP5cmKRkBl" resolve="newModInter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="7sP5cmKRi$7" role="2GsD0m">
+            <node concept="13iPFW" id="7sP5cmKRix3" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="7sP5cmKRiMc" role="2OqNvi">
+              <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7sP5cmKReKv" role="3cqZAp">
+          <node concept="2OqwBi" id="7sP5cmKReKw" role="3clFbG">
+            <node concept="2OqwBi" id="7sP5cmKReKx" role="2Oq$k0">
+              <node concept="37vLTw" id="7sP5cmKRmZb" role="2Oq$k0">
+                <ref role="3cqZAo" node="7sP5cmKRfqT" resolve="interactionModule" />
+              </node>
+              <node concept="3Tsc0h" id="7sP5cmKReKz" role="2OqNvi">
+                <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="7sP5cmKReK$" role="2OqNvi">
+              <node concept="2ShNRf" id="7sP5cmKReK_" role="25WWJ7">
+                <node concept="3zrR0B" id="7sP5cmKReKA" role="2ShVmc">
+                  <node concept="3Tqbb2" id="7sP5cmKReKB" role="3zrR0E">
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7sP5cmKReKC" role="3cqZAp">
+          <node concept="37vLTw" id="7sP5cmKRn4M" role="3cqZAk">
+            <ref role="3cqZAo" node="7sP5cmKRfqT" resolve="interactionModule" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="7sP5cmKReKE" role="3clF45">
+        <ref role="ehGHo" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="7sP5cmKRepm" role="13h7CW">
+      <node concept="3clFbS" id="7sP5cmKRepn" role="2VODD2" />
     </node>
   </node>
 </model>
