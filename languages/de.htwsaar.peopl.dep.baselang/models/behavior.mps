@@ -3877,6 +3877,51 @@
   </node>
   <node concept="13h7C7" id="2hzf2OgrYNi">
     <ref role="13h7C2" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+    <node concept="13i0hz" id="2xSbZ$xiK2s" role="13h7CS">
+      <property role="TrG5h" value="getModuleOfPeoplBlock" />
+      <node concept="3Tm1VV" id="2xSbZ$xiK2t" role="1B3o_S" />
+      <node concept="3clFbS" id="2xSbZ$xiK2u" role="3clF47">
+        <node concept="3cpWs6" id="2xSbZ$xiNrb" role="3cqZAp">
+          <node concept="2OqwBi" id="2xSbZ$xiNuY" role="3cqZAk">
+            <node concept="2OqwBi" id="2xSbZ$xiQLf" role="2Oq$k0">
+              <node concept="2OqwBi" id="2xSbZ$xiNuZ" role="2Oq$k0">
+                <node concept="2OqwBi" id="2xSbZ$xiNv0" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2xSbZ$xiNv1" role="2Oq$k0">
+                    <node concept="13iPFW" id="2xSbZ$xiNv2" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="2xSbZ$xiNv3" role="2OqNvi">
+                      <ref role="3Tt5mk" to="uqoo:4DWAEpij2ku" />
+                    </node>
+                  </node>
+                  <node concept="1mfA1w" id="2xSbZ$xiNv4" role="2OqNvi" />
+                </node>
+                <node concept="3CFZ6_" id="2xSbZ$xiNv5" role="2OqNvi">
+                  <node concept="3CFYIy" id="2xSbZ$xiNv6" role="3CFYIz">
+                    <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="2xSbZ$xiRQB" role="2OqNvi" />
+            </node>
+            <node concept="3TrEf2" id="2xSbZ$xiRYy" role="2OqNvi">
+              <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2xSbZ$xiKJQ" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+      </node>
+      <node concept="P$JXv" id="2xSbZ$xiKJT" role="lGtFl">
+        <node concept="TZ5HA" id="2xSbZ$xiKJU" role="TZ5H$">
+          <node concept="1dT_AC" id="2xSbZ$xiKJV" role="1dT_Ay">
+            <property role="1dT_AB" value="Looks in the Fragment of the PBlockStatement, this reference is pointing to, which Module it has" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2xSbZ$xiKJW" role="x79VK">
+          <property role="x79VB" value="module of the PBlockStatement" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="2hzf2OgrYNj" role="13h7CW">
       <node concept="3clFbS" id="2hzf2OgrYNk" role="2VODD2">
         <node concept="3clFbF" id="31jQQFwurqr" role="3cqZAp">

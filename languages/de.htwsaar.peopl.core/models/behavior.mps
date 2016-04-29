@@ -290,11 +290,11 @@
           <node concept="BsUDl" id="62a2r2cwi5Z" role="3cqZAk">
             <ref role="37wK5l" node="62a2r2cw6yP" resolve="createVPandConnect" />
             <node concept="37vLTw" id="62a2r2cwi6d" role="37wK5m">
-              <ref role="3cqZAo" node="5jbJmPfCVGW" resolve="currentNode" />
+              <ref role="3cqZAo" node="5jbJmPfCVGW" resolve="nodeInModelAST" />
             </node>
             <node concept="2OqwBi" id="62a2r2cwi89" role="37wK5m">
               <node concept="37vLTw" id="62a2r2cwi6O" role="2Oq$k0">
-                <ref role="3cqZAo" node="5jbJmPfCVGW" resolve="currentNode" />
+                <ref role="3cqZAo" node="5jbJmPfCVGW" resolve="nodeInModelAST" />
               </node>
               <node concept="I4A8Y" id="62a2r2cwiaH" role="2OqNvi" />
             </node>
@@ -305,7 +305,7 @@
         <ref role="ehGHo" to="xf8r:6K8EDSn5e6t" resolve="VP" />
       </node>
       <node concept="37vLTG" id="5jbJmPfCVGW" role="3clF46">
-        <property role="TrG5h" value="currentNode" />
+        <property role="TrG5h" value="nodeInModelAST" />
         <node concept="3Tqbb2" id="5jbJmPfCVGV" role="1tU5fm">
           <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
