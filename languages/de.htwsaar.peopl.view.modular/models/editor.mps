@@ -7359,15 +7359,6 @@
         <property role="3F0ifm" value="alternative" />
         <node concept="pkWqt" id="NRjk71Cyov" role="pqm2j">
           <node concept="3clFbS" id="NRjk71Cyow" role="2VODD2">
-            <node concept="34ab3g" id="NRjk71DNHG" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="NRjk71DOCr" role="34bqiv">
-                <node concept="pncrf" id="NRjk71DOT9" role="3uHU7w" />
-                <node concept="Xl_RD" id="NRjk71DNHI" role="3uHU7B">
-                  <property role="Xl_RC" value=" editor : " />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="NRjk71CypE" role="3cqZAp">
               <node concept="3clFbS" id="NRjk71CypF" role="3clFbx">
                 <node concept="3clFbJ" id="NRjk71CAQR" role="3cqZAp">
