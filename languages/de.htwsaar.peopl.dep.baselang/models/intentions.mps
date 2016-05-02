@@ -3468,7 +3468,24 @@
             </node>
             <node concept="2qgKlT" id="6N529L4_GcS" role="2OqNvi">
               <ref role="37wK5l" to="1lrk:6N529L4_yYS" resolve="orderAccordingToModules" />
-              <node concept="10Nm6u" id="6N529L4_GgP" role="37wK5m" />
+              <node concept="2OqwBi" id="2lPOYvWkqwZ" role="37wK5m">
+                <node concept="2OqwBi" id="2lPOYvWkq5f" role="2Oq$k0">
+                  <node concept="35c_gC" id="2lPOYvWkpSB" role="2Oq$k0">
+                    <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                  </node>
+                  <node concept="2qgKlT" id="2lPOYvWkqk2" role="2OqNvi">
+                    <ref role="37wK5l" to="kpvh:62a2r2cwpXS" resolve="getVPDataStorage" />
+                    <node concept="2Sf5sV" id="2lPOYvWkqpy" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="2Xjw5R" id="2lPOYvWkqUe" role="2OqNvi">
+                  <node concept="1xMEDy" id="2lPOYvWkqUg" role="1xVPHs">
+                    <node concept="chp4Y" id="2lPOYvWkr1l" role="ri$Ld">
+                      <ref role="cht4Q" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
