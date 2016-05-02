@@ -4274,7 +4274,7 @@
                 <node concept="3clFbH" id="2xSbZ$xhkmK" role="3cqZAp" />
                 <node concept="3SKdUt" id="2xSbZ$xhfJ4" role="3cqZAp">
                   <node concept="3SKdUq" id="2xSbZ$xhfJ6" role="3SKWNk">
-                    <property role="3SKdUp" value=" create copy of original remove all content in copy , enter new basecodeblock associated with correct module, add to class" />
+                    <property role="3SKdUp" value="create copy of original remove all content in copy , enter new basecodeblock associated with correct module, add to class" />
                   </node>
                 </node>
                 <node concept="3cpWs8" id="19glLi5GiaX" role="3cqZAp">
@@ -4437,24 +4437,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="1X3_iC" id="3QAbA5kuLsa" role="lGtFl">
-                  <property role="3V$3am" value="statement" />
-                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="3clFbF" id="3QAbA5ku0ut" role="8Wnug">
-                    <node concept="2OqwBi" id="3QAbA5ku0uu" role="3clFbG">
-                      <node concept="37vLTw" id="3QAbA5ku0uv" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3QAbA5ku0ub" resolve="newpBlock" />
-                      </node>
-                      <node concept="2qgKlT" id="3QAbA5ku0uw" role="2OqNvi">
-                        <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlockAtReferringNode" />
-                        <node concept="37vLTw" id="3QAbA5ku0ux" role="37wK5m">
-                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbH" id="ZqQFUMbGmM" role="3cqZAp" />
                 <node concept="3SKdUt" id="2xSbZ$xhi2P" role="3cqZAp">
                   <node concept="3SKdUq" id="2xSbZ$xhi2R" role="3SKWNk">
                     <property role="3SKdUp" value=" end " />
@@ -4463,7 +4445,7 @@
                 <node concept="3clFbH" id="2xSbZ$xhCGv" role="3cqZAp" />
                 <node concept="3SKdUt" id="2xSbZ$xhxQd" role="3cqZAp">
                   <node concept="3SKdUq" id="2xSbZ$xhxQf" role="3SKWNk">
-                    <property role="3SKdUp" value="Annotate copp Method with fragment, so that it is alternative to orignal method" />
+                    <property role="3SKdUp" value="Annotate copy Method with fragment, so that it is alternative to orignal method" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="2xSbZ$xhJIK" role="3cqZAp">
@@ -4511,31 +4493,6 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="2xSbZ$xh$d1" role="3cqZAp" />
-                <node concept="3SKdUt" id="2xSbZ$xhoT9" role="3cqZAp">
-                  <node concept="3SKdUq" id="2xSbZ$xhoTb" role="3SKWNk">
-                    <property role="3SKdUp" value="set focus into new method" />
-                  </node>
-                </node>
-                <node concept="1X3_iC" id="ZqQFUMbk06" role="lGtFl">
-                  <property role="3V$3am" value="statement" />
-                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="3clFbF" id="2bn$lqohQAr" role="8Wnug">
-                    <node concept="2OqwBi" id="2bn$lqohQAs" role="3clFbG">
-                      <node concept="2OqwBi" id="2bn$lqohQAt" role="2Oq$k0">
-                        <node concept="2WthIp" id="2bn$lqohQAu" role="2Oq$k0" />
-                        <node concept="1DTwFV" id="2bn$lqohQAv" role="2OqNvi">
-                          <ref role="2WH_rO" node="2bn$lqohQBd" resolve="currentEditorContext" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="2bn$lqohQAw" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
-                        <node concept="37vLTw" id="19glLi5KG8C" role="37wK5m">
-                          <ref role="3cqZAo" node="19glLi5KpCI" resolve="newpBlock" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="37vLTw" id="2bn$lqohQAy" role="2GsD0m">
                 <ref role="3cqZAo" node="2bn$lqohQ_l" resolve="selectedElements" />
