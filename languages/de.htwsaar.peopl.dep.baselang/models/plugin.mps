@@ -1238,6 +1238,7 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="6JE$RZ4Wdei" role="3clFbx">
+                        <node concept="3clFbH" id="5Y4bBWCUzRb" role="3cqZAp" />
                         <node concept="3SKdUt" id="6JE$RZ4We2r" role="3cqZAp">
                           <node concept="3SKdUq" id="6JE$RZ4We2s" role="3SKWNk">
                             <property role="3SKdUp" value="we talk about some kind of base code" />
@@ -1297,6 +1298,25 @@
                                 </node>
                               </node>
                             </node>
+                            <node concept="34ab3g" id="5Y4bBWCUzlR" role="3cqZAp">
+                              <property role="35gtTG" value="warn" />
+                              <node concept="3cpWs3" id="5Y4bBWCU_d_" role="34bqiv">
+                                <node concept="2OqwBi" id="5Y4bBWCU_r0" role="3uHU7w">
+                                  <node concept="2JrnkZ" id="5Y4bBWCU_p8" role="2Oq$k0">
+                                    <node concept="37vLTw" id="5Y4bBWCU_gS" role="2JrQYb">
+                                      <ref role="3cqZAo" node="6JE$RZ50k7Z" resolve="newBaseCodeBlock" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="5Y4bBWCU_u0" role="2OqNvi">
+                                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                  </node>
+                                </node>
+                                <node concept="Xl_RD" id="5Y4bBWCUzlT" role="3uHU7B">
+                                  <property role="Xl_RC" value="automatic base code block creation for block with ID: " />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbH" id="5Y4bBWCU$CL" role="3cqZAp" />
                             <node concept="3clFbF" id="6JE$RZ51uP6" role="3cqZAp">
                               <node concept="2OqwBi" id="6JE$RZ51v2R" role="3clFbG">
                                 <node concept="37vLTw" id="6JE$RZ51uP4" role="2Oq$k0">
