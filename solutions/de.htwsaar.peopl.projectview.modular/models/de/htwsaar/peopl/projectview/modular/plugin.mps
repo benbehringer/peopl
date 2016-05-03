@@ -4268,13 +4268,28 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbF" id="3k7kNkplopb" role="3cqZAp">
+                        <node concept="37vLTI" id="3k7kNkplp56" role="3clFbG">
+                          <node concept="37vLTw" id="3k7kNkplp7i" role="37vLTx">
+                            <ref role="3cqZAo" node="2bn$lqohQzc" resolve="currentRefineModule" />
+                          </node>
+                          <node concept="2OqwBi" id="3k7kNkploxi" role="37vLTJ">
+                            <node concept="37vLTw" id="3k7kNkplop9" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2xSbZ$xiioE" resolve="orignalFragment" />
+                            </node>
+                            <node concept="3TrEf2" id="3k7kNkploJo" role="2OqNvi">
+                              <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbH" id="2xSbZ$xhkmK" role="3cqZAp" />
                 <node concept="3SKdUt" id="2xSbZ$xhfJ4" role="3cqZAp">
                   <node concept="3SKdUq" id="2xSbZ$xhfJ6" role="3SKWNk">
-                    <property role="3SKdUp" value="create copy of original remove all content in copy , enter new basecodeblock associated with correct module, add to class" />
+                    <property role="3SKdUp" value="create copy of original remove all content in copy , add to class" />
                   </node>
                 </node>
                 <node concept="3cpWs8" id="19glLi5GiaX" role="3cqZAp">
@@ -4341,6 +4356,38 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="3Qh$WS_fBbG" role="3cqZAp">
+                  <node concept="2OqwBi" id="3Qh$WS_fBbI" role="3clFbG">
+                    <node concept="2OqwBi" id="3Qh$WS_fBbJ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3Qh$WS_fBbK" role="2Oq$k0">
+                        <node concept="37vLTw" id="3Qh$WS_fBbL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
+                        </node>
+                        <node concept="2qgKlT" id="3Qh$WS_fBbM" role="2OqNvi">
+                          <ref role="37wK5l" to="tpek:i2fhZ_m" resolve="getBody" />
+                        </node>
+                      </node>
+                      <node concept="3Tsc0h" id="3Qh$WS_fBbN" role="2OqNvi">
+                        <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                      </node>
+                    </node>
+                    <node concept="1aUR6E" id="3Qh$WS_fBbO" role="2OqNvi">
+                      <node concept="1bVj0M" id="3Qh$WS_fBbP" role="23t8la">
+                        <node concept="3clFbS" id="3Qh$WS_fBbQ" role="1bW5cS">
+                          <node concept="3clFbF" id="3Qh$WS_fBbR" role="3cqZAp">
+                            <node concept="3clFbT" id="3Qh$WS_fBbS" role="3clFbG">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="3Qh$WS_fBbT" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="3Qh$WS_fBbU" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="1Tp7NUTOwRx" role="3cqZAp">
                   <node concept="2OqwBi" id="1Tp7NUTOzXr" role="3clFbG">
                     <node concept="1eOMI4" id="1Tp7NUTOzW5" role="2Oq$k0">
@@ -4358,36 +4405,15 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="ZqQFUMbHK0" role="3cqZAp">
-                  <node concept="2OqwBi" id="ZqQFUMbHK1" role="3clFbG">
-                    <node concept="2OqwBi" id="ZqQFUMbHK2" role="2Oq$k0">
-                      <node concept="2OqwBi" id="ZqQFUMbHK3" role="2Oq$k0">
-                        <node concept="37vLTw" id="ZqQFUMbHK4" role="2Oq$k0">
-                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
-                        </node>
-                        <node concept="2qgKlT" id="ZqQFUMbHK5" role="2OqNvi">
-                          <ref role="37wK5l" to="tpek:i2fhZ_m" resolve="getBody" />
-                        </node>
-                      </node>
-                      <node concept="3Tsc0h" id="ZqQFUMbHK6" role="2OqNvi">
-                        <ref role="3TtcxE" to="tpee:fzcqZ_x" />
-                      </node>
-                    </node>
-                    <node concept="1aUR6E" id="ZqQFUMbHK7" role="2OqNvi">
-                      <node concept="1bVj0M" id="ZqQFUMbHK8" role="23t8la">
-                        <node concept="3clFbS" id="ZqQFUMbHK9" role="1bW5cS">
-                          <node concept="3clFbF" id="ZqQFUMbHKa" role="3cqZAp">
-                            <node concept="3clFbT" id="ZqQFUMbHKb" role="3clFbG">
-                              <property role="3clFbU" value="true" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Rh6nW" id="ZqQFUMbHKc" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="ZqQFUMbHKd" role="1tU5fm" />
-                        </node>
-                      </node>
-                    </node>
+                <node concept="3SKdUt" id="3Qh$WS_fKUU" role="3cqZAp">
+                  <node concept="3SKdUq" id="3Qh$WS_fKUW" role="3SKWNk">
+                    <property role="3SKdUp" value="end" />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="3Qh$WS_f_YD" role="3cqZAp" />
+                <node concept="3SKdUt" id="3Qh$WS_fSuS" role="3cqZAp">
+                  <node concept="3SKdUq" id="3Qh$WS_fSuU" role="3SKWNk">
+                    <property role="3SKdUp" value="add new BaseCodeBlock to copymethod" />
                   </node>
                 </node>
                 <node concept="3cpWs8" id="3QAbA5ku0ua" role="3cqZAp">
@@ -4410,6 +4436,46 @@
                           <node concept="3gHZIF" id="3QAbA5ku0uj" role="2OqNvi">
                             <ref role="2WH_rO" node="2bn$lqohQBf" resolve="currentNode" />
                           </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3k7kNkpkjEk" role="3cqZAp">
+                  <node concept="37vLTI" id="3k7kNkpkmwE" role="3clFbG">
+                    <node concept="1eOMI4" id="3k7kNkpkmCn" role="37vLTx">
+                      <node concept="10QFUN" id="3k7kNkpkmCk" role="1eOMHV">
+                        <node concept="3Tqbb2" id="3k7kNkpkmMy" role="10QFUM">
+                          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                        </node>
+                        <node concept="37vLTw" id="56lNPoIiBP5" role="10QFUP">
+                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3k7kNkpklMP" role="37vLTJ">
+                      <node concept="37vLTw" id="3k7kNkpkjEi" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3QAbA5ku0ub" resolve="newpBlock" />
+                      </node>
+                      <node concept="3TrEf2" id="3k7kNkpklWw" role="2OqNvi">
+                        <ref role="3Tt5mk" to="uqoo:4DWAEpicCW1" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="3k7kNkplPmH" role="3cqZAp">
+                  <node concept="2OqwBi" id="3k7kNkplR9n" role="3clFbG">
+                    <node concept="37vLTw" id="3k7kNkplPmF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3QAbA5ku0ub" resolve="newpBlock" />
+                    </node>
+                    <node concept="2qgKlT" id="3k7kNkplRzn" role="2OqNvi">
+                      <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlockAtReferringNode" />
+                      <node concept="10QFUN" id="3k7kNkplRBX" role="37wK5m">
+                        <node concept="3Tqbb2" id="3k7kNkplRN$" role="10QFUM">
+                          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                        </node>
+                        <node concept="37vLTw" id="6Y9I3sNl1t6" role="10QFUP">
+                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
                         </node>
                       </node>
                     </node>
