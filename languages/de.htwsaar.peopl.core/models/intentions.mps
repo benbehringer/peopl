@@ -1450,6 +1450,7 @@
   </node>
   <node concept="2S6QgY" id="8lBKaMizdS">
     <property role="TrG5h" value="OpenColorChoser" />
+    <property role="3GE5qa" value="Core" />
     <ref role="2ZfgGC" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="2S6ZIM" id="8lBKaMizdT" role="2ZfVej">
       <node concept="3clFbS" id="8lBKaMizdU" role="2VODD2">
