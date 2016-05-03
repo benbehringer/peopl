@@ -385,12 +385,12 @@
     </language>
   </registry>
   <node concept="24kQdi" id="5L3eIBSVDST">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Helper" />
     <ref role="1XX52x" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
     <node concept="2SsqMj" id="5L3eIBSVDSV" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="5L3eIBSV$mS">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6t" resolve="VP" />
     <node concept="3EZMnI" id="5L3eIBSV$mU" role="2wV5jI">
       <node concept="3F2HdR" id="5L3eIBSV$n1" role="3EZMnx">
@@ -401,7 +401,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5L3eIBSV$mh">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     <node concept="3EZMnI" id="5L3eIBSV$mj" role="2wV5jI">
       <node concept="1iCGBv" id="5L3eIBSV$mq" role="3EZMnx">
@@ -414,7 +414,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5L3eIBSVjp1">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1XX52x" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
     <node concept="3EZMnI" id="5B9z5qvA1xD" role="2wV5jI">
       <node concept="VPXOz" id="24FWz$kM2" role="3F10Kt">
@@ -678,7 +678,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Ufy5VQFo$o">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="3EZMnI" id="5AXGYflbkOo" role="2wV5jI">
       <ref role="34QXea" node="2myhIIWIaXW" resolve="MoveModules" />
@@ -730,7 +730,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Gdzz6r7xO4">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="1QoScp" id="xUEdTNlfNi" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -1266,7 +1266,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="7Ufy5VQFkRU">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1XX52x" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
     <node concept="3EZMnI" id="7Ufy5VQFkS0" role="2wV5jI">
       <ref role="34QXea" node="2myhIIWIaXW" resolve="MoveModules" />
@@ -1290,14 +1290,17 @@
     </node>
   </node>
   <node concept="24kQdi" id="2gRkCJLV7tN">
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1XX52x" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
     <node concept="2SsqMj" id="2gRkCJLV7tP" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="7mKAM8Kyfzj">
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1XX52x" to="xf8r:2gRkCJLWqLv" resolve="Wrappee" />
     <node concept="2SsqMj" id="7mKAM8Kyfzl" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="7p8XNs9n6N0">
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1XX52x" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="3EZMnI" id="7p8XNs9n6N2" role="2wV5jI">
       <node concept="gc7cB" id="2Py4dy0L5Mh" role="3EZMnx">
@@ -1348,7 +1351,8 @@
     </node>
   </node>
   <node concept="24kQdi" id="7p8XNs9naB2">
-    <ref role="1XX52x" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+    <property role="3GE5qa" value="Intermediates" />
+    <ref role="1XX52x" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
     <node concept="3EZMnI" id="7p8XNs9naB4" role="2wV5jI">
       <node concept="1iCGBv" id="7p8XNs9naBb" role="3EZMnx">
         <ref role="1NtTu8" to="xf8r:7p8XNs9n6Nc" />
@@ -1380,6 +1384,7 @@
   </node>
   <node concept="325Ffw" id="2myhIIWIaXW">
     <property role="TrG5h" value="MoveModules" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1chiOs" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="2PxR9H" id="2myhIIWIaXX" role="2QnnpI">
       <node concept="2Py5lD" id="2myhIIWIaXY" role="2PyaAO">

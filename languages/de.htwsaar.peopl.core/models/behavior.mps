@@ -280,7 +280,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="36tKSlW0Mns">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="13h7C2" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="13i0hz" id="3osquR$0y2" role="13h7CS">
       <property role="TrG5h" value="createVPandConnect" />
@@ -1055,7 +1055,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3osquRAxzk">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="13h7C2" to="xf8r:2LgBOmLVkOw" resolve="VPToPlaceholderIntermediate" />
     <node concept="13i0hz" id="3osquRAxzn" role="13h7CS">
       <property role="TrG5h" value="connectToVP" />
@@ -1261,7 +1261,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4RpwnfCL9zG">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="13h7C2" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="13i0hz" id="7VYDLKH$08W" role="13h7CS">
       <property role="TrG5h" value="deleteBrokenConnections" />
@@ -1412,7 +1412,7 @@
               <node concept="2ShNRf" id="7p8XNs9nImh" role="25WWJ7">
                 <node concept="3zrR0B" id="7p8XNs9nJUg" role="2ShVmc">
                   <node concept="3Tqbb2" id="7p8XNs9nJUi" role="3zrR0E">
-                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
                   </node>
                 </node>
               </node>
@@ -1454,7 +1454,7 @@
               <node concept="2ShNRf" id="7p8XNs9o3rA" role="25WWJ7">
                 <node concept="3zrR0B" id="7p8XNs9o3JJ" role="2ShVmc">
                   <node concept="3Tqbb2" id="7p8XNs9o3JL" role="3zrR0E">
-                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
                   </node>
                 </node>
               </node>
@@ -1476,7 +1476,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3osquRAeaK">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="13h7C2" to="xf8r:6K8EDSn5e6t" resolve="VP" />
     <node concept="13i0hz" id="7sNC8lDBOe" role="13h7CS">
       <property role="TrG5h" value="initVP" />
@@ -1895,7 +1895,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3osquR_LCJ">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Helper" />
     <ref role="13h7C2" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
     <node concept="13i0hz" id="62a2r2cwpXS" role="13h7CS">
       <property role="TrG5h" value="getVPDataStorage" />
@@ -2673,7 +2673,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3osquRAoGX">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Extensions" />
     <ref role="13h7C2" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
     <node concept="13i0hz" id="3osquRAoH0" role="13h7CS">
       <property role="TrG5h" value="annotate" />
@@ -2850,7 +2850,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3osquR$1JF">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="13h7C2" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     <node concept="13i0hz" id="3osquR$1JI" role="13h7CS">
       <property role="TrG5h" value="connectToFragment" />
@@ -3053,7 +3053,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2BKSxwr7crz">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="13h7C2" to="xf8r:5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
     <node concept="13i0hz" id="2BKSxwr7crA" role="13h7CS">
       <property role="TrG5h" value="connectToModule" />
@@ -3274,6 +3274,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="3Sk5uha7YQH">
+    <property role="3GE5qa" value="Helper" />
     <ref role="13h7C2" to="xf8r:67jSsTBwa$C" resolve="IColor" />
     <node concept="13i0hz" id="3Sk5uha6ybT" role="13h7CS">
       <property role="TrG5h" value="getModuleColorContrast" />
@@ -3555,6 +3556,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7sP5cmKRepl">
+    <property role="3GE5qa" value="Extensions" />
     <ref role="13h7C2" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="13i0hz" id="7sP5cmKReK3" role="13h7CS">
       <property role="TrG5h" value="extendInteractionModule" />
@@ -3590,12 +3592,12 @@
               <node concept="3cpWsn" id="7sP5cmKRkBl" role="3cpWs9">
                 <property role="TrG5h" value="newModInter" />
                 <node concept="3Tqbb2" id="7sP5cmKRkBg" role="1tU5fm">
-                  <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                  <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
                 </node>
                 <node concept="2ShNRf" id="7sP5cmKRkDT" role="33vP2m">
                   <node concept="3zrR0B" id="7sP5cmKRkDR" role="2ShVmc">
                     <node concept="3Tqbb2" id="7sP5cmKRkDS" role="3zrR0E">
-                      <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                      <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
                     </node>
                   </node>
                 </node>
@@ -3660,7 +3662,7 @@
               <node concept="2ShNRf" id="7sP5cmKReK_" role="25WWJ7">
                 <node concept="3zrR0B" id="7sP5cmKReKA" role="2ShVmc">
                   <node concept="3Tqbb2" id="7sP5cmKReKB" role="3zrR0E">
-                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+                    <ref role="ehGHo" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
                   </node>
                 </node>
               </node>
