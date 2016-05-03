@@ -60,7 +60,7 @@
   </registry>
   <node concept="1TIwiD" id="6K8EDSn5e6T">
     <property role="1pbfSe" value="2095215529" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <property role="TrG5h" value="Fragment" />
     <property role="MwhBj" value="${module}/icons/peoplFragment.png" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
@@ -105,7 +105,7 @@
   </node>
   <node concept="1TIwiD" id="5qz55Ysv7DE">
     <property role="1pbfSe" value="216035639" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <property role="TrG5h" value="ModuleToFragmentIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7DF" role="1TKVEi">
@@ -120,7 +120,7 @@
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6U">
     <property role="1pbfSe" value="2095215528" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <property role="TrG5h" value="VPToFragmentIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6K8EDSn5e6V" role="1TKVEi">
@@ -135,7 +135,7 @@
   <node concept="1TIwiD" id="6K8EDSn5d7G">
     <property role="1pbfSe" value="2095219574" />
     <property role="TrG5h" value="Module" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <property role="MwhBj" value="${module}/icons/peoplModuleAlternative_javaModule.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qz55Ysv7E5" role="1TKVEi">
@@ -154,7 +154,7 @@
   <node concept="1TIwiD" id="7Ufy5VQFkPw">
     <property role="1pbfSe" value="1966921150" />
     <property role="TrG5h" value="ModuleDefinition" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Module definition" />
     <property role="MwhBj" value="${module}/icons/peoplModulesAlternative_layout.png" />
@@ -174,7 +174,7 @@
   </node>
   <node concept="1TIwiD" id="2LgBOmLVkOn">
     <property role="1pbfSe" value="566367140" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Extensions" />
     <property role="TrG5h" value="Placeholder" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2LgBOmLVkOo" role="lGtFl">
@@ -195,7 +195,7 @@
   </node>
   <node concept="1TIwiD" id="2LgBOmLVkOw">
     <property role="1pbfSe" value="566367131" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <property role="TrG5h" value="VPToPlaceholderIntermediate" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2LgBOmLVkOx" role="1TKVEi">
@@ -207,7 +207,7 @@
   </node>
   <node concept="1TIwiD" id="2LgBOmLVOS4">
     <property role="1pbfSe" value="566235831" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Helper" />
     <property role="TrG5h" value="ReusableContent" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5L3eIBSVcet" role="1TKVEi">
@@ -218,7 +218,7 @@
   </node>
   <node concept="1TIwiD" id="5L3eIBSVDSC">
     <property role="1pbfSe" value="1429330193" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Helper" />
     <property role="TrG5h" value="VariabiliyDataStorage" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5L3eIBSVDSD" role="lGtFl">
@@ -249,7 +249,7 @@
   </node>
   <node concept="1TIwiD" id="6K8EDSn5e6t">
     <property role="1pbfSe" value="2095215557" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <property role="TrG5h" value="VP" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3osquRAe7s" role="1TKVEl">
@@ -275,6 +275,7 @@
   <node concept="PlHQZ" id="67jSsTBwa$C">
     <property role="1pbfSe" value="917206282" />
     <property role="TrG5h" value="IColor" />
+    <property role="3GE5qa" value="Helper" />
     <node concept="1TJgyi" id="4RpwnfCLxts" role="1TKVEl">
       <property role="TrG5h" value="red" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -294,7 +295,7 @@
   </node>
   <node concept="1TIwiD" id="2gRkCJLV3Vo">
     <property role="1pbfSe" value="371429731" />
-    <property role="3GE5qa" value="Helper" />
+    <property role="3GE5qa" value="Extensions" />
     <property role="TrG5h" value="Wrapper" />
     <property role="34LRSv" value="Wrapper" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
@@ -313,7 +314,7 @@
   </node>
   <node concept="1TIwiD" id="2gRkCJLWqLv">
     <property role="1pbfSe" value="371785450" />
-    <property role="3GE5qa" value="Helper" />
+    <property role="3GE5qa" value="Extensions" />
     <property role="TrG5h" value="Wrappee" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2gRkCJLWqLw" role="lGtFl">
@@ -326,17 +327,19 @@
   <node concept="1TIwiD" id="7p8XNs9mIQp">
     <property role="1pbfSe" value="2141447376" />
     <property role="TrG5h" value="InteractionModule" />
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1TJDcQ" node="6K8EDSn5d7G" resolve="Module" />
     <node concept="1TJgyj" id="7p8XNs9n6N9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="moduleIntermediate" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+      <ref role="20lvS9" node="7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
     </node>
   </node>
   <node concept="1TIwiD" id="7p8XNs9n6Nb">
     <property role="1pbfSe" value="2141545474" />
-    <property role="TrG5h" value="ModuleIntermediate" />
+    <property role="TrG5h" value="InteractionModuleToModuleIntermediate" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7p8XNs9n6Nc" role="1TKVEi">
       <property role="20lmBu" value="reference" />

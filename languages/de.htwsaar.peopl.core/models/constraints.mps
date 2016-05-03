@@ -268,6 +268,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="yl5h16juOI">
+    <property role="3GE5qa" value="Core" />
     <ref role="1M2myG" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="1N5Pfh" id="yl5h16juPu" role="1Mr941">
       <ref role="1N5Vy1" to="xf8r:6K8EDSn5e7h" />
@@ -393,6 +394,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="yl5h16llSx">
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="1M2myG" to="xf8r:5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
     <node concept="1N5Pfh" id="yl5h16llSy" role="1Mr941">
       <ref role="1N5Vy1" to="xf8r:5qz55Ysv7DF" />
@@ -476,7 +478,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="yl5h16lokf">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Intermediates" />
     <ref role="1M2myG" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     <node concept="1N5Pfh" id="yl5h16lokg" role="1Mr941">
       <ref role="1N5Vy1" to="xf8r:6K8EDSn5e6V" />
@@ -554,7 +556,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7p8XNs9mUNY">
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Core" />
     <ref role="1M2myG" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="EnEH3" id="7p8XNs9mUNZ" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -578,6 +580,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7p8XNs9n2yL">
+    <property role="3GE5qa" value="Extensions" />
     <ref role="1M2myG" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="EnEH3" id="7p8XNs9n2yM" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
@@ -705,7 +708,8 @@
     </node>
   </node>
   <node concept="1M2fIO" id="7sP5cmKSbDn">
-    <ref role="1M2myG" to="xf8r:7p8XNs9n6Nb" resolve="ModuleIntermediate" />
+    <property role="3GE5qa" value="Intermediates" />
+    <ref role="1M2myG" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
     <node concept="1N5Pfh" id="7sP5cmKSbDo" role="1Mr941">
       <ref role="1N5Vy1" to="xf8r:7p8XNs9n6Nc" />
       <node concept="13QW63" id="7sP5cmKSbFP" role="1N6uqs">

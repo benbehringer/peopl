@@ -53,6 +53,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -65,6 +66,7 @@
   </node>
   <node concept="13MO4I" id="14Zo09Ou_9T">
     <property role="TrG5h" value="reduce_Fragment" />
+    <property role="3GE5qa" value="Core" />
     <ref role="3gUMe" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="3clFbF" id="14Zo09Ou_a4" role="13RCb5">
       <node concept="2OqwBi" id="14Zo09Ou_c4" role="3clFbG">
