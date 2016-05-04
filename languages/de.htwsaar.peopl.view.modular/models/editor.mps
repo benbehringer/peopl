@@ -7357,6 +7357,7 @@
       <node concept="l2Vlx" id="4WtnmUdQeZj" role="2iSdaV" />
       <node concept="3F0ifn" id="NRjk71Cy6s" role="3EZMnx">
         <property role="3F0ifm" value="alternative" />
+        <ref role="1k5W1q" to="tpch:24YP6ZDyde4" resolve="Keyword" />
         <node concept="pkWqt" id="NRjk71Cyov" role="pqm2j">
           <node concept="3clFbS" id="NRjk71Cyow" role="2VODD2">
             <node concept="3clFbJ" id="NRjk71CypE" role="3cqZAp">
