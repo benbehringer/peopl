@@ -2500,6 +2500,17 @@
         <property role="Xl_RC" value="de.htwsaar.peopl.view.product.editor.Hints.productView" />
       </node>
     </node>
+    <node concept="Wx3nA" id="2iVkojt1Fuz" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PRODUCT_VIEW_COLOR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="2iVkojt1Czv" role="1B3o_S" />
+      <node concept="17QB3L" id="2iVkojt1Fut" role="1tU5fm" />
+      <node concept="Xl_RD" id="2iVkojt1Fx3" role="33vP2m">
+        <property role="Xl_RC" value="de.htwsaar.peopl.view.product.editor.Hints.productViewColor" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2H0DQTMEUQQ" role="jymVt" />
     <node concept="3Tm1VV" id="1k3hL0Su7lB" role="1B3o_S" />
   </node>
