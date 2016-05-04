@@ -47,7 +47,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -406,7 +405,6 @@
                           <property role="3SKdUp" value="even more base code" />
                         </node>
                       </node>
-                      <node concept="3clFbH" id="6E6mUphd4nY" role="3cqZAp" />
                     </node>
                     <node concept="1V74GB" id="2Z2BzLSvaUf" role="lGtFl">
                       <property role="32Xqk$" value="chosenModule" />
@@ -434,14 +432,11 @@
                 </node>
                 <node concept="9aQIb" id="2Z2BzLSvaZ2" role="9aQIa">
                   <node concept="3clFbS" id="2Z2BzLSvaZk" role="9aQI4">
-                    <node concept="3clFbH" id="6E6mUphgn$T" role="3cqZAp" />
                     <node concept="3SKdUt" id="2Z2BzLSvaZr" role="3cqZAp">
-                      <node concept="3SKdUq" id="2Z2BzLSvaZs" role="3SKWNk">
-                        <property role="3SKdUp" value="even more alternative pieces" />
+                      <node concept="3SKdUq" id="6E6mUphhP7h" role="3SKWNk">
+                        <property role="3SKdUp" value="alternative pieces of Pampelmuse code" />
                       </node>
                     </node>
-                    <node concept="3clFbH" id="6E6mUphgn$X" role="3cqZAp" />
-                    <node concept="3clFbH" id="6E6mUphgn_2" role="3cqZAp" />
                   </node>
                 </node>
               </node>

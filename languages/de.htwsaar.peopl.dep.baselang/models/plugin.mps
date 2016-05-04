@@ -1300,21 +1300,25 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="34ab3g" id="5Y4bBWCUzlR" role="3cqZAp">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="3cpWs3" id="5Y4bBWCU_d_" role="34bqiv">
-                                <node concept="2OqwBi" id="5Y4bBWCU_r0" role="3uHU7w">
-                                  <node concept="2JrnkZ" id="5Y4bBWCU_p8" role="2Oq$k0">
-                                    <node concept="37vLTw" id="5Y4bBWCU_gS" role="2JrQYb">
-                                      <ref role="3cqZAo" node="6JE$RZ50k7Z" resolve="newBaseCodeBlock" />
+                            <node concept="1X3_iC" id="6E6mUphhSA$" role="lGtFl">
+                              <property role="3V$3am" value="statement" />
+                              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                              <node concept="34ab3g" id="5Y4bBWCUzlR" role="8Wnug">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="3cpWs3" id="5Y4bBWCU_d_" role="34bqiv">
+                                  <node concept="2OqwBi" id="5Y4bBWCU_r0" role="3uHU7w">
+                                    <node concept="2JrnkZ" id="5Y4bBWCU_p8" role="2Oq$k0">
+                                      <node concept="37vLTw" id="5Y4bBWCU_gS" role="2JrQYb">
+                                        <ref role="3cqZAo" node="6JE$RZ50k7Z" resolve="newBaseCodeBlock" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="5Y4bBWCU_u0" role="2OqNvi">
+                                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                     </node>
                                   </node>
-                                  <node concept="liA8E" id="5Y4bBWCU_u0" role="2OqNvi">
-                                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                  <node concept="Xl_RD" id="5Y4bBWCUzlT" role="3uHU7B">
+                                    <property role="Xl_RC" value="automatic base code block creation for block with ID: " />
                                   </node>
-                                </node>
-                                <node concept="Xl_RD" id="5Y4bBWCUzlT" role="3uHU7B">
-                                  <property role="Xl_RC" value="automatic base code block creation for block with ID: " />
                                 </node>
                               </node>
                             </node>
@@ -1401,10 +1405,14 @@
                   <property role="DiZV1" value="false" />
                   <property role="2aFKle" value="false" />
                   <node concept="3clFbS" id="6JE$RZ51ER7" role="3clF47">
-                    <node concept="34ab3g" id="9isFdP_Adj" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="9isFdP_Adl" role="34bqiv">
-                        <property role="Xl_RC" value="try signoff" />
+                    <node concept="1X3_iC" id="6E6mUphhSKv" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="9isFdP_Adj" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="Xl_RD" id="9isFdP_Adl" role="34bqiv">
+                          <property role="Xl_RC" value="try signoff" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbJ" id="6JE$RZ51FeR" role="3cqZAp">
@@ -1425,18 +1433,26 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="34ab3g" id="9isFdP_Anw" role="3cqZAp">
-                          <property role="35gtTG" value="warn" />
-                          <node concept="Xl_RD" id="9isFdP_Any" role="34bqiv">
-                            <property role="Xl_RC" value="got a block" />
+                        <node concept="1X3_iC" id="6E6mUphhSLk" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="34ab3g" id="9isFdP_Anw" role="8Wnug">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="Xl_RD" id="9isFdP_Any" role="34bqiv">
+                              <property role="Xl_RC" value="got a block" />
+                            </node>
                           </node>
                         </node>
                         <node concept="3clFbJ" id="3xqByZO02nV" role="3cqZAp">
                           <node concept="3clFbS" id="3xqByZO02nX" role="3clFbx">
-                            <node concept="34ab3g" id="9isFdP_uLQ" role="3cqZAp">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="9isFdP_uLS" role="34bqiv">
-                                <property role="Xl_RC" value="is base code block, thus signoff" />
+                            <node concept="1X3_iC" id="6E6mUphhSM1" role="lGtFl">
+                              <property role="3V$3am" value="statement" />
+                              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                              <node concept="34ab3g" id="9isFdP_uLQ" role="8Wnug">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="Xl_RD" id="9isFdP_uLS" role="34bqiv">
+                                  <property role="Xl_RC" value="is base code block, thus signoff" />
+                                </node>
                               </node>
                             </node>
                             <node concept="3clFbF" id="3xqByZO03sy" role="3cqZAp">
