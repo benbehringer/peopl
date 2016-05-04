@@ -250,12 +250,28 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2yX483RIhil" role="3clF47">
+        <node concept="3SKdUt" id="6hhB4Bxi2ep" role="3cqZAp">
+          <node concept="3SKdUq" id="6hhB4Bxi2er" role="3SKWNk">
+            <property role="3SKdUp" value="Clean Buffer with Vps" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="y7va8W7szY" role="3cqZAp">
+          <node concept="2OqwBi" id="y7va8W7sKC" role="3clFbG">
+            <node concept="2YIFZM" id="y7va8W7sGw" role="2Oq$k0">
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="y7va8W7sPB" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="y7va8W7t1I" role="3cqZAp" />
         <node concept="3SKdUt" id="2yX483RIada" role="3cqZAp">
           <node concept="3SKdUq" id="2yX483RIadc" role="3SKWNk">
             <property role="3SKdUp" value="finds all ModuleDefintion and calls the cleanUp Mehtods on the VarDataStorages" />
           </node>
         </node>
-        <node concept="3clFbH" id="2yX483RIvSA" role="3cqZAp" />
         <node concept="3clFbF" id="2yX483RIuQJ" role="3cqZAp">
           <node concept="2OqwBi" id="2yX483RIuQK" role="3clFbG">
             <node concept="2OqwBi" id="2yX483RIuQL" role="2Oq$k0">
@@ -272,7 +288,7 @@
                 <node concept="3clFbS" id="2yX483RIuQQ" role="1bW5cS">
                   <node concept="3cpWs8" id="2yX483RIuQR" role="3cqZAp">
                     <node concept="3cpWsn" id="2yX483RIuQS" role="3cpWs9">
-                      <property role="TrG5h" value="allDefsInProject" />
+                      <property role="TrG5h" value="allModuleDefsInProject" />
                       <node concept="2I9FWS" id="2yX483RIuQT" role="1tU5fm">
                         <ref role="2I9WkF" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
                       </node>
@@ -300,7 +316,7 @@
                               <node concept="3clFbF" id="2yX483RIuR5" role="3cqZAp">
                                 <node concept="2OqwBi" id="2yX483RIuR6" role="3clFbG">
                                   <node concept="37vLTw" id="2yX483RIuR7" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2yX483RIuQS" resolve="allDefsInProject" />
+                                    <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                                   </node>
                                   <node concept="TSZUe" id="2yX483RIuR8" role="2OqNvi">
                                     <node concept="10QFUN" id="2yX483RIuR9" role="25WWJ7">
@@ -359,7 +375,7 @@
                         </node>
                         <node concept="2OqwBi" id="2yX483RIuRr" role="3uHU7w">
                           <node concept="37vLTw" id="2yX483RIuRs" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2yX483RIuQS" resolve="allDefsInProject" />
+                            <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                           </node>
                           <node concept="34oBXx" id="2yX483RIuRt" role="2OqNvi" />
                         </node>
@@ -431,7 +447,7 @@
                       </node>
                     </node>
                     <node concept="37vLTw" id="2yX483RIuRV" role="2GsD0m">
-                      <ref role="3cqZAo" node="2yX483RIuQS" resolve="allDefsInProject" />
+                      <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                     </node>
                   </node>
                 </node>
