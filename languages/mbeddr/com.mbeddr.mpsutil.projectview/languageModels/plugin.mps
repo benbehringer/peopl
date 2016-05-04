@@ -12,6 +12,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -118,6 +119,11 @@
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -221,6 +227,15 @@
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
         <node concept="10Nm6u" id="7WEW9M6pksd" role="33vP2m" />
+      </node>
+      <node concept="312cEg" id="6hhB4BxiF_j" role="jymVt">
+        <property role="TrG5h" value="alternativePeoplClass" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm1VV" id="6hhB4BxiFQz" role="1B3o_S" />
+        <node concept="3Tqbb2" id="6hhB4BxiF_m" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+        <node concept="10Nm6u" id="6hhB4BxjDwV" role="33vP2m" />
       </node>
       <node concept="2tJIrI" id="LgY1EVE7iw" role="jymVt" />
       <node concept="3clFb_" id="LgY1EVE7jo" role="jymVt">
@@ -410,6 +425,44 @@
               <node concept="10Nm6u" id="LgY1EVE9tI" role="3uHU7w" />
               <node concept="37vLTw" id="LgY1EVE9Cz" role="3uHU7B">
                 <ref role="3cqZAo" node="7WEW9M6pksa" resolve="viewElementId" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="6hhB4BxiG5D" role="3cqZAp">
+            <node concept="3clFbS" id="6hhB4BxiG5F" role="3clFbx">
+              <node concept="3clFbF" id="6hhB4BxiGQt" role="3cqZAp">
+                <node concept="37vLTI" id="6hhB4BxiGT2" role="3clFbG">
+                  <node concept="3cpWs3" id="6hhB4BxiHrB" role="37vLTx">
+                    <node concept="Xl_RD" id="6hhB4BxiHvK" role="3uHU7w">
+                      <property role="Xl_RC" value=" // " />
+                    </node>
+                    <node concept="2OqwBi" id="6hhB4BxiGX8" role="3uHU7B">
+                      <node concept="37vLTw" id="6hhB4BxiGUt" role="2Oq$k0">
+                        <ref role="3cqZAo" node="LgY1EVE7FV" resolve="representation" />
+                      </node>
+                      <node concept="liA8E" id="6hhB4BxiHas" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
+                        <node concept="3cpWs3" id="6hhB4BxiHkE" role="37wK5m">
+                          <node concept="37vLTw" id="6hhB4BxiHmm" role="3uHU7w">
+                            <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="alternativePeoplClass" />
+                          </node>
+                          <node concept="Xl_RD" id="6hhB4BxiHbf" role="3uHU7B">
+                            <property role="Xl_RC" value="alternative class : " />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6hhB4BxiGQr" role="37vLTJ">
+                    <ref role="3cqZAo" node="LgY1EVE7FV" resolve="representation" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="6hhB4BxiGv8" role="3clFbw">
+              <node concept="10Nm6u" id="6hhB4BxiGAw" role="3uHU7w" />
+              <node concept="37vLTw" id="6hhB4BxiGeE" role="3uHU7B">
+                <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="alternativePeoplClass" />
               </node>
             </node>
           </node>

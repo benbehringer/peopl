@@ -78,7 +78,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -939,7 +939,7 @@
       <node concept="3clFbS" id="7VYDLKH$c9I" role="2VODD2">
         <node concept="3clFbF" id="7VYDLKH$ceM" role="3cqZAp">
           <node concept="Xl_RD" id="7VYDLKH$ceL" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Cleanup broken connections " />
+            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Cleanup broken connections &amp; buffer " />
           </node>
         </node>
       </node>
@@ -1007,6 +1007,18 @@
                   <ref role="cht4Q" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="y7va8W7uRt" role="3cqZAp" />
+        <node concept="3clFbF" id="y7va8W7v2j" role="3cqZAp">
+          <node concept="2OqwBi" id="y7va8W7v9y" role="3clFbG">
+            <node concept="2YIFZM" id="y7va8W7v7j" role="2Oq$k0">
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+            </node>
+            <node concept="liA8E" id="y7va8W7vdZ" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
             </node>
           </node>
         </node>
