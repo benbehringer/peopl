@@ -72,6 +72,7 @@
     <dependency reexport="false">42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.config)</dependency>
     <dependency reexport="false">3b64420c-53d0-4c15-9e71-c9cecf76d9db(de.htwsaar.peopl.view.modular)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.dep.baselang)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
