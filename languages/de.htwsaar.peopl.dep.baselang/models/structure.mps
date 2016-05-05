@@ -112,6 +112,7 @@
     <property role="1pbfSe" value="1870255447" />
     <property role="TrG5h" value="MethodDeclarationBaseCodeReference" />
     <property role="R4oN_" value="Helps to identify the base code within a method" />
+    <property role="3GE5qa" value="deprecated" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="Vp$ulwC4dN" role="lGtFl">
       <property role="Hh88m" value="MethodDeclarationBaseCodeReference" />

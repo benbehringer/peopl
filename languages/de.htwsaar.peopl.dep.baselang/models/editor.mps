@@ -312,6 +312,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3du0jSJ2DZU">
+    <property role="3GE5qa" value="deprecated" />
     <ref role="1XX52x" to="uqoo:Vp$ulwC4dM" resolve="MethodDeclarationBaseCodeReference" />
     <node concept="2SsqMj" id="3du0jSJ2DZW" role="2wV5jI" />
   </node>
