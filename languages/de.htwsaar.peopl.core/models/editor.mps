@@ -1384,7 +1384,7 @@
   </node>
   <node concept="325Ffw" id="2myhIIWIaXW">
     <property role="TrG5h" value="MoveModules" />
-    <property role="3GE5qa" value="Core" />
+    <property role="3GE5qa" value="Helper" />
     <ref role="1chiOs" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     <node concept="2PxR9H" id="2myhIIWIaXX" role="2QnnpI">
       <node concept="2Py5lD" id="2myhIIWIaXY" role="2PyaAO">
