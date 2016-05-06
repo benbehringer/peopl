@@ -108,12 +108,6 @@
       <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM">
         <child id="6242855909345491589" name="fragmentIntermediate" index="3aRQVq" />
       </concept>
-      <concept id="8523334110550879641" name="de.htwsaar.peopl.core.structure.InteractionModule" flags="ng" index="1Z4xEI">
-        <child id="8523334110550977737" name="moduleIntermediate" index="1Z59JY" />
-      </concept>
-      <concept id="8523334110550977739" name="de.htwsaar.peopl.core.structure.InteractionModuleToModuleIntermediate" flags="ng" index="1Z59JW">
-        <reference id="8523334110550977740" name="modRef" index="1Z59JV" />
-      </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
       <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
@@ -208,10 +202,6 @@
       <property role="2_7Toi" value="189" />
       <property role="3_QSL4" value="9787069" />
       <property role="TrG5h" value="Pampelmuse" />
-      <node concept="3aRQSP" id="33UM5aMD4i9" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_3529353515508188297" />
-        <ref role="3aRQSO" node="33UM5aMD4i7" resolve="Fragment_3529353515508188295" />
-      </node>
       <node concept="3aRQSP" id="k2$zgy2TeC" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_361011672750199720" />
         <ref role="3aRQSO" node="k2$zgy2Tc6" resolve="Fragment_361011672750199558" />
@@ -225,12 +215,15 @@
         <ref role="3aRQSO" node="47WRMVuRHo6" resolve="Fragment_4754920698997036550" />
       </node>
     </node>
-    <node concept="1Z4xEI" id="6J9a47Ihkv7" role="288GmO">
-      <node concept="1Z59JW" id="6J9a47Ihkv8" role="1Z59JY">
-        <ref role="1Z59JV" node="1jtqHQgmjoI" resolve="Pampelmuse" />
-      </node>
-      <node concept="1Z59JW" id="6J9a47Ihkvp" role="1Z59JY">
-        <ref role="1Z59JV" node="yl5h16lok5" resolve="Orange" />
+    <node concept="1V77HM" id="BaaGhtN1L8" role="288GmO">
+      <property role="2_7ToJ" value="255" />
+      <property role="2_7ToH" value="204" />
+      <property role="2_7Toi" value="0" />
+      <property role="3_QSL4" value="-13312" />
+      <property role="TrG5h" value="Grapefruit" />
+      <node concept="3aRQSP" id="BaaGhtN3fH" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_705423314512524269" />
+        <ref role="3aRQSO" node="33UM5aMD4i7" resolve="Fragment_3529353515508188295" />
       </node>
     </node>
     <node concept="2$Fqj1" id="17fl253$njL" role="lGtFl">
@@ -331,8 +324,8 @@
           <property role="32Xqk$" value="chosenModule" />
           <property role="TrG5h" value="Fragment_3529353515508188295" />
           <ref role="1V74Hf" node="33UM5aMD4i8" resolve="VPToFragment_3529353515508188296" />
-          <ref role="a64iB" node="1jtqHQgmjoI" resolve="Pampelmuse" />
-          <ref role="3aRQVk" node="33UM5aMD4i9" resolve="ModuleToFragment_3529353515508188297" />
+          <ref role="a64iB" node="BaaGhtN1L8" resolve="Grapefruit" />
+          <ref role="3aRQVk" node="BaaGhtN3fH" resolve="ModuleToFragment_705423314512524269" />
         </node>
       </node>
       <node concept="312cEg" id="33UM5aMD4dS" role="jymVt">

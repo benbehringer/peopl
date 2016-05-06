@@ -740,7 +740,7 @@
                 </node>
                 <node concept="liA8E" id="3Sk5uha3miC" role="2OqNvi">
                   <ref role="37wK5l" node="47WRMVuScic" resolve="setHeightOrientation" />
-                  <node concept="Rm8GO" id="5WDNcaneuKN" role="37wK5m">
+                  <node concept="Rm8GO" id="BaaGhtNz$i" role="37wK5m">
                     <ref role="Rm8GQ" node="47WRMVuScg_" resolve="NEXT_SIBLING" />
                     <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
                   </node>
@@ -854,9 +854,20 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3F0A7n" id="7Ufy5VQFo$u" role="3EZMnx">
-        <property role="1$x2rV" value="Give me a module name" />
-        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      <node concept="3EZMnI" id="BaaGhtNzFZ" role="3EZMnx">
+        <node concept="2iRkQZ" id="BaaGhtNzG0" role="2iSdaV" />
+        <node concept="3F0A7n" id="7Ufy5VQFo$u" role="3EZMnx">
+          <property role="1$x2rV" value="Give me a module name" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="BaaGhtNzLw" role="3EZMnx">
+          <node concept="VSNWy" id="BaaGhtNzNb" role="3F10Kt">
+            <property role="1lJzqX" value="2" />
+          </node>
+          <node concept="VPM3Z" id="BaaGhtNzOW" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
