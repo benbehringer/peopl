@@ -108,6 +108,12 @@
       <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM">
         <child id="6242855909345491589" name="fragmentIntermediate" index="3aRQVq" />
       </concept>
+      <concept id="8523334110550879641" name="de.htwsaar.peopl.core.structure.InteractionModule" flags="ng" index="1Z4xEI">
+        <child id="8523334110550977737" name="moduleIntermediate" index="1Z59JY" />
+      </concept>
+      <concept id="8523334110550977739" name="de.htwsaar.peopl.core.structure.InteractionModuleToModuleIntermediate" flags="ng" index="1Z59JW">
+        <reference id="8523334110550977740" name="modRef" index="1Z59JV" />
+      </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
       <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
@@ -226,6 +232,17 @@
         <ref role="3aRQSO" node="33UM5aMD4i7" resolve="Fragment_3529353515508188295" />
       </node>
     </node>
+    <node concept="1Z4xEI" id="3fu$_X4zODD" role="288GmO">
+      <node concept="1Z59JW" id="3fu$_X4zODE" role="1Z59JY">
+        <ref role="1Z59JV" node="BaaGhtN1L8" resolve="Grapefruit" />
+      </node>
+      <node concept="1Z59JW" id="3fu$_X4zODX" role="1Z59JY">
+        <ref role="1Z59JV" node="1jtqHQg5xTd" resolve="Apfel" />
+      </node>
+      <node concept="1Z59JW" id="3fu$_X4zOE5" role="1Z59JY">
+        <ref role="1Z59JV" node="2dLMffS5Hav" resolve="Base" />
+      </node>
+    </node>
     <node concept="2$Fqj1" id="17fl253$njL" role="lGtFl">
       <node concept="1V74G3" id="17fl253$HJ1" role="2$Fqj6">
         <property role="TrG5h" value="VP_1283336920668232641" />
@@ -316,7 +333,7 @@
       <node concept="312cEg" id="33UM5aMD4i5" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="pampelmuseVar" />
+        <property role="TrG5h" value="grapefruitVar" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="33UM5aMD4h5" role="1B3o_S" />
         <node concept="10Oyi0" id="33UM5aMD4i3" role="1tU5fm" />
@@ -395,8 +412,8 @@
                   <node concept="2wexfA" id="47WRMVuRHof" role="3cqZAp">
                     <ref role="ojxmB" node="47WRMVuRFS2" resolve="foo" />
                     <node concept="3clFbS" id="47WRMVuRHog" role="9aQI4">
-                      <node concept="3clFbH" id="47WRMVuRFU1" role="3cqZAp" />
                       <node concept="3clFbH" id="47WRMVuRHpV" role="3cqZAp" />
+                      <node concept="3clFbH" id="BaaGhtNJm$" role="3cqZAp" />
                     </node>
                     <node concept="1V74GB" id="47WRMVuRHoh" role="lGtFl">
                       <property role="32Xqk$" value="chosenModule" />
