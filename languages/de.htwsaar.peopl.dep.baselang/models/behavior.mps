@@ -3992,6 +3992,12 @@
           </node>
         </node>
         <node concept="3clFbH" id="5$c$4R$fbJv" role="3cqZAp" />
+        <node concept="3SKdUt" id="1UDgNqEk3A0" role="3cqZAp">
+          <node concept="3SKdUq" id="1UDgNqEk3A2" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: check for last Module in list, so that no array out of bounds can happen , or just use next() instead of array" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1UDgNqEk4kc" role="3cqZAp" />
         <node concept="3cpWs8" id="5$c$4R$fgYw" role="3cqZAp">
           <node concept="3cpWsn" id="5$c$4R$fgYz" role="3cpWs9">
             <property role="TrG5h" value="searchModule" />
@@ -4105,6 +4111,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="1UDgNqEjVnX" role="3cqZAp" />
             <node concept="34ab3g" id="5$c$4R$g6yf" role="3cqZAp">
               <property role="35gtTG" value="warn" />
               <node concept="3cpWs3" id="5$c$4R$g6Yi" role="34bqiv">
@@ -4142,31 +4149,101 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="1UDgNqEjVUx" role="3cqZAp" />
             <node concept="3clFbJ" id="FZTZt7xxqC" role="3cqZAp">
               <node concept="3clFbS" id="FZTZt7xxqE" role="3clFbx">
-                <node concept="3clFbF" id="FZTZt7xAOp" role="3cqZAp">
-                  <node concept="37vLTI" id="FZTZt7xARd" role="3clFbG">
-                    <node concept="37vLTw" id="FZTZt7xAOn" role="37vLTJ">
-                      <ref role="3cqZAo" node="5$c$4R$fcZL" resolve="searchStart" />
+                <node concept="3SKdUt" id="1UDgNqEjX1D" role="3cqZAp">
+                  <node concept="3SKdUq" id="1UDgNqEjX1F" role="3SKWNk">
+                    <property role="3SKdUp" value="Reach end of siblings, move form statementList to parent.parent , check for wrapper " />
+                  </node>
+                </node>
+                <node concept="3clFbH" id="1UDgNqEk16G" role="3cqZAp" />
+                <node concept="3clFbJ" id="1UDgNqEjXfL" role="3cqZAp">
+                  <node concept="3clFbS" id="1UDgNqEjXfN" role="3clFbx">
+                    <node concept="3SKdUt" id="1UDgNqEk0V5" role="3cqZAp">
+                      <node concept="3SKdUq" id="1UDgNqEk0V6" role="3SKWNk">
+                        <property role="3SKdUp" value=" wrapper is same as searchModule =&gt; needs to be moved, " />
+                      </node>
                     </node>
-                    <node concept="1eOMI4" id="FZTZt7xARZ" role="37vLTx">
-                      <node concept="10QFUN" id="FZTZt7xAS0" role="1eOMHV">
-                        <node concept="3Tqbb2" id="FZTZt7xAS1" role="10QFUM">
-                          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-                        </node>
-                        <node concept="2OqwBi" id="7Zmhc1NB96x" role="10QFUP">
-                          <node concept="2OqwBi" id="FZTZt7xAS2" role="2Oq$k0">
-                            <node concept="37vLTw" id="FZTZt7xAS3" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5$c$4R$fcZL" resolve="searchStart" />
+                    <node concept="3SKdUt" id="1UDgNqEk0VN" role="3cqZAp">
+                      <node concept="3SKdUq" id="1UDgNqEk0VP" role="3SKWNk">
+                        <property role="3SKdUp" value="end search for this module , reset searchlvl/searchstat" />
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="1UDgNqEjXfM" role="3cqZAp" />
+                    <node concept="3clFbH" id="1UDgNqEk1g3" role="3cqZAp" />
+                    <node concept="3clFbH" id="1UDgNqEk1gl" role="3cqZAp" />
+                  </node>
+                  <node concept="3clFbC" id="1UDgNqEk0PU" role="3clFbw">
+                    <node concept="37vLTw" id="1UDgNqEk0U5" role="3uHU7w">
+                      <ref role="3cqZAo" node="5$c$4R$fgYz" resolve="searchModule" />
+                    </node>
+                    <node concept="2OqwBi" id="1UDgNqEk0tY" role="3uHU7B">
+                      <node concept="2OqwBi" id="1UDgNqEjYgz" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1UDgNqEjXge" role="2Oq$k0">
+                          <node concept="1eOMI4" id="1UDgNqEjXgf" role="2Oq$k0">
+                            <node concept="10QFUN" id="1UDgNqEjXgg" role="1eOMHV">
+                              <node concept="3Tqbb2" id="1UDgNqEjXgh" role="10QFUM">
+                                <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+                              </node>
+                              <node concept="2OqwBi" id="1UDgNqEjXgi" role="10QFUP">
+                                <node concept="2OqwBi" id="1UDgNqEjXgj" role="2Oq$k0">
+                                  <node concept="37vLTw" id="1UDgNqEjXgk" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5$c$4R$fcZL" resolve="searchStart" />
+                                  </node>
+                                  <node concept="1mfA1w" id="1UDgNqEjXgl" role="2OqNvi" />
+                                </node>
+                                <node concept="1mfA1w" id="1UDgNqEjXgm" role="2OqNvi" />
+                              </node>
                             </node>
-                            <node concept="1mfA1w" id="FZTZt7xAS4" role="2OqNvi" />
                           </node>
-                          <node concept="1mfA1w" id="7Zmhc1NB98B" role="2OqNvi" />
+                          <node concept="3CFZ6_" id="1UDgNqEjXBG" role="2OqNvi">
+                            <node concept="3CFYIy" id="1UDgNqEjXCb" role="3CFYIz">
+                              <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="1UDgNqEjZn9" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrEf2" id="1UDgNqEk0Gi" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="1UDgNqEk17Z" role="9aQIa">
+                    <node concept="3clFbS" id="1UDgNqEk180" role="9aQI4">
+                      <node concept="3SKdUt" id="1UDgNqEk1iZ" role="3cqZAp">
+                        <node concept="3SKdUq" id="1UDgNqEk1j1" role="3SKWNk">
+                          <property role="3SKdUp" value="not the same module=&gt; just search on 1 lvl higher " />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="FZTZt7xAOp" role="3cqZAp">
+                        <node concept="37vLTI" id="FZTZt7xARd" role="3clFbG">
+                          <node concept="37vLTw" id="FZTZt7xAOn" role="37vLTJ">
+                            <ref role="3cqZAo" node="5$c$4R$fcZL" resolve="searchStart" />
+                          </node>
+                          <node concept="1eOMI4" id="FZTZt7xARZ" role="37vLTx">
+                            <node concept="10QFUN" id="FZTZt7xAS0" role="1eOMHV">
+                              <node concept="3Tqbb2" id="FZTZt7xAS1" role="10QFUM">
+                                <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+                              </node>
+                              <node concept="2OqwBi" id="7Zmhc1NB96x" role="10QFUP">
+                                <node concept="2OqwBi" id="FZTZt7xAS2" role="2Oq$k0">
+                                  <node concept="37vLTw" id="FZTZt7xAS3" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5$c$4R$fcZL" resolve="searchStart" />
+                                  </node>
+                                  <node concept="1mfA1w" id="FZTZt7xAS4" role="2OqNvi" />
+                                </node>
+                                <node concept="1mfA1w" id="7Zmhc1NB98B" role="2OqNvi" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbH" id="1UDgNqEjXet" role="3cqZAp" />
               </node>
               <node concept="1Wc70l" id="7Zmhc1NAQr$" role="3clFbw">
                 <node concept="2OqwBi" id="7Zmhc1NARAa" role="3uHU7B">
@@ -4240,10 +4317,22 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3SKdUt" id="1UDgNqEjXeS" role="3cqZAp">
+                    <node concept="3SKdUq" id="1UDgNqEjXeU" role="3SKWNk">
+                      <property role="3SKdUp" value="reached end" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="1UDgNqEk1er" role="3cqZAp" />
                 </node>
               </node>
               <node concept="9aQIb" id="FZTZt7xB_n" role="9aQIa">
                 <node concept="3clFbS" id="FZTZt7xB_o" role="9aQI4">
+                  <node concept="3SKdUt" id="1UDgNqEjXfm" role="3cqZAp">
+                    <node concept="3SKdUq" id="1UDgNqEjXfo" role="3SKWNk">
+                      <property role="3SKdUp" value="should not happen" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="1UDgNqEk1fM" role="3cqZAp" />
                   <node concept="3clFbF" id="7Zmhc1NARFH" role="3cqZAp">
                     <node concept="37vLTI" id="7Zmhc1NARHz" role="3clFbG">
                       <node concept="3clFbT" id="7Zmhc1NARHN" role="37vLTx">
