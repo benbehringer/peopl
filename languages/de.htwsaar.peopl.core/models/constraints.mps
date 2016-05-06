@@ -584,23 +584,6 @@
     <ref role="1M2myG" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="EnEH3" id="7p8XNs9n2yM" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="QB0g5" id="7p8XNs9n2yO" role="QCWH9">
-        <node concept="3clFbS" id="7p8XNs9n2yP" role="2VODD2">
-          <node concept="3clFbF" id="7p8XNs9n2zV" role="3cqZAp">
-            <node concept="3fqX7Q" id="7p8XNs9n2zT" role="3clFbG">
-              <node concept="2OqwBi" id="7p8XNs9n2CV" role="3fr31v">
-                <node concept="1Wqviy" id="7p8XNs9n2_J" role="2Oq$k0" />
-                <node concept="liA8E" id="7p8XNs9n2OC" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
-                  <node concept="Xl_RD" id="7p8XNs9n2Ql" role="37wK5m">
-                    <property role="Xl_RC" value="#" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="Eqf_E" id="5zQr8PgecSF" role="EtsB7">
         <node concept="3clFbS" id="5zQr8PgecSG" role="2VODD2">
           <node concept="3cpWs8" id="5zQr8PgeeT$" role="3cqZAp">
@@ -637,7 +620,7 @@
                     <node concept="liA8E" id="5zQr8PgelK5" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
                       <node concept="Xl_RD" id="5zQr8PgelOh" role="37wK5m">
-                        <property role="Xl_RC" value="^" />
+                        <property role="Xl_RC" value="#" />
                       </node>
                     </node>
                   </node>
