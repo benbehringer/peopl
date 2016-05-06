@@ -33,7 +33,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
-      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" index="gc7cB">
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -82,7 +82,7 @@
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
       </concept>
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
@@ -101,25 +101,25 @@
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" index="1HlG4h">
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
-      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" index="1QoScp">
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
         <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
@@ -238,7 +238,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -742,7 +742,7 @@
                   <ref role="37wK5l" node="47WRMVuScic" resolve="setHeightOrientation" />
                   <node concept="Rm8GO" id="BaaGhtNz$i" role="37wK5m">
                     <ref role="Rm8GQ" node="47WRMVuScg_" resolve="NEXT_SIBLING" />
-                    <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                    <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                   </node>
                 </node>
               </node>
@@ -755,7 +755,7 @@
                 <node concept="liA8E" id="3Sk5uha3nFr" role="2OqNvi">
                   <ref role="37wK5l" node="47WRMVuSci1" resolve="setWidthOrientation" />
                   <node concept="Rm8GO" id="3Sk5uha47Fq" role="37wK5m">
-                    <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+                    <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                     <ref role="Rm8GQ" node="47WRMVuScgw" resolve="LINE_BEGINNING" />
                   </node>
                 </node>
@@ -1717,7 +1717,7 @@
     </node>
     <node concept="2tJIrI" id="4XXs7o025hs" role="jymVt" />
     <node concept="Qs71p" id="4XXs7o024wm" role="jymVt">
-      <property role="TrG5h" value="WidthOrientation" />
+      <property role="TrG5h" value="MultiVerticalProvider_WidthOrientation" />
       <node concept="3Tm1VV" id="4XXs7o024wn" role="1B3o_S" />
       <node concept="QsSxf" id="4XXs7o026gf" role="Qtgdg">
         <property role="TrG5h" value="NONE" />
@@ -1734,7 +1734,7 @@
     </node>
     <node concept="2tJIrI" id="4XXs7o024wr" role="jymVt" />
     <node concept="Qs71p" id="4XXs7o024ws" role="jymVt">
-      <property role="TrG5h" value="HeightOrientation" />
+      <property role="TrG5h" value="MultiVerticalProvider_HeightOrientation" />
       <node concept="QsSxf" id="4XXs7o0267E" role="Qtgdg">
         <property role="TrG5h" value="PARENT" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -1847,11 +1847,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4XXs7o024xa" role="1B3o_S" />
       <node concept="3uibUv" id="4XXs7o024xb" role="1tU5fm">
-        <ref role="3uigEE" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.WidthOrientation" />
+        <ref role="3uigEE" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_WidthOrientation" />
       </node>
       <node concept="Rm8GO" id="4XXs7o026jy" role="33vP2m">
         <ref role="Rm8GQ" node="4XXs7o026gf" resolve="NONE" />
-        <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.WidthOrientation" />
+        <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_WidthOrientation" />
       </node>
     </node>
     <node concept="312cEg" id="4XXs7o024xd" role="jymVt">
@@ -1861,11 +1861,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4XXs7o024xe" role="1B3o_S" />
       <node concept="3uibUv" id="4XXs7o024xf" role="1tU5fm">
-        <ref role="3uigEE" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+        <ref role="3uigEE" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
       </node>
       <node concept="Rm8GO" id="4XXs7o026pe" role="33vP2m">
         <ref role="Rm8GQ" node="4XXs7o0267E" resolve="PARENT" />
-        <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+        <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
       </node>
     </node>
     <node concept="2tJIrI" id="4XXs7o024xh" role="jymVt" />
@@ -1988,7 +1988,7 @@
       <node concept="37vLTG" id="4XXs7o024yF" role="3clF46">
         <property role="TrG5h" value="widthOrientation" />
         <node concept="3uibUv" id="4XXs7o024yG" role="1tU5fm">
-          <ref role="3uigEE" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.WidthOrientation" />
+          <ref role="3uigEE" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_WidthOrientation" />
         </node>
       </node>
     </node>
@@ -2016,7 +2016,7 @@
       <node concept="37vLTG" id="4XXs7o024yQ" role="3clF46">
         <property role="TrG5h" value="heightOrientation" />
         <node concept="3uibUv" id="4XXs7o024yR" role="1tU5fm">
-          <ref role="3uigEE" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+          <ref role="3uigEE" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
         </node>
       </node>
     </node>
@@ -2332,7 +2332,7 @@
                         <node concept="3clFbC" id="4XXs7o024$S" role="3clFbw">
                           <node concept="Rm8GO" id="4XXs7o02FGK" role="3uHU7w">
                             <ref role="Rm8GQ" node="4XXs7o0267E" resolve="PARENT" />
-                            <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+                            <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
                           </node>
                           <node concept="37vLTw" id="4XXs7o026x4" role="3uHU7B">
                             <ref role="3cqZAo" node="4XXs7o024xd" resolve="myHeightOrientation" />
@@ -2380,7 +2380,7 @@
                           <node concept="3clFbC" id="4XXs7o02FyZ" role="3eO9$A">
                             <node concept="Rm8GO" id="4XXs7o02Fz0" role="3uHU7w">
                               <ref role="Rm8GQ" node="4XXs7o0267G" resolve="NEXT_SIBLING" />
-                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="4XXs7o02Fz1" role="3uHU7B">
                               <ref role="3cqZAo" node="4XXs7o024xd" resolve="myHeightOrientation" />
@@ -2439,7 +2439,7 @@
                           <node concept="3clFbC" id="4DWAEpig80Q" role="3eO9$A">
                             <node concept="Rm8GO" id="4DWAEpig8lH" role="3uHU7w">
                               <ref role="Rm8GQ" node="4DWAEpig7a6" resolve="NEXT_NEXT_SIBLING" />
-                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="4DWAEpig80S" role="3uHU7B">
                               <ref role="3cqZAo" node="4XXs7o024xd" resolve="myHeightOrientation" />
@@ -2488,7 +2488,7 @@
                           <node concept="3clFbC" id="4XXs7o05pzF" role="3eO9$A">
                             <node concept="Rm8GO" id="4XXs7o05pJn" role="3uHU7w">
                               <ref role="Rm8GQ" node="4XXs7o0267F" resolve="PREVIOUS_SIBLING" />
-                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="4XXs7o05pzH" role="3uHU7B">
                               <ref role="3cqZAo" node="4XXs7o024xd" resolve="myHeightOrientation" />
@@ -2498,7 +2498,7 @@
                         <node concept="3eNFk2" id="3Sk5uha3dJ5" role="3eNLev">
                           <node concept="3clFbC" id="3Sk5uha3eg7" role="3eO9$A">
                             <node concept="Rm8GO" id="3Sk5uha3eJ3" role="3uHU7w">
-                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="4XXs7o024ws" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_HeightOrientation" />
                               <ref role="Rm8GQ" node="3Sk5uha3dCN" resolve="LINE" />
                             </node>
                             <node concept="37vLTw" id="3Sk5uha3e8m" role="3uHU7B">
@@ -2628,7 +2628,7 @@
                         </node>
                         <node concept="3clFbC" id="4DWAEpieu35" role="3clFbw">
                           <node concept="Rm8GO" id="4DWAEpieu$G" role="3uHU7w">
-                            <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_WidthOrientation" />
                             <ref role="Rm8GQ" node="4DWAEpiengh" resolve="ORIGINAL_CODE_BLOCK" />
                           </node>
                           <node concept="37vLTw" id="4DWAEpietM2" role="3uHU7B">
@@ -2697,7 +2697,7 @@
                           <node concept="3clFbC" id="3Sk5uha41ez" role="3eO9$A">
                             <node concept="Rm8GO" id="3Sk5uha41wR" role="3uHU7w">
                               <ref role="Rm8GQ" node="3Sk5uha40fy" resolve="LINE_BEGINNING" />
-                              <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" node="4XXs7o024wm" resolve="MultiVerticalLineCellProvider.MultiVerticalProvider_WidthOrientation" />
                             </node>
                             <node concept="37vLTw" id="3Sk5uha416N" role="3uHU7B">
                               <ref role="3cqZAo" node="4XXs7o024x9" resolve="myWidthOrientation" />
@@ -2898,7 +2898,7 @@
     <property role="TrG5h" value="HorizontalLineCellProvider" />
     <property role="3GE5qa" value="CustomCellProvider" />
     <node concept="Qs71p" id="4XXs7nZEFJ$" role="jymVt">
-      <property role="TrG5h" value="WidthOrientation" />
+      <property role="TrG5h" value="HorizontalProvider_WidthOrientation" />
       <node concept="3Tm1VV" id="4XXs7nZEEX_" role="1B3o_S" />
       <node concept="QsSxf" id="4XXs7nZEI$Z" role="Qtgdg">
         <property role="TrG5h" value="PARENT" />
@@ -2915,7 +2915,7 @@
     </node>
     <node concept="2tJIrI" id="4XXs7nZVg9m" role="jymVt" />
     <node concept="Qs71p" id="4XXs7nZVjWR" role="jymVt">
-      <property role="TrG5h" value="HeightOrientation" />
+      <property role="TrG5h" value="HorizontalProvider_HeightOrientation" />
       <node concept="QsSxf" id="4XXs7nZVnMa" role="Qtgdg">
         <property role="TrG5h" value="NONE" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -3041,11 +3041,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4XXs7nZF$Th" role="1B3o_S" />
       <node concept="3uibUv" id="4XXs7nZF_cb" role="1tU5fm">
-        <ref role="3uigEE" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+        <ref role="3uigEE" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
       </node>
       <node concept="Rm8GO" id="4XXs7nZF_AS" role="33vP2m">
         <ref role="Rm8GQ" node="4XXs7nZEI$Z" resolve="PARENT" />
-        <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+        <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
       </node>
     </node>
     <node concept="312cEg" id="4XXs7nZVs2L" role="jymVt">
@@ -3055,11 +3055,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="4XXs7nZVrAx" role="1B3o_S" />
       <node concept="3uibUv" id="4XXs7nZVs1Z" role="1tU5fm">
-        <ref role="3uigEE" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+        <ref role="3uigEE" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
       </node>
       <node concept="Rm8GO" id="4XXs7nZVswG" role="33vP2m">
         <ref role="Rm8GQ" node="4XXs7nZVnMa" resolve="NONE" />
-        <ref role="1Px2BO" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+        <ref role="1Px2BO" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
       </node>
     </node>
     <node concept="2tJIrI" id="4XXs7nZVnYv" role="jymVt" />
@@ -3243,7 +3243,7 @@
       <node concept="37vLTG" id="4XXs7nZFyWz" role="3clF46">
         <property role="TrG5h" value="widthOrientation" />
         <node concept="3uibUv" id="4XXs7nZFyWy" role="1tU5fm">
-          <ref role="3uigEE" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+          <ref role="3uigEE" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
         </node>
       </node>
     </node>
@@ -3271,7 +3271,7 @@
       <node concept="37vLTG" id="4XXs7nZVnsg" role="3clF46">
         <property role="TrG5h" value="heightOrientation" />
         <node concept="3uibUv" id="4XXs7nZVnsf" role="1tU5fm">
-          <ref role="3uigEE" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+          <ref role="3uigEE" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
         </node>
       </node>
     </node>
@@ -3579,7 +3579,7 @@
                         <node concept="3clFbC" id="4XXs7nZFB_w" role="3clFbw">
                           <node concept="Rm8GO" id="4XXs7nZFBQj" role="3uHU7w">
                             <ref role="Rm8GQ" node="4XXs7nZEI$Z" resolve="PARENT" />
-                            <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           </node>
                           <node concept="37vLTw" id="4XXs7nZFBod" role="3uHU7B">
                             <ref role="3cqZAo" node="4XXs7nZF_cU" resolve="myWidthOrientation" />
@@ -3631,7 +3631,7 @@
                           </node>
                           <node concept="3clFbC" id="4XXs7nZFHLH" role="3eO9$A">
                             <node concept="Rm8GO" id="4XXs7nZFHNF" role="3uHU7w">
-                              <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                               <ref role="Rm8GQ" node="4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                             </node>
                             <node concept="37vLTw" id="4XXs7nZFHLJ" role="3uHU7B">
@@ -3686,7 +3686,7 @@
                           <node concept="3clFbC" id="4XXs7nZFL1X" role="3eO9$A">
                             <node concept="Rm8GO" id="4XXs7nZMzOb" role="3uHU7w">
                               <ref role="Rm8GQ" node="4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                              <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" node="4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             </node>
                             <node concept="37vLTw" id="4XXs7nZFL1Z" role="3uHU7B">
                               <ref role="3cqZAo" node="4XXs7nZF_cU" resolve="myWidthOrientation" />
@@ -3807,7 +3807,7 @@
                         <node concept="3clFbC" id="4XXs7nZVvcU" role="3clFbw">
                           <node concept="Rm8GO" id="4XXs7nZVyk7" role="3uHU7w">
                             <ref role="Rm8GQ" node="4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                            <ref role="1Px2BO" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                            <ref role="1Px2BO" node="4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                           </node>
                           <node concept="37vLTw" id="4XXs7nZVuVz" role="3uHU7B">
                             <ref role="3cqZAo" node="4XXs7nZVs2L" resolve="myHeightOrientation" />
@@ -3984,7 +3984,7 @@
     </node>
     <node concept="2tJIrI" id="47WRMVuScgr" role="jymVt" />
     <node concept="Qs71p" id="47WRMVuScgs" role="jymVt">
-      <property role="TrG5h" value="WidthOrientation" />
+      <property role="TrG5h" value="VerticalProvider_WidthOrientation" />
       <node concept="3Tm1VV" id="47WRMVuScgt" role="1B3o_S" />
       <node concept="QsSxf" id="47WRMVuScgu" role="Qtgdg">
         <property role="TrG5h" value="NONE" />
@@ -4001,7 +4001,7 @@
     </node>
     <node concept="2tJIrI" id="47WRMVuScgx" role="jymVt" />
     <node concept="Qs71p" id="47WRMVuScgy" role="jymVt">
-      <property role="TrG5h" value="HeightOrientation" />
+      <property role="TrG5h" value="VerticalProvider_HeightOrientation" />
       <node concept="QsSxf" id="47WRMVuScgz" role="Qtgdg">
         <property role="TrG5h" value="PARENT" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -4114,11 +4114,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="47WRMVuScha" role="1B3o_S" />
       <node concept="3uibUv" id="47WRMVuSchb" role="1tU5fm">
-        <ref role="3uigEE" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+        <ref role="3uigEE" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
       </node>
       <node concept="Rm8GO" id="47WRMVuSchc" role="33vP2m">
         <ref role="Rm8GQ" node="47WRMVuScgu" resolve="NONE" />
-        <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+        <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
       </node>
     </node>
     <node concept="312cEg" id="47WRMVuSchd" role="jymVt">
@@ -4128,11 +4128,11 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="47WRMVuSche" role="1B3o_S" />
       <node concept="3uibUv" id="47WRMVuSchf" role="1tU5fm">
-        <ref role="3uigEE" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+        <ref role="3uigEE" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
       </node>
       <node concept="Rm8GO" id="47WRMVuSchg" role="33vP2m">
         <ref role="Rm8GQ" node="47WRMVuScgz" resolve="PARENT" />
-        <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+        <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
       </node>
     </node>
     <node concept="2tJIrI" id="47WRMVuSchh" role="jymVt" />
@@ -4255,7 +4255,7 @@
       <node concept="37vLTG" id="47WRMVuSci9" role="3clF46">
         <property role="TrG5h" value="widthOrientation" />
         <node concept="3uibUv" id="47WRMVuScia" role="1tU5fm">
-          <ref role="3uigEE" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+          <ref role="3uigEE" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
         </node>
       </node>
     </node>
@@ -4283,7 +4283,7 @@
       <node concept="37vLTG" id="47WRMVuScik" role="3clF46">
         <property role="TrG5h" value="heightOrientation" />
         <node concept="3uibUv" id="47WRMVuScil" role="1tU5fm">
-          <ref role="3uigEE" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+          <ref role="3uigEE" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
         </node>
       </node>
     </node>
@@ -4599,7 +4599,7 @@
                         <node concept="3clFbC" id="47WRMVuSckr" role="3clFbw">
                           <node concept="Rm8GO" id="47WRMVuScks" role="3uHU7w">
                             <ref role="Rm8GQ" node="47WRMVuScgz" resolve="PARENT" />
-                            <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                            <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                           </node>
                           <node concept="37vLTw" id="47WRMVuSckt" role="3uHU7B">
                             <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -4646,7 +4646,7 @@
                           </node>
                           <node concept="3clFbC" id="47WRMVuSckK" role="3eO9$A">
                             <node concept="Rm8GO" id="47WRMVuSckL" role="3uHU7w">
-                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                               <ref role="Rm8GQ" node="47WRMVuScg_" resolve="NEXT_SIBLING" />
                             </node>
                             <node concept="37vLTw" id="47WRMVuSckM" role="3uHU7B">
@@ -4706,7 +4706,7 @@
                           <node concept="3clFbC" id="47WRMVuScl9" role="3eO9$A">
                             <node concept="Rm8GO" id="47WRMVuScla" role="3uHU7w">
                               <ref role="Rm8GQ" node="47WRMVuScgA" resolve="NEXT_NEXT_SIBLING" />
-                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="47WRMVuSclb" role="3uHU7B">
                               <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -4755,7 +4755,7 @@
                           <node concept="3clFbC" id="47WRMVuSclu" role="3eO9$A">
                             <node concept="Rm8GO" id="47WRMVuSclv" role="3uHU7w">
                               <ref role="Rm8GQ" node="47WRMVuScg$" resolve="PREVIOUS_SIBLING" />
-                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="47WRMVuSclw" role="3uHU7B">
                               <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -4766,7 +4766,7 @@
                           <node concept="3clFbC" id="47WRMVuScly" role="3eO9$A">
                             <node concept="Rm8GO" id="47WRMVuSclz" role="3uHU7w">
                               <ref role="Rm8GQ" node="47WRMVuScgB" resolve="LINE" />
-                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                             </node>
                             <node concept="37vLTw" id="47WRMVuScl$" role="3uHU7B">
                               <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -4896,7 +4896,7 @@
                         <node concept="3clFbC" id="47WRMVuScmn" role="3clFbw">
                           <node concept="Rm8GO" id="47WRMVuScmo" role="3uHU7w">
                             <ref role="Rm8GQ" node="47WRMVuScgv" resolve="ORIGINAL_CODE_BLOCK" />
-                            <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                           </node>
                           <node concept="37vLTw" id="47WRMVuScmp" role="3uHU7B">
                             <ref role="3cqZAo" node="47WRMVuSch9" resolve="myWidthOrientation" />
@@ -4964,7 +4964,7 @@
                           <node concept="3clFbC" id="47WRMVuScmN" role="3eO9$A">
                             <node concept="Rm8GO" id="47WRMVuScmO" role="3uHU7w">
                               <ref role="Rm8GQ" node="47WRMVuScgw" resolve="LINE_BEGINNING" />
-                              <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                             </node>
                             <node concept="37vLTw" id="47WRMVuScmP" role="3uHU7B">
                               <ref role="3cqZAo" node="47WRMVuSch9" resolve="myWidthOrientation" />
