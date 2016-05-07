@@ -88,6 +88,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -280,7 +281,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="7z1O0N88Ktg" role="3cqZAp" />
         <node concept="3cpWs8" id="7z1O0N88ei8" role="3cqZAp">
           <node concept="3cpWsn" id="7z1O0N88eib" role="3cpWs9">
             <property role="TrG5h" value="grandParentOfSelectedPosition" />
@@ -306,6 +306,17 @@
             </node>
           </node>
         </node>
+        <node concept="34ab3g" id="6aDjCW2JWgh" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="6aDjCW2JXZP" role="34bqiv">
+            <node concept="37vLTw" id="6aDjCW2JYfu" role="3uHU7w">
+              <ref role="3cqZAo" node="7z1O0N88eib" resolve="grandParentOfSelectedPosition" />
+            </node>
+            <node concept="Xl_RD" id="6aDjCW2JWgj" role="3uHU7B">
+              <property role="Xl_RC" value=" grandPa = " />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7z1O0N88ehB" role="3cqZAp">
           <node concept="3clFbS" id="7z1O0N88ehC" role="3clFbx">
             <node concept="3SKdUt" id="7z1O0N88fB2" role="3cqZAp">
@@ -320,7 +331,12 @@
                     <property role="3SKdUp" value="wrapper already marked as one" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="7z1O0N88jI6" role="3cqZAp" />
+                <node concept="34ab3g" id="6aDjCW2JTbh" role="3cqZAp">
+                  <property role="35gtTG" value="warn" />
+                  <node concept="Xl_RD" id="6aDjCW2JTbj" role="34bqiv">
+                    <property role="Xl_RC" value="wrapper already marked" />
+                  </node>
+                </node>
               </node>
               <node concept="1Wc70l" id="7z1O0N88i0D" role="3clFbw">
                 <node concept="2OqwBi" id="7z1O0N88iDi" role="3uHU7w">
@@ -356,6 +372,12 @@
               </node>
               <node concept="3eNFk2" id="7z1O0N88iZ4" role="3eNLev">
                 <node concept="3clFbS" id="7z1O0N88iZ6" role="3eOfB_">
+                  <node concept="34ab3g" id="6aDjCW2JTcV" role="3cqZAp">
+                    <property role="35gtTG" value="warn" />
+                    <node concept="Xl_RD" id="6aDjCW2JTcX" role="34bqiv">
+                      <property role="Xl_RC" value=" is wrapper , but not marked" />
+                    </node>
+                  </node>
                   <node concept="3SKdUt" id="7z1O0N88jG3" role="3cqZAp">
                     <node concept="3SKdUq" id="7z1O0N88jG5" role="3SKWNk">
                       <property role="3SKdUp" value="wrapper not marked, must be done now" />
@@ -544,14 +566,28 @@
               </node>
             </node>
           </node>
-          <node concept="3fqX7Q" id="7z1O0N88f8J" role="3clFbw">
-            <node concept="2OqwBi" id="7z1O0N88f8L" role="3fr31v">
-              <node concept="37vLTw" id="7z1O0N88f8M" role="2Oq$k0">
-                <ref role="3cqZAo" node="7z1O0N88eib" resolve="grandParentOfSelectedPosition" />
+          <node concept="1Wc70l" id="6aDjCW2JZRo" role="3clFbw">
+            <node concept="3fqX7Q" id="7z1O0N88f8J" role="3uHU7B">
+              <node concept="2OqwBi" id="7z1O0N88f8L" role="3fr31v">
+                <node concept="37vLTw" id="7z1O0N88f8M" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7z1O0N88eib" resolve="grandParentOfSelectedPosition" />
+                </node>
+                <node concept="1mIQ4w" id="7z1O0N88hx4" role="2OqNvi">
+                  <node concept="chp4Y" id="7z1O0N88hyr" role="cj9EA">
+                    <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                  </node>
+                </node>
               </node>
-              <node concept="1mIQ4w" id="7z1O0N88hx4" role="2OqNvi">
-                <node concept="chp4Y" id="7z1O0N88hyr" role="cj9EA">
-                  <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+            </node>
+            <node concept="3fqX7Q" id="6aDjCW2K0bx" role="3uHU7w">
+              <node concept="2OqwBi" id="6aDjCW2K0bz" role="3fr31v">
+                <node concept="37vLTw" id="6aDjCW2K0b$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7z1O0N88eib" resolve="grandParentOfSelectedPosition" />
+                </node>
+                <node concept="1mIQ4w" id="6aDjCW2K0b_" role="2OqNvi">
+                  <node concept="chp4Y" id="6aDjCW2K0fd" role="cj9EA">
+                    <ref role="cht4Q" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -698,6 +734,12 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="6aDjCW2JV5N" role="3cqZAp">
+          <node concept="3SKdUq" id="6aDjCW2JV5P" role="3SKWNk">
+            <property role="3SKdUp" value="save wrappee of " />
+          </node>
+        </node>
+        <node concept="3clFbH" id="6aDjCW2JUIt" role="3cqZAp" />
         <node concept="3clFbF" id="5gIwQ3ZQ9nJ" role="3cqZAp">
           <node concept="2OqwBi" id="5gIwQ3ZQ9HI" role="3clFbG">
             <node concept="37vLTw" id="5gIwQ3ZQ9nH" role="2Oq$k0">
