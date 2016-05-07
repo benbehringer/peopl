@@ -331,7 +331,7 @@
     <ref role="1TJDcQ" node="6K8EDSn5d7G" resolve="Module" />
     <node concept="1TJgyj" id="7p8XNs9n6N9" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="moduleIntermediate" />
+      <property role="20kJfa" value="InteractionModuleIntermediate" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
     </node>

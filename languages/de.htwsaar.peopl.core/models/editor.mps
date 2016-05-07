@@ -342,6 +342,9 @@
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
+      <concept id="1139184414036" name="jetbrains.mps.lang.smodel.structure.LinkList_AddNewChildOperation" flags="nn" index="WFELt">
+        <reference id="1139877738879" name="concept" index="1A0vxQ" />
+      </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
@@ -1445,6 +1448,7 @@
     <property role="3GE5qa" value="Extensions" />
     <ref role="1XX52x" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="3EZMnI" id="3fu$_X4zKhv" role="2wV5jI">
+      <ref role="34QXea" node="6aDjCW2KfrN" resolve="ExtendInteractionModule_KeyMap" />
       <node concept="2iRkQZ" id="3fu$_X4zKhw" role="2iSdaV" />
       <node concept="3EZMnI" id="7p8XNs9n6N2" role="3EZMnx">
         <ref role="34QXea" node="2myhIIWIaXW" resolve="MoveModules" />
@@ -5187,6 +5191,34 @@
       </node>
     </node>
     <node concept="2tJIrI" id="47WRMVuScnn" role="jymVt" />
+  </node>
+  <node concept="325Ffw" id="6aDjCW2KfrN">
+    <property role="3GE5qa" value="Extensions" />
+    <property role="TrG5h" value="ExtendInteractionModule_KeyMap" />
+    <ref role="1chiOs" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+    <node concept="2PxR9H" id="6aDjCW2KfrO" role="2QnnpI">
+      <node concept="2Py5lD" id="6aDjCW2KfrP" role="2PyaAO">
+        <property role="2PWKIB" value="ctrl" />
+        <property role="2PWKIS" value="VK_ENTER" />
+      </node>
+      <node concept="2PzhpH" id="6aDjCW2KfrQ" role="2PL9iG">
+        <node concept="3clFbS" id="6aDjCW2KfrR" role="2VODD2">
+          <node concept="3clFbF" id="6aDjCW2KkRt" role="3cqZAp">
+            <node concept="2OqwBi" id="6aDjCW2Km5Z" role="3clFbG">
+              <node concept="2OqwBi" id="6aDjCW2KlsK" role="2Oq$k0">
+                <node concept="0GJ7k" id="6aDjCW2Klqt" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6aDjCW2KlCD" role="2OqNvi">
+                  <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+                </node>
+              </node>
+              <node concept="WFELt" id="6aDjCW2KnEf" role="2OqNvi">
+                <ref role="1A0vxQ" to="xf8r:7p8XNs9n6Nb" resolve="InteractionModuleToModuleIntermediate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

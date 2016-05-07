@@ -3559,7 +3559,7 @@
     <property role="3GE5qa" value="Extensions" />
     <ref role="13h7C2" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
     <node concept="13i0hz" id="7sP5cmKReK3" role="13h7CS">
-      <property role="TrG5h" value="extendInteractionModule" />
+      <property role="TrG5h" value="newInteractionModuleByExtending" />
       <node concept="3Tm1VV" id="7sP5cmKReK4" role="1B3o_S" />
       <node concept="3clFbS" id="7sP5cmKReK5" role="3clF47">
         <node concept="34ab3g" id="7sP5cmKRNgx" role="3cqZAp">
