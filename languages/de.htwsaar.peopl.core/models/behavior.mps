@@ -382,7 +382,7 @@
           <node concept="2OqwBi" id="3qCZdKGXzTv" role="3clFbG">
             <node concept="13iPFW" id="3qCZdKGXzR6" role="2Oq$k0" />
             <node concept="2qgKlT" id="3qCZdKGX$54" role="2OqNvi">
-              <ref role="37wK5l" node="2BKSxwr7gN4" resolve="removeFromModule" />
+              <ref role="37wK5l" node="2BKSxwr7gN4" resolve="disconnectFromModule" />
             </node>
           </node>
         </node>
@@ -390,7 +390,7 @@
           <node concept="2OqwBi" id="3qCZdKGX$en" role="3clFbG">
             <node concept="13iPFW" id="3qCZdKGX$ca" role="2Oq$k0" />
             <node concept="2qgKlT" id="3qCZdKGX$q6" role="2OqNvi">
-              <ref role="37wK5l" node="2BKSxwr7h1e" resolve="removeFromVP" />
+              <ref role="37wK5l" node="2BKSxwr7h1e" resolve="disconnetFromVP" />
             </node>
           </node>
         </node>
@@ -834,7 +834,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="2BKSxwr7gN4" role="13h7CS">
-      <property role="TrG5h" value="removeFromModule" />
+      <property role="TrG5h" value="disconnectFromModule" />
       <node concept="3Tm1VV" id="6pDd21EUO5b" role="1B3o_S" />
       <node concept="3clFbS" id="2BKSxwr7gN6" role="3clF47">
         <node concept="3clFbF" id="49okN1W6kS8" role="3cqZAp">
@@ -859,7 +859,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="2BKSxwr7h1e" role="13h7CS">
-      <property role="TrG5h" value="removeFromVP" />
+      <property role="TrG5h" value="disconnetFromVP" />
       <node concept="3Tm1VV" id="6pDd21EUO3z" role="1B3o_S" />
       <node concept="3clFbS" id="2BKSxwr7h1g" role="3clF47">
         <node concept="3clFbF" id="gnPVcdCCU3" role="3cqZAp">
