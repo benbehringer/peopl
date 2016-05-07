@@ -1712,7 +1712,7 @@
                       <node concept="2Sf5sV" id="7sP5cmKRACH" role="10QFUP" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="7sP5cmKRACI" role="2OqNvi">
+                  <node concept="2qgKlT" id="2N3M9JNo8ae" role="2OqNvi">
                     <ref role="37wK5l" to="kpvh:7p8XNs9nC9p" resolve="newInteractionModuleFromCurrentModule" />
                   </node>
                 </node>
@@ -1748,7 +1748,7 @@
                       </node>
                     </node>
                     <node concept="2qgKlT" id="7sP5cmKRUdy" role="2OqNvi">
-                      <ref role="37wK5l" to="kpvh:7sP5cmKReK3" resolve="extendInteractionModule" />
+                      <ref role="37wK5l" to="kpvh:7sP5cmKReK3" resolve="newInteractionModuleByExtending" />
                     </node>
                   </node>
                 </node>
