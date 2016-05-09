@@ -106,6 +106,7 @@
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
@@ -708,7 +709,7 @@
       <node concept="2iRkQZ" id="3fu$_X4zKOW" role="2iSdaV" />
       <node concept="3EZMnI" id="5AXGYflbkOo" role="3EZMnx">
         <ref role="34QXea" node="2myhIIWIaXW" resolve="MoveModules" />
-        <node concept="2iRfu4" id="5AXGYflbkOp" role="2iSdaV" />
+        <node concept="l2Vlx" id="7M0rfo2kfoI" role="2iSdaV" />
         <node concept="gc7cB" id="5WDNcandRWd" role="3EZMnx">
           <node concept="3VJUX4" id="5WDNcandRWf" role="3YsKMw">
             <node concept="3clFbS" id="5WDNcandRWh" role="2VODD2">
@@ -1604,11 +1605,13 @@
         </node>
         <node concept="3F2HdR" id="7p8XNs9naC2" role="3EZMnx">
           <ref role="1NtTu8" to="xf8r:7p8XNs9n6N9" />
-          <node concept="2iRfu4" id="7p8XNs9naC4" role="2czzBx" />
-          <node concept="3F0ifn" id="7p8XNs9nXm6" role="2czzBI" />
+          <node concept="l2Vlx" id="7M0rfo2khKC" role="2czzBx" />
+          <node concept="3F0ifn" id="7p8XNs9nXm6" role="2czzBI">
+            <property role="ilYzB" value="Give me an existing module name" />
+          </node>
         </node>
-        <node concept="3F0ifn" id="1UDgNqEpgQq" role="3EZMnx" />
-        <node concept="2iRfu4" id="7p8XNs9n6N5" role="2iSdaV" />
+        <node concept="l2Vlx" id="7M0rfo2kfgg" role="2iSdaV" />
+        <node concept="3F0ifn" id="7M0rfo2kfar" role="3EZMnx" />
       </node>
       <node concept="3F0ifn" id="3fu$_X4zKpY" role="3EZMnx">
         <node concept="VPM3Z" id="3fu$_X4zKxb" role="3F10Kt">
