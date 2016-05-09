@@ -2436,18 +2436,6 @@
     </node>
     <node concept="2SaL7w" id="5$T2IgTakea" role="2ZfVeh">
       <node concept="3clFbS" id="5$T2IgTakeb" role="2VODD2">
-        <node concept="34ab3g" id="5rOrZhw_Nwb" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="5rOrZhw_NZ1" role="34bqiv">
-            <node concept="2OqwBi" id="5rOrZhw_O3p" role="3uHU7w">
-              <node concept="2Sf5sV" id="5rOrZhw_O0_" role="2Oq$k0" />
-              <node concept="2yIwOk" id="5rOrZhw_O85" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="5rOrZhw_Nwd" role="3uHU7B">
-              <property role="Xl_RC" value=" Assign : Concept = " />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="gnPVcdBm_3" role="3cqZAp">
           <node concept="3clFbS" id="gnPVcdBm_4" role="3clFbx">
             <node concept="3cpWs6" id="gnPVcdBn4N" role="3cqZAp">
