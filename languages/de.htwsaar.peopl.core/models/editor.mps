@@ -22,7 +22,6 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -335,7 +334,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143221076066" name="jetbrains.mps.lang.smodel.structure.Node_InsertNewPrevSiblingOperation" flags="nn" index="Hik5C">
         <reference id="1143221076069" name="concept" index="Hik5J" />
       </concept>
@@ -815,7 +813,7 @@
                 </node>
                 <node concept="2ShNRf" id="3Sk5uha6M0c" role="37vLTx">
                   <node concept="1pGfFk" id="3Sk5uha6MK2" role="2ShVmc">
-                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                     <node concept="2OqwBi" id="3Sk5uha6OPK" role="37wK5m">
                       <node concept="3TrcHB" id="3Sk5uha6Pkb" role="2OqNvi">
                         <ref role="3TsBF5" to="xf8r:4RpwnfCLxts" resolve="red" />
@@ -832,12 +830,6 @@
                       <node concept="pncrf" id="5WDNcane57X" role="2Oq$k0" />
                       <node concept="3TrcHB" id="3Sk5uha6WpN" role="2OqNvi">
                         <ref role="3TsBF5" to="xf8r:4RpwnfCLxtx" resolve="blue" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="3Sk5uha6YLF" role="37wK5m">
-                      <node concept="pncrf" id="5WDNcane5ll" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="3Sk5uha6Zli" role="2OqNvi">
-                        <ref role="37wK5l" to="kpvh:3Sk5uha6BDa" resolve="getCuratedIndicatorAlpha" />
                       </node>
                     </node>
                   </node>
@@ -1545,7 +1537,7 @@
                 </node>
                 <node concept="2ShNRf" id="7M0rfo2lNAw" role="37vLTx">
                   <node concept="1pGfFk" id="7M0rfo2lNAx" role="2ShVmc">
-                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
                     <node concept="2OqwBi" id="7M0rfo2lNAy" role="37wK5m">
                       <node concept="3TrcHB" id="7M0rfo2lNAz" role="2OqNvi">
                         <ref role="3TsBF5" to="xf8r:4RpwnfCLxts" resolve="red" />
@@ -1562,12 +1554,6 @@
                       <node concept="pncrf" id="7M0rfo2lNAD" role="2Oq$k0" />
                       <node concept="3TrcHB" id="7M0rfo2lNAE" role="2OqNvi">
                         <ref role="3TsBF5" to="xf8r:4RpwnfCLxtx" resolve="blue" />
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="7M0rfo2lNAF" role="37wK5m">
-                      <node concept="pncrf" id="7M0rfo2lNAG" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="7M0rfo2lNAH" role="2OqNvi">
-                        <ref role="37wK5l" to="kpvh:3Sk5uha6BDa" resolve="getCuratedIndicatorAlpha" />
                       </node>
                     </node>
                   </node>
