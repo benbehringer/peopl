@@ -258,17 +258,37 @@
             <property role="3SKdUp" value="Clean Buffer with Vps" />
           </node>
         </node>
-        <node concept="3clFbF" id="y7va8W7szY" role="3cqZAp">
-          <node concept="2OqwBi" id="y7va8W7sKC" role="3clFbG">
-            <node concept="2YIFZM" id="y7va8W7sGw" role="2Oq$k0">
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
-              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+        <node concept="3clFbF" id="2wh7ULXSR7i" role="3cqZAp">
+          <node concept="2OqwBi" id="2wh7ULXSRan" role="3clFbG">
+            <node concept="2OqwBi" id="2wh7ULXSR7k" role="2Oq$k0">
+              <node concept="37vLTw" id="2wh7ULXSR7l" role="2Oq$k0">
+                <ref role="3cqZAo" node="2yX483RIuJV" resolve="project" />
+              </node>
+              <node concept="liA8E" id="2wh7ULXSR7m" role="2OqNvi">
+                <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
             </node>
-            <node concept="liA8E" id="y7va8W7sPB" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            <node concept="liA8E" id="2wh7ULXSR_X" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+              <node concept="1bVj0M" id="2wh7ULXSREa" role="37wK5m">
+                <node concept="3clFbS" id="2wh7ULXSREb" role="1bW5cS">
+                  <node concept="3clFbF" id="2wh7ULXSRFj" role="3cqZAp">
+                    <node concept="2OqwBi" id="2wh7ULXSRFk" role="3clFbG">
+                      <node concept="2YIFZM" id="2wh7ULXSRFl" role="2Oq$k0">
+                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                        <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+                      </node>
+                      <node concept="liA8E" id="2wh7ULXSRFm" role="2OqNvi">
+                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2wh7ULXSR51" role="3cqZAp" />
         <node concept="3clFbH" id="y7va8W7t1I" role="3cqZAp" />
         <node concept="3SKdUt" id="2yX483RIada" role="3cqZAp">
           <node concept="3SKdUq" id="2yX483RIadc" role="3SKWNk">
@@ -474,15 +494,40 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="2wh7ULXSR4v" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="2wh7ULXSR4w" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
       <node concept="3clFbS" id="5rOrZhw_7Kw" role="3clF47">
-        <node concept="3clFbF" id="5rOrZhw_7Mo" role="3cqZAp">
-          <node concept="2OqwBi" id="5rOrZhw_7Mp" role="3clFbG">
-            <node concept="2YIFZM" id="5rOrZhw_7Mq" role="2Oq$k0">
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
-              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+        <node concept="3clFbF" id="2wh7ULXSRJP" role="3cqZAp">
+          <node concept="2OqwBi" id="2wh7ULXSRJR" role="3clFbG">
+            <node concept="2OqwBi" id="2wh7ULXSRJS" role="2Oq$k0">
+              <node concept="37vLTw" id="2wh7ULXSRJT" role="2Oq$k0">
+                <ref role="3cqZAo" node="2wh7ULXSR4v" resolve="project" />
+              </node>
+              <node concept="liA8E" id="2wh7ULXSRJU" role="2OqNvi">
+                <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+              </node>
             </node>
-            <node concept="liA8E" id="5rOrZhw_7Mr" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            <node concept="liA8E" id="2wh7ULXSRJV" role="2OqNvi">
+              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+              <node concept="1bVj0M" id="2wh7ULXSRJW" role="37wK5m">
+                <node concept="3clFbS" id="2wh7ULXSRJX" role="1bW5cS">
+                  <node concept="3clFbF" id="2wh7ULXSRJY" role="3cqZAp">
+                    <node concept="2OqwBi" id="2wh7ULXSRJZ" role="3clFbG">
+                      <node concept="2YIFZM" id="2wh7ULXSRK0" role="2Oq$k0">
+                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                        <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+                      </node>
+                      <node concept="liA8E" id="2wh7ULXSRK1" role="2OqNvi">
+                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -526,9 +571,20 @@
           <node concept="2YIFZM" id="5rOrZhw_bnz" role="3clFbG">
             <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBuffer" />
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
+            <node concept="2OqwBi" id="2wh7ULXTgXi" role="37wK5m">
+              <node concept="2WthIp" id="2wh7ULXTgXl" role="2Oq$k0" />
+              <node concept="1DTwFV" id="2wh7ULXTgXn" role="2OqNvi">
+                <ref role="2WH_rO" node="2wh7ULXTgWE" resolve="currentProject" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1DS2jV" id="2wh7ULXTgWE" role="1NuT2Z">
+      <property role="TrG5h" value="currentProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="2wh7ULXTgWF" role="1oa70y" />
     </node>
   </node>
 </model>
