@@ -120,6 +120,9 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -466,11 +469,32 @@
       <node concept="3Tm1VV" id="2yX483RIhf0" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2yX483RIhbk" role="jymVt" />
+    <node concept="2YIFZL" id="5rOrZhw_7Kt" role="jymVt">
+      <property role="TrG5h" value="cleanUpBuffer" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5rOrZhw_7Kw" role="3clF47">
+        <node concept="3clFbF" id="5rOrZhw_7Mo" role="3cqZAp">
+          <node concept="2OqwBi" id="5rOrZhw_7Mp" role="3clFbG">
+            <node concept="2YIFZM" id="5rOrZhw_7Mq" role="2Oq$k0">
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5rOrZhw_7Mr" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rOrZhw_7BV" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rOrZhw_7Kn" role="3clF45" />
+    </node>
     <node concept="3Tm1VV" id="2yX483RIhaW" role="1B3o_S" />
   </node>
   <node concept="sE7Ow" id="2yX483RIDAi">
     <property role="TrG5h" value="CleanUpProject" />
-    <property role="2uzpH1" value="CleanUp Refs in Project" />
+    <property role="2uzpH1" value="CleanUp whole Project" />
     <node concept="1DS2jV" id="7boOmZ3Yw9a" role="1NuT2Z">
       <property role="TrG5h" value="currentProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -488,6 +512,20 @@
                 <ref role="2WH_rO" node="7boOmZ3Yw9a" resolve="currentProject" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5rOrZhw_bfd">
+    <property role="TrG5h" value="CleanBuffer" />
+    <property role="2uzpH1" value="Clean Buffer" />
+    <node concept="tnohg" id="5rOrZhw_bfe" role="tncku">
+      <node concept="3clFbS" id="5rOrZhw_bff" role="2VODD2">
+        <node concept="3clFbF" id="5rOrZhw_bmZ" role="3cqZAp">
+          <node concept="2YIFZM" id="5rOrZhw_bnz" role="3clFbG">
+            <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBuffer" />
+            <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
           </node>
         </node>
       </node>

@@ -19,6 +19,7 @@
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">c9a56e63-3222-4b77-a7ff-0dd9a6ca29db(de.htwsaar.peopl.core#3071473864244849393)</dependency>
         <dependency reexport="false">cbe58ee7-1899-4d23-b6e7-a02cdc06f202(de.htwsaar.peopl.dep.baselang#8983101612966976582)</dependency>
+        <dependency reexport="false">de1c2f6b-fb29-4ab8-a4b9-29364d7dc761(de.htwsaar.peopl.core.runtime)</dependency>
       </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
@@ -52,6 +53,7 @@
         <module reference="c9a56e63-3222-4b77-a7ff-0dd9a6ca29db(de.htwsaar.peopl.core#3071473864244849393)" version="0" />
         <module reference="42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.config)" version="0" />
         <module reference="25c04871-4119-41c0-bd98-e7f0992f3991(de.htwsaar.peopl.core.config#6563451082523326250)" version="0" />
+        <module reference="de1c2f6b-fb29-4ab8-a4b9-29364d7dc761(de.htwsaar.peopl.core.runtime)" version="0" />
         <module reference="cbe58ee7-1899-4d23-b6e7-a02cdc06f202(de.htwsaar.peopl.dep.baselang#8983101612966976582)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="ed6d7656-532c-4bc2-81d1-af945aeb8280(jetbrains.mps.baseLanguage.blTypes)" version="0" />
