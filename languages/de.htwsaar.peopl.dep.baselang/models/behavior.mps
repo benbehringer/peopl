@@ -128,7 +128,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -373,6 +373,7 @@
         <child id="1197687035757" name="valueType" index="3rHtpV" />
       </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1225730411176" name="jetbrains.mps.baseLanguage.collections.structure.FindLastOperation" flags="nn" index="1zesIP" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -5043,17 +5044,17 @@
       </node>
       <node concept="TZ5HA" id="6sZEllb4fx1" role="TZ5H$">
         <node concept="1dT_AC" id="6sZEllb4fx2" role="1dT_Ay">
-          <property role="1dT_AB" value="   (1) walk outwards from the baseCodeBlock and gather the order of statements assign to a color ( info saved in dataPrev and dataNext)" />
+          <property role="1dT_AB" value="   (1) walk outwards from the baseCodeBlock and gathers the order of statements assign to a color ( info saved in dataPrev and dataNext)" />
         </node>
       </node>
       <node concept="TZ5HA" id="6sZEllb4fx9" role="TZ5H$">
         <node concept="1dT_AC" id="6sZEllb4fxa" role="1dT_Ay">
-          <property role="1dT_AB" value="   (2) create a flat structure under the mehtod ( depth = 1) . this makes step 3 easier, because we dont have to empty the wrappers anymore" />
+          <property role="1dT_AB" value="   (2) create a flat structure under the mehtod ( depth = 1) . this makes step 4 easier, because we dont have to empty the wrappers anymore" />
         </node>
       </node>
       <node concept="TZ5HA" id="6sZEllb4fxj" role="TZ5H$">
         <node concept="1dT_AC" id="6sZEllb4fxk" role="1dT_Ay">
-          <property role="1dT_AB" value="   (3) The statements must be &quot;detached&quot; ( except baseBlock ), so that there are now sideeffects between the alredy ordered statments " />
+          <property role="1dT_AB" value="   (3) The statements must be &quot;detached&quot; ( except baseBlock and wrappers ), so that there are no sideeffects between the alredy ordered statments " />
         </node>
       </node>
       <node concept="TZ5HA" id="vpIMhOKjA2" role="TZ5H$">
@@ -5063,12 +5064,12 @@
       </node>
       <node concept="TZ5HA" id="vpIMhOKj_f" role="TZ5H$">
         <node concept="1dT_AC" id="vpIMhOKj_g" role="1dT_Ay">
-          <property role="1dT_AB" value="   (4) rearrange to the statents in the mehtod. move** the statements in the maps in order above and below the basecodestatement." />
+          <property role="1dT_AB" value="   (4) rearrange the statents in the method. move** the statements from the maps in order above and below the basecodestatement." />
         </node>
       </node>
       <node concept="TZ5HA" id="6sZEllb4fxv" role="TZ5H$">
         <node concept="1dT_AC" id="6sZEllb4fxw" role="1dT_Ay">
-          <property role="1dT_AB" value="       if a wrapper is reached, all the already ordered code ( representented by upperBorder and lowerBorder of the ordered code ) is moved** into the wrapper" />
+          <property role="1dT_AB" value="       if a wrapper is reached, all the already ordered code ( representented by upperBorder and lowerBorder ) is moved** into the wrapper" />
         </node>
       </node>
       <node concept="TZ5HA" id="6sZEllb4fxH" role="TZ5H$">
@@ -5158,6 +5159,17 @@
       <node concept="3Tm6S6" id="2wh7ULXM8iy" role="1B3o_S" />
       <node concept="3clFbT" id="2wh7ULXM8j9" role="33vP2m" />
     </node>
+    <node concept="312cEg" id="1b04$NJmqfr" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="parameterNotOk" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1b04$NJmmab" role="1B3o_S" />
+      <node concept="10P_77" id="1b04$NJmqfp" role="1tU5fm" />
+      <node concept="3clFbT" id="1b04$NJmuMO" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2wh7ULXRB0c" role="jymVt" />
     <node concept="312cEg" id="2wh7ULXRwx0" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -5206,6 +5218,49 @@
     <node concept="3clFbW" id="2wh7ULXKlXX" role="jymVt">
       <node concept="3cqZAl" id="2wh7ULXKlXY" role="3clF45" />
       <node concept="3clFbS" id="2wh7ULXKlY0" role="3clF47">
+        <node concept="3clFbJ" id="1b04$NJmciC" role="3cqZAp">
+          <node concept="3clFbS" id="1b04$NJmciE" role="3clFbx">
+            <node concept="34ab3g" id="1b04$NJmhVH" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="Xl_RD" id="1b04$NJmhVJ" role="34bqiv">
+                <property role="Xl_RC" value="Method_Reorder -&gt; Constructor : Parameter not ok" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1b04$NJmuOc" role="3cqZAp">
+              <node concept="37vLTI" id="1b04$NJmuR2" role="3clFbG">
+                <node concept="3clFbT" id="1b04$NJmuSz" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="1b04$NJmuOa" role="37vLTJ">
+                  <ref role="3cqZAo" node="1b04$NJmqfr" resolve="parameterNotOk" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="1b04$NJmuUy" role="3cqZAp" />
+          </node>
+          <node concept="1Wc70l" id="1b04$NJmfdM" role="3clFbw">
+            <node concept="2OqwBi" id="1b04$NJmfPa" role="3uHU7w">
+              <node concept="37vLTw" id="1b04$NJmfgO" role="2Oq$k0">
+                <ref role="3cqZAo" node="2wh7ULXKlYu" resolve="allModulesInOrder" />
+              </node>
+              <node concept="1v1jN8" id="1b04$NJmhTL" role="2OqNvi" />
+            </node>
+            <node concept="1Wc70l" id="1b04$NJme0F" role="3uHU7B">
+              <node concept="3clFbC" id="1b04$NJmdYs" role="3uHU7B">
+                <node concept="37vLTw" id="1b04$NJmdNN" role="3uHU7B">
+                  <ref role="3cqZAo" node="2wh7ULXKlYc" resolve="methodToOrdeer" />
+                </node>
+                <node concept="10Nm6u" id="1b04$NJme0c" role="3uHU7w" />
+              </node>
+              <node concept="3clFbC" id="1b04$NJmfbW" role="3uHU7w">
+                <node concept="37vLTw" id="1b04$NJme3e" role="3uHU7B">
+                  <ref role="3cqZAo" node="2wh7ULXKlYu" resolve="allModulesInOrder" />
+                </node>
+                <node concept="10Nm6u" id="1b04$NJmfd0" role="3uHU7w" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2wh7ULXKL$0" role="3cqZAp">
           <node concept="37vLTI" id="2wh7ULXKLHz" role="3clFbG">
             <node concept="37vLTw" id="2wh7ULXKLLJ" role="37vLTx">
@@ -5325,8 +5380,8 @@
         <node concept="3clFbF" id="2wh7ULXKMEd" role="3cqZAp">
           <node concept="37vLTI" id="2wh7ULXKNlT" role="3clFbG">
             <node concept="2OqwBi" id="2wh7ULXKO4j" role="37vLTx">
-              <node concept="37vLTw" id="2wh7ULXM097" role="2Oq$k0">
-                <ref role="3cqZAo" node="2wh7ULXKlYu" resolve="allModulesInOrder" />
+              <node concept="37vLTw" id="1b04$NJnnR$" role="2Oq$k0">
+                <ref role="3cqZAo" node="2wh7ULXKmN4" resolve="allModules" />
               </node>
               <node concept="1aUR6E" id="2wh7ULXKPgl" role="2OqNvi">
                 <node concept="1bVj0M" id="2wh7ULXKPgn" role="23t8la">
@@ -5617,11 +5672,24 @@
               </node>
             </node>
           </node>
-          <node concept="1rXfSq" id="2wh7ULXKmGI" role="3clFbw">
-            <ref role="37wK5l" node="2wh7ULXKmaQ" resolve="canBeOrdered" />
+          <node concept="1Wc70l" id="1b04$NJmuWw" role="3clFbw">
+            <node concept="3fqX7Q" id="1b04$NJmzhn" role="3uHU7B">
+              <node concept="37vLTw" id="1b04$NJmzjj" role="3fr31v">
+                <ref role="3cqZAo" node="1b04$NJmqfr" resolve="parameterNotOk" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="2wh7ULXKmGI" role="3uHU7w">
+              <ref role="37wK5l" node="2wh7ULXKmaQ" resolve="canBeOrdered" />
+            </node>
           </node>
           <node concept="9aQIb" id="2wh7ULXKmQc" role="9aQIa">
             <node concept="3clFbS" id="2wh7ULXKmQd" role="9aQI4">
+              <node concept="34ab3g" id="1b04$NJmBfk" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <node concept="Xl_RD" id="1b04$NJmBfm" role="34bqiv">
+                  <property role="Xl_RC" value="Cannot be Ordered or Constructor parameter not ok" />
+                </node>
+              </node>
               <node concept="3cpWs6" id="2wh7ULXKn1q" role="3cqZAp">
                 <node concept="3clFbT" id="2wh7ULXKn2l" role="3cqZAk" />
               </node>
@@ -5690,19 +5758,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="vpIMhOJBMs" role="3clF47">
-        <node concept="3clFbJ" id="vpIMhONr56" role="3cqZAp">
-          <node concept="3clFbS" id="vpIMhONr58" role="3clFbx">
-            <node concept="34ab3g" id="vpIMhONrgs" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="vpIMhONrgt" role="34bqiv">
-                <property role="Xl_RC" value="--- DETACHING ---" />
-              </node>
-            </node>
-          </node>
-          <node concept="37vLTw" id="vpIMhONrf_" role="3clFbw">
-            <ref role="3cqZAo" node="2wh7ULXM6bW" resolve="logging" />
-          </node>
-        </node>
         <node concept="2Gpval" id="vpIMhOKM9f" role="3cqZAp">
           <node concept="2GrKxI" id="vpIMhOKM9g" role="2Gsz3X">
             <property role="TrG5h" value="statement" />
@@ -6066,44 +6121,6 @@
                 </node>
                 <node concept="2$JKZl" id="5Xrza7sWZbh" role="3cqZAp">
                   <node concept="3clFbS" id="5Xrza7sWZbi" role="2LFqv$">
-                    <node concept="1X3_iC" id="5QUZ7YkvGFV" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="5Xrza7sWZbj" role="8Wnug">
-                        <node concept="2OqwBi" id="5Xrza7sWZbk" role="3clFbG">
-                          <node concept="37vLTw" id="5Xrza7sWZbl" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Xrza7sVbGg" resolve="prevBounds" />
-                          </node>
-                          <node concept="HtX7F" id="5Xrza7sWZbm" role="2OqNvi">
-                            <node concept="37vLTw" id="5Xrza7sWZbn" role="HtX7I">
-                              <ref role="3cqZAo" node="5Xrza7sWRGS" resolve="toBeAdded_Prev" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1X3_iC" id="5QUZ7YkvGFW" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="5Xrza7sWZbo" role="8Wnug">
-                        <node concept="37vLTI" id="5Xrza7sWZbp" role="3clFbG">
-                          <node concept="10QFUN" id="4Z6F5ON4hja" role="37vLTx">
-                            <node concept="3Tqbb2" id="4Z6F5ON4hjX" role="10QFUM">
-                              <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-                            </node>
-                            <node concept="2OqwBi" id="4Z6F5ON4h4U" role="10QFUP">
-                              <node concept="37vLTw" id="4Z6F5ON4h27" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5Xrza7sVbGg" resolve="prevBounds" />
-                              </node>
-                              <node concept="YBYNd" id="4Z6F5ON4hfS" role="2OqNvi" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="5Xrza7sWZbr" role="37vLTJ">
-                            <ref role="3cqZAo" node="5Xrza7sVbGg" resolve="prevBounds" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbF" id="24HAOCvmSSz" role="3cqZAp">
                       <node concept="37vLTI" id="24HAOCvmSWg" role="3clFbG">
                         <node concept="1rXfSq" id="24HAOCvmT0l" role="37vLTx">
@@ -6170,46 +6187,6 @@
                 </node>
                 <node concept="2$JKZl" id="5Xrza7sWZbK" role="3cqZAp">
                   <node concept="3clFbS" id="5Xrza7sWZbL" role="2LFqv$">
-                    <node concept="1X3_iC" id="5QUZ7YkvGDE" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="5Xrza7sWZbM" role="8Wnug">
-                        <node concept="2OqwBi" id="5Xrza7sWZbN" role="3clFbG">
-                          <node concept="37vLTw" id="5Xrza7sWZbO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5Xrza7sVbYP" resolve="nextBounds" />
-                          </node>
-                          <node concept="HtI8k" id="5Xrza7sWZbP" role="2OqNvi">
-                            <node concept="37vLTw" id="5Xrza7sWZbQ" role="HtI8F">
-                              <ref role="3cqZAo" node="5Xrza7sWSbX" resolve="toBeAdded_Next" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1X3_iC" id="5QUZ7YkvGDF" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="3clFbF" id="5Xrza7sWZbR" role="8Wnug">
-                        <node concept="37vLTI" id="5Xrza7sWZbS" role="3clFbG">
-                          <node concept="1eOMI4" id="4Z6F5ON4hTU" role="37vLTx">
-                            <node concept="10QFUN" id="4Z6F5ON4hTR" role="1eOMHV">
-                              <node concept="3Tqbb2" id="4Z6F5ON4hVi" role="10QFUM">
-                                <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-                              </node>
-                              <node concept="2OqwBi" id="4Z6F5ON4hqy" role="10QFUP">
-                                <node concept="YCak7" id="4Z6F5ON4hPV" role="2OqNvi" />
-                                <node concept="37vLTw" id="4Z6F5ON4hJ5" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5Xrza7sVbYP" resolve="nextBounds" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="5Xrza7sWZbU" role="37vLTJ">
-                            <ref role="3cqZAo" node="5Xrza7sVbYP" resolve="nextBounds" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbF" id="24HAOCvmTcz" role="3cqZAp">
                       <node concept="37vLTI" id="24HAOCvmTfm" role="3clFbG">
                         <node concept="1rXfSq" id="24HAOCvmThq" role="37vLTx">
