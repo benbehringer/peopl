@@ -925,7 +925,7 @@
       <node concept="3clFbS" id="7VYDLKH$c9I" role="2VODD2">
         <node concept="3clFbF" id="7VYDLKH$ceM" role="3cqZAp">
           <node concept="Xl_RD" id="7VYDLKH$ceL" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Cleanup broken connections &amp; buffer " />
+            <property role="Xl_RC" value="@PEoPL-Housekeeping -&gt; Cleanup broken connections And buffer " />
           </node>
         </node>
       </node>
