@@ -892,13 +892,13 @@
               <node concept="3clFbH" id="3P6MyhRvZrA" role="3cqZAp" />
               <node concept="3SKdUt" id="3P6MyhRvZrB" role="3cqZAp">
                 <node concept="3SKdUq" id="3P6MyhRvZrC" role="3SKWNk">
-                  <property role="3SKdUp" value="wow crazy" />
+                  <property role="3SKdUp" value="pampel 6" />
                 </node>
               </node>
               <node concept="3clFbH" id="3P6MyhRvZrD" role="3cqZAp" />
               <node concept="3SKdUt" id="3P6MyhRvZrE" role="3cqZAp">
                 <node concept="3SKdUq" id="3P6MyhRvZrF" role="3SKWNk">
-                  <property role="3SKdUp" value="even more more pamplemuse" />
+                  <property role="3SKdUp" value="pampel 7" />
                 </node>
               </node>
             </node>
