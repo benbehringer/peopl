@@ -131,7 +131,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -2551,7 +2551,7 @@
       <property role="TrG5h" value="mergePeoplBlocks" />
       <node concept="3Tm1VV" id="6LVtGcozEpk" role="1B3o_S" />
       <node concept="3clFbS" id="6LVtGcozEpl" role="3clF47">
-        <node concept="3clFbH" id="6LVtGcozEx5" role="3cqZAp" />
+        <node concept="3clFbH" id="6LZeFKK1Se$" role="3cqZAp" />
         <node concept="2Gpval" id="6LVtGcozExQ" role="3cqZAp">
           <node concept="2GrKxI" id="6LVtGcozExS" role="2Gsz3X">
             <property role="TrG5h" value="block" />
@@ -2629,11 +2629,57 @@
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="5SRm4pnBMJp" role="1B3o_S" />
       <node concept="3Tqbb2" id="5SRm4pnBNsf" role="3clF45">
-        <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+        <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
       </node>
       <node concept="3clFbS" id="5SRm4pnBMJr" role="3clF47">
         <node concept="3clFbJ" id="5SRm4pnBNtt" role="3cqZAp">
           <node concept="3clFbS" id="5SRm4pnBNtv" role="3clFbx">
+            <node concept="34ab3g" id="6LZeFKK4Bga" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="6LZeFKK4Bgc" role="34bqiv">
+                <property role="Xl_RC" value="add-next" />
+              </node>
+            </node>
+            <node concept="1X3_iC" id="6LZeFKK7aqd" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbJ" id="6LZeFKK2Uh0" role="8Wnug">
+                <node concept="3clFbS" id="6LZeFKK2Uh1" role="3clFbx">
+                  <node concept="3SKdUt" id="6LZeFKK2Uh2" role="3cqZAp">
+                    <node concept="3SKdUq" id="6LZeFKK2Uh3" role="3SKWNk">
+                      <property role="3SKdUp" value="there is no prev-sibling and we don't include the start statement" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="6LZeFKK2Uh4" role="3cqZAp">
+                    <node concept="3SKdUq" id="6LZeFKK2Uh5" role="3SKWNk">
+                      <property role="3SKdUp" value="=&gt; there is no node and we need to return start statement" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs6" id="6LZeFKK2Uh6" role="3cqZAp">
+                    <node concept="37vLTw" id="6LZeFKK2Uh7" role="3cqZAk">
+                      <ref role="3cqZAo" node="5SRm4pnBNsj" resolve="startStatement" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1Wc70l" id="6LZeFKK2Uh8" role="3clFbw">
+                  <node concept="2OqwBi" id="6LZeFKK2Uh9" role="3uHU7B">
+                    <node concept="2OqwBi" id="6LZeFKK2Uha" role="2Oq$k0">
+                      <node concept="37vLTw" id="6LZeFKK2Uhb" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5SRm4pnBNsj" resolve="startStatement" />
+                      </node>
+                      <node concept="YCak7" id="6LZeFKK2WuP" role="2OqNvi" />
+                    </node>
+                    <node concept="3w_OXm" id="6LZeFKK2Uhd" role="2OqNvi" />
+                  </node>
+                  <node concept="3fqX7Q" id="6LZeFKK2Uhe" role="3uHU7w">
+                    <node concept="37vLTw" id="6LZeFKK2Uhf" role="3fr31v">
+                      <ref role="3cqZAo" node="5SRm4pnBNOy" resolve="includeStartStatement" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6LZeFKK2QcH" role="3cqZAp" />
             <node concept="3clFbJ" id="6LZeFKJRAHK" role="3cqZAp">
               <node concept="3clFbS" id="6LZeFKJRAHM" role="3clFbx">
                 <node concept="3clFbH" id="6LZeFKJUlQL" role="3cqZAp" />
@@ -2752,7 +2798,6 @@
                     <ref role="3cqZAo" node="5SRm4pnBNtR" resolve="newBlock" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="6LZeFKJUhOu" role="3cqZAp" />
               </node>
               <node concept="2OqwBi" id="6LZeFKJRB2P" role="3clFbw">
                 <node concept="2OqwBi" id="6LZeFKJRALq" role="2Oq$k0">
@@ -2770,9 +2815,68 @@
           </node>
           <node concept="9aQIb" id="5SRm4pnCxrv" role="9aQIa">
             <node concept="3clFbS" id="5SRm4pnCxrw" role="9aQI4">
+              <node concept="3clFbH" id="6LZeFKK2nuL" role="3cqZAp" />
+              <node concept="34ab3g" id="6LZeFKK4_5W" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="6LZeFKK4_5Y" role="34bqiv">
+                  <property role="Xl_RC" value="add-prev" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6LZeFKK4z3q" role="3cqZAp" />
+              <node concept="1X3_iC" id="6LZeFKK7csW" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="3clFbJ" id="6LZeFKK27g7" role="8Wnug">
+                  <node concept="3clFbS" id="6LZeFKK27g9" role="3clFbx">
+                    <node concept="34ab3g" id="6LZeFKK4FlP" role="3cqZAp">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="Xl_RD" id="6LZeFKK4FlR" role="34bqiv">
+                        <property role="Xl_RC" value="return start statement" />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="6LZeFKK2xQq" role="3cqZAp">
+                      <node concept="3SKdUq" id="6LZeFKK2xQr" role="3SKWNk">
+                        <property role="3SKdUp" value="there is no prev-sibling and we don't include the start statement" />
+                      </node>
+                    </node>
+                    <node concept="3SKdUt" id="6LZeFKK2xQI" role="3cqZAp">
+                      <node concept="3SKdUq" id="6LZeFKK2xQJ" role="3SKWNk">
+                        <property role="3SKdUp" value="=&gt; there is no node and we need to return start statement" />
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="6LZeFKK2xQW" role="3cqZAp">
+                      <node concept="37vLTw" id="6LZeFKK2zSv" role="3cqZAk">
+                        <ref role="3cqZAo" node="5SRm4pnBNsj" resolve="startStatement" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1Wc70l" id="6LZeFKK29Q4" role="3clFbw">
+                    <node concept="2OqwBi" id="6LZeFKK29ID" role="3uHU7B">
+                      <node concept="2OqwBi" id="6LZeFKK29sM" role="2Oq$k0">
+                        <node concept="37vLTw" id="6LZeFKK29pR" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5SRm4pnBNsj" resolve="startStatement" />
+                        </node>
+                        <node concept="YBYNd" id="6LZeFKK2vMj" role="2OqNvi" />
+                      </node>
+                      <node concept="3w_OXm" id="6LZeFKK29Ms" role="2OqNvi" />
+                    </node>
+                    <node concept="3fqX7Q" id="6LZeFKK2vND" role="3uHU7w">
+                      <node concept="37vLTw" id="6LZeFKK2vNF" role="3fr31v">
+                        <ref role="3cqZAo" node="5SRm4pnBNOy" resolve="includeStartStatement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="6LZeFKK2pwQ" role="3cqZAp" />
               <node concept="3clFbJ" id="6LZeFKJRCaD" role="3cqZAp">
                 <node concept="3clFbS" id="6LZeFKJRCaF" role="3clFbx">
-                  <node concept="3clFbH" id="6LZeFKJUpTg" role="3cqZAp" />
+                  <node concept="34ab3g" id="6LZeFKK4HpV" role="3cqZAp">
+                    <property role="35gtTG" value="warn" />
+                    <node concept="Xl_RD" id="6LZeFKK4HpX" role="34bqiv">
+                      <property role="Xl_RC" value="start statement is not null" />
+                    </node>
+                  </node>
                   <node concept="3cpWs8" id="6LZeFKJS4Js" role="3cqZAp">
                     <node concept="3cpWsn" id="6LZeFKJS4Jt" role="3cpWs9">
                       <property role="TrG5h" value="newBlock" />
