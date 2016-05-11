@@ -224,6 +224,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -5672,9 +5673,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="10P_77" id="2wh7ULXM4eA" role="1tU5fm" />
       <node concept="3Tm6S6" id="2wh7ULXM8iy" role="1B3o_S" />
-      <node concept="3clFbT" id="2wh7ULXM8j9" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="2wh7ULXM8j9" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="2wh7ULXRB0c" role="jymVt" />
     <node concept="312cEg" id="2wh7ULXRwx0" role="jymVt">
@@ -6804,7 +6803,64 @@
       <node concept="3Tm6S6" id="5Xrza7sUX8W" role="1B3o_S" />
       <node concept="3cqZAl" id="5Xrza7sUZ5D" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="5Xrza7sTMSe" role="jymVt" />
+    <node concept="2tJIrI" id="6sZEllb4fyf" role="jymVt" />
+    <node concept="2tJIrI" id="6sZEllb4weD" role="jymVt" />
+    <node concept="3clFb_" id="6sZEllb4CQ$" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="moveAndTryMerge" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6sZEllb4CQB" role="3clF47">
+        <node concept="3clFbJ" id="6sZEllb4Twk" role="3cqZAp">
+          <node concept="3clFbS" id="6sZEllb4Twm" role="3clFbx">
+            <node concept="3clFbF" id="6sZEllb4TyP" role="3cqZAp">
+              <node concept="2OqwBi" id="6sZEllb4T$b" role="3clFbG">
+                <node concept="37vLTw" id="6sZEllb4TyN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6sZEllb4Lj_" resolve="target" />
+                </node>
+                <node concept="HtI8k" id="6sZEllb4T_S" role="2OqNvi">
+                  <node concept="37vLTw" id="6sZEllb4TBj" role="HtI8F">
+                    <ref role="3cqZAo" node="6sZEllb4HgA" resolve="nodeToBeMove" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="6sZEllb4Txy" role="3clFbw">
+            <ref role="3cqZAo" node="6sZEllb4Pm7" resolve="addAsPrevToTarget" />
+          </node>
+          <node concept="9aQIb" id="6sZEllb4TxG" role="9aQIa">
+            <node concept="3clFbS" id="6sZEllb4TxH" role="9aQI4" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6sZEllb4TCb" role="3cqZAp">
+          <node concept="37vLTw" id="6sZEllb4XI7" role="3cqZAk">
+            <ref role="3cqZAo" node="6sZEllb4HgA" resolve="nodeToBeMove" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6sZEllb4$rJ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6sZEllb4CPA" role="3clF45">
+        <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+      </node>
+      <node concept="37vLTG" id="6sZEllb4HgA" role="3clF46">
+        <property role="TrG5h" value="nodeToBeMove" />
+        <node concept="3Tqbb2" id="6sZEllb4Hg_" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6sZEllb4Lj_" role="3clF46">
+        <property role="TrG5h" value="target" />
+        <node concept="3Tqbb2" id="6sZEllb4PlW" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6sZEllb4Pm7" role="3clF46">
+        <property role="TrG5h" value="addAsPrevToTarget" />
+        <node concept="10P_77" id="6sZEllb4TuN" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="6nJ_Lom26o8" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="wrap" />
@@ -7977,6 +8033,48 @@
     <node concept="2tJIrI" id="2wh7ULXKmap" role="jymVt" />
     <node concept="2tJIrI" id="2wh7ULXKjnZ" role="jymVt" />
     <node concept="3Tm1VV" id="2wh7ULXKjmH" role="1B3o_S" />
+    <node concept="3UR2Jj" id="6sZEllb4bMW" role="lGtFl">
+      <node concept="TZ5HA" id="6sZEllb4bMX" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4bMY" role="1dT_Ay">
+          <property role="1dT_AB" value="Takes the Order of Modules in the given list in the constructor and reorders the method according to that list." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fwV" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fwW" role="1dT_Ay">
+          <property role="1dT_AB" value="Therefore 3 steps are taken :" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fx1" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fx2" role="1dT_Ay">
+          <property role="1dT_AB" value="   (1) walk outwards from the baseCodeBlock and gather the order of statements assign to a color ( info saved in dataPrev and dataNext)" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fx9" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fxa" role="1dT_Ay">
+          <property role="1dT_AB" value="   (2) create a flat structure under the mehtod ( depth = 1) . this makes step 3 easier, because we dont have to empty the wrappers anymore" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fxj" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fxk" role="1dT_Ay">
+          <property role="1dT_AB" value="   (3) rearrange to the statents in the mehtod. move** the statements in the maps in order above and below the basecodestatement." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fxv" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fxw" role="1dT_Ay">
+          <property role="1dT_AB" value="       if a wrapper is reached, all the already ordered code ( representented by upperBorder and lowerBorder of the ordered code ) is moved** into the wrapper" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fxH" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fxI" role="1dT_Ay">
+          <property role="1dT_AB" value="       and the ordering continues by moving the rest of the statements in the maps above and below the wrapper. " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="6sZEllb4fxX" role="TZ5H$">
+        <node concept="1dT_AC" id="6sZEllb4fxY" role="1dT_Ay">
+          <property role="1dT_AB" value="** when stamements are moved, and those statements are peoplBlockStatement, we try to merge with peoplBlockstatements of the same color next to where they are moved to" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
