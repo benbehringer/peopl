@@ -269,7 +269,6 @@
       </node>
       <node concept="3aRQSP" id="7o3bbrGl7WU" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_8503689685566259002" />
-        <ref role="3aRQSO" node="3P6MyhRvZr1" resolve="Fragment_8503689685566251362" />
       </node>
       <node concept="3aRQSP" id="7o3bbrGl7Xc" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_8503689685566259020" />
@@ -393,7 +392,6 @@
         <property role="TrG5h" value="VP_8503689685566259005" />
         <node concept="1V74G$" id="7o3bbrGl7WY" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_8503689685566259006" />
-          <ref role="1V74G_" node="3P6MyhRvZr1" resolve="Fragment_8503689685566251362" />
         </node>
       </node>
       <node concept="1V74G3" id="7o3bbrGl7Xf" role="2$Fqj6">
@@ -672,33 +670,26 @@
           </node>
           <node concept="3clFbJ" id="3P6MyhRvZqQ" role="3cqZAp">
             <node concept="3clFbS" id="3P6MyhRvZqR" role="3clFbx">
-              <node concept="2wexfA" id="3P6MyhRvZqS" role="3cqZAp">
-                <node concept="3clFbS" id="3P6MyhRvZqT" role="9aQI4">
-                  <node concept="3SKdUt" id="3P6MyhRvZqU" role="3cqZAp">
-                    <node concept="3SKdUq" id="3P6MyhRvZqV" role="3SKWNk">
-                      <property role="3SKdUp" value="some Orange code" />
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="3P6MyhRvZqW" role="3cqZAp" />
-                  <node concept="3SKdUt" id="3P6MyhRvZqX" role="3cqZAp">
-                    <node concept="3SKdUq" id="3P6MyhRvZqY" role="3SKWNk">
-                      <property role="3SKdUp" value="even more Oranges" />
-                    </node>
-                  </node>
-                  <node concept="3clFbH" id="3P6MyhRvZqZ" role="3cqZAp" />
-                  <node concept="3clFbH" id="3P6MyhRvZr0" role="3cqZAp" />
-                </node>
-                <node concept="1V74GB" id="3P6MyhRvZr1" role="lGtFl">
-                  <property role="32Xqk$" value="chosenModule" />
-                  <property role="TrG5h" value="Fragment_8503689685566251362" />
-                  <ref role="a64iB" node="7M0rfo2kSEd" resolve="Orange" />
-                  <ref role="3aRQVk" node="7o3bbrGl7WU" resolve="ModuleToFragment_8503689685566259002" />
-                  <ref role="1V74Hf" node="7o3bbrGl7WY" resolve="VPToFragment_8503689685566259006" />
-                </node>
-              </node>
               <node concept="2wexfA" id="3JZgu9bMWam" role="3cqZAp">
                 <node concept="3clFbS" id="3JZgu9bMWan" role="9aQI4">
-                  <node concept="3clFbH" id="3JZgu9bMWal" role="3cqZAp" />
+                  <node concept="3SKdUt" id="2KmZcpnj1mc" role="3cqZAp">
+                    <node concept="3SKdUq" id="2KmZcpnj1md" role="3SKWNk">
+                      <property role="3SKdUp" value="a" />
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="2KmZcpniK5P" role="3cqZAp">
+                    <node concept="3clFbS" id="2KmZcpniK5R" role="3clFbx">
+                      <node concept="3clFbH" id="2KmZcpniK5Q" role="3cqZAp" />
+                    </node>
+                    <node concept="37vLTw" id="2KmZcpniK6k" role="3clFbw">
+                      <ref role="3cqZAo" node="3P6MyhRvZrX" resolve="a" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="2KmZcpnj1ml" role="3cqZAp">
+                    <node concept="3SKdUq" id="2KmZcpnj1mm" role="3SKWNk">
+                      <property role="3SKdUp" value="b" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="1V74GB" id="3JZgu9bMWao" role="lGtFl">
                   <property role="32Xqk$" value="chosenModule" />
@@ -759,7 +750,11 @@
               </node>
               <node concept="2wexfA" id="3JZgu9bMWen" role="3cqZAp">
                 <node concept="3clFbS" id="3JZgu9bMWeo" role="9aQI4">
-                  <node concept="3clFbH" id="3JZgu9bMWem" role="3cqZAp" />
+                  <node concept="3SKdUt" id="2KmZcpnj1mv" role="3cqZAp">
+                    <node concept="3SKdUq" id="2KmZcpnj1mw" role="3SKWNk">
+                      <property role="3SKdUp" value="c" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="1V74GB" id="3JZgu9bMWep" role="lGtFl">
                   <property role="32Xqk$" value="chosenModule" />
