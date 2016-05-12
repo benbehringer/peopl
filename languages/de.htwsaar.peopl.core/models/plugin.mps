@@ -1159,30 +1159,40 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="4abErjGLYpX" role="3clF47">
-        <node concept="3clFbJ" id="4abErjGLZER" role="3cqZAp">
-          <node concept="3clFbS" id="4abErjGLZES" role="3clFbx">
-            <node concept="3cpWs6" id="4abErjGM0pg" role="3cqZAp">
-              <node concept="3clFbT" id="4abErjGM0uF" role="3cqZAk">
-                <property role="3clFbU" value="true" />
+        <node concept="3clFbJ" id="3hBpVY71ROE" role="3cqZAp">
+          <node concept="3clFbS" id="3hBpVY71ROG" role="3clFbx">
+            <node concept="3clFbJ" id="4abErjGLZER" role="3cqZAp">
+              <node concept="3clFbS" id="4abErjGLZES" role="3clFbx">
+                <node concept="3cpWs6" id="4abErjGM0pg" role="3cqZAp">
+                  <node concept="3clFbT" id="4abErjGM0uF" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4abErjGLZaw" role="3clFbw">
+                <node concept="37vLTw" id="4abErjGLYZ0" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4abErjGL$3P" resolve="myMap" />
+                </node>
+                <node concept="2Nt0df" id="4abErjGLZkG" role="2OqNvi">
+                  <node concept="2OqwBi" id="4abErjGLZs2" role="38cxEo">
+                    <node concept="2JrnkZ" id="4abErjGLZqc" role="2Oq$k0">
+                      <node concept="37vLTw" id="4abErjGLZmK" role="2JrQYb">
+                        <ref role="3cqZAo" node="4abErjGLYQ$" resolve="intermediateNode" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4abErjGLZxe" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="4abErjGLZaw" role="3clFbw">
-            <node concept="37vLTw" id="4abErjGLYZ0" role="2Oq$k0">
-              <ref role="3cqZAo" node="4abErjGL$3P" resolve="myMap" />
+          <node concept="2OqwBi" id="3hBpVY71S87" role="3clFbw">
+            <node concept="37vLTw" id="3hBpVY71S50" role="2Oq$k0">
+              <ref role="3cqZAo" node="4abErjGLYQ$" resolve="intermediateNode" />
             </node>
-            <node concept="2Nt0df" id="4abErjGLZkG" role="2OqNvi">
-              <node concept="2OqwBi" id="4abErjGLZs2" role="38cxEo">
-                <node concept="2JrnkZ" id="4abErjGLZqc" role="2Oq$k0">
-                  <node concept="37vLTw" id="4abErjGLZmK" role="2JrQYb">
-                    <ref role="3cqZAo" node="4abErjGLYQ$" resolve="intermediateNode" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="4abErjGLZxe" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                </node>
-              </node>
-            </node>
+            <node concept="3x8VRR" id="3hBpVY71SgJ" role="2OqNvi" />
           </node>
         </node>
         <node concept="3cpWs6" id="4abErjGM0DS" role="3cqZAp">
