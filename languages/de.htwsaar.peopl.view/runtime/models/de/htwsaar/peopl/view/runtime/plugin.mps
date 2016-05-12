@@ -20,6 +20,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util()" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
   </imports>
   <registry>
@@ -102,6 +103,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
@@ -602,6 +606,18 @@
           </node>
         </node>
         <node concept="3clFbH" id="2iVkojt2Aak" role="3cqZAp" />
+        <node concept="3clFbF" id="1vlR3xvB75I" role="3cqZAp">
+          <node concept="2OqwBi" id="1vlR3xvB7o1" role="3clFbG">
+            <node concept="2YIFZM" id="1vlR3xvB7fQ" role="2Oq$k0">
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+            </node>
+            <node concept="liA8E" id="1vlR3xvB7yn" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1pwBwX6U8Vu" role="3cqZAp" />
         <node concept="2Gpval" id="2iVkojt2Amp" role="3cqZAp">
           <node concept="2GrKxI" id="2iVkojt2Amr" role="2Gsz3X">
             <property role="TrG5h" value="hint" />
