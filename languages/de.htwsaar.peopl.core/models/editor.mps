@@ -1906,8 +1906,8 @@
       <node concept="3uibUv" id="4XXs7o024wB" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="10M0yZ" id="4XXs7o024wC" role="33vP2m">
-        <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+      <node concept="10M0yZ" id="1RWzVE2YeFx" role="33vP2m">
+        <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
         <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
       </node>
     </node>
@@ -3068,9 +3068,9 @@
       <node concept="3uibUv" id="61l2320NqQj" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="10M0yZ" id="4XXs7nZI4Ca" role="33vP2m">
+      <node concept="10M0yZ" id="1RWzVE2YfaV" role="33vP2m">
         <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-        <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+        <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
       </node>
     </node>
     <node concept="312cEg" id="4NyX2wROT82" role="jymVt">
@@ -4173,9 +4173,9 @@
       <node concept="3uibUv" id="47WRMVuScgO" role="1tU5fm">
         <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
       </node>
-      <node concept="10M0yZ" id="47WRMVuScgP" role="33vP2m">
+      <node concept="10M0yZ" id="1RWzVE2Ye6R" role="33vP2m">
         <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-        <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+        <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
       </node>
     </node>
     <node concept="312cEg" id="47WRMVuScgQ" role="jymVt">

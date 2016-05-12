@@ -665,7 +665,7 @@
                       <node concept="liA8E" id="5cacDZVspdc" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="5cacDZVspdd" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                         </node>
                       </node>
@@ -1003,7 +1003,7 @@
                           <node concept="liA8E" id="5cacDZVsJac" role="2OqNvi">
                             <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                             <node concept="Rm8GO" id="5cacDZVsJad" role="37wK5m">
-                              <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                               <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                             </node>
                           </node>
@@ -1467,7 +1467,7 @@
                                   <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                                   <node concept="Rm8GO" id="5cacDZVtjWt" role="37wK5m">
                                     <ref role="Rm8GQ" to="tqa7:4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                                    <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                                    <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                                   </node>
                                 </node>
                               </node>
@@ -1481,7 +1481,7 @@
                                   <ref role="37wK5l" to="tqa7:4XXs7nZVmF5" resolve="setHeightOrientation" />
                                   <node concept="Rm8GO" id="5cacDZVtjWy" role="37wK5m">
                                     <ref role="Rm8GQ" to="tqa7:4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                                    <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                                    <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                                   </node>
                                 </node>
                               </node>
@@ -2070,7 +2070,7 @@
                       <node concept="liA8E" id="4XXs7o02mXN" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                         <node concept="Rm8GO" id="5cacDZVnVcp" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                           <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                         </node>
                       </node>
@@ -3039,7 +3039,7 @@
                       <node concept="liA8E" id="3Sk5uha3miC" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                         <node concept="Rm8GO" id="3Sk5uha3noX" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                           <ref role="Rm8GQ" to="tqa7:47WRMVuScgB" resolve="LINE" />
                         </node>
                       </node>
@@ -3053,7 +3053,7 @@
                       <node concept="liA8E" id="3Sk5uha3nFr" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:47WRMVuSci1" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="3Sk5uha47Fq" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:47WRMVuScgw" resolve="LINE_BEGINNING" />
                         </node>
                       </node>
@@ -3294,7 +3294,7 @@
                       <node concept="liA8E" id="4DWAEpifBeO" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                         <node concept="Rm8GO" id="5IGMYLdM2eB" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                          <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                           <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                         </node>
                       </node>
@@ -3308,7 +3308,7 @@
                       <node concept="liA8E" id="4DWAEpifBeT" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:47WRMVuSci1" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="4DWAEpifBeU" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:47WRMVuScgs" resolve="VerticalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:47WRMVuScgv" resolve="ORIGINAL_CODE_BLOCK" />
                         </node>
                       </node>
@@ -3529,7 +3529,7 @@
                         <node concept="liA8E" id="4DWAEpia53Q" role="2OqNvi">
                           <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                           <node concept="Rm8GO" id="4DWAEpia53R" role="37wK5m">
-                            <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                            <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                             <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                           </node>
                         </node>
@@ -4100,7 +4100,7 @@
                         <node concept="liA8E" id="5cacDZVoReF" role="2OqNvi">
                           <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                           <node concept="Rm8GO" id="5cacDZVoReG" role="37wK5m">
-                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                           </node>
                         </node>
@@ -4743,7 +4743,7 @@
                         <node concept="liA8E" id="4XXs7nZZGKq" role="2OqNvi">
                           <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                           <node concept="Rm8GO" id="4XXs7nZZGKr" role="37wK5m">
-                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                           </node>
                         </node>
@@ -5043,7 +5043,7 @@
                             <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                             <node concept="Rm8GO" id="4XXs7nZZPdG" role="37wK5m">
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             </node>
                           </node>
                         </node>
@@ -5057,7 +5057,7 @@
                             <ref role="37wK5l" to="tqa7:4XXs7nZVmF5" resolve="setHeightOrientation" />
                             <node concept="Rm8GO" id="4XXs7nZZPdL" role="37wK5m">
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                             </node>
                           </node>
                         </node>
@@ -6524,7 +6524,7 @@
                       <node concept="liA8E" id="4XXs7o00nqp" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="4XXs7o00nqq" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                         </node>
                       </node>
@@ -6825,7 +6825,7 @@
                               <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                               <node concept="Rm8GO" id="4XXs7o00yVV" role="37wK5m">
                                 <ref role="Rm8GQ" to="tqa7:4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                                <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                                <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                               </node>
                             </node>
                           </node>
@@ -6839,7 +6839,7 @@
                               <ref role="37wK5l" to="tqa7:4XXs7nZVmF5" resolve="setHeightOrientation" />
                               <node concept="Rm8GO" id="4XXs7o00yW0" role="37wK5m">
                                 <ref role="Rm8GQ" to="tqa7:4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                                <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                                <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                               </node>
                             </node>
                           </node>
@@ -7142,7 +7142,7 @@
                             <node concept="liA8E" id="5cacDZVue7Y" role="2OqNvi">
                               <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                               <node concept="Rm8GO" id="5cacDZVue7Z" role="37wK5m">
-                                <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                                <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                                 <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                               </node>
                             </node>
@@ -7672,7 +7672,7 @@
                                     <node concept="liA8E" id="4XXs7o00Omb" role="2OqNvi">
                                       <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                                       <node concept="Rm8GO" id="4XXs7o00Omc" role="37wK5m">
-                                        <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                                        <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                                         <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                                       </node>
                                     </node>
@@ -9128,7 +9128,7 @@
                       <node concept="liA8E" id="4XXs7o01i6G" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="4XXs7o01i6H" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                         </node>
                       </node>
@@ -9426,7 +9426,7 @@
                           <node concept="liA8E" id="5cacDZVuCan" role="2OqNvi">
                             <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
                             <node concept="Rm8GO" id="5cacDZVuCao" role="37wK5m">
-                              <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                               <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
                             </node>
                           </node>
@@ -9875,7 +9875,7 @@
                                 <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                                 <node concept="Rm8GO" id="4XXs7o01jho" role="37wK5m">
                                   <ref role="Rm8GQ" to="tqa7:4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                                  <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                                  <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                                 </node>
                               </node>
                             </node>
@@ -9889,7 +9889,7 @@
                                 <ref role="37wK5l" to="tqa7:4XXs7nZVmF5" resolve="setHeightOrientation" />
                                 <node concept="Rm8GO" id="4XXs7o01jht" role="37wK5m">
                                   <ref role="Rm8GQ" to="tqa7:4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                                  <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                                  <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                                 </node>
                               </node>
                             </node>
@@ -10281,7 +10281,7 @@
                           <node concept="liA8E" id="4XXs7o017gK" role="2OqNvi">
                             <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                             <node concept="Rm8GO" id="4XXs7o017gL" role="37wK5m">
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                             </node>
                           </node>
@@ -10761,7 +10761,7 @@
                       <node concept="liA8E" id="4XXs7nZHUFd" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="4XXs7nZHUFe" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                         </node>
                       </node>
@@ -11081,7 +11081,7 @@
                         <node concept="liA8E" id="4XXs7nZIkpi" role="2OqNvi">
                           <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                           <node concept="Rm8GO" id="4XXs7nZIkpj" role="37wK5m">
-                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                            <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                           </node>
                         </node>
@@ -11562,7 +11562,7 @@
                       <node concept="liA8E" id="4XXs7nZYC0H" role="2OqNvi">
                         <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                         <node concept="Rm8GO" id="4XXs7nZYC0I" role="37wK5m">
-                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                          <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                           <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                         </node>
                       </node>
@@ -11860,7 +11860,7 @@
                             <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                             <node concept="Rm8GO" id="4XXs7nZYKDn" role="37wK5m">
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZFyTt" resolve="NEXT_SIBLING" />
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                             </node>
                           </node>
                         </node>
@@ -11874,7 +11874,7 @@
                             <ref role="37wK5l" to="tqa7:4XXs7nZVmF5" resolve="setHeightOrientation" />
                             <node concept="Rm8GO" id="4XXs7nZYKDs" role="37wK5m">
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZVy7Q" resolve="PARENT_LASTLEAF" />
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HeightOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZVjWR" resolve="HorizontalLineCellProvider.HorizontalProvider_HeightOrientation" />
                             </node>
                           </node>
                         </node>
@@ -12399,7 +12399,7 @@
                           <node concept="liA8E" id="4XXs7nZQX9j" role="2OqNvi">
                             <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
                             <node concept="Rm8GO" id="4XXs7nZQX9k" role="37wK5m">
-                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.WidthOrientation" />
+                              <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
                               <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
                             </node>
                           </node>

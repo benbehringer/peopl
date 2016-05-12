@@ -13,9 +13,9 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -287,6 +287,26 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="gnPVcdB80h" role="1tU5fm">
           <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="7rSRKyCQ73h" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="handleAlternativeMethod" />
+      <node concept="3clFbS" id="7rSRKyCQ73k" role="3clF47" />
+      <node concept="3Tm1VV" id="7rSRKyCQ73l" role="1B3o_S" />
+      <node concept="3cqZAl" id="7rSRKyCQ87a" role="3clF45" />
+      <node concept="37vLTG" id="7rSRKyCQnKM" role="3clF46">
+        <property role="TrG5h" value="originalMethod" />
+        <node concept="3Tqbb2" id="7rSRKyCQnKN" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7rSRKyCQ79L" role="3clF46">
+        <property role="TrG5h" value="alternativeMethod" />
+        <node concept="3Tqbb2" id="7rSRKyCQ79K" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
         </node>
       </node>
     </node>
