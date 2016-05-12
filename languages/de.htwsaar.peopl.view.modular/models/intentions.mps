@@ -5770,7 +5770,7 @@
       <node concept="3clFbS" id="7o3bbrGlNcX" role="2VODD2">
         <node concept="3cpWs6" id="7o3bbrGlN$b" role="3cqZAp">
           <node concept="Xl_RD" id="7o3bbrGlNeQ" role="3cqZAk">
-            <property role="Xl_RC" value="@PEoPL -&gt; Move Original() to Cursor (incl. Wrappers)" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Move Original (incl. Wrappers)" />
           </node>
         </node>
       </node>
@@ -5879,7 +5879,7 @@
       <node concept="3clFbS" id="z4oRObYeGQ" role="2VODD2">
         <node concept="3cpWs6" id="z4oRObYeGR" role="3cqZAp">
           <node concept="Xl_RD" id="z4oRObYeGS" role="3cqZAk">
-            <property role="Xl_RC" value="@PEoPL -&gt; Move Original() to Cursor (excl. Wrappers)" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Move Original (excl. Wrappers)" />
           </node>
         </node>
       </node>
