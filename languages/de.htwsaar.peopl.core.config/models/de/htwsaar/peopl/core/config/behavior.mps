@@ -70,6 +70,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -245,6 +246,7 @@
       <concept id="1240247491866" name="jetbrains.mps.baseLanguage.collections.structure.SortedSetType" flags="in" index="34wHKU" />
       <concept id="1240247536947" name="jetbrains.mps.baseLanguage.collections.structure.TreeSetCreator" flags="nn" index="34wSKj" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
@@ -927,10 +929,51 @@
                                 <node concept="3clFbH" id="580tI$YOJI0" role="3cqZAp" />
                               </node>
                             </node>
+                            <node concept="3cpWs8" id="580tI$YPycC" role="3cqZAp">
+                              <node concept="3cpWsn" id="580tI$YPycF" role="3cpWs9">
+                                <property role="TrG5h" value="className" />
+                                <node concept="17QB3L" id="580tI$YPycA" role="1tU5fm" />
+                                <node concept="2OqwBi" id="580tI$YP$07" role="33vP2m">
+                                  <node concept="2OqwBi" id="580tI$YPzIJ" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="580tI$YPzvv" role="2Oq$k0">
+                                      <node concept="1eOMI4" id="580tI$YPyX6" role="2Oq$k0">
+                                        <node concept="10QFUN" id="580tI$YPyX3" role="1eOMHV">
+                                          <node concept="3Tqbb2" id="580tI$YPyXr" role="10QFUM">
+                                            <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                                          </node>
+                                          <node concept="2OqwBi" id="580tI$YPz9Z" role="10QFUP">
+                                            <node concept="37vLTw" id="580tI$YPGLZ" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="1jRCghhWhjk" resolve="fragmentsInLeftSide" />
+                                            </node>
+                                            <node concept="1uHKPH" id="580tI$YPzq0" role="2OqNvi" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="1mfA1w" id="580tI$YPzC6" role="2OqNvi" />
+                                    </node>
+                                    <node concept="2Xjw5R" id="580tI$YPzPf" role="2OqNvi">
+                                      <node concept="1xMEDy" id="580tI$YPzPh" role="1xVPHs">
+                                        <node concept="chp4Y" id="580tI$YPzPU" role="ri$Ld">
+                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="2qgKlT" id="580tI$YPZgK" role="2OqNvi">
+                                    <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="34ab3g" id="580tI$YL1Vy" role="3cqZAp">
                               <property role="35gtTG" value="error" />
-                              <node concept="Xl_RD" id="580tI$YL1V$" role="34bqiv">
-                                <property role="Xl_RC" value="Addition not possible!" />
+                              <node concept="3cpWs3" id="580tI$YPteD" role="34bqiv">
+                                <node concept="37vLTw" id="580tI$YPCaH" role="3uHU7w">
+                                  <ref role="3cqZAo" node="580tI$YPycF" resolve="className" />
+                                </node>
+                                <node concept="Xl_RD" id="580tI$YL1V$" role="3uHU7B">
+                                  <property role="Xl_RC" value="Addition not possible! Error in class: " />
+                                </node>
                               </node>
                             </node>
                             <node concept="34ab3g" id="580tI$YOBaU" role="3cqZAp">
