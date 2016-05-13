@@ -96,6 +96,9 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -488,9 +491,31 @@
       <node concept="3cqZAl" id="2yX483RIhic" role="3clF45" />
       <node concept="3Tm1VV" id="2yX483RIhf0" role="1B3o_S" />
     </node>
+    <node concept="3clFb_" id="5vSg76YabM0" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="cleanUpBuffer" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5vSg76YabM3" role="3clF47">
+        <node concept="3clFbF" id="5vSg76YabOe" role="3cqZAp">
+          <node concept="2OqwBi" id="5vSg76YabOg" role="3clFbG">
+            <node concept="2YIFZM" id="5vSg76YabOh" role="2Oq$k0">
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5vSg76YabOi" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5vSg76YabGZ" role="1B3o_S" />
+      <node concept="3cqZAl" id="5vSg76YabLY" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2yX483RIhbk" role="jymVt" />
     <node concept="2YIFZL" id="5rOrZhw_7Kt" role="jymVt">
-      <property role="TrG5h" value="cleanUpBuffer" />
+      <property role="TrG5h" value="cleanUpBufferInEDT" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -569,7 +594,7 @@
       <node concept="3clFbS" id="5rOrZhw_bff" role="2VODD2">
         <node concept="3clFbF" id="5rOrZhw_bmZ" role="3cqZAp">
           <node concept="2YIFZM" id="5rOrZhw_bnz" role="3clFbG">
-            <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBuffer" />
+            <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBufferInEDT" />
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
             <node concept="2OqwBi" id="2wh7ULXTgXi" role="37wK5m">
               <node concept="2WthIp" id="2wh7ULXTgXl" role="2Oq$k0" />
