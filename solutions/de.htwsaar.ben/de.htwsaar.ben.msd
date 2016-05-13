@@ -10,9 +10,7 @@
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" fqName="de.htwsaar.peopl.core" version="0" />
     <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.core.config" version="0" />
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.dep.baselang" version="0" />
-    <language id="8a47a177-aa97-4c20-90cc-ac8ed9e0b8c9" fqName="de.htwsaar.peopl.projectview" version="0" />
     <language id="61633ca4-9df3-4972-865e-602dff16ce62" fqName="de.htwsaar.peopl.utils.ccp" version="0" />
-    <language id="e211e030-d3ed-4a00-9fd5-31d2de7b1e8c" fqName="de.htwsaar.peopl.view" version="0" />
     <language id="a0bb4582-4bb4-410b-9640-3c37cbdc90b3" fqName="de.htwsaar.peopl.view.annotative" version="0" />
     <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" fqName="de.htwsaar.peopl.view.modular" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />

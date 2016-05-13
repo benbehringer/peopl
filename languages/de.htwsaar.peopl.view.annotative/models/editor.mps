@@ -1873,7 +1873,12 @@
     <node concept="2BsEeg" id="1DrSvX1CVhP" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="betterAnnotativeView" />
-      <property role="2BUmq6" value="Some nice additions to better visualize annotations made to baselanguage" />
+      <property role="2BUmq6" value="Some nice additions to better visualize annotated nodes" />
+    </node>
+    <node concept="2BsEeg" id="2H0DQTMCRPV" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="hideModuleVP" />
+      <property role="2BUmq6" value="Hide the module and the VP" />
     </node>
   </node>
   <node concept="24kQdi" id="1DrSvX1D0en">
