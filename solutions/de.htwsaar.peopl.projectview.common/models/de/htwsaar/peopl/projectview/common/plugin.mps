@@ -1084,6 +1084,7 @@
                           </node>
                         </node>
                         <node concept="3clFbH" id="DS4tmG0XGh" role="3cqZAp" />
+                        <node concept="3clFbH" id="3Ps5RgXm2_x" role="3cqZAp" />
                         <node concept="3clFbJ" id="2c8WkvQp4dA" role="3cqZAp">
                           <node concept="3clFbS" id="2c8WkvQp4dC" role="3clFbx">
                             <node concept="3clFbF" id="2c8WkvQoEvq" role="3cqZAp">
@@ -1800,9 +1801,47 @@
                                   <ref role="2Oxat5" to="mljx:7yG_mcG8oUA" resolve="productLineConfigurations" />
                                 </node>
                               </node>
-                              <node concept="37vLTw" id="7yG_mcG8GGX" role="37wK5m">
-                                <ref role="3cqZAo" node="2c8WkvQoDY_" resolve="editorHint" />
+                              <node concept="10Nm6u" id="14qL8Nc$JGX" role="37wK5m" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3eNFk2" id="14qL8Nc$NIX" role="3eNLev">
+                        <node concept="3y3z36" id="14qL8Nc$Oxk" role="3eO9$A">
+                          <node concept="10Nm6u" id="14qL8Nc$OLz" role="3uHU7w" />
+                          <node concept="2OqwBi" id="14qL8Nc$OrC" role="3uHU7B">
+                            <node concept="37vLTw" id="14qL8Nc$Obv" role="2Oq$k0">
+                              <ref role="3cqZAo" node="7WEW9M6pL61" resolve="info" />
+                            </node>
+                            <node concept="2OwXpG" id="14qL8Nc$OuG" role="2OqNvi">
+                              <ref role="2Oxat5" to="mljx:14qL8Nc$Nby" resolve="modulDefintion" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="14qL8Nc$NIZ" role="3eOfB_">
+                          <node concept="3clFbF" id="14qL8Nc$ONw" role="3cqZAp">
+                            <node concept="2YIFZM" id="14qL8Nc$ONy" role="3clFbG">
+                              <ref role="37wK5l" to="ynjl:2c8WkvQkZzo" resolve="openNode" />
+                              <ref role="1Pybhc" to="ynjl:2c8WkvQkXSD" resolve="OpenNodeHelper" />
+                              <node concept="1eOMI4" id="14qL8Nc$ONz" role="37wK5m">
+                                <node concept="10QFUN" id="14qL8Nc$ON$" role="1eOMHV">
+                                  <node concept="37vLTw" id="14qL8Nc$ON_" role="10QFUP">
+                                    <ref role="3cqZAo" node="2c8WkvQjWHo" resolve="project" />
+                                  </node>
+                                  <node concept="3uibUv" id="14qL8Nc$ONA" role="10QFUM">
+                                    <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+                                  </node>
+                                </node>
                               </node>
+                              <node concept="2OqwBi" id="14qL8Nc$ONB" role="37wK5m">
+                                <node concept="37vLTw" id="14qL8Nc$ONC" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7WEW9M6pL61" resolve="info" />
+                                </node>
+                                <node concept="2OwXpG" id="14qL8Nc$OTa" role="2OqNvi">
+                                  <ref role="2Oxat5" to="mljx:14qL8Nc$Nby" resolve="modulDefintion" />
+                                </node>
+                              </node>
+                              <node concept="10Nm6u" id="14qL8Nc$ONE" role="37wK5m" />
                             </node>
                           </node>
                         </node>
