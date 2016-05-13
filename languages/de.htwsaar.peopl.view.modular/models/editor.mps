@@ -62,6 +62,7 @@
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="bude" ref="r:db04ae52-ccc4-4f7a-aba7-aca9749fc503(de.htwsaar.peopl.projectview.common.plugin)" />
+    <import index="3ahc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.cells(MPS.Editor/)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -8640,6 +8641,44 @@
               <node concept="3cqZAl" id="3Mm3FE9U2Yp" role="32Mpfj" />
               <node concept="37vLTw" id="3Mm3FE9U2Yq" role="2U24H$">
                 <ref role="3cqZAo" node="3Mm3FE9U2Y8" resolve="originalKeywordCell" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4YVKnhgYUCv" role="3cqZAp">
+            <node concept="2OqwBi" id="4YVKnhgYVbf" role="3clFbG">
+              <node concept="37vLTw" id="4YVKnhgYUCt" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Mm3FE9U2Y8" resolve="originalKeywordCell" />
+              </node>
+              <node concept="liA8E" id="4YVKnhgYVt7" role="2OqNvi">
+                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setAction(jetbrains.mps.openapi.editor.cells.CellActionType,jetbrains.mps.openapi.editor.cells.CellAction):void" resolve="setAction" />
+                <node concept="Rm8GO" id="2H0DQTMDDEn" role="37wK5m">
+                  <ref role="1Px2BO" to="f4zo:~CellActionType" resolve="CellActionType" />
+                  <ref role="Rm8GQ" to="f4zo:~CellActionType.BACKSPACE" resolve="BACKSPACE" />
+                </node>
+                <node concept="2YIFZM" id="2H0DQTMDDEo" role="37wK5m">
+                  <ref role="1Pybhc" to="3ahc:~EmptyCellAction" resolve="EmptyCellAction" />
+                  <ref role="37wK5l" to="3ahc:~EmptyCellAction.getInstance():jetbrains.mps.editor.runtime.cells.EmptyCellAction" resolve="getInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="4YVKnhgY802" role="3cqZAp">
+            <node concept="2OqwBi" id="4YVKnhgY803" role="3clFbG">
+              <node concept="37vLTw" id="4YVKnhgY804" role="2Oq$k0">
+                <ref role="3cqZAo" node="3Mm3FE9U2Yi" resolve="style" />
+              </node>
+              <node concept="liA8E" id="4YVKnhgY805" role="2OqNvi">
+                <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,int,java.lang.Object):void" resolve="set" />
+                <node concept="10M0yZ" id="4YVKnhgY806" role="37wK5m">
+                  <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  <ref role="3cqZAo" to="5ueo:~StyleAttributes.EDITABLE" resolve="EDITABLE" />
+                </node>
+                <node concept="3cmrfG" id="4YVKnhgY807" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="3clFbT" id="4YVKnhgY808" role="37wK5m">
+                  <property role="3clFbU" value="false" />
+                </node>
               </node>
             </node>
           </node>
