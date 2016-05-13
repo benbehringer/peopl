@@ -2,15 +2,15 @@
 <model ref="r:7b35b5aa-e5d5-49e2-8301-32d20249df0a(de.htwsaar.peopl.core.runtime.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
@@ -96,6 +96,9 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
+        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -104,7 +107,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -488,9 +491,31 @@
       <node concept="3cqZAl" id="2yX483RIhic" role="3clF45" />
       <node concept="3Tm1VV" id="2yX483RIhf0" role="1B3o_S" />
     </node>
+    <node concept="3clFb_" id="5vSg76YabM0" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="cleanUpBuffer" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5vSg76YabM3" role="3clF47">
+        <node concept="3clFbF" id="5vSg76YabOe" role="3cqZAp">
+          <node concept="2OqwBi" id="5vSg76YabOg" role="3clFbG">
+            <node concept="2YIFZM" id="5vSg76YabOh" role="2Oq$k0">
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="5vSg76YabOi" role="2OqNvi">
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5vSg76YabGZ" role="1B3o_S" />
+      <node concept="3cqZAl" id="5vSg76YabLY" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2yX483RIhbk" role="jymVt" />
     <node concept="2YIFZL" id="5rOrZhw_7Kt" role="jymVt">
-      <property role="TrG5h" value="cleanUpBuffer" />
+      <property role="TrG5h" value="cleanUpBufferInEDT" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -569,8 +594,8 @@
       <node concept="3clFbS" id="5rOrZhw_bff" role="2VODD2">
         <node concept="3clFbF" id="5rOrZhw_bmZ" role="3cqZAp">
           <node concept="2YIFZM" id="5rOrZhw_bnz" role="3clFbG">
-            <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBuffer" />
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
+            <ref role="37wK5l" node="5rOrZhw_7Kt" resolve="cleanUpBufferInEDT" />
             <node concept="2OqwBi" id="2wh7ULXTgXi" role="37wK5m">
               <node concept="2WthIp" id="2wh7ULXTgXl" role="2Oq$k0" />
               <node concept="1DTwFV" id="2wh7ULXTgXn" role="2OqNvi">
