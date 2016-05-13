@@ -316,7 +316,7 @@
   <node concept="2DaZZR" id="6AfKkED_r$S" />
   <node concept="sE7Ow" id="1C4KoOq9YJB">
     <property role="TrG5h" value="ConvertToPeoplSolution" />
-    <property role="2uzpH1" value="Convert to PEoPL Solution" />
+    <property role="2uzpH1" value="Convert to PEoPL-conform Solution" />
     <property role="1WHSii" value="Exchanges all ClassConcept in a Solution with PEoPL Entry Points and adds a peopleConfig Module with a ModuleDefinition" />
     <property role="3GE5qa" value="Actions" />
     <node concept="2XrIbr" id="1C4KoOqaU7U" role="32lrUH">
@@ -1385,9 +1385,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="6AfKkED_I6u">
-    <property role="TrG5h" value="CleanUp_Empty_PeoplBlocks" />
-    <property role="2uzpH1" value="CleanUp PeoplBlocks in Solution" />
-    <property role="1WHSii" value="Removes all empty PeoplBlockStatements" />
+    <property role="TrG5h" value="CleanUpEmptyPeoplBlocks" />
+    <property role="2uzpH1" value="Delete Empty Peopl Block Statements" />
     <property role="3GE5qa" value="Actions" />
     <node concept="2XrIbr" id="6AfKkED_LPM" role="32lrUH">
       <property role="TrG5h" value="cleanUpPeoplEntryPoint" />
@@ -1734,13 +1733,13 @@
     <node concept="ftmFs" id="2yX483RIVoq" role="ftER_">
       <node concept="2a7GMi" id="2yX483RIZTr" role="ftvYc" />
       <node concept="tCFHf" id="2yX483RIVot" role="ftvYc">
-        <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUp_Empty_PeoplBlocks" />
+        <ref role="tCJdB" node="6AfKkED_I6u" resolve="CleanUpEmptyPeoplBlocks" />
       </node>
       <node concept="tCFHf" id="1bppMoCt5RT" role="ftvYc">
         <ref role="tCJdB" to="7hqo:2yX483RIDAi" resolve="CleanUpProject" />
       </node>
       <node concept="tCFHf" id="5rOrZhw_bpr" role="ftvYc">
-        <ref role="tCJdB" to="7hqo:5rOrZhw_bfd" resolve="CleanBuffer" />
+        <ref role="tCJdB" to="7hqo:5rOrZhw_bfd" resolve="ClearIntermediateNodesBuffer" />
       </node>
       <node concept="2a7GMi" id="2yX483RIZT_" role="ftvYc" />
     </node>

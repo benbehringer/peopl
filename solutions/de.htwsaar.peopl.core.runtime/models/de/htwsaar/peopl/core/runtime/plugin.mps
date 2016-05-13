@@ -539,7 +539,7 @@
   </node>
   <node concept="sE7Ow" id="2yX483RIDAi">
     <property role="TrG5h" value="CleanUpProject" />
-    <property role="2uzpH1" value="CleanUp whole Project" />
+    <property role="2uzpH1" value="Delete Intermediate Nodes with Broken References" />
     <node concept="1DS2jV" id="7boOmZ3Yw9a" role="1NuT2Z">
       <property role="TrG5h" value="currentProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -563,8 +563,8 @@
     </node>
   </node>
   <node concept="sE7Ow" id="5rOrZhw_bfd">
-    <property role="TrG5h" value="CleanBuffer" />
-    <property role="2uzpH1" value="Clean Buffer" />
+    <property role="TrG5h" value="ClearIntermediateNodesBuffer" />
+    <property role="2uzpH1" value="Clear Intermediate Nodes Buffer" />
     <node concept="tnohg" id="5rOrZhw_bfe" role="tncku">
       <node concept="3clFbS" id="5rOrZhw_bff" role="2VODD2">
         <node concept="3clFbF" id="5rOrZhw_bmZ" role="3cqZAp">

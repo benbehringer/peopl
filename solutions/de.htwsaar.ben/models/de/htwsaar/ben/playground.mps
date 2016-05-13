@@ -38,7 +38,6 @@
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
-        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -147,6 +146,10 @@
         <property role="TrG5h" value="ModuleToFragment_7792180584349728349" />
         <ref role="3aRQSO" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
       </node>
+      <node concept="3aRQSP" id="1HQrPPPgkem" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_1978891533465764758" />
+        <ref role="3aRQSO" node="1HQrPPPgkef" resolve="Fragment_1978891533465764751" />
+      </node>
     </node>
     <node concept="1V77HM" id="1jtqHQg5xTd" role="288GmO">
       <property role="2_7ToJ" value="51" />
@@ -176,10 +179,6 @@
       <property role="2_7Toi" value="189" />
       <property role="3_QSL4" value="9787069" />
       <property role="TrG5h" value="Pampelmuse" />
-      <node concept="3aRQSP" id="6NND5XHzoZQ" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_7850799305203748854" />
-        <ref role="3aRQSO" node="6NND5XHyA_G" resolve="Fragment_7850799305203542380" />
-      </node>
     </node>
     <node concept="1V77HM" id="BaaGhtN1L8" role="288GmO">
       <property role="2_7ToJ" value="255" />
@@ -210,10 +209,6 @@
           <property role="TrG5h" value="VPToFragment_1283336920668232642" />
           <ref role="1V74G_" node="17fl253$HJ0" resolve="Fragment_1283336920668232640" />
         </node>
-        <node concept="1V74G$" id="6NND5XHyA_H" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_7850799305203542381" />
-          <ref role="1V74G_" node="6NND5XHyA_G" resolve="Fragment_7850799305203542380" />
-        </node>
       </node>
       <node concept="1V74G3" id="1Mukj3tQ4VK" role="2$Fqj6">
         <property role="TrG5h" value="VP_2062174949704486640" />
@@ -229,10 +224,18 @@
           <ref role="1V74G_" node="1Mukj3tQ4Og" resolve="Fragment_2062174949704486160" />
         </node>
       </node>
+      <node concept="1V74G3" id="1HQrPPPgkeg" role="2$Fqj6">
+        <property role="TrG5h" value="VP_1978891533465764752" />
+        <node concept="1V74G$" id="1HQrPPPgkeh" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_1978891533465764753" />
+          <ref role="1V74G_" node="1HQrPPPgkef" resolve="Fragment_1978891533465764751" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2SvMkh" id="17fl253$HIX">
     <property role="TrG5h" value="TestClass" />
+    <property role="3GE5qa" value="" />
     <node concept="3GWJoq" id="17fl253$HIY" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
       <node concept="3clFb_" id="1Mukj3tQ4Nz" role="jymVt">
@@ -249,6 +252,7 @@
               <node concept="3clFbH" id="1s0HWbgc9mm" role="3cqZAp" />
               <node concept="3clFbH" id="6KzoJjFQVEF" role="3cqZAp" />
               <node concept="3clFbH" id="6NND5XHywiZ" role="3cqZAp" />
+              <node concept="3clFbH" id="1HQrPPPgZkq" role="3cqZAp" />
               <node concept="3clFbH" id="6KzoJjFQVEL" role="3cqZAp" />
               <node concept="3clFbH" id="1s0HWbgc9mj" role="3cqZAp" />
             </node>
@@ -288,21 +292,6 @@
         <ref role="3aRQVk" node="6KzoJjFR7Tt" resolve="ModuleToFragment_7792180584349728349" />
       </node>
       <node concept="3QEU_s" id="31kZNElybf9" role="lGtFl" />
-    </node>
-    <node concept="3GWJoq" id="6NND5XHyA_E" role="2abgUk">
-      <property role="TrG5h" value="TestClass_480" />
-      <property role="2bfB8j" value="true" />
-      <node concept="3Tm1VV" id="6NND5XHyA_F" role="1B3o_S" />
-      <node concept="1V74GB" id="6NND5XHyA_G" role="lGtFl">
-        <property role="32Xqk$" value="chosenModule" />
-        <property role="TrG5h" value="Fragment_7850799305203542380" />
-        <ref role="1V74Hf" node="6NND5XHyA_H" resolve="VPToFragment_7850799305203542381" />
-        <ref role="a64iB" node="1jtqHQgmjoI" resolve="Pampelmuse" />
-        <ref role="3aRQVk" node="6NND5XHzoZQ" resolve="ModuleToFragment_7850799305203748854" />
-      </node>
-      <node concept="2tJIrI" id="6NND5XHyA_I" role="jymVt" />
-      <node concept="2tJIrI" id="6NND5XHyAAj" role="jymVt" />
-      <node concept="2tJIrI" id="6NND5XHyAAm" role="jymVt" />
     </node>
   </node>
   <node concept="2M0niJ" id="31kZNElybbV">
@@ -347,6 +336,28 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" node="1jtqHQgmjoI" resolve="Pampelmuse" />
     <ref role="HxVAD" node="17fl253$HIY" resolve="TestClass" />
+  </node>
+  <node concept="2SvMkh" id="1HQrPPPgkec">
+    <property role="TrG5h" value="AnotherTestClass" />
+    <node concept="3GWJoq" id="1HQrPPPgked" role="2abgUk">
+      <property role="TrG5h" value="AnotherTestClass" />
+      <node concept="3Tm1VV" id="1HQrPPPgkee" role="1B3o_S" />
+      <node concept="1V74GB" id="1HQrPPPgkef" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_1978891533465764751" />
+        <ref role="1V74Hf" node="1HQrPPPgkeh" resolve="VPToFragment_1978891533465764753" />
+        <ref role="a64iB" node="2dLMffS5Hav" resolve="Base" />
+        <ref role="3aRQVk" node="1HQrPPPgkem" resolve="ModuleToFragment_1978891533465764758" />
+      </node>
+      <node concept="2tJIrI" id="1HQrPPPgkep" role="jymVt" />
+    </node>
+  </node>
+  <node concept="HxVAC" id="1HQrPPPgkrV">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::AnotherTest" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" node="2dLMffS5Hav" resolve="Base" />
+    <ref role="HxVAD" node="1HQrPPPgkrp" resolve="AnotherTest" />
   </node>
 </model>
 
