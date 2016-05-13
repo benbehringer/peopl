@@ -107,7 +107,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -226,24 +226,6 @@
             <node concept="1KvdUw" id="2yX483RIw9O" role="37wK5m" />
           </node>
         </node>
-        <node concept="34ab3g" id="2yX483RIcCj" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="2yX483RIcCl" role="34bqiv">
-            <property role="Xl_RC" value="Cleaning PeoplIntermediateNodesBuffer" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2yX483RIaVN" role="3cqZAp">
-          <node concept="2OqwBi" id="2yX483RIb08" role="3clFbG">
-            <node concept="2YIFZM" id="2yX483RIaYK" role="2Oq$k0">
-              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
-            </node>
-            <node concept="liA8E" id="2yX483RIbqk" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="2yX483RIbz0" role="3cqZAp" />
       </node>
     </node>
   </node>

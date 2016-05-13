@@ -175,6 +175,12 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -614,28 +620,37 @@
             </node>
           </node>
           <node concept="3clFbH" id="3Mm3FE9SuQz" role="3cqZAp" />
-          <node concept="3clFbJ" id="3Mm3FE9SuQ$" role="3cqZAp">
-            <node concept="3clFbS" id="3Mm3FE9SuQ_" role="3clFbx">
-              <node concept="3clFbF" id="3Mm3FE9SuQA" role="3cqZAp">
-                <node concept="2OqwBi" id="3Mm3FE9SuQB" role="3clFbG">
-                  <node concept="2YIFZM" id="3Mm3FE9SuQC" role="2Oq$k0">
-                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
-                    <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-                  </node>
-                  <node concept="liA8E" id="3Mm3FE9SuQD" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+          <node concept="3SKdUt" id="$Jh6eFnffY" role="3cqZAp">
+            <node concept="3SKdUq" id="$Jh6eFnffZ" role="3SKWNk">
+              <property role="3SKdUp" value="DEPRECATED!" />
+            </node>
+          </node>
+          <node concept="1X3_iC" id="$Jh6eFndQx" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="3clFbJ" id="3Mm3FE9SuQ$" role="8Wnug">
+              <node concept="3clFbS" id="3Mm3FE9SuQ_" role="3clFbx">
+                <node concept="3clFbF" id="3Mm3FE9SuQA" role="3cqZAp">
+                  <node concept="2OqwBi" id="3Mm3FE9SuQB" role="3clFbG">
+                    <node concept="2YIFZM" id="3Mm3FE9SuQC" role="2Oq$k0">
+                      <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                      <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="3Mm3FE9SuQD" role="2OqNvi">
+                      <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                    </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3fqX7Q" id="3Mm3FE9SuQE" role="3clFbw">
-              <node concept="2OqwBi" id="3Mm3FE9SuQF" role="3fr31v">
-                <node concept="2YIFZM" id="3Mm3FE9SuQG" role="2Oq$k0">
-                  <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-                  <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
-                </node>
-                <node concept="liA8E" id="3Mm3FE9SuQH" role="2OqNvi">
-                  <ref role="37wK5l" to="zur:7uhzxTPLnSL" resolve="isEmpty" />
+              <node concept="3fqX7Q" id="3Mm3FE9SuQE" role="3clFbw">
+                <node concept="2OqwBi" id="3Mm3FE9SuQF" role="3fr31v">
+                  <node concept="2YIFZM" id="3Mm3FE9SuQG" role="2Oq$k0">
+                    <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                  </node>
+                  <node concept="liA8E" id="3Mm3FE9SuQH" role="2OqNvi">
+                    <ref role="37wK5l" to="zur:7uhzxTPLnSL" resolve="isEmpty" />
+                  </node>
                 </node>
               </node>
             </node>
