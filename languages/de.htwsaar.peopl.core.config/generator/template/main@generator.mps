@@ -729,15 +729,19 @@
     <property role="1v3jST" value="true" />
     <node concept="1pplIY" id="4vOt5rKlTkU" role="1pqMTA">
       <node concept="3clFbS" id="4vOt5rKlTkV" role="2VODD2">
-        <node concept="3clFbF" id="5rOrZhw_ipT" role="3cqZAp">
-          <node concept="2YIFZM" id="1aBqgRhPnjd" role="3clFbG">
-            <ref role="37wK5l" to="7hqo:5rOrZhw_7Kt" resolve="cleanUpBuffer" />
-            <ref role="1Pybhc" to="7hqo:2yX483RIhaV" resolve="CleanUpHelper" />
-            <node concept="1eOMI4" id="1aBqgRhPnje" role="37wK5m">
-              <node concept="2OqwBi" id="1aBqgRhPnjf" role="1eOMHV">
-                <node concept="1Q79dO" id="1aBqgRhPnjg" role="2Oq$k0" />
-                <node concept="liA8E" id="1aBqgRhPnjh" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+        <node concept="1X3_iC" id="10KxddmtCHj" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5rOrZhw_ipT" role="8Wnug">
+            <node concept="2YIFZM" id="1aBqgRhPnjd" role="3clFbG">
+              <ref role="37wK5l" to="7hqo:5rOrZhw_7Kt" resolve="cleanUpBufferInEDT" />
+              <ref role="1Pybhc" to="7hqo:2yX483RIhaV" resolve="CleanUpHelper" />
+              <node concept="1eOMI4" id="1aBqgRhPnje" role="37wK5m">
+                <node concept="2OqwBi" id="1aBqgRhPnjf" role="1eOMHV">
+                  <node concept="1Q79dO" id="1aBqgRhPnjg" role="2Oq$k0" />
+                  <node concept="liA8E" id="1aBqgRhPnjh" role="2OqNvi">
+                    <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                  </node>
                 </node>
               </node>
             </node>
