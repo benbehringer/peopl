@@ -138,8 +138,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -157,10 +167,14 @@
                   <property role="3SKdUp" value="Case 1: Paste after Ctrl+x" />
                 </node>
               </node>
-              <node concept="34ab3g" id="2aku2wRhnkP" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="2aku2wRhnkR" role="34bqiv">
-                  <property role="Xl_RC" value="cut" />
+              <node concept="1X3_iC" id="3OTSVvcs_3P" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="34ab3g" id="2aku2wRhnkP" role="8Wnug">
+                  <property role="35gtTG" value="warn" />
+                  <node concept="Xl_RD" id="2aku2wRhnkR" role="34bqiv">
+                    <property role="Xl_RC" value="cut" />
+                  </node>
                 </node>
               </node>
               <node concept="3SKdUt" id="7PFXpItp9aD" role="3cqZAp">
@@ -315,10 +329,14 @@
                     <property role="3SKdUp" value="Case 2: Paste after Ctrl+c, a copy of the fragment will be created an connected to a new VP" />
                   </node>
                 </node>
-                <node concept="34ab3g" id="2aku2wRhqus" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="2aku2wRhquu" role="34bqiv">
-                    <property role="Xl_RC" value="copy" />
+                <node concept="1X3_iC" id="3OTSVvcs$RN" role="lGtFl">
+                  <property role="3V$3am" value="statement" />
+                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                  <node concept="34ab3g" id="2aku2wRhqus" role="8Wnug">
+                    <property role="35gtTG" value="warn" />
+                    <node concept="Xl_RD" id="2aku2wRhquu" role="34bqiv">
+                      <property role="Xl_RC" value="copy" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbF" id="4HoZd1oYCTG" role="3cqZAp">
@@ -386,10 +404,14 @@
               </node>
             </node>
           </node>
-          <node concept="34ab3g" id="2uz3bvfHcCf" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="2uz3bvfHcCh" role="34bqiv">
-              <property role="Xl_RC" value="paste post processor" />
+          <node concept="1X3_iC" id="3OTSVvcs$V_" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="2uz3bvfHcCf" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="2uz3bvfHcCh" role="34bqiv">
+                <property role="Xl_RC" value="paste post processor" />
+              </node>
             </node>
           </node>
         </node>
@@ -575,24 +597,28 @@
               </node>
             </node>
           </node>
-          <node concept="34ab3g" id="5zeyXLl19ME" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="5zeyXLl19Vu" role="34bqiv">
-              <node concept="2OqwBi" id="5zeyXLl1a9o" role="3uHU7w">
-                <node concept="2OqwBi" id="5zeyXLl1a46" role="2Oq$k0">
-                  <node concept="2JrnkZ" id="5zeyXLl1a2$" role="2Oq$k0">
-                    <node concept="21Iscl" id="5zeyXLl19Y8" role="2JrQYb" />
+          <node concept="1X3_iC" id="3OTSVvcs_9g" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="34ab3g" id="5zeyXLl19ME" role="8Wnug">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="5zeyXLl19Vu" role="34bqiv">
+                <node concept="2OqwBi" id="5zeyXLl1a9o" role="3uHU7w">
+                  <node concept="2OqwBi" id="5zeyXLl1a46" role="2Oq$k0">
+                    <node concept="2JrnkZ" id="5zeyXLl1a2$" role="2Oq$k0">
+                      <node concept="21Iscl" id="5zeyXLl19Y8" role="2JrQYb" />
+                    </node>
+                    <node concept="liA8E" id="5zeyXLl1a7S" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="5zeyXLl1a7S" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                  <node concept="liA8E" id="5zeyXLl1acA" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                   </node>
                 </node>
-                <node concept="liA8E" id="5zeyXLl1acA" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                <node concept="Xl_RD" id="5zeyXLl19MG" role="3uHU7B">
+                  <property role="Xl_RC" value="pre processor originalnodeinfo: " />
                 </node>
-              </node>
-              <node concept="Xl_RD" id="5zeyXLl19MG" role="3uHU7B">
-                <property role="Xl_RC" value="pre processor originalnodeinfo: " />
               </node>
             </node>
           </node>
