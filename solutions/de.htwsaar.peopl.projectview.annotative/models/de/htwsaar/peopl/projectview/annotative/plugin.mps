@@ -28,7 +28,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
-    <import index="u8b7" ref="r:249bd07a-49a0-4e4d-a50d-08ac47c3b308(de.htwsaar.peopl.projectview.runtime)" />
+    <import index="bude" ref="r:db04ae52-ccc4-4f7a-aba7-aca9749fc503(de.htwsaar.peopl.projectview.common.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
@@ -238,8 +238,8 @@
         </node>
       </node>
       <node concept="2YIFZM" id="1sh5U6QdkzL" role="3a5v6p">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZaN" resolve="getActionGroupId" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZaN" resolve="getActionGroupId" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="1sh5U6Qd_0D" role="37wK5m">
           <ref role="14b0Uw" node="7diJr$RvF92" resolve="project" />
         </node>
@@ -266,15 +266,15 @@
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx4Sv" role="3a5v6p">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZaN" resolve="getActionGroupId" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZaN" resolve="getActionGroupId" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="75_oBQVx57Y" role="37wK5m">
           <ref role="14b0Uw" node="7diJr$RuyJf" resolve="sModule" />
         </node>
       </node>
       <node concept="2YIFZM" id="4GrfODAR8Xs" role="fGNDj">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZck" resolve="getFolders" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZck" resolve="getFolders" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="4GrfODAR9dW" role="37wK5m">
           <ref role="14b0Uw" node="7diJr$RuyJf" resolve="sModule" />
         </node>
@@ -448,8 +448,8 @@
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx58N" role="3a5v6p">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZaN" resolve="getActionGroupId" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZaN" resolve="getActionGroupId" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="75_oBQVx5bS" role="37wK5m">
           <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="sModel" />
         </node>
@@ -510,8 +510,8 @@
         </node>
       </node>
       <node concept="2YIFZM" id="75_oBQVx5cB" role="3a5v6p">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZaN" resolve="getActionGroupId" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZaN" resolve="getActionGroupId" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="75_oBQVx5iU" role="37wK5m">
           <ref role="14b0Uw" node="3ZnFyBjojbx" resolve="node" />
         </node>
@@ -556,8 +556,8 @@
         </node>
       </node>
       <node concept="2YIFZM" id="L5cqXO7miM" role="3a5v6p">
-        <ref role="37wK5l" to="u8b7:1sh5U6QbZaN" resolve="getActionGroupId" />
-        <ref role="1Pybhc" to="u8b7:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
+        <ref role="37wK5l" to="bude:1sh5U6QbZaN" resolve="getActionGroupId" />
+        <ref role="1Pybhc" to="bude:1sh5U6QbZ9U" resolve="PeoplProjectViewUtil" />
         <node concept="14b0Wr" id="L5cqXO7miN" role="37wK5m">
           <ref role="14b0Uw" node="L5cqXO7miE" resolve="node" />
         </node>

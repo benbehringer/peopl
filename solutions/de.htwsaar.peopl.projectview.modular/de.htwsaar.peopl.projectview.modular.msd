@@ -28,13 +28,12 @@
     <dependency reexport="false">732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">3b64420c-53d0-4c15-9e71-c9cecf76d9db(de.htwsaar.peopl.view.modular)</dependency>
-    <dependency reexport="false">8a47a177-aa97-4c20-90cc-ac8ed9e0b8c9(de.htwsaar.peopl.projectview)</dependency>
-    <dependency reexport="false">17c7c1a9-c7e2-4138-8301-ce5e3e52a62a(de.htwsaar.peopl.projectview.runtime)</dependency>
     <dependency reexport="false">87a98001-cf67-488c-bda4-b989fcc17054(de.htwsaar.peopl.view.runtime)</dependency>
     <dependency reexport="false">1f1b4a81-113d-4b88-9b67-2bae3e4f8128(com.mbeddr.mpsutil.projectview)</dependency>
     <dependency reexport="false">e1808c0b-7a09-4f46-9950-17a7f0b53c29(com.mbeddr.mpsutil.targetchooser)</dependency>
     <dependency reexport="false">f33a6c9c-f660-4bdb-aecd-2d144c61f7d2(jetbrains.mps.ide.java.platform)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">97329234-5bcc-41a4-9e8a-4b598c93e695(de.htwsaar.peopl.projectview.common)</dependency>
   </dependencies>
   <languageVersions>
     <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" fqName="com.mbeddr.mpsutil.projectview" version="0" />
@@ -74,9 +73,8 @@
     <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="2" />
     <module reference="42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.config)" version="0" />
     <module reference="fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.dep.baselang)" version="0" />
-    <module reference="8a47a177-aa97-4c20-90cc-ac8ed9e0b8c9(de.htwsaar.peopl.projectview)" version="0" />
+    <module reference="97329234-5bcc-41a4-9e8a-4b598c93e695(de.htwsaar.peopl.projectview.common)" version="0" />
     <module reference="6d7d9b46-11d1-41f3-b43e-12253328b43f(de.htwsaar.peopl.projectview.modular)" version="0" />
-    <module reference="17c7c1a9-c7e2-4138-8301-ce5e3e52a62a(de.htwsaar.peopl.projectview.runtime)" version="0" />
     <module reference="3b64420c-53d0-4c15-9e71-c9cecf76d9db(de.htwsaar.peopl.view.modular)" version="0" />
     <module reference="87a98001-cf67-488c-bda4-b989fcc17054(de.htwsaar.peopl.view.runtime)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
