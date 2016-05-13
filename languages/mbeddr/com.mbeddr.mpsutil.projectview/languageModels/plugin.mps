@@ -224,7 +224,7 @@
         <node concept="10Nm6u" id="7WEW9M6pksd" role="33vP2m" />
       </node>
       <node concept="312cEg" id="6hhB4BxiF_j" role="jymVt">
-        <property role="TrG5h" value="alternativePeoplClass" />
+        <property role="TrG5h" value="peoplClass" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="6hhB4BxiFQz" role="1B3o_S" />
         <node concept="3uibUv" id="ahHvEFPgQ7" role="1tU5fm">
@@ -450,7 +450,7 @@
                         <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
                         <node concept="3cpWs3" id="6hhB4BxiHkE" role="37wK5m">
                           <node concept="37vLTw" id="6hhB4BxiHmm" role="3uHU7w">
-                            <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="alternativePeoplClass" />
+                            <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="peoplClass" />
                           </node>
                           <node concept="Xl_RD" id="6hhB4BxiHbf" role="3uHU7B">
                             <property role="Xl_RC" value="alternative class : " />
@@ -468,7 +468,7 @@
             <node concept="3y3z36" id="6hhB4BxiGv8" role="3clFbw">
               <node concept="10Nm6u" id="6hhB4BxiGAw" role="3uHU7w" />
               <node concept="37vLTw" id="6hhB4BxiGeE" role="3uHU7B">
-                <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="alternativePeoplClass" />
+                <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="peoplClass" />
               </node>
             </node>
           </node>
