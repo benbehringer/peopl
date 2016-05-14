@@ -12,6 +12,10 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
+      <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
+      </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -86,10 +90,27 @@
         </node>
       </node>
     </node>
+    <node concept="1V77HM" id="3vxjwUuiC3E" role="288GmO">
+      <property role="2_7ToJ" value="255" />
+      <property role="2_7ToH" value="52" />
+      <property role="2_7Toi" value="255" />
+      <property role="3_QSL4" value="16725247" />
+      <property role="TrG5h" value="Apfel" />
+    </node>
+    <node concept="1V77HM" id="1GfZLHukBqr" role="288GmO">
+      <property role="2_7ToJ" value="200" />
+      <property role="2_7ToH" value="98" />
+      <property role="2_7Toi" value="64" />
+      <property role="3_QSL4" value="13132352" />
+      <property role="TrG5h" value="Orange" />
+    </node>
   </node>
   <node concept="2SvMkh" id="3vxjwUuiC0i">
     <node concept="3GWJoq" id="3vxjwUuiC0j" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
+      <node concept="2tJIrI" id="3vxjwUuiC38" role="jymVt" />
+      <node concept="2tJIrI" id="3vxjwUuiC3a" role="jymVt" />
+      <node concept="2tJIrI" id="3vxjwUuiC3d" role="jymVt" />
       <node concept="3Tm1VV" id="3vxjwUuiC0k" role="1B3o_S" />
       <node concept="1V74GB" id="3vxjwUuiC0l" role="lGtFl">
         <property role="32Xqk$" value="chosenModule" />
