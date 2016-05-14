@@ -631,23 +631,14 @@
                               </node>
                               <node concept="liA8E" id="7zVxj5AYzAA" role="2OqNvi">
                                 <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="createModel" />
-                                <node concept="3cpWs3" id="7zVxj5AYzAB" role="37wK5m">
-                                  <node concept="Xl_RD" id="7zVxj5AYzAC" role="3uHU7w">
-                                    <property role="Xl_RC" value=".PEoPLConfig" />
-                                  </node>
-                                  <node concept="2OqwBi" id="7zVxj5AYzAD" role="3uHU7B">
-                                    <node concept="37vLTw" id="7zVxj5AYzAE" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="hSQov3$" resolve="s" />
-                                    </node>
-                                    <node concept="liA8E" id="7zVxj5AYzAF" role="2OqNvi">
-                                      <ref role="37wK5l" to="z1c3:~AbstractModule.getModuleName():java.lang.String" resolve="getModuleName" />
-                                    </node>
-                                  </node>
+                                <node concept="Xl_RD" id="7zVxj5AYzAC" role="37wK5m">
+                                  <property role="Xl_RC" value="PEoPLConfig" />
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="4rXPXKI2Y0F" role="3cqZAp" />
                         <node concept="3clFbH" id="7zVxj5AYISC" role="3cqZAp" />
                         <node concept="3clFbF" id="7zVxj5AYAbh" role="3cqZAp">
                           <node concept="2OqwBi" id="7zVxj5AYBVO" role="3clFbG">
