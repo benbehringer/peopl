@@ -623,7 +623,7 @@
                         </node>
                         <node concept="3cpWs8" id="7zVxj5AYzAy" role="3cqZAp">
                           <node concept="3cpWsn" id="7zVxj5AYzAz" role="3cpWs9">
-                            <property role="TrG5h" value="newModel" />
+                            <property role="TrG5h" value="peoplConfigModel" />
                             <node concept="H_c77" id="7zVxj5AY$ff" role="1tU5fm" />
                             <node concept="2OqwBi" id="7zVxj5AYzA$" role="33vP2m">
                               <node concept="37vLTw" id="7zVxj5AYzA_" role="2Oq$k0">
@@ -638,14 +638,126 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="4rXPXKI2Y0F" role="3cqZAp" />
+                        <node concept="3cpWs8" id="4rXPXKI3noJ" role="3cqZAp">
+                          <node concept="3cpWsn" id="4rXPXKI3noM" role="3cpWs9">
+                            <property role="TrG5h" value="defaultModel" />
+                            <node concept="H_c77" id="4rXPXKI3noN" role="1tU5fm" />
+                            <node concept="2OqwBi" id="4rXPXKI3noO" role="33vP2m">
+                              <node concept="37vLTw" id="4rXPXKI3noP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7zVxj5AYwmW" resolve="defaultRoot" />
+                              </node>
+                              <node concept="liA8E" id="4rXPXKI3noQ" role="2OqNvi">
+                                <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="createModel" />
+                                <node concept="Xl_RD" id="4rXPXKI3noR" role="37wK5m">
+                                  <property role="Xl_RC" value="default" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbH" id="7zVxj5AYISC" role="3cqZAp" />
+                        <node concept="3clFbH" id="4rXPXKI3niu" role="3cqZAp" />
+                        <node concept="3clFbF" id="4rXPXKI3nSG" role="3cqZAp">
+                          <node concept="2OqwBi" id="4rXPXKI3nSH" role="3clFbG">
+                            <node concept="1eOMI4" id="4rXPXKI3nSI" role="2Oq$k0">
+                              <node concept="10QFUN" id="4rXPXKI3nSJ" role="1eOMHV">
+                                <node concept="37vLTw" id="4rXPXKI3odm" role="10QFUP">
+                                  <ref role="3cqZAo" node="4rXPXKI3noM" resolve="defaultModel" />
+                                </node>
+                                <node concept="3uibUv" id="4rXPXKI3nSL" role="10QFUM">
+                                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="4rXPXKI3nSM" role="2OqNvi">
+                              <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                              <node concept="pHN19" id="4rXPXKI3nSN" role="37wK5m">
+                                <node concept="2V$Bhx" id="4rXPXKI3nSO" role="2V$M_3">
+                                  <property role="2V$B1T" value="fe78a547-334d-4401-802e-373d6ba57db0" />
+                                  <property role="2V$B1Q" value="de.htwsaar.peopl.dep.baselang" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4rXPXKI3nSP" role="3cqZAp">
+                          <node concept="2OqwBi" id="4rXPXKI3nSQ" role="3clFbG">
+                            <node concept="1eOMI4" id="4rXPXKI3nSR" role="2Oq$k0">
+                              <node concept="10QFUN" id="4rXPXKI3nSS" role="1eOMHV">
+                                <node concept="37vLTw" id="4rXPXKI3oop" role="10QFUP">
+                                  <ref role="3cqZAo" node="4rXPXKI3noM" resolve="defaultModel" />
+                                </node>
+                                <node concept="3uibUv" id="4rXPXKI3nSU" role="10QFUM">
+                                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="4rXPXKI3nSV" role="2OqNvi">
+                              <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                              <node concept="pHN19" id="4rXPXKI3nSW" role="37wK5m">
+                                <node concept="2V$Bhx" id="4rXPXKI3nSX" role="2V$M_3">
+                                  <property role="2V$B1T" value="1a3a0b62-fb00-47d1-8423-98da4001b216" />
+                                  <property role="2V$B1Q" value="de.htwsaar.peopl.core" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4rXPXKI3nSY" role="3cqZAp">
+                          <node concept="2OqwBi" id="4rXPXKI3nSZ" role="3clFbG">
+                            <node concept="1eOMI4" id="4rXPXKI3nT0" role="2Oq$k0">
+                              <node concept="10QFUN" id="4rXPXKI3nT1" role="1eOMHV">
+                                <node concept="37vLTw" id="4rXPXKI3ozo" role="10QFUP">
+                                  <ref role="3cqZAo" node="4rXPXKI3noM" resolve="defaultModel" />
+                                </node>
+                                <node concept="3uibUv" id="4rXPXKI3nT3" role="10QFUM">
+                                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="4rXPXKI3nT4" role="2OqNvi">
+                              <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                              <node concept="pHN19" id="4rXPXKI3nT5" role="37wK5m">
+                                <node concept="2V$Bhx" id="4rXPXKI3nT6" role="2V$M_3">
+                                  <property role="2V$B1T" value="42727bc4-0771-4379-872f-090530265ce4" />
+                                  <property role="2V$B1Q" value="de.htwsaar.peopl.core.config" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4rXPXKI3nT7" role="3cqZAp">
+                          <node concept="2OqwBi" id="4rXPXKI3nT8" role="3clFbG">
+                            <node concept="1eOMI4" id="4rXPXKI3nT9" role="2Oq$k0">
+                              <node concept="10QFUN" id="4rXPXKI3nTa" role="1eOMHV">
+                                <node concept="37vLTw" id="4rXPXKI3nTb" role="10QFUP">
+                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
+                                </node>
+                                <node concept="3uibUv" id="4rXPXKI3nTc" role="10QFUM">
+                                  <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="4rXPXKI3nTd" role="2OqNvi">
+                              <ref role="37wK5l" to="g3l6:~SModelDescriptorStub.addLanguage(org.jetbrains.mps.openapi.language.SLanguage):void" resolve="addLanguage" />
+                              <node concept="pHN19" id="4rXPXKI3nTe" role="37wK5m">
+                                <node concept="2V$Bhx" id="4rXPXKI3nTf" role="2V$M_3">
+                                  <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+                                  <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
+                                  <property role="2V$B1S" value="-1" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="4rXPXKI3nKc" role="3cqZAp" />
+                        <node concept="3clFbH" id="4rXPXKI3nLS" role="3cqZAp" />
                         <node concept="3clFbF" id="7zVxj5AYAbh" role="3cqZAp">
                           <node concept="2OqwBi" id="7zVxj5AYBVO" role="3clFbG">
                             <node concept="1eOMI4" id="7zVxj5AYA_l" role="2Oq$k0">
                               <node concept="10QFUN" id="7zVxj5AYA_m" role="1eOMHV">
                                 <node concept="37vLTw" id="7zVxj5AYA_k" role="10QFUP">
-                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="newModel" />
+                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
                                 </node>
                                 <node concept="3uibUv" id="3DVVPRJFBqd" role="10QFUM">
                                   <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
@@ -668,7 +780,7 @@
                             <node concept="1eOMI4" id="3bSp8Y63Kke" role="2Oq$k0">
                               <node concept="10QFUN" id="3bSp8Y63Kkf" role="1eOMHV">
                                 <node concept="37vLTw" id="3bSp8Y63Kkg" role="10QFUP">
-                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="newModel" />
+                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
                                 </node>
                                 <node concept="3uibUv" id="3bSp8Y63Kkh" role="10QFUM">
                                   <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
@@ -691,7 +803,7 @@
                             <node concept="1eOMI4" id="7zVxj5AYMwB" role="2Oq$k0">
                               <node concept="10QFUN" id="7zVxj5AYMwC" role="1eOMHV">
                                 <node concept="37vLTw" id="7zVxj5AYMwD" role="10QFUP">
-                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="newModel" />
+                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
                                 </node>
                                 <node concept="3uibUv" id="7zVxj5AYMwE" role="10QFUM">
                                   <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
@@ -714,7 +826,7 @@
                             <node concept="1eOMI4" id="7zVxj5AYKFr" role="2Oq$k0">
                               <node concept="10QFUN" id="7zVxj5AYKFs" role="1eOMHV">
                                 <node concept="37vLTw" id="7zVxj5AYKFt" role="10QFUP">
-                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="newModel" />
+                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
                                 </node>
                                 <node concept="3uibUv" id="7zVxj5AYKFu" role="10QFUM">
                                   <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
@@ -733,6 +845,8 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="4rXPXKI3lHa" role="3cqZAp" />
+                        <node concept="3clFbH" id="4rXPXKI3lNg" role="3cqZAp" />
                         <node concept="3clFbH" id="_7spT05kL4" role="3cqZAp" />
                         <node concept="3cpWs8" id="5CbVY30sPHD" role="3cqZAp">
                           <node concept="3cpWsn" id="5CbVY30sPHE" role="3cpWs9">
@@ -767,7 +881,7 @@
                         <node concept="3clFbF" id="5CbVY30sJ50" role="3cqZAp">
                           <node concept="2OqwBi" id="5CbVY30sJbv" role="3clFbG">
                             <node concept="37vLTw" id="4rXPXKI2yNA" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="newModel" />
+                              <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
                             </node>
                             <node concept="3BYIHo" id="4rXPXKI2yPo" role="2OqNvi">
                               <node concept="37vLTw" id="4rXPXKI2z9O" role="3BYIHq">
