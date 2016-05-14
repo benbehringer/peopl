@@ -14,6 +14,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -50,12 +51,22 @@
     <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="tpib" ref="r:00000000-0000-4000-0000-011c8959057f(jetbrains.mps.baseLanguage.logging.structure)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
+        <property id="2162403111523065396" name="cellId" index="1lyBwo" />
+      </concept>
+      <concept id="3647146066980922272" name="jetbrains.mps.lang.editor.structure.SelectInEditorOperation" flags="nn" index="1OKiuA">
+        <child id="1948540814633499358" name="editorContext" index="lBI5i" />
+        <child id="1948540814635895774" name="cellSelector" index="lGT1i" />
+      </concept>
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -1818,27 +1829,15 @@
                                 <node concept="3clFbF" id="5DBfqy2tehU" role="3cqZAp">
                                   <node concept="2OqwBi" id="5DBfqy2tehV" role="3clFbG">
                                     <node concept="2OqwBi" id="5DBfqy2tehW" role="2Oq$k0">
-                                      <node concept="1eOMI4" id="5DBfqy2tehX" role="2Oq$k0">
-                                        <node concept="10QFUN" id="5DBfqy2tehY" role="1eOMHV">
-                                          <node concept="2OqwBi" id="5DBfqy2tehZ" role="10QFUP">
-                                            <node concept="37vLTw" id="5DBfqy2tei0" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
-                                            </node>
-                                            <node concept="liA8E" id="5DBfqy2tei1" role="2OqNvi">
-                                              <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
-                                            </node>
-                                          </node>
-                                          <node concept="3uibUv" id="5DBfqy2tei2" role="10QFUM">
-                                            <ref role="3uigEE" to="exr9:~NodeEditorComponent" resolve="NodeEditorComponent" />
-                                          </node>
-                                        </node>
+                                      <node concept="37vLTw" id="5DBfqy2tei0" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
                                       </node>
                                       <node concept="liA8E" id="5DBfqy2tei3" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                                        <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                                       </node>
                                     </node>
                                     <node concept="liA8E" id="5DBfqy2tei4" role="2OqNvi">
-                                      <ref role="37wK5l" to="exr9:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                                      <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
                                       <node concept="2OqwBi" id="5DBfqy2thtQ" role="37wK5m">
                                         <node concept="2OqwBi" id="5DBfqy2teUQ" role="2Oq$k0">
                                           <node concept="1eOMI4" id="5DBfqy2teLQ" role="2Oq$k0">
@@ -1871,34 +1870,179 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="9aQIb" id="5DBfqy2tdtN" role="9aQIa">
-                                <node concept="3clFbS" id="5DBfqy2tdtO" role="9aQI4">
-                                  <node concept="3clFbF" id="L5cqXO5RVz" role="3cqZAp">
-                                    <node concept="2OqwBi" id="5DBfqy2t3n6" role="3clFbG">
-                                      <node concept="2OqwBi" id="L5cqXO5WJY" role="2Oq$k0">
-                                        <node concept="1eOMI4" id="L5cqXO5RVx" role="2Oq$k0">
-                                          <node concept="10QFUN" id="L5cqXO5RVu" role="1eOMHV">
-                                            <node concept="2OqwBi" id="L5cqXO5WCf" role="10QFUP">
-                                              <node concept="37vLTw" id="L5cqXO5WAr" role="2Oq$k0">
-                                                <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
-                                              </node>
-                                              <node concept="liA8E" id="L5cqXO5WET" role="2OqNvi">
-                                                <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
-                                              </node>
-                                            </node>
-                                            <node concept="3uibUv" id="L5cqXO5UlY" role="10QFUM">
-                                              <ref role="3uigEE" to="exr9:~NodeEditorComponent" resolve="NodeEditorComponent" />
-                                            </node>
-                                          </node>
+                              <node concept="3eNFk2" id="5DBfqy2vZix" role="3eNLev">
+                                <node concept="2OqwBi" id="5DBfqy2vZww" role="3eO9$A">
+                                  <node concept="37vLTw" id="5DBfqy2vZrE" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                  </node>
+                                  <node concept="1mIQ4w" id="5DBfqy2vZIX" role="2OqNvi">
+                                    <node concept="chp4Y" id="5DBfqy2vZJT" role="cj9EA">
+                                      <ref role="cht4Q" to="tpee:fzclF8j" resolve="ExpressionStatement" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbS" id="5DBfqy2vZiz" role="3eOfB_">
+                                  <node concept="3clFbF" id="5DBfqy2vZLH" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5DBfqy2vZLI" role="3clFbG">
+                                      <node concept="2OqwBi" id="5DBfqy2vZLJ" role="2Oq$k0">
+                                        <node concept="37vLTw" id="5DBfqy2vZLK" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
                                         </node>
-                                        <node concept="liA8E" id="5DBfqy2t3k5" role="2OqNvi">
-                                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+                                        <node concept="liA8E" id="5DBfqy2vZLL" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
                                         </node>
                                       </node>
-                                      <node concept="liA8E" id="5DBfqy2t3uf" role="2OqNvi">
-                                        <ref role="37wK5l" to="exr9:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
-                                        <node concept="37vLTw" id="5DBfqy2t3BQ" role="37wK5m">
+                                      <node concept="liA8E" id="5DBfqy2vZLM" role="2OqNvi">
+                                        <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                                        <node concept="2OqwBi" id="5DBfqy2w07w" role="37wK5m">
+                                          <node concept="1eOMI4" id="5DBfqy2vZLO" role="2Oq$k0">
+                                            <node concept="10QFUN" id="5DBfqy2vZLP" role="1eOMHV">
+                                              <node concept="3Tqbb2" id="5DBfqy2vZLQ" role="10QFUM">
+                                                <ref role="ehGHo" to="tpee:fzclF8j" resolve="ExpressionStatement" />
+                                              </node>
+                                              <node concept="37vLTw" id="5DBfqy2vZLR" role="10QFUP">
+                                                <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="3TrEf2" id="5DBfqy2w0jB" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="tpee:fzclF8k" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbH" id="5DBfqy2vZLF" role="3cqZAp" />
+                                </node>
+                              </node>
+                              <node concept="3eNFk2" id="5DBfqy2vFJQ" role="3eNLev">
+                                <node concept="3clFbS" id="5DBfqy2vFJR" role="3eOfB_">
+                                  <node concept="3clFbF" id="5DBfqy2vPGG" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5DBfqy2vPGH" role="3clFbG">
+                                      <node concept="2OqwBi" id="5DBfqy2vPGI" role="2Oq$k0">
+                                        <node concept="37vLTw" id="5DBfqy2vPGJ" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
+                                        </node>
+                                        <node concept="liA8E" id="5DBfqy2vPGK" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="5DBfqy2vPGL" role="2OqNvi">
+                                        <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                                        <node concept="2OqwBi" id="5DBfqy2vPGN" role="37wK5m">
+                                          <node concept="1eOMI4" id="5DBfqy2vPGO" role="2Oq$k0">
+                                            <node concept="10QFUN" id="5DBfqy2vPGP" role="1eOMHV">
+                                              <node concept="3Tqbb2" id="5DBfqy2vPGQ" role="10QFUM">
+                                                <ref role="ehGHo" to="tpee:fzcpWvK" resolve="LocalVariableDeclarationStatement" />
+                                              </node>
+                                              <node concept="37vLTw" id="5DBfqy2vPGR" role="10QFUP">
+                                                <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="3TrEf2" id="5DBfqy2vQfm" role="2OqNvi">
+                                            <ref role="3Tt5mk" to="tpee:fzcpWvL" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="5DBfqy2vPnA" role="3eO9$A">
+                                  <node concept="37vLTw" id="5DBfqy2vPiK" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                  </node>
+                                  <node concept="1mIQ4w" id="5DBfqy2vPA3" role="2OqNvi">
+                                    <node concept="chp4Y" id="5DBfqy2vPAZ" role="cj9EA">
+                                      <ref role="cht4Q" to="tpee:fzcpWvK" resolve="LocalVariableDeclarationStatement" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="9aQIb" id="5DBfqy2vFTm" role="9aQIa">
+                                <node concept="3clFbS" id="5DBfqy2vFTn" role="9aQI4">
+                                  <node concept="3clFbF" id="5DBfqy2uJ4K" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5DBfqy2uJau" role="3clFbG">
+                                      <node concept="2OqwBi" id="5DBfqy2uJ7N" role="2Oq$k0">
+                                        <node concept="37vLTw" id="5DBfqy2uJ4I" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
+                                        </node>
+                                        <node concept="liA8E" id="5DBfqy2uJ9N" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="5DBfqy2v01A" role="2OqNvi">
+                                        <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                                        <node concept="37vLTw" id="5DBfqy2v05a" role="37wK5m">
                                           <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5DBfqy2vG8x" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="3clFbF" id="5tXRd7pvRMr" role="8Wnug">
+                                      <node concept="2OqwBi" id="5tXRd7pvRMs" role="3clFbG">
+                                        <node concept="37vLTw" id="5DBfqy2tJtb" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                        </node>
+                                        <node concept="1OKiuA" id="5tXRd7pvRMu" role="2OqNvi">
+                                          <node concept="2OqwBi" id="5DBfqy2tJtT" role="lBI5i">
+                                            <node concept="37vLTw" id="5DBfqy2tJtU" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
+                                            </node>
+                                            <node concept="liA8E" id="5DBfqy2u_6S" role="2OqNvi">
+                                              <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                            </node>
+                                          </node>
+                                          <node concept="2B6iha" id="5DBfqy2ugGW" role="lGT1i">
+                                            <property role="1lyBwo" value="firstEditable" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5DBfqy2vG5U" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="3clFbF" id="5DBfqy2ugIT" role="8Wnug">
+                                      <node concept="2OqwBi" id="5DBfqy2ugIV" role="3clFbG">
+                                        <node concept="2OqwBi" id="5DBfqy2ugIW" role="2Oq$k0">
+                                          <node concept="37vLTw" id="5DBfqy2ugJ0" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
+                                          </node>
+                                          <node concept="liA8E" id="5DBfqy2ugJ3" role="2OqNvi">
+                                            <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                          </node>
+                                        </node>
+                                        <node concept="liA8E" id="5DBfqy2uh28" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.select(org.jetbrains.mps.openapi.model.SNode):void" resolve="select" />
+                                          <node concept="37vLTw" id="5DBfqy2uh5S" role="37wK5m">
+                                            <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="1X3_iC" id="5DBfqy2vG2Y" role="lGtFl">
+                                    <property role="3V$3am" value="statement" />
+                                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                    <node concept="3clFbF" id="L5cqXO5RVz" role="8Wnug">
+                                      <node concept="2OqwBi" id="5DBfqy2t3n6" role="3clFbG">
+                                        <node concept="2OqwBi" id="L5cqXO5WJY" role="2Oq$k0">
+                                          <node concept="37vLTw" id="L5cqXO5WAr" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="HDlZQSWZSv" resolve="currentEditor" />
+                                          </node>
+                                          <node concept="liA8E" id="5DBfqy2t3k5" role="2OqNvi">
+                                            <ref role="37wK5l" to="cj4x:~Editor.getEditorContext():jetbrains.mps.openapi.editor.EditorContext" resolve="getEditorContext" />
+                                          </node>
+                                        </node>
+                                        <node concept="liA8E" id="5DBfqy2t3uf" role="2OqNvi">
+                                          <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode):void" resolve="selectWRTFocusPolicy" />
+                                          <node concept="37vLTw" id="5DBfqy2t3BQ" role="37wK5m">
+                                            <ref role="3cqZAo" node="5DBfqy2s3nn" resolve="newStatement" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>
