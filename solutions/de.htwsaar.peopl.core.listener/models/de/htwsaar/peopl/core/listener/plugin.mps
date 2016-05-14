@@ -102,6 +102,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -144,7 +147,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -6214,7 +6217,6 @@
                             <node concept="3clFbH" id="4abErjGKnjq" role="3cqZAp" />
                           </node>
                         </node>
-                        <node concept="2tJIrI" id="4abErjGKlCf" role="jymVt" />
                         <node concept="2tJIrI" id="4abErjGKpoj" role="jymVt" />
                         <node concept="3clFb_" id="4abErjGKlCg" role="jymVt">
                           <property role="1EzhhJ" value="false" />
@@ -6737,16 +6739,9 @@
                                           </node>
                                           <node concept="liA8E" id="4abErjGKlEv" role="2OqNvi">
                                             <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                                            <node concept="2OqwBi" id="4abErjGKlEw" role="37wK5m">
-                                              <node concept="2OqwBi" id="4abErjGKlEx" role="2Oq$k0">
-                                                <node concept="35c_gC" id="4abErjGKlEy" role="2Oq$k0">
-                                                  <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-                                                </node>
-                                                <node concept="LFhST" id="4abErjGKlEz" role="2OqNvi" />
-                                              </node>
-                                              <node concept="3TrcHB" id="4abErjGKlE$" role="2OqNvi">
-                                                <ref role="3TsBF5" to="xf8r:7uLiVyPheUs" resolve="chosenModuleLinkName" />
-                                              </node>
+                                            <node concept="10M0yZ" id="1GfZLHun3iY" role="37wK5m">
+                                              <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
+                                              <ref role="3cqZAo" to="zur:1GfZLHun21f" resolve="CHOSEN_MODULE_LINK_NAME" />
                                             </node>
                                           </node>
                                         </node>

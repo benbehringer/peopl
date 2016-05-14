@@ -76,6 +76,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -322,6 +323,7 @@
   </node>
   <node concept="312cEu" id="VwUpvpz79p">
     <property role="TrG5h" value="PeoplActionAspectsBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="312cEu" id="4WtnmUd_yvS" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -626,6 +628,7 @@
   </node>
   <node concept="312cEu" id="7PFXpItpfae">
     <property role="TrG5h" value="PeoplVPBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="312cEu" id="7PFXpItpfxG" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -833,6 +836,7 @@
   </node>
   <node concept="312cEu" id="61l2320GDVi">
     <property role="TrG5h" value="PeoplViewRootNodeBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="312cEu" id="6cq_xgv5lHk" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -950,6 +954,7 @@
   </node>
   <node concept="312cEu" id="4abErjGLjj5">
     <property role="TrG5h" value="PeoplIntermediateNodesBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="312cEu" id="4abErjGLjqq" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -1460,6 +1465,7 @@
   </node>
   <node concept="312cEu" id="4abErjGMZfK">
     <property role="TrG5h" value="PeoplBlockStatementBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="2tJIrI" id="4abErjGMZfY" role="jymVt" />
     <node concept="312cEu" id="4abErjGMZv7" role="jymVt">
       <property role="2bfB8j" value="false" />
@@ -1598,6 +1604,7 @@
   </node>
   <node concept="312cEu" id="6bj2b$tIcI3">
     <property role="TrG5h" value="PeoplActiveFragmentsBuffer" />
+    <property role="3GE5qa" value="Buffer" />
     <node concept="312cEu" id="6bj2b$tIdxy" role="jymVt">
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
@@ -1875,6 +1882,54 @@
     </node>
     <node concept="2tJIrI" id="6bj2b$tIiH2" role="jymVt" />
     <node concept="3Tm1VV" id="6bj2b$tIcI4" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="1GfZLHumrVq">
+    <property role="TrG5h" value="PeoplStaticStringHelper" />
+    <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
+      <property role="TrG5h" value="STD_CONFIG_MODEL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
+      <node concept="17QB3L" id="2H0DQTMFfyS" role="1tU5fm" />
+      <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
+        <property role="Xl_RC" value="config" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GfZLHumxZJ" role="jymVt" />
+    <node concept="Wx3nA" id="1GfZLHumxXs" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PEOPL_BASE_MODULE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1GfZLHumxOc" role="1B3o_S" />
+      <node concept="17QB3L" id="1GfZLHumxXm" role="1tU5fm" />
+      <node concept="Xl_RD" id="1GfZLHumxZk" role="33vP2m">
+        <property role="Xl_RC" value="Base" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1GfZLHumy$G" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="PEOPL_BASE_MODULE_DEFINITIONS" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1GfZLHumy$H" role="1B3o_S" />
+      <node concept="17QB3L" id="1GfZLHumy$I" role="1tU5fm" />
+      <node concept="Xl_RD" id="1GfZLHumy$J" role="33vP2m">
+        <property role="Xl_RC" value="ModuleDefinitions" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GfZLHumrW0" role="jymVt" />
+    <node concept="Wx3nA" id="1GfZLHun21f" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="CHOSEN_MODULE_LINK_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1GfZLHun1RL" role="1B3o_S" />
+      <node concept="17QB3L" id="1GfZLHun219" role="1tU5fm" />
+      <node concept="Xl_RD" id="1GfZLHun21Y" role="33vP2m">
+        <property role="Xl_RC" value="chosenModule" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1GfZLHumrVr" role="1B3o_S" />
   </node>
 </model>
 

@@ -77,6 +77,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
@@ -1088,14 +1091,15 @@
       <node concept="3clFbS" id="36tKSlW0Mnu" role="2VODD2">
         <node concept="3clFbF" id="7uLiVyPhfnp" role="3cqZAp">
           <node concept="37vLTI" id="7uLiVyPhfAY" role="3clFbG">
-            <node concept="Xl_RD" id="7uLiVyPhfBg" role="37vLTx">
-              <property role="Xl_RC" value="chosenModule" />
-            </node>
             <node concept="2OqwBi" id="7uLiVyPhfpm" role="37vLTJ">
               <node concept="13iPFW" id="7uLiVyPhfnn" role="2Oq$k0" />
               <node concept="3TrcHB" id="7uLiVyPhfvi" role="2OqNvi">
                 <ref role="3TsBF5" to="xf8r:7uLiVyPheUs" resolve="chosenModuleLinkName" />
               </node>
+            </node>
+            <node concept="10M0yZ" id="1GfZLHun26y" role="37vLTx">
+              <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
+              <ref role="3cqZAo" to="zur:1GfZLHun21f" resolve="CHOSEN_MODULE_LINK_NAME" />
             </node>
           </node>
         </node>
@@ -2262,7 +2266,7 @@
             <node concept="3clFbF" id="9AU9SVIC5f" role="3cqZAp">
               <node concept="37vLTI" id="9AU9SVIC7q" role="3clFbG">
                 <node concept="BsUDl" id="9AU9SVICuS" role="37vLTx">
-                  <ref role="37wK5l" node="9AU9SVI$YE" resolve="findModuleDefinitonInModule" />
+                  <ref role="37wK5l" node="9AU9SVI$YE" resolve="findPeoplModuleDefinitonInMPSModule" />
                   <node concept="37vLTw" id="9AU9SVICyr" role="37wK5m">
                     <ref role="3cqZAo" node="62a2r2cwfv0" resolve="currentModel" />
                   </node>
@@ -2741,7 +2745,7 @@
       <node concept="3bZ5Sz" id="5FNma2fzxnw" role="3clF45" />
     </node>
     <node concept="13i0hz" id="9AU9SVI$YE" role="13h7CS">
-      <property role="TrG5h" value="findModuleDefinitonInModule" />
+      <property role="TrG5h" value="findPeoplModuleDefinitonInMPSModule" />
       <property role="2Ki8OM" value="true" />
       <node concept="37vLTG" id="9AU9SVIC$W" role="3clF46">
         <property role="TrG5h" value="currentModel" />
@@ -2823,8 +2827,9 @@
                 </node>
                 <node concept="liA8E" id="9AU9SVIWhf" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                  <node concept="Xl_RD" id="9AU9SVIWhB" role="37wK5m">
-                    <property role="Xl_RC" value="PEoPLConfig" />
+                  <node concept="10M0yZ" id="1GfZLHumrY7" role="37wK5m">
+                    <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
+                    <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_MODEL" />
                   </node>
                 </node>
               </node>
@@ -2851,7 +2856,7 @@
             <node concept="34ab3g" id="9AU9SVIWM3" role="3cqZAp">
               <property role="35gtTG" value="error" />
               <node concept="Xl_RD" id="9AU9SVIWM4" role="34bqiv">
-                <property role="Xl_RC" value="Didnt find modulDefintion in Module in Model : PeoplConfig " />
+                <property role="Xl_RC" value="Didn't find a module defintion." />
               </node>
             </node>
           </node>

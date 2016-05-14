@@ -66,6 +66,7 @@
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -642,8 +643,9 @@
                               </node>
                               <node concept="liA8E" id="7zVxj5AYzAA" role="2OqNvi">
                                 <ref role="37wK5l" to="dush:~ModelRoot.createModel(java.lang.String):org.jetbrains.mps.openapi.model.SModel" resolve="createModel" />
-                                <node concept="Xl_RD" id="7zVxj5AYzAC" role="37wK5m">
-                                  <property role="Xl_RC" value="config" />
+                                <node concept="10M0yZ" id="1GfZLHumw_H" role="37wK5m">
+                                  <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
+                                  <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_MODEL" />
                                 </node>
                               </node>
                             </node>
@@ -956,9 +958,6 @@
                         </node>
                         <node concept="3clFbF" id="5CbVY30tjU2" role="3cqZAp">
                           <node concept="37vLTI" id="5CbVY30tkhc" role="3clFbG">
-                            <node concept="Xl_RD" id="5CbVY30tkhI" role="37vLTx">
-                              <property role="Xl_RC" value="ModuleDefinitions" />
-                            </node>
                             <node concept="2OqwBi" id="5CbVY30tk34" role="37vLTJ">
                               <node concept="37vLTw" id="5CbVY30tk0S" role="2Oq$k0">
                                 <ref role="3cqZAo" node="5CbVY30sPHE" resolve="moduleDef" />
@@ -966,6 +965,10 @@
                               <node concept="3TrcHB" id="5CbVY30tk8F" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
+                            </node>
+                            <node concept="10M0yZ" id="1GfZLHumyDa" role="37vLTx">
+                              <ref role="3cqZAo" to="zur:1GfZLHumy$G" resolve="PEOPL_BASE_MODULE_DEFINITIONS" />
+                              <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
                             </node>
                           </node>
                         </node>
@@ -1034,9 +1037,6 @@
                         </node>
                         <node concept="3clFbF" id="1GfZLHulauj" role="3cqZAp">
                           <node concept="37vLTI" id="1GfZLHulbig" role="3clFbG">
-                            <node concept="Xl_RD" id="1GfZLHulb$J" role="37vLTx">
-                              <property role="Xl_RC" value="Base" />
-                            </node>
                             <node concept="2OqwBi" id="1GfZLHulaP1" role="37vLTJ">
                               <node concept="37vLTw" id="1GfZLHulauh" role="2Oq$k0">
                                 <ref role="3cqZAo" node="7py5CdNW8lY" resolve="baseModule" />
@@ -1044,6 +1044,10 @@
                               <node concept="3TrcHB" id="1GfZLHulb9U" role="2OqNvi">
                                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                               </node>
+                            </node>
+                            <node concept="10M0yZ" id="1GfZLHumyXB" role="37vLTx">
+                              <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
+                              <ref role="3cqZAo" to="zur:1GfZLHumxXs" resolve="PEOPL_BASE_MODULE" />
                             </node>
                           </node>
                         </node>
