@@ -730,8 +730,8 @@
                           <node concept="2OqwBi" id="4rXPXKI3nT8" role="3clFbG">
                             <node concept="1eOMI4" id="4rXPXKI3nT9" role="2Oq$k0">
                               <node concept="10QFUN" id="4rXPXKI3nTa" role="1eOMHV">
-                                <node concept="37vLTw" id="4rXPXKI3nTb" role="10QFUP">
-                                  <ref role="3cqZAo" node="7zVxj5AYzAz" resolve="peoplConfigModel" />
+                                <node concept="37vLTw" id="4rXPXKI3DM4" role="10QFUP">
+                                  <ref role="3cqZAo" node="4rXPXKI3noM" resolve="defaultModel" />
                                 </node>
                                 <node concept="3uibUv" id="4rXPXKI3nTc" role="10QFUM">
                                   <ref role="3uigEE" to="g3l6:~SModelBase" resolve="SModelBase" />
@@ -866,7 +866,7 @@
                         <node concept="3clFbF" id="5CbVY30tjU2" role="3cqZAp">
                           <node concept="37vLTI" id="5CbVY30tkhc" role="3clFbG">
                             <node concept="Xl_RD" id="5CbVY30tkhI" role="37vLTx">
-                              <property role="Xl_RC" value="GeneratedModulDef" />
+                              <property role="Xl_RC" value="ModuleDefinitions" />
                             </node>
                             <node concept="2OqwBi" id="5CbVY30tk34" role="37vLTJ">
                               <node concept="37vLTw" id="5CbVY30tk0S" role="2Oq$k0">
