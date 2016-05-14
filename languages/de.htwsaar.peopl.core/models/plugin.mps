@@ -1894,11 +1894,20 @@
         <property role="Xl_RC" value="config" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1GfZLHumxZJ" role="jymVt" />
+    <node concept="Wx3nA" id="1GfZLHunQDv" role="jymVt">
+      <property role="TrG5h" value="STD_SANDBOX_MODEL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1GfZLHunQDw" role="1B3o_S" />
+      <node concept="17QB3L" id="1GfZLHunQDx" role="1tU5fm" />
+      <node concept="Xl_RD" id="1GfZLHunQDy" role="33vP2m">
+        <property role="Xl_RC" value="sandbox" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1GfZLHunQD5" role="jymVt" />
     <node concept="Wx3nA" id="1GfZLHumxXs" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="PEOPL_BASE_MODULE" />
+      <property role="TrG5h" value="STD_BASE_MODULE" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="1GfZLHumxOc" role="1B3o_S" />
       <node concept="17QB3L" id="1GfZLHumxXm" role="1tU5fm" />
@@ -1909,7 +1918,7 @@
     <node concept="Wx3nA" id="1GfZLHumy$G" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="PEOPL_BASE_MODULE_DEFINITIONS" />
+      <property role="TrG5h" value="STD_MODULE_DEFINITIONS" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="1GfZLHumy$H" role="1B3o_S" />
       <node concept="17QB3L" id="1GfZLHumy$I" role="1tU5fm" />

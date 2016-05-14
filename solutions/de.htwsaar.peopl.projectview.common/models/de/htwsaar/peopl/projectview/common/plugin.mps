@@ -967,7 +967,7 @@
                               </node>
                             </node>
                             <node concept="10M0yZ" id="1GfZLHumyDa" role="37vLTx">
-                              <ref role="3cqZAo" to="zur:1GfZLHumy$G" resolve="PEOPL_BASE_MODULE_DEFINITIONS" />
+                              <ref role="3cqZAo" to="zur:1GfZLHumy$G" resolve="STD_MODULE_DEFINITIONS" />
                               <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
                             </node>
                           </node>
@@ -1047,7 +1047,7 @@
                             </node>
                             <node concept="10M0yZ" id="1GfZLHumyXB" role="37vLTx">
                               <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplStaticStringHelper" />
-                              <ref role="3cqZAo" to="zur:1GfZLHumxXs" resolve="PEOPL_BASE_MODULE" />
+                              <ref role="3cqZAo" to="zur:1GfZLHumxXs" resolve="STD_BASE_MODULE" />
                             </node>
                           </node>
                         </node>
@@ -1746,6 +1746,23 @@
                       </node>
                     </node>
                     <node concept="3clFbH" id="1k3hL0S$4BH" role="3cqZAp" />
+                    <node concept="1X3_iC" id="1tyuvi0qLX1" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="5Xi5FfmF70x" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="2OqwBi" id="5Xi5FfmF7bQ" role="34bqiv">
+                          <node concept="37vLTw" id="5Xi5FfmF7bR" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7WEW9M6pL61" resolve="info" />
+                          </node>
+                          <node concept="2OwXpG" id="5Xi5FfmF7bS" role="2OqNvi">
+                            <ref role="2Oxat5" to="mljx:7WEW9M6pksa" resolve="viewElementId" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="5Xi5FfmFDY9" role="3cqZAp" />
+                    <node concept="3clFbH" id="5Xi5FfmFEee" role="3cqZAp" />
                     <node concept="3SKdUt" id="1k3hL0SuYCX" role="3cqZAp">
                       <node concept="3SKdUq" id="1k3hL0SuYCY" role="3SKWNk">
                         <property role="3SKdUp" value="TODO: This is a pretty dirty hack. Provide a better implementation to distinguish the views" />
@@ -1763,7 +1780,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="DS4tmG0XGh" role="3cqZAp" />
                         <node concept="3clFbH" id="3Ps5RgXm2_x" role="3cqZAp" />
                         <node concept="3clFbJ" id="2c8WkvQp4dA" role="3cqZAp">
                           <node concept="3clFbS" id="2c8WkvQp4dC" role="3clFbx">
@@ -1979,7 +1995,7 @@
                                           </node>
                                         </node>
                                         <node concept="Xl_RD" id="6hhB4BxiL7Z" role="3uHU7B">
-                                          <property role="Xl_RC" value="ExtDef_ProjetviewPeoplAwareness -&gt; openNode -&gt; Unknown Classtype of paramater : alternativePeoplClass.concept = " />
+                                          <property role="Xl_RC" value="openNode: Unknown Classtype of paramater : alternativePeoplClass.concept = " />
                                         </node>
                                       </node>
                                     </node>
@@ -2314,6 +2330,7 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="5Xi5FfmF3YE" role="3cqZAp" />
                       </node>
                       <node concept="1Wc70l" id="7yG_mcG8JAp" role="3clFbw">
                         <node concept="3y3z36" id="7yG_mcG8Kp3" role="3uHU7B">
