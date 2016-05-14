@@ -16,6 +16,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
   </languages>
   <imports>
     <import index="3kir" ref="r:cb848a2c-837a-4a77-9437-095eddffdfa6(de.htwsaar.peopl.view.modular.behavior)" />
@@ -61,6 +62,12 @@
     <import index="r967" ref="r:990968a2-492a-47df-a0d5-5baee85ecafc(de.htwsaar.peopl.utils.plugin)" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
+      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
+        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      </concept>
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
@@ -69,6 +76,7 @@
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
@@ -466,11 +474,11 @@
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
-  <node concept="2DaZZR" id="5LkYmk7hbIB" />
   <node concept="2DaZZR" id="1kQvcj1TyAG" />
   <node concept="sE7Ow" id="1kQvcj1TyFZ">
     <property role="TrG5h" value="CreatePeoplSolution" />
-    <property role="2uzpH1" value="Create Peopl Solution" />
+    <property role="2uzpH1" value="Peopl Solution" />
+    <property role="3GE5qa" value="Actions" />
     <node concept="1DS2jV" id="1lfFv49lVdi" role="1NuT2Z">
       <property role="TrG5h" value="currentProject" />
       <ref role="1DUlNI" to="qq04:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -483,10 +491,14 @@
     </node>
     <node concept="tnohg" id="1kQvcj1TyG0" role="tncku">
       <node concept="3clFbS" id="1kQvcj1TyG1" role="2VODD2">
-        <node concept="34ab3g" id="1lfFv49lLWJ" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="1lfFv49lLWL" role="34bqiv">
-            <property role="Xl_RC" value=" Called CreatePeoplSolution" />
+        <node concept="1X3_iC" id="2bP_SOPYU9V" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="1lfFv49lLWJ" role="8Wnug">
+            <property role="35gtTG" value="warn" />
+            <node concept="Xl_RD" id="1lfFv49lLWL" role="34bqiv">
+              <property role="Xl_RC" value=" Called CreatePeoplSolution" />
+            </node>
           </node>
         </node>
         <node concept="3cpWs8" id="hSQohnu" role="3cqZAp">
@@ -879,6 +891,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="1QGGSu" id="2bP_SOPZ6fq" role="3Uehp1">
+      <property role="1QGGTI" value="${module}/icons/peopl_solution.png" />
     </node>
   </node>
   <node concept="312cEu" id="1sh5U6QbZ9U">
@@ -3621,15 +3636,16 @@
     </node>
   </node>
   <node concept="tC5Ba" id="1lfFv49lGWL">
-    <property role="TrG5h" value="CreatePeoplSolution" />
+    <property role="TrG5h" value="NewPeoplSolution" />
+    <property role="3GE5qa" value="Actions" />
     <node concept="ftmFs" id="1lfFv49lGWN" role="ftER_">
       <node concept="tCFHf" id="1lfFv49lGWQ" role="ftvYc">
         <ref role="tCJdB" node="1kQvcj1TyFZ" resolve="CreatePeoplSolution" />
       </node>
     </node>
     <node concept="tT9cl" id="1lfFv49lH1h" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4HGL" resolve="ProjectActions" />
-      <ref role="2f8Tey" to="tprs:hyahB7P" resolve="projectNew" />
+      <ref role="tU$_T" to="tprs:hyf4HSg" resolve="ProjectNewActions" />
+      <ref role="2f8Tey" to="tprs:56$IWKxeQ2A" resolve="languageExt" />
     </node>
   </node>
 </model>
