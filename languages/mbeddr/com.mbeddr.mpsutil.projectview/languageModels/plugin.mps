@@ -75,7 +75,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -192,7 +192,7 @@
       <node concept="312cEg" id="7WEW9M6pks2" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="pEntryPoint" />
+        <property role="TrG5h" value="peoplEntryPoint" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="7WEW9M6pks3" role="1B3o_S" />
         <node concept="3uibUv" id="7WEW9M6pks4" role="1tU5fm">
@@ -245,7 +245,7 @@
       <node concept="312cEg" id="14qL8Nc$Nby" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="modulDefintion" />
+        <property role="TrG5h" value="moduleDefintion" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="14qL8Nc$MWr" role="1B3o_S" />
         <node concept="3uibUv" id="14qL8Nc$NaQ" role="1tU5fm">
@@ -293,7 +293,7 @@
                         </node>
                         <node concept="3cpWs3" id="LgY1EVE8VN" role="3uHU7B">
                           <node concept="Xl_RD" id="LgY1EVE8PU" role="3uHU7B">
-                            <property role="Xl_RC" value="method : " />
+                            <property role="Xl_RC" value="Method : " />
                           </node>
                           <node concept="2OqwBi" id="LgY1EVE96w" role="3uHU7w">
                             <node concept="37vLTw" id="LgY1EVE8Xd" role="2Oq$k0">
@@ -333,11 +333,11 @@
                       <node concept="3cpWs3" id="LgY1EVEuP2" role="37wK5m">
                         <node concept="3cpWs3" id="LgY1EVE9ij" role="3uHU7B">
                           <node concept="Xl_RD" id="LgY1EVE9in" role="3uHU7B">
-                            <property role="Xl_RC" value="pEntryPoint : " />
+                            <property role="Xl_RC" value="Peopl entry point : " />
                           </node>
                           <node concept="2OqwBi" id="LgY1EVE9ik" role="3uHU7w">
                             <node concept="37vLTw" id="LgY1EVE9WI" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7WEW9M6pks2" resolve="pEntryPoint" />
+                              <ref role="3cqZAo" node="7WEW9M6pks2" resolve="peoplEntryPoint" />
                             </node>
                             <node concept="liA8E" id="LgY1EVE9im" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
@@ -359,7 +359,7 @@
             <node concept="3y3z36" id="LgY1EVE9ip" role="3clFbw">
               <node concept="10Nm6u" id="LgY1EVE9iq" role="3uHU7w" />
               <node concept="37vLTw" id="LgY1EVE9_x" role="3uHU7B">
-                <ref role="3cqZAo" node="7WEW9M6pks2" resolve="pEntryPoint" />
+                <ref role="3cqZAo" node="7WEW9M6pks2" resolve="peoplEntryPoint" />
               </node>
             </node>
           </node>
@@ -376,7 +376,7 @@
                       <node concept="3cpWs3" id="LgY1EVEuVj" role="37wK5m">
                         <node concept="3cpWs3" id="LgY1EVE9nh" role="3uHU7B">
                           <node concept="Xl_RD" id="LgY1EVE9nl" role="3uHU7B">
-                            <property role="Xl_RC" value="module : " />
+                            <property role="Xl_RC" value="Module : " />
                           </node>
                           <node concept="2OqwBi" id="LgY1EVE9ni" role="3uHU7w">
                             <node concept="liA8E" id="LgY1EVE9nk" role="2OqNvi">
@@ -422,7 +422,7 @@
                             <ref role="3cqZAo" node="7WEW9M6pksa" resolve="viewElementId" />
                           </node>
                           <node concept="Xl_RD" id="LgY1EVE9tF" role="3uHU7B">
-                            <property role="Xl_RC" value="hint : " />
+                            <property role="Xl_RC" value="Hint : " />
                           </node>
                         </node>
                       </node>
@@ -463,7 +463,7 @@
                             <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="peoplClass" />
                           </node>
                           <node concept="Xl_RD" id="6hhB4BxiHbf" role="3uHU7B">
-                            <property role="Xl_RC" value="alternative class : " />
+                            <property role="Xl_RC" value="Alternative class : " />
                           </node>
                         </node>
                       </node>
@@ -501,7 +501,7 @@
                             <ref role="3cqZAo" node="7yG_mcG8oUA" resolve="productLineConfigurations" />
                           </node>
                           <node concept="Xl_RD" id="7yG_mcG8pR7" role="3uHU7B">
-                            <property role="Xl_RC" value="ProductLineConfigurations : " />
+                            <property role="Xl_RC" value="Product line configurations : " />
                           </node>
                         </node>
                       </node>
@@ -536,10 +536,10 @@
                         <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
                         <node concept="3cpWs3" id="14qL8Nc_9Lx" role="37wK5m">
                           <node concept="Xl_RD" id="14qL8Nc_9Lz" role="3uHU7B">
-                            <property role="Xl_RC" value="ModulDefintion : " />
+                            <property role="Xl_RC" value="Module defintion : " />
                           </node>
                           <node concept="37vLTw" id="14qL8Nc_a0r" role="3uHU7w">
-                            <ref role="3cqZAo" node="14qL8Nc$Nby" resolve="modulDefintion" />
+                            <ref role="3cqZAo" node="14qL8Nc$Nby" resolve="moduleDefintion" />
                           </node>
                         </node>
                       </node>
@@ -554,7 +554,7 @@
             <node concept="3y3z36" id="14qL8Nc_9us" role="3clFbw">
               <node concept="10Nm6u" id="14qL8Nc_9_K" role="3uHU7w" />
               <node concept="37vLTw" id="14qL8Nc_9m5" role="3uHU7B">
-                <ref role="3cqZAo" node="14qL8Nc$Nby" resolve="modulDefintion" />
+                <ref role="3cqZAo" node="14qL8Nc$Nby" resolve="moduleDefintion" />
               </node>
             </node>
           </node>
