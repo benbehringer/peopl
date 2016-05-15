@@ -269,9 +269,6 @@
     <node concept="1puMqW" id="4vOt5rKlTyG" role="1puA0r">
       <ref role="1puQsG" node="4vOt5rKlTkT" resolve="SetFillingFragments" />
     </node>
-    <node concept="1puMqW" id="4vOt5rKlHul" role="1puA0r">
-      <ref role="1puQsG" node="6pDd21EYBIT" resolve="DeleteFragmentsAndContent" />
-    </node>
   </node>
   <node concept="1pmfR0" id="6pDd21EYBIT">
     <property role="1v3f2W" value="pre_processing" />
