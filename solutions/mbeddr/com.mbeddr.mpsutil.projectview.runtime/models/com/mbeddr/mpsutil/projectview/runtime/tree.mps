@@ -6802,7 +6802,16 @@
       <node concept="3cqZAl" id="7PuCnELApt4" role="3clF45" />
       <node concept="3Tmbuc" id="7PuCnELBWac" role="1B3o_S" />
       <node concept="3clFbS" id="7PuCnELApt6" role="3clF47">
-        <node concept="3clFbH" id="75pZUmUeKZs" role="3cqZAp" />
+        <node concept="1X3_iC" id="3mBPDFbCpP0" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="3mBPDFbBVRI" role="8Wnug">
+            <property role="35gtTG" value="warn" />
+            <node concept="Xl_RD" id="3mBPDFbBVRK" role="34bqiv">
+              <property role="Xl_RC" value="update presentation" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7PuCnELBlqI" role="3cqZAp">
           <node concept="2OqwBi" id="7PuCnELBqRz" role="3clFbG">
             <node concept="2OqwBi" id="7PuCnELBlWK" role="2Oq$k0">
@@ -6846,7 +6855,7 @@
                   </node>
                   <node concept="3clFbJ" id="75_oBQVEm14" role="3cqZAp">
                     <node concept="3clFbS" id="75_oBQVEm16" role="3clFbx">
-                      <node concept="1X3_iC" id="75pZUmUfudj" role="lGtFl">
+                      <node concept="1X3_iC" id="3mBPDFbCp_X" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                         <node concept="34ab3g" id="75pZUmUeNvb" role="8Wnug">
@@ -6913,10 +6922,12 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="75_oBQVDtCK" role="3cqZAp">
-                        <node concept="1rXfSq" id="75_oBQVDtCI" role="3clFbG">
-                          <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAutoExpandable(boolean):void" resolve="setAutoExpandable" />
-                          <node concept="3fqX7Q" id="75_oBQVDtMN" role="37wK5m">
+                      <node concept="3clFbH" id="3mBPDFbC5Ky" role="3cqZAp" />
+                      <node concept="3cpWs8" id="3mBPDFbCaPh" role="3cqZAp">
+                        <node concept="3cpWsn" id="3mBPDFbCaPk" role="3cpWs9">
+                          <property role="TrG5h" value="autoExpandable" />
+                          <node concept="10P_77" id="3mBPDFbCaPf" role="1tU5fm" />
+                          <node concept="3fqX7Q" id="75_oBQVDtMN" role="33vP2m">
                             <node concept="1rXfSq" id="75_oBQVDtMP" role="3fr31v">
                               <ref role="37wK5l" node="75_oBQVDpJl" resolve="isRootSNode" />
                               <node concept="0kSF2" id="75_oBQVDugY" role="37wK5m">
@@ -6933,6 +6944,77 @@
                                 </node>
                               </node>
                             </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbJ" id="3mBPDFbC6Le" role="3cqZAp">
+                        <node concept="3clFbS" id="3mBPDFbC6Lg" role="3clFbx">
+                          <node concept="3clFbF" id="3mBPDFbCfZN" role="3cqZAp">
+                            <node concept="37vLTI" id="3mBPDFbCgpk" role="3clFbG">
+                              <node concept="3clFbT" id="3mBPDFbCgKz" role="37vLTx">
+                                <property role="3clFbU" value="false" />
+                              </node>
+                              <node concept="37vLTw" id="3mBPDFbCfZL" role="37vLTJ">
+                                <ref role="3cqZAo" node="3mBPDFbCaPk" resolve="autoExpandable" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="22lmx$" id="3mBPDFbCemi" role="3clFbw">
+                          <node concept="2OqwBi" id="3mBPDFbC8rE" role="3uHU7B">
+                            <node concept="1eOMI4" id="3mBPDFbC8bN" role="2Oq$k0">
+                              <node concept="10QFUN" id="3mBPDFbC76s" role="1eOMHV">
+                                <node concept="3uibUv" id="3mBPDFbC76t" role="10QFUM">
+                                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                                </node>
+                                <node concept="2OqwBi" id="3mBPDFbC76u" role="10QFUP">
+                                  <node concept="37vLTw" id="3mBPDFbC76v" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                                  </node>
+                                  <node concept="liA8E" id="3mBPDFbC76w" role="2OqNvi">
+                                    <ref role="37wK5l" to="imq3:3ZnFyBjwICS" resolve="getObject" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3mBPDFbC8K7" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                              <node concept="35c_gC" id="3mBPDFbC9hB" role="37wK5m">
+                                <ref role="35c_gD" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="3mBPDFbCeAr" role="3uHU7w">
+                            <node concept="1eOMI4" id="3mBPDFbCeAs" role="2Oq$k0">
+                              <node concept="10QFUN" id="3mBPDFbCeAt" role="1eOMHV">
+                                <node concept="3uibUv" id="3mBPDFbCeAu" role="10QFUM">
+                                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                                </node>
+                                <node concept="2OqwBi" id="3mBPDFbCeAv" role="10QFUP">
+                                  <node concept="37vLTw" id="3mBPDFbCeAw" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                                  </node>
+                                  <node concept="liA8E" id="3mBPDFbCeAx" role="2OqNvi">
+                                    <ref role="37wK5l" to="imq3:3ZnFyBjwICS" resolve="getObject" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="3mBPDFbCeAy" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                              <node concept="35c_gC" id="3mBPDFbCeAz" role="37wK5m">
+                                <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="3mBPDFbC61J" role="3cqZAp" />
+                      <node concept="3clFbF" id="75_oBQVDtCK" role="3cqZAp">
+                        <node concept="1rXfSq" id="75_oBQVDtCI" role="3clFbG">
+                          <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAutoExpandable(boolean):void" resolve="setAutoExpandable" />
+                          <node concept="37vLTw" id="3mBPDFbCe9U" role="37wK5m">
+                            <ref role="3cqZAo" node="3mBPDFbCaPk" resolve="autoExpandable" />
                           </node>
                         </node>
                       </node>
