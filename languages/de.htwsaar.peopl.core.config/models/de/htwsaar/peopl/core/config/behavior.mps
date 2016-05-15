@@ -16,6 +16,7 @@
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
+    <import index="gzfr" ref="r:4493c001-9956-4b69-8c92-9141ac8f5b4e(de.htwsaar.peopl.core.listener.plugin)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
@@ -2399,6 +2400,49 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="4xZ$jUASu$0" role="3cqZAp">
+              <node concept="3clFbS" id="4xZ$jUASu$2" role="3clFbx">
+                <node concept="3clFbF" id="4xZ$jUASvzN" role="3cqZAp">
+                  <node concept="2OqwBi" id="4xZ$jUASwm7" role="3clFbG">
+                    <node concept="2OqwBi" id="4xZ$jUASwcW" role="2Oq$k0">
+                      <node concept="2OqwBi" id="4xZ$jUASwcX" role="2Oq$k0">
+                        <node concept="2O5UvJ" id="4xZ$jUASwcY" role="2Oq$k0">
+                          <ref role="2O5UnU" to="gzfr:7U4gdfRwe2v" resolve="Ext_PeoplListenerExtension" />
+                        </node>
+                        <node concept="SfwO_" id="4xZ$jUASwcZ" role="2OqNvi" />
+                      </node>
+                      <node concept="1uHKPH" id="4xZ$jUASwhE" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="4xZ$jUASwoA" role="2OqNvi">
+                      <ref role="37wK5l" to="gzfr:6JE$RZ51ER4" resolve="signOffPeoplBaseCodeBlock" />
+                      <node concept="37vLTw" id="4xZ$jUASwp1" role="37wK5m">
+                        <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                      </node>
+                      <node concept="2OqwBi" id="4xZ$jUASwrD" role="37wK5m">
+                        <node concept="37vLTw" id="4xZ$jUASwqh" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                        </node>
+                        <node concept="1mfA1w" id="4xZ$jUASwtZ" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="4xZ$jUASwbU" role="3clFbw">
+                <node concept="37vLTw" id="4xZ$jUASvzD" role="3uHU7B">
+                  <ref role="3cqZAo" node="4vOt5rKl$7x" resolve="isPBlock" />
+                </node>
+                <node concept="2OqwBi" id="4xZ$jUASw1Q" role="3uHU7w">
+                  <node concept="2OqwBi" id="4xZ$jUASvPe" role="2Oq$k0">
+                    <node concept="2O5UvJ" id="4xZ$jUASvzL" role="2Oq$k0">
+                      <ref role="2O5UnU" to="gzfr:7U4gdfRwe2v" resolve="Ext_PeoplListenerExtension" />
+                    </node>
+                    <node concept="SfwO_" id="4xZ$jUASvZs" role="2OqNvi" />
+                  </node>
+                  <node concept="3GX2aA" id="4xZ$jUASwa4" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="1Wc70l" id="4vOt5rKlzP9" role="3clFbw">
             <node concept="2OqwBi" id="4vOt5rKlzI9" role="3uHU7B">
@@ -2549,6 +2593,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="4xZ$jUASgRD" role="3cqZAp" />
         <node concept="1X3_iC" id="MUpUk2LS5W" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
