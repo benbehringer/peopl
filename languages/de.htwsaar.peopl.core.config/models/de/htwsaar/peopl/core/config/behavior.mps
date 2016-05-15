@@ -288,6 +288,7 @@
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1240247491866" name="jetbrains.mps.baseLanguage.collections.structure.SortedSetType" flags="in" index="34wHKU" />
       <concept id="1240247536947" name="jetbrains.mps.baseLanguage.collections.structure.TreeSetCreator" flags="nn" index="34wSKj" />
+      <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
@@ -2023,18 +2024,18 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="MUpUk2LRYv" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="2Gpval" id="2mxUwyW5FfP" role="8Wnug">
-            <node concept="2GrKxI" id="2mxUwyW5FfR" role="2Gsz3X">
-              <property role="TrG5h" value="fragment" />
-            </node>
-            <node concept="37vLTw" id="2mxUwyW6Wqw" role="2GsD0m">
-              <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
-            </node>
-            <node concept="3clFbS" id="2mxUwyW5FfV" role="2LFqv$">
-              <node concept="34ab3g" id="2mxUwyW5FMb" role="3cqZAp">
+        <node concept="2Gpval" id="2mxUwyW5FfP" role="3cqZAp">
+          <node concept="2GrKxI" id="2mxUwyW5FfR" role="2Gsz3X">
+            <property role="TrG5h" value="fragment" />
+          </node>
+          <node concept="37vLTw" id="2mxUwyW6Wqw" role="2GsD0m">
+            <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
+          </node>
+          <node concept="3clFbS" id="2mxUwyW5FfV" role="2LFqv$">
+            <node concept="1X3_iC" id="jenxS68x2t" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="2mxUwyW5FMb" role="8Wnug">
                 <property role="35gtTG" value="warn" />
                 <node concept="3cpWs3" id="2mxUwyW5MO7" role="34bqiv">
                   <node concept="Xl_RD" id="2mxUwyW5MWp" role="3uHU7B">
@@ -2105,133 +2106,234 @@
           </node>
         </node>
         <node concept="3clFbH" id="2mxUwyW8_YE" role="3cqZAp" />
-        <node concept="2Gpval" id="3GYBd7VnHT7" role="3cqZAp">
-          <node concept="2GrKxI" id="3GYBd7VnHT9" role="2Gsz3X">
-            <property role="TrG5h" value="transientFragment" />
-          </node>
-          <node concept="3clFbS" id="3GYBd7VnHTb" role="2LFqv$">
-            <node concept="3SKdUt" id="2mxUwyW8pOf" role="3cqZAp">
-              <node concept="3SKdUq" id="2mxUwyW8pOg" role="3SKWNk">
-                <property role="3SKdUp" value="TODO: This is total bullshit and search intensive, but the todo above says why we need this" />
+        <node concept="3clFbJ" id="4xZ$jUAR1Xb" role="3cqZAp">
+          <node concept="3clFbS" id="4xZ$jUAR1Xd" role="3clFbx">
+            <node concept="1X3_iC" id="4xZ$jUAS2rW" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="4xZ$jUAR9vQ" role="8Wnug">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="4xZ$jUAR9vS" role="34bqiv">
+                  <property role="Xl_RC" value="configuration in the own model" />
+                </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="2mxUwyW8740" role="3cqZAp">
-              <node concept="3cpWsn" id="2mxUwyW8743" role="3cpWs9">
-                <property role="TrG5h" value="fillingFragment" />
-                <node concept="3Tqbb2" id="2mxUwyW873Y" role="1tU5fm">
-                  <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            <node concept="3SKdUt" id="4xZ$jUAS9da" role="3cqZAp">
+              <node concept="3SKdUq" id="4xZ$jUASadE" role="3SKWNk">
+                <property role="3SKdUp" value="configuration is in the current model if transient model contains the fragment" />
+              </node>
+            </node>
+            <node concept="2Gpval" id="4xZ$jUARnpq" role="3cqZAp">
+              <node concept="2GrKxI" id="4xZ$jUARnps" role="2Gsz3X">
+                <property role="TrG5h" value="fragmentToRemove" />
+              </node>
+              <node concept="2OqwBi" id="4xZ$jUARnV2" role="2GsD0m">
+                <node concept="37vLTw" id="4xZ$jUARnq1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2mxUwyW4ZVw" resolve="fragmentsInTransientModel" />
                 </node>
-                <node concept="2OqwBi" id="2mxUwyW879I" role="33vP2m">
-                  <node concept="2OqwBi" id="2mxUwyW7UhR" role="2Oq$k0">
-                    <node concept="37vLTw" id="2mxUwyW7T_C" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
+                <node concept="1aUR6E" id="4xZ$jUARqsY" role="2OqNvi">
+                  <node concept="1bVj0M" id="4xZ$jUARqt0" role="23t8la">
+                    <node concept="3clFbS" id="4xZ$jUARqt1" role="1bW5cS">
+                      <node concept="3clFbF" id="4xZ$jUARryS" role="3cqZAp">
+                        <node concept="2OqwBi" id="4xZ$jUARzrf" role="3clFbG">
+                          <node concept="37vLTw" id="4xZ$jUARxKx" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
+                          </node>
+                          <node concept="3JPx81" id="4xZ$jUARB2k" role="2OqNvi">
+                            <node concept="37vLTw" id="4xZ$jUARC5g" role="25WWJ7">
+                              <ref role="3cqZAo" node="4xZ$jUARqt2" resolve="it" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="3zZkjj" id="2mxUwyW85OH" role="2OqNvi">
-                      <node concept="1bVj0M" id="2mxUwyW85OJ" role="23t8la">
-                        <node concept="3clFbS" id="2mxUwyW85OK" role="1bW5cS">
-                          <node concept="3clFbF" id="2mxUwyW85Rp" role="3cqZAp">
-                            <node concept="3clFbC" id="2mxUwyW86cu" role="3clFbG">
-                              <node concept="2OqwBi" id="2mxUwyW86I_" role="3uHU7w">
-                                <node concept="2JrnkZ" id="2mxUwyW86D5" role="2Oq$k0">
-                                  <node concept="2GrUjf" id="2mxUwyW86g1" role="2JrQYb">
-                                    <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
+                    <node concept="Rh6nW" id="4xZ$jUARqt2" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="4xZ$jUARqt3" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4xZ$jUARnpw" role="2LFqv$">
+                <node concept="3clFbF" id="4xZ$jUARDcs" role="3cqZAp">
+                  <node concept="2OqwBi" id="4xZ$jUARE_s" role="3clFbG">
+                    <node concept="2OqwBi" id="4xZ$jUARDfg" role="2Oq$k0">
+                      <node concept="2GrUjf" id="4xZ$jUARDcr" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="4xZ$jUARnps" resolve="fragmentToRemove" />
+                      </node>
+                      <node concept="2qgKlT" id="4xZ$jUARExP" role="2OqNvi">
+                        <ref role="37wK5l" to="kpvh:2BKSxwr7gN4" resolve="disconnectFromModule" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="4xZ$jUARFPz" role="2OqNvi">
+                      <ref role="37wK5l" to="kpvh:2BKSxwr7h1e" resolve="disconnetFromVP" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4xZ$jUARFTQ" role="3cqZAp">
+                  <node concept="BsUDl" id="4xZ$jUARFTO" role="3clFbG">
+                    <ref role="37wK5l" node="2mxUwyW8A_T" resolve="removeObsoleteFragmentAndContent" />
+                    <node concept="2OqwBi" id="4xZ$jUARSmo" role="37wK5m">
+                      <node concept="2GrUjf" id="4xZ$jUARFVA" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="4xZ$jUARnps" resolve="fragmentToRemove" />
+                      </node>
+                      <node concept="1mfA1w" id="4xZ$jUARTso" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="4xZ$jUARj4H" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="4xZ$jUAR4Vf" role="3clFbw">
+            <node concept="37vLTw" id="4xZ$jUAR4dC" role="2Oq$k0">
+              <ref role="3cqZAo" node="2mxUwyW4ZVw" resolve="fragmentsInTransientModel" />
+            </node>
+            <node concept="3JPx81" id="4xZ$jUAR7yt" role="2OqNvi">
+              <node concept="2OqwBi" id="4xZ$jUAR8cD" role="25WWJ7">
+                <node concept="37vLTw" id="4xZ$jUAR7zs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
+                </node>
+                <node concept="1uHKPH" id="4xZ$jUAR9u3" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="4xZ$jUARfuU" role="9aQIa">
+            <node concept="3clFbS" id="4xZ$jUARfuV" role="9aQI4">
+              <node concept="3SKdUt" id="4xZ$jUASann" role="3cqZAp">
+                <node concept="3SKdUq" id="4xZ$jUASano" role="3SKWNk">
+                  <property role="3SKdUp" value="the configuration is somewhere ele and thus not available within this context" />
+                </node>
+              </node>
+              <node concept="2Gpval" id="3GYBd7VnHT7" role="3cqZAp">
+                <node concept="2GrKxI" id="3GYBd7VnHT9" role="2Gsz3X">
+                  <property role="TrG5h" value="transientFragment" />
+                </node>
+                <node concept="3clFbS" id="3GYBd7VnHTb" role="2LFqv$">
+                  <node concept="3SKdUt" id="2mxUwyW8pOf" role="3cqZAp">
+                    <node concept="3SKdUq" id="2mxUwyW8pOg" role="3SKWNk">
+                      <property role="3SKdUp" value="TODO: This is total bullshit and search intensive, but the todo above says why we need this" />
+                    </node>
+                  </node>
+                  <node concept="3cpWs8" id="2mxUwyW8740" role="3cqZAp">
+                    <node concept="3cpWsn" id="2mxUwyW8743" role="3cpWs9">
+                      <property role="TrG5h" value="fillingFragment" />
+                      <node concept="3Tqbb2" id="2mxUwyW873Y" role="1tU5fm">
+                        <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                      </node>
+                      <node concept="2OqwBi" id="2mxUwyW879I" role="33vP2m">
+                        <node concept="2OqwBi" id="2mxUwyW7UhR" role="2Oq$k0">
+                          <node concept="37vLTw" id="2mxUwyW7T_C" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5BQdQAJoNGT" resolve="originalFragments" />
+                          </node>
+                          <node concept="3zZkjj" id="2mxUwyW85OH" role="2OqNvi">
+                            <node concept="1bVj0M" id="2mxUwyW85OJ" role="23t8la">
+                              <node concept="3clFbS" id="2mxUwyW85OK" role="1bW5cS">
+                                <node concept="3clFbF" id="2mxUwyW85Rp" role="3cqZAp">
+                                  <node concept="3clFbC" id="2mxUwyW86cu" role="3clFbG">
+                                    <node concept="2OqwBi" id="2mxUwyW86I_" role="3uHU7w">
+                                      <node concept="2JrnkZ" id="2mxUwyW86D5" role="2Oq$k0">
+                                        <node concept="2GrUjf" id="2mxUwyW86g1" role="2JrQYb">
+                                          <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="2mxUwyW86Sy" role="2OqNvi">
+                                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="2mxUwyW863O" role="3uHU7B">
+                                      <node concept="2JrnkZ" id="2mxUwyW8603" role="2Oq$k0">
+                                        <node concept="37vLTw" id="2mxUwyW85Ro" role="2JrQYb">
+                                          <ref role="3cqZAo" node="2mxUwyW85OL" resolve="it" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="2mxUwyW868V" role="2OqNvi">
+                                        <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                                      </node>
+                                    </node>
                                   </node>
-                                </node>
-                                <node concept="liA8E" id="2mxUwyW86Sy" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="2mxUwyW863O" role="3uHU7B">
-                                <node concept="2JrnkZ" id="2mxUwyW8603" role="2Oq$k0">
-                                  <node concept="37vLTw" id="2mxUwyW85Ro" role="2JrQYb">
-                                    <ref role="3cqZAo" node="2mxUwyW85OL" resolve="it" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="2mxUwyW868V" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
-                                </node>
+                              <node concept="Rh6nW" id="2mxUwyW85OL" role="1bW2Oz">
+                                <property role="TrG5h" value="it" />
+                                <node concept="2jxLKc" id="2mxUwyW85OM" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="Rh6nW" id="2mxUwyW85OL" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="2mxUwyW85OM" role="1tU5fm" />
+                        <node concept="1uHKPH" id="2mxUwyW87iB" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="2mxUwyW87u7" role="3cqZAp">
+                    <node concept="3clFbS" id="2mxUwyW87u9" role="3clFbx">
+                      <node concept="3SKdUt" id="2mxUwyW8Dlc" role="3cqZAp">
+                        <node concept="3SKdUq" id="2mxUwyW8Dld" role="3SKWNk">
+                          <property role="3SKdUp" value="we didn't find the fragment in the list of calculated fragments" />
+                        </node>
+                      </node>
+                      <node concept="3SKdUt" id="2mxUwyW8DrI" role="3cqZAp">
+                        <node concept="3SKdUq" id="2mxUwyW8DrJ" role="3SKWNk">
+                          <property role="3SKdUp" value="=&gt; delete the corresponding content as it is not part of the product" />
+                        </node>
+                      </node>
+                      <node concept="1X3_iC" id="jenxS68wVJ" role="lGtFl">
+                        <property role="3V$3am" value="statement" />
+                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                        <node concept="34ab3g" id="MUpUk2LI6Y" role="8Wnug">
+                          <property role="35gtTG" value="warn" />
+                          <node concept="3cpWs3" id="MUpUk2LIaV" role="34bqiv">
+                            <node concept="2GrUjf" id="MUpUk2LIFs" role="3uHU7w">
+                              <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
+                            </node>
+                            <node concept="Xl_RD" id="MUpUk2LI70" role="3uHU7B">
+                              <property role="Xl_RC" value="remove obsolete fragment and content: " />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2mxUwyW8Dsj" role="3cqZAp">
+                        <node concept="BsUDl" id="2mxUwyW8Dsh" role="3clFbG">
+                          <ref role="37wK5l" node="2mxUwyW8A_T" resolve="removeObsoleteFragmentAndContent" />
+                          <node concept="2OqwBi" id="2mxUwyW8EYb" role="37wK5m">
+                            <node concept="2GrUjf" id="MUpUk2LIEV" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
+                            </node>
+                            <node concept="1mfA1w" id="2mxUwyW8F4l" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="2mxUwyW87X_" role="3clFbw">
+                      <node concept="37vLTw" id="2mxUwyW87UK" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2mxUwyW8743" resolve="fillingFragment" />
+                      </node>
+                      <node concept="3w_OXm" id="MUpUk2LIDX" role="2OqNvi" />
+                    </node>
+                    <node concept="9aQIb" id="2mxUwyW8DF_" role="9aQIa">
+                      <node concept="3clFbS" id="2mxUwyW8DFA" role="9aQI4">
+                        <node concept="3SKdUt" id="2mxUwyW8DGB" role="3cqZAp">
+                          <node concept="3SKdUq" id="2mxUwyW8DGC" role="3SKWNk">
+                            <property role="3SKdUp" value="the node is part of the product line, however we don't need the fragment anymore" />
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="2mxUwyW8CX3" role="3cqZAp">
+                          <node concept="2OqwBi" id="2mxUwyW8CX4" role="3clFbG">
+                            <node concept="2GrUjf" id="MUpUk2LIpe" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
+                            </node>
+                            <node concept="1PgB_6" id="2mxUwyW8CX6" role="2OqNvi" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="1uHKPH" id="2mxUwyW87iB" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="2mxUwyW50uG" role="2GsD0m">
+                  <ref role="3cqZAo" node="2mxUwyW4ZVw" resolve="fragmentsInTransientModel" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="2mxUwyW87u7" role="3cqZAp">
-              <node concept="3clFbS" id="2mxUwyW87u9" role="3clFbx">
-                <node concept="3SKdUt" id="2mxUwyW8Dlc" role="3cqZAp">
-                  <node concept="3SKdUq" id="2mxUwyW8Dld" role="3SKWNk">
-                    <property role="3SKdUp" value="we didn't find the fragment in the list of calculated fragments" />
-                  </node>
-                </node>
-                <node concept="3SKdUt" id="2mxUwyW8DrI" role="3cqZAp">
-                  <node concept="3SKdUq" id="2mxUwyW8DrJ" role="3SKWNk">
-                    <property role="3SKdUp" value="=&gt; delete the corresponding content as it is not part of the product" />
-                  </node>
-                </node>
-                <node concept="1X3_iC" id="MUpUk2LRRB" role="lGtFl">
-                  <property role="3V$3am" value="statement" />
-                  <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="34ab3g" id="MUpUk2LI6Y" role="8Wnug">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="3cpWs3" id="MUpUk2LIaV" role="34bqiv">
-                      <node concept="2GrUjf" id="MUpUk2LIFs" role="3uHU7w">
-                        <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
-                      </node>
-                      <node concept="Xl_RD" id="MUpUk2LI70" role="3uHU7B">
-                        <property role="Xl_RC" value="remove obsolete fragment and content: " />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="2mxUwyW8Dsj" role="3cqZAp">
-                  <node concept="BsUDl" id="2mxUwyW8Dsh" role="3clFbG">
-                    <ref role="37wK5l" node="2mxUwyW8A_T" resolve="removeObsoleteFragmentAndContent" />
-                    <node concept="2OqwBi" id="2mxUwyW8EYb" role="37wK5m">
-                      <node concept="2GrUjf" id="MUpUk2LIEV" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
-                      </node>
-                      <node concept="1mfA1w" id="2mxUwyW8F4l" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="2mxUwyW87X_" role="3clFbw">
-                <node concept="37vLTw" id="2mxUwyW87UK" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2mxUwyW8743" resolve="fillingFragment" />
-                </node>
-                <node concept="3w_OXm" id="MUpUk2LIDX" role="2OqNvi" />
-              </node>
-              <node concept="9aQIb" id="2mxUwyW8DF_" role="9aQIa">
-                <node concept="3clFbS" id="2mxUwyW8DFA" role="9aQI4">
-                  <node concept="3SKdUt" id="2mxUwyW8DGB" role="3cqZAp">
-                    <node concept="3SKdUq" id="2mxUwyW8DGC" role="3SKWNk">
-                      <property role="3SKdUp" value="the node is part of the product line, however we don't need the fragment anymore" />
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2mxUwyW8CX3" role="3cqZAp">
-                    <node concept="2OqwBi" id="2mxUwyW8CX4" role="3clFbG">
-                      <node concept="2GrUjf" id="MUpUk2LIpe" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3GYBd7VnHT9" resolve="transientFragment" />
-                      </node>
-                      <node concept="1PgB_6" id="2mxUwyW8CX6" role="2OqNvi" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="2mxUwyW8Aem" role="3cqZAp" />
-          </node>
-          <node concept="37vLTw" id="2mxUwyW50uG" role="2GsD0m">
-            <ref role="3cqZAo" node="2mxUwyW4ZVw" resolve="fragmentsInTransientModel" />
           </node>
         </node>
       </node>

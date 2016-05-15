@@ -168,12 +168,16 @@
     <property role="1pbfSe" value="769463638" />
     <property role="TrG5h" value="ConfigurationLink" />
     <property role="19KtqR" value="true" />
+    <property role="MwhBj" value="${module}/icons/peoplConfigurationLink.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7t9Yo1qQf4F" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20lbJX" value="1" />
       <property role="20kJfa" value="productLineConfigurations" />
       <ref role="20lvS9" node="1hL$JiAsepr" resolve="ProductLineConfigurations" />
+    </node>
+    <node concept="PrWs8" id="4xZ$jUAQUbO" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
