@@ -1891,7 +1891,7 @@
       <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
       <node concept="17QB3L" id="2H0DQTMFfyS" role="1tU5fm" />
       <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
-        <property role="Xl_RC" value="config" />
+        <property role="Xl_RC" value="peoplConfig" />
       </node>
     </node>
     <node concept="Wx3nA" id="1GfZLHunQDv" role="jymVt">
