@@ -34,7 +34,6 @@
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
-        <child id="1213098023997" name="property" index="1MhHOB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -55,6 +54,14 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -64,27 +71,31 @@
   <node concept="1M2fIO" id="10KxddmzpFI">
     <property role="3GE5qa" value="" />
     <ref role="1M2myG" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-    <node concept="EnEH3" id="10KxddmzpFJ" role="1MhHOB">
-      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
-      <node concept="Eqf_E" id="10KxddmzpFL" role="EtsB7">
-        <node concept="3clFbS" id="10KxddmzpFM" role="2VODD2">
-          <node concept="3cpWs6" id="10KxddmztIx" role="3cqZAp">
-            <node concept="2OqwBi" id="10KxddmzA$k" role="3cqZAk">
-              <node concept="2OqwBi" id="10Kxddmzwg0" role="2Oq$k0">
-                <node concept="2OqwBi" id="10KxddmztNw" role="2Oq$k0">
-                  <node concept="EsrRn" id="10KxddmztKP" role="2Oq$k0" />
-                  <node concept="2Rf3mk" id="10KxddmztVC" role="2OqNvi">
-                    <node concept="1xMEDy" id="10KxddmztVE" role="1xVPHs">
-                      <node concept="chp4Y" id="10Kxddmzuoo" role="ri$Ld">
-                        <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+    <node concept="1X3_iC" id="5P7c6ta9OVO" role="lGtFl">
+      <property role="3V$3am" value="property" />
+      <property role="3V$3ak" value="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1/1213093968558/1213098023997" />
+      <node concept="EnEH3" id="10KxddmzpFJ" role="8Wnug">
+        <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+        <node concept="Eqf_E" id="10KxddmzpFL" role="EtsB7">
+          <node concept="3clFbS" id="10KxddmzpFM" role="2VODD2">
+            <node concept="3cpWs6" id="10KxddmztIx" role="3cqZAp">
+              <node concept="2OqwBi" id="10KxddmzA$k" role="3cqZAk">
+                <node concept="2OqwBi" id="10Kxddmzwg0" role="2Oq$k0">
+                  <node concept="2OqwBi" id="10KxddmztNw" role="2Oq$k0">
+                    <node concept="EsrRn" id="10KxddmztKP" role="2Oq$k0" />
+                    <node concept="2Rf3mk" id="10KxddmztVC" role="2OqNvi">
+                      <node concept="1xMEDy" id="10KxddmztVE" role="1xVPHs">
+                        <node concept="chp4Y" id="10Kxddmzuoo" role="ri$Ld">
+                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="1uHKPH" id="10Kxddmzzl8" role="2OqNvi" />
                 </node>
-                <node concept="1uHKPH" id="10Kxddmzzl8" role="2OqNvi" />
-              </node>
-              <node concept="3TrcHB" id="10KxddmzAVh" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                <node concept="3TrcHB" id="10KxddmzAVh" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
               </node>
             </node>
           </node>

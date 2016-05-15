@@ -1105,18 +1105,6 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbH" id="4rXPXKI2ygX" role="3cqZAp" />
-                        <node concept="3clFbF" id="_7spT05mWs" role="3cqZAp">
-                          <node concept="2OqwBi" id="_7spT05nWw" role="3clFbG">
-                            <node concept="2YIFZM" id="_7spT05njy" role="2Oq$k0">
-                              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
-                            </node>
-                            <node concept="liA8E" id="_7spT05otD" role="2OqNvi">
-                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.saveAll():void" resolve="saveAll" />
-                            </node>
-                          </node>
-                        </node>
                         <node concept="3clFbH" id="5N4LhA0__by" role="3cqZAp" />
                         <node concept="3cpWs8" id="5N4LhA0__NH" role="3cqZAp">
                           <node concept="3cpWsn" id="5N4LhA0__NI" role="3cpWs9">
@@ -1273,6 +1261,19 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="6uyV5rv_aDe" role="3cqZAp" />
+                        <node concept="3clFbF" id="6uyV5rv_aVv" role="3cqZAp">
+                          <node concept="2OqwBi" id="6uyV5rv_aVw" role="3clFbG">
+                            <node concept="2YIFZM" id="6uyV5rv_aVx" role="2Oq$k0">
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance():jetbrains.mps.smodel.MPSModuleRepository" resolve="getInstance" />
+                              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+                            </node>
+                            <node concept="liA8E" id="6uyV5rv_aVy" role="2OqNvi">
+                              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.saveAll():void" resolve="saveAll" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="6uyV5rv_aHs" role="3cqZAp" />
                       </node>
                     </node>
                   </node>
