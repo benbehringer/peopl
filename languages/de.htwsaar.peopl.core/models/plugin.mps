@@ -1884,7 +1884,7 @@
     <node concept="3Tm1VV" id="6bj2b$tIcI4" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="1GfZLHumrVq">
-    <property role="TrG5h" value="PeoplStaticStringHelper" />
+    <property role="TrG5h" value="PeoplNamingHelper" />
     <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
       <property role="TrG5h" value="STD_CONFIG_MODEL" />
       <property role="3TUv4t" value="true" />

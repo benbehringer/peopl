@@ -28,6 +28,9 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -100,6 +103,19 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
+        <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
+      </concept>
+      <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
+        <reference id="675154290793743905" name="connectedModule" index="u2itx" />
+      </concept>
+      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
+        <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
+        <child id="1473120132588955228" name="configs" index="2M0niC" />
       </concept>
     </language>
   </registry>
@@ -217,6 +233,16 @@
         <ref role="1V74Hf" node="5_5NNyD5X1u" resolve="VPToFragment_6432775485030649950" />
         <ref role="a64iB" node="5_5NNyD5X1j" resolve="Base" />
         <ref role="3aRQVk" node="5_5NNyD5X3O" resolve="ModuleToFragment_6432775485030650100" />
+      </node>
+    </node>
+  </node>
+  <node concept="2M0niJ" id="5N4LhA0$_oE">
+    <ref role="2M0niE" node="5N4LhA0$_oF" />
+    <node concept="u25OH" id="5N4LhA0$_oF" role="2M0niC">
+      <node concept="2Hijyl" id="5N4LhA0$_oH" role="2Hjnvt">
+        <node concept="u2itw" id="5N4LhA0$_oM" role="3clFbG">
+          <ref role="u2itx" node="5_5NNyD5X1j" resolve="Base" />
+        </node>
       </node>
     </node>
   </node>
