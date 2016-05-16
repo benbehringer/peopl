@@ -20,7 +20,6 @@
     <dependency reexport="false">97329234-5bcc-41a4-9e8a-4b598c93e695(de.htwsaar.peopl.projectview.common)</dependency>
     <dependency reexport="false">030b5ba8-2296-4006-b502-f12a905275be(de.htwsaar.peopl.utils.common)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
-    <dependency reexport="false">2c38b068-7828-480c-83d1-faa6c21e1350(jetbrains.mps.samples.ActionWithProgress)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -59,7 +58,6 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
-    <module reference="2c38b068-7828-480c-83d1-faa6c21e1350(jetbrains.mps.samples.ActionWithProgress)" version="0" />
   </dependencyVersions>
 </solution>
 
