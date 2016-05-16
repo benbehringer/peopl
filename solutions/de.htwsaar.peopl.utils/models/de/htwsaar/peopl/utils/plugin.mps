@@ -4938,7 +4938,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="48zfXGK0rSa" role="37wK5m">
-                    <property role="Xl_RC" value="Modal cancelable task" />
+                    <property role="Xl_RC" value="Convert Module to Peopl-Solution" />
                   </node>
                   <node concept="37vLTw" id="2Xt83X0qPZ6" role="37wK5m">
                     <ref role="3cqZAo" node="2Xt83X0qPza" resolve="canBeCanceled" />
