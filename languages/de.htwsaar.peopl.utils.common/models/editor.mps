@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9ac3f73b-ab5e-4570-8b2d-fafbd368a59e(de.htwsaar.peopl.utils.ccp.editor)">
+<model ref="r:f2ae51c6-d696-41a3-91a1-3b9ce7d68bfb(de.htwsaar.peopl.utils.common.editor)">
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />

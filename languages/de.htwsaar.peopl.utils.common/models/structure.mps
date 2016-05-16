@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:8f9bf3a6-91ec-42b3-a0e6-73c59ba709ae(de.htwsaar.peopl.utils.ccp.structure)">
+<model ref="r:668a435f-a8de-4149-a1ce-b0ce97e3b86e(de.htwsaar.peopl.utils.common.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -75,6 +76,26 @@
       </node>
       <node concept="trNpa" id="5zeyXLl18aI" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2cTrEv0BjOO">
+    <property role="1pbfSe" value="472470565" />
+    <property role="TrG5h" value="ConvertToPeoplSolution" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="2cTrEv0BjOP" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="myClass" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+    </node>
+    <node concept="M6xJ_" id="2cTrEv0BoRj" role="lGtFl">
+      <property role="Hh88m" value="ConvertToPeoplSolution" />
+      <node concept="trNpa" id="2cTrEv0Bp4l" role="EQaZv">
+        <ref role="trN6q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+      </node>
+      <node concept="tn0Fv" id="2cTrEv0Bp4n" role="HhnKV">
+        <property role="tnX3d" value="false" />
       </node>
     </node>
   </node>

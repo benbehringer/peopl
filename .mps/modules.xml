@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.dep.baselang/de.htwsaar.peopl.dep.baselang.mpl" folder="peopl.dep" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.ccp/de.htwsaar.peopl.utils.ccp.mpl" folder="peopl.utils" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.common/de.htwsaar.peopl.utils.common.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="peopl.dep.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.dep.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.dep.view" />

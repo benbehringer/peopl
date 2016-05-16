@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:14057e66-47f7-4e10-88e1-0d7b3e8d4fdf(de.htwsaar.peopl.utils.ccp.behavior)">
+<model ref="r:399485e8-3c86-4f88-bf47-8b9a16294a64(de.htwsaar.peopl.utils.common.behavior)">
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
