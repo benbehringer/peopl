@@ -1218,9 +1218,9 @@
     </node>
   </node>
   <node concept="1lYeZD" id="7U4gdfRwe0B">
-    <property role="TrG5h" value="ExtDef_PeoplListenerExtension" />
+    <property role="TrG5h" value="ExtDef_PeoplDepListenerExtension" />
     <property role="3GE5qa" value="extensionPointDefinitions" />
-    <ref role="1lYe$Y" to="gzfr:7U4gdfRwe2v" resolve="Ext_PeoplListenerExtension" />
+    <ref role="1lYe$Y" to="gzfr:7U4gdfRwe2v" resolve="Ext_PeoplDepListenerExtension" />
     <node concept="3Tm1VV" id="7U4gdfRwe0C" role="1B3o_S" />
     <node concept="2tJIrI" id="7U4gdfRwe0D" role="jymVt" />
     <node concept="3tTeZs" id="7U4gdfRwGkd" role="jymVt">
@@ -1243,7 +1243,7 @@
               <node concept="1Y3b0j" id="7U4gdfRwhHD" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <ref role="1Y3XeK" to="gzfr:7U4gdfRwe2y" resolve="IExt_PeoplListenerExtension" />
+                <ref role="1Y3XeK" to="gzfr:7U4gdfRwe2y" resolve="IExt_PeoplDepListenerExtension" />
                 <node concept="3Tm1VV" id="7U4gdfRwhHE" role="1B3o_S" />
                 <node concept="2tJIrI" id="4abErjGK$2Q" role="jymVt" />
                 <node concept="3clFb_" id="7U4gdfRwhHF" role="jymVt">
@@ -3086,7 +3086,7 @@
                               <node concept="2OqwBi" id="VwUpvpzd30" role="3clFbG">
                                 <node concept="2YIFZM" id="VwUpvpzd2r" role="2Oq$k0">
                                   <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                                  <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                  <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                 </node>
                                 <node concept="liA8E" id="VwUpvpzdsD" role="2OqNvi">
                                   <ref role="37wK5l" to="zur:61l2320GYBG" resolve="pushModuleAndVP" />
@@ -3130,7 +3130,7 @@
                               <node concept="3clFbF" id="4dkkQUP7LZC" role="3cqZAp">
                                 <node concept="2OqwBi" id="4dkkQUP7M1I" role="3clFbG">
                                   <node concept="2YIFZM" id="4dkkQUP7M17" role="2Oq$k0">
-                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                     <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                                   </node>
                                   <node concept="liA8E" id="4dkkQUP7MsQ" role="2OqNvi">
@@ -3323,7 +3323,7 @@
                                       <ref role="37wK5l" to="kpvh:3osquR$1F4" resolve="connectToVP" />
                                       <node concept="2OqwBi" id="4dkkQUP8QI3" role="37wK5m">
                                         <node concept="2YIFZM" id="4dkkQUP8QDm" role="2Oq$k0">
-                                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                           <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                                         </node>
                                         <node concept="liA8E" id="4dkkQUP8QPk" role="2OqNvi">
@@ -3338,7 +3338,7 @@
                                 <node concept="2OqwBi" id="2NMVKnbF6uJ" role="2Oq$k0">
                                   <node concept="2YIFZM" id="2NMVKnbF6uK" role="2Oq$k0">
                                     <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                   </node>
                                   <node concept="liA8E" id="2NMVKnbF6uL" role="2OqNvi">
                                     <ref role="37wK5l" to="zur:4dkkQUP8JOJ" resolve="getVP" />
@@ -3387,7 +3387,7 @@
                                 <node concept="2OqwBi" id="4abErjGOjO8" role="37vLTx">
                                   <node concept="2YIFZM" id="4abErjGOjL6" role="2Oq$k0">
                                     <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                   </node>
                                   <node concept="liA8E" id="4abErjGOjSd" role="2OqNvi">
                                     <ref role="37wK5l" to="zur:4dkkQUP8K$N" resolve="getModule" />
@@ -3400,7 +3400,7 @@
                               <node concept="2OqwBi" id="4dkkQUP8mgQ" role="3clFbG">
                                 <node concept="2YIFZM" id="4dkkQUP8mgR" role="2Oq$k0">
                                   <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                                  <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                  <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                                 </node>
                                 <node concept="liA8E" id="4dkkQUP8mgS" role="2OqNvi">
                                   <ref role="37wK5l" to="zur:61l2320GZ7I" resolve="clearBuffer" />
@@ -3411,7 +3411,7 @@
                           <node concept="2OqwBi" id="4dkkQUP8PQM" role="3clFbw">
                             <node concept="2YIFZM" id="4dkkQUP8PGC" role="2Oq$k0">
                               <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                              <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                              <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                             </node>
                             <node concept="liA8E" id="4dkkQUP8PYb" role="2OqNvi">
                               <ref role="37wK5l" to="zur:4dkkQUP8MFT" resolve="hasValidBuffer" />
@@ -5091,7 +5091,7 @@
                   <node concept="3clFbF" id="4abErjGNiAx" role="3cqZAp">
                     <node concept="2OqwBi" id="4abErjGNiAy" role="3clFbG">
                       <node concept="2YIFZM" id="4abErjGNiAz" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                        <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                         <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="4abErjGNiA$" role="2OqNvi">
@@ -5136,7 +5136,7 @@
                     <node concept="3clFbF" id="4abErjGNiAO" role="3cqZAp">
                       <node concept="2OqwBi" id="4abErjGNiAP" role="3clFbG">
                         <node concept="2YIFZM" id="4abErjGNiAQ" role="2Oq$k0">
-                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                           <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                         </node>
                         <node concept="liA8E" id="4abErjGNiAR" role="2OqNvi">
@@ -5292,7 +5292,7 @@
                             <node concept="2OqwBi" id="4abErjGNiBO" role="37wK5m">
                               <node concept="2YIFZM" id="4abErjGNiBP" role="2Oq$k0">
                                 <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                                <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                                <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                               </node>
                               <node concept="liA8E" id="4abErjGNiBQ" role="2OqNvi">
                                 <ref role="37wK5l" to="zur:4dkkQUP8K$N" resolve="getModule" />
@@ -5304,7 +5304,7 @@
                           <ref role="37wK5l" to="kpvh:3osquR$1F4" resolve="connectToVP" />
                           <node concept="2OqwBi" id="4abErjGNiBS" role="37wK5m">
                             <node concept="2YIFZM" id="4abErjGNiBT" role="2Oq$k0">
-                              <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                              <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                               <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                             </node>
                             <node concept="liA8E" id="4abErjGNiBU" role="2OqNvi">
@@ -5328,7 +5328,7 @@
                       <node concept="2OqwBi" id="4abErjGNiC0" role="37vLTx">
                         <node concept="2YIFZM" id="4abErjGNiC1" role="2Oq$k0">
                           <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                          <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                         </node>
                         <node concept="liA8E" id="4abErjGNiC2" role="2OqNvi">
                           <ref role="37wK5l" to="zur:4dkkQUP8K$N" resolve="getModule" />
@@ -5340,7 +5340,7 @@
                   <node concept="3clFbF" id="4abErjGNiC4" role="3cqZAp">
                     <node concept="2OqwBi" id="4abErjGNiC5" role="3clFbG">
                       <node concept="2YIFZM" id="4abErjGNiC6" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                        <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                         <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="4abErjGNiC7" role="2OqNvi">
@@ -5352,7 +5352,7 @@
                 <node concept="2OqwBi" id="4abErjGNiC8" role="3clFbw">
                   <node concept="2YIFZM" id="4abErjGNiC9" role="2Oq$k0">
                     <ref role="37wK5l" to="zur:61l2320GFSF" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="PeoplActionAspectsBuffer" />
+                    <ref role="1Pybhc" to="zur:VwUpvpz79p" resolve="SideTransformCache" />
                   </node>
                   <node concept="liA8E" id="4abErjGNiCa" role="2OqNvi">
                     <ref role="37wK5l" to="zur:4dkkQUP8MFT" resolve="hasValidBuffer" />
@@ -7168,6 +7168,7 @@
   </node>
   <node concept="1lYeZD" id="3OHjtH33hNI">
     <property role="TrG5h" value="ExtDef_PeoplConfigExtension" />
+    <property role="3GE5qa" value="extensionPointDefinitions" />
     <ref role="1lYe$Y" to="1z58:3OHjtH331eH" resolve="Ext_PeoplConfigExtension" />
     <node concept="3Tm1VV" id="3OHjtH33hNJ" role="1B3o_S" />
     <node concept="2tJIrI" id="3OHjtH33hNK" role="jymVt" />
