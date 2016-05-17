@@ -42,6 +42,7 @@
     <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
     <import index="glw5" ref="r:9838b9ca-11cf-447d-b177-b4094fe1336b(de.htwsaar.peopl.view.product.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -448,6 +449,12 @@
           <node concept="ANE8D" id="$6jtTx7hwM" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbT" id="5BOueCCKQ$B" role="19oFX3">
+        <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3clFbT" id="5BOueCCKQJN" role="2q6PdT">
+        <property role="3clFbU" value="false" />
+      </node>
     </node>
     <node concept="14aYG3" id="75_oBQVPKCm" role="14aYEy">
       <property role="TrG5h" value="language" />
@@ -742,10 +749,43 @@
                     <node concept="3zZkjj" id="$XellbeUEe" role="2OqNvi">
                       <node concept="1bVj0M" id="$XellbeUEg" role="23t8la">
                         <node concept="3clFbS" id="$XellbeUEh" role="1bW5cS">
-                          <node concept="34ab3g" id="5BdxFtz$uZr" role="3cqZAp">
-                            <property role="35gtTG" value="warn" />
-                            <node concept="Xl_RD" id="5BdxFtz$uZt" role="34bqiv">
-                              <property role="Xl_RC" value="check whether the cache contains the element" />
+                          <node concept="1X3_iC" id="5BOueCCKCmj" role="lGtFl">
+                            <property role="3V$3am" value="statement" />
+                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                            <node concept="34ab3g" id="5BdxFtz$uZr" role="8Wnug">
+                              <property role="35gtTG" value="warn" />
+                              <node concept="Xl_RD" id="5BdxFtz$uZt" role="34bqiv">
+                                <property role="Xl_RC" value="check whether the cache contains the element" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbJ" id="5BOueCCKC_6" role="3cqZAp">
+                            <node concept="3clFbS" id="5BOueCCKC_8" role="3clFbx">
+                              <node concept="3clFbF" id="5BOueCCKDuL" role="3cqZAp">
+                                <node concept="2OqwBi" id="5BOueCCLQRE" role="3clFbG">
+                                  <node concept="2YIFZM" id="5BOueCCLQHa" role="2Oq$k0">
+                                    <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                                    <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                                  </node>
+                                  <node concept="liA8E" id="5BOueCCLQZ6" role="2OqNvi">
+                                    <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                                    <node concept="37vLTw" id="5BOueCCLR4m" role="37wK5m">
+                                      <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3fqX7Q" id="5BOueCCKD02" role="3clFbw">
+                              <node concept="2OqwBi" id="5BOueCCKD04" role="3fr31v">
+                                <node concept="2YIFZM" id="5BOueCCKD05" role="2Oq$k0">
+                                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                                </node>
+                                <node concept="liA8E" id="5BOueCCKD06" role="2OqNvi">
+                                  <ref role="37wK5l" to="zur:5h5WElAipks" resolve="isValid" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                           <node concept="3clFbF" id="$XellbeUNK" role="3cqZAp">

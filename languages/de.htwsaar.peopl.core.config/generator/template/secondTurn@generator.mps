@@ -245,12 +245,7 @@
                       <node concept="2OqwBi" id="3fgD4aX6HkI" role="1eOMHV">
                         <node concept="2OqwBi" id="3fgD4aX6GCq" role="2Oq$k0">
                           <node concept="1eOMI4" id="3fgD4aX6Gfe" role="2Oq$k0">
-                            <node concept="10QFUN" id="3fgD4aX6F8E" role="1eOMHV">
-                              <node concept="3Tqbb2" id="3fgD4aX6Fk_" role="10QFUM">
-                                <ref role="ehGHo" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
-                              </node>
-                              <node concept="30H73N" id="3fgD4aX6EX3" role="10QFUP" />
-                            </node>
+                            <node concept="30H73N" id="3fgD4aX6EX3" role="1eOMHV" />
                           </node>
                           <node concept="3TrEf2" id="3fgD4aX6GSa" role="2OqNvi">
                             <ref role="3Tt5mk" to="xf8r:2LgBOmLVOSa" />

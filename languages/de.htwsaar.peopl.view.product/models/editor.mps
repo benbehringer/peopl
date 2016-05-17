@@ -2486,10 +2486,15 @@
             </node>
           </node>
           <node concept="3clFbF" id="$XellbfBz7" role="3cqZAp">
-            <node concept="2YIFZM" id="$XellbfB_w" role="3clFbG">
-              <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
-              <ref role="37wK5l" to="1lrk:$XellbfB1N" resolve="checkCacheAndRebuildIfNecessary" />
-              <node concept="pncrf" id="$XellbfBBI" role="37wK5m" />
+            <node concept="2OqwBi" id="5BOueCCLRkO" role="3clFbG">
+              <node concept="2YIFZM" id="5BOueCCLRhq" role="2Oq$k0">
+                <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+              </node>
+              <node concept="liA8E" id="5BOueCCLRoY" role="2OqNvi">
+                <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                <node concept="pncrf" id="5BOueCCLT2w" role="37wK5m" />
+              </node>
             </node>
           </node>
           <node concept="3clFbJ" id="3QcjKpJp1aH" role="3cqZAp">

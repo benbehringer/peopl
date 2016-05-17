@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build)">
+<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -373,6 +373,18 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" node="3dzs$xJmzY_" resolve="de.htwsaar.peopl.core.runtime" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7qJP9dOXrWA" role="3bR37C">
+          <node concept="3bR9La" id="7qJP9dOXrWB" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8K" resolve="jetbrains.mps.lang.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7qJP9dOXzJ4" role="3bR37C">
+          <node concept="3bR9La" id="7qJP9dOXzJ5" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="7xhAsCIyuzm" resolve="de.htwsaar.peopl.core.listener" />
           </node>
         </node>
       </node>
