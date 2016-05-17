@@ -16,6 +16,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
       <concept id="7049226118380955944" name="de.htwsaar.peopl.core.structure.IColor" flags="ng" index="6kOzA">
@@ -55,6 +59,8 @@
       <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.config.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743899" name="de.htwsaar.peopl.core.config.structure.Subtraction" flags="ng" index="u2itr" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -80,14 +86,6 @@
       <node concept="3aRQSP" id="6U7BgSPiAzT" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_7964507150377183481" />
         <ref role="3aRQSO" to="ix5u:6U7BgSPiAzQ" resolve="Fragment_7964507150377183478" />
-      </node>
-      <node concept="3aRQSP" id="3GqAm$HqrnX" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_4258885074644743677" />
-        <ref role="3aRQSO" to="ix5u:3GqAm$HqrnU" resolve="Fragment_4258885074644743674" />
-      </node>
-      <node concept="3aRQSP" id="1wqhwDAVmNT" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_1736777616795200761" />
-        <ref role="3aRQSO" to="ix5u:1wqhwDAVmNQ" resolve="Fragment_1736777616795200758" />
       </node>
     </node>
     <node concept="1V77HM" id="6U7BgSPiA$v" role="288GmO">
@@ -203,28 +201,24 @@
           <ref role="1V74G_" to="ix5u:5h5WElAhDqt" resolve="Fragment_6072526464778409629" />
         </node>
       </node>
-      <node concept="1V74G3" id="3GqAm$HqrnV" role="2$Fqj6">
-        <property role="TrG5h" value="VP_4258885074644743675" />
-        <node concept="1V74G$" id="3GqAm$HqrnW" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_4258885074644743676" />
-          <ref role="1V74G_" to="ix5u:3GqAm$HqrnU" resolve="Fragment_4258885074644743674" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="1wqhwDAVmNR" role="2$Fqj6">
-        <property role="TrG5h" value="VP_1736777616795200759" />
-        <node concept="1V74G$" id="1wqhwDAVmNS" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_1736777616795200760" />
-          <ref role="1V74G_" to="ix5u:1wqhwDAVmNQ" resolve="Fragment_1736777616795200758" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="6U7BgSPiAxK">
     <ref role="2M0niE" node="6U7BgSPiAxL" />
     <node concept="u25OH" id="6U7BgSPiAxL" role="2M0niC">
       <node concept="2Hijyl" id="6U7BgSPiAxM" role="2Hjnvt">
-        <node concept="u2itw" id="6U7BgSPiAxN" role="3clFbG">
-          <ref role="u2itx" node="6U7BgSPiAxJ" resolve="Base" />
+        <node concept="u2itr" id="4qaqn3ZS0jS" role="3clFbG">
+          <node concept="u2itw" id="4qaqn3ZS0k4" role="3uHU7w">
+            <ref role="u2itx" node="6U7BgSPiA$v" resolve="Apfel" />
+          </node>
+          <node concept="u2itq" id="4qaqn3ZS0jE" role="3uHU7B">
+            <node concept="u2itw" id="6U7BgSPiAxN" role="3uHU7B">
+              <ref role="u2itx" node="6U7BgSPiAxJ" resolve="Base" />
+            </node>
+            <node concept="u2itw" id="4qaqn3ZS0jL" role="3uHU7w">
+              <ref role="u2itx" node="6U7BgSPiA$$" resolve="Orange" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
