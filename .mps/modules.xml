@@ -5,7 +5,6 @@
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core.config/de.htwsaar.peopl.core.config.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.dep.baselang/de.htwsaar.peopl.dep.baselang.mpl" folder="peopl.dep" />
-      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.ccp/de.htwsaar.peopl.utils.ccp.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.common/de.htwsaar.peopl.utils.common.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.annotative/de.htwsaar.peopl.view.annotative.mpl" folder="peopl.dep.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.dep.view" />
@@ -22,14 +21,13 @@
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.caseStudies.sources/de.htwsaar.peopl.caseStudies.sources.msd" folder="caseStudies.sources" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.caseStudies/de.htwsaar.peopl.caseStudies.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.caseStudies2/de.htwsaar.peopl.caseStudies2.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="peopl.dep.view.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" folder="peopl.dep.view.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.dep.view.projectview" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" folder="peopl.dep.view.projectview" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.utils/de.htwsaar.peopl.utils.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr.projectview" />
