@@ -15,7 +15,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
-    <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.config.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -338,7 +337,7 @@
       <node concept="3clFbS" id="1hL$JiAvxXk" role="2VODD2">
         <node concept="3clFbF" id="1hL$JiAvyws" role="3cqZAp">
           <node concept="Xl_RD" id="1hL$JiAvywr" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Config -&gt; Make active PLC" />
+            <property role="Xl_RC" value="@PEoPL-Config -&gt; Make Active PLC" />
           </node>
         </node>
       </node>
@@ -516,59 +515,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="oGygL6BedK">
-    <property role="TrG5h" value="ChangeFillingFragments" />
-    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="2S6ZIM" id="oGygL6BedL" role="2ZfVej">
-      <node concept="3clFbS" id="oGygL6BedM" role="2VODD2">
-        <node concept="3clFbF" id="oGygL6BeG$" role="3cqZAp">
-          <node concept="Xl_RD" id="oGygL6BeGz" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-Config -&gt; Set Filling Fragments" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="oGygL6BedN" role="2ZfgGD">
-      <node concept="3clFbS" id="oGygL6BedO" role="2VODD2">
-        <node concept="3clFbF" id="oGygL6Bf7T" role="3cqZAp">
-          <node concept="2OqwBi" id="oGygL6BfeG" role="3clFbG">
-            <node concept="2OqwBi" id="oGygL6Bf8P" role="2Oq$k0">
-              <node concept="2Sf5sV" id="oGygL6Bf7S" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="oGygL6Bfcb" role="2OqNvi">
-                <node concept="1xMEDy" id="oGygL6Bfcd" role="1xVPHs">
-                  <node concept="chp4Y" id="oGygL6BfcV" role="ri$Ld">
-                    <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2qgKlT" id="oGygL6Bfi9" role="2OqNvi">
-              <ref role="37wK5l" to="uyk2:5BQdQAJnrvz" resolve="calculateAndSetFillingFragments" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="oGygL6BeCJ" role="2ZfVeh">
-      <node concept="3clFbS" id="oGygL6BeCK" role="2VODD2">
-        <node concept="3cpWs6" id="oGygL6Behy" role="3cqZAp">
-          <node concept="2OqwBi" id="oGygL6Beu$" role="3cqZAk">
-            <node concept="2OqwBi" id="oGygL6BelD" role="2Oq$k0">
-              <node concept="2Sf5sV" id="oGygL6BejQ" role="2Oq$k0" />
-              <node concept="2Xjw5R" id="oGygL6BepT" role="2OqNvi">
-                <node concept="1xMEDy" id="oGygL6BepV" role="1xVPHs">
-                  <node concept="chp4Y" id="oGygL6Bert" role="ri$Ld">
-                    <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3x8VRR" id="oGygL6Be_n" role="2OqNvi" />
           </node>
         </node>
       </node>
