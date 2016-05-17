@@ -522,7 +522,7 @@
   </registry>
   <node concept="2DaZZR" id="62a2r2c$Did" />
   <node concept="14aYJB" id="3dIcPvM6TNc">
-    <property role="TrG5h" value="PeoplModularProjectView" />
+    <property role="TrG5h" value="ModularProjectView" />
     <property role="3aPfAI" value="2" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
@@ -2003,7 +2003,7 @@
                   <ref role="3cqZAo" node="2xB8AYJj3v2" resolve="module" />
                 </node>
                 <node concept="2qgKlT" id="1GfZLHukc6Q" role="2OqNvi">
-                  <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="init" />
+                  <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="setColor" />
                   <node concept="2OqwBi" id="1GfZLHukc8q" role="37wK5m">
                     <node concept="2WthIp" id="1GfZLHukc8t" role="2Oq$k0" />
                     <node concept="3gHZIF" id="1GfZLHukc8v" role="2OqNvi">

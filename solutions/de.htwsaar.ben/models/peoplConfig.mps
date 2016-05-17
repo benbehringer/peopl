@@ -60,7 +60,6 @@
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
       <concept id="675154290793743898" name="de.htwsaar.peopl.core.config.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743899" name="de.htwsaar.peopl.core.config.structure.Subtraction" flags="ng" index="u2itr" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -124,6 +123,14 @@
       <node concept="3aRQSP" id="5h5WElAhDrT" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_6072526464778409721" />
         <ref role="3aRQSO" to="ix5u:5h5WElAhDqt" resolve="Fragment_6072526464778409629" />
+      </node>
+      <node concept="3aRQSP" id="5BdxFtz$EQ6" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_6470976361808964998" />
+        <ref role="3aRQSO" to="ix5u:5BdxFtz$EPy" resolve="Fragment_6470976361808964962" />
+      </node>
+      <node concept="3aRQSP" id="7OOWcacX4GK" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_9022100671909088048" />
+        <ref role="3aRQSO" to="ix5u:7OOWcacX4GH" resolve="Fragment_9022100671909088045" />
       </node>
     </node>
     <node concept="1V77HM" id="6U7BgSPiA$E" role="288GmO">
@@ -201,23 +208,32 @@
           <ref role="1V74G_" to="ix5u:5h5WElAhDqt" resolve="Fragment_6072526464778409629" />
         </node>
       </node>
+      <node concept="1V74G3" id="5BdxFtz$EPz" role="2$Fqj6">
+        <property role="TrG5h" value="VP_6470976361808964963" />
+        <node concept="1V74G$" id="5BdxFtz$EP$" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_6470976361808964964" />
+          <ref role="1V74G_" to="ix5u:5BdxFtz$EPy" resolve="Fragment_6470976361808964962" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="7OOWcacX4GI" role="2$Fqj6">
+        <property role="TrG5h" value="VP_9022100671909088046" />
+        <node concept="1V74G$" id="7OOWcacX4GJ" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_9022100671909088047" />
+          <ref role="1V74G_" to="ix5u:7OOWcacX4GH" resolve="Fragment_9022100671909088045" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="6U7BgSPiAxK">
     <ref role="2M0niE" node="6U7BgSPiAxL" />
     <node concept="u25OH" id="6U7BgSPiAxL" role="2M0niC">
       <node concept="2Hijyl" id="6U7BgSPiAxM" role="2Hjnvt">
-        <node concept="u2itr" id="4qaqn3ZS0jS" role="3clFbG">
-          <node concept="u2itw" id="4qaqn3ZS0k4" role="3uHU7w">
-            <ref role="u2itx" node="6U7BgSPiA$v" resolve="Apfel" />
+        <node concept="u2itq" id="7OOWcacXP$3" role="3clFbG">
+          <node concept="u2itw" id="7OOWcacXP$a" role="3uHU7B">
+            <ref role="u2itx" node="6U7BgSPiAxJ" resolve="Base" />
           </node>
-          <node concept="u2itq" id="4qaqn3ZS0jE" role="3uHU7B">
-            <node concept="u2itw" id="6U7BgSPiAxN" role="3uHU7B">
-              <ref role="u2itx" node="6U7BgSPiAxJ" resolve="Base" />
-            </node>
-            <node concept="u2itw" id="4qaqn3ZS0jL" role="3uHU7w">
-              <ref role="u2itx" node="6U7BgSPiA$$" resolve="Orange" />
-            </node>
+          <node concept="u2itw" id="4qaqn3ZS0jL" role="3uHU7w">
+            <ref role="u2itx" node="6U7BgSPiA$$" resolve="Orange" />
           </node>
         </node>
       </node>

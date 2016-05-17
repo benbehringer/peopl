@@ -15,6 +15,7 @@
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1160488491229" name="iconPath" index="MwhBj" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
       </concept>
     </language>
@@ -26,8 +27,9 @@
   </registry>
   <node concept="1TIwiD" id="57rZcVzwhY3">
     <property role="1pbfSe" value="895294545" />
-    <property role="TrG5h" value="ProducView" />
+    <property role="TrG5h" value="ProductView" />
     <property role="R5$K7" value="true" />
+    <property role="MwhBj" value="${module}/icons/productView_documentation.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>

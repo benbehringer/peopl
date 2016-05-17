@@ -118,6 +118,9 @@
         <child id="8029776554053057803" name="objectType" index="luc8K" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -170,8 +173,19 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7WEW9M6pAkK" role="jymVt" />
-    <node concept="2tJIrI" id="LgY1EVHwLs" role="jymVt" />
+    <node concept="2tJIrI" id="7OOWcacX9aC" role="jymVt" />
+    <node concept="3clFb_" id="7OOWcacX9OF" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getProductLineConfig" />
+      <node concept="3clFbS" id="7OOWcacX9OI" role="3clF47" />
+      <node concept="3Tm1VV" id="7OOWcacX9OJ" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7OOWcacX9C_" role="3clF45" />
+      <node concept="37vLTG" id="7OOWcacXa7b" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7OOWcacXa7a" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="LgY1EVHwNn" role="jymVt" />
     <node concept="312cEu" id="7WEW9M6pAaE" role="jymVt">
       <property role="2bfB8j" value="true" />

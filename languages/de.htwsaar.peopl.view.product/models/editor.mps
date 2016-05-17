@@ -42,8 +42,6 @@
     <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" implicit="true" />
-    <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.config.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -413,15 +411,11 @@
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
-      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1145570846907" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingsOperation" flags="nn" index="2TlYAL" />
       <concept id="1145572800087" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingsOperation" flags="nn" index="2Ttrtt" />
@@ -2491,140 +2485,37 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="$XellbfBz7" role="3cqZAp">
+            <node concept="2YIFZM" id="$XellbfB_w" role="3clFbG">
+              <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+              <ref role="37wK5l" to="1lrk:$XellbfB1N" resolve="checkCacheAndRebuildIfNecessary" />
+              <node concept="pncrf" id="$XellbfBBI" role="37wK5m" />
+            </node>
+          </node>
           <node concept="3clFbJ" id="3QcjKpJp1aH" role="3cqZAp">
             <node concept="3clFbS" id="3QcjKpJp1aJ" role="3clFbx">
-              <node concept="3SKdUt" id="1wqhwDAVMmY" role="3cqZAp">
-                <node concept="3SKdUq" id="1wqhwDAVMmZ" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO: this is a nasty workaround until we have a better solution ;)" />
-                </node>
-              </node>
-              <node concept="3clFbJ" id="1wqhwDAVNTP" role="3cqZAp">
-                <node concept="3clFbS" id="1wqhwDAVNTR" role="3clFbx">
-                  <node concept="3cpWs8" id="cxtRsnNo7Y" role="3cqZAp">
-                    <node concept="3cpWsn" id="cxtRsnNo81" role="3cpWs9">
-                      <property role="TrG5h" value="currentConfig" />
-                      <node concept="3Tqbb2" id="cxtRsnNo7W" role="1tU5fm">
-                        <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
-                      </node>
-                      <node concept="10Nm6u" id="cxtRsnNosZ" role="33vP2m" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="cxtRsnNrjq" role="3cqZAp">
-                    <node concept="3cpWsn" id="cxtRsnNrjt" role="3cpWs9">
-                      <property role="TrG5h" value="configLink" />
-                      <node concept="3Tqbb2" id="cxtRsnNrjo" role="1tU5fm">
-                        <ref role="ehGHo" to="sj65:7t9Yo1qQf4E" resolve="ConfigurationLink" />
-                      </node>
-                      <node concept="2OqwBi" id="cxtRsnNpXz" role="33vP2m">
-                        <node concept="2OqwBi" id="cxtRsnNpbp" role="2Oq$k0">
-                          <node concept="2OqwBi" id="cxtRsnNoOK" role="2Oq$k0">
-                            <node concept="pncrf" id="cxtRsnNoHE" role="2Oq$k0" />
-                            <node concept="I4A8Y" id="cxtRsnNp4r" role="2OqNvi" />
-                          </node>
-                          <node concept="2RRcyG" id="cxtRsnNpi4" role="2OqNvi">
-                            <ref role="2RRcyH" to="sj65:7t9Yo1qQf4E" resolve="ConfigurationLink" />
-                          </node>
-                        </node>
-                        <node concept="1uHKPH" id="cxtRsnNr22" role="2OqNvi" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="cxtRsnNoBS" role="3cqZAp">
-                    <node concept="3clFbS" id="cxtRsnNoBU" role="3clFbx">
-                      <node concept="3clFbF" id="cxtRsnNt7s" role="3cqZAp">
-                        <node concept="37vLTI" id="cxtRsnNtj5" role="3clFbG">
-                          <node concept="2OqwBi" id="cxtRsnNtAb" role="37vLTx">
-                            <node concept="37vLTw" id="cxtRsnNttq" role="2Oq$k0">
-                              <ref role="3cqZAo" node="cxtRsnNrjt" resolve="configLink" />
-                            </node>
-                            <node concept="3TrEf2" id="cxtRsnNtOA" role="2OqNvi">
-                              <ref role="3Tt5mk" to="sj65:7t9Yo1qQf4F" />
-                            </node>
-                          </node>
-                          <node concept="37vLTw" id="cxtRsnNt7q" role="37vLTJ">
-                            <ref role="3cqZAo" node="cxtRsnNo81" resolve="currentConfig" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="9aQIb" id="cxtRsnNrSm" role="9aQIa">
-                      <node concept="3clFbS" id="cxtRsnNrSn" role="9aQI4">
-                        <node concept="3clFbF" id="cxtRsnNukP" role="3cqZAp">
-                          <node concept="37vLTI" id="cxtRsnNuxM" role="3clFbG">
-                            <node concept="37vLTw" id="cxtRsnNukO" role="37vLTJ">
-                              <ref role="3cqZAo" node="cxtRsnNo81" resolve="currentConfig" />
-                            </node>
-                            <node concept="2OqwBi" id="6HiUIyL7AqE" role="37vLTx">
-                              <node concept="2OqwBi" id="6HiUIyL7_Uw" role="2Oq$k0">
-                                <node concept="2OqwBi" id="6HiUIyL7_o0" role="2Oq$k0">
-                                  <node concept="pncrf" id="6HiUIyL7_jG" role="2Oq$k0" />
-                                  <node concept="I4A8Y" id="6HiUIyL7_OD" role="2OqNvi" />
-                                </node>
-                                <node concept="2RRcyG" id="6HiUIyL7_Yz" role="2OqNvi">
-                                  <ref role="2RRcyH" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
-                                </node>
-                              </node>
-                              <node concept="1uHKPH" id="6HiUIyL7BiM" role="2OqNvi" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="cxtRsnNsMI" role="3clFbw">
-                      <node concept="37vLTw" id="cxtRsnNssg" role="2Oq$k0">
-                        <ref role="3cqZAo" node="cxtRsnNrjt" resolve="configLink" />
-                      </node>
-                      <node concept="3x8VRR" id="cxtRsnNt0z" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="1wqhwDAVLCq" role="3cqZAp">
-                    <node concept="3SKdUq" id="1wqhwDAVLTo" role="3SKWNk">
-                      <property role="3SKdUp" value="it is necessary to refresh the buffer, thus we get the current configuration," />
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="1wqhwDAVM6J" role="3cqZAp">
-                    <node concept="3SKdUq" id="1wqhwDAVM6K" role="3SKWNk">
-                      <property role="3SKdUp" value="which refreshes the buffer and read the current product line configuration" />
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="1wqhwDAVQzw" role="3cqZAp">
-                    <node concept="2OqwBi" id="1wqhwDAVRnB" role="3clFbG">
-                      <node concept="37vLTw" id="1wqhwDAVRh4" role="2Oq$k0">
-                        <ref role="3cqZAo" node="cxtRsnNo81" resolve="currentConfig" />
-                      </node>
-                      <node concept="2qgKlT" id="1wqhwDAVUEQ" role="2OqNvi">
-                        <ref role="37wK5l" to="uyk2:1hL$JiAwPa4" resolve="getFragmentListFromActiveConfiguration" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3fqX7Q" id="1wqhwDAVOKR" role="3clFbw">
-                  <node concept="2OqwBi" id="1wqhwDAVOKT" role="3fr31v">
-                    <node concept="2YIFZM" id="1wqhwDAVOKU" role="2Oq$k0">
-                      <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
-                      <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
-                    </node>
-                    <node concept="liA8E" id="1wqhwDAVOKV" role="2OqNvi">
-                      <ref role="37wK5l" to="zur:5h5WElAipks" resolve="isValid" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWs6" id="3QcjKpJp1nd" role="3cqZAp">
-                <node concept="3clFbT" id="3QcjKpJp1o6" role="3cqZAk">
-                  <property role="3clFbU" value="true" />
+              <node concept="3cpWs6" id="5BdxFtzzWMW" role="3cqZAp">
+                <node concept="3clFbT" id="5BdxFtzzWOI" role="3cqZAk">
+                  <property role="3clFbU" value="false" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3QcjKpJp1e4" role="3clFbw">
-              <node concept="pncrf" id="3QcjKpJp1bx" role="2Oq$k0" />
-              <node concept="3x8VRR" id="3QcjKpJp1mo" role="2OqNvi" />
+            <node concept="3fqX7Q" id="5BdxFtzzWIS" role="3clFbw">
+              <node concept="2OqwBi" id="5BdxFtzzWIU" role="3fr31v">
+                <node concept="2YIFZM" id="5BdxFtzzWIV" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="5BdxFtzzWIW" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAipks" resolve="isValid" />
+                </node>
+              </node>
             </node>
             <node concept="9aQIb" id="3QcjKpJp1p4" role="9aQIa">
               <node concept="3clFbS" id="3QcjKpJp1p5" role="9aQI4">
-                <node concept="3cpWs6" id="3QcjKpJp1q3" role="3cqZAp">
-                  <node concept="3clFbT" id="3QcjKpJp1s0" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
+                <node concept="3cpWs6" id="5BdxFtzzWS8" role="3cqZAp">
+                  <node concept="3clFbT" id="5BdxFtzzWVx" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
