@@ -187,9 +187,6 @@
       <node concept="m$_yB" id="6UZCRMxzIi8" role="m$_yh">
         <ref role="m$_yA" to="ffeo:5xwbQ0eEV3x" resolve="jetbrains.mps.ide.java.platform" />
       </node>
-      <node concept="m$_yB" id="6UZCRMxzIyU" role="m$_yh">
-        <ref role="m$_yA" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-      </node>
       <node concept="m$_yC" id="6UZCRMxzrGs" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
@@ -204,9 +201,6 @@
       </node>
       <node concept="m$_yC" id="6UZCRMxzHz9" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:5CFKsRWVb8B" resolve="jetbrains.mps.execution.configurations" />
-      </node>
-      <node concept="m$_yC" id="6UZCRMxzHBx" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
       </node>
       <node concept="m$_yC" id="6UZCRMxzHK5" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:ymnOULATpW" resolve="jetbrains.mps.testing" />
@@ -354,8 +348,8 @@
             <ref role="3bR37D" node="6UZCRMxzEbH" resolve="de.slisson.mps.hacks.editor" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6UZCRMxzKkF" role="3bR37C">
-          <node concept="3bR9La" id="6UZCRMxzKoX" role="1SiIV1">
+        <node concept="1SiIV0" id="6UZCRMxB6vZ" role="3bR37C">
+          <node concept="3bR9La" id="6UZCRMxB6$B" role="1SiIV1">
             <ref role="3bR37D" node="6UZCRMxzrEF" resolve="de.htwsaar.peopl.core" />
           </node>
         </node>
@@ -397,6 +391,36 @@
         <node concept="1SiIV0" id="6UZCRMxzMXG" role="3bR37C">
           <node concept="3bR9La" id="6UZCRMxzN2e" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB4EE" role="3bR37C">
+          <node concept="3bR9La" id="6UZCRMxB4Je" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB7$h" role="3bR37C">
+          <node concept="3bR9La" id="6UZCRMxB7CV" role="1SiIV1">
+            <ref role="3bR37D" node="6UZCRMxzrFA" resolve="de.htwsaar.peopl.view.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB7LK" role="3bR37C">
+          <node concept="1Busua" id="6UZCRMxB8mJ" role="1SiIV1">
+            <ref role="1Busuk" node="6UZCRMxzrEF" resolve="de.htwsaar.peopl.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB7Zj" role="3bR37C">
+          <node concept="1Busua" id="6UZCRMxB841" role="1SiIV1">
+            <ref role="1Busuk" node="6UZCRMxzrFc" resolve="de.htwsaar.peopl.dep.baselang" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB4RX" role="3bR37C">
+          <node concept="1Busua" id="6UZCRMxB4Wz" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6UZCRMxB5eq" role="3bR37C">
+          <node concept="3bR9La" id="6UZCRMxB5j2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
           </node>
         </node>
       </node>
