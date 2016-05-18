@@ -11,6 +11,10 @@
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
+    <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="imq3" ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -38,6 +42,7 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -153,6 +158,42 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6HMA$c5Yf97" role="jymVt" />
+    <node concept="3clFb_" id="amhUf1vq5U" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="useStandardOpen" />
+      <node concept="3clFbS" id="amhUf1vq5X" role="3clF47" />
+      <node concept="3Tm1VV" id="amhUf1vq5Y" role="1B3o_S" />
+      <node concept="10P_77" id="amhUf1vpT2" role="3clF45" />
+      <node concept="37vLTG" id="4RAsyl5FqQb" role="3clF46">
+        <property role="TrG5h" value="customNode" />
+        <node concept="3uibUv" id="4RAsyl5FsJG" role="1tU5fm">
+          <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4RAsyl5FXfB" role="3clF46">
+        <property role="TrG5h" value="startElement" />
+        <node concept="3uibUv" id="4RAsyl5FXpx" role="1tU5fm">
+          <ref role="3uigEE" to="imq3:3ZnFyBjwIpN" resolve="ViewElement" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4RAsyl5JsKd" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isAutoExpandable" />
+      <node concept="3clFbS" id="4RAsyl5JsKg" role="3clF47" />
+      <node concept="3Tm1VV" id="4RAsyl5JsKh" role="1B3o_S" />
+      <node concept="10P_77" id="4RAsyl5Jszj" role="3clF45" />
+      <node concept="37vLTG" id="4RAsyl5J_qt" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3uibUv" id="4RAsyl5J_qs" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="amhUf1vp_N" role="jymVt" />
+    <node concept="2tJIrI" id="amhUf1vpCK" role="jymVt" />
     <node concept="3clFb_" id="6HMA$c5YfZW" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />

@@ -99,12 +99,15 @@
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
     <dependency reexport="false">7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)</dependency>
     <dependency reexport="false">760a0a8c-eabb-4521-8bfd-65db761a9ba3(jetbrains.mps.baseLanguage.logging)</dependency>
+    <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
+    <dependency reexport="false">732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)</dependency>
+    <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
+    <dependency reexport="false">1f1b4a81-113d-4b88-9b67-2bae3e4f8128(com.mbeddr.mpsutil.projectview)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da" fqName="com.mbeddr.mpsutil.iconchar" version="0" />
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.dep.baselang" version="0" />
     <language id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" fqName="de.itemis.mps.selection.intentions" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -124,7 +127,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" fqName="jetbrains.mps.lang.editor" version="3" />
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" fqName="jetbrains.mps.lang.extension" version="1" />
-    <language id="b401a680-8325-4110-8fd3-84331ff25bef" fqName="jetbrains.mps.lang.generator" version="0" />
     <language id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" fqName="jetbrains.mps.lang.intentions" version="0" />
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" fqName="jetbrains.mps.lang.plugin" version="0" />
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" fqName="jetbrains.mps.lang.quotation" version="0" />
@@ -145,6 +147,8 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
     <module reference="e840b8ae-64d9-4b5b-b3b4-eca3f222d4da(com.mbeddr.mpsutil.iconchar)" version="0" />
+    <module reference="1f1b4a81-113d-4b88-9b67-2bae3e4f8128(com.mbeddr.mpsutil.projectview)" version="0" />
+    <module reference="732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)" version="0" />
     <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="2" />
     <module reference="42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.config)" version="0" />
     <module reference="025f762f-786f-4451-80b1-6bae4ee9fdde(de.htwsaar.peopl.core.listener)" version="0" />
