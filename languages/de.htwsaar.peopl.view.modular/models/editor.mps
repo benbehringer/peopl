@@ -4595,7 +4595,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="3Vd6OmUgkWQ">
-    <property role="TrG5h" value="PeoplClassifierMembers_Component" />
+    <property role="TrG5h" value="ClassifierMembers_basicModularity_Component" />
     <property role="3GE5qa" value="basicModularity" />
     <ref role="1XX52x" to="tpee:g7pOWCK" resolve="Classifier" />
     <node concept="2aJ2om" id="3Vd6OmUgoBD" role="3XTboT">
@@ -4695,7 +4695,7 @@
                   <node concept="3w_OXm" id="61l2320Isqg" role="2OqNvi" />
                   <node concept="2OqwBi" id="5mmbC3y9uy5" role="2Oq$k0">
                     <node concept="2YIFZM" id="5mmbC3y9twM" role="2Oq$k0">
-                      <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="PeoplViewRootNodeBuffer" />
+                      <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="GlobalRootNode" />
                       <ref role="37wK5l" to="zur:6cq_xgv5lHq" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="5mmbC3y9uG8" role="2OqNvi">
@@ -4712,7 +4712,7 @@
                     </node>
                     <node concept="2OqwBi" id="5mmbC3y9tL7" role="2Oq$k0">
                       <node concept="2YIFZM" id="5mmbC3y9tgV" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="PeoplViewRootNodeBuffer" />
+                        <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="GlobalRootNode" />
                         <ref role="37wK5l" to="zur:6cq_xgv5lHq" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="5mmbC3y9u1R" role="2OqNvi">
@@ -4736,7 +4736,7 @@
                     </node>
                     <node concept="2OqwBi" id="5mmbC3y9vbR" role="10QFUP">
                       <node concept="2YIFZM" id="5mmbC3y9vbS" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="PeoplViewRootNodeBuffer" />
+                        <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="GlobalRootNode" />
                         <ref role="37wK5l" to="zur:6cq_xgv5lHq" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="5mmbC3y9vbT" role="2OqNvi">
@@ -5591,7 +5591,7 @@
             <node concept="3clFbF" id="61l2320H2NX" role="3cqZAp">
               <node concept="2OqwBi" id="5mmbC3y9rYW" role="3clFbG">
                 <node concept="2YIFZM" id="61l2320H30B" role="2Oq$k0">
-                  <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="PeoplViewRootNodeBuffer" />
+                  <ref role="1Pybhc" to="zur:61l2320GDVi" resolve="GlobalRootNode" />
                   <ref role="37wK5l" to="zur:6cq_xgv5lHq" resolve="getInstance" />
                 </node>
                 <node concept="liA8E" id="5mmbC3y9swW" role="2OqNvi">
@@ -14775,11 +14775,11 @@
                 <node concept="3clFbF" id="3Mm3FE9SuQA" role="3cqZAp">
                   <node concept="2OqwBi" id="3Mm3FE9SuQB" role="3clFbG">
                     <node concept="2YIFZM" id="3Mm3FE9SuQC" role="2Oq$k0">
-                      <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                      <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                       <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="3Mm3FE9SuQD" role="2OqNvi">
-                      <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                      <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
                     </node>
                   </node>
                 </node>
@@ -14787,7 +14787,7 @@
               <node concept="3fqX7Q" id="3Mm3FE9SuQE" role="3clFbw">
                 <node concept="2OqwBi" id="3Mm3FE9SuQF" role="3fr31v">
                   <node concept="2YIFZM" id="3Mm3FE9SuQG" role="2Oq$k0">
-                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                     <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="3Mm3FE9SuQH" role="2OqNvi">
