@@ -1238,7 +1238,7 @@
               </node>
               <node concept="3SKdUt" id="7MIdZ4BDq5t" role="3cqZAp">
                 <node concept="3SKdUq" id="7MIdZ4BDq5u" role="3SKWNk">
-                  <property role="3SKdUp" value="this block just a simple empty alternative to the code below (until the next indicator starts)" />
+                  <property role="3SKdUp" value="this block is just just a simple empty alternative to the code below (until the next indicator starts)" />
                 </node>
               </node>
               <node concept="3SKdUt" id="10Z$L974xkP" role="3cqZAp">
@@ -14107,6 +14107,27 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="ymfq:4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
     <ref role="HxVAD" node="AZ7IhMm29e" resolve="Neighbor" />
+  </node>
+  <node concept="HxVAC" id="6D3NPsjdl5$">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::WorkSpace" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm24t" resolve="WorkSpace" />
+  </node>
+  <node concept="HxVAC" id="6D3NPsjdl5_">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::EdgeIter" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm258" resolve="EdgeIter" />
+  </node>
+  <node concept="HxVAC" id="23mPkpItaB9">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GEN_Edges::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>
 

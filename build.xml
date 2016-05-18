@@ -351,7 +351,7 @@
   <target name="java.compile.de.htwsaar.peopl.core" depends="fetchDependencies">
     <mkdir dir="${basedir}/languages/de.htwsaar.peopl.core/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.htwsaar.peopl.core/source_gen" />
@@ -408,7 +408,7 @@
   <target name="java.compile.de.htwsaar.peopl.core#3071473864244849393" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.config#6563451082523326250, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.htwsaar.peopl.core/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core#3071473864244849393" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core#3071473864244849393" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core#3071473864244849393" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.htwsaar.peopl.core/generator/source_gen" />
@@ -451,7 +451,7 @@
   <target name="java.compile.de.htwsaar.peopl.core.runtime" depends="java.compile.de.htwsaar.peopl.core, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.htwsaar.peopl.core.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.runtime" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.runtime" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.runtime" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.htwsaar.peopl.core.runtime/source_gen" />
@@ -493,7 +493,7 @@
   <target name="java.compile.de.htwsaar.peopl.core.config" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.listener, java.compile.de.htwsaar.peopl.core.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.htwsaar.peopl.core.config/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.config" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.config" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.config" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.htwsaar.peopl.core.config/source_gen" />
@@ -549,7 +549,7 @@
   <target name="java.compile.de.htwsaar.peopl.core.config#6563451082523326250" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.config, java.compile.de.htwsaar.peopl.core.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.htwsaar.peopl.core.config/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.config#6563451082523326250" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.config#6563451082523326250" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.config#6563451082523326250" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/languages/de.htwsaar.peopl.core.config/generator/source_gen" />
@@ -597,7 +597,7 @@
   <target name="java.compile.de.htwsaar.peopl.core.listener" depends="java.compile.de.htwsaar.peopl.core, fetchDependencies">
     <mkdir dir="${basedir}/solutions/de.htwsaar.peopl.core.listener/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.listener" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.listener" fork="true" includeantruntime="false">
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.listener" fork="true" encoding="utf8" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/solutions/de.htwsaar.peopl.core.listener/source_gen" />

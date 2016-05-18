@@ -18,6 +18,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -136,8 +137,8 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
-      <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
-        <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
       </concept>
       <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
         <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
@@ -248,17 +249,34 @@
         </node>
       </node>
       <node concept="3clFbH" id="62a2r2csZOe" role="3cqZAp" />
+      <node concept="1X3_iC" id="23mPkpItB5L" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="34ab3g" id="6D3NPsjcug0" role="8Wnug">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="6D3NPsjcug2" role="34bqiv">
+            <property role="Xl_RC" value="typecheck" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="6D3NPsjcsQf" role="3cqZAp" />
       <node concept="3clFbJ" id="62a2r2csZOf" role="3cqZAp">
         <node concept="3clFbS" id="62a2r2csZOg" role="3clFbx">
-          <node concept="2MkqsV" id="62a2r2csZOh" role="3cqZAp">
-            <node concept="3cpWs3" id="62a2r2csZOi" role="2MkJ7o">
-              <node concept="Xl_RD" id="62a2r2csZOj" role="3uHU7w">
-                <property role="Xl_RC" value="." />
+          <node concept="a7r0C" id="4L6K1KvapqJ" role="3cqZAp">
+            <node concept="1YBJjd" id="4L6K1KvapAr" role="2OEOjV">
+              <ref role="1YBMHb" node="7REa3dnCYSg" resolve="variableReference" />
+            </node>
+            <node concept="3cpWs3" id="4L6K1KvapqL" role="a7wSD">
+              <node concept="Xl_RD" id="4L6K1KvapqM" role="3uHU7w">
+                <property role="Xl_RC" value=", which contains the declaration." />
               </node>
-              <node concept="3cpWs3" id="62a2r2csZOk" role="3uHU7B">
-                <node concept="3cpWs3" id="62a2r2csZOl" role="3uHU7B">
-                  <node concept="3cpWs3" id="62a2r2csZOm" role="3uHU7B">
-                    <node concept="3cpWs3" id="62a2r2csZOn" role="3uHU7B">
+              <node concept="3cpWs3" id="4L6K1KvapqN" role="3uHU7B">
+                <node concept="3cpWs3" id="4L6K1KvapqO" role="3uHU7B">
+                  <node concept="3cpWs3" id="4L6K1KvapqP" role="3uHU7B">
+                    <node concept="3cpWs3" id="4L6K1KvapqQ" role="3uHU7B">
+                      <node concept="Xl_RD" id="4L6K1KvapqR" role="3uHU7w">
+                        <property role="Xl_RC" value=" assigned by module " />
+                      </node>
                       <node concept="3cpWs3" id="62a2r2csZOo" role="3uHU7B">
                         <node concept="2OqwBi" id="62a2r2csZOp" role="3uHU7w">
                           <node concept="1YBJjd" id="62a2r2ct0sM" role="2Oq$k0">
@@ -272,35 +290,29 @@
                           <property role="Xl_RC" value="Variable reference " />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="62a2r2csZOt" role="3uHU7w">
-                        <property role="Xl_RC" value=" is assigned by module " />
-                      </node>
                     </node>
-                    <node concept="2OqwBi" id="62a2r2csZOu" role="3uHU7w">
-                      <node concept="37vLTw" id="62a2r2csZOv" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4L6K1KvapqX" role="3uHU7w">
+                      <node concept="37vLTw" id="4L6K1KvapqY" role="2Oq$k0">
                         <ref role="3cqZAo" node="62a2r2csZO7" resolve="msg" />
                       </node>
-                      <node concept="liA8E" id="62a2r2csZOw" role="2OqNvi">
+                      <node concept="liA8E" id="4L6K1KvapqZ" role="2OqNvi">
                         <ref role="37wK5l" node="62a2r2csHCR" resolve="getRefNodeModuleName" />
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="62a2r2csZOx" role="3uHU7w">
-                    <property role="Xl_RC" value=", but its declaration is assigned by module " />
+                  <node concept="Xl_RD" id="4L6K1Kvapr0" role="3uHU7w">
+                    <property role="Xl_RC" value=" has a dependency on " />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="62a2r2csZOy" role="3uHU7w">
-                  <node concept="37vLTw" id="62a2r2csZOz" role="2Oq$k0">
+                <node concept="2OqwBi" id="4L6K1Kvapr1" role="3uHU7w">
+                  <node concept="37vLTw" id="4L6K1Kvapr2" role="2Oq$k0">
                     <ref role="3cqZAo" node="62a2r2csZO7" resolve="msg" />
                   </node>
-                  <node concept="liA8E" id="62a2r2csZO$" role="2OqNvi">
+                  <node concept="liA8E" id="4L6K1Kvapr3" role="2OqNvi">
                     <ref role="37wK5l" node="62a2r2csIn7" resolve="getDeclNodeModuleName" />
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="1YBJjd" id="62a2r2ct0xj" role="2OEOjV">
-              <ref role="1YBMHb" node="7REa3dnCYSg" resolve="variableReference" />
             </node>
           </node>
         </node>
@@ -463,17 +475,34 @@
               </node>
             </node>
           </node>
-          <node concept="3fqX7Q" id="6coTyb6lyhv" role="3clFbw">
-            <node concept="2OqwBi" id="6coTyb6lyhx" role="3fr31v">
-              <node concept="2OqwBi" id="6coTyb6lyhy" role="2Oq$k0">
-                <node concept="37vLTw" id="6coTyb6lyhz" role="2Oq$k0">
-                  <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+          <node concept="22lmx$" id="6D3NPsjdj8a" role="3clFbw">
+            <node concept="3fqX7Q" id="6coTyb6lyhv" role="3uHU7B">
+              <node concept="2OqwBi" id="6coTyb6lyhx" role="3fr31v">
+                <node concept="2OqwBi" id="6coTyb6lyhy" role="2Oq$k0">
+                  <node concept="37vLTw" id="6coTyb6lyhz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                  </node>
+                  <node concept="2Rxl7S" id="6coTyb6lyh$" role="2OqNvi" />
                 </node>
-                <node concept="2Rxl7S" id="6coTyb6lyh$" role="2OqNvi" />
+                <node concept="1mIQ4w" id="6coTyb6lyh_" role="2OqNvi">
+                  <node concept="chp4Y" id="6coTyb6lyhA" role="cj9EA">
+                    <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  </node>
+                </node>
               </node>
-              <node concept="1mIQ4w" id="6coTyb6lyh_" role="2OqNvi">
-                <node concept="chp4Y" id="6coTyb6lyhA" role="cj9EA">
-                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+            </node>
+            <node concept="3fqX7Q" id="6D3NPsjdjcz" role="3uHU7w">
+              <node concept="2OqwBi" id="6D3NPsjdjc$" role="3fr31v">
+                <node concept="2OqwBi" id="6D3NPsjdjc_" role="2Oq$k0">
+                  <node concept="37vLTw" id="6D3NPsjdjcA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                  </node>
+                  <node concept="2Rxl7S" id="6D3NPsjdjcB" role="2OqNvi" />
+                </node>
+                <node concept="1mIQ4w" id="6D3NPsjdjcC" role="2OqNvi">
+                  <node concept="chp4Y" id="6D3NPsjdjeN" role="cj9EA">
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1122,15 +1151,19 @@
       <node concept="3clFbH" id="62a2r2ct5g7" role="3cqZAp" />
       <node concept="3clFbJ" id="62a2r2ct5g8" role="3cqZAp">
         <node concept="3clFbS" id="62a2r2ct5g9" role="3clFbx">
-          <node concept="2MkqsV" id="62a2r2ct5ga" role="3cqZAp">
-            <node concept="3cpWs3" id="62a2r2ct5gb" role="2MkJ7o">
-              <node concept="Xl_RD" id="62a2r2ct5gc" role="3uHU7w">
-                <property role="Xl_RC" value="." />
+          <node concept="3clFbH" id="4L6K1Kvan65" role="3cqZAp" />
+          <node concept="a7r0C" id="4L6K1Kvanei" role="3cqZAp">
+            <node concept="1YBJjd" id="4L6K1KvanS3" role="2OEOjV">
+              <ref role="1YBMHb" node="70Uiey23YGX" resolve="classifierType" />
+            </node>
+            <node concept="3cpWs3" id="4L6K1Kvanek" role="a7wSD">
+              <node concept="Xl_RD" id="4L6K1Kvanel" role="3uHU7w">
+                <property role="Xl_RC" value=", which contains the declaration." />
               </node>
-              <node concept="3cpWs3" id="62a2r2ct5gd" role="3uHU7B">
-                <node concept="3cpWs3" id="62a2r2ct5ge" role="3uHU7B">
-                  <node concept="3cpWs3" id="62a2r2ct5gf" role="3uHU7B">
-                    <node concept="3cpWs3" id="62a2r2ct5gg" role="3uHU7B">
+              <node concept="3cpWs3" id="4L6K1Kvanem" role="3uHU7B">
+                <node concept="3cpWs3" id="4L6K1Kvanen" role="3uHU7B">
+                  <node concept="3cpWs3" id="4L6K1Kvaneo" role="3uHU7B">
+                    <node concept="3cpWs3" id="4L6K1Kvanep" role="3uHU7B">
                       <node concept="3cpWs3" id="62a2r2ct5gh" role="3uHU7B">
                         <node concept="2OqwBi" id="62a2r2ct5gi" role="3uHU7w">
                           <node concept="1YBJjd" id="62a2r2ct5EC" role="2Oq$k0">
@@ -1144,35 +1177,32 @@
                           <property role="Xl_RC" value="Class " />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="62a2r2ct5gm" role="3uHU7w">
-                        <property role="Xl_RC" value=" is assigned by module " />
+                      <node concept="Xl_RD" id="4L6K1Kvanev" role="3uHU7w">
+                        <property role="Xl_RC" value=" assigned by module " />
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="62a2r2ct5gn" role="3uHU7w">
-                      <node concept="37vLTw" id="62a2r2ct5go" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4L6K1Kvanew" role="3uHU7w">
+                      <node concept="37vLTw" id="4L6K1Kvanex" role="2Oq$k0">
                         <ref role="3cqZAo" node="62a2r2ct5g0" resolve="msg" />
                       </node>
-                      <node concept="liA8E" id="62a2r2ct5gp" role="2OqNvi">
+                      <node concept="liA8E" id="4L6K1Kvaney" role="2OqNvi">
                         <ref role="37wK5l" node="62a2r2csHCR" resolve="getRefNodeModuleName" />
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="62a2r2ct5gq" role="3uHU7w">
-                    <property role="Xl_RC" value=", but the declaration of the class is assigned by module " />
+                  <node concept="Xl_RD" id="4L6K1Kvanez" role="3uHU7w">
+                    <property role="Xl_RC" value=" has a dependency on " />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="62a2r2ct5gr" role="3uHU7w">
-                  <node concept="37vLTw" id="62a2r2ct5gs" role="2Oq$k0">
+                <node concept="2OqwBi" id="4L6K1Kvane$" role="3uHU7w">
+                  <node concept="37vLTw" id="4L6K1Kvane_" role="2Oq$k0">
                     <ref role="3cqZAo" node="62a2r2ct5g0" resolve="msg" />
                   </node>
-                  <node concept="liA8E" id="62a2r2ct5gt" role="2OqNvi">
+                  <node concept="liA8E" id="4L6K1KvaneA" role="2OqNvi">
                     <ref role="37wK5l" node="62a2r2csIn7" resolve="getDeclNodeModuleName" />
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="1YBJjd" id="62a2r2ct5Jk" role="2OEOjV">
-              <ref role="1YBMHb" node="70Uiey23YGX" resolve="classifierType" />
             </node>
           </node>
         </node>
@@ -1220,57 +1250,58 @@
       <node concept="3clFbH" id="62a2r2ct428" role="3cqZAp" />
       <node concept="3clFbJ" id="62a2r2ct429" role="3cqZAp">
         <node concept="3clFbS" id="62a2r2ct42a" role="3clFbx">
-          <node concept="2MkqsV" id="62a2r2ct42b" role="3cqZAp">
-            <node concept="3cpWs3" id="62a2r2ct42c" role="2MkJ7o">
-              <node concept="Xl_RD" id="62a2r2ct42d" role="3uHU7w">
-                <property role="Xl_RC" value="." />
+          <node concept="3clFbH" id="4L6K1KvaodO" role="3cqZAp" />
+          <node concept="a7r0C" id="4L6K1KvaooE" role="3cqZAp">
+            <node concept="1YBJjd" id="4L6K1Kvaowm" role="2OEOjV">
+              <ref role="1YBMHb" node="70Uiey23YGL" resolve="defaultClassCreator" />
+            </node>
+            <node concept="3cpWs3" id="4L6K1KvaooG" role="a7wSD">
+              <node concept="Xl_RD" id="4L6K1KvaooH" role="3uHU7w">
+                <property role="Xl_RC" value=", which contains the declaration." />
               </node>
-              <node concept="3cpWs3" id="62a2r2ct42e" role="3uHU7B">
-                <node concept="3cpWs3" id="62a2r2ct42f" role="3uHU7B">
-                  <node concept="3cpWs3" id="62a2r2ct42g" role="3uHU7B">
-                    <node concept="3cpWs3" id="62a2r2ct42h" role="3uHU7B">
-                      <node concept="3cpWs3" id="62a2r2ct42i" role="3uHU7B">
-                        <node concept="2OqwBi" id="62a2r2ct42j" role="3uHU7w">
-                          <node concept="1YBJjd" id="62a2r2ct4wE" role="2Oq$k0">
+              <node concept="3cpWs3" id="4L6K1KvaooI" role="3uHU7B">
+                <node concept="3cpWs3" id="4L6K1KvaooJ" role="3uHU7B">
+                  <node concept="3cpWs3" id="4L6K1KvaooK" role="3uHU7B">
+                    <node concept="3cpWs3" id="4L6K1KvaooL" role="3uHU7B">
+                      <node concept="Xl_RD" id="4L6K1KvaooR" role="3uHU7w">
+                        <property role="Xl_RC" value=" assigned by module " />
+                      </node>
+                      <node concept="3cpWs3" id="4L6K1Kvaoui" role="3uHU7B">
+                        <node concept="2OqwBi" id="4L6K1Kvaouj" role="3uHU7w">
+                          <node concept="1YBJjd" id="4L6K1Kvaouk" role="2Oq$k0">
                             <ref role="1YBMHb" node="70Uiey23YGL" resolve="defaultClassCreator" />
                           </node>
-                          <node concept="2qgKlT" id="62a2r2ct42l" role="2OqNvi">
+                          <node concept="2qgKlT" id="4L6K1Kvaoul" role="2OqNvi">
                             <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                           </node>
                         </node>
-                        <node concept="Xl_RD" id="62a2r2ct42m" role="3uHU7B">
+                        <node concept="Xl_RD" id="4L6K1Kvaoum" role="3uHU7B">
                           <property role="Xl_RC" value="Class creator" />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="62a2r2ct42n" role="3uHU7w">
-                        <property role="Xl_RC" value=" is assigned by module " />
-                      </node>
                     </node>
-                    <node concept="2OqwBi" id="62a2r2ct42o" role="3uHU7w">
-                      <node concept="37vLTw" id="62a2r2ct42p" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4L6K1KvaooS" role="3uHU7w">
+                      <node concept="37vLTw" id="4L6K1KvaooT" role="2Oq$k0">
                         <ref role="3cqZAo" node="62a2r2ct421" resolve="msg" />
                       </node>
-                      <node concept="liA8E" id="62a2r2ct42q" role="2OqNvi">
+                      <node concept="liA8E" id="4L6K1KvaooU" role="2OqNvi">
                         <ref role="37wK5l" node="62a2r2csHCR" resolve="getRefNodeModuleName" />
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="62a2r2ct42r" role="3uHU7w">
-                    <property role="Xl_RC" value=", but the declaration of the class is assigned by module " />
+                  <node concept="Xl_RD" id="4L6K1KvaooV" role="3uHU7w">
+                    <property role="Xl_RC" value=" has a dependency on " />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="62a2r2ct42s" role="3uHU7w">
-                  <node concept="37vLTw" id="62a2r2ct42t" role="2Oq$k0">
+                <node concept="2OqwBi" id="4L6K1KvaooW" role="3uHU7w">
+                  <node concept="37vLTw" id="4L6K1KvaooX" role="2Oq$k0">
                     <ref role="3cqZAo" node="62a2r2ct421" resolve="msg" />
                   </node>
-                  <node concept="liA8E" id="62a2r2ct42u" role="2OqNvi">
+                  <node concept="liA8E" id="4L6K1KvaooY" role="2OqNvi">
                     <ref role="37wK5l" node="62a2r2csIn7" resolve="getDeclNodeModuleName" />
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="1YBJjd" id="62a2r2ct4$F" role="2OEOjV">
-              <ref role="1YBMHb" node="70Uiey23YGL" resolve="defaultClassCreator" />
             </node>
           </node>
         </node>
@@ -1319,10 +1350,13 @@
       <node concept="3clFbH" id="62a2r2csDhn" role="3cqZAp" />
       <node concept="3clFbJ" id="62a2r2crbrh" role="3cqZAp">
         <node concept="3clFbS" id="62a2r2crbrj" role="3clFbx">
-          <node concept="2MkqsV" id="70Uiey1Ze1c" role="3cqZAp">
-            <node concept="3cpWs3" id="62a2r2csPbH" role="2MkJ7o">
+          <node concept="a7r0C" id="4L6K1KvakLj" role="3cqZAp">
+            <node concept="1YBJjd" id="4L6K1KvakOK" role="2OEOjV">
+              <ref role="1YBMHb" node="70Uiey1Yh3A" resolve="fieldReferenceOperation" />
+            </node>
+            <node concept="3cpWs3" id="62a2r2csPbH" role="a7wSD">
               <node concept="Xl_RD" id="62a2r2csPgl" role="3uHU7w">
-                <property role="Xl_RC" value="." />
+                <property role="Xl_RC" value=", which contains the declaration." />
               </node>
               <node concept="3cpWs3" id="62a2r2csNjF" role="3uHU7B">
                 <node concept="3cpWs3" id="62a2r2csMt5" role="3uHU7B">
@@ -1342,7 +1376,7 @@
                         </node>
                       </node>
                       <node concept="Xl_RD" id="62a2r2csM5$" role="3uHU7w">
-                        <property role="Xl_RC" value=" is assigned by module " />
+                        <property role="Xl_RC" value=" assigned by module " />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="62a2r2csMyu" role="3uHU7w">
@@ -1355,7 +1389,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="70Uiey1Ze1e" role="3uHU7w">
-                    <property role="Xl_RC" value=", but its declaration is assigned by module " />
+                    <property role="Xl_RC" value=" has a dependency on " />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="62a2r2csNqJ" role="3uHU7w">
@@ -1367,9 +1401,6 @@
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="1YBJjd" id="70Uiey1Ze1k" role="2OEOjV">
-              <ref role="1YBMHb" node="70Uiey1Yh3A" resolve="fieldReferenceOperation" />
             </node>
           </node>
         </node>
@@ -1417,15 +1448,21 @@
       <node concept="3clFbH" id="62a2r2csRJt" role="3cqZAp" />
       <node concept="3clFbJ" id="62a2r2csRJu" role="3cqZAp">
         <node concept="3clFbS" id="62a2r2csRJv" role="3clFbx">
-          <node concept="2MkqsV" id="62a2r2csRJw" role="3cqZAp">
-            <node concept="3cpWs3" id="62a2r2csRJx" role="2MkJ7o">
-              <node concept="Xl_RD" id="62a2r2csRJy" role="3uHU7w">
-                <property role="Xl_RC" value="." />
+          <node concept="a7r0C" id="4L6K1KvaoTg" role="3cqZAp">
+            <node concept="1YBJjd" id="4L6K1Kvap5l" role="2OEOjV">
+              <ref role="1YBMHb" node="70Uiey1ZgtV" resolve="iMethodCall" />
+            </node>
+            <node concept="3cpWs3" id="4L6K1KvaoTi" role="a7wSD">
+              <node concept="Xl_RD" id="4L6K1KvaoTj" role="3uHU7w">
+                <property role="Xl_RC" value=", which contains the declaration." />
               </node>
-              <node concept="3cpWs3" id="62a2r2csRJz" role="3uHU7B">
-                <node concept="3cpWs3" id="62a2r2csRJ$" role="3uHU7B">
-                  <node concept="3cpWs3" id="62a2r2csRJ_" role="3uHU7B">
-                    <node concept="3cpWs3" id="62a2r2csRJA" role="3uHU7B">
+              <node concept="3cpWs3" id="4L6K1KvaoTk" role="3uHU7B">
+                <node concept="3cpWs3" id="4L6K1KvaoTl" role="3uHU7B">
+                  <node concept="3cpWs3" id="4L6K1KvaoTm" role="3uHU7B">
+                    <node concept="3cpWs3" id="4L6K1KvaoTn" role="3uHU7B">
+                      <node concept="Xl_RD" id="4L6K1KvaoTo" role="3uHU7w">
+                        <property role="Xl_RC" value=" assigned by module " />
+                      </node>
                       <node concept="3cpWs3" id="62a2r2csRJB" role="3uHU7B">
                         <node concept="2OqwBi" id="62a2r2csRJC" role="3uHU7w">
                           <node concept="1YBJjd" id="62a2r2csSfe" role="2Oq$k0">
@@ -1439,35 +1476,29 @@
                           <property role="Xl_RC" value="Method call " />
                         </node>
                       </node>
-                      <node concept="Xl_RD" id="62a2r2csRJG" role="3uHU7w">
-                        <property role="Xl_RC" value=" is assigned by module " />
-                      </node>
                     </node>
-                    <node concept="2OqwBi" id="62a2r2csRJH" role="3uHU7w">
-                      <node concept="37vLTw" id="62a2r2csRJI" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4L6K1KvaoTu" role="3uHU7w">
+                      <node concept="37vLTw" id="4L6K1KvaoTv" role="2Oq$k0">
                         <ref role="3cqZAo" node="62a2r2csRJm" resolve="msg" />
                       </node>
-                      <node concept="liA8E" id="62a2r2csRJJ" role="2OqNvi">
+                      <node concept="liA8E" id="4L6K1KvaoTw" role="2OqNvi">
                         <ref role="37wK5l" node="62a2r2csHCR" resolve="getRefNodeModuleName" />
                       </node>
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="62a2r2csRJK" role="3uHU7w">
-                    <property role="Xl_RC" value=", but its declaration is assigned by module " />
+                  <node concept="Xl_RD" id="4L6K1KvaoTx" role="3uHU7w">
+                    <property role="Xl_RC" value=" has a dependency on " />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="62a2r2csRJL" role="3uHU7w">
-                  <node concept="37vLTw" id="62a2r2csRJM" role="2Oq$k0">
+                <node concept="2OqwBi" id="4L6K1KvaoTy" role="3uHU7w">
+                  <node concept="37vLTw" id="4L6K1KvaoTz" role="2Oq$k0">
                     <ref role="3cqZAo" node="62a2r2csRJm" resolve="msg" />
                   </node>
-                  <node concept="liA8E" id="62a2r2csRJN" role="2OqNvi">
+                  <node concept="liA8E" id="4L6K1KvaoT$" role="2OqNvi">
                     <ref role="37wK5l" node="62a2r2csIn7" resolve="getDeclNodeModuleName" />
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="1YBJjd" id="62a2r2csSrc" role="2OEOjV">
-              <ref role="1YBMHb" node="70Uiey1ZgtV" resolve="iMethodCall" />
             </node>
           </node>
         </node>
