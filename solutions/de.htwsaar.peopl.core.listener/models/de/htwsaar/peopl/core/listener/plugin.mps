@@ -9220,6 +9220,18 @@
                 <node concept="Xl_RD" id="4abErjGKn1d" role="HW$Y0">
                   <property role="Xl_RC" value="checkpoints" />
                 </node>
+                <node concept="Xl_RD" id="6y6YKC7Bc1T" role="HW$Y0">
+                  <property role="Xl_RC" value="build.core" />
+                </node>
+                <node concept="Xl_RD" id="6y6YKC7Bcq1" role="HW$Y0">
+                  <property role="Xl_RC" value="build.deputil" />
+                </node>
+                <node concept="Xl_RD" id="6y6YKC7BctJ" role="HW$Y0">
+                  <property role="Xl_RC" value="build.mbeddr" />
+                </node>
+                <node concept="Xl_RD" id="6y6YKC7BcL1" role="HW$Y0">
+                  <property role="Xl_RC" value="build.peopl" />
+                </node>
               </node>
             </node>
           </node>

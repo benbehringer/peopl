@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(peopl)" doNotGenerate="true">
+<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(build.peopl)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -7,7 +7,7 @@
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
-    <import index="f4pb" ref="r:374e1735-a231-46dd-a619-5049c447cd2e(core)" />
+    <import index="f4pb" ref="r:374e1735-a231-46dd-a619-5049c447cd2e(build.core)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
