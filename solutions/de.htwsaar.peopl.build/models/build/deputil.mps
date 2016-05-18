@@ -6,7 +6,7 @@
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
   </languages>
   <imports>
-    <import index="f4pb" ref="r:374e1735-a231-46dd-a619-5049c447cd2e(build.core)" />
+    <import index="f4pb" ref="r:374e1735-a231-46dd-a619-5049c447cd2e(core)" />
     <import index="a9xt" ref="r:94cb03cf-8a98-43a8-b48c-ad1caf0a27aa(build.mbeddr)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
   </imports>
