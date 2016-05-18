@@ -40,10 +40,6 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -277,11 +273,11 @@
                     <ref role="3cqZAo" node="92zQE_FfBy" resolve="frag" />
                   </node>
                   <node concept="2qgKlT" id="92zQE_FiGH" role="2OqNvi">
-                    <ref role="37wK5l" to="kpvh:2BKSxwr7h1e" resolve="removeFromVP" />
+                    <ref role="37wK5l" to="kpvh:2BKSxwr7h1e" resolve="disconnetFromVP" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="92zQE_Fj2R" role="2OqNvi">
-                  <ref role="37wK5l" to="kpvh:2BKSxwr7gN4" resolve="removeFromModule" />
+                  <ref role="37wK5l" to="kpvh:2BKSxwr7gN4" resolve="disconnectFromModule" />
                 </node>
               </node>
             </node>
@@ -303,12 +299,7 @@
             </node>
             <node concept="3clFbF" id="92zQE_CDKj" role="3cqZAp">
               <node concept="1eOMI4" id="92zQE_CDKh" role="3clFbG">
-                <node concept="10QFUN" id="92zQE_CDKe" role="1eOMHV">
-                  <node concept="30H73N" id="92zQE_CGy2" role="10QFUP" />
-                  <node concept="3Tqbb2" id="92zQE_CGvH" role="10QFUM">
-                    <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
-                  </node>
-                </node>
+                <node concept="30H73N" id="92zQE_CGy2" role="1eOMHV" />
               </node>
             </node>
           </node>

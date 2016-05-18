@@ -11,7 +11,6 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
-    <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
@@ -487,16 +486,6 @@
               <node concept="3Tqbb2" id="3Mm3FE9SuQ3" role="1tU5fm">
                 <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
               </node>
-              <node concept="2OqwBi" id="3Mm3FE9SuQ4" role="33vP2m">
-                <node concept="0IXxy" id="3Mm3FE9SuQ5" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="3Mm3FE9SuQ6" role="2OqNvi">
-                  <node concept="1xMEDy" id="3Mm3FE9SuQ7" role="1xVPHs">
-                    <node concept="chp4Y" id="3Mm3FE9SuQ8" role="ri$Ld">
-                      <ref role="cht4Q" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
           <node concept="3clFbH" id="3Mm3FE9SuQ9" role="3cqZAp" />
@@ -633,11 +622,11 @@
                 <node concept="3clFbF" id="3Mm3FE9SuQA" role="3cqZAp">
                   <node concept="2OqwBi" id="3Mm3FE9SuQB" role="3clFbG">
                     <node concept="2YIFZM" id="3Mm3FE9SuQC" role="2Oq$k0">
-                      <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                      <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                       <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
                     </node>
                     <node concept="liA8E" id="3Mm3FE9SuQD" role="2OqNvi">
-                      <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                      <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
                     </node>
                   </node>
                 </node>
@@ -646,7 +635,7 @@
                 <node concept="2OqwBi" id="3Mm3FE9SuQF" role="3fr31v">
                   <node concept="2YIFZM" id="3Mm3FE9SuQG" role="2Oq$k0">
                     <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                    <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                   </node>
                   <node concept="liA8E" id="3Mm3FE9SuQH" role="2OqNvi">
                     <ref role="37wK5l" to="zur:7uhzxTPLnSL" resolve="isEmpty" />
