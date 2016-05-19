@@ -420,10 +420,10 @@
               </node>
             </node>
             <node concept="3y3z36" id="LgY1EVE9ip" role="3clFbw">
-              <node concept="10Nm6u" id="LgY1EVE9iq" role="3uHU7w" />
               <node concept="37vLTw" id="LgY1EVE9_x" role="3uHU7B">
                 <ref role="3cqZAo" node="7WEW9M6pks2" resolve="peoplEntryPoint" />
               </node>
+              <node concept="10Nm6u" id="LgY1EVE9iq" role="3uHU7w" />
             </node>
           </node>
           <node concept="3clFbJ" id="LgY1EVE9na" role="3cqZAp">

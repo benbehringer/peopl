@@ -220,6 +220,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp" />
@@ -465,29 +466,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="2H0DQTMHsLk" role="3cqZAp">
-          <node concept="3clFbS" id="2H0DQTMHsLm" role="3clFbx">
-            <node concept="3clFbF" id="2H0DQTMHte1" role="3cqZAp">
-              <node concept="2OqwBi" id="2H0DQTMHte2" role="3clFbG">
-                <node concept="37vLTw" id="2H0DQTMHte3" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2H0DQTMHc4E" resolve="initialEditorHints" />
-                </node>
-                <node concept="liA8E" id="2H0DQTMHte4" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="10M0yZ" id="2H0DQTMHtjl" role="37wK5m">
-                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                    <ref role="3cqZAo" to="ynjl:2H0DQTMEXuw" resolve="HIDE_MODULE_VP" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3fqX7Q" id="2H0DQTMHt6U" role="3clFbw">
-            <node concept="37vLTw" id="2H0DQTMHt6W" role="3fr31v">
-              <ref role="3cqZAo" node="2H0DQTMHrQk" resolve="foundHideModuleHint" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbJ" id="2H0DQTMIdbx" role="3cqZAp">
           <node concept="3clFbS" id="2H0DQTMIdbz" role="3clFbx">
             <node concept="3clFbF" id="2H0DQTMIe0e" role="3cqZAp">
@@ -511,6 +489,35 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="2H0DQTMHsLk" role="3cqZAp">
+          <node concept="3clFbS" id="2H0DQTMHsLm" role="3clFbx">
+            <node concept="3clFbF" id="2H0DQTMHte1" role="3cqZAp">
+              <node concept="2OqwBi" id="2H0DQTMHte2" role="3clFbG">
+                <node concept="37vLTw" id="2H0DQTMHte3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2H0DQTMHc4E" resolve="initialEditorHints" />
+                </node>
+                <node concept="liA8E" id="2H0DQTMHte4" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+                  <node concept="10M0yZ" id="2H0DQTMHtjl" role="37wK5m">
+                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
+                    <ref role="3cqZAo" to="ynjl:2H0DQTMEXuw" resolve="HIDE_MODULE_VP" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="4L5X_XCUzBn" role="3clFbw">
+            <node concept="37vLTw" id="4L5X_XCUzHV" role="3uHU7w">
+              <ref role="3cqZAo" node="2H0DQTMIaf8" resolve="foundBetterAnnotativeViewHint" />
+            </node>
+            <node concept="3fqX7Q" id="2H0DQTMHt6U" role="3uHU7B">
+              <node concept="37vLTw" id="2H0DQTMHt6W" role="3fr31v">
+                <ref role="3cqZAo" node="2H0DQTMHrQk" resolve="foundHideModuleHint" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4L5X_XCUzsE" role="3cqZAp" />
         <node concept="3cpWs8" id="2H0DQTMHmId" role="3cqZAp">
           <node concept="3cpWsn" id="2H0DQTMHmIe" role="3cpWs9">
             <property role="TrG5h" value="editorHints" />
@@ -580,28 +587,6 @@
       </node>
     </node>
     <node concept="mfpdH" id="2H0DQTMG5u1" role="med8o" />
-    <node concept="2ScWuX" id="2H0DQTMIskk" role="tmbBb">
-      <node concept="3clFbS" id="2H0DQTMIskl" role="2VODD2">
-        <node concept="3clFbF" id="2H0DQTMItNv" role="3cqZAp">
-          <node concept="2OqwBi" id="2H0DQTMIu6v" role="3clFbG">
-            <node concept="2OqwBi" id="2H0DQTMItV9" role="2Oq$k0">
-              <node concept="2OqwBi" id="2H0DQTMItNp" role="2Oq$k0">
-                <node concept="2WthIp" id="2H0DQTMItNs" role="2Oq$k0" />
-                <node concept="3gHZIF" id="2H0DQTMItNu" role="2OqNvi">
-                  <ref role="2WH_rO" node="2H0DQTMItoF" resolve="currentNode" />
-                </node>
-              </node>
-              <node concept="2Rxl7S" id="2H0DQTMIu1k" role="2OqNvi" />
-            </node>
-            <node concept="1mIQ4w" id="2H0DQTMIvkC" role="2OqNvi">
-              <node concept="chp4Y" id="2H0DQTMIvXI" role="cj9EA">
-                <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="Zd50a" id="2H0DQTMI2VG">
     <property role="3GE5qa" value="viewMenu" />

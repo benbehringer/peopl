@@ -2997,6 +2997,85 @@
     <property role="2uzpH1" value="Convert to PEoPL-conform Solution" />
     <property role="TrG5h" value="ConvertToPeoplSolution" />
     <property role="1WHSii" value="Exchanges all ClassConcept in a Solution with PEoPL Entry Points and adds Configuration and ModuleDefinition" />
+    <node concept="2XrIbr" id="4L5X_XCU0Qs" role="32lrUH">
+      <property role="TrG5h" value="colorInterfaces" />
+      <node concept="3cqZAl" id="4L5X_XCU1di" role="3clF45" />
+      <node concept="3clFbS" id="4L5X_XCU0Qu" role="3clF47">
+        <node concept="2Gpval" id="4L5X_XCU1wt" role="3cqZAp">
+          <node concept="2GrKxI" id="4L5X_XCU1wv" role="2Gsz3X">
+            <property role="TrG5h" value="currentInterface" />
+          </node>
+          <node concept="2OqwBi" id="4L5X_XCU1za" role="2GsD0m">
+            <node concept="37vLTw" id="4L5X_XCU1y7" role="2Oq$k0">
+              <ref role="3cqZAo" node="4L5X_XCU1lM" resolve="currentModel" />
+            </node>
+            <node concept="2RRcyG" id="4L5X_XCU1$M" role="2OqNvi">
+              <ref role="2RRcyH" to="tpee:g7HP654" resolve="Interface" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4L5X_XCU1wz" role="2LFqv$">
+            <node concept="3cpWs8" id="4L5X_XCU2QL" role="3cqZAp">
+              <node concept="3cpWsn" id="4L5X_XCU2QO" role="3cpWs9">
+                <property role="TrG5h" value="fragment" />
+                <node concept="3Tqbb2" id="4L5X_XCU2QJ" role="1tU5fm">
+                  <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                </node>
+                <node concept="2OqwBi" id="4L5X_XCU1QI" role="33vP2m">
+                  <node concept="35c_gC" id="4L5X_XCU1NI" role="2Oq$k0">
+                    <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                  </node>
+                  <node concept="2qgKlT" id="4L5X_XCU1XE" role="2OqNvi">
+                    <ref role="37wK5l" to="kpvh:3osquR_uQ4" resolve="annotate" />
+                    <node concept="2GrUjf" id="4L5X_XCU1Yg" role="37wK5m">
+                      <ref role="2Gs0qQ" node="4L5X_XCU1wv" resolve="currentInterface" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4L5X_XCU30J" role="3cqZAp">
+              <node concept="2OqwBi" id="4L5X_XCU348" role="3clFbG">
+                <node concept="37vLTw" id="4L5X_XCU30H" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4L5X_XCU2QO" resolve="fragment" />
+                </node>
+                <node concept="2qgKlT" id="4L5X_XCU3h6" role="2OqNvi">
+                  <ref role="37wK5l" to="kpvh:3osquR$0y2" resolve="createVPandConnect" />
+                  <node concept="2GrUjf" id="4L5X_XCU3hG" role="37wK5m">
+                    <ref role="2Gs0qQ" node="4L5X_XCU1wv" resolve="currentInterface" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4L5X_XCU3pY" role="3cqZAp">
+              <node concept="37vLTI" id="4L5X_XCU3Nn" role="3clFbG">
+                <node concept="37vLTw" id="4L5X_XCU3OG" role="37vLTx">
+                  <ref role="3cqZAo" node="4L5X_XCU1l0" resolve="baseModule" />
+                </node>
+                <node concept="2OqwBi" id="4L5X_XCU3tD" role="37vLTJ">
+                  <node concept="37vLTw" id="4L5X_XCU3pW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4L5X_XCU2QO" resolve="fragment" />
+                  </node>
+                  <node concept="3TrEf2" id="4L5X_XCU3EB" role="2OqNvi">
+                    <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4L5X_XCU1lM" role="3clF46">
+        <property role="TrG5h" value="currentModel" />
+        <node concept="H_c77" id="4L5X_XCU1pk" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4L5X_XCU1l0" role="3clF46">
+        <property role="TrG5h" value="baseModule" />
+        <node concept="3Tqbb2" id="4L5X_XCU1kZ" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4L5X_XCU1lK" role="1B3o_S" />
+    </node>
     <node concept="2XrIbr" id="48zfXGK1eUo" role="32lrUH">
       <property role="TrG5h" value="convertClassesInModelIntoPeopleEntryPoints" />
       <node concept="3clFbS" id="48zfXGK1eUp" role="3clF47">
@@ -4817,6 +4896,22 @@
                                                       </node>
                                                       <node concept="37vLTw" id="48zfXGK1gXD" role="2XxRq1">
                                                         <ref role="3cqZAo" node="48zfXGK1gTs" resolve="stepValue" />
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                                <node concept="3clFbF" id="4L5X_XCU4zc" role="3cqZAp">
+                                                  <node concept="2OqwBi" id="4L5X_XCU4z6" role="3clFbG">
+                                                    <node concept="2WthIp" id="4L5X_XCU4z9" role="2Oq$k0">
+                                                      <ref role="32nkFo" node="48zfXGK0rQy" resolve="ConvertToPeoplSolution" />
+                                                    </node>
+                                                    <node concept="2XshWL" id="4L5X_XCU4zb" role="2OqNvi">
+                                                      <ref role="2WH_rO" node="4L5X_XCU0Qs" resolve="colorInterfaces" />
+                                                      <node concept="2GrUjf" id="4L5X_XCU4KB" role="2XxRq1">
+                                                        <ref role="2Gs0qQ" node="48zfXGK1gXc" resolve="currentModel" />
+                                                      </node>
+                                                      <node concept="37vLTw" id="4L5X_XCU589" role="2XxRq1">
+                                                        <ref role="3cqZAo" node="48zfXGK1gTD" resolve="baseModule" />
                                                       </node>
                                                     </node>
                                                   </node>

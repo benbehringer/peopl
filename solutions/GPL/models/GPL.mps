@@ -14131,5 +14131,33 @@
     <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
     <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
+  <node concept="HxVAC" id="4L5X_XCU_9A">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="6XPOmZnUY8d">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Main" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm2aQ" resolve="Main" />
+  </node>
+  <node concept="HxVAC" id="6XPOmZnUYeJ">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="6XPOmZnUYlh">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::CycleWorkSpace" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm2cR" resolve="CycleWorkSpace" />
+  </node>
 </model>
 
