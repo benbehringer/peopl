@@ -5345,7 +5345,9 @@
                                                               </node>
                                                               <node concept="liA8E" id="63oasX2dsrZ" role="2OqNvi">
                                                                 <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRootAndGetErrors(boolean):java.util.Set" resolve="checkRootAndGetErrors" />
-                                                                <node concept="3clFbT" id="63oasX2dss0" role="37wK5m" />
+                                                                <node concept="3clFbT" id="63oasX2dss0" role="37wK5m">
+                                                                  <property role="3clFbU" value="true" />
+                                                                </node>
                                                               </node>
                                                             </node>
                                                           </node>
@@ -5649,7 +5651,9 @@
                                                               </node>
                                                               <node concept="liA8E" id="n9_gPCEPNK" role="2OqNvi">
                                                                 <ref role="37wK5l" to="u78q:~TypeCheckingContext.checkRootAndGetErrors(boolean):java.util.Set" resolve="checkRootAndGetErrors" />
-                                                                <node concept="3clFbT" id="n9_gPCEPNL" role="37wK5m" />
+                                                                <node concept="3clFbT" id="n9_gPCEPNL" role="37wK5m">
+                                                                  <property role="3clFbU" value="true" />
+                                                                </node>
                                                               </node>
                                                             </node>
                                                           </node>
@@ -5710,6 +5714,32 @@
                                                     </node>
                                                   </node>
                                                 </node>
+                                                <node concept="3clFbF" id="4L5X_XCNB7g" role="3cqZAp">
+                                                  <node concept="2OqwBi" id="4L5X_XCNBjB" role="3clFbG">
+                                                    <node concept="37vLTw" id="4L5X_XCNB7e" role="2Oq$k0">
+                                                      <ref role="3cqZAo" node="n9_gPCEQyw" resolve="configEditor" />
+                                                    </node>
+                                                    <node concept="liA8E" id="4L5X_XCNCWp" role="2OqNvi">
+                                                      <ref role="37wK5l" to="cj4x:~Editor.saveState():jetbrains.mps.openapi.editor.EditorState" resolve="saveState" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                                <node concept="3clFbF" id="4L5X_XCNDi7" role="3cqZAp">
+                                                  <node concept="2OqwBi" id="4L5X_XCNDi8" role="3clFbG">
+                                                    <node concept="2OqwBi" id="4L5X_XCNDi9" role="2Oq$k0">
+                                                      <node concept="37vLTw" id="4L5X_XCNDia" role="2Oq$k0">
+                                                        <ref role="3cqZAo" node="n9_gPCEQyw" resolve="configEditor" />
+                                                      </node>
+                                                      <node concept="liA8E" id="4L5X_XCNDib" role="2OqNvi">
+                                                        <ref role="37wK5l" to="cj4x:~Editor.getCurrentEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getCurrentEditorComponent" />
+                                                      </node>
+                                                    </node>
+                                                    <node concept="liA8E" id="4L5X_XCNDic" role="2OqNvi">
+                                                      <ref role="37wK5l" to="cj4x:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                                <node concept="3clFbH" id="4L5X_XCND6W" role="3cqZAp" />
                                                 <node concept="3clFbH" id="n9_gPCEQns" role="3cqZAp" />
                                               </node>
                                               <node concept="2OqwBi" id="n9_gPCEPcV" role="3clFbw">
