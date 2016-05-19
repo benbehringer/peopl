@@ -152,6 +152,9 @@
         <property id="1211504562189" name="nestedName" index="jj94n" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
+        <property id="8355037393041754995" name="isNative" index="2aFKle" />
+      </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -227,6 +230,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
       <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
@@ -279,21 +289,26 @@
       <node concept="3clFbS" id="$JQLRHKULf" role="3clF47" />
       <node concept="3cqZAl" id="$JQLRHKULg" role="3clF45" />
     </node>
-    <node concept="3clFb_" id="$JQLRHKULh" role="jymVt">
+    <node concept="3clFb_" id="4yeP55klCRz" role="jymVt">
       <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
       <property role="TrG5h" value="fireAddLine" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="$JQLRHKULi" role="1B3o_S" />
-      <node concept="37vLTG" id="$JQLRHKULj" role="3clF46">
+      <node concept="3clFbS" id="4yeP55klCRA" role="3clF47" />
+      <node concept="3Tm1VV" id="4yeP55klCRB" role="1B3o_S" />
+      <node concept="3cqZAl" id="4yeP55klCQI" role="3clF45" />
+      <node concept="37vLTG" id="4yeP55klCSX" role="3clF46">
         <property role="TrG5h" value="msg" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="$JQLRHKULk" role="1tU5fm">
+        <node concept="3uibUv" id="4yeP55klCSW" role="1tU5fm">
           <ref role="3uigEE" node="$JQLRHKWoJ" resolve="TextMessage" />
         </node>
       </node>
-      <node concept="3clFbS" id="$JQLRHKULl" role="3clF47" />
-      <node concept="3cqZAl" id="$JQLRHKULm" role="3clF45" />
+    </node>
+    <node concept="1V74GB" id="4yeP55klDbv" role="lGtFl">
+      <property role="32Xqk$" value="chosenModule" />
+      <property role="TrG5h" value="Fragment_5228349663196123871" />
+      <ref role="1V74Hf" to="hmci:4yeP55klDbx" resolve="VPToFragment_5228349663196123873" />
+      <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+      <ref role="3aRQVk" to="hmci:4yeP55klDdT" resolve="ModuleToFragment_5228349663196124025" />
     </node>
   </node>
   <node concept="H$gyE" id="$JQLRHKWoH">
@@ -366,8 +381,12 @@
             <ref role="ojxm_" node="$JQLRHKWoJ" resolve="TextMessage" />
             <ref role="ojxmB" node="$JQLRHKUuH" resolve="TextMessage" />
             <node concept="3clFbS" id="$JQLRHKWoU" role="9aQI4">
-              <node concept="XkiVB" id="$JQLRHKV4b" role="3cqZAp">
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+              <node concept="1X3_iC" id="4yeP55klDaJ" role="lGtFl">
+                <property role="3V$3am" value="statement" />
+                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                <node concept="XkiVB" id="$JQLRHKV4b" role="8Wnug">
+                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                </node>
               </node>
               <node concept="3clFbF" id="$JQLRHKUuM" role="3cqZAp">
                 <node concept="37vLTI" id="$JQLRHKUuN" role="3clFbG">
@@ -1948,7 +1967,7 @@
                           <ref role="37wK5l" to="guwi:~BufferedWriter.&lt;init&gt;(java.io.Writer)" resolve="BufferedWriter" />
                           <node concept="2ShNRf" id="$JQLRHLcJE" role="37wK5m">
                             <node concept="1pGfFk" id="$JQLRHLcJZ" role="2ShVmc">
-                              <ref role="37wK5l" to="guwi:~OutputStreamWriter.&lt;init&gt;(java.io.OutputStream,java.nio.charset.CharsetEncoder)" resolve="OutputStreamWriter" />
+                              <ref role="37wK5l" to="guwi:~OutputStreamWriter.&lt;init&gt;(java.io.OutputStream,java.lang.String)" resolve="OutputStreamWriter" />
                               <node concept="2ShNRf" id="$JQLRHLd0P" role="37wK5m">
                                 <node concept="1pGfFk" id="$JQLRHLd2n" role="2ShVmc">
                                   <ref role="37wK5l" to="guwi:~FileOutputStream.&lt;init&gt;(java.lang.String,boolean)" resolve="FileOutputStream" />
@@ -1986,13 +2005,8 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="10QFUN" id="$JQLRHLqlu" role="37wK5m">
-                                <node concept="Xl_RD" id="$JQLRHKUHo" role="10QFUP">
-                                  <property role="Xl_RC" value="ISO-8859-1" />
-                                </node>
-                                <node concept="3uibUv" id="$JQLRHLqlv" role="10QFUM">
-                                  <ref role="3uigEE" to="7x5y:~CharsetEncoder" resolve="CharsetEncoder" />
-                                </node>
+                              <node concept="Xl_RD" id="$JQLRHKUHo" role="37wK5m">
+                                <property role="Xl_RC" value="ISO-8859-1" />
                               </node>
                             </node>
                           </node>
