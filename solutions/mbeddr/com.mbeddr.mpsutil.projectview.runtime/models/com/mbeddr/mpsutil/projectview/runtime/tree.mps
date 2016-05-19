@@ -7678,7 +7678,12 @@
       <node concept="3cqZAl" id="75_oBQVB81F" role="3clF45" />
       <node concept="3clFbS" id="75_oBQVB81G" role="3clF47">
         <node concept="3clFbH" id="4RAsyl5FH3q" role="3cqZAp" />
-        <node concept="3clFbH" id="4RAsyl5FH7S" role="3cqZAp" />
+        <node concept="34ab3g" id="7pneZhBz1xd" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="7pneZhBz1xf" role="34bqiv">
+            <property role="Xl_RC" value=" double" />
+          </node>
+        </node>
         <node concept="3clFbJ" id="4RAsyl5Gk8r" role="3cqZAp">
           <node concept="3clFbS" id="4RAsyl5Gk8t" role="3clFbx">
             <node concept="3SKdUt" id="4RAsyl5GnLw" role="3cqZAp">
@@ -7714,12 +7719,31 @@
                   <node concept="37vLTw" id="4RAsyl5Gnce" role="37wK5m">
                     <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
                   </node>
+                  <node concept="2OqwBi" id="7pneZhBzOoU" role="37wK5m">
+                    <node concept="2OqwBi" id="7pneZhBzNYT" role="2Oq$k0">
+                      <node concept="37vLTw" id="7pneZhBzMP9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="VPgi8eh3A6" resolve="myElement" />
+                      </node>
+                      <node concept="liA8E" id="7pneZhBzOkj" role="2OqNvi">
+                        <ref role="37wK5l" to="imq3:XZKPulBqck" resolve="getProject" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7pneZhBzVZc" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
           </node>
           <node concept="9aQIb" id="4RAsyl5GnLJ" role="9aQIa">
             <node concept="3clFbS" id="4RAsyl5GnLK" role="9aQI4">
+              <node concept="34ab3g" id="7pneZhBz2B2" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="7pneZhBz2B4" role="34bqiv">
+                  <property role="Xl_RC" value=" else" />
+                </node>
+              </node>
               <node concept="3SKdUt" id="4RAsyl5GoBV" role="3cqZAp">
                 <node concept="3SKdUq" id="4RAsyl5GoBW" role="3SKWNk">
                   <property role="3SKdUp" value="use standard open" />
