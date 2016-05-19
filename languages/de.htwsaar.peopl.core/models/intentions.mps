@@ -470,7 +470,7 @@
                     <node concept="1uHKPH" id="3vuvWVpGK2M" role="2OqNvi" />
                   </node>
                   <node concept="2qgKlT" id="3vuvWVpGK2N" role="2OqNvi">
-                    <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopying" />
+                    <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopy" />
                   </node>
                 </node>
               </node>
@@ -527,7 +527,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3vuvWVpGK$n" role="2OqNvi">
-                        <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopying" />
+                        <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopy" />
                       </node>
                     </node>
                   </node>
@@ -1073,10 +1073,10 @@
           <node concept="2OqwBi" id="y7va8W7v9y" role="3clFbG">
             <node concept="2YIFZM" id="y7va8W7v7j" role="2Oq$k0">
               <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
             </node>
             <node concept="liA8E" id="y7va8W7vdZ" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
             </node>
           </node>
         </node>
