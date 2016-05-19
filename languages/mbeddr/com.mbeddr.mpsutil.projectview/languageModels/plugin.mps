@@ -15,6 +15,8 @@
     <import index="tpeh" ref="r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="imq3" ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -175,6 +177,12 @@
         <property role="TrG5h" value="startElement" />
         <node concept="3uibUv" id="4RAsyl5FXpx" role="1tU5fm">
           <ref role="3uigEE" to="imq3:3ZnFyBjwIpN" resolve="ViewElement" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7pneZhBzJQr" role="3clF46">
+        <property role="TrG5h" value="access" />
+        <node concept="3uibUv" id="7pneZhBzX5e" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~ModelAccess" resolve="ModelAccess" />
         </node>
       </node>
     </node>
