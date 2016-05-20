@@ -29,7 +29,6 @@
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="lfzw" ref="r:cc08a4fa-e4f1-443c-b8f2-4a41972141bb(jetbrains.mps.ide.platform.actions.core)" />
     <import index="w88" ref="r:90fa2771-55a5-4174-b12a-f5413c5a876c(jetbrains.mps.ide.devkit.actions)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
@@ -1659,8 +1658,10 @@
         <ref role="tCJdB" node="2xB8AYJ5sNh" resolve="CreateModule" />
       </node>
       <node concept="2a7GMi" id="2xB8AYJhpYa" role="ftvYc" />
-      <node concept="tCFHf" id="2xB8AYJdtUO" role="ftvYc">
-        <ref role="tCJdB" to="lfzw:7BBQIYkR45T" resolve="Rename" />
+      <node concept="1X3_iC" id="2x6ZBbGFluL" role="lGtFl">
+        <property role="3V$3am" value="reference" />
+        <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
+        <node concept="2VYdi" id="2x6ZBbGFluX" role="8Wnug" />
       </node>
       <node concept="tCFHf" id="2xB8AYJgo1o" role="ftvYc">
         <ref role="tCJdB" to="tprs:hSPYZl3" resolve="DeleteNode" />
@@ -2214,8 +2215,10 @@
         <ref role="tCJdB" node="3ol4LRRN_VB" resolve="AlternativeClass" />
       </node>
       <node concept="2a7GMi" id="HDlZQSV6OR" role="ftvYc" />
-      <node concept="tCFHf" id="HDlZQSV6P1" role="ftvYc">
-        <ref role="tCJdB" to="lfzw:7BBQIYkR45T" resolve="Rename" />
+      <node concept="1X3_iC" id="2x6ZBbGFlvC" role="lGtFl">
+        <property role="3V$3am" value="reference" />
+        <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
+        <node concept="2VYdi" id="2x6ZBbGFlvT" role="8Wnug" />
       </node>
       <node concept="tCFHf" id="HDlZQSV6Pd" role="ftvYc">
         <ref role="tCJdB" to="tprs:hSPYZl3" resolve="DeleteNode" />
@@ -2273,8 +2276,10 @@
         <ref role="tCJdB" node="1k3hL0S$oKS" resolve="OpenPeoplEntryPointExplorer" />
       </node>
       <node concept="2a7GMi" id="1k3hL0S$oPn" role="ftvYc" />
-      <node concept="tCFHf" id="1k3hL0S$oQ3" role="ftvYc">
-        <ref role="tCJdB" to="lfzw:7BBQIYkR45T" resolve="Rename" />
+      <node concept="1X3_iC" id="2x6ZBbGFlwp" role="lGtFl">
+        <property role="3V$3am" value="reference" />
+        <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
+        <node concept="2VYdi" id="2x6ZBbGFlw_" role="8Wnug" />
       </node>
       <node concept="tCFHf" id="1k3hL0S$oQj" role="ftvYc">
         <ref role="tCJdB" to="tprs:hSPYZl3" resolve="DeleteNode" />
