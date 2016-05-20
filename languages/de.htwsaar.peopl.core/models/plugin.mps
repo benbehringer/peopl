@@ -2004,7 +2004,7 @@
         </node>
         <node concept="3clFbJ" id="1gAlcvBNoMx" role="3cqZAp">
           <node concept="3clFbS" id="1gAlcvBNoMy" role="3clFbx">
-            <node concept="1X3_iC" id="1gAlcvBNoMz" role="lGtFl">
+            <node concept="1X3_iC" id="5ySePU3xiOJ" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="34ab3g" id="1gAlcvBNoM$" role="8Wnug">
@@ -2143,8 +2143,8 @@
           </node>
           <node concept="3fqX7Q" id="1gAlcvBNoN9" role="3clFbw">
             <node concept="2OqwBi" id="1gAlcvBNoNa" role="3fr31v">
-              <node concept="37vLTw" id="1gAlcvBNoNb" role="2Oq$k0">
-                <ref role="3cqZAo" node="6D3NPsjbEtN" resolve="myModuleDependencies" />
+              <node concept="37vLTw" id="5ySePU3x94a" role="2Oq$k0">
+                <ref role="3cqZAo" node="1gAlcvBNgNL" resolve="myReferenceDependencies" />
               </node>
               <node concept="2Nt0df" id="1gAlcvBNoNc" role="2OqNvi">
                 <node concept="37vLTw" id="1gAlcvBNoNd" role="38cxEo">
@@ -2183,7 +2183,7 @@
               </node>
               <node concept="3clFbJ" id="1gAlcvBNoNp" role="3cqZAp">
                 <node concept="3clFbS" id="1gAlcvBNoNq" role="3clFbx">
-                  <node concept="1X3_iC" id="1gAlcvBNoNr" role="lGtFl">
+                  <node concept="1X3_iC" id="5ySePU3xiXt" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                     <node concept="34ab3g" id="1gAlcvBNoNs" role="8Wnug">
@@ -2309,6 +2309,16 @@
                     </node>
                     <node concept="3clFbJ" id="1gAlcvBNEI0" role="3cqZAp">
                       <node concept="3clFbS" id="1gAlcvBNEI2" role="3clFbx">
+                        <node concept="1X3_iC" id="5ySePU3xiY6" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="34ab3g" id="5ySePU3wZn4" role="8Wnug">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="Xl_RD" id="5ySePU3wZn6" role="34bqiv">
+                              <property role="Xl_RC" value="we create a new ref map" />
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3cpWs8" id="1gAlcvBNFLC" role="3cqZAp">
                           <node concept="3cpWsn" id="1gAlcvBNFLD" role="3cpWs9">
                             <property role="TrG5h" value="refNodes" />
@@ -2364,6 +2374,16 @@
                       </node>
                       <node concept="9aQIb" id="1gAlcvBNEKM" role="9aQIa">
                         <node concept="3clFbS" id="1gAlcvBNEKN" role="9aQI4">
+                          <node concept="1X3_iC" id="5ySePU3xiYu" role="lGtFl">
+                            <property role="3V$3am" value="statement" />
+                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                            <node concept="34ab3g" id="5ySePU3wZp1" role="8Wnug">
+                              <property role="35gtTG" value="warn" />
+                              <node concept="Xl_RD" id="5ySePU3wZp3" role="34bqiv">
+                                <property role="Xl_RC" value="we just add the ref node" />
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3cpWs8" id="1gAlcvBNGvt" role="3cqZAp">
                             <node concept="3cpWsn" id="1gAlcvBNGvu" role="3cpWs9">
                               <property role="TrG5h" value="refNodes" />
@@ -2463,13 +2483,13 @@
         </node>
         <node concept="3clFbJ" id="1gAlcvBNLAB" role="3cqZAp">
           <node concept="3clFbS" id="1gAlcvBNLAC" role="3clFbx">
-            <node concept="1X3_iC" id="1gAlcvBNLAD" role="lGtFl">
+            <node concept="1X3_iC" id="5ySePU3xiYK" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="34ab3g" id="1gAlcvBNLAE" role="8Wnug">
                 <property role="35gtTG" value="warn" />
                 <node concept="Xl_RD" id="1gAlcvBNLAF" role="34bqiv">
-                  <property role="Xl_RC" value="get providers" />
+                  <property role="Xl_RC" value="get map of module" />
                 </node>
               </node>
             </node>

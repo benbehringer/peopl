@@ -146,10 +146,10 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/dep/dep.zip" />
-    <unzip src="${artifacts.dep}/dep.zip" dest="${build.tmp}/deps/dep/dep.zip" />
     <mkdir dir="${build.tmp}/deps/core/core.zip" />
     <unzip src="${artifacts.core}/core.zip" dest="${build.tmp}/deps/core/core.zip" />
+    <mkdir dir="${build.tmp}/deps/dep/dep.zip" />
+    <unzip src="${artifacts.dep}/dep.zip" dest="${build.tmp}/deps/dep/dep.zip" />
     <mkdir dir="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
     <unzip src="${artifacts.peopl_mbeddr}/peopl_mbeddr.zip" dest="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
   </target>
