@@ -51,6 +51,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="bude" ref="r:db04ae52-ccc4-4f7a-aba7-aca9749fc503(de.htwsaar.peopl.projectview.common.plugin)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" implicit="true" />
@@ -1703,8 +1704,8 @@
             </node>
             <node concept="2BsdOp" id="35LN$25FUVJ" role="33vP2m">
               <node concept="10M0yZ" id="1k3hL0SuEct" role="2BsfMF">
-                <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                <ref role="3cqZAo" to="ynjl:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
+                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                <ref role="3cqZAo" to="nbbm:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
               </node>
             </node>
           </node>
@@ -2947,8 +2948,8 @@
                     <node concept="3clFbF" id="5PEnwj_IjpZ" role="3cqZAp">
                       <node concept="37vLTI" id="5PEnwj_Ik1c" role="3clFbG">
                         <node concept="10M0yZ" id="5PEnwj_Ik3Q" role="37vLTx">
-                          <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                          <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+                          <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                          <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                         </node>
                         <node concept="2OqwBi" id="5PEnwj_Ijst" role="37vLTJ">
                           <node concept="37vLTw" id="5PEnwj_IjpX" role="2Oq$k0">
@@ -3730,8 +3731,8 @@
                 <node concept="liA8E" id="3272v3NYhkO" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="10M0yZ" id="3272v3NYhoS" role="37wK5m">
-                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                    <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+                    <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                    <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                   </node>
                 </node>
               </node>
@@ -5034,8 +5035,8 @@
                 <node concept="liA8E" id="2bn$lqohQB8" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="10M0yZ" id="2bn$lqohQB9" role="37wK5m">
-                    <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
-                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
+                    <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                    <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                   </node>
                 </node>
               </node>
@@ -6172,8 +6173,8 @@
                     <node concept="3clFbF" id="7AMSGoN7051" role="3cqZAp">
                       <node concept="37vLTI" id="7AMSGoN7052" role="3clFbG">
                         <node concept="10M0yZ" id="7AMSGoN7053" role="37vLTx">
-                          <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                          <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+                          <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                          <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                         </node>
                         <node concept="2OqwBi" id="7AMSGoN7054" role="37vLTJ">
                           <node concept="37vLTw" id="7AMSGoN7055" role="2Oq$k0">
