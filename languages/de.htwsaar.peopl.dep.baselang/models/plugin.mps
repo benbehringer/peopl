@@ -28,7 +28,6 @@
     <import index="kz9k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.navigation(MPS.Editor/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
@@ -194,6 +193,13 @@
       </concept>
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
+        <child id="8029776554053057803" name="objectType" index="luc8K" />
+      </concept>
+      <concept id="6626851894249711936" name="jetbrains.mps.lang.extension.structure.ExtensionPointExpression" flags="nn" index="2O5UvJ">
+        <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
+      </concept>
+      <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
         <reference id="126958800891274597" name="extensionPoint" index="1lYe$Y" />
       </concept>
@@ -3933,18 +3939,25 @@
                         </node>
                         <node concept="3clFbJ" id="4LwOMLV_jX_" role="3cqZAp">
                           <node concept="3clFbS" id="4LwOMLV_jXA" role="3clFbx">
-                            <node concept="3cpWs8" id="6cQVj8zVGt7" role="3cqZAp">
-                              <node concept="3cpWsn" id="6cQVj8zVGta" role="3cpWs9">
-                                <property role="TrG5h" value="tmpPeoplClass" />
-                                <node concept="3Tqbb2" id="6cQVj8zVGt6" role="1tU5fm">
-                                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <node concept="3cpWs8" id="F_DJLM735r" role="3cqZAp">
+                              <node concept="3cpWsn" id="F_DJLM735u" role="3cpWs9">
+                                <property role="TrG5h" value="moduleOfTmpPClass" />
+                                <node concept="3Tqbb2" id="F_DJLM735p" role="1tU5fm">
+                                  <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
                                 </node>
-                                <node concept="1eOMI4" id="4LwOMLV_u5M" role="33vP2m">
-                                  <node concept="10QFUN" id="4LwOMLV_u5J" role="1eOMHV">
-                                    <node concept="3Tqbb2" id="4LwOMLV_u78" role="10QFUM">
-                                      <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <node concept="2OqwBi" id="F_DJLM73y0" role="33vP2m">
+                                  <node concept="2OqwBi" id="F_DJLM73oa" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="F_DJLM73eF" role="2Oq$k0">
+                                      <node concept="2O5UvJ" id="F_DJLM73eG" role="2Oq$k0">
+                                        <ref role="2O5UnU" node="F_DJLM6VWY" resolve="Ext_PeoplModularViewActionHookExtension" />
+                                      </node>
+                                      <node concept="SfwO_" id="F_DJLM73eH" role="2OqNvi" />
                                     </node>
-                                    <node concept="37vLTw" id="4LwOMLV_u3B" role="10QFUP">
+                                    <node concept="1uHKPH" id="F_DJLM73t3" role="2OqNvi" />
+                                  </node>
+                                  <node concept="liA8E" id="F_DJLM73_r" role="2OqNvi">
+                                    <ref role="37wK5l" node="F_DJLM6VUO" resolve="getModuleOfTmpPeoplClassConcept" />
+                                    <node concept="37vLTw" id="F_DJLM73Ga" role="37wK5m">
                                       <ref role="3cqZAo" node="4LwOMLV_jXt" resolve="tmpPeoplClassCandidate" />
                                     </node>
                                   </node>
@@ -3969,13 +3982,8 @@
                             <node concept="3clFbJ" id="6cQVj8zVHgN" role="3cqZAp">
                               <node concept="1Wc70l" id="1jtqHQg8U01" role="3clFbw">
                                 <node concept="3y3z36" id="1jtqHQg90vQ" role="3uHU7w">
-                                  <node concept="2OqwBi" id="1jtqHQg8Uzh" role="3uHU7B">
-                                    <node concept="37vLTw" id="1jtqHQg8Ut6" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6cQVj8zVGta" resolve="tmpPeoplClass" />
-                                    </node>
-                                    <node concept="3TrEf2" id="1jtqHQg8UI1" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
-                                    </node>
+                                  <node concept="37vLTw" id="F_DJLM73Rk" role="3uHU7B">
+                                    <ref role="3cqZAo" node="F_DJLM735u" resolve="moduleOfTmpPClass" />
                                   </node>
                                   <node concept="2OqwBi" id="1jtqHQg8ZYA" role="3uHU7w">
                                     <node concept="2OqwBi" id="1jtqHQg8X2O" role="2Oq$k0">
@@ -4071,27 +4079,14 @@
                                     </node>
                                     <node concept="2qgKlT" id="6cQVj8zVHI7" role="2OqNvi">
                                       <ref role="37wK5l" to="kpvh:2BKSxwr7b5e" resolve="connectToModule" />
-                                      <node concept="2OqwBi" id="6cQVj8zVI8v" role="37wK5m">
-                                        <node concept="37vLTw" id="6cQVj8zVI34" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="6cQVj8zVGta" resolve="tmpPeoplClass" />
-                                        </node>
-                                        <node concept="3TrEf2" id="6cQVj8zVIiq" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
-                                        </node>
+                                      <node concept="37vLTw" id="F_DJLM74yT" role="37wK5m">
+                                        <ref role="3cqZAo" node="F_DJLM735u" resolve="moduleOfTmpPClass" />
                                       </node>
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="3clFbF" id="6cQVj8zVHIi" role="3cqZAp">
                                   <node concept="37vLTI" id="6cQVj8zVHIj" role="3clFbG">
-                                    <node concept="2OqwBi" id="6cQVj8zVHIk" role="37vLTx">
-                                      <node concept="37vLTw" id="6cQVj8zVI$y" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6cQVj8zVGta" resolve="tmpPeoplClass" />
-                                      </node>
-                                      <node concept="3TrEf2" id="6cQVj8zVIT4" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
-                                      </node>
-                                    </node>
                                     <node concept="2OqwBi" id="6cQVj8zVHIn" role="37vLTJ">
                                       <node concept="37vLTw" id="6cQVj8zVHIo" role="2Oq$k0">
                                         <ref role="3cqZAo" node="6cQVj8zVHHZ" resolve="newFragment" />
@@ -4099,6 +4094,9 @@
                                       <node concept="3TrEf2" id="6cQVj8zVHIp" role="2OqNvi">
                                         <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
                                       </node>
+                                    </node>
+                                    <node concept="37vLTw" id="F_DJLM74IL" role="37vLTx">
+                                      <ref role="3cqZAo" node="F_DJLM735u" resolve="moduleOfTmpPClass" />
                                     </node>
                                   </node>
                                 </node>
@@ -4119,13 +4117,20 @@
                               </node>
                               <node concept="1v1jN8" id="6cQVj8zVTaI" role="2OqNvi" />
                             </node>
-                            <node concept="2OqwBi" id="4LwOMLV_jXQ" role="3uHU7w">
-                              <node concept="37vLTw" id="4LwOMLV_jXR" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4LwOMLV_jXt" resolve="tmpPeoplClassCandidate" />
+                            <node concept="2OqwBi" id="F_DJLM72p4" role="3uHU7w">
+                              <node concept="2OqwBi" id="F_DJLM728T" role="2Oq$k0">
+                                <node concept="2OqwBi" id="F_DJLM7247" role="2Oq$k0">
+                                  <node concept="2O5UvJ" id="F_DJLM7248" role="2Oq$k0">
+                                    <ref role="2O5UnU" node="F_DJLM6VWY" resolve="Ext_PeoplModularViewActionHookExtension" />
+                                  </node>
+                                  <node concept="SfwO_" id="F_DJLM7249" role="2OqNvi" />
+                                </node>
+                                <node concept="1uHKPH" id="F_DJLM72jC" role="2OqNvi" />
                               </node>
-                              <node concept="1mIQ4w" id="4LwOMLV_jXS" role="2OqNvi">
-                                <node concept="chp4Y" id="6cQVj8zVEHb" role="cj9EA">
-                                  <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                              <node concept="liA8E" id="F_DJLM72sp" role="2OqNvi">
+                                <ref role="37wK5l" node="F_DJLM6VTr" resolve="isInstanceOfTmpPeoplClassConcept" />
+                                <node concept="37vLTw" id="F_DJLM72zG" role="37wK5m">
+                                  <ref role="3cqZAo" node="4LwOMLV_jXt" resolve="tmpPeoplClassCandidate" />
                                 </node>
                               </node>
                             </node>
@@ -4254,11 +4259,22 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="3fIGxWm6rFY" role="3clFbw">
-                        <node concept="37vLTw" id="3fIGxWm6r2i" role="2Oq$k0">
-                          <ref role="3cqZAo" node="NgTdPQpZHq" resolve="returnNode" />
+                      <node concept="1Wc70l" id="F_DJLM6Zxt" role="3clFbw">
+                        <node concept="2OqwBi" id="F_DJLM71TQ" role="3uHU7w">
+                          <node concept="2OqwBi" id="F_DJLM71Of" role="2Oq$k0">
+                            <node concept="2O5UvJ" id="F_DJLM70pG" role="2Oq$k0">
+                              <ref role="2O5UnU" node="F_DJLM6VWY" resolve="Ext_PeoplModularViewActionHookExtension" />
+                            </node>
+                            <node concept="SfwO_" id="F_DJLM71Qr" role="2OqNvi" />
+                          </node>
+                          <node concept="3GX2aA" id="F_DJLM723f" role="2OqNvi" />
                         </node>
-                        <node concept="3x8VRR" id="3fIGxWm6smj" role="2OqNvi" />
+                        <node concept="2OqwBi" id="3fIGxWm6rFY" role="3uHU7B">
+                          <node concept="37vLTw" id="3fIGxWm6r2i" role="2Oq$k0">
+                            <ref role="3cqZAo" node="NgTdPQpZHq" resolve="returnNode" />
+                          </node>
+                          <node concept="3x8VRR" id="3fIGxWm6smj" role="2OqNvi" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbH" id="6JE$RZ51baL" role="3cqZAp" />
@@ -4405,7 +4421,39 @@
   </node>
   <node concept="3HP615" id="F_DJLM6wpC">
     <property role="TrG5h" value="IExt_PeoplModularViewActionHookExtension" />
+    <node concept="3clFb_" id="F_DJLM6VTr" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isInstanceOfTmpPeoplClassConcept" />
+      <node concept="3clFbS" id="F_DJLM6VTu" role="3clF47" />
+      <node concept="3Tm1VV" id="F_DJLM6VTv" role="1B3o_S" />
+      <node concept="10P_77" id="F_DJLM6VTi" role="3clF45" />
+      <node concept="37vLTG" id="F_DJLM6VTL" role="3clF46">
+        <property role="TrG5h" value="candidate" />
+        <node concept="3Tqbb2" id="F_DJLM6VTK" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="F_DJLM6VUO" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getModuleOfTmpPeoplClassConcept" />
+      <node concept="3clFbS" id="F_DJLM6VUR" role="3clF47" />
+      <node concept="3Tm1VV" id="F_DJLM6VUS" role="1B3o_S" />
+      <node concept="3Tqbb2" id="F_DJLM6VWj" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+      </node>
+      <node concept="37vLTG" id="F_DJLM6VVp" role="3clF46">
+        <property role="TrG5h" value="tmpPeoplClass" />
+        <node concept="3Tqbb2" id="F_DJLM6VVo" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="F_DJLM6wpD" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="F_DJLM6VWY">
+    <property role="TrG5h" value="Ext_PeoplModularViewActionHookExtension" />
+    <node concept="3uibUv" id="F_DJLM6VX7" role="luc8K">
+      <ref role="3uigEE" node="F_DJLM6wpC" resolve="IExt_PeoplModularViewActionHookExtension" />
+    </node>
   </node>
 </model>
 
