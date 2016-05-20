@@ -76,6 +76,9 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -137,6 +140,12 @@
       </node>
       <node concept="m$f5U" id="5kp5FYUdN9f" role="m$_yh">
         <ref role="m$f5T" node="4RAsyl5PvNp" resolve="dep.view.projectview" />
+      </node>
+      <node concept="m$_yB" id="5kp5FYUiwTK" role="m$_yh">
+        <ref role="m$_yA" to="ffeo:5xwbQ0eEV3B" resolve="jetbrains.mps.ide.java.basePlatform" />
+      </node>
+      <node concept="m$_yB" id="5kp5FYUiyIW" role="m$_yh">
+        <ref role="m$_yA" to="ffeo:5xwbQ0eEV3x" resolve="jetbrains.mps.ide.java.platform" />
       </node>
       <node concept="m$_yC" id="5kp5FYUdNe9" role="m$_yJ">
         <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="core" />
@@ -397,12 +406,6 @@
             <ref role="3bR37D" node="4RAsyl5Pw6g" resolve="de.htwsaar.peopl.projectview.modular" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4RAsyl5RTmM" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5RTmN" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4RAsyl5RTmO" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5RTmP" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -466,12 +469,6 @@
           <node concept="3bR9La" id="4RAsyl5Pwdt" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="4RAsyl5PvSG" resolve="de.htwsaar.peopl.view.modular" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4RAsyl5Pwdu" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5Pwdv" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwdw" role="3bR37C">
@@ -567,12 +564,6 @@
           <node concept="3bR9La" id="4RAsyl5Pwj6" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="a9xt:4RAsyl5JV3q" resolve="com.mbeddr.mpsutil.projectview.views" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4RAsyl5Pwj7" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5Pwj8" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwj9" role="3bR37C">
@@ -677,12 +668,6 @@
             <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4RAsyl5PwjH" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5PwjI" role="1SiIV1">
-            <property role="3bR36h" value="true" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4RAsyl5PwjJ" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5PwjK" role="1SiIV1">
             <property role="3bR36h" value="false" />
@@ -764,12 +749,6 @@
           <node concept="3bR9La" id="4RAsyl5PwpS" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="4RAsyl5PvSG" resolve="de.htwsaar.peopl.view.modular" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4RAsyl5PwpT" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5PwpU" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5PwpX" role="3bR37C">

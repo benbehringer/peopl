@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)</dependency>
+    <dependency reexport="false">642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)</dependency>
   </dependencies>
   <languageVersions>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" fqName="jetbrains.mps.build" version="0" />
@@ -21,6 +22,7 @@
   <dependencyVersions>
     <module reference="f9df21ad-ff41-4a0b-af31-8e754a581f23(de.htwsaar.peopl.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
+    <module reference="642f71f8-327a-425b-84f9-44ad58786d27(jetbrains.mps.lang.project.modules)" version="0" />
   </dependencyVersions>
 </solution>
 
