@@ -8,7 +8,6 @@
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
-    <import index="p2kz" ref="r:362129e5-af4a-4a8c-9944-586e6f4a0a54(de.htwsaar.peopl.core.colors)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -117,7 +116,7 @@
             <node concept="2OqwBi" id="1GfZLHujq0y" role="3clFbG">
               <node concept="1r4Lsj" id="1GfZLHujpY$" role="2Oq$k0" />
               <node concept="2qgKlT" id="1GfZLHujq9v" role="2OqNvi">
-                <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="init" />
+                <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="setColor" />
                 <node concept="1r4N1M" id="1GfZLHujqaF" role="37wK5m" />
               </node>
             </node>
@@ -133,7 +132,7 @@
             <node concept="2OqwBi" id="1GfZLHujqck" role="3clFbG">
               <node concept="1r4Lsj" id="1GfZLHujqcl" role="2Oq$k0" />
               <node concept="2qgKlT" id="1GfZLHujqcm" role="2OqNvi">
-                <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="init" />
+                <ref role="37wK5l" to="kpvh:1GfZLHuj0gs" resolve="setColor" />
                 <node concept="1r4N1M" id="1GfZLHujqcn" role="37wK5m" />
               </node>
             </node>

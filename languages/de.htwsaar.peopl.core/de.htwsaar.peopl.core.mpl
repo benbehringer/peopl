@@ -46,7 +46,6 @@
         <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="2" />
         <module reference="c9a56e63-3222-4b77-a7ff-0dd9a6ca29db(de.htwsaar.peopl.core#3071473864244849393)" version="0" />
         <module reference="25c04871-4119-41c0-bd98-e7f0992f3991(de.htwsaar.peopl.core.config#6563451082523326250)" version="0" />
-        <module reference="de1c2f6b-fb29-4ab8-a4b9-29364d7dc761(de.htwsaar.peopl.core.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
@@ -154,9 +153,6 @@
     <module reference="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" version="0" />
     <module reference="e6368d5c-b931-4d4d-9941-07b7da7d2e2d(jetbrains.mps.tool.builder)" version="0" />
   </dependencyVersions>
-  <runtime>
-    <dependency reexport="false">de1c2f6b-fb29-4ab8-a4b9-29364d7dc761(de.htwsaar.peopl.core.runtime)</dependency>
-  </runtime>
   <extendedLanguages>
     <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
   </extendedLanguages>
