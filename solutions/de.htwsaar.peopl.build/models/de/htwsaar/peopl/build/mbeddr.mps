@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:94cb03cf-8a98-43a8-b48c-ad1caf0a27aa(build.mbeddr)" doNotGenerate="true">
+<model ref="r:94cb03cf-8a98-43a8-b48c-ad1caf0a27aa(de.htwsaar.peopl.build.mbeddr)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -1441,7 +1441,7 @@
     <node concept="10PD9b" id="4RAsyl5JUd$" role="10PD9s" />
     <node concept="3b7kt6" id="4RAsyl5JUdD" role="10PD9s" />
     <node concept="398rNT" id="4RAsyl5JUdH" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="mps_home_mbeddr" />
       <node concept="55IIr" id="4RAsyl5JUdJ" role="398pKh">
         <node concept="2Ry0Ak" id="4RAsyl5JUdO" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -1455,7 +1455,7 @@
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4RAsyl5JUed" role="2Ry0An">
                     <property role="2Ry0Am" value="MPS 3.3.app" />
-                    <node concept="2Ry0Ak" id="4RAsyl5JUei" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5kp5FYUdBPE" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
@@ -1466,28 +1466,10 @@
         </node>
       </node>
     </node>
-    <node concept="398rNT" id="4RAsyl5KjSV" role="1l3spd">
-      <property role="TrG5h" value="commons_jar_folder" />
-      <node concept="55IIr" id="4RAsyl5Kk9V" role="398pKh">
-        <node concept="2Ry0Ak" id="4RAsyl5Kko0" role="iGT6I">
-          <property role="2Ry0Am" value="solutions" />
-          <node concept="2Ry0Ak" id="4RAsyl5KkuD" role="2Ry0An">
-            <property role="2Ry0Am" value="mbeddr" />
-            <node concept="2Ry0Ak" id="4RAsyl5Kk_5" role="2Ry0An">
-              <property role="2Ry0Am" value="org.apache.commons" />
-              <node concept="2Ry0Ak" id="4RAsyl5KkF6" role="2Ry0An">
-                <property role="2Ry0Am" value="lib" />
-                <node concept="2Ry0Ak" id="4RAsyl5KkIb" role="2Ry0An" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2sgV4H" id="4RAsyl5JWH9" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="4RAsyl5JWJ8" role="2JcizS">
-        <ref role="398BVh" node="4RAsyl5JUdH" resolve="mps_home" />
+        <ref role="398BVh" node="4RAsyl5JUdH" resolve="mps_home_mbeddr" />
       </node>
     </node>
   </node>

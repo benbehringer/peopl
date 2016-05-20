@@ -18,8 +18,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
@@ -36,7 +34,7 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
-      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -84,7 +82,7 @@
         <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
         <child id="1136930944870" name="item" index="2QnnpI" />
       </concept>
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
@@ -103,27 +101,27 @@
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" index="3F0ifn">
         <property id="1082639509531" name="nullText" index="ilYzB" />
         <property id="1073389577007" name="text" index="3F0ifm" />
       </concept>
-      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
       </concept>
-      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
-      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
         <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
@@ -243,7 +241,7 @@
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -4280,6 +4278,17 @@
         <property role="3cmrfH" value="5" />
       </node>
     </node>
+    <node concept="312cEg" id="52YGS1mmL3H" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myHeightOffset" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="52YGS1mmKAd" role="1B3o_S" />
+      <node concept="10Oyi0" id="52YGS1mmL3F" role="1tU5fm" />
+      <node concept="3cmrfG" id="52YGS1mmLzC" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="47WRMVuSch6" role="jymVt" />
     <node concept="2tJIrI" id="47WRMVuSch7" role="jymVt" />
     <node concept="2tJIrI" id="47WRMVuSch8" role="jymVt" />
@@ -4516,6 +4525,31 @@
       </node>
     </node>
     <node concept="2tJIrI" id="47WRMVuScix" role="jymVt" />
+    <node concept="3clFb_" id="52YGS1mmJCa" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setHeightOffset" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="52YGS1mmJCd" role="3clF47">
+        <node concept="3clFbF" id="52YGS1mmL$o" role="3cqZAp">
+          <node concept="37vLTI" id="52YGS1mmLM8" role="3clFbG">
+            <node concept="37vLTw" id="52YGS1mmLOP" role="37vLTx">
+              <ref role="3cqZAo" node="52YGS1mmK5W" resolve="heightOffset" />
+            </node>
+            <node concept="37vLTw" id="52YGS1mmL$n" role="37vLTJ">
+              <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="52YGS1mmJaK" role="1B3o_S" />
+      <node concept="3cqZAl" id="52YGS1mmJC8" role="3clF45" />
+      <node concept="37vLTG" id="52YGS1mmK5W" role="3clF46">
+        <property role="TrG5h" value="heightOffset" />
+        <node concept="10Oyi0" id="52YGS1mmK5V" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="47WRMVuSciy" role="jymVt" />
     <node concept="3clFb_" id="47WRMVuSciz" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -4781,15 +4815,20 @@
                           </node>
                           <node concept="3clFbF" id="47WRMVuSckj" role="3cqZAp">
                             <node concept="37vLTI" id="47WRMVuSckk" role="3clFbG">
-                              <node concept="2OqwBi" id="47WRMVuSckl" role="37vLTx">
-                                <node concept="2OqwBi" id="47WRMVuSckm" role="2Oq$k0">
-                                  <node concept="Xjq3P" id="47WRMVuSckn" role="2Oq$k0" />
-                                  <node concept="liA8E" id="47WRMVuScko" role="2OqNvi">
-                                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
-                                  </node>
+                              <node concept="3cpWs3" id="52YGS1mmMiZ" role="37vLTx">
+                                <node concept="37vLTw" id="52YGS1mmMv$" role="3uHU7w">
+                                  <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
                                 </node>
-                                <node concept="liA8E" id="47WRMVuSckp" role="2OqNvi">
-                                  <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight():int" resolve="getHeight" />
+                                <node concept="2OqwBi" id="47WRMVuSckl" role="3uHU7B">
+                                  <node concept="2OqwBi" id="47WRMVuSckm" role="2Oq$k0">
+                                    <node concept="Xjq3P" id="47WRMVuSckn" role="2Oq$k0" />
+                                    <node concept="liA8E" id="47WRMVuScko" role="2OqNvi">
+                                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="47WRMVuSckp" role="2OqNvi">
+                                    <ref role="37wK5l" to="g51k:~EditorCell_Basic.getHeight():int" resolve="getHeight" />
+                                  </node>
                                 </node>
                               </node>
                               <node concept="37vLTw" id="47WRMVuSckq" role="37vLTJ">
@@ -4829,15 +4868,20 @@
                             </node>
                             <node concept="3clFbF" id="47WRMVuSckC" role="3cqZAp">
                               <node concept="37vLTI" id="47WRMVuSckD" role="3clFbG">
-                                <node concept="2OqwBi" id="47WRMVuSckE" role="37vLTx">
-                                  <node concept="2OqwBi" id="47WRMVuSckF" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="47WRMVuSckG" role="2Oq$k0" />
-                                    <node concept="liA8E" id="47WRMVuSckH" role="2OqNvi">
-                                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
-                                    </node>
+                                <node concept="3cpWs3" id="52YGS1mnLZJ" role="37vLTx">
+                                  <node concept="37vLTw" id="52YGS1mnMc3" role="3uHU7w">
+                                    <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
                                   </node>
-                                  <node concept="liA8E" id="47WRMVuSckI" role="2OqNvi">
-                                    <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
+                                  <node concept="2OqwBi" id="47WRMVuSckE" role="3uHU7B">
+                                    <node concept="2OqwBi" id="47WRMVuSckF" role="2Oq$k0">
+                                      <node concept="Xjq3P" id="47WRMVuSckG" role="2Oq$k0" />
+                                      <node concept="liA8E" id="47WRMVuSckH" role="2OqNvi">
+                                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="47WRMVuSckI" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="47WRMVuSckJ" role="37vLTJ">
@@ -4883,20 +4927,25 @@
                             </node>
                             <node concept="3clFbF" id="47WRMVuSckZ" role="3cqZAp">
                               <node concept="37vLTI" id="47WRMVuScl0" role="3clFbG">
-                                <node concept="2OqwBi" id="47WRMVuScl1" role="37vLTx">
-                                  <node concept="2OqwBi" id="47WRMVuScl2" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="47WRMVuScl3" role="2Oq$k0">
-                                      <node concept="Xjq3P" id="47WRMVuScl4" role="2Oq$k0" />
-                                      <node concept="liA8E" id="47WRMVuScl5" role="2OqNvi">
-                                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
+                                <node concept="3cpWs3" id="52YGS1mmMFe" role="37vLTx">
+                                  <node concept="37vLTw" id="52YGS1mmMRM" role="3uHU7w">
+                                    <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
+                                  </node>
+                                  <node concept="2OqwBi" id="47WRMVuScl1" role="3uHU7B">
+                                    <node concept="2OqwBi" id="47WRMVuScl2" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="47WRMVuScl3" role="2Oq$k0">
+                                        <node concept="Xjq3P" id="47WRMVuScl4" role="2Oq$k0" />
+                                        <node concept="liA8E" id="47WRMVuScl5" role="2OqNvi">
+                                          <ref role="37wK5l" to="g51k:~EditorCell_Basic.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="47WRMVuScl6" role="2OqNvi">
+                                        <ref role="37wK5l" to="g51k:~EditorCell.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
                                       </node>
                                     </node>
-                                    <node concept="liA8E" id="47WRMVuScl6" role="2OqNvi">
-                                      <ref role="37wK5l" to="g51k:~EditorCell.getNextSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getNextSibling" />
+                                    <node concept="liA8E" id="47WRMVuScl7" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
                                     </node>
-                                  </node>
-                                  <node concept="liA8E" id="47WRMVuScl7" role="2OqNvi">
-                                    <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="47WRMVuScl8" role="37vLTJ">
@@ -4937,15 +4986,20 @@
                             </node>
                             <node concept="3clFbF" id="47WRMVuSclm" role="3cqZAp">
                               <node concept="37vLTI" id="47WRMVuScln" role="3clFbG">
-                                <node concept="2OqwBi" id="47WRMVuSclo" role="37vLTx">
-                                  <node concept="2OqwBi" id="47WRMVuSclp" role="2Oq$k0">
-                                    <node concept="Xjq3P" id="47WRMVuSclq" role="2Oq$k0" />
-                                    <node concept="liA8E" id="47WRMVuSclr" role="2OqNvi">
-                                      <ref role="37wK5l" to="g51k:~EditorCell_Basic.getPrevSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getPrevSibling" />
-                                    </node>
+                                <node concept="3cpWs3" id="52YGS1mmN3A" role="37vLTx">
+                                  <node concept="37vLTw" id="52YGS1mmNfU" role="3uHU7w">
+                                    <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
                                   </node>
-                                  <node concept="liA8E" id="47WRMVuScls" role="2OqNvi">
-                                    <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
+                                  <node concept="2OqwBi" id="47WRMVuSclo" role="3uHU7B">
+                                    <node concept="2OqwBi" id="47WRMVuSclp" role="2Oq$k0">
+                                      <node concept="Xjq3P" id="47WRMVuSclq" role="2Oq$k0" />
+                                      <node concept="liA8E" id="47WRMVuSclr" role="2OqNvi">
+                                        <ref role="37wK5l" to="g51k:~EditorCell_Basic.getPrevSibling():jetbrains.mps.nodeEditor.cells.EditorCell" resolve="getPrevSibling" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="47WRMVuScls" role="2OqNvi">
+                                      <ref role="37wK5l" to="f4zo:~EditorCell.getHeight():int" resolve="getHeight" />
+                                    </node>
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="47WRMVuSclt" role="37vLTJ">
@@ -4995,11 +5049,16 @@
                             </node>
                             <node concept="3clFbF" id="47WRMVuSclI" role="3cqZAp">
                               <node concept="37vLTI" id="47WRMVuSclJ" role="3clFbG">
+                                <node concept="3cpWs3" id="52YGS1mmNw2" role="37vLTx">
+                                  <node concept="37vLTw" id="52YGS1mmNFK" role="3uHU7w">
+                                    <ref role="3cqZAo" node="52YGS1mmL3H" resolve="myHeightOffset" />
+                                  </node>
+                                  <node concept="37vLTw" id="47WRMVuSclL" role="3uHU7B">
+                                    <ref role="3cqZAo" node="47WRMVuScgQ" resolve="myLineThickness" />
+                                  </node>
+                                </node>
                                 <node concept="37vLTw" id="47WRMVuSclK" role="37vLTJ">
                                   <ref role="3cqZAo" node="47WRMVuSck5" resolve="height" />
-                                </node>
-                                <node concept="37vLTw" id="47WRMVuSclL" role="37vLTx">
-                                  <ref role="3cqZAo" node="47WRMVuScgQ" resolve="myLineThickness" />
                                 </node>
                               </node>
                             </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(build.core)" doNotGenerate="true">
+<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(de.htwsaar.peopl.build.core)">
   <persistence version="9" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
@@ -243,7 +243,7 @@
         </node>
         <node concept="1SiIV0" id="1Q1snyS4QCu" role="3bR37C">
           <node concept="3bR9La" id="1Q1snyS4QCv" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
@@ -251,6 +251,12 @@
           <node concept="3bR9La" id="1Q1snyS4QCx" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1pJ" resolve="jetbrains.mps.lang.plugin.standalone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F_DJLMfpBc" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBd" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>
@@ -381,6 +387,18 @@
             <ref role="3bR37D" node="7xhAsCIyuzm" resolve="de.htwsaar.peopl.core.listener" />
           </node>
         </node>
+        <node concept="1SiIV0" id="F_DJLMfpBr" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F_DJLMfpBt" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7xhAsCIyuzm" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -458,7 +476,7 @@
     <node concept="10PD9b" id="1HMCj1nd$10" role="10PD9s" />
     <node concept="3b7kt6" id="1HMCj1nd$1T" role="10PD9s" />
     <node concept="398rNT" id="6$EUgyMH9J6" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="mps_home_core" />
       <node concept="55IIr" id="6$EUgyMH9JW" role="398pKh">
         <node concept="2Ry0Ak" id="6$EUgyMH9LD" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -486,7 +504,7 @@
     <node concept="2sgV4H" id="6$EUgyMH9O6" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="6$EUgyMH9Oy" role="2JcizS">
-        <ref role="398BVh" node="6$EUgyMH9J6" resolve="mps_home" />
+        <ref role="398BVh" node="6$EUgyMH9J6" resolve="mps_home_core" />
       </node>
     </node>
   </node>

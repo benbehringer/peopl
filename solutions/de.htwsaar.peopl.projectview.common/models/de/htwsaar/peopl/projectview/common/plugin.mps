@@ -62,6 +62,7 @@
     <import index="imq3" ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)" />
     <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2596,8 +2597,8 @@
                                   </node>
                                 </node>
                                 <node concept="10M0yZ" id="1k3hL0Su_q$" role="37vLTx">
-                                  <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                                  <ref role="3cqZAo" to="ynjl:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
+                                  <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                                  <ref role="3cqZAo" to="nbbm:~ProjectActions_ActionGroup.ID" resolve="MODULE_EXPLORER" />
                                 </node>
                               </node>
                             </node>
@@ -2664,8 +2665,8 @@
                               <node concept="3clFbF" id="1k3hL0SuZDB" role="3cqZAp">
                                 <node concept="37vLTI" id="1k3hL0SuZKe" role="3clFbG">
                                   <node concept="10M0yZ" id="1k3hL0SuZMm" role="37vLTx">
-                                    <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                                    <ref role="3cqZAo" to="ynjl:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+                                    <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                                    <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
                                   </node>
                                   <node concept="AH0OO" id="1k3hL0SuZFY" role="37vLTJ">
                                     <node concept="3cmrfG" id="1k3hL0SuZHU" role="AHEQo">
@@ -3212,8 +3213,8 @@
                           <node concept="3clFbF" id="2c8WkvQoFaw" role="3cqZAp">
                             <node concept="37vLTI" id="DS4tmG1n1D" role="3clFbG">
                               <node concept="10M0yZ" id="DS4tmG1n3D" role="37vLTx">
-                                <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                                <ref role="3cqZAo" to="ynjl:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
+                                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                                <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
                               </node>
                               <node concept="AH0OO" id="2c8WkvQoFay" role="37vLTJ">
                                 <node concept="3cmrfG" id="2c8WkvQoFaz" role="AHEQo">
@@ -3289,8 +3290,8 @@
                           <node concept="3clFbF" id="3DAL3fa31XR" role="3cqZAp">
                             <node concept="37vLTI" id="3DAL3fa31XS" role="3clFbG">
                               <node concept="10M0yZ" id="3DAL3fa31XT" role="37vLTx">
-                                <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                                <ref role="3cqZAo" to="ynjl:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+                                <ref role="3cqZAo" to="nbbm:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+                                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
                               </node>
                               <node concept="AH0OO" id="3DAL3fa31XU" role="37vLTJ">
                                 <node concept="3cmrfG" id="3DAL3fa31XV" role="AHEQo">
