@@ -39,6 +39,7 @@
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
     <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -617,8 +618,8 @@
                     <node concept="liA8E" id="16liNxk7TSk" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="10M0yZ" id="16liNxk7TXL" role="37wK5m">
-                        <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-                        <ref role="3cqZAo" to="ynjl:2iVkojt1Fuz" resolve="PRODUCT_VIEW_COLORIZED" />
+                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                        <ref role="3cqZAo" to="nbbm:2iVkojt1Fuz" resolve="PRODUCT_VIEW_COLORIZED" />
                       </node>
                     </node>
                   </node>
@@ -1745,8 +1746,8 @@
           <node concept="2i4dXS" id="3Mm3FE9TEOG" role="2ShVmc">
             <node concept="17QB3L" id="3Mm3FE9TEOH" role="HW$YZ" />
             <node concept="10M0yZ" id="3Mm3FE9TEOI" role="HW$Y0">
-              <ref role="1PxDUh" to="ynjl:1k3hL0Su7lA" resolve="PeoplHints" />
-              <ref role="3cqZAo" to="ynjl:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+              <ref role="3cqZAo" to="nbbm:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+              <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
             </node>
           </node>
         </node>
