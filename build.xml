@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/util" />
   <property name="build.layout" location="${build.dir}/artifacts/util" />
-  <property name="mps_home" location="${basedir}/../../../../Applications/MPS 3.3.app/Contents" />
+  <property name="mps_home" location="${basedir}/../../../../Applications/Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app/Contents" />
   <property name="artifacts.mps" location="${mps_home}" />
   <property name="artifacts.core" location="${build.dir}/artifacts/core" />
   <property name="artifacts.peopl_mbeddr" location="${build.dir}/artifacts/peopl_mbeddr" />
@@ -146,12 +146,12 @@
   </target>
   
   <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/dep/dep.zip" />
+    <unzip src="${artifacts.dep}/dep.zip" dest="${build.tmp}/deps/dep/dep.zip" />
     <mkdir dir="${build.tmp}/deps/core/core.zip" />
     <unzip src="${artifacts.core}/core.zip" dest="${build.tmp}/deps/core/core.zip" />
     <mkdir dir="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
     <unzip src="${artifacts.peopl_mbeddr}/peopl_mbeddr.zip" dest="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
-    <mkdir dir="${build.tmp}/deps/dep/dep.zip" />
-    <unzip src="${artifacts.dep}/dep.zip" dest="${build.tmp}/deps/dep/dep.zip" />
   </target>
   
   <target name="build" depends="assemble" />

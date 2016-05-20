@@ -74,7 +74,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -1926,6 +1926,22 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1gAlcvBOtr0">
+    <property role="TrG5h" value="PrintReferenceDependencies" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="1gAlcvBOtr1" role="2ZfVej">
+      <node concept="3clFbS" id="1gAlcvBOtr2" role="2VODD2">
+        <node concept="3clFbF" id="1gAlcvBOtt4" role="3cqZAp">
+          <node concept="Xl_RD" id="1gAlcvBOtt5" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL -&gt; Print Dependencies" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1gAlcvBOtr3" role="2ZfgGD">
+      <node concept="3clFbS" id="1gAlcvBOtr4" role="2VODD2" />
     </node>
   </node>
 </model>

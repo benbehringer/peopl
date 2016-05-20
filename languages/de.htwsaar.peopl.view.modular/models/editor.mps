@@ -51,6 +51,7 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="l0vz" ref="r:bcdc4c59-9fc0-4021-8be1-7d517fad7196(de.htwsaar.peopl.view.runtime.plugin)" />
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -6086,6 +6087,9 @@
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="2aJ2om" id="xUEdTNkiVa" role="CpUAK">
       <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    </node>
+    <node concept="2aJ2om" id="6Xnk5YrnUu6" role="CpUAK">
+      <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
     </node>
     <node concept="3EZMnI" id="1jtqHQg7oEB" role="2wV5jI">
       <ref role="1ERwB7" node="1jtqHQgnme3" resolve="BasicModularity_Statement_Actions" />

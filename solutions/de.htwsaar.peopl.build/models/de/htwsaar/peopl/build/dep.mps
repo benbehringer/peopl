@@ -1005,6 +1005,11 @@
             <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2EkRjvM3Uvh" role="3bR37C">
+          <node concept="1Busua" id="2EkRjvM3Uvi" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4RAsyl5PvSG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1290,19 +1295,19 @@
     <node concept="398rNT" id="5kp5FYUd_wi" role="1l3spd">
       <property role="TrG5h" value="mps_home_dep" />
       <node concept="55IIr" id="5kp5FYUd_zS" role="398pKh">
-        <node concept="2Ry0Ak" id="5kp5FYUd_zX" role="iGT6I">
+        <node concept="2Ry0Ak" id="2EkRjvLZZel" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5kp5FYUd_$2" role="2Ry0An">
+          <node concept="2Ry0Ak" id="2EkRjvLZZga" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="5kp5FYUd_$7" role="2Ry0An">
+            <node concept="2Ry0Ak" id="2EkRjvLZZgd" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="5kp5FYUd_$c" role="2Ry0An">
+              <node concept="2Ry0Ak" id="2EkRjvLZZgg" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="5kp5FYUd_$h" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="5kp5FYUd_$m" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 3.3.app" />
-                    <node concept="2Ry0Ak" id="5kp5FYUd_$r" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="2EkRjvM2Vc2" role="2Ry0An">
+                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <node concept="2Ry0Ak" id="2EkRjvM2VdT" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>

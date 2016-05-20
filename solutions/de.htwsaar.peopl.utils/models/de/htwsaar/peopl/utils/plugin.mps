@@ -5288,12 +5288,31 @@
                                               <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
                                             </node>
                                             <node concept="liA8E" id="2mqHjRKGMIu" role="2OqNvi">
-                                              <ref role="37wK5l" to="zur:4YD18KDgSae" resolve="clearDependencies" />
+                                              <ref role="37wK5l" to="zur:4YD18KDgSae" resolve="clearModuleDependencies" />
                                               <node concept="2OqwBi" id="2mqHjRKGMPW" role="37wK5m">
                                                 <node concept="2WthIp" id="2mqHjRKGMPZ" role="2Oq$k0">
                                                   <ref role="32nkFo" node="7_qeRlZB1ZU" resolve="RebuildModuleDependencies" />
                                                 </node>
                                                 <node concept="1DTwFV" id="2mqHjRKGMQ1" role="2OqNvi">
+                                                  <ref role="2WH_rO" node="7_qeRlZB$ha" resolve="solutionModule" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbF" id="1gAlcvBOdld" role="3cqZAp">
+                                          <node concept="2OqwBi" id="1gAlcvBOdle" role="3clFbG">
+                                            <node concept="2YIFZM" id="1gAlcvBOdlf" role="2Oq$k0">
+                                              <ref role="37wK5l" to="zur:6D3NPsjbEtX" resolve="getInstance" />
+                                              <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
+                                            </node>
+                                            <node concept="liA8E" id="1gAlcvBOdlg" role="2OqNvi">
+                                              <ref role="37wK5l" to="zur:1gAlcvBNULu" resolve="clearReferenceDependencies" />
+                                              <node concept="2OqwBi" id="1gAlcvBOdlh" role="37wK5m">
+                                                <node concept="2WthIp" id="1gAlcvBOdli" role="2Oq$k0">
+                                                  <ref role="32nkFo" node="7_qeRlZB1ZU" resolve="RebuildModuleDependencies" />
+                                                </node>
+                                                <node concept="1DTwFV" id="1gAlcvBOdlj" role="2OqNvi">
                                                   <ref role="2WH_rO" node="7_qeRlZB$ha" resolve="solutionModule" />
                                                 </node>
                                               </node>

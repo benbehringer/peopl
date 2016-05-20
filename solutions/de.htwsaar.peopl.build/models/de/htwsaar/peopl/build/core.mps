@@ -477,20 +477,20 @@
     <node concept="3b7kt6" id="1HMCj1nd$1T" role="10PD9s" />
     <node concept="398rNT" id="6$EUgyMH9J6" role="1l3spd">
       <property role="TrG5h" value="mps_home_core" />
-      <node concept="55IIr" id="6$EUgyMH9JW" role="398pKh">
-        <node concept="2Ry0Ak" id="6$EUgyMH9LD" role="iGT6I">
+      <node concept="55IIr" id="7gYFWh7bwDO" role="398pKh">
+        <node concept="2Ry0Ak" id="7gYFWh7bwDR" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="6$EUgyMH9MC" role="2Ry0An">
+          <node concept="2Ry0Ak" id="7gYFWh7bwDU" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="6$EUgyMH9NH" role="2Ry0An">
+            <node concept="2Ry0Ak" id="7gYFWh7bwDX" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="6$EUgyMH9NM" role="2Ry0An">
+              <node concept="2Ry0Ak" id="7gYFWh7bwE0" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="6$EUgyMH9NR" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7gYFWh7bwE5" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="6$EUgyMH9NW" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 3.3.app" />
-                    <node concept="2Ry0Ak" id="6$EUgyMH9O1" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="7gYFWh7bwEa" role="2Ry0An">
+                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <node concept="2Ry0Ak" id="7gYFWh7bwEf" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
