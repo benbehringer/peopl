@@ -476,7 +476,7 @@
     <node concept="10PD9b" id="1HMCj1nd$10" role="10PD9s" />
     <node concept="3b7kt6" id="1HMCj1nd$1T" role="10PD9s" />
     <node concept="398rNT" id="6$EUgyMH9J6" role="1l3spd">
-      <property role="TrG5h" value="mps_home" />
+      <property role="TrG5h" value="mps_home_core" />
       <node concept="55IIr" id="6$EUgyMH9JW" role="398pKh">
         <node concept="2Ry0Ak" id="6$EUgyMH9LD" role="iGT6I">
           <property role="2Ry0Am" value=".." />
@@ -504,7 +504,7 @@
     <node concept="2sgV4H" id="6$EUgyMH9O6" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="6$EUgyMH9Oy" role="2JcizS">
-        <ref role="398BVh" node="6$EUgyMH9J6" resolve="mps_home" />
+        <ref role="398BVh" node="6$EUgyMH9J6" resolve="mps_home_core" />
       </node>
     </node>
   </node>

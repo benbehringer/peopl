@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:15d83015-a471-4d52-ad5a-facac5475bfa(de.htwsaar.peopl.build.util)">
+<model ref="r:15d83015-a471-4d52-ad5a-facac5475bfa(de.htwsaar.peopl.build.util)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -197,6 +197,9 @@
       </node>
       <node concept="m$_yB" id="3OZy2vMPiyv" role="m$_yh">
         <ref role="m$_yA" to="ffeo:5xwbQ0eEV3B" resolve="jetbrains.mps.ide.java.basePlatform" />
+      </node>
+      <node concept="m$_yB" id="5kp5FYUdz_T" role="m$_yh">
+        <ref role="m$_yA" to="ffeo:3405ypXZilV" resolve="JDK-tools" />
       </node>
       <node concept="m$_yC" id="4RAsyl5PvQz" role="m$_yJ">
         <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="core" />
