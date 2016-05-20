@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(build.core)" doNotGenerate="true">
+<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(de.htwsaar.peopl.build.core)">
   <persistence version="9" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="1" />
@@ -243,7 +243,7 @@
         </node>
         <node concept="1SiIV0" id="1Q1snyS4QCu" role="3bR37C">
           <node concept="3bR9La" id="1Q1snyS4QCv" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
@@ -251,6 +251,12 @@
           <node concept="3bR9La" id="1Q1snyS4QCx" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1pJ" resolve="jetbrains.mps.lang.plugin.standalone" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F_DJLMfpBc" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBd" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
           </node>
         </node>
       </node>
@@ -379,6 +385,18 @@
           <node concept="3bR9La" id="7qJP9dOXzJ5" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="7xhAsCIyuzm" resolve="de.htwsaar.peopl.core.listener" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F_DJLMfpBr" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F_DJLMfpBt" role="3bR37C">
+          <node concept="3bR9La" id="F_DJLMfpBu" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
       </node>
