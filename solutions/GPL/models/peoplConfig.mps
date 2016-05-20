@@ -2883,12 +2883,6 @@
           <ref role="1V74G_" to="u6nm:AZ7IhMm2fl" resolve="Fragment_702314033412842453" />
         </node>
       </node>
-      <node concept="1V74G3" id="2ju$YsGoE8r" role="2$Fqj6">
-        <property role="TrG5h" value="VP_2656723451286561307" />
-        <node concept="1V74G$" id="2ju$YsGoE8s" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_2656723451286561308" />
-        </node>
-      </node>
       <node concept="1V74G3" id="2ju$YsGoEG3" role="2$Fqj6">
         <property role="TrG5h" value="VP_2656723451286563587" />
         <node concept="1V74G$" id="2ju$YsGoEG4" role="1V74Gw">
