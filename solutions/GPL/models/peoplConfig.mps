@@ -815,9 +815,6 @@
         <property role="TrG5h" value="ModuleToFragment_367495400596302510" />
         <ref role="3aRQSO" to="u6nm:kpALUD8h9A" resolve="Fragment_367495400596247142" />
       </node>
-      <node concept="3aRQSP" id="3HHfejH1cqH" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_4282145774625932973" />
-      </node>
     </node>
     <node concept="1V77HM" id="3XSKgTnGhTj" role="288GmO">
       <property role="2_7ToJ" value="210" />
@@ -3104,12 +3101,6 @@
         <node concept="1V74G$" id="2ju$YsGpkhg" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_2656723451286733904" />
           <ref role="1V74G_" to="u6nm:2ju$YsGpkhe" resolve="Fragment_2656723451286733902" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="3HHfejH1cqF" role="2$Fqj6">
-        <property role="TrG5h" value="VP_4282145774625932971" />
-        <node concept="1V74G$" id="3HHfejH1cqG" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_4282145774625932972" />
         </node>
       </node>
     </node>
