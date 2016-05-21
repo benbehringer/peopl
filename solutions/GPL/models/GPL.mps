@@ -1441,6 +1441,15 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3cpWs8" id="2FMZ3_e_5rj" role="3cqZAp">
+                            <node concept="3cpWsn" id="2FMZ3_e_5rm" role="3cpWs9">
+                              <property role="TrG5h" value="x" />
+                              <node concept="10Oyi0" id="2FMZ3_e_5rh" role="1tU5fm" />
+                              <node concept="3cmrfG" id="2FMZ3_e_5wK" role="33vP2m">
+                                <property role="3cmrfH" value="5" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                         <node concept="1V74GB" id="10Z$L974A_q" role="lGtFl">
                           <property role="32Xqk$" value="chosenModule" />
@@ -4959,6 +4968,22 @@
               <ref role="1V74Hf" to="ymfq:3XSKgTnGuDC" resolve="VPToFragment_4573617688939719272" />
               <ref role="a64iB" to="ymfq:4L6K1Kv9Xzj" resolve="Alg_Transpose" />
               <ref role="3aRQVk" to="ymfq:3XSKgTnGwxM" resolve="ModuleToFragment_4573617688939726962" />
+            </node>
+          </node>
+          <node concept="2wexfA" id="4L2DE6iIA0P" role="3cqZAp">
+            <node concept="3clFbS" id="4L2DE6iIA0Q" role="9aQI4">
+              <node concept="3SKdUt" id="4L2DE6iIAbW" role="3cqZAp">
+                <node concept="3SKdUq" id="4L2DE6iIAbX" role="3SKWNk">
+                  <property role="3SKdUp" value="test some additional code" />
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="4L2DE6iIA0R" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_5495137708227059767" />
+              <ref role="1V74Hf" to="ymfq:4L2DE6iIA0T" resolve="VPToFragment_5495137708227059769" />
+              <ref role="3aRQVk" to="ymfq:4L2DE6iIA0U" resolve="ModuleToFragment_5495137708227059770" />
+              <ref role="a64iB" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
             </node>
           </node>
         </node>
@@ -14218,6 +14243,13 @@
     <property role="TrG5h" value="Benchmark::Graph" />
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="ymfq:4L6K1Kv9X9a" resolve="Benchmark" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="4L2DE6iIspv">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Weighted::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
     <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>

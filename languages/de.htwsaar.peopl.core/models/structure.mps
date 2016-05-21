@@ -219,7 +219,7 @@
   <node concept="1TIwiD" id="5L3eIBSVDSC">
     <property role="1pbfSe" value="1429330193" />
     <property role="3GE5qa" value="Helper" />
-    <property role="TrG5h" value="VariabiliyDataStorage" />
+    <property role="TrG5h" value="VariabilityDataStorage" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="5L3eIBSVDSD" role="lGtFl">
       <property role="Hh88m" value="VariabilityDataStorage" />

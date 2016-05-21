@@ -20,6 +20,7 @@
       </concept>
       <concept id="4993211115183325728" name="jetbrains.mps.build.structure.BuildProjectDependency" flags="ng" index="2sgV4H">
         <reference id="5617550519002745380" name="script" index="1l3spb" />
+        <child id="4129895186893471026" name="artifacts" index="2JcizS" />
       </concept>
       <concept id="4380385936562003279" name="jetbrains.mps.build.structure.BuildString" flags="ng" index="NbPM2">
         <child id="4903714810883783243" name="parts" index="3MwsjC" />
@@ -35,6 +36,9 @@
       </concept>
       <concept id="7389400916848136194" name="jetbrains.mps.build.structure.BuildFolderMacro" flags="ng" index="398rNT">
         <child id="7389400916848144618" name="defaultPath" index="398pKh" />
+      </concept>
+      <concept id="7389400916848153117" name="jetbrains.mps.build.structure.BuildSourceMacroRelativePath" flags="ng" index="398BVA">
+        <reference id="7389400916848153130" name="macro" index="398BVh" />
       </concept>
       <concept id="5617550519002745364" name="jetbrains.mps.build.structure.BuildLayout" flags="ng" index="1l3spV" />
       <concept id="5617550519002745363" name="jetbrains.mps.build.structure.BuildProject" flags="ng" index="1l3spW">
@@ -63,15 +67,11 @@
       <concept id="6592112598314498932" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin" flags="ng" index="m$_wf">
         <property id="6592112598314498927" name="id" index="m$_wk" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
-        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
-      </concept>
-      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
-        <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
     </language>
@@ -95,18 +95,6 @@
         <node concept="3Mxwew" id="7UeLrSRMkW9" role="3MwsjC">
           <property role="3MwjfP" value="peopl" />
         </node>
-      </node>
-      <node concept="m$_yC" id="2x6ZBbGJySH" role="m$_yJ">
-        <ref role="m$_y1" to="q0pl:F_DJLMfAY5" resolve="dep" />
-      </node>
-      <node concept="m$_yC" id="2x6ZBbGJz0s" role="m$_yJ">
-        <ref role="m$_y1" to="hvuf:4RAsyl5PvN2" resolve="util" />
-      </node>
-      <node concept="m$_yC" id="2x6ZBbGJz4p" role="m$_yJ">
-        <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="core" />
-      </node>
-      <node concept="m$_yC" id="2x6ZBbGJzcd" role="m$_yJ">
-        <ref role="m$_y1" to="a9xt:4RAsyl5JUem" resolve="peopl_mbeddr" />
       </node>
     </node>
     <node concept="55IIr" id="7UeLrSRMkPC" role="auvoZ" />
@@ -152,17 +140,14 @@
     </node>
     <node concept="2sgV4H" id="7UeLrSRMkVG" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="4SkDIk2bs72" role="2JcizS">
+        <ref role="398BVh" node="7UeLrSRMkVd" resolve="mps_home" />
+      </node>
     </node>
-    <node concept="2sgV4H" id="2x6ZBbGJyH1" role="1l3spa">
-      <ref role="1l3spb" to="q0pl:F_DJLMfAWN" resolve="dep" />
-    </node>
-    <node concept="2sgV4H" id="2x6ZBbGJyON" role="1l3spa">
-      <ref role="1l3spb" to="hvuf:4RAsyl5PvM4" resolve="util" />
-    </node>
-    <node concept="2sgV4H" id="2x6ZBbGJzgd" role="1l3spa">
+    <node concept="2sgV4H" id="310gtAXrruz" role="1l3spa">
       <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="core" />
     </node>
-    <node concept="2sgV4H" id="2x6ZBbGJzo3" role="1l3spa">
+    <node concept="2sgV4H" id="310gtAXrruH" role="1l3spa">
       <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peopl_mbeddr" />
     </node>
   </node>

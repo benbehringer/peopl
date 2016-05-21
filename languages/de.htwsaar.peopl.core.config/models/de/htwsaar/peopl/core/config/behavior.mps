@@ -1781,6 +1781,25 @@
       <property role="TrG5h" value="calculateFragmentList" />
       <node concept="3Tm1VV" id="1hL$JiAwPP5" role="1B3o_S" />
       <node concept="3clFbS" id="1hL$JiAwPP6" role="3clF47">
+        <node concept="3cpWs8" id="3YR93ntF$pI" role="3cqZAp">
+          <node concept="3cpWsn" id="3YR93ntF$pJ" role="3cpWs9">
+            <property role="TrG5h" value="currentSModule" />
+            <node concept="3uibUv" id="3YR93ntF$pK" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+            </node>
+            <node concept="2OqwBi" id="3YR93ntF$J5" role="33vP2m">
+              <node concept="2JrnkZ" id="3YR93ntF$I1" role="2Oq$k0">
+                <node concept="2OqwBi" id="3YR93ntF$$P" role="2JrQYb">
+                  <node concept="13iPFW" id="3YR93ntF$yH" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="3YR93ntF$D2" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3YR93ntF$Ma" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="5h5WElAmlPE" role="3cqZAp">
           <node concept="3clFbS" id="5h5WElAmlPG" role="3clFbx">
             <node concept="1X3_iC" id="1Z9n1aMNme6" role="lGtFl">
@@ -1801,6 +1820,9 @@
                 </node>
                 <node concept="liA8E" id="5h5WElAmmtr" role="2OqNvi">
                   <ref role="37wK5l" to="zur:5h5WElAiqOa" resolve="setCalculatedFragments" />
+                  <node concept="37vLTw" id="3YR93ntF$U$" role="37wK5m">
+                    <ref role="3cqZAo" node="3YR93ntF$pJ" resolve="currentSModule" />
+                  </node>
                   <node concept="10QFUN" id="1hL$JiAwQJU" role="37wK5m">
                     <node concept="2OqwBi" id="1hL$JiAwQyG" role="10QFUP">
                       <node concept="2OqwBi" id="1hL$JiAwQfb" role="2Oq$k0">
@@ -1839,6 +1861,9 @@
               </node>
               <node concept="liA8E" id="5h5WElAmmgc" role="2OqNvi">
                 <ref role="37wK5l" to="zur:5h5WElAipks" resolve="isValid" />
+                <node concept="37vLTw" id="3YR93ntF$Nd" role="37wK5m">
+                  <ref role="3cqZAo" node="3YR93ntF$pJ" resolve="currentSModule" />
+                </node>
               </node>
             </node>
           </node>
@@ -1879,6 +1904,9 @@
             </node>
             <node concept="liA8E" id="5h5WElAmr6J" role="2OqNvi">
               <ref role="37wK5l" to="zur:5h5WElAmp11" resolve="getCalculatedFragments" />
+              <node concept="37vLTw" id="3YR93ntF$YY" role="37wK5m">
+                <ref role="3cqZAo" node="3YR93ntF$pJ" resolve="currentSModule" />
+              </node>
             </node>
           </node>
         </node>
