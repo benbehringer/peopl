@@ -670,7 +670,7 @@
     </node>
     <node concept="2tJIrI" id="7PFXpItpg2j" role="jymVt" />
     <node concept="312cEg" id="7PFXpItpgMd" role="jymVt">
-      <property role="34CwA1" value="false" />
+      <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="vpBuffer" />
       <property role="3TUv4t" value="false" />
@@ -878,7 +878,7 @@
     </node>
     <node concept="2tJIrI" id="6cq_xgv5lHp" role="jymVt" />
     <node concept="312cEg" id="61l2320GHnZ" role="jymVt">
-      <property role="34CwA1" value="false" />
+      <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myRootNode" />
       <property role="3TUv4t" value="false" />
@@ -1015,7 +1015,7 @@
     </node>
     <node concept="2tJIrI" id="4abErjGLjr0" role="jymVt" />
     <node concept="312cEg" id="4abErjGL$3P" role="jymVt">
-      <property role="34CwA1" value="false" />
+      <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myMap" />
       <property role="3TUv4t" value="false" />
@@ -1607,7 +1607,7 @@
       </node>
     </node>
     <node concept="312cEg" id="3YR93ntFrSc" role="jymVt">
-      <property role="34CwA1" value="false" />
+      <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myCalculatedFragments" />
       <property role="3TUv4t" value="false" />
@@ -2054,6 +2054,63 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1gAlcvBNgoT" role="jymVt" />
+    <node concept="312cEg" id="3E5iobqS4np" role="jymVt">
+      <property role="34CwA1" value="true" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="myModuleConnectorDependencies" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="3E5iobqS4nq" role="1B3o_S" />
+      <node concept="3rvAFt" id="3E5iobqS4nr" role="1tU5fm">
+        <node concept="3uibUv" id="3E5iobqS4ns" role="3rvQeY">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+        <node concept="3rvAFt" id="3E5iobqS4nt" role="3rvSg0">
+          <node concept="3Tqbb2" id="3E5iobqS4nu" role="3rvQeY">
+            <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+          </node>
+          <node concept="3rvAFt" id="3E5iobqS4nv" role="3rvSg0">
+            <node concept="3Tqbb2" id="3E5iobqS4nw" role="3rvQeY">
+              <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+            </node>
+            <node concept="2hMVRd" id="3E5iobqS4nx" role="3rvSg0">
+              <node concept="3Tqbb2" id="3E5iobqS4ny" role="2hN53Y" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2ShNRf" id="3E5iobqS4nz" role="33vP2m">
+        <node concept="32Fmki" id="3E5iobqS4n$" role="2ShVmc">
+          <node concept="3uibUv" id="3E5iobqS4n_" role="3rHrn6">
+            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+          </node>
+          <node concept="3rvAFt" id="3E5iobqS4nA" role="3rHtpV">
+            <node concept="3Tqbb2" id="3E5iobqS4nB" role="3rvQeY">
+              <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+            </node>
+            <node concept="3rvAFt" id="3E5iobqS4nC" role="3rvSg0">
+              <node concept="3Tqbb2" id="3E5iobqS4nD" role="3rvQeY">
+                <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+              </node>
+              <node concept="2hMVRd" id="3E5iobqS4nE" role="3rvSg0">
+                <node concept="3Tqbb2" id="3E5iobqS4nF" role="2hN53Y" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="z59LJ" id="3E5iobqS4nG" role="lGtFl">
+        <node concept="TZ5HA" id="3E5iobqS4nH" role="TZ5H$">
+          <node concept="1dT_AC" id="3E5iobqS4nI" role="1dT_Ay">
+            <property role="1dT_AB" value="Our reference dependency cache allows us to get all references of a provider (i.e., the module our dependant" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="3E5iobqS4nJ" role="TZ5H$">
+          <node concept="1dT_AC" id="3E5iobqS4nK" role="1dT_Ay">
+            <property role="1dT_AB" value="relies on). For instance, Base (dependant) =&gt; AnotherModule (provider) : foo() (method call)" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="1gAlcvBNfoA" role="jymVt" />
     <node concept="2tJIrI" id="1gAlcvBNfSI" role="jymVt" />
     <node concept="2YIFZL" id="6D3NPsjbEtX" role="jymVt">
@@ -3211,7 +3268,7 @@
     <node concept="2tJIrI" id="2An04PNr3e0" role="jymVt" />
     <node concept="2tJIrI" id="2An04PNr3er" role="jymVt" />
     <node concept="312cEg" id="2An04PNreJn" role="jymVt">
-      <property role="34CwA1" value="false" />
+      <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="myVariabilityDataStorageCache" />
       <property role="3TUv4t" value="false" />

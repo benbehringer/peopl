@@ -13,7 +13,6 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1068431790191" name="jetbrains.mps.baseLanguage.structure.Expression" flags="nn" index="33vP2n" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -138,11 +137,13 @@
     <ref role="2M0niE" node="5uk6yqVztc3" />
     <node concept="u25OH" id="5uk6yqVztc3" role="2M0niC">
       <node concept="2Hijyl" id="5uk6yqVztc4" role="2Hjnvt">
-        <node concept="u2itq" id="3guC_ZUEvfh" role="3clFbG">
+        <node concept="u2itq" id="2wvEBN8bFH0" role="3clFbG">
           <node concept="u2itw" id="75jLyLrtKO3" role="3uHU7B">
             <ref role="u2itx" node="5uk6yqVztc1" resolve="Base" />
           </node>
-          <node concept="33vP2n" id="2mNRphYQvka" role="3uHU7w" />
+          <node concept="u2itw" id="13VsIA9uj$m" role="3uHU7w">
+            <ref role="u2itx" node="5uk6yqVztcp" resolve="Test" />
+          </node>
         </node>
       </node>
     </node>

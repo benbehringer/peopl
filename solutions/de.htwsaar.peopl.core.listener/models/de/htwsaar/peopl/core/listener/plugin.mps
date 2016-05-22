@@ -23,7 +23,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
     <import index="4szu" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.references(MPS.Core/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -7112,32 +7111,6 @@
                                 <node concept="3GX2aA" id="3GqAm$Hy566" role="2OqNvi" />
                               </node>
                             </node>
-                            <node concept="3clFbH" id="3GqAm$Hy3a3" role="3cqZAp" />
-                            <node concept="3SKdUt" id="5Yh7sPDTVSl" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVSm" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVSn" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVSo" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVSp" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVSq" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVSr" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVSs" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVSt" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVSu" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
-                              </node>
-                            </node>
                             <node concept="3clFbH" id="3GqAm$Hy3f_" role="3cqZAp" />
                             <node concept="3SKdUt" id="17fl253teoH" role="3cqZAp">
                               <node concept="3SKdUq" id="17fl253teoI" role="3SKWNk">
@@ -8238,36 +8211,9 @@
                               </node>
                             </node>
                             <node concept="3clFbH" id="1JVbpAerE$q" role="3cqZAp" />
-                            <node concept="3clFbH" id="1JVbpAerEMT" role="3cqZAp" />
-                            <node concept="3clFbH" id="4abErjGKlHW" role="3cqZAp" />
                             <node concept="3SKdUt" id="17fl253tf$w" role="3cqZAp">
                               <node concept="3SKdUq" id="17fl253tf$x" role="3SKWNk">
                                 <property role="3SKdUp" value="------- FRAGMENT SECTION -------------------------------------------------------------" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTSG1" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTWJE" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTThU" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTThV" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTTRf" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTTRg" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTUpX" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTUpY" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTUXR" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTUXS" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
                               </node>
                             </node>
                             <node concept="3cpWs8" id="5h5WElAlUTJ" role="3cqZAp">
@@ -8472,56 +8418,6 @@
                               </node>
                             </node>
                             <node concept="3clFbH" id="1F0K8aQpsiy" role="3cqZAp" />
-                            <node concept="3clFbH" id="1F0K8aQpsls" role="3cqZAp" />
-                            <node concept="1X3_iC" id="7lLy2Y3bU6M" role="lGtFl">
-                              <property role="3V$3am" value="statement" />
-                              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                              <node concept="3clFbF" id="31jQQFwtI5m" role="8Wnug">
-                                <node concept="2OqwBi" id="31jQQFwtI5n" role="3clFbG">
-                                  <node concept="2YIFZM" id="31jQQFwtI5o" role="2Oq$k0">
-                                    <ref role="37wK5l" node="4abErjGKlu8" resolve="getModelAccess" />
-                                    <ref role="1Pybhc" node="9AU9SVEQVx" resolve="PeoplListenerHelper" />
-                                    <node concept="37vLTw" id="31jQQFwtI5p" role="37wK5m">
-                                      <ref role="3cqZAo" node="4abErjGKlLo" resolve="project" />
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="31jQQFwtI5q" role="2OqNvi">
-                                    <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
-                                    <node concept="1bVj0M" id="31jQQFwtI5r" role="37wK5m">
-                                      <node concept="3clFbS" id="31jQQFwtI5s" role="1bW5cS" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbH" id="Ym7DoKnS9v" role="3cqZAp" />
-                            <node concept="3SKdUt" id="5Yh7sPDTVzS" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTWOL" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVzU" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVzV" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVzW" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVzX" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTVzY" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTVzZ" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
-                              </node>
-                            </node>
-                            <node concept="3SKdUt" id="5Yh7sPDTV$0" role="3cqZAp">
-                              <node concept="3SKdUq" id="5Yh7sPDTV$1" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
-                              </node>
-                            </node>
-                            <node concept="3clFbH" id="5Yh7sPDTVix" role="3cqZAp" />
-                            <node concept="3clFbH" id="1JVbpAerEjt" role="3cqZAp" />
                             <node concept="3clFbJ" id="4abErjGKlHX" role="3cqZAp">
                               <node concept="3clFbS" id="4abErjGKlHY" role="3clFbx">
                                 <node concept="3SKdUt" id="4abErjGKNf8" role="3cqZAp">

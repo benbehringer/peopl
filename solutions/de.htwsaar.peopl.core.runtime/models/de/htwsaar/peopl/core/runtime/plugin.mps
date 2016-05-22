@@ -96,9 +96,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -264,7 +261,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2wh7ULXSR_X" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
               <node concept="1bVj0M" id="2wh7ULXSREa" role="37wK5m">
                 <node concept="3clFbS" id="2wh7ULXSREb" role="1bW5cS">
                   <node concept="3clFbF" id="2wh7ULXSRFj" role="3cqZAp">
@@ -284,7 +281,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2wh7ULXSR51" role="3cqZAp" />
-        <node concept="3clFbH" id="y7va8W7t1I" role="3cqZAp" />
         <node concept="3SKdUt" id="2yX483RIada" role="3cqZAp">
           <node concept="3SKdUq" id="2yX483RIadc" role="3SKWNk">
             <property role="3SKdUp" value="finds all ModuleDefintion and calls the cleanUp Mehtods on the VarDataStorages" />
@@ -301,7 +297,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2yX483RIuQO" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
               <node concept="1bVj0M" id="2yX483RIuQP" role="37wK5m">
                 <node concept="3clFbS" id="2yX483RIuQQ" role="1bW5cS">
                   <node concept="1X3_iC" id="4rXPXKI3rrW" role="lGtFl">
@@ -473,14 +469,11 @@
                       <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                     </node>
                   </node>
-                  <node concept="3clFbH" id="1qCuEEEg7kB" role="3cqZAp" />
-                  <node concept="3clFbH" id="1qCuEEEg7ly" role="3cqZAp" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5uk6yqV$BlR" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="2yX483RIuJV" role="3clF46">
         <property role="TrG5h" value="project" />
@@ -490,28 +483,6 @@
       </node>
       <node concept="3cqZAl" id="2yX483RIhic" role="3clF45" />
       <node concept="3Tm1VV" id="2yX483RIhf0" role="1B3o_S" />
-    </node>
-    <node concept="3clFb_" id="5vSg76YabM0" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="cleanUpBuffer" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="5vSg76YabM3" role="3clF47">
-        <node concept="3clFbF" id="5vSg76YabOe" role="3cqZAp">
-          <node concept="2OqwBi" id="5vSg76YabOg" role="3clFbG">
-            <node concept="2YIFZM" id="5vSg76YabOh" role="2Oq$k0">
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
-              <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-            </node>
-            <node concept="liA8E" id="5vSg76YabOi" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="5vSg76YabGZ" role="1B3o_S" />
-      <node concept="3cqZAl" id="5vSg76YabLY" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="2yX483RIhbk" role="jymVt" />
     <node concept="2YIFZL" id="5rOrZhw_7Kt" role="jymVt">
