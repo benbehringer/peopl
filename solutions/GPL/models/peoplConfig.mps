@@ -34,7 +34,7 @@
       <concept id="9119657711895399776" name="de.htwsaar.peopl.core.structure.ModuleDefinition" flags="ng" index="288GkY">
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
-      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
+      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabilityDataStorage" flags="ng" index="2$Fqj1">
         <child id="6648222251507162671" name="vp" index="2$Fqj6" />
       </concept>
       <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.ModuleToFragmentIntermediate" flags="ng" index="3aRQSP">
@@ -3210,9 +3210,6 @@
                               </node>
                               <node concept="1eOMI4" id="kpALUD88Ia" role="3uHU7B">
                                 <node concept="u2its" id="kpALUD8OR5" role="1eOMHV">
-                                  <node concept="u2itw" id="kpALUD8ORp" role="3uHU7w">
-                                    <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
-                                  </node>
                                   <node concept="u2its" id="kpALUD88IC" role="3uHU7B">
                                     <node concept="u2its" id="kpALUD88IX" role="3uHU7B">
                                       <node concept="u2itw" id="kpALUD88Ix" role="3uHU7B">
@@ -3225,6 +3222,9 @@
                                     <node concept="u2itw" id="6yhXOCjh$C$" role="3uHU7w">
                                       <ref role="u2itx" node="4L6K1Kv9XjZ" resolve="G_NoEdges" />
                                     </node>
+                                  </node>
+                                  <node concept="u2itw" id="4D2je8PAK$8" role="3uHU7w">
+                                    <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
                                   </node>
                                 </node>
                               </node>

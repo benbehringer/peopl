@@ -75,6 +75,9 @@
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
+        <child id="4242538589859162459" name="hints" index="2w$qW5" />
+      </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -88,7 +91,9 @@
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
         <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
-      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz" />
+      <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz">
+        <child id="8383079901754291620" name="removeHints" index="B$lH_" />
+      </concept>
       <concept id="1239814640496" name="jetbrains.mps.lang.editor.structure.CellLayout_VerticalGrid" flags="nn" index="2EHx9g" />
       <concept id="1216308599511" name="jetbrains.mps.lang.editor.structure.PositionStyleClassItem" flags="ln" index="LD5Jc">
         <property id="1216308761668" name="position" index="LDHlv" />
@@ -103,6 +108,7 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
@@ -186,6 +192,7 @@
         <child id="1198512004906" name="focusPolicyApplicable" index="cStSX" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
+        <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -13950,14 +13957,17 @@
   </node>
   <node concept="24kQdi" id="7uhzxTPLuds">
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="2aJ2om" id="7uhzxTPLudS" role="CpUAK">
+      <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
+    </node>
     <node concept="3EZMnI" id="3xqByZNYoy5" role="2wV5jI">
       <ref role="1ERwB7" to="nbbm:7uhzxTPKth8" resolve="Peopl_Statement_Actions" />
       <ref role="34QXea" to="nbbm:7uhzxTPLHzy" resolve="Peopl_Statement_KeyMap" />
       <node concept="l2Vlx" id="3xqByZNYoy6" role="2iSdaV" />
       <node concept="B$lHz" id="7uhzxTPLuJJ" role="3EZMnx" />
     </node>
-    <node concept="2aJ2om" id="7uhzxTPLudS" role="CpUAK">
-      <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
+    <node concept="B$lHz" id="7B8ZS0iM6om" role="6VMZX">
+      <node concept="2w$q5c" id="7B8ZS0iM6on" role="B$lH_" />
     </node>
   </node>
   <node concept="24kQdi" id="3Mm3FE9Skhu">
@@ -14994,6 +15004,45 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4kBSDWF0UHN">
+    <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="2aJ2om" id="4kBSDWF16Ks" role="CpUAK">
+      <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
+    </node>
+    <node concept="2aJ2om" id="4kBSDWF16Ky" role="CpUAK">
+      <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
+    </node>
+    <node concept="3EZMnI" id="3VARyd8Xi_R" role="2wV5jI">
+      <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
+      <ref role="34QXea" to="nbbm:7uhzxTPLHzy" resolve="Peopl_Statement_KeyMap" />
+      <ref role="1ERwB7" to="nbbm:7uhzxTPKth8" resolve="Peopl_Statement_Actions" />
+      <node concept="3F0ifn" id="3VARyd8Xi_Y" role="3EZMnx">
+        <property role="3F0ifm" value="//" />
+        <ref role="1ERwB7" to="tpen:3$ZLRFrgDeM" resolve="Statement_Comment_Actions" />
+        <node concept="Vb9p2" id="5fIuys08Qpm" role="3F10Kt">
+          <property role="Vbekb" value="BOLD_ITALIC" />
+        </node>
+        <node concept="2SqB2G" id="5iVrCyTuaCu" role="2SqHTX">
+          <property role="TrG5h" value="LEFT_COMMENT_ANCHOR" />
+        </node>
+      </node>
+      <node concept="B$lHz" id="3VARyd8XiA4" role="3EZMnx">
+        <node concept="2w$q5c" id="3VARyd8XiA8" role="B$lH_">
+          <node concept="2aJ2om" id="3VARyd8XiA9" role="2w$qW5">
+            <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3VARyd8Xi_U" role="2iSdaV" />
+    </node>
+    <node concept="B$lHz" id="4kBSDWF16L6" role="6VMZX">
+      <node concept="2w$q5c" id="4kBSDWF16L7" role="B$lH_">
+        <node concept="2aJ2om" id="4kBSDWF16L8" role="2w$qW5">
+          <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
         </node>
       </node>
     </node>

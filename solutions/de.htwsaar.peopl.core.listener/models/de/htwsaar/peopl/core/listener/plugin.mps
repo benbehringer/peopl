@@ -7107,6 +7107,31 @@
                               </node>
                             </node>
                             <node concept="3clFbH" id="3GqAm$Hy3a3" role="3cqZAp" />
+                            <node concept="3SKdUt" id="5Yh7sPDTVSl" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVSm" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVSn" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVSo" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVSp" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVSq" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVSr" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVSs" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVSt" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVSu" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
+                              </node>
+                            </node>
                             <node concept="3clFbH" id="3GqAm$Hy3f_" role="3cqZAp" />
                             <node concept="3clFbF" id="31jQQFwtG_E" role="3cqZAp">
                               <node concept="2OqwBi" id="31jQQFwtGFj" role="3clFbG">
@@ -7118,7 +7143,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="31jQQFwtHDi" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
+                                  <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
                                   <node concept="1bVj0M" id="31jQQFwtHF7" role="37wK5m">
                                     <node concept="3clFbS" id="31jQQFwtHF8" role="1bW5cS">
                                       <node concept="1X3_iC" id="2NMVKnbDWZ4" role="lGtFl">
@@ -8070,6 +8095,31 @@
                                 <property role="3SKdUp" value="------- FRAGMENT SECTION -------------------------------------------------------------" />
                               </node>
                             </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTSG1" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTWJE" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTThU" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTThV" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTTRf" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTTRg" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTUpX" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTUpY" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTUXR" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTUXS" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
+                              </node>
+                            </node>
                             <node concept="3clFbF" id="31jQQFwtI5m" role="3cqZAp">
                               <node concept="2OqwBi" id="31jQQFwtI5n" role="3clFbG">
                                 <node concept="2YIFZM" id="31jQQFwtI5o" role="2Oq$k0">
@@ -8295,6 +8345,32 @@
                               </node>
                             </node>
                             <node concept="3clFbH" id="Ym7DoKnS9v" role="3cqZAp" />
+                            <node concept="3SKdUt" id="5Yh7sPDTVzS" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTWOL" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: Don't touch the executeCommand. It is just a dirty workaround!" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVzU" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVzV" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: We encounter large problems with broken references as soon as we change it" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVzW" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVzX" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: however it is still unclear why" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTVzY" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTVzZ" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: The best solution would be an MPS integrated reference maintainance as it is really" />
+                              </node>
+                            </node>
+                            <node concept="3SKdUt" id="5Yh7sPDTV$0" role="3cqZAp">
+                              <node concept="3SKdUq" id="5Yh7sPDTV$1" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO: counter intuitive what is happening in this section" />
+                              </node>
+                            </node>
+                            <node concept="3clFbH" id="5Yh7sPDTVix" role="3cqZAp" />
                             <node concept="3SKdUt" id="5_5NNyD6UJ7" role="3cqZAp">
                               <node concept="3SKdUq" id="5_5NNyD6UJ9" role="3SKWNk">
                                 <property role="3SKdUp" value="----------- Block Ref Command -------------------" />

@@ -2,7 +2,6 @@
 <model ref="r:5e9b2ecc-07ec-4f95-8b08-30e75e041292(de.htwsaar.peopl.dep.baselang.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="-1" />
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
