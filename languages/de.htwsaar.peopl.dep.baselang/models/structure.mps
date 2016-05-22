@@ -148,8 +148,8 @@
       <node concept="tn0Fv" id="4DWAEpij2kq" role="HhnKV">
         <property role="tnX3d" value="true" />
       </node>
-      <node concept="trNpa" id="4DWAEpij2ks" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      <node concept="trNpa" id="6GQN6PwWW9j" role="EQaZv">
+        <ref role="trN6q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
       </node>
     </node>
     <node concept="PrWs8" id="2hzf2OgrYFk" role="PzmwI">

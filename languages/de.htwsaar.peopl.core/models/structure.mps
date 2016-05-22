@@ -259,7 +259,7 @@
     <node concept="1TJgyj" id="6K8EDSn5e6Y" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="fragmentIntermediates" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
     </node>
     <node concept="1TJgyj" id="5L3eIBSVdrp" role="1TKVEi">
