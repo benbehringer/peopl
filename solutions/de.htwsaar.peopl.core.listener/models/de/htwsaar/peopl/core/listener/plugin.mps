@@ -7143,7 +7143,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="31jQQFwtHDi" role="2OqNvi">
-                                  <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
+                                  <ref role="37wK5l" to="z1c3:~ProjectModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
                                   <node concept="1bVj0M" id="31jQQFwtHF7" role="37wK5m">
                                     <node concept="3clFbS" id="31jQQFwtHF8" role="1bW5cS">
                                       <node concept="1X3_iC" id="2NMVKnbDWZ4" role="lGtFl">

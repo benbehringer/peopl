@@ -4201,14 +4201,13 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="5YyA3WZtOQU" role="3cqZAp">
-          <node concept="3SKdUq" id="5YyA3WZtOQV" role="3SKWNk">
-            <property role="3SKdUp" value="we let the Method_Reorderer do the merging" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="3A01ew7yVaT" role="3cqZAp">
-          <node concept="1rXfSq" id="3A01ew7yVaR" role="3clFbG">
-            <ref role="37wK5l" node="3A01ew7yGJH" resolve="mergePeoplBlocks" />
+        <node concept="1X3_iC" id="5IeEv0kV5oH" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3A01ew7yVaT" role="8Wnug">
+            <node concept="1rXfSq" id="3A01ew7yVaR" role="3clFbG">
+              <ref role="37wK5l" node="3A01ew7yGJH" resolve="mergePeoplBlocks" />
+            </node>
           </node>
         </node>
       </node>
@@ -4404,14 +4403,13 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="5YyA3WZtQoQ" role="3cqZAp">
-          <node concept="3SKdUq" id="5YyA3WZtQoR" role="3SKWNk">
-            <property role="3SKdUp" value="we let the Method_Reorderer do the merging" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="3A01ew7ySSB" role="3cqZAp">
-          <node concept="1rXfSq" id="3A01ew7ySS_" role="3clFbG">
-            <ref role="37wK5l" node="3A01ew7yGJH" resolve="mergePeoplBlocks" />
+        <node concept="1X3_iC" id="5IeEv0kV5uk" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3A01ew7ySSB" role="8Wnug">
+            <node concept="1rXfSq" id="3A01ew7ySS_" role="3clFbG">
+              <ref role="37wK5l" node="3A01ew7yGJH" resolve="mergePeoplBlocks" />
+            </node>
           </node>
         </node>
       </node>
@@ -4433,12 +4431,7 @@
         </node>
         <node concept="3SKdUt" id="5Yh7sPDTY1t" role="3cqZAp">
           <node concept="3SKdUq" id="5Yh7sPDTY1u" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: the problem is related to the listener (i.e., with executeCommandInEDT, we need to comment this section" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="5Yh7sPDTYu1" role="3cqZAp">
-          <node concept="3SKdUq" id="5Yh7sPDTYu2" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: while with executeCommand we actually need this code to not miss references of blocks" />
+            <property role="3SKdUp" value="TODO: the problem is related to the listener (i.e., with executeCommandInEDT, we need to comment this section)" />
           </node>
         </node>
         <node concept="3cpWs8" id="5HzaN04G6E8" role="3cqZAp">
