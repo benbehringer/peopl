@@ -1276,32 +1276,36 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="696_AADubRn" role="3cqZAp">
-                      <node concept="2OqwBi" id="696_AADuc4f" role="3clFbG">
-                        <node concept="2YIFZM" id="696_AADuc3w" role="2Oq$k0">
-                          <ref role="37wK5l" to="zur:6D3NPsjbEtX" resolve="getInstance" />
-                          <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
-                        </node>
-                        <node concept="liA8E" id="696_AADuc79" role="2OqNvi">
-                          <ref role="37wK5l" to="zur:4YD18KDgp1U" resolve="addModuleDependency" />
-                          <node concept="2OqwBi" id="696_AADuckd" role="37wK5m">
-                            <node concept="2JrnkZ" id="696_AADuciq" role="2Oq$k0">
-                              <node concept="2OqwBi" id="696_AADucbq" role="2JrQYb">
-                                <node concept="37vLTw" id="696_AADuc8d" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="62a2r2croWW" resolve="refCurrentNode" />
+                    <node concept="1X3_iC" id="ZjMUSFCNLX" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="696_AADubRn" role="8Wnug">
+                        <node concept="2OqwBi" id="696_AADuc4f" role="3clFbG">
+                          <node concept="2YIFZM" id="696_AADuc3w" role="2Oq$k0">
+                            <ref role="37wK5l" to="zur:6D3NPsjbEtX" resolve="getInstance" />
+                            <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
+                          </node>
+                          <node concept="liA8E" id="696_AADuc79" role="2OqNvi">
+                            <ref role="37wK5l" to="zur:4YD18KDgp1U" resolve="addModuleDependency" />
+                            <node concept="2OqwBi" id="696_AADuckd" role="37wK5m">
+                              <node concept="2JrnkZ" id="696_AADuciq" role="2Oq$k0">
+                                <node concept="2OqwBi" id="696_AADucbq" role="2JrQYb">
+                                  <node concept="37vLTw" id="696_AADuc8d" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="62a2r2croWW" resolve="refCurrentNode" />
+                                  </node>
+                                  <node concept="I4A8Y" id="696_AADucfa" role="2OqNvi" />
                                 </node>
-                                <node concept="I4A8Y" id="696_AADucfa" role="2OqNvi" />
+                              </node>
+                              <node concept="liA8E" id="696_AADucnX" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
                               </node>
                             </node>
-                            <node concept="liA8E" id="696_AADucnX" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                            <node concept="37vLTw" id="696_AADudI6" role="37wK5m">
+                              <ref role="3cqZAo" node="696_AADud9v" resolve="dependant" />
                             </node>
-                          </node>
-                          <node concept="37vLTw" id="696_AADudI6" role="37wK5m">
-                            <ref role="3cqZAo" node="696_AADud9v" resolve="dependant" />
-                          </node>
-                          <node concept="37vLTw" id="696_AADudJS" role="37wK5m">
-                            <ref role="3cqZAo" node="696_AADudph" resolve="provider" />
+                            <node concept="37vLTw" id="696_AADudJS" role="37wK5m">
+                              <ref role="3cqZAo" node="696_AADudph" resolve="provider" />
+                            </node>
                           </node>
                         </node>
                       </node>

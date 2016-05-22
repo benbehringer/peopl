@@ -270,11 +270,11 @@
                   <node concept="3clFbF" id="2wh7ULXSRFj" role="3cqZAp">
                     <node concept="2OqwBi" id="2wh7ULXSRFk" role="3clFbG">
                       <node concept="2YIFZM" id="2wh7ULXSRFl" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                         <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="2wh7ULXSRFm" role="2OqNvi">
-                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
                       </node>
                     </node>
                   </node>
@@ -304,6 +304,30 @@
               <ref role="37wK5l" to="lui2:~ModelAccess.executeCommand(java.lang.Runnable):void" resolve="executeCommand" />
               <node concept="1bVj0M" id="2yX483RIuQP" role="37wK5m">
                 <node concept="3clFbS" id="2yX483RIuQQ" role="1bW5cS">
+                  <node concept="1X3_iC" id="4rXPXKI3rrW" role="lGtFl">
+                    <property role="3V$3am" value="statement" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                    <node concept="34ab3g" id="2yX483RIuRm" role="8Wnug">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="3cpWs3" id="2yX483RIuRn" role="34bqiv">
+                        <node concept="Xl_RD" id="2yX483RIuRo" role="3uHU7w">
+                          <property role="Xl_RC" value=" ModuleDefinitions" />
+                        </node>
+                        <node concept="3cpWs3" id="2yX483RIuRp" role="3uHU7B">
+                          <node concept="Xl_RD" id="2yX483RIuRq" role="3uHU7B">
+                            <property role="Xl_RC" value="Cleaning up " />
+                          </node>
+                          <node concept="2OqwBi" id="2yX483RIuRr" role="3uHU7w">
+                            <node concept="37vLTw" id="2yX483RIuRs" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
+                            </node>
+                            <node concept="34oBXx" id="2yX483RIuRt" role="2OqNvi" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="1qCuEEEg7k1" role="3cqZAp" />
                   <node concept="3cpWs8" id="2yX483RIuQR" role="3cqZAp">
                     <node concept="3cpWsn" id="2yX483RIuQS" role="3cpWs9">
                       <property role="TrG5h" value="allModuleDefsInProject" />
@@ -381,29 +405,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="1X3_iC" id="4rXPXKI3rrW" role="lGtFl">
-                    <property role="3V$3am" value="statement" />
-                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="2yX483RIuRm" role="8Wnug">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="3cpWs3" id="2yX483RIuRn" role="34bqiv">
-                        <node concept="Xl_RD" id="2yX483RIuRo" role="3uHU7w">
-                          <property role="Xl_RC" value=" ModuleDefinitions" />
-                        </node>
-                        <node concept="3cpWs3" id="2yX483RIuRp" role="3uHU7B">
-                          <node concept="Xl_RD" id="2yX483RIuRq" role="3uHU7B">
-                            <property role="Xl_RC" value="Cleaning up " />
-                          </node>
-                          <node concept="2OqwBi" id="2yX483RIuRr" role="3uHU7w">
-                            <node concept="37vLTw" id="2yX483RIuRs" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
-                            </node>
-                            <node concept="34oBXx" id="2yX483RIuRt" role="2OqNvi" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbH" id="2yX483RIuRu" role="3cqZAp" />
                   <node concept="2Gpval" id="2yX483RIuRv" role="3cqZAp">
                     <node concept="2GrKxI" id="2yX483RIuRw" role="2Gsz3X">
@@ -421,7 +422,7 @@
                                   </node>
                                   <node concept="3CFZ6_" id="2yX483RIuRD" role="2OqNvi">
                                     <node concept="3CFYIy" id="2yX483RIuRE" role="3CFYIz">
-                                      <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                                      <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                                     </node>
                                   </node>
                                 </node>
@@ -442,7 +443,7 @@
                                 </node>
                                 <node concept="3CFZ6_" id="2yX483RIuRL" role="2OqNvi">
                                   <node concept="3CFYIy" id="2yX483RIuRM" role="3CFYIz">
-                                    <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                                    <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                                   </node>
                                 </node>
                               </node>
@@ -461,7 +462,7 @@
                             </node>
                             <node concept="3CFZ6_" id="2yX483RIuRT" role="2OqNvi">
                               <node concept="3CFYIy" id="2yX483RIuRU" role="3CFYIz">
-                                <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                                <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                               </node>
                             </node>
                           </node>
@@ -472,11 +473,14 @@
                       <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                     </node>
                   </node>
+                  <node concept="3clFbH" id="1qCuEEEg7kB" role="3cqZAp" />
+                  <node concept="3clFbH" id="1qCuEEEg7ly" role="3cqZAp" />
                 </node>
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5uk6yqV$BlR" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="2yX483RIuJV" role="3clF46">
         <property role="TrG5h" value="project" />
@@ -497,11 +501,11 @@
         <node concept="3clFbF" id="5vSg76YabOe" role="3cqZAp">
           <node concept="2OqwBi" id="5vSg76YabOg" role="3clFbG">
             <node concept="2YIFZM" id="5vSg76YabOh" role="2Oq$k0">
-              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+              <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
               <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="5vSg76YabOi" role="2OqNvi">
-              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+              <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
             </node>
           </node>
         </node>
@@ -539,11 +543,11 @@
                   <node concept="3clFbF" id="2wh7ULXSRJY" role="3cqZAp">
                     <node concept="2OqwBi" id="2wh7ULXSRJZ" role="3clFbG">
                       <node concept="2YIFZM" id="2wh7ULXSRK0" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="PeoplIntermediateNodesBuffer" />
+                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
                         <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="2wh7ULXSRK1" role="2OqNvi">
-                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearBufferAndRemoveObsoleteIntermediateNodes" />
+                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
                       </node>
                     </node>
                   </node>

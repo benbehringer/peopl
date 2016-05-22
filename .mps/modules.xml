@@ -23,6 +23,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoVar_ResponsivenessComparison/GPL_NoVar_ResponsivenessComparison.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaChat/JavaChat.msd" folder="caseStudies" />
+      <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
