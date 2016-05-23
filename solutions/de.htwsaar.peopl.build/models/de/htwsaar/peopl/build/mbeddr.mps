@@ -29,7 +29,7 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050074" name="jetbrains.mps.build.structure.BuildLayout_Jar" flags="ng" index="3981dx" />
+      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -1310,33 +1310,28 @@
     </node>
     <node concept="55IIr" id="4RAsyl5JUdy" role="auvoZ" />
     <node concept="1l3spV" id="4RAsyl5JUdz" role="1l3spN">
-      <node concept="3981dx" id="2BAYpPoj_5T" role="39821P">
-        <node concept="3_J27D" id="2BAYpPoj_5V" role="Nbhlr">
-          <node concept="3Mxwew" id="2BAYpPoj_9t" role="3MwsjC">
-            <property role="3MwjfP" value="peopl_mbeddr.jar" />
-          </node>
-        </node>
-        <node concept="m$_wl" id="2BAYpPoj_9v" role="39821P">
+      <node concept="3981dG" id="5XBak60DmqR" role="39821P">
+        <node concept="m$_wl" id="5XBak60DmqV" role="39821P">
           <ref role="m_rDy" node="4RAsyl5JUem" resolve="peopl_mbeddr" />
-          <node concept="398223" id="2BAYpPoj_f7" role="39821P">
-            <node concept="3_J27D" id="2BAYpPoj_f8" role="Nbhlr">
-              <node concept="3Mxwew" id="2BAYpPoj_f9" role="3MwsjC">
+          <node concept="398223" id="5XBak60DmqW" role="39821P">
+            <node concept="3_J27D" id="5XBak60DmqX" role="Nbhlr">
+              <node concept="3Mxwew" id="5XBak60DmqY" role="3MwsjC">
                 <property role="3MwjfP" value="lib" />
               </node>
             </node>
-            <node concept="28jJK3" id="2BAYpPoj_fa" role="39821P">
-              <node concept="55IIr" id="2BAYpPoj_fb" role="28jJRO">
-                <node concept="2Ry0Ak" id="2BAYpPoj_fc" role="iGT6I">
+            <node concept="28jJK3" id="5XBak60DmqZ" role="39821P">
+              <node concept="55IIr" id="5XBak60Dmr0" role="28jJRO">
+                <node concept="2Ry0Ak" id="5XBak60Dmr1" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="2BAYpPoj_fd" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5XBak60Dmr2" role="2Ry0An">
                     <property role="2Ry0Am" value="mbeddr" />
-                    <node concept="2Ry0Ak" id="2BAYpPoj_fe" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5XBak60Dmr3" role="2Ry0An">
                       <property role="2Ry0Am" value="org.apache.commons" />
-                      <node concept="2Ry0Ak" id="2BAYpPoj_ff" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="5XBak60Dmr4" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
-                        <node concept="2Ry0Ak" id="2BAYpPoj_fg" role="2Ry0An">
+                        <node concept="2Ry0Ak" id="5XBak60Dmr5" role="2Ry0An">
                           <property role="2Ry0Am" value="commons-csv-1.0" />
-                          <node concept="2Ry0Ak" id="2BAYpPoj_fh" role="2Ry0An">
+                          <node concept="2Ry0Ak" id="5XBak60Dmr6" role="2Ry0An">
                             <property role="2Ry0Am" value="commons-csv-1.0.jar" />
                           </node>
                         </node>
@@ -1346,19 +1341,19 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="2BAYpPoj_fi" role="39821P">
-              <node concept="55IIr" id="2BAYpPoj_fj" role="28jJRO">
-                <node concept="2Ry0Ak" id="2BAYpPoj_fk" role="iGT6I">
+            <node concept="28jJK3" id="5XBak60Dmr7" role="39821P">
+              <node concept="55IIr" id="5XBak60Dmr8" role="28jJRO">
+                <node concept="2Ry0Ak" id="5XBak60Dmr9" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="2BAYpPoj_fl" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5XBak60Dmra" role="2Ry0An">
                     <property role="2Ry0Am" value="mbeddr" />
-                    <node concept="2Ry0Ak" id="2BAYpPoj_fm" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5XBak60Dmrb" role="2Ry0An">
                       <property role="2Ry0Am" value="org.apache.commons" />
-                      <node concept="2Ry0Ak" id="2BAYpPoj_fn" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="5XBak60Dmrc" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
-                        <node concept="2Ry0Ak" id="2BAYpPoj_fo" role="2Ry0An">
+                        <node concept="2Ry0Ak" id="5XBak60Dmrd" role="2Ry0An">
                           <property role="2Ry0Am" value="commons-io-2.4" />
-                          <node concept="2Ry0Ak" id="2BAYpPoj_fp" role="2Ry0An">
+                          <node concept="2Ry0Ak" id="5XBak60Dmre" role="2Ry0An">
                             <property role="2Ry0Am" value="commons-io-2.4.jar" />
                           </node>
                         </node>
@@ -1368,19 +1363,19 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="2BAYpPoj_fq" role="39821P">
-              <node concept="55IIr" id="2BAYpPoj_fr" role="28jJRO">
-                <node concept="2Ry0Ak" id="2BAYpPoj_fs" role="iGT6I">
+            <node concept="28jJK3" id="5XBak60Dmrf" role="39821P">
+              <node concept="55IIr" id="5XBak60Dmrg" role="28jJRO">
+                <node concept="2Ry0Ak" id="5XBak60Dmrh" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="2BAYpPoj_ft" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5XBak60Dmri" role="2Ry0An">
                     <property role="2Ry0Am" value="mbeddr" />
-                    <node concept="2Ry0Ak" id="2BAYpPoj_fu" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5XBak60Dmrj" role="2Ry0An">
                       <property role="2Ry0Am" value="org.apache.commons" />
-                      <node concept="2Ry0Ak" id="2BAYpPoj_fv" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="5XBak60Dmrk" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
-                        <node concept="2Ry0Ak" id="2BAYpPoj_fw" role="2Ry0An">
+                        <node concept="2Ry0Ak" id="5XBak60Dmrl" role="2Ry0An">
                           <property role="2Ry0Am" value="commons-lang3-3.3.2" />
-                          <node concept="2Ry0Ak" id="2BAYpPoj_fx" role="2Ry0An">
+                          <node concept="2Ry0Ak" id="5XBak60Dmrm" role="2Ry0An">
                             <property role="2Ry0Am" value="commons-lang3-3.3.2.jar" />
                           </node>
                         </node>
@@ -1390,19 +1385,19 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="2BAYpPoj_fy" role="39821P">
-              <node concept="55IIr" id="2BAYpPoj_fz" role="28jJRO">
-                <node concept="2Ry0Ak" id="2BAYpPoj_f$" role="iGT6I">
+            <node concept="28jJK3" id="5XBak60Dmrn" role="39821P">
+              <node concept="55IIr" id="5XBak60Dmro" role="28jJRO">
+                <node concept="2Ry0Ak" id="5XBak60Dmrp" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="2BAYpPoj_f_" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5XBak60Dmrq" role="2Ry0An">
                     <property role="2Ry0Am" value="mbeddr" />
-                    <node concept="2Ry0Ak" id="2BAYpPoj_fA" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5XBak60Dmrr" role="2Ry0An">
                       <property role="2Ry0Am" value="org.apache.commons" />
-                      <node concept="2Ry0Ak" id="2BAYpPoj_fB" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="5XBak60Dmrs" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
-                        <node concept="2Ry0Ak" id="2BAYpPoj_fC" role="2Ry0An">
+                        <node concept="2Ry0Ak" id="5XBak60Dmrt" role="2Ry0An">
                           <property role="2Ry0Am" value="commons-primitives-1.0" />
-                          <node concept="2Ry0Ak" id="2BAYpPoj_fD" role="2Ry0An">
+                          <node concept="2Ry0Ak" id="5XBak60Dmru" role="2Ry0An">
                             <property role="2Ry0Am" value="commons-primitives-1.0.jar" />
                           </node>
                         </node>
@@ -1412,19 +1407,19 @@
                 </node>
               </node>
             </node>
-            <node concept="28jJK3" id="2BAYpPoj_fE" role="39821P">
-              <node concept="55IIr" id="2BAYpPoj_fF" role="28jJRO">
-                <node concept="2Ry0Ak" id="2BAYpPoj_fG" role="iGT6I">
+            <node concept="28jJK3" id="5XBak60Dmrv" role="39821P">
+              <node concept="55IIr" id="5XBak60Dmrw" role="28jJRO">
+                <node concept="2Ry0Ak" id="5XBak60Dmrx" role="iGT6I">
                   <property role="2Ry0Am" value="solutions" />
-                  <node concept="2Ry0Ak" id="2BAYpPoj_fH" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5XBak60Dmry" role="2Ry0An">
                     <property role="2Ry0Am" value="mbeddr" />
-                    <node concept="2Ry0Ak" id="2BAYpPoj_fI" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5XBak60Dmrz" role="2Ry0An">
                       <property role="2Ry0Am" value="org.apache.commons" />
-                      <node concept="2Ry0Ak" id="2BAYpPoj_fJ" role="2Ry0An">
+                      <node concept="2Ry0Ak" id="5XBak60Dmr$" role="2Ry0An">
                         <property role="2Ry0Am" value="lib" />
-                        <node concept="2Ry0Ak" id="2BAYpPoj_fK" role="2Ry0An">
+                        <node concept="2Ry0Ak" id="5XBak60Dmr_" role="2Ry0An">
                           <property role="2Ry0Am" value="commons-math3-3.3" />
-                          <node concept="2Ry0Ak" id="2BAYpPoj_fL" role="2Ry0An">
+                          <node concept="2Ry0Ak" id="5XBak60DmrA" role="2Ry0An">
                             <property role="2Ry0Am" value="commons-math3-3.3.jar" />
                           </node>
                         </node>
@@ -1434,6 +1429,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3_J27D" id="5XBak60DmqT" role="Nbhlr">
+          <node concept="3Mxwew" id="5XBak60DmqU" role="3MwsjC">
+            <property role="3MwjfP" value="peopl_mbeddr.zip" />
           </node>
         </node>
       </node>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build.peopl)">
+<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build.peopl)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -73,9 +73,6 @@
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
       </concept>
-      <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
-        <reference id="6592112598314801433" name="plugin" index="m_rDy" />
-      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
     </language>
   </registry>
@@ -102,24 +99,21 @@
     </node>
     <node concept="55IIr" id="7UeLrSRMkPC" role="auvoZ" />
     <node concept="1l3spV" id="7UeLrSRMkPD" role="1l3spN">
-      <node concept="3981dG" id="2BAYpPoj_pk" role="39821P">
-        <node concept="m$_wl" id="2BAYpPoj_pm" role="39821P">
-          <ref role="m_rDy" node="7UeLrSRMkVK" resolve="peopl" />
-          <node concept="3_I8Xc" id="2BAYpPoj_pn" role="39821P">
-            <ref role="3_I8Xa" to="q0pl:2BAYpPoj$ZA" resolve="dep.jar" />
-          </node>
-          <node concept="3_I8Xc" id="2BAYpPoj_po" role="39821P">
-            <ref role="3_I8Xa" to="f4pb:2BAYpPoj$Xn" resolve="core" />
-          </node>
-          <node concept="3_I8Xc" id="2BAYpPoj_pp" role="39821P">
-            <ref role="3_I8Xa" to="a9xt:2BAYpPoj_5T" resolve="peopl_mbeddr.jar" />
-          </node>
-          <node concept="3_I8Xc" id="2BAYpPoj_pq" role="39821P">
-            <ref role="3_I8Xa" to="hvuf:2BAYpPoj_oH" resolve="util.jar" />
-          </node>
+      <node concept="3981dG" id="6SRQKv1CRiQ" role="39821P">
+        <node concept="3_I8Xc" id="6SRQKv1CRiS" role="39821P">
+          <ref role="3_I8Xa" to="f4pb:5XBak60DmlE" resolve="core" />
         </node>
-        <node concept="3_J27D" id="2BAYpPoj_pr" role="Nbhlr">
-          <node concept="3Mxwew" id="2BAYpPoj_ps" role="3MwsjC">
+        <node concept="3_I8Xc" id="6SRQKv1CRiT" role="39821P">
+          <ref role="3_I8Xa" to="q0pl:5XBak60Dmn6" resolve="dep" />
+        </node>
+        <node concept="3_I8Xc" id="6SRQKv1CRiU" role="39821P">
+          <ref role="3_I8Xa" to="a9xt:5XBak60DmqV" resolve="peopl_mbeddr" />
+        </node>
+        <node concept="3_I8Xc" id="6SRQKv1CRiV" role="39821P">
+          <ref role="3_I8Xa" to="hvuf:5XBak60Dmvo" resolve="util" />
+        </node>
+        <node concept="3_J27D" id="6SRQKv1CRj0" role="Nbhlr">
+          <node concept="3Mxwew" id="6SRQKv1CRj1" role="3MwsjC">
             <property role="3MwjfP" value="peopl.zip" />
           </node>
         </node>

@@ -19,27 +19,16 @@
   
   <target name="assemble" depends="classes, declare-mps-tasks, fetchDependencies">
     <mkdir dir="${build.layout}" />
-    <mkdir dir="${build.tmp}/default/peopl.zip" />
-    <mkdir dir="${build.tmp}/default/peopl.zip/peopl" />
-    <mkdir dir="${build.tmp}/default/peopl.zip/peopl/META-INF" />
-    <echoxml file="${build.tmp}/default/peopl.zip/peopl/META-INF/plugin.xml">
-      <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>peopl</id>
-        <name>peopl</name>
-        <version>1.0</version>
-        
-        <extensions defaultExtensionNs="com.intellij">
-          <mps.LanguageLibrary dir="/languages" />
-        </extensions>
-      </idea-plugin>
-    </echoxml>
-    <zip destfile="${build.layout}/peopl.zip">
-      <zipfileset file="${artifacts.dep}/dep.jar" prefix="peopl" />
-      <zipfileset file="${artifacts.core}/core.jar" prefix="peopl" />
-      <zipfileset file="${artifacts.peopl_mbeddr}/peopl_mbeddr.jar" prefix="peopl" />
-      <zipfileset file="${artifacts.util}/util.jar" prefix="peopl" />
-      <fileset dir="${build.tmp}/default/peopl.zip" />
-    </zip>
+    <mkdir dir="${build.tmp}/default/peopl.jar" />
+    <mkdir dir="${build.tmp}/default/peopl.jar/META-INF" />
+    <manifest file="${build.tmp}/default/peopl.jar/META-INF/MANIFEST.MF" />
+    <jar destfile="${build.layout}/peopl.jar" duplicate="preserve">
+      <zipfileset dir="${build.tmp}/deps/core/core.zip/core" prefix="core" />
+      <zipfileset dir="${build.tmp}/deps/dep/dep.zip/dep" prefix="dep" />
+      <zipfileset dir="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip/peopl_mbeddr" prefix="peopl_mbeddr" />
+      <zipfileset dir="${build.tmp}/deps/util/util.zip/util" prefix="util" />
+      <fileset dir="${build.tmp}/default/peopl.jar" />
+    </jar>
     <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}</echo>
   </target>
   
@@ -50,7 +39,16 @@
     <ant antfile="build.xml" inheritAll="false" useNativeBasedir="true" />
   </target>
   
-  <target name="fetchDependencies" />
+  <target name="fetchDependencies">
+    <mkdir dir="${build.tmp}/deps/core/core.zip" />
+    <unzip src="${artifacts.core}/core.zip" dest="${build.tmp}/deps/core/core.zip" />
+    <mkdir dir="${build.tmp}/deps/dep/dep.zip" />
+    <unzip src="${artifacts.dep}/dep.zip" dest="${build.tmp}/deps/dep/dep.zip" />
+    <mkdir dir="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
+    <unzip src="${artifacts.peopl_mbeddr}/peopl_mbeddr.zip" dest="${build.tmp}/deps/peopl_mbeddr/peopl_mbeddr.zip" />
+    <mkdir dir="${build.tmp}/deps/util/util.zip" />
+    <unzip src="${artifacts.util}/util.zip" dest="${build.tmp}/deps/util/util.zip" />
+  </target>
   
   <target name="build" depends="assemble" />
   
