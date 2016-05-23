@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build.peopl)" doNotGenerate="true">
+<model ref="r:ac0be95a-0b5c-4e63-aac0-f8bd3bdf335f(de.htwsaar.peopl.build.peopl)">
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
@@ -53,6 +53,9 @@
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
+      <concept id="841011766565753074" name="jetbrains.mps.build.structure.BuildLayout_Import" flags="ng" index="3_I8Xc">
+        <reference id="841011766565753076" name="target" index="3_I8Xa" />
+      </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
@@ -99,14 +102,26 @@
     </node>
     <node concept="55IIr" id="7UeLrSRMkPC" role="auvoZ" />
     <node concept="1l3spV" id="7UeLrSRMkPD" role="1l3spN">
-      <node concept="3981dG" id="7UeLrSRMkX3" role="39821P">
-        <node concept="3_J27D" id="7UeLrSRMkX4" role="Nbhlr">
-          <node concept="3Mxwew" id="7UeLrSRMkX5" role="3MwsjC">
-            <property role="3MwjfP" value="peopl.zip" />
+      <node concept="3981dG" id="2BAYpPoj_pk" role="39821P">
+        <node concept="m$_wl" id="2BAYpPoj_pm" role="39821P">
+          <ref role="m_rDy" node="7UeLrSRMkVK" resolve="peopl" />
+          <node concept="3_I8Xc" id="2BAYpPoj_pn" role="39821P">
+            <ref role="3_I8Xa" to="q0pl:2BAYpPoj$ZA" resolve="dep.jar" />
+          </node>
+          <node concept="3_I8Xc" id="2BAYpPoj_po" role="39821P">
+            <ref role="3_I8Xa" to="f4pb:2BAYpPoj$Xn" resolve="core" />
+          </node>
+          <node concept="3_I8Xc" id="2BAYpPoj_pp" role="39821P">
+            <ref role="3_I8Xa" to="a9xt:2BAYpPoj_5T" resolve="peopl_mbeddr.jar" />
+          </node>
+          <node concept="3_I8Xc" id="2BAYpPoj_pq" role="39821P">
+            <ref role="3_I8Xa" to="hvuf:2BAYpPoj_oH" resolve="util.jar" />
           </node>
         </node>
-        <node concept="m$_wl" id="7UeLrSRMkX6" role="39821P">
-          <ref role="m_rDy" node="7UeLrSRMkVK" resolve="peopl" />
+        <node concept="3_J27D" id="2BAYpPoj_pr" role="Nbhlr">
+          <node concept="3Mxwew" id="2BAYpPoj_ps" role="3MwsjC">
+            <property role="3MwjfP" value="peopl.zip" />
+          </node>
         </node>
       </node>
     </node>
@@ -125,9 +140,9 @@
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="7UeLrSRMkVw" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="2EkRjvM2VvN" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
-                    <node concept="2Ry0Ak" id="2EkRjvM2VvS" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6yV0l8ZjTap" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS 3.3.app" />
+                    <node concept="2Ry0Ak" id="6yV0l8ZjTau" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
@@ -149,6 +164,12 @@
     </node>
     <node concept="2sgV4H" id="310gtAXrruH" role="1l3spa">
       <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peopl_mbeddr" />
+    </node>
+    <node concept="2sgV4H" id="6yV0l8Zk1aa" role="1l3spa">
+      <ref role="1l3spb" to="q0pl:F_DJLMfAWN" resolve="dep" />
+    </node>
+    <node concept="2sgV4H" id="6yV0l8Zk1ao" role="1l3spa">
+      <ref role="1l3spb" to="hvuf:4RAsyl5PvM4" resolve="util" />
     </node>
   </node>
 </model>

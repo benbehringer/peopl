@@ -26,7 +26,7 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
-      <concept id="7389400916848050071" name="jetbrains.mps.build.structure.BuildLayout_Zip" flags="ng" index="3981dG" />
+      <concept id="7389400916848050074" name="jetbrains.mps.build.structure.BuildLayout_Jar" flags="ng" index="3981dx" />
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -462,13 +462,13 @@
     </node>
     <node concept="55IIr" id="3dzs$xJmzO7" role="auvoZ" />
     <node concept="1l3spV" id="3dzs$xJmzO8" role="1l3spN">
-      <node concept="3981dG" id="1iXSQxDJNdW" role="39821P">
-        <node concept="3_J27D" id="1iXSQxDJNdX" role="Nbhlr">
-          <node concept="3Mxwew" id="1iXSQxDJNdY" role="3MwsjC">
-            <property role="3MwjfP" value="core.zip" />
+      <node concept="3981dx" id="2BAYpPoj$Xn" role="39821P">
+        <node concept="3_J27D" id="2BAYpPoj$Xo" role="Nbhlr">
+          <node concept="3Mxwew" id="2BAYpPoj$XP" role="3MwsjC">
+            <property role="3MwjfP" value="core.jar" />
           </node>
         </node>
-        <node concept="m$_wl" id="1iXSQxDJNdZ" role="39821P">
+        <node concept="m$_wl" id="2BAYpPoj$XR" role="39821P">
           <ref role="m_rDy" node="6$EUgyMHd8q" resolve="core" />
         </node>
       </node>
@@ -488,9 +488,9 @@
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="7gYFWh7bwE5" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="3E5iobqS26e" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
-                    <node concept="2Ry0Ak" id="3E5iobqS277" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6yV0l8ZjTbL" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS 3.3.app" />
+                    <node concept="2Ry0Ak" id="6yV0l8ZjTcE" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
