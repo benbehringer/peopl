@@ -1267,14 +1267,14 @@
     </node>
     <node concept="55IIr" id="F_DJLMfAWO" role="auvoZ" />
     <node concept="1l3spV" id="F_DJLMfAWP" role="1l3spN">
-      <node concept="3981dG" id="F_DJLMfAYT" role="39821P">
-        <node concept="3_J27D" id="F_DJLMfAYV" role="Nbhlr">
-          <node concept="3Mxwew" id="F_DJLMfAYZ" role="3MwsjC">
+      <node concept="3981dG" id="5XBak60Dmn2" role="39821P">
+        <node concept="m$_wl" id="5XBak60Dmn6" role="39821P">
+          <ref role="m_rDy" node="F_DJLMfAY5" resolve="dep" />
+        </node>
+        <node concept="3_J27D" id="5XBak60Dmn4" role="Nbhlr">
+          <node concept="3Mxwew" id="5XBak60Dmn5" role="3MwsjC">
             <property role="3MwjfP" value="dep.zip" />
           </node>
-        </node>
-        <node concept="m$_wl" id="5kp5FYUdVlC" role="39821P">
-          <ref role="m_rDy" node="F_DJLMfAY5" resolve="dep" />
         </node>
       </node>
     </node>
@@ -1305,9 +1305,9 @@
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="3E5iobqS28v" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
-                    <node concept="2Ry0Ak" id="3E5iobqS28$" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="6yV0l8ZjTfO" role="2Ry0An">
+                    <property role="2Ry0Am" value="MPS 3.3.app" />
+                    <node concept="2Ry0Ak" id="6yV0l8ZjThF" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
