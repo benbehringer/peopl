@@ -16,16 +16,9 @@
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
-      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
-        <child id="1068498886297" name="rValue" index="37vLTx" />
-        <child id="1068498886295" name="lValue" index="37vLTJ" />
-      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
-        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
-      </concept>
-      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -33,25 +26,23 @@
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
+        <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
-        <property id="1068580320021" name="value" index="3cmrfH" />
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
-        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
-      </concept>
-      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -62,9 +53,19 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="2609645270097570911" name="de.htwsaar.peopl.core.structure.Wrappee" flags="ng" index="3lLJVk" />
+      <concept id="2609645270097215192" name="de.htwsaar.peopl.core.structure.Wrapper" flags="ng" index="3lQQLj">
+        <reference id="6962576431435524750" name="wrappee" index="1_Aa3I" />
+      </concept>
       <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
         <property id="8624758018078469788" name="chosenModuleLinkName" index="32Xqk$" />
         <reference id="3673167173362250418" name="chosenModule" index="a64iB" />
@@ -116,61 +117,127 @@
     <node concept="3GWJoq" id="50EEHoeR1t9" role="2abgUk">
       <property role="TrG5h" value="TestClass" />
       <node concept="2tJIrI" id="50EEHoeR1tw" role="jymVt" />
-      <node concept="3clFb_" id="50EEHoeR1tM" role="jymVt">
+      <node concept="3clFb_" id="5U55H7DBcQA" role="jymVt">
         <property role="1EzhhJ" value="false" />
-        <property role="TrG5h" value="foo" />
+        <property role="TrG5h" value="printOranges" />
         <property role="od$2w" value="false" />
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="50EEHoeR1tP" role="3clF47">
-          <node concept="2wexfA" id="50EEHoeR1tQ" role="3cqZAp">
-            <ref role="ojxm_" node="50EEHoeR1t9" resolve="TestClass" />
-            <ref role="ojxmB" node="50EEHoeR1tM" resolve="foo" />
-            <node concept="3clFbS" id="50EEHoeR1tR" role="9aQI4">
-              <node concept="3clFbH" id="50EEHoeR1ug" role="3cqZAp" />
-              <node concept="3cpWs8" id="50EEHoeR1vR" role="3cqZAp">
-                <node concept="3cpWsn" id="50EEHoeR1vU" role="3cpWs9">
-                  <property role="TrG5h" value="x" />
-                  <node concept="10Oyi0" id="50EEHoeR1vP" role="1tU5fm" />
+        <node concept="3clFbS" id="5U55H7DBcQD" role="3clF47">
+          <node concept="2wexfA" id="5U55H7DBcQG" role="3cqZAp">
+            <ref role="ojxmB" node="5U55H7DBcQA" resolve="printOranges" />
+            <node concept="3clFbS" id="5U55H7DBcQH" role="9aQI4">
+              <node concept="3clFbH" id="5U55H7DBcZT" role="3cqZAp" />
+              <node concept="3SKdUt" id="5U55H7DBcZG" role="3cqZAp">
+                <node concept="3SKdUq" id="5U55H7DBcZH" role="3SKWNk">
+                  <property role="3SKdUp" value="get some Oranges" />
                 </node>
               </node>
+              <node concept="3clFbH" id="5U55H7DBcZK" role="3cqZAp" />
+              <node concept="3clFbH" id="5U55H7DBcZO" role="3cqZAp" />
             </node>
-            <node concept="1V74GB" id="50EEHoeR1tS" role="lGtFl">
+            <node concept="1V74GB" id="5U55H7DBcQI" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_5776617308405110648" />
-              <ref role="1V74Hf" to="3ezn:50EEHoeR1tU" resolve="VPToFragment_5776617308405110650" />
-              <ref role="3aRQVk" to="3ezn:50EEHoeR1tV" resolve="ModuleToFragment_5776617308405110651" />
-              <ref role="a64iB" to="3ezn:50EEHoeR1t2" resolve="Base" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="50EEHoeR1ul" role="3cqZAp" />
-          <node concept="2wexfA" id="50EEHoeR1uY" role="3cqZAp">
-            <node concept="3clFbS" id="50EEHoeR1uZ" role="9aQI4">
-              <node concept="3clFbF" id="50EEHoeR1wg" role="3cqZAp">
-                <node concept="37vLTI" id="50EEHoeR1yY" role="3clFbG">
-                  <node concept="3cmrfG" id="50EEHoeR1zk" role="37vLTx">
-                    <property role="3cmrfH" value="0" />
-                  </node>
-                  <node concept="37vLTw" id="50EEHoeR1we" role="37vLTJ">
-                    <ref role="3cqZAo" node="50EEHoeR1vU" resolve="x" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1V74GB" id="50EEHoeR1v0" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_5776617308405110720" />
-              <ref role="1V74Hf" to="3ezn:50EEHoeR1v2" resolve="VPToFragment_5776617308405110722" />
-              <ref role="a64iB" to="3ezn:50EEHoeR1vs" resolve="Test" />
-              <ref role="3aRQVk" to="3ezn:50EEHoeR1vC" resolve="ModuleToFragment_5776617308405110760" />
+              <property role="TrG5h" value="Fragment_6810875102291086766" />
+              <ref role="1V74Hf" to="3ezn:5U55H7DBcQK" resolve="VPToFragment_6810875102291086768" />
+              <ref role="3aRQVk" to="3ezn:5U55H7DBcQL" resolve="ModuleToFragment_6810875102291086769" />
+              <ref role="a64iB" to="3ezn:5U55H7DBcMY" resolve="Orange" />
             </node>
           </node>
         </node>
-        <node concept="3Tm1VV" id="50EEHoeR1tD" role="1B3o_S" />
-        <node concept="3cqZAl" id="50EEHoeR1tK" role="3clF45" />
-        <node concept="ocbFV" id="50EEHoeR1ue" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_5776617308405110670" />
-          <ref role="ocbYS" node="50EEHoeR1tQ" />
+        <node concept="3Tm1VV" id="5U55H7DBcQ0" role="1B3o_S" />
+        <node concept="3cqZAl" id="5U55H7DBcQ$" role="3clF45" />
+        <node concept="1V74GB" id="5U55H7DBcQ3" role="lGtFl">
+          <property role="32Xqk$" value="chosenModule" />
+          <property role="TrG5h" value="Fragment_6810875102291086723" />
+          <ref role="1V74Hf" to="3ezn:5U55H7DBcQ5" resolve="VPToFragment_6810875102291086725" />
+          <ref role="3aRQVk" to="3ezn:5U55H7DBcQ6" resolve="ModuleToFragment_6810875102291086726" />
+          <ref role="a64iB" to="3ezn:5U55H7DBcMY" resolve="Orange" />
+        </node>
+        <node concept="ocbFV" id="5U55H7DBcQS" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_6810875102291086776" />
+          <ref role="ocbYS" node="5U55H7DBcQG" />
+        </node>
+        <node concept="37vLTG" id="5U55H7DBcRu" role="3clF46">
+          <property role="TrG5h" value="condition" />
+          <node concept="10P_77" id="5U55H7DBcRt" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="5U55H7DBcY0" role="jymVt" />
+      <node concept="2tJIrI" id="5U55H7DBcYA" role="jymVt" />
+      <node concept="3clFb_" id="5U55H7DBcP9" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="baseMehtod" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3clFbS" id="5U55H7DBcPc" role="3clF47">
+          <node concept="2wexfA" id="5U55H7DBcX9" role="3cqZAp">
+            <node concept="3clFbS" id="5U55H7DBcXa" role="9aQI4">
+              <node concept="3SKdUt" id="5U55H7DBcZt" role="3cqZAp">
+                <node concept="3SKdUq" id="5U55H7DBcZv" role="3SKWNk">
+                  <property role="3SKdUp" value="reorder breaks this code" />
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="5U55H7DBcXb" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_6810875102291087179" />
+              <ref role="1V74Hf" to="3ezn:5U55H7DBcXd" resolve="VPToFragment_6810875102291087181" />
+              <ref role="a64iB" to="3ezn:5U55H7DBcMY" resolve="Orange" />
+              <ref role="3aRQVk" to="3ezn:5U55H7DBcXV" resolve="ModuleToFragment_6810875102291087227" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="5U55H7DBcSV" role="3cqZAp">
+            <node concept="3clFbS" id="5U55H7DBcSW" role="3clFbx">
+              <node concept="2wexfA" id="5U55H7DBcWe" role="3cqZAp">
+                <node concept="3clFbS" id="5U55H7DBcWf" role="9aQI4">
+                  <node concept="3clFbH" id="5U55H7DBcW8" role="3cqZAp" />
+                </node>
+                <node concept="1V74GB" id="5U55H7DBcWg" role="lGtFl">
+                  <property role="32Xqk$" value="chosenModule" />
+                  <property role="TrG5h" value="Fragment_6810875102291087120" />
+                  <ref role="1V74Hf" to="3ezn:5U55H7DBcWi" resolve="VPToFragment_6810875102291087122" />
+                  <ref role="a64iB" to="3ezn:50EEHoeR1vs" resolve="Apfel" />
+                  <ref role="3aRQVk" to="3ezn:5U55H7DBcWO" resolve="ModuleToFragment_6810875102291087156" />
+                </node>
+              </node>
+              <node concept="3lLJVk" id="5U55H7DBcUq" role="lGtFl" />
+              <node concept="2wexfA" id="5U55H7DBcUs" role="3cqZAp">
+                <ref role="ojxm_" node="50EEHoeR1t9" resolve="TestClass" />
+                <ref role="ojxmB" node="5U55H7DBcP9" resolve="baseMehtod" />
+                <node concept="3clFbS" id="5U55H7DBcUt" role="9aQI4">
+                  <node concept="3clFbH" id="5U55H7DBcSX" role="3cqZAp" />
+                </node>
+                <node concept="1V74GB" id="5U55H7DBcUu" role="lGtFl">
+                  <property role="32Xqk$" value="chosenModule" />
+                  <property role="TrG5h" value="Fragment_6810875102291087006" />
+                  <ref role="1V74Hf" to="3ezn:5U55H7DBcUw" resolve="VPToFragment_6810875102291087008" />
+                  <ref role="3aRQVk" to="3ezn:5U55H7DBcUx" resolve="ModuleToFragment_6810875102291087009" />
+                  <ref role="a64iB" to="3ezn:50EEHoeR1t2" resolve="Base" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbT" id="5U55H7DBcU2" role="3clFbw">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="1V74GB" id="5U55H7DBcUl" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_6810875102291086997" />
+              <ref role="1V74Hf" to="3ezn:5U55H7DBcUn" resolve="VPToFragment_6810875102291086999" />
+              <ref role="a64iB" to="3ezn:50EEHoeR1vs" resolve="Apfel" />
+              <ref role="3aRQVk" to="3ezn:5U55H7DBcVF" resolve="ModuleToFragment_6810875102291087083" />
+            </node>
+            <node concept="3lQQLj" id="5U55H7DBcUp" role="lGtFl">
+              <ref role="1_Aa3I" node="5U55H7DBcUq" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="5U55H7DBcOQ" role="1B3o_S" />
+        <node concept="3cqZAl" id="5U55H7DBcP3" role="3clF45" />
+        <node concept="ocbFV" id="5U55H7DBcUA" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_6810875102291087014" />
+          <ref role="ocbYS" node="5U55H7DBcUs" />
         </node>
       </node>
       <node concept="2tJIrI" id="50EEHoeR1t_" role="jymVt" />
@@ -189,6 +256,13 @@
     <property role="TrG5h" value="Base::TestClass" />
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="3ezn:50EEHoeR1t2" resolve="Base" />
+    <ref role="HxVAD" node="50EEHoeR1t9" resolve="TestClass" />
+  </node>
+  <node concept="HxVAC" id="5U55H7DBcPN">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Orange::TestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="3ezn:5U55H7DBcMY" resolve="Orange" />
     <ref role="HxVAD" node="50EEHoeR1t9" resolve="TestClass" />
   </node>
 </model>
