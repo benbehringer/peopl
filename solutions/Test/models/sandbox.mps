@@ -78,7 +78,6 @@
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
       <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
       <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
@@ -204,7 +203,6 @@
               </node>
               <node concept="3lLJVk" id="5U55H7DBcUq" role="lGtFl" />
               <node concept="2wexfA" id="5U55H7DBcUs" role="3cqZAp">
-                <ref role="ojxm_" node="50EEHoeR1t9" resolve="TestClass" />
                 <ref role="ojxmB" node="5U55H7DBcP9" resolve="baseMehtod" />
                 <node concept="3clFbS" id="5U55H7DBcUt" role="9aQI4">
                   <node concept="3clFbH" id="5U55H7DBcSX" role="3cqZAp" />
@@ -212,9 +210,9 @@
                 <node concept="1V74GB" id="5U55H7DBcUu" role="lGtFl">
                   <property role="32Xqk$" value="chosenModule" />
                   <property role="TrG5h" value="Fragment_6810875102291087006" />
-                  <ref role="1V74Hf" to="3ezn:5U55H7DBcUw" resolve="VPToFragment_6810875102291087008" />
-                  <ref role="3aRQVk" to="3ezn:5U55H7DBcUx" resolve="ModuleToFragment_6810875102291087009" />
+                  <ref role="1V74Hf" to="3ezn:2zPN3Qx0qQS" resolve="VPToFragment_2951489695877541304" />
                   <ref role="a64iB" to="3ezn:50EEHoeR1t2" resolve="Base" />
+                  <ref role="3aRQVk" to="3ezn:2zPN3Qx0qRy" resolve="ModuleToFragment_2951489695877541346" />
                 </node>
               </node>
             </node>
@@ -235,8 +233,15 @@
         </node>
         <node concept="3Tm1VV" id="5U55H7DBcOQ" role="1B3o_S" />
         <node concept="3cqZAl" id="5U55H7DBcP3" role="3clF45" />
-        <node concept="ocbFV" id="5U55H7DBcUA" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_6810875102291087014" />
+        <node concept="1V74GB" id="2zPN3Qx0qQJ" role="lGtFl">
+          <property role="32Xqk$" value="chosenModule" />
+          <property role="TrG5h" value="Fragment_2951489695877541295" />
+          <ref role="1V74Hf" to="3ezn:2zPN3Qx0qQM" resolve="VPToFragment_2951489695877541298" />
+          <ref role="a64iB" to="3ezn:50EEHoeR1t2" resolve="Base" />
+          <ref role="3aRQVk" to="3ezn:2zPN3Qx0qRv" resolve="ModuleToFragment_2951489695877541343" />
+        </node>
+        <node concept="ocbFV" id="2zPN3Qx0qQK" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_2951489695877541296" />
           <ref role="ocbYS" node="5U55H7DBcUs" />
         </node>
       </node>
