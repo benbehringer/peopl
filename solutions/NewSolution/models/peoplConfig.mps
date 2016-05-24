@@ -93,10 +93,6 @@
       <property role="2_7Toi" value="40" />
       <property role="3_QSL4" value="19240" />
       <property role="TrG5h" value="Test" />
-      <node concept="3aRQSP" id="5uk6yqVzteu" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_6310697731510621086" />
-        <ref role="3aRQSO" to="svxk:5uk6yqVztef" resolve="Fragment_6310697731510621071" />
-      </node>
       <node concept="3aRQSP" id="5uk6yqVzuQn" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_6310697731510627735" />
         <ref role="3aRQSO" to="svxk:5uk6yqVzuOT" resolve="Fragment_6310697731510627641" />
@@ -108,13 +104,6 @@
         <node concept="1V74G$" id="5uk6yqVztcy" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_6310697731510620962" />
           <ref role="1V74G_" to="svxk:5uk6yqVztcv" resolve="Fragment_6310697731510620959" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="5uk6yqVzteg" role="2$Fqj6">
-        <property role="TrG5h" value="VP_6310697731510621072" />
-        <node concept="1V74G$" id="5uk6yqVzteh" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_6310697731510621073" />
-          <ref role="1V74G_" to="svxk:5uk6yqVztef" resolve="Fragment_6310697731510621071" />
         </node>
       </node>
       <node concept="1V74G3" id="5uk6yqVzuOU" role="2$Fqj6">
