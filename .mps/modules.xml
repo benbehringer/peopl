@@ -19,6 +19,7 @@
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/languages/mbeddr/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/solutions/ExternalLibraries/ExternalLibraries.msd" folder="caseStudies.source" />
       <modulePath path="$PROJECT_DIR$/solutions/GPL/GPL.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.source" />
