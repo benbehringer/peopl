@@ -166,7 +166,6 @@
               </node>
               <node concept="3clFbH" id="Jqmj05Mqk6" role="3cqZAp" />
               <node concept="3clFbH" id="Jqmj05MqqO" role="3cqZAp" />
-              <node concept="3clFbH" id="5s5oUMALtLO" role="3cqZAp" />
             </node>
             <node concept="1V74GB" id="5uk6yqVzuSi" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />

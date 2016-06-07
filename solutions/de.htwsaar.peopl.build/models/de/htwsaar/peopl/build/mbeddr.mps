@@ -1453,9 +1453,9 @@
                 <property role="2Ry0Am" value=".." />
                 <node concept="2Ry0Ak" id="4RAsyl5JUe8" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="6yV0l8ZjTr2" role="2Ry0An">
-                    <property role="2Ry0Am" value="MPS 3.3.app" />
-                    <node concept="2Ry0Ak" id="6yV0l8ZjTtU" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="4HgkuxiptkO" role="2Ry0An">
+                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <node concept="2Ry0Ak" id="4Hgkuxiptqv" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>

@@ -78,7 +78,6 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
-        <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -1455,15 +1454,8 @@
     </node>
     <node concept="2ScWuX" id="2xB8AYJhVVL" role="tmbBb">
       <node concept="3clFbS" id="2xB8AYJhVVM" role="2VODD2">
-        <node concept="3clFbJ" id="2xB8AYJhWdJ" role="3cqZAp">
-          <node concept="3clFbS" id="2xB8AYJhWdK" role="3clFbx">
-            <node concept="3cpWs6" id="2xB8AYJhWNL" role="3cqZAp">
-              <node concept="3clFbT" id="2xB8AYJhWR$" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="2xB8AYJhWzr" role="3clFbw">
+        <node concept="3clFbF" id="3C_SvKlOAqv" role="3cqZAp">
+          <node concept="2OqwBi" id="2xB8AYJhWzr" role="3clFbG">
             <node concept="2OqwBi" id="2xB8AYJhWio" role="2Oq$k0">
               <node concept="2WthIp" id="2xB8AYJhWfu" role="2Oq$k0" />
               <node concept="3gHZIF" id="2xB8AYJhWs6" role="2OqNvi">
@@ -1475,11 +1467,6 @@
                 <ref role="cht4Q" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="3cpWs6" id="2xB8AYJhX10" role="3cqZAp">
-          <node concept="3clFbT" id="2xB8AYJhX48" role="3cqZAk">
-            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -1649,7 +1636,6 @@
   </node>
   <node concept="tC5Ba" id="2xB8AYJ5_2H">
     <property role="TrG5h" value="ModulDefinition" />
-    <property role="2f7twF" value="New" />
     <property role="1XlLyE" value="true" />
     <property role="3GE5qa" value="ModuleDefinition" />
     <node concept="ftmFs" id="2xB8AYJ8u4h" role="ftER_">
