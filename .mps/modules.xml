@@ -24,7 +24,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.source" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaChat/JavaChat.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/solutions/NewSolution/NewSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.source" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />

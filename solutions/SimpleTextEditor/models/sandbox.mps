@@ -724,7 +724,7 @@
               <node concept="3clFbF" id="7Oe1Flaoq3J" role="3cqZAp">
                 <node concept="2OqwBi" id="7Oe1Flaoq57" role="3clFbG">
                   <node concept="Xjq3P" id="7Oe1Flaoq3H" role="2Oq$k0" />
-                  <node concept="liA8E" id="7Oe1Flaoq7l" role="2OqNvi">
+                  <node concept="liA8E" id="7NkODd_ZD$X" role="2OqNvi">
                     <ref role="37wK5l" node="7a6J9Uzi0JR" resolve="addStatistics" />
                   </node>
                 </node>
@@ -1020,7 +1020,7 @@
                   <node concept="3cpWs6" id="7a6J9Uzi0Py" role="3cqZAp" />
                 </node>
               </node>
-              <node concept="3clFbH" id="6vvBw0WXsTk" role="3cqZAp" />
+              <node concept="3clFbH" id="7NkODd_Z_b1" role="3cqZAp" />
               <node concept="3cpWs8" id="7a6J9Uzi0P$" role="3cqZAp">
                 <node concept="3cpWsn" id="7a6J9Uzi0Pz" role="3cpWs9">
                   <property role="3TUv4t" value="true" />
@@ -15340,6 +15340,13 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="byl9:Hs7vPomg0e" resolve="Multiple" />
     <ref role="HxVAD" node="Hs7vPotb$6" resolve="TextFieldMultiple" />
+  </node>
+  <node concept="HxVAC" id="6z7DsKWV$m7">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="LineWrap::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0t" resolve="LineWrap" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
   </node>
 </model>
 

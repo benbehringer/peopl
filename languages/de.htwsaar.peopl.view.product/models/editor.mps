@@ -1719,7 +1719,7 @@
     </node>
   </node>
   <node concept="312cEu" id="6bj2b$tH_xQ">
-    <property role="TrG5h" value="StatementList_AbstractCellProvider_Product" />
+    <property role="TrG5h" value="StatementList_productView_AbstractCellProvider" />
     <node concept="2tJIrI" id="6bj2b$tH_zo" role="jymVt" />
     <node concept="312cEg" id="6bj2b$tHCJ4" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1872,11 +1872,11 @@
           <node concept="3cpWsn" id="6CtlALKqxFj" role="3cpWs9">
             <property role="TrG5h" value="handler" />
             <node concept="3uibUv" id="6CtlALKqxFk" role="1tU5fm">
-              <ref role="3uigEE" node="6bj2b$tHLHh" resolve="StatementList_AbstractCellProvider_Product.StatementListHandler" />
+              <ref role="3uigEE" node="6bj2b$tHLHh" resolve="StatementList_productView_AbstractCellProvider.StatementListHandler" />
             </node>
             <node concept="2ShNRf" id="6CtlALKqyjE" role="33vP2m">
               <node concept="1pGfFk" id="6CtlALKqyEM" role="2ShVmc">
-                <ref role="37wK5l" node="6bj2b$tHLRD" resolve="StatementList_AbstractCellProvider_Product.StatementListHandler" />
+                <ref role="37wK5l" node="6bj2b$tHLRD" resolve="StatementList_productView_AbstractCellProvider.StatementListHandler" />
                 <node concept="37vLTw" id="6CtlALKqyHj" role="37wK5m">
                   <ref role="3cqZAo" node="6bj2b$tHCMx" resolve="myNode" />
                 </node>
@@ -3270,7 +3270,7 @@
           <node concept="3clFbF" id="6CtlALKpVzh" role="3cqZAp">
             <node concept="2ShNRf" id="6CtlALKpVzf" role="3clFbG">
               <node concept="1pGfFk" id="6CtlALKq9pP" role="2ShVmc">
-                <ref role="37wK5l" node="6bj2b$tHC_U" resolve="StatementList_AbstractCellProvider_Product" />
+                <ref role="37wK5l" node="6bj2b$tHC_U" resolve="StatementList_productView_AbstractCellProvider" />
                 <node concept="1Q80Hx" id="6CtlALKq9qv" role="37wK5m" />
                 <node concept="pncrf" id="6CtlALKq9sJ" role="37wK5m" />
               </node>
@@ -3444,7 +3444,7 @@
                 <node concept="3clFbF" id="67Zezm_sw_g" role="3cqZAp">
                   <node concept="2YIFZM" id="67Zezm_swEb" role="3clFbG">
                     <ref role="37wK5l" to="i3mx:7ASwjV8wzd3" resolve="findOrInputNextSiblingPeoplBlock" />
-                    <ref role="1Pybhc" to="i3mx:1jtqHQg7jAb" resolve="PeoplBlockPositionUtil" />
+                    <ref role="1Pybhc" to="i3mx:1jtqHQg7jAb" resolve="PeoplBlockPositionUtil_basicModularity" />
                     <node concept="1eOMI4" id="67Zezm_swEN" role="37wK5m">
                       <node concept="2OqwBi" id="67Zezm_swIw" role="1eOMHV">
                         <node concept="0IXxy" id="67Zezm_swF_" role="2Oq$k0" />
@@ -6759,7 +6759,7 @@
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
               <node concept="3clFbF" id="6D9nXFkiMPD" role="8Wnug">
                 <node concept="2YIFZM" id="6D9nXFkiNC_" role="3clFbG">
-                  <ref role="1Pybhc" to="i3mx:1jtqHQg7jAb" resolve="PeoplBlockPositionUtil" />
+                  <ref role="1Pybhc" to="i3mx:1jtqHQg7jAb" resolve="PeoplBlockPositionUtil_basicModularity" />
                   <ref role="37wK5l" to="i3mx:3GmnFE_N75N" resolve="createNewPeoplBlockAndAddStatement" />
                   <node concept="37vLTw" id="6D9nXFkiMPE" role="37wK5m">
                     <ref role="3cqZAo" node="6D9nXFkiMPT" resolve="entryPoint" />
