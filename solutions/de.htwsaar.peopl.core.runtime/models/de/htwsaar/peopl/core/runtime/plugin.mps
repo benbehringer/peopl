@@ -217,7 +217,7 @@
       <node concept="3clFbS" id="3jvpYJHKI2S" role="2VODD2">
         <node concept="3clFbF" id="2yX483RIw74" role="3cqZAp">
           <node concept="2YIFZM" id="2yX483RIw7u" role="3clFbG">
-            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProject" />
+            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProjectInEDT" />
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
             <node concept="1KvdUw" id="2yX483RIw7N" role="37wK5m" />
           </node>
@@ -229,7 +229,7 @@
         <node concept="3clFbF" id="2yX483RIw9M" role="3cqZAp">
           <node concept="2YIFZM" id="2yX483RIw9N" role="3clFbG">
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
-            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProject" />
+            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProjectInEDT" />
             <node concept="1KvdUw" id="2yX483RIw9O" role="37wK5m" />
           </node>
         </node>
@@ -241,45 +241,10 @@
     <property role="TrG5h" value="CleanUpHelper" />
     <node concept="2tJIrI" id="2yX483RIhb9" role="jymVt" />
     <node concept="2YIFZL" id="2yX483RIvuw" role="jymVt">
-      <property role="TrG5h" value="cleanUpProject" />
+      <property role="TrG5h" value="cleanUpProjectInEDT" />
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="2yX483RIhil" role="3clF47">
-        <node concept="3SKdUt" id="6hhB4Bxi2ep" role="3cqZAp">
-          <node concept="3SKdUq" id="6hhB4Bxi2er" role="3SKWNk">
-            <property role="3SKdUp" value="Clean Buffer with Vps" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2wh7ULXSR7i" role="3cqZAp">
-          <node concept="2OqwBi" id="2wh7ULXSRan" role="3clFbG">
-            <node concept="2OqwBi" id="2wh7ULXSR7k" role="2Oq$k0">
-              <node concept="37vLTw" id="2wh7ULXSR7l" role="2Oq$k0">
-                <ref role="3cqZAo" node="2yX483RIuJV" resolve="project" />
-              </node>
-              <node concept="liA8E" id="2wh7ULXSR7m" role="2OqNvi">
-                <ref role="37wK5l" to="z1c4:~Project.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
-              </node>
-            </node>
-            <node concept="liA8E" id="2wh7ULXSR_X" role="2OqNvi">
-              <ref role="37wK5l" to="lui2:~ModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
-              <node concept="1bVj0M" id="2wh7ULXSREa" role="37wK5m">
-                <node concept="3clFbS" id="2wh7ULXSREb" role="1bW5cS">
-                  <node concept="3clFbF" id="2wh7ULXSRFj" role="3cqZAp">
-                    <node concept="2OqwBi" id="2wh7ULXSRFk" role="3clFbG">
-                      <node concept="2YIFZM" id="2wh7ULXSRFl" role="2Oq$k0">
-                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
-                        <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
-                      </node>
-                      <node concept="liA8E" id="2wh7ULXSRFm" role="2OqNvi">
-                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="2wh7ULXSR51" role="3cqZAp" />
         <node concept="3SKdUt" id="2yX483RIada" role="3cqZAp">
           <node concept="3SKdUq" id="2yX483RIadc" role="3SKWNk">
@@ -300,6 +265,24 @@
               <ref role="37wK5l" to="lui2:~ModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
               <node concept="1bVj0M" id="2yX483RIuQP" role="37wK5m">
                 <node concept="3clFbS" id="2yX483RIuQQ" role="1bW5cS">
+                  <node concept="3SKdUt" id="6hhB4Bxi2ep" role="3cqZAp">
+                    <node concept="3SKdUq" id="6hhB4Bxi2er" role="3SKWNk">
+                      <property role="3SKdUp" value="Clean Buffer with Vps" />
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="5fMVxQdyjSa" role="3cqZAp" />
+                  <node concept="3clFbF" id="2wh7ULXSRFj" role="3cqZAp">
+                    <node concept="2OqwBi" id="2wh7ULXSRFk" role="3clFbG">
+                      <node concept="2YIFZM" id="2wh7ULXSRFl" role="2Oq$k0">
+                        <ref role="37wK5l" to="zur:4abErjGLj_X" resolve="getInstance" />
+                        <ref role="1Pybhc" to="zur:4abErjGLjj5" resolve="IntermediateNodesCache" />
+                      </node>
+                      <node concept="liA8E" id="2wh7ULXSRFm" role="2OqNvi">
+                        <ref role="37wK5l" to="zur:4abErjGM17s" resolve="clearAndDeleteObsoleteIntermediates" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="5fMVxQdyjVh" role="3cqZAp" />
                   <node concept="1X3_iC" id="4rXPXKI3rrW" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -545,7 +528,7 @@
       <node concept="3clFbS" id="2yX483RIDAk" role="2VODD2">
         <node concept="3clFbF" id="2yX483RIGPo" role="3cqZAp">
           <node concept="2YIFZM" id="2yX483RIGPW" role="3clFbG">
-            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProject" />
+            <ref role="37wK5l" node="2yX483RIvuw" resolve="cleanUpProjectInEDT" />
             <ref role="1Pybhc" node="2yX483RIhaV" resolve="CleanUpHelper" />
             <node concept="2OqwBi" id="2yX483RIHuc" role="37wK5m">
               <node concept="2WthIp" id="2yX483RIHuf" role="2Oq$k0" />

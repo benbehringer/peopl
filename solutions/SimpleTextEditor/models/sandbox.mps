@@ -747,8 +747,7 @@
           <ref role="ocbYS" node="Hs7vPora49" />
         </node>
       </node>
-      <node concept="2tJIrI" id="7Oe1FlaknH0" role="jymVt" />
-      <node concept="2tJIrI" id="Hs7vPomC2z" role="jymVt" />
+      <node concept="2tJIrI" id="1ZN8Bzhbbb2" role="jymVt" />
       <node concept="312cEg" id="7Oe1FlajAjy" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -1021,7 +1020,7 @@
                   <node concept="3cpWs6" id="7a6J9Uzi0Py" role="3cqZAp" />
                 </node>
               </node>
-              <node concept="3clFbH" id="7Oe1FlajOaG" role="3cqZAp" />
+              <node concept="3clFbH" id="6vvBw0WXsTk" role="3cqZAp" />
               <node concept="3cpWs8" id="7a6J9Uzi0P$" role="3cqZAp">
                 <node concept="3cpWsn" id="7a6J9Uzi0Pz" role="3cpWs9">
                   <property role="3TUv4t" value="true" />
@@ -1082,6 +1081,7 @@
                   <node concept="3cpWs6" id="7a6J9Uzi0PV" role="3cqZAp" />
                 </node>
               </node>
+              <node concept="3clFbH" id="4jDvwBNnvUm" role="3cqZAp" />
               <node concept="3clFbF" id="7a6J9Uzi0PW" role="3cqZAp">
                 <node concept="2OqwBi" id="7a6J9Uzi4eF" role="3clFbG">
                   <node concept="37vLTw" id="7a6J9Uzi4eE" role="2Oq$k0">
@@ -2008,6 +2008,8 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="19ERpjndwTt" role="3cqZAp" />
+              <node concept="3clFbH" id="19ERpjndwVg" role="3cqZAp" />
               <node concept="3clFbF" id="7a6J9Uzi0Gl" role="3cqZAp">
                 <node concept="2OqwBi" id="7a6J9Uzi0Gm" role="3clFbG">
                   <node concept="2OqwBi" id="7a6J9Uzi0Gn" role="2Oq$k0">
@@ -2117,7 +2119,7 @@
           <ref role="ocbYS" node="7Oe1FlalpsH" />
         </node>
       </node>
-      <node concept="2tJIrI" id="7Oe1FlamLiY" role="jymVt" />
+      <node concept="2tJIrI" id="1ZN8BzhblAn" role="jymVt" />
       <node concept="3clFb_" id="7a6J9Uzi0GR" role="jymVt">
         <property role="TrG5h" value="toggleHighlightCurrentLine" />
         <property role="DiZV1" value="false" />
@@ -2753,7 +2755,7 @@
           <ref role="ocbYS" node="7Oe1Flam1vR" />
         </node>
       </node>
-      <node concept="2tJIrI" id="7Oe1Flan0J_" role="jymVt" />
+      <node concept="2tJIrI" id="1ZN8Bzh8KO7" role="jymVt" />
       <node concept="3clFb_" id="7a6J9Uzi0Mz" role="jymVt">
         <property role="TrG5h" value="addLineWrap" />
         <property role="DiZV1" value="false" />
@@ -15317,6 +15319,27 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="byl9:Hs7vPomg03" resolve="Base" />
     <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="1ZN8Bzhb_Xv">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Single::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0b" resolve="Single" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="1ZN8Bzhb_Zl">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Multiple::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0e" resolve="Multiple" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="1ZN8Bzhb_ZL">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Multiple::TextFieldMultiple" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0e" resolve="Multiple" />
+    <ref role="HxVAD" node="Hs7vPotb$6" resolve="TextFieldMultiple" />
   </node>
 </model>
 
