@@ -6822,58 +6822,117 @@
         <node concept="3clFbH" id="1jtqHQfZc7z" role="3cqZAp" />
         <node concept="3clFbJ" id="1jtqHQfXwI5" role="3cqZAp">
           <node concept="3clFbS" id="1jtqHQfXwI6" role="3clFbx">
-            <node concept="3cpWs8" id="1jtqHQgoMlL" role="3cqZAp">
-              <node concept="3cpWsn" id="1jtqHQgoMlO" role="3cpWs9">
-                <property role="TrG5h" value="errorString" />
-                <node concept="10Q1$e" id="1jtqHQgoMn_" role="1tU5fm">
-                  <node concept="17QB3L" id="1jtqHQgoMlJ" role="10Q1$1" />
+            <node concept="3clFbJ" id="7NkODd_Zw6m" role="3cqZAp">
+              <node concept="3clFbS" id="7NkODd_Zw6o" role="3clFbx">
+                <node concept="3cpWs8" id="7NkODd_Zwg4" role="3cqZAp">
+                  <node concept="3cpWsn" id="7NkODd_Zwg5" role="3cpWs9">
+                    <property role="TrG5h" value="errorString" />
+                    <node concept="10Q1$e" id="7NkODd_Zwg6" role="1tU5fm">
+                      <node concept="17QB3L" id="7NkODd_Zwg7" role="10Q1$1" />
+                    </node>
+                    <node concept="2BsdOp" id="7NkODd_Zwg8" role="33vP2m">
+                      <node concept="Xl_RD" id="7NkODd_Zwga" role="2BsfMF">
+                        <property role="Xl_RC" value="Cause: No base code block detected." />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="2BsdOp" id="1jtqHQgoMpS" role="33vP2m">
-                  <node concept="3cpWs3" id="1jtqHQgoMHW" role="2BsfMF">
-                    <node concept="2OqwBi" id="1jtqHQgoNTK" role="3uHU7w">
-                      <node concept="2OqwBi" id="1jtqHQgoMWp" role="2Oq$k0">
-                        <node concept="37vLTw" id="1jtqHQgoMMj" role="2Oq$k0">
-                          <ref role="3cqZAo" node="1jtqHQg4n28" resolve="myMethodDeclaration" />
+                <node concept="3clFbF" id="7NkODd_Zwge" role="3cqZAp">
+                  <node concept="2OqwBi" id="7NkODd_Zwgf" role="3clFbG">
+                    <node concept="37vLTw" id="7NkODd_Zwgg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3Mm3FE9TFZ4" resolve="enclosingCell" />
+                    </node>
+                    <node concept="liA8E" id="7NkODd_Zwgh" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
+                      <node concept="2OqwBi" id="7NkODd_Zwgi" role="37wK5m">
+                        <node concept="37vLTw" id="7NkODd_Zwgj" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3Mm3FE9TFZj" resolve="handler" />
                         </node>
-                        <node concept="3CFZ6_" id="1jtqHQgoNjF" role="2OqNvi">
-                          <node concept="3CFYIy" id="1jtqHQgoNmr" role="3CFYIz">
-                            <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                        <node concept="liA8E" id="7NkODd_Zwgk" role="2OqNvi">
+                          <ref role="37wK5l" node="1jtqHQgojNP" resolve="createCustomErrorCell" />
+                          <node concept="37vLTw" id="7NkODd_Zwgl" role="37wK5m">
+                            <ref role="3cqZAo" node="3Mm3FE9TENh" resolve="myEditorContext" />
+                          </node>
+                          <node concept="37vLTw" id="7NkODd_Zwgm" role="37wK5m">
+                            <ref role="3cqZAo" node="3Mm3FE9TENk" resolve="myNode" />
+                          </node>
+                          <node concept="37vLTw" id="7NkODd_Zwgn" role="37wK5m">
+                            <ref role="3cqZAo" node="7NkODd_Zwg5" resolve="errorString" />
+                          </node>
+                          <node concept="3clFbT" id="7NkODd_Zwgo" role="37wK5m">
+                            <property role="3clFbU" value="false" />
                           </node>
                         </node>
                       </node>
-                      <node concept="34oBXx" id="1jtqHQgoQgW" role="2OqNvi" />
-                    </node>
-                    <node concept="Xl_RD" id="1jtqHQgoMri" role="3uHU7B">
-                      <property role="Xl_RC" value="Cause: Too many base code blocks (detected by reference): " />
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbF" id="1jtqHQfXC_B" role="3cqZAp">
-              <node concept="2OqwBi" id="1jtqHQfXC_C" role="3clFbG">
-                <node concept="37vLTw" id="1jtqHQfXC_D" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3Mm3FE9TFZ4" resolve="enclosingCell" />
+              <node concept="3clFbC" id="7NkODd_Zwe_" role="3clFbw">
+                <node concept="3cmrfG" id="7NkODd_ZwfE" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
                 </node>
-                <node concept="liA8E" id="1jtqHQfXC_E" role="2OqNvi">
-                  <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
-                  <node concept="2OqwBi" id="1jtqHQfXFoc" role="37wK5m">
-                    <node concept="37vLTw" id="1jtqHQfXFmW" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3Mm3FE9TFZj" resolve="handler" />
+                <node concept="37vLTw" id="7NkODd_Zw8A" role="3uHU7B">
+                  <ref role="3cqZAo" node="1jtqHQg0CEn" resolve="baseCodeBlockCount" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="7NkODd_Zx0A" role="9aQIa">
+                <node concept="3clFbS" id="7NkODd_Zx0B" role="9aQI4">
+                  <node concept="3cpWs8" id="1jtqHQgoMlL" role="3cqZAp">
+                    <node concept="3cpWsn" id="1jtqHQgoMlO" role="3cpWs9">
+                      <property role="TrG5h" value="errorString" />
+                      <node concept="10Q1$e" id="1jtqHQgoMn_" role="1tU5fm">
+                        <node concept="17QB3L" id="1jtqHQgoMlJ" role="10Q1$1" />
+                      </node>
+                      <node concept="2BsdOp" id="1jtqHQgoMpS" role="33vP2m">
+                        <node concept="3cpWs3" id="1jtqHQgoMHW" role="2BsfMF">
+                          <node concept="2OqwBi" id="1jtqHQgoNTK" role="3uHU7w">
+                            <node concept="2OqwBi" id="1jtqHQgoMWp" role="2Oq$k0">
+                              <node concept="37vLTw" id="7NkODd_Zx6B" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1jtqHQg4n28" resolve="myMethodDeclaration" />
+                              </node>
+                              <node concept="3CFZ6_" id="1jtqHQgoNjF" role="2OqNvi">
+                                <node concept="3CFYIy" id="1jtqHQgoNmr" role="3CFYIz">
+                                  <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="34oBXx" id="1jtqHQgoQgW" role="2OqNvi" />
+                          </node>
+                          <node concept="Xl_RD" id="1jtqHQgoMri" role="3uHU7B">
+                            <property role="Xl_RC" value="Cause: Too many base code blocks (detected by reference): " />
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="1jtqHQfXFsd" role="2OqNvi">
-                      <ref role="37wK5l" node="1jtqHQgojNP" resolve="createCustomErrorCell" />
-                      <node concept="37vLTw" id="1jtqHQfXFta" role="37wK5m">
-                        <ref role="3cqZAo" node="3Mm3FE9TENh" resolve="myEditorContext" />
+                  </node>
+                  <node concept="3clFbF" id="1jtqHQfXC_B" role="3cqZAp">
+                    <node concept="2OqwBi" id="1jtqHQfXC_C" role="3clFbG">
+                      <node concept="37vLTw" id="1jtqHQfXC_D" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3Mm3FE9TFZ4" resolve="enclosingCell" />
                       </node>
-                      <node concept="37vLTw" id="1jtqHQfXFvc" role="37wK5m">
-                        <ref role="3cqZAo" node="3Mm3FE9TENk" resolve="myNode" />
-                      </node>
-                      <node concept="37vLTw" id="1jtqHQgoMul" role="37wK5m">
-                        <ref role="3cqZAo" node="1jtqHQgoMlO" resolve="errorString" />
-                      </node>
-                      <node concept="3clFbT" id="1jtqHQgoMgq" role="37wK5m">
-                        <property role="3clFbU" value="false" />
+                      <node concept="liA8E" id="1jtqHQfXC_E" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~EditorCell_Collection.addEditorCell(jetbrains.mps.openapi.editor.cells.EditorCell):void" resolve="addEditorCell" />
+                        <node concept="2OqwBi" id="1jtqHQfXFoc" role="37wK5m">
+                          <node concept="37vLTw" id="1jtqHQfXFmW" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3Mm3FE9TFZj" resolve="handler" />
+                          </node>
+                          <node concept="liA8E" id="1jtqHQfXFsd" role="2OqNvi">
+                            <ref role="37wK5l" node="1jtqHQgojNP" resolve="createCustomErrorCell" />
+                            <node concept="37vLTw" id="1jtqHQfXFta" role="37wK5m">
+                              <ref role="3cqZAo" node="3Mm3FE9TENh" resolve="myEditorContext" />
+                            </node>
+                            <node concept="37vLTw" id="1jtqHQfXFvc" role="37wK5m">
+                              <ref role="3cqZAo" node="3Mm3FE9TENk" resolve="myNode" />
+                            </node>
+                            <node concept="37vLTw" id="1jtqHQgoMul" role="37wK5m">
+                              <ref role="3cqZAo" node="1jtqHQgoMlO" resolve="errorString" />
+                            </node>
+                            <node concept="3clFbT" id="1jtqHQgoMgq" role="37wK5m">
+                              <property role="3clFbU" value="false" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
