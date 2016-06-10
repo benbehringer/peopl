@@ -495,7 +495,7 @@
                     <node concept="1uHKPH" id="3vuvWVpGK2M" role="2OqNvi" />
                   </node>
                   <node concept="2qgKlT" id="3vuvWVpGK2N" role="2OqNvi">
-                    <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopy" />
+                    <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createAlternatives" />
                   </node>
                 </node>
               </node>
@@ -552,7 +552,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="3vuvWVpGK$n" role="2OqNvi">
-                        <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createSiblingsByCopy" />
+                        <ref role="37wK5l" to="kpvh:3osquR$6R4" resolve="createAlternatives" />
                       </node>
                     </node>
                   </node>
@@ -817,7 +817,7 @@
           <node concept="2OqwBi" id="3osquR_V7Q" role="3clFbG">
             <node concept="2OqwBi" id="3osquR_UXE" role="2Oq$k0">
               <node concept="35c_gC" id="3osquR_UMk" role="2Oq$k0">
-                <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
               </node>
               <node concept="2qgKlT" id="3osquR_V5K" role="2OqNvi">
                 <ref role="37wK5l" to="kpvh:62a2r2cwpXS" resolve="getVPDataStorage" />
@@ -922,7 +922,7 @@
               </node>
               <node concept="2OqwBi" id="3osquRAnXX" role="2Oq$k0">
                 <node concept="35c_gC" id="3osquRAnUZ" role="2Oq$k0">
-                  <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                  <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                 </node>
                 <node concept="2qgKlT" id="3osquRAo8g" role="2OqNvi">
                   <ref role="37wK5l" to="kpvh:62a2r2cwpXS" resolve="getVPDataStorage" />
@@ -1145,7 +1145,7 @@
                     </node>
                     <node concept="3CFZ6_" id="7VYDLKH$mLu" role="2OqNvi">
                       <node concept="3CFYIy" id="7VYDLKH$mLY" role="3CFYIz">
-                        <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                        <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                       </node>
                     </node>
                   </node>
@@ -1166,7 +1166,7 @@
                   </node>
                   <node concept="3CFZ6_" id="7VYDLKH_s4w" role="2OqNvi">
                     <node concept="3CFYIy" id="7VYDLKH_s50" role="3CFYIz">
-                      <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                      <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                     </node>
                   </node>
                 </node>
@@ -1185,7 +1185,7 @@
               </node>
               <node concept="3CFZ6_" id="7VYDLKH$mvH" role="2OqNvi">
                 <node concept="3CFYIy" id="7VYDLKH$mwQ" role="3CFYIz">
-                  <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                  <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                 </node>
               </node>
             </node>
@@ -1256,7 +1256,7 @@
               </node>
               <node concept="3CFZ6_" id="6HY7eyr$Opv" role="2OqNvi">
                 <node concept="3CFYIy" id="6HY7eyr$Opw" role="3CFYIz">
-                  <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabiliyDataStorage" />
+                  <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                 </node>
               </node>
             </node>
@@ -1616,7 +1616,7 @@
                   <ref role="3cqZAo" node="8lBKaMjdij" resolve="frame" />
                 </node>
                 <node concept="liA8E" id="8lBKaMjeQ6" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Window.getBackground():java.awt.Color" resolve="getBackground" />
+                  <ref role="37wK5l" to="z60i:~Component.getBackground():java.awt.Color" resolve="getBackground" />
                 </node>
               </node>
             </node>

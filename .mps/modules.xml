@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/RefEditor_TestLanguage/RefEditor_TestLanguage.mpl" folder="test" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core.config/de.htwsaar.peopl.core.config.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.dep.baselang/de.htwsaar.peopl.dep.baselang.mpl" folder="peopl.dep" />
@@ -26,7 +27,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/JavaChat/JavaChat.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/solutions/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.source" />
-      <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core" />
@@ -45,6 +45,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/solutions/mbeddr/org.apache.commons/org.apache.commons.msd" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/solutions/test/RefEditor_TestSolution/RefEditor_TestSolution.msd" folder="test" />
     </projectModules>
   </component>
 </project>

@@ -9063,8 +9063,8 @@
                               </node>
                             </node>
                             <node concept="10M0yZ" id="7a6J9Uzid2j" role="3uHU7w">
-                              <ref role="1PxDUh" node="7a6J9Uzi3eL" resolve="StyledTextExtended" />
                               <ref role="3cqZAo" node="7a6J9Uzi3eO" resolve="UNDO_LIMIT" />
+                              <ref role="1PxDUh" node="7a6J9Uzi3eL" resolve="StyledTextExtended" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="7a6J9Uzi2Jc" role="3clFbx">
