@@ -3665,8 +3665,8 @@
                               </node>
                               <node concept="3clFbC" id="47WRMVuSckK" role="3eO9$A">
                                 <node concept="Rm8GO" id="47WRMVuSckL" role="3uHU7w">
-                                  <ref role="Rm8GQ" node="47WRMVuScg_" resolve="NEXT_SIBLING" />
                                   <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
+                                  <ref role="Rm8GQ" node="47WRMVuScg_" resolve="NEXT_SIBLING" />
                                 </node>
                                 <node concept="37vLTw" id="47WRMVuSckM" role="3uHU7B">
                                   <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -3783,8 +3783,8 @@
                               </node>
                               <node concept="3clFbC" id="47WRMVuSclu" role="3eO9$A">
                                 <node concept="Rm8GO" id="47WRMVuSclv" role="3uHU7w">
-                                  <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                                   <ref role="Rm8GQ" node="47WRMVuScg$" resolve="PREVIOUS_SIBLING" />
+                                  <ref role="1Px2BO" node="47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
                                 </node>
                                 <node concept="37vLTw" id="47WRMVuSclw" role="3uHU7B">
                                   <ref role="3cqZAo" node="47WRMVuSchd" resolve="myHeightOrientation" />
@@ -3848,17 +3848,22 @@
                               <ref role="3cqZAo" node="19ERpjndNk6" resolve="rect_height" />
                             </node>
                           </node>
-                          <node concept="3eOVzh" id="7_KIRrGGfnv" role="3uHU7B">
-                            <node concept="37vLTw" id="7_KIRrGGeXm" role="3uHU7B">
-                              <ref role="3cqZAo" node="19ERpjndIgW" resolve="rect_y" />
+                          <node concept="22lmx$" id="1eEKog9SNOz" role="3uHU7B">
+                            <node concept="37vLTw" id="1eEKog9SO16" role="3uHU7B">
+                              <ref role="3cqZAo" node="1eEKog9SMI0" resolve="forceReload" />
                             </node>
-                            <node concept="3cmrfG" id="7_KIRrGGfs7" role="3uHU7w">
-                              <property role="3cmrfH" value="0" />
+                            <node concept="3eOVzh" id="7_KIRrGGfnv" role="3uHU7w">
+                              <node concept="37vLTw" id="7_KIRrGGeXm" role="3uHU7B">
+                                <ref role="3cqZAo" node="19ERpjndIgW" resolve="rect_y" />
+                              </node>
+                              <node concept="3cmrfG" id="7_KIRrGGfs7" role="3uHU7w">
+                                <property role="3cmrfH" value="0" />
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbH" id="19ERpjndPOC" role="3cqZAp" />
+                      <node concept="3clFbH" id="1eEKog9SWuP" role="3cqZAp" />
                       <node concept="3clFbJ" id="7_KIRrGGi8G" role="3cqZAp">
                         <node concept="3clFbS" id="7_KIRrGGi8I" role="3clFbx">
                           <node concept="3clFbJ" id="47WRMVuSclS" role="3cqZAp">
@@ -3938,8 +3943,8 @@
                             </node>
                             <node concept="3clFbC" id="47WRMVuScmn" role="3clFbw">
                               <node concept="Rm8GO" id="47WRMVuScmo" role="3uHU7w">
-                                <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                                 <ref role="Rm8GQ" node="47WRMVuScgv" resolve="ORIGINAL_CODE_BLOCK" />
+                                <ref role="1Px2BO" node="47WRMVuScgs" resolve="VerticalLineCellProvider.VerticalProvider_WidthOrientation" />
                               </node>
                               <node concept="37vLTw" id="47WRMVuScmp" role="3uHU7B">
                                 <ref role="3cqZAo" node="47WRMVuSch9" resolve="myWidthOrientation" />
@@ -4069,12 +4074,17 @@
                               <ref role="3cqZAo" node="19ERpjndLFd" resolve="rect_width" />
                             </node>
                           </node>
-                          <node concept="3eOVzh" id="7_KIRrGGj2V" role="3uHU7B">
-                            <node concept="37vLTw" id="7_KIRrGGiDa" role="3uHU7B">
-                              <ref role="3cqZAo" node="19ERpjndJXw" resolve="rect_x" />
+                          <node concept="22lmx$" id="1eEKog9SOX7" role="3uHU7B">
+                            <node concept="37vLTw" id="1eEKog9SVCq" role="3uHU7B">
+                              <ref role="3cqZAo" node="1eEKog9SMI0" resolve="forceReload" />
                             </node>
-                            <node concept="3cmrfG" id="7_KIRrGGjm$" role="3uHU7w">
-                              <property role="3cmrfH" value="0" />
+                            <node concept="3eOVzh" id="7_KIRrGGj2V" role="3uHU7w">
+                              <node concept="37vLTw" id="7_KIRrGGiDa" role="3uHU7B">
+                                <ref role="3cqZAo" node="19ERpjndJXw" resolve="rect_x" />
+                              </node>
+                              <node concept="3cmrfG" id="7_KIRrGGjm$" role="3uHU7w">
+                                <property role="3cmrfH" value="0" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -4082,6 +4092,10 @@
                     </node>
                     <node concept="3Tm6S6" id="7_KIRrGFYqj" role="1B3o_S" />
                     <node concept="3cqZAl" id="7_KIRrGFZd_" role="3clF45" />
+                    <node concept="37vLTG" id="1eEKog9SMI0" role="3clF46">
+                      <property role="TrG5h" value="forceReload" />
+                      <node concept="10P_77" id="1eEKog9SMHZ" role="1tU5fm" />
+                    </node>
                   </node>
                   <node concept="2tJIrI" id="7_KIRrGFX$J" role="jymVt" />
                   <node concept="3Tm1VV" id="47WRMVuScjs" role="1B3o_S" />
@@ -4163,6 +4177,9 @@
                       <node concept="3clFbF" id="7_KIRrGG1rM" role="3cqZAp">
                         <node concept="1rXfSq" id="7_KIRrGG1rK" role="3clFbG">
                           <ref role="37wK5l" node="7_KIRrGFZdB" resolve="calculateRect" />
+                          <node concept="3clFbT" id="1eEKog9SWW8" role="37wK5m">
+                            <property role="3clFbU" value="true" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3clFbF" id="47WRMVuSclM" role="3cqZAp">
@@ -4224,6 +4241,9 @@
                       <node concept="3clFbF" id="7_KIRrGG3$1" role="3cqZAp">
                         <node concept="1rXfSq" id="7_KIRrGG3zZ" role="3clFbG">
                           <ref role="37wK5l" node="7_KIRrGFZdB" resolve="calculateRect" />
+                          <node concept="3clFbT" id="1eEKog9SX1i" role="37wK5m">
+                            <property role="3clFbU" value="false" />
+                          </node>
                         </node>
                       </node>
                       <node concept="3cpWs6" id="5ryw39vOE76" role="3cqZAp">
