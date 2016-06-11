@@ -3896,7 +3896,6 @@
               <ref role="3aRQVk" to="byl9:7Oe1Flaj4ks" resolve="ModuleToFragment_9011147280120300828" />
             </node>
           </node>
-          <node concept="3clFbH" id="7Oe1FlaiWUM" role="3cqZAp" />
         </node>
         <node concept="3Tm6S6" id="7a6J9Uzi0Ao" role="1B3o_S" />
         <node concept="3uibUv" id="Hs7vPor7PO" role="3clF45">
@@ -15350,6 +15349,13 @@
     <property role="TrG5h" value="LineWrap::SimpleTextEditor" />
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="byl9:Hs7vPomg0t" resolve="LineWrap" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="7EPRUWqvjZD">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="HighlightCurrentLine::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0i" resolve="HighlightCurrentLine" />
     <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
   </node>
 </model>
