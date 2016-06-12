@@ -88,9 +88,7 @@
       <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
-      </concept>
+      <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia" />
       <concept id="1168559333462" name="jetbrains.mps.lang.generator.structure.TemplateDeclarationReference" flags="ln" index="j$656" />
       <concept id="1095672379244" name="jetbrains.mps.lang.generator.structure.TemplateFragment" flags="ng" index="raruj" />
       <concept id="1722980698497626400" name="jetbrains.mps.lang.generator.structure.ITemplateCall" flags="ng" index="v9R3L">
@@ -135,6 +133,13 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -288,10 +293,14 @@
   </node>
   <node concept="bUwia" id="3fgD4aXe6ZS">
     <property role="TrG5h" value="secondGeneration" />
-    <node concept="3aamgX" id="3fgD4aXe72g" role="3acgRq">
-      <ref role="30HIoZ" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
-      <node concept="j$656" id="3fgD4aXe72k" role="1lVwrX">
-        <ref role="v9R2y" node="1hL$JiA$Ejl" resolve="reduce_Placeholder" />
+    <node concept="1X3_iC" id="30M33u_3bfy" role="lGtFl">
+      <property role="3V$3am" value="reductionMappingRule" />
+      <property role="3V$3ak" value="b401a680-8325-4110-8fd3-84331ff25bef/1095416546421/1167328349397" />
+      <node concept="3aamgX" id="3fgD4aXe72g" role="8Wnug">
+        <ref role="30HIoZ" to="xf8r:2LgBOmLVkOn" resolve="Placeholder" />
+        <node concept="j$656" id="3fgD4aXe72k" role="1lVwrX">
+          <ref role="v9R2y" node="1hL$JiA$Ejl" resolve="reduce_Placeholder" />
+        </node>
       </node>
     </node>
   </node>
