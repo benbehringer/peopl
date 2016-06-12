@@ -63,6 +63,18 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="xf8r:6K8EDSn5e6t" resolve="VP" />
     </node>
+    <node concept="1TJgyj" id="29y0x5eCgpF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="vpIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="29y0x5eCgpK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="moduleIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
+    </node>
     <node concept="1TJgyj" id="2aku2wRhk$5" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="node" />
