@@ -36,6 +36,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -89,6 +90,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -217,7 +219,13 @@
   <node concept="18kY7G" id="62a2r2cyixO">
     <property role="TrG5h" value="check_ModuleExpression" />
     <property role="18ip37" value="true" />
-    <node concept="3clFbS" id="62a2r2cyixP" role="18ibNy" />
+    <node concept="3clFbS" id="62a2r2cyixP" role="18ibNy">
+      <node concept="3SKdUt" id="3M$6oZspaAj" role="3cqZAp">
+        <node concept="3SKdUq" id="3M$6oZspaAk" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: forgot why this is necessary! Do we actually need this inference rule?" />
+        </node>
+      </node>
+    </node>
     <node concept="1YaCAy" id="62a2r2cyi_2" role="1YuTPh">
       <property role="TrG5h" value="moduleExpression" />
       <ref role="1YaFvo" to="sj65:4NJLQZxDJZU" resolve="ModuleExpression" />
@@ -225,7 +233,13 @@
   </node>
   <node concept="1YbPZF" id="62a2r2cyTW7">
     <property role="TrG5h" value="typeof_Operation" />
-    <node concept="3clFbS" id="62a2r2cyTW8" role="18ibNy" />
+    <node concept="3clFbS" id="62a2r2cyTW8" role="18ibNy">
+      <node concept="3SKdUt" id="3M$6oZspaA6" role="3cqZAp">
+        <node concept="3SKdUq" id="3M$6oZspaA7" role="3SKWNk">
+          <property role="3SKdUp" value="TODO: forgot why this is necessary! Do we actually need this inference rule?" />
+        </node>
+      </node>
+    </node>
     <node concept="1YaCAy" id="62a2r2cyU1z" role="1YuTPh">
       <property role="TrG5h" value="operation" />
       <ref role="1YaFvo" to="sj65:_uCk0nlSop" resolve="Operation" />
@@ -436,15 +450,23 @@
                 </node>
               </node>
             </node>
-            <node concept="3eOSWO" id="ZjMUSFCMmk" role="3clFbw">
-              <node concept="3cmrfG" id="ZjMUSFCMpg" role="3uHU7w">
-                <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2OqwBi" id="ZjMUSFCLwD" role="3uHU7B">
-                <node concept="37vLTw" id="ZjMUSFCLp7" role="2Oq$k0">
+            <node concept="1Wc70l" id="3M$6oZsoUYu" role="3clFbw">
+              <node concept="3y3z36" id="3M$6oZsoVc6" role="3uHU7B">
+                <node concept="10Nm6u" id="3M$6oZsoVec" role="3uHU7w" />
+                <node concept="37vLTw" id="3M$6oZsoV4F" role="3uHU7B">
                   <ref role="3cqZAo" node="4pmlLVvWN3O" resolve="providers" />
                 </node>
-                <node concept="34oBXx" id="ZjMUSFCM7o" role="2OqNvi" />
+              </node>
+              <node concept="3eOSWO" id="ZjMUSFCMmk" role="3uHU7w">
+                <node concept="3cmrfG" id="ZjMUSFCMpg" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="ZjMUSFCLwD" role="3uHU7B">
+                  <node concept="37vLTw" id="ZjMUSFCLp7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4pmlLVvWN3O" resolve="providers" />
+                  </node>
+                  <node concept="34oBXx" id="ZjMUSFCM7o" role="2OqNvi" />
+                </node>
               </node>
             </node>
           </node>

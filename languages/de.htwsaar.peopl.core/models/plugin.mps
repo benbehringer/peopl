@@ -128,6 +128,7 @@
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -1925,6 +1926,29 @@
       <node concept="3Tm6S6" id="6D3NPsjbEtL" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6D3NPsjbEtM" role="jymVt" />
+    <node concept="312cEg" id="1sCUscXN836" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="rebuildActive" />
+      <property role="3TUv4t" value="false" />
+      <node concept="10P_77" id="1sCUscXN7jz" role="1tU5fm" />
+      <node concept="3clFbT" id="1sCUscXN8MW" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+      <node concept="3Tm6S6" id="1sCUscXN8Nd" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="1sCUscXNmqE" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="showDependenciesInEditors" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1sCUscXNlEQ" role="1B3o_S" />
+      <node concept="10P_77" id="1sCUscXNmqC" role="1tU5fm" />
+      <node concept="3clFbT" id="1sCUscXNn8v" role="33vP2m">
+        <property role="3clFbU" value="false" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1sCUscXN6iF" role="jymVt" />
     <node concept="1X3_iC" id="79EctEV5Ey1" role="lGtFl">
       <property role="3V$3am" value="member" />
       <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
@@ -2133,7 +2157,151 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6D3NPsjbEkg" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXNpxB" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="canRebuild" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXNpxE" role="3clF47">
+        <node concept="3clFbF" id="1sCUscXNrBW" role="3cqZAp">
+          <node concept="37vLTw" id="1sCUscXNrBV" role="3clFbG">
+            <ref role="3cqZAo" node="1sCUscXN836" resolve="rebuildActive" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXNoNL" role="1B3o_S" />
+      <node concept="10P_77" id="1sCUscXNpxt" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1sCUscXNo2Q" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXNcmq" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="activateRebuild" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXNcmt" role="3clF47">
+        <node concept="3clFbF" id="1sCUscXNdHe" role="3cqZAp">
+          <node concept="37vLTI" id="1sCUscXNf8k" role="3clFbG">
+            <node concept="3clFbT" id="1sCUscXNf9e" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="37vLTw" id="1sCUscXNdHd" role="37vLTJ">
+              <ref role="3cqZAo" node="1sCUscXN836" resolve="rebuildActive" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXNbDV" role="1B3o_S" />
+      <node concept="3cqZAl" id="1sCUscXNd5S" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1sCUscXNf9J" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXNhdU" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="deactivateRebuild" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXNhdX" role="3clF47">
+        <node concept="3clFbJ" id="1sCUscXPchY" role="3cqZAp">
+          <node concept="3clFbS" id="1sCUscXPci0" role="3clFbx">
+            <node concept="3clFbF" id="1sCUscXNhVb" role="3cqZAp">
+              <node concept="37vLTI" id="1sCUscXNhXR" role="3clFbG">
+                <node concept="3clFbT" id="1sCUscXNhYL" role="37vLTx">
+                  <property role="3clFbU" value="false" />
+                </node>
+                <node concept="37vLTw" id="1sCUscXNhVa" role="37vLTJ">
+                  <ref role="3cqZAo" node="1sCUscXN836" resolve="rebuildActive" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="1sCUscXPck7" role="3clFbw">
+            <node concept="37vLTw" id="1sCUscXPck9" role="3fr31v">
+              <ref role="3cqZAo" node="1sCUscXNmqE" resolve="showDependenciesInEditors" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXNgxQ" role="1B3o_S" />
+      <node concept="3cqZAl" id="1sCUscXNhdS" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="1gAlcvBNnm3" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXNXMw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="showDependenciesInEditors" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXNXMz" role="3clF47">
+        <node concept="3clFbF" id="1sCUscXNYwZ" role="3cqZAp">
+          <node concept="37vLTw" id="1sCUscXNYwY" role="3clFbG">
+            <ref role="3cqZAo" node="1sCUscXNmqE" resolve="showDependenciesInEditors" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXNVb6" role="1B3o_S" />
+      <node concept="10P_77" id="1sCUscXNVSP" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1sCUscXNUte" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXNjyO" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="enableShowDependenciesInEditors" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXNjyR" role="3clF47">
+        <node concept="3clFbF" id="1sCUscXNn9t" role="3cqZAp">
+          <node concept="37vLTI" id="1sCUscXNnc9" role="3clFbG">
+            <node concept="3clFbT" id="1sCUscXO1LH" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="37vLTw" id="1sCUscXNn9s" role="37vLTJ">
+              <ref role="3cqZAo" node="1sCUscXNmqE" resolve="showDependenciesInEditors" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="1sCUscXPcgg" role="3cqZAp">
+          <node concept="3SKdUq" id="1sCUscXPcgh" role="3SKWNk">
+            <property role="3SKdUp" value="when we show dependencies in the editor, we also need to rebuild during runtime (i.e. in case of changes)" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1sCUscXPcfK" role="3cqZAp">
+          <node concept="1rXfSq" id="1sCUscXPcfI" role="3clFbG">
+            <ref role="37wK5l" node="1sCUscXNcmq" resolve="activateRebuild" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXNiM9" role="1B3o_S" />
+      <node concept="3cqZAl" id="1sCUscXNjy3" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1sCUscXNi59" role="jymVt" />
+    <node concept="3clFb_" id="1sCUscXO3k8" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="disableShowDependenciesInEditors" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1sCUscXO3k9" role="3clF47">
+        <node concept="3clFbF" id="1sCUscXO3ka" role="3cqZAp">
+          <node concept="37vLTI" id="1sCUscXO3kb" role="3clFbG">
+            <node concept="3clFbT" id="1sCUscXO3kc" role="37vLTx" />
+            <node concept="37vLTw" id="1sCUscXO3kd" role="37vLTJ">
+              <ref role="3cqZAo" node="1sCUscXNmqE" resolve="showDependenciesInEditors" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1sCUscXPcgM" role="3cqZAp">
+          <node concept="1rXfSq" id="1sCUscXPcgK" role="3clFbG">
+            <ref role="37wK5l" node="1sCUscXNhdU" resolve="deactivateRebuild" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1sCUscXO3ke" role="1B3o_S" />
+      <node concept="3cqZAl" id="1sCUscXO3kf" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="1sCUscXO2z_" role="jymVt" />
+    <node concept="2tJIrI" id="1sCUscXO1Me" role="jymVt" />
     <node concept="3clFb_" id="1gAlcvBNoMm" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addReferenceDependency" />
