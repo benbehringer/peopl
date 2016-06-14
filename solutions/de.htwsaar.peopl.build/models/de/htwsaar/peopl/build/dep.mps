@@ -72,6 +72,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -111,22 +112,22 @@
   </registry>
   <node concept="1l3spW" id="F_DJLMfAWN">
     <property role="2DA0ip" value="../.." />
-    <property role="TrG5h" value="dep" />
+    <property role="TrG5h" value="peoplBaseLanguageExtension" />
     <node concept="m$_wf" id="F_DJLMfAY5" role="3989C9">
-      <property role="m$_wk" value="dep" />
+      <property role="m$_wk" value="peoplBaseLanguageExtension" />
       <node concept="3_J27D" id="F_DJLMfAY7" role="m_cZH">
         <node concept="3Mxwew" id="F_DJLMfAYj" role="3MwsjC">
-          <property role="3MwjfP" value="dep" />
+          <property role="3MwjfP" value="peoplBaseLanguageExtension" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAY9" role="m$_w8">
         <node concept="3Mxwew" id="F_DJLMfAYl" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
         <node concept="3Mxwew" id="F_DJLMfAYh" role="3MwsjC">
-          <property role="3MwjfP" value="dep" />
+          <property role="3MwjfP" value="PEoPL baselanguage extension" />
         </node>
       </node>
       <node concept="m$f5U" id="5kp5FYUdN7g" role="m$_yh">
@@ -139,10 +140,15 @@
         <ref role="m$f5T" node="4RAsyl5PvNp" resolve="dep.view.projectview" />
       </node>
       <node concept="m$_yC" id="5kp5FYUdNe9" role="m$_yJ">
-        <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="core" />
+        <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="peoplCore" />
       </node>
       <node concept="m$_yC" id="5kp5FYUdNg0" role="m$_yJ">
-        <ref role="m$_y1" to="a9xt:4RAsyl5JUem" resolve="peopl_mbeddr" />
+        <ref role="m$_y1" to="a9xt:4RAsyl5JUem" resolve="peoplMbeddrPluginsBundle" />
+      </node>
+      <node concept="3_J27D" id="6$Z0QXuTVY2" role="3s6cr7">
+        <node concept="3Mxwew" id="6$Z0QXuTVY4" role="3MwsjC">
+          <property role="3MwjfP" value="A set of additions to PEoPL's core based on MPS baselanguage. For instance, adding support for views and better editing experience." />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="F_DJLMfAYF" role="3989C9">
@@ -1269,11 +1275,11 @@
     <node concept="1l3spV" id="F_DJLMfAWP" role="1l3spN">
       <node concept="3981dG" id="5XBak60Dmn2" role="39821P">
         <node concept="m$_wl" id="5XBak60Dmn6" role="39821P">
-          <ref role="m_rDy" node="F_DJLMfAY5" resolve="dep" />
+          <ref role="m_rDy" node="F_DJLMfAY5" resolve="peoplBaseLanguageExtension" />
         </node>
         <node concept="3_J27D" id="5XBak60Dmn4" role="Nbhlr">
           <node concept="3Mxwew" id="5XBak60Dmn5" role="3MwsjC">
-            <property role="3MwjfP" value="dep.zip" />
+            <property role="3MwjfP" value="peoplBaseLanguageExtension.zip" />
           </node>
         </node>
       </node>
@@ -1287,10 +1293,10 @@
       </node>
     </node>
     <node concept="2sgV4H" id="5kp5FYUdNp5" role="1l3spa">
-      <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="core" />
+      <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="peoplCore" />
     </node>
     <node concept="2sgV4H" id="5kp5FYUdNr1" role="1l3spa">
-      <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peopl_mbeddr" />
+      <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peoplMbeddrPluginsBundle" />
     </node>
     <node concept="398rNT" id="5kp5FYUd_wi" role="1l3spd">
       <property role="TrG5h" value="mps_home_dep" />

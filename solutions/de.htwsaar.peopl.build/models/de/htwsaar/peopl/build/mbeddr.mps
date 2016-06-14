@@ -123,12 +123,12 @@
   </registry>
   <node concept="1l3spW" id="4RAsyl5JUdx">
     <property role="2DA0ip" value="../.." />
-    <property role="TrG5h" value="peopl_mbeddr" />
+    <property role="TrG5h" value="peoplMbeddrPluginsBundle" />
     <node concept="m$_wf" id="4RAsyl5JUem" role="3989C9">
-      <property role="m$_wk" value="peopl_mbeddr" />
+      <property role="m$_wk" value="peoplMbeddrPluginsBundle" />
       <node concept="3_J27D" id="4RAsyl5JUeo" role="m_cZH">
         <node concept="3Mxwew" id="4RAsyl5JUe$" role="3MwsjC">
-          <property role="3MwjfP" value="peopl_mbeddr" />
+          <property role="3MwjfP" value="peoplMbeddrPluginsBundle" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5JUeq" role="m$_w8">
@@ -138,7 +138,7 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5JUes" role="m$_yQ">
         <node concept="3Mxwew" id="4RAsyl5JUeC" role="3MwsjC">
-          <property role="3MwjfP" value="peopl_mbeddr" />
+          <property role="3MwjfP" value="PEoPL-mbeddr plugin bundle" />
         </node>
       </node>
       <node concept="m$f5U" id="4RAsyl5JWcS" role="m$_yh">
@@ -1312,7 +1312,7 @@
     <node concept="1l3spV" id="4RAsyl5JUdz" role="1l3spN">
       <node concept="3981dG" id="5XBak60DmqR" role="39821P">
         <node concept="m$_wl" id="5XBak60DmqV" role="39821P">
-          <ref role="m_rDy" node="4RAsyl5JUem" resolve="peopl_mbeddr" />
+          <ref role="m_rDy" node="4RAsyl5JUem" resolve="peoplMbeddrPluginsBundle" />
           <node concept="398223" id="5XBak60DmqW" role="39821P">
             <node concept="3_J27D" id="5XBak60DmqX" role="Nbhlr">
               <node concept="3Mxwew" id="5XBak60DmqY" role="3MwsjC">
@@ -1433,7 +1433,7 @@
         </node>
         <node concept="3_J27D" id="5XBak60DmqT" role="Nbhlr">
           <node concept="3Mxwew" id="5XBak60DmqU" role="3MwsjC">
-            <property role="3MwjfP" value="peopl_mbeddr.zip" />
+            <property role="3MwjfP" value="peoplMbeddrPluginsBundle.zip" />
           </node>
         </node>
       </node>

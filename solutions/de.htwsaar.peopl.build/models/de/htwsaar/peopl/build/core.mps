@@ -70,6 +70,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -113,22 +114,22 @@
   </registry>
   <node concept="1l3spW" id="3dzs$xJmzO6">
     <property role="2DA0ip" value="../../" />
-    <property role="TrG5h" value="core" />
+    <property role="TrG5h" value="peoplCore" />
     <node concept="m$_wf" id="6$EUgyMHd8q" role="3989C9">
-      <property role="m$_wk" value="core" />
+      <property role="m$_wk" value="peoplCore" />
       <node concept="3_J27D" id="6$EUgyMHd8s" role="m_cZH">
         <node concept="3Mxwew" id="6$EUgyMHdbk" role="3MwsjC">
-          <property role="3MwjfP" value="core" />
+          <property role="3MwjfP" value="peoplCore" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
         <node concept="3Mxwew" id="6$EUgyMHdaS" role="3MwsjC">
-          <property role="3MwjfP" value="core" />
+          <property role="3MwjfP" value="PEoPL core" />
         </node>
       </node>
       <node concept="m$f5U" id="6$EUgyMHdbQ" role="m$_yh">
@@ -136,6 +137,11 @@
       </node>
       <node concept="m$_yC" id="6$EUgyMHdeY" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4O0hKJpjIV3" resolve="jetbrains.mps.ide.devkit" />
+      </node>
+      <node concept="3_J27D" id="6$Z0QXuTVX5" role="3s6cr7">
+        <node concept="3Mxwew" id="6$Z0QXuTVX7" role="3MwsjC">
+          <property role="3MwjfP" value="PEoPL's core, which allows adding variability to arbitrary ASTs." />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3dzs$xJmzUb" role="3989C9">
@@ -470,11 +476,11 @@
     <node concept="1l3spV" id="3dzs$xJmzO8" role="1l3spN">
       <node concept="3981dG" id="5XBak60DmlA" role="39821P">
         <node concept="m$_wl" id="5XBak60DmlE" role="39821P">
-          <ref role="m_rDy" node="6$EUgyMHd8q" resolve="core" />
+          <ref role="m_rDy" node="6$EUgyMHd8q" resolve="peoplCore" />
         </node>
         <node concept="3_J27D" id="5XBak60DmlC" role="Nbhlr">
           <node concept="3Mxwew" id="5XBak60DmlD" role="3MwsjC">
-            <property role="3MwjfP" value="core.zip" />
+            <property role="3MwjfP" value="peoplCore.zip" />
           </node>
         </node>
       </node>

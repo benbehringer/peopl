@@ -112,7 +112,7 @@
   </registry>
   <node concept="1l3spW" id="4RAsyl5PvM4">
     <property role="2DA0ip" value="../.." />
-    <property role="TrG5h" value="util" />
+    <property role="TrG5h" value="peoplUtils" />
     <node concept="2sgV4H" id="6y6YKC7CHTt" role="1l3spa">
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="6y6YKC7CHUC" role="2JcizS">
@@ -123,11 +123,11 @@
     <node concept="1l3spV" id="4RAsyl5PvM6" role="1l3spN">
       <node concept="3981dG" id="5XBak60Dmvm" role="39821P">
         <node concept="m$_wl" id="5XBak60Dmvo" role="39821P">
-          <ref role="m_rDy" node="4RAsyl5PvN2" resolve="util" />
+          <ref role="m_rDy" node="4RAsyl5PvN2" resolve="peoplUtils" />
         </node>
         <node concept="3_J27D" id="5XBak60Dmvp" role="Nbhlr">
           <node concept="3Mxwew" id="5XBak60Dmvq" role="3MwsjC">
-            <property role="3MwjfP" value="util.zip" />
+            <property role="3MwjfP" value="peoplUtils.zip" />
           </node>
         </node>
       </node>
@@ -161,36 +161,36 @@
       </node>
     </node>
     <node concept="2sgV4H" id="4RAsyl5PvMT" role="1l3spa">
-      <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="core" />
+      <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="peoplCore" />
     </node>
     <node concept="2sgV4H" id="4RAsyl5PvMY" role="1l3spa">
-      <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peopl_mbeddr" />
+      <ref role="1l3spb" to="a9xt:4RAsyl5JUdx" resolve="peoplMbeddrPluginsBundle" />
     </node>
     <node concept="2sgV4H" id="3OZy2vMPivs" role="1l3spa">
-      <ref role="1l3spb" to="q0pl:F_DJLMfAWN" resolve="dep" />
+      <ref role="1l3spb" to="q0pl:F_DJLMfAWN" resolve="peoplBaseLanguageExtension" />
     </node>
     <node concept="m$_wf" id="4RAsyl5PvN2" role="3989C9">
-      <property role="m$_wk" value="util" />
+      <property role="m$_wk" value="peoplUtils" />
       <node concept="3_J27D" id="4RAsyl5PvN3" role="m_cZH">
         <node concept="3Mxwew" id="4RAsyl5PvNc" role="3MwsjC">
-          <property role="3MwjfP" value="util" />
+          <property role="3MwjfP" value="peoplUtils" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5PvN4" role="m$_w8">
         <node concept="3Mxwew" id="4RAsyl5PvNe" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5PvN5" role="m$_yQ">
         <node concept="3Mxwew" id="4RAsyl5PvNa" role="3MwsjC">
-          <property role="3MwjfP" value="util" />
+          <property role="3MwjfP" value="PEoPL utils" />
         </node>
       </node>
-      <node concept="m$f5U" id="4RAsyl5RUJ9" role="m$_yh">
+      <node concept="m$f5U" id="6$Z0QXuTV$9" role="m$_yh">
         <ref role="m$f5T" node="4RAsyl5RUcx" resolve="utils" />
       </node>
-      <node concept="m$_yC" id="3OZy2vMPivO" role="m$_yJ">
-        <ref role="m$_y1" to="q0pl:F_DJLMfAY5" resolve="dep" />
+      <node concept="m$_yC" id="6$Z0QXuTV$p" role="m$_yJ">
+        <ref role="m$_y1" to="q0pl:F_DJLMfAY5" resolve="peoplBaseLanguageExtension" />
       </node>
     </node>
     <node concept="2G$12M" id="4RAsyl5RUcx" role="3989C9">
