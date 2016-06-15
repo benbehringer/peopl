@@ -129,7 +129,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
         <node concept="3Mxwew" id="6$EUgyMHdaS" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL core" />
+          <property role="3MwjfP" value="PEoPL Core" />
         </node>
       </node>
       <node concept="m$f5U" id="6$EUgyMHdbQ" role="m$_yh">

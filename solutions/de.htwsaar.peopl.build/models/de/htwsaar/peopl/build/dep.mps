@@ -127,7 +127,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
         <node concept="3Mxwew" id="F_DJLMfAYh" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL baselanguage extension" />
+          <property role="3MwjfP" value="PEoPL BaseLanguage Extension" />
         </node>
       </node>
       <node concept="m$f5U" id="5kp5FYUdN7g" role="m$_yh">

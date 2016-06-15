@@ -133,12 +133,12 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5JUeq" role="m$_w8">
         <node concept="3Mxwew" id="4RAsyl5JUeG" role="3MwsjC">
-          <property role="3MwjfP" value="1.0" />
+          <property role="3MwjfP" value="0.3" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5JUes" role="m$_yQ">
         <node concept="3Mxwew" id="4RAsyl5JUeC" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL-mbeddr plugin bundle" />
+          <property role="3MwjfP" value="PEoPL-mbeddr Plugin Bundle" />
         </node>
       </node>
       <node concept="m$f5U" id="4RAsyl5JWcS" role="m$_yh">
