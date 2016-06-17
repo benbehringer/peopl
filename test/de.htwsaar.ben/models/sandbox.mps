@@ -81,16 +81,8 @@
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
-    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
-      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
-        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
-        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
-        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -504,20 +496,6 @@
         <ref role="3aRQVk" to="90bj:5BOueCCLi2b" resolve="ModuleToFragment_6481938710794674315" />
       </node>
     </node>
-  </node>
-  <node concept="HxVAC" id="7UuwoQcm2Yd">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Orange::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="90bj:6U7BgSPiA$$" resolve="Orange" />
-    <ref role="HxVAD" node="6U7BgSPiAxP" resolve="TestClass" />
-  </node>
-  <node concept="HxVAC" id="4IIpSZbwoib">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Apfel::TestClass" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="90bj:6U7BgSPiA$v" resolve="Apfel" />
-    <ref role="HxVAD" node="6U7BgSPiAxP" resolve="TestClass" />
   </node>
 </model>
 
