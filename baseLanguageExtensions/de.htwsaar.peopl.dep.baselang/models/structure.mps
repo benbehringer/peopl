@@ -5,8 +5,9 @@
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
   </languages>
   <imports>
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -26,6 +27,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -36,6 +38,9 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -154,6 +159,54 @@
     </node>
     <node concept="PrWs8" id="2hzf2OgrYFk" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5zeyXLl18aD">
+    <property role="1pbfSe" value="1378677115" />
+    <property role="TrG5h" value="OriginalNodeInfo" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="7PFXpItoF1V" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+    </node>
+    <node concept="1TJgyj" id="7PFXpItoF8k" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="vp" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:6K8EDSn5e6t" resolve="VP" />
+    </node>
+    <node concept="1TJgyj" id="29y0x5eCgpF" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="vpIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:6K8EDSn5e6U" resolve="VPToFragmentIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="29y0x5eCgpK" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="moduleIntermediate" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="xf8r:5qz55Ysv7DE" resolve="ModuleToFragmentIntermediate" />
+    </node>
+    <node concept="1TJgyj" id="2aku2wRhk$5" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="M6xJ_" id="5zeyXLl18aE" role="lGtFl">
+      <property role="Hh88m" value="OriginalNodeInfo" />
+      <node concept="tn0Fv" id="5zeyXLl18aG" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+      <node concept="trNpa" id="5zeyXLl18aI" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyi" id="7iFculrRoW3" role="1TKVEl">
+      <property role="TrG5h" value="isFromOutsidePeopl" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>

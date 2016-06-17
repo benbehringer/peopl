@@ -26,23 +26,23 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/helper/org.apache.commons/org.apache.commons.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/helper/org.apache.commons/org.apache.commons.msd" folder="mbeddr.helper" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.intentions/com.mbeddr.mpsutil.intentions.mpl" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.propertydefault/com.mbeddr.mpsutil.propertydefault.mpl" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.targetchooser/com.mbeddr.mpsutil.targetchooser.msd" folder="mbeddr.mpsutils" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr.projectview" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="mbeddr.projectview" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mbeddr.projectview" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.intentions/de.itemis.mps.selection.intentions.mpl" folder="mbeddr.selection" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.common/de.htwsaar.peopl.utils.common.mpl" folder="peopl.utils" />

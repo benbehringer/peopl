@@ -6,6 +6,10 @@
     </modelRoot>
   </models>
   <sourcePath />
+  <dependencies>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">5b84af26-5d0f-42f0-8ef9-e8ae6c204624(Prop4J_NoVar)</dependency>
+  </dependencies>
   <languageVersions>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" fqName="de.htwsaar.peopl.core" version="0" />
     <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.core.config" version="0" />
@@ -17,7 +21,9 @@
     <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="e3612f48-7db1-43e0-9d2e-66761e036dcb(Prop4J)" version="0" />
+    <module reference="5b84af26-5d0f-42f0-8ef9-e8ae6c204624(Prop4J_NoVar)" version="0" />
   </dependencyVersions>
 </solution>
 
