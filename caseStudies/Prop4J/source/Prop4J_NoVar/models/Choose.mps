@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1be89860-4480-4bbc-8a27-b8c639cd63ab(Choose)">
+<model ref="r:1be89860-4480-4bbc-8a27-b8c639cd63ab(Choose)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />

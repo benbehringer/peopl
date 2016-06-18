@@ -359,6 +359,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4j" resolve="jetbrains.mps.lang.actions" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5spzs9_ZcwC" role="3bR37C">
+          <node concept="1Busua" id="5spzs9_ZcwD" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4RAsyl5PvNp" role="3989C9">
@@ -628,7 +633,7 @@
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwjp" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pwjq" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
@@ -652,7 +657,7 @@
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwjx" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pwjy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
@@ -714,6 +719,24 @@
           <node concept="3bR9La" id="F_DJLMfBht" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5spzs9_ZcyL" role="3bR37C">
+          <node concept="3bR9La" id="5spzs9_ZcyM" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5spzs9_ZcyN" role="3bR37C">
+          <node concept="3bR9La" id="5spzs9_ZcyO" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJt" resolve="jetbrains.mps.ide.platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5spzs9_ZcyP" role="3bR37C">
+          <node concept="3bR9La" id="5spzs9_ZcyQ" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
           </node>
         </node>
       </node>

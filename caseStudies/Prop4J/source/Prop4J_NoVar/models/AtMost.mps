@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:11ac75ea-4de9-441b-ad07-36d8732458a1(AtMost)">
+<model ref="r:11ac75ea-4de9-441b-ad07-36d8732458a1(AtMost)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
