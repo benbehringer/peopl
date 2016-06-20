@@ -112,13 +112,6 @@
       </node>
     </node>
     <node concept="2$Fqj1" id="5_5NNyD5X1t" role="lGtFl">
-      <node concept="1V74G3" id="5yMQ$1aHNE0" role="2$Fqj6">
-        <property role="TrG5h" value="VP_6391410790858439296" />
-        <node concept="1V74G$" id="5yMQ$1aHNE1" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_6391410790858439297" />
-          <ref role="1V74G_" node="5yMQ$1aHNDZ" resolve="Fragment_6391410790858439295" />
-        </node>
-      </node>
       <node concept="1V74G3" id="5yMQ$1aNB1G" role="2$Fqj6">
         <property role="TrG5h" value="VP_6391410790859960428" />
         <node concept="1V74G$" id="5yMQ$1aNB1H" role="1V74Gw">
@@ -133,10 +126,6 @@
       <property role="2_7Toi" value="170" />
       <property role="3_QSL4" value="7050410" />
       <property role="TrG5h" value="Test" />
-      <node concept="3aRQSP" id="5yMQ$1aHNE4" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_6391410790858439300" />
-        <ref role="3aRQSO" node="5yMQ$1aHNDZ" resolve="Fragment_6391410790858439295" />
-      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="5N4LhA0$_oE">
@@ -149,33 +138,9 @@
       </node>
     </node>
   </node>
-  <node concept="2SvMkh" id="5yMQ$1aHNDW">
-    <property role="TrG5h" value="Bullshit" />
-    <property role="3GE5qa" value="Test" />
-    <node concept="3GWJoq" id="5yMQ$1aHNDX" role="2abgUk">
-      <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="Bullshit" />
-      <node concept="3Tm1VV" id="5yMQ$1aHNDY" role="1B3o_S" />
-      <node concept="1V74GB" id="5yMQ$1aHNDZ" role="lGtFl">
-        <property role="32Xqk$" value="chosenModule" />
-        <property role="TrG5h" value="Fragment_6391410790858439295" />
-        <ref role="1V74Hf" node="5yMQ$1aHNE1" resolve="VPToFragment_6391410790858439297" />
-        <ref role="a64iB" node="3IhhXddO8_9" resolve="Test" />
-        <ref role="3aRQVk" node="5yMQ$1aHNE4" resolve="ModuleToFragment_6391410790858439300" />
-      </node>
-      <node concept="2tJIrI" id="5yMQ$1aHNE6" role="jymVt" />
-    </node>
-  </node>
-  <node concept="HxVAC" id="5yMQ$1aHNER">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Test::Bullshit" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" node="3IhhXddO8_9" resolve="Test" />
-    <ref role="HxVAD" node="5yMQ$1aHNDX" resolve="Bullshit" />
-  </node>
   <node concept="2SvMkh" id="5yMQ$1aNB1C">
     <property role="TrG5h" value="TestClass" />
-    <property role="3GE5qa" value="Test" />
+    <property role="3GE5qa" value="" />
     <node concept="3GWJoq" id="5yMQ$1aNB1D" role="2abgUk">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="TestClass" />
