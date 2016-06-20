@@ -17,6 +17,7 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -1138,6 +1139,7 @@
       <node concept="3Tm1VV" id="3ME3zLf8qdT" role="1B3o_S" />
       <node concept="3cqZAl" id="3ME3zLf8qdU" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="6_oTNmIyK8D" role="jymVt" />
     <node concept="2YIFZL" id="3ME3zLf8qdV" role="jymVt">
       <property role="TrG5h" value="setLockDetectModeOldest" />
       <property role="DiZV1" value="false" />
