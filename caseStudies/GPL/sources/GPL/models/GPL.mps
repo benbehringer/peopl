@@ -243,17 +243,9 @@
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
-    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
-      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
-        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
-        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
-        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -14165,90 +14157,6 @@
         <ref role="3aRQVk" to="ymfq:6Dv_8JO3jB3" resolve="ModuleToFragment_7665008419623745987" />
       </node>
     </node>
-  </node>
-  <node concept="HxVAC" id="2Ja598TOzef">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Edges_Directed::CycleWorkSpace" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9XcH" resolve="Edges_Directed" />
-    <ref role="HxVAD" node="AZ7IhMm2cR" resolve="CycleWorkSpace" />
-  </node>
-  <node concept="HxVAC" id="10Z$L97676x">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="SAlg_SearchBase::Graph" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
-    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
-  </node>
-  <node concept="HxVAC" id="2ju$YsGmweA">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="GN_OnlyNeighbors::Neighbor" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
-    <ref role="HxVAD" node="AZ7IhMm29e" resolve="Neighbor" />
-  </node>
-  <node concept="HxVAC" id="6D3NPsjdl5$">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::WorkSpace" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm24t" resolve="WorkSpace" />
-  </node>
-  <node concept="HxVAC" id="6D3NPsjdl5_">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::EdgeIter" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm258" resolve="EdgeIter" />
-  </node>
-  <node concept="HxVAC" id="23mPkpItaB9">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="GEN_Edges::Graph" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
-    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
-  </node>
-  <node concept="HxVAC" id="4L5X_XCU_9A">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::Graph" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
-  </node>
-  <node concept="HxVAC" id="6XPOmZnUY8d">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::Main" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm2aQ" resolve="Main" />
-  </node>
-  <node concept="HxVAC" id="6XPOmZnUYeJ">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::Vertex" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
-  </node>
-  <node concept="HxVAC" id="6XPOmZnUYlh">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Base::CycleWorkSpace" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
-    <ref role="HxVAD" node="AZ7IhMm2cR" resolve="CycleWorkSpace" />
-  </node>
-  <node concept="HxVAC" id="473Y1i2pzp2">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Benchmark::Graph" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9X9a" resolve="Benchmark" />
-    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
-  </node>
-  <node concept="HxVAC" id="4L2DE6iIspv">
-    <property role="wgJFU" value="myModule" />
-    <property role="TrG5h" value="Weighted::Graph" />
-    <property role="3GE5qa" value="tmp.basicModularity" />
-    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
-    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>
 

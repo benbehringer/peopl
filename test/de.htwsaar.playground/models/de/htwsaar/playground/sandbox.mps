@@ -151,6 +151,7 @@
   </node>
   <node concept="2SvMkh" id="5yMQ$1aHNDW">
     <property role="TrG5h" value="Bullshit" />
+    <property role="3GE5qa" value="Test" />
     <node concept="3GWJoq" id="5yMQ$1aHNDX" role="2abgUk">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="Bullshit" />
@@ -174,7 +175,7 @@
   </node>
   <node concept="2SvMkh" id="5yMQ$1aNB1C">
     <property role="TrG5h" value="TestClass" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="Test" />
     <node concept="3GWJoq" id="5yMQ$1aNB1D" role="2abgUk">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="TestClass" />

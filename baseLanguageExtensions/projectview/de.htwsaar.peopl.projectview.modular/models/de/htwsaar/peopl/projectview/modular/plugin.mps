@@ -71,6 +71,7 @@
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="k9t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.internal.collections.runtime(MPS.Core/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.config.structure)" implicit="true" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
@@ -174,6 +175,9 @@
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
+      <concept id="1177666668936" name="jetbrains.mps.baseLanguage.structure.DoWhileStatement" flags="nn" index="MpOyq">
+        <child id="1177666688034" name="condition" index="MpTkK" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -185,16 +189,8 @@
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -322,6 +318,7 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -346,6 +343,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
@@ -566,7 +566,7 @@
   <node concept="2DaZZR" id="62a2r2c$Did" />
   <node concept="14aYJB" id="3dIcPvM6TNc">
     <property role="TrG5h" value="ModularProjectView" />
-    <property role="3aPfAI" value="2" />
+    <property role="3aPfAI" value="1" />
     <node concept="14aYG3" id="7diJr$RvF92" role="14aYEy">
       <property role="TrG5h" value="project" />
       <node concept="14a6R6" id="7diJr$RvF9F" role="14bQOc" />
@@ -8656,6 +8656,80 @@
           </node>
         </node>
         <node concept="3clFbH" id="470MJssfrA9" role="3cqZAp" />
+        <node concept="3SKdUt" id="5PtEwu5dhJC" role="3cqZAp">
+          <node concept="3SKdUq" id="5PtEwu5dhJD" role="3SKWNk">
+            <property role="3SKdUp" value="find the next custom tree node" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5PtEwu5dhJE" role="3cqZAp">
+          <node concept="3cpWsn" id="5PtEwu5dhJF" role="3cpWs9">
+            <property role="TrG5h" value="moduleTreeNodeCandidate" />
+            <node concept="3uibUv" id="5PtEwu5dhJG" role="1tU5fm">
+              <ref role="3uigEE" to="rgfa:~TreeNode" resolve="TreeNode" />
+            </node>
+            <node concept="2OqwBi" id="5PtEwu5dhJH" role="33vP2m">
+              <node concept="2WthIp" id="5PtEwu5dhJI" role="2Oq$k0" />
+              <node concept="1DTwFV" id="5PtEwu5dhJJ" role="2OqNvi">
+                <ref role="2WH_rO" node="470MJsrQ0Zv" resolve="currentTreeNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="MpOyq" id="5PtEwu5dhJK" role="3cqZAp">
+          <node concept="3clFbS" id="5PtEwu5dhJL" role="2LFqv$">
+            <node concept="3clFbF" id="5PtEwu5dhJM" role="3cqZAp">
+              <node concept="37vLTI" id="5PtEwu5dhJN" role="3clFbG">
+                <node concept="2OqwBi" id="5PtEwu5dhJO" role="37vLTx">
+                  <node concept="37vLTw" id="5PtEwu5dhJP" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+                  </node>
+                  <node concept="liA8E" id="5PtEwu5dhJQ" role="2OqNvi">
+                    <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5PtEwu5dhJR" role="37vLTJ">
+                  <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5PtEwu5dhJS" role="3cqZAp">
+              <node concept="3clFbS" id="5PtEwu5dhJT" role="3clFbx">
+                <node concept="34ab3g" id="5PtEwu5dhJU" role="3cqZAp">
+                  <property role="35gtTG" value="error" />
+                  <node concept="Xl_RD" id="5PtEwu5dhJV" role="34bqiv">
+                    <property role="Xl_RC" value="Didn't find a CustomTreeNode." />
+                  </node>
+                </node>
+                <node concept="3zACq4" id="5PtEwu5diAP" role="3cqZAp" />
+              </node>
+              <node concept="3clFbC" id="5PtEwu5dhJW" role="3clFbw">
+                <node concept="10Nm6u" id="5PtEwu5dhJX" role="3uHU7w" />
+                <node concept="37vLTw" id="5PtEwu5dhJY" role="3uHU7B">
+                  <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5PtEwu5dhJZ" role="MpTkK">
+            <node concept="2OqwBi" id="5PtEwu5dhK0" role="3fr31v">
+              <node concept="2OqwBi" id="5PtEwu5dhK1" role="2Oq$k0">
+                <node concept="37vLTw" id="5PtEwu5dhK2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+                </node>
+                <node concept="liA8E" id="5PtEwu5dhK3" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5PtEwu5dhK4" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="3VsKOn" id="5PtEwu5dhK5" role="37wK5m">
+                  <ref role="3VsUkX" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5PtEwu5dhlN" role="3cqZAp" />
         <node concept="3clFbJ" id="470MJsrSvLj" role="3cqZAp">
           <node concept="3clFbS" id="470MJsrSvLl" role="3clFbx">
             <node concept="3clFbF" id="470MJsrWp1S" role="3cqZAp">
@@ -8667,16 +8741,8 @@
                   <node concept="3uibUv" id="470MJsrSxtf" role="10QFUM">
                     <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
                   </node>
-                  <node concept="2OqwBi" id="470MJsrTsW2" role="10QFUP">
-                    <node concept="2OqwBi" id="470MJsrSxtX" role="2Oq$k0">
-                      <node concept="2WthIp" id="470MJsrSxu0" role="2Oq$k0" />
-                      <node concept="1DTwFV" id="470MJsrSxu2" role="2OqNvi">
-                        <ref role="2WH_rO" node="470MJsrQ0Zv" resolve="currentTreeNode" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="470MJsrTt1i" role="2OqNvi">
-                      <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
-                    </node>
+                  <node concept="37vLTw" id="5PtEwu5djhL" role="10QFUP">
+                    <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
                   </node>
                 </node>
               </node>
@@ -8732,21 +8798,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="470MJsrWqjh" role="3cqZAp" />
-            <node concept="3cpWs8" id="5yMQ$1aSyym" role="3cqZAp">
-              <node concept="3cpWsn" id="5yMQ$1aSyyp" role="3cpWs9">
-                <property role="TrG5h" value="peoplClassName" />
-                <node concept="17QB3L" id="5yMQ$1aSyyk" role="1tU5fm" />
-                <node concept="2OqwBi" id="5yMQ$1aSzi2" role="33vP2m">
-                  <node concept="37vLTw" id="5yMQ$1aSzdI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="470MJssfsCs" resolve="peoplClassTreeNode" />
-                  </node>
-                  <node concept="liA8E" id="5yMQ$1aSz_6" role="2OqNvi">
-                    <ref role="37wK5l" to="7e8u:~MPSTreeNode.toString():java.lang.String" resolve="toString" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="5yMQ$1aLPxS" role="3cqZAp" />
             <node concept="3SKdUt" id="5yMQ$1aC8to" role="3cqZAp">
               <node concept="3SKdUq" id="5yMQ$1aC8tp" role="3SKWNk">
                 <property role="3SKdUp" value="gather current treePaths" />
@@ -9274,19 +9325,27 @@
               </node>
             </node>
           </node>
-          <node concept="2ZW3vV" id="470MJsrSwvA" role="3clFbw">
-            <node concept="3uibUv" id="470MJsrSwI9" role="2ZW6by">
-              <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+          <node concept="1Wc70l" id="5PtEwu5diIv" role="3clFbw">
+            <node concept="3y3z36" id="5PtEwu5diIw" role="3uHU7B">
+              <node concept="10Nm6u" id="5PtEwu5diIx" role="3uHU7w" />
+              <node concept="37vLTw" id="5PtEwu5diIy" role="3uHU7B">
+                <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+              </node>
             </node>
-            <node concept="2OqwBi" id="470MJsrSwqz" role="2ZW6bz">
-              <node concept="2OqwBi" id="470MJsrSvRB" role="2Oq$k0">
-                <node concept="2WthIp" id="470MJsrSvNL" role="2Oq$k0" />
-                <node concept="1DTwFV" id="470MJsrSw5E" role="2OqNvi">
-                  <ref role="2WH_rO" node="470MJsrQ0Zv" resolve="currentTreeNode" />
+            <node concept="2OqwBi" id="5PtEwu5diIz" role="3uHU7w">
+              <node concept="2OqwBi" id="5PtEwu5diI$" role="2Oq$k0">
+                <node concept="37vLTw" id="5PtEwu5diI_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5PtEwu5dhJF" resolve="moduleTreeNodeCandidate" />
+                </node>
+                <node concept="liA8E" id="5PtEwu5diIA" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                 </node>
               </node>
-              <node concept="liA8E" id="470MJsrSwu4" role="2OqNvi">
-                <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
+              <node concept="liA8E" id="5PtEwu5diIB" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="3VsKOn" id="5PtEwu5diIC" role="37wK5m">
+                  <ref role="3VsUkX" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+                </node>
               </node>
             </node>
           </node>
@@ -9311,35 +9370,16 @@
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.TREE_NODE" resolve="TREE_NODE" />
       <node concept="1oajcY" id="3NGCjj4RsPc" role="1oa70y" />
     </node>
-    <node concept="1DS2jV" id="3NGCjj4RsPd" role="1NuT2Z">
-      <property role="TrG5h" value="project" />
-      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
-      <node concept="1oajcY" id="3NGCjj4RsPe" role="1oa70y" />
-    </node>
     <node concept="tnohg" id="3NGCjj4RsKh" role="tncku">
       <node concept="3clFbS" id="3NGCjj4RsKi" role="2VODD2">
-        <node concept="3cpWs8" id="3NGCjj4RKZz" role="3cqZAp">
-          <node concept="3cpWsn" id="3NGCjj4RKZ$" role="3cpWs9">
-            <property role="TrG5h" value="peoplModule" />
-            <node concept="3Tqbb2" id="3NGCjj4RKZ_" role="1tU5fm">
-              <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-            </node>
-            <node concept="10Nm6u" id="3NGCjj4RKZA" role="33vP2m" />
+        <node concept="3SKdUt" id="5PtEwu5ddzt" role="3cqZAp">
+          <node concept="3SKdUq" id="5PtEwu5ddzu" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: java.lang.ClassCastException: com.mbeddr.mpsutil.projectview.runtime.tree.FolderTreeNode" />
           </node>
         </node>
-        <node concept="3SKdUt" id="3NGCjj4RKZB" role="3cqZAp">
-          <node concept="3SKdUq" id="3NGCjj4RKZC" role="3SKWNk">
-            <property role="3SKdUp" value="define or refine?" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3NGCjj4RKZD" role="3cqZAp">
-          <node concept="3SKdUq" id="3NGCjj4RKZE" role="3SKWNk">
-            <property role="3SKdUp" value="we get the peopl module in order to decide whether we delete the class itself or just all fragments that" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3NGCjj4RKZF" role="3cqZAp">
-          <node concept="3SKdUq" id="3NGCjj4RKZG" role="3SKWNk">
-            <property role="3SKdUp" value="correspond to the current module within the class" />
+        <node concept="3SKdUt" id="5PtEwu5de4o" role="3cqZAp">
+          <node concept="3SKdUq" id="5PtEwu5de4p" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: cannot be cast to com.mbeddr.mpsutil.projectview.runtime.tree.CustomTreeNode" />
           </node>
         </node>
         <node concept="3cpWs8" id="3NGCjj4RKZH" role="3cqZAp">
@@ -9350,15 +9390,81 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="3NGCjj4RKZK" role="3cqZAp">
-          <node concept="3cpWsn" id="3NGCjj4RKZL" role="3cpWs9">
-            <property role="TrG5h" value="peoplClassTreeNode" />
-            <node concept="3uibUv" id="3NGCjj4RKZM" role="1tU5fm">
-              <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+        <node concept="3clFbH" id="5PtEwu5a0BV" role="3cqZAp" />
+        <node concept="3SKdUt" id="5PtEwu5dguD" role="3cqZAp">
+          <node concept="3SKdUq" id="5PtEwu5dguE" role="3SKWNk">
+            <property role="3SKdUp" value="find the next custom tree node" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5PtEwu5b9A8" role="3cqZAp">
+          <node concept="3cpWsn" id="5PtEwu5b9A9" role="3cpWs9">
+            <property role="TrG5h" value="moduleTreeNodeCandidate" />
+            <node concept="3uibUv" id="5PtEwu5b9Aa" role="1tU5fm">
+              <ref role="3uigEE" to="rgfa:~TreeNode" resolve="TreeNode" />
+            </node>
+            <node concept="2OqwBi" id="5PtEwu5bc07" role="33vP2m">
+              <node concept="2WthIp" id="5PtEwu5bc0a" role="2Oq$k0" />
+              <node concept="1DTwFV" id="5PtEwu5bc0c" role="2OqNvi">
+                <ref role="2WH_rO" node="3NGCjj4RsPb" resolve="currentTreeNode" />
+              </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3NGCjj4RKZN" role="3cqZAp" />
+        <node concept="MpOyq" id="5PtEwu5bbaJ" role="3cqZAp">
+          <node concept="3clFbS" id="5PtEwu5bbaL" role="2LFqv$">
+            <node concept="3clFbF" id="5PtEwu5bc7h" role="3cqZAp">
+              <node concept="37vLTI" id="5PtEwu5bcvA" role="3clFbG">
+                <node concept="2OqwBi" id="5PtEwu5bcyC" role="37vLTx">
+                  <node concept="37vLTw" id="5PtEwu5bcxG" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+                  </node>
+                  <node concept="liA8E" id="5PtEwu5bc_z" role="2OqNvi">
+                    <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5PtEwu5bcuK" role="37vLTJ">
+                  <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="5PtEwu5beFU" role="3cqZAp">
+              <node concept="3clFbS" id="5PtEwu5beFW" role="3clFbx">
+                <node concept="34ab3g" id="5PtEwu5dgLV" role="3cqZAp">
+                  <property role="35gtTG" value="error" />
+                  <node concept="Xl_RD" id="5PtEwu5dgLX" role="34bqiv">
+                    <property role="Xl_RC" value="Didn't find a CustomTreeNode." />
+                  </node>
+                </node>
+                <node concept="3zACq4" id="5PtEwu5dip8" role="3cqZAp" />
+              </node>
+              <node concept="3clFbC" id="5PtEwu5beI4" role="3clFbw">
+                <node concept="10Nm6u" id="5PtEwu5beIE" role="3uHU7w" />
+                <node concept="37vLTw" id="5PtEwu5beH8" role="3uHU7B">
+                  <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5PtEwu5beoQ" role="MpTkK">
+            <node concept="2OqwBi" id="5PtEwu5cdlf" role="3fr31v">
+              <node concept="2OqwBi" id="5PtEwu5cdgb" role="2Oq$k0">
+                <node concept="37vLTw" id="5PtEwu5cd9A" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+                </node>
+                <node concept="liA8E" id="5PtEwu5cdhW" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                </node>
+              </node>
+              <node concept="liA8E" id="5PtEwu5cdzi" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="3VsKOn" id="5PtEwu5cdH1" role="37wK5m">
+                  <ref role="3VsUkX" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5PtEwu5bbq2" role="3cqZAp" />
         <node concept="3clFbJ" id="3NGCjj4RKZO" role="3cqZAp">
           <node concept="3clFbS" id="3NGCjj4RKZP" role="3clFbx">
             <node concept="3clFbF" id="3NGCjj4RKZQ" role="3cqZAp">
@@ -9370,71 +9476,23 @@
                   <node concept="3uibUv" id="3NGCjj4RKZU" role="10QFUM">
                     <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
                   </node>
-                  <node concept="2OqwBi" id="3NGCjj4RKZV" role="10QFUP">
-                    <node concept="2OqwBi" id="3NGCjj4RKZW" role="2Oq$k0">
-                      <node concept="2WthIp" id="3NGCjj4RKZX" role="2Oq$k0" />
-                      <node concept="1DTwFV" id="3NGCjj4RKZY" role="2OqNvi">
-                        <ref role="2WH_rO" node="3NGCjj4RsPb" resolve="currentTreeNode" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3NGCjj4RKZZ" role="2OqNvi">
-                      <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
-                    </node>
+                  <node concept="37vLTw" id="5PtEwu5cI1F" role="10QFUP">
+                    <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3NGCjj4RL00" role="3cqZAp">
-              <node concept="37vLTI" id="3NGCjj4RL01" role="3clFbG">
-                <node concept="37vLTw" id="3NGCjj4RL02" role="37vLTJ">
-                  <ref role="3cqZAo" node="3NGCjj4RKZL" resolve="peoplClassTreeNode" />
+            <node concept="34ab3g" id="5PtEwu5a60c" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="2OqwBi" id="5PtEwu5a6io" role="34bqiv">
+                <node concept="37vLTw" id="5PtEwu5a6dC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
                 </node>
-                <node concept="10QFUN" id="3NGCjj4RL03" role="37vLTx">
-                  <node concept="3uibUv" id="3NGCjj4RL04" role="10QFUM">
-                    <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
-                  </node>
-                  <node concept="2OqwBi" id="3NGCjj4RL05" role="10QFUP">
-                    <node concept="2WthIp" id="3NGCjj4RL06" role="2Oq$k0" />
-                    <node concept="1DTwFV" id="3NGCjj4RL07" role="2OqNvi">
-                      <ref role="2WH_rO" node="3NGCjj4RsPb" resolve="currentTreeNode" />
-                    </node>
-                  </node>
+                <node concept="liA8E" id="5PtEwu5a6S1" role="2OqNvi">
+                  <ref role="37wK5l" to="7e8u:~MPSTreeNode.toString():java.lang.String" resolve="toString" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3NGCjj4RL08" role="3cqZAp">
-              <node concept="37vLTI" id="3NGCjj4RL09" role="3clFbG">
-                <node concept="10QFUN" id="3NGCjj4RL0a" role="37vLTx">
-                  <node concept="3Tqbb2" id="3NGCjj4RL0b" role="10QFUM">
-                    <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-                  </node>
-                  <node concept="1eOMI4" id="3NGCjj4RL0c" role="10QFUP">
-                    <node concept="10QFUN" id="3NGCjj4RL0d" role="1eOMHV">
-                      <node concept="3uibUv" id="3NGCjj4RL0e" role="10QFUM">
-                        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-                      </node>
-                      <node concept="2OqwBi" id="3NGCjj4RL0f" role="10QFUP">
-                        <node concept="2OqwBi" id="3NGCjj4RL0g" role="2Oq$k0">
-                          <node concept="37vLTw" id="3NGCjj4RL0h" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                          </node>
-                          <node concept="liA8E" id="3NGCjj4RL0i" role="2OqNvi">
-                            <ref role="37wK5l" to="uhdf:75_oBQVsEDd" resolve="getElement" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="3NGCjj4RL0j" role="2OqNvi">
-                          <ref role="37wK5l" to="imq3:3ZnFyBjwICS" resolve="getObject" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="3NGCjj4RL0k" role="37vLTJ">
-                  <ref role="3cqZAo" node="3NGCjj4RKZ$" resolve="peoplModule" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3NGCjj4RL0l" role="3cqZAp" />
             <node concept="3clFbH" id="3NGCjj4Sn0j" role="3cqZAp" />
             <node concept="3cpWs8" id="3NGCjj4SnlT" role="3cqZAp">
               <node concept="3cpWsn" id="3NGCjj4SnlW" role="3cpWs9">
@@ -9449,33 +9507,6 @@
                     <node concept="3uibUv" id="3NGCjj4Sn_c" role="HW$YZ">
                       <ref role="3uigEE" to="rgfa:~TreePath" resolve="TreePath" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="5yMQ$1aDox0" role="3cqZAp">
-              <node concept="3cpWsn" id="5yMQ$1aDox1" role="3cpWs9">
-                <property role="TrG5h" value="rawTreePaths" />
-                <node concept="3uibUv" id="5yMQ$1aDowY" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="5yMQ$1aDoSY" role="11_B2D">
-                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                    <node concept="3uibUv" id="5yMQ$1aDp6n" role="11_B2D">
-                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="5yMQ$1aDpgP" role="33vP2m">
-                  <node concept="2OqwBi" id="5yMQ$1aDp9O" role="2Oq$k0">
-                    <node concept="37vLTw" id="5yMQ$1aDp9P" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                    </node>
-                    <node concept="liA8E" id="5yMQ$1aDp9Q" role="2OqNvi">
-                      <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5yMQ$1aDqR4" role="2OqNvi">
-                    <ref role="37wK5l" to="7e8u:~MPSTree.getExpandedPathsRaw():java.util.List" resolve="getExpandedPathsRaw" />
                   </node>
                 </node>
               </node>
@@ -9566,8 +9597,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3NGCjj4SlwK" role="3cqZAp" />
-            <node concept="3clFbH" id="5yMQ$1aDr8c" role="3cqZAp" />
             <node concept="3clFbF" id="5yMQ$1aDrDJ" role="3cqZAp">
               <node concept="2OqwBi" id="5yMQ$1aE8Gs" role="3clFbG">
                 <node concept="37vLTw" id="5yMQ$1aDrDH" role="2Oq$k0">
@@ -9578,173 +9607,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3NGCjj4Sr7f" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3cpWs8" id="3NGCjj4RL2H" role="8Wnug">
-                <node concept="3cpWsn" id="3NGCjj4RL2I" role="3cpWs9">
-                  <property role="TrG5h" value="currentTreePathRaw" />
-                  <node concept="3uibUv" id="3NGCjj4RL2J" role="1tU5fm">
-                    <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                    <node concept="3uibUv" id="3NGCjj4RL2K" role="11_B2D">
-                      <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                      <node concept="3uibUv" id="3NGCjj4RL2L" role="11_B2D">
-                        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="3NGCjj4RL2M" role="33vP2m">
-                    <node concept="2OqwBi" id="3NGCjj4RL2N" role="2Oq$k0">
-                      <node concept="37vLTw" id="3NGCjj4RL2O" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                      </node>
-                      <node concept="liA8E" id="3NGCjj4RL2P" role="2OqNvi">
-                        <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3NGCjj4RL2Q" role="2OqNvi">
-                      <ref role="37wK5l" to="7e8u:~MPSTree.getExpandedPathsRaw():java.util.List" resolve="getExpandedPathsRaw" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="5yMQ$1aDqTc" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3NGCjj4RL2R" role="8Wnug">
-                <node concept="2OqwBi" id="3NGCjj4RL2S" role="3clFbG">
-                  <node concept="2OqwBi" id="3NGCjj4RL2T" role="2Oq$k0">
-                    <node concept="37vLTw" id="3NGCjj4RL2U" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                    </node>
-                    <node concept="liA8E" id="3NGCjj4RL2V" role="2OqNvi">
-                      <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="4L30JXB087A" role="2OqNvi">
-                    <ref role="37wK5l" to="7e8u:~MPSTree.runRebuildAction(java.lang.Runnable,boolean):void" resolve="runRebuildAction" />
-                    <node concept="1bVj0M" id="4L30JXB08wv" role="37wK5m">
-                      <node concept="3clFbS" id="4L30JXB08ww" role="1bW5cS">
-                        <node concept="3clFbH" id="5yMQ$1aB$6v" role="3cqZAp" />
-                        <node concept="3clFbJ" id="5yMQ$1aBoVj" role="3cqZAp">
-                          <node concept="3y3z36" id="5yMQ$1aBpUF" role="3clFbw">
-                            <node concept="10Nm6u" id="5yMQ$1aBpY6" role="3uHU7w" />
-                            <node concept="2OqwBi" id="5yMQ$1aBp8d" role="3uHU7B">
-                              <node concept="37vLTw" id="5yMQ$1aBoYm" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                              </node>
-                              <node concept="liA8E" id="5yMQ$1aBpKb" role="2OqNvi">
-                                <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbS" id="5yMQ$1aBoVl" role="3clFbx">
-                            <node concept="3clFbF" id="5yMQ$1aBvIa" role="3cqZAp">
-                              <node concept="2OqwBi" id="5yMQ$1aBvIb" role="3clFbG">
-                                <node concept="1eOMI4" id="7PvgUNuOLtf" role="2Oq$k0">
-                                  <node concept="10QFUN" id="7PvgUNuOLtg" role="1eOMHV">
-                                    <node concept="2OqwBi" id="7PvgUNuOLth" role="10QFUP">
-                                      <node concept="2OqwBi" id="5yMQ$1aBvM5" role="2Oq$k0">
-                                        <node concept="37vLTw" id="5yMQ$1aBvQf" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                                        </node>
-                                        <node concept="liA8E" id="5yMQ$1aBvM8" role="2OqNvi">
-                                          <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                                        </node>
-                                      </node>
-                                      <node concept="liA8E" id="5yMQ$1aBzbY" role="2OqNvi">
-                                        <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
-                                      </node>
-                                    </node>
-                                    <node concept="3uibUv" id="7PvgUNuOLtk" role="10QFUM">
-                                      <ref role="3uigEE" to="rgfa:~DefaultTreeModel" resolve="DefaultTreeModel" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="5yMQ$1aBzsj" role="2OqNvi">
-                                  <ref role="37wK5l" to="rgfa:~DefaultTreeModel.nodeStructureChanged(javax.swing.tree.TreeNode):void" resolve="nodeStructureChanged" />
-                                  <node concept="37vLTw" id="5yMQ$1aBzwV" role="37wK5m">
-                                    <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3clFbH" id="5yMQ$1aCGrA" role="3cqZAp" />
-                        <node concept="3clFbF" id="5yMQ$1aCGFF" role="3cqZAp">
-                          <node concept="2OqwBi" id="5yMQ$1aCH_o" role="3clFbG">
-                            <node concept="2OqwBi" id="5yMQ$1aCGMN" role="2Oq$k0">
-                              <node concept="37vLTw" id="5yMQ$1aCGFD" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                              </node>
-                              <node concept="liA8E" id="5yMQ$1aCHrr" role="2OqNvi">
-                                <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="5yMQ$1aCKM9" role="2OqNvi">
-                              <ref role="37wK5l" to="7e8u:~MPSTree.rebuildNow():void" resolve="rebuildNow" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1X3_iC" id="5yMQ$1aB_yX" role="lGtFl">
-                          <property role="3V$3am" value="statement" />
-                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                          <node concept="3clFbF" id="4L30JXAVPpi" role="8Wnug">
-                            <node concept="2OqwBi" id="Ggg0Z6YAxf" role="3clFbG">
-                              <node concept="2OqwBi" id="Ggg0Z6YAxg" role="2Oq$k0">
-                                <node concept="2OqwBi" id="5yMQ$1aBgqS" role="2Oq$k0">
-                                  <node concept="37vLTw" id="5yMQ$1aBguM" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                                  </node>
-                                  <node concept="liA8E" id="5yMQ$1aBgqV" role="2OqNvi">
-                                    <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="Ggg0Z6YAxi" role="2OqNvi">
-                                  <ref role="37wK5l" to="uhdf:7PuCnEL_inn" resolve="getUpdater" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="Ggg0Z6YAxj" role="2OqNvi">
-                                <ref role="37wK5l" to="uhdf:7PuCnEL_zXv" resolve="recordChildrenLoad" />
-                                <node concept="37vLTw" id="5yMQ$1aBgAK" role="37wK5m">
-                                  <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                                </node>
-                                <node concept="1bVj0M" id="Ggg0Z6YAxl" role="37wK5m">
-                                  <node concept="3clFbS" id="Ggg0Z6YAxm" role="1bW5cS">
-                                    <node concept="SfApY" id="Ggg0Z6YAxn" role="3cqZAp">
-                                      <node concept="3clFbS" id="Ggg0Z6YAxo" role="SfCbr">
-                                        <node concept="3clFbH" id="5yMQ$1aBzA2" role="3cqZAp" />
-                                      </node>
-                                      <node concept="TDmWw" id="Ggg0Z6YAx_" role="TEbGg">
-                                        <node concept="3clFbS" id="Ggg0Z6YAxA" role="TDEfX" />
-                                        <node concept="3cpWsn" id="Ggg0Z6YAxK" role="TDEfY">
-                                          <property role="TrG5h" value="ex" />
-                                          <node concept="3uibUv" id="Ggg0Z6YAxL" role="1tU5fm">
-                                            <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbT" id="4L30JXB08Qn" role="37wK5m">
-                      <property role="3clFbU" value="true" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbH" id="3NGCjj4SrpV" role="3cqZAp" />
-            <node concept="3clFbH" id="5yMQ$1aE3Hb" role="3cqZAp" />
-            <node concept="3clFbH" id="5yMQ$1aDxxI" role="3cqZAp" />
             <node concept="2Gpval" id="3NGCjj4SrNA" role="3cqZAp">
               <node concept="2GrKxI" id="3NGCjj4SrNC" role="2Gsz3X">
                 <property role="TrG5h" value="path" />
@@ -9791,55 +9654,68 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="3NGCjj4SgMi" role="3cqZAp" />
-            <node concept="1X3_iC" id="3NGCjj4RL3b" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3NGCjj4RL3c" role="8Wnug">
-                <node concept="2OqwBi" id="3NGCjj4RL3d" role="3clFbG">
-                  <node concept="37vLTw" id="3NGCjj4RL3e" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3NGCjj4RKZL" resolve="peoplClassTreeNode" />
-                  </node>
-                  <node concept="liA8E" id="3NGCjj4RL3f" role="2OqNvi">
-                    <ref role="37wK5l" to="7e8u:~MPSTreeNode.updateSubTree():void" resolve="updateSubTree" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3NGCjj4RL3k" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3NGCjj4RL3l" role="8Wnug">
-                <node concept="2OqwBi" id="3NGCjj4RL3m" role="3clFbG">
-                  <node concept="2OqwBi" id="3NGCjj4RL3n" role="2Oq$k0">
-                    <node concept="37vLTw" id="3NGCjj4RL3o" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3NGCjj4RKZI" resolve="moduleTreeNode" />
-                    </node>
-                    <node concept="liA8E" id="3NGCjj4RL3p" role="2OqNvi">
-                      <ref role="37wK5l" to="uhdf:7PuCnELAR27" resolve="getTree" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3NGCjj4RL3q" role="2OqNvi">
-                    <ref role="37wK5l" to="uhdf:4gq8yQC2MhZ" resolve="expandProjectNode" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3NGCjj4RL3z" role="3cqZAp" />
           </node>
-          <node concept="2ZW3vV" id="3NGCjj4RL3$" role="3clFbw">
-            <node concept="3uibUv" id="3NGCjj4RL3_" role="2ZW6by">
-              <ref role="3uigEE" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+          <node concept="1Wc70l" id="5PtEwu5bHI8" role="3clFbw">
+            <node concept="3y3z36" id="5PtEwu5bHYE" role="3uHU7B">
+              <node concept="10Nm6u" id="5PtEwu5bI1g" role="3uHU7w" />
+              <node concept="37vLTw" id="5PtEwu5bHVI" role="3uHU7B">
+                <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+              </node>
             </node>
-            <node concept="2OqwBi" id="3NGCjj4RL3A" role="2ZW6bz">
-              <node concept="2OqwBi" id="3NGCjj4RL3B" role="2Oq$k0">
-                <node concept="2WthIp" id="3NGCjj4RL3C" role="2Oq$k0" />
-                <node concept="1DTwFV" id="3NGCjj4RL3D" role="2OqNvi">
-                  <ref role="2WH_rO" node="3NGCjj4RsPb" resolve="currentTreeNode" />
+            <node concept="2OqwBi" id="5PtEwu5cdKO" role="3uHU7w">
+              <node concept="2OqwBi" id="5PtEwu5cdKP" role="2Oq$k0">
+                <node concept="37vLTw" id="5PtEwu5cdKQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5PtEwu5b9A9" resolve="moduleTreeNodeCandidate" />
+                </node>
+                <node concept="liA8E" id="5PtEwu5cdKR" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                 </node>
               </node>
-              <node concept="liA8E" id="3NGCjj4RL3E" role="2OqNvi">
-                <ref role="37wK5l" to="rgfa:~TreeNode.getParent():javax.swing.tree.TreeNode" resolve="getParent" />
+              <node concept="liA8E" id="5PtEwu5cdKS" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="3VsKOn" id="5PtEwu5cdKT" role="37wK5m">
+                  <ref role="3VsUkX" to="uhdf:7diJr$Rkh9d" resolve="CustomTreeNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="4y6RuVwWE7V">
+    <property role="3GE5qa" value="Class" />
+    <property role="TrG5h" value="NewPackage" />
+    <property role="2uzpH1" value="Rename Package" />
+    <node concept="1DS2jV" id="4y6RuVwWEMa" role="1NuT2Z">
+      <property role="TrG5h" value="treeNode" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.TREE_NODE" resolve="TREE_NODE" />
+      <node concept="1oajcY" id="4y6RuVwWEMb" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="4y6RuVwWEMc" role="1NuT2Z">
+      <property role="TrG5h" value="project" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="4y6RuVwWEMd" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="4y6RuVwXekT" role="1NuT2Z">
+      <property role="TrG5h" value="frame" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
+      <node concept="1oajcY" id="4y6RuVwXekU" role="1oa70y" />
+    </node>
+    <node concept="tnohg" id="4y6RuVwWE7W" role="tncku">
+      <node concept="3clFbS" id="4y6RuVwWE7X" role="2VODD2" />
+    </node>
+    <node concept="2ScWuX" id="4y6RuVwX6e2" role="tmbBb">
+      <node concept="3clFbS" id="4y6RuVwX6e3" role="2VODD2">
+        <node concept="3clFbF" id="4y6RuVwXbgM" role="3cqZAp">
+          <node concept="2ZW3vV" id="4y6RuVwXbyq" role="3clFbG">
+            <node concept="3uibUv" id="4y6RuVwXbG$" role="2ZW6by">
+              <ref role="3uigEE" to="xr52:~PackageNode" resolve="PackageNode" />
+            </node>
+            <node concept="2OqwBi" id="4y6RuVwXbgG" role="2ZW6bz">
+              <node concept="2WthIp" id="4y6RuVwXbgJ" role="2Oq$k0" />
+              <node concept="1DTwFV" id="4y6RuVwXbgL" role="2OqNvi">
+                <ref role="2WH_rO" node="4y6RuVwWEMa" resolve="treeNode" />
               </node>
             </node>
           </node>
