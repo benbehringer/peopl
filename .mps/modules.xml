@@ -13,7 +13,6 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="caseStudies.BerkeleyDB" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/source/BerkeleyDB_NoVar/BerkeleyDB_NoVar.msd" folder="caseStudies.BerkeleyDB.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies.GPL" />
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.GPL.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.GPL" />

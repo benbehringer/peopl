@@ -1990,6 +1990,48 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4AxNvecJDpw" role="13h7CS">
+      <property role="TrG5h" value="getBaseCodeModule" />
+      <node concept="3Tm1VV" id="4AxNvecJDpx" role="1B3o_S" />
+      <node concept="3clFbS" id="4AxNvecJDpy" role="3clF47">
+        <node concept="3cpWs6" id="4AxNvecJF0k" role="3cqZAp">
+          <node concept="BsUDl" id="4AxNvecJF0A" role="3cqZAk">
+            <ref role="37wK5l" node="5rOrZhwsdef" resolve="getBaseCodeModule" />
+            <node concept="2OqwBi" id="4AxNvecJF4C" role="37wK5m">
+              <node concept="13iPFW" id="4AxNvecJF0O" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4AxNvecJFju" role="2OqNvi">
+                <node concept="1xMEDy" id="4AxNvecJFjw" role="1xVPHs">
+                  <node concept="chp4Y" id="4AxNvecJFjQ" role="ri$Ld">
+                    <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="4AxNvecJDq3" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+      </node>
+      <node concept="P$JXv" id="4AxNvecJDq6" role="lGtFl">
+        <node concept="TZ5HA" id="4AxNvecJDq7" role="TZ5H$">
+          <node concept="1dT_AC" id="4AxNvecJDq8" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns either the module on the Method if there is a Fragment," />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4AxNvecJDq9" role="TZ5H$">
+          <node concept="1dT_AC" id="4AxNvecJDqa" role="1dT_Ay">
+            <property role="1dT_AB" value="or the Module of the Fragment on the peoplClass" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4AxNvecJDqb" role="TZ5H$">
+          <node concept="1dT_AC" id="4AxNvecJDqc" role="1dT_Ay" />
+        </node>
+        <node concept="x79VA" id="4AxNvecJDqf" role="x79VK">
+          <property role="x79VB" value="module needed for BaseCodeBlock" />
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="17fl253zHUg" role="13h7CS">
       <property role="TrG5h" value="isBaseCodeBlockDeprecated" />
       <node concept="3Tm1VV" id="17fl253zHUh" role="1B3o_S" />
@@ -2357,6 +2399,39 @@
         <node concept="3clFbJ" id="1jtqHQgll59" role="3cqZAp">
           <node concept="3clFbS" id="1jtqHQgll5b" role="3clFbx">
             <node concept="3clFbH" id="1jtqHQglBji" role="3cqZAp" />
+            <node concept="3clFbJ" id="5ffr7rsfmNg" role="3cqZAp">
+              <node concept="3clFbS" id="5ffr7rsfmNi" role="3clFbx">
+                <node concept="3cpWs6" id="5ffr7rsfnx7" role="3cqZAp">
+                  <node concept="3clFbT" id="5ffr7rsfnxn" role="3cqZAk">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="5ffr7rsfnuc" role="3clFbw">
+                <node concept="2OqwBi" id="5ffr7rsfn7L" role="3uHU7B">
+                  <node concept="2OqwBi" id="5ffr7rsfmQN" role="2Oq$k0">
+                    <node concept="37vLTw" id="5ffr7rsfmPA" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1jtqHQgf3EQ" resolve="newNode" />
+                    </node>
+                    <node concept="2Xjw5R" id="5ffr7rsfmWX" role="2OqNvi">
+                      <node concept="1xMEDy" id="5ffr7rsfmWZ" role="1xVPHs">
+                        <node concept="chp4Y" id="5ffr7rsfmXF" role="ri$Ld">
+                          <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1mfA1w" id="5ffr7rsfnsW" role="2OqNvi" />
+                </node>
+                <node concept="2OqwBi" id="5ffr7rsfnw4" role="3uHU7w">
+                  <node concept="37vLTw" id="5ffr7rsfnw5" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1jtqHQgf3EQ" resolve="newNode" />
+                  </node>
+                  <node concept="2Rxl7S" id="5ffr7rsfnw6" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="5ffr7rsfmL6" role="3cqZAp" />
             <node concept="1X3_iC" id="7pUR1PvejwK" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -2597,19 +2672,6 @@
             </node>
           </node>
           <node concept="1Wc70l" id="1jtqHQglCoZ" role="3clFbw">
-            <node concept="2OqwBi" id="1jtqHQglGTm" role="3uHU7w">
-              <node concept="2OqwBi" id="1jtqHQglGTn" role="2Oq$k0">
-                <node concept="37vLTw" id="1jtqHQglGTo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1jtqHQgf3EQ" resolve="newNode" />
-                </node>
-                <node concept="2Rxl7S" id="1jtqHQglGTp" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="1jtqHQglGTq" role="2OqNvi">
-                <node concept="chp4Y" id="1jtqHQglGTr" role="cj9EA">
-                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-                </node>
-              </node>
-            </node>
             <node concept="1Wc70l" id="3fIGxWma7GT" role="3uHU7B">
               <node concept="1Wc70l" id="1jtqHQglBRG" role="3uHU7B">
                 <node concept="3fqX7Q" id="1jtqHQglC9W" role="3uHU7w">
@@ -2654,6 +2716,19 @@
                   </node>
                 </node>
                 <node concept="3w_OXm" id="1jtqHQglH9l" role="2OqNvi" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1jtqHQglGTm" role="3uHU7w">
+              <node concept="2OqwBi" id="1jtqHQglGTn" role="2Oq$k0">
+                <node concept="37vLTw" id="1jtqHQglGTo" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1jtqHQgf3EQ" resolve="newNode" />
+                </node>
+                <node concept="2Rxl7S" id="1jtqHQglGTp" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="1jtqHQglGTq" role="2OqNvi">
+                <node concept="chp4Y" id="1jtqHQglGTr" role="cj9EA">
+                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                </node>
               </node>
             </node>
           </node>

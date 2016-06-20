@@ -95,6 +95,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -1305,16 +1306,28 @@
             <node concept="3clFbH" id="6ab3W7cgeYT" role="3cqZAp" />
           </node>
           <node concept="1Wc70l" id="7iFculrSHcM" role="3clFbw">
-            <node concept="2OqwBi" id="7iFculrSJe1" role="3uHU7w">
-              <node concept="2OqwBi" id="7iFculrSHWX" role="2Oq$k0">
-                <node concept="37vLTw" id="7iFculrTzfl" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7iFculrTqdt" resolve="pastedNode" />
+            <node concept="1eOMI4" id="5ffr7rsePs8" role="3uHU7w">
+              <node concept="3clFbC" id="5ffr7rsePPZ" role="1eOMHV">
+                <node concept="2OqwBi" id="5ffr7rseR1n" role="3uHU7w">
+                  <node concept="2OqwBi" id="5ffr7rseQ4r" role="2Oq$k0">
+                    <node concept="37vLTw" id="5ffr7rsePT3" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7iFculrTqdt" resolve="pastedNode" />
+                    </node>
+                    <node concept="2Xjw5R" id="5ffr7rseQNX" role="2OqNvi">
+                      <node concept="1xMEDy" id="5ffr7rseQNZ" role="1xVPHs">
+                        <node concept="chp4Y" id="5ffr7rseQQf" role="ri$Ld">
+                          <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1mfA1w" id="5ffr7rseRpZ" role="2OqNvi" />
                 </node>
-                <node concept="2Rxl7S" id="7iFculrSIMg" role="2OqNvi" />
-              </node>
-              <node concept="1mIQ4w" id="7iFculrSJhF" role="2OqNvi">
-                <node concept="chp4Y" id="7iFculrSJij" role="cj9EA">
-                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                <node concept="2OqwBi" id="7iFculrSHWX" role="3uHU7B">
+                  <node concept="37vLTw" id="7iFculrTzfl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7iFculrTqdt" resolve="pastedNode" />
+                  </node>
+                  <node concept="2Rxl7S" id="7iFculrSIMg" role="2OqNvi" />
                 </node>
               </node>
             </node>

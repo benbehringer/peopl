@@ -84,6 +84,7 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -1947,8 +1948,14 @@
             </node>
           </node>
         </node>
-        <node concept="3fqX7Q" id="4y6RuVwY2ja" role="3clFbw">
-          <node concept="2OqwBi" id="4y6RuVwY2jc" role="3fr31v">
+        <node concept="3clFbC" id="4AxNvecLkm_" role="3clFbw">
+          <node concept="2OqwBi" id="4AxNvecLmlT" role="3uHU7w">
+            <node concept="1YBJjd" id="4AxNvecLmdQ" role="2Oq$k0">
+              <ref role="1YBMHb" node="1ZfcqugR3qy" resolve="baseMethodDeclaration" />
+            </node>
+            <node concept="2Rxl7S" id="4AxNvecLmWX" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="4y6RuVwY2jc" role="3uHU7B">
             <node concept="2OqwBi" id="4y6RuVwY2jd" role="2Oq$k0">
               <node concept="1YBJjd" id="4y6RuVwY2je" role="2Oq$k0">
                 <ref role="1YBMHb" node="1ZfcqugR3qy" resolve="baseMethodDeclaration" />
@@ -1961,11 +1968,7 @@
                 </node>
               </node>
             </node>
-            <node concept="1mIQ4w" id="4y6RuVwY2ji" role="2OqNvi">
-              <node concept="chp4Y" id="4y6RuVwY2jj" role="cj9EA">
-                <ref role="cht4Q" to="tpee:h1Y3b43" resolve="AnonymousClass" />
-              </node>
-            </node>
+            <node concept="1mfA1w" id="4AxNvecLk1I" role="2OqNvi" />
           </node>
         </node>
       </node>
