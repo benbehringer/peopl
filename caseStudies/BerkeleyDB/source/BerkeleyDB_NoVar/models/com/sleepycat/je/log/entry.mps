@@ -13,6 +13,7 @@
     <import index="po8y" ref="r:393343da-9363-4df5-a76a-317c464ee751(com.sleepycat.je.txn)" />
     <import index="fd8g" ref="r:15bb8eb4-d6f4-4771-ab3f-91a6e8bcc1a3(com.sleepycat.je.tree)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="zfbc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -697,7 +698,7 @@
         <property role="TrG5h" value="entryBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8yce" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="37vLTG" id="3ME3zLf8ycf" role="3clF46">
@@ -795,7 +796,7 @@
                             <ref role="3cqZAo" node="3ME3zLf8ycd" resolve="entryBuffer" />
                           </node>
                           <node concept="liA8E" id="3ME3zLf94Pr" role="2OqNvi">
-                            <ref role="37wK5l" to=":^" resolve="position" />
+                            <ref role="37wK5l" to="zfbc:~Buffer.position():int" resolve="position" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="3ME3zLf8ydD" role="3uHU7w">
@@ -824,7 +825,7 @@
                         <ref role="3cqZAo" node="3ME3zLf8ycd" resolve="entryBuffer" />
                       </node>
                       <node concept="liA8E" id="3ME3zLf94Pz" role="2OqNvi">
-                        <ref role="37wK5l" to=":^" resolve="position" />
+                        <ref role="37wK5l" to="zfbc:~Buffer.position(int):java.nio.Buffer" resolve="position" />
                         <node concept="37vLTw" id="3ME3zLf8ydL" role="37wK5m">
                           <ref role="3cqZAo" node="3ME3zLf8yd$" resolve="endPosition" />
                         </node>
@@ -1026,7 +1027,7 @@
                                       <ref role="3cqZAo" node="3ME3zLf8ycd" resolve="entryBuffer" />
                                     </node>
                                     <node concept="liA8E" id="3ME3zLf94Qg" role="2OqNvi">
-                                      <ref role="37wK5l" to=":^" resolve="get" />
+                                      <ref role="37wK5l" to="zfbc:~ByteBuffer.get():byte" resolve="get" />
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="3ME3zLf8ydj" role="3uHU7w">
@@ -1680,7 +1681,7 @@
         <property role="TrG5h" value="destBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8ygN" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="3clFbS" id="3ME3zLf8ygO" role="3clF47">
@@ -1772,7 +1773,7 @@
                   <ref role="3cqZAo" node="3ME3zLf8ygM" resolve="destBuffer" />
                 </node>
                 <node concept="liA8E" id="3ME3zLf94S6" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="put" />
+                  <ref role="37wK5l" to="zfbc:~ByteBuffer.put(byte):java.nio.ByteBuffer" resolve="put" />
                   <node concept="37vLTw" id="3ME3zLf8yhl" role="37wK5m">
                     <ref role="3cqZAo" node="3ME3zLf8yh7" resolve="aKD" />
                   </node>
@@ -1942,12 +1943,17 @@
               <node concept="2ShNRf" id="3ME3zLf94Sm" role="3cqZAk">
                 <node concept="1pGfFk" id="3ME3zLf94Sz" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~Long.&lt;init&gt;(java.lang.String)" resolve="Long" />
-                  <node concept="2OqwBi" id="3ME3zLf94SB" role="37wK5m">
-                    <node concept="37vLTw" id="3ME3zLf94SA" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3ME3zLf8yac" resolve="txn" />
+                  <node concept="10QFUN" id="3ME3zLfqemD" role="37wK5m">
+                    <node concept="2OqwBi" id="3ME3zLf94SB" role="10QFUP">
+                      <node concept="37vLTw" id="3ME3zLf94SA" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3ME3zLf8yac" resolve="txn" />
+                      </node>
+                      <node concept="liA8E" id="3ME3zLf94SC" role="2OqNvi">
+                        <ref role="37wK5l" to="po8y:3ME3zLf8Dtz" resolve="getId" />
+                      </node>
                     </node>
-                    <node concept="liA8E" id="3ME3zLf94SC" role="2OqNvi">
-                      <ref role="37wK5l" to="po8y:3ME3zLf8Dtz" resolve="getId" />
+                    <node concept="3uibUv" id="3ME3zLfqemE" role="10QFUM">
+                      <ref role="3uigEE" to="wyt6:~String" resolve="String" />
                     </node>
                   </node>
                 </node>
@@ -2075,7 +2081,7 @@
         <property role="TrG5h" value="entryBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8vHH" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="37vLTG" id="3ME3zLf8vHI" role="3clF46">
@@ -2668,7 +2674,7 @@
         <property role="TrG5h" value="entryBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8wuC" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="37vLTG" id="3ME3zLf8wuD" role="3clF46">
@@ -2770,7 +2776,7 @@
                             <ref role="3cqZAo" node="3ME3zLf8wuB" resolve="entryBuffer" />
                           </node>
                           <node concept="liA8E" id="3ME3zLf94UE" role="2OqNvi">
-                            <ref role="37wK5l" to=":^" resolve="position" />
+                            <ref role="37wK5l" to="zfbc:~Buffer.position():int" resolve="position" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="3ME3zLf8wvh" role="3uHU7w">
@@ -2876,7 +2882,7 @@
                         <ref role="3cqZAo" node="3ME3zLf8wuB" resolve="entryBuffer" />
                       </node>
                       <node concept="liA8E" id="3ME3zLf94UV" role="2OqNvi">
-                        <ref role="37wK5l" to=":^" resolve="position" />
+                        <ref role="37wK5l" to="zfbc:~Buffer.position(int):java.nio.Buffer" resolve="position" />
                         <node concept="37vLTw" id="3ME3zLf8wvL" role="37wK5m">
                           <ref role="3cqZAo" node="3ME3zLf8wvc" resolve="position" />
                         </node>
@@ -3438,7 +3444,7 @@
         <property role="TrG5h" value="destBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8wyy" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="3clFbS" id="3ME3zLf8wyz" role="3clF47">
@@ -3544,13 +3550,8 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3ME3zLf8wz2" role="3clF47">
         <node concept="3cpWs6" id="3ME3zLf8wz3" role="3cqZAp">
-          <node concept="10QFUN" id="3ME3zLf8wz4" role="3cqZAk">
-            <node concept="37vLTw" id="3ME3zLf8wz5" role="10QFUP">
-              <ref role="3cqZAo" node="3ME3zLf8wty" resolve="dbId" />
-            </node>
-            <node concept="3uibUv" id="3ME3zLf8wz6" role="10QFUM">
-              <ref role="3uigEE" to="7twk:3ME3zLf8JdR" resolve="DatabaseId" />
-            </node>
+          <node concept="37vLTw" id="3ME3zLf8wz5" role="3cqZAk">
+            <ref role="3cqZAo" node="3ME3zLf8wty" resolve="dbId" />
           </node>
         </node>
       </node>
@@ -3792,7 +3793,7 @@
         <property role="TrG5h" value="entryBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8BPD" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="37vLTG" id="3ME3zLf8BPE" role="3clF46">
@@ -4004,7 +4005,7 @@
         <property role="TrG5h" value="destBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8BQE" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="3clFbS" id="3ME3zLf8BQF" role="3clF47">
@@ -4139,7 +4140,7 @@
         <property role="TrG5h" value="entryBuffer" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8K6w" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="ByteBuffer" />
+          <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
         </node>
       </node>
       <node concept="37vLTG" id="3ME3zLf8K6x" role="3clF46">

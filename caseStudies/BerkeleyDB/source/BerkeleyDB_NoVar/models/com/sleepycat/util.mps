@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -27,10 +28,6 @@
       </concept>
       <concept id="1224500764161" name="jetbrains.mps.baseLanguage.structure.BitwiseAndExpression" flags="nn" index="pVHWs" />
       <concept id="1224500790866" name="jetbrains.mps.baseLanguage.structure.BitwiseOrExpression" flags="nn" index="pVOtf" />
-      <concept id="28358707492436943" name="jetbrains.mps.baseLanguage.structure.JavaImport" flags="ng" index="u1fJn">
-        <property id="28358707492436944" name="onDemand" index="u1fJ8" />
-        <property id="5574384225470059890" name="static" index="1XWMmp" />
-      </concept>
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -103,6 +100,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -152,9 +150,6 @@
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
-      <concept id="6050519299856556786" name="jetbrains.mps.baseLanguage.structure.JavaImports" flags="ng" index="1lrU7d">
-        <child id="28358707492429991" name="entries" index="u1e2Z" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -167,9 +162,6 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6528213125912070246" name="jetbrains.mps.baseLanguage.structure.Tokens" flags="ng" index="1u$dsA">
-        <property id="1843920760191311250" name="tokens" index="1CJj6V" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -300,7 +292,7 @@
       </node>
       <node concept="3clFbS" id="3ME3zLf8z9h" role="3clF47">
         <node concept="XkiVB" id="3ME3zLf8Wo2" role="3cqZAp">
-          <ref role="37wK5l" node="3ME3zLf8z9d" resolve="RuntimeExceptionWrapper" />
+          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
           <node concept="2OqwBi" id="3ME3zLf8ZZQ" role="37wK5m">
             <node concept="37vLTw" id="3ME3zLf8ZZP" role="2Oq$k0">
               <ref role="3cqZAo" node="3ME3zLf8z9f" resolve="e" />
@@ -373,7 +365,7 @@
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="3ME3zLf8wNz" role="1B3o_S" />
     <node concept="3uibUv" id="3ME3zLf8wN$" role="1zkMxy">
-      <ref role="3uigEE" to=":^" resolve="OutputStream" />
+      <ref role="3uigEE" to="guwi:~OutputStream" resolve="OutputStream" />
     </node>
     <node concept="3UR2Jj" id="3ME3zLf8wUp" role="lGtFl">
       <node concept="TZ5HA" id="3ME3zLf8wUv" role="TZ5H$">
@@ -872,7 +864,7 @@
         <node concept="10Oyi0" id="3ME3zLf8wPI" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="3ME3zLf8wPJ" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8wPK" role="3clF47">
         <node concept="3clFbF" id="3ME3zLf8wPL" role="3cqZAp">
@@ -899,7 +891,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="3ME3zLf8wPU" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8wPV" role="3clF47">
         <node concept="3clFbF" id="3ME3zLf8wPW" role="3cqZAp">
@@ -936,7 +928,7 @@
         <node concept="10Oyi0" id="3ME3zLf8wQ8" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="3ME3zLf8wQ9" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8wQa" role="3clF47">
         <node concept="3clFbF" id="3ME3zLf8wQb" role="3cqZAp">
@@ -965,11 +957,11 @@
         <property role="TrG5h" value="out" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="3ME3zLf8wQk" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="OutputStream" />
+          <ref role="3uigEE" to="guwi:~OutputStream" resolve="OutputStream" />
         </node>
       </node>
       <node concept="3uibUv" id="3ME3zLf8wQl" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8wQm" role="3clF47">
         <node concept="3clFbF" id="3ME3zLf8wQn" role="3cqZAp">
@@ -978,7 +970,7 @@
               <ref role="3cqZAo" node="3ME3zLf8wQj" resolve="out" />
             </node>
             <node concept="liA8E" id="3ME3zLf8ZZW" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="write" />
+              <ref role="37wK5l" to="guwi:~OutputStream.write(byte[],int,int):void" resolve="write" />
               <node concept="37vLTw" id="3ME3zLf8wQp" role="37wK5m">
                 <ref role="3cqZAo" node="3ME3zLf8wNR" resolve="buf" />
               </node>
@@ -1018,9 +1010,7 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3ME3zLf8wQ_" role="1B3o_S" />
-      <node concept="3uibUv" id="3ME3zLf8wQA" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="3ME3zLfpV$0" role="3clF45" />
     </node>
     <node concept="3clFb_" id="3ME3zLf8wQB" role="jymVt">
       <property role="TrG5h" value="toString" />
@@ -1029,12 +1019,10 @@
       <node concept="37vLTG" id="3ME3zLf8wQC" role="3clF46">
         <property role="TrG5h" value="encoding" />
         <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="3ME3zLf8wQD" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="3ME3zLfpVzY" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="3ME3zLf8wQE" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="UnsupportedEncodingException" />
+        <ref role="3uigEE" to="guwi:~UnsupportedEncodingException" resolve="UnsupportedEncodingException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8wQF" role="3clF47">
         <node concept="3cpWs6" id="3ME3zLf8wQG" role="3cqZAp">
@@ -1058,9 +1046,7 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3ME3zLf8wQM" role="1B3o_S" />
-      <node concept="3uibUv" id="3ME3zLf8wQN" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="3ME3zLfpV$2" role="3clF45" />
     </node>
     <node concept="3clFb_" id="3ME3zLf8wQO" role="jymVt">
       <property role="TrG5h" value="toByteArray" />
@@ -1781,28 +1767,6 @@
       <node concept="3Tm6S6" id="3ME3zLf8wUn" role="1B3o_S" />
       <node concept="3cqZAl" id="3ME3zLf8wUo" role="3clF45" />
     </node>
-    <node concept="1lrU7d" id="3ME3zLf8wUq" role="lGtFl">
-      <node concept="u1fJn" id="3ME3zLf8wUr" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.sleepycat.util" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8wUs" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.IOException" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8wUt" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.OutputStream" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8wUu" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.UnsupportedEncodingException" />
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="3ME3zLf8ByB">
     <property role="TrG5h" value="FastInputStream" />
@@ -1811,7 +1775,7 @@
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="3ME3zLf8ByC" role="1B3o_S" />
     <node concept="3uibUv" id="3ME3zLf8ByD" role="1zkMxy">
-      <ref role="3uigEE" to=":^" resolve="InputStream" />
+      <ref role="3uigEE" to="guwi:~InputStream" resolve="InputStream" />
     </node>
     <node concept="3UR2Jj" id="3ME3zLf8BAM" role="lGtFl">
       <node concept="TZ5HA" id="3ME3zLf8BAR" role="TZ5H$">
@@ -2201,7 +2165,7 @@
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
       <node concept="3uibUv" id="3ME3zLf8B$$" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8B$_" role="3clF47">
         <node concept="3cpWs6" id="3ME3zLf8B$A" role="3cqZAp">
@@ -2225,7 +2189,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="3ME3zLf8B$I" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8B$J" role="3clF47">
         <node concept="3cpWs6" id="3ME3zLf8B$K" role="3cqZAp">
@@ -2271,7 +2235,7 @@
         <node concept="10Oyi0" id="3ME3zLf8B$Y" role="1tU5fm" />
       </node>
       <node concept="3uibUv" id="3ME3zLf8B$Z" role="Sfmx6">
-        <ref role="3uigEE" to=":^" resolve="IOException" />
+        <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8B_0" role="3clF47">
         <node concept="3cpWs6" id="3ME3zLf8B_1" role="3cqZAp">
@@ -2636,23 +2600,6 @@
         </node>
       </node>
     </node>
-    <node concept="1lrU7d" id="3ME3zLf8BAN" role="lGtFl">
-      <node concept="u1fJn" id="3ME3zLf8BAO" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.sleepycat.util" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8BAP" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.IOException" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8BAQ" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.InputStream" />
-      </node>
-    </node>
   </node>
   <node concept="312cEu" id="3ME3zLf8tw_">
     <property role="TrG5h" value="UtfOps" />
@@ -2694,9 +2641,7 @@
     <node concept="Wx3nA" id="3ME3zLf8twG" role="jymVt">
       <property role="TrG5h" value="EMPTY_STRING" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3ME3zLf8twH" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="3ME3zLfpV$n" role="1tU5fm" />
       <node concept="Xl_RD" id="3ME3zLf8twI" role="33vP2m">
         <property role="Xl_RC" value="" />
       </node>
@@ -4616,9 +4561,7 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="3ME3zLf8tEO" role="1B3o_S" />
-      <node concept="3uibUv" id="3ME3zLf8tEP" role="3clF45">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="3ME3zLfpV$m" role="3clF45" />
       <node concept="P$JXv" id="3ME3zLf8tEQ" role="lGtFl">
         <node concept="TZ5HA" id="3ME3zLf8tIf" role="TZ5H$">
           <node concept="1dT_AC" id="3ME3zLf8tIg" role="1dT_Ay">
@@ -4709,9 +4652,7 @@
       <node concept="37vLTG" id="3ME3zLf8tES" role="3clF46">
         <property role="TrG5h" value="string" />
         <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="3ME3zLf8tET" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
+        <node concept="17QB3L" id="3ME3zLfpV$o" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="3ME3zLf8tEU" role="3clF47">
         <node concept="3clFbJ" id="3ME3zLf8tEV" role="3cqZAp">
@@ -5277,7 +5218,7 @@
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="3ME3zLf8_mY" role="1B3o_S" />
     <node concept="3uibUv" id="3ME3zLf8_mZ" role="1zkMxy">
-      <ref role="3uigEE" to=":^" resolve="IOException" />
+      <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
     </node>
     <node concept="3uibUv" id="3ME3zLf8_n0" role="EKbjA">
       <ref role="3uigEE" node="3ME3zLf8V_H" resolve="ExceptionWrapper" />
@@ -5322,7 +5263,7 @@
       </node>
       <node concept="3clFbS" id="3ME3zLf8_n9" role="3clF47">
         <node concept="XkiVB" id="3ME3zLf90dH" role="3cqZAp">
-          <ref role="37wK5l" node="3ME3zLf8_n5" resolve="IOExceptionWrapper" />
+          <ref role="37wK5l" to="guwi:~IOException.&lt;init&gt;(java.lang.String)" resolve="IOException" />
           <node concept="2OqwBi" id="3ME3zLf90dL" role="37wK5m">
             <node concept="37vLTw" id="3ME3zLf90dK" role="2Oq$k0">
               <ref role="3cqZAo" node="3ME3zLf8_n7" resolve="e" />
@@ -5385,18 +5326,6 @@
       <node concept="3Tm1VV" id="3ME3zLf8_nu" role="1B3o_S" />
       <node concept="3uibUv" id="3ME3zLf8_nv" role="3clF45">
         <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-      </node>
-    </node>
-    <node concept="1lrU7d" id="3ME3zLf8_nx" role="lGtFl">
-      <node concept="u1fJn" id="3ME3zLf8_ny" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.sleepycat.util" />
-      </node>
-      <node concept="u1fJn" id="3ME3zLf8_nz" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.IOException" />
       </node>
     </node>
   </node>
