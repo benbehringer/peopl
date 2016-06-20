@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6d06209a-acff-4aa8-946b-46a92bc1f114(com.sleepycat.compat)">
+<model ref="r:6d06209a-acff-4aa8-946b-46a92bc1f114(com.sleepycat.compat)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />

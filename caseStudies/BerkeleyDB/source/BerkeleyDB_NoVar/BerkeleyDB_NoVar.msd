@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="BerkeleyDB_NoVar" uuid="7d2f3bfb-71c7-4964-982d-0d8c846f587d" moduleVersion="0" compileInMPS="true">
+<solution name="BerkeleyDB_NoVar" uuid="7d2f3bfb-71c7-4964-982d-0d8c846f587d" moduleVersion="0" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
