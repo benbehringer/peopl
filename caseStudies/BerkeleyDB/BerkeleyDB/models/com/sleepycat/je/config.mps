@@ -1421,13 +1421,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fi9" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9fim" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(java.lang.String)" resolve="Integer" />
-                <node concept="10QFUN" id="3ME3zLfqYlH" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPf" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="5ffr7rsfWSW" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(int)" resolve="Integer" />
+                <node concept="10M0yZ" id="3ME3zLfaOPf" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
@@ -1811,13 +1808,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fmu" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9fmF" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(java.lang.String)" resolve="Integer" />
-                <node concept="10QFUN" id="3ME3zLfqYlJ" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPg" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="5ffr7rsfWT0" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(int)" resolve="Integer" />
+                <node concept="10M0yZ" id="3ME3zLfaOPg" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
@@ -1886,13 +1880,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fn9" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9fnm" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Long.&lt;init&gt;(java.lang.String)" resolve="Long" />
-                <node concept="10QFUN" id="3ME3zLfkoVx" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPh" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
-                    <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="3ME3zLfqYhY" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Long.&lt;init&gt;(long)" resolve="Long" />
+                <node concept="10M0yZ" id="3ME3zLfaOPh" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
+                  <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
@@ -1982,13 +1973,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fol" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9foy" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(java.lang.String)" resolve="Integer" />
-                <node concept="10QFUN" id="3ME3zLfqY0o" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPi" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="5ffr7rsfWSV" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(int)" resolve="Integer" />
+                <node concept="10M0yZ" id="3ME3zLfaOPi" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
@@ -2124,13 +2112,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fq4" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9fqh" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Long.&lt;init&gt;(java.lang.String)" resolve="Long" />
-                <node concept="10QFUN" id="3ME3zLfqYun" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPj" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
-                    <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="5ffr7rsfWSS" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Long.&lt;init&gt;(long)" resolve="Long" />
+                <node concept="10M0yZ" id="3ME3zLfaOPj" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Long" resolve="Long" />
+                  <ref role="3cqZAo" to="wyt6:~Long.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
@@ -2174,13 +2159,10 @@
             </node>
             <node concept="2ShNRf" id="3ME3zLf9fqH" role="37wK5m">
               <node concept="1pGfFk" id="3ME3zLf9fqU" role="2ShVmc">
-                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(java.lang.String)" resolve="Integer" />
-                <node concept="10QFUN" id="3ME3zLfqYhW" role="37wK5m">
-                  <node concept="10M0yZ" id="3ME3zLfaOPk" role="10QFUP">
-                    <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
-                  </node>
-                  <node concept="17QB3L" id="5ffr7rsfWSR" role="10QFUM" />
+                <ref role="37wK5l" to="wyt6:~Integer.&lt;init&gt;(int)" resolve="Integer" />
+                <node concept="10M0yZ" id="3ME3zLfaOPk" role="37wK5m">
+                  <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
                 </node>
               </node>
             </node>
