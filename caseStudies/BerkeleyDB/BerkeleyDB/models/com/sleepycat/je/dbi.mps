@@ -831,7 +831,7 @@
               </node>
               <node concept="3SKdUt" id="3ME3zLf8SWn" role="3cqZAp">
                 <node concept="3SKdUq" id="3ME3zLf8SWm" role="3SKWNk">
-                  <property role="3SKdUp" value="allocating the tree." />
+                  <property role="3SKdUp" value="allocating the tree. " />
                 </node>
               </node>
               <node concept="3clFbF" id="3ME3zLf8SA3" role="3cqZAp">
