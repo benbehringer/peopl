@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:adf0b9de-aa90-4e22-9d79-d45c054365a3(com.sleepycat.je.log)" doNotGenerate="true">
+<model ref="r:adf0b9de-aa90-4e22-9d79-d45c054365a3(com.sleepycat.je.log)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -98,7 +98,10 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -6597,9 +6600,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239062" />
           <ref role="ocbYS" node="6$_V4iGD$Ug" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKE" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rVc" role="jymVt">
         <property role="TrG5h" value="reset" />
@@ -6931,15 +6931,6 @@
         <node concept="ocbFV" id="6$_V4iGD$Ut" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239069" />
           <ref role="ocbYS" node="6$_V4iGD$Un" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKG" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKH" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKL" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rWp" role="jymVt">
@@ -7674,15 +7665,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239083" />
           <ref role="ocbYS" node="6$_V4iGD$U_" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKD" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKI" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKM" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rZe" role="jymVt">
         <property role="TrG5h" value="writeCompleted" />
@@ -8033,9 +8015,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239097" />
           <ref role="ocbYS" node="6$_V4iGD$UN" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKK" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8s0N" role="jymVt">
         <property role="TrG5h" value="loadStats" />
@@ -8285,12 +8264,6 @@
         <node concept="ocbFV" id="6$_V4iGD$V0" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239104" />
           <ref role="ocbYS" node="6$_V4iGD$UU" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKF" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKJ" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3UR2Jj" id="3ME3zLf8s1T" role="lGtFl">
@@ -10934,9 +10907,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239295" />
           <ref role="ocbYS" node="6$_V4iGD$XT" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKU" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8FQ0" role="jymVt">
         <property role="TrG5h" value="initStartingPosition" />
@@ -12922,12 +12892,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239351" />
           <ref role="ocbYS" node="6$_V4iGD$YL" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKP" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKS" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8FZh" role="jymVt">
         <property role="TrG5h" value="readHeader" />
@@ -13122,9 +13086,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239358" />
           <ref role="ocbYS" node="6$_V4iGD$YS" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKT" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8G01" role="jymVt">
         <property role="TrG5h" value="startChecksum" />
@@ -13250,9 +13211,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239365" />
           <ref role="ocbYS" node="6$_V4iGD$YZ" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKW" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8G0s" role="jymVt">
         <property role="TrG5h" value="validateChecksum" />
@@ -13347,12 +13305,6 @@
         <node concept="ocbFV" id="6$_V4iGD$Zc" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239372" />
           <ref role="ocbYS" node="6$_V4iGD$Z6" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKV" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKX" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8G0L" role="jymVt">
@@ -14687,15 +14639,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239400" />
           <ref role="ocbYS" node="6$_V4iGD$Zy" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkKO" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKQ" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKR" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8G71" role="jymVt">
         <property role="TrG5h" value="isTargetEntry" />
@@ -15307,9 +15250,6 @@
         <node concept="ocbFV" id="6$_V4iGD_0v" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239455" />
           <ref role="ocbYS" node="6$_V4iGD_0p" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkKY" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8Mp1" role="jymVt">
@@ -16700,9 +16640,6 @@
                 <property role="1dT_AB" value="         * leader of its group, or because the wait timed out." />
               </node>
             </node>
-          </node>
-          <node concept="3uibUv" id="5ffr7rshkKZ" role="Sfmx6">
-            <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
           </node>
         </node>
         <node concept="3clFb_" id="3ME3zLf8MnG" role="jymVt">
@@ -21858,9 +21795,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239712" />
           <ref role="ocbYS" node="6$_V4iGD_4q" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkL1" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="2YIFZL" id="3ME3zLf8Tb5" role="jymVt">
         <property role="TrG5h" value="setProvisional" />
@@ -22995,9 +22929,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239871" />
           <ref role="ocbYS" node="6$_V4iGD_6T" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkL2" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8IL0" role="jymVt">
         <property role="TrG5h" value="latchNoWait" />
@@ -23036,9 +22967,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239878" />
           <ref role="ocbYS" node="6$_V4iGD_70" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkL3" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDFbz" resolve="LatchException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8IL6" role="jymVt">
         <property role="TrG5h" value="release" />
@@ -23076,9 +23004,6 @@
         <node concept="ocbFV" id="6$_V4iGD_7d" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819239885" />
           <ref role="ocbYS" node="6$_V4iGD_77" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkL4" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8ILc" role="jymVt">
@@ -24943,9 +24868,9 @@
                   </node>
                 </node>
               </node>
-              <node concept="3SKdUt" id="3ME3zLf8DgE" role="3cqZAp">
-                <node concept="3SKdUq" id="3ME3zLf8DgD" role="3SKWNk">
-                  <property role="3SKdUp" value="Read configurations. " />
+              <node concept="3SKdUt" id="6QXzQF2Al2k" role="3cqZAp">
+                <node concept="3SKdUq" id="6QXzQF2Al2l" role="3SKWNk">
+                  <property role="3SKdUp" value="Read configurations." />
                 </node>
               </node>
               <node concept="3cpWs8" id="3ME3zLf8CEL" role="3cqZAp">
@@ -25281,15 +25206,6 @@
         <node concept="ocbFV" id="6$_V4iGD_9U" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240058" />
           <ref role="ocbYS" node="6$_V4iGD_9O" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLd" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLh" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLC" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CGi" role="jymVt">
@@ -27546,9 +27462,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240205" />
           <ref role="ocbYS" node="6$_V4iGD_c7" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkL8" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CPX" role="jymVt">
         <property role="TrG5h" value="deleteFile" />
@@ -27689,9 +27602,6 @@
         <node concept="ocbFV" id="6$_V4iGD_ck" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240212" />
           <ref role="ocbYS" node="6$_V4iGD_ce" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLD" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CQz" role="jymVt">
@@ -28025,12 +27935,6 @@
         <node concept="ocbFV" id="6$_V4iGD_cr" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240219" />
           <ref role="ocbYS" node="6$_V4iGD_cl" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLe" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLi" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CRK" role="jymVt">
@@ -28636,15 +28540,6 @@
         <node concept="ocbFV" id="6$_V4iGD_cy" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240226" />
           <ref role="ocbYS" node="6$_V4iGD_cs" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLt" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLF" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLG" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDCdc" resolve="LogFileNotFoundException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CUT" role="jymVt">
@@ -29262,18 +29157,6 @@
         <node concept="ocbFV" id="6$_V4iGD_cR" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240247" />
           <ref role="ocbYS" node="6$_V4iGD_cL" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLa" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLy" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLE" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLI" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8CXB" role="jymVt">
@@ -30317,18 +30200,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819240275" />
           <ref role="ocbYS" node="6$_V4iGD_dd" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkL9" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLx" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLz" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkL_" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8D1Z" role="jymVt">
         <property role="TrG5h" value="writeToFile" />
@@ -30410,6 +30281,27 @@
                     <node concept="3SKdUt" id="3ME3zLf8Dmo" role="3cqZAp">
                       <node concept="3SKdUq" id="3ME3zLf8Dmn" role="3SKWNk">
                         <property role="3SKdUp" value="Perform a single write using NIO." />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="6QXzQF2AlKC" role="3cqZAp">
+                      <node concept="37vLTI" id="6QXzQF2AlPb" role="3clFbG">
+                        <node concept="2OqwBi" id="6QXzQF2AlTq" role="37vLTx">
+                          <node concept="37vLTw" id="6QXzQF2AlQb" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3ME3zLf8D2d" resolve="channel" />
+                          </node>
+                          <node concept="liA8E" id="6QXzQF2AlV9" role="2OqNvi">
+                            <ref role="37wK5l" to="vueu:~FileChannel.write(java.nio.ByteBuffer,long):int" resolve="write" />
+                            <node concept="37vLTw" id="6QXzQF2AlW0" role="37wK5m">
+                              <ref role="3cqZAo" node="3ME3zLf8D22" resolve="data" />
+                            </node>
+                            <node concept="37vLTw" id="6QXzQF2Am25" role="37wK5m">
+                              <ref role="3cqZAo" node="3ME3zLf8D24" resolve="destOffset" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="37vLTw" id="6QXzQF2AlKA" role="37vLTJ">
+                          <ref role="3cqZAo" node="3ME3zLf8D29" resolve="totalBytesWritten" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -31437,6 +31329,14 @@
                       <property role="3TUv4t" value="false" />
                       <property role="TrG5h" value="version" />
                       <node concept="10PrrI" id="3ME3zLf8D6p" role="1tU5fm" />
+                      <node concept="2OqwBi" id="6QXzQF2Am5m" role="33vP2m">
+                        <node concept="37vLTw" id="6QXzQF2Am3j" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3ME3zLf8D5v" resolve="data" />
+                        </node>
+                        <node concept="liA8E" id="6QXzQF2Am76" role="2OqNvi">
+                          <ref role="37wK5l" to="zfbc:~ByteBuffer.get():byte" resolve="get" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                   <node concept="3SKdUt" id="3ME3zLf8DmU" role="3cqZAp">
@@ -31765,9 +31665,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819243642" />
           <ref role="ocbYS" node="6$_V4iGDA1O" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLl" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8D7Q" role="jymVt">
         <property role="TrG5h" value="syncLogEndAndFinishFile" />
@@ -31967,12 +31864,6 @@
         <node concept="ocbFV" id="6$_V4iGDA2f" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819243663" />
           <ref role="ocbYS" node="6$_V4iGDA29" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLg" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLu" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8D8v" role="jymVt">
@@ -32596,12 +32487,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819243927" />
           <ref role="ocbYS" node="6$_V4iGDA6h" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLr" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLs" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8Dbm" role="jymVt">
         <property role="TrG5h" value="releaseExclusiveLock" />
@@ -32675,9 +32560,6 @@
         <node concept="ocbFV" id="6$_V4iGDA6u" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819243934" />
           <ref role="ocbYS" node="6$_V4iGDA6o" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLq" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8DbJ" role="jymVt">
@@ -32800,9 +32682,6 @@
         <node concept="ocbFV" id="6$_V4iGDA6_" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819243941" />
           <ref role="ocbYS" node="6$_V4iGDA6v" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkL7" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8Dce" role="jymVt">
@@ -33449,12 +33328,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819244018" />
           <ref role="ocbYS" node="6$_V4iGDA7G" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLp" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLL" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="312cEu" id="3ME3zLf8CxF" role="jymVt">
         <property role="TrG5h" value="FileCache" />
@@ -33563,9 +33436,6 @@
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="3uibUv" id="5ffr7rshkLj" role="Sfmx6">
-            <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
           </node>
         </node>
         <node concept="3clFb_" id="3ME3zLf8Cyc" role="jymVt">
@@ -33899,9 +33769,6 @@
           </node>
           <node concept="3Tm6S6" id="3ME3zLf8Czs" role="1B3o_S" />
           <node concept="3cqZAl" id="3ME3zLf8Czt" role="3clF45" />
-          <node concept="3uibUv" id="5ffr7rshkLH" role="Sfmx6">
-            <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-          </node>
         </node>
         <node concept="3clFb_" id="3ME3zLf8Czu" role="jymVt">
           <property role="TrG5h" value="remove" />
@@ -34605,9 +34472,6 @@
                 <property role="1dT_AB" value="getWritableFile must be called under the log write latch." />
               </node>
             </node>
-          </node>
-          <node concept="3uibUv" id="5ffr7rshkL$" role="Sfmx6">
-            <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
           </node>
         </node>
         <node concept="3clFb_" id="3ME3zLf8C_Q" role="jymVt">
@@ -35333,6 +35197,17 @@
         <ref role="a64iB" to="oc6c:6$_V4iGDnc5" resolve="Base" />
         <ref role="3aRQVk" to="oc6c:6$_V4iGDA84" resolve="ModuleToFragment_7576721727819244036" />
       </node>
+      <node concept="Wx3nA" id="6QXzQF2AbLG" role="jymVt">
+        <property role="2dlcS1" value="false" />
+        <property role="2dld4O" value="false" />
+        <property role="TrG5h" value="DEBUG" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm6S6" id="6QXzQF2AbK2" role="1B3o_S" />
+        <node concept="10P_77" id="6QXzQF2AbLE" role="1tU5fm" />
+        <node concept="3clFbT" id="6QXzQF2AbNI" role="33vP2m">
+          <property role="3clFbU" value="false" />
+        </node>
+      </node>
       <node concept="2tJIrI" id="6$_V4iGDA86" role="jymVt" />
       <node concept="312cEg" id="3ME3zLf8z66" role="jymVt">
         <property role="34CwA1" value="false" />
@@ -35502,8 +35377,8 @@
                 </node>
               </node>
               <node concept="3clFbJ" id="3ME3zLf8z6P" role="3cqZAp">
-                <node concept="3clFbT" id="3ME3zLfqm97" role="3clFbw">
-                  <property role="3clFbU" value="false" />
+                <node concept="37vLTw" id="6QXzQF2AcaV" role="3clFbw">
+                  <ref role="3cqZAo" node="6QXzQF2AbLG" resolve="DEBUG" />
                 </node>
                 <node concept="3clFbS" id="3ME3zLf8z6S" role="3clFbx">
                   <node concept="3clFbF" id="3ME3zLf8z6T" role="3cqZAp">
@@ -35958,6 +35833,17 @@
         <ref role="3aRQVk" to="oc6c:6$_V4iGDA8O" resolve="ModuleToFragment_7576721727819244084" />
       </node>
       <node concept="2tJIrI" id="6$_V4iGDA8Q" role="jymVt" />
+      <node concept="Wx3nA" id="6QXzQF2A$bx" role="jymVt">
+        <property role="2dlcS1" value="false" />
+        <property role="2dld4O" value="false" />
+        <property role="TrG5h" value="DEBUG" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm6S6" id="6QXzQF2AzLn" role="1B3o_S" />
+        <node concept="10P_77" id="6QXzQF2A$bv" role="1tU5fm" />
+        <node concept="3clFbT" id="6QXzQF2A$Ah" role="33vP2m">
+          <property role="3clFbU" value="false" />
+        </node>
+      </node>
       <node concept="Wx3nA" id="3ME3zLf8qL3" role="jymVt">
         <property role="TrG5h" value="SHORT_BYTES" />
         <property role="3TUv4t" value="true" />
@@ -38011,8 +37897,8 @@
                 </node>
               </node>
               <node concept="3clFbJ" id="3ME3zLf8qUX" role="3cqZAp">
-                <node concept="3clFbT" id="3ME3zLfqmaM" role="3clFbw">
-                  <property role="3clFbU" value="false" />
+                <node concept="37vLTw" id="6QXzQF2A$B0" role="3clFbw">
+                  <ref role="3cqZAo" node="6QXzQF2A$bx" resolve="DEBUG" />
                 </node>
                 <node concept="3clFbS" id="3ME3zLf8qV0" role="3clFbx">
                   <node concept="3clFbF" id="3ME3zLf8qV1" role="3cqZAp">
@@ -42419,7 +42305,6 @@
         <ref role="a64iB" to="oc6c:6$_V4iGDnc5" resolve="Base" />
         <ref role="3aRQVk" to="oc6c:6$_V4iGDCdB" resolve="ModuleToFragment_7576721727819252583" />
       </node>
-      <node concept="2tJIrI" id="6$_V4iGDCdD" role="jymVt" />
       <node concept="312cEg" id="3ME3zLf8Uu5" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -42550,9 +42435,6 @@
         <node concept="ocbFV" id="6$_V4iGDCdK" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252592" />
           <ref role="ocbYS" node="6$_V4iGDCdE" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLM" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8UuG" role="jymVt">
@@ -43142,12 +43024,6 @@
         <node concept="ocbFV" id="6$_V4iGDCei" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252626" />
           <ref role="ocbYS" node="6$_V4iGDCec" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLQ" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLX" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rts" role="jymVt">
@@ -44572,6 +44448,10 @@
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="currentLsn" />
                   <node concept="3cpWsb" id="3ME3zLf8ryj" role="1tU5fm" />
+                  <node concept="10M0yZ" id="6QXzQF2Av4B" role="33vP2m">
+                    <ref role="1PxDUh" to="vryb:6$_V4iGDGiG" resolve="DbLsn" />
+                    <ref role="3cqZAo" to="vryb:3ME3zLf8oYM" resolve="NULL_LSN" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="3ME3zLf8rym" role="3cqZAp">
@@ -44579,6 +44459,9 @@
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="wakeupCleaner" />
                   <node concept="10P_77" id="3ME3zLf8ryn" role="1tU5fm" />
+                  <node concept="3clFbT" id="6QXzQF2Av5H" role="33vP2m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
               <node concept="3cpWs8" id="3ME3zLf8ryq" role="3cqZAp">
@@ -46074,9 +45957,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252738" />
           <ref role="ocbYS" node="6$_V4iGDCfW" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLV" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rBL" role="jymVt">
         <property role="TrG5h" value="getLogEntry" />
@@ -46793,21 +46673,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252752" />
           <ref role="ocbYS" node="6$_V4iGDCga" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLO" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLP" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLS" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLT" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM0" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGD$aj" resolve="DbChecksumException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rE$" role="jymVt">
         <property role="TrG5h" value="get" />
@@ -47055,12 +46920,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252766" />
           <ref role="ocbYS" node="6$_V4iGDCgo" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkLY" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLZ" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDCdc" resolve="LogFileNotFoundException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rFy" role="jymVt">
         <property role="TrG5h" value="flush" />
@@ -47119,9 +46978,6 @@
         <node concept="ocbFV" id="6$_V4iGDCg_" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252773" />
           <ref role="ocbYS" node="6$_V4iGDCgv" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLW" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rFL" role="jymVt">
@@ -47389,9 +47245,6 @@
         <node concept="ocbFV" id="6$_V4iGDCh1" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252801" />
           <ref role="ocbYS" node="6$_V4iGDCgV" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkLU" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rGI" role="jymVt">
@@ -48209,12 +48062,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252877" />
           <ref role="ocbYS" node="6$_V4iGDCi7" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkM3" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM5" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rmZ" role="jymVt">
         <property role="TrG5h" value="flushInternal" />
@@ -48312,12 +48159,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252884" />
           <ref role="ocbYS" node="6$_V4iGDCie" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkMc" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMd" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rnq" role="jymVt">
         <property role="TrG5h" value="getUnflushableTrackedSummary" />
@@ -48394,12 +48235,6 @@
         <node concept="ocbFV" id="6$_V4iGDCir" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252891" />
           <ref role="ocbYS" node="6$_V4iGDCil" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM6" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMb" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8rnI" role="jymVt">
@@ -48506,12 +48341,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252898" />
           <ref role="ocbYS" node="6$_V4iGDCis" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkM8" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMa" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8roa" role="jymVt">
         <property role="TrG5h" value="countObsoleteNodes" />
@@ -48611,12 +48440,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252905" />
           <ref role="ocbYS" node="6$_V4iGDCiz" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkM4" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM9" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8ro$" role="jymVt">
         <property role="TrG5h" value="countObsoleteINs" />
@@ -48693,12 +48516,6 @@
         <node concept="ocbFV" id="6$_V4iGDCiK" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252912" />
           <ref role="ocbYS" node="6$_V4iGDCiE" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM2" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkM7" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
         </node>
       </node>
       <node concept="3UR2Jj" id="3ME3zLf8roS" role="lGtFl">
@@ -49055,12 +48872,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252946" />
           <ref role="ocbYS" node="6$_V4iGDCjc" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkMi" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMk" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8S5K" role="jymVt">
         <property role="TrG5h" value="getFirstLsn" />
@@ -49233,12 +49044,6 @@
         <node concept="ocbFV" id="6$_V4iGDCjw" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252960" />
           <ref role="ocbYS" node="6$_V4iGDCjq" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMg" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMj" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8S6x" role="jymVt">
@@ -49578,12 +49383,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252988" />
           <ref role="ocbYS" node="6$_V4iGDCjQ" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshkMe" role="Sfmx6">
-          <ref role="3uigEE" to="rg1h:6$_V4iGDEJo" resolve="LatchNotHeldException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMh" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8S7I" role="jymVt">
         <property role="TrG5h" value="latchForWrite" />
@@ -49639,9 +49438,6 @@
         <node concept="ocbFV" id="6$_V4iGDCk3" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819252995" />
           <ref role="ocbYS" node="6$_V4iGDCjX" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMf" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8S7Q" role="jymVt">
@@ -49831,6 +49627,7 @@
                   <node concept="3uibUv" id="3ME3zLf8S8g" role="1tU5fm">
                     <ref role="3uigEE" to="zfbc:~ByteBuffer" resolve="ByteBuffer" />
                   </node>
+                  <node concept="10Nm6u" id="6QXzQF2Arfh" role="33vP2m" />
                 </node>
               </node>
               <node concept="2$JKZl" id="3ME3zLf8S8H" role="3cqZAp">
@@ -50360,9 +50157,6 @@
         <node concept="ocbFV" id="6$_V4iGDCl8" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819253064" />
           <ref role="ocbYS" node="6$_V4iGDCl2" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshkMl" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDC9L" resolve="LogException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8MwC" role="jymVt">

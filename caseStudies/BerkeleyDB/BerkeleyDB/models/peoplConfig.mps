@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dc01080c-7e9e-4379-b8bb-76d1c54a7000(peoplConfig)" doNotGenerate="true">
+<model ref="r:dc01080c-7e9e-4379-b8bb-76d1c54a7000(peoplConfig)">
   <persistence version="9" />
   <languages>
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />

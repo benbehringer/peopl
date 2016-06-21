@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ea55a1ef-c8c4-411b-9c9e-5e0843a3cf09(com.sleepycat.je.latch)" doNotGenerate="true">
+<model ref="r:ea55a1ef-c8c4-411b-9c9e-5e0843a3cf09(com.sleepycat.je.latch)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -1671,18 +1671,6 @@
         <node concept="ocbFV" id="6$_V4iGDEKo" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819263000" />
           <ref role="ocbYS" node="6$_V4iGDEKi" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsK" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsL" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsM" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsN" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8MCD" role="jymVt">
@@ -4119,12 +4107,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264382" />
           <ref role="ocbYS" node="6$_V4iGDF5S" />
         </node>
-        <node concept="3uibUv" id="5ffr7rsgMsO" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsP" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8_Yy" role="jymVt">
         <property role="TrG5h" value="acquireNoWait" />
@@ -5349,12 +5331,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264500" />
           <ref role="ocbYS" node="6$_V4iGDF7I" />
         </node>
-        <node concept="3uibUv" id="5ffr7rsgMsQ" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsU" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8z2u" role="jymVt">
         <property role="TrG5h" value="acquireExclusiveNoWait" />
@@ -5458,12 +5434,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264507" />
           <ref role="ocbYS" node="6$_V4iGDF7P" />
         </node>
-        <node concept="3uibUv" id="5ffr7rsgMsR" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsT" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8z31" role="jymVt">
         <property role="TrG5h" value="acquireShared" />
@@ -5541,9 +5511,6 @@
         <node concept="ocbFV" id="6$_V4iGDF82" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264514" />
           <ref role="ocbYS" node="6$_V4iGDF7W" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsS" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8z3o" role="jymVt">
@@ -7918,15 +7885,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264672" />
           <ref role="ocbYS" node="6$_V4iGDFaq" />
         </node>
-        <node concept="3uibUv" id="5ffr7rsgMsV" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsW" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsZ" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8x2B" role="jymVt">
         <property role="TrG5h" value="acquireExclusiveNoWait" />
@@ -8136,12 +8094,6 @@
         <node concept="ocbFV" id="6$_V4iGDFaB" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264679" />
           <ref role="ocbYS" node="6$_V4iGDFax" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsX" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMsY" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8x3F" role="jymVt">
@@ -8407,12 +8359,6 @@
         <node concept="ocbFV" id="6$_V4iGDFaI" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819264686" />
           <ref role="ocbYS" node="6$_V4iGDFaC" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMt0" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyHj" resolve="RunRecoveryException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rsgMt1" role="Sfmx6">
-          <ref role="3uigEE" node="6$_V4iGDFbz" resolve="LatchException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8x4W" role="jymVt">

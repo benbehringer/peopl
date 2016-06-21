@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:a39beab8-b345-4825-afbf-c46643736bd8(com.sleepycat.je.log.entry)" doNotGenerate="true">
+<model ref="r:a39beab8-b345-4825-afbf-c46643736bd8(com.sleepycat.je.log.entry)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -33,6 +33,9 @@
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1215695201514" name="jetbrains.mps.baseLanguage.structure.MinusAssignmentExpression" flags="nn" index="d5anL" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
+        <property id="1179360856892" name="value" index="2noCCI" />
+      </concept>
       <concept id="1224500764161" name="jetbrains.mps.baseLanguage.structure.BitwiseAndExpression" flags="nn" index="pVHWs" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
@@ -103,9 +106,6 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
-      <concept id="4269842503726207156" name="jetbrains.mps.baseLanguage.structure.LongLiteral" flags="nn" index="1adDum">
-        <property id="4269842503726207157" name="value" index="1adDun" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="4276006055363816570" name="isSynchronized" index="od$2w" />
@@ -1400,12 +1400,6 @@
         <node concept="ocbFV" id="6$_V4iGDGy$" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819270308" />
           <ref role="ocbYS" node="6$_V4iGDGyu" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8K" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8L" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8yec" role="jymVt">
@@ -2919,15 +2913,6 @@
           <property role="TrG5h" value="PeoplBlockReference_7576721727819270475" />
           <ref role="ocbYS" node="6$_V4iGDG_5" />
         </node>
-        <node concept="3uibUv" id="5ffr7rshm8M" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8O" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8Q" role="Sfmx6">
-          <ref role="3uigEE" to="m6tf:6$_V4iGDC9L" resolve="LogException" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8vIo" role="jymVt">
         <property role="TrG5h" value="dumpEntry" />
@@ -3263,12 +3248,6 @@
         <node concept="ocbFV" id="6$_V4iGDG_P" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819270517" />
           <ref role="ocbYS" node="6$_V4iGDG_J" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8N" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8P" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3UR2Jj" id="3ME3zLf8vJz" role="lGtFl">
@@ -3917,8 +3896,8 @@
                             <node concept="37vLTw" id="3ME3zLf8wwl" role="3uHU7B">
                               <ref role="3cqZAo" node="3ME3zLf8wwe" resolve="fileNum" />
                             </node>
-                            <node concept="1adDum" id="3ME3zLf8wwm" role="3uHU7w">
-                              <property role="1adDun" value="4294967295L" />
+                            <node concept="2nou5x" id="6QXzQF2AdBD" role="3uHU7w">
+                              <property role="2noCCI" value="FFFFFFFF" />
                             </node>
                           </node>
                           <node concept="9aQIb" id="3ME3zLf8wwt" role="9aQIa">
@@ -3996,12 +3975,6 @@
         <node concept="ocbFV" id="6$_V4iGDGAn" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7576721727819270551" />
           <ref role="ocbYS" node="6$_V4iGDGAh" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8R" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
-        </node>
-        <node concept="3uibUv" id="5ffr7rshm8S" role="Sfmx6">
-          <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8wx2" role="jymVt">
