@@ -12,6 +12,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wexy" ref="r:74808b88-3d1c-4dc8-8642-164154f3f3a7(typesystemIntegration.languageChecker)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -279,8 +280,9 @@
     </language>
   </registry>
   <node concept="3HP615" id="4CFdEKN9mKc">
-    <property role="TrG5h" value="IExt_Fragment_Behavior" />
+    <property role="TrG5h" value="IExt_PeoplCoreExtension" />
     <property role="3GE5qa" value="extensions" />
+    <node concept="2tJIrI" id="18ZMEb5jIgE" role="jymVt" />
     <node concept="3clFb_" id="4CFdEKN9mOI" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -331,13 +333,87 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="18ZMEb5jxmE" role="jymVt" />
+    <node concept="3clFb_" id="18ZMEb5jVwg" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isPeoplBlock" />
+      <node concept="3clFbS" id="18ZMEb5jVwj" role="3clF47" />
+      <node concept="3Tm1VV" id="18ZMEb5jVwk" role="1B3o_S" />
+      <node concept="10P_77" id="18ZMEb5jVun" role="3clF45" />
+      <node concept="37vLTG" id="18ZMEb5jVzi" role="3clF46">
+        <property role="TrG5h" value="peoplBlock" />
+        <node concept="3Tqbb2" id="18ZMEb5jVzh" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="18ZMEb5jIf6" role="jymVt" />
+    <node concept="3clFb_" id="18ZMEb5jx7s" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="assignToModule" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="18ZMEb5jx7v" role="3clF47" />
+      <node concept="3Tm1VV" id="18ZMEb5jx4X" role="1B3o_S" />
+      <node concept="3cqZAl" id="18ZMEb5jx7q" role="3clF45" />
+      <node concept="37vLTG" id="18ZMEb5jxdy" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="18ZMEb5jxdx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="18ZMEb5jxhu" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="18ZMEb5jxlw" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="18ZMEb5jHIs" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="TrG5h" value="assignModuleToWrapper" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="18ZMEb5jHIv" role="3clF47" />
+      <node concept="3Tm1VV" id="18ZMEb5jH_p" role="1B3o_S" />
+      <node concept="3cqZAl" id="18ZMEb5jHFV" role="3clF45" />
+      <node concept="37vLTG" id="18ZMEb5jHPW" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="18ZMEb5jHPV" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="18ZMEb5jHVJ" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="18ZMEb5jI0Y" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="18ZMEb5jT$m" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="createAlternative" />
+      <node concept="3clFbS" id="18ZMEb5jT$p" role="3clF47" />
+      <node concept="3Tm1VV" id="18ZMEb5jT$q" role="1B3o_S" />
+      <node concept="3cqZAl" id="18ZMEb5jTyK" role="3clF45" />
+      <node concept="37vLTG" id="18ZMEb5jTAU" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="18ZMEb5jTAT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="18ZMEb5jTBR" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="18ZMEb5jTGp" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4CFdEKN9mKd" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="4CFdEKN9pwR">
-    <property role="TrG5h" value="Ext_Fragment_Behavior" />
+    <property role="TrG5h" value="Ext_PeoplCoreExtension" />
     <property role="3GE5qa" value="extensions" />
     <node concept="3uibUv" id="4CFdEKN9vUM" role="luc8K">
-      <ref role="3uigEE" node="4CFdEKN9mKc" resolve="IExt_Fragment_Behavior" />
+      <ref role="3uigEE" node="4CFdEKN9mKc" resolve="IExt_PeoplCoreExtension" />
     </node>
   </node>
   <node concept="312cEu" id="VwUpvpz79p">

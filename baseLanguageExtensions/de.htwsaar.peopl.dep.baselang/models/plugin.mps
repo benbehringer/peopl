@@ -35,6 +35,7 @@
     <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.config.plugin)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="zq3m" ref="r:86db984a-09db-44ff-8a4e-625a55b3280d(de.htwsaar.peopl.dep.baselang.intentions)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -381,9 +382,9 @@
     </language>
   </registry>
   <node concept="1lYeZD" id="4CFdEKN9vZI">
-    <property role="TrG5h" value="ExtDef_Fragment_Behavior" />
+    <property role="TrG5h" value="ExtDef_PeoplCoreExtension" />
     <property role="3GE5qa" value="extensionPointDefinitions" />
-    <ref role="1lYe$Y" to="zur:4CFdEKN9pwR" resolve="Ext_Fragment_Behavior" />
+    <ref role="1lYe$Y" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
     <node concept="3UR2Jj" id="6RYvVSE5F_p" role="lGtFl">
       <node concept="TZ5HA" id="6RYvVSE5F_q" role="TZ5H$">
         <node concept="1dT_AC" id="6RYvVSE5F_r" role="1dT_Ay">
@@ -418,7 +419,7 @@
               <node concept="1Y3b0j" id="4CFdEKN9yoL" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <ref role="1Y3XeK" to="zur:4CFdEKN9mKc" resolve="IExt_Fragment_Behavior" />
+                <ref role="1Y3XeK" to="zur:4CFdEKN9mKc" resolve="IExt_PeoplCoreExtension" />
                 <node concept="3Tm1VV" id="4CFdEKN9yoM" role="1B3o_S" />
                 <node concept="3clFb_" id="4CFdEKN9yoN" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -732,6 +733,134 @@
                   </node>
                 </node>
                 <node concept="2tJIrI" id="7rSRKyCQ80u" role="jymVt" />
+                <node concept="3clFb_" id="18ZMEb5jVHF" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="isPeoplBlock" />
+                  <node concept="3Tm1VV" id="18ZMEb5jVHH" role="1B3o_S" />
+                  <node concept="10P_77" id="18ZMEb5jVHI" role="3clF45" />
+                  <node concept="37vLTG" id="18ZMEb5jVHJ" role="3clF46">
+                    <property role="TrG5h" value="peoplBlock" />
+                    <node concept="3Tqbb2" id="18ZMEb5jVHK" role="1tU5fm" />
+                  </node>
+                  <node concept="3clFbS" id="18ZMEb5jVHM" role="3clF47">
+                    <node concept="3clFbF" id="18ZMEb5jXt5" role="3cqZAp">
+                      <node concept="2OqwBi" id="18ZMEb5jXvo" role="3clFbG">
+                        <node concept="37vLTw" id="18ZMEb5jXt4" role="2Oq$k0">
+                          <ref role="3cqZAo" node="18ZMEb5jVHJ" resolve="peoplBlock" />
+                        </node>
+                        <node concept="1mIQ4w" id="18ZMEb5jXBw" role="2OqNvi">
+                          <node concept="chp4Y" id="18ZMEb5jXCq" role="cj9EA">
+                            <ref role="cht4Q" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="18ZMEb5jW3_" role="jymVt" />
+                <node concept="3clFb_" id="18ZMEb5jx7s" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="TrG5h" value="assignToModule" />
+                  <property role="od$2w" value="false" />
+                  <property role="DiZV1" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <node concept="3clFbS" id="18ZMEb5jx7v" role="3clF47">
+                    <node concept="3clFbF" id="18ZMEb5jzDn" role="3cqZAp">
+                      <node concept="2YIFZM" id="18ZMEb5j$09" role="3clFbG">
+                        <ref role="37wK5l" to="zq3m:18ZMEb5jqtf" resolve="execute" />
+                        <ref role="1Pybhc" to="zq3m:18ZMEb5jqay" resolve="AssignModule_Helper" />
+                        <node concept="37vLTw" id="18ZMEb5j$1p" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jxdy" resolve="node" />
+                        </node>
+                        <node concept="37vLTw" id="18ZMEb5j$7m" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jxhu" resolve="context" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tm1VV" id="18ZMEb5jx4X" role="1B3o_S" />
+                  <node concept="3cqZAl" id="18ZMEb5jx7q" role="3clF45" />
+                  <node concept="37vLTG" id="18ZMEb5jxdy" role="3clF46">
+                    <property role="TrG5h" value="node" />
+                    <node concept="3Tqbb2" id="18ZMEb5jxdx" role="1tU5fm" />
+                  </node>
+                  <node concept="37vLTG" id="18ZMEb5jxhu" role="3clF46">
+                    <property role="TrG5h" value="context" />
+                    <node concept="3uibUv" id="18ZMEb5jxlw" role="1tU5fm">
+                      <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="18ZMEb5ju0_" role="jymVt" />
+                <node concept="3clFb_" id="18ZMEb5jHIs" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="TrG5h" value="assignModuleToWrapper" />
+                  <property role="od$2w" value="false" />
+                  <property role="DiZV1" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <node concept="3clFbS" id="18ZMEb5jHIv" role="3clF47">
+                    <node concept="3clFbF" id="18ZMEb5jSPf" role="3cqZAp">
+                      <node concept="2YIFZM" id="18ZMEb5jSQy" role="3clFbG">
+                        <ref role="37wK5l" to="zq3m:18ZMEb5jCq6" resolve="execute" />
+                        <ref role="1Pybhc" to="zq3m:18ZMEb5jCoW" resolve="AssignModuleToWrapper_Helper" />
+                        <node concept="37vLTw" id="18ZMEb5jSRS" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jHPW" resolve="node" />
+                        </node>
+                        <node concept="37vLTw" id="18ZMEb5jT03" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jHVJ" resolve="context" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3Tm1VV" id="18ZMEb5jH_p" role="1B3o_S" />
+                  <node concept="3cqZAl" id="18ZMEb5jHFV" role="3clF45" />
+                  <node concept="37vLTG" id="18ZMEb5jHPW" role="3clF46">
+                    <property role="TrG5h" value="node" />
+                    <node concept="3Tqbb2" id="18ZMEb5jHPV" role="1tU5fm">
+                      <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
+                    </node>
+                  </node>
+                  <node concept="37vLTG" id="18ZMEb5jHVJ" role="3clF46">
+                    <property role="TrG5h" value="context" />
+                    <node concept="3uibUv" id="18ZMEb5jI0Y" role="1tU5fm">
+                      <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="18ZMEb5jT3V" role="jymVt" />
+                <node concept="3clFb_" id="18ZMEb5jTOv" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="createAlternative" />
+                  <node concept="3Tm1VV" id="18ZMEb5jTOx" role="1B3o_S" />
+                  <node concept="3cqZAl" id="18ZMEb5jTOy" role="3clF45" />
+                  <node concept="37vLTG" id="18ZMEb5jTOz" role="3clF46">
+                    <property role="TrG5h" value="node" />
+                    <node concept="3Tqbb2" id="18ZMEb5jTO$" role="1tU5fm" />
+                  </node>
+                  <node concept="37vLTG" id="18ZMEb5jTO_" role="3clF46">
+                    <property role="TrG5h" value="context" />
+                    <node concept="3uibUv" id="18ZMEb5jTOA" role="1tU5fm">
+                      <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="18ZMEb5jTOC" role="3clF47">
+                    <node concept="3clFbF" id="18ZMEb5jUah" role="3cqZAp">
+                      <node concept="2YIFZM" id="18ZMEb5jUb$" role="3clFbG">
+                        <ref role="37wK5l" to="zq3m:18ZMEb5jP9Q" resolve="execute" />
+                        <ref role="1Pybhc" to="zq3m:18ZMEb5jP9a" resolve="CreateAlternative_Helper" />
+                        <node concept="37vLTw" id="18ZMEb5jUcV" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jTOz" resolve="node" />
+                        </node>
+                        <node concept="37vLTw" id="18ZMEb5jUjj" role="37wK5m">
+                          <ref role="3cqZAo" node="18ZMEb5jTO_" resolve="context" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="18ZMEb5jHuU" role="jymVt" />
               </node>
             </node>
           </node>
