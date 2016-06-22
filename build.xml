@@ -146,12 +146,12 @@
   </target>
   
   <target name="fetchDependencies">
-    <mkdir dir="${build.tmp}/deps/peoplCore/peoplCore.zip" />
-    <unzip src="${artifacts.peoplCore}/peoplCore.zip" dest="${build.tmp}/deps/peoplCore/peoplCore.zip" />
     <mkdir dir="${build.tmp}/deps/peoplBaseLanguageExtension/peoplBaseLanguageExtension.zip" />
     <unzip src="${artifacts.peoplBaseLanguageExtension}/peoplBaseLanguageExtension.zip" dest="${build.tmp}/deps/peoplBaseLanguageExtension/peoplBaseLanguageExtension.zip" />
     <mkdir dir="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip" />
     <unzip src="${artifacts.peoplMbeddrPluginsBundle}/peoplMbeddrPluginsBundle.zip" dest="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip" />
+    <mkdir dir="${build.tmp}/deps/peoplCore/peoplCore.zip" />
+    <unzip src="${artifacts.peoplCore}/peoplCore.zip" dest="${build.tmp}/deps/peoplCore/peoplCore.zip" />
   </target>
   
   <target name="build" depends="assemble" />
