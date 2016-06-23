@@ -3964,7 +3964,7 @@
                                           <node concept="2OqwBi" id="47WRMVuScm$" role="3uHU7B">
                                             <node concept="2OqwBi" id="47WRMVuScm_" role="2Oq$k0">
                                               <node concept="Xjq3P" id="47WRMVuScmA" role="2Oq$k0" />
-                                              <node concept="liA8E" id="47WRMVuScmB" role="2OqNvi">
+                                              <node concept="liA8E" id="7LsPY_DswfP" role="2OqNvi">
                                                 <ref role="37wK5l" to="g51k:~EditorCell_Basic.getParent():jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="getParent" />
                                               </node>
                                             </node>
