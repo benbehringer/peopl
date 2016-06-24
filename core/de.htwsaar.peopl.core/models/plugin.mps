@@ -302,7 +302,7 @@
     <node concept="3clFb_" id="gnPVcdB7TK" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="canBeAttributed" />
+      <property role="TrG5h" value="canHavePresenceCondition" />
       <node concept="3clFbS" id="gnPVcdB7TN" role="3clF47" />
       <node concept="3Tm1VV" id="gnPVcdB7TO" role="1B3o_S" />
       <node concept="10P_77" id="gnPVcdB7CG" role="3clF45" />
@@ -313,27 +313,21 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="7rSRKyCQ73h" role="jymVt">
+    <node concept="3clFb_" id="7qfStAdyWGJ" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="handleAlternativeMethod" />
-      <node concept="3clFbS" id="7rSRKyCQ73k" role="3clF47" />
-      <node concept="3Tm1VV" id="7rSRKyCQ73l" role="1B3o_S" />
-      <node concept="3cqZAl" id="7rSRKyCQ87a" role="3clF45" />
-      <node concept="37vLTG" id="7rSRKyCQnKM" role="3clF46">
-        <property role="TrG5h" value="originalMethod" />
-        <node concept="3Tqbb2" id="7rSRKyCQnKN" role="1tU5fm">
-          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      <property role="TrG5h" value="canHaveAlternative" />
+      <node concept="37vLTG" id="7qfStAdyWK0" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7qfStAdyWK1" role="1tU5fm">
+          <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
         </node>
       </node>
-      <node concept="37vLTG" id="7rSRKyCQ79L" role="3clF46">
-        <property role="TrG5h" value="alternativeMethod" />
-        <node concept="3Tqbb2" id="7rSRKyCQ79K" role="1tU5fm">
-          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-        </node>
-      </node>
+      <node concept="3clFbS" id="7qfStAdyWGM" role="3clF47" />
+      <node concept="3Tm1VV" id="7qfStAdyWGN" role="1B3o_S" />
+      <node concept="10P_77" id="7qfStAdyWEA" role="3clF45" />
     </node>
-    <node concept="2tJIrI" id="18ZMEb5jxmE" role="jymVt" />
+    <node concept="2tJIrI" id="7qfStAdyWMr" role="jymVt" />
     <node concept="3clFb_" id="18ZMEb5jVwg" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />

@@ -262,6 +262,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
+      </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -2767,222 +2770,238 @@
       <node concept="3Tm1VV" id="2mxUwyW8A_U" role="1B3o_S" />
       <node concept="3cqZAl" id="2mxUwyW8AW7" role="3clF45" />
       <node concept="3clFbS" id="2mxUwyW8A_W" role="3clF47">
-        <node concept="3SKdUt" id="4vOt5rKlywS" role="3cqZAp">
-          <node concept="3SKdUq" id="4vOt5rKlywU" role="3SKWNk">
-            <property role="3SKdUp" value="get Content ( fragparent ) to be deleted at the end" />
+        <node concept="3SKdUt" id="1Fk50g355XS" role="3cqZAp">
+          <node concept="3SKdUq" id="1Fk50g355XT" role="3SKWNk">
+            <property role="3SKdUp" value="The fragment is not included in the current configuration" />
           </node>
         </node>
-        <node concept="3clFbH" id="4vOt5rKly$a" role="3cqZAp" />
-        <node concept="3cpWs8" id="4vOt5rKl$7u" role="3cqZAp">
-          <node concept="3cpWsn" id="4vOt5rKl$7x" role="3cpWs9">
-            <property role="TrG5h" value="isPBlock" />
-            <node concept="10P_77" id="4vOt5rKl$7s" role="1tU5fm" />
-            <node concept="3clFbT" id="4vOt5rKl$9S" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
+        <node concept="3SKdUt" id="1Fk50g3565J" role="3cqZAp">
+          <node concept="3SKdUq" id="1Fk50g3565K" role="3SKWNk">
+            <property role="3SKdUp" value="Thus, we need to delete the content node" />
           </node>
         </node>
-        <node concept="3SKdUt" id="4vOt5rKl$0d" role="3cqZAp">
-          <node concept="3SKdUq" id="4vOt5rKl$0f" role="3SKWNk">
-            <property role="3SKdUp" value="extension point exists and node is of type statement =&gt; decide if node is Peopleblock" />
-          </node>
-        </node>
-        <node concept="1X3_iC" id="1Fk50g34REg" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbJ" id="4vOt5rKlzFt" role="8Wnug">
-            <node concept="3clFbS" id="4vOt5rKlzFv" role="3clFbx">
-              <node concept="1X3_iC" id="3OHjtH3313A" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="3OHjtH32KdW" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="3OHjtH32KdY" role="34bqiv">
-                    <property role="Xl_RC" value="Try to signoff" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="4vOt5rKl$bf" role="3cqZAp">
-                <node concept="37vLTI" id="4vOt5rKl$eB" role="3clFbG">
-                  <node concept="37vLTw" id="4vOt5rKl$bd" role="37vLTJ">
-                    <ref role="3cqZAo" node="4vOt5rKl$7x" resolve="isPBlock" />
-                  </node>
-                  <node concept="2OqwBi" id="4vOt5rKl$eR" role="37vLTx">
-                    <node concept="2OqwBi" id="4vOt5rKl$eS" role="2Oq$k0">
-                      <node concept="2OqwBi" id="4vOt5rKl$eT" role="2Oq$k0">
-                        <node concept="2O5UvJ" id="4vOt5rKl$eU" role="2Oq$k0">
-                          <ref role="2O5UnU" to="tpec:1TRNIlyOA5T" resolve="Ext_BaseLanguageVariabilityAwareness" />
-                        </node>
-                        <node concept="SfwO_" id="4vOt5rKl$eV" role="2OqNvi" />
-                      </node>
-                      <node concept="1uHKPH" id="4vOt5rKl$eW" role="2OqNvi" />
-                    </node>
-                    <node concept="liA8E" id="4vOt5rKl$eX" role="2OqNvi">
-                      <ref role="37wK5l" to="tpec:5nKloA8vEQb" resolve="isPeoplBlockStatement" />
-                      <node concept="10QFUN" id="4vOt5rKl$eY" role="37wK5m">
-                        <node concept="3Tqbb2" id="4vOt5rKl$eZ" role="10QFUM">
-                          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-                        </node>
-                        <node concept="37vLTw" id="2mxUwyW8Ff_" role="10QFUP">
-                          <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1Wc70l" id="4vOt5rKlzP9" role="3clFbw">
-              <node concept="2OqwBi" id="4vOt5rKlzI9" role="3uHU7B">
-                <node concept="37vLTw" id="2mxUwyW8Fe0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
-                </node>
-                <node concept="1mIQ4w" id="4vOt5rKlzLH" role="2OqNvi">
-                  <node concept="chp4Y" id="4vOt5rKlzMh" role="cj9EA">
-                    <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="4vOt5rKlzQF" role="3uHU7w">
-                <node concept="2OqwBi" id="4vOt5rKlzQG" role="2Oq$k0">
-                  <node concept="2O5UvJ" id="4vOt5rKlzQH" role="2Oq$k0">
-                    <ref role="2O5UnU" to="tpec:1TRNIlyOA5T" resolve="Ext_BaseLanguageVariabilityAwareness" />
-                  </node>
-                  <node concept="SfwO_" id="4vOt5rKlzQI" role="2OqNvi" />
-                </node>
-                <node concept="3GX2aA" id="4vOt5rKlzQJ" role="2OqNvi" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="4vOt5rKlzbz" role="3cqZAp" />
-        <node concept="3SKdUt" id="4vOt5rKlyA3" role="3cqZAp">
-          <node concept="3SKdUq" id="4vOt5rKlyA5" role="3SKWNk">
-            <property role="3SKdUp" value="test if content is NOT Peopleblock =&gt; test for wrapper" />
+        <node concept="3clFbH" id="1Fk50g356a_" role="3cqZAp" />
+        <node concept="3SKdUt" id="1Fk50g3554e" role="3cqZAp">
+          <node concept="3SKdUq" id="1Fk50g3554f" role="3SKWNk">
+            <property role="3SKdUp" value="There are some exceptions to the subtree rule" />
           </node>
         </node>
         <node concept="3clFbJ" id="4vOt5rKl$3H" role="3cqZAp">
           <node concept="3clFbS" id="4vOt5rKl$3J" role="3clFbx">
-            <node concept="3cpWs8" id="4vOt5rKl$i8" role="3cqZAp">
-              <node concept="3cpWsn" id="4vOt5rKl$ib" role="3cpWs9">
-                <property role="TrG5h" value="wrappeeStatementList" />
-                <node concept="3Tqbb2" id="4vOt5rKl$i6" role="1tU5fm">
-                  <ref role="ehGHo" to="tpee:fzclF80" resolve="StatementList" />
-                </node>
-                <node concept="2OqwBi" id="1Fk50g34TzH" role="33vP2m">
-                  <node concept="2OqwBi" id="1Fk50g34To5" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1Fk50g34ThT" role="2Oq$k0">
-                      <node concept="2O5UvJ" id="1Fk50g34Tb0" role="2Oq$k0">
-                        <ref role="2O5UnU" to="1z58:3OHjtH331eH" resolve="Ext_PeoplConfigExtension" />
-                      </node>
-                      <node concept="SfwO_" id="1Fk50g34Tk6" role="2OqNvi" />
+            <node concept="3SKdUt" id="1Fk50g354UG" role="3cqZAp">
+              <node concept="3SKdUq" id="1Fk50g354UH" role="3SKWNk">
+                <property role="3SKdUp" value="Test if content is a wrapper" />
+              </node>
+            </node>
+            <node concept="2Gpval" id="4vOt5rKl_wb" role="3cqZAp">
+              <node concept="2GrKxI" id="4vOt5rKl_wd" role="2Gsz3X">
+                <property role="TrG5h" value="currentStatement" />
+              </node>
+              <node concept="3clFbS" id="4vOt5rKl_wf" role="2LFqv$">
+                <node concept="3clFbF" id="4vOt5rKlCm_" role="3cqZAp">
+                  <node concept="2OqwBi" id="4vOt5rKlCp1" role="3clFbG">
+                    <node concept="2GrUjf" id="4vOt5rKlCmz" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
                     </node>
-                    <node concept="1uHKPH" id="1Fk50g34TtL" role="2OqNvi" />
+                    <node concept="3YRAZt" id="4vOt5rKlCBb" role="2OqNvi" />
                   </node>
-                  <node concept="liA8E" id="1Fk50g34XoP" role="2OqNvi">
-                    <ref role="37wK5l" to="1z58:1Fk50g34Wmn" resolve="getWrappeeStatementList" />
-                    <node concept="10QFUN" id="1Fk50g34XVH" role="37wK5m">
-                      <node concept="3Tqbb2" id="1Fk50g34XZo" role="10QFUM">
-                        <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-                      </node>
-                      <node concept="37vLTw" id="1Fk50g34Xs3" role="10QFUP">
-                        <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                </node>
+                <node concept="3SKdUt" id="4vOt5rKlRUl" role="3cqZAp">
+                  <node concept="3SKdUq" id="4vOt5rKlRUn" role="3SKWNk">
+                    <property role="3SKdUp" value="add statements as siblings before the contentNode" />
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4vOt5rKlJHN" role="3cqZAp">
+                  <node concept="2OqwBi" id="4vOt5rKlRH7" role="3clFbG">
+                    <node concept="37vLTw" id="1Fk50g34T8j" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                    </node>
+                    <node concept="HtX7F" id="4vOt5rKlRSI" role="2OqNvi">
+                      <node concept="2GrUjf" id="4vOt5rKlRT9" role="HtX7I">
+                        <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-            </node>
-            <node concept="3clFbJ" id="1Fk50g34Sx4" role="3cqZAp">
-              <node concept="3clFbS" id="1Fk50g34Sx6" role="3clFbx">
-                <node concept="2Gpval" id="4vOt5rKl_wb" role="3cqZAp">
-                  <node concept="2GrKxI" id="4vOt5rKl_wd" role="2Gsz3X">
-                    <property role="TrG5h" value="currentStatement" />
+              <node concept="2OqwBi" id="1Fk50g35f6f" role="2GsD0m">
+                <node concept="2OqwBi" id="1Fk50g35eGI" role="2Oq$k0">
+                  <node concept="35c_gC" id="1Fk50g35eCR" role="2Oq$k0">
+                    <ref role="35c_gD" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
                   </node>
-                  <node concept="3clFbS" id="4vOt5rKl_wf" role="2LFqv$">
-                    <node concept="3clFbF" id="4vOt5rKlCm_" role="3cqZAp">
-                      <node concept="2OqwBi" id="4vOt5rKlCp1" role="3clFbG">
-                        <node concept="2GrUjf" id="4vOt5rKlCmz" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
+                  <node concept="2qgKlT" id="1Fk50g35eYG" role="2OqNvi">
+                    <ref role="37wK5l" to="kpvh:1Fk50g357yE" resolve="getWrappee" />
+                    <node concept="37vLTw" id="1Fk50g35f0_" role="37wK5m">
+                      <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="1Fk50g35fs_" role="2OqNvi">
+                  <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="1Fk50g356Xn" role="3clFbw">
+            <node concept="35c_gC" id="1Fk50g356Na" role="2Oq$k0">
+              <ref role="35c_gD" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
+            </node>
+            <node concept="2qgKlT" id="1Fk50g3576H" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:z4oRObZeCD" resolve="isWrapper" />
+              <node concept="37vLTw" id="1Fk50g3577E" role="37wK5m">
+                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+              </node>
+            </node>
+          </node>
+          <node concept="3eNFk2" id="1Fk50g35wSw" role="3eNLev">
+            <node concept="3clFbS" id="1Fk50g35wSy" role="3eOfB_">
+              <node concept="3SKdUt" id="1Fk50g35rFj" role="3cqZAp">
+                <node concept="3SKdUq" id="1Fk50g35rYj" role="3SKWNk">
+                  <property role="3SKdUp" value="We have nodes in the AST where we have exactly one child (instead of a list), for instance, a return type," />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="1Fk50g35s4N" role="3cqZAp">
+                <node concept="3SKdUq" id="1Fk50g35s4O" role="3SKWNk">
+                  <property role="3SKdUp" value="However, the 150% model allows multiple alternatives even for childs that must be unique in the final product" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="1Fk50g35sf3" role="3cqZAp">
+                <node concept="3SKdUq" id="1Fk50g35sf4" role="3SKWNk">
+                  <property role="3SKdUp" value="For this purpose we introduced an annotation that is only present if a single child node is annotated using" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="1Fk50g35smS" role="3cqZAp">
+                <node concept="3SKdUq" id="1Fk50g35smT" role="3SKWNk">
+                  <property role="3SKdUp" value="an alternative" />
+                </node>
+              </node>
+              <node concept="3clFbJ" id="1Fk50g35gvg" role="3cqZAp">
+                <node concept="3clFbS" id="1Fk50g35gvi" role="3clFbx">
+                  <node concept="3SKdUt" id="1Fk50g35vYu" role="3cqZAp">
+                    <node concept="3SKdUq" id="1Fk50g35vYv" role="3SKWNk">
+                      <property role="3SKdUp" value="handle alternative types in method" />
+                    </node>
+                  </node>
+                  <node concept="3clFbJ" id="1Fk50g35nCV" role="3cqZAp">
+                    <node concept="3clFbS" id="1Fk50g35nCX" role="3clFbx">
+                      <node concept="3cpWs8" id="1Fk50g35vZ9" role="3cqZAp">
+                        <node concept="3cpWsn" id="1Fk50g35vZc" role="3cpWs9">
+                          <property role="TrG5h" value="method" />
+                          <node concept="3Tqbb2" id="1Fk50g35vZ8" role="1tU5fm">
+                            <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                          </node>
+                          <node concept="10QFUN" id="1Fk50g35w0j" role="33vP2m">
+                            <node concept="3Tqbb2" id="1Fk50g35w0h" role="10QFUM">
+                              <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                            </node>
+                            <node concept="2OqwBi" id="1Fk50g35w2T" role="10QFUP">
+                              <node concept="37vLTw" id="1Fk50g35w0v" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                              </node>
+                              <node concept="1mfA1w" id="1Fk50g35w4S" role="2OqNvi" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="3YRAZt" id="4vOt5rKlCBb" role="2OqNvi" />
                       </node>
-                    </node>
-                    <node concept="3SKdUt" id="4vOt5rKlRUl" role="3cqZAp">
-                      <node concept="3SKdUq" id="4vOt5rKlRUn" role="3SKWNk">
-                        <property role="3SKdUp" value="add statements as siblings before the contentNode" />
+                      <node concept="3clFbF" id="1Fk50g35xUr" role="3cqZAp">
+                        <node concept="2OqwBi" id="1Fk50g35xY7" role="3clFbG">
+                          <node concept="37vLTw" id="1Fk50g35xUp" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                          </node>
+                          <node concept="1P9Npp" id="1Fk50g35y1B" role="2OqNvi">
+                            <node concept="2OqwBi" id="1Fk50g35_CE" role="1P9ThW">
+                              <node concept="2OqwBi" id="1Fk50g35zcx" role="2Oq$k0">
+                                <node concept="2OqwBi" id="1Fk50g35yaT" role="2Oq$k0">
+                                  <node concept="37vLTw" id="1Fk50g35y24" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1Fk50g35vZc" resolve="method" />
+                                  </node>
+                                  <node concept="3CFZ6_" id="1Fk50g35ywt" role="2OqNvi">
+                                    <node concept="3CFYIy" id="1Fk50g35$n5" role="3CFYIz">
+                                      <ref role="3CFYIx" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="1uHKPH" id="1Fk50g35$ip" role="2OqNvi" />
+                              </node>
+                              <node concept="3TrEf2" id="1Fk50g35_MP" role="2OqNvi">
+                                <ref role="3Tt5mk" to="xf8r:1Fk50g35h2w" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
+                      <node concept="3SKdUt" id="1Fk50g35_Ts" role="3cqZAp">
+                        <node concept="3SKdUq" id="1Fk50g35_Tt" role="3SKWNk">
+                          <property role="3SKdUp" value="return as we don't want to delete the content node (the node we just replaced ;))" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs6" id="1Fk50g35_SE" role="3cqZAp" />
                     </node>
-                    <node concept="3clFbF" id="4vOt5rKlJHN" role="3cqZAp">
-                      <node concept="2OqwBi" id="4vOt5rKlRH7" role="3clFbG">
-                        <node concept="37vLTw" id="1Fk50g34T8j" role="2Oq$k0">
+                    <node concept="1Wc70l" id="1Fk50g35vGU" role="3clFbw">
+                      <node concept="2OqwBi" id="1Fk50g35vOU" role="3uHU7w">
+                        <node concept="2OqwBi" id="1Fk50g35vJK" role="2Oq$k0">
+                          <node concept="37vLTw" id="1Fk50g35vIt" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                          </node>
+                          <node concept="1mfA1w" id="1Fk50g35vLV" role="2OqNvi" />
+                        </node>
+                        <node concept="1mIQ4w" id="1Fk50g35vTo" role="2OqNvi">
+                          <node concept="chp4Y" id="1Fk50g35vUE" role="cj9EA">
+                            <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1Fk50g35wdP" role="3uHU7B">
+                        <node concept="37vLTw" id="1Fk50g35wa7" role="2Oq$k0">
                           <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
                         </node>
-                        <node concept="HtX7F" id="4vOt5rKlRSI" role="2OqNvi">
-                          <node concept="2GrUjf" id="4vOt5rKlRT9" role="HtX7I">
-                            <ref role="2Gs0qQ" node="4vOt5rKl_wd" resolve="currentStatement" />
+                        <node concept="1mIQ4w" id="1Fk50g35wkh" role="2OqNvi">
+                          <node concept="chp4Y" id="1Fk50g35wnw" role="cj9EA">
+                            <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="4vOt5rKl__R" role="2GsD0m">
-                    <node concept="37vLTw" id="4vOt5rKl_x0" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4vOt5rKl$ib" resolve="wrappeeStatementList" />
+                </node>
+                <node concept="2OqwBi" id="1Fk50g35lwv" role="3clFbw">
+                  <node concept="2OqwBi" id="1Fk50g35gPr" role="2Oq$k0">
+                    <node concept="2OqwBi" id="1Fk50g35gCY" role="2Oq$k0">
+                      <node concept="37vLTw" id="1Fk50g35g$2" role="2Oq$k0">
+                        <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                      </node>
+                      <node concept="1mfA1w" id="1Fk50g35gMF" role="2OqNvi" />
                     </node>
-                    <node concept="3Tsc0h" id="4vOt5rKl_Ks" role="2OqNvi">
-                      <ref role="3TtcxE" to="tpee:fzcqZ_x" />
+                    <node concept="3CFZ6_" id="1Fk50g35kWl" role="2OqNvi">
+                      <node concept="3CFYIy" id="1Fk50g35kWW" role="3CFYIz">
+                        <ref role="3CFYIx" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
+                      </node>
                     </node>
+                  </node>
+                  <node concept="3GX2aA" id="1Fk50g35nCa" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="1Fk50g35ryO" role="3eO9$A">
+              <node concept="2OqwBi" id="1Fk50g35ryQ" role="3fr31v">
+                <node concept="37vLTw" id="1Fk50g35ryR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                </node>
+                <node concept="1mIQ4w" id="1Fk50g35ryS" role="2OqNvi">
+                  <node concept="chp4Y" id="1Fk50g35ryT" role="cj9EA">
+                    <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
                   </node>
                 </node>
               </node>
-              <node concept="3y3z36" id="1Fk50g34SAB" role="3clFbw">
-                <node concept="10Nm6u" id="1Fk50g34SAS" role="3uHU7w" />
-                <node concept="37vLTw" id="1Fk50g34SxV" role="3uHU7B">
-                  <ref role="3cqZAo" node="4vOt5rKl$ib" resolve="wrappeeStatementList" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1Wc70l" id="1Fk50g34XBv" role="3clFbw">
-            <node concept="2OqwBi" id="1Fk50g34XGY" role="3uHU7B">
-              <node concept="37vLTw" id="1Fk50g34XFF" role="2Oq$k0">
-                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
-              </node>
-              <node concept="1mIQ4w" id="1Fk50g34XKK" role="2OqNvi">
-                <node concept="chp4Y" id="1Fk50g34XLx" role="cj9EA">
-                  <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="1Fk50g34S8F" role="3uHU7w">
-              <node concept="2OqwBi" id="1Fk50g34S4R" role="2Oq$k0">
-                <node concept="2O5UvJ" id="1Fk50g34RZA" role="2Oq$k0">
-                  <ref role="2O5UnU" to="1z58:3OHjtH331eH" resolve="Ext_PeoplConfigExtension" />
-                </node>
-                <node concept="SfwO_" id="1Fk50g34S5S" role="2OqNvi" />
-              </node>
-              <node concept="3GX2aA" id="1Fk50g34SgX" role="2OqNvi" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4xZ$jUASgRD" role="3cqZAp" />
-        <node concept="1X3_iC" id="MUpUk2LS5W" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7t9Yo1qRRjP" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="7t9Yo1qRRtX" role="34bqiv">
-              <node concept="37vLTw" id="2mxUwyW8Ftb" role="3uHU7w">
-                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
-              </node>
-              <node concept="Xl_RD" id="7t9Yo1qRRjR" role="3uHU7B">
-                <property role="Xl_RC" value="delete content of node " />
-              </node>
-            </node>
+        <node concept="3clFbH" id="1Fk50g356fr" role="3cqZAp" />
+        <node concept="3SKdUt" id="1Fk50g356np" role="3cqZAp">
+          <node concept="3SKdUq" id="1Fk50g356nq" role="3SKWNk">
+            <property role="3SKdUp" value="finally, we delete the content" />
           </node>
         </node>
-        <node concept="3clFbH" id="2mxUwyW8D_E" role="3cqZAp" />
         <node concept="3clFbF" id="6pDd21EYEJG" role="3cqZAp">
           <node concept="2OqwBi" id="6pDd21EYELd" role="3clFbG">
             <node concept="37vLTw" id="2mxUwyW8FtW" role="2Oq$k0">

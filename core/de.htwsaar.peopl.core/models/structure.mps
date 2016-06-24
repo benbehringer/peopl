@@ -23,6 +23,8 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -295,7 +297,7 @@
   </node>
   <node concept="1TIwiD" id="2gRkCJLV3Vo">
     <property role="1pbfSe" value="371429731" />
-    <property role="3GE5qa" value="Extensions" />
+    <property role="3GE5qa" value="Extensions.Wrapper" />
     <property role="TrG5h" value="Wrapper" />
     <property role="34LRSv" value="Wrapper" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
@@ -314,7 +316,7 @@
   </node>
   <node concept="1TIwiD" id="2gRkCJLWqLv">
     <property role="1pbfSe" value="371785450" />
-    <property role="3GE5qa" value="Extensions" />
+    <property role="3GE5qa" value="Extensions.Wrapper" />
     <property role="TrG5h" value="Wrappee" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2gRkCJLWqLw" role="lGtFl">
@@ -346,6 +348,41 @@
       <property role="20kJfa" value="modRef" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Fk50g35gTs">
+    <property role="1pbfSe" value="501817952" />
+    <property role="3GE5qa" value="Extensions.Alternatives" />
+    <property role="TrG5h" value="SingleChildAlternative" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="1Fk50g35gXV" role="lGtFl">
+      <property role="Hh88m" value="SingleChildAlternative" />
+      <node concept="trNpa" id="1Fk50g35h9q" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="1Fk50g35gXX" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Fk50g35gXZ">
+    <property role="1pbfSe" value="501818243" />
+    <property role="3GE5qa" value="Extensions.Alternatives" />
+    <property role="TrG5h" value="TypeAlternative" />
+    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="SingleChildAlternative" />
+    <node concept="1TJgyj" id="1Fk50g35h2w" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="type" />
+      <ref role="20lvS9" to="tpee:fz3vP1H" resolve="Type" />
+    </node>
+    <node concept="M6xJ_" id="1Fk50g35h2u" role="lGtFl">
+      <property role="Hh88m" value="TypeAlternative" />
+      <node concept="trNpa" id="1Fk50g35h9v" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
     </node>
   </node>
 </model>

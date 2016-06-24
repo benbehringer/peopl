@@ -113,6 +113,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
         <child id="1225898971709" name="getter" index="1Hhtcw" />
@@ -1485,12 +1486,12 @@
     </node>
   </node>
   <node concept="24kQdi" id="2gRkCJLV7tN">
-    <property role="3GE5qa" value="Extensions" />
+    <property role="3GE5qa" value="Extensions.Wrapper" />
     <ref role="1XX52x" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
     <node concept="2SsqMj" id="2gRkCJLV7tP" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="7mKAM8Kyfzj">
-    <property role="3GE5qa" value="Extensions" />
+    <property role="3GE5qa" value="Extensions.Wrapper" />
     <ref role="1XX52x" to="xf8r:2gRkCJLWqLv" resolve="Wrappee" />
     <node concept="2SsqMj" id="7mKAM8Kyfzl" role="2wV5jI" />
   </node>
@@ -5014,6 +5015,19 @@
     <node concept="3Tm1VV" id="Eft$85xAsO" role="1B3o_S" />
     <node concept="3uibUv" id="Eft$85xAYS" role="1zkMxy">
       <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Fk50g35_Vi">
+    <property role="3GE5qa" value="Extensions.Alternatives" />
+    <ref role="1XX52x" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
+    <node concept="3EZMnI" id="7qfStAdyren" role="2wV5jI">
+      <node concept="l2Vlx" id="7qfStAdyreo" role="2iSdaV" />
+      <node concept="3F0ifn" id="7qfStAdyreE" role="3EZMnx">
+        <property role="3F0ifm" value="⊕" />
+      </node>
+      <node concept="3F1sOY" id="1Fk50g35_ZM" role="3EZMnx">
+        <ref role="1NtTu8" to="xf8r:1Fk50g35h2w" />
+      </node>
     </node>
   </node>
 </model>
