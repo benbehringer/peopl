@@ -6090,7 +6090,7 @@
     <node concept="3clFb_" id="3fIGxWm8_Ny" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="updatePeoplBaseCodeBlockModuleInfo" />
+      <property role="TrG5h" value="updateModuleInfo" />
       <node concept="3clFbS" id="3fIGxWm8_N_" role="3clF47" />
       <node concept="3Tm1VV" id="3fIGxWm8_NA" role="1B3o_S" />
       <node concept="3cqZAl" id="3fIGxWm8_Mb" role="3clF45" />
@@ -6771,7 +6771,7 @@
                                                   <node concept="1uHKPH" id="1apVoTlmUWg" role="2OqNvi" />
                                                 </node>
                                                 <node concept="liA8E" id="3fIGxWm8DE3" role="2OqNvi">
-                                                  <ref role="37wK5l" node="3fIGxWm8_Ny" resolve="updatePeoplBaseCodeBlockModuleInfo" />
+                                                  <ref role="37wK5l" node="3fIGxWm8_Ny" resolve="updateModuleInfo" />
                                                   <node concept="2OqwBi" id="3fIGxWm8E3u" role="37wK5m">
                                                     <node concept="37vLTw" id="3fIGxWm8DQR" role="2Oq$k0">
                                                       <ref role="3cqZAo" node="1apVoTlmEC$" resolve="node" />
@@ -7889,7 +7889,7 @@
                               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                               <node concept="3SKdUt" id="6Rl8rQLceZi" role="8Wnug">
                                 <node concept="3SKdUq" id="6Rl8rQLceZj" role="3SKWNk">
-                                  <property role="3SKdUp" value="todo: remove this unwiring" />
+                                  <property role="3SKdUp" value="todo: we can probably remove this unwiring" />
                                 </node>
                               </node>
                             </node>

@@ -253,6 +253,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1206482823744" name="jetbrains.mps.lang.smodel.structure.Model_AddRootOperation" flags="nn" index="3BYIHo">
         <child id="1206482823746" name="nodeArgument" index="3BYIHq" />
       </concept>
@@ -261,9 +262,6 @@
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
-      </concept>
-      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
-        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
@@ -2879,7 +2877,7 @@
                 <node concept="3clFbS" id="1Fk50g35gvi" role="3clFbx">
                   <node concept="3SKdUt" id="1Fk50g35vYu" role="3cqZAp">
                     <node concept="3SKdUq" id="1Fk50g35vYv" role="3SKWNk">
-                      <property role="3SKdUp" value="handle alternative types in method" />
+                      <property role="3SKdUp" value="handle alternative types in type node of the method declaration" />
                     </node>
                   </node>
                   <node concept="3clFbJ" id="1Fk50g35nCV" role="3cqZAp">
@@ -2903,33 +2901,102 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="1Fk50g35xUr" role="3cqZAp">
-                        <node concept="2OqwBi" id="1Fk50g35xY7" role="3clFbG">
-                          <node concept="37vLTw" id="1Fk50g35xUp" role="2Oq$k0">
+                      <node concept="3SKdUt" id="2Yti6Wpb7Qy" role="3cqZAp">
+                        <node concept="3SKdUq" id="2Yti6Wpb7Qz" role="3SKWNk">
+                          <property role="3SKdUp" value="TODO:test" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2Yti6WpaUp9" role="3cqZAp">
+                        <node concept="2OqwBi" id="2Yti6WpaUqp" role="3clFbG">
+                          <node concept="37vLTw" id="2Yti6WpaUp7" role="2Oq$k0">
                             <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
                           </node>
-                          <node concept="1P9Npp" id="1Fk50g35y1B" role="2OqNvi">
-                            <node concept="2OqwBi" id="1Fk50g35_CE" role="1P9ThW">
-                              <node concept="2OqwBi" id="1Fk50g35zcx" role="2Oq$k0">
-                                <node concept="2OqwBi" id="1Fk50g35yaT" role="2Oq$k0">
-                                  <node concept="37vLTw" id="1Fk50g35y24" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="1Fk50g35vZc" resolve="method" />
+                          <node concept="3YRAZt" id="2Yti6WpaUsi" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2Yti6WpaVrn" role="3cqZAp">
+                        <node concept="37vLTI" id="2Yti6WpaWhH" role="3clFbG">
+                          <node concept="2OqwBi" id="2Yti6Wpb068" role="37vLTx">
+                            <node concept="2OqwBi" id="2Yti6WpaZEa" role="2Oq$k0">
+                              <node concept="2OqwBi" id="2Yti6WpaXe5" role="2Oq$k0">
+                                <node concept="2OqwBi" id="2Yti6WpaWsb" role="2Oq$k0">
+                                  <node concept="37vLTw" id="2Yti6WpaWqV" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
                                   </node>
-                                  <node concept="3CFZ6_" id="1Fk50g35ywt" role="2OqNvi">
-                                    <node concept="3CFYIy" id="1Fk50g35$n5" role="3CFYIz">
+                                  <node concept="3CFZ6_" id="2Yti6WpaWw8" role="2OqNvi">
+                                    <node concept="3CFYIy" id="2Yti6WpaWzq" role="3CFYIz">
                                       <ref role="3CFYIx" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="1uHKPH" id="1Fk50g35$ip" role="2OqNvi" />
+                                <node concept="1uHKPH" id="2Yti6WpaYpl" role="2OqNvi" />
                               </node>
-                              <node concept="3TrEf2" id="1Fk50g35_MP" role="2OqNvi">
+                              <node concept="3TrEf2" id="2Yti6WpaZL1" role="2OqNvi">
                                 <ref role="3Tt5mk" to="xf8r:1Fk50g35h2w" />
+                              </node>
+                            </node>
+                            <node concept="1$rogu" id="2Yti6Wpb0cj" role="2OqNvi" />
+                          </node>
+                          <node concept="2OqwBi" id="2Yti6WpaVzc" role="37vLTJ">
+                            <node concept="37vLTw" id="2Yti6WpaVrl" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1Fk50g35vZc" resolve="method" />
+                            </node>
+                            <node concept="3TrEf2" id="2Yti6WpaVSr" role="2OqNvi">
+                              <ref role="3Tt5mk" to="tpee:fzclF7X" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2Yti6WpaZPf" role="3cqZAp">
+                        <node concept="2OqwBi" id="2Yti6WpaZPh" role="3clFbG">
+                          <node concept="2OqwBi" id="2Yti6WpaZPi" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2Yti6WpaZPj" role="2Oq$k0">
+                              <node concept="37vLTw" id="2Yti6WpaZPk" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                              </node>
+                              <node concept="3CFZ6_" id="2Yti6WpaZPl" role="2OqNvi">
+                                <node concept="3CFYIy" id="2Yti6WpaZPm" role="3CFYIz">
+                                  <ref role="3CFYIx" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1uHKPH" id="2Yti6WpaZPn" role="2OqNvi" />
+                          </node>
+                          <node concept="1PgB_6" id="2Yti6WpaZYd" role="2OqNvi" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="2Yti6Wpb0hQ" role="3cqZAp">
+                        <node concept="2OqwBi" id="2Yti6Wpb1QG" role="3clFbG">
+                          <node concept="2OqwBi" id="2Yti6Wpb189" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2Yti6Wpb0q4" role="2Oq$k0">
+                              <node concept="37vLTw" id="2Yti6Wpb0hO" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1Fk50g35vZc" resolve="method" />
+                              </node>
+                              <node concept="3TrEf2" id="2Yti6Wpb0Jj" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpee:fzclF7X" />
+                              </node>
+                            </node>
+                            <node concept="3CFZ6_" id="2Yti6Wpb1ft" role="2OqNvi">
+                              <node concept="3CFYIy" id="2Yti6Wpb7EY" role="3CFYIz">
+                                <ref role="3CFYIx" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="X8dFx" id="2Yti6Wpb3Y$" role="2OqNvi">
+                            <node concept="2OqwBi" id="2Yti6Wpb56j" role="25WWJ7">
+                              <node concept="37vLTw" id="2Yti6Wpb4XA" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
+                              </node>
+                              <node concept="3CFZ6_" id="2Yti6Wpb62A" role="2OqNvi">
+                                <node concept="3CFYIy" id="2Yti6Wpb6Ax" role="3CFYIz">
+                                  <ref role="3CFYIx" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="2Yti6Wpb0h3" role="3cqZAp" />
                       <node concept="3SKdUt" id="1Fk50g35_Ts" role="3cqZAp">
                         <node concept="3SKdUq" id="1Fk50g35_Tt" role="3SKWNk">
                           <property role="3SKdUp" value="return as we don't want to delete the content node (the node we just replaced ;))" />
@@ -2966,11 +3033,8 @@
                 </node>
                 <node concept="2OqwBi" id="1Fk50g35lwv" role="3clFbw">
                   <node concept="2OqwBi" id="1Fk50g35gPr" role="2Oq$k0">
-                    <node concept="2OqwBi" id="1Fk50g35gCY" role="2Oq$k0">
-                      <node concept="37vLTw" id="1Fk50g35g$2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
-                      </node>
-                      <node concept="1mfA1w" id="1Fk50g35gMF" role="2OqNvi" />
+                    <node concept="37vLTw" id="1Fk50g35g$2" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2mxUwyW8AWb" resolve="contentToDelete" />
                     </node>
                     <node concept="3CFZ6_" id="1Fk50g35kWl" role="2OqNvi">
                       <node concept="3CFYIy" id="1Fk50g35kWW" role="3CFYIz">
