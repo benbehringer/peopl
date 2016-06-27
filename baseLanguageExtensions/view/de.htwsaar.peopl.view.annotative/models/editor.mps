@@ -17950,34 +17950,6 @@
       </node>
       <node concept="3EZMnI" id="2KAFmCkGhtF" role="3EZMnx">
         <node concept="l2Vlx" id="2KAFmCkGhtG" role="2iSdaV" />
-        <node concept="gc7cB" id="2KAFmCkGhtH" role="3EZMnx">
-          <node concept="3Xmtl4" id="2KAFmCkGhtI" role="3F10Kt">
-            <node concept="1wgc9g" id="2KAFmCkGhtJ" role="3XvnJa">
-              <ref role="1wgcnl" to="tpch:24YP6ZDyde4" resolve="Keyword" />
-            </node>
-          </node>
-          <node concept="VSNWy" id="2KAFmCkGhtK" role="3F10Kt">
-            <property role="1lJzqX" value="11" />
-          </node>
-          <node concept="3VJUX4" id="2KAFmCkGhtL" role="3YsKMw">
-            <node concept="3clFbS" id="2KAFmCkGhtM" role="2VODD2">
-              <node concept="3clFbF" id="2KAFmCkGhtN" role="3cqZAp">
-                <node concept="2ShNRf" id="2KAFmCkGhtO" role="3clFbG">
-                  <node concept="1pGfFk" id="2KAFmCkGhtP" role="2ShVmc">
-                    <ref role="37wK5l" node="JlQX3G$ZWB" resolve="ChosenModule_CellProvider" />
-                    <node concept="1Q80Hx" id="2KAFmCkGhtQ" role="37wK5m" />
-                    <node concept="2OqwBi" id="2KAFmCkGhtR" role="37wK5m">
-                      <node concept="pncrf" id="2KAFmCkGhtS" role="2Oq$k0" />
-                      <node concept="3TrEf2" id="2KAFmCkGhtT" role="2OqNvi">
-                        <ref role="3Tt5mk" to="tpee:fzclF7X" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="gc7cB" id="2KAFmCkGhtU" role="3EZMnx">
           <node concept="3VJUX4" id="2KAFmCkGhtV" role="3YsKMw">
             <node concept="3clFbS" id="2KAFmCkGhtW" role="2VODD2">

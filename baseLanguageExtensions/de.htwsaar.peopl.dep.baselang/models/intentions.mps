@@ -3208,6 +3208,11 @@
                   </node>
                 </node>
               </node>
+              <node concept="3SKdUt" id="38X13X3kkvC" role="3cqZAp">
+                <node concept="3SKdUq" id="38X13X3kkvD" role="3SKWNk">
+                  <property role="3SKdUp" value="update method" />
+                </node>
+              </node>
               <node concept="3clFbF" id="7pFRXmBdZT7" role="3cqZAp">
                 <node concept="2OqwBi" id="7pFRXmBe10i" role="3clFbG">
                   <node concept="2OqwBi" id="7pFRXmBe02w" role="2Oq$k0">
@@ -3325,6 +3330,43 @@
                   </node>
                 </node>
               </node>
+              <node concept="3SKdUt" id="38X13X3kkoQ" role="3cqZAp">
+                <node concept="3SKdUq" id="38X13X3kkoR" role="3SKWNk">
+                  <property role="3SKdUp" value="update return type" />
+                </node>
+              </node>
+              <node concept="3clFbF" id="1oDDNomvinF" role="3cqZAp">
+                <node concept="2OqwBi" id="1oDDNomviqt" role="3clFbG">
+                  <node concept="35c_gC" id="1oDDNomvinD" role="2Oq$k0">
+                    <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                  </node>
+                  <node concept="2qgKlT" id="1oDDNomvi_L" role="2OqNvi">
+                    <ref role="37wK5l" to="1lrk:1oDDNomvhCd" resolve="updateReturnTypeModule" />
+                    <node concept="37vLTw" id="1oDDNomvi_Y" role="37wK5m">
+                      <ref role="3cqZAo" node="7pFRXmBdZPM" resolve="baseMethod" />
+                    </node>
+                    <node concept="2OqwBi" id="1oDDNomviBc" role="37wK5m">
+                      <node concept="2OqwBi" id="1oDDNomviBd" role="2Oq$k0">
+                        <node concept="2OqwBi" id="1oDDNomviBe" role="2Oq$k0">
+                          <node concept="37vLTw" id="1oDDNomviBf" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7pFRXmBe5aI" resolve="classConcept" />
+                          </node>
+                          <node concept="3CFZ6_" id="1oDDNomviBg" role="2OqNvi">
+                            <node concept="3CFYIy" id="1oDDNomviBh" role="3CFYIz">
+                              <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="1uHKPH" id="1oDDNomviBi" role="2OqNvi" />
+                      </node>
+                      <node concept="3TrEf2" id="1oDDNomviBj" role="2OqNvi">
+                        <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="1oDDNomviji" role="3cqZAp" />
             </node>
           </node>
           <node concept="3eNFk2" id="1fM6qkDX$Ma" role="3eNLev">
@@ -3436,6 +3478,11 @@
                   <property role="TrG5h" value="method" />
                 </node>
                 <node concept="3clFbS" id="1fM6qkDXVFK" role="2LFqv$">
+                  <node concept="3SKdUt" id="38X13X3kkNw" role="3cqZAp">
+                    <node concept="3SKdUq" id="38X13X3kkNx" role="3SKWNk">
+                      <property role="3SKdUp" value="update methods" />
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="1fM6qkDXKjB" role="3cqZAp">
                     <node concept="2OqwBi" id="1fM6qkDXKjC" role="3clFbG">
                       <node concept="2OqwBi" id="1fM6qkDXWTi" role="2Oq$k0">
@@ -3560,6 +3607,49 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3SKdUt" id="38X13X3kkVB" role="3cqZAp">
+                    <node concept="3SKdUq" id="38X13X3kkVC" role="3SKWNk">
+                      <property role="3SKdUp" value="update return type" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="1oDDNomviIV" role="3cqZAp">
+                    <node concept="2OqwBi" id="1oDDNomviIW" role="3clFbG">
+                      <node concept="35c_gC" id="1oDDNomviIX" role="2Oq$k0">
+                        <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                      </node>
+                      <node concept="2qgKlT" id="1oDDNomviIY" role="2OqNvi">
+                        <ref role="37wK5l" to="1lrk:1oDDNomvhCd" resolve="updateReturnTypeModule" />
+                        <node concept="1eOMI4" id="1oDDNomvj6z" role="37wK5m">
+                          <node concept="10QFUN" id="1oDDNomvj6$" role="1eOMHV">
+                            <node concept="3Tqbb2" id="1oDDNomvj6_" role="10QFUM">
+                              <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                            </node>
+                            <node concept="2GrUjf" id="1oDDNomvj6A" role="10QFUP">
+                              <ref role="2Gs0qQ" node="1fM6qkDXVFG" resolve="method" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="1oDDNomviJ0" role="37wK5m">
+                          <node concept="2OqwBi" id="1oDDNomviJ1" role="2Oq$k0">
+                            <node concept="2OqwBi" id="1oDDNomviJ2" role="2Oq$k0">
+                              <node concept="37vLTw" id="38X13X3jJ8V" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1fM6qkDXJIo" resolve="nextDefiningClassConcept" />
+                              </node>
+                              <node concept="3CFZ6_" id="1oDDNomviJ4" role="2OqNvi">
+                                <node concept="3CFYIy" id="1oDDNomviJ5" role="3CFYIz">
+                                  <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="1uHKPH" id="1oDDNomviJ6" role="2OqNvi" />
+                          </node>
+                          <node concept="3TrEf2" id="1oDDNomviJ7" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="1fM6qkDXOdM" role="2GsD0m">
                   <node concept="2OqwBi" id="1fM6qkDXLN_" role="2Oq$k0">
@@ -3609,9 +3699,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="1fM6qkDXKiC" role="3cqZAp" />
-              <node concept="3clFbH" id="1fM6qkDXJY4" role="3cqZAp" />
-              <node concept="3clFbH" id="1fM6qkDXJVQ" role="3cqZAp" />
               <node concept="3clFbF" id="1fM6qkDXA0U" role="3cqZAp">
                 <node concept="2OqwBi" id="1fM6qkDXA0V" role="3clFbG">
                   <node concept="2OqwBi" id="1fM6qkDXA0W" role="2Oq$k0">
