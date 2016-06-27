@@ -929,6 +929,12 @@
             <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7k00QoqZHLm" role="3bR37C">
+          <node concept="3bR9La" id="7k00QoqZHLn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4RAsyl5PvSk" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1055,6 +1061,12 @@
         <node concept="1SiIV0" id="2EkRjvM3Uvh" role="3bR37C">
           <node concept="1Busua" id="2EkRjvM3Uvi" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7k00QoqZHLu" role="3bR37C">
+          <node concept="3bR9La" id="7k00QoqZHLv" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
@@ -1314,6 +1326,12 @@
         <node concept="1SiIV0" id="F_DJLMfBi9" role="3bR37C">
           <node concept="1Busua" id="F_DJLMfBia" role="1SiIV1">
             <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7k00QoqZHLQ" role="3bR37C">
+          <node concept="3bR9La" id="7k00QoqZHLR" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
