@@ -39,6 +39,8 @@
     <import index="emqf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellProviders(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="wo0a" ref="r:8ded176d-d7b4-4e87-8860-e932ddd12f52(de.htwsaar.peopl.view.annotative.editor)" />
+    <import index="lrok" ref="r:29a150a1-f788-4254-ba38-9c184bc1f289(de.htwsaar.peopl.view.product.editor)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
   </imports>
   <registry>
@@ -94,6 +96,11 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
+        <reference id="4820515453818318891" name="hint" index="2pYH_C" />
+      </concept>
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -129,9 +136,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -331,13 +335,11 @@
               <node concept="17QB3L" id="3M$6oZspMez" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="3M$6oZspMe$" role="33vP2m">
-              <node concept="10M0yZ" id="3M$6oZspMe_" role="2BsfMF">
-                <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+              <node concept="2pYGij" id="2Zd4IYg0uZk" role="2BsfMF">
+                <ref role="2pYH_C" to="wo0a:2H0DQTMCRPV" resolve="hideModuleVP" />
               </node>
-              <node concept="10M0yZ" id="3M$6oZspMjd" role="2BsfMF">
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-                <ref role="3cqZAo" to="nbbm:2H0DQTMEXuw" resolve="HIDE_MODULE_VP" />
+              <node concept="2pYGij" id="2Zd4IYg0vpQ" role="2BsfMF">
+                <ref role="2pYH_C" to="wo0a:1DrSvX1CVhP" resolve="betterAnnotativeView" />
               </node>
             </node>
           </node>
@@ -357,7 +359,7 @@
             </node>
             <node concept="liA8E" id="3M$6oZspMeH" role="2OqNvi">
               <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[]):boolean" resolve="setInitialEditorHints" />
-              <node concept="37vLTw" id="3M$6oZspMeI" role="37wK5m">
+              <node concept="37vLTw" id="2Zd4IYg0vk_" role="37wK5m">
                 <ref role="3cqZAo" node="3M$6oZspMex" resolve="editorHints" />
               </node>
             </node>
@@ -438,13 +440,11 @@
               <node concept="17QB3L" id="3M$6oZspgHM" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="3M$6oZspgHN" role="33vP2m">
-              <node concept="10M0yZ" id="3M$6oZspfSI" role="2BsfMF">
-                <ref role="3cqZAo" to="nbbm:2iVkojt1Fuz" resolve="PRODUCT_VIEW_COLORIZED" />
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+              <node concept="2pYGij" id="2Zd4IYg11aB" role="2BsfMF">
+                <ref role="2pYH_C" to="lrok:57rZcVzwarK" resolve="productView" />
               </node>
-              <node concept="10M0yZ" id="3M$6oZspgb3" role="2BsfMF">
-                <ref role="3cqZAo" to="nbbm:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+              <node concept="2pYGij" id="2Zd4IYg11jS" role="2BsfMF">
+                <ref role="2pYH_C" to="lrok:2iVkojt1MhA" resolve="productViewColor" />
               </node>
             </node>
           </node>
@@ -958,9 +958,8 @@
               <node concept="17QB3L" id="1sCUscXP$Oi" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="1sCUscXP_A3" role="33vP2m">
-              <node concept="10M0yZ" id="1sCUscXP$O0" role="2BsfMF">
-                <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+              <node concept="2pYGij" id="2Zd4IYg10M_" role="2BsfMF">
+                <ref role="2pYH_C" to="wo0a:1DrSvX1CVhP" resolve="betterAnnotativeView" />
               </node>
             </node>
           </node>
@@ -1061,9 +1060,8 @@
               <node concept="17QB3L" id="3M$6oZspjCH" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="3M$6oZspjCI" role="33vP2m">
-              <node concept="10M0yZ" id="3M$6oZspjCK" role="2BsfMF">
-                <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-                <ref role="3cqZAo" to="nbbm:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+              <node concept="2pYGij" id="2Zd4IYg10XN" role="2BsfMF">
+                <ref role="2pYH_C" to="lrok:57rZcVzwarK" resolve="productView" />
               </node>
             </node>
           </node>

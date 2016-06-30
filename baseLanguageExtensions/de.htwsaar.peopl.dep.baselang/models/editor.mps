@@ -1759,7 +1759,7 @@
       <node concept="3Tm1VV" id="2H0DQTMEXux" role="1B3o_S" />
       <node concept="17QB3L" id="2H0DQTMFfDO" role="1tU5fm" />
       <node concept="Xl_RD" id="2H0DQTMEXuz" role="33vP2m">
-        <property role="Xl_RC" value="de.htwsaar.peopl.view.editor.Hints.hideModuleVP" />
+        <property role="Xl_RC" value="de.htwsaar.peopl.view.annotative.editor.Hints.hideModuleVP" />
       </node>
     </node>
     <node concept="2tJIrI" id="3vxjwUujBjk" role="jymVt" />
