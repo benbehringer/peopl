@@ -6665,6 +6665,31 @@
                                         <node concept="10Nm6u" id="4abErjGKlDJ" role="3uHU7w" />
                                       </node>
                                     </node>
+                                    <node concept="3clFbF" id="5C00W7YcblX" role="3cqZAp">
+                                      <node concept="2OqwBi" id="5C00W7YcblY" role="3clFbG">
+                                        <node concept="2YIFZM" id="5C00W7YcblZ" role="2Oq$k0">
+                                          <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                                          <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                                        </node>
+                                        <node concept="liA8E" id="5C00W7Ycbm0" role="2OqNvi">
+                                          <ref role="37wK5l" to="zur:5h5WElAithO" resolve="setInvalid" />
+                                          <node concept="2OqwBi" id="5C00W7Ycbt6" role="37wK5m">
+                                            <node concept="2OqwBi" id="5C00W7Ycbt7" role="2Oq$k0">
+                                              <node concept="37vLTw" id="5C00W7Ycbt8" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="4abErjGKlCj" resolve="p0" />
+                                              </node>
+                                              <node concept="liA8E" id="5C00W7Ycbt9" role="2OqNvi">
+                                                <ref role="37wK5l" to="cmfw:~SReferenceChangeEvent.getModel():org.jetbrains.mps.openapi.model.SModel" resolve="getModel" />
+                                              </node>
+                                            </node>
+                                            <node concept="liA8E" id="5C00W7Ycbta" role="2OqNvi">
+                                              <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbH" id="5C00W7Ycbge" role="3cqZAp" />
                                     <node concept="1X3_iC" id="4GHMhy7x2MZ" role="lGtFl">
                                       <property role="3V$3am" value="statement" />
                                       <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -6755,10 +6780,10 @@
                                             <node concept="3clFbF" id="2HiZdrZ_mGG" role="3cqZAp">
                                               <node concept="2OqwBi" id="2HiZdrZ_mGH" role="3clFbG">
                                                 <node concept="35c_gC" id="2HiZdrZ_mGI" role="2Oq$k0">
-                                                  <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="ModuleConsumerUpdater" />
+                                                  <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
                                                 </node>
                                                 <node concept="2qgKlT" id="2HiZdrZ_mGJ" role="2OqNvi">
-                                                  <ref role="37wK5l" to="kpvh:2HiZdrZ_gtP" resolve="updateModuleConsumersInClass" />
+                                                  <ref role="37wK5l" to="kpvh:2HiZdrZ_gtP" resolve="updateAllModulesInClass" />
                                                   <node concept="10QFUN" id="2HiZdrZ_mNE" role="37wK5m">
                                                     <node concept="3Tqbb2" id="2HiZdrZ_mUJ" role="10QFUM">
                                                       <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
@@ -6805,10 +6830,10 @@
                                               <node concept="3clFbF" id="2HiZdrZ_lYp" role="3cqZAp">
                                                 <node concept="2OqwBi" id="2HiZdrZ_m0Y" role="3clFbG">
                                                   <node concept="35c_gC" id="2HiZdrZ_lYn" role="2Oq$k0">
-                                                    <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="ModuleConsumerUpdater" />
+                                                    <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
                                                   </node>
                                                   <node concept="2qgKlT" id="2HiZdrZ_mfV" role="2OqNvi">
-                                                    <ref role="37wK5l" to="kpvh:2HiZdrZ_a1B" resolve="updateModuleConsumers" />
+                                                    <ref role="37wK5l" to="kpvh:2HiZdrZ_a1B" resolve="updateModules" />
                                                     <node concept="2OqwBi" id="2HiZdrZ_mkj" role="37wK5m">
                                                       <node concept="37vLTw" id="2HiZdrZ_mhH" role="2Oq$k0">
                                                         <ref role="3cqZAo" node="1apVoTlmEC$" resolve="node" />
@@ -7590,10 +7615,10 @@
                                   <node concept="3clFbF" id="2HiZdrZ_n8g" role="3cqZAp">
                                     <node concept="2OqwBi" id="2HiZdrZ_nbv" role="3clFbG">
                                       <node concept="35c_gC" id="2HiZdrZ_n8e" role="2Oq$k0">
-                                        <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="ModuleConsumerUpdater" />
+                                        <ref role="35c_gD" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
                                       </node>
                                       <node concept="2qgKlT" id="2HiZdrZ_nz8" role="2OqNvi">
-                                        <ref role="37wK5l" to="kpvh:2HiZdrZ$ekf" resolve="disconnectModuleConsumers" />
+                                        <ref role="37wK5l" to="kpvh:2HiZdrZ$ekf" resolve="disconnectModules" />
                                         <node concept="2OqwBi" id="2HiZdrZ_n$D" role="37wK5m">
                                           <node concept="37vLTw" id="2HiZdrZ_nzG" role="2Oq$k0">
                                             <ref role="3cqZAo" node="4abErjGKXgg" resolve="node" />
