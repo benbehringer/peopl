@@ -407,5 +407,28 @@
       </node>
     </node>
   </node>
+  <node concept="1TIwiD" id="7irj4gs$aYR">
+    <property role="1pbfSe" value="1859388421" />
+    <property role="3GE5qa" value="Extensions" />
+    <property role="TrG5h" value="FragmentUpdater" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="7irj4gs$aYS" role="lGtFl">
+      <property role="Hh88m" value="FragmentUpdater" />
+      <node concept="trNpa" id="2HiZdrZ$eVe" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="7irj4gs$aYW" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="7irj4gs$aYY" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentToUpdate" />
+      <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+    <node concept="PrWs8" id="7irj4gs$gtA" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

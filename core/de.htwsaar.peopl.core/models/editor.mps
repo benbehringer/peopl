@@ -5031,5 +5031,10 @@
     <ref role="1XX52x" to="xf8r:1j2uYRA5nhd" resolve="BinaryOperationAlternative" />
     <node concept="2SsqMj" id="1j2uYRA5uZN" role="2wV5jI" />
   </node>
+  <node concept="24kQdi" id="2HiZdrZ$mwx">
+    <property role="3GE5qa" value="Extensions" />
+    <ref role="1XX52x" to="xf8r:7irj4gs$aYR" resolve="ModuleUpdater" />
+    <node concept="2SsqMj" id="2HiZdrZ$mwz" role="2wV5jI" />
+  </node>
 </model>
 

@@ -4785,25 +4785,39 @@
                 </node>
                 <node concept="2Gpval" id="19glLi5L5t_" role="3cqZAp">
                   <node concept="2GrKxI" id="19glLi5L5tB" role="2Gsz3X">
-                    <property role="TrG5h" value="blockref" />
+                    <property role="TrG5h" value="attribute" />
                   </node>
                   <node concept="3clFbS" id="19glLi5L5tD" role="2LFqv$">
                     <node concept="3clFbF" id="19glLi5L6Dt" role="3cqZAp">
                       <node concept="2OqwBi" id="19glLi5L6G4" role="3clFbG">
                         <node concept="2GrUjf" id="19glLi5L6Ds" role="2Oq$k0">
-                          <ref role="2Gs0qQ" node="19glLi5L5tB" resolve="blockref" />
+                          <ref role="2Gs0qQ" node="19glLi5L5tB" resolve="attribute" />
                         </node>
                         <node concept="1PgB_6" id="19glLi5L6PA" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="19glLi5L66C" role="2GsD0m">
-                    <node concept="37vLTw" id="19glLi5L5WZ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
+                  <node concept="2OqwBi" id="2HiZdrZ_$lU" role="2GsD0m">
+                    <node concept="2OqwBi" id="19glLi5L66C" role="2Oq$k0">
+                      <node concept="37vLTw" id="19glLi5L5WZ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
+                      </node>
+                      <node concept="3CFZ6_" id="19glLi5L6vm" role="2OqNvi">
+                        <node concept="3CFYIy" id="19glLi5L6y0" role="3CFYIz">
+                          <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="3CFZ6_" id="19glLi5L6vm" role="2OqNvi">
-                      <node concept="3CFYIy" id="19glLi5L6y0" role="3CFYIz">
-                        <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                    <node concept="3QWeyG" id="2HiZdrZ_BjY" role="2OqNvi">
+                      <node concept="2OqwBi" id="2HiZdrZ_UiV" role="576Qk">
+                        <node concept="37vLTw" id="2HiZdrZ_U8D" role="2Oq$k0">
+                          <ref role="3cqZAo" node="19glLi5Gib0" resolve="copyMethod" />
+                        </node>
+                        <node concept="3CFZ6_" id="2HiZdrZ_UG_" role="2OqNvi">
+                          <node concept="3CFYIy" id="2HiZdrZ_UGN" role="3CFYIz">
+                            <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="ModuleConsumerUpdater" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>

@@ -160,9 +160,16 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
+        <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
@@ -170,14 +177,19 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
         <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
       </concept>
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -374,6 +386,60 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="3SKdUt" id="1MkPt_tvETD" role="3cqZAp">
+                        <node concept="3SKdUq" id="1MkPt_tvETE" role="3SKWNk">
+                          <property role="3SKdUp" value="delete empty fragment updaters" />
+                        </node>
+                      </node>
+                      <node concept="3cpWs8" id="1MkPt_tvDKq" role="3cqZAp">
+                        <node concept="3cpWsn" id="1MkPt_tvDKt" role="3cpWs9">
+                          <property role="TrG5h" value="highLevelModel" />
+                          <node concept="H_c77" id="1MkPt_tvDKo" role="1tU5fm" />
+                          <node concept="2GrUjf" id="1MkPt_tvEzZ" role="33vP2m">
+                            <ref role="2Gs0qQ" node="2yX483RIuQY" resolve="currentModel" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2Gpval" id="1MkPt_tvEMt" role="3cqZAp">
+                        <node concept="2GrKxI" id="1MkPt_tvEMv" role="2Gsz3X">
+                          <property role="TrG5h" value="fragmentUpdater" />
+                        </node>
+                        <node concept="2OqwBi" id="1MkPt_tvFwK" role="2GsD0m">
+                          <node concept="37vLTw" id="1MkPt_tvFte" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1MkPt_tvDKt" resolve="highLevelModel" />
+                          </node>
+                          <node concept="2SmgA7" id="1MkPt_tvF_Z" role="2OqNvi">
+                            <node concept="chp4Y" id="1MkPt_tvFE4" role="1dBWTz">
+                              <ref role="cht4Q" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="1MkPt_tvEMz" role="2LFqv$">
+                          <node concept="3clFbJ" id="1MkPt_tvFSx" role="3cqZAp">
+                            <node concept="2OqwBi" id="1MkPt_tvGpq" role="3clFbw">
+                              <node concept="2OqwBi" id="1MkPt_tvG2m" role="2Oq$k0">
+                                <node concept="2GrUjf" id="1MkPt_tvFWO" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="1MkPt_tvEMv" resolve="fragmentUpdater" />
+                                </node>
+                                <node concept="3TrEf2" id="1MkPt_tvGbQ" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="xf8r:7irj4gs$aYY" />
+                                </node>
+                              </node>
+                              <node concept="3w_OXm" id="1MkPt_tvGFG" role="2OqNvi" />
+                            </node>
+                            <node concept="3clFbS" id="1MkPt_tvFSz" role="3clFbx">
+                              <node concept="3clFbF" id="1MkPt_tvGQN" role="3cqZAp">
+                                <node concept="2OqwBi" id="1MkPt_tvGVN" role="3clFbG">
+                                  <node concept="2GrUjf" id="1MkPt_tvGQM" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="1MkPt_tvEMv" resolve="fragmentUpdater" />
+                                  </node>
+                                  <node concept="1PgB_6" id="1MkPt_tvH5o" role="2OqNvi" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                     <node concept="2OqwBi" id="2yX483RIuRj" role="2GsD0m">
                       <node concept="37vLTw" id="2yX483RIvgk" role="2Oq$k0">
@@ -452,6 +518,7 @@
                       <ref role="3cqZAo" node="2yX483RIuQS" resolve="allModuleDefsInProject" />
                     </node>
                   </node>
+                  <node concept="3clFbH" id="1MkPt_tvCU4" role="3cqZAp" />
                 </node>
               </node>
             </node>
@@ -518,7 +585,7 @@
   </node>
   <node concept="sE7Ow" id="2yX483RIDAi">
     <property role="TrG5h" value="CleanUpProject" />
-    <property role="2uzpH1" value="Delete Intermediate Nodes with Broken References" />
+    <property role="2uzpH1" value="Delete Peopl-related Nodes with Broken References" />
     <node concept="1DS2jV" id="7boOmZ3Yw9a" role="1NuT2Z">
       <property role="TrG5h" value="currentProject" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
