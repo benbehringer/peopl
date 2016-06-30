@@ -378,6 +378,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6th$RSuoSbT" role="3cqZAp">
+          <node concept="2OqwBi" id="6th$RSuoViF" role="3clFbG">
+            <node concept="2OqwBi" id="6th$RSuoTaf" role="2Oq$k0">
+              <node concept="2OqwBi" id="6th$RSuoSfp" role="2Oq$k0">
+                <node concept="2WthIp" id="6th$RSuoSbR" role="2Oq$k0" />
+                <node concept="1DTwFV" id="6th$RSuoSrH" role="2OqNvi">
+                  <ref role="2WH_rO" node="5n7qrXOOSV" resolve="editorComponent" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6th$RSuoVhh" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6th$RSuoVod" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorContext.flushEvents():void" resolve="flushEvents" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="mfpdH" id="2H0DQTMG5u1" role="med8o" />
