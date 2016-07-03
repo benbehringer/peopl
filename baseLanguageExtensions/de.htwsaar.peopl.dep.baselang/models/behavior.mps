@@ -1577,7 +1577,7 @@
       </node>
     </node>
     <node concept="13i0hz" id="4DWAEpik$dJ" role="13h7CS">
-      <property role="TrG5h" value="transferPeoplBlockReferences" />
+      <property role="TrG5h" value="updatePeoplBlockReferences" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="4DWAEpik$dK" role="1B3o_S" />
       <node concept="3clFbS" id="4DWAEpik$dL" role="3clF47">

@@ -268,6 +268,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
@@ -5671,6 +5672,11 @@
       <node concept="3Tm1VV" id="2HiZdrZ$mCC" role="1B3o_S" />
       <node concept="3cqZAl" id="2HiZdrZ$mUJ" role="3clF45" />
       <node concept="3clFbS" id="2HiZdrZ$mCE" role="3clF47">
+        <node concept="3SKdUt" id="7W6xH3UHWtM" role="3cqZAp">
+          <node concept="3SKdUq" id="7W6xH3UHWtN" role="3SKWNk">
+            <property role="3SKdUp" value="create a fragment updater" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2HiZdrZ$vZU" role="3cqZAp">
           <node concept="3cpWsn" id="2HiZdrZ$vZX" role="3cpWs9">
             <property role="TrG5h" value="fragmentUpdater" />
@@ -5716,6 +5722,27 @@
             <node concept="TSZUe" id="2HiZdrZ$qwT" role="2OqNvi">
               <node concept="37vLTw" id="2HiZdrZ$wHe" role="25WWJ7">
                 <ref role="3cqZAo" node="2HiZdrZ$vZX" resolve="fragmentUpdater" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7W6xH3UHWq9" role="3cqZAp" />
+        <node concept="3SKdUt" id="7W6xH3UHWu$" role="3cqZAp">
+          <node concept="3SKdUq" id="7W6xH3UHWu_" role="3SKWNk">
+            <property role="3SKdUp" value="tell the target fragment where it finds its updater" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7W6xH3UHW_k" role="3cqZAp">
+          <node concept="37vLTI" id="7W6xH3UHWTy" role="3clFbG">
+            <node concept="37vLTw" id="7W6xH3UHWVe" role="37vLTx">
+              <ref role="3cqZAo" node="2HiZdrZ$vZX" resolve="fragmentUpdater" />
+            </node>
+            <node concept="2OqwBi" id="7W6xH3UHWC0" role="37vLTJ">
+              <node concept="37vLTw" id="7W6xH3UHW_i" role="2Oq$k0">
+                <ref role="3cqZAo" node="2HiZdrZ$t50" resolve="targetFragment" />
+              </node>
+              <node concept="3TrEf2" id="7W6xH3UHWJ8" role="2OqNvi">
+                <ref role="3Tt5mk" to="xf8r:7W6xH3UHAH6" />
               </node>
             </node>
           </node>
@@ -6259,6 +6286,64 @@
       <node concept="37vLTG" id="2HiZdrZ$JY7" role="3clF46">
         <property role="TrG5h" value="updateProvider" />
         <node concept="3Tqbb2" id="2HiZdrZ$JY6" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4DWAEpik$dJ" role="13h7CS">
+      <property role="TrG5h" value="updateFragmentUpdaterReferences" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="4DWAEpik$dK" role="1B3o_S" />
+      <node concept="3clFbS" id="4DWAEpik$dL" role="3clF47">
+        <node concept="3clFbF" id="1lp5jtr3vMn" role="3cqZAp">
+          <node concept="2OqwBi" id="1lp5jtr3wOc" role="3clFbG">
+            <node concept="2OqwBi" id="1lp5jtr3vVG" role="2Oq$k0">
+              <node concept="37vLTw" id="3WwSrH60jnH" role="2Oq$k0">
+                <ref role="3cqZAo" node="4DWAEpik$u4" resolve="methodToUpdate" />
+              </node>
+              <node concept="3CFZ6_" id="1lp5jtr3wfj" role="2OqNvi">
+                <node concept="3CFYIy" id="25Cq1ggPPHp" role="3CFYIz">
+                  <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
+                </node>
+              </node>
+            </node>
+            <node concept="2es0OD" id="1lp5jtr3yIS" role="2OqNvi">
+              <node concept="1bVj0M" id="1lp5jtr3yIU" role="23t8la">
+                <node concept="3clFbS" id="1lp5jtr3yIV" role="1bW5cS">
+                  <node concept="3clFbF" id="1lp5jtr3yKT" role="3cqZAp">
+                    <node concept="37vLTI" id="1lp5jtr3zFs" role="3clFbG">
+                      <node concept="37vLTw" id="25Cq1ggPQHI" role="37vLTx">
+                        <ref role="3cqZAo" node="1lp5jtr3yIW" resolve="it" />
+                      </node>
+                      <node concept="2OqwBi" id="1lp5jtr3za1" role="37vLTJ">
+                        <node concept="2OqwBi" id="1lp5jtr3yOc" role="2Oq$k0">
+                          <node concept="37vLTw" id="1lp5jtr3yKS" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1lp5jtr3yIW" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="25Cq1ggPPUQ" role="2OqNvi">
+                            <ref role="3Tt5mk" to="xf8r:7irj4gs$aYY" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="25Cq1ggPQ_9" role="2OqNvi">
+                          <ref role="3Tt5mk" to="xf8r:7W6xH3UHAH6" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="1lp5jtr3yIW" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="1lp5jtr3yIX" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4DWAEpik$u0" role="3clF45" />
+      <node concept="37vLTG" id="4DWAEpik$u4" role="3clF46">
+        <property role="TrG5h" value="methodToUpdate" />
+        <node concept="3Tqbb2" id="4DWAEpik$u3" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="7irj4gs$g8f" role="13h7CW">

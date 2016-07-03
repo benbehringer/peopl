@@ -6414,7 +6414,7 @@
                 </node>
                 <node concept="3clFbF" id="7irj4gs$oUv" role="3cqZAp">
                   <node concept="1rXfSq" id="7irj4gs$oUt" role="3clFbG">
-                    <ref role="37wK5l" node="7irj4gs$lxP" resolve="updateModuleConsumers" />
+                    <ref role="37wK5l" node="7irj4gs$lxP" resolve="updateModuleThroughFragmentUpdater" />
                     <node concept="37vLTw" id="2HiZdrZB7f2" role="37wK5m">
                       <ref role="3cqZAo" node="7rSRKyCC624" resolve="originalContentNode" />
                     </node>
@@ -6427,7 +6427,7 @@
                 </node>
                 <node concept="3clFbF" id="2HiZdrZB75e" role="3cqZAp">
                   <node concept="1rXfSq" id="2HiZdrZB75c" role="3clFbG">
-                    <ref role="37wK5l" node="2HiZdrZB6Ga" resolve="assignModuleConsumerUpdater" />
+                    <ref role="37wK5l" node="2HiZdrZB6Ga" resolve="registerFragmentUpdater" />
                     <node concept="37vLTw" id="2HiZdrZB79M" role="37wK5m">
                       <ref role="3cqZAo" node="47AP7clnFn" resolve="fragmentOriginal" />
                     </node>
@@ -6569,7 +6569,7 @@
     </node>
     <node concept="2tJIrI" id="2HiZdrZB6bU" role="jymVt" />
     <node concept="2YIFZL" id="2HiZdrZB6Ga" role="jymVt">
-      <property role="TrG5h" value="assignModuleConsumerUpdater" />
+      <property role="TrG5h" value="registerFragmentUpdater" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -6635,7 +6635,7 @@
     </node>
     <node concept="2tJIrI" id="47AP7clnQQ" role="jymVt" />
     <node concept="2YIFZL" id="7irj4gs$lxP" role="jymVt">
-      <property role="TrG5h" value="updateModuleConsumers" />
+      <property role="TrG5h" value="updateModuleThroughFragmentUpdater" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
