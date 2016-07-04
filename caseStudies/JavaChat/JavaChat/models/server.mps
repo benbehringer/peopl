@@ -199,8 +199,12 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
+        <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
+      </concept>
       <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
         <property id="8624758018078469788" name="chosenModuleLinkName" index="32Xqk$" />
+        <reference id="9153151524794690374" name="fragmentUpdater" index="25GeQm" />
         <reference id="3673167173362250418" name="chosenModule" index="a64iB" />
         <reference id="6242855909345491595" name="moduleIntermediate" index="3aRQVk" />
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
@@ -358,6 +362,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWn5" resolve="VPToFragment_661988591836317125" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWn6" resolve="ModuleToFragment_661988591836317126" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYTw" resolve="PeoplBlockReference_661988591836327520" />
             </node>
           </node>
         </node>
@@ -366,6 +371,7 @@
         <node concept="ocbFV" id="$JQLRHKYTw" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327520" />
           <ref role="ocbYS" node="$JQLRHKWn1" />
+          <ref role="1C2YfU" node="$JQLRHKWn3" resolve="Fragment_661988591836317123" />
         </node>
       </node>
       <node concept="3clFbW" id="$JQLRHKUMu" role="jymVt">
@@ -408,6 +414,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnb" resolve="VPToFragment_661988591836317131" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWnc" resolve="ModuleToFragment_661988591836317132" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYTE" resolve="PeoplBlockReference_661988591836327530" />
             </node>
           </node>
           <node concept="2wexfA" id="4yeP55kntcp" role="3cqZAp">
@@ -551,6 +558,7 @@
               <ref role="1V74Hf" to="hmci:4yeP55kntcn" resolve="VPToFragment_5228349663196599063" />
               <ref role="3aRQVk" to="hmci:4yeP55kntco" resolve="ModuleToFragment_5228349663196599064" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="4yeP55kntip" resolve="PeoplBlockReference_5228349663196599449" />
             </node>
           </node>
         </node>
@@ -580,10 +588,12 @@
         <node concept="ocbFV" id="$JQLRHKYTE" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327530" />
           <ref role="ocbYS" node="$JQLRHKWn7" />
+          <ref role="1C2YfU" node="$JQLRHKWn9" resolve="Fragment_661988591836317129" />
         </node>
         <node concept="ocbFV" id="4yeP55kntip" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_5228349663196599449" />
           <ref role="ocbYS" node="4yeP55kntcj" />
+          <ref role="1C2YfU" node="4yeP55kntcl" resolve="Fragment_5228349663196599061" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUNd" role="jymVt">
@@ -645,6 +655,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnh" resolve="VPToFragment_661988591836317137" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWni" resolve="ModuleToFragment_661988591836317138" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYTX" resolve="PeoplBlockReference_661988591836327549" />
             </node>
           </node>
         </node>
@@ -687,6 +698,7 @@
         <node concept="ocbFV" id="$JQLRHKYTX" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327549" />
           <ref role="ocbYS" node="$JQLRHKWnd" />
+          <ref role="1C2YfU" node="$JQLRHKWnf" resolve="Fragment_661988591836317135" />
         </node>
       </node>
       <node concept="312cEg" id="$JQLRHKULU" role="jymVt">
@@ -811,6 +823,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnn" resolve="VPToFragment_661988591836317143" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWno" resolve="ModuleToFragment_661988591836317144" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYUk" resolve="PeoplBlockReference_661988591836327572" />
             </node>
           </node>
         </node>
@@ -819,6 +832,7 @@
         <node concept="ocbFV" id="$JQLRHKYUk" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327572" />
           <ref role="ocbYS" node="$JQLRHKWnj" />
+          <ref role="1C2YfU" node="$JQLRHKWnl" resolve="Fragment_661988591836317141" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUNX" role="jymVt">
@@ -857,6 +871,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnt" resolve="VPToFragment_661988591836317149" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWnu" resolve="ModuleToFragment_661988591836317150" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYUu" resolve="PeoplBlockReference_661988591836327582" />
             </node>
           </node>
         </node>
@@ -887,6 +902,7 @@
         <node concept="ocbFV" id="$JQLRHKYUu" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327582" />
           <ref role="ocbYS" node="$JQLRHKWnp" />
+          <ref role="1C2YfU" node="$JQLRHKWnr" resolve="Fragment_661988591836317147" />
         </node>
       </node>
       <node concept="312cEg" id="$JQLRHKUM0" role="jymVt">
@@ -947,6 +963,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnz" resolve="VPToFragment_661988591836317155" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWn$" resolve="ModuleToFragment_661988591836317156" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYUL" resolve="PeoplBlockReference_661988591836327601" />
             </node>
           </node>
         </node>
@@ -962,6 +979,7 @@
         <node concept="ocbFV" id="$JQLRHKYUL" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327601" />
           <ref role="ocbYS" node="$JQLRHKWnv" />
+          <ref role="1C2YfU" node="$JQLRHKWnx" resolve="Fragment_661988591836317153" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUOh" role="jymVt">
@@ -1000,6 +1018,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnD" resolve="VPToFragment_661988591836317161" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWnE" resolve="ModuleToFragment_661988591836317162" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYUY" resolve="PeoplBlockReference_661988591836327614" />
             </node>
           </node>
         </node>
@@ -1015,6 +1034,7 @@
         <node concept="ocbFV" id="$JQLRHKYUY" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327614" />
           <ref role="ocbYS" node="$JQLRHKWn_" />
+          <ref role="1C2YfU" node="$JQLRHKWnB" resolve="Fragment_661988591836317159" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUOr" role="jymVt">
@@ -1102,6 +1122,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnJ" resolve="VPToFragment_661988591836317167" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWnK" resolve="ModuleToFragment_661988591836317168" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYVb" resolve="PeoplBlockReference_661988591836327627" />
             </node>
           </node>
         </node>
@@ -1117,6 +1138,7 @@
         <node concept="ocbFV" id="$JQLRHKYVb" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327627" />
           <ref role="ocbYS" node="$JQLRHKWnF" />
+          <ref role="1C2YfU" node="$JQLRHKWnH" resolve="Fragment_661988591836317165" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUON" role="jymVt">
@@ -1145,6 +1167,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWnP" resolve="VPToFragment_661988591836317173" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWnQ" resolve="ModuleToFragment_661988591836317174" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYVo" resolve="PeoplBlockReference_661988591836327640" />
             </node>
           </node>
         </node>
@@ -1153,6 +1176,7 @@
         <node concept="ocbFV" id="$JQLRHKYVo" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327640" />
           <ref role="ocbYS" node="$JQLRHKWnL" />
+          <ref role="1C2YfU" node="$JQLRHKWnN" resolve="Fragment_661988591836317171" />
         </node>
       </node>
       <node concept="3UR2Jj" id="$JQLRHKUOT" role="lGtFl">
@@ -1395,6 +1419,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWo8" resolve="VPToFragment_661988591836317192" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWo9" resolve="ModuleToFragment_661988591836317193" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYVY" resolve="PeoplBlockReference_661988591836327678" />
             </node>
           </node>
         </node>
@@ -1402,6 +1427,7 @@
         <node concept="ocbFV" id="$JQLRHKYVY" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327678" />
           <ref role="ocbYS" node="$JQLRHKWo4" />
+          <ref role="1C2YfU" node="$JQLRHKWo6" resolve="Fragment_661988591836317190" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUQW" role="jymVt">
@@ -1616,6 +1642,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWoe" resolve="VPToFragment_661988591836317198" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWof" resolve="ModuleToFragment_661988591836317199" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYW8" resolve="PeoplBlockReference_661988591836327688" />
             </node>
           </node>
         </node>
@@ -1631,6 +1658,7 @@
         <node concept="ocbFV" id="$JQLRHKYW8" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327688" />
           <ref role="ocbYS" node="$JQLRHKWoa" />
+          <ref role="1C2YfU" node="$JQLRHKWoc" resolve="Fragment_661988591836317196" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUS6" role="jymVt">
@@ -1786,6 +1814,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWok" resolve="VPToFragment_661988591836317204" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWol" resolve="ModuleToFragment_661988591836317205" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYWl" resolve="PeoplBlockReference_661988591836327701" />
             </node>
           </node>
         </node>
@@ -1826,6 +1855,7 @@
         <node concept="ocbFV" id="$JQLRHKYWl" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327701" />
           <ref role="ocbYS" node="$JQLRHKWog" />
+          <ref role="1C2YfU" node="$JQLRHKWoi" resolve="Fragment_661988591836317202" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUSX" role="jymVt">
@@ -1908,6 +1938,7 @@
               <ref role="1V74Hf" to="hmci:4yeP55knqw4" resolve="VPToFragment_5228349663196588036" />
               <ref role="a64iB" to="hmci:4yeP55knpb7" resolve="Authorization" />
               <ref role="3aRQVk" to="hmci:4yeP55knqPg" resolve="ModuleToFragment_5228349663196589392" />
+              <ref role="25GeQm" node="4yeP55knq$d" resolve="PeoplBlockReference_5228349663196588301" />
             </node>
           </node>
         </node>
@@ -1945,6 +1976,7 @@
         <node concept="ocbFV" id="4yeP55knq$d" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_5228349663196588301" />
           <ref role="ocbYS" node="$JQLRHKWom" />
+          <ref role="1C2YfU" node="$JQLRHKWoo" resolve="Fragment_661988591836317208" />
         </node>
       </node>
       <node concept="3clFb_" id="$JQLRHKUTr" role="jymVt">
@@ -2046,6 +2078,7 @@
               <ref role="1V74Hf" to="hmci:$JQLRHKWow" resolve="VPToFragment_661988591836317216" />
               <ref role="3aRQVk" to="hmci:$JQLRHKWox" resolve="ModuleToFragment_661988591836317217" />
               <ref role="a64iB" to="hmci:$JQLRHKWmI" resolve="Base" />
+              <ref role="25GeQm" node="$JQLRHKYWZ" resolve="PeoplBlockReference_661988591836327743" />
             </node>
           </node>
         </node>
@@ -2054,6 +2087,7 @@
         <node concept="ocbFV" id="$JQLRHKYWZ" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_661988591836327743" />
           <ref role="ocbYS" node="$JQLRHKWos" />
+          <ref role="1C2YfU" node="$JQLRHKWou" resolve="Fragment_661988591836317214" />
         </node>
       </node>
       <node concept="3UR2Jj" id="$JQLRHKUTW" role="lGtFl">
