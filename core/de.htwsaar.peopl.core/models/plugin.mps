@@ -336,11 +336,35 @@
       <node concept="3Tm1VV" id="18ZMEb5jVwk" role="1B3o_S" />
       <node concept="10P_77" id="18ZMEb5jVun" role="3clF45" />
       <node concept="37vLTG" id="18ZMEb5jVzi" role="3clF46">
-        <property role="TrG5h" value="peoplBlock" />
+        <property role="TrG5h" value="peoplBlockCandidate" />
         <node concept="3Tqbb2" id="18ZMEb5jVzh" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="18ZMEb5jIf6" role="jymVt" />
+    <node concept="3clFb_" id="4l3I9DF6n8a" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isPeoplBlockReference" />
+      <node concept="3clFbS" id="4l3I9DF6n8d" role="3clF47" />
+      <node concept="3Tm1VV" id="4l3I9DF6n8e" role="1B3o_S" />
+      <node concept="10P_77" id="4l3I9DF6n69" role="3clF45" />
+      <node concept="37vLTG" id="4l3I9DF6nbp" role="3clF46">
+        <property role="TrG5h" value="referenceCandidate" />
+        <node concept="3Tqbb2" id="4l3I9DF6nbo" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4l3I9DF6phj" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isBlockNull" />
+      <node concept="37vLTG" id="4l3I9DF6ptH" role="3clF46">
+        <property role="TrG5h" value="referenceCandidate" />
+        <node concept="3Tqbb2" id="4l3I9DF6ptI" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="4l3I9DF6phm" role="3clF47" />
+      <node concept="3Tm1VV" id="4l3I9DF6phn" role="1B3o_S" />
+      <node concept="10P_77" id="4l3I9DF6pf3" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="4l3I9DF6n45" role="jymVt" />
     <node concept="3clFb_" id="18ZMEb5jx7s" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="assignToModule" />
