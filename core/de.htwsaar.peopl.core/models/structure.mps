@@ -101,6 +101,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
     </node>
+    <node concept="1TJgyj" id="7W6xH3UHAH6" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="fragmentUpdater" />
+      <ref role="20lvS9" node="7irj4gs$aYR" resolve="FragmentUpdater" />
+    </node>
     <node concept="PrWs8" id="31jQQFwurnr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -424,6 +429,7 @@
     <node concept="1TJgyj" id="7irj4gs$aYY" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="fragmentToUpdate" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
     </node>
     <node concept="PrWs8" id="7irj4gs$gtA" role="PzmwI">
