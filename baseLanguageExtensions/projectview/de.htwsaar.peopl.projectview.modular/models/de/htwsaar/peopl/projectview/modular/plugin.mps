@@ -3887,6 +3887,11 @@
             <property role="3SKdUp" value="Find Information" />
           </node>
         </node>
+        <node concept="3SKdUt" id="7n3dkHRZSX6" role="3cqZAp">
+          <node concept="3SKdUq" id="7n3dkHRZSX7" role="3SKWNk">
+            <property role="3SKdUp" value="Todo: update according to current structure" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2bn$lqohQyI" role="3cqZAp">
           <node concept="3cpWsn" id="2bn$lqohQyJ" role="3cpWs9">
             <property role="TrG5h" value="currentPClass" />
@@ -4815,7 +4820,7 @@
                         </node>
                         <node concept="3CFZ6_" id="2HiZdrZ_UG_" role="2OqNvi">
                           <node concept="3CFYIy" id="2HiZdrZ_UGN" role="3CFYIz">
-                            <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="ModuleConsumerUpdater" />
+                            <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
                           </node>
                         </node>
                       </node>
@@ -4938,7 +4943,7 @@
                         <ref role="3cqZAo" node="3QAbA5ku0ub" resolve="newpBlock" />
                       </node>
                       <node concept="2qgKlT" id="3k7kNkplRzn" role="2OqNvi">
-                        <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlockAtReferringNode" />
+                        <ref role="37wK5l" to="1lrk:4DWAEpijisK" resolve="registerPeoplBlock" />
                         <node concept="10QFUN" id="3k7kNkplRBX" role="37wK5m">
                           <node concept="3Tqbb2" id="3k7kNkplRN$" role="10QFUM">
                             <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
