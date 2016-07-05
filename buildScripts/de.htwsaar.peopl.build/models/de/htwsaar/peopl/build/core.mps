@@ -124,7 +124,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="0.3" />
+          <property role="3MwjfP" value="0.4" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
@@ -140,14 +140,14 @@
       </node>
       <node concept="3_J27D" id="6$Z0QXuTVX5" role="3s6cr7">
         <node concept="3Mxwew" id="6$Z0QXuTVX7" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL's core, which allows adding variability to arbitrary ASTs." />
+          <property role="3MwjfP" value="PEoPL's core, which allows adding variability to arbitrary AST elements." />
         </node>
       </node>
     </node>
     <node concept="2G$12M" id="3dzs$xJmzUb" role="3989C9">
       <property role="TrG5h" value="core" />
       <node concept="1E1JtD" id="3dzs$xJmzUl" role="2G$12L">
-        <property role="BnDLt" value="true" />
+        <property role="BnDLt" value="false" />
         <property role="TrG5h" value="de.htwsaar.peopl.core" />
         <property role="3LESm3" value="1a3a0b62-fb00-47d1-8423-98da4001b216" />
         <property role="2GAjPV" value="false" />
@@ -269,6 +269,18 @@
           <node concept="3bR9La" id="sopnA3I38q" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="53z0aTzOu9m" role="3bR37C">
+          <node concept="3bR9La" id="53z0aTzOu9n" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3ZgZ1njKuFL" resolve="jetbrains.mps.lang.smodel.query" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="53z0aTzOu9o" role="3bR37C">
+          <node concept="3bR9La" id="53z0aTzOu9p" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
       </node>
@@ -507,7 +519,7 @@
                 <node concept="2Ry0Ak" id="7gYFWh7bwE5" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4Hgkuxipt4g" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8+ plist).app" />
                     <node concept="2Ry0Ak" id="4Hgkuxipt5z" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>

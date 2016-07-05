@@ -122,7 +122,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAY9" role="m$_w8">
         <node concept="3Mxwew" id="F_DJLMfAYl" role="3MwsjC">
-          <property role="3MwjfP" value="0.3" />
+          <property role="3MwjfP" value="0.4" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
@@ -362,6 +362,11 @@
         <node concept="1SiIV0" id="5spzs9_ZcwC" role="3bR37C">
           <node concept="1Busua" id="5spzs9_ZcwD" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="53z0aTzOvdp" role="3bR37C">
+          <node concept="1Busua" id="53z0aTzOvdq" role="1SiIV1">
+            <ref role="1Busuk" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
           </node>
         </node>
       </node>
@@ -935,6 +940,18 @@
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="53z0aTzOvf6" role="3bR37C">
+          <node concept="3bR9La" id="53z0aTzOvf7" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="53z0aTzOvf8" role="3bR37C">
+          <node concept="3bR9La" id="53z0aTzOvf9" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4RAsyl5PvT8" resolve="de.htwsaar.peopl.view.product" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4RAsyl5PvSk" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1377,7 +1394,7 @@
                 <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4Hgkuxipt9A" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8+ plist).app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptbt" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>

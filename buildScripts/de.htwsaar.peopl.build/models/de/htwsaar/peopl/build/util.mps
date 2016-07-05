@@ -73,6 +73,7 @@
         <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
+        <child id="2172791612906637490" name="description" index="3s6cr7" />
       </concept>
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
@@ -148,7 +149,7 @@
                 <node concept="2Ry0Ak" id="4RAsyl5PvMH" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4Hgkuxiptu8" role="2Ry0An">
-                    <property role="2Ry0Am" value="Peopl 0.2 MPS 3.3.5 (JRE 1.8 bundled).app" />
+                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8+ plist).app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptuq" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
@@ -178,7 +179,7 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5PvN4" role="m$_w8">
         <node concept="3Mxwew" id="4RAsyl5PvNe" role="3MwsjC">
-          <property role="3MwjfP" value="0.3" />
+          <property role="3MwjfP" value="0.4" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5PvN5" role="m$_yQ">
@@ -191,6 +192,11 @@
       </node>
       <node concept="m$_yC" id="6$Z0QXuTV$p" role="m$_yJ">
         <ref role="m$_y1" to="q0pl:F_DJLMfAY5" resolve="peoplBaseLanguageExtension" />
+      </node>
+      <node concept="3_J27D" id="6PAwBzqWsPR" role="3s6cr7">
+        <node concept="3Mxwew" id="6PAwBzqWsPT" role="3MwsjC">
+          <property role="3MwjfP" value="Some helpful utils to work with PEoPL." />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4RAsyl5RUcx" role="3989C9">
