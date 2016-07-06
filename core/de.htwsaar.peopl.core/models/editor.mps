@@ -3533,7 +3533,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="47WRMVuScjk" role="3clF47">
-        <node concept="3clFbH" id="7_KIRrGFIdy" role="3cqZAp" />
         <node concept="3cpWs8" id="47WRMVuScjl" role="3cqZAp">
           <node concept="3cpWsn" id="47WRMVuScjm" role="3cpWs9">
             <property role="TrG5h" value="result" />
