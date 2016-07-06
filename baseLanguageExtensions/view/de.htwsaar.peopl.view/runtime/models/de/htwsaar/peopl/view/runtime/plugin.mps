@@ -23,6 +23,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="wo0a" ref="r:8ded176d-d7b4-4e87-8860-e932ddd12f52(de.htwsaar.peopl.view.annotative.editor)" />
     <import index="lrok" ref="r:29a150a1-f788-4254-ba38-9c184bc1f289(de.htwsaar.peopl.view.product.editor)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" implicit="true" />
   </imports>
   <registry>
@@ -320,6 +321,9 @@
               <node concept="17QB3L" id="3M$6oZspMez" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="3M$6oZspMe$" role="33vP2m">
+              <node concept="2pYGij" id="5xDdmRRWRhN" role="2BsfMF">
+                <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+              </node>
               <node concept="2pYGij" id="2Zd4IYg0uZk" role="2BsfMF">
                 <ref role="2pYH_C" to="wo0a:2H0DQTMCRPV" resolve="hideModuleVP" />
               </node>
@@ -443,6 +447,9 @@
               <node concept="17QB3L" id="3M$6oZspgHM" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="3M$6oZspgHN" role="33vP2m">
+              <node concept="2pYGij" id="5xDdmRRWRrv" role="2BsfMF">
+                <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+              </node>
               <node concept="2pYGij" id="2Zd4IYg11aB" role="2BsfMF">
                 <ref role="2pYH_C" to="lrok:57rZcVzwarK" resolve="productView" />
               </node>
@@ -961,6 +968,9 @@
               <node concept="17QB3L" id="1sCUscXP$Oi" role="10Q1$1" />
             </node>
             <node concept="2BsdOp" id="1sCUscXP_A3" role="33vP2m">
+              <node concept="2pYGij" id="5xDdmRRWR2L" role="2BsfMF">
+                <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+              </node>
               <node concept="2pYGij" id="2Zd4IYg10M_" role="2BsfMF">
                 <ref role="2pYH_C" to="wo0a:1DrSvX1CVhP" resolve="betterAnnotativeView" />
               </node>
