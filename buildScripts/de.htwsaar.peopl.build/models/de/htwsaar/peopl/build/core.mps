@@ -147,7 +147,7 @@
     <node concept="2G$12M" id="3dzs$xJmzUb" role="3989C9">
       <property role="TrG5h" value="core" />
       <node concept="1E1JtD" id="3dzs$xJmzUl" role="2G$12L">
-        <property role="BnDLt" value="false" />
+        <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.htwsaar.peopl.core" />
         <property role="3LESm3" value="1a3a0b62-fb00-47d1-8423-98da4001b216" />
         <property role="2GAjPV" value="false" />
@@ -507,20 +507,20 @@
     <node concept="3b7kt6" id="1HMCj1nd$1T" role="10PD9s" />
     <node concept="398rNT" id="6$EUgyMH9J6" role="1l3spd">
       <property role="TrG5h" value="mps_home_core" />
-      <node concept="55IIr" id="7gYFWh7bwDO" role="398pKh">
-        <node concept="2Ry0Ak" id="7gYFWh7bwDR" role="iGT6I">
+      <node concept="55IIr" id="5kp5FYUd_zS" role="398pKh">
+        <node concept="2Ry0Ak" id="2EkRjvLZZel" role="iGT6I">
           <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="7gYFWh7bwDU" role="2Ry0An">
+          <node concept="2Ry0Ak" id="2EkRjvLZZga" role="2Ry0An">
             <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="7gYFWh7bwDX" role="2Ry0An">
+            <node concept="2Ry0Ak" id="2EkRjvLZZgd" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
-              <node concept="2Ry0Ak" id="7gYFWh7bwE0" role="2Ry0An">
+              <node concept="2Ry0Ak" id="2EkRjvLZZgg" role="2Ry0An">
                 <property role="2Ry0Am" value=".." />
-                <node concept="2Ry0Ak" id="7gYFWh7bwE5" role="2Ry0An">
+                <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
-                  <node concept="2Ry0Ak" id="4Hgkuxipt4g" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8+ plist).app" />
-                    <node concept="2Ry0Ak" id="4Hgkuxipt5z" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="4Hgkuxipt9A" role="2Ry0An">
+                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8 plist).app" />
+                    <node concept="2Ry0Ak" id="4Hgkuxiptbt" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
                   </node>
