@@ -369,6 +369,17 @@
             <ref role="1Busuk" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1On$kJTZ0XN" role="3bR37C">
+          <node concept="3bR9La" id="1On$kJTZ0XO" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1On$kJTZ0XP" role="3bR37C">
+          <node concept="1Busua" id="1On$kJTZ0XQ" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4RAsyl5PvNp" role="3989C9">
