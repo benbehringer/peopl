@@ -4279,9 +4279,7 @@
                       <node concept="3clFbF" id="7_KIRrGG3$1" role="3cqZAp">
                         <node concept="1rXfSq" id="7_KIRrGG3zZ" role="3clFbG">
                           <ref role="37wK5l" node="7_KIRrGFZdB" resolve="calculateRect" />
-                          <node concept="3clFbT" id="1eEKog9SX1i" role="37wK5m">
-                            <property role="3clFbU" value="true" />
-                          </node>
+                          <node concept="3clFbT" id="1eEKog9SX1i" role="37wK5m" />
                         </node>
                       </node>
                       <node concept="3cpWs6" id="5ryw39vOE76" role="3cqZAp">
@@ -5448,14 +5446,14 @@
     <property role="TrG5h" value="HorizontalLineHelper" />
     <node concept="2tJIrI" id="6k$OKHdwPrX" role="jymVt" />
     <node concept="2YIFZL" id="7nLNnCiUMZ8" role="jymVt">
-      <property role="TrG5h" value="createStandardUnderlineOrEmpty" />
+      <property role="TrG5h" value="drawStandardUnderlineOrEmpty" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7nLNnCiUMZb" role="3clF47">
         <node concept="3cpWs6" id="7nLNnCiVRUO" role="3cqZAp">
           <node concept="1rXfSq" id="7nLNnCiVRaP" role="3cqZAk">
-            <ref role="37wK5l" node="7nLNnCiVQDb" resolve="createStandardUnderlineOrEmpty" />
+            <ref role="37wK5l" node="7nLNnCiVQDb" resolve="drawStandardUnderlineOrEmpty" />
             <node concept="37vLTw" id="7nLNnCiVRfd" role="37wK5m">
               <ref role="3cqZAo" node="7nLNnCiUN1H" resolve="editorContext" />
             </node>
@@ -5485,7 +5483,7 @@
     </node>
     <node concept="2tJIrI" id="7nLNnCiUMbm" role="jymVt" />
     <node concept="2YIFZL" id="7nLNnCiVQDb" role="jymVt">
-      <property role="TrG5h" value="createStandardUnderlineOrEmpty" />
+      <property role="TrG5h" value="drawStandardUnderlineOrEmpty" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -5516,7 +5514,7 @@
             <node concept="3cpWs6" id="7nLNnCiVQDo" role="3cqZAp">
               <node concept="2YIFZM" id="7nLNnCiVQDp" role="3cqZAk">
                 <ref role="1Pybhc" node="6k$OKHdwPrP" resolve="HorizontalLineHelper" />
-                <ref role="37wK5l" node="6k$OKHdwPH5" resolve="createStandardUnderline" />
+                <ref role="37wK5l" node="6k$OKHdwPH5" resolve="drawStandardUnderline" />
                 <node concept="37vLTw" id="7nLNnCiVQDq" role="37wK5m">
                   <ref role="3cqZAo" node="7nLNnCiVQDe" resolve="fragment" />
                 </node>
@@ -5570,7 +5568,7 @@
     </node>
     <node concept="2tJIrI" id="7nLNnCiVRuO" role="jymVt" />
     <node concept="2YIFZL" id="6k$OKHdwPH5" role="jymVt">
-      <property role="TrG5h" value="createStandardUnderline" />
+      <property role="TrG5h" value="drawStandardUnderline" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -5765,8 +5763,60 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3TvCtTgCbjw" role="jymVt" />
+    <node concept="2YIFZL" id="1SYhEDJ1LE$" role="jymVt">
+      <property role="TrG5h" value="drawSingleCharacterUnderlineFromBottom" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1SYhEDJ1LEB" role="3clF47">
+        <node concept="3cpWs8" id="1SYhEDJ1Mde" role="3cqZAp">
+          <node concept="3cpWsn" id="1SYhEDJ1Mdf" role="3cpWs9">
+            <property role="TrG5h" value="standardUnderline" />
+            <node concept="3uibUv" id="1SYhEDJ1Mdg" role="1tU5fm">
+              <ref role="3uigEE" node="61l2320N2tv" resolve="HorizontalLineCellProvider" />
+            </node>
+            <node concept="1rXfSq" id="1SYhEDJ1M21" role="33vP2m">
+              <ref role="37wK5l" node="6k$OKHdwPH5" resolve="drawStandardUnderline" />
+              <node concept="37vLTw" id="1SYhEDJ1M6o" role="37wK5m">
+                <ref role="3cqZAo" node="1SYhEDJ1LVN" resolve="fragment" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1SYhEDJ1Mlg" role="3cqZAp">
+          <node concept="2OqwBi" id="1SYhEDJ1Mon" role="3clFbG">
+            <node concept="37vLTw" id="1SYhEDJ1Mle" role="2Oq$k0">
+              <ref role="3cqZAo" node="1SYhEDJ1Mdf" resolve="standardUnderline" />
+            </node>
+            <node concept="liA8E" id="1SYhEDJ1MrK" role="2OqNvi">
+              <ref role="37wK5l" node="4XXs7nZMSzU" resolve="setFixedWidth" />
+              <node concept="3cmrfG" id="1SYhEDJ1Mu3" role="37wK5m">
+                <property role="3cmrfH" value="9" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="1SYhEDJ1Mym" role="3cqZAp">
+          <node concept="37vLTw" id="1SYhEDJ1MBM" role="3cqZAk">
+            <ref role="3cqZAo" node="1SYhEDJ1Mdf" resolve="standardUnderline" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1SYhEDJ1L$o" role="1B3o_S" />
+      <node concept="3uibUv" id="1SYhEDJ1LEi" role="3clF45">
+        <ref role="3uigEE" node="61l2320N2tv" resolve="HorizontalLineCellProvider" />
+      </node>
+      <node concept="37vLTG" id="1SYhEDJ1LVN" role="3clF46">
+        <property role="TrG5h" value="fragment" />
+        <node concept="3Tqbb2" id="1SYhEDJ1LVM" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1SYhEDJ1O23" role="jymVt" />
+    <node concept="2tJIrI" id="1SYhEDJ1O60" role="jymVt" />
     <node concept="2YIFZL" id="3TvCtTgCid7" role="jymVt">
-      <property role="TrG5h" value="createSingleCharacterUnderline" />
+      <property role="TrG5h" value="drawSingleCharacterUnderlineFromTop" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -5830,10 +5880,10 @@
                 </node>
                 <node concept="liA8E" id="3TvCtTgCijh" role="2OqNvi">
                   <ref role="37wK5l" node="4XXs7nZEBfy" resolve="setDistToText" />
-                  <node concept="3cmrfG" id="3TvCtTgCiji" role="37wK5m">
+                  <node concept="3cmrfG" id="3TvCtTgCijj" role="37wK5m">
                     <property role="3cmrfH" value="17" />
                   </node>
-                  <node concept="3cmrfG" id="3TvCtTgCijj" role="37wK5m">
+                  <node concept="3cmrfG" id="3pdhrL4z3Dd" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
@@ -5973,7 +6023,7 @@
     </node>
     <node concept="2tJIrI" id="3TvCtTgCi2A" role="jymVt" />
     <node concept="2YIFZL" id="3TvCtTgCeyJ" role="jymVt">
-      <property role="TrG5h" value="createSingleCharacterUnderlineOrEmpty" />
+      <property role="TrG5h" value="drawSingleCharacterUnderlineOrEmptyFromTop" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -6003,7 +6053,7 @@
           <node concept="3clFbS" id="3TvCtTgCluv" role="3clFbx">
             <node concept="3cpWs6" id="3TvCtTgClM$" role="3cqZAp">
               <node concept="1rXfSq" id="3TvCtTgClQO" role="3cqZAk">
-                <ref role="37wK5l" node="3TvCtTgCid7" resolve="createSingleCharacterUnderline" />
+                <ref role="37wK5l" node="3TvCtTgCid7" resolve="drawSingleCharacterUnderlineFromTop" />
                 <node concept="37vLTw" id="3TvCtTgClVi" role="37wK5m">
                   <ref role="3cqZAo" node="3TvCtTgCka1" resolve="fragment" />
                 </node>
@@ -6047,6 +6097,81 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3TvCtTgCew$" role="jymVt" />
+    <node concept="2YIFZL" id="5013qLxWNqx" role="jymVt">
+      <property role="TrG5h" value="drawSingleCharacterUnderlineOrEmptyFromBottom" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5013qLxWNqy" role="3clF47">
+        <node concept="3cpWs8" id="5013qLxWNqz" role="3cqZAp">
+          <node concept="3cpWsn" id="5013qLxWNq$" role="3cpWs9">
+            <property role="TrG5h" value="fragment" />
+            <node concept="3Tqbb2" id="5013qLxWNq_" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+            <node concept="2OqwBi" id="5013qLxWNqA" role="33vP2m">
+              <node concept="2OqwBi" id="5013qLxWNqB" role="2Oq$k0">
+                <node concept="37vLTw" id="5013qLxWNqC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5013qLxWNqX" resolve="fragmentParentCandidate" />
+                </node>
+                <node concept="3CFZ6_" id="5013qLxWNqD" role="2OqNvi">
+                  <node concept="3CFYIy" id="5013qLxWNqE" role="3CFYIz">
+                    <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="5013qLxWNqF" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5013qLxWNqG" role="3cqZAp">
+          <node concept="3clFbS" id="5013qLxWNqH" role="3clFbx">
+            <node concept="3cpWs6" id="5013qLxWNqI" role="3cqZAp">
+              <node concept="1rXfSq" id="5013qLxWNqJ" role="3cqZAk">
+                <ref role="37wK5l" node="1SYhEDJ1LE$" resolve="drawSingleCharacterUnderlineFromBottom" />
+                <node concept="37vLTw" id="5013qLxWNqK" role="37wK5m">
+                  <ref role="3cqZAo" node="5013qLxWNq$" resolve="fragment" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5013qLxWNqL" role="3clFbw">
+            <node concept="37vLTw" id="5013qLxWNqM" role="2Oq$k0">
+              <ref role="3cqZAo" node="5013qLxWNq$" resolve="fragment" />
+            </node>
+            <node concept="3x8VRR" id="5013qLxWNqN" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5013qLxWNqO" role="3cqZAp">
+          <node concept="2ShNRf" id="5013qLxWNqP" role="3cqZAk">
+            <node concept="1pGfFk" id="5013qLxWNqQ" role="2ShVmc">
+              <ref role="37wK5l" node="6k$OKHdwRSy" resolve="CustomEmptyCellProvider" />
+              <node concept="37vLTw" id="5013qLxWNqR" role="37wK5m">
+                <ref role="3cqZAo" node="5013qLxWNqV" resolve="editorContext" />
+              </node>
+              <node concept="37vLTw" id="5013qLxWNqS" role="37wK5m">
+                <ref role="3cqZAo" node="5013qLxWNqX" resolve="fragmentParentCandidate" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5013qLxWNqT" role="1B3o_S" />
+      <node concept="3uibUv" id="5013qLxWNqU" role="3clF45">
+        <ref role="3uigEE" to="exr9:~AbstractCellProvider" resolve="AbstractCellProvider" />
+      </node>
+      <node concept="37vLTG" id="5013qLxWNqV" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="5013qLxWNqW" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5013qLxWNqX" role="3clF46">
+        <property role="TrG5h" value="fragmentParentCandidate" />
+        <node concept="3Tqbb2" id="5013qLxWNqY" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5013qLxWNmf" role="jymVt" />
     <node concept="2tJIrI" id="3TvCtTgCblD" role="jymVt" />
     <node concept="3Tm1VV" id="6k$OKHdwPrQ" role="1B3o_S" />
   </node>

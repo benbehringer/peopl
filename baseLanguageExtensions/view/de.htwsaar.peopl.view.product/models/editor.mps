@@ -64,11 +64,11 @@
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
-      <concept id="5949640294884234625" name="jetbrains.mps.lang.editor.structure.CellLayout_Table" flags="nn" index="fvoJi" />
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1106270637846" name="jetbrains.mps.lang.editor.structure.CellLayout_Flow" flags="nn" index="2iR$Sn" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -98,13 +98,20 @@
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
         <child id="7348800710862477686" name="contextHints" index="3XTboT" />
       </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
+      </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
+      <concept id="1214317859050" name="jetbrains.mps.lang.editor.structure.LayoutConstraintStyleClassItem" flags="ln" index="2UZ17K">
+        <property id="1214317859051" name="layoutConstraint" index="2UZ17L" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
+        <child id="1223387335081" name="query" index="3n$kyP" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
@@ -128,6 +135,7 @@
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -137,6 +145,7 @@
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -473,7 +482,7 @@
             <node concept="3clFbS" id="4TFJaCG9F4i" role="3clFbx">
               <node concept="3SKdUt" id="4TFJaCG9F4j" role="3cqZAp">
                 <node concept="3SKdUq" id="4TFJaCG9F4k" role="3SKWNk">
-                  <property role="3SKdUp" value="we let the TypeAlternative and Type editors handle fragment presentation" />
+                  <property role="3SKdUp" value="we let SingleChildAlternative and Wrapper editors handle presentation" />
                 </node>
               </node>
               <node concept="3cpWs6" id="4TFJaCG9F4l" role="3cqZAp">
@@ -6449,9 +6458,9 @@
         <node concept="3clFbS" id="lMQF2o9Dt_" role="2VODD2">
           <node concept="3clFbJ" id="lMQF2o9DtA" role="3cqZAp">
             <node concept="3clFbS" id="lMQF2o9DtB" role="3clFbx">
-              <node concept="3SKdUt" id="lMQF2o9DtC" role="3cqZAp">
-                <node concept="3SKdUq" id="lMQF2o9DtD" role="3SKWNk">
-                  <property role="3SKdUp" value="we let the TypeAlternative and Type editors handle fragment presentation" />
+              <node concept="3SKdUt" id="7YU$Q23Nina" role="3cqZAp">
+                <node concept="3SKdUq" id="7YU$Q23Ninb" role="3SKWNk">
+                  <property role="3SKdUp" value="we let SingleChildAlternative and Wrapper editors handle presentation" />
                 </node>
               </node>
               <node concept="3cpWs6" id="lMQF2o9DtE" role="3cqZAp">
@@ -6666,11 +6675,17 @@
                   </node>
                 </node>
               </node>
-              <node concept="2SsqMj" id="lMQF2oaHbT" role="3EZMnx" />
-              <node concept="fvoJi" id="lMQF2oaHbU" role="2iSdaV" />
+              <node concept="3EZMnI" id="73ThCmD5kpi" role="3EZMnx">
+                <node concept="l2Vlx" id="73ThCmD5kpj" role="2iSdaV" />
+                <node concept="2SsqMj" id="lMQF2oaHbT" role="3EZMnx" />
+                <node concept="2UZ17K" id="73ThCmD5kut" role="3F10Kt">
+                  <property role="2UZ17L" value="noflow" />
+                </node>
+              </node>
+              <node concept="2iR$Sn" id="73ThCmD5knZ" role="2iSdaV" />
             </node>
             <node concept="3EZMnI" id="lMQF2oaHbW" role="1QoVPY">
-              <node concept="fvoJi" id="lMQF2oaHbX" role="2iSdaV" />
+              <node concept="2iR$Sn" id="73ThCmD5kmJ" role="2iSdaV" />
               <node concept="gc7cB" id="52YGS1mjTAZ" role="3EZMnx">
                 <node concept="3VJUX4" id="52YGS1mjTB0" role="3YsKMw">
                   <node concept="3clFbS" id="52YGS1mjTB1" role="2VODD2">
@@ -6706,7 +6721,55 @@
                   <property role="VOm3f" value="false" />
                 </node>
               </node>
-              <node concept="2SsqMj" id="lMQF2oaHeD" role="3EZMnx" />
+              <node concept="3EZMnI" id="73ThCmD5kld" role="3EZMnx">
+                <node concept="l2Vlx" id="73ThCmD5kle" role="2iSdaV" />
+                <node concept="3EZMnI" id="73ThCmD5kwd" role="3EZMnx">
+                  <node concept="lj46D" id="73ThCmD4MrQ" role="3F10Kt">
+                    <property role="VOm3f" value="true" />
+                    <node concept="3nzxsE" id="73ThCmD4MrR" role="3n$kyP">
+                      <node concept="3clFbS" id="73ThCmD4MrS" role="2VODD2">
+                        <node concept="3clFbF" id="73ThCmD4MrT" role="3cqZAp">
+                          <node concept="1Wc70l" id="73ThCmD4MrU" role="3clFbG">
+                            <node concept="2OqwBi" id="73ThCmD4MrV" role="3uHU7w">
+                              <node concept="2OqwBi" id="73ThCmD4MrW" role="2Oq$k0">
+                                <node concept="2OqwBi" id="73ThCmD4MrX" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="73ThCmD4MrY" role="2Oq$k0">
+                                    <node concept="pncrf" id="73ThCmD4MrZ" role="2Oq$k0" />
+                                    <node concept="1mfA1w" id="73ThCmD4Ms0" role="2OqNvi" />
+                                  </node>
+                                  <node concept="1mfA1w" id="73ThCmD4Ms1" role="2OqNvi" />
+                                </node>
+                                <node concept="1mfA1w" id="73ThCmD4Ms2" role="2OqNvi" />
+                              </node>
+                              <node concept="1mIQ4w" id="73ThCmD4Ms3" role="2OqNvi">
+                                <node concept="chp4Y" id="73ThCmD4Ms4" role="cj9EA">
+                                  <ref role="cht4Q" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="73ThCmD4Ms5" role="3uHU7B">
+                              <node concept="2OqwBi" id="73ThCmD4Ms6" role="2Oq$k0">
+                                <node concept="pncrf" id="73ThCmD4Ms7" role="2Oq$k0" />
+                                <node concept="1mfA1w" id="73ThCmD4Ms8" role="2OqNvi" />
+                              </node>
+                              <node concept="1mIQ4w" id="73ThCmD4Ms9" role="2OqNvi">
+                                <node concept="chp4Y" id="73ThCmD4Msa" role="cj9EA">
+                                  <ref role="cht4Q" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="l2Vlx" id="73ThCmD5kwe" role="2iSdaV" />
+                  <node concept="2SsqMj" id="lMQF2oaHeD" role="3EZMnx" />
+                </node>
+                <node concept="2UZ17K" id="73ThCmD5kw9" role="3F10Kt">
+                  <property role="2UZ17L" value="noflow" />
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3EZMnI" id="lMQF2oaH5w" role="1QoS34">
@@ -6736,6 +6799,9 @@
                     </node>
                   </node>
                 </node>
+              </node>
+              <node concept="VPM3Z" id="7YU$Q23Nis5" role="3F10Kt">
+                <property role="VOm3f" value="false" />
               </node>
             </node>
             <node concept="2iRkQZ" id="lMQF2oaH7x" role="2iSdaV" />
@@ -7603,6 +7669,1209 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="TeSb$pT3kK">
+    <property role="3GE5qa" value="Wrapper.SynchronizedStatement" />
+    <ref role="1XX52x" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeT1" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Nfa7" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Nfa8" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Nfa9" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Nfaa" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nfab" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Nfac" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nfad" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Nfae" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nfaf" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Nfag" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Nfah" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Nfai" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Nfaj" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Nfak" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Nfal" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Nfam" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Nfan" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23Nfao" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23Nfap" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23Nfaq" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23Nfar" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23Nfas" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23Nfat" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23Nfau" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Nfav" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Nfaw" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Nfax" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Nfay" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Nfaz" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Nfa$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NfaA" role="1QoS34" />
+      <node concept="3F1sOY" id="7YU$Q23Nfk$" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:h1HWH_s" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1CMrqIaitOY">
+    <property role="3GE5qa" value="Wrapper.TryStatement" />
+    <ref role="1XX52x" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeT4" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23NeTa" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23NgSk" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23NgSl" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23NgSm" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NgSn" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NgSo" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NgSp" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NgSq" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NgSr" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NgSs" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NgSt" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NgSu" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NgSv" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NgSw" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NgSx" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NgSy" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NgSz" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NgS$" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NgS_" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NgSA" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NgSB" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NgSC" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NgSD" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NgSE" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NgSF" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NgSG" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NgSH" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NgSI" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NgSJ" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NgSK" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NgSL" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NgSM" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gWSfCfk" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23NgW3" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBfZ5" resolve="Colored_TryCatchStatement_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1CMrqIaij$8">
+    <property role="3GE5qa" value="Wrapper.TryStatement" />
+    <ref role="1XX52x" to="tpee:gMGUZlm" resolve="TryStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeTe" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Nf_q" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Nf_r" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Nf_s" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Nf_t" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nf_u" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Nf_v" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nf_w" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Nf_x" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nf_y" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Nf_z" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Nf_$" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Nf__" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Nf_A" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Nf_B" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Nf_C" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Nf_D" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Nf_E" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23Nf_F" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23Nf_G" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23Nf_H" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23Nf_I" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23Nf_J" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23Nf_K" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23Nf_L" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Nf_M" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Nf_N" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Nf_O" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Nf_P" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Nf_Q" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Nf_R" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23Nf_S" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMGV8eI" />
+      </node>
+      <node concept="B$lHz" id="7YU$Q23Nf_T" role="1QoS34" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NyX2wRM0XA">
+    <property role="3GE5qa" value="Wrapper.WhileStatement" />
+    <ref role="1XX52x" to="tpee:fE$JKWJ" resolve="WhileStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeTZ" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23NeU5" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="3EZMnI" id="ht5IJf6" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="ht5ILzC" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="hEZKQwC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ht5INaJ" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="hEU$PIN" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="hEZKQwG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="kcijJTlllO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="i0HOa22" role="2iSdaV" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Nhfl" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Nhfm" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Nhfn" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Nhfo" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nhfp" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Nhfq" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nhfr" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Nhfs" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nhft" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Nhfu" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Nhfv" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Nhfw" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Nhfx" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Nhfy" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Nhfz" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Nhf$" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Nhf_" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NhfA" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NhfB" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NhfC" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NhfD" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NhfE" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NhfF" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NhfG" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NhfH" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NhfI" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NhfJ" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NhfK" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NhfL" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NhfM" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NhfN" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23NhqD" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBbt6" resolve="Colored_WhileStatment_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1DrSvX1CO5T">
+    <property role="3GE5qa" value="Wrapper.IfStatement" />
+    <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeSB" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23NeSH" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Ng7q" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Ng7r" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Ng7s" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Ng7t" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Ng7u" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Ng7v" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Ng7w" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Ng7x" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Ng7y" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Ng7z" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Ng7$" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Ng7_" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Ng7A" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Ng7B" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Ng7C" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Ng7D" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Ng7E" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23Ng7F" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23Ng7G" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23Ng7H" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23Ng7I" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23Ng7J" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23Ng7K" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23Ng7L" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Ng7M" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Ng7N" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Ng7O" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Ng7P" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Ng7Q" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Ng7R" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NgsM" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:fzclF8p" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23Ng7T" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBj3Q" resolve="Colored_IfStatement_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1DrSvX1JCY6">
+    <property role="3GE5qa" value="Wrapper.ForStatement" />
+    <ref role="1XX52x" to="tpee:gDDw8bY" resolve="ForStatement" />
+    <node concept="2aJ2om" id="7YU$Q23Ne9r" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Ne9C" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Ne9F" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Ne9H" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NebF" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NebG" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NebH" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NebI" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NebJ" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NebK" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NebL" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NebM" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NebN" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NebO" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NebP" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NebQ" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NebR" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NebS" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NebT" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NebU" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NebV" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NebW" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NebX" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NebY" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NebZ" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Nec0" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Nec1" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Nec2" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Nec3" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Nec4" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Nec5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23Neaq" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NeKW" role="1QoS34" />
+    </node>
+    <node concept="3EZMnI" id="ht5RGAa" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="ht5RGAc" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="hEZKQzh" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ht5RGAd" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="hEU$Pm_" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="hEZKQzz" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="kcijJTllk$" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="i0DzfAM" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4NyX2wRMuaw">
+    <property role="3GE5qa" value="Wrapper.ForStatement" />
+    <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
+    <node concept="2aJ2om" id="7YU$Q23N3aW" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23Ne4G" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="3EZMnI" id="ht5S7l9" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="ht5S7lb" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="hEZKQy8" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ht5S7lc" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="hEU$PVb" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="hEZKQwZ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="kcijJTlllz" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="i0MC5MX" role="2iSdaV" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23N3bM" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23N3bP" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23N3bR" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NdwU" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NdwV" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NdFO" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NdFP" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23N5Cg" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nd8Y" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23N3dV" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23N3dW" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23N3dX" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23N3dY" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23N3dZ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23N3e0" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23N3e1" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23N3e2" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23N3e3" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23N4jC" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23N3pR" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23N3e4" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23N3B7" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23N3DO" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23N5yY" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23N6Vf" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23N5UE" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23N5NO" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23N69V" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23N6h0" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NbOL" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23N3d6" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="PMmxH" id="1KlbCrsBnIq" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBlsA" resolve="Colored_ForEachStatement_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NenC">
+    <property role="3GE5qa" value="Wrapper.ForStatement" />
+    <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NenD" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="3EZMnI" id="7YU$Q23NenF" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="7YU$Q23NenG" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="7YU$Q23NenH" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7YU$Q23NenI" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="7YU$Q23NenJ" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="7YU$Q23NenK" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NenL" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="7YU$Q23NenM" role="2iSdaV" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23NenN" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23NenO" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23NenP" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NenQ" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NenR" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NenS" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NenT" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NenU" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NenV" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NenW" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NenX" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NenY" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NenZ" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Neo0" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Neo1" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Neo2" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Neo3" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23Neo4" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23Neo5" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23Neo6" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23Neo7" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23Neo8" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23Neo9" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23Neoa" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Neob" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Neoc" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Neod" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Neoe" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Neof" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Neog" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23Neoh" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NeBJ" role="1QoS34" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23Neoj">
+    <property role="3GE5qa" value="Wrapper.ForStatement" />
+    <ref role="1XX52x" to="tpee:gDDw8bY" resolve="ForStatement" />
+    <node concept="2aJ2om" id="7YU$Q23Neok" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23Neol" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Neom" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Neon" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Neoo" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Neop" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Neoq" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Neor" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Neos" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Neot" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Neou" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Neov" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Neow" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Neox" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Neoy" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Neoz" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Neo$" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Neo_" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NeoA" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NeoB" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NeoC" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NeoD" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NeoE" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NeoF" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NeoG" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NeoH" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NeoI" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NeoJ" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NeoK" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NeoL" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NeoM" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NeoN" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NeoO" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23NeoP" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBko0" resolve="Colored_ForStatement_Component" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="7YU$Q23NeoQ" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="7YU$Q23NeoR" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="7YU$Q23NeoS" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7YU$Q23NeoT" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="7YU$Q23NeoU" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="7YU$Q23NeoV" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NeoW" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="7YU$Q23NeoX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NeSu">
+    <property role="3GE5qa" value="Wrapper.IfStatement" />
+    <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeS$" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23NeWh" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23NeWi" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23NeWj" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NeWk" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NeWl" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NeWm" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NeWn" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NeWo" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NeWp" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NeWq" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NeWr" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NeWs" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NeWt" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NeWu" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NeWv" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NeWw" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NeWx" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NeWy" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NeWz" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NeW$" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NeW_" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NeWA" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NeWB" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NeWC" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NeWD" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NeWE" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NeWF" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NeWG" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NeWH" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NeWI" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NeWK" role="1QoS34" />
+      <node concept="3F1sOY" id="7YU$Q23Nf1Z" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:fzclF8p" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NeSL">
+    <property role="3GE5qa" value="Wrapper.SynchronizedStatement" />
+    <ref role="1XX52x" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeSR" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23NeSX" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23NgAp" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23NgAq" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23NgAr" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NgAs" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NgAt" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NgAu" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NgAv" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NgAw" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NgAx" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NgAy" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NgAz" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NgA$" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NgA_" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NgAA" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NgAB" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NgAC" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NgAD" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NgAE" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NgAF" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NgAG" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NgAH" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NgAI" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NgAJ" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NgAK" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NgAL" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NgAM" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NgAN" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NgAO" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NgAP" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NgAQ" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NgAS" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:h1HWH_s" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23NgKQ" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBcJT" resolve="Colored_SynchronizedStatement_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NeTo">
+    <property role="3GE5qa" value="Wrapper.TryStatement" />
+    <ref role="1XX52x" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeTt" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Nfps" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Nfpt" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Nfpu" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Nfpv" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nfpw" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Nfpx" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nfpy" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Nfpz" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nfp$" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Nfp_" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NfpA" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NfpB" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NfpC" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NfpD" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NfpE" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NfpF" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NfpG" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NfpH" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NfpI" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NfpJ" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NfpK" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NfpL" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NfpM" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NfpN" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NfpO" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NfpP" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NfpQ" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NfpR" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NfpS" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NfpT" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NfpU" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gWSfCfk" />
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NfpV" role="1QoS34" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NeTv">
+    <property role="3GE5qa" value="Wrapper.TryStatement" />
+    <ref role="1XX52x" to="tpee:gMGUZlm" resolve="TryStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeTw" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="2aJ2om" id="7YU$Q23NeTx" role="CpUAK">
+      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23Nh39" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23Nh3a" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23Nh3b" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23Nh3c" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nh3d" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23Nh3e" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23Nh3f" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23Nh3g" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23Nh3h" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23Nh3i" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23Nh3j" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23Nh3k" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23Nh3l" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23Nh3m" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23Nh3n" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23Nh3o" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23Nh3p" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23Nh3q" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23Nh3r" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23Nh3s" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23Nh3t" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23Nh3u" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23Nh3v" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23Nh3w" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23Nh3x" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23Nh3y" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23Nh3z" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23Nh3$" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23Nh3_" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23Nh3A" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23Nh3B" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMGV8eI" />
+      </node>
+      <node concept="PMmxH" id="7YU$Q23Nh8S" role="1QoS34">
+        <ref role="PMmxG" to="nbbm:1KlbCrsBhs0" resolve="Colored_TryStatement_Component" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7YU$Q23NeTC">
+    <property role="3GE5qa" value="Wrapper.WhileStatement" />
+    <ref role="1XX52x" to="tpee:fE$JKWJ" resolve="WhileStatement" />
+    <node concept="2aJ2om" id="7YU$Q23NeTT" role="CpUAK">
+      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    </node>
+    <node concept="3EZMnI" id="7YU$Q23NeTI" role="6VMZX">
+      <property role="3EZMnw" value="true" />
+      <node concept="3F0ifn" id="7YU$Q23NeTJ" role="3EZMnx">
+        <property role="3F0ifm" value="label" />
+        <node concept="VPxyj" id="7YU$Q23NeTK" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7YU$Q23NeTL" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="VPM3Z" id="7YU$Q23NeTM" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VPxyj" id="7YU$Q23NeTN" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NeTO" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:kcijJTll4L" />
+      </node>
+      <node concept="l2Vlx" id="7YU$Q23NeTP" role="2iSdaV" />
+    </node>
+    <node concept="1QoScp" id="7YU$Q23NfPY" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="pkWqt" id="7YU$Q23NfPZ" role="3e4ffs">
+        <node concept="3clFbS" id="7YU$Q23NfQ0" role="2VODD2">
+          <node concept="3SKdUt" id="7YU$Q23NfQ1" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NfQ2" role="3SKWNk">
+              <property role="3SKdUp" value="if there is no fragment we just show the wrapper" />
+            </node>
+          </node>
+          <node concept="3SKdUt" id="7YU$Q23NfQ3" role="3cqZAp">
+            <node concept="3SKdUq" id="7YU$Q23NfQ4" role="3SKWNk">
+              <property role="3SKdUp" value="otherwise we check whether it is in the calculated fragments cache" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="7YU$Q23NfQ5" role="3cqZAp">
+            <node concept="22lmx$" id="7YU$Q23NfQ6" role="3clFbG">
+              <node concept="2OqwBi" id="7YU$Q23NfQ7" role="3uHU7w">
+                <node concept="2YIFZM" id="7YU$Q23NfQ8" role="2Oq$k0">
+                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="7YU$Q23NfQ9" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
+                  <node concept="2OqwBi" id="7YU$Q23NfQa" role="37wK5m">
+                    <node concept="2JrnkZ" id="7YU$Q23NfQb" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7YU$Q23NfQc" role="2JrQYb">
+                        <node concept="pncrf" id="7YU$Q23NfQd" role="2Oq$k0" />
+                        <node concept="I4A8Y" id="7YU$Q23NfQe" role="2OqNvi" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7YU$Q23NfQf" role="2OqNvi">
+                      <ref role="37wK5l" to="mhbf:~SModel.getModule():org.jetbrains.mps.openapi.module.SModule" resolve="getModule" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7YU$Q23NfQg" role="37wK5m">
+                    <node concept="2OqwBi" id="7YU$Q23NfQh" role="2Oq$k0">
+                      <node concept="pncrf" id="7YU$Q23NfQi" role="2Oq$k0" />
+                      <node concept="3CFZ6_" id="7YU$Q23NfQj" role="2OqNvi">
+                        <node concept="3CFYIy" id="7YU$Q23NfQk" role="3CFYIz">
+                          <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="1uHKPH" id="7YU$Q23NfQl" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7YU$Q23NfQm" role="3uHU7B">
+                <node concept="2OqwBi" id="7YU$Q23NfQn" role="2Oq$k0">
+                  <node concept="pncrf" id="7YU$Q23NfQo" role="2Oq$k0" />
+                  <node concept="3CFZ6_" id="7YU$Q23NfQp" role="2OqNvi">
+                    <node concept="3CFYIy" id="7YU$Q23NfQq" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="7YU$Q23NfQr" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F1sOY" id="7YU$Q23NfQs" role="1QoVPY">
+        <ref role="1NtTu8" to="tpee:gMLFqrC" />
+      </node>
+      <node concept="B$lHz" id="7YU$Q23NfQt" role="1QoS34" />
     </node>
   </node>
 </model>
