@@ -4216,13 +4216,17 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="47WRMVuSclM" role="3cqZAp">
-                        <node concept="2OqwBi" id="47WRMVuSclN" role="3clFbG">
-                          <node concept="Xjq3P" id="47WRMVuSclO" role="2Oq$k0" />
-                          <node concept="liA8E" id="47WRMVuSclP" role="2OqNvi">
-                            <ref role="37wK5l" to="g51k:~EditorCell_Basic.setHeight(int):void" resolve="setHeight" />
-                            <node concept="37vLTw" id="7_KIRrGGanc" role="37wK5m">
-                              <ref role="3cqZAo" node="19ERpjndNk6" resolve="rect_height" />
+                      <node concept="1X3_iC" id="PhUrn4zA59" role="lGtFl">
+                        <property role="3V$3am" value="statement" />
+                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                        <node concept="3clFbF" id="47WRMVuSclM" role="8Wnug">
+                          <node concept="2OqwBi" id="47WRMVuSclN" role="3clFbG">
+                            <node concept="Xjq3P" id="47WRMVuSclO" role="2Oq$k0" />
+                            <node concept="liA8E" id="47WRMVuSclP" role="2OqNvi">
+                              <ref role="37wK5l" to="g51k:~EditorCell_Basic.setHeight(int):void" resolve="setHeight" />
+                              <node concept="37vLTw" id="7_KIRrGGanc" role="37wK5m">
+                                <ref role="3cqZAo" node="19ERpjndNk6" resolve="rect_height" />
+                              </node>
                             </node>
                           </node>
                         </node>
@@ -4276,7 +4280,7 @@
                         <node concept="1rXfSq" id="7_KIRrGG3zZ" role="3clFbG">
                           <ref role="37wK5l" node="7_KIRrGFZdB" resolve="calculateRect" />
                           <node concept="3clFbT" id="1eEKog9SX1i" role="37wK5m">
-                            <property role="3clFbU" value="false" />
+                            <property role="3clFbU" value="true" />
                           </node>
                         </node>
                       </node>
