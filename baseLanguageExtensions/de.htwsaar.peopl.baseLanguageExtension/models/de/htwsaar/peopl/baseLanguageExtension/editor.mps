@@ -5784,7 +5784,7 @@
     </node>
     <node concept="2BsEeg" id="1jQ1A8E0r3v" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="PartialHiding" />
+      <property role="TrG5h" value="Hiding" />
       <property role="2BUmq6" value="Hide chosen module and VP in the standard editor." />
     </node>
     <node concept="2BsEeg" id="57rZcVzwarK" role="2ABdcP">

@@ -315,16 +315,16 @@
       </node>
       <node concept="1E1JtD" id="7xhAsCIyutx" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.config" />
+        <property role="TrG5h" value="de.htwsaar.peopl.core.moduleConfig" />
         <property role="3LESm3" value="42727bc4-0771-4379-872f-090530265ce4" />
         <property role="2GAjPV" value="false" />
         <node concept="55IIr" id="7xhAsCIyut$" role="3LF7KH">
           <node concept="2Ry0Ak" id="7xhAsCIyuvp" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="7xhAsCIyuvS" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.config" />
-              <node concept="2Ry0Ak" id="7xhAsCIyuwn" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.config.mpl" />
+              <property role="2Ry0Am" value="de.htwsaar.peopl.core.moduleConfig" />
+              <node concept="2Ry0Ak" id="2sCYg8nGAfE" role="2Ry0An">
+                <property role="2Ry0Am" value="de.htwsaar.peopl.core.moduleConfig.mpl" />
               </node>
             </node>
           </node>
@@ -371,7 +371,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="7xhAsCIyuwO" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.config#6563451082523326250" />
+          <property role="TrG5h" value="de.htwsaar.peopl.core.moduleConfig#6563451082523326250" />
           <property role="3LESm3" value="25c04871-4119-41c0-bd98-e7f0992f3991" />
           <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="7xhAsCIyuwP" role="3bR37C">

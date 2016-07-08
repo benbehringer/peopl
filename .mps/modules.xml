@@ -2,13 +2,16 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/de.htwsaar.peopl.baseLanguageExtension.runtime.msd" folder="peopl.baseLanguageExtension" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.mpl" folder="peopl.baseLanguageExtension" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="peopl.baseLanguageExtension.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" folder="peopl.baseLanguageExtension.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.baseLanguageExtension.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" folder="peopl.baseLanguageExtension.projectview" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.editorExtensions.runtime/de.htwsaar.peopl.view.editorExtensions.runtime.msd" folder="peopl.baseLanguageExtension.view.test" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.editorExtensions/de.htwsaar.peopl.view.editorExtensions.mpl" folder="peopl.baseLanguageExtension.view.test" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/de.htwsaar.peopl.view.hiding.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.baseLanguageExtension.view" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.partialHiding/de.htwsaar.peopl.view.partialHiding.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
@@ -24,10 +27,11 @@
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies.SimpleTextEditor" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.SimpleTextEditor.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="caseStudies.SimpleTextEditor.source" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.config/de.htwsaar.peopl.core.config.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core.problemSpace" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.solutionSpace" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" folder="peopl.core.solutionSpace" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core.solutionSpace" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
@@ -45,10 +49,9 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
-      <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.common/de.htwsaar.peopl.utils.common.mpl" folder="peopl.utils" />
-      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils/de.htwsaar.peopl.utils.msd" folder="peopl.utils" />
+      <modulePath path="$PROJECT_DIR$/solutions/ProductLineConfigurationTest/ProductLineConfigurationTest.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
     </projectModules>
   </component>
 </project>

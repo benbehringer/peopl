@@ -155,16 +155,16 @@
       <property role="TrG5h" value="dep" />
       <node concept="1E1JtD" id="F_DJLMfB6Y" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.dep.baselang" />
+        <property role="TrG5h" value="de.htwsaar.peopl.baseLanguageExtension" />
         <property role="3LESm3" value="fe78a547-334d-4401-802e-373d6ba57db0" />
         <property role="2GAjPV" value="false" />
         <node concept="55IIr" id="F_DJLMfB6Z" role="3LF7KH">
           <node concept="2Ry0Ak" id="F_DJLMfBa7" role="iGT6I">
             <property role="2Ry0Am" value="baseLanguageExtensions" />
             <node concept="2Ry0Ak" id="F_DJLMfBbG" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.dep.baselang" />
-              <node concept="2Ry0Ak" id="F_DJLMfBdh" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.dep.baselang.mpl" />
+              <property role="2Ry0Am" value="de.htwsaar.peopl.baseLanguageExtension" />
+              <node concept="2Ry0Ak" id="2sCYg8nGAk_" role="2Ry0An">
+                <property role="2Ry0Am" value="de.htwsaar.peopl.baseLanguageExtension.mpl" />
               </node>
             </node>
           </node>
@@ -280,7 +280,7 @@
         <node concept="1SiIV0" id="F_DJLMfBeB" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBeC" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="F_DJLMfBeD" role="3bR37C">
@@ -331,7 +331,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="F_DJLMfBeV" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.dep.baselang#8983101612966976582" />
+          <property role="TrG5h" value="de.htwsaar.peopl.baseLanguageExtension#8983101612966976582" />
           <property role="3LESm3" value="cbe58ee7-1899-4d23-b6e7-a02cdc06f202" />
           <property role="2GAjPV" value="false" />
           <node concept="1SiIV0" id="F_DJLMfBeW" role="3bR37C">
@@ -343,13 +343,13 @@
           <node concept="1SiIV0" id="F_DJLMfBeY" role="3bR37C">
             <node concept="3bR9La" id="F_DJLMfBeZ" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="f4pb:7xhAsCIyuwO" resolve="de.htwsaar.peopl.core.config#6563451082523326250" />
+              <ref role="3bR37D" to="f4pb:7xhAsCIyuwO" resolve="de.htwsaar.peopl.core.moduleConfig#6563451082523326250" />
             </node>
           </node>
           <node concept="1SiIV0" id="F_DJLMfBf0" role="3bR37C">
             <node concept="3bR9La" id="F_DJLMfBf1" role="1SiIV1">
               <property role="3bR36h" value="false" />
-              <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+              <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
             </node>
           </node>
         </node>
@@ -369,15 +369,74 @@
             <ref role="1Busuk" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1On$kJTZ0XN" role="3bR37C">
-          <node concept="3bR9La" id="1On$kJTZ0XO" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1On$kJTZ0XP" role="3bR37C">
           <node concept="1Busua" id="1On$kJTZ0XQ" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGAlr" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGAls" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="a9xt:4RAsyl5JUiV" resolve="de.slisson.mps.hacks.editor" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="2sCYg8nGAuu" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.htwsaar.peopl.baseLanguageExtension.runtime" />
+        <property role="3LESm3" value="67a48e99-cf40-48ec-b76f-77b3ab3b8b5f" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="2sCYg8nGAux" role="3LF7KH">
+          <node concept="2Ry0Ak" id="2sCYg8nGA$3" role="iGT6I">
+            <property role="2Ry0Am" value="baseLanguageExtensions" />
+            <node concept="2Ry0Ak" id="2sCYg8nGA_c" role="2Ry0An">
+              <property role="2Ry0Am" value="de.htwsaar.peopl.baseLanguageExtension.runtime" />
+              <node concept="2Ry0Ak" id="2sCYg8nGABp" role="2Ry0An">
+                <property role="2Ry0Am" value="de.htwsaar.peopl.baseLanguageExtension.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACv" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACw" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACx" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACy" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lh7" resolve="jetbrains.mps.typesystemEngine" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACz" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGAC$" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGAC_" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACA" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6KYb" resolve="jetbrains.mps.baseLanguage" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACB" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACC" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACD" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACE" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGACF" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGACG" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:3dzs$xJmzY_" resolve="de.htwsaar.peopl.core.runtime" />
           </node>
         </node>
       </node>
@@ -418,7 +477,7 @@
         <node concept="1SiIV0" id="4RAsyl5PwbT" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5PwbU" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.hiding" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5PwbV" role="3bR37C">
@@ -454,13 +513,13 @@
         <node concept="1SiIV0" id="4RAsyl5RTmY" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5RTmZ" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="F_DJLMfBhi" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBhj" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="2x6ZBbGJ9cM" role="3bR37C">
@@ -510,7 +569,7 @@
         <node concept="1SiIV0" id="4RAsyl5Pwdy" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pwdz" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwd$" role="3bR37C">
@@ -570,7 +629,7 @@
         <node concept="1SiIV0" id="F_DJLMg$sy" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMg$sz" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
       </node>
@@ -698,7 +757,7 @@
         <node concept="1SiIV0" id="4RAsyl5PwjF" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5PwjG" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5PwjJ" role="3bR37C">
@@ -734,7 +793,7 @@
         <node concept="1SiIV0" id="F_DJLMfBhs" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBht" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="5spzs9_ZcyL" role="3bR37C">
@@ -784,7 +843,7 @@
         <node concept="1SiIV0" id="4RAsyl5PwpN" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5PwpO" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.hiding" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5PwpP" role="3bR37C">
@@ -808,7 +867,7 @@
         <node concept="1SiIV0" id="4RAsyl5PwpZ" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pwq0" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pwq1" role="3bR37C">
@@ -856,7 +915,7 @@
         <node concept="1SiIV0" id="F_DJLMfBhy" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBhz" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
       </node>
@@ -936,13 +995,13 @@
         <node concept="1SiIV0" id="4RAsyl5PvUJ" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5PvUK" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="F_DJLMfBhC" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBhD" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="7k00QoqZHLm" role="3bR37C">
@@ -954,7 +1013,7 @@
         <node concept="1SiIV0" id="53z0aTzOvf6" role="3bR37C">
           <node concept="3bR9La" id="53z0aTzOvf7" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.hiding" />
           </node>
         </node>
         <node concept="1SiIV0" id="53z0aTzOvf8" role="3bR37C">
@@ -966,7 +1025,7 @@
       </node>
       <node concept="1E1JtD" id="4RAsyl5PvSk" role="2G$12L">
         <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.view.annotative" />
+        <property role="TrG5h" value="de.htwsaar.peopl.view.hiding" />
         <property role="3LESm3" value="a0bb4582-4bb4-410b-9640-3c37cbdc90b3" />
         <property role="2GAjPV" value="false" />
         <node concept="55IIr" id="4RAsyl5PvSn" role="3LF7KH">
@@ -975,9 +1034,9 @@
             <node concept="2Ry0Ak" id="21c$iUFOrCh" role="2Ry0An">
               <property role="2Ry0Am" value="view" />
               <node concept="2Ry0Ak" id="21c$iUFOrCf" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.view.annotative" />
-                <node concept="2Ry0Ak" id="21c$iUFOrCg" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.view.annotative.mpl" />
+                <property role="2Ry0Am" value="de.htwsaar.peopl.view.hiding" />
+                <node concept="2Ry0Ak" id="2sCYg8nGAph" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.htwsaar.peopl.view.hiding.mpl" />
                 </node>
               </node>
             </node>
@@ -1077,13 +1136,13 @@
           </node>
         </node>
         <node concept="1yeLz9" id="4RAsyl5Pw3d" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.view.annotative#4333012423315885155" />
+          <property role="TrG5h" value="de.htwsaar.peopl.view.hiding#4333012423315885155" />
           <property role="3LESm3" value="52cb87e0-93d5-4fdf-bb16-dbcfd369735c" />
           <property role="2GAjPV" value="false" />
         </node>
         <node concept="1SiIV0" id="F_DJLMfBhJ" role="3bR37C">
           <node concept="1Busua" id="F_DJLMfBhK" role="1SiIV1">
-            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="2EkRjvM3Uvh" role="3bR37C">
@@ -1095,6 +1154,12 @@
           <node concept="3bR9La" id="7k00QoqZHLv" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2sCYg8nGAqh" role="3bR37C">
+          <node concept="3bR9La" id="2sCYg8nGAqi" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
       </node>
@@ -1212,7 +1277,7 @@
         </node>
         <node concept="1SiIV0" id="3OZy2vMPiEQ" role="3bR37C">
           <node concept="1Busua" id="3OZy2vMPiER" role="1SiIV1">
-            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
       </node>
@@ -1244,7 +1309,7 @@
         <node concept="1SiIV0" id="4RAsyl5Pw0U" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pw0V" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.annotative" />
+            <ref role="3bR37D" node="4RAsyl5PvSk" resolve="de.htwsaar.peopl.view.hiding" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pw0W" role="3bR37C">
@@ -1274,7 +1339,7 @@
         <node concept="1SiIV0" id="4RAsyl5Pw16" role="3bR37C">
           <node concept="3bR9La" id="4RAsyl5Pw17" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.config" />
+            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5Pw18" role="3bR37C">
@@ -1348,12 +1413,12 @@
         <node concept="1SiIV0" id="F_DJLMfBi7" role="3bR37C">
           <node concept="3bR9La" id="F_DJLMfBi8" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="F_DJLMfBi9" role="3bR37C">
           <node concept="1Busua" id="F_DJLMfBia" role="1SiIV1">
-            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.dep.baselang" />
+            <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
         <node concept="1SiIV0" id="7k00QoqZHLQ" role="3bR37C">
