@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -72,15 +72,15 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
+      <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
-      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
-      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
+      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConfigurations" flags="ng" index="2M0niJ">
         <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
         <child id="1473120132588955228" name="configs" index="2M0niC" />
       </concept>
@@ -11872,6 +11872,10 @@
       <node concept="3aRQSP" id="2xM8HVGb_T1" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_2914430249702678081" />
         <ref role="3aRQSO" to="8h61:2xM8HVGbwB2" resolve="Fragment_2914430249702656450" />
+      </node>
+      <node concept="3aRQSP" id="43ncpYmNjas" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_4672257699919770268" />
+        <ref role="3aRQSO" to="8h61:43ncpYmNeYh" resolve="Fragment_4672257699919753105" />
       </node>
     </node>
     <node concept="1Z4xEI" id="2xM8HVGaMHh" role="288GmO">
@@ -58195,6 +58199,13 @@
         <node concept="1V74G$" id="2xM8HVGbDaI" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_2914430249702691502" />
           <ref role="1V74G_" to="8h61:2xM8HVGbDaG" resolve="Fragment_2914430249702691500" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="43ncpYmNeYi" role="2$Fqj6">
+        <property role="TrG5h" value="VP_4672257699919753106" />
+        <node concept="1V74G$" id="43ncpYmNeYj" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_4672257699919753107" />
+          <ref role="1V74G_" to="8h61:43ncpYmNeYh" resolve="Fragment_4672257699919753105" />
         </node>
       </node>
     </node>
