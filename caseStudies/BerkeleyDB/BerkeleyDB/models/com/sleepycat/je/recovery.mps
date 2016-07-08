@@ -5,9 +5,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="vryb" ref="r:2cd845c3-4cbf-4c70-86d1-6775f32ab885(com.sleepycat.je.utilint)" />
@@ -284,18 +284,18 @@
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
       </concept>
     </language>
-    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -319,8 +319,8 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
@@ -5277,6 +5277,13 @@
                           </node>
                         </node>
                       </node>
+                      <node concept="1V74GB" id="43ncpYmNeYh" role="lGtFl">
+                        <property role="32Xqk$" value="chosenModule" />
+                        <property role="TrG5h" value="Fragment_4672257699919753105" />
+                        <ref role="1V74Hf" to="oc6c:43ncpYmNeYj" resolve="VPToFragment_4672257699919753107" />
+                        <ref role="a64iB" to="oc6c:3Mj07xys8ru" resolve="CP_Bytes" />
+                        <ref role="3aRQVk" to="oc6c:43ncpYmNjas" resolve="ModuleToFragment_4672257699919770268" />
+                      </node>
                     </node>
                     <node concept="3eNFk2" id="2xM8HVGbHtC" role="3eNLev">
                       <node concept="3y3z36" id="3ME3zLf8RE8" role="3eO9$A">
@@ -5610,6 +5617,11 @@
           <node concept="TZ5HA" id="3ME3zLf8RZh" role="TZ5H$">
             <node concept="1dT_AC" id="3ME3zLf8RZi" role="1dT_Ay">
               <property role="1dT_AB" value=" 4. Lastly, use time based checking." />
+            </node>
+          </node>
+          <node concept="TZ5HA" id="43ncpYmNjNM" role="TZ5H$">
+            <node concept="1dT_AC" id="43ncpYmNjNN" role="1dT_Ay">
+              <property role="1dT_AB" value="" />
             </node>
           </node>
         </node>
