@@ -278,7 +278,7 @@
     </node>
   </node>
   <node concept="3UOs0u" id="62a2r2czIyB">
-    <property role="TrG5h" value="sidetransform_ModuleConnector" />
+    <property role="TrG5h" value="sidetransform_ModuleConfiguration_Operators" />
     <node concept="3UNGvq" id="62a2r2czIyC" role="3UOs0v">
       <property role="2uHTBK" value="default_RTransform" />
       <property role="7I3sp" value="both" />
@@ -340,6 +340,56 @@
               <node concept="1mIQ4w" id="3OEYa6dOgVE" role="2OqNvi">
                 <node concept="chp4Y" id="3OEYa6dOgXR" role="cj9EA">
                   <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UNGvq" id="2fACNxaTLxx" role="3UOs0v">
+      <property role="7I3sp" value="both" />
+      <ref role="3UNGvu" to="tpee:fJuHJVf" resolve="BinaryOperation" />
+      <node concept="3dQSNN" id="2fACNxaTLy$" role="_1QTJ">
+        <node concept="3dQ6bb" id="2fACNxaTLyA" role="3dQV3f">
+          <node concept="3clFbS" id="2fACNxaTLyC" role="2VODD2">
+            <node concept="3clFbF" id="2fACNxaTLI0" role="3cqZAp">
+              <node concept="1Wc70l" id="2fACNxaTLI1" role="3clFbG">
+                <node concept="1Wc70l" id="2fACNxaTLI2" role="3uHU7B">
+                  <node concept="3y3z36" id="2fACNxaTLI3" role="3uHU7w">
+                    <node concept="3TUQnm" id="2fACNxaTLI4" role="3uHU7w">
+                      <ref role="3TV0OU" to="sj65:_uCk0nlSow" resolve="ModuleConnector" />
+                    </node>
+                    <node concept="zm4iT" id="2fACNxaTLI5" role="3uHU7B" />
+                  </node>
+                  <node concept="1Wc70l" id="2fACNxaTLI6" role="3uHU7B">
+                    <node concept="3y3z36" id="2fACNxaTLI7" role="3uHU7w">
+                      <node concept="3TUQnm" id="2fACNxaTLI8" role="3uHU7w">
+                        <ref role="3TV0OU" to="sj65:_uCk0nlSos" resolve="Overriding" />
+                      </node>
+                      <node concept="zm4iT" id="2fACNxaTLI9" role="3uHU7B" />
+                    </node>
+                    <node concept="1Wc70l" id="2fACNxaTLIa" role="3uHU7B">
+                      <node concept="3y3z36" id="2fACNxaTLIb" role="3uHU7B">
+                        <node concept="zm4iT" id="2fACNxaTLIc" role="3uHU7B" />
+                        <node concept="3TUQnm" id="2fACNxaTLId" role="3uHU7w">
+                          <ref role="3TV0OU" to="sj65:_uCk0nlSoq" resolve="Addition" />
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="2fACNxaTLIe" role="3uHU7w">
+                        <node concept="zm4iT" id="2fACNxaTLIf" role="3uHU7B" />
+                        <node concept="3TUQnm" id="2fACNxaTLIg" role="3uHU7w">
+                          <ref role="3TV0OU" to="sj65:_uCk0nlSor" resolve="Subtraction" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="2fACNxaTLIh" role="3uHU7w">
+                  <node concept="3TUQnm" id="2fACNxaTLIi" role="3uHU7w">
+                    <ref role="3TV0OU" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
+                  </node>
+                  <node concept="zm4iT" id="2fACNxaTLIj" role="3uHU7B" />
                 </node>
               </node>
             </node>
