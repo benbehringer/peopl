@@ -23,7 +23,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
-    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
     <import index="emqf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellProviders(MPS.Editor/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
@@ -44,13 +44,13 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
-    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="3ahc" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.cells(MPS.Editor/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="l0vz" ref="r:bcdc4c59-9fc0-4021-8be1-7d517fad7196(de.htwsaar.peopl.view.runtime.plugin)" />
-    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -85,6 +85,9 @@
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
+        <reference id="4820515453818318891" name="hint" index="2pYH_C" />
+      </concept>
       <concept id="4242538589859161874" name="jetbrains.mps.lang.editor.structure.ExplicitHintsSpecification" flags="ng" index="2w$q5c">
         <child id="4242538589859162459" name="hints" index="2w$qW5" />
       </concept>
@@ -92,13 +95,6 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
-      </concept>
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz">
         <child id="8383079901754291620" name="removeHints" index="B$lH_" />
       </concept>
@@ -570,24 +566,11 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="2ABfQD" id="35LN$25D8Xe">
-    <property role="TrG5h" value="Hints" />
-    <node concept="2BsEeg" id="35LN$25D8Xf" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="moduleExplorer" />
-      <property role="2BUmq6" value="Support for SDA-like editors " />
-    </node>
-    <node concept="2BsEeg" id="2c8WkvQiez2" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="basicModularity" />
-      <property role="2BUmq6" value="Support for basic modularity editors" />
-    </node>
-  </node>
   <node concept="24kQdi" id="3KxWXtV8faj">
-    <property role="3GE5qa" value="moduleExplorer" />
+    <property role="3GE5qa" value="ModuleExplorer" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-    <node concept="2aJ2om" id="4wSWA_U_n51" role="CpUAK">
-      <ref role="2$4xQ3" node="35LN$25D8Xf" resolve="moduleExplorer" />
+    <node concept="2aJ2om" id="1jQ1A8E0AYV" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:35LN$25D8Xf" resolve="ModuleExplorer" />
     </node>
     <node concept="3EZMnI" id="2c8WkvQoufn" role="2wV5jI">
       <node concept="2iRkQZ" id="2c8WkvQoufo" role="2iSdaV" />
@@ -1200,10 +1183,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="17IQzr1hoxZ">
-    <property role="3GE5qa" value="moduleExplorer" />
+    <property role="3GE5qa" value="ModuleExplorer" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-    <node concept="2aJ2om" id="17IQzr1hoy8" role="CpUAK">
-      <ref role="2$4xQ3" node="35LN$25D8Xf" resolve="moduleExplorer" />
+    <node concept="2aJ2om" id="1jQ1A8E0Aug" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:35LN$25D8Xf" resolve="ModuleExplorer" />
     </node>
     <node concept="1X3_iC" id="2VKAcbrVUj9" role="lGtFl">
       <property role="3V$3am" value="cellModel" />
@@ -3964,10 +3947,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0SvipP">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-    <node concept="2aJ2om" id="1k3hL0Svjgd" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0BWG" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="1QoScp" id="1k3hL0SvknG" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -4158,10 +4141,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0Sw3Iu">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-    <node concept="2aJ2om" id="1k3hL0Sw3Iw" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0C9W" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="3EZMnI" id="62a2r2ctxOr" role="2wV5jI">
       <node concept="3EZMnI" id="62a2r2cy2PP" role="3EZMnx">
@@ -4327,10 +4310,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="1k3hL0Sx$wt">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
-    <node concept="2aJ2om" id="1k3hL0Sx$wN" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0Fhm" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="3EZMnI" id="1k3hL0Sx_i2" role="2wV5jI">
       <node concept="2iRkQZ" id="1k3hL0Sx_i3" role="2iSdaV" />
@@ -4593,10 +4576,10 @@
   </node>
   <node concept="PKFIW" id="3Vd6OmUgkWQ">
     <property role="TrG5h" value="ClassifierMembers_basicModularity_Component" />
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="tpee:g7pOWCK" resolve="Classifier" />
-    <node concept="2aJ2om" id="3Vd6OmUgoBD" role="3XTboT">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0BOV" role="3XTboT">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="1PE4EZ" id="65HqD5XxU1X" role="1PM95z">
       <ref role="1PE7su" to="tpen:3Z61ZaMckgv" resolve="ClassifierMembers_Component" />
@@ -5667,10 +5650,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="4WtnmUdyZJ9">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="tpee:fzclF80" resolve="StatementList" />
-    <node concept="2aJ2om" id="4WtnmUdz8EN" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0F6b" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="gc7cB" id="62w2A05f3sM" role="2wV5jI">
       <node concept="3VJUX4" id="62w2A05f3sO" role="3YsKMw">
@@ -5689,14 +5672,14 @@
     </node>
   </node>
   <node concept="PKFIW" id="4WtnmUdQeP3">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <property role="TrG5h" value="Peopl_Component_Visibility" />
     <ref role="1XX52x" to="tpee:h9B3isZ" resolve="IVisible" />
     <node concept="1PE4EZ" id="4WtnmUdQeP5" role="1PM95z">
       <ref role="1PE7su" to="tpen:h9AUA0X" resolve="_Component_Visibility" />
     </node>
-    <node concept="2aJ2om" id="4WtnmUdQeP7" role="3XTboT">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0C$H" role="3XTboT">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="3EZMnI" id="4WtnmUdQeZi" role="2wV5jI">
       <node concept="3F0ifn" id="4WtnmUdRxbe" role="3EZMnx">
@@ -6146,10 +6129,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="xUEdTNkhJT">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="2aJ2om" id="xUEdTNkiVa" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0F7r" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="3EZMnI" id="1jtqHQg7oEB" role="2wV5jI">
       <ref role="1ERwB7" node="1jtqHQgnme3" resolve="BasicModularity_Statement_Actions" />
@@ -6159,7 +6142,7 @@
     <node concept="B$lHz" id="4fVZPexj6rt" role="6VMZX" />
   </node>
   <node concept="1h_SRR" id="7ASwjV8tHjA">
-    <property role="3GE5qa" value="basicModularity.Actions" />
+    <property role="3GE5qa" value="FOP.Actions" />
     <property role="TrG5h" value="BasicModularity_StatementList_Actions" />
     <ref role="1h_SK9" to="tpee:fzclF80" resolve="StatementList" />
     <node concept="1hA7zw" id="7ASwjV8tHjB" role="1h_SK8">
@@ -6301,7 +6284,7 @@
     </node>
   </node>
   <node concept="312cEu" id="3GmnFE_Pdqy">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <property role="TrG5h" value="PeoplRoleHelper" />
     <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
       <property role="TrG5h" value="ORIGINAL_KEYWORD" />
@@ -6326,7 +6309,7 @@
     <node concept="3Tm1VV" id="3GmnFE_Pdqz" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3Mm3FE9TBxI">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <property role="TrG5h" value="StatementList_basicModularity_AbstractCellProvider" />
     <node concept="2tJIrI" id="3Mm3FE9TEO5" role="jymVt" />
     <node concept="312cEg" id="3Mm3FE9TENh" role="jymVt">
@@ -6386,9 +6369,8 @@
         <node concept="2ShNRf" id="3Mm3FE9TEOF" role="37wK5m">
           <node concept="2i4dXS" id="3Mm3FE9TEOG" role="2ShVmc">
             <node concept="17QB3L" id="3Mm3FE9TEOH" role="HW$YZ" />
-            <node concept="10M0yZ" id="3Mm3FE9TEOI" role="HW$Y0">
-              <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-              <ref role="3cqZAo" to="nbbm:1k3hL0Su$Qn" resolve="BASIC_MODULARITY" />
+            <node concept="2pYGij" id="1jQ1A8E09Fd" role="HW$Y0">
+              <ref role="2pYH_C" to="nbbm:2c8WkvQiez2" resolve="FOP" />
             </node>
           </node>
         </node>
@@ -9856,7 +9838,7 @@
   </node>
   <node concept="312cEu" id="1jtqHQg7jAb">
     <property role="TrG5h" value="PeoplBlockPositionUtil_basicModularity" />
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <node concept="2tJIrI" id="1jtqHQg7jH5" role="jymVt" />
     <node concept="2YIFZL" id="7ASwjV8wzd3" role="jymVt">
       <property role="TrG5h" value="findOrInputNextSiblingPeoplBlock" />
@@ -15124,7 +15106,7 @@
   </node>
   <node concept="1h_SRR" id="1jtqHQgnme3">
     <property role="TrG5h" value="BasicModularity_Statement_Actions" />
-    <property role="3GE5qa" value="basicModularity.Actions" />
+    <property role="3GE5qa" value="FOP.Actions" />
     <ref role="1h_SK9" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1hA7zw" id="7uhzxTPKth9" role="1h_SK8">
       <property role="1hAc7j" value="insert_action_id" />
@@ -17106,7 +17088,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="4YVKnhh2IUY">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <property role="TrG5h" value="PeoplBaseMethodDeclaration_basicModularity_BodyComponent" />
     <ref role="1XX52x" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
     <node concept="1PE4EZ" id="4YVKnhh2IYW" role="1PM95z">
@@ -17193,12 +17175,12 @@
         <ref role="PMmxG" to="tpen:7zuBzrp$swk" resolve="GenericDeclaration_FoldedCodeBlock_Component" />
       </node>
     </node>
-    <node concept="2aJ2om" id="4YVKnhh2Jnh" role="3XTboT">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0C7u" role="3XTboT">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
   </node>
   <node concept="1h_SRR" id="6JcyUSeD94g">
-    <property role="3GE5qa" value="basicModularity.Actions" />
+    <property role="3GE5qa" value="FOP.Actions" />
     <property role="TrG5h" value="PeoplDeleteClassifierMember_basicModularity" />
     <ref role="1h_SK9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
     <node concept="1hA7zw" id="6JcyUSeD94h" role="1h_SK8">
@@ -17619,10 +17601,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="4fVZPexj6rv">
-    <property role="3GE5qa" value="basicModularity" />
+    <property role="3GE5qa" value="FOP" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="2aJ2om" id="4fVZPexjgX1" role="CpUAK">
-      <ref role="2$4xQ3" node="2c8WkvQiez2" resolve="basicModularity" />
+    <node concept="2aJ2om" id="1jQ1A8E0F7v" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="FOP" />
     </node>
     <node concept="2aJ2om" id="4fVZPexjgX6" role="CpUAK">
       <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />

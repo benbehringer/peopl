@@ -20,9 +20,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
-    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
-    <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
@@ -35,18 +33,13 @@
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
-    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
-    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -83,13 +76,6 @@
       </concept>
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz">
         <child id="8383079901754291620" name="removeHints" index="B$lH_" />
@@ -471,8 +457,8 @@
   </registry>
   <node concept="24kQdi" id="1DrSvX1D0en">
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-    <node concept="2aJ2om" id="57rZcVzwaxh" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0tuP" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="BGdJCB7kvw" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -530,19 +516,6 @@
       <node concept="2SsqMj" id="16liNxkaCbe" role="1QoS34" />
     </node>
   </node>
-  <node concept="2ABfQD" id="57rZcVzwarJ">
-    <property role="TrG5h" value="Hints" />
-    <node concept="2BsEeg" id="57rZcVzwarK" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="productView" />
-      <property role="2BUmq6" value="Show only Fragments which are included in the specified Product" />
-    </node>
-    <node concept="2BsEeg" id="2iVkojt1MhA" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="productViewColor" />
-      <property role="2BUmq6" value="Colorful product view" />
-    </node>
-  </node>
   <node concept="312cEu" id="6bj2b$tH_xQ">
     <property role="TrG5h" value="StatementList_productView_AbstractCellProvider" />
     <node concept="2tJIrI" id="6bj2b$tH_zo" role="jymVt" />
@@ -594,9 +567,8 @@
         <node concept="2ShNRf" id="3Mm3FE9TEOF" role="37wK5m">
           <node concept="2i4dXS" id="3Mm3FE9TEOG" role="2ShVmc">
             <node concept="17QB3L" id="3Mm3FE9TEOH" role="HW$YZ" />
-            <node concept="10M0yZ" id="3Mm3FE9TEOI" role="HW$Y0">
-              <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-              <ref role="3cqZAo" to="nbbm:57rZcVzwvKJ" resolve="PRODUCT_VIEW" />
+            <node concept="2pYGij" id="1jQ1A8E06eZ" role="HW$Y0">
+              <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="Product" />
             </node>
           </node>
         </node>
@@ -838,7 +810,7 @@
         <node concept="3clFbF" id="3Mm3FE9TG06" role="3cqZAp">
           <node concept="1niqFM" id="3Mm3FE9TG07" role="3clFbG">
             <property role="1npL6y" value="setCellActions" />
-            <property role="1npUBZ" value="de.htwsaar.peopl.view.product.editor.StatementList_productView_Actions" />
+            <property role="1npUBZ" value="de.htwsaar.peopl.view.product.editor.StatementList_product_Actions" />
             <node concept="37vLTw" id="3Mm3FE9TG08" role="2U24H$">
               <ref role="3cqZAo" node="6CtlALKq$O0" resolve="statementListCollection" />
             </node>
@@ -2081,14 +2053,14 @@
         </node>
       </node>
     </node>
-    <node concept="2aJ2om" id="6bj2b$tIvUr" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0uzR" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
   </node>
   <node concept="24kQdi" id="6CtlALKpVyo">
     <ref role="1XX52x" to="tpee:fzclF80" resolve="StatementList" />
-    <node concept="2aJ2om" id="6CtlALKpVys" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0ymy" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="gc7cB" id="6CtlALKpVyE" role="2wV5jI">
       <node concept="3VJUX4" id="6CtlALKpVyG" role="3YsKMw">
@@ -2108,18 +2080,18 @@
   </node>
   <node concept="24kQdi" id="6CtlALKpVyv">
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="2aJ2om" id="6CtlALKpVyz" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0ynM" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="6HiUIyL6ywA" role="2wV5jI">
-      <ref role="1ERwB7" node="67Zezm_sccW" resolve="Statement_productView_Actions" />
+      <ref role="1ERwB7" node="67Zezm_sccW" resolve="Statement_product_Actions" />
       <node concept="B$lHz" id="6HiUIyL6ywH" role="3EZMnx" />
       <node concept="l2Vlx" id="6HiUIyL6ywD" role="2iSdaV" />
     </node>
     <node concept="B$lHz" id="4fVZPexjpIa" role="6VMZX" />
   </node>
   <node concept="1h_SRR" id="67Zezm_salR">
-    <property role="TrG5h" value="StatementList_productView_Actions" />
+    <property role="TrG5h" value="StatementList_product_Actions" />
     <property role="3GE5qa" value="Actions" />
     <ref role="1h_SK9" to="tpee:fzclF80" resolve="StatementList" />
     <node concept="1hA7zw" id="67Zezm_sata" role="1h_SK8">
@@ -2174,7 +2146,7 @@
     </node>
   </node>
   <node concept="1h_SRR" id="67Zezm_sccW">
-    <property role="TrG5h" value="Statement_productView_Actions" />
+    <property role="TrG5h" value="Statement_product_Actions" />
     <property role="3GE5qa" value="Actions" />
     <ref role="1h_SK9" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1hA7zw" id="67Zezm_scfI" role="1h_SK8">
@@ -6195,8 +6167,8 @@
     <node concept="1PE4EZ" id="1gaezMtZCKB" role="1PM95z">
       <ref role="1PE7su" to="tpen:3Z61ZaMckgv" resolve="ClassifierMembers_Component" />
     </node>
-    <node concept="2aJ2om" id="1gaezMtZIfI" role="3XTboT">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0rFu" role="3XTboT">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="4GP8caFcf2a" role="2wV5jI">
       <node concept="l2Vlx" id="4GP8caFcf2b" role="2iSdaV" />
@@ -6300,15 +6272,15 @@
   </node>
   <node concept="24kQdi" id="4fVZPexjpIc">
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="2aJ2om" id="4fVZPexjq0Z" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0ynQ" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="2aJ2om" id="4fVZPexjq14" role="CpUAK">
       <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
     </node>
     <node concept="3EZMnI" id="3VARyd8Xi_R" role="2wV5jI">
       <ref role="1k5W1q" to="tpco:3VARyd8XcQs" resolve="Comment" />
-      <ref role="1ERwB7" node="67Zezm_sccW" resolve="Statement_productView_Actions" />
+      <ref role="1ERwB7" node="67Zezm_sccW" resolve="Statement_product_Actions" />
       <node concept="3F0ifn" id="3VARyd8Xi_Y" role="3EZMnx">
         <property role="3F0ifm" value="//" />
         <ref role="1ERwB7" to="tpen:3$ZLRFrgDeM" resolve="Statement_Comment_Actions" />
@@ -6339,8 +6311,8 @@
   <node concept="24kQdi" id="1Fk50g35_Vi">
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
-    <node concept="2aJ2om" id="38X13X3k_9l" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0zf5" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="4GD8Ofyiddb" role="2wV5jI">
       <node concept="l2Vlx" id="4GD8Ofyiddc" role="2iSdaV" />
@@ -6416,11 +6388,11 @@
   </node>
   <node concept="24kQdi" id="lMQF2o9Dtx">
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-    <node concept="2aJ2om" id="lMQF2o9Dty" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0tNT" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="lMQF2o9G1C" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0u02" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="lMQF2o9Dtz" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -6735,8 +6707,8 @@
   <node concept="24kQdi" id="1YWb9i1cnDv">
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="xf8r:1j2uYRA5nhd" resolve="ExpressionAlternative" />
-    <node concept="2aJ2om" id="4ODEIwDPwT2" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0rKE" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="bO4uKcuS8s" role="2wV5jI">
       <node concept="l2Vlx" id="bO4uKcuS8t" role="2iSdaV" />
@@ -6813,8 +6785,8 @@
   <node concept="24kQdi" id="4GD8OfygJgX">
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="2aJ2om" id="4GD8OfygODn" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0zGt" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="gc7cB" id="6k$OKHdwOKG" role="2wV5jI">
       <node concept="3VJUX4" id="6k$OKHdwOKH" role="3YsKMw">
@@ -6896,7 +6868,7 @@
                     <node concept="2i4dXS" id="4GD8OfygQBF" role="2ShVmc">
                       <node concept="17QB3L" id="4GD8OfygQBG" role="HW$YZ" />
                       <node concept="2pYGij" id="4GD8OfygQBH" role="HW$Y0">
-                        <ref role="2pYH_C" node="57rZcVzwarK" resolve="productView" />
+                        <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="Product" />
                       </node>
                     </node>
                   </node>
@@ -6914,11 +6886,11 @@
   <node concept="24kQdi" id="4pYLYCICNxC">
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
-    <node concept="2aJ2om" id="4pYLYCICNxD" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0zpm" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="4pYLYCICNFF" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0ztq" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="4pYLYCICNxE" role="2wV5jI">
       <node concept="l2Vlx" id="4pYLYCICNxF" role="2iSdaV" />
@@ -7046,11 +7018,11 @@
   <node concept="24kQdi" id="6UUfj3r8lJZ">
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1H" resolve="Type" />
-    <node concept="2aJ2om" id="6UUfj3r8lK0" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0$0R" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="6UUfj3r8lW$" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0$68" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="6UUfj3r8C0u" role="2wV5jI">
       <node concept="2iRkQZ" id="6UUfj3r8C0v" role="2iSdaV" />
@@ -7134,10 +7106,10 @@
                       <node concept="2i4dXS" id="6UUfj3r8lKF" role="2ShVmc">
                         <node concept="17QB3L" id="6UUfj3r8lKG" role="HW$YZ" />
                         <node concept="2pYGij" id="6UUfj3r8lKH" role="HW$Y0">
-                          <ref role="2pYH_C" node="57rZcVzwarK" resolve="productView" />
+                          <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="Product" />
                         </node>
                         <node concept="2pYGij" id="6UUfj3r8m3K" role="HW$Y0">
-                          <ref role="2pYH_C" node="2iVkojt1MhA" resolve="productViewColor" />
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
                         </node>
                       </node>
                     </node>
@@ -7204,11 +7176,11 @@
   <node concept="24kQdi" id="bO4uKcuSeK">
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="xf8r:1j2uYRA5nhd" resolve="ExpressionAlternative" />
-    <node concept="2aJ2om" id="bO4uKcuSeL" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0rUV" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="bO4uKcuSeM" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0rYZ" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="bO4uKcuSeN" role="2wV5jI">
       <node concept="l2Vlx" id="bO4uKcuSeO" role="2iSdaV" />
@@ -7336,8 +7308,8 @@
   <node concept="24kQdi" id="bO4uKcuSBX">
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="2aJ2om" id="bO4uKcuSBY" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0sep" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="gc7cB" id="bO4uKcuSBZ" role="2wV5jI">
       <node concept="3VJUX4" id="bO4uKcuSC0" role="3YsKMw">
@@ -7419,7 +7391,7 @@
                     <node concept="2i4dXS" id="bO4uKcuSCD" role="2ShVmc">
                       <node concept="17QB3L" id="bO4uKcuSCE" role="HW$YZ" />
                       <node concept="2pYGij" id="bO4uKcuSCF" role="HW$Y0">
-                        <ref role="2pYH_C" node="57rZcVzwarK" resolve="productView" />
+                        <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="Product" />
                       </node>
                     </node>
                   </node>
@@ -7437,11 +7409,11 @@
   <node concept="24kQdi" id="bO4uKcuT0i">
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="2aJ2om" id="bO4uKcuT0j" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0sAR" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="bO4uKcuT0k" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0sIp" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="bO4uKcuT0l" role="2wV5jI">
       <node concept="2iRkQZ" id="bO4uKcuT0m" role="2iSdaV" />
@@ -7525,10 +7497,10 @@
                       <node concept="2i4dXS" id="bO4uKcuT11" role="2ShVmc">
                         <node concept="17QB3L" id="bO4uKcuT12" role="HW$YZ" />
                         <node concept="2pYGij" id="bO4uKcuT13" role="HW$Y0">
-                          <ref role="2pYH_C" node="57rZcVzwarK" resolve="productView" />
+                          <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="Product" />
                         </node>
                         <node concept="2pYGij" id="bO4uKcuT14" role="HW$Y0">
-                          <ref role="2pYH_C" node="2iVkojt1MhA" resolve="productViewColor" />
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
                         </node>
                       </node>
                     </node>
@@ -7595,8 +7567,8 @@
   <node concept="24kQdi" id="TeSb$pT3kK">
     <property role="3GE5qa" value="Wrapper.SynchronizedStatement" />
     <ref role="1XX52x" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeT1" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0ysW" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Nfa7" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -7669,11 +7641,11 @@
   <node concept="24kQdi" id="1CMrqIaitOY">
     <property role="3GE5qa" value="Wrapper.TryStatement" />
     <ref role="1XX52x" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeT4" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0yO$" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeTa" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0yQ$" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="7YU$Q23NgSk" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -7748,8 +7720,8 @@
   <node concept="24kQdi" id="1CMrqIaij$8">
     <property role="3GE5qa" value="Wrapper.TryStatement" />
     <ref role="1XX52x" to="tpee:gMGUZlm" resolve="TryStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeTe" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0yXS" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Nf_q" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -7822,11 +7794,11 @@
   <node concept="24kQdi" id="4NyX2wRM0XA">
     <property role="3GE5qa" value="Wrapper.WhileStatement" />
     <ref role="1XX52x" to="tpee:fE$JKWJ" resolve="WhileStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeTZ" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0$ro" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeU5" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0$wk" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="ht5IJf6" role="6VMZX">
       <property role="3EZMnw" value="true" />
@@ -7924,13 +7896,13 @@
     <property role="3GE5qa" value="Wrapper.IfStatement" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
     <node concept="2aJ2om" id="1jQ1A8DWSHu" role="CpUAK">
-      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeSB" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0urZ" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeSH" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0uu0" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Ng7q" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8005,8 +7977,8 @@
   <node concept="24kQdi" id="1DrSvX1JCY6">
     <property role="3GE5qa" value="Wrapper.ForStatement" />
     <ref role="1XX52x" to="tpee:gDDw8bY" resolve="ForStatement" />
-    <node concept="2aJ2om" id="7YU$Q23Ne9r" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0tfc" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Ne9C" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8101,11 +8073,11 @@
   <node concept="24kQdi" id="4NyX2wRMuaw">
     <property role="3GE5qa" value="Wrapper.ForStatement" />
     <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
-    <node concept="2aJ2om" id="7YU$Q23N3aW" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0t5v" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23Ne4G" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0t7v" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="3EZMnI" id="ht5S7l9" role="6VMZX">
       <property role="3EZMnw" value="true" />
@@ -8202,8 +8174,8 @@
   <node concept="24kQdi" id="7YU$Q23NenC">
     <property role="3GE5qa" value="Wrapper.ForStatement" />
     <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NenD" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0sVk" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="7YU$Q23NenF" role="6VMZX">
       <property role="3EZMnw" value="true" />
@@ -8298,11 +8270,11 @@
   <node concept="24kQdi" id="7YU$Q23Neoj">
     <property role="3GE5qa" value="Wrapper.ForStatement" />
     <ref role="1XX52x" to="tpee:gDDw8bY" resolve="ForStatement" />
-    <node concept="2aJ2om" id="7YU$Q23Neok" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0tmS" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23Neol" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0toS" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Neom" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8400,10 +8372,10 @@
     <property role="3GE5qa" value="Wrapper.IfStatement" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
     <node concept="2aJ2om" id="1jQ1A8DWSx7" role="CpUAK">
-      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeS$" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0uhC" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="7YU$Q23NeWh" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8476,11 +8448,11 @@
   <node concept="24kQdi" id="7YU$Q23NeSL">
     <property role="3GE5qa" value="Wrapper.SynchronizedStatement" />
     <ref role="1XX52x" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeSR" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0yzX" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeSX" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0y_X" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="7YU$Q23NgAp" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8555,8 +8527,8 @@
   <node concept="24kQdi" id="7YU$Q23NeTo">
     <property role="3GE5qa" value="Wrapper.TryStatement" />
     <ref role="1XX52x" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeTt" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0yHh" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Nfps" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8629,11 +8601,11 @@
   <node concept="24kQdi" id="7YU$Q23NeTv">
     <property role="3GE5qa" value="Wrapper.TryStatement" />
     <ref role="1XX52x" to="tpee:gMGUZlm" resolve="TryStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeTw" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0z5b" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
-    <node concept="2aJ2om" id="7YU$Q23NeTx" role="CpUAK">
-      <ref role="2$4xQ3" node="2iVkojt1MhA" resolve="productViewColor" />
+    <node concept="2aJ2om" id="1jQ1A8E0$Mr" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:2iVkojt1MhA" resolve="ColoredProduct" />
     </node>
     <node concept="1QoScp" id="7YU$Q23Nh39" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -8708,8 +8680,8 @@
   <node concept="24kQdi" id="7YU$Q23NeTC">
     <property role="3GE5qa" value="Wrapper.WhileStatement" />
     <ref role="1XX52x" to="tpee:fE$JKWJ" resolve="WhileStatement" />
-    <node concept="2aJ2om" id="7YU$Q23NeTT" role="CpUAK">
-      <ref role="2$4xQ3" node="57rZcVzwarK" resolve="productView" />
+    <node concept="2aJ2om" id="1jQ1A8E0$gV" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:57rZcVzwarK" resolve="Product" />
     </node>
     <node concept="3EZMnI" id="7YU$Q23NeTI" role="6VMZX">
       <property role="3EZMnw" value="true" />
