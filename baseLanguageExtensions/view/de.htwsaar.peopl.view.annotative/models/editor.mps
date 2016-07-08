@@ -41,7 +41,7 @@
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
-    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" implicit="true" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
   </imports>
@@ -193,6 +193,7 @@
       <concept id="1176809959526" name="jetbrains.mps.lang.editor.structure.QueryFunction_Color" flags="in" index="3ZlJ5R" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -470,13 +471,24 @@
       <node concept="pkWqt" id="5OyDuE7MlyB" role="3e4ffs">
         <node concept="3clFbS" id="5OyDuE7MlyD" role="2VODD2">
           <node concept="3clFbF" id="4HGFWGb8HGi" role="3cqZAp">
-            <node concept="2OqwBi" id="4HGFWGb8HGj" role="3clFbG">
-              <node concept="35c_gC" id="4HGFWGb8HGk" role="2Oq$k0">
-                <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+            <node concept="22lmx$" id="1jQ1A8DYxD1" role="3clFbG">
+              <node concept="2OqwBi" id="4HGFWGb8HGj" role="3uHU7B">
+                <node concept="35c_gC" id="4HGFWGb8HGk" role="2Oq$k0">
+                  <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                </node>
+                <node concept="2qgKlT" id="4HGFWGb8HGl" role="2OqNvi">
+                  <ref role="37wK5l" to="1lrk:4HGFWGb8Dmu" resolve="isFragmentHandledExternally" />
+                  <node concept="pncrf" id="4HGFWGb8HGm" role="37wK5m" />
+                </node>
               </node>
-              <node concept="2qgKlT" id="4HGFWGb8HGl" role="2OqNvi">
-                <ref role="37wK5l" to="1lrk:4HGFWGb8Dmu" resolve="isFragmentHandledExternally" />
-                <node concept="pncrf" id="4HGFWGb8HGm" role="37wK5m" />
+              <node concept="2OqwBi" id="1jQ1A8DYxEj" role="3uHU7w">
+                <node concept="35c_gC" id="1jQ1A8DYxEk" role="2Oq$k0">
+                  <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                </node>
+                <node concept="2qgKlT" id="1jQ1A8DYxEl" role="2OqNvi">
+                  <ref role="37wK5l" to="1lrk:1jQ1A8DYvHD" resolve="isColoringHandledExternally" />
+                  <node concept="pncrf" id="1jQ1A8DYxEm" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
@@ -2775,13 +2787,24 @@
       <node concept="pkWqt" id="4hZHTjY8FRl" role="3e4ffs">
         <node concept="3clFbS" id="4hZHTjY8FRm" role="2VODD2">
           <node concept="3clFbF" id="4HGFWGb8ChW" role="3cqZAp">
-            <node concept="2OqwBi" id="4HGFWGb8Cl_" role="3clFbG">
-              <node concept="35c_gC" id="4HGFWGb8ChV" role="2Oq$k0">
-                <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+            <node concept="22lmx$" id="1jQ1A8DYxde" role="3clFbG">
+              <node concept="2OqwBi" id="4HGFWGb8Cl_" role="3uHU7B">
+                <node concept="35c_gC" id="4HGFWGb8ChV" role="2Oq$k0">
+                  <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                </node>
+                <node concept="2qgKlT" id="4HGFWGb8HjW" role="2OqNvi">
+                  <ref role="37wK5l" to="1lrk:4HGFWGb8Dmu" resolve="isFragmentHandledExternally" />
+                  <node concept="pncrf" id="4HGFWGb8HqU" role="37wK5m" />
+                </node>
               </node>
-              <node concept="2qgKlT" id="4HGFWGb8HjW" role="2OqNvi">
-                <ref role="37wK5l" to="1lrk:4HGFWGb8Dmu" resolve="isFragmentHandledExternally" />
-                <node concept="pncrf" id="4HGFWGb8HqU" role="37wK5m" />
+              <node concept="2OqwBi" id="1jQ1A8DYwGV" role="3uHU7w">
+                <node concept="35c_gC" id="1jQ1A8DYwBG" role="2Oq$k0">
+                  <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                </node>
+                <node concept="2qgKlT" id="1jQ1A8DYwO2" role="2OqNvi">
+                  <ref role="37wK5l" to="1lrk:1jQ1A8DYvHD" resolve="isColoringHandledExternally" />
+                  <node concept="pncrf" id="1jQ1A8DYwRi" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
