@@ -8655,5 +8655,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="43ncpYmNLUn">
+    <property role="3GE5qa" value="CoreExtensions" />
+    <ref role="1XX52x" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+    <node concept="3EZMnI" id="43ncpYmNLUo" role="2wV5jI">
+      <node concept="3F1sOY" id="43ncpYmNLUp" role="3EZMnx">
+        <ref role="1NtTu8" to="tpee:fK9aQHS" />
+      </node>
+      <node concept="l2Vlx" id="43ncpYmNLUq" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="43ncpYmNLUt" role="CpUAK">
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+    </node>
+  </node>
 </model>
 
