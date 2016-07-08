@@ -92,13 +92,6 @@
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz">
         <child id="8383079901754291620" name="removeHints" index="B$lH_" />
       </concept>
-      <concept id="1216308599511" name="jetbrains.mps.lang.editor.structure.PositionStyleClassItem" flags="ln" index="LD5Jc">
-        <property id="1216308761668" name="position" index="LDHlv" />
-      </concept>
-      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
-        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
-        <child id="7348800710862477686" name="contextHints" index="3XTboT" />
-      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -106,9 +99,6 @@
       <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1214317859050" name="jetbrains.mps.lang.editor.structure.LayoutConstraintStyleClassItem" flags="ln" index="2UZ17K">
         <property id="1214317859051" name="layoutConstraint" index="2UZ17L" />
-      </concept>
-      <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ln" index="2V7CMv">
-        <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -166,10 +156,8 @@
         <child id="4323500428121274054" name="id" index="2SqHTX" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
-        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -186,9 +174,6 @@
       </concept>
       <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
         <child id="1225900141900" name="modelAccessor" index="1HlULh" />
-      </concept>
-      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
-        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
@@ -385,10 +370,6 @@
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
-      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
-        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -453,6 +434,9 @@
   <node concept="24kQdi" id="1DrSvX1CO5T">
     <property role="3GE5qa" value="Wrapper.IfStatement" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
+    <node concept="2aJ2om" id="1jQ1A8DX8YK" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+    </node>
     <node concept="2aJ2om" id="1DrSvX1CVo4" role="CpUAK">
       <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
     </node>
@@ -1508,97 +1492,6 @@
         <ref role="1NtTu8" to="tpee:fK9aQHS" />
       </node>
       <node concept="l2Vlx" id="3MC9PcmqPLc" role="2iSdaV" />
-    </node>
-  </node>
-  <node concept="PKFIW" id="1Up0UGwgG4u">
-    <property role="TrG5h" value="PeoplBaseMethodDeclaration_betterAnnotativeView_BodyComponent" />
-    <ref role="1XX52x" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-    <node concept="2aJ2om" id="1Up0UGwgQ_f" role="3XTboT">
-      <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
-    </node>
-    <node concept="3EZMnI" id="5UYpxeVafB8" role="2wV5jI">
-      <property role="S$Qs1" value="true" />
-      <node concept="ljvvj" id="1_9L3A4Gl2g" role="3F10Kt">
-        <property role="VOm3f" value="true" />
-      </node>
-      <node concept="3F0ifn" id="5UYpxeVafBb" role="3EZMnx">
-        <property role="3F0ifm" value="{" />
-        <ref role="1k5W1q" to="tpen:hFD5onb" resolve="LeftBrace" />
-        <node concept="ljvvj" id="5UYpxeVafBh" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-          <node concept="3nzxsE" id="5UYpxeVafBi" role="3n$kyP">
-            <node concept="3clFbS" id="5UYpxeVafBj" role="2VODD2">
-              <node concept="3clFbF" id="5UYpxeVafBk" role="3cqZAp">
-                <node concept="3fqX7Q" id="5UYpxeVafBl" role="3clFbG">
-                  <node concept="2YIFZM" id="5UYpxeVafBm" role="3fr31v">
-                    <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModelStereotype(java.lang.String):boolean" resolve="isStubModelStereotype" />
-                    <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                    <node concept="2YIFZM" id="2n9zn0CqMWw" role="37wK5m">
-                      <ref role="37wK5l" to="unno:7WvVJ3rO1Xl" resolve="getModelStereotype" />
-                      <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                      <node concept="2JrnkZ" id="2n9zn0CqMWx" role="37wK5m">
-                        <node concept="2OqwBi" id="2n9zn0CqMWy" role="2JrQYb">
-                          <node concept="pncrf" id="2n9zn0CqMWz" role="2Oq$k0" />
-                          <node concept="I4A8Y" id="2n9zn0CqMW$" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="2V7CMv" id="3rdo0dBUzr7" role="3F10Kt">
-          <property role="2V7CMs" value="ext_5_RTransform" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="5UYpxeVafBg" role="3EZMnx">
-        <ref role="1NtTu8" to="tpee:fzclF7Z" />
-        <node concept="ljvvj" id="5UYpxeVajTZ" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-          <node concept="3nzxsE" id="5UYpxeVajU0" role="3n$kyP">
-            <node concept="3clFbS" id="5UYpxeVajU1" role="2VODD2">
-              <node concept="3clFbF" id="5UYpxeVajU2" role="3cqZAp">
-                <node concept="3fqX7Q" id="5UYpxeVajU3" role="3clFbG">
-                  <node concept="2YIFZM" id="5UYpxeVajU4" role="3fr31v">
-                    <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModelStereotype(java.lang.String):boolean" resolve="isStubModelStereotype" />
-                    <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                    <node concept="2YIFZM" id="2n9zn0CqMW5" role="37wK5m">
-                      <ref role="37wK5l" to="unno:7WvVJ3rO1Xl" resolve="getModelStereotype" />
-                      <ref role="1Pybhc" to="unno:1NYD3hytmTa" resolve="SNodeOperations" />
-                      <node concept="2JrnkZ" id="2n9zn0CqMW6" role="37wK5m">
-                        <node concept="2OqwBi" id="2n9zn0CqMW7" role="2JrQYb">
-                          <node concept="pncrf" id="2n9zn0CqMW8" role="2Oq$k0" />
-                          <node concept="I4A8Y" id="2n9zn0CqMW9" role="2OqNvi" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="lj46D" id="5UYpxeVajUc" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="5UYpxeVafBd" role="3EZMnx">
-        <property role="3F0ifm" value="}" />
-        <ref role="1k5W1q" to="tpen:hFD5_7H" resolve="RightBrace" />
-        <ref role="1ERwB7" node="1Up0UGwhoTI" resolve="PeoplDeleteClassifierMember_betterAnnotativeView" />
-        <node concept="LD5Jc" id="5UYpxeVajTR" role="3F10Kt">
-          <property role="LDHlv" value="next-line" />
-        </node>
-      </node>
-      <node concept="l2Vlx" id="5UYpxeVafBa" role="2iSdaV" />
-      <node concept="PMmxH" id="7zuBzrp$R_r" role="AHCbl">
-        <ref role="PMmxG" to="tpen:7zuBzrp$swk" resolve="GenericDeclaration_FoldedCodeBlock_Component" />
-      </node>
-    </node>
-    <node concept="1PE4EZ" id="1Up0UGwgQMc" role="1PM95z">
-      <ref role="1PE7su" to="tpen:5UYpxeVafB6" resolve="BaseMethodDeclaration_BodyComponent" />
     </node>
   </node>
   <node concept="1h_SRR" id="1Up0UGwhoTI">
@@ -3384,6 +3277,9 @@
   <node concept="24kQdi" id="7IGQxJKT9P2">
     <property role="3GE5qa" value="Wrapper.IfStatement" />
     <ref role="1XX52x" to="tpee:hzeNFgq" resolve="ElsifClause" />
+    <node concept="2aJ2om" id="1jQ1A8DX8YB" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="baseLanguageExtension" />
+    </node>
     <node concept="2aJ2om" id="7IGQxJKT9P3" role="CpUAK">
       <ref role="2$4xQ3" node="1DrSvX1CVhP" resolve="betterAnnotativeView" />
     </node>
