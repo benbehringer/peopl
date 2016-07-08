@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:f9d319c5-8984-4a29-9c21-1b3df0c96bbd(de.htwsaar.peopl.dep.baselang.textGen)">
+<model ref="r:93ffcea2-2bfb-4013-b32d-edb3a3ff5d55(de.htwsaar.peopl.view.partialHiding.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports />

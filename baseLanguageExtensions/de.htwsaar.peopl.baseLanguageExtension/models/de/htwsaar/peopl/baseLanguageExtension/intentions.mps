@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:86db984a-09db-44ff-8a4e-625a55b3280d(de.htwsaar.peopl.dep.baselang.intentions)">
+<model ref="r:86db984a-09db-44ff-8a4e-625a55b3280d(de.htwsaar.peopl.baseLanguageExtension.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
@@ -13,8 +13,8 @@
   </languages>
   <imports>
     <import index="b8lf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.selection(MPS.Editor/)" />
-    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)" />
-    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.dep.baselang.behavior)" />
+    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
+    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
@@ -22,7 +22,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
-    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.dep.baselang.editor)" />
+    <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -36,6 +36,9 @@
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="4820515453818318288" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReferenceExpression" flags="ng" index="2pYGij">
+        <reference id="4820515453818318891" name="hint" index="2pYH_C" />
+      </concept>
       <concept id="2162403111523059536" name="jetbrains.mps.lang.editor.structure.IdSelector" flags="ng" index="1lyA5W">
         <property id="2162403111529391190" name="cellId" index="1lUG9U" />
       </concept>
@@ -77,9 +80,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1298,9 +1298,8 @@
                     </node>
                     <node concept="liA8E" id="7XiQv3fe0CL" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="10M0yZ" id="7XiQv3fe0CM" role="37wK5m">
-                        <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
-                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                      <node concept="2pYGij" id="1jQ1A8DZNOD" role="37wK5m">
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
                       </node>
                     </node>
                   </node>
@@ -1790,9 +1789,8 @@
                     </node>
                     <node concept="liA8E" id="16liNxk7TSk" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="10M0yZ" id="16liNxk7TXL" role="37wK5m">
-                        <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
-                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
+                      <node concept="2pYGij" id="1jQ1A8DZAIJ" role="37wK5m">
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
                       </node>
                     </node>
                   </node>
@@ -1936,9 +1934,8 @@
                     </node>
                     <node concept="liA8E" id="7XiQv3fdLkx" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="10M0yZ" id="7XiQv3fdLky" role="37wK5m">
-                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-                        <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
+                      <node concept="2pYGij" id="1jQ1A8DZN4V" role="37wK5m">
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
                       </node>
                     </node>
                   </node>
@@ -4149,9 +4146,8 @@
                     </node>
                     <node concept="liA8E" id="3XSKgTnIf2j" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="10M0yZ" id="3XSKgTnIf2k" role="37wK5m">
-                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-                        <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
+                      <node concept="2pYGij" id="1jQ1A8DZPdH" role="37wK5m">
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
                       </node>
                     </node>
                   </node>
@@ -4419,9 +4415,8 @@
                     </node>
                     <node concept="liA8E" id="2Ja598TNHcP" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="10M0yZ" id="2Ja598TNHcQ" role="37wK5m">
-                        <ref role="1PxDUh" to="nbbm:1k3hL0Su7lA" resolve="PeoplHints" />
-                        <ref role="3cqZAo" to="nbbm:2H0DQTMEUR9" resolve="BETTER_ANNOTATIVE" />
+                      <node concept="2pYGij" id="1jQ1A8DZNnZ" role="37wK5m">
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
                       </node>
                     </node>
                   </node>

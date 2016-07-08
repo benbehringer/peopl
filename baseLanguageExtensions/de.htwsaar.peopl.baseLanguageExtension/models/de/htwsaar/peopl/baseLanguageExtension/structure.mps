@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.dep.baselang.structure)">
+<model ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
@@ -62,7 +62,7 @@
   <node concept="1TIwiD" id="7bzdNbiQijk">
     <property role="1pbfSe" value="1169972230" />
     <property role="TrG5h" value="PeoplBlockStatement" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
     <node concept="1TJgyj" id="4DWAEpicCW1" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -78,7 +78,7 @@
   <node concept="1TIwiD" id="6qqyTRuTqUc">
     <property role="1pbfSe" value="1166031401" />
     <property role="TrG5h" value="PeoplEntryPoint" />
-    <property role="3GE5qa" value="" />
+    <property role="3GE5qa" value="CoreExtensions" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="class container" />
     <property role="R4oN_" value="Container for (multiple, alternative) classes" />
@@ -97,50 +97,20 @@
   <node concept="PlHQZ" id="70Uiey1XJat">
     <property role="1pbfSe" value="231654523" />
     <property role="TrG5h" value="VariabilityHelper" />
+    <property role="3GE5qa" value="Helper" />
   </node>
   <node concept="1TIwiD" id="62a2r2cufYE">
     <property role="1pbfSe" value="318568102" />
     <property role="TrG5h" value="PeoplClassConcept" />
     <property role="34LRSv" value="class" />
     <property role="R4oN_" value="Class declaration" />
+    <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
-  </node>
-  <node concept="1TIwiD" id="Vp$ulwC4cY">
-    <property role="1pbfSe" value="1870255395" />
-    <property role="TrG5h" value="PeoplBaseCodeBlockStatement" />
-    <property role="3GE5qa" value="deprecated" />
-    <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
-  </node>
-  <node concept="1TIwiD" id="Vp$ulwC4dM">
-    <property role="1pbfSe" value="1870255447" />
-    <property role="TrG5h" value="MethodDeclarationBaseCodeReference" />
-    <property role="R4oN_" value="Helps to identify the base code within a method" />
-    <property role="3GE5qa" value="deprecated" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="M6xJ_" id="Vp$ulwC4dN" role="lGtFl">
-      <property role="Hh88m" value="MethodDeclarationBaseCodeReference" />
-      <node concept="tn0Fv" id="3du0jSJ22MU" role="HhnKV">
-        <property role="tnX3d" value="true" />
-      </node>
-      <node concept="trNpa" id="3du0jSJ24iN" role="EQaZv">
-        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="Vp$ulwC4dP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="myBaseCode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="Vp$ulwC4cY" resolve="PeoplBaseCodeBlockStatement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="t5UFt6JZfY">
-    <property role="1pbfSe" value="1309007541" />
-    <property role="TrG5h" value="PeoplPlaceholderStatement" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
   </node>
   <node concept="1TIwiD" id="4DWAEpij21t">
     <property role="1pbfSe" value="1664566525" />
     <property role="TrG5h" value="PeoplBlockReference" />
+    <property role="3GE5qa" value="Helper" />
     <ref role="1TJDcQ" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
     <node concept="1TJgyj" id="4DWAEpij2ku" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -164,6 +134,7 @@
   <node concept="1TIwiD" id="5zeyXLl18aD">
     <property role="1pbfSe" value="1378677115" />
     <property role="TrG5h" value="OriginalNodeInfo" />
+    <property role="3GE5qa" value="Helper" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="7PFXpItoF1V" role="1TKVEi">
       <property role="20lmBu" value="reference" />
