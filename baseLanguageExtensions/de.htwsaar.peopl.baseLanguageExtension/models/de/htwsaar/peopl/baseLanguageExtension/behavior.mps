@@ -5926,7 +5926,7 @@
     <node concept="13i0hz" id="4HGFWGb8Dmu" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="isFragmentHandledExternally" />
+      <property role="TrG5h" value="isFragmentHandledByConceptEditor" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="4HGFWGb8Dmv" role="1B3o_S" />
       <node concept="10P_77" id="4HGFWGb8GCY" role="3clF45" />
@@ -5989,7 +5989,7 @@
     <node concept="13i0hz" id="1jQ1A8DYvHD" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="isColoringHandledExternally" />
+      <property role="TrG5h" value="isColoringHandledByConceptEditor" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="1jQ1A8DYvHE" role="1B3o_S" />
       <node concept="10P_77" id="1jQ1A8DYvHF" role="3clF45" />
