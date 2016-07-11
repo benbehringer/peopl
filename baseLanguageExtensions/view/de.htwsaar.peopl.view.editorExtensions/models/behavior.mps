@@ -10,8 +10,6 @@
     <import index="tpcb" ref="r:00000000-0000-4000-0000-011c89590297(jetbrains.mps.lang.editor.behavior)" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="5ueo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.style(MPS.Editor/)" />
-    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
     <import index="357o" ref="r:d5b6455a-ccb2-48e0-8eaa-8bf7ba72c169(de.htwsaar.peopl.view.editorExtensions.runtime.style)" />
     <import index="8oe8" ref="r:2be3eae4-3a9e-4e73-aa40-e64bc42c005c(de.htwsaar.peopl.view.editorExtensions.structure)" implicit="true" />
   </imports>

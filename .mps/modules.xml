@@ -8,8 +8,6 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" folder="peopl.baseLanguageExtension.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.baseLanguageExtension.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" folder="peopl.baseLanguageExtension.projectview" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.editorExtensions.runtime/de.htwsaar.peopl.view.editorExtensions.runtime.msd" folder="peopl.baseLanguageExtension.view.test" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.editorExtensions/de.htwsaar.peopl.view.editorExtensions.mpl" folder="peopl.baseLanguageExtension.view.test" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/de.htwsaar.peopl.view.hiding.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />

@@ -43,7 +43,7 @@
       </idea-plugin>
     </echoxml>
     <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages" />
-    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep" />
+    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.baseLanguageExtension.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.baseLanguageExtension.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.baseLanguageExtension.jar/META-INF/module.xml">
@@ -70,13 +70,13 @@
         <sources jar="de.htwsaar.peopl.baseLanguageExtension-src.jar" descriptor="de.htwsaar.peopl.baseLanguageExtension.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep/de.htwsaar.peopl.baseLanguageExtension.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.baseLanguageExtension" />
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/de.htwsaar.peopl.baseLanguageExtension.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep/de.htwsaar.peopl.baseLanguageExtension-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.baseLanguageExtension#8983101612966976582" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-de.htwsaar.peopl.baseLanguageExtension-generator-template">
@@ -85,7 +85,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-de.htwsaar.peopl.baseLanguageExtension-models">
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep/de.htwsaar.peopl.baseLanguageExtension-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -120,7 +120,7 @@
         <sources jar="de.htwsaar.peopl.baseLanguageExtension.runtime-src.jar" descriptor="de.htwsaar.peopl.baseLanguageExtension.runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep/de.htwsaar.peopl.baseLanguageExtension.runtime.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.runtime.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.baseLanguageExtension.runtime" />
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/source_gen" includes="**/trace.info, **/exports" />
@@ -129,7 +129,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-de.htwsaar.peopl.baseLanguageExtension.runtime-models">
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep/de.htwsaar.peopl.baseLanguageExtension.runtime-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.runtime-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -138,7 +138,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-de.htwsaar.peopl.baseLanguageExtension.runtime-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages" />
-    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view" />
+    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.view.runtime.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.view.runtime.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.view.runtime.jar/META-INF/module.xml">
@@ -162,7 +162,7 @@
         <sources jar="de.htwsaar.peopl.view.runtime-src.jar" descriptor="de.htwsaar.peopl.view.runtime.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.runtime.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.runtime.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.runtime" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/source_gen" includes="**/trace.info, **/exports" />
@@ -171,7 +171,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view-runtime-models">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.runtime-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.runtime-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -202,13 +202,13 @@
         <sources jar="de.htwsaar.peopl.view.hiding-src.jar" descriptor="de.htwsaar.peopl.view.hiding.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.hiding.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.hiding.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.hiding" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/de.htwsaar.peopl.view.hiding.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.hiding-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.hiding-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.hiding#4333012423315885155" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.annotative-generator-template">
@@ -217,7 +217,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.hiding-models">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.hiding-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.hiding-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -257,13 +257,13 @@
         <sources jar="de.htwsaar.peopl.view.modular-src.jar" descriptor="de.htwsaar.peopl.view.modular.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.modular.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.modular.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.modular" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/de.htwsaar.peopl.view.modular.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.modular-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.modular-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.modular#7318492937659888230" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.modular-generator-template">
@@ -272,7 +272,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.modular-models">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.modular-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.modular-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -308,13 +308,13 @@
         <sources jar="de.htwsaar.peopl.view.product-src.jar" descriptor="de.htwsaar.peopl.view.product.mpl" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.product.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.product.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.product" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.product" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/source_gen" includes="**/trace.info, **/exports" />
       <fileset dir="${build.tmp}/default/de.htwsaar.peopl.view.product.jar" />
     </jar>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.product-generator.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.product-generator.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.view.product#5898586102482007080" />
     </jar>
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.product-generator-template">
@@ -323,7 +323,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.product-models">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.product-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.view/de.htwsaar.peopl.view.product-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/generator/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -337,7 +337,7 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-view-de.htwsaar.peopl.view.product-models" prefix="module/models" />
     </jar>
     <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages" />
-    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview" />
+    <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar/META-INF/module.xml">
@@ -361,7 +361,7 @@
         <sources jar="de.htwsaar.peopl.projectview.annotative-src.jar" descriptor="de.htwsaar.peopl.projectview.annotative.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.annotative.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.annotative.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.annotative" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen" includes="**/trace.info, **/exports" />
@@ -370,7 +370,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.annotative-models">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.annotative-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.annotative-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -401,7 +401,7 @@
         <sources jar="de.htwsaar.peopl.projectview.common-src.jar" descriptor="de.htwsaar.peopl.projectview.common.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.common.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.common.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" includes="**/trace.info, **/exports" />
@@ -410,7 +410,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.common-models">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.common-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.common-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -442,7 +442,7 @@
         <sources jar="de.htwsaar.peopl.projectview.modular-src.jar" descriptor="de.htwsaar.peopl.projectview.modular.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.modular.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.modular.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.modular" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" includes="**/trace.info, **/exports" />
@@ -451,7 +451,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.modular-models">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.modular-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.modular-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
@@ -482,7 +482,7 @@
         <sources jar="de.htwsaar.peopl.projectview.product-src.jar" descriptor="de.htwsaar.peopl.projectview.product.msd" />
       </module>
     </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.product.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.product.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.product" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product" includes="icons/**, resources/**" />
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/source_gen" includes="**/trace.info, **/exports" />
@@ -491,7 +491,7 @@
     <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.product-models">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.product-src.jar" duplicate="preserve">
+    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/baseLanguageExtension.projectview/de.htwsaar.peopl.projectview.product-src.jar" duplicate="preserve">
       <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/source_gen">
         <exclude name="**/trace.info" />
         <exclude name="**/exports" />
