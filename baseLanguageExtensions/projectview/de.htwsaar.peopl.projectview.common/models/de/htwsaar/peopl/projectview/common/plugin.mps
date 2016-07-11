@@ -20,7 +20,6 @@
   <imports>
     <import index="3kir" ref="r:cb848a2c-837a-4a77-9437-095eddffdfa6(de.htwsaar.peopl.view.modular.behavior)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="ynjl" ref="r:61c34d47-0f37-465e-90be-bcb56c58371d(de.htwsaar.peopl.view.runtime)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
     <import index="mljx" ref="r:a6d32463-ec40-4cd9-98ef-d764feac8a43(com.mbeddr.mpsutil.projectview.plugin)" />
@@ -760,11 +759,11 @@
                           <node concept="3cpWsn" id="5N4LhA0__NI" role="3cpWs9">
                             <property role="TrG5h" value="productLineConfig" />
                             <node concept="3Tqbb2" id="5N4LhA0__NJ" role="1tU5fm">
-                              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                             </node>
                             <node concept="2OqwBi" id="7s2UsmIYnGn" role="33vP2m">
                               <node concept="35c_gC" id="7s2UsmIYnEi" role="2Oq$k0">
-                                <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                               </node>
                               <node concept="2qgKlT" id="7s2UsmIYnKP" role="2OqNvi">
                                 <ref role="37wK5l" to="uyk2:7s2UsmIYjaZ" resolve="createProductLineConfigurationAndSetModule" />
@@ -1875,7 +1874,7 @@
                               <node concept="liA8E" id="7yG_mcG8iyx" role="2OqNvi">
                                 <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                                 <node concept="35c_gC" id="7yG_mcG8jib" role="37wK5m">
-                                  <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                  <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                 </node>
                               </node>
                             </node>
@@ -2467,7 +2466,7 @@
                             <node concept="2Xjw5R" id="7OOWcacXcIe" role="2OqNvi">
                               <node concept="1xMEDy" id="7OOWcacXcIg" role="1xVPHs">
                                 <node concept="chp4Y" id="7OOWcacXcMT" role="ri$Ld">
-                                  <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                  <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                 </node>
                               </node>
                             </node>
@@ -2476,7 +2475,7 @@
                       </node>
                       <node concept="2OqwBi" id="7OOWcacV91I" role="3clFbw">
                         <node concept="35c_gC" id="7OOWcacV8Zv" role="2Oq$k0">
-                          <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                          <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                         </node>
                         <node concept="2qgKlT" id="7OOWcacV9b9" role="2OqNvi">
                           <ref role="37wK5l" to="uyk2:7OOWcacUZDC" resolve="isInProductLineConfig" />

@@ -18,7 +18,6 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -269,7 +268,7 @@
   </registry>
   <node concept="24kQdi" id="_uCk0nlSoD">
     <property role="3GE5qa" value="" />
-    <ref role="1XX52x" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+    <ref role="1XX52x" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
     <node concept="3EZMnI" id="4NJLQZxCF2T" role="2wV5jI">
       <node concept="gc7cB" id="1hL$JiAug0$" role="3EZMnx">
         <node concept="3VJUX4" id="1hL$JiAug0A" role="3YsKMw">
@@ -352,7 +351,7 @@
                               <node concept="1eOMI4" id="1hL$JiAui_L" role="2Oq$k0">
                                 <node concept="10QFUN" id="1hL$JiAuijg" role="1eOMHV">
                                   <node concept="3Tqbb2" id="1hL$JiAuioF" role="10QFUM">
-                                    <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                    <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                   </node>
                                   <node concept="2OqwBi" id="1hL$JiAuhT2" role="10QFUP">
                                     <node concept="pncrf" id="1hL$JiAuhLI" role="2Oq$k0" />
@@ -471,7 +470,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1hL$JiAsepA">
-    <ref role="1XX52x" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+    <ref role="1XX52x" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
     <node concept="3EZMnI" id="1hL$JiAsepC" role="2wV5jI">
       <node concept="3F0ifn" id="1hL$JiAsepJ" role="3EZMnx">
         <property role="3F0ifm" value="Configurations:" />

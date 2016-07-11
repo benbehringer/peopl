@@ -22,7 +22,6 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" />
-    <import index="xfo5" ref="r:dfa2c56b-b183-4ac7-8ae0-e1a0b6082999(de.htwsaar.peopl.projectview.modular.plugin)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
@@ -33,7 +32,6 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" implicit="true" />
-    <import index="ix3r" ref="r:38b5e31a-a5fc-45f9-8519-fb5b08fb83af(de.htwsaar.peopl.view.hiding.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -619,8 +617,8 @@
     </node>
     <node concept="14aYG3" id="6Dv_8JO2$cN" role="14aYEy">
       <property role="TrG5h" value="interfaceFragment" />
-      <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
       <ref role="14a85i" node="6Dv_8JO2x7Z" resolve="interfaces" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
       <node concept="3clFbT" id="6Dv_8JO2$cO" role="2q6PdT">
         <property role="3clFbU" value="false" />
       </node>
@@ -782,8 +780,8 @@
       <property role="3V$3ak" value="1f1b4a81-113d-4b88-9b67-2bae3e4f8128/8309912865649284702/8309912865649284891" />
       <node concept="14aYG3" id="6x2HjBt6Q4w" role="8Wnug">
         <property role="TrG5h" value="peoplEntryPointFragment" />
-        <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
         <ref role="14a85i" node="43OrCWB21MZ" resolve="peoplEntryPoint" />
+        <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
         <node concept="3clFbT" id="1hXMX50JGAs" role="2q6PdT">
           <property role="3clFbU" value="false" />
         </node>
@@ -887,8 +885,8 @@
     </node>
     <node concept="14aYG3" id="7diJr$Rx11N" role="14aYEy">
       <property role="TrG5h" value="peoplModuleDefinition" />
-      <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
       <ref role="14a85i" node="7diJr$Rw$m0" resolve="sModel" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
       <node concept="2OqwBi" id="L5cqXO8WLV" role="14bQOc">
         <node concept="2OqwBi" id="L5cqXO8WLW" role="2Oq$k0">
           <node concept="1eOMI4" id="L5cqXO8WLX" role="2Oq$k0">
@@ -972,8 +970,8 @@
     </node>
     <node concept="14aYG3" id="6x2HjBtaqmQ" role="14aYEy">
       <property role="TrG5h" value="peoplConfig" />
-      <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
       <ref role="14a85i" node="7diJr$Rw$m0" resolve="sModel" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
       <node concept="2OqwBi" id="6x2HjBtaqmR" role="14bQOc">
         <node concept="2OqwBi" id="6x2HjBtaqmS" role="2Oq$k0">
           <node concept="1eOMI4" id="6x2HjBtaqmT" role="2Oq$k0">
@@ -1004,7 +1002,7 @@
                     <node concept="liA8E" id="6x2HjBtaqn6" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                       <node concept="35c_gC" id="6x2HjBtaqn7" role="37wK5m">
-                        <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                        <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                       </node>
                     </node>
                   </node>
@@ -1100,7 +1098,7 @@
       <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
       <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
       <node concept="3nh3qo" id="3KxWXtV6hAM" role="37wK5m">
-        <ref role="3nh3qp" to="ix3r:3KxWXtV6gL_" resolve="AnnotativeView" />
+        <ref role="3nh3qp" to="uqoo:3KxWXtV6gL_" resolve="AnnotativeView" />
       </node>
     </node>
   </node>

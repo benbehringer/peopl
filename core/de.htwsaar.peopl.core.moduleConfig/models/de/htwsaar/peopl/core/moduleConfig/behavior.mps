@@ -15,8 +15,6 @@
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="tpec" ref="r:00000000-0000-4000-0000-011c895902c8(jetbrains.mps.baseLanguage.plugin)" />
-    <import index="gzfr" ref="r:4493c001-9956-4b69-8c92-9141ac8f5b4e(de.htwsaar.peopl.core.listener.plugin)" />
     <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
     <import index="g3l6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.model(MPS.Core/)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
@@ -1778,7 +1776,7 @@
   </node>
   <node concept="13h7C7" id="2QN4XY8MYz5">
     <property role="3GE5qa" value="" />
-    <ref role="13h7C2" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+    <ref role="13h7C2" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
     <node concept="13i0hz" id="1hL$JiAwPP4" role="13h7CS">
       <property role="TrG5h" value="calculateFragmentList" />
       <node concept="3Tm1VV" id="1hL$JiAwPP5" role="1B3o_S" />
@@ -1929,7 +1927,7 @@
           <node concept="3cpWsn" id="3GqAm$Hrwsh" role="3cpWs9">
             <property role="TrG5h" value="currentConfig" />
             <node concept="3Tqbb2" id="3GqAm$Hrwsc" role="1tU5fm">
-              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
             </node>
           </node>
         </node>
@@ -1941,7 +1939,7 @@
                 <node concept="1eOMI4" id="3GqAm$HrwAi" role="37vLTx">
                   <node concept="10QFUN" id="3GqAm$HrwAf" role="1eOMHV">
                     <node concept="3Tqbb2" id="3GqAm$HrwAB" role="10QFUM">
-                      <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                      <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                     </node>
                     <node concept="37vLTw" id="3GqAm$HryTf" role="10QFUP">
                       <ref role="3cqZAo" node="3GqAm$HryRs" resolve="nodeInAST" />
@@ -1960,7 +1958,7 @@
             </node>
             <node concept="1mIQ4w" id="3GqAm$HrwyQ" role="2OqNvi">
               <node concept="chp4Y" id="3GqAm$Hrwz9" role="cj9EA">
-                <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
               </node>
             </node>
           </node>
@@ -1975,7 +1973,7 @@
                     <node concept="2Xjw5R" id="3GqAm$HrwK7" role="2OqNvi">
                       <node concept="1xMEDy" id="3GqAm$HrwK9" role="1xVPHs">
                         <node concept="chp4Y" id="3GqAm$HrwKT" role="ri$Ld">
-                          <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                          <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                         </node>
                       </node>
                     </node>
@@ -2018,7 +2016,7 @@
                 <node concept="1eOMI4" id="3GqAm$Hs538" role="2Oq$k0">
                   <node concept="10QFUN" id="3GqAm$Hs539" role="1eOMHV">
                     <node concept="3Tqbb2" id="3GqAm$Hs53a" role="10QFUM">
-                      <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                      <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                     </node>
                     <node concept="2OqwBi" id="3GqAm$Hs53b" role="10QFUP">
                       <node concept="37vLTw" id="3GqAm$Hs53c" role="2Oq$k0">
@@ -2053,7 +2051,7 @@
                 <node concept="1eOMI4" id="3GqAm$HrYDm" role="2Oq$k0">
                   <node concept="10QFUN" id="3GqAm$HrYDj" role="1eOMHV">
                     <node concept="3Tqbb2" id="3GqAm$HrYEr" role="10QFUM">
-                      <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                      <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                     </node>
                     <node concept="2OqwBi" id="3GqAm$HrY$1" role="10QFUP">
                       <node concept="37vLTw" id="3GqAm$HrYxE" role="2Oq$k0">
@@ -2101,7 +2099,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="1hL$JiAwPa1">
-    <ref role="13h7C2" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+    <ref role="13h7C2" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
     <node concept="13i0hz" id="7OOWcacUZDC" role="13h7CS">
       <property role="TrG5h" value="isInProductLineConfig" />
       <property role="2Ki8OM" value="true" />
@@ -3440,19 +3438,19 @@
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="7s2UsmIYjb0" role="1B3o_S" />
       <node concept="3Tqbb2" id="7s2UsmIYkIh" role="3clF45">
-        <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+        <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
       </node>
       <node concept="3clFbS" id="7s2UsmIYjb2" role="3clF47">
         <node concept="3cpWs8" id="5N4LhA0__NH" role="3cqZAp">
           <node concept="3cpWsn" id="5N4LhA0__NI" role="3cpWs9">
             <property role="TrG5h" value="productLineConfig" />
             <node concept="3Tqbb2" id="5N4LhA0__NJ" role="1tU5fm">
-              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
             </node>
             <node concept="2ShNRf" id="5N4LhA0__NK" role="33vP2m">
               <node concept="3zrR0B" id="5N4LhA0__NL" role="2ShVmc">
                 <node concept="3Tqbb2" id="5N4LhA0__NM" role="3zrR0E">
-                  <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                  <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                 </node>
               </node>
             </node>
@@ -3462,12 +3460,12 @@
           <node concept="3cpWsn" id="5N4LhA0_DB2" role="3cpWs9">
             <property role="TrG5h" value="activeConfig" />
             <node concept="3Tqbb2" id="5N4LhA0_DAX" role="1tU5fm">
-              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
             </node>
             <node concept="2ShNRf" id="5N4LhA0_EaD" role="33vP2m">
               <node concept="3zrR0B" id="5N4LhA0_E8_" role="2ShVmc">
                 <node concept="3Tqbb2" id="5N4LhA0_E8A" role="3zrR0E">
-                  <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                  <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                 </node>
               </node>
             </node>
@@ -5173,7 +5171,7 @@
       <node concept="37vLTG" id="7s2UsmIZrru" role="3clF46">
         <property role="TrG5h" value="productLineConfigurations" />
         <node concept="3Tqbb2" id="7s2UsmIZrwx" role="1tU5fm">
-          <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+          <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
         </node>
       </node>
       <node concept="37vLTG" id="7s2UsmIZrxQ" role="3clF46">

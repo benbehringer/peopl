@@ -22,7 +22,6 @@
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
-    <import index="xfo5" ref="r:dfa2c56b-b183-4ac7-8ae0-e1a0b6082999(de.htwsaar.peopl.projectview.modular.plugin)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -694,8 +693,8 @@
     </node>
     <node concept="14aYG3" id="7diJr$Rx11N" role="14aYEy">
       <property role="TrG5h" value="peoplModuleDefinition" />
-      <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
       <ref role="14a85i" node="7diJr$Rw$m0" resolve="sModel" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
       <node concept="2OqwBi" id="L5cqXO8WLV" role="14bQOc">
         <node concept="2OqwBi" id="L5cqXO8WLW" role="2Oq$k0">
           <node concept="1eOMI4" id="L5cqXO8WLX" role="2Oq$k0">
@@ -780,7 +779,7 @@
     <node concept="14aYG3" id="6x2HjBtaqmQ" role="14aYEy">
       <property role="TrG5h" value="peoplConfig" />
       <ref role="14a85i" node="7diJr$Rw$m0" resolve="sModel" />
-      <ref role="3GDMyY" to="xfo5:3ZnFyBjojbx" resolve="node" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
       <node concept="2OqwBi" id="6x2HjBtaqmR" role="14bQOc">
         <node concept="2OqwBi" id="6x2HjBtaqmS" role="2Oq$k0">
           <node concept="1eOMI4" id="6x2HjBtaqmT" role="2Oq$k0">
@@ -811,7 +810,7 @@
                     <node concept="liA8E" id="6x2HjBtaqn6" role="2OqNvi">
                       <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                       <node concept="35c_gC" id="6x2HjBtaqn7" role="37wK5m">
-                        <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                        <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                       </node>
                     </node>
                   </node>

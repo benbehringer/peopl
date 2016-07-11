@@ -8,7 +8,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
@@ -171,7 +170,7 @@
   </registry>
   <node concept="2S6QgY" id="5JY_zDX7QZN">
     <property role="TrG5h" value="EvalExpression" />
-    <ref role="2ZfgGC" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+    <ref role="2ZfgGC" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
     <node concept="2S6ZIM" id="5JY_zDX7QZO" role="2ZfVej">
       <node concept="3clFbS" id="5JY_zDX7QZP" role="2VODD2">
         <node concept="3clFbF" id="5JY_zDX7R1c" role="3cqZAp">
@@ -187,7 +186,7 @@
           <node concept="3cpWsn" id="5JY_zDX7Rtx" role="3cpWs9">
             <property role="TrG5h" value="plc" />
             <node concept="3Tqbb2" id="5JY_zDX7Rtt" role="1tU5fm">
-              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+              <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
             </node>
             <node concept="2Sf5sV" id="5JY_zDX7Ruy" role="33vP2m" />
           </node>
@@ -364,7 +363,7 @@
                 <node concept="1eOMI4" id="6WkKb53Dvvr" role="37vLTx">
                   <node concept="10QFUN" id="6WkKb53Dvvo" role="1eOMHV">
                     <node concept="3Tqbb2" id="6WkKb53Dvwj" role="10QFUM">
-                      <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                      <ref role="ehGHo" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                     </node>
                     <node concept="37vLTw" id="581yDSn$MrU" role="10QFUP">
                       <ref role="3cqZAo" node="581yDSn$Mnj" resolve="selected" />
@@ -381,7 +380,7 @@
                         <node concept="1mfA1w" id="6WkKb53Dvj3" role="2OqNvi" />
                       </node>
                       <node concept="3Tqbb2" id="6WkKb53DvdD" role="10QFUM">
-                        <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                        <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                       </node>
                     </node>
                   </node>
@@ -398,7 +397,7 @@
             </node>
             <node concept="1mIQ4w" id="6WkKb53DuLG" role="2OqNvi">
               <node concept="chp4Y" id="6WkKb53DuMm" role="cj9EA">
-                <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
               </node>
             </node>
           </node>
@@ -411,7 +410,7 @@
                     <node concept="2Xjw5R" id="6WkKb53Dv_n" role="2OqNvi">
                       <node concept="1xMEDy" id="6WkKb53Dv_o" role="1xVPHs">
                         <node concept="chp4Y" id="6WkKb53Dv_p" role="ri$Ld">
-                          <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                          <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                         </node>
                       </node>
                     </node>
@@ -420,7 +419,7 @@
                     <node concept="1eOMI4" id="6WkKb53Dv_r" role="2Oq$k0">
                       <node concept="10QFUN" id="6WkKb53Dv_s" role="1eOMHV">
                         <node concept="3Tqbb2" id="6WkKb53Dv_t" role="10QFUM">
-                          <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                          <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                         </node>
                         <node concept="2OqwBi" id="6WkKb53Dv_u" role="10QFUP">
                           <node concept="2OqwBi" id="6WkKb53Dv_v" role="2Oq$k0">
@@ -428,7 +427,7 @@
                             <node concept="2Xjw5R" id="6WkKb53Dv_x" role="2OqNvi">
                               <node concept="1xMEDy" id="6WkKb53Dv_y" role="1xVPHs">
                                 <node concept="chp4Y" id="6WkKb53Dv_z" role="ri$Ld">
-                                  <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                                  <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                                 </node>
                               </node>
                             </node>
@@ -477,7 +476,7 @@
               </node>
               <node concept="1mIQ4w" id="6WkKb53DusC" role="2OqNvi">
                 <node concept="chp4Y" id="6WkKb53Duwr" role="cj9EA">
-                  <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                  <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                 </node>
               </node>
             </node>
@@ -489,7 +488,7 @@
                 </node>
                 <node concept="1mIQ4w" id="5BQdQAJoQAS" role="2OqNvi">
                   <node concept="chp4Y" id="5BQdQAJoQDt" role="cj9EA">
-                    <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                    <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                   </node>
                 </node>
               </node>
@@ -499,7 +498,7 @@
                   <node concept="2Xjw5R" id="5BQdQAJoQ1t" role="2OqNvi">
                     <node concept="1xMEDy" id="5BQdQAJoQ1v" role="1xVPHs">
                       <node concept="chp4Y" id="5BQdQAJoQ3a" role="ri$Ld">
-                        <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleProductLineConfiguration" />
+                        <ref role="cht4Q" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
                       </node>
                     </node>
                   </node>
