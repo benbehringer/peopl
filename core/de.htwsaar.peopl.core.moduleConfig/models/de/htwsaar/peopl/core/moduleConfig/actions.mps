@@ -108,7 +108,6 @@
       <concept id="1177413954598" name="jetbrains.mps.lang.actions.structure.QueryFunction_RemoveBy_Condition" flags="in" index="zlMOO" />
       <concept id="1177414026667" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_concept" flags="nn" index="zm4iT" />
       <concept id="1177497140107" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_sourceNode" flags="nn" index="Cj7Ep" />
-      <concept id="1177568407352" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_currentTargetNode" flags="nn" index="GyYSE" />
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
         <child id="1158700779049" name="nodeFactory" index="37WGs$" />
       </concept>
@@ -118,6 +117,7 @@
       </concept>
       <concept id="1158701162220" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction" flags="in" index="37Y9Zx" />
       <concept id="1154465102724" name="jetbrains.mps.lang.actions.structure.NodeSubstitutePreconditionFunction" flags="in" index="3buRE8" />
+      <concept id="1154465273778" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_parentNode" flags="nn" index="3bvxqY" />
       <concept id="1197454418909" name="jetbrains.mps.lang.actions.structure.QueryFunction_ST_RemoveBy_Condition" flags="in" index="3dQ6bb" />
       <concept id="1197454626277" name="jetbrains.mps.lang.actions.structure.RemoveSTByConditionPart" flags="ng" index="3dQSNN">
         <child id="1197454635481" name="condition" index="3dQV3f" />
@@ -260,15 +260,95 @@
       </node>
       <node concept="3buRE8" id="5aEvvlDoWAz" role="3bvWUf">
         <node concept="3clFbS" id="5aEvvlDoWA$" role="2VODD2">
+          <node concept="3SKdUt" id="78DnH90TovM" role="3cqZAp">
+            <node concept="3SKdUq" id="78DnH90TovN" role="3SKWNk">
+              <property role="3SKdUp" value="using &quot;containing root&quot; instead of the downcast getContainingRoot() returns null" />
+            </node>
+          </node>
           <node concept="3clFbF" id="5aEvvlDoWBF" role="3cqZAp">
             <node concept="2OqwBi" id="5aEvvlDoWPE" role="3clFbG">
-              <node concept="2OqwBi" id="5aEvvlDoWEF" role="2Oq$k0">
-                <node concept="GyYSE" id="5aEvvlDoWBE" role="2Oq$k0" />
-                <node concept="2Rxl7S" id="5aEvvlDoWKO" role="2OqNvi" />
+              <node concept="2OqwBi" id="78DnH90TmA4" role="2Oq$k0">
+                <node concept="2JrnkZ" id="78DnH90TmA5" role="2Oq$k0">
+                  <node concept="3bvxqY" id="78DnH90TmA6" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="78DnH90TmA7" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                </node>
               </node>
-              <node concept="1mIQ4w" id="5aEvvlDoWUb" role="2OqNvi">
-                <node concept="chp4Y" id="5aEvvlDoWWr" role="cj9EA">
-                  <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
+              <node concept="liA8E" id="78DnH90TmSd" role="2OqNvi">
+                <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                <node concept="35c_gC" id="78DnH90TmVD" role="37wK5m">
+                  <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3FOIzC" id="41YhkB7x3Dr" role="3FOPby">
+      <ref role="3FOWKa" to="tpee:fz3vP1J" resolve="Expression" />
+      <node concept="3buRE8" id="41YhkB7x3XO" role="3bvWUf">
+        <node concept="3clFbS" id="41YhkB7x3XP" role="2VODD2">
+          <node concept="3SKdUt" id="78DnH90TolU" role="3cqZAp">
+            <node concept="3SKdUq" id="78DnH90TolV" role="3SKWNk">
+              <property role="3SKdUp" value="using &quot;containing root&quot; instead of the downcast getContainingRoot() returns null" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="78DnH90TnhB" role="3cqZAp">
+            <node concept="3fqX7Q" id="78DnH90Tnlv" role="3clFbG">
+              <node concept="2OqwBi" id="78DnH90Tnlx" role="3fr31v">
+                <node concept="2OqwBi" id="78DnH90Tnly" role="2Oq$k0">
+                  <node concept="2JrnkZ" id="78DnH90Tnlz" role="2Oq$k0">
+                    <node concept="3bvxqY" id="78DnH90Tnl$" role="2JrQYb" />
+                  </node>
+                  <node concept="liA8E" id="78DnH90Tnl_" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="78DnH90TnlA" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                  <node concept="35c_gC" id="78DnH90TnlB" role="37wK5m">
+                    <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="zlxcR" id="41YhkB7x4bR" role="tZc4B">
+        <node concept="zlMOO" id="41YhkB7x4bS" role="zmozY">
+          <node concept="3clFbS" id="41YhkB7x4bT" role="2VODD2">
+            <node concept="3cpWs6" id="41YhkB7x4er" role="3cqZAp">
+              <node concept="22lmx$" id="41YhkB7x5oX" role="3cqZAk">
+                <node concept="22lmx$" id="41YhkB7x4XP" role="3uHU7B">
+                  <node concept="22lmx$" id="41YhkB7x4yt" role="3uHU7B">
+                    <node concept="3clFbC" id="41YhkB7x4lr" role="3uHU7B">
+                      <node concept="zm4iT" id="41YhkB7x4eB" role="3uHU7B" />
+                      <node concept="3TUQnm" id="41YhkB7x4eC" role="3uHU7w">
+                        <ref role="3TV0OU" to="sj65:_uCk0nlSoq" resolve="Addition" />
+                      </node>
+                    </node>
+                    <node concept="3clFbC" id="41YhkB7x4rW" role="3uHU7w">
+                      <node concept="zm4iT" id="41YhkB7x4eE" role="3uHU7B" />
+                      <node concept="3TUQnm" id="41YhkB7x4eF" role="3uHU7w">
+                        <ref role="3TV0OU" to="sj65:_uCk0nlSor" resolve="Subtraction" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbC" id="41YhkB7x69j" role="3uHU7w">
+                    <node concept="zm4iT" id="41YhkB7x4e$" role="3uHU7B" />
+                    <node concept="3TUQnm" id="41YhkB7x4ez" role="3uHU7w">
+                      <ref role="3TV0OU" to="sj65:_uCk0nlSos" resolve="Overriding" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="41YhkB7x63T" role="3uHU7w">
+                  <node concept="zm4iT" id="41YhkB7x4ew" role="3uHU7B" />
+                  <node concept="3TUQnm" id="41YhkB7x4ev" role="3uHU7w">
+                    <ref role="3TV0OU" to="sj65:_uCk0nlSow" resolve="ModuleConnector" />
+                  </node>
                 </node>
               </node>
             </node>
