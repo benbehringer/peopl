@@ -1107,5 +1107,18 @@
       <ref role="2$4xQ3" to="nbbm:1jQ1A8E0r3v" resolve="Hiding" />
     </node>
   </node>
+  <node concept="24kQdi" id="50moBti4Pm5">
+    <property role="3GE5qa" value="Wrapper.TryStatement" />
+    <ref role="1XX52x" to="tpee:gWTDmSJ" resolve="CatchClause" />
+    <node concept="2aJ2om" id="50moBti4Pm6" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+    </node>
+    <node concept="2aJ2om" id="50moBti4Pm7" role="CpUAK">
+      <ref role="2$4xQ3" to="nbbm:1jQ1A8E0r3v" resolve="Hiding" />
+    </node>
+    <node concept="PMmxH" id="50moBti4Pmb" role="2wV5jI">
+      <ref role="PMmxG" to="nbbm:5xDdmRRWJlm" resolve="Colored_CatchClause_Component" />
+    </node>
+  </node>
 </model>
 
