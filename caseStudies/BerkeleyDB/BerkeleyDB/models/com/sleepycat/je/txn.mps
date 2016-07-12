@@ -17253,11 +17253,6 @@
           <ref role="ocbYS" node="6$_V4iGDCE6" />
           <ref role="1C2YfU" node="6$_V4iGDCE8" resolve="Fragment_7576721727819254408" />
         </node>
-        <node concept="ocbFV" id="1Du7fA5Gd2E" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_1899987950812319914" />
-          <ref role="ocbYS" node="1Du7fA5Gd2$" />
-          <ref role="1C2YfU" node="1Du7fA5Gd2A" resolve="Fragment_1899987950812319910" />
-        </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8sOq" role="jymVt">
         <property role="TrG5h" value="removeLock" />

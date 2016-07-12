@@ -140,6 +140,12 @@
       <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM">
         <child id="6242855909345491589" name="fragmentIntermediate" index="3aRQVq" />
       </concept>
+      <concept id="8523334110550879641" name="de.htwsaar.peopl.core.structure.InteractionModule" flags="ng" index="1Z4xEI">
+        <child id="8523334110550977737" name="InteractionModuleIntermediate" index="1Z59JY" />
+      </concept>
+      <concept id="8523334110550977739" name="de.htwsaar.peopl.core.structure.InteractionModuleToModuleIntermediate" flags="ng" index="1Z59JW">
+        <reference id="8523334110550977740" name="modRef" index="1Z59JV" />
+      </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
       <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
@@ -365,6 +371,21 @@
       <node concept="3aRQSP" id="50moBti6aCu" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_5770908237139847710" />
         <ref role="3aRQSO" node="50moBti6aBJ" resolve="Fragment_5770908237139847663" />
+      </node>
+    </node>
+    <node concept="1Z4xEI" id="5mzTk9HhJsX" role="288GmO">
+      <property role="2_7ToJ" value="41" />
+      <property role="2_7ToH" value="32" />
+      <property role="2_7Toi" value="29" />
+      <property role="3_QSL4" value="2695197" />
+      <node concept="1Z59JW" id="5mzTk9HhJsY" role="1Z59JY">
+        <ref role="1Z59JV" node="3IhhXddO8_9" resolve="Test" />
+      </node>
+      <node concept="1Z59JW" id="5mzTk9HhJtt" role="1Z59JY">
+        <ref role="1Z59JV" node="5_5NNyD5X1j" resolve="Base" />
+      </node>
+      <node concept="1Z59JW" id="7RFpnk8mfyq" role="1Z59JY">
+        <ref role="1Z59JV" node="4GD8OfygJgz" resolve="Krussel" />
       </node>
     </node>
     <node concept="1V77HM" id="47AP7chTZ0" role="288GmO">
