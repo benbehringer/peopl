@@ -31,6 +31,10 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
       <concept id="7049226118380955944" name="de.htwsaar.peopl.core.structure.IColor" flags="ng" index="6kOzA">
@@ -76,6 +80,7 @@
       <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -67390,8 +67395,68 @@
     <ref role="2M0niE" node="6$_V4iGDnc7" />
     <node concept="u25OH" id="6$_V4iGDnc7" role="2M0niC">
       <node concept="2Hijyl" id="6$_V4iGDnc8" role="2Hjnvt">
-        <node concept="u2itw" id="6$_V4iGDnc9" role="3clFbG">
-          <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
+        <node concept="u2itq" id="6YNC3n4DMa5" role="3clFbG">
+          <node concept="u2itw" id="6YNC3n4DMaT" role="3uHU7w">
+            <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
+          </node>
+          <node concept="u2itq" id="6YNC3n4DM9f" role="3uHU7B">
+            <node concept="u2itq" id="6YNC3n4DM8t" role="3uHU7B">
+              <node concept="u2itq" id="6YNC3n4DM7J" role="3uHU7B">
+                <node concept="u2itq" id="6YNC3n4DM75" role="3uHU7B">
+                  <node concept="u2itq" id="6YNC3n4DM6v" role="3uHU7B">
+                    <node concept="u2itq" id="6YNC3n4DM5X" role="3uHU7B">
+                      <node concept="u2itq" id="6YNC3n4DM5v" role="3uHU7B">
+                        <node concept="u2itq" id="6YNC3n4DM55" role="3uHU7B">
+                          <node concept="u2itq" id="6YNC3n4DM4J" role="3uHU7B">
+                            <node concept="u2itq" id="6YNC3n4DM4u" role="3uHU7B">
+                              <node concept="u2itq" id="6YNC3n4DM4h" role="3uHU7B">
+                                <node concept="u2itw" id="6$_V4iGDnc9" role="3uHU7B">
+                                  <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
+                                </node>
+                                <node concept="u2itw" id="6YNC3n4DM4o" role="3uHU7w">
+                                  <ref role="u2itx" node="3Mj07xyswvg" resolve="Logging_Finest" />
+                                </node>
+                              </node>
+                              <node concept="u2itw" id="6YNC3n4DM4E" role="3uHU7w">
+                                <ref role="u2itx" node="3Mj07xysoIZ" resolve="Latches" />
+                              </node>
+                            </node>
+                            <node concept="u2itw" id="6YNC3n4DM4Z" role="3uHU7w">
+                              <ref role="u2itx" node="3Mj07xysBps" resolve="Statistics" />
+                            </node>
+                          </node>
+                          <node concept="u2itw" id="6YNC3n4DM5p" role="3uHU7w">
+                            <ref role="u2itx" node="3Mj07xysj$Q" resolve="Evictor" />
+                          </node>
+                        </node>
+                        <node concept="u2itw" id="6YNC3n4DM5R" role="3uHU7w">
+                          <ref role="u2itx" node="3Mj07xys$Nw" resolve="Memory_Budget" />
+                        </node>
+                      </node>
+                      <node concept="u2itw" id="6YNC3n4DM6p" role="3uHU7w">
+                        <ref role="u2itx" node="3Mj07xysbQG" resolve="Checksum" />
+                      </node>
+                    </node>
+                    <node concept="u2itw" id="6YNC3n4DM6Z" role="3uHU7w">
+                      <ref role="u2itx" node="3Mj07xysD89" resolve="Transactions" />
+                    </node>
+                  </node>
+                  <node concept="u2itw" id="6YNC3n4DM7D" role="3uHU7w">
+                    <ref role="u2itx" node="3Mj07xysn0S" resolve="INCompressor" />
+                  </node>
+                </node>
+                <node concept="u2itw" id="6YNC3n4DM8n" role="3uHU7w">
+                  <ref role="u2itx" node="3Mj07xysd$p" resolve="Cleaner" />
+                </node>
+              </node>
+              <node concept="u2itw" id="6YNC3n4DM99" role="3uHU7w">
+                <ref role="u2itx" node="3Mj07xysg94" resolve="DeleteOP" />
+              </node>
+            </node>
+            <node concept="u2itw" id="6YNC3n4DM9Z" role="3uHU7w">
+              <ref role="u2itx" node="3Mj07xysEQU" resolve="Verifier" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="ProductLineConfigurationTest" uuid="fa3c318f-32d3-4c2f-87cf-3c368bb93d0f" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="/Users/ben/Workspace/peopl/solutions/ProductLineConfigurationTest" type="default">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -10,7 +10,11 @@
     <dependency reexport="false">505b86b7-3a95-44b0-823f-afd50a2eafaa(de.htwsaar.peopl.core.featureConfig)</dependency>
   </dependencies>
   <languageVersions>
+    <language id="505b86b7-3a95-44b0-823f-afd50a2eafaa" fqName="de.htwsaar.peopl.core.featureConfig" version="0" />
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
+    <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" fqName="jetbrains.mps.lang.core" version="1" />
+    <language id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" fqName="jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
