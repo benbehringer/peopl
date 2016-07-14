@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -102,6 +103,12 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="6626851894249711936" name="jetbrains.mps.lang.extension.structure.ExtensionPointExpression" flags="nn" index="2O5UvJ">
+        <reference id="6626851894249712469" name="extensionPoint" index="2O5UnU" />
+      </concept>
+      <concept id="3175313036448560967" name="jetbrains.mps.lang.extension.structure.GetExtensionObjectsOperation" flags="nn" index="SfwO_" />
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="1196433923911" name="jetbrains.mps.lang.actions.structure.SideTransform_SimpleString" flags="nn" index="2h1dTh">
@@ -222,7 +229,9 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="3FK_9_" id="62a2r2cyWtw">
@@ -313,8 +322,43 @@
             </node>
           </node>
           <node concept="3clFbF" id="78DnH90TnhB" role="3cqZAp">
-            <node concept="3fqX7Q" id="78DnH90Tnlv" role="3clFbG">
-              <node concept="2OqwBi" id="78DnH90Tnlx" role="3fr31v">
+            <node concept="22lmx$" id="3qO9G22r5l4" role="3clFbG">
+              <node concept="1eOMI4" id="3qO9G22r5nS" role="3uHU7w">
+                <node concept="1Wc70l" id="3qO9G22r62W" role="1eOMHV">
+                  <node concept="2OqwBi" id="3qO9G22r6$z" role="3uHU7w">
+                    <node concept="2OqwBi" id="3qO9G22r6m$" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3qO9G22r6cT" role="2Oq$k0">
+                        <node concept="2O5UvJ" id="3qO9G22r665" role="2Oq$k0">
+                          <ref role="2O5UnU" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
+                        </node>
+                        <node concept="SfwO_" id="3qO9G22r6gR" role="2OqNvi" />
+                      </node>
+                      <node concept="1uHKPH" id="3qO9G22r6tn" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="3qO9G22r6El" role="2OqNvi">
+                      <ref role="37wK5l" to="zur:18ZMEb5jVwg" resolve="isPeoplBlock" />
+                      <node concept="2OqwBi" id="3qO9G22r6I_" role="37wK5m">
+                        <node concept="2JrnkZ" id="3qO9G22r6IA" role="2Oq$k0">
+                          <node concept="3bvxqY" id="3qO9G22r6IB" role="2JrQYb" />
+                        </node>
+                        <node concept="liA8E" id="3qO9G22r6IC" role="2OqNvi">
+                          <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="3qO9G22r5K2" role="3uHU7B">
+                    <node concept="2OqwBi" id="3qO9G22r5AN" role="2Oq$k0">
+                      <node concept="2O5UvJ" id="3qO9G22r5rB" role="2Oq$k0">
+                        <ref role="2O5UnU" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
+                      </node>
+                      <node concept="SfwO_" id="3qO9G22r5EM" role="2OqNvi" />
+                    </node>
+                    <node concept="3GX2aA" id="3qO9G22r5UC" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="78DnH90Tnlx" role="3uHU7B">
                 <node concept="2OqwBi" id="78DnH90Tnly" role="2Oq$k0">
                   <node concept="2JrnkZ" id="78DnH90Tnlz" role="2Oq$k0">
                     <node concept="3bvxqY" id="78DnH90Tnl$" role="2JrQYb" />
@@ -326,7 +370,7 @@
                 <node concept="liA8E" id="78DnH90TnlA" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                   <node concept="35c_gC" id="78DnH90TnlB" role="37wK5m">
-                    <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
+                    <ref role="35c_gD" to="tpee:fz12cDA" resolve="ClassConcept" />
                   </node>
                 </node>
               </node>
