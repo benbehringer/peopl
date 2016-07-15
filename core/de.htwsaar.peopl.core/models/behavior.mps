@@ -13,12 +13,12 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="p2kz" ref="r:362129e5-af4a-4a8c-9944-586e6f4a0a54(de.htwsaar.peopl.core.colors)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
+    <import index="xqxd" ref="r:bd7fc4c9-c56f-4330-9be9-464f58935927(de.htwsaar.peopl.core.runtime.colors)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
@@ -1390,11 +1390,11 @@
           <node concept="3cpWsn" id="574BmeO8SSx" role="3cpWs9">
             <property role="TrG5h" value="myColor" />
             <node concept="3uibUv" id="574BmeO8SSy" role="1tU5fm">
-              <ref role="3uigEE" to="p2kz:7qnV4XcDCdY" resolve="PaletteColor" />
+              <ref role="3uigEE" to="xqxd:7qnV4XcDCdY" resolve="PaletteColor" />
             </node>
             <node concept="2YIFZM" id="574BmeO8SXa" role="33vP2m">
-              <ref role="1Pybhc" to="p2kz:7qnV4XcDzMc" resolve="ColorDistribution" />
-              <ref role="37wK5l" to="p2kz:7qnV4XcFt$G" resolve="getNewColor" />
+              <ref role="1Pybhc" to="xqxd:7qnV4XcDzMc" resolve="ColorDistribution" />
+              <ref role="37wK5l" to="xqxd:7qnV4XcFt$G" resolve="getNewColor" />
               <node concept="37vLTw" id="1GfZLHujoEu" role="37wK5m">
                 <ref role="3cqZAo" node="1GfZLHuj5iy" resolve="nodeInAST" />
               </node>
@@ -1408,7 +1408,7 @@
                 <ref role="3cqZAo" node="574BmeO8SSx" resolve="myColor" />
               </node>
               <node concept="2OwXpG" id="574BmeO8Txx" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCeR" resolve="red" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCeR" resolve="red" />
               </node>
             </node>
             <node concept="2OqwBi" id="574BmeO8T9g" role="37vLTJ">
@@ -1426,7 +1426,7 @@
                 <ref role="3cqZAo" node="574BmeO8SSx" resolve="myColor" />
               </node>
               <node concept="2OwXpG" id="574BmeO8Uub" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCfz" resolve="green" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCfz" resolve="green" />
               </node>
             </node>
             <node concept="2OqwBi" id="574BmeO8TAZ" role="37vLTJ">
@@ -1444,7 +1444,7 @@
                 <ref role="3cqZAo" node="574BmeO8SSx" resolve="myColor" />
               </node>
               <node concept="2OwXpG" id="574BmeO8Uy4" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCgI" resolve="blue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCgI" resolve="blue" />
               </node>
             </node>
             <node concept="2OqwBi" id="574BmeO8TF$" role="37vLTJ">
@@ -1462,7 +1462,7 @@
                 <ref role="3cqZAo" node="574BmeO8SSx" resolve="myColor" />
               </node>
               <node concept="2OwXpG" id="574BmeO8UB2" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCiG" resolve="colorValue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCiG" resolve="colorValue" />
               </node>
             </node>
             <node concept="2OqwBi" id="574BmeO8TLb" role="37vLTJ">
@@ -1821,11 +1821,11 @@
           <node concept="3cpWsn" id="5rOrZhwqHtS" role="3cpWs9">
             <property role="TrG5h" value="interactionColor" />
             <node concept="3uibUv" id="5rOrZhwqHtT" role="1tU5fm">
-              <ref role="3uigEE" to="p2kz:7qnV4XcDCdY" resolve="PaletteColor" />
+              <ref role="3uigEE" to="xqxd:7qnV4XcDCdY" resolve="PaletteColor" />
             </node>
             <node concept="2YIFZM" id="5rOrZhwqHtU" role="33vP2m">
-              <ref role="1Pybhc" to="p2kz:7qnV4XcDzMc" resolve="ColorDistribution" />
-              <ref role="37wK5l" to="p2kz:7qnV4XcFt$G" resolve="getNewColor" />
+              <ref role="1Pybhc" to="xqxd:7qnV4XcDzMc" resolve="ColorDistribution" />
+              <ref role="37wK5l" to="xqxd:7qnV4XcFt$G" resolve="getNewColor" />
               <node concept="13iPFW" id="5rOrZhwqHUT" role="37wK5m" />
             </node>
           </node>
@@ -1837,7 +1837,7 @@
                 <ref role="3cqZAo" node="5rOrZhwqHtS" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="5rOrZhwqHu0" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCeR" resolve="red" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCeR" resolve="red" />
               </node>
             </node>
             <node concept="2OqwBi" id="5rOrZhwqHu1" role="37vLTJ">
@@ -1857,7 +1857,7 @@
                 <ref role="3cqZAo" node="5rOrZhwqHtS" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="5rOrZhwqHu8" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCfz" resolve="green" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCfz" resolve="green" />
               </node>
             </node>
             <node concept="2OqwBi" id="5rOrZhwqHu9" role="37vLTJ">
@@ -1877,7 +1877,7 @@
                 <ref role="3cqZAo" node="5rOrZhwqHtS" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="5rOrZhwqHug" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCgI" resolve="blue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCgI" resolve="blue" />
               </node>
             </node>
             <node concept="2OqwBi" id="5rOrZhwqHuh" role="37vLTJ">
@@ -1897,7 +1897,7 @@
                 <ref role="3cqZAo" node="5rOrZhwqHtS" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="5rOrZhwqHuo" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCiG" resolve="colorValue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCiG" resolve="colorValue" />
               </node>
             </node>
             <node concept="2OqwBi" id="5rOrZhwqHup" role="37vLTJ">
@@ -4683,11 +4683,11 @@
           <node concept="3cpWsn" id="4_HIB8It9ad" role="3cpWs9">
             <property role="TrG5h" value="interactionColor" />
             <node concept="3uibUv" id="4_HIB8It9ae" role="1tU5fm">
-              <ref role="3uigEE" to="p2kz:7qnV4XcDCdY" resolve="PaletteColor" />
+              <ref role="3uigEE" to="xqxd:7qnV4XcDCdY" resolve="PaletteColor" />
             </node>
             <node concept="2YIFZM" id="4_HIB8It9dT" role="33vP2m">
-              <ref role="1Pybhc" to="p2kz:7qnV4XcDzMc" resolve="ColorDistribution" />
-              <ref role="37wK5l" to="p2kz:7qnV4XcFt$G" resolve="getNewColor" />
+              <ref role="1Pybhc" to="xqxd:7qnV4XcDzMc" resolve="ColorDistribution" />
+              <ref role="37wK5l" to="xqxd:7qnV4XcFt$G" resolve="getNewColor" />
               <node concept="37vLTw" id="4_HIB8It9dU" role="37wK5m">
                 <ref role="3cqZAo" node="7sP5cmKRfqT" resolve="interactionModule" />
               </node>
@@ -4701,7 +4701,7 @@
                 <ref role="3cqZAo" node="4_HIB8It9ad" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="4_HIB8Itc4_" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCeR" resolve="red" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCeR" resolve="red" />
               </node>
             </node>
             <node concept="2OqwBi" id="4_HIB8It9vs" role="37vLTJ">
@@ -4721,7 +4721,7 @@
                 <ref role="3cqZAo" node="4_HIB8It9ad" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="4_HIB8ItcdH" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCfz" resolve="green" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCfz" resolve="green" />
               </node>
             </node>
             <node concept="2OqwBi" id="4_HIB8Ita2q" role="37vLTJ">
@@ -4741,7 +4741,7 @@
                 <ref role="3cqZAo" node="4_HIB8It9ad" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="4_HIB8ItcjX" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCgI" resolve="blue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCgI" resolve="blue" />
               </node>
             </node>
             <node concept="2OqwBi" id="4_HIB8Ita_Z" role="37vLTJ">
@@ -4761,7 +4761,7 @@
                 <ref role="3cqZAo" node="4_HIB8It9ad" resolve="interactionColor" />
               </node>
               <node concept="2OwXpG" id="4_HIB8ItcsA" role="2OqNvi">
-                <ref role="2Oxat5" to="p2kz:7qnV4XcDCiG" resolve="colorValue" />
+                <ref role="2Oxat5" to="xqxd:7qnV4XcDCiG" resolve="colorValue" />
               </node>
             </node>
             <node concept="2OqwBi" id="4_HIB8Itb96" role="37vLTJ">

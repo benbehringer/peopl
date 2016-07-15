@@ -2042,7 +2042,7 @@
                                           <node concept="3cpWsn" id="48zfXGK1gTH" role="3cpWs9">
                                             <property role="TrG5h" value="productLineConfig" />
                                             <node concept="3Tqbb2" id="48zfXGK1gTI" role="1tU5fm">
-                                              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                              <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                             </node>
                                             <node concept="10Nm6u" id="48zfXGK1gTJ" role="33vP2m" />
                                           </node>
@@ -2224,7 +2224,7 @@
                                                           <node concept="37vLTI" id="48zfXGK1gUZ" role="3clFbG">
                                                             <node concept="10QFUN" id="48zfXGK1gV0" role="37vLTx">
                                                               <node concept="3Tqbb2" id="48zfXGK1gV1" role="10QFUM">
-                                                                <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                                <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                               </node>
                                                               <node concept="2GrUjf" id="48zfXGK1gV2" role="10QFUP">
                                                                 <ref role="2Gs0qQ" node="48zfXGK1gTZ" resolve="rootNode" />
@@ -2242,7 +2242,7 @@
                                                         </node>
                                                         <node concept="1mIQ4w" id="48zfXGK1gV6" role="2OqNvi">
                                                           <node concept="chp4Y" id="39LcxIs76rj" role="cj9EA">
-                                                            <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                            <ref role="cht4Q" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                           </node>
                                                         </node>
                                                       </node>
@@ -2310,7 +2310,7 @@
                                                         </node>
                                                         <node concept="2OqwBi" id="48zfXGK1gVz" role="37vLTx">
                                                           <node concept="35c_gC" id="48zfXGK1gV$" role="2Oq$k0">
-                                                            <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                            <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                           </node>
                                                           <node concept="2qgKlT" id="48zfXGK1gV_" role="2OqNvi">
                                                             <ref role="37wK5l" to="uyk2:7s2UsmIYjaZ" resolve="createProductLineConfigurationAndSetModule" />
@@ -2492,7 +2492,7 @@
                                                 </node>
                                                 <node concept="2OqwBi" id="48zfXGK1gWJ" role="37vLTx">
                                                   <node concept="35c_gC" id="48zfXGK1gWK" role="2Oq$k0">
-                                                    <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                    <ref role="35c_gD" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                   </node>
                                                   <node concept="2qgKlT" id="48zfXGK1gWL" role="2OqNvi">
                                                     <ref role="37wK5l" to="uyk2:7s2UsmIYjaZ" resolve="createProductLineConfigurationAndSetModule" />
@@ -2828,6 +2828,9 @@
       </node>
       <node concept="tCFHf" id="4YD18KDbYoO" role="ftvYc">
         <ref role="tCJdB" node="7_qeRlZB1ZU" resolve="RebuildModuleDependencies" />
+      </node>
+      <node concept="tCFHf" id="hTDKY_THCB" role="ftvYc">
+        <ref role="tCJdB" to="7hqo:hTDKY_SxfW" resolve="ShowModuleDependencies" />
       </node>
     </node>
   </node>
@@ -3383,7 +3386,7 @@
                                               <node concept="3cpWsn" id="n9_gPCECEP" role="3cpWs9">
                                                 <property role="TrG5h" value="currentConfig" />
                                                 <node concept="3Tqbb2" id="n9_gPCECEK" role="1tU5fm">
-                                                  <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                  <ref role="ehGHo" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                 </node>
                                                 <node concept="2OqwBi" id="n9_gPCEBeA" role="33vP2m">
                                                   <node concept="2OqwBi" id="n9_gPCEAuY" role="2Oq$k0">
@@ -3394,7 +3397,7 @@
                                                       <node concept="I4A8Y" id="n9_gPCEAhc" role="2OqNvi" />
                                                     </node>
                                                     <node concept="2RRcyG" id="n9_gPCEACI" role="2OqNvi">
-                                                      <ref role="2RRcyH" to="sj65:1hL$JiAsepr" resolve="ProductLineConfigurations" />
+                                                      <ref role="2RRcyH" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
                                                     </node>
                                                   </node>
                                                   <node concept="1uHKPH" id="n9_gPCECh6" role="2OqNvi" />

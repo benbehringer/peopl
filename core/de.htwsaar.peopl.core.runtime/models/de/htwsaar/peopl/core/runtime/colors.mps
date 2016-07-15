@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:362129e5-af4a-4a8c-9944-586e6f4a0a54(de.htwsaar.peopl.core.colors)">
+<model ref="r:bd7fc4c9-c56f-4330-9be9-464f58935927(de.htwsaar.peopl.core.runtime.colors)">
   <persistence version="9" />
   <languages>
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -1137,7 +1137,7 @@
                       <ref role="2Gs0qQ" node="7qnV4XcFt_9" resolve="mod" />
                     </node>
                     <node concept="3TrcHB" id="574BmeO7Ldm" role="2OqNvi">
-                      <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="hexValue" />
+                      <ref role="3TsBF5" to="xf8r:574BmeO7L4B" resolve="intValue" />
                     </node>
                   </node>
                 </node>

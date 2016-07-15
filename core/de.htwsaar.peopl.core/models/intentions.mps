@@ -24,11 +24,9 @@
     <import index="9erk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.ide.findusages.model(MPS.Core/)" />
     <import index="ngmm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.ide.findusages.view(MPS.Core/)" />
     <import index="ngmn" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.findusages.view(MPS.Platform/)" />
-    <import index="mc83" ref="r:9e8f65d1-d515-42d7-8934-e679217a4c1c(de.htwsaar.peopl.core.dependencyTool)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -69,7 +67,6 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
-        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -2646,166 +2643,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2S6QgY" id="Sbpac41UL5">
-    <property role="3GE5qa" value="Unused" />
-    <property role="TrG5h" value="ToolTest" />
-    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="2S6ZIM" id="Sbpac41UL6" role="2ZfVej">
-      <node concept="3clFbS" id="Sbpac41UL7" role="2VODD2">
-        <node concept="3clFbF" id="Sbpac41UPV" role="3cqZAp">
-          <node concept="Xl_RD" id="Sbpac41UPU" role="3clFbG">
-            <property role="Xl_RC" value="ToolTest" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="Sbpac41UL8" role="2ZfgGD">
-      <node concept="3clFbS" id="Sbpac41UL9" role="2VODD2">
-        <node concept="3cpWs8" id="Sbpac41Waz" role="3cqZAp">
-          <node concept="3cpWsn" id="Sbpac41Wa$" role="3cpWs9">
-            <property role="TrG5h" value="scope" />
-            <node concept="3uibUv" id="Sbpac422re" role="1tU5fm">
-              <ref role="3uigEE" to="lui2:~SearchScope" resolve="SearchScope" />
-            </node>
-            <node concept="2YIFZM" id="Sbpac41Wsv" role="33vP2m">
-              <ref role="37wK5l" to="z1c3:~GlobalScope.getInstance():jetbrains.mps.project.GlobalScope" resolve="getInstance" />
-              <ref role="1Pybhc" to="z1c3:~GlobalScope" resolve="GlobalScope" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="Sbpac422vi" role="3cqZAp">
-          <node concept="3cpWsn" id="Sbpac422vg" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="query" />
-            <node concept="3uibUv" id="Sbpac422LV" role="1tU5fm">
-              <ref role="3uigEE" to="9erk:~SearchQuery" resolve="SearchQuery" />
-            </node>
-            <node concept="2ShNRf" id="Sbpac422NP" role="33vP2m">
-              <node concept="1pGfFk" id="Sbpac42bmN" role="2ShVmc">
-                <ref role="37wK5l" to="9erk:~SearchQuery.&lt;init&gt;(org.jetbrains.mps.openapi.model.SModelReference,org.jetbrains.mps.openapi.module.SearchScope)" resolve="SearchQuery" />
-                <node concept="2OqwBi" id="Sbpac42duB" role="37wK5m">
-                  <node concept="2JrnkZ" id="Sbpac42dt3" role="2Oq$k0">
-                    <node concept="2OqwBi" id="Sbpac42boq" role="2JrQYb">
-                      <node concept="2Sf5sV" id="Sbpac42bn8" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="Sbpac42brm" role="2OqNvi" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="Sbpac42dyk" role="2OqNvi">
-                    <ref role="37wK5l" to="mhbf:~SModel.getReference():org.jetbrains.mps.openapi.model.SModelReference" resolve="getReference" />
-                  </node>
-                </node>
-                <node concept="37vLTw" id="Sbpac42cxF" role="37wK5m">
-                  <ref role="3cqZAo" node="Sbpac41Wa$" resolve="scope" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="Sbpac42dEn" role="3cqZAp">
-          <node concept="3cpWsn" id="Sbpac42dEl" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="provider" />
-            <node concept="3uibUv" id="Sbpac42dIY" role="1tU5fm">
-              <ref role="3uigEE" to="9erk:~IResultProvider" resolve="IResultProvider" />
-            </node>
-            <node concept="2YIFZM" id="Sbpac42dOz" role="33vP2m">
-              <ref role="37wK5l" to="ngmm:~FindUtils.makeProvider(jetbrains.mps.ide.findusages.findalgorithm.finders.IFinder...):jetbrains.mps.ide.findusages.model.IResultProvider" resolve="makeProvider" />
-              <ref role="1Pybhc" to="ngmm:~FindUtils" resolve="FindUtils" />
-              <node concept="2ShNRf" id="Sbpac42dOS" role="37wK5m">
-                <node concept="1pGfFk" id="Sbpac42es6" role="2ShVmc">
-                  <ref role="37wK5l" to="mc83:Sbpac44Fte" resolve="ModuleDependenciesFinder" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="Sbpac42eNS" role="3cqZAp">
-          <node concept="3cpWsn" id="Sbpac42eNT" role="3cpWs9">
-            <property role="TrG5h" value="opt" />
-            <node concept="3uibUv" id="Sbpac42eNU" role="1tU5fm">
-              <ref role="3uigEE" to="ngmn:~UsageToolOptions" resolve="UsageToolOptions" />
-            </node>
-            <node concept="2OqwBi" id="Sbpac42fv4" role="33vP2m">
-              <node concept="2OqwBi" id="Sbpac42fqd" role="2Oq$k0">
-                <node concept="2OqwBi" id="Sbpac42flm" role="2Oq$k0">
-                  <node concept="2OqwBi" id="Sbpac42fhA" role="2Oq$k0">
-                    <node concept="2ShNRf" id="Sbpac42eQQ" role="2Oq$k0">
-                      <node concept="1pGfFk" id="Sbpac42fgR" role="2ShVmc">
-                        <ref role="37wK5l" to="ngmn:~UsageToolOptions.&lt;init&gt;()" resolve="UsageToolOptions" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="Sbpac42fk2" role="2OqNvi">
-                      <ref role="37wK5l" to="ngmn:~UsageToolOptions.allowRunAgain(boolean):jetbrains.mps.ide.findusages.view.UsageToolOptions" resolve="allowRunAgain" />
-                      <node concept="3clFbT" id="Sbpac42fkt" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="Sbpac42fod" role="2OqNvi">
-                    <ref role="37wK5l" to="ngmn:~UsageToolOptions.navigateIfSingle(boolean):jetbrains.mps.ide.findusages.view.UsageToolOptions" resolve="navigateIfSingle" />
-                    <node concept="3clFbT" id="Sbpac42foY" role="37wK5m">
-                      <property role="3clFbU" value="false" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="Sbpac42fsC" role="2OqNvi">
-                  <ref role="37wK5l" to="ngmn:~UsageToolOptions.forceNewTab(boolean):jetbrains.mps.ide.findusages.view.UsageToolOptions" resolve="forceNewTab" />
-                  <node concept="3clFbT" id="Sbpac42ftB" role="37wK5m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="Sbpac42fyP" role="2OqNvi">
-                <ref role="37wK5l" to="ngmn:~UsageToolOptions.notFoundMessage(java.lang.String):jetbrains.mps.ide.findusages.view.UsageToolOptions" resolve="notFoundMessage" />
-                <node concept="Xl_RD" id="Sbpac42f$3" role="37wK5m">
-                  <property role="Xl_RC" value="Model has no Usages" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="Sbpac44zoT" role="3cqZAp">
-          <node concept="2YIFZM" id="Sbpac44zt1" role="3clFbG">
-            <ref role="37wK5l" to="ngmn:~UsagesViewTool.showUsages(com.intellij.openapi.project.Project,jetbrains.mps.ide.findusages.model.IResultProvider,jetbrains.mps.ide.findusages.model.SearchQuery,jetbrains.mps.ide.findusages.view.UsageToolOptions):void" resolve="showUsages" />
-            <ref role="1Pybhc" to="mc83:Sbpac41FzC" resolve="ModuleDependencyTool" />
-            <node concept="2YIFZM" id="Sbpac44$F_" role="37wK5m">
-              <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
-              <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
-              <node concept="2OqwBi" id="Sbpac44$FA" role="37wK5m">
-                <node concept="2OqwBi" id="Sbpac44$FB" role="2Oq$k0">
-                  <node concept="1XNTG" id="Sbpac44$FC" role="2Oq$k0" />
-                  <node concept="liA8E" id="Sbpac44$FD" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="Sbpac44$FE" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="Sbpac44zOS" role="37wK5m">
-              <ref role="3cqZAo" node="Sbpac42dEl" resolve="provider" />
-            </node>
-            <node concept="37vLTw" id="Sbpac44zTi" role="37wK5m">
-              <ref role="3cqZAo" node="Sbpac422vg" resolve="query" />
-            </node>
-            <node concept="37vLTw" id="Sbpac44zVk" role="37wK5m">
-              <ref role="3cqZAo" node="Sbpac42eNT" resolve="opt" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2SaL7w" id="Sbpac41UWC" role="2ZfVeh">
-      <node concept="3clFbS" id="Sbpac41UWD" role="2VODD2">
-        <node concept="3clFbF" id="Sbpac41V0H" role="3cqZAp">
-          <node concept="3clFbT" id="Sbpac41V0G" role="3clFbG">
-            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
