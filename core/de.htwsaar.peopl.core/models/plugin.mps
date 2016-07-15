@@ -97,7 +97,7 @@
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
@@ -327,6 +327,18 @@
       <node concept="10P_77" id="7qfStAdyWEA" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="7qfStAdyWMr" role="jymVt" />
+    <node concept="3clFb_" id="3qO9G22qZ3M" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isPeoplEntryPoint" />
+      <node concept="3clFbS" id="3qO9G22qZ3P" role="3clF47" />
+      <node concept="3Tm1VV" id="3qO9G22qZ3Q" role="1B3o_S" />
+      <node concept="10P_77" id="3qO9G22qZ1j" role="3clF45" />
+      <node concept="37vLTG" id="3qO9G22qZ7L" role="3clF46">
+        <property role="TrG5h" value="entryPointCandidate" />
+        <node concept="3Tqbb2" id="3qO9G22qZ7K" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3clFb_" id="18ZMEb5jVwg" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />

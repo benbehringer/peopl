@@ -475,6 +475,32 @@
                   </node>
                 </node>
                 <node concept="2tJIrI" id="7rSRKyCQ80u" role="jymVt" />
+                <node concept="3clFb_" id="3qO9G22qZE_" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="isPeoplEntryPoint" />
+                  <node concept="3Tm1VV" id="3qO9G22qZEB" role="1B3o_S" />
+                  <node concept="10P_77" id="3qO9G22qZEC" role="3clF45" />
+                  <node concept="37vLTG" id="3qO9G22qZED" role="3clF46">
+                    <property role="TrG5h" value="entryPointCandidate" />
+                    <node concept="3Tqbb2" id="3qO9G22qZEE" role="1tU5fm" />
+                  </node>
+                  <node concept="3clFbS" id="3qO9G22qZEG" role="3clF47">
+                    <node concept="3clFbF" id="3qO9G22r3Qw" role="3cqZAp">
+                      <node concept="2OqwBi" id="3qO9G22r41U" role="3clFbG">
+                        <node concept="37vLTw" id="3qO9G22r3Qu" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3qO9G22qZED" resolve="entryPointCandidate" />
+                        </node>
+                        <node concept="1mIQ4w" id="3qO9G22r4bm" role="2OqNvi">
+                          <node concept="chp4Y" id="3qO9G22r4cg" role="cj9EA">
+                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="3qO9G22r4Ck" role="jymVt" />
                 <node concept="3clFb_" id="18ZMEb5jVHF" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
