@@ -19,9 +19,10 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="xqxd" ref="r:bd7fc4c9-c56f-4330-9be9-464f58935927(de.htwsaar.peopl.core.runtime.colors)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tp2q" ref="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" implicit="true" />
   </imports>
@@ -2534,6 +2535,60 @@
         <property role="TrG5h" value="currentNode" />
         <node concept="3Tqbb2" id="62a2r2cwpZ2" role="1tU5fm">
           <ref role="ehGHo" to="tpck:gw2VY9q" resolve="BaseConcept" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="2MCbcOZ3eXk" role="13h7CS">
+      <property role="TrG5h" value="getVPDataStorage" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="2MCbcOZ3eXl" role="1B3o_S" />
+      <node concept="3clFbS" id="2MCbcOZ3eXn" role="3clF47">
+        <node concept="3cpWs6" id="2MCbcOZ3gCM" role="3cqZAp">
+          <node concept="BsUDl" id="2MCbcOZ3gD4" role="3cqZAk">
+            <ref role="37wK5l" node="62a2r2cwpXS" resolve="getVPDataStorage" />
+            <node concept="2OqwBi" id="6u5tLuqNNF8" role="37wK5m">
+              <node concept="2OqwBi" id="6u5tLuqNMnA" role="2Oq$k0">
+                <node concept="2OqwBi" id="6u5tLuqNL2b" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6u5tLuqNJGU" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6u5tLuqNIsN" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6u5tLuqNHb7" role="2Oq$k0">
+                        <node concept="37vLTw" id="2MCbcOZ3h30" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2MCbcOZ3gQ3" resolve="solution" />
+                        </node>
+                        <node concept="liA8E" id="6u5tLuqNHOW" role="2OqNvi">
+                          <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6u5tLuqNJ9B" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6u5tLuqNKq8" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6u5tLuqNLIj" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6u5tLuqNN6o" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6u5tLuqNOqq" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2MCbcOZ3fo1" role="3clF45">
+        <ref role="ehGHo" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
+      </node>
+      <node concept="37vLTG" id="2MCbcOZ3gQ3" role="3clF46">
+        <property role="TrG5h" value="solution" />
+        <node concept="3uibUv" id="2MCbcOZ3gQ2" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
       </node>
     </node>

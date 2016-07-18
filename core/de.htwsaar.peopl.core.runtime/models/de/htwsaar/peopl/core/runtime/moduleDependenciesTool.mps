@@ -576,49 +576,19 @@
               <node concept="3Tqbb2" id="6u5tLuqNC_f" role="10QFUM">
                 <ref role="ehGHo" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
               </node>
-              <node concept="2OqwBi" id="6u5tLuqNAaa" role="10QFUP">
+              <node concept="2OqwBi" id="2MCbcOZ3uq0" role="10QFUP">
                 <node concept="2OqwBi" id="6u5tLuqN$RV" role="2Oq$k0">
                   <node concept="35c_gC" id="6u5tLuqNzHF" role="2Oq$k0">
                     <ref role="35c_gD" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
                   </node>
-                  <node concept="2qgKlT" id="6u5tLuqN_zl" role="2OqNvi">
-                    <ref role="37wK5l" to="kpvh:62a2r2cwpXS" resolve="getVPDataStorage" />
-                    <node concept="2OqwBi" id="6u5tLuqNNF8" role="37wK5m">
-                      <node concept="2OqwBi" id="6u5tLuqNMnA" role="2Oq$k0">
-                        <node concept="2OqwBi" id="6u5tLuqNL2b" role="2Oq$k0">
-                          <node concept="2OqwBi" id="6u5tLuqNJGU" role="2Oq$k0">
-                            <node concept="2OqwBi" id="6u5tLuqNIsN" role="2Oq$k0">
-                              <node concept="2OqwBi" id="6u5tLuqNHb7" role="2Oq$k0">
-                                <node concept="37vLTw" id="6u5tLuqNEl1" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="57CoWlg7AJK" resolve="solution" />
-                                </node>
-                                <node concept="liA8E" id="6u5tLuqNHOW" role="2OqNvi">
-                                  <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="6u5tLuqNJ9B" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="6u5tLuqNKq8" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="6u5tLuqNLIj" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SModel.getRootNodes():java.lang.Iterable" resolve="getRootNodes" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="6u5tLuqNN6o" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Iterable.iterator():java.util.Iterator" resolve="iterator" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="6u5tLuqNOqq" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~Iterator.next():java.lang.Object" resolve="next" />
-                      </node>
+                  <node concept="2qgKlT" id="2MCbcOZ3rVr" role="2OqNvi">
+                    <ref role="37wK5l" to="kpvh:2MCbcOZ3eXk" resolve="getVPDataStorage" />
+                    <node concept="37vLTw" id="2MCbcOZ3tKS" role="37wK5m">
+                      <ref role="3cqZAo" node="57CoWlg7AJK" resolve="solution" />
                     </node>
                   </node>
                 </node>
-                <node concept="1mfA1w" id="6u5tLuqNAIJ" role="2OqNvi" />
+                <node concept="1mfA1w" id="2MCbcOZ3v0l" role="2OqNvi" />
               </node>
             </node>
           </node>
