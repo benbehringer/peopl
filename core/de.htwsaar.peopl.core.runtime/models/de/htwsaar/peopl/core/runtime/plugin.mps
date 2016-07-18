@@ -852,19 +852,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="bDbX50WjBY" role="3cqZAp">
-              <node concept="2OqwBi" id="bDbX50WjBZ" role="3clFbG">
-                <node concept="37vLTw" id="bDbX50WjC0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
-                </node>
-                <node concept="liA8E" id="bDbX50WjC1" role="2OqNvi">
-                  <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
-                  <node concept="3clFbT" id="bDbX50WjC2" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="3clFbC" id="bDbX50WjC3" role="3clFbw">
             <node concept="10Nm6u" id="bDbX50WjC4" role="3uHU7w" />
@@ -882,6 +869,19 @@
               <ref role="37wK5l" to="899z:bDbX50Wg4V" resolve="showContent" />
               <node concept="37vLTw" id="bDbX50Wl42" role="37wK5m">
                 <ref role="3cqZAo" node="bDbX50VfHa" resolve="solution" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2MCbcOZ23sn" role="3cqZAp">
+          <node concept="2OqwBi" id="2MCbcOZ23w7" role="3clFbG">
+            <node concept="37vLTw" id="2MCbcOZ23sl" role="2Oq$k0">
+              <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
+            </node>
+            <node concept="liA8E" id="2MCbcOZ24o2" role="2OqNvi">
+              <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
+              <node concept="3clFbT" id="2MCbcOZ24o$" role="37wK5m">
+                <property role="3clFbU" value="true" />
               </node>
             </node>
           </node>

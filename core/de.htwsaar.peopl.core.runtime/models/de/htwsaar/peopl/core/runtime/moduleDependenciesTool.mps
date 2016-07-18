@@ -1463,22 +1463,33 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2MCbcOZ2EVu" role="3cqZAp">
+          <node concept="3cpWsn" id="2MCbcOZ2EVv" role="3cpWs9">
+            <property role="TrG5h" value="showPanel" />
+            <node concept="3uibUv" id="2MCbcOZ2EVw" role="1tU5fm">
+              <ref role="3uigEE" node="1frSO1gjzmj" resolve="ModDefPanel" />
+            </node>
+            <node concept="2ShNRf" id="2MCbcOZ2F0x" role="33vP2m">
+              <node concept="1pGfFk" id="2MCbcOZ2F0y" role="2ShVmc">
+                <ref role="37wK5l" node="1frSO1gjzQB" resolve="ModDefPanel" />
+                <node concept="37vLTw" id="2MCbcOZ2F0z" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50Wgas" resolve="solution" />
+                </node>
+                <node concept="37vLTw" id="2MCbcOZ2F0$" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50WgEf" resolve="project" />
+                </node>
+                <node concept="Xjq3P" id="2MCbcOZ2F0_" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="bDbX50Ww3i" role="3cqZAp">
           <node concept="2OqwBi" id="bDbX50Ww3j" role="3clFbG">
             <node concept="Xjq3P" id="bDbX50Ww3k" role="2Oq$k0" />
             <node concept="liA8E" id="bDbX50Ww3l" role="2OqNvi">
               <ref role="37wK5l" to="71xd:~BaseTool.addContent(javax.swing.JComponent,java.lang.String,javax.swing.Icon,boolean):com.intellij.ui.content.Content" resolve="addContent" />
-              <node concept="2ShNRf" id="bDbX50Ww3m" role="37wK5m">
-                <node concept="1pGfFk" id="bDbX50Ww3n" role="2ShVmc">
-                  <ref role="37wK5l" node="1frSO1gjzQB" resolve="ModDefPanel" />
-                  <node concept="37vLTw" id="bDbX50Ww3o" role="37wK5m">
-                    <ref role="3cqZAo" node="bDbX50Wgas" resolve="solution" />
-                  </node>
-                  <node concept="37vLTw" id="bDbX50Ww3p" role="37wK5m">
-                    <ref role="3cqZAo" node="bDbX50WgEf" resolve="project" />
-                  </node>
-                  <node concept="Xjq3P" id="2MCbcOZ1gQr" role="37wK5m" />
-                </node>
+              <node concept="37vLTw" id="2MCbcOZ2F8i" role="37wK5m">
+                <ref role="3cqZAo" node="2MCbcOZ2EVv" resolve="showPanel" />
               </node>
               <node concept="2OqwBi" id="bDbX50Ww3q" role="37wK5m">
                 <node concept="37vLTw" id="bDbX50Ww3r" role="2Oq$k0">
@@ -1495,7 +1506,17 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="bDbX50WvEv" role="3cqZAp" />
+        <node concept="3clFbF" id="2MCbcOZ2Exp" role="3cqZAp">
+          <node concept="2OqwBi" id="2MCbcOZ2EAc" role="3clFbG">
+            <node concept="Xjq3P" id="2MCbcOZ2Exn" role="2Oq$k0" />
+            <node concept="liA8E" id="2MCbcOZ2EGj" role="2OqNvi">
+              <ref role="37wK5l" to="71xd:~BaseTool.setSelectedComponent(javax.swing.JComponent):void" resolve="setSelectedComponent" />
+              <node concept="37vLTw" id="2MCbcOZ2Fbq" role="37wK5m">
+                <ref role="3cqZAo" node="2MCbcOZ2EVv" resolve="showPanel" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="bDbX50Wg0x" role="1B3o_S" />
       <node concept="3cqZAl" id="bDbX50Wg4S" role="3clF45" />
