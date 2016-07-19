@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="de.htwsaar.peopl.baseLanguageExtension.statistics" uuid="b8ce4b9c-8cb8-437c-aebb-54e20014ece4" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
-    <modelRoot contentPath="/Users/emrolab/Documents/peopl/solutions/de.htwsaar.peopl.baseLanguageExtension.statistics" type="default">
-      <sourceRoot location="models" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot location="." />
     </modelRoot>
   </models>
   <sourcePath />

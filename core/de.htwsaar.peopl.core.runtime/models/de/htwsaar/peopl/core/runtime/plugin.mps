@@ -821,7 +821,7 @@
       <node concept="tCFHf" id="4YD18KDbYoO" role="ftvYc">
         <ref role="tCJdB" node="7_qeRlZB1ZU" resolve="RebuildShowModuleDependencies" />
       </node>
-      <node concept="tCFHf" id="2MCbcOZ38Nz" role="ftvYc">
+      <node concept="tCFHf" id="2ySGz2SXJYE" role="ftvYc">
         <ref role="tCJdB" node="2MCbcOZ3491" resolve="ShowStatistic" />
       </node>
     </node>
@@ -1847,19 +1847,19 @@
       <property role="TrG5h" value="openStatisticsTool" />
       <node concept="3cqZAl" id="2MCbcOZ38Tv" role="3clF45" />
       <node concept="3clFbS" id="2MCbcOZ38Tw" role="3clF47">
-        <node concept="3cpWs8" id="2MCbcOZ38Tx" role="3cqZAp">
-          <node concept="3cpWsn" id="2MCbcOZ38Ty" role="3cpWs9">
+        <node concept="3cpWs8" id="2ySGz2SXPsH" role="3cqZAp">
+          <node concept="3cpWsn" id="2ySGz2SXPsI" role="3cpWs9">
             <property role="TrG5h" value="tool" />
-            <node concept="3uibUv" id="2MCbcOZ4XL_" role="1tU5fm">
+            <node concept="3uibUv" id="2ySGz2SXPsJ" role="1tU5fm">
               <ref role="3uigEE" to="uce1:hTDKY_TP37" resolve="StatisticsTool" />
             </node>
-            <node concept="2OqwBi" id="2MCbcOZ38T$" role="33vP2m">
-              <node concept="37vLTw" id="2MCbcOZ38T_" role="2Oq$k0">
+            <node concept="2OqwBi" id="2ySGz2SXP_H" role="33vP2m">
+              <node concept="37vLTw" id="2ySGz2SXPzl" role="2Oq$k0">
                 <ref role="3cqZAo" node="2MCbcOZ38U0" resolve="project" />
               </node>
-              <node concept="liA8E" id="2MCbcOZ38TA" role="2OqNvi">
+              <node concept="liA8E" id="2ySGz2SXQ6t" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~MPSProject.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
-                <node concept="3VsKOn" id="2MCbcOZ38TB" role="37wK5m">
+                <node concept="3VsKOn" id="2ySGz2SXQ8t" role="37wK5m">
                   <ref role="3VsUkX" to="uce1:hTDKY_TP37" resolve="StatisticsTool" />
                 </node>
               </node>
@@ -1870,8 +1870,8 @@
           <node concept="3clFbS" id="2MCbcOZ38TD" role="3clFbx">
             <node concept="3clFbF" id="2MCbcOZ38TE" role="3cqZAp">
               <node concept="37vLTI" id="2MCbcOZ38TF" role="3clFbG">
-                <node concept="37vLTw" id="2MCbcOZ38TG" role="37vLTJ">
-                  <ref role="3cqZAo" node="2MCbcOZ38Ty" resolve="tool" />
+                <node concept="37vLTw" id="2ySGz2SXQip" role="37vLTJ">
+                  <ref role="3cqZAo" node="2ySGz2SXPsI" resolve="tool" />
                 </node>
                 <node concept="2ShNRf" id="2MCbcOZ38TH" role="37vLTx">
                   <node concept="1pGfFk" id="2MCbcOZ38TI" role="2ShVmc">
@@ -1886,15 +1886,15 @@
           </node>
           <node concept="3clFbC" id="2MCbcOZ38TK" role="3clFbw">
             <node concept="10Nm6u" id="2MCbcOZ38TL" role="3uHU7w" />
-            <node concept="37vLTw" id="2MCbcOZ38TM" role="3uHU7B">
-              <ref role="3cqZAo" node="2MCbcOZ38Ty" resolve="tool" />
+            <node concept="37vLTw" id="2ySGz2SXQeK" role="3uHU7B">
+              <ref role="3cqZAo" node="2ySGz2SXPsI" resolve="tool" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2MCbcOZ38TN" role="3cqZAp">
           <node concept="2OqwBi" id="2MCbcOZ38TO" role="3clFbG">
-            <node concept="37vLTw" id="2MCbcOZ38TP" role="2Oq$k0">
-              <ref role="3cqZAo" node="2MCbcOZ38Ty" resolve="tool" />
+            <node concept="37vLTw" id="2ySGz2SXQiS" role="2Oq$k0">
+              <ref role="3cqZAo" node="2ySGz2SXPsI" resolve="tool" />
             </node>
             <node concept="liA8E" id="2MCbcOZ38TQ" role="2OqNvi">
               <ref role="37wK5l" to="uce1:bDbX50Wg4V" resolve="refreshContent" />
@@ -1906,8 +1906,8 @@
         </node>
         <node concept="3clFbF" id="2MCbcOZ38TS" role="3cqZAp">
           <node concept="2OqwBi" id="2MCbcOZ38TT" role="3clFbG">
-            <node concept="37vLTw" id="2MCbcOZ38TU" role="2Oq$k0">
-              <ref role="3cqZAo" node="2MCbcOZ38Ty" resolve="tool" />
+            <node concept="37vLTw" id="2ySGz2SXQjp" role="2Oq$k0">
+              <ref role="3cqZAo" node="2ySGz2SXPsI" resolve="tool" />
             </node>
             <node concept="liA8E" id="2MCbcOZ38TV" role="2OqNvi">
               <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />

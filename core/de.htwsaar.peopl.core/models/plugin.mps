@@ -60,7 +60,6 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -458,18 +457,6 @@
         <node concept="3uibUv" id="bDbX50YlYI" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="6HVbCMlaN3n" role="jymVt">
-      <property role="1EzhhJ" value="true" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="numberOfClassesUnderEntryPoint" />
-      <node concept="3clFbS" id="6HVbCMlaN3q" role="3clF47" />
-      <node concept="3Tm1VV" id="6HVbCMlaN3r" role="1B3o_S" />
-      <node concept="10Oyi0" id="6HVbCMlaN0l" role="3clF45" />
-      <node concept="37vLTG" id="6HVbCMlaN8d" role="3clF46">
-        <property role="TrG5h" value="rootNode" />
-        <node concept="3Tqbb2" id="6HVbCMlaN8c" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="4CFdEKN9mKd" role="1B3o_S" />

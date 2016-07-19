@@ -1966,7 +1966,7 @@
                   <ref role="3cqZAo" node="8lBKaMjdij" resolve="frame" />
                 </node>
                 <node concept="liA8E" id="8lBKaMjeQ6" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Component.getBackground():java.awt.Color" resolve="getBackground" />
+                  <ref role="37wK5l" to="z60i:~Window.getBackground():java.awt.Color" resolve="getBackground" />
                 </node>
               </node>
             </node>
