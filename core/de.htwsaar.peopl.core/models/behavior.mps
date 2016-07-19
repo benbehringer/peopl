@@ -1390,7 +1390,7 @@
         <node concept="3cpWs8" id="574BmeO8SSw" role="3cqZAp">
           <node concept="3cpWsn" id="574BmeO8SSx" role="3cpWs9">
             <property role="TrG5h" value="myColor" />
-            <node concept="3uibUv" id="574BmeO8SSy" role="1tU5fm">
+            <node concept="3uibUv" id="64eR99jOjAA" role="1tU5fm">
               <ref role="3uigEE" to="xqxd:7qnV4XcDCdY" resolve="PaletteColor" />
             </node>
             <node concept="2YIFZM" id="574BmeO8SXa" role="33vP2m">

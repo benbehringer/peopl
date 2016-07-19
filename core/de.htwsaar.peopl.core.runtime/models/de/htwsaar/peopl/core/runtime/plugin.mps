@@ -39,7 +39,7 @@
     <import index="9w4s" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
-    <import index="ut2g" ref="r:7c173ff0-b69f-4f5d-b74d-274781eb3042(de.htwsaar.peopl.core.runtime.showStatisticsTool)" />
+    <import index="uce1" ref="r:a268bac9-fde8-45f5-92f2-5958dfe8555d(de.htwsaar.peopl.core.statistics.plugin)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -1851,7 +1851,7 @@
           <node concept="3cpWsn" id="2MCbcOZ38Ty" role="3cpWs9">
             <property role="TrG5h" value="tool" />
             <node concept="3uibUv" id="2MCbcOZ4XL_" role="1tU5fm">
-              <ref role="3uigEE" to="ut2g:hTDKY_TP37" resolve="StatisticsTool" />
+              <ref role="3uigEE" to="uce1:hTDKY_TP37" resolve="StatisticsTool" />
             </node>
             <node concept="2OqwBi" id="2MCbcOZ38T$" role="33vP2m">
               <node concept="37vLTw" id="2MCbcOZ38T_" role="2Oq$k0">
@@ -1860,7 +1860,7 @@
               <node concept="liA8E" id="2MCbcOZ38TA" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~MPSProject.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
                 <node concept="3VsKOn" id="2MCbcOZ38TB" role="37wK5m">
-                  <ref role="3VsUkX" to="ut2g:hTDKY_TP37" resolve="StatisticsTool" />
+                  <ref role="3VsUkX" to="uce1:hTDKY_TP37" resolve="StatisticsTool" />
                 </node>
               </node>
             </node>
@@ -1875,7 +1875,7 @@
                 </node>
                 <node concept="2ShNRf" id="2MCbcOZ38TH" role="37vLTx">
                   <node concept="1pGfFk" id="2MCbcOZ38TI" role="2ShVmc">
-                    <ref role="37wK5l" to="ut2g:hTDKY_TP7w" resolve="StatisticsTool" />
+                    <ref role="37wK5l" to="uce1:hTDKY_TP7w" resolve="StatisticsTool" />
                     <node concept="37vLTw" id="2MCbcOZ38TJ" role="37wK5m">
                       <ref role="3cqZAo" node="2MCbcOZ38U0" resolve="project" />
                     </node>
@@ -1897,7 +1897,7 @@
               <ref role="3cqZAo" node="2MCbcOZ38Ty" resolve="tool" />
             </node>
             <node concept="liA8E" id="2MCbcOZ38TQ" role="2OqNvi">
-              <ref role="37wK5l" to="ut2g:bDbX50Wg4V" resolve="refreshContent" />
+              <ref role="37wK5l" to="uce1:bDbX50Wg4V" resolve="refreshContent" />
               <node concept="37vLTw" id="2MCbcOZ38TR" role="37wK5m">
                 <ref role="3cqZAo" node="2MCbcOZ38TY" resolve="solution" />
               </node>
