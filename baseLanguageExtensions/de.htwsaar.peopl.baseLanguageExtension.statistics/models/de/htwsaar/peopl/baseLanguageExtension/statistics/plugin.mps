@@ -129,6 +129,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -209,6 +210,12 @@
       <concept id="6478870542308703666" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MemberPlaceholder" flags="ng" index="3tTeZs">
         <property id="6478870542308703667" name="caption" index="3tTeZt" />
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -343,6 +350,44 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFb_" id="2BPK1l5GvAU" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="getExtensionId" />
+                  <node concept="3Tm1VV" id="2BPK1l5GvAW" role="1B3o_S" />
+                  <node concept="3uibUv" id="2BPK1l5GvAX" role="3clF45">
+                    <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                  </node>
+                  <node concept="3clFbS" id="2BPK1l5GvAZ" role="3clF47">
+                    <node concept="3cpWs6" id="2BPK1l5GvJC" role="3cqZAp">
+                      <node concept="Xl_RD" id="2BPK1l5GvZd" role="3cqZAk">
+                        <property role="Xl_RC" value="Extension" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="7QAJkoD05wu" role="jymVt" />
+                <node concept="3clFb_" id="7QAJkoD05Qq" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="handleDoubleClick" />
+                  <node concept="3Tm1VV" id="7QAJkoD05Qs" role="1B3o_S" />
+                  <node concept="3cqZAl" id="7QAJkoD05Qt" role="3clF45" />
+                  <node concept="37vLTG" id="7QAJkoD05Qu" role="3clF46">
+                    <property role="TrG5h" value="clickedOnNode" />
+                    <node concept="3uibUv" id="7QAJkoD05Qv" role="1tU5fm">
+                      <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="7QAJkoD05Qx" role="3clF47">
+                    <node concept="34ab3g" id="7QAJkoD18Wh" role="3cqZAp">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="Xl_RD" id="7QAJkoD18Wj" role="34bqiv">
+                        <property role="Xl_RC" value=" extension CLICK!" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="2tJIrI" id="79TYYNi8SFk" role="jymVt" />
                 <node concept="3clFb_" id="79TYYNi8dN8" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -366,6 +411,9 @@
                             </node>
                             <node concept="37vLTw" id="64eR99jR3Bt" role="37wK5m">
                               <ref role="3cqZAo" node="64eR99jR3xt" resolve="project" />
+                            </node>
+                            <node concept="37vLTw" id="7QAJkoCZnv3" role="37wK5m">
+                              <ref role="3cqZAo" node="7QAJkoCZng0" resolve="extensionObject" />
                             </node>
                           </node>
                         </node>
@@ -391,6 +439,12 @@
                     <property role="TrG5h" value="project" />
                     <node concept="3uibUv" id="64eR99jR3A9" role="1tU5fm">
                       <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+                    </node>
+                  </node>
+                  <node concept="37vLTG" id="7QAJkoCZng0" role="3clF46">
+                    <property role="TrG5h" value="extensionObject" />
+                    <node concept="3uibUv" id="7QAJkoCZnmx" role="1tU5fm">
+                      <ref role="3uigEE" to="uce1:79TYYNi7bav" resolve="IExt_PeoplStatisticsExtension" />
                     </node>
                   </node>
                 </node>
@@ -439,6 +493,16 @@
         <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
       </node>
     </node>
+    <node concept="312cEg" id="7QAJkoD1xn6" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="extensionObject" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="7QAJkoD1wvS" role="1B3o_S" />
+      <node concept="3uibUv" id="7QAJkoD1y4i" role="1tU5fm">
+        <ref role="3uigEE" to="uce1:79TYYNi7bav" resolve="IExt_PeoplStatisticsExtension" />
+      </node>
+    </node>
     <node concept="3clFbW" id="79TYYNi8r$b" role="jymVt">
       <node concept="3cqZAl" id="79TYYNi8r$c" role="3clF45" />
       <node concept="3clFbS" id="79TYYNi8r$e" role="3clF47">
@@ -484,6 +548,30 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="7QAJkoD1yto" role="3cqZAp">
+          <node concept="37vLTI" id="7QAJkoD1FGq" role="3clFbG">
+            <node concept="37vLTw" id="7QAJkoD1GhM" role="37vLTx">
+              <ref role="3cqZAo" node="7QAJkoCZow4" resolve="extensionObject" />
+            </node>
+            <node concept="2OqwBi" id="7QAJkoD1y_7" role="37vLTJ">
+              <node concept="Xjq3P" id="7QAJkoD1ytm" role="2Oq$k0" />
+              <node concept="2OwXpG" id="7QAJkoD1Ack" role="2OqNvi">
+                <ref role="2Oxat5" node="7QAJkoD1xn6" resolve="extensionObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="7QAJkoD2iV4" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="7QAJkoD2j1Q" role="34bqiv">
+            <node concept="37vLTw" id="7QAJkoD2jA2" role="3uHU7w">
+              <ref role="3cqZAo" node="7QAJkoCZow4" resolve="extensionObject" />
+            </node>
+            <node concept="Xl_RD" id="7QAJkoD2iV6" role="3uHU7B">
+              <property role="Xl_RC" value="extensionObject in Baselang = " />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="79TYYNi8rw5" role="1B3o_S" />
       <node concept="37vLTG" id="79TYYNi8rF4" role="3clF46">
@@ -504,6 +592,12 @@
           <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
         </node>
       </node>
+      <node concept="37vLTG" id="7QAJkoCZow4" role="3clF46">
+        <property role="TrG5h" value="extensionObject" />
+        <node concept="3uibUv" id="7QAJkoCZo_Y" role="1tU5fm">
+          <ref role="3uigEE" to="uce1:79TYYNi7bav" resolve="IExt_PeoplStatisticsExtension" />
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="79TYYNi8ebS" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -515,6 +609,7 @@
         <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
       </node>
       <node concept="3clFbS" id="79TYYNi8ebW" role="3clF47">
+        <node concept="3clFbH" id="7QAJkoCZoAp" role="3cqZAp" />
         <node concept="3cpWs8" id="79TYYNi8hmZ" role="3cqZAp">
           <node concept="3cpWsn" id="79TYYNi8hn0" role="3cpWs9">
             <property role="TrG5h" value="extensionRoot" />
@@ -522,10 +617,13 @@
               <ref role="3uigEE" to="7e8u:~MPSTreeNode" resolve="MPSTreeNode" />
             </node>
             <node concept="2ShNRf" id="79TYYNi8hTj" role="33vP2m">
-              <node concept="1pGfFk" id="79TYYNi8i6G" role="2ShVmc">
-                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-                <node concept="Xl_RD" id="79TYYNi8ioq" role="37wK5m">
+              <node concept="1pGfFk" id="7QAJkoD1oP2" role="2ShVmc">
+                <ref role="37wK5l" to="uce1:7QAJkoCZ5aR" resolve="Statistics_ExtensionRootTreeNode" />
+                <node concept="Xl_RD" id="7QAJkoD1r_Q" role="37wK5m">
                   <property role="Xl_RC" value="BaseLangExt" />
+                </node>
+                <node concept="37vLTw" id="7QAJkoD1G$g" role="37wK5m">
+                  <ref role="3cqZAo" node="7QAJkoD1xn6" resolve="extensionObject" />
                 </node>
               </node>
             </node>

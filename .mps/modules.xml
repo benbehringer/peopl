@@ -3,7 +3,6 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/de.htwsaar.peopl.baseLanguageExtension.runtime.msd" folder="peopl.baseLanguageExtension" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.statistics/de.htwsaar.peopl.baseLanguageExtension.statistics.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.statistics/de.htwsaar.peopl.baseLanguageExtension.statistics.msd" folder="peopl.baseLanguageExtension" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.mpl" folder="peopl.baseLanguageExtension" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" folder="peopl.baseLanguageExtension.projectview" />
