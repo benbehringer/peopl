@@ -72,6 +72,10 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
@@ -1306,6 +1310,19 @@
   <node concept="312cEu" id="hTDKY_TP37">
     <property role="TrG5h" value="ModuleDependenciesTool" />
     <node concept="2tJIrI" id="hTDKY_TP3G" role="jymVt" />
+    <node concept="Wx3nA" id="6q8vRaHJSTd" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="myID" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6q8vRaHJSPo" role="1B3o_S" />
+      <node concept="3uibUv" id="6q8vRaHJSTa" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="6q8vRaHJSVz" role="33vP2m">
+        <property role="Xl_RC" value="Module Dependencies" />
+      </node>
+    </node>
     <node concept="3clFbW" id="6q8vRaHIGyg" role="jymVt">
       <node concept="3cqZAl" id="6q8vRaHIGyh" role="3clF45" />
       <node concept="3clFbS" id="6q8vRaHIGyj" role="3clF47">
@@ -1314,8 +1331,8 @@
           <node concept="37vLTw" id="6q8vRaHIGPJ" role="37wK5m">
             <ref role="3cqZAo" node="6q8vRaHIGKd" resolve="project" />
           </node>
-          <node concept="37vLTw" id="6q8vRaHIGSb" role="37wK5m">
-            <ref role="3cqZAo" node="6q8vRaHIGKo" resolve="id" />
+          <node concept="37vLTw" id="6q8vRaHJSY4" role="37wK5m">
+            <ref role="3cqZAo" node="6q8vRaHJSTd" resolve="myID" />
           </node>
         </node>
       </node>
@@ -1324,12 +1341,6 @@
         <property role="TrG5h" value="project" />
         <node concept="3uibUv" id="6q8vRaHIGKc" role="1tU5fm">
           <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6q8vRaHIGKo" role="3clF46">
-        <property role="TrG5h" value="id" />
-        <node concept="3uibUv" id="6q8vRaHIGNI" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
       </node>
     </node>
