@@ -25,7 +25,6 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
-    <import index="899z" ref="r:f30ef3dc-2fcb-4703-be7c-97e799d3d1cf(de.htwsaar.peopl.core.runtime.moduleDependenciesTool)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="mk8z" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.progress(MPS.Core/)" />
@@ -40,6 +39,8 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" />
     <import index="uce1" ref="r:a268bac9-fde8-45f5-92f2-5958dfe8555d(de.htwsaar.peopl.core.statistics.plugin)" />
+    <import index="gdbn" ref="r:b91777f9-f446-48cd-aaff-34f62ecc4eb1(de.htwsaar.peopl.core.tools.moduleDependenciesTool)" />
+    <import index="1y7j" ref="r:94b1d0a3-74d1-4232-8133-917464e53f8a(de.htwsaar.peopl.core.tools.generalPeoplTool)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
@@ -297,7 +298,6 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -829,25 +829,25 @@
   <node concept="sE7Ow" id="7_qeRlZB1ZU">
     <property role="TrG5h" value="RebuildShowModuleDependencies" />
     <property role="2uzpH1" value="Show / Rebuild Module Dependencies" />
-    <property role="3GE5qa" value="Actions" />
     <node concept="2XrIbr" id="bDbX50Ves$" role="32lrUH">
       <property role="TrG5h" value="openModuleDependeciesTool" />
       <node concept="3cqZAl" id="bDbX50VeRg" role="3clF45" />
       <node concept="3clFbS" id="bDbX50VesA" role="3clF47">
-        <node concept="3cpWs8" id="bDbX50WjBH" role="3cqZAp">
-          <node concept="3cpWsn" id="bDbX50WjBI" role="3cpWs9">
-            <property role="TrG5h" value="modDefTool" />
-            <node concept="3uibUv" id="bDbX50WjBJ" role="1tU5fm">
-              <ref role="3uigEE" to="899z:hTDKY_TP37" resolve="ModuleDependenciesTool" />
+        <node concept="3clFbH" id="6q8vRaHIJfC" role="3cqZAp" />
+        <node concept="3cpWs8" id="6q8vRaHIPBW" role="3cqZAp">
+          <node concept="3cpWsn" id="6q8vRaHIPBX" role="3cpWs9">
+            <property role="TrG5h" value="foundTool" />
+            <node concept="3uibUv" id="6q8vRaHIPBY" role="1tU5fm">
+              <ref role="3uigEE" to="gdbn:hTDKY_TP37" resolve="ModuleDependenciesTool" />
             </node>
-            <node concept="2OqwBi" id="bDbX50WjBK" role="33vP2m">
-              <node concept="37vLTw" id="bDbX50WlG_" role="2Oq$k0">
+            <node concept="2OqwBi" id="6q8vRaHIQlV" role="33vP2m">
+              <node concept="37vLTw" id="6q8vRaHIQju" role="2Oq$k0">
                 <ref role="3cqZAo" node="bDbX50VfJ4" resolve="project" />
               </node>
-              <node concept="liA8E" id="bDbX50WjBM" role="2OqNvi">
+              <node concept="liA8E" id="6q8vRaHIRlx" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~MPSProject.getComponent(java.lang.Class):java.lang.Object" resolve="getComponent" />
-                <node concept="3VsKOn" id="bDbX50WjBN" role="37wK5m">
-                  <ref role="3VsUkX" to="899z:hTDKY_TP37" resolve="ModuleDependenciesTool" />
+                <node concept="3VsKOn" id="6q8vRaHIRAx" role="37wK5m">
+                  <ref role="3VsUkX" to="gdbn:hTDKY_TP37" resolve="ModuleDependenciesTool" />
                 </node>
               </node>
             </node>
@@ -857,14 +857,17 @@
           <node concept="3clFbS" id="bDbX50WjBP" role="3clFbx">
             <node concept="3clFbF" id="bDbX50WjBQ" role="3cqZAp">
               <node concept="37vLTI" id="bDbX50WjBR" role="3clFbG">
-                <node concept="37vLTw" id="bDbX50WjBS" role="37vLTJ">
-                  <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
+                <node concept="37vLTw" id="6q8vRaHIUj0" role="37vLTJ">
+                  <ref role="3cqZAo" node="6q8vRaHIPBX" resolve="foundTool" />
                 </node>
-                <node concept="2ShNRf" id="bDbX50WjBT" role="37vLTx">
-                  <node concept="1pGfFk" id="bDbX50WjBU" role="2ShVmc">
-                    <ref role="37wK5l" to="899z:hTDKY_TP7w" resolve="ModuleDependenciesTool" />
-                    <node concept="37vLTw" id="bDbX50WkOq" role="37wK5m">
+                <node concept="2ShNRf" id="6q8vRaHISVr" role="37vLTx">
+                  <node concept="1pGfFk" id="6q8vRaHISVs" role="2ShVmc">
+                    <ref role="37wK5l" to="gdbn:6q8vRaHIGyg" resolve="ModuleDependenciesTool" />
+                    <node concept="37vLTw" id="6q8vRaHISVt" role="37wK5m">
                       <ref role="3cqZAo" node="bDbX50VfJ4" resolve="project" />
+                    </node>
+                    <node concept="Xl_RD" id="6q8vRaHISVu" role="37wK5m">
+                      <property role="Xl_RC" value="Module Dependencies Tool" />
                     </node>
                   </node>
                 </node>
@@ -873,28 +876,92 @@
           </node>
           <node concept="3clFbC" id="bDbX50WjC3" role="3clFbw">
             <node concept="10Nm6u" id="bDbX50WjC4" role="3uHU7w" />
-            <node concept="37vLTw" id="bDbX50WjC5" role="3uHU7B">
-              <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
+            <node concept="37vLTw" id="6q8vRaHIShU" role="3uHU7B">
+              <ref role="3cqZAo" node="6q8vRaHIPBX" resolve="foundTool" />
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="6q8vRaHITAK" role="3cqZAp">
+          <node concept="3cpWsn" id="6q8vRaHITAL" role="3cpWs9">
+            <property role="TrG5h" value="modDepTree" />
+            <node concept="3uibUv" id="6q8vRaHITAM" role="1tU5fm">
+              <ref role="3uigEE" to="gdbn:hTDKY_TOSc" resolve="ModuleDepTree" />
+            </node>
+            <node concept="2ShNRf" id="6q8vRaHITAN" role="33vP2m">
+              <node concept="1pGfFk" id="6q8vRaHITAO" role="2ShVmc">
+                <ref role="37wK5l" to="gdbn:57CoWlg7x19" resolve="ModuleDepTree" />
+                <node concept="37vLTw" id="6q8vRaHITAP" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50VfHa" resolve="solution" />
+                </node>
+                <node concept="37vLTw" id="6q8vRaHITAQ" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50VfJ4" resolve="project" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6q8vRaHITAR" role="3cqZAp">
+          <node concept="3cpWsn" id="6q8vRaHITAS" role="3cpWs9">
+            <property role="TrG5h" value="myPane" />
+            <node concept="3uibUv" id="6q8vRaHITAT" role="1tU5fm">
+              <ref role="3uigEE" to="1y7j:6q8vRaHHEzt" resolve="GeneralPeoplScrollPane" />
+            </node>
+            <node concept="2ShNRf" id="6q8vRaHITAU" role="33vP2m">
+              <node concept="1pGfFk" id="6q8vRaHITAV" role="2ShVmc">
+                <ref role="37wK5l" to="1y7j:6q8vRaHI9JZ" resolve="GeneralPeoplScrollPane" />
+                <node concept="37vLTw" id="6q8vRaHITAW" role="37wK5m">
+                  <ref role="3cqZAo" node="6q8vRaHITAL" resolve="modDepTree" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6q8vRaHITAX" role="3cqZAp">
+          <node concept="3cpWsn" id="6q8vRaHITAY" role="3cpWs9">
+            <property role="TrG5h" value="myPanel" />
+            <node concept="3uibUv" id="6q8vRaHITAZ" role="1tU5fm">
+              <ref role="3uigEE" to="1y7j:6q8vRaHH$CL" resolve="GeneralPeoplPanel" />
+            </node>
+            <node concept="2ShNRf" id="6q8vRaHITB0" role="33vP2m">
+              <node concept="1pGfFk" id="6q8vRaHITB1" role="2ShVmc">
+                <ref role="37wK5l" to="1y7j:6q8vRaHHFjU" resolve="GeneralPeoplPanel" />
+                <node concept="37vLTw" id="6q8vRaHITB2" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50VfHa" resolve="solution" />
+                </node>
+                <node concept="37vLTw" id="6q8vRaHITB3" role="37wK5m">
+                  <ref role="3cqZAo" node="bDbX50VfJ4" resolve="project" />
+                </node>
+                <node concept="37vLTw" id="6q8vRaHIV0t" role="37wK5m">
+                  <ref role="3cqZAo" node="6q8vRaHIPBX" resolve="foundTool" />
+                </node>
+                <node concept="37vLTw" id="6q8vRaHITB5" role="37wK5m">
+                  <ref role="3cqZAo" node="6q8vRaHITAS" resolve="myPane" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6q8vRaHIT_S" role="3cqZAp" />
         <node concept="3clFbF" id="bDbX50WjC6" role="3cqZAp">
           <node concept="2OqwBi" id="bDbX50WjC7" role="3clFbG">
-            <node concept="37vLTw" id="bDbX50WjC8" role="2Oq$k0">
-              <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
+            <node concept="37vLTw" id="6q8vRaHIVEs" role="2Oq$k0">
+              <ref role="3cqZAo" node="6q8vRaHIPBX" resolve="foundTool" />
             </node>
             <node concept="liA8E" id="bDbX50WjC9" role="2OqNvi">
-              <ref role="37wK5l" to="899z:bDbX50Wg4V" resolve="showContent" />
+              <ref role="37wK5l" to="1y7j:bDbX50Wg4V" resolve="showContent" />
               <node concept="37vLTw" id="bDbX50Wl42" role="37wK5m">
                 <ref role="3cqZAo" node="bDbX50VfHa" resolve="solution" />
+              </node>
+              <node concept="37vLTw" id="6q8vRaHIWH0" role="37wK5m">
+                <ref role="3cqZAo" node="6q8vRaHITAY" resolve="myPanel" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2MCbcOZ23sn" role="3cqZAp">
           <node concept="2OqwBi" id="2MCbcOZ23w7" role="3clFbG">
-            <node concept="37vLTw" id="2MCbcOZ23sl" role="2Oq$k0">
-              <ref role="3cqZAo" node="bDbX50WjBI" resolve="modDefTool" />
+            <node concept="37vLTw" id="6q8vRaHIVF0" role="2Oq$k0">
+              <ref role="3cqZAo" node="6q8vRaHIPBX" resolve="foundTool" />
             </node>
             <node concept="liA8E" id="2MCbcOZ24o2" role="2OqNvi">
               <ref role="37wK5l" to="71xd:~BaseTool.openTool(boolean):void" resolve="openTool" />
