@@ -28,6 +28,7 @@
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -230,6 +231,9 @@
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -980,7 +984,25 @@
                         <node concept="1pGfFk" id="79TYYNi2_Wa" role="2ShVmc">
                           <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
                           <node concept="Xl_RD" id="79TYYNi2A$o" role="37wK5m">
-                            <property role="Xl_RC" value="VP" />
+                            <property role="Xl_RC" value="vp" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="4HKw9xXBAjk" role="3cqZAp">
+                    <node concept="2OqwBi" id="4HKw9xXBB6i" role="3clFbG">
+                      <node concept="37vLTw" id="4HKw9xXBAji" role="2Oq$k0">
+                        <ref role="3cqZAo" node="79TYYNi2$Gy" resolve="alternative" />
+                      </node>
+                      <node concept="liA8E" id="4HKw9xXBBIE" role="2OqNvi">
+                        <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAdditionalText(java.lang.String):void" resolve="setAdditionalText" />
+                        <node concept="2OqwBi" id="4HKw9xXBCwP" role="37wK5m">
+                          <node concept="37vLTw" id="4HKw9xXBCuF" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6HVbCMlbzDT" resolve="vp" />
+                          </node>
+                          <node concept="3TrcHB" id="4HKw9xXBCAh" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                           </node>
                         </node>
                       </node>
