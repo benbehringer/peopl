@@ -987,6 +987,7 @@
                 <property role="3SKdUp" value="we get the current editor component to be able to check whether we pasted into a basic modularity editor" />
               </node>
             </node>
+            <node concept="3clFbH" id="4HKw9xXxYbn" role="3cqZAp" />
             <node concept="3cpWs8" id="6ab3W7cfpHv" role="3cqZAp">
               <node concept="3cpWsn" id="6ab3W7cfpHw" role="3cpWs9">
                 <property role="TrG5h" value="currentEditorComponent" />
