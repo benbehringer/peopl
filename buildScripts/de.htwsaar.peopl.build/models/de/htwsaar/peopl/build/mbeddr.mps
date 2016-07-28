@@ -1460,7 +1460,7 @@
                 <node concept="2Ry0Ak" id="4RAsyl5JUe8" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4HgkuxiptkO" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.4 MPS 3.3.6 (JRE 1.8 plist).app" />
+                    <property role="2Ry0Am" value="PEoPL 0.5 MPS 3.3.6 (JRE 1.8 plist).app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptqv" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
