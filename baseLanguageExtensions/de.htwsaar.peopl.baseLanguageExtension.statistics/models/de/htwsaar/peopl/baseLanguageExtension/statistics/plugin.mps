@@ -1229,6 +1229,8 @@
       </node>
     </node>
     <node concept="2tJIrI" id="64eR99jV00b" role="jymVt" />
+    <node concept="2tJIrI" id="1IVGVoWvlUJ" role="jymVt" />
+    <node concept="2tJIrI" id="1IVGVoWvm6e" role="jymVt" />
     <node concept="3clFb_" id="75vENel4PZG" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="addTopLvlNestedData" />
@@ -1351,6 +1353,24 @@
                             <node concept="3uNrnE" id="75vENel5A2Z" role="3clFbG">
                               <node concept="37vLTw" id="75vENel5A31" role="2$L3a6">
                                 <ref role="3cqZAo" node="75vENel4SZh" resolve="numberTopLvlNestedBlocks" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="1IVGVoWvZpW" role="3cqZAp">
+                            <node concept="2OqwBi" id="1IVGVoWvZLI" role="3clFbG">
+                              <node concept="37vLTw" id="1IVGVoWvZpU" role="2Oq$k0">
+                                <ref role="3cqZAo" node="75vENel5ACC" resolve="topLvlNestedNode" />
+                              </node>
+                              <node concept="liA8E" id="1IVGVoWw0tt" role="2OqNvi">
+                                <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                                <node concept="2ShNRf" id="1IVGVoWw0Kp" role="37wK5m">
+                                  <node concept="1pGfFk" id="1IVGVoWw18x" role="2ShVmc">
+                                    <ref role="37wK5l" to="xr52:~SNodeTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodeTreeNode" />
+                                    <node concept="37vLTw" id="1IVGVoWw1r0" role="37wK5m">
+                                      <ref role="3cqZAo" node="75vENel5gPE" resolve="it" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
@@ -1825,6 +1845,34 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="1IVGVoWty_T" role="3cqZAp">
+              <node concept="2OqwBi" id="1IVGVoWtznV" role="3clFbG">
+                <node concept="37vLTw" id="1IVGVoWty_R" role="2Oq$k0">
+                  <ref role="3cqZAo" node="64eR99jQuCq" resolve="ancestorTreeNode" />
+                </node>
+                <node concept="liA8E" id="1IVGVoWt$0r" role="2OqNvi">
+                  <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAdditionalText(java.lang.String):void" resolve="setAdditionalText" />
+                  <node concept="2YIFZM" id="1IVGVoWtGgx" role="37wK5m">
+                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                    <node concept="2OqwBi" id="1IVGVoWtCyK" role="37wK5m">
+                      <node concept="2OqwBi" id="1IVGVoWt$KQ" role="2Oq$k0">
+                        <node concept="37vLTw" id="1IVGVoWt$j0" role="2Oq$k0">
+                          <ref role="3cqZAo" node="79TYYNi4Dt_" resolve="fragMap" />
+                        </node>
+                        <node concept="liA8E" id="1IVGVoWtAMR" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
+                          <node concept="37vLTw" id="1IVGVoWtBGl" role="37wK5m">
+                            <ref role="3cqZAo" node="64eR99jQp_N" resolve="ancestor" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="34oBXx" id="1IVGVoWtFNz" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="64eR99jRFfd" role="3cqZAp">
               <node concept="2OqwBi" id="64eR99jRFY6" role="3clFbG">
                 <node concept="37vLTw" id="64eR99jRFfb" role="2Oq$k0">
@@ -2148,6 +2196,65 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="64eR99jUKUJ" role="3cqZAp">
+          <node concept="3cpWsn" id="64eR99jUKUK" role="3cpWs9">
+            <property role="TrG5h" value="classesNode" />
+            <node concept="3uibUv" id="64eR99jUKUL" role="1tU5fm">
+              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
+            </node>
+            <node concept="2ShNRf" id="64eR99jULnL" role="33vP2m">
+              <node concept="1pGfFk" id="64eR99jULGY" role="2ShVmc">
+                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
+                <node concept="Xl_RD" id="64eR99jUM0N" role="37wK5m">
+                  <property role="Xl_RC" value="PeoplClasses" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="64eR99jUPm4" role="3cqZAp">
+          <node concept="2OqwBi" id="64eR99jUPPJ" role="3clFbG">
+            <node concept="37vLTw" id="64eR99jUPm2" role="2Oq$k0">
+              <ref role="3cqZAo" node="64eR99jUHP1" resolve="parentNode" />
+            </node>
+            <node concept="liA8E" id="64eR99jUQcQ" role="2OqNvi">
+              <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+              <node concept="37vLTw" id="64eR99jUQLM" role="37wK5m">
+                <ref role="3cqZAo" node="64eR99jUKUK" resolve="classesNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="64eR99jURmV" role="3cqZAp">
+          <node concept="3cpWsn" id="64eR99jURmW" role="3cpWs9">
+            <property role="TrG5h" value="interfaceNode" />
+            <node concept="3uibUv" id="64eR99jURmX" role="1tU5fm">
+              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
+            </node>
+            <node concept="2ShNRf" id="64eR99jURmY" role="33vP2m">
+              <node concept="1pGfFk" id="64eR99jURmZ" role="2ShVmc">
+                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
+                <node concept="Xl_RD" id="64eR99jURn0" role="37wK5m">
+                  <property role="Xl_RC" value="Interfaces" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="64eR99jURn7" role="3cqZAp">
+          <node concept="2OqwBi" id="64eR99jURn8" role="3clFbG">
+            <node concept="37vLTw" id="64eR99jURn9" role="2Oq$k0">
+              <ref role="3cqZAo" node="64eR99jUHP1" resolve="parentNode" />
+            </node>
+            <node concept="liA8E" id="64eR99jURna" role="2OqNvi">
+              <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+              <node concept="37vLTw" id="64eR99jURnb" role="37wK5m">
+                <ref role="3cqZAo" node="64eR99jURmW" resolve="interfaceNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1IVGVoWthYE" role="3cqZAp" />
         <node concept="1DcWWT" id="64eR99jUrvi" role="3cqZAp">
           <node concept="3clFbS" id="64eR99jUrvj" role="2LFqv$">
             <node concept="1DcWWT" id="64eR99jUrvk" role="3cqZAp">
@@ -2168,6 +2275,24 @@
                       <node concept="3uNrnE" id="64eR99jUvF5" role="3clFbG">
                         <node concept="37vLTw" id="64eR99jUvF7" role="2$L3a6">
                           <ref role="3cqZAo" node="64eR99jUsMI" resolve="numberOfInterfaces" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="1IVGVoWtr7T" role="3cqZAp">
+                      <node concept="2OqwBi" id="1IVGVoWtrsI" role="3clFbG">
+                        <node concept="37vLTw" id="1IVGVoWtr7R" role="2Oq$k0">
+                          <ref role="3cqZAo" node="64eR99jURmW" resolve="interfaceNode" />
+                        </node>
+                        <node concept="liA8E" id="1IVGVoWts5f" role="2OqNvi">
+                          <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                          <node concept="2ShNRf" id="1IVGVoWtsod" role="37wK5m">
+                            <node concept="1pGfFk" id="1IVGVoWtsKm" role="2ShVmc">
+                              <ref role="37wK5l" to="xr52:~SNodeTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodeTreeNode" />
+                              <node concept="37vLTw" id="1IVGVoWtt3T" role="37wK5m">
+                                <ref role="3cqZAo" node="64eR99jUrvm" resolve="rootUnderModel" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -2200,6 +2325,25 @@
                         </node>
                       </node>
                     </node>
+                    <node concept="3clFbF" id="1IVGVoWtmr_" role="3cqZAp">
+                      <node concept="2OqwBi" id="1IVGVoWtmKG" role="3clFbG">
+                        <node concept="37vLTw" id="1IVGVoWtmrz" role="2Oq$k0">
+                          <ref role="3cqZAo" node="64eR99jUKUK" resolve="classesNode" />
+                        </node>
+                        <node concept="liA8E" id="1IVGVoWtnpe" role="2OqNvi">
+                          <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
+                          <node concept="2ShNRf" id="1IVGVoWtnFR" role="37wK5m">
+                            <node concept="1pGfFk" id="1IVGVoWtqoy" role="2ShVmc">
+                              <ref role="37wK5l" to="xr52:~SNodeTreeNode.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="SNodeTreeNode" />
+                              <node concept="37vLTw" id="1IVGVoWtqG4" role="37wK5m">
+                                <ref role="3cqZAo" node="64eR99jUrvm" resolve="rootUnderModel" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="1IVGVoWtqHL" role="3cqZAp" />
                   </node>
                   <node concept="2OqwBi" id="64eR99jUxe$" role="3clFbw">
                     <node concept="37vLTw" id="64eR99jUwVE" role="2Oq$k0">
@@ -2238,22 +2382,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="64eR99jUKUJ" role="3cqZAp">
-          <node concept="3cpWsn" id="64eR99jUKUK" role="3cpWs9">
-            <property role="TrG5h" value="classesNode" />
-            <node concept="3uibUv" id="64eR99jUKUL" role="1tU5fm">
-              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
-            </node>
-            <node concept="2ShNRf" id="64eR99jULnL" role="33vP2m">
-              <node concept="1pGfFk" id="64eR99jULGY" role="2ShVmc">
-                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-                <node concept="Xl_RD" id="64eR99jUM0N" role="37wK5m">
-                  <property role="Xl_RC" value="PeoplClasses" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="64eR99jUMCp" role="3cqZAp">
           <node concept="2OqwBi" id="64eR99jUN7F" role="3clFbG">
             <node concept="37vLTw" id="64eR99jUMCn" role="2Oq$k0">
@@ -2266,35 +2394,6 @@
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="37vLTw" id="64eR99jUOIX" role="37wK5m">
                   <ref role="3cqZAo" node="64eR99jUrvf" resolve="numberOfClasses" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="64eR99jUPm4" role="3cqZAp">
-          <node concept="2OqwBi" id="64eR99jUPPJ" role="3clFbG">
-            <node concept="37vLTw" id="64eR99jUPm2" role="2Oq$k0">
-              <ref role="3cqZAo" node="64eR99jUHP1" resolve="parentNode" />
-            </node>
-            <node concept="liA8E" id="64eR99jUQcQ" role="2OqNvi">
-              <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-              <node concept="37vLTw" id="64eR99jUQLM" role="37wK5m">
-                <ref role="3cqZAo" node="64eR99jUKUK" resolve="classesNode" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="64eR99jURmV" role="3cqZAp">
-          <node concept="3cpWsn" id="64eR99jURmW" role="3cpWs9">
-            <property role="TrG5h" value="interfaceNode" />
-            <node concept="3uibUv" id="64eR99jURmX" role="1tU5fm">
-              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
-            </node>
-            <node concept="2ShNRf" id="64eR99jURmY" role="33vP2m">
-              <node concept="1pGfFk" id="64eR99jURmZ" role="2ShVmc">
-                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-                <node concept="Xl_RD" id="64eR99jURn0" role="37wK5m">
-                  <property role="Xl_RC" value="Interfaces" />
                 </node>
               </node>
             </node>
@@ -2317,19 +2416,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="64eR99jURn7" role="3cqZAp">
-          <node concept="2OqwBi" id="64eR99jURn8" role="3clFbG">
-            <node concept="37vLTw" id="64eR99jURn9" role="2Oq$k0">
-              <ref role="3cqZAo" node="64eR99jUHP1" resolve="parentNode" />
-            </node>
-            <node concept="liA8E" id="64eR99jURna" role="2OqNvi">
-              <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-              <node concept="37vLTw" id="64eR99jURnb" role="37wK5m">
-                <ref role="3cqZAo" node="64eR99jURmW" resolve="interfaceNode" />
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="1IVGVoWtjHf" role="3cqZAp" />
         <node concept="3cpWs6" id="64eR99jUrvw" role="3cqZAp">
           <node concept="37vLTw" id="64eR99jUrvx" role="3cqZAk">
             <ref role="3cqZAo" node="64eR99jUrvf" resolve="numberOfClasses" />
