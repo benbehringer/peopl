@@ -831,11 +831,11 @@
                           <node concept="3cpWsn" id="1frSO1g6dpO" role="3cpWs9">
                             <property role="TrG5h" value="pEntryPointTreeNode" />
                             <node concept="3uibUv" id="1frSO1g8PAA" role="1tU5fm">
-                              <ref role="3uigEE" node="1frSO1g8J6F" resolve="PEntryPointTreeNode" />
+                              <ref role="3uigEE" to="1y7j:1frSO1g8J6F" resolve="PEntryPointTextTreeNode" />
                             </node>
                             <node concept="2ShNRf" id="1frSO1g6gDf" role="33vP2m">
                               <node concept="1pGfFk" id="1frSO1g6jUc" role="2ShVmc">
-                                <ref role="37wK5l" node="1frSO1g8Jwp" resolve="PEntryPointTreeNode" />
+                                <ref role="37wK5l" to="1y7j:1frSO1g8Jwp" resolve="PEntryPointTextTreeNode" />
                                 <node concept="2OqwBi" id="1frSO1g8Wlo" role="37wK5m">
                                   <node concept="1eOMI4" id="1frSO1g8W6B" role="2Oq$k0">
                                     <node concept="10QFUN" id="1frSO1g8Tcq" role="1eOMHV">
@@ -1434,93 +1434,6 @@
     <node concept="2tJIrI" id="5gjyYfDSNs1" role="jymVt" />
     <node concept="3Tm1VV" id="5gjyYfDSKuD" role="1B3o_S" />
     <node concept="3uibUv" id="5gjyYfDSLF5" role="1zkMxy">
-      <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
-    </node>
-  </node>
-  <node concept="312cEu" id="1frSO1g8J6F">
-    <property role="TrG5h" value="PEntryPointTreeNode" />
-    <node concept="2tJIrI" id="1frSO1g8JaP" role="jymVt" />
-    <node concept="3clFbW" id="1frSO1g8Jwp" role="jymVt">
-      <node concept="3cqZAl" id="1frSO1g8Jwq" role="3clF45" />
-      <node concept="3clFbS" id="1frSO1g8Jws" role="3clF47">
-        <node concept="XkiVB" id="1frSO1g8KIL" role="3cqZAp">
-          <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-          <node concept="37vLTw" id="1frSO1g8KQE" role="37wK5m">
-            <ref role="3cqZAo" node="1frSO1g8JVY" resolve="text" />
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1frSO1g8KWC" role="3cqZAp">
-          <node concept="3cpWsn" id="1frSO1g8KWD" role="3cpWs9">
-            <property role="TrG5h" value="path" />
-            <node concept="3uibUv" id="1frSO1g8KWE" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
-            <node concept="3cpWs3" id="1frSO1g8KWF" role="33vP2m">
-              <node concept="Xl_RD" id="1frSO1g8KWG" role="3uHU7w">
-                <property role="Xl_RC" value="/../../../baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/icons/peoplClass.png" />
-              </node>
-              <node concept="2OqwBi" id="1frSO1g8KWH" role="3uHU7B">
-                <node concept="2OqwBi" id="1frSO1g8KWI" role="2Oq$k0">
-                  <node concept="1eOMI4" id="1frSO1g8KWJ" role="2Oq$k0">
-                    <node concept="10QFUN" id="1frSO1g8KWK" role="1eOMHV">
-                      <node concept="3uibUv" id="1frSO1g8KWL" role="10QFUM">
-                        <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
-                      </node>
-                      <node concept="3rM5sP" id="1frSO1g8KWM" role="10QFUP">
-                        <property role="3rM5sR" value="de1c2f6b-fb29-4ab8-a4b9-29364d7dc761" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="1frSO1g8KWN" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~AbstractModule.getOutputPath():jetbrains.mps.vfs.IFile" resolve="getOutputPath" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="1frSO1g8KWO" role="2OqNvi">
-                  <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1frSO1g8KWP" role="3cqZAp">
-          <node concept="3cpWsn" id="1frSO1g8KWQ" role="3cpWs9">
-            <property role="TrG5h" value="moduleIcon" />
-            <node concept="3uibUv" id="1frSO1g8KWR" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~Icon" resolve="Icon" />
-            </node>
-            <node concept="2ShNRf" id="1frSO1g8KWS" role="33vP2m">
-              <node concept="1pGfFk" id="1frSO1g8KWT" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.lang.String)" resolve="ImageIcon" />
-                <node concept="37vLTw" id="1frSO1g8KWU" role="37wK5m">
-                  <ref role="3cqZAo" node="1frSO1g8KWD" resolve="path" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1frSO1g8KWV" role="3cqZAp">
-          <node concept="2OqwBi" id="1frSO1g8KWW" role="3clFbG">
-            <node concept="Xjq3P" id="1frSO1g8KWX" role="2Oq$k0" />
-            <node concept="liA8E" id="1frSO1g8KWY" role="2OqNvi">
-              <ref role="37wK5l" to="7e8u:~MPSTreeNode.setIcon(javax.swing.Icon):void" resolve="setIcon" />
-              <node concept="37vLTw" id="1frSO1g8KWZ" role="37wK5m">
-                <ref role="3cqZAo" node="1frSO1g8KWQ" resolve="moduleIcon" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1frSO1g8KQV" role="3cqZAp" />
-      </node>
-      <node concept="3Tm1VV" id="1frSO1g8JhM" role="1B3o_S" />
-      <node concept="37vLTG" id="1frSO1g8JVY" role="3clF46">
-        <property role="TrG5h" value="text" />
-        <node concept="3uibUv" id="1frSO1g8JVX" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="1frSO1g8J6G" role="1B3o_S" />
-    <node concept="3uibUv" id="1frSO1g8Jas" role="1zkMxy">
       <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
     </node>
   </node>

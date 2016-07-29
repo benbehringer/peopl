@@ -231,6 +231,19 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7049226118380955944" name="de.htwsaar.peopl.core.structure.IColor" flags="ng" index="6kOzA">
+        <property id="5609657145693181793" name="blue" index="2_7Toi" />
+        <property id="5609657145693181790" name="green" index="2_7ToH" />
+        <property id="5609657145693181788" name="red" index="2_7ToJ" />
+        <property id="5892007264056709415" name="intValue" index="3_QSL4" />
+      </concept>
+      <concept id="9119657711895399776" name="de.htwsaar.peopl.core.structure.ModuleDefinition" flags="ng" index="288GkY">
+        <child id="9119657711895399914" name="modules" index="288GmO" />
+      </concept>
+      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabilityDataStorage" flags="ng" index="2$Fqj1" />
+      <concept id="7784659551878697452" name="de.htwsaar.peopl.core.structure.Module" flags="ng" index="1V77HM" />
+    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
@@ -3096,6 +3109,17 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="288GkY" id="8K4WCaTeJm">
+    <property role="TrG5h" value="ModuleDefinitions" />
+    <node concept="1V77HM" id="8K4WCaTeJn" role="288GmO">
+      <property role="2_7ToJ" value="191" />
+      <property role="2_7ToH" value="86" />
+      <property role="2_7Toi" value="80" />
+      <property role="3_QSL4" value="12539472" />
+      <property role="TrG5h" value="Base" />
+    </node>
+    <node concept="2$Fqj1" id="8K4WCaTeJo" role="lGtFl" />
   </node>
 </model>
 
