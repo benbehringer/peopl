@@ -132,6 +132,8 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
+      <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
@@ -5915,6 +5917,16 @@
     </node>
     <node concept="2Sbjvc" id="7o3bbrGlNcY" role="2ZfgGD">
       <node concept="3clFbS" id="7o3bbrGlNcZ" role="2VODD2">
+        <node concept="3cpWs8" id="3e2$E$Vh2Ry" role="3cqZAp">
+          <node concept="3cpWsn" id="3e2$E$Vh2Rz" role="3cpWs9">
+            <property role="TrG5h" value="startTime" />
+            <node concept="3cpWsb" id="3e2$E$Vh2R$" role="1tU5fm" />
+            <node concept="2YIFZM" id="3e2$E$Vh2R_" role="33vP2m">
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7o3bbrGlOkv" role="3cqZAp">
           <node concept="3cpWsn" id="7o3bbrGlOkw" role="3cpWs9">
             <property role="TrG5h" value="moveHelper" />
@@ -5940,6 +5952,42 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="3e2$E$Vh2UD" role="3cqZAp">
+          <node concept="3cpWsn" id="3e2$E$Vh2UE" role="3cpWs9">
+            <property role="TrG5h" value="endTime" />
+            <node concept="3cpWsb" id="3e2$E$Vh2UF" role="1tU5fm" />
+            <node concept="2YIFZM" id="3e2$E$Vh2UG" role="33vP2m">
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="3e2$E$Vh2UH" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="3e2$E$Vh2UI" role="34bqiv">
+            <node concept="Xl_RD" id="3e2$E$Vh2UJ" role="3uHU7w">
+              <property role="Xl_RC" value=" ms" />
+            </node>
+            <node concept="3cpWs3" id="3e2$E$Vh2UK" role="3uHU7B">
+              <node concept="Xl_RD" id="3e2$E$Vh2UL" role="3uHU7B">
+                <property role="Xl_RC" value="Move needed : " />
+              </node>
+              <node concept="2YIFZM" id="3e2$E$Vh2UM" role="3uHU7w">
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+                <node concept="3cpWsd" id="3e2$E$Vh2UN" role="37wK5m">
+                  <node concept="37vLTw" id="3e2$E$Vh2UO" role="3uHU7w">
+                    <ref role="3cqZAo" node="3e2$E$Vh2Rz" resolve="startTime" />
+                  </node>
+                  <node concept="37vLTw" id="3e2$E$Vh2UP" role="3uHU7B">
+                    <ref role="3cqZAo" node="3e2$E$Vh2UE" resolve="endTime" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3e2$E$Vh2Uk" role="3cqZAp" />
       </node>
     </node>
     <node concept="2SaL7w" id="5HzaN04Hl38" role="2ZfVeh">
@@ -6024,6 +6072,16 @@
     </node>
     <node concept="2Sbjvc" id="z4oRObYeGT" role="2ZfgGD">
       <node concept="3clFbS" id="z4oRObYeGU" role="2VODD2">
+        <node concept="3cpWs8" id="3e2$E$Vh1ko" role="3cqZAp">
+          <node concept="3cpWsn" id="3e2$E$Vh1kr" role="3cpWs9">
+            <property role="TrG5h" value="startTime" />
+            <node concept="3cpWsb" id="3e2$E$Vh1km" role="1tU5fm" />
+            <node concept="2YIFZM" id="3e2$E$Vh1B$" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="z4oRObYeGV" role="3cqZAp">
           <node concept="3cpWsn" id="z4oRObYeGW" role="3cpWs9">
             <property role="TrG5h" value="moveHelper" />
@@ -6046,6 +6104,41 @@
             </node>
             <node concept="liA8E" id="z4oRObYeH5" role="2OqNvi">
               <ref role="37wK5l" node="z4oRObYArZ" resolve="reorderASTExcludingWrappers" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3e2$E$Vh1Cf" role="3cqZAp">
+          <node concept="3cpWsn" id="3e2$E$Vh1Ci" role="3cpWs9">
+            <property role="TrG5h" value="endTime" />
+            <node concept="3cpWsb" id="3e2$E$Vh1Cd" role="1tU5fm" />
+            <node concept="2YIFZM" id="3e2$E$Vh1Dn" role="33vP2m">
+              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="3e2$E$Vh1Ma" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="3cpWs3" id="3e2$E$Vh2v2" role="34bqiv">
+            <node concept="Xl_RD" id="3e2$E$Vh2$H" role="3uHU7w">
+              <property role="Xl_RC" value=" ms" />
+            </node>
+            <node concept="3cpWs3" id="3e2$E$Vh2fA" role="3uHU7B">
+              <node concept="Xl_RD" id="3e2$E$Vh2bi" role="3uHU7B">
+                <property role="Xl_RC" value="Move needed : " />
+              </node>
+              <node concept="2YIFZM" id="3e2$E$Vh2iv" role="3uHU7w">
+                <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="3cpWsd" id="3e2$E$Vh2pp" role="37wK5m">
+                  <node concept="37vLTw" id="3e2$E$Vh2r6" role="3uHU7w">
+                    <ref role="3cqZAo" node="3e2$E$Vh1kr" resolve="startTime" />
+                  </node>
+                  <node concept="37vLTw" id="3e2$E$Vh2jj" role="3uHU7B">
+                    <ref role="3cqZAo" node="3e2$E$Vh1Ci" resolve="endTime" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
