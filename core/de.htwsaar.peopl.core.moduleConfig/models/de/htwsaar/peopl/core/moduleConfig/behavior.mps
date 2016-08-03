@@ -336,6 +336,9 @@
         <child id="1226511765987" name="elementType" index="2hN53Y" />
       </concept>
       <concept id="1226516258405" name="jetbrains.mps.baseLanguage.collections.structure.HashSetCreator" flags="nn" index="2i4dXS" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
@@ -349,6 +352,7 @@
         <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1227022159410" name="jetbrains.mps.baseLanguage.collections.structure.AddFirstElementOperation" flags="nn" index="2Ke4WJ" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
@@ -1428,6 +1432,48 @@
       <node concept="3Tm1VV" id="6q8vRaHzE27" role="1B3o_S" />
       <node concept="3cqZAl" id="6q8vRaHzEy2" role="3clF45" />
       <node concept="3clFbS" id="6q8vRaHzE29" role="3clF47">
+        <node concept="3cpWs8" id="7Rmzvic4$Gh" role="3cqZAp">
+          <node concept="3cpWsn" id="7Rmzvic4$Gk" role="3cpWs9">
+            <property role="TrG5h" value="copyOfList" />
+            <node concept="_YKpA" id="7Rmzvic4$Gd" role="1tU5fm">
+              <node concept="3Tqbb2" id="7Rmzvic4$Ic" role="_ZDj9">
+                <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="7Rmzvic4$Jn" role="33vP2m">
+              <node concept="2Jqq0_" id="7Rmzvic4$Jl" role="2ShVmc">
+                <node concept="3Tqbb2" id="7Rmzvic4$Jm" role="HW$YZ">
+                  <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="7Rmzvic4$M3" role="3cqZAp">
+          <node concept="3clFbS" id="7Rmzvic4$M5" role="2LFqv$">
+            <node concept="3clFbF" id="7Rmzvic4_cA" role="3cqZAp">
+              <node concept="2OqwBi" id="7Rmzvic4_Ie" role="3clFbG">
+                <node concept="37vLTw" id="7Rmzvic4_c$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7Rmzvic4$Gk" resolve="copyOfList" />
+                </node>
+                <node concept="TSZUe" id="7Rmzvic4CfB" role="2OqNvi">
+                  <node concept="37vLTw" id="7Rmzvic4CgW" role="25WWJ7">
+                    <ref role="3cqZAo" node="7Rmzvic4$M6" resolve="frag" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="7Rmzvic4$M6" role="1Duv9x">
+            <property role="TrG5h" value="frag" />
+            <node concept="3Tqbb2" id="7Rmzvic4$Q_" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="7Rmzvic4$XC" role="1DdaDG">
+            <ref role="3cqZAo" node="6q8vRaH$pb6" resolve="fragmentList" />
+          </node>
+        </node>
         <node concept="1DcWWT" id="6q8vRaH$pcs" role="3cqZAp">
           <node concept="3cpWsn" id="6q8vRaH$pct" role="1Duv9x">
             <property role="TrG5h" value="frag" />
@@ -1435,8 +1481,8 @@
               <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
             </node>
           </node>
-          <node concept="37vLTw" id="6q8vRaH$pma" role="1DdaDG">
-            <ref role="3cqZAo" node="6q8vRaH$pb6" resolve="fragmentList" />
+          <node concept="37vLTw" id="7Rmzvic4CjB" role="1DdaDG">
+            <ref role="3cqZAo" node="7Rmzvic4$Gk" resolve="copyOfList" />
           </node>
           <node concept="3clFbS" id="6q8vRaH$pcv" role="2LFqv$">
             <node concept="3cpWs8" id="6q8vRaH$p$0" role="3cqZAp">
