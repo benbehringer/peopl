@@ -215,7 +215,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="1214918975462" name="jetbrains.mps.baseLanguage.structure.PostfixDecrementExpression" flags="nn" index="3uO5VW" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -239,6 +238,7 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -606,8 +606,8 @@
             </node>
             <node concept="liA8E" id="7YnyADp4WJh" role="2OqNvi">
               <ref role="37wK5l" node="7YnyADp3gkp" resolve="createConfigurations" />
-              <node concept="3cmrfG" id="1s5U4YkldAw" role="37wK5m">
-                <property role="3cmrfH" value="1" />
+              <node concept="3cmrfG" id="5ZyGOJbtXR7" role="37wK5m">
+                <property role="3cmrfH" value="10" />
               </node>
             </node>
           </node>
@@ -2811,14 +2811,14 @@
           <node concept="3cpWsn" id="7YnyADp4lz2" role="3cpWs9">
             <property role="TrG5h" value="numberOfModules" />
             <node concept="10Oyi0" id="7YnyADp4lyX" role="1tU5fm" />
-            <node concept="3cpWs3" id="1s5U4YkjKAt" role="33vP2m">
+            <node concept="3cpWs3" id="2yGE1YnhW_O" role="33vP2m">
               <node concept="2OqwBi" id="7YnyADp4l_0" role="3uHU7B">
                 <node concept="37vLTw" id="7YnyADp4lzS" role="2Oq$k0">
                   <ref role="3cqZAo" node="7YnyADp3jET" resolve="random" />
                 </node>
                 <node concept="liA8E" id="7YnyADp4lBi" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~Random.nextInt(int):int" resolve="nextInt" />
-                  <node concept="3cpWsd" id="1s5U4YkjKih" role="37wK5m">
+                  <node concept="3cpWsd" id="2yGE1YnhWg7" role="37wK5m">
                     <node concept="2OqwBi" id="7YnyADp4$Jp" role="3uHU7B">
                       <node concept="37vLTw" id="7YnyADp4$9S" role="2Oq$k0">
                         <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
@@ -2827,14 +2827,14 @@
                         <ref role="37wK5l" to="33ny:~ArrayList.size():int" resolve="size" />
                       </node>
                     </node>
-                    <node concept="3cmrfG" id="1s5U4YkqU0x" role="3uHU7w">
-                      <property role="3cmrfH" value="2" />
+                    <node concept="3cmrfG" id="2yGE1Ynibpg" role="3uHU7w">
+                      <property role="3cmrfH" value="3" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cmrfG" id="1s5U4YkqUdS" role="3uHU7w">
-                <property role="3cmrfH" value="2" />
+              <node concept="3cmrfG" id="2yGE1YnibGw" role="3uHU7w">
+                <property role="3cmrfH" value="3" />
               </node>
             </node>
           </node>
@@ -2878,84 +2878,64 @@
             </node>
             <node concept="3clFbJ" id="1s5U4YkmIsA" role="3cqZAp">
               <node concept="3clFbS" id="1s5U4YkmIsC" role="3clFbx">
-                <node concept="3clFbF" id="1s5U4YkmN2d" role="3cqZAp">
-                  <node concept="3uO5VW" id="1s5U4YkmN7u" role="3clFbG">
-                    <node concept="37vLTw" id="1s5U4YkmN7w" role="2$L3a6">
-                      <ref role="3cqZAo" node="7YnyADp4pZN" resolve="i" />
+                <node concept="3clFbF" id="5ZyGOJbtp3a" role="3cqZAp">
+                  <node concept="2OqwBi" id="5ZyGOJbtp3b" role="3clFbG">
+                    <node concept="37vLTw" id="5ZyGOJbtp3c" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7YnyADp3osY" resolve="list" />
                     </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="1s5U4YkmM40" role="3clFbw">
-                <node concept="2OqwBi" id="1s5U4YkmJyq" role="2Oq$k0">
-                  <node concept="37vLTw" id="1s5U4YkmIR9" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
-                  </node>
-                  <node concept="liA8E" id="1s5U4YkmLzX" role="2OqNvi">
-                    <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
-                    <node concept="37vLTw" id="1s5U4YkmLUC" role="37wK5m">
-                      <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="1s5U4YkmMFm" role="2OqNvi">
-                  <node concept="chp4Y" id="1s5U4YkmMJW" role="cj9EA">
-                    <ref role="cht4Q" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
-                  </node>
-                </node>
-              </node>
-              <node concept="9aQIb" id="1s5U4YkmN9U" role="9aQIa">
-                <node concept="3clFbS" id="1s5U4YkmN9V" role="9aQI4">
-                  <node concept="3clFbJ" id="7Rmzvic53QS" role="3cqZAp">
-                    <node concept="3clFbS" id="7Rmzvic53QU" role="3clFbx">
-                      <node concept="3clFbF" id="7Rmzvic5an4" role="3cqZAp">
-                        <node concept="3uO5VW" id="7Rmzvic5asl" role="3clFbG">
-                          <node concept="37vLTw" id="7Rmzvic5asn" role="2$L3a6">
-                            <ref role="3cqZAo" node="7YnyADp4pZN" resolve="i" />
+                    <node concept="liA8E" id="5ZyGOJbtp3d" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+                      <node concept="2OqwBi" id="5ZyGOJbtp3e" role="37wK5m">
+                        <node concept="37vLTw" id="5ZyGOJbtp3f" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
+                        </node>
+                        <node concept="liA8E" id="5ZyGOJbtp3g" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                          <node concept="37vLTw" id="5ZyGOJbtp3h" role="37wK5m">
+                            <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="7Rmzvic54Ee" role="3clFbw">
-                      <node concept="37vLTw" id="7Rmzvic541l" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7YnyADp3osY" resolve="list" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="5ZyGOJbtnK8" role="3clFbw">
+                <node concept="3fqX7Q" id="5ZyGOJbtnsg" role="3uHU7B">
+                  <node concept="2OqwBi" id="5ZyGOJbtnsi" role="3fr31v">
+                    <node concept="2OqwBi" id="5ZyGOJbtnsj" role="2Oq$k0">
+                      <node concept="37vLTw" id="5ZyGOJbtnsk" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
                       </node>
-                      <node concept="liA8E" id="7Rmzvic56D3" role="2OqNvi">
-                        <ref role="37wK5l" to="33ny:~ArrayList.contains(java.lang.Object):boolean" resolve="contains" />
-                        <node concept="2OqwBi" id="7Rmzvic57y1" role="37wK5m">
-                          <node concept="37vLTw" id="7Rmzvic56TA" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
-                          </node>
-                          <node concept="liA8E" id="7Rmzvic59Bt" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
-                            <node concept="37vLTw" id="7Rmzvic5a2j" role="37wK5m">
-                              <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
-                            </node>
-                          </node>
+                      <node concept="liA8E" id="5ZyGOJbtnsl" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                        <node concept="37vLTw" id="5ZyGOJbtnsm" role="37wK5m">
+                          <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
                         </node>
                       </node>
                     </node>
-                    <node concept="9aQIb" id="7Rmzvic5auN" role="9aQIa">
-                      <node concept="3clFbS" id="7Rmzvic5auO" role="9aQI4">
-                        <node concept="3clFbF" id="7Rmzvic5aGK" role="3cqZAp">
-                          <node concept="2OqwBi" id="1s5U4YkmNfQ" role="3clFbG">
-                            <node concept="37vLTw" id="1s5U4YkmNfR" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7YnyADp3osY" resolve="list" />
-                            </node>
-                            <node concept="liA8E" id="1s5U4YkmNfS" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
-                              <node concept="2OqwBi" id="1s5U4YkmNfT" role="37wK5m">
-                                <node concept="37vLTw" id="1s5U4YkmNfU" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
-                                </node>
-                                <node concept="liA8E" id="1s5U4YkmNfV" role="2OqNvi">
-                                  <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
-                                  <node concept="37vLTw" id="1s5U4YkmNfW" role="37wK5m">
-                                    <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
+                    <node concept="1mIQ4w" id="5ZyGOJbtnsn" role="2OqNvi">
+                      <node concept="chp4Y" id="5ZyGOJbtnCW" role="cj9EA">
+                        <ref role="cht4Q" to="xf8r:7p8XNs9mIQp" resolve="InteractionModule" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="5ZyGOJbtoqw" role="3uHU7w">
+                  <node concept="2OqwBi" id="5ZyGOJbtoqy" role="3fr31v">
+                    <node concept="37vLTw" id="5ZyGOJbtoqz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7YnyADp3osY" resolve="list" />
+                    </node>
+                    <node concept="liA8E" id="5ZyGOJbtoq$" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~ArrayList.contains(java.lang.Object):boolean" resolve="contains" />
+                      <node concept="2OqwBi" id="5ZyGOJbtoq_" role="37wK5m">
+                        <node concept="37vLTw" id="5ZyGOJbtoqA" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7YnyADp4zL0" resolve="allModules" />
+                        </node>
+                        <node concept="liA8E" id="5ZyGOJbtoqB" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~ArrayList.get(int):java.lang.Object" resolve="get" />
+                          <node concept="37vLTw" id="5ZyGOJbtoRt" role="37wK5m">
+                            <ref role="3cqZAo" node="7YnyADp4qI2" resolve="randomIndex" />
                           </node>
                         </node>
                       </node>
