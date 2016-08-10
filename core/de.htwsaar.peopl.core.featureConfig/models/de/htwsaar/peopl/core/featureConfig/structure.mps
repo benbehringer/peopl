@@ -49,6 +49,11 @@
     <property role="TrG5h" value="ProductLineConfig" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4p4J_SJuKZz" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="activeProduct" />
+      <ref role="20lvS9" node="66EASTR58zE" resolve="Product" />
+    </node>
     <node concept="1TJgyi" id="4PzgrElSLmA" role="1TKVEl">
       <property role="TrG5h" value="usesOrdering" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
