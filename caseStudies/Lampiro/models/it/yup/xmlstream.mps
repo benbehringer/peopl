@@ -6080,18 +6080,13 @@
                                 </node>
                                 <node concept="2ShNRf" id="3EZ4ze0Cvu1" role="3uHU7w">
                                   <node concept="1pGfFk" id="3EZ4ze0CvuA" role="2ShVmc">
-                                    <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                                    <node concept="10QFUN" id="6dehukjWFyQ" role="37wK5m">
-                                      <node concept="2OqwBi" id="3EZ4ze0CvuE" role="10QFUP">
-                                        <node concept="37vLTw" id="3EZ4ze0CvuD" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="3EZ4ze0C6E9" resolve="stanza" />
-                                        </node>
-                                        <node concept="liA8E" id="3EZ4ze0CvuF" role="2OqNvi">
-                                          <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
-                                        </node>
+                                    <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                                    <node concept="2OqwBi" id="3EZ4ze0CvuE" role="37wK5m">
+                                      <node concept="37vLTw" id="3EZ4ze0CvuD" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3EZ4ze0C6E9" resolve="stanza" />
                                       </node>
-                                      <node concept="3uibUv" id="6dehukjWFyR" role="10QFUM">
-                                        <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                                      <node concept="liA8E" id="3EZ4ze0CvuF" role="2OqNvi">
+                                        <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
                                       </node>
                                     </node>
                                   </node>
@@ -12454,22 +12449,17 @@
                 <node concept="17QB3L" id="6dehukjWFzV" role="1tU5fm" />
                 <node concept="2ShNRf" id="3EZ4ze0CvOy" role="33vP2m">
                   <node concept="1pGfFk" id="3EZ4ze0CvP7" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                    <node concept="10QFUN" id="6dehukjWFzK" role="37wK5m">
-                      <node concept="2YIFZM" id="3EZ4ze0CvPa" role="10QFUP">
-                        <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
-                        <ref role="37wK5l" to="208j:~Base64.decode(java.lang.String):byte[]" resolve="decode" />
-                        <node concept="2OqwBi" id="3EZ4ze0CvPe" role="37wK5m">
-                          <node concept="37vLTw" id="3EZ4ze0CvPd" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3EZ4ze0C7HW" resolve="packet" />
-                          </node>
-                          <node concept="liA8E" id="3EZ4ze0CvPf" role="2OqNvi">
-                            <ref role="37wK5l" to="4i1p:3EZ4ze0BHu2" resolve="getText" />
-                          </node>
+                    <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                    <node concept="2YIFZM" id="3EZ4ze0CvPa" role="37wK5m">
+                      <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
+                      <ref role="37wK5l" to="208j:~Base64.decode(java.lang.String):byte[]" resolve="decode" />
+                      <node concept="2OqwBi" id="3EZ4ze0CvPe" role="37wK5m">
+                        <node concept="37vLTw" id="3EZ4ze0CvPd" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3EZ4ze0C7HW" resolve="packet" />
                         </node>
-                      </node>
-                      <node concept="3uibUv" id="6dehukjWFzL" role="10QFUM">
-                        <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                        <node concept="liA8E" id="3EZ4ze0CvPf" role="2OqNvi">
+                          <ref role="37wK5l" to="4i1p:3EZ4ze0BHu2" resolve="getText" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -13108,21 +13098,16 @@
                   <ref role="37wK5l" to="4i1p:3EZ4ze0BHlP" resolve="addText" />
                   <node concept="2ShNRf" id="3EZ4ze0CvRA" role="37wK5m">
                     <node concept="1pGfFk" id="3EZ4ze0CvSb" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                      <node concept="10QFUN" id="6dehukjWF$8" role="37wK5m">
-                        <node concept="2YIFZM" id="3EZ4ze0CvSe" role="10QFUP">
-                          <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
-                          <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
-                          <node concept="2YIFZM" id="3EZ4ze0CvSh" role="37wK5m">
-                            <ref role="1Pybhc" to="qgpv:3EZ4ze0BFWQ" resolve="Utils" />
-                            <ref role="37wK5l" to="qgpv:3EZ4ze0BGd2" resolve="getBytesUtf8" />
-                            <node concept="37vLTw" id="3EZ4ze0C7KZ" role="37wK5m">
-                              <ref role="3cqZAo" node="3EZ4ze0C7Ic" resolve="response_content" />
-                            </node>
+                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                      <node concept="2YIFZM" id="3EZ4ze0CvSe" role="37wK5m">
+                        <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
+                        <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
+                        <node concept="2YIFZM" id="3EZ4ze0CvSh" role="37wK5m">
+                          <ref role="1Pybhc" to="qgpv:3EZ4ze0BFWQ" resolve="Utils" />
+                          <ref role="37wK5l" to="qgpv:3EZ4ze0BGd2" resolve="getBytesUtf8" />
+                          <node concept="37vLTw" id="3EZ4ze0C7KZ" role="37wK5m">
+                            <ref role="3cqZAo" node="3EZ4ze0C7Ic" resolve="response_content" />
                           </node>
-                        </node>
-                        <node concept="3uibUv" id="6dehukjWF$9" role="10QFUM">
-                          <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
                         </node>
                       </node>
                     </node>
@@ -17561,7 +17546,7 @@
       <node concept="3cqZAl" id="3EZ4ze0C25a" role="3clF45" />
       <node concept="3clFbS" id="3EZ4ze0C25b" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0Cw5Y" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0C259" resolve="AccountRegistration" />
+          <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
           <node concept="Xl_RD" id="3EZ4ze0C25d" role="37wK5m">
             <property role="Xl_RC" value="http://jabber.org/features/iq-register" />
           </node>

@@ -14,6 +14,7 @@
     <import index="fe9x" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.lcdui(Lampiro/)" />
     <import index="un97" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.lcdui.game(Lampiro/)" />
     <import index="33nz" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:java.util(Lampiro/)" />
+    <import index="4mnx" ref="r:fe0eb045-ef3a-4eb4-85b3-a2ff4cada1b3(it.yup.ui)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -5920,7 +5921,7 @@
       </node>
       <node concept="2ShNRf" id="3EZ4ze0Cna1" role="33vP2m">
         <node concept="1pGfFk" id="3EZ4ze0Cna2" role="2ShVmc">
-          <ref role="37wK5l" node="3EZ4ze0BDDI" resolve="UISeparator" />
+          <ref role="37wK5l" node="3JeJ3uKu7k8" resolve="UISeparator" />
           <node concept="3cmrfG" id="3EZ4ze0BSH$" role="37wK5m">
             <property role="3cmrfH" value="1" />
           </node>
@@ -6076,7 +6077,7 @@
       <node concept="3cqZAl" id="3EZ4ze0BSIu" role="3clF45" />
       <node concept="3clFbS" id="3EZ4ze0BSIv" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0CnaB" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BSIt" resolve="UIScreen" />
+          <ref role="37wK5l" node="3EZ4ze0BNpR" resolve="UIMenu" />
           <node concept="Xl_RD" id="3EZ4ze0BSKN" role="37wK5m">
             <property role="Xl_RC" value="Screen" />
           </node>
@@ -29598,7 +29599,7 @@
         </node>
         <node concept="3clFbS" id="3EZ4ze0BWtq" role="3clF47">
           <node concept="XkiVB" id="3EZ4ze0Co2j" role="3cqZAp">
-            <ref role="37wK5l" node="3EZ4ze0BWtk" resolve="UIRadioButtons.UIRadioButton" />
+            <ref role="37wK5l" node="3EZ4ze0BWRC" resolve="UILabel" />
             <node concept="37vLTw" id="3EZ4ze0BWts" role="37wK5m">
               <ref role="3cqZAo" node="3EZ4ze0BWtm" resolve="img" />
             </node>
@@ -29800,7 +29801,7 @@
       </node>
       <node concept="3clFbS" id="3EZ4ze0BWuR" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0Co2_" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BWuM" resolve="UIRadioButtons" />
+          <ref role="37wK5l" node="3EZ4ze0BDu$" resolve="UIVLayout" />
           <node concept="2OqwBi" id="3EZ4ze0Co2D" role="37wK5m">
             <node concept="37vLTw" id="3EZ4ze0Co2C" role="2Oq$k0">
               <ref role="3cqZAo" node="3EZ4ze0BWuO" resolve="stringItems" />
@@ -38351,7 +38352,7 @@
       </node>
       <node concept="3clFbS" id="3EZ4ze0C7RP" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0CodO" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0C7RL" resolve="UIEmoLabel" />
+          <ref role="37wK5l" node="3EZ4ze0BWRm" resolve="UILabel" />
           <node concept="37vLTw" id="3EZ4ze0C7RR" role="37wK5m">
             <ref role="3cqZAo" node="3EZ4ze0C7RN" resolve="text" />
           </node>
@@ -47634,7 +47635,7 @@
       </node>
       <node concept="3clFbS" id="3EZ4ze0BSk$" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0CowG" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BSkw" resolve="UIHLayout" />
+          <ref role="37wK5l" node="3EZ4ze0BELT" resolve="UILayout" />
           <node concept="37vLTw" id="3EZ4ze0BSkM" role="37wK5m">
             <ref role="3cqZAo" node="3EZ4ze0BSky" resolve="colNumber" />
           </node>
@@ -48916,7 +48917,7 @@
       </node>
       <node concept="3clFbS" id="3EZ4ze0BDuE" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0Coy_" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BDu$" resolve="UIVLayout" />
+          <ref role="37wK5l" node="3EZ4ze0BELT" resolve="UILayout" />
           <node concept="37vLTw" id="3EZ4ze0BDuY" role="37wK5m">
             <ref role="3cqZAo" node="3EZ4ze0BDuA" resolve="rowNumber" />
           </node>
@@ -52168,9 +52169,8 @@
   <node concept="312cEu" id="3EZ4ze0BDDF">
     <property role="TrG5h" value="UISeparator" />
     <property role="2bfB8j" value="true" />
-    <property role="1sVAO0" value="true" />
+    <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
-    <node concept="3Tm1VV" id="3EZ4ze0BDDG" role="1B3o_S" />
     <node concept="3uibUv" id="3EZ4ze0BDDH" role="1zkMxy">
       <ref role="3uigEE" node="3EZ4ze0BRZE" resolve="UIItem" />
     </node>
@@ -52187,7 +52187,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="3JeJ3uKu7tQ" role="jymVt" />
-    <node concept="2tJIrI" id="3JeJ3uKu79D" role="jymVt" />
     <node concept="3clFbW" id="3JeJ3uKu7k8" role="jymVt">
       <node concept="3cqZAl" id="3JeJ3uKu7k9" role="3clF45" />
       <node concept="3clFbS" id="3JeJ3uKu7kb" role="3clF47">
@@ -52336,6 +52335,7 @@
       <node concept="3Tmbuc" id="3EZ4ze0BDEA" role="1B3o_S" />
       <node concept="3cqZAl" id="3EZ4ze0BDEB" role="3clF45" />
     </node>
+    <node concept="3Tm1VV" id="3JeJ3uKTIUt" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3EZ4ze0C66N">
     <property role="TrG5h" value="UIAccordion" />
@@ -54355,7 +54355,7 @@
                 </node>
                 <node concept="2ShNRf" id="3EZ4ze0CoEc" role="33vP2m">
                   <node concept="1pGfFk" id="3EZ4ze0CoEd" role="2ShVmc">
-                    <ref role="37wK5l" node="3EZ4ze0BDDI" resolve="UISeparator" />
+                    <ref role="37wK5l" node="3JeJ3uKu7k8" resolve="UISeparator" />
                     <node concept="37vLTw" id="3EZ4ze0C6it" role="37wK5m">
                       <ref role="3cqZAo" node="3EZ4ze0C67V" resolve="sepSize" />
                     </node>
@@ -71004,6 +71004,7 @@
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="tempLabel" />
             <node concept="17QB3L" id="6dehukjWwFS" role="1tU5fm" />
+            <node concept="10Nm6u" id="3JeJ3uKUnlo" role="33vP2m" />
           </node>
         </node>
         <node concept="3clFbF" id="3EZ4ze0BE20" role="3cqZAp">
@@ -71014,7 +71015,7 @@
             <node concept="2ShNRf" id="6dehukjWwFT" role="37vLTx">
               <node concept="1pGfFk" id="6dehukjWwFU" role="2ShVmc">
                 <ref role="37wK5l" to="fe9x:~TextBox.&lt;init&gt;(java.lang.String,java.lang.String,int,int)" resolve="TextBox" />
-                <node concept="37vLTw" id="3EZ4ze0BE24" role="37wK5m">
+                <node concept="37vLTw" id="3JeJ3uKUnlW" role="37wK5m">
                   <ref role="3cqZAo" node="3EZ4ze0BE1H" resolve="tempLabel" />
                 </node>
                 <node concept="2OqwBi" id="3EZ4ze0BE25" role="37wK5m">
@@ -72932,7 +72933,7 @@
             </node>
             <node concept="2ShNRf" id="3EZ4ze0Cpon" role="33vP2m">
               <node concept="1pGfFk" id="3EZ4ze0Cpoo" role="2ShVmc">
-                <ref role="37wK5l" node="3EZ4ze0BDDI" resolve="UISeparator" />
+                <ref role="37wK5l" node="3JeJ3uKu7k8" resolve="UISeparator" />
                 <node concept="3cmrfG" id="3EZ4ze0BFqw" role="37wK5m">
                   <property role="3cmrfH" value="0" />
                 </node>

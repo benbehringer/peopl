@@ -867,32 +867,6 @@
               </node>
             </node>
           </node>
-          <node concept="TDmWw" id="3EZ4ze0C3sW" role="TEbGg">
-            <node concept="3clFbS" id="3EZ4ze0C3sR" role="TDEfX">
-              <node concept="3SKdUt" id="3EZ4ze0C3wq" role="3cqZAp">
-                <node concept="3SKdUq" id="3EZ4ze0C3wp" role="3SKWNk">
-                  <property role="3SKdUp" value="TODO Auto-generated catch block" />
-                </node>
-              </node>
-              <node concept="3clFbF" id="3EZ4ze0C3sS" role="3cqZAp">
-                <node concept="2OqwBi" id="3EZ4ze0CpKi" role="3clFbG">
-                  <node concept="37vLTw" id="3EZ4ze0CpKh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3EZ4ze0C3sJ" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="3EZ4ze0CpKj" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="3EZ4ze0C3sJ" role="TDEfY">
-              <property role="3TUv4t" value="false" />
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="3EZ4ze0C3sL" role="1tU5fm">
-                <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-              </node>
-            </node>
-          </node>
           <node concept="3clFbS" id="3EZ4ze0C3ss" role="SfCbr">
             <node concept="3clFbF" id="3EZ4ze0C3st" role="3cqZAp">
               <node concept="2OqwBi" id="3EZ4ze0CpKn" role="3clFbG">
@@ -2008,7 +1982,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="stream" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3JeJ3uKfeMo" role="1tU5fm">
+      <node concept="3uibUv" id="3JeJ3uKLXVf" role="1tU5fm">
         <ref role="3uigEE" to="q59p:3EZ4ze0C1EC" resolve="BasicXmlStream" />
       </node>
     </node>
@@ -2376,19 +2350,15 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3EZ4ze0C3gJ" role="3cqZAp">
-          <node concept="2OqwBi" id="3EZ4ze0CpS3" role="3clFbG">
-            <node concept="37vLTw" id="3JeJ3uKfeLX" role="2Oq$k0">
-              <ref role="3cqZAo" node="3EZ4ze0C3gi" resolve="stream" />
+        <node concept="3clFbF" id="3JeJ3uKT_Qo" role="3cqZAp">
+          <node concept="2YIFZM" id="3JeJ3uKT_Um" role="3clFbG">
+            <ref role="37wK5l" to="q59p:3EZ4ze0C1Ne" resolve="addEventListener" />
+            <ref role="1Pybhc" to="q59p:3EZ4ze0C1EC" resolve="BasicXmlStream" />
+            <node concept="37vLTw" id="3JeJ3uKT_Vj" role="37wK5m">
+              <ref role="3cqZAo" node="3EZ4ze0C3gC" resolve="qAuth" />
             </node>
-            <node concept="liA8E" id="3EZ4ze0CpS4" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="addEventListener" />
-              <node concept="37vLTw" id="3EZ4ze0C3gL" role="37wK5m">
-                <ref role="3cqZAo" node="3EZ4ze0C3gC" resolve="qAuth" />
-              </node>
-              <node concept="37vLTw" id="3EZ4ze0C3gM" role="37wK5m">
-                <ref role="3cqZAo" node="3EZ4ze0C3go" resolve="listener" />
-              </node>
+            <node concept="37vLTw" id="3JeJ3uKT_WA" role="37wK5m">
+              <ref role="3cqZAo" node="3EZ4ze0C3go" resolve="listener" />
             </node>
           </node>
         </node>
@@ -2411,20 +2381,16 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3EZ4ze0C3gU" role="3cqZAp">
-          <node concept="2OqwBi" id="3EZ4ze0CpSa" role="3clFbG">
-            <node concept="37vLTw" id="3EZ4ze0CpS9" role="2Oq$k0">
-              <ref role="3cqZAo" node="3EZ4ze0C3gi" resolve="stream" />
+        <node concept="3clFbF" id="3JeJ3uKT_Zy" role="3cqZAp">
+          <node concept="2YIFZM" id="3JeJ3uKTA3u" role="3clFbG">
+            <ref role="37wK5l" to="q59p:3EZ4ze0C1Ne" resolve="addEventListener" />
+            <ref role="1Pybhc" to="q59p:3EZ4ze0C1EC" resolve="BasicXmlStream" />
+            <node concept="37vLTw" id="3JeJ3uKTA4b" role="37wK5m">
+              <ref role="3cqZAo" node="3EZ4ze0C3gN" resolve="qMessage" />
             </node>
-            <node concept="liA8E" id="3EZ4ze0CpSb" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="addEventListener" />
-              <node concept="37vLTw" id="3EZ4ze0C3gW" role="37wK5m">
-                <ref role="3cqZAo" node="3EZ4ze0C3gN" resolve="qMessage" />
-              </node>
-              <node concept="2ShNRf" id="3EZ4ze0CpSc" role="37wK5m">
-                <node concept="HV5vD" id="3EZ4ze0CpSd" role="2ShVmc">
-                  <ref role="HV5vE" node="3EZ4ze0C3fP" resolve="XMPPTestClient.Echoer" />
-                </node>
+            <node concept="2ShNRf" id="3JeJ3uKTA5i" role="37wK5m">
+              <node concept="HV5vD" id="3JeJ3uKTAmH" role="2ShVmc">
+                <ref role="HV5vE" node="3EZ4ze0C3fP" resolve="XMPPTestClient.Echoer" />
               </node>
             </node>
           </node>
