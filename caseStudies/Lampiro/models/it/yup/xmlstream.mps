@@ -35,6 +35,7 @@
       <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
         <property id="1179360856892" name="value" index="2noCCI" />
       </concept>
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239709250944" name="jetbrains.mps.baseLanguage.structure.PrefixIncrementExpression" flags="nn" index="2$rviw" />
       <concept id="1239709577448" name="jetbrains.mps.baseLanguage.structure.PrefixDecrementExpression" flags="nn" index="2$sJ78" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
@@ -308,27 +309,26 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="stream" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3EZ4ze0BMHa" role="1tU5fm">
+      <node concept="3uibUv" id="3JeJ3uKMeX_" role="1tU5fm">
         <ref role="3uigEE" node="3EZ4ze0C1EC" resolve="BasicXmlStream" />
       </node>
     </node>
-    <node concept="3clFbW" id="3EZ4ze0BMHb" role="jymVt">
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3cqZAl" id="3EZ4ze0BMHc" role="3clF45" />
-      <node concept="3clFbS" id="3EZ4ze0BMHd" role="3clF47">
-        <node concept="XkiVB" id="3EZ4ze0Cvfw" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BMHb" resolve="TLSInitializer" />
-          <node concept="Xl_RD" id="3EZ4ze0BMHf" role="37wK5m">
+    <node concept="3clFbW" id="3JeJ3uKMh1y" role="jymVt">
+      <node concept="3cqZAl" id="3JeJ3uKMh1z" role="3clF45" />
+      <node concept="3clFbS" id="3JeJ3uKMh1_" role="3clF47">
+        <node concept="XkiVB" id="3JeJ3uKMh4P" role="3cqZAp">
+          <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
+          <node concept="Xl_RD" id="3JeJ3uKMh5E" role="37wK5m">
             <property role="Xl_RC" value="urn:ietf:params:xml:ns:xmpp-tls" />
           </node>
-          <node concept="3clFbT" id="3EZ4ze0BMHg" role="37wK5m">
+          <node concept="3clFbT" id="3JeJ3uKMh6v" role="37wK5m">
             <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
-      <node concept="3Tmbuc" id="3EZ4ze0BMHh" role="1B3o_S" />
+      <node concept="3Tmbuc" id="3JeJ3uKMgYO" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="3JeJ3uKMhx$" role="jymVt" />
     <node concept="3clFb_" id="3EZ4ze0BMHi" role="jymVt">
       <property role="TrG5h" value="start" />
       <property role="DiZV1" value="false" />
@@ -397,18 +397,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3EZ4ze0BMHF" role="3cqZAp">
-          <node concept="2OqwBi" id="3EZ4ze0CvfF" role="3clFbG">
-            <node concept="37vLTw" id="3EZ4ze0CvfE" role="2Oq$k0">
-              <ref role="3cqZAo" node="3EZ4ze0BMHj" resolve="stream" />
+        <node concept="3SKdUt" id="3JeJ3uKMif0" role="3cqZAp">
+          <node concept="3SKdUq" id="3JeJ3uKMif2" role="3SKWNk">
+            <property role="3SKdUp" value="Docu : 1" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3JeJ3uKMi8C" role="3cqZAp">
+          <node concept="2YIFZM" id="3JeJ3uKMiaR" role="3clFbG">
+            <ref role="37wK5l" node="3EZ4ze0C1NM" resolve="addOnetimeEventListener" />
+            <ref role="1Pybhc" node="3EZ4ze0C1EC" resolve="BasicXmlStream" />
+            <node concept="37vLTw" id="3JeJ3uKMibp" role="37wK5m">
+              <ref role="3cqZAo" node="3EZ4ze0BMH$" resolve="pq" />
             </node>
-            <node concept="liA8E" id="3EZ4ze0CvfG" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="addOnetimeEventListener" />
-              <node concept="37vLTw" id="3EZ4ze0BMHH" role="37wK5m">
-                <ref role="3cqZAo" node="3EZ4ze0BMH$" resolve="pq" />
-              </node>
-              <node concept="Xjq3P" id="3EZ4ze0BMHI" role="37wK5m" />
-            </node>
+            <node concept="Xjq3P" id="3JeJ3uKMicr" role="37wK5m" />
           </node>
         </node>
         <node concept="3clFbF" id="3EZ4ze0BMHJ" role="3cqZAp">
@@ -1796,7 +1797,7 @@
               <node concept="YS8fn" id="3EZ4ze0BFEB" role="3cqZAp">
                 <node concept="2ShNRf" id="3EZ4ze0CviI" role="YScLw">
                   <node concept="1pGfFk" id="3EZ4ze0CviZ" role="2ShVmc">
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.Throwable)" resolve="RuntimeException" />
+                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                     <node concept="2OqwBi" id="3EZ4ze0Cvj3" role="37wK5m">
                       <node concept="37vLTw" id="3EZ4ze0Cvj2" role="2Oq$k0">
                         <ref role="3cqZAo" node="3EZ4ze0BFEw" resolve="e" />
@@ -6409,7 +6410,7 @@
       <node concept="3cqZAl" id="3EZ4ze0BMIH" role="3clF45" />
       <node concept="3clFbS" id="3EZ4ze0BMII" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0Cvvd" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0BMIG" resolve="CompressionInitializer" />
+          <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
           <node concept="Xl_RD" id="3EZ4ze0BMIK" role="37wK5m">
             <property role="Xl_RC" value="http://jabber.org/features/compress" />
           </node>
@@ -7270,7 +7271,7 @@
                   <ref role="37wK5l" to="33ny:~Vector.addElement(java.lang.Object):void" resolve="addElement" />
                   <node concept="2ShNRf" id="3EZ4ze0CvwT" role="37wK5m">
                     <node concept="1pGfFk" id="3EZ4ze0CvwU" role="2ShVmc">
-                      <ref role="37wK5l" node="3EZ4ze0BMHb" resolve="TLSInitializer" />
+                      <ref role="37wK5l" node="3JeJ3uKMh1y" resolve="TLSInitializer" />
                     </node>
                   </node>
                 </node>
@@ -8206,18 +8207,13 @@
                   <ref role="37wK5l" to="qgpv:3EZ4ze0BNet" resolve="log" />
                   <node concept="2ShNRf" id="3EZ4ze0Cvzk" role="37wK5m">
                     <node concept="1pGfFk" id="3EZ4ze0CvzT" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                      <node concept="10QFUN" id="6dehukjWFz5" role="37wK5m">
-                        <node concept="2OqwBi" id="3EZ4ze0CvzX" role="10QFUP">
-                          <node concept="37vLTw" id="3EZ4ze0CvzW" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3EZ4ze0C1Oe" resolve="stanza" />
-                          </node>
-                          <node concept="liA8E" id="3EZ4ze0CvzY" role="2OqNvi">
-                            <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
-                          </node>
+                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                      <node concept="2OqwBi" id="3EZ4ze0CvzX" role="37wK5m">
+                        <node concept="37vLTw" id="3EZ4ze0CvzW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3EZ4ze0C1Oe" resolve="stanza" />
                         </node>
-                        <node concept="3uibUv" id="6dehukjWFz6" role="10QFUM">
-                          <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                        <node concept="liA8E" id="3EZ4ze0CvzY" role="2OqNvi">
+                          <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
                         </node>
                       </node>
                     </node>
@@ -8697,18 +8693,13 @@
                       <ref role="37wK5l" to="qgpv:3EZ4ze0BNet" resolve="log" />
                       <node concept="2ShNRf" id="3EZ4ze0Cv_n" role="37wK5m">
                         <node concept="1pGfFk" id="3EZ4ze0Cv_W" role="2ShVmc">
-                          <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                          <node concept="10QFUN" id="6dehukjWFzu" role="37wK5m">
-                            <node concept="2OqwBi" id="3EZ4ze0CvA0" role="10QFUP">
-                              <node concept="37vLTw" id="3EZ4ze0Cv_Z" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3EZ4ze0C1Oe" resolve="stanza" />
-                              </node>
-                              <node concept="liA8E" id="3EZ4ze0CvA1" role="2OqNvi">
-                                <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
-                              </node>
+                          <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                          <node concept="2OqwBi" id="3EZ4ze0CvA0" role="37wK5m">
+                            <node concept="37vLTw" id="3EZ4ze0Cv_Z" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3EZ4ze0C1Oe" resolve="stanza" />
                             </node>
-                            <node concept="3uibUv" id="6dehukjWFzv" role="10QFUM">
-                              <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                            <node concept="liA8E" id="3EZ4ze0CvA1" role="2OqNvi">
+                              <ref role="37wK5l" to="4i1p:3EZ4ze0BHvr" resolve="toXml" />
                             </node>
                           </node>
                         </node>
@@ -10204,7 +10195,7 @@
         <node concept="3cqZAl" id="3EZ4ze0C1Fq" role="3clF45" />
         <node concept="3clFbS" id="3EZ4ze0C1Fr" role="3clF47">
           <node concept="XkiVB" id="3EZ4ze0CvEI" role="3cqZAp">
-            <ref role="37wK5l" node="3EZ4ze0C1Fp" resolve="BasicXmlStream.ResourceBinding" />
+            <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
             <node concept="Xl_RD" id="3EZ4ze0C1Ft" role="37wK5m">
               <property role="Xl_RC" value="urn:ietf:params:xml:ns:xmpp-bind" />
             </node>
@@ -10611,7 +10602,7 @@
         <node concept="3cqZAl" id="3EZ4ze0C1Ht" role="3clF45" />
         <node concept="3clFbS" id="3EZ4ze0C1Hu" role="3clF47">
           <node concept="XkiVB" id="3EZ4ze0CvGA" role="3cqZAp">
-            <ref role="37wK5l" node="3EZ4ze0C1Hs" resolve="BasicXmlStream.SessionOpener" />
+            <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
             <node concept="Xl_RD" id="3EZ4ze0C1Hw" role="37wK5m">
               <property role="Xl_RC" value="urn:ietf:params:xml:ns:xmpp-session" />
             </node>
@@ -11085,7 +11076,7 @@
       <node concept="3cqZAl" id="3EZ4ze0C7BH" role="3clF45" />
       <node concept="3clFbS" id="3EZ4ze0C7BI" role="3clF47">
         <node concept="XkiVB" id="3EZ4ze0CvHx" role="3cqZAp">
-          <ref role="37wK5l" node="3EZ4ze0C7BG" resolve="SASLAuthenticator" />
+          <ref role="37wK5l" node="3EZ4ze0BKOY" resolve="Initializer" />
           <node concept="Xl_RD" id="3EZ4ze0C7BK" role="37wK5m">
             <property role="Xl_RC" value="urn:ietf:params:xml:ns:xmpp-sasl" />
           </node>
@@ -11696,6 +11687,7 @@
                                       <property role="1sVAO0" value="false" />
                                       <property role="1EXbeo" value="false" />
                                       <ref role="1Y3XeK" node="3EZ4ze0BOjt" resolve="PacketListener" />
+                                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                       <node concept="3clFb_" id="3EZ4ze0C7Hk" role="jymVt">
                                         <property role="TrG5h" value="packetReceived" />
                                         <property role="DiZV1" value="false" />
@@ -11855,6 +11847,7 @@
                                     <property role="1sVAO0" value="false" />
                                     <property role="1EXbeo" value="false" />
                                     <ref role="1Y3XeK" node="3EZ4ze0BOjt" resolve="PacketListener" />
+                                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                     <node concept="3clFb_" id="3EZ4ze0C7F3" role="jymVt">
                                       <property role="TrG5h" value="packetReceived" />
                                       <property role="DiZV1" value="false" />
@@ -12233,6 +12226,7 @@
                                   <property role="1sVAO0" value="false" />
                                   <property role="1EXbeo" value="false" />
                                   <ref role="1Y3XeK" node="3EZ4ze0BOjt" resolve="PacketListener" />
+                                  <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                   <node concept="3clFb_" id="3EZ4ze0C7Ea" role="jymVt">
                                     <property role="TrG5h" value="packetReceived" />
                                     <property role="DiZV1" value="false" />
@@ -13169,6 +13163,7 @@
                       <property role="1sVAO0" value="false" />
                       <property role="1EXbeo" value="false" />
                       <ref role="1Y3XeK" node="3EZ4ze0BOjt" resolve="PacketListener" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                       <node concept="3clFb_" id="3EZ4ze0C7Ld" role="jymVt">
                         <property role="TrG5h" value="packetReceived" />
                         <property role="DiZV1" value="false" />
