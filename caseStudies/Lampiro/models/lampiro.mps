@@ -13,6 +13,8 @@
     <import index="nr1p" ref="r:ee702946-c847-41a4-a9b1-0361d397b42e(it.yup.screens)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="eqij" ref="r:8838d120-a47e-40ad-899e-a1523c8b0b64(it.yup.xmpp.packets)" />
+    <import index="abfz" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.midlet(Lampiro/)" />
+    <import index="fe9x" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.lcdui(Lampiro/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -24,10 +26,6 @@
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1179360813171" name="jetbrains.mps.baseLanguage.structure.HexIntegerLiteral" flags="nn" index="2nou5x">
         <property id="1179360856892" name="value" index="2noCCI" />
-      </concept>
-      <concept id="28358707492436943" name="jetbrains.mps.baseLanguage.structure.JavaImport" flags="ng" index="u1fJn">
-        <property id="28358707492436944" name="onDemand" index="u1fJ8" />
-        <property id="5574384225470059890" name="static" index="1XWMmp" />
       </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
@@ -53,9 +51,6 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
-      <concept id="2621000434129553333" name="jetbrains.mps.baseLanguage.structure.UnknownDotCall" flags="nn" index="Wc6QR">
-        <property id="4872723285943177972" name="callee" index="10XrrR" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
@@ -90,6 +85,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -126,9 +122,6 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="6050519299856556786" name="jetbrains.mps.baseLanguage.structure.JavaImports" flags="ng" index="1lrU7d">
-        <child id="28358707492429991" name="entries" index="u1e2Z" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -141,15 +134,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
-      <concept id="6528213125912070246" name="jetbrains.mps.baseLanguage.structure.Tokens" flags="ng" index="1u$dsA">
-        <property id="1843920760191311250" name="tokens" index="1CJj6V" />
-      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="8473865358220097975" name="jetbrains.mps.baseLanguage.structure.UnknownNameRef" flags="nn" index="3yEOSi" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -207,7 +196,7 @@
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="3EZ4ze0BSy_" role="1B3o_S" />
     <node concept="3uibUv" id="3EZ4ze0BSyA" role="1zkMxy">
-      <ref role="3uigEE" to=":^" resolve="MIDlet" />
+      <ref role="3uigEE" to="abfz:~MIDlet" resolve="MIDlet" />
     </node>
     <node concept="3UR2Jj" id="3EZ4ze0BSFA" role="lGtFl">
       <node concept="TZ5HA" id="3EZ4ze0BSFQ" role="TZ5H$">
@@ -235,7 +224,7 @@
       <property role="TrG5h" value="disp" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3EZ4ze0BSyC" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="Display" />
+        <ref role="3uigEE" to="fe9x:~Display" resolve="Display" />
       </node>
       <node concept="3Tm1VV" id="3EZ4ze0BSyD" role="1B3o_S" />
       <node concept="z59LJ" id="3EZ4ze0BSyE" role="lGtFl">
@@ -302,9 +291,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="last_status" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3EZ4ze0BSyX" role="1tU5fm">
-        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-      </node>
+      <node concept="17QB3L" id="6dehukjWw9n" role="1tU5fm" />
       <node concept="3Tm6S6" id="3EZ4ze0BSyY" role="1B3o_S" />
     </node>
     <node concept="3clFbW" id="3EZ4ze0BSyZ" role="jymVt">
@@ -383,9 +370,9 @@
               <ref role="1PxDUh" node="3EZ4ze0BSy$" resolve="LampiroMidlet" />
               <ref role="3cqZAo" node="3EZ4ze0BSyB" resolve="disp" />
             </node>
-            <node concept="Wc6QR" id="3EZ4ze0BSzj" role="37vLTx">
-              <property role="10XrrR" value="getDisplay" />
-              <property role="1CJj6V" value="Display" />
+            <node concept="2YIFZM" id="6dehukjWw9j" role="37vLTx">
+              <ref role="1Pybhc" to="fe9x:~Display" resolve="Display" />
+              <ref role="37wK5l" to="fe9x:~Display.getDisplay(javax.microedition.midlet.MIDlet):javax.microedition.lcdui.Display" resolve="getDisplay" />
               <node concept="Xjq3P" id="3EZ4ze0BSzk" role="37wK5m" />
             </node>
           </node>
@@ -399,9 +386,9 @@
           <node concept="2YIFZM" id="3EZ4ze0CmVi" role="3clFbG">
             <ref role="1Pybhc" to="4mnx:3EZ4ze0BIYr" resolve="UICanvas" />
             <ref role="37wK5l" to="4mnx:3EZ4ze0BJxZ" resolve="setDisplay" />
-            <node concept="Wc6QR" id="3EZ4ze0BSzn" role="37wK5m">
-              <property role="10XrrR" value="getDisplay" />
-              <property role="1CJj6V" value="Display" />
+            <node concept="2YIFZM" id="6dehukjWw9M" role="37wK5m">
+              <ref role="1Pybhc" to="fe9x:~Display" resolve="Display" />
+              <ref role="37wK5l" to="fe9x:~Display.getDisplay(javax.microedition.midlet.MIDlet):javax.microedition.lcdui.Display" resolve="getDisplay" />
               <node concept="Xjq3P" id="3EZ4ze0BSzo" role="37wK5m" />
             </node>
           </node>
@@ -435,9 +422,7 @@
           <node concept="3cpWsn" id="3EZ4ze0BSzw" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="colorString" />
-            <node concept="3uibUv" id="3EZ4ze0BSzy" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
+            <node concept="17QB3L" id="6dehukjWw8R" role="1tU5fm" />
             <node concept="2OqwBi" id="3EZ4ze0BSzz" role="33vP2m">
               <node concept="2YIFZM" id="3EZ4ze0CmVt" role="2Oq$k0">
                 <ref role="1Pybhc" to="uj5d:3EZ4ze0BVID" resolve="Config" />
@@ -499,9 +484,7 @@
           <node concept="3cpWsn" id="3EZ4ze0BSzN" role="3cpWs9">
             <property role="3TUv4t" value="false" />
             <property role="TrG5h" value="fontString" />
-            <node concept="3uibUv" id="3EZ4ze0BSzP" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-            </node>
+            <node concept="17QB3L" id="6dehukjWw9W" role="1tU5fm" />
             <node concept="2OqwBi" id="3EZ4ze0BSzQ" role="33vP2m">
               <node concept="2YIFZM" id="3EZ4ze0CmVF" role="2Oq$k0">
                 <ref role="1Pybhc" to="uj5d:3EZ4ze0BVID" resolve="Config" />
@@ -588,7 +571,7 @@
               <ref role="3cqZAo" node="3EZ4ze0BSyB" resolve="disp" />
             </node>
             <node concept="liA8E" id="3EZ4ze0CmW2" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="setCurrent" />
+              <ref role="37wK5l" to="fe9x:~Display.setCurrent(javax.microedition.lcdui.Displayable):void" resolve="setCurrent" />
               <node concept="2ShNRf" id="3EZ4ze0CmW3" role="37wK5m">
                 <node concept="1pGfFk" id="3EZ4ze0CmW4" role="2ShVmc">
                   <ref role="37wK5l" to="nr1p:3EZ4ze0BOTE" resolve="SplashScreen" />
@@ -922,7 +905,7 @@
               <ref role="3cqZAo" node="3EZ4ze0BS_C" resolve="m" />
             </node>
             <node concept="liA8E" id="3EZ4ze0CmWU" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="notifyDestroyed" />
+              <ref role="37wK5l" to="abfz:~MIDlet.notifyDestroyed():void" resolve="notifyDestroyed" />
             </node>
           </node>
         </node>
@@ -958,17 +941,20 @@
                     <ref role="1PxDUh" to="4mnx:3EZ4ze0BFsC" resolve="UIConfig" />
                     <ref role="3cqZAo" to="4mnx:3EZ4ze0BFum" resolve="font_body" />
                   </node>
-                  <node concept="Wc6QR" id="3EZ4ze0BSA0" role="37vLTx">
-                    <property role="10XrrR" value="getFont" />
-                    <property role="1CJj6V" value="Font" />
-                    <node concept="3yEOSi" id="3EZ4ze0BSA1" role="37wK5m">
-                      <property role="1CJj6V" value="Font.FACE_PROPORTIONAL" />
+                  <node concept="2YIFZM" id="6dehukjWwa4" role="37vLTx">
+                    <ref role="1Pybhc" to="fe9x:~Font" resolve="Font" />
+                    <ref role="37wK5l" to="fe9x:~Font.getFont(int,int,int):javax.microedition.lcdui.Font" resolve="getFont" />
+                    <node concept="10M0yZ" id="6dehukjWw8K" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.FACE_PROPORTIONAL" resolve="FACE_PROPORTIONAL" />
                     </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSA2" role="37wK5m">
-                      <property role="1CJj6V" value="Font.STYLE_PLAIN" />
+                    <node concept="10M0yZ" id="6dehukjWw9t" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.STYLE_PLAIN" resolve="STYLE_PLAIN" />
                     </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSA3" role="37wK5m">
-                      <property role="1CJj6V" value="Font.SIZE_SMALL" />
+                    <node concept="10M0yZ" id="6dehukjWw9m" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.SIZE_SMALL" resolve="SIZE_SMALL" />
                     </node>
                   </node>
                 </node>
@@ -981,24 +967,27 @@
               <property role="3cmrfH" value="1" />
             </node>
             <node concept="3clFbS" id="3EZ4ze0BSA7" role="3Kbo56">
-              <node concept="3clFbF" id="3EZ4ze0BSA8" role="3cqZAp">
-                <node concept="37vLTI" id="3EZ4ze0BSA9" role="3clFbG">
-                  <node concept="10M0yZ" id="3EZ4ze0FjUd" role="37vLTJ">
+              <node concept="3clFbF" id="3JeJ3uKtwhn" role="3cqZAp">
+                <node concept="37vLTI" id="3JeJ3uKtwit" role="3clFbG">
+                  <node concept="2YIFZM" id="3JeJ3uKtwjo" role="37vLTx">
+                    <ref role="1Pybhc" to="fe9x:~Font" resolve="Font" />
+                    <ref role="37wK5l" to="fe9x:~Font.getFont(int,int,int):javax.microedition.lcdui.Font" resolve="getFont" />
+                    <node concept="10M0yZ" id="3JeJ3uKtwjQ" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.FACE_PROPORTIONAL" resolve="FACE_PROPORTIONAL" />
+                    </node>
+                    <node concept="10M0yZ" id="3JeJ3uKtwkP" role="37wK5m">
+                      <ref role="3cqZAo" to="fe9x:~Font.STYLE_PLAIN" resolve="STYLE_PLAIN" />
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                    </node>
+                    <node concept="10M0yZ" id="3JeJ3uKtwm3" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.SIZE_MEDIUM" resolve="SIZE_MEDIUM" />
+                    </node>
+                  </node>
+                  <node concept="10M0yZ" id="3JeJ3uKtwhD" role="37vLTJ">
                     <ref role="1PxDUh" to="4mnx:3EZ4ze0BFsC" resolve="UIConfig" />
                     <ref role="3cqZAo" to="4mnx:3EZ4ze0BFum" resolve="font_body" />
-                  </node>
-                  <node concept="Wc6QR" id="3EZ4ze0BSAb" role="37vLTx">
-                    <property role="10XrrR" value="getFont" />
-                    <property role="1CJj6V" value="Font" />
-                    <node concept="3yEOSi" id="3EZ4ze0BSAc" role="37wK5m">
-                      <property role="1CJj6V" value="Font.FACE_PROPORTIONAL" />
-                    </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSAd" role="37wK5m">
-                      <property role="1CJj6V" value="Font.STYLE_PLAIN" />
-                    </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSAe" role="37wK5m">
-                      <property role="1CJj6V" value="Font.SIZE_MEDIUM" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -1016,17 +1005,20 @@
                     <ref role="1PxDUh" to="4mnx:3EZ4ze0BFsC" resolve="UIConfig" />
                     <ref role="3cqZAo" to="4mnx:3EZ4ze0BFum" resolve="font_body" />
                   </node>
-                  <node concept="Wc6QR" id="3EZ4ze0BSAm" role="37vLTx">
-                    <property role="10XrrR" value="getFont" />
-                    <property role="1CJj6V" value="Font" />
-                    <node concept="3yEOSi" id="3EZ4ze0BSAn" role="37wK5m">
-                      <property role="1CJj6V" value="Font.FACE_PROPORTIONAL" />
+                  <node concept="2YIFZM" id="6dehukjWw8N" role="37vLTx">
+                    <ref role="1Pybhc" to="fe9x:~Font" resolve="Font" />
+                    <ref role="37wK5l" to="fe9x:~Font.getFont(int,int,int):javax.microedition.lcdui.Font" resolve="getFont" />
+                    <node concept="10M0yZ" id="6dehukjWw9V" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.FACE_PROPORTIONAL" resolve="FACE_PROPORTIONAL" />
                     </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSAo" role="37wK5m">
-                      <property role="1CJj6V" value="Font.STYLE_PLAIN" />
+                    <node concept="10M0yZ" id="6dehukjWw8Q" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.STYLE_PLAIN" resolve="STYLE_PLAIN" />
                     </node>
-                    <node concept="3yEOSi" id="3EZ4ze0BSAp" role="37wK5m">
-                      <property role="1CJj6V" value="Font.SIZE_LARGE" />
+                    <node concept="10M0yZ" id="6dehukjWw8U" role="37wK5m">
+                      <ref role="1PxDUh" to="fe9x:~Font" resolve="Font" />
+                      <ref role="3cqZAo" to="fe9x:~Font.SIZE_LARGE" resolve="SIZE_LARGE" />
                     </node>
                   </node>
                 </node>
@@ -1963,78 +1955,6 @@
       </node>
       <node concept="3Tm1VV" id="3EZ4ze0BSF$" role="1B3o_S" />
       <node concept="3cqZAl" id="3EZ4ze0BSF_" role="3clF45" />
-    </node>
-    <node concept="1lrU7d" id="3EZ4ze0BSFB" role="lGtFl">
-      <node concept="u1fJn" id="3EZ4ze0BSFC" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="lampiro" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFD" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.Logger" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFE" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.MemoryLogConsumer" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFF" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.StderrConsumer" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFG" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.XMPPConsumer" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFH" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.midlet.MIDlet" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFI" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.ui.UICanvas" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFJ" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.ui.UIConfig" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFK" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.ui.UIUtils" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFL" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.lcdui.Font" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFM" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.xmpp.Config" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFN" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.xmpp.Contact" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFO" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.xmpp.XMPPClient" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0BSFP" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.lcdui.Display" />
-      </node>
     </node>
   </node>
 </model>

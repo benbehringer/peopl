@@ -7,19 +7,20 @@
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="models/lib/bouncycastle.jar" />
       <sourceRoot location="models/lib/xmlpull_1_1_3_1.jar" />
-      <sourceRoot location="models/lib/midp_2.1.jar.zip" />
+      <sourceRoot location="models/lib/midp_2.1.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/models/lib/bouncycastle.jar" />
     <stubModelEntry path="${module}/models/lib/xmlpull_1_1_3_1.jar" />
-    <stubModelEntry path="${module}/models/lib/midp_2.1.jar.zip" />
+    <stubModelEntry path="${module}/models/lib/midp_2.1.jar" />
   </stubModelEntries>
   <sourcePath>
     <source path="${module}/models/lib" />
   </sourcePath>
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
@@ -30,6 +31,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="b387285c-3448-452c-b3bb-a3f8de8eaf08(JDK-tools)" version="0" />
     <module reference="fc3aa1b1-051e-4d27-ac7b-282a0925f904(Lampiro)" version="0" />
   </dependencyVersions>
 </solution>
