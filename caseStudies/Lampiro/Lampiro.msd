@@ -7,15 +7,17 @@
     <modelRoot contentPath="${module}" type="java_classes">
       <sourceRoot location="models/lib/bouncycastle.jar" />
       <sourceRoot location="models/lib/xmlpull_1_1_3_1.jar" />
-      <sourceRoot location="models/lib/midp_2.1.jar" />
-      <sourceRoot location="classes_gen/bluecove-1.2.3-signed.jar" />
+      <sourceRoot location="models/lib/bluecove-1.2.3-signed.jar" />
+      <sourceRoot location="models/lib/microemu-jsr-135-2.0.2.jar" />
+      <sourceRoot location="models/lib/microemu-midp-2.0.2.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
+    <stubModelEntry path="${module}/models/lib/bluecove-1.2.3-signed.jar" />
     <stubModelEntry path="${module}/models/lib/bouncycastle.jar" />
     <stubModelEntry path="${module}/models/lib/xmlpull_1_1_3_1.jar" />
-    <stubModelEntry path="${module}/models/lib/midp_2.1.jar" />
-    <stubModelEntry path="${module}/models/lib/bluecove-1.2.3-signed.jar" />
+    <stubModelEntry path="${module}/models/lib/microemu-jsr-135-2.0.2.jar" />
+    <stubModelEntry path="${module}/models/lib/microemu-midp-2.0.2.jar" />
   </stubModelEntries>
   <sourcePath>
     <source path="${module}/models/lib" />

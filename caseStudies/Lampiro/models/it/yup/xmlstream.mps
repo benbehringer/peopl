@@ -11624,17 +11624,12 @@
                                       <ref role="37wK5l" to="4i1p:3EZ4ze0BHlP" resolve="addText" />
                                       <node concept="2ShNRf" id="3EZ4ze0CvJg" role="37wK5m">
                                         <node concept="1pGfFk" id="3EZ4ze0CvJP" role="2ShVmc">
-                                          <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                                          <node concept="10QFUN" id="6dehukjWFzN" role="37wK5m">
-                                            <node concept="2YIFZM" id="3EZ4ze0CvJS" role="10QFUP">
-                                              <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
-                                              <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
-                                              <node concept="37vLTw" id="3EZ4ze0C7GX" role="37wK5m">
-                                                <ref role="3cqZAo" node="3EZ4ze0C7Ge" resolve="buf" />
-                                              </node>
-                                            </node>
-                                            <node concept="3uibUv" id="6dehukjWFzO" role="10QFUM">
-                                              <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                                          <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                                          <node concept="2YIFZM" id="3EZ4ze0CvJS" role="37wK5m">
+                                            <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
+                                            <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
+                                            <node concept="37vLTw" id="3EZ4ze0C7GX" role="37wK5m">
+                                              <ref role="3cqZAo" node="3EZ4ze0C7Ge" resolve="buf" />
                                             </node>
                                           </node>
                                         </node>
@@ -12158,22 +12153,17 @@
                                   <ref role="37wK5l" to="4i1p:3EZ4ze0BHlP" resolve="addText" />
                                   <node concept="2ShNRf" id="3EZ4ze0CvMF" role="37wK5m">
                                     <node concept="1pGfFk" id="3EZ4ze0CvNg" role="2ShVmc">
-                                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(java.lang.StringBuilder)" resolve="String" />
-                                      <node concept="10QFUN" id="6dehukjWFzH" role="37wK5m">
-                                        <node concept="2YIFZM" id="3EZ4ze0CvNj" role="10QFUP">
-                                          <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
-                                          <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
-                                          <node concept="2OqwBi" id="3EZ4ze0CvNn" role="37wK5m">
-                                            <node concept="37vLTw" id="3EZ4ze0CvNm" role="2Oq$k0">
-                                              <ref role="3cqZAo" node="3EZ4ze0C7D7" resolve="bos" />
-                                            </node>
-                                            <node concept="liA8E" id="3EZ4ze0CvNo" role="2OqNvi">
-                                              <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray():byte[]" resolve="toByteArray" />
-                                            </node>
+                                      <ref role="37wK5l" to="wyt6:~String.&lt;init&gt;(byte[])" resolve="String" />
+                                      <node concept="2YIFZM" id="3EZ4ze0CvNj" role="37wK5m">
+                                        <ref role="1Pybhc" to="208j:~Base64" resolve="Base64" />
+                                        <ref role="37wK5l" to="208j:~Base64.encode(byte[]):byte[]" resolve="encode" />
+                                        <node concept="2OqwBi" id="3EZ4ze0CvNn" role="37wK5m">
+                                          <node concept="37vLTw" id="3EZ4ze0CvNm" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="3EZ4ze0C7D7" resolve="bos" />
                                           </node>
-                                        </node>
-                                        <node concept="3uibUv" id="6dehukjWFzI" role="10QFUM">
-                                          <ref role="3uigEE" to="wyt6:~StringBuilder" resolve="StringBuilder" />
+                                          <node concept="liA8E" id="3EZ4ze0CvNo" role="2OqNvi">
+                                            <ref role="37wK5l" to="guwi:~ByteArrayOutputStream.toByteArray():byte[]" resolve="toByteArray" />
+                                          </node>
                                         </node>
                                       </node>
                                     </node>

@@ -2449,7 +2449,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="canvas" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3EZ4ze0C7b8" role="1tU5fm">
+      <node concept="3uibUv" id="277o1kLJcXS" role="1tU5fm">
         <ref role="3uigEE" to="4mnx:3EZ4ze0BIYr" resolve="UICanvas" />
       </node>
     </node>
@@ -4335,11 +4335,11 @@
                         <property role="Xl_RC" value="H*W=" />
                       </node>
                       <node concept="2OqwBi" id="3EZ4ze0Cq1s" role="3uHU7w">
-                        <node concept="37vLTw" id="3EZ4ze0Cq1r" role="2Oq$k0">
+                        <node concept="37vLTw" id="277o1kLJd3m" role="2Oq$k0">
                           <ref role="3cqZAo" node="3EZ4ze0C7b6" resolve="canvas" />
                         </node>
                         <node concept="liA8E" id="3EZ4ze0Cq1t" role="2OqNvi">
-                          <ref role="37wK5l" to="fe9x:~Canvas.getHeight():int" resolve="getHeight" />
+                          <ref role="37wK5l" to="fe9x:~Displayable.getHeight():int" resolve="getHeight" />
                         </node>
                       </node>
                     </node>
@@ -4352,7 +4352,7 @@
                       <ref role="3cqZAo" node="3EZ4ze0C7b6" resolve="canvas" />
                     </node>
                     <node concept="liA8E" id="3EZ4ze0Cq1$" role="2OqNvi">
-                      <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                      <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                     </node>
                   </node>
                 </node>

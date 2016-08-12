@@ -6321,7 +6321,7 @@
                 <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="3EZ4ze0BSJF" role="2OqNvi">
-                <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
               </node>
             </node>
           </node>
@@ -8919,7 +8919,7 @@
                                                 <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
                                               </node>
                                               <node concept="liA8E" id="3EZ4ze0BSYA" role="2OqNvi">
-                                                <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                                                <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                                               </node>
                                             </node>
                                             <node concept="17qRlL" id="3EZ4ze0BSYB" role="3uHU7w">
@@ -12104,7 +12104,7 @@
                 </node>
               </node>
               <node concept="liA8E" id="3EZ4ze0BTeD" role="2OqNvi">
-                <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
               </node>
             </node>
           </node>
@@ -13467,7 +13467,7 @@
                   <ref role="3cqZAo" node="3EZ4ze0BSH2" resolve="canvas" />
                 </node>
                 <node concept="liA8E" id="3EZ4ze0CnzW" role="2OqNvi">
-                  <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                  <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                 </node>
               </node>
               <node concept="2OqwBi" id="3EZ4ze0Cn$0" role="37wK5m">
@@ -16349,7 +16349,7 @@
                 <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
               </node>
               <node concept="liA8E" id="3EZ4ze0BT$t" role="2OqNvi">
-                <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
               </node>
             </node>
           </node>
@@ -45825,7 +45825,7 @@
                             <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
                           </node>
                           <node concept="liA8E" id="3EZ4ze0BNS6" role="2OqNvi">
-                            <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                            <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="3EZ4ze0BNS7" role="3uHU7w">
@@ -62267,7 +62267,7 @@
                       </node>
                       <node concept="3cpWsd" id="3EZ4ze0BJnJ" role="37wK5m">
                         <node concept="1rXfSq" id="3EZ4ze0BJnK" role="3uHU7B">
-                          <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                          <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                         </node>
                         <node concept="3cmrfG" id="3EZ4ze0BJnL" role="3uHU7w">
                           <property role="3cmrfH" value="40" />
@@ -65333,7 +65333,7 @@
                         <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="3EZ4ze0BJ$F" role="2OqNvi">
-                        <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                        <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                       </node>
                     </node>
                     <node concept="3cmrfG" id="3EZ4ze0BJ$G" role="3uHU7w">
@@ -69992,7 +69992,7 @@
                         <ref role="37wK5l" node="3EZ4ze0BJxI" resolve="getInstance" />
                       </node>
                       <node concept="liA8E" id="3EZ4ze0BDVF" role="2OqNvi">
-                        <ref role="37wK5l" to="fe9x:~Canvas.getWidth():int" resolve="getWidth" />
+                        <ref role="37wK5l" to="fe9x:~Displayable.getWidth():int" resolve="getWidth" />
                       </node>
                     </node>
                     <node concept="3cmrfG" id="3EZ4ze0BDVG" role="3uHU7w">

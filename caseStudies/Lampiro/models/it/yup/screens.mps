@@ -21284,7 +21284,7 @@
         </node>
         <node concept="3clFbF" id="3EZ4ze0BHCs" role="3cqZAp">
           <node concept="1rXfSq" id="3EZ4ze0BHCt" role="3clFbG">
-            <ref role="37wK5l" to="fe9x:~Displayable.setTitle(java.lang.String):void" resolve="setTitle" />
+            <ref role="37wK5l" to="fe9x:~TextBox.setTitle(java.lang.String):void" resolve="setTitle" />
             <node concept="3cpWs3" id="3EZ4ze0BHCu" role="37wK5m">
               <node concept="3cpWs3" id="3EZ4ze0BHCv" role="3uHU7B">
                 <node concept="2OqwBi" id="3EZ4ze0Cxii" role="3uHU7B">
@@ -27093,7 +27093,7 @@
             <property role="TrG5h" value="h" />
             <node concept="10Oyi0" id="3EZ4ze0BPcY" role="1tU5fm" />
             <node concept="1rXfSq" id="3EZ4ze0BPd1" role="33vP2m">
-              <ref role="37wK5l" to="fe9x:~Canvas.getHeight():int" resolve="getHeight" />
+              <ref role="37wK5l" to="fe9x:~Displayable.getHeight():int" resolve="getHeight" />
             </node>
           </node>
         </node>
