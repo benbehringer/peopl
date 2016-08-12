@@ -9467,6 +9467,43 @@
             <node concept="3uibUv" id="3EZ4ze0BWJa" role="1tU5fm">
               <ref role="3uigEE" to="q59p:3EZ4ze0C87q" resolve="EventQuery" />
             </node>
+            <node concept="37vLTI" id="277o1kLTyGb" role="33vP2m">
+              <node concept="2ShNRf" id="277o1kLTyI9" role="37vLTx">
+                <node concept="1pGfFk" id="277o1kLTyI6" role="2ShVmc">
+                  <ref role="37wK5l" to="q59p:3EZ4ze0C87R" resolve="EventQuery" />
+                  <node concept="10M0yZ" id="277o1kLTyKy" role="37wK5m">
+                    <ref role="1PxDUh" node="3EZ4ze0BW$R" resolve="FTSender" />
+                    <ref role="3cqZAo" node="3EZ4ze0BWA5" resolve="JINGLE" />
+                  </node>
+                  <node concept="2ShNRf" id="277o1kLTySW" role="37wK5m">
+                    <node concept="3g6Rrh" id="277o1kLTzwA" role="2ShVmc">
+                      <node concept="17QB3L" id="277o1kLTztG" role="3g7fb8" />
+                      <node concept="10M0yZ" id="277o1kLTzyW" role="3g7hyw">
+                        <ref role="1PxDUh" node="3EZ4ze0BW$R" resolve="FTSender" />
+                        <ref role="3cqZAo" node="3EZ4ze0BW_X" resolve="ACTION" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2ShNRf" id="277o1kLTzHX" role="37wK5m">
+                    <node concept="3g6Rrh" id="277o1kLT$3R" role="2ShVmc">
+                      <node concept="17QB3L" id="277o1kLTzZJ" role="3g7fb8" />
+                      <node concept="10M0yZ" id="277o1kLT$6B" role="3g7hyw">
+                        <ref role="1PxDUh" node="3EZ4ze0BW$R" resolve="FTSender" />
+                        <ref role="3cqZAo" node="3EZ4ze0BW_T" resolve="SESSION_TERMINATE" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="277o1kLTyCS" role="37vLTJ">
+                <node concept="37vLTw" id="277o1kLTyBP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3EZ4ze0BWIR" resolve="eq" />
+                </node>
+                <node concept="2OwXpG" id="277o1kLTyEt" role="2OqNvi">
+                  <ref role="2Oxat5" to="q59p:3EZ4ze0C87E" resolve="child" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
         <node concept="3clFbF" id="3EZ4ze0BWJn" role="3cqZAp">

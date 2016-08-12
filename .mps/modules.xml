@@ -20,7 +20,7 @@
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.GPL.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.GPL" />
       <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro/Lampiro.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro/Lampiro.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/Prop4J/Prop4J.msd" folder="caseStudies.Prop4J" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/Prop4J_NoVar/Prop4J_NoVar.msd" folder="caseStudies.Prop4J.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.junit/org.junit.msd" folder="caseStudies.Prop4J.source" />
@@ -37,6 +37,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core.solutionSpace" />
+      <modulePath path="$PROJECT_DIR$/languages/FU_LAMPRIO_LANGUAGE/FU_LAMPRIO_LANGUAGE.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
