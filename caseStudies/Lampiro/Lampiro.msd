@@ -8,12 +8,14 @@
       <sourceRoot location="models/lib/bouncycastle.jar" />
       <sourceRoot location="models/lib/xmlpull_1_1_3_1.jar" />
       <sourceRoot location="models/lib/midp_2.1.jar" />
+      <sourceRoot location="classes_gen/bluecove-1.2.3-signed.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="${module}/models/lib/bouncycastle.jar" />
     <stubModelEntry path="${module}/models/lib/xmlpull_1_1_3_1.jar" />
     <stubModelEntry path="${module}/models/lib/midp_2.1.jar" />
+    <stubModelEntry path="${module}/models/lib/bluecove-1.2.3-signed.jar" />
   </stubModelEntries>
   <sourcePath>
     <source path="${module}/models/lib" />

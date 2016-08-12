@@ -14,7 +14,6 @@
     <import index="fe9x" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.lcdui(Lampiro/)" />
     <import index="un97" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.lcdui.game(Lampiro/)" />
     <import index="33nz" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:java.util(Lampiro/)" />
-    <import index="4mnx" ref="r:fe0eb045-ef3a-4eb4-85b3-a2ff4cada1b3(it.yup.ui)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -6006,7 +6005,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="graphics" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="3EZ4ze0BSI0" role="1tU5fm">
+      <node concept="3uibUv" id="7qI$VZBpqNi" role="1tU5fm">
         <ref role="3uigEE" to="fe9x:~Graphics" resolve="Graphics" />
       </node>
       <node concept="3Tm6S6" id="3EZ4ze0BSI1" role="1B3o_S" />
@@ -15330,13 +15329,13 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3EZ4ze0BTur" role="3clF47">
         <node concept="3cpWs6" id="3EZ4ze0BTus" role="3cqZAp">
-          <node concept="37vLTw" id="3EZ4ze0BTut" role="3cqZAk">
+          <node concept="37vLTw" id="7qI$VZBpqdn" role="3cqZAk">
             <ref role="3cqZAo" node="3EZ4ze0BSHY" resolve="graphics" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="3EZ4ze0BTuu" role="1B3o_S" />
-      <node concept="3uibUv" id="3EZ4ze0BTuv" role="3clF45">
+      <node concept="3uibUv" id="7qI$VZBpp_4" role="3clF45">
         <ref role="3uigEE" to="fe9x:~Graphics" resolve="Graphics" />
       </node>
       <node concept="P$JXv" id="3EZ4ze0BTuw" role="lGtFl">

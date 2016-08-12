@@ -12,7 +12,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="9hnl" ref="r:373441eb-2767-4932-9025-f50458588e7c(com.jcraft.jzlib)" />
     <import index="siqm" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:org.bouncycastle.crypto.tls(Lampiro/)" />
-    <import index="3q9u" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.io(Lampiro/)" implicit="true" />
+    <import index="3q9u" ref="fc3aa1b1-051e-4d27-ac7b-282a0925f904/java:javax.microedition.io(Lampiro/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -31,10 +31,6 @@
         <property id="1179360856892" name="value" index="2noCCI" />
       </concept>
       <concept id="1224500764161" name="jetbrains.mps.baseLanguage.structure.BitwiseAndExpression" flags="nn" index="pVHWs" />
-      <concept id="28358707492436943" name="jetbrains.mps.baseLanguage.structure.JavaImport" flags="ng" index="u1fJn">
-        <property id="28358707492436944" name="onDemand" index="u1fJ8" />
-        <property id="5574384225470059890" name="static" index="1XWMmp" />
-      </concept>
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -65,9 +61,6 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
-      <concept id="2621000434129553333" name="jetbrains.mps.baseLanguage.structure.UnknownDotCall" flags="nn" index="Wc6QR">
-        <property id="4872723285943177972" name="callee" index="10XrrR" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P">
@@ -112,9 +105,6 @@
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
-      <concept id="3304084122476667220" name="jetbrains.mps.baseLanguage.structure.UnknownNew" flags="nn" index="31S9pk">
-        <property id="3304084122476721463" name="className" index="31Ss8R" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -178,8 +168,9 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="6050519299856556786" name="jetbrains.mps.baseLanguage.structure.JavaImports" flags="ng" index="1lrU7d">
-        <child id="28358707492429991" name="entries" index="u1e2Z" />
+      <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
+        <child id="1154542793668" name="componentType" index="3g7fb8" />
+        <child id="1154542803372" name="initValue" index="3g7hyw" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -193,9 +184,6 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6528213125912070246" name="jetbrains.mps.baseLanguage.structure.Tokens" flags="ng" index="1u$dsA">
-        <property id="1843920760191311250" name="tokens" index="1CJj6V" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -1190,7 +1178,7 @@
       <property role="TrG5h" value="connection" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="3EZ4ze0C8Ox" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="StreamConnection" />
+        <ref role="3uigEE" to="3q9u:~StreamConnection" resolve="StreamConnection" />
       </node>
       <node concept="3Tmbuc" id="3EZ4ze0C8Oy" role="1B3o_S" />
     </node>
@@ -1482,9 +1470,9 @@
                                 <ref role="3cqZAo" node="3EZ4ze0C8Ov" resolve="connection" />
                               </node>
                               <node concept="10QFUN" id="3EZ4ze0C8PR" role="37vLTx">
-                                <node concept="Wc6QR" id="3EZ4ze0C8PS" role="10QFUP">
-                                  <property role="10XrrR" value="open" />
-                                  <property role="1CJj6V" value="Connector" />
+                                <node concept="2YIFZM" id="6KQWYxInPDs" role="10QFUP">
+                                  <ref role="1Pybhc" to="3q9u:~Connector" resolve="Connector" />
+                                  <ref role="37wK5l" to="3q9u:~Connector.open(java.lang.String):javax.microedition.io.Connection" resolve="open" />
                                   <node concept="37vLTw" id="3EZ4ze0C8PT" role="37wK5m">
                                     <ref role="3cqZAo" node="3EZ4ze0C8On" resolve="connectionUrl" />
                                   </node>
@@ -1519,7 +1507,7 @@
                                   <ref role="3cqZAo" node="3EZ4ze0C8Ov" resolve="connection" />
                                 </node>
                                 <node concept="liA8E" id="3EZ4ze0CeO5" role="2OqNvi">
-                                  <ref role="37wK5l" to=":^" resolve="openInputStream" />
+                                  <ref role="37wK5l" to="3q9u:~InputConnection.openInputStream():java.io.InputStream" resolve="openInputStream" />
                                 </node>
                               </node>
                             </node>
@@ -1534,7 +1522,7 @@
                                   <ref role="3cqZAo" node="3EZ4ze0C8Ov" resolve="connection" />
                                 </node>
                                 <node concept="liA8E" id="3EZ4ze0CeOd" role="2OqNvi">
-                                  <ref role="37wK5l" to=":^" resolve="openOutputStream" />
+                                  <ref role="37wK5l" to="3q9u:~OutputConnection.openOutputStream():java.io.OutputStream" resolve="openOutputStream" />
                                 </node>
                               </node>
                             </node>
@@ -1544,21 +1532,18 @@
                               <property role="3SKdUp" value="start the sender after each new connection" />
                             </node>
                           </node>
-                          <node concept="3clFbF" id="3EZ4ze0C8Q6" role="3cqZAp">
-                            <node concept="37vLTI" id="3EZ4ze0C8Q7" role="3clFbG">
-                              <node concept="37vLTw" id="3EZ4ze0C8Q8" role="37vLTJ">
-                                <ref role="3cqZAo" node="3EZ4ze0BPpP" resolve="sender" />
-                              </node>
-                              <node concept="10QFUN" id="6dehukjWFuo" role="37vLTx">
-                                <node concept="31S9pk" id="3EZ4ze0C8Q9" role="10QFUP">
-                                  <property role="31Ss8R" value="Sender" />
-                                  <node concept="Xjq3P" id="3EZ4ze0C8Qa" role="37wK5m">
+                          <node concept="3clFbF" id="6KQWYxIoRDY" role="3cqZAp">
+                            <node concept="37vLTI" id="6KQWYxIoRPs" role="3clFbG">
+                              <node concept="2ShNRf" id="6KQWYxIoRVQ" role="37vLTx">
+                                <node concept="1pGfFk" id="6KQWYxIoRVP" role="2ShVmc">
+                                  <ref role="37wK5l" node="3EZ4ze0BPmO" resolve="BaseChannel.Sender" />
+                                  <node concept="Xjq3P" id="6KQWYxIoSjf" role="37wK5m">
                                     <ref role="1HBi2w" node="3EZ4ze0C8HC" resolve="SocketChannel" />
                                   </node>
                                 </node>
-                                <node concept="3uibUv" id="6dehukjWFup" role="10QFUM">
-                                  <ref role="3uigEE" node="3EZ4ze0BPmC" resolve="BaseChannel.Sender" />
-                                </node>
+                              </node>
+                              <node concept="37vLTw" id="6KQWYxIoRDW" role="37vLTJ">
+                                <ref role="3cqZAo" node="3EZ4ze0BPpP" resolve="sender" />
                               </node>
                             </node>
                           </node>
@@ -1761,7 +1746,7 @@
                   <ref role="3cqZAo" node="3EZ4ze0C8Ov" resolve="connection" />
                 </node>
                 <node concept="liA8E" id="3EZ4ze0CePd" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="close" />
+                  <ref role="37wK5l" to="3q9u:~Connection.close():void" resolve="close" />
                 </node>
               </node>
             </node>
@@ -1894,7 +1879,40 @@
               <ref role="3cqZAo" node="3EZ4ze0C8OH" resolve="ka_task" />
             </node>
             <node concept="2ShNRf" id="3EZ4ze0C8So" role="37vLTx">
-              <node concept="YeOm9" id="3EZ4ze0C8Sp" role="2ShVmc" />
+              <node concept="YeOm9" id="6KQWYxIoTz1" role="2ShVmc">
+                <node concept="1Y3b0j" id="6KQWYxIoTz4" role="YeSDq">
+                  <property role="2bfB8j" value="true" />
+                  <ref role="1Y3XeK" to="33ny:~TimerTask" resolve="TimerTask" />
+                  <ref role="37wK5l" to="33ny:~TimerTask.&lt;init&gt;()" resolve="TimerTask" />
+                  <node concept="3Tm1VV" id="6KQWYxIoTz5" role="1B3o_S" />
+                  <node concept="3clFb_" id="6KQWYxIoTz6" role="jymVt">
+                    <property role="1EzhhJ" value="false" />
+                    <property role="TrG5h" value="run" />
+                    <property role="DiZV1" value="false" />
+                    <property role="od$2w" value="false" />
+                    <node concept="3Tm1VV" id="6KQWYxIoTz7" role="1B3o_S" />
+                    <node concept="3cqZAl" id="6KQWYxIoTz9" role="3clF45" />
+                    <node concept="3clFbS" id="6KQWYxIoTza" role="3clF47">
+                      <node concept="3clFbF" id="6KQWYxIoTB4" role="3cqZAp">
+                        <node concept="1rXfSq" id="6KQWYxIoTB3" role="3clFbG">
+                          <ref role="37wK5l" node="3EZ4ze0C8RZ" resolve="sendContent" />
+                          <node concept="2ShNRf" id="6KQWYxIoTEZ" role="37wK5m">
+                            <node concept="3g6Rrh" id="6KQWYxIoUwJ" role="2ShVmc">
+                              <node concept="10PrrI" id="6KQWYxIoTSC" role="3g7fb8" />
+                              <node concept="10QFUN" id="6KQWYxIoUHO" role="3g7hyw">
+                                <node concept="10PrrI" id="6KQWYxIoUJO" role="10QFUM" />
+                                <node concept="2nou5x" id="6KQWYxIoUCl" role="10QFUP">
+                                  <property role="2noCCI" value="20" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2516,15 +2534,11 @@
                     <property role="3SKdUp" value="#ifndef TLS " />
                   </node>
                 </node>
-                <node concept="3clFbF" id="3EZ4ze0C8KV" role="3cqZAp">
-                  <node concept="3uNrnE" id="3EZ4ze0C8KW" role="3clFbG">
-                    <node concept="2OqwBi" id="3EZ4ze0C8KX" role="2$L3a6">
-                      <node concept="Xjq3P" id="3EZ4ze0C8KY" role="2Oq$k0">
-                        <ref role="1HBi2w" node="3EZ4ze0C8HC" resolve="SocketChannel" />
-                      </node>
-                      <node concept="2OwXpG" id="3EZ4ze0C8L0" role="2OqNvi">
-                        <ref role="2Oxat5" to=":^" resolve="bytes_received" />
-                      </node>
+                <node concept="3clFbF" id="6KQWYxIoVTn" role="3cqZAp">
+                  <node concept="3uNrnE" id="6KQWYxIoW80" role="3clFbG">
+                    <node concept="10M0yZ" id="6KQWYxIoW82" role="2$L3a6">
+                      <ref role="1PxDUh" node="3EZ4ze0C8HC" resolve="SocketChannel" />
+                      <ref role="3cqZAo" node="3EZ4ze0BPpZ" resolve="bytes_received" />
                     </node>
                   </node>
                 </node>
@@ -2646,8 +2660,8 @@
           <node concept="3clFbF" id="3EZ4ze0C8Lo" role="3cqZAp">
             <node concept="3uNrnE" id="3EZ4ze0C8Lp" role="3clFbG">
               <node concept="10M0yZ" id="3EZ4ze0FgFJ" role="2$L3a6">
-                <ref role="1PxDUh" node="3EZ4ze0BPmA" resolve="BaseChannel" />
                 <ref role="3cqZAo" node="3EZ4ze0BPpZ" resolve="bytes_received" />
+                <ref role="1PxDUh" node="3EZ4ze0C8HC" resolve="SocketChannel" />
               </node>
             </node>
           </node>
@@ -3215,11 +3229,9 @@
             </node>
             <node concept="3clFbF" id="3EZ4ze0C8TB" role="3cqZAp">
               <node concept="37vLTI" id="3EZ4ze0C8TC" role="3clFbG">
-                <node concept="2OqwBi" id="3EZ4ze0C8TD" role="37vLTJ">
-                  <node concept="Xjq3P" id="3EZ4ze0C8TE" role="2Oq$k0" />
-                  <node concept="2OwXpG" id="3EZ4ze0C8TF" role="2OqNvi">
-                    <ref role="2Oxat5" to=":^" resolve="handler" />
-                  </node>
+                <node concept="10M0yZ" id="6KQWYxIoWkY" role="37vLTJ">
+                  <ref role="1PxDUh" node="3EZ4ze0C8HC" resolve="SocketChannel" />
+                  <ref role="3cqZAo" node="3EZ4ze0C8OM" resolve="handler" />
                 </node>
                 <node concept="37vLTw" id="3EZ4ze0C8TG" role="37vLTx">
                   <ref role="3cqZAo" node="3EZ4ze0C8Tu" resolve="handler" />
@@ -3261,93 +3273,6 @@
       </node>
       <node concept="3Tm1VV" id="3EZ4ze0C8TQ" role="1B3o_S" />
       <node concept="3cqZAl" id="3EZ4ze0C8TR" role="3clF45" />
-    </node>
-    <node concept="1lrU7d" id="3EZ4ze0C8TS" role="lGtFl">
-      <node concept="u1fJn" id="3EZ4ze0C8TT" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.transport" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TU" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.Logger" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TV" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="it.yup.util.Utils" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TW" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.IOException" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TX" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.InputStream" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TY" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.OutputStream" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8TZ" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.Reader" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U0" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.util.TimerTask" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U1" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.io.Connector" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U2" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.io.SocketConnection" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U3" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.microedition.io.StreamConnection" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U4" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="org.bouncycastle.crypto.tls.AlwaysValidVerifyer" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U5" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="org.bouncycastle.crypto.tls.TlsInputStream" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U6" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="org.bouncycastle.crypto.tls.TlsProtocolHandler" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U7" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.jcraft.jzlib.JZlib" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U8" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.jcraft.jzlib.ZInputStream" />
-      </node>
-      <node concept="u1fJn" id="3EZ4ze0C8U9" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.jcraft.jzlib.ZOutputStream" />
-      </node>
     </node>
   </node>
   <node concept="3HP615" id="3EZ4ze0BCI8">
