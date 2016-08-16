@@ -32,7 +32,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core.problemSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.solutionSpace" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.logger/de.htwsaar.peopl.core.csvWriter.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.logger/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" folder="peopl.core.solutionSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core.solutionSpace" />
@@ -57,10 +57,10 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
+      <modulePath path="$PROJECT_DIR$/test/GenerationTestSolution/generationTEstSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/ProductLineConfigurationTest/ProductLineConfigurationTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/test/generationTEstSolution/generationTEstSolution.msd" folder="" />
     </projectModules>
   </component>
 </project>
