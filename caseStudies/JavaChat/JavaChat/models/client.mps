@@ -5,9 +5,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -232,18 +232,18 @@
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
       </concept>
     </language>
-    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
@@ -268,8 +268,8 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
@@ -3633,159 +3633,178 @@
             <property role="3TUv4t" value="false" />
             <node concept="10P_77" id="$JQLRHKU_n" role="1tU5fm" />
           </node>
-          <node concept="3clFbS" id="$JQLRHKU_o" role="3clF47">
-            <node concept="3clFbJ" id="$JQLRHKU_p" role="3cqZAp">
-              <node concept="2ZW3vV" id="$JQLRHKU_s" role="3clFbw">
-                <node concept="37vLTw" id="$JQLRHKU_q" role="2ZW6bz">
-                  <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
-                </node>
-                <node concept="3uibUv" id="1n1TJ$JvudX" role="2ZW6by">
-                  <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
-                </node>
+          <node concept="3Tm1VV" id="$JQLRHKUAe" role="1B3o_S" />
+          <node concept="3uibUv" id="$JQLRHKUAf" role="3clF45">
+            <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
+          </node>
+          <node concept="3clFbS" id="2OGjNYq_zu8" role="3clF47">
+            <node concept="2wexfA" id="2OGjNYq_zu9" role="3cqZAp">
+              <ref role="ojxm_" node="$JQLRHKWt1" resolve="Gui" />
+              <ref role="ojxmB" node="$JQLRHKU_d" resolve="getListCellRendererComponent" />
+              <node concept="1V74GB" id="2OGjNYq_zub" role="lGtFl">
+                <property role="32Xqk$" value="chosenModule" />
+                <property role="TrG5h" value="Fragment_3255063765277095819" />
+                <ref role="1V74Hf" to="hmci:2OGjNYq_zud" resolve="VPToFragment_3255063765277095821" />
+                <ref role="3aRQVk" to="hmci:2OGjNYq_zue" resolve="ModuleToFragment_3255063765277095822" />
+                <ref role="a64iB" to="hmci:4yeP55kmSjy" resolve="GUI" />
+                <ref role="25GeQm" node="2OGjNYq_zuf" resolve="PeoplBlockReference_3255063765277095823" />
               </node>
-              <node concept="9aQIb" id="$JQLRHKUA7" role="9aQIa">
-                <node concept="3clFbS" id="$JQLRHKUA8" role="9aQI4">
-                  <node concept="3clFbF" id="$JQLRHKUA9" role="3cqZAp">
-                    <node concept="1rXfSq" id="$JQLRHKUAa" role="3clFbG">
-                      <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
-                      <node concept="2OqwBi" id="$JQLRHKVej" role="37wK5m">
-                        <node concept="37vLTw" id="$JQLRHKVei" role="2Oq$k0">
-                          <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
-                        </node>
-                        <node concept="liA8E" id="$JQLRHKVek" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
-                        </node>
-                      </node>
+              <node concept="3clFbS" id="$JQLRHKU_o" role="9aQI4">
+                <node concept="3clFbJ" id="$JQLRHKU_p" role="3cqZAp">
+                  <node concept="2ZW3vV" id="$JQLRHKU_s" role="3clFbw">
+                    <node concept="37vLTw" id="$JQLRHKU_q" role="2ZW6bz">
+                      <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
+                    </node>
+                    <node concept="3uibUv" id="1n1TJ$JvudX" role="2ZW6by">
+                      <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
                     </node>
                   </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="$JQLRHKU_u" role="3clFbx">
-                <node concept="3clFbF" id="$JQLRHKU_v" role="3cqZAp">
-                  <node concept="1rXfSq" id="$JQLRHKU_w" role="3clFbG">
-                    <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
-                    <node concept="3cpWs3" id="$JQLRHKU_x" role="37wK5m">
-                      <node concept="3cpWs3" id="$JQLRHKU_y" role="3uHU7B">
-                        <node concept="2OqwBi" id="$JQLRHKU_z" role="3uHU7B">
-                          <node concept="1eOMI4" id="$JQLRHKU_B" role="2Oq$k0">
-                            <node concept="10QFUN" id="$JQLRHKU_$" role="1eOMHV">
-                              <node concept="37vLTw" id="$JQLRHKU__" role="10QFUP">
-                                <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
-                              </node>
-                              <node concept="3uibUv" id="1n1TJ$JvuDB" role="10QFUM">
-                                <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="liA8E" id="$JQLRHKU_C" role="2OqNvi">
-                            <ref role="37wK5l" to="uwwx:$JQLRHKUvo" resolve="getSender" />
-                          </node>
-                        </node>
-                        <node concept="Xl_RD" id="$JQLRHKU_D" role="3uHU7w">
-                          <property role="Xl_RC" value="&gt;" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="$JQLRHKU_E" role="3uHU7w">
-                        <node concept="1eOMI4" id="$JQLRHKU_I" role="2Oq$k0">
-                          <node concept="10QFUN" id="$JQLRHKU_F" role="1eOMHV">
-                            <node concept="37vLTw" id="$JQLRHKU_G" role="10QFUP">
+                  <node concept="9aQIb" id="$JQLRHKUA7" role="9aQIa">
+                    <node concept="3clFbS" id="$JQLRHKUA8" role="9aQI4">
+                      <node concept="3clFbF" id="$JQLRHKUA9" role="3cqZAp">
+                        <node concept="1rXfSq" id="$JQLRHKUAa" role="3clFbG">
+                          <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
+                          <node concept="2OqwBi" id="$JQLRHKVej" role="37wK5m">
+                            <node concept="37vLTw" id="$JQLRHKVei" role="2Oq$k0">
                               <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
                             </node>
-                            <node concept="3uibUv" id="1n1TJ$Jvv6E" role="10QFUM">
-                              <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
+                            <node concept="liA8E" id="$JQLRHKVek" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
                             </node>
                           </node>
-                        </node>
-                        <node concept="liA8E" id="$JQLRHKU_J" role="2OqNvi">
-                          <ref role="37wK5l" to="uwwx:$JQLRHKUv6" resolve="getContent" />
                         </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="2wexfA" id="4yeP55knkv3" role="3cqZAp">
-                  <node concept="3clFbS" id="4yeP55knkv4" role="9aQI4">
-                    <node concept="3cpWs8" id="$JQLRHKU_L" role="3cqZAp">
-                      <node concept="3cpWsn" id="$JQLRHKU_K" role="3cpWs9">
-                        <property role="3TUv4t" value="false" />
-                        <property role="TrG5h" value="col" />
-                        <node concept="17QB3L" id="$JQLRHLd$I" role="1tU5fm" />
-                        <node concept="2OqwBi" id="$JQLRHKU_N" role="33vP2m">
-                          <node concept="1eOMI4" id="$JQLRHKU_R" role="2Oq$k0">
-                            <node concept="10QFUN" id="$JQLRHKU_O" role="1eOMHV">
-                              <node concept="37vLTw" id="$JQLRHKU_P" role="10QFUP">
-                                <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
+                  <node concept="3clFbS" id="$JQLRHKU_u" role="3clFbx">
+                    <node concept="3clFbF" id="$JQLRHKU_v" role="3cqZAp">
+                      <node concept="1rXfSq" id="$JQLRHKU_w" role="3clFbG">
+                        <ref role="37wK5l" to="dxuu:~JLabel.setText(java.lang.String):void" resolve="setText" />
+                        <node concept="3cpWs3" id="$JQLRHKU_x" role="37wK5m">
+                          <node concept="3cpWs3" id="$JQLRHKU_y" role="3uHU7B">
+                            <node concept="2OqwBi" id="$JQLRHKU_z" role="3uHU7B">
+                              <node concept="1eOMI4" id="$JQLRHKU_B" role="2Oq$k0">
+                                <node concept="10QFUN" id="$JQLRHKU_$" role="1eOMHV">
+                                  <node concept="37vLTw" id="$JQLRHKU__" role="10QFUP">
+                                    <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
+                                  </node>
+                                  <node concept="3uibUv" id="1n1TJ$JvuDB" role="10QFUM">
+                                    <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="3uibUv" id="1n1TJ$JvvzJ" role="10QFUM">
-                                <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
+                              <node concept="liA8E" id="$JQLRHKU_C" role="2OqNvi">
+                                <ref role="37wK5l" to="uwwx:$JQLRHKUvo" resolve="getSender" />
                               </node>
                             </node>
+                            <node concept="Xl_RD" id="$JQLRHKU_D" role="3uHU7w">
+                              <property role="Xl_RC" value="&gt;" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="$JQLRHKU_S" role="2OqNvi">
-                            <ref role="37wK5l" to="uwwx:$JQLRHKUw8" resolve="getSetting" />
-                            <node concept="10M0yZ" id="4yeP55kkYl9" role="37wK5m">
-                              <ref role="1PxDUh" to="uwwx:$JQLRHKWpM" resolve="Utils" />
-                              <ref role="3cqZAo" to="uwwx:$JQLRHKUxk" resolve="COLORKEY" />
+                          <node concept="2OqwBi" id="$JQLRHKU_E" role="3uHU7w">
+                            <node concept="1eOMI4" id="$JQLRHKU_I" role="2Oq$k0">
+                              <node concept="10QFUN" id="$JQLRHKU_F" role="1eOMHV">
+                                <node concept="37vLTw" id="$JQLRHKU_G" role="10QFUP">
+                                  <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
+                                </node>
+                                <node concept="3uibUv" id="1n1TJ$Jvv6E" role="10QFUM">
+                                  <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="$JQLRHKU_J" role="2OqNvi">
+                              <ref role="37wK5l" to="uwwx:$JQLRHKUv6" resolve="getContent" />
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="$JQLRHKU_U" role="3cqZAp">
-                      <node concept="3y3z36" id="$JQLRHKU_V" role="3clFbw">
-                        <node concept="37vLTw" id="$JQLRHKU_W" role="3uHU7B">
-                          <ref role="3cqZAo" node="$JQLRHKU_K" resolve="col" />
-                        </node>
-                        <node concept="10Nm6u" id="$JQLRHKU_X" role="3uHU7w" />
-                      </node>
-                      <node concept="3clFbF" id="$JQLRHKUA3" role="9aQIa">
-                        <node concept="1rXfSq" id="$JQLRHKUA4" role="3clFbG">
-                          <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color):void" resolve="setForeground" />
-                          <node concept="10M0yZ" id="$JQLRHLdqL" role="37wK5m">
-                            <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                            <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                    <node concept="2wexfA" id="4yeP55knkv3" role="3cqZAp">
+                      <node concept="3clFbS" id="4yeP55knkv4" role="9aQI4">
+                        <node concept="3cpWs8" id="$JQLRHKU_L" role="3cqZAp">
+                          <node concept="3cpWsn" id="$JQLRHKU_K" role="3cpWs9">
+                            <property role="3TUv4t" value="false" />
+                            <property role="TrG5h" value="col" />
+                            <node concept="17QB3L" id="$JQLRHLd$I" role="1tU5fm" />
+                            <node concept="2OqwBi" id="$JQLRHKU_N" role="33vP2m">
+                              <node concept="1eOMI4" id="$JQLRHKU_R" role="2Oq$k0">
+                                <node concept="10QFUN" id="$JQLRHKU_O" role="1eOMHV">
+                                  <node concept="37vLTw" id="$JQLRHKU_P" role="10QFUP">
+                                    <ref role="3cqZAo" node="$JQLRHKU_g" resolve="value" />
+                                  </node>
+                                  <node concept="3uibUv" id="1n1TJ$JvvzJ" role="10QFUM">
+                                    <ref role="3uigEE" to="uwwx:$JQLRHKWoJ" resolve="TextMessage" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="$JQLRHKU_S" role="2OqNvi">
+                                <ref role="37wK5l" to="uwwx:$JQLRHKUw8" resolve="getSetting" />
+                                <node concept="10M0yZ" id="4yeP55kkYl9" role="37wK5m">
+                                  <ref role="1PxDUh" to="uwwx:$JQLRHKWpM" resolve="Utils" />
+                                  <ref role="3cqZAo" to="uwwx:$JQLRHKUxk" resolve="COLORKEY" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="3clFbS" id="$JQLRHKUA6" role="3clFbx">
-                        <node concept="3clFbF" id="$JQLRHKU_Y" role="3cqZAp">
-                          <node concept="1rXfSq" id="$JQLRHKU_Z" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color):void" resolve="setForeground" />
-                            <node concept="2ShNRf" id="$JQLRHLd7Q" role="37wK5m">
-                              <node concept="1pGfFk" id="$JQLRHLd7R" role="2ShVmc">
-                                <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
-                                <node concept="2YIFZM" id="$JQLRHKVey" role="37wK5m">
-                                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                                  <node concept="37vLTw" id="$JQLRHKUA2" role="37wK5m">
-                                    <ref role="3cqZAo" node="$JQLRHKU_K" resolve="col" />
+                        <node concept="3clFbJ" id="$JQLRHKU_U" role="3cqZAp">
+                          <node concept="3y3z36" id="$JQLRHKU_V" role="3clFbw">
+                            <node concept="37vLTw" id="$JQLRHKU_W" role="3uHU7B">
+                              <ref role="3cqZAo" node="$JQLRHKU_K" resolve="col" />
+                            </node>
+                            <node concept="10Nm6u" id="$JQLRHKU_X" role="3uHU7w" />
+                          </node>
+                          <node concept="3clFbF" id="$JQLRHKUA3" role="9aQIa">
+                            <node concept="1rXfSq" id="$JQLRHKUA4" role="3clFbG">
+                              <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color):void" resolve="setForeground" />
+                              <node concept="10M0yZ" id="$JQLRHLdqL" role="37wK5m">
+                                <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                                <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="$JQLRHKUA6" role="3clFbx">
+                            <node concept="3clFbF" id="$JQLRHKU_Y" role="3cqZAp">
+                              <node concept="1rXfSq" id="$JQLRHKU_Z" role="3clFbG">
+                                <ref role="37wK5l" to="dxuu:~JComponent.setForeground(java.awt.Color):void" resolve="setForeground" />
+                                <node concept="2ShNRf" id="$JQLRHLd7Q" role="37wK5m">
+                                  <node concept="1pGfFk" id="$JQLRHLd7R" role="2ShVmc">
+                                    <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int)" resolve="Color" />
+                                    <node concept="2YIFZM" id="$JQLRHKVey" role="37wK5m">
+                                      <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                                      <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                                      <node concept="37vLTw" id="$JQLRHKUA2" role="37wK5m">
+                                        <ref role="3cqZAo" node="$JQLRHKU_K" resolve="col" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
                             </node>
                           </node>
                         </node>
+                        <node concept="3clFbH" id="4yeP55knkLY" role="3cqZAp" />
+                      </node>
+                      <node concept="1V74GB" id="4yeP55knkv5" role="lGtFl">
+                        <property role="32Xqk$" value="chosenModule" />
+                        <property role="TrG5h" value="Fragment_5228349663196563397" />
+                        <ref role="1V74Hf" to="hmci:4yeP55knkv7" resolve="VPToFragment_5228349663196563399" />
+                        <ref role="a64iB" to="hmci:4yeP55kn0nR" resolve="Color" />
+                        <ref role="3aRQVk" to="hmci:4yeP55knkFq" resolve="ModuleToFragment_5228349663196564186" />
                       </node>
                     </node>
-                    <node concept="3clFbH" id="4yeP55knkLY" role="3cqZAp" />
                   </node>
-                  <node concept="1V74GB" id="4yeP55knkv5" role="lGtFl">
-                    <property role="32Xqk$" value="chosenModule" />
-                    <property role="TrG5h" value="Fragment_5228349663196563397" />
-                    <ref role="1V74Hf" to="hmci:4yeP55knkv7" resolve="VPToFragment_5228349663196563399" />
-                    <ref role="a64iB" to="hmci:4yeP55kn0nR" resolve="Color" />
-                    <ref role="3aRQVk" to="hmci:4yeP55knkFq" resolve="ModuleToFragment_5228349663196564186" />
-                  </node>
+                </node>
+                <node concept="3cpWs6" id="$JQLRHKUAc" role="3cqZAp">
+                  <node concept="Xjq3P" id="$JQLRHKUAd" role="3cqZAk" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWs6" id="$JQLRHKUAc" role="3cqZAp">
-              <node concept="Xjq3P" id="$JQLRHKUAd" role="3cqZAk" />
-            </node>
           </node>
-          <node concept="3Tm1VV" id="$JQLRHKUAe" role="1B3o_S" />
-          <node concept="3uibUv" id="$JQLRHKUAf" role="3clF45">
-            <ref role="3uigEE" to="z60i:~Component" resolve="Component" />
+          <node concept="ocbFV" id="2OGjNYq_zuf" role="lGtFl">
+            <property role="TrG5h" value="PeoplBlockReference_3255063765277095823" />
+            <ref role="ocbYS" node="2OGjNYq_zu9" />
+            <ref role="1C2YfU" node="2OGjNYq_zub" resolve="Fragment_3255063765277095819" />
           </node>
         </node>
       </node>

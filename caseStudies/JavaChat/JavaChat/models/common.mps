@@ -5,9 +5,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -200,18 +200,18 @@
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
       </concept>
     </language>
-    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -241,8 +241,8 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
@@ -1671,6 +1671,7 @@
           <ref role="1C2YfU" node="$JQLRHKWqy" resolve="Fragment_661988591836317346" />
         </node>
       </node>
+      <node concept="2tJIrI" id="2OGjNYq_$AR" role="jymVt" />
       <node concept="2YIFZL" id="$JQLRHKUzY" role="jymVt">
         <property role="TrG5h" value="encode" />
         <property role="DiZV1" value="false" />
@@ -1784,6 +1785,18 @@
               <ref role="3aRQVk" to="hmci:4yeP55knoK3" resolve="ModuleToFragment_5228349663196580867" />
             </node>
           </node>
+          <node concept="2wexfA" id="2OGjNYqBQT$" role="3cqZAp">
+            <ref role="ojxmB" node="$JQLRHKUzY" resolve="encode" />
+            <node concept="3clFbS" id="2OGjNYqBQT_" role="9aQI4" />
+            <node concept="1V74GB" id="2OGjNYqBQTA" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_3255063765277699686" />
+              <ref role="1V74Hf" to="hmci:2OGjNYqBQTC" resolve="VPToFragment_3255063765277699688" />
+              <ref role="3aRQVk" to="hmci:2OGjNYqBQTD" resolve="ModuleToFragment_3255063765277699689" />
+              <ref role="a64iB" to="hmci:4yeP55kmTp7" resolve="Encryption_OR" />
+              <ref role="25GeQm" node="2OGjNYqBQTE" resolve="PeoplBlockReference_3255063765277699690" />
+            </node>
+          </node>
         </node>
         <node concept="3Tm1VV" id="$JQLRHKU$o" role="1B3o_S" />
         <node concept="3cqZAl" id="$JQLRHKU$p" role="3clF45" />
@@ -1794,7 +1807,13 @@
           <ref role="a64iB" to="hmci:4yeP55kmTp7" resolve="Encryption_OR" />
           <ref role="3aRQVk" to="hmci:4yeP55knoke" resolve="ModuleToFragment_5228349663196579086" />
         </node>
+        <node concept="ocbFV" id="2OGjNYqBQTE" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_3255063765277699690" />
+          <ref role="ocbYS" node="2OGjNYqBQT$" />
+          <ref role="1C2YfU" node="2OGjNYqBQTA" resolve="Fragment_3255063765277699686" />
+        </node>
       </node>
+      <node concept="2tJIrI" id="2OGjNYq_$Gh" role="jymVt" />
       <node concept="2YIFZL" id="$JQLRHKU$q" role="jymVt">
         <property role="TrG5h" value="decode" />
         <property role="DiZV1" value="false" />
@@ -1908,6 +1927,18 @@
               <ref role="3aRQVk" to="hmci:4yeP55knp63" resolve="ModuleToFragment_5228349663196582275" />
             </node>
           </node>
+          <node concept="2wexfA" id="2OGjNYqBRkx" role="3cqZAp">
+            <ref role="ojxmB" node="$JQLRHKU$q" resolve="decode" />
+            <node concept="3clFbS" id="2OGjNYqBRky" role="9aQI4" />
+            <node concept="1V74GB" id="2OGjNYqBRkz" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_3255063765277701411" />
+              <ref role="1V74Hf" to="hmci:2OGjNYqBRk_" resolve="VPToFragment_3255063765277701413" />
+              <ref role="3aRQVk" to="hmci:2OGjNYqBRkA" resolve="ModuleToFragment_3255063765277701414" />
+              <ref role="a64iB" to="hmci:4yeP55kmTp7" resolve="Encryption_OR" />
+              <ref role="25GeQm" node="2OGjNYqBRkB" resolve="PeoplBlockReference_3255063765277701415" />
+            </node>
+          </node>
         </node>
         <node concept="3Tm1VV" id="$JQLRHKU$O" role="1B3o_S" />
         <node concept="3cqZAl" id="$JQLRHKU$P" role="3clF45" />
@@ -1917,6 +1948,11 @@
           <ref role="1V74Hf" to="hmci:4yeP55knomG" resolve="VPToFragment_5228349663196579244" />
           <ref role="a64iB" to="hmci:4yeP55kmTp7" resolve="Encryption_OR" />
           <ref role="3aRQVk" to="hmci:4yeP55knosL" resolve="ModuleToFragment_5228349663196579633" />
+        </node>
+        <node concept="ocbFV" id="2OGjNYqBRkB" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_3255063765277701415" />
+          <ref role="ocbYS" node="2OGjNYqBRkx" />
+          <ref role="1C2YfU" node="2OGjNYqBRkz" resolve="Fragment_3255063765277701411" />
         </node>
       </node>
     </node>

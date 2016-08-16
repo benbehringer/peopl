@@ -4070,30 +4070,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="9aQIb" id="3Vd6OmUabmS" role="9aQIa">
-                  <node concept="3clFbS" id="3Vd6OmUabmT" role="9aQI4">
-                    <node concept="1X3_iC" id="4GP8caFj9PK" role="lGtFl">
-                      <property role="3V$3am" value="statement" />
-                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="34ab3g" id="3Vd6OmUabqN" role="8Wnug">
-                        <property role="35gtTG" value="error" />
-                        <node concept="3cpWs3" id="3Vd6OmUacr2" role="34bqiv">
-                          <node concept="2OqwBi" id="3Vd6OmUacCs" role="3uHU7w">
-                            <node concept="35c_gC" id="3Vd6OmUacv1" role="2Oq$k0">
-                              <ref role="35c_gD" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
-                            </node>
-                            <node concept="liA8E" id="3Vd6OmUacO5" role="2OqNvi">
-                              <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="3Vd6OmUabqP" role="3uHU7B">
-                            <property role="Xl_RC" value="Root node is not of concept " />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
             <node concept="22lmx$" id="5I1_1yYDk8q" role="3clFbw">
