@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -33,7 +33,7 @@
       <concept id="9119657711895399776" name="de.htwsaar.peopl.core.structure.ModuleDefinition" flags="ng" index="288GkY">
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
-      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
+      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabilityDataStorage" flags="ng" index="2$Fqj1">
         <child id="6648222251507162671" name="vp" index="2$Fqj6" />
       </concept>
       <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.ModuleToFragmentIntermediate" flags="ng" index="3aRQSP">
@@ -57,16 +57,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743898" name="de.htwsaar.peopl.core.config.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
-      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
-      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
+      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConfigurations" flags="ng" index="2M0niJ">
         <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
         <child id="1473120132588955228" name="configs" index="2M0niC" />
       </concept>
@@ -1298,6 +1298,55 @@
             </node>
             <node concept="u2itw" id="xFKvTRHQBU" role="3uHU7w">
               <ref role="u2itx" node="4yeP55knpb7" resolve="Authorization" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u25OH" id="hZl_taOaqy" role="2M0niC">
+      <node concept="2Hijyl" id="hZl_taOaqz" role="2Hjnvt">
+        <node concept="u2itq" id="hZl_taOaq$" role="3clFbG">
+          <node concept="u2itw" id="hZl_taOaq_" role="3uHU7w">
+            <ref role="u2itx" node="$JQLRHKWmI" resolve="Base" />
+          </node>
+          <node concept="u2itq" id="hZl_taOaqA" role="3uHU7B">
+            <node concept="u2itw" id="hZl_taOaqB" role="3uHU7B">
+              <ref role="u2itx" node="4yeP55kmTp7" resolve="Encryption_OR" />
+            </node>
+            <node concept="u2itw" id="hZl_taOaqC" role="3uHU7w">
+              <ref role="u2itx" node="4yeP55kmSjy" resolve="GUI" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="u25OH" id="hZl_taOnsP" role="2M0niC">
+      <node concept="2Hijyl" id="hZl_taOnsQ" role="2Hjnvt">
+        <node concept="u2itq" id="hZl_taOnsR" role="3clFbG">
+          <node concept="u2itw" id="hZl_taOnsS" role="3uHU7w">
+            <ref role="u2itx" node="4yeP55knpb7" resolve="Authorization" />
+          </node>
+          <node concept="u2itq" id="hZl_taOnsT" role="3uHU7B">
+            <node concept="u2itw" id="hZl_taOnsU" role="3uHU7w">
+              <ref role="u2itx" node="$JQLRHKWmI" resolve="Base" />
+            </node>
+            <node concept="u2itq" id="hZl_taOnsV" role="3uHU7B">
+              <node concept="u2itw" id="hZl_taOnsW" role="3uHU7w">
+                <ref role="u2itx" node="4yeP55knm3e" resolve="Caesar" />
+              </node>
+              <node concept="u2itq" id="hZl_taOnsX" role="3uHU7B">
+                <node concept="u2itw" id="hZl_taOnsY" role="3uHU7w">
+                  <ref role="u2itx" node="4yeP55kmTp7" resolve="Encryption_OR" />
+                </node>
+                <node concept="u2itq" id="hZl_taOnsZ" role="3uHU7B">
+                  <node concept="u2itw" id="hZl_taOnt0" role="3uHU7B">
+                    <ref role="u2itx" node="4yeP55kmSjy" resolve="GUI" />
+                  </node>
+                  <node concept="u2itw" id="hZl_taOnt1" role="3uHU7w">
+                    <ref role="u2itx" node="4yeP55knmTU" resolve="Reverse" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
