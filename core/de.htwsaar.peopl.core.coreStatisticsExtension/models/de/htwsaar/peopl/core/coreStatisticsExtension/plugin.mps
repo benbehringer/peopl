@@ -746,18 +746,14 @@
             <property role="3SKdUp" value="Modules" />
           </node>
         </node>
-        <node concept="3cpWs8" id="1IVGVoWu02c" role="3cqZAp">
-          <node concept="3cpWsn" id="1IVGVoWu02f" role="3cpWs9">
-            <property role="TrG5h" value="numberOfModules" />
-            <node concept="10Oyi0" id="1IVGVoWu02a" role="1tU5fm" />
-            <node concept="1rXfSq" id="1IVGVoWu878" role="33vP2m">
-              <ref role="37wK5l" node="1IVGVoWtLOH" resolve="addModuleData" />
-              <node concept="37vLTw" id="1IVGVoWu8RY" role="37wK5m">
-                <ref role="3cqZAo" node="6HVbCMl8Fgg" resolve="modDef" />
-              </node>
-              <node concept="37vLTw" id="1IVGVoWuaoC" role="37wK5m">
-                <ref role="3cqZAo" node="3IhhXddEtFc" resolve="root" />
-              </node>
+        <node concept="3clFbF" id="2OGjNYqxOAf" role="3cqZAp">
+          <node concept="1rXfSq" id="1IVGVoWu878" role="3clFbG">
+            <ref role="37wK5l" node="1IVGVoWtLOH" resolve="addModuleData" />
+            <node concept="37vLTw" id="1IVGVoWu8RY" role="37wK5m">
+              <ref role="3cqZAo" node="6HVbCMl8Fgg" resolve="modDef" />
+            </node>
+            <node concept="37vLTw" id="1IVGVoWuaoC" role="37wK5m">
+              <ref role="3cqZAo" node="3IhhXddEtFc" resolve="root" />
             </node>
           </node>
         </node>
@@ -842,37 +838,8 @@
               <node concept="1pGfFk" id="79TYYNi2fcp" role="2ShVmc">
                 <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
                 <node concept="Xl_RD" id="79TYYNi2fcq" role="37wK5m">
-                  <property role="Xl_RC" value="alternative VPs" />
+                  <property role="Xl_RC" value="Alternative VPs" />
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="79TYYNi2fHF" role="3cqZAp">
-          <node concept="3cpWsn" id="79TYYNi2fHG" role="3cpWs9">
-            <property role="TrG5h" value="standardVP" />
-            <node concept="3uibUv" id="79TYYNi2fHH" role="1tU5fm">
-              <ref role="3uigEE" to="7e8u:~TextTreeNode" resolve="TextTreeNode" />
-            </node>
-            <node concept="2ShNRf" id="79TYYNi2fHI" role="33vP2m">
-              <node concept="1pGfFk" id="79TYYNi2fHJ" role="2ShVmc">
-                <ref role="37wK5l" to="7e8u:~TextTreeNode.&lt;init&gt;(java.lang.String)" resolve="TextTreeNode" />
-                <node concept="Xl_RD" id="79TYYNi2fHK" role="37wK5m">
-                  <property role="Xl_RC" value="all VPs" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="79TYYNi2eee" role="3cqZAp">
-          <node concept="2OqwBi" id="79TYYNi2eef" role="3clFbG">
-            <node concept="37vLTw" id="79TYYNi2eeg" role="2Oq$k0">
-              <ref role="3cqZAo" node="6HVbCMl9g8j" resolve="vpNode" />
-            </node>
-            <node concept="liA8E" id="79TYYNi2eeh" role="2OqNvi">
-              <ref role="37wK5l" to="rgfa:~DefaultMutableTreeNode.add(javax.swing.tree.MutableTreeNode):void" resolve="add" />
-              <node concept="37vLTw" id="79TYYNi2gQo" role="37wK5m">
-                <ref role="3cqZAo" node="79TYYNi2fHG" resolve="standardVP" />
               </node>
             </node>
           </node>
@@ -1118,8 +1085,8 @@
         </node>
         <node concept="3clFbF" id="6HVbCMlcLUU" role="3cqZAp">
           <node concept="2OqwBi" id="6HVbCMlcLUV" role="3clFbG">
-            <node concept="37vLTw" id="79TYYNi2j5q" role="2Oq$k0">
-              <ref role="3cqZAo" node="79TYYNi2fHG" resolve="standardVP" />
+            <node concept="37vLTw" id="2OGjNYqxM$I" role="2Oq$k0">
+              <ref role="3cqZAo" node="6HVbCMl9g8j" resolve="vpNode" />
             </node>
             <node concept="liA8E" id="6HVbCMlcLUX" role="2OqNvi">
               <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAdditionalText(java.lang.String):void" resolve="setAdditionalText" />
@@ -1350,16 +1317,11 @@
             </node>
             <node concept="liA8E" id="1IVGVoWv5bj" role="2OqNvi">
               <ref role="37wK5l" to="7e8u:~MPSTreeNode.setAdditionalText(java.lang.String):void" resolve="setAdditionalText" />
-              <node concept="3cpWs3" id="1IVGVoWvb1v" role="37wK5m">
-                <node concept="2YIFZM" id="1IVGVoWv7tK" role="3uHU7w">
-                  <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                  <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                  <node concept="37vLTw" id="1IVGVoWv8XL" role="37wK5m">
-                    <ref role="3cqZAo" node="1IVGVoWuecd" resolve="numberOfModules" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="1IVGVoWvayx" role="3uHU7B">
-                  <property role="Xl_RC" value="#Modules: " />
+              <node concept="2YIFZM" id="1IVGVoWv7tK" role="37wK5m">
+                <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                <node concept="37vLTw" id="1IVGVoWv8XL" role="37wK5m">
+                  <ref role="3cqZAo" node="1IVGVoWuecd" resolve="numberOfModules" />
                 </node>
               </node>
             </node>
