@@ -360,9 +360,17 @@
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -20650,7 +20658,7 @@
               </node>
               <node concept="3clFbF" id="3ME3zLf8yr0" role="3cqZAp">
                 <node concept="37vLTI" id="3ME3zLf8yr1" role="3clFbG">
-                  <node concept="37vLTw" id="3ME3zLf8yr2" role="37vLTJ">
+                  <node concept="37vLTw" id="6cehoemlPhH" role="37vLTJ">
                     <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
                   </node>
                   <node concept="2ShNRf" id="3ME3zLf90T1" role="37vLTx">
@@ -25556,37 +25564,6 @@
               <ref role="3aRQVk" to="oc6c:450H3Ji_mHb" resolve="ModuleToFragment_4701956180003875659" />
             </node>
           </node>
-          <node concept="2wexfA" id="450H3Ji_rhC" role="3cqZAp">
-            <node concept="3clFbS" id="450H3Ji_rhD" role="9aQI4">
-              <node concept="3clFbJ" id="3ME3zLf8yGM" role="3cqZAp">
-                <node concept="3y3z36" id="3ME3zLf8yGN" role="3clFbw">
-                  <node concept="37vLTw" id="3ME3zLf8yGO" role="3uHU7B">
-                    <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
-                  </node>
-                  <node concept="10Nm6u" id="3ME3zLf8yGP" role="3uHU7w" />
-                </node>
-                <node concept="3clFbS" id="3ME3zLf8yGR" role="3clFbx">
-                  <node concept="3clFbF" id="3ME3zLf8yGS" role="3cqZAp">
-                    <node concept="2OqwBi" id="3ME3zLf914C" role="3clFbG">
-                      <node concept="37vLTw" id="3ME3zLf914B" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
-                      </node>
-                      <node concept="liA8E" id="3ME3zLf914D" role="2OqNvi">
-                        <ref role="37wK5l" to="vryb:3ME3zLf8HFv" resolve="requestShutdown" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1V74GB" id="450H3Ji_rhE" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_4701956180003894378" />
-              <ref role="1V74Hf" to="oc6c:450H3Ji_rhG" resolve="VPToFragment_4701956180003894380" />
-              <ref role="a64iB" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
-              <ref role="3aRQVk" to="oc6c:450H3Ji_twk" resolve="ModuleToFragment_4701956180003903508" />
-            </node>
-          </node>
           <node concept="2wexfA" id="450H3Ji_tPt" role="3cqZAp">
             <node concept="3clFbS" id="450H3Ji_tPu" role="9aQI4">
               <node concept="3clFbJ" id="3ME3zLf8yGU" role="3cqZAp">
@@ -25682,6 +25659,67 @@
               <ref role="3aRQVk" to="oc6c:450H3Ji_FLb" resolve="ModuleToFragment_4701956180003961931" />
             </node>
           </node>
+          <node concept="2wexfA" id="6cehoemlPcz" role="3cqZAp">
+            <node concept="3clFbS" id="6cehoemlPcH" role="9aQI4">
+              <node concept="3SKdUt" id="6cehoemlPcJ" role="3cqZAp">
+                <node concept="3SKdUq" id="6cehoemlPcL" role="3SKWNk">
+                  <property role="3SKdUp" value="Evictor" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6btGf1$z5AV" role="3cqZAp" />
+              <node concept="3clFbH" id="6btGf1$z5HI" role="3cqZAp" />
+              <node concept="3clFbF" id="6cehoemlPc_" role="3cqZAp">
+                <node concept="37vLTI" id="6cehoemlPcB" role="3clFbG">
+                  <node concept="37vLTw" id="6cehoemlPcD" role="37vLTJ">
+                    <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
+                  </node>
+                  <node concept="2ShNRf" id="6cehoemlPcx" role="37vLTx">
+                    <node concept="1pGfFk" id="6cehoemlPcr" role="2ShVmc">
+                      <ref role="37wK5l" to="orab:3ME3zLf8ANi" resolve="Evictor" />
+                      <node concept="Xjq3P" id="6cehoemlPct" role="37wK5m" />
+                      <node concept="Xl_RD" id="6cehoemlPcv" role="37wK5m">
+                        <property role="Xl_RC" value="Evictor" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="3ME3zLf8yGM" role="3cqZAp">
+                <node concept="3y3z36" id="3ME3zLf8yGN" role="3clFbw">
+                  <node concept="37vLTw" id="3ME3zLf8yGO" role="3uHU7B">
+                    <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
+                  </node>
+                  <node concept="10Nm6u" id="3ME3zLf8yGP" role="3uHU7w" />
+                </node>
+                <node concept="3clFbS" id="3ME3zLf8yGR" role="3clFbx">
+                  <node concept="3clFbF" id="3ME3zLf8yGS" role="3cqZAp">
+                    <node concept="2OqwBi" id="3ME3zLf914C" role="3clFbG">
+                      <node concept="37vLTw" id="3ME3zLf914B" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3ME3zLf8ylv" resolve="evictor" />
+                      </node>
+                      <node concept="liA8E" id="3ME3zLf914D" role="2OqNvi">
+                        <ref role="37wK5l" to="vryb:3ME3zLf8HFv" resolve="requestShutdown" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="6btGf1$yGxB" role="3cqZAp" />
+              <node concept="3clFbH" id="6btGf1$$nOC" role="3cqZAp" />
+              <node concept="3SKdUt" id="6btGf1$_GOt" role="3cqZAp">
+                <node concept="3SKdUq" id="6btGf1$_GOu" role="3SKWNk">
+                  <property role="3SKdUp" value="this is a simple responsiveness check" />
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="6cehoemlPcF" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_6880567891041400731" />
+              <ref role="1V74Hf" to="oc6c:5XWG0F6uNut" resolve="VPToFragment_6880567891041400733" />
+              <ref role="a64iB" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
+              <ref role="3aRQVk" to="oc6c:5XWG0F6uRS4" resolve="ModuleToFragment_6880567891041418756" />
+            </node>
+          </node>
           <node concept="2wexfA" id="450H3Ji_G3R" role="3cqZAp">
             <node concept="3clFbS" id="450H3Ji_G3S" role="9aQI4">
               <node concept="3SKdUt" id="3ME3zLf8yV5" role="3cqZAp">
@@ -25727,8 +25765,14 @@
               <ref role="25GeQm" node="6$_V4iGDzG7" resolve="PeoplBlockReference_7576721727819234055" />
             </node>
           </node>
-          <node concept="2wexfA" id="450H3Ji_Jp_" role="3cqZAp">
-            <node concept="3clFbS" id="450H3Ji_JpA" role="9aQI4">
+          <node concept="2wexfA" id="6btGf1$_Z8o" role="3cqZAp">
+            <node concept="3clFbS" id="6btGf1$_Z8p" role="9aQI4">
+              <node concept="3SKdUt" id="6btGf1$A26p" role="3cqZAp">
+                <node concept="3SKdUq" id="6btGf1$A26q" role="3SKWNk">
+                  <property role="3SKdUp" value="this is a simple resopnsiveness check" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6btGf1$$nQW" role="3cqZAp" />
               <node concept="3SKdUt" id="3ME3zLf8yV9" role="3cqZAp">
                 <node concept="3SKdUq" id="3ME3zLf8yV8" role="3SKWNk">
                   <property role="3SKdUp" value="The evictor has to get shutdown last because the other daemons might" />
@@ -25749,13 +25793,23 @@
                   <ref role="37wK5l" node="3ME3zLf8yHJ" resolve="shutdownEvictor" />
                 </node>
               </node>
+              <node concept="3clFbH" id="6btGf1$yJK9" role="3cqZAp" />
+              <node concept="3clFbH" id="6btGf1$$BqL" role="3cqZAp" />
+              <node concept="3clFbH" id="6btGf1$yJLh" role="3cqZAp" />
+              <node concept="3SKdUt" id="6btGf1$zVAS" role="3cqZAp">
+                <node concept="3SKdUq" id="6btGf1$zVAT" role="3SKWNk">
+                  <property role="3SKdUp" value="this is a simple responsiveness check" />
+                </node>
+              </node>
+              <node concept="3clFbH" id="6btGf1$yJLs" role="3cqZAp" />
+              <node concept="3clFbH" id="6btGf1$zVIJ" role="3cqZAp" />
             </node>
-            <node concept="1V74GB" id="450H3Ji_JpB" role="lGtFl">
+            <node concept="1V74GB" id="6btGf1$_Z8q" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_4701956180003976807" />
-              <ref role="1V74Hf" to="oc6c:450H3Ji_JpD" resolve="VPToFragment_4701956180003976809" />
+              <property role="TrG5h" value="Fragment_7124044732096311834" />
+              <ref role="1V74Hf" to="oc6c:6btGf1$_Z8s" resolve="VPToFragment_7124044732096311836" />
+              <ref role="3aRQVk" to="oc6c:6btGf1$_Z8t" resolve="ModuleToFragment_7124044732096311837" />
               <ref role="a64iB" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
-              <ref role="3aRQVk" to="oc6c:450H3Ji_LRb" resolve="ModuleToFragment_4701956180003986891" />
             </node>
           </node>
         </node>
@@ -30987,7 +31041,7 @@
         <node concept="P$JXv" id="3ME3zLf8vQN" role="lGtFl">
           <node concept="TZ5HA" id="3ME3zLf8wnH" role="TZ5H$">
             <node concept="1dT_AC" id="3ME3zLf8wnI" role="1dT_Ay">
-              <property role="1dT_AB" value="Create a database." />
+              <property role="1dT_AB" value="Create a database. " />
             </node>
           </node>
           <node concept="TZ5HA" id="3ME3zLf8wnJ" role="TZ5H$">
@@ -62418,6 +62472,20 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="HxVAC" id="6btGf1$yrSj">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Evictor::DbTree" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
+    <ref role="HxVAD" node="6$_V4iGDzMA" resolve="DbTree" />
+  </node>
+  <node concept="HxVAC" id="6btGf1$yvRz">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Evictor::EnvironmentImpl" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
+    <ref role="HxVAD" node="6$_V4iGDzBa" resolve="EnvironmentImpl" />
   </node>
 </model>
 

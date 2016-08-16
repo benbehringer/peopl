@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
   </languages>
   <imports>
@@ -33,7 +33,7 @@
       <concept id="9119657711895399776" name="de.htwsaar.peopl.core.structure.ModuleDefinition" flags="ng" index="288GkY">
         <child id="9119657711895399914" name="modules" index="288GmO" />
       </concept>
-      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabiliyDataStorage" flags="ng" index="2$Fqj1">
+      <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabilityDataStorage" flags="ng" index="2$Fqj1">
         <child id="6648222251507162671" name="vp" index="2$Fqj6" />
       </concept>
       <concept id="6242855909345491562" name="de.htwsaar.peopl.core.structure.ModuleToFragmentIntermediate" flags="ng" index="3aRQSP">
@@ -57,16 +57,16 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="675154290793708653" name="de.htwsaar.peopl.core.config.structure.SingleProductLineConfiguration" flags="ng" index="u25OH">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743898" name="de.htwsaar.peopl.core.config.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743904" name="de.htwsaar.peopl.core.config.structure.ModuleConnector" flags="ng" index="u2itw">
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
-      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.config.structure.ModuleExpression" flags="ng" index="2Hijyl" />
-      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.config.structure.ProductLineConfigurations" flags="ng" index="2M0niJ">
+      <concept id="5543868949657485306" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConfigurations" flags="ng" index="2M0niJ">
         <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
         <child id="1473120132588955228" name="configs" index="2M0niC" />
       </concept>
@@ -271,6 +271,10 @@
         <property role="TrG5h" value="ModuleToFragment_5228349663196533716" />
         <ref role="3aRQSO" to="zyz8:4yeP55kndfh" resolve="Fragment_5228349663196533713" />
       </node>
+      <node concept="3aRQSP" id="2OGjNYq_zue" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_3255063765277095822" />
+        <ref role="3aRQSO" to="zyz8:2OGjNYq_zub" resolve="Fragment_3255063765277095819" />
+      </node>
     </node>
     <node concept="1V77HM" id="4yeP55kmS_a" role="288GmO">
       <property role="2_7ToJ" value="255" />
@@ -387,6 +391,14 @@
       <node concept="3aRQSP" id="4yeP55knosL" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_5228349663196579633" />
         <ref role="3aRQSO" to="uwwx:4yeP55knomE" resolve="Fragment_5228349663196579242" />
+      </node>
+      <node concept="3aRQSP" id="2OGjNYqBQTD" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_3255063765277699689" />
+        <ref role="3aRQSO" to="uwwx:2OGjNYqBQTA" resolve="Fragment_3255063765277699686" />
+      </node>
+      <node concept="3aRQSP" id="2OGjNYqBRkA" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_3255063765277701414" />
+        <ref role="3aRQSO" to="uwwx:2OGjNYqBRkz" resolve="Fragment_3255063765277701411" />
       </node>
     </node>
     <node concept="1V77HM" id="4yeP55kn0nR" role="288GmO">
@@ -1280,6 +1292,27 @@
         <node concept="1V74G$" id="4yeP55kntct" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_5228349663196599069" />
           <ref role="1V74G_" to="iz9x:4yeP55kntcr" resolve="Fragment_5228349663196599067" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="2OGjNYq_zuc" role="2$Fqj6">
+        <property role="TrG5h" value="VP_3255063765277095820" />
+        <node concept="1V74G$" id="2OGjNYq_zud" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_3255063765277095821" />
+          <ref role="1V74G_" to="zyz8:2OGjNYq_zub" resolve="Fragment_3255063765277095819" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="2OGjNYqBQTB" role="2$Fqj6">
+        <property role="TrG5h" value="VP_3255063765277699687" />
+        <node concept="1V74G$" id="2OGjNYqBQTC" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_3255063765277699688" />
+          <ref role="1V74G_" to="uwwx:2OGjNYqBQTA" resolve="Fragment_3255063765277699686" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="2OGjNYqBRk$" role="2$Fqj6">
+        <property role="TrG5h" value="VP_3255063765277701412" />
+        <node concept="1V74G$" id="2OGjNYqBRk_" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_3255063765277701413" />
+          <ref role="1V74G_" to="uwwx:2OGjNYqBRkz" resolve="Fragment_3255063765277701411" />
         </node>
       </node>
     </node>
