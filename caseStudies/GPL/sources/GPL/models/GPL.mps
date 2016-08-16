@@ -4,9 +4,9 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -234,22 +234,30 @@
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
       </concept>
     </language>
-    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+    </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -264,8 +272,8 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
@@ -8195,8 +8203,28 @@
               <ref role="3aRQVk" to="ymfq:3XSKgTnJgte" resolve="ModuleToFragment_4573617688940447566" />
             </node>
           </node>
+          <node concept="2wexfA" id="2OGjNYqBFCa" role="3cqZAp">
+            <ref role="ojxm_" node="AZ7IhMm29e" resolve="Neighbor" />
+            <ref role="ojxmB" node="24MmuxSq6U5" resolve="Neighbor" />
+            <node concept="3clFbS" id="2OGjNYqBFCb" role="9aQI4">
+              <node concept="3clFbH" id="2OGjNYqBFOf" role="3cqZAp" />
+            </node>
+            <node concept="1V74GB" id="2OGjNYqBFCc" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_3255063765277653516" />
+              <ref role="1V74Hf" to="ymfq:2OGjNYqBFCe" resolve="VPToFragment_3255063765277653518" />
+              <ref role="3aRQVk" to="ymfq:2OGjNYqBFCf" resolve="ModuleToFragment_3255063765277653519" />
+              <ref role="a64iB" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+              <ref role="25GeQm" node="2OGjNYqBFCg" resolve="PeoplBlockReference_3255063765277653520" />
+            </node>
+          </node>
         </node>
         <node concept="3Tm1VV" id="24MmuxSq6Uk" role="1B3o_S" />
+        <node concept="ocbFV" id="2OGjNYqBFCg" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_3255063765277653520" />
+          <ref role="ocbYS" node="2OGjNYqBFCa" />
+          <ref role="1C2YfU" node="2OGjNYqBFCc" resolve="Fragment_3255063765277653516" />
+        </node>
       </node>
       <node concept="3clFbW" id="24MmuxSq6Ul" role="jymVt">
         <property role="DiZV1" value="false" />
@@ -14171,17 +14199,36 @@
         <property role="od$2w" value="true" />
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="5h5WElAiemp" role="3clF47">
-          <node concept="3clFbF" id="5h5WElAiemq" role="3cqZAp">
-            <node concept="10M0yZ" id="5h5WElAiemr" role="3clFbG">
-              <ref role="1PxDUh" node="5h5WElAiemg" resolve="GlobalVarsWrapperSingleton.Holder" />
-              <ref role="3cqZAo" node="5h5WElAiemh" resolve="myInstance" />
-            </node>
-          </node>
-        </node>
         <node concept="3Tm1VV" id="5h5WElAiems" role="1B3o_S" />
         <node concept="3uibUv" id="2Ja598TKPui" role="3clF45">
           <ref role="3uigEE" node="2Ja598TKGxc" resolve="GlobalVarsWrapperSingleton" />
+        </node>
+        <node concept="3clFbS" id="2OGjNYqB4f$" role="3clF47">
+          <node concept="2wexfA" id="2OGjNYqB4f_" role="3cqZAp">
+            <ref role="ojxm_" node="2Ja598TKGxc" resolve="GlobalVarsWrapperSingleton" />
+            <ref role="ojxmB" node="5h5WElAiemo" resolve="getInstance" />
+            <node concept="1V74GB" id="2OGjNYqB4fB" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_3255063765277492199" />
+              <ref role="1V74Hf" to="ymfq:2OGjNYqB4fD" resolve="VPToFragment_3255063765277492201" />
+              <ref role="3aRQVk" to="ymfq:2OGjNYqB4fE" resolve="ModuleToFragment_3255063765277492202" />
+              <ref role="a64iB" to="ymfq:4L6K1Kv9Xrx" resolve="SearchAlg_BFS" />
+              <ref role="25GeQm" node="2OGjNYqB4fF" resolve="PeoplBlockReference_3255063765277492203" />
+            </node>
+            <node concept="3clFbS" id="5h5WElAiemp" role="9aQI4">
+              <node concept="3clFbF" id="5h5WElAiemq" role="3cqZAp">
+                <node concept="10M0yZ" id="5h5WElAiemr" role="3clFbG">
+                  <ref role="1PxDUh" node="5h5WElAiemg" resolve="GlobalVarsWrapperSingleton.Holder" />
+                  <ref role="3cqZAo" node="5h5WElAiemh" resolve="myInstance" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="ocbFV" id="2OGjNYqB4fF" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_3255063765277492203" />
+          <ref role="ocbYS" node="2OGjNYqB4f_" />
+          <ref role="1C2YfU" node="2OGjNYqB4fB" resolve="Fragment_3255063765277492199" />
         </node>
       </node>
       <node concept="2tJIrI" id="2Ja598TKNr8" role="jymVt" />
@@ -14367,6 +14414,13 @@
         <ref role="3aRQVk" to="ymfq:6Dv_8JO3jB3" resolve="ModuleToFragment_7665008419623745987" />
       </node>
     </node>
+  </node>
+  <node concept="HxVAC" id="6cehoemlGxM">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GEN_Edges::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>
 
