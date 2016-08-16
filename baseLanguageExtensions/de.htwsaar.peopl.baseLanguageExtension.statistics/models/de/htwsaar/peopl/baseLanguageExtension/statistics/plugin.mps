@@ -41,6 +41,7 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="xtun" ref="r:328162d4-44f7-42c4-9057-912106fa6c6e(de.htwsaar.peopl.core.csvWriter.writer)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -2228,6 +2229,33 @@
           </node>
         </node>
         <node concept="3clFbH" id="2OGjNYqCL3_" role="3cqZAp" />
+        <node concept="3cpWs8" id="6cehoemo2j_" role="3cqZAp">
+          <node concept="3cpWsn" id="6cehoemo2jA" role="3cpWs9">
+            <property role="TrG5h" value="csvWriter" />
+            <node concept="3uibUv" id="6cehoemo2jB" role="1tU5fm">
+              <ref role="3uigEE" to="xtun:12WW719gUyi" resolve="CSVWriter" />
+            </node>
+            <node concept="2ShNRf" id="6cehoemo4to" role="33vP2m">
+              <node concept="1pGfFk" id="6cehoemo4tn" role="2ShVmc">
+                <ref role="37wK5l" to="xtun:12WW719gUzo" resolve="CSVWriter" />
+                <node concept="3cpWs3" id="6cehoemo5gW" role="37wK5m">
+                  <node concept="2OqwBi" id="6cehoemo7$p" role="3uHU7B">
+                    <node concept="37vLTw" id="6cehoemo6Mf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2OGjNYqyX9Q" resolve="solution" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemo7Mo" role="2OqNvi">
+                      <ref role="37wK5l" to="lui2:~SModule.getModuleName():java.lang.String" resolve="getModuleName" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6cehoemo5e3" role="3uHU7w">
+                    <property role="Xl_RC" value="_MethodVisibility" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6cehoemnUz3" role="3cqZAp" />
         <node concept="3cpWs8" id="2OGjNYq$CNh" role="3cqZAp">
           <node concept="3cpWsn" id="2OGjNYq$CNi" role="3cpWs9">
             <property role="TrG5h" value="methodDecTotalFine" />
@@ -2409,7 +2437,7 @@
                 </node>
                 <node concept="3cpWs8" id="2OGjNYqDnhZ" role="3cqZAp">
                   <node concept="3cpWsn" id="2OGjNYqDni2" role="3cpWs9">
-                    <property role="TrG5h" value="numberOfFeatures" />
+                    <property role="TrG5h" value="numberOfModules" />
                     <node concept="10Oyi0" id="2OGjNYqDnhX" role="1tU5fm" />
                     <node concept="2OqwBi" id="2OGjNYqDL34" role="33vP2m">
                       <node concept="37vLTw" id="2OGjNYqDK4T" role="2Oq$k0">
@@ -2428,6 +2456,104 @@
                         <ref role="3cqZAo" node="2OGjNYqD6CS" resolve="fragments" />
                       </node>
                       <node concept="34oBXx" id="2OGjNYqDlVk" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="6cehoemo9q$" role="3cqZAp" />
+                <node concept="3clFbF" id="6cehoemoYfv" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cehoemoZbg" role="3clFbG">
+                    <node concept="37vLTw" id="6cehoemoYft" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemoZeO" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                      <node concept="2YIFZM" id="6cehoemp0BC" role="37wK5m">
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <node concept="37vLTw" id="6cehoemp0BD" role="37wK5m">
+                          <ref role="3cqZAo" node="2OGjNYqyX9m" resolve="numberOfMethods" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6cehoemp2aJ" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cehoemp2aK" role="3clFbG">
+                    <node concept="37vLTw" id="6cehoemp2aL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemp2aM" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                      <node concept="2YIFZM" id="6cehoemp2aN" role="37wK5m">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                        <node concept="37vLTw" id="6cehoemp3bC" role="37wK5m">
+                          <ref role="3cqZAo" node="2OGjNYqDao5" resolve="methodName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6cehoemp3s4" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cehoemp3s5" role="3clFbG">
+                    <node concept="37vLTw" id="6cehoemp3s6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemp3s7" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                      <node concept="2YIFZM" id="6cehoemp3s8" role="37wK5m">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                        <node concept="2YIFZM" id="6cehoemo$PY" role="37wK5m">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <node concept="37vLTw" id="6cehoemoAuQ" role="37wK5m">
+                            <ref role="3cqZAo" node="2OGjNYqD8Ua" resolve="numberOfStatements" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6cehoemp3GW" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cehoemp3GX" role="3clFbG">
+                    <node concept="37vLTw" id="6cehoemp3GY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemp3GZ" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                      <node concept="2YIFZM" id="6cehoemp3H0" role="37wK5m">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                        <node concept="2YIFZM" id="6cehoemoBmQ" role="37wK5m">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <node concept="37vLTw" id="6cehoemoCUj" role="37wK5m">
+                            <ref role="3cqZAo" node="2OGjNYqDni2" resolve="numberOfModules" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6cehoemp3Z5" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cehoemp3Z6" role="3clFbG">
+                    <node concept="37vLTw" id="6cehoemp3Z7" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="6cehoemp3Z8" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                      <node concept="2YIFZM" id="6cehoemp3Z9" role="37wK5m">
+                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                        <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                        <node concept="2YIFZM" id="6cehoemoD1E" role="37wK5m">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <node concept="37vLTw" id="6cehoemoE_l" role="37wK5m">
+                            <ref role="3cqZAo" node="2OGjNYqDcE6" resolve="numberOfFragments" />
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -2466,7 +2592,51 @@
                     </node>
                     <node concept="3SKdUt" id="2OGjNYqCLG$" role="3cqZAp">
                       <node concept="3SKdUq" id="2OGjNYqCLG_" role="3SKWNk">
-                        <property role="3SKdUp" value="TODO: log visibility; base-split; ; ;" />
+                        <property role="3SKdUp" value="TODO: log invisible; base-split; ; ;" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="6cehoemp5ax" role="3cqZAp">
+                      <node concept="2OqwBi" id="6cehoemp5ay" role="3clFbG">
+                        <node concept="37vLTw" id="6cehoemp5az" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                        </node>
+                        <node concept="liA8E" id="6cehoemp5a$" role="2OqNvi">
+                          <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                          <node concept="2YIFZM" id="6cehoemp5a_" role="37wK5m">
+                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                            <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                            <node concept="3cmrfG" id="6cehoempbfk" role="37wK5m">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="6cehoempble" role="3cqZAp">
+                      <node concept="2OqwBi" id="6cehoempblf" role="3clFbG">
+                        <node concept="37vLTw" id="6cehoempblg" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                        </node>
+                        <node concept="liA8E" id="6cehoempblh" role="2OqNvi">
+                          <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                          <node concept="2YIFZM" id="6cehoempbli" role="37wK5m">
+                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                            <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                            <node concept="3cmrfG" id="6cehoempblj" role="37wK5m">
+                              <property role="3cmrfH" value="1" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5$TQTnHS_rU" role="3cqZAp">
+                      <node concept="2OqwBi" id="5$TQTnHS_rV" role="3clFbG">
+                        <node concept="37vLTw" id="5$TQTnHS_rW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                        </node>
+                        <node concept="liA8E" id="5$TQTnHS_rX" role="2OqNvi">
+                          <ref role="37wK5l" to="xtun:12WW719ilBH" resolve="endLine" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3N13vt" id="2OGjNYq$6HR" role="3cqZAp" />
@@ -2538,7 +2708,6 @@
                     <ref role="3cqZAo" node="2OGjNYqD6CS" resolve="fragments" />
                   </node>
                   <node concept="3clFbS" id="2OGjNYqzbzS" role="2LFqv$">
-                    <node concept="3clFbH" id="2OGjNYqCmAw" role="3cqZAp" />
                     <node concept="3SKdUt" id="2OGjNYq$kNn" role="3cqZAp">
                       <node concept="3SKdUq" id="2OGjNYq$kNo" role="3SKWNk">
                         <property role="3SKdUp" value="we allow fine-grained extensions on method level" />
@@ -2581,7 +2750,51 @@
                             </node>
                             <node concept="3SKdUt" id="2OGjNYqCLH0" role="3cqZAp">
                               <node concept="3SKdUq" id="2OGjNYqCLH1" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: log visibility; ; fine-grained; ;" />
+                                <property role="3SKdUp" value="TODO: log invisible; ; fine-grained; ;" />
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoempcSj" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoempcSk" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoempcSl" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoempcSm" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                                  <node concept="2YIFZM" id="6cehoempcSn" role="37wK5m">
+                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                    <node concept="3cmrfG" id="6cehoempcSo" role="37wK5m">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoempknC" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoemplcl" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoempknA" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoempliI" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:Sxzed6M3E7" resolve="writeEmptyValue" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoempbuJ" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoempbuK" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoempbuL" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoempbuM" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                                  <node concept="2YIFZM" id="6cehoempbuN" role="37wK5m">
+                                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                    <node concept="3cmrfG" id="6cehoempcpr" role="37wK5m">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                             <node concept="3zACq4" id="2OGjNYq$n3a" role="3cqZAp" />
@@ -2656,10 +2869,63 @@
                             </node>
                             <node concept="3SKdUt" id="2OGjNYqCN0K" role="3cqZAp">
                               <node concept="3SKdUq" id="2OGjNYqCN0L" role="3SKWNk">
-                                <property role="3SKdUp" value="TODO: log visibility; ; ; nested ;" />
+                                <property role="3SKdUp" value="TODO: log invisible; ; ; nested ;" />
                               </node>
                             </node>
-                            <node concept="3clFbH" id="2OGjNYqCN0z" role="3cqZAp" />
+                            <node concept="3clFbF" id="6cehoempdcO" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoempdcP" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoempdcQ" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoempdcR" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                                  <node concept="2YIFZM" id="6cehoempdcS" role="37wK5m">
+                                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                    <node concept="3cmrfG" id="6cehoempdcT" role="37wK5m">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoemplkg" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoemplkh" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoemplki" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoemplkj" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:Sxzed6M3E7" resolve="writeEmptyValue" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoempltY" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoempltZ" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoemplu0" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoemplu1" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:Sxzed6M3E7" resolve="writeEmptyValue" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="6cehoempegZ" role="3cqZAp">
+                              <node concept="2OqwBi" id="6cehoempeh0" role="3clFbG">
+                                <node concept="37vLTw" id="6cehoempeh1" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                                </node>
+                                <node concept="liA8E" id="6cehoempeh2" role="2OqNvi">
+                                  <ref role="37wK5l" to="xtun:12WW719ikz2" resolve="write" />
+                                  <node concept="2YIFZM" id="6cehoempeh3" role="37wK5m">
+                                    <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                                    <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                                    <node concept="3cmrfG" id="6cehoempeh4" role="37wK5m">
+                                      <property role="3cmrfH" value="1" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                             <node concept="3zACq4" id="2OGjNYqCN0m" role="3cqZAp" />
                           </node>
                           <node concept="1eOMI4" id="2OGjNYqAhlO" role="3clFbw">
@@ -2724,6 +2990,16 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="5$TQTnHSGZG" role="3cqZAp">
+                  <node concept="2OqwBi" id="5$TQTnHSGZH" role="3clFbG">
+                    <node concept="37vLTw" id="5$TQTnHSGZI" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cehoemo2jA" resolve="csvWriter" />
+                    </node>
+                    <node concept="liA8E" id="5$TQTnHSGZJ" role="2OqNvi">
+                      <ref role="37wK5l" to="xtun:12WW719ilBH" resolve="endLine" />
                     </node>
                   </node>
                 </node>
