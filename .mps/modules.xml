@@ -57,7 +57,6 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
-      <modulePath path="$PROJECT_DIR$/test/GenerationTestSolution/generationTEstSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/ProductLineConfigurationTest/ProductLineConfigurationTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
