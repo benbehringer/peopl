@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -119,6 +120,33 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -158,6 +186,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -222,9 +253,9 @@
   </node>
   <node concept="1TIwiD" id="66EASTR57Cx">
     <property role="1pbfSe" value="658565713" />
-    <property role="TrG5h" value="ImpliesExpression" />
+    <property role="TrG5h" value="ImpliesOperation" />
     <property role="34LRSv" value="=&gt;" />
-    <property role="R4oN_" value="implies-expression" />
+    <property role="R4oN_" value="implies-operation" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="PrWs8" id="66EASTR5z7m" role="PzmwI">
       <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
@@ -291,13 +322,13 @@
   <node concept="1TIwiD" id="63cq5TSo7xX">
     <property role="1pbfSe" value="651370277" />
     <property role="TrG5h" value="Constraint" />
-    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="63cq5TSog52">
     <property role="1pbfSe" value="651335264" />
-    <property role="TrG5h" value="XorExpression" />
+    <property role="TrG5h" value="XorOperation" />
     <property role="34LRSv" value="^" />
-    <property role="R4oN_" value="exclusive-or-expression" />
+    <property role="R4oN_" value="exclusive-or-operation" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="PrWs8" id="63cq5TSog56" role="PzmwI">
       <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
@@ -639,6 +670,28 @@
         <property role="TrG5h" value="usesOrdering" />
         <node concept="10P_77" id="4MKTqUTgvqu" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="2m1PkZclPG" role="lGtFl">
+        <node concept="TZ5HA" id="2m1PkZclPH" role="TZ5H$">
+          <node concept="1dT_AC" id="2m1PkZclPI" role="1dT_Ay">
+            <property role="1dT_AB" value="Method which builds a module expression for a given list of lists with module connectors." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2m1PkZclPJ" role="TUOzN">
+          <property role="TUZQ4" value="list of lists with module connectors" />
+          <node concept="zr_55" id="2m1PkZclPL" role="zr_5Q">
+            <ref role="zr_51" node="4MKTqUTf2Sa" resolve="allModules" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2m1PkZclPM" role="TUOzN">
+          <property role="TUZQ4" value="flag which indicates if ordering is relevant" />
+          <node concept="zr_55" id="2m1PkZclPO" role="zr_5Q">
+            <ref role="zr_51" node="4MKTqUTgvpR" resolve="usesOrdering" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2m1PkZclPP" role="x79VK">
+          <property role="x79VB" value="the module expression" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4MKTqUTcLW0" role="jymVt" />
     <node concept="2YIFZL" id="4MKTqUTen05" role="jymVt">
@@ -926,9 +979,47 @@
         <ref role="ehGHo" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
       </node>
       <node concept="3Tm1VV" id="4MKTqUTcLWD" role="1B3o_S" />
+      <node concept="P$JXv" id="2m1PkZcmfH" role="lGtFl">
+        <node concept="TZ5HA" id="2m1PkZcmfI" role="TZ5H$">
+          <node concept="1dT_AC" id="2m1PkZcmfJ" role="1dT_Ay">
+            <property role="1dT_AB" value="Method which builds the expression for a specific partition. The result has always the form (A+B+C...)." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="2m1PkZcmfK" role="TUOzN">
+          <property role="TUZQ4" value="list of module connectors" />
+          <node concept="zr_55" id="2m1PkZcmfM" role="zr_5Q">
+            <ref role="zr_51" node="4MKTqUTcPC2" resolve="modules" />
+          </node>
+        </node>
+        <node concept="x79VA" id="2m1PkZcmfN" role="x79VK">
+          <property role="x79VB" value="ParenthesizedExpression with all modules connected via addition" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="4MKTqUTfrQa" role="jymVt" />
     <node concept="3Tm1VV" id="5C4mwUvzi6o" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2m1PkZciTq" role="lGtFl">
+      <node concept="TZ5HA" id="2m1PkZciTr" role="TZ5H$">
+        <node concept="1dT_AC" id="2m1PkZciTs" role="1dT_Ay">
+          <property role="1dT_AB" value="This class builds a module expression from a list of lists of module connectors. The inner lists represent the" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2m1PkZciU2" role="TZ5H$">
+        <node concept="1dT_AC" id="2m1PkZciU3" role="1dT_Ay">
+          <property role="1dT_AB" value="deltas within a partition. The deltas within a partition are connected via module addition and encapsulated in " />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2m1PkZciVz" role="TZ5H$">
+        <node concept="1dT_AC" id="2m1PkZciV$" role="1dT_Ay">
+          <property role="1dT_AB" value="parenthesis. The connection of these expressions is either realized via addition, or if ordering matters, via" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="2m1PkZciW5" role="TZ5H$">
+        <node concept="1dT_AC" id="2m1PkZciW6" role="1dT_Ay">
+          <property role="1dT_AB" value="overriding." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
