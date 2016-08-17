@@ -253,9 +253,9 @@
   </node>
   <node concept="1TIwiD" id="66EASTR57Cx">
     <property role="1pbfSe" value="658565713" />
-    <property role="TrG5h" value="ImpliesExpression" />
+    <property role="TrG5h" value="ImpliesOperation" />
     <property role="34LRSv" value="=&gt;" />
-    <property role="R4oN_" value="implies-expression" />
+    <property role="R4oN_" value="implies-operation" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="PrWs8" id="66EASTR5z7m" role="PzmwI">
       <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
@@ -322,13 +322,13 @@
   <node concept="1TIwiD" id="63cq5TSo7xX">
     <property role="1pbfSe" value="651370277" />
     <property role="TrG5h" value="Constraint" />
-    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
   </node>
   <node concept="1TIwiD" id="63cq5TSog52">
     <property role="1pbfSe" value="651335264" />
-    <property role="TrG5h" value="XorExpression" />
+    <property role="TrG5h" value="XorOperation" />
     <property role="34LRSv" value="^" />
-    <property role="R4oN_" value="exclusive-or-expression" />
+    <property role="R4oN_" value="exclusive-or-operation" />
     <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
     <node concept="PrWs8" id="63cq5TSog56" role="PzmwI">
       <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
