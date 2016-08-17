@@ -89,6 +89,9 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -199,48 +202,106 @@
     <node concept="3clFbW" id="12WW719gUzo" role="jymVt">
       <node concept="3cqZAl" id="12WW719gUzp" role="3clF45" />
       <node concept="3clFbS" id="12WW719gUzr" role="3clF47">
-        <node concept="3clFbF" id="12WW719hAEH" role="3cqZAp">
-          <node concept="37vLTI" id="12WW719hAL2" role="3clFbG">
-            <node concept="37vLTw" id="12WW719hAEF" role="37vLTJ">
-              <ref role="3cqZAo" node="12WW719h6Q5" resolve="outputFolderPath" />
+        <node concept="3cpWs8" id="6GkHskc9Ged" role="3cqZAp">
+          <node concept="3cpWsn" id="6GkHskc9Gee" role="3cpWs9">
+            <property role="TrG5h" value="locationPath" />
+            <node concept="3uibUv" id="6GkHskc9Gef" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
             </node>
-            <node concept="1X3_iC" id="5$TQTnHRX0H" role="lGtFl">
-              <property role="3V$3am" value="rValue" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1215693861676/1068498886297" />
-              <node concept="3cpWs3" id="12WW719hCls" role="8Wnug">
-                <node concept="Xl_RD" id="12WW719hCsK" role="3uHU7w">
-                  <property role="Xl_RC" value="../../../outputFolder/CSVFiles/" />
-                </node>
-                <node concept="2OqwBi" id="12WW719hAO7" role="3uHU7B">
-                  <node concept="2OqwBi" id="12WW719hAO8" role="2Oq$k0">
-                    <node concept="2OqwBi" id="12WW719hAO9" role="2Oq$k0">
-                      <node concept="2OqwBi" id="12WW719hAOa" role="2Oq$k0">
-                        <node concept="2OqwBi" id="12WW719hAOb" role="2Oq$k0">
-                          <node concept="Xjq3P" id="12WW719hAOc" role="2Oq$k0" />
-                          <node concept="liA8E" id="12WW719hAOd" role="2OqNvi">
-                            <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="12WW719hAOe" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Class.getProtectionDomain():java.security.ProtectionDomain" resolve="getProtectionDomain" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="12WW719hAOf" role="2OqNvi">
-                        <ref role="37wK5l" to="jgjw:~ProtectionDomain.getCodeSource():java.security.CodeSource" resolve="getCodeSource" />
+            <node concept="2OqwBi" id="6GkHskc9Gtc" role="33vP2m">
+              <node concept="2OqwBi" id="6GkHskc9Gtd" role="2Oq$k0">
+                <node concept="2OqwBi" id="6GkHskc9Gte" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6GkHskc9Gtf" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6GkHskc9Gtg" role="2Oq$k0">
+                      <node concept="Xjq3P" id="6GkHskc9Gth" role="2Oq$k0" />
+                      <node concept="liA8E" id="6GkHskc9Gti" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                       </node>
                     </node>
-                    <node concept="liA8E" id="12WW719hAOg" role="2OqNvi">
-                      <ref role="37wK5l" to="jgjw:~CodeSource.getLocation():java.net.URL" resolve="getLocation" />
+                    <node concept="liA8E" id="6GkHskc9Gtj" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Class.getProtectionDomain():java.security.ProtectionDomain" resolve="getProtectionDomain" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="12WW719hAOh" role="2OqNvi">
-                    <ref role="37wK5l" to="zf81:~URL.getPath():java.lang.String" resolve="getPath" />
+                  <node concept="liA8E" id="6GkHskc9Gtk" role="2OqNvi">
+                    <ref role="37wK5l" to="jgjw:~ProtectionDomain.getCodeSource():java.security.CodeSource" resolve="getCodeSource" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6GkHskc9Gtl" role="2OqNvi">
+                  <ref role="37wK5l" to="jgjw:~CodeSource.getLocation():java.net.URL" resolve="getLocation" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6GkHskc9Gtm" role="2OqNvi">
+                <ref role="37wK5l" to="zf81:~URL.getPath():java.lang.String" resolve="getPath" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GkHskc9GEl" role="3cqZAp">
+          <node concept="37vLTI" id="6GkHskc9GPN" role="3clFbG">
+            <node concept="2OqwBi" id="6GkHskc9H0W" role="37vLTx">
+              <node concept="37vLTw" id="6GkHskc9GXK" role="2Oq$k0">
+                <ref role="3cqZAo" node="6GkHskc9Gee" resolve="locationPath" />
+              </node>
+              <node concept="liA8E" id="6GkHskc9H7Y" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.substring(int,int):java.lang.String" resolve="substring" />
+                <node concept="3cmrfG" id="6GkHskc9Ntc" role="37wK5m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="6GkHskc9He_" role="37wK5m">
+                  <node concept="37vLTw" id="6GkHskc9HaC" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6GkHskc9Gee" resolve="locationPath" />
+                  </node>
+                  <node concept="liA8E" id="6GkHskc9HlW" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String):int" resolve="lastIndexOf" />
+                    <node concept="Xl_RD" id="6GkHskc9Hoc" role="37wK5m">
+                      <property role="Xl_RC" value="/" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="Xl_RD" id="5$TQTnHRX6$" role="37vLTx">
-              <property role="Xl_RC" value="/Users/ben/Workspace/peopl/outputFolder/CSVFiles/" />
+            <node concept="37vLTw" id="6GkHskc9GEj" role="37vLTJ">
+              <ref role="3cqZAo" node="6GkHskc9Gee" resolve="locationPath" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6GkHskc9HKu" role="3cqZAp">
+          <node concept="3cpWsn" id="6GkHskc9HKv" role="3cpWs9">
+            <property role="TrG5h" value="modifaction" />
+            <node concept="3uibUv" id="6GkHskc9HKw" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="Xl_RD" id="6GkHskc9I1f" role="33vP2m">
+              <property role="Xl_RC" value="/../../../../../../../../../outputFolder/CSVFiles/" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="6GkHskc9ICk" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="6GkHskc9IeM" role="8Wnug">
+            <node concept="37vLTI" id="6GkHskc9IrF" role="3clFbG">
+              <node concept="37vLTw" id="6GkHskc9IeK" role="37vLTJ">
+                <ref role="3cqZAo" node="12WW719h6Q5" resolve="outputFolderPath" />
+              </node>
+              <node concept="Xl_RD" id="6GkHskc9IAp" role="37vLTx">
+                <property role="Xl_RC" value="/Users/ben/Workspace/peopl/outputFolder/CSVFiles/" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GkHskc9J6N" role="3cqZAp">
+          <node concept="37vLTI" id="6GkHskc9JfY" role="3clFbG">
+            <node concept="3cpWs3" id="6GkHskc9Jr3" role="37vLTx">
+              <node concept="37vLTw" id="6GkHskc9JuB" role="3uHU7w">
+                <ref role="3cqZAo" node="6GkHskc9HKv" resolve="modifaction" />
+              </node>
+              <node concept="37vLTw" id="6GkHskc9Jmx" role="3uHU7B">
+                <ref role="3cqZAo" node="6GkHskc9Gee" resolve="locationPath" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6GkHskc9J6L" role="37vLTJ">
+              <ref role="3cqZAo" node="12WW719h6Q5" resolve="outputFolderPath" />
             </node>
           </node>
         </node>
