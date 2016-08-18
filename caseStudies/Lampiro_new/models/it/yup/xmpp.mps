@@ -22,6 +22,7 @@
     <import index="8lgi" ref="r:93ddfa3e-b169-4424-8ee9-d9e75a41bc5f(it.yup.transport)" />
     <import index="3q9u" ref="63655c89-3af5-4104-8b6c-504e26175416/java:javax.microedition.io(Lampiro_new/)" />
     <import index="ergm" ref="r:beded04c-db0a-4b5a-b204-45e91642cc79(peoplConfig)" />
+    <import index="q59p" ref="r:51f86216-13bf-495c-b46c-e9d26c834ab5(it.yup.xmlstream)" />
     <import index="zeob" ref="r:644cc58b-bd9e-4d58-b05f-acc6080f061e(it.yup.xmlstream)" implicit="true" />
   </imports>
   <registry>
@@ -877,8 +878,8 @@
         <ref role="3aRQVk" to="ergm:tgFBuwxFYd" resolve="ModuleToFragment_527112985219874701" />
       </node>
       <node concept="2tJIrI" id="tgFBuwxFYf" role="jymVt" />
-      <node concept="3uibUv" id="4Jye5Zhnhra" role="EKbjA">
-        <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
+      <node concept="3uibUv" id="383JOgDQGcu" role="EKbjA">
+        <ref role="3uigEE" to="q59p:3EZ4ze0BOjt" resolve="PacketListener" />
       </node>
       <node concept="312cEg" id="4Jye5Zhnhrb" role="jymVt">
         <property role="34CwA1" value="false" />
@@ -900,8 +901,8 @@
         <node concept="37vLTG" id="4Jye5Zhnhri" role="3clF46">
           <property role="TrG5h" value="e" />
           <property role="3TUv4t" value="false" />
-          <node concept="3uibUv" id="43vNOlEWsqN" role="1tU5fm">
-            <ref role="3uigEE" to="mahp:tgFBuwxFCG" resolve="Element" />
+          <node concept="3uibUv" id="383JOgDRoki" role="1tU5fm">
+            <ref role="3uigEE" to="q59p:277o1kM2Hw8" resolve="Element" />
           </node>
         </node>
         <node concept="3clFbS" id="4Jye5Zhnhrk" role="3clF47">
