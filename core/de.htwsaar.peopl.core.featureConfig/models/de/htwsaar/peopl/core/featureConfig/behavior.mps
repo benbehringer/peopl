@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -142,6 +143,32 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
+        <child id="5858074156537516440" name="return" index="x79VK" />
+        <child id="8465538089690917625" name="param" index="TUOzN" />
+      </concept>
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -182,7 +209,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="66EASTR5z77">
-    <ref role="13h7C2" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+    <ref role="13h7C2" to="nsly:66EASTR57Cx" resolve="ImpliesOperation" />
     <node concept="13hLZK" id="66EASTR5z78" role="13h7CW">
       <node concept="3clFbS" id="66EASTR5z79" role="2VODD2" />
     </node>
@@ -581,7 +608,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="63cq5TSog58">
-    <ref role="13h7C2" to="nsly:63cq5TSog52" resolve="XorExpression" />
+    <ref role="13h7C2" to="nsly:63cq5TSog52" resolve="XorOperation" />
     <node concept="13hLZK" id="63cq5TSog59" role="13h7CW">
       <node concept="3clFbS" id="63cq5TSog5a" role="2VODD2" />
     </node>
@@ -1184,6 +1211,22 @@
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="4p4J_SJvsJf" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="3odEkJjtaoE" role="lGtFl">
+        <node concept="TZ5HA" id="3odEkJjtaoF" role="TZ5H$">
+          <node concept="1dT_AC" id="3odEkJjtaoG" role="1dT_Ay">
+            <property role="1dT_AB" value="Method which prints an expression used to evaluate constraints." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3odEkJjtaoH" role="TUOzN">
+          <property role="TUZQ4" value="root node of expression" />
+          <node concept="zr_55" id="3odEkJjtaoJ" role="zr_5Q">
+            <ref role="zr_51" node="4p4J_SJvsJg" resolve="node" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3odEkJjtaoK" role="x79VK">
+          <property role="x79VB" value="string representation of expression" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="1AgTw_zMv0$" role="13h7CS">
       <property role="TrG5h" value="getAliasForOperation" />
@@ -1237,7 +1280,7 @@
               </node>
               <node concept="1mIQ4w" id="1AgTw_zMvln" role="2OqNvi">
                 <node concept="chp4Y" id="1AgTw_zMvpj" role="cj9EA">
-                  <ref role="cht4Q" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                  <ref role="cht4Q" to="nsly:63cq5TSog52" resolve="XorOperation" />
                 </node>
               </node>
             </node>
@@ -1275,7 +1318,7 @@
               </node>
               <node concept="1mIQ4w" id="1AgTw_zMvBZ" role="2OqNvi">
                 <node concept="chp4Y" id="1AgTw_zMvCt" role="cj9EA">
-                  <ref role="cht4Q" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                  <ref role="cht4Q" to="nsly:66EASTR57Cx" resolve="ImpliesOperation" />
                 </node>
               </node>
             </node>
@@ -1301,6 +1344,22 @@
       <node concept="37vLTG" id="1AgTw_zMv2P" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="1AgTw_zMv2O" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="3odEkJjtat$" role="lGtFl">
+        <node concept="TZ5HA" id="3odEkJjtat_" role="TZ5H$">
+          <node concept="1dT_AC" id="3odEkJjtatA" role="1dT_Ay">
+            <property role="1dT_AB" value="Method which returns the appropriate alias string for boolean operations." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="3odEkJjtatB" role="TUOzN">
+          <property role="TUZQ4" value="Operation node" />
+          <node concept="zr_55" id="3odEkJjtatD" role="zr_5Q">
+            <ref role="zr_51" node="1AgTw_zMv2P" resolve="node" />
+          </node>
+        </node>
+        <node concept="x79VA" id="3odEkJjtatE" role="x79VK">
+          <property role="x79VB" value="alias string of the operation" />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="4p4J_SJvnkj" role="13h7CW">
