@@ -23,7 +23,6 @@
     <import index="3q9u" ref="63655c89-3af5-4104-8b6c-504e26175416/java:javax.microedition.io(Lampiro_new/)" />
     <import index="ergm" ref="r:beded04c-db0a-4b5a-b204-45e91642cc79(peoplConfig)" />
     <import index="zeob" ref="r:644cc58b-bd9e-4d58-b05f-acc6080f061e(it.yup.xmlstream)" />
-    <import index="q59p" ref="r:51f86216-13bf-495c-b46c-e9d26c834ab5(it.yup.xmlstream)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -878,8 +877,8 @@
         <ref role="3aRQVk" to="ergm:tgFBuwxFYd" resolve="ModuleToFragment_527112985219874701" />
       </node>
       <node concept="2tJIrI" id="tgFBuwxFYf" role="jymVt" />
-      <node concept="3uibUv" id="383JOgDQGcu" role="EKbjA">
-        <ref role="3uigEE" to="q59p:3EZ4ze0BOjt" resolve="PacketListener" />
+      <node concept="3uibUv" id="7Ge7wkGm2iE" role="EKbjA">
+        <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
       </node>
       <node concept="312cEg" id="4Jye5Zhnhrb" role="jymVt">
         <property role="34CwA1" value="false" />
