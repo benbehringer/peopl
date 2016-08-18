@@ -5,9 +5,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
-    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="vryb" ref="r:2cd845c3-4cbf-4c70-86d1-6775f32ab885(com.sleepycat.je.utilint)" />
@@ -136,6 +136,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -225,6 +226,9 @@
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
+      <concept id="1495894287938057293" name="de.htwsaar.peopl.core.structure.ExpressionAlternative" flags="ng" index="3MPKYw">
+        <child id="1495894287938057296" name="expression" index="3MPKYX" />
+      </concept>
       <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
         <property id="8624758018078469788" name="chosenModuleLinkName" index="32Xqk$" />
         <reference id="9153151524794690374" name="fragmentUpdater" index="25GeQm" />
@@ -233,18 +237,18 @@
         <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
       </concept>
     </language>
-    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.dep.baselang">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
         <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
       </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.dep.baselang.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
         <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
         <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
       </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.dep.baselang.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
         <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
       </concept>
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.dep.baselang.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
@@ -268,8 +272,8 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.config">
-      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.config.structure.ConfigurationLink" flags="ng" index="H$gyE">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
@@ -1086,7 +1090,7 @@
                           <property role="TrG5h" value="Fragment_7845679366786604448" />
                           <ref role="1V74Hf" to="oc6c:6NxsX3uVlQy" resolve="VPToFragment_7845679366786604450" />
                           <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                          <ref role="3aRQVk" to="oc6c:6NxsX3uVoee" resolve="ModuleToFragment_7845679366786614158" />
+                          <ref role="3aRQVk" to="oc6c:7R$vOxpvAAa" resolve="ModuleToFragment_9071515498146851210" />
                         </node>
                       </node>
                     </node>
@@ -2833,7 +2837,7 @@
                       <property role="TrG5h" value="Fragment_7845679366786681163" />
                       <ref role="1V74Hf" to="oc6c:6NxsX3uVC_d" resolve="VPToFragment_7845679366786681165" />
                       <ref role="a64iB" to="oc6c:3Mj07xysd$p" resolve="Cleaner" />
-                      <ref role="3aRQVk" to="oc6c:6NxsX3uVFeK" resolve="ModuleToFragment_7845679366786692016" />
+                      <ref role="3aRQVk" to="oc6c:7R$vOxpgPih" resolve="ModuleToFragment_9071515498142979217" />
                     </node>
                   </node>
                   <node concept="3SKdUt" id="3ME3zLf8JaK" role="3cqZAp">
@@ -3179,7 +3183,7 @@
                                     <property role="TrG5h" value="Fragment_7845679366786714679" />
                                     <ref role="1V74Hf" to="oc6c:6NxsX3uVKKT" resolve="VPToFragment_7845679366786714681" />
                                     <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                                    <ref role="3aRQVk" to="oc6c:6NxsX3uVNdd" resolve="ModuleToFragment_7845679366786724685" />
+                                    <ref role="3aRQVk" to="oc6c:7R$vOxpvFXX" resolve="ModuleToFragment_9071515498146873213" />
                                   </node>
                                 </node>
                                 <node concept="3clFbF" id="3ME3zLf8IY0" role="3cqZAp">
@@ -3212,7 +3216,7 @@
                                         <property role="TrG5h" value="Fragment_7845679366786725028" />
                                         <ref role="1V74Hf" to="oc6c:6NxsX3uVNiA" resolve="VPToFragment_7845679366786725030" />
                                         <ref role="a64iB" to="oc6c:3Mj07xysd$p" resolve="Cleaner" />
-                                        <ref role="3aRQVk" to="oc6c:6NxsX3uVPAW" resolve="ModuleToFragment_7845679366786734524" />
+                                        <ref role="3aRQVk" to="oc6c:7R$vOxpgPHN" resolve="ModuleToFragment_9071515498142980979" />
                                       </node>
                                     </node>
                                   </node>
@@ -3258,7 +3262,7 @@
                                         <property role="TrG5h" value="Fragment_7845679366786695092" />
                                         <ref role="1V74Hf" to="oc6c:6NxsX3uVFYQ" resolve="VPToFragment_7845679366786695094" />
                                         <ref role="a64iB" to="oc6c:3Mj07xysd$p" resolve="Cleaner" />
-                                        <ref role="3aRQVk" to="oc6c:6NxsX3uVIjq" resolve="ModuleToFragment_7845679366786704602" />
+                                        <ref role="3aRQVk" to="oc6c:7R$vOxpgPuA" resolve="ModuleToFragment_9071515498142980006" />
                                       </node>
                                     </node>
                                   </node>
@@ -3312,7 +3316,7 @@
                                           <property role="TrG5h" value="Fragment_7845679366786704935" />
                                           <ref role="1V74Hf" to="oc6c:6NxsX3uVIoD" resolve="VPToFragment_7845679366786704937" />
                                           <ref role="a64iB" to="oc6c:3Mj07xysd$p" resolve="Cleaner" />
-                                          <ref role="3aRQVk" to="oc6c:6NxsX3uVKGp" resolve="ModuleToFragment_7845679366786714393" />
+                                          <ref role="3aRQVk" to="oc6c:7R$vOxpgPAC" resolve="ModuleToFragment_9071515498142980520" />
                                         </node>
                                       </node>
                                     </node>
@@ -3393,7 +3397,7 @@
                           <property role="TrG5h" value="Fragment_7845679366786734835" />
                           <ref role="1V74Hf" to="oc6c:6NxsX3uVPFP" resolve="VPToFragment_7845679366786734837" />
                           <ref role="a64iB" to="oc6c:3Mj07xysd$p" resolve="Cleaner" />
-                          <ref role="3aRQVk" to="oc6c:6NxsX3uVSe1" resolve="ModuleToFragment_7845679366786745217" />
+                          <ref role="3aRQVk" to="oc6c:7R$vOxpgPPw" resolve="ModuleToFragment_9071515498142981472" />
                         </node>
                       </node>
                     </node>
@@ -3477,18 +3481,10 @@
           <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
         <node concept="3clFbS" id="3ME3zLf8IYJ" role="3clF47">
-          <node concept="2wexfA" id="6NxsX3uW6uM" role="3cqZAp">
+          <node concept="2wexfA" id="2y1utEZDB0T" role="3cqZAp">
             <ref role="ojxm_" node="6$_V4iGDFim" resolve="INCompressor" />
             <ref role="ojxmB" node="3ME3zLf8IY_" resolve="compressBin" />
-            <node concept="1V74GB" id="6NxsX3uW6uO" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_7845679366786803636" />
-              <ref role="1V74Hf" to="oc6c:6NxsX3uW6uQ" resolve="VPToFragment_7845679366786803638" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uW6uR" resolve="ModuleToFragment_7845679366786803639" />
-              <ref role="a64iB" to="oc6c:3Mj07xysn0S" resolve="INCompressor" />
-              <ref role="25GeQm" node="6NxsX3uW6uS" resolve="PeoplBlockReference_7845679366786803640" />
-            </node>
-            <node concept="3clFbS" id="6NxsX3uW007" role="9aQI4">
+            <node concept="3clFbS" id="2y1utEZDB0U" role="9aQI4">
               <node concept="3SKdUt" id="3ME3zLf8Jbo" role="3cqZAp">
                 <node concept="3SKdUq" id="3ME3zLf8Jbn" role="3SKWNk">
                   <property role="3SKdUp" value="Safe to get identifier keys; bin is latched. " />
@@ -3556,6 +3552,15 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="2y1utEZDE4U" role="3cqZAp" />
+            </node>
+            <node concept="1V74GB" id="2y1utEZDB0V" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_2918748013937979451" />
+              <ref role="1V74Hf" to="oc6c:2y1utEZDB0X" resolve="VPToFragment_2918748013937979453" />
+              <ref role="3aRQVk" to="oc6c:2y1utEZDB0Y" resolve="ModuleToFragment_2918748013937979454" />
+              <ref role="a64iB" to="oc6c:3Mj07xysn0S" resolve="INCompressor" />
+              <ref role="25GeQm" node="2y1utEZDB0Z" resolve="PeoplBlockReference_2918748013937979455" />
             </node>
           </node>
           <node concept="2GUZhq" id="3ME3zLf8J06" role="3cqZAp">
@@ -3779,9 +3784,9 @@
             <node concept="1V74GB" id="6NxsX3uWab8" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_7845679366786818760" />
-              <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uWdPJ" resolve="ModuleToFragment_7845679366786833775" />
               <ref role="1V74Hf" to="oc6c:6NxsX3uWaba" resolve="VPToFragment_7845679366786818762" />
+              <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
+              <ref role="3aRQVk" to="oc6c:7R$vOxpvG8t" resolve="ModuleToFragment_9071515498146873885" />
             </node>
             <node concept="3lQQLj" id="6NxsX3uWabc" role="lGtFl">
               <ref role="1_Aa3I" node="6NxsX3uWabd" />
@@ -3892,6 +3897,11 @@
           <property role="TrG5h" value="PeoplBlockReference_7845679366786818773" />
           <ref role="ocbYS" node="6NxsX3uWabf" />
           <ref role="1C2YfU" node="6NxsX3uWabh" resolve="Fragment_7845679366786818769" />
+        </node>
+        <node concept="ocbFV" id="2y1utEZDB0Z" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_2918748013937979455" />
+          <ref role="ocbYS" node="2y1utEZDB0T" />
+          <ref role="1C2YfU" node="2y1utEZDB0V" resolve="Fragment_2918748013937979451" />
         </node>
       </node>
       <node concept="3clFb_" id="3ME3zLf8J0q" role="jymVt">
@@ -4997,7 +5007,7 @@
                             <property role="TrG5h" value="Fragment_7845679366787101672" />
                             <ref role="1V74Hf" to="oc6c:6NxsX3uXffE" resolve="VPToFragment_7845679366787101674" />
                             <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                            <ref role="3aRQVk" to="oc6c:6NxsX3uXiP0" resolve="ModuleToFragment_7845679366787116352" />
+                            <ref role="3aRQVk" to="oc6c:7R$vOxpvCxq" resolve="ModuleToFragment_9071515498146859098" />
                           </node>
                         </node>
                         <node concept="3cpWs6" id="3ME3zLf8J5e" role="3cqZAp">
@@ -5082,7 +5092,7 @@
                               <property role="TrG5h" value="Fragment_7845679366787086516" />
                               <ref role="1V74Hf" to="oc6c:6NxsX3uXbyQ" resolve="VPToFragment_7845679366787086518" />
                               <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                              <ref role="3aRQVk" to="oc6c:6NxsX3uXfaZ" resolve="ModuleToFragment_7845679366787101375" />
+                              <ref role="3aRQVk" to="oc6c:7R$vOxpvCR3" resolve="ModuleToFragment_9071515498146860483" />
                             </node>
                           </node>
                           <node concept="3cpWs6" id="3ME3zLf8J4B" role="3cqZAp">
@@ -5169,7 +5179,7 @@
                               <property role="TrG5h" value="Fragment_7845679366787055004" />
                               <ref role="1V74Hf" to="oc6c:6NxsX3uX3Qu" resolve="VPToFragment_7845679366787055006" />
                               <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                              <ref role="3aRQVk" to="oc6c:6NxsX3uX7v3" resolve="ModuleToFragment_7845679366787069891" />
+                              <ref role="3aRQVk" to="oc6c:7R$vOxpvDIY" resolve="ModuleToFragment_9071515498146864062" />
                             </node>
                           </node>
                           <node concept="3SKdUt" id="3ME3zLf8JcA" role="3cqZAp">
@@ -5241,7 +5251,7 @@
               <property role="TrG5h" value="Fragment_7845679366787034682" />
               <ref role="1V74Hf" to="oc6c:6NxsX3uWYSW" resolve="VPToFragment_7845679366787034684" />
               <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uX2ta" resolve="ModuleToFragment_7845679366787049290" />
+              <ref role="3aRQVk" to="oc6c:7R$vOxpvEN_" resolve="ModuleToFragment_9071515498146868453" />
             </node>
             <node concept="3lQQLj" id="6NxsX3uWYSY" role="lGtFl">
               <ref role="1_Aa3I" node="6NxsX3uWYSZ" />
@@ -5500,7 +5510,7 @@
               <property role="TrG5h" value="Fragment_7845679366787154859" />
               <ref role="1V74Hf" to="oc6c:6NxsX3uXseH" resolve="VPToFragment_7845679366787154861" />
               <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uXvCa" resolve="ModuleToFragment_7845679366787168778" />
+              <ref role="3aRQVk" to="oc6c:7R$vOxpvGnx" resolve="ModuleToFragment_9071515498146874849" />
             </node>
           </node>
           <node concept="2wexfA" id="6NxsX3uXsey" role="3cqZAp">
@@ -5640,8 +5650,8 @@
                               <property role="32Xqk$" value="chosenModule" />
                               <property role="TrG5h" value="Fragment_7845679366787170276" />
                               <ref role="1V74Hf" to="oc6c:6NxsX3uXvZA" resolve="VPToFragment_7845679366787170278" />
-                              <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                              <ref role="3aRQVk" to="oc6c:6NxsX3uXyul" resolve="ModuleToFragment_7845679366787180437" />
+                              <ref role="a64iB" to="oc6c:7KrPrayElSk" resolve="Statistics#Latches" />
+                              <ref role="3aRQVk" to="oc6c:1m3ZvXg8xsC" resolve="ModuleToFragment_1550361969748481832" />
                             </node>
                           </node>
                           <node concept="3SKdUt" id="3ME3zLf8JcW" role="3cqZAp">
@@ -5722,8 +5732,8 @@
                                         <property role="32Xqk$" value="chosenModule" />
                                         <property role="TrG5h" value="Fragment_7845679366787191166" />
                                         <ref role="1V74Hf" to="oc6c:6NxsX3uX_60" resolve="VPToFragment_7845679366787191168" />
-                                        <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                                        <ref role="3aRQVk" to="oc6c:6NxsX3uXBy0" resolve="ModuleToFragment_7845679366787201152" />
+                                        <ref role="a64iB" to="oc6c:7KrPrayElSk" resolve="Statistics#Latches" />
+                                        <ref role="3aRQVk" to="oc6c:1m3ZvXg8x7e" resolve="ModuleToFragment_1550361969748480462" />
                                       </node>
                                     </node>
                                   </node>
@@ -5756,8 +5766,8 @@
                                   <property role="32Xqk$" value="chosenModule" />
                                   <property role="TrG5h" value="Fragment_7845679366787180809" />
                                   <ref role="1V74Hf" to="oc6c:6NxsX3uXy$b" resolve="VPToFragment_7845679366787180811" />
-                                  <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                                  <ref role="3aRQVk" to="oc6c:6NxsX3uX_09" resolve="ModuleToFragment_7845679366787190793" />
+                                  <ref role="a64iB" to="oc6c:7KrPrayElSk" resolve="Statistics#Latches" />
+                                  <ref role="3aRQVk" to="oc6c:1m3ZvXg8xhV" resolve="ModuleToFragment_1550361969748481147" />
                                 </node>
                               </node>
                             </node>
@@ -5891,62 +5901,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs8" id="6NxsX3uXCQ5" role="3cqZAp">
-                <node concept="3cpWsn" id="6NxsX3uXCQ8" role="3cpWs9">
-                  <property role="TrG5h" value="binSearchDeleted" />
-                  <node concept="10P_77" id="6NxsX3uXCQ3" role="1tU5fm" />
-                  <node concept="3clFbT" id="6NxsX3uXE4O" role="33vP2m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1V74GB" id="6$_V4iGDFlo" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_7576721727819265368" />
-              <ref role="1V74Hf" to="oc6c:6$_V4iGDFlq" resolve="VPToFragment_7576721727819265370" />
-              <ref role="a64iB" to="oc6c:3Mj07xysn0S" resolve="INCompressor" />
-              <ref role="3aRQVk" to="oc6c:5Hnws5SSx3T" resolve="ModuleToFragment_6581872048382021881" />
-              <ref role="25GeQm" node="6$_V4iGDFls" resolve="PeoplBlockReference_7576721727819265372" />
-            </node>
-          </node>
-          <node concept="2wexfA" id="6NxsX3uXFjE" role="3cqZAp">
-            <node concept="3clFbS" id="6NxsX3uXFjF" role="9aQI4">
-              <node concept="3clFbF" id="6NxsX3uXIWo" role="3cqZAp">
-                <node concept="37vLTI" id="6NxsX3uXIXR" role="3clFbG">
-                  <node concept="37vLTw" id="6NxsX3uXIWm" role="37vLTJ">
-                    <ref role="3cqZAo" node="6NxsX3uXCQ8" resolve="binSearchDeleted" />
-                  </node>
-                  <node concept="1eOMI4" id="3ME3zLf8J8p" role="37vLTx">
-                    <node concept="2OqwBi" id="3ME3zLf9e4D" role="1eOMHV">
-                      <node concept="2OqwBi" id="3ME3zLf9e4B" role="2Oq$k0">
-                        <node concept="37vLTw" id="3ME3zLf9e4A" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3ME3zLf8J81" resolve="binSearch" />
-                        </node>
-                        <node concept="2OwXpG" id="3ME3zLf9e4C" role="2OqNvi">
-                          <ref role="2Oxat5" node="3ME3zLf8ILF" resolve="db" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="3ME3zLf9e4E" role="2OqNvi">
-                        <ref role="37wK5l" to="7twk:3ME3zLf8SFz" resolve="isDeleted" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1V74GB" id="6NxsX3uXFjG" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_7845679366787216620" />
-              <ref role="1V74Hf" to="oc6c:6NxsX3uXFjI" resolve="VPToFragment_7845679366787216622" />
-              <ref role="a64iB" to="oc6c:3Mj07xysg94" resolve="DeleteOP" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uXISM" resolve="ModuleToFragment_7845679366787231282" />
-            </node>
-          </node>
-          <node concept="2wexfA" id="6NxsX3uXFjz" role="3cqZAp">
-            <ref role="ojxm_" node="6$_V4iGDFim" resolve="INCompressor" />
-            <ref role="ojxmB" node="3ME3zLf8J80" resolve="findDBAndBIN" />
-            <node concept="3clFbS" id="6NxsX3uXFj$" role="9aQI4">
               <node concept="3clFbJ" id="3ME3zLf8J8i" role="3cqZAp">
                 <node concept="22lmx$" id="3ME3zLf8J8j" role="3clFbw">
                   <node concept="1eOMI4" id="3ME3zLf8J8n" role="3uHU7B">
@@ -5962,8 +5916,38 @@
                       <node concept="10Nm6u" id="3ME3zLf8J8m" role="3uHU7w" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="6NxsX3uXJ0O" role="3uHU7w">
-                    <ref role="3cqZAo" node="6NxsX3uXCQ8" resolve="binSearchDeleted" />
+                  <node concept="3clFbT" id="1m3ZvXfTYUr" role="3uHU7w">
+                    <property role="3clFbU" value="false" />
+                    <node concept="3MPKYw" id="1m3ZvXfTYVp" role="lGtFl">
+                      <node concept="2OqwBi" id="1m3ZvXfU3b_" role="3MPKYX">
+                        <node concept="2OqwBi" id="1m3ZvXfU37I" role="2Oq$k0">
+                          <node concept="37vLTw" id="1m3ZvXfU35X" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3ME3zLf8J81" resolve="binSearch" />
+                          </node>
+                          <node concept="2OwXpG" id="1m3ZvXfU39I" role="2OqNvi">
+                            <ref role="2Oxat5" node="3ME3zLf8ILF" resolve="db" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="1m3ZvXfU3gh" role="2OqNvi">
+                          <ref role="37wK5l" to="7twk:3ME3zLf8SFz" resolve="isDeleted" />
+                        </node>
+                      </node>
+                      <node concept="1V74GB" id="1m3ZvXfTYV$" role="lGtFl">
+                        <property role="32Xqk$" value="chosenModule" />
+                        <property role="TrG5h" value="Fragment_1550361969744670436" />
+                        <ref role="1V74Hf" to="oc6c:1m3ZvXfTYV_" resolve="VPToFragment_1550361969744670437" />
+                        <ref role="a64iB" to="oc6c:3Mj07xysg94" resolve="DeleteOP" />
+                        <ref role="3aRQVk" to="oc6c:7R$vOxpu_Aa" resolve="ModuleToFragment_9071515498146584970" />
+                      </node>
+                    </node>
+                    <node concept="1V74GB" id="1m3ZvXfTYVr" role="lGtFl">
+                      <property role="32Xqk$" value="chosenModule" />
+                      <property role="TrG5h" value="Fragment_1550361969744670427" />
+                      <ref role="1V74Hf" to="oc6c:1m3ZvXfTYVt" resolve="VPToFragment_1550361969744670429" />
+                      <ref role="a64iB" to="oc6c:3Mj07xysn0S" resolve="INCompressor" />
+                      <ref role="3aRQVk" to="oc6c:1m3ZvXfTYVw" resolve="ModuleToFragment_1550361969744670432" />
+                      <ref role="25GeQm" node="1m3ZvXfTYVy" resolve="FragmentUpdater_1550361969744670434" />
+                    </node>
                   </node>
                 </node>
                 <node concept="3clFbS" id="3ME3zLf8J8r" role="3clFbx">
@@ -6003,13 +5987,13 @@
                 </node>
               </node>
             </node>
-            <node concept="1V74GB" id="6NxsX3uXFj_" role="lGtFl">
+            <node concept="1V74GB" id="6$_V4iGDFlo" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_7845679366787216613" />
-              <ref role="1V74Hf" to="oc6c:6NxsX3uXFjB" resolve="VPToFragment_7845679366787216615" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uXFjC" resolve="ModuleToFragment_7845679366787216616" />
+              <property role="TrG5h" value="Fragment_7576721727819265368" />
+              <ref role="1V74Hf" to="oc6c:6$_V4iGDFlq" resolve="VPToFragment_7576721727819265370" />
               <ref role="a64iB" to="oc6c:3Mj07xysn0S" resolve="INCompressor" />
-              <ref role="25GeQm" node="6NxsX3uXFjD" resolve="PeoplBlockReference_7845679366787216617" />
+              <ref role="3aRQVk" to="oc6c:5Hnws5SSx3T" resolve="ModuleToFragment_6581872048382021881" />
+              <ref role="25GeQm" node="6$_V4iGDFls" resolve="PeoplBlockReference_7576721727819265372" />
             </node>
           </node>
           <node concept="2wexfA" id="6NxsX3uXMEc" role="3cqZAp">
@@ -6034,8 +6018,8 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_7845679366787246734" />
               <ref role="1V74Hf" to="oc6c:6NxsX3uXMEg" resolve="VPToFragment_7845679366787246736" />
-              <ref role="a64iB" to="oc6c:3Mj07xysj$Q" resolve="Evictor" />
-              <ref role="3aRQVk" to="oc6c:6NxsX3uXPW2" resolve="ModuleToFragment_7845679366787260162" />
+              <ref role="a64iB" to="oc6c:61Q35uerJX4" resolve="Evictor#Critical_Eviction" />
+              <ref role="3aRQVk" to="oc6c:7R$vOxpvi60" resolve="ModuleToFragment_9071515498146767232" />
             </node>
           </node>
           <node concept="2wexfA" id="6NxsX3uXME5" role="3cqZAp">
@@ -6156,7 +6140,7 @@
                       <property role="TrG5h" value="Fragment_7845679366787261560" />
                       <ref role="1V74Hf" to="oc6c:6NxsX3uXQhU" resolve="VPToFragment_7845679366787261562" />
                       <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                      <ref role="3aRQVk" to="oc6c:6NxsX3uXTv6" resolve="ModuleToFragment_7845679366787274694" />
+                      <ref role="3aRQVk" to="oc6c:7R$vOxpvCmb" resolve="ModuleToFragment_9071515498146858379" />
                     </node>
                   </node>
                   <node concept="2wexfA" id="6NxsX3uXTUf" role="3cqZAp">
@@ -6210,15 +6194,14 @@
         <node concept="3uibUv" id="5ffr7rt0HmK" role="Sfmx6">
           <ref role="3uigEE" to="75si:6$_V4iGDyR5" resolve="DatabaseException" />
         </node>
-        <node concept="ocbFV" id="6NxsX3uXFjD" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_7845679366787216617" />
-          <ref role="ocbYS" node="6NxsX3uXFjz" />
-          <ref role="1C2YfU" node="6NxsX3uXFj_" resolve="Fragment_7845679366787216613" />
-        </node>
         <node concept="ocbFV" id="6NxsX3uXMEb" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7845679366787246731" />
           <ref role="ocbYS" node="6NxsX3uXME5" />
           <ref role="1C2YfU" node="6NxsX3uXME7" resolve="Fragment_7845679366787246727" />
+        </node>
+        <node concept="1C2YfN" id="1m3ZvXfTYVy" role="lGtFl">
+          <property role="TrG5h" value="FragmentUpdater_1550361969744670434" />
+          <ref role="1C2YfU" node="1m3ZvXfTYVr" resolve="Fragment_1550361969744670427" />
         </node>
       </node>
       <node concept="312cEu" id="3ME3zLf8ILD" role="jymVt">

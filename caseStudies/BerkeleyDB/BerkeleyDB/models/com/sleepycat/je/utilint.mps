@@ -172,6 +172,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -8002,18 +8003,6 @@
                   <property role="3SKdUp" value="text file and/or the database log file" />
                 </node>
               </node>
-            </node>
-            <node concept="1V74GB" id="6$_V4iGDGes" role="lGtFl">
-              <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_7576721727819269020" />
-              <ref role="1V74Hf" to="oc6c:6$_V4iGDGeu" resolve="VPToFragment_7576721727819269022" />
-              <ref role="25GeQm" node="6$_V4iGDGew" resolve="PeoplBlockReference_7576721727819269024" />
-              <ref role="a64iB" to="oc6c:3Mj07xysz4X" resolve="Logging_Severe" />
-              <ref role="3aRQVk" to="oc6c:5cTrQU_8jOK" resolve="ModuleToFragment_5996946899828030768" />
-            </node>
-          </node>
-          <node concept="2wexfA" id="5cTrQU_8jYJ" role="3cqZAp">
-            <node concept="3clFbS" id="5cTrQU_8jYK" role="9aQI4">
               <node concept="3clFbF" id="3ME3zLf8toB" role="3cqZAp">
                 <node concept="2OqwBi" id="3ME3zLf8toC" role="3clFbG">
                   <node concept="2OqwBi" id="3ME3zLf9bcN" role="2Oq$k0">
@@ -8027,8 +8016,8 @@
                   <node concept="liA8E" id="3ME3zLf8toE" role="2OqNvi">
                     <ref role="37wK5l" to="dr5r:~Logger.logp(java.util.logging.Level,java.lang.String,java.lang.String,java.lang.String):void" resolve="logp" />
                     <node concept="10M0yZ" id="3ME3zLfqQ9s" role="37wK5m">
-                      <ref role="1PxDUh" to="dr5r:~Level" resolve="Level" />
                       <ref role="3cqZAo" to="dr5r:~Level.SEVERE" resolve="SEVERE" />
+                      <ref role="1PxDUh" to="dr5r:~Level" resolve="Level" />
                     </node>
                     <node concept="37vLTw" id="3ME3zLf8toG" role="37wK5m">
                       <ref role="3cqZAo" node="3ME3zLf8tou" resolve="sourceClass" />
@@ -8046,8 +8035,8 @@
                         </node>
                       </node>
                       <node concept="2YIFZM" id="3ME3zLf9bcT" role="3uHU7w">
-                        <ref role="37wK5l" node="3ME3zLf8tpU" resolve="getStackTrace" />
                         <ref role="1Pybhc" node="6$_V4iGDGdV" resolve="Tracer" />
+                        <ref role="37wK5l" node="3ME3zLf8tpU" resolve="getStackTrace" />
                         <node concept="37vLTw" id="3ME3zLf8toN" role="37wK5m">
                           <ref role="3cqZAo" node="3ME3zLf8to$" resolve="t" />
                         </node>
@@ -8056,13 +8045,15 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="1m3ZvXgfO34" role="3cqZAp" />
             </node>
-            <node concept="1V74GB" id="5cTrQU_8jYL" role="lGtFl">
+            <node concept="1V74GB" id="6$_V4iGDGes" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_5996946899828031409" />
-              <ref role="1V74Hf" to="oc6c:5cTrQU_8jYN" resolve="VPToFragment_5996946899828031411" />
-              <ref role="a64iB" to="oc6c:3Mj07xyspA4" resolve="Logging_Base" />
-              <ref role="3aRQVk" to="oc6c:5cTrQU_8nTQ" resolve="ModuleToFragment_5996946899828047478" />
+              <property role="TrG5h" value="Fragment_7576721727819269020" />
+              <ref role="1V74Hf" to="oc6c:6$_V4iGDGeu" resolve="VPToFragment_7576721727819269022" />
+              <ref role="25GeQm" node="6$_V4iGDGew" resolve="PeoplBlockReference_7576721727819269024" />
+              <ref role="a64iB" to="oc6c:3Mj07xysz4X" resolve="Logging_Severe" />
+              <ref role="3aRQVk" to="oc6c:5cTrQU_8jOK" resolve="ModuleToFragment_5996946899828030768" />
             </node>
           </node>
         </node>
