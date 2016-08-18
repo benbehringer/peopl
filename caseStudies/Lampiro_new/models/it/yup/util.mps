@@ -5522,11 +5522,6 @@
             <ref role="ocbYS" node="3f4G5dHrhYK" />
             <ref role="1C2YfU" node="3f4G5dHrhYM" resolve="Fragment_3730300263734255538" />
           </node>
-          <node concept="ocbFV" id="3f4G5dHrhZ9" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_3730300263734255561" />
-            <ref role="ocbYS" node="3f4G5dHrhZ3" />
-            <ref role="1C2YfU" node="3f4G5dHrhZ5" resolve="Fragment_3730300263734255557" />
-          </node>
         </node>
       </node>
       <node concept="312cEg" id="4Jye5ZhmR9$" role="jymVt">

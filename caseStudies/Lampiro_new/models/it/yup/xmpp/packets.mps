@@ -15,7 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ww8v" ref="r:643b6ce8-396b-4484-8e66-f03138278162(it.yup.xmpp)" />
     <import index="ergm" ref="r:beded04c-db0a-4b5a-b204-45e91642cc79(peoplConfig)" />
-    <import index="zeob" ref="r:644cc58b-bd9e-4d58-b05f-acc6080f061e(it.yup.xmlstream)" implicit="true" />
+    <import index="q59p" ref="r:51f86216-13bf-495c-b46c-e9d26c834ab5(it.yup.xmlstream)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -31,10 +31,6 @@
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
-      <concept id="28358707492436943" name="jetbrains.mps.baseLanguage.structure.JavaImport" flags="ng" index="u1fJn">
-        <property id="28358707492436944" name="onDemand" index="u1fJ8" />
-        <property id="5574384225470059890" name="static" index="1XWMmp" />
-      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -44,9 +40,6 @@
       </concept>
       <concept id="1188220165133" name="jetbrains.mps.baseLanguage.structure.ArrayLiteral" flags="nn" index="2BsdOp">
         <child id="1188220173759" name="item" index="2BsfMF" />
-      </concept>
-      <concept id="9100188248702352244" name="jetbrains.mps.baseLanguage.structure.UnknownConsCall" flags="nn" index="Jn2ub">
-        <property id="9100188248702352610" name="isSuper" index="Jn20t" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -154,9 +147,6 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="6050519299856556786" name="jetbrains.mps.baseLanguage.structure.JavaImports" flags="ng" index="1lrU7d">
-        <child id="28358707492429991" name="entries" index="u1e2Z" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -170,9 +160,6 @@
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-      </concept>
-      <concept id="6528213125912070246" name="jetbrains.mps.baseLanguage.structure.Tokens" flags="ng" index="1u$dsA">
-        <property id="1843920760191311250" name="tokens" index="1CJj6V" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -383,7 +370,7 @@
             <ref role="ojxmB" node="4Jye5ZhmQWU" resolve="Iq" />
             <node concept="3clFbS" id="tgFBuwxH9q" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_Lg" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5ZhmQWU" resolve="Iq" />
+                <ref role="37wK5l" node="4Jye5ZhmYCh" resolve="Stanza" />
                 <node concept="37vLTw" id="4Jye5ZhmQX2" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhmQWI" resolve="IQ" />
                 </node>
@@ -540,12 +527,12 @@
             <ref role="ojxm_" node="tgFBuwxH9$" resolve="Stanza" />
             <ref role="ojxmB" node="4Jye5ZhmYCh" resolve="Stanza" />
             <node concept="3clFbS" id="tgFBuwxH9J" role="9aQI4">
-              <node concept="Jn2ub" id="4Jye5ZhmYCU" role="3cqZAp">
-                <property role="Jn20t" value="true" />
-                <node concept="37vLTw" id="4Jye5ZhmYCV" role="37wK5m">
+              <node concept="XkiVB" id="1oyjYrTjrsx" role="3cqZAp">
+                <ref role="37wK5l" to="mahp:4Jye5ZhmQtv" resolve="Element" />
+                <node concept="37vLTw" id="1oyjYrTjruq" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhmYBX" resolve="NS_JABBER_CLIENT" />
                 </node>
-                <node concept="37vLTw" id="4Jye5ZhmYCW" role="37wK5m">
+                <node concept="37vLTw" id="1oyjYrTjrzr" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhmYCj" resolve="name" />
                 </node>
               </node>
@@ -647,7 +634,7 @@
             <ref role="ojxmB" node="4Jye5ZhmYCY" resolve="Stanza" />
             <node concept="3clFbS" id="tgFBuwxH9R" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_Lr" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5ZhmYCY" resolve="Stanza" />
+                <ref role="37wK5l" to="mahp:4Jye5ZhmQud" resolve="Element" />
                 <node concept="37vLTw" id="4Jye5ZhmYD4" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhmYD0" resolve="e" />
                 </node>
@@ -668,18 +655,6 @@
           <property role="TrG5h" value="PeoplBlockReference_527112985219879548" />
           <ref role="ocbYS" node="tgFBuwxH9Q" />
           <ref role="1C2YfU" node="tgFBuwxH9S" resolve="Fragment_527112985219879544" />
-        </node>
-      </node>
-      <node concept="1lrU7d" id="4Jye5ZhmYD6" role="lGtFl">
-        <node concept="u1fJn" id="4Jye5ZhmYD7" role="u1e2Z">
-          <property role="u1fJ8" value="true" />
-          <property role="1XWMmp" value="false" />
-          <property role="1CJj6V" value="it.yup.xmpp.packets" />
-        </node>
-        <node concept="u1fJn" id="4Jye5ZhmYD8" role="u1e2Z">
-          <property role="u1fJ8" value="false" />
-          <property role="1XWMmp" value="false" />
-          <property role="1CJj6V" value="it.yup.xml.Element" />
         </node>
       </node>
     </node>
@@ -3655,18 +3630,18 @@
             <ref role="ojxm_" node="tgFBuwxHaI" resolve="Message" />
             <ref role="ojxmB" node="4Jye5Zhn3OM" resolve="Message" />
             <node concept="3clFbS" id="tgFBuwxHaT" role="9aQI4">
-              <node concept="Jn2ub" id="4Jye5Zhn3OT" role="3cqZAp">
-                <property role="Jn20t" value="true" />
-                <node concept="37vLTw" id="4Jye5Zhn3OU" role="37wK5m">
+              <node concept="XkiVB" id="1oyjYrTjqLQ" role="3cqZAp">
+                <ref role="37wK5l" node="4Jye5ZhmYCh" resolve="Stanza" />
+                <node concept="37vLTw" id="1oyjYrTjqMo" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5Zhn3Oe" resolve="MESSAGE" />
                 </node>
-                <node concept="37vLTw" id="4Jye5Zhn3OV" role="37wK5m">
+                <node concept="37vLTw" id="1oyjYrTjqOk" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5Zhn3OO" resolve="to" />
                 </node>
-                <node concept="37vLTw" id="4Jye5Zhn3OW" role="37wK5m">
+                <node concept="37vLTw" id="1oyjYrTjqPo" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5Zhn3OQ" resolve="type" />
                 </node>
-                <node concept="10Nm6u" id="4Jye5Zhn3OX" role="37wK5m" />
+                <node concept="10Nm6u" id="1oyjYrTjqRt" role="37wK5m" />
               </node>
             </node>
             <node concept="1V74GB" id="tgFBuwxHaU" role="lGtFl">
@@ -3947,7 +3922,7 @@
             <ref role="ojxmB" node="4Jye5Zhn3Q7" resolve="Message" />
             <node concept="3clFbS" id="tgFBuwxHbp" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_TG" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5Zhn3Q7" resolve="Message" />
+                <ref role="37wK5l" node="4Jye5ZhmYCY" resolve="Stanza" />
                 <node concept="37vLTw" id="4Jye5Zhn3Qd" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5Zhn3Q9" resolve="e" />
                 </node>
@@ -3970,18 +3945,6 @@
           <ref role="1C2YfU" node="tgFBuwxHbq" resolve="Fragment_527112985219879642" />
         </node>
       </node>
-      <node concept="1lrU7d" id="4Jye5Zhn3Qf" role="lGtFl">
-        <node concept="u1fJn" id="4Jye5Zhn3Qg" role="u1e2Z">
-          <property role="u1fJ8" value="true" />
-          <property role="1XWMmp" value="false" />
-          <property role="1CJj6V" value="it.yup.xmpp.packets" />
-        </node>
-        <node concept="u1fJn" id="4Jye5Zhn3Qh" role="u1e2Z">
-          <property role="u1fJ8" value="false" />
-          <property role="1XWMmp" value="false" />
-          <property role="1CJj6V" value="it.yup.xml.Element" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2SvMkh" id="tgFBuwxHby">
@@ -4002,8 +3965,8 @@
         <ref role="3aRQVk" to="ergm:tgFBuwxHbE" resolve="ModuleToFragment_527112985219879658" />
       </node>
       <node concept="2tJIrI" id="tgFBuwxHbG" role="jymVt" />
-      <node concept="3uibUv" id="4Jye5Zhn6_A" role="EKbjA">
-        <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
+      <node concept="3uibUv" id="1oyjYrTjq$5" role="EKbjA">
+        <ref role="3uigEE" to="q59p:3EZ4ze0BOjt" resolve="PacketListener" />
       </node>
       <node concept="3clFb_" id="4Jye5Zhn6_B" role="jymVt">
         <property role="TrG5h" value="packetReceived" />
@@ -4031,7 +3994,7 @@
                       <ref role="3cqZAo" node="4Jye5Zhn6_C" resolve="e" />
                     </node>
                     <node concept="liA8E" id="4Jye5Zhn_TL" role="2OqNvi">
-                      <ref role="37wK5l" to="zeob:4Jye5ZhmXK_" resolve="getAttribute" />
+                      <ref role="37wK5l" to="mahp:4Jye5ZhmQxZ" resolve="getAttribute" />
                       <node concept="10M0yZ" id="4Jye5ZhqtJG" role="37wK5m">
                         <ref role="3cqZAo" node="4Jye5ZhmYC9" resolve="ATT_TYPE" />
                         <ref role="1PxDUh" node="tgFBuwxH9$" resolve="Stanza" />
@@ -4377,7 +4340,7 @@
             <ref role="ojxmB" node="4Jye5ZhncEd" resolve="Presence" />
             <node concept="3clFbS" id="tgFBuwxHcj" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_TX" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5ZhncF4" resolve="Presence" />
+                <ref role="37wK5l" node="4Jye5ZhmYCh" resolve="Stanza" />
                 <node concept="37vLTw" id="4Jye5ZhncEh" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhncCW" resolve="PRESENCE" />
                 </node>
@@ -4438,7 +4401,7 @@
             <ref role="ojxmB" node="4Jye5ZhncEm" resolve="Presence" />
             <node concept="3clFbS" id="tgFBuwxHcr" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_TY" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5ZhncF4" resolve="Presence" />
+                <ref role="37wK5l" node="4Jye5ZhmYCh" resolve="Stanza" />
                 <node concept="37vLTw" id="4Jye5ZhncEZ" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhncCW" resolve="PRESENCE" />
                 </node>
@@ -4609,7 +4572,7 @@
             <ref role="ojxmB" node="4Jye5ZhncFm" resolve="Presence" />
             <node concept="3clFbS" id="tgFBuwxHcF" role="9aQI4">
               <node concept="XkiVB" id="4Jye5Zhn_U0" role="3cqZAp">
-                <ref role="37wK5l" node="4Jye5ZhncFm" resolve="Presence" />
+                <ref role="37wK5l" node="4Jye5ZhmYCY" resolve="Stanza" />
                 <node concept="37vLTw" id="4Jye5ZhncFs" role="37wK5m">
                   <ref role="3cqZAo" node="4Jye5ZhncFo" resolve="e" />
                 </node>
