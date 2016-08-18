@@ -2070,7 +2070,17 @@
         <property role="3cmrfH" value="0" />
       </node>
     </node>
-    <node concept="2tJIrI" id="4XXs7nZPebH" role="jymVt" />
+    <node concept="312cEg" id="7aBwJYZ$3e" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="rect_y" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="7aBwJYZzSG" role="1B3o_S" />
+      <node concept="10Oyi0" id="7aBwJYZ$3c" role="1tU5fm" />
+      <node concept="3cmrfG" id="7aBwJYZ$dZ" role="33vP2m">
+        <property role="3cmrfH" value="0" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="4XXs7nZPehv" role="jymVt" />
     <node concept="312cEg" id="4XXs7nZF_cU" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2906,6 +2916,16 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbF" id="7aBwJYZ_Fl" role="3cqZAp">
+                            <node concept="37vLTI" id="7aBwJYZ_Qh" role="3clFbG">
+                              <node concept="37vLTw" id="7aBwJYZ_WT" role="37vLTx">
+                                <ref role="3cqZAo" node="7aBwJYX4oa" resolve="y" />
+                              </node>
+                              <node concept="37vLTw" id="7aBwJYZ_Fj" role="37vLTJ">
+                                <ref role="3cqZAo" node="7aBwJYZ$3e" resolve="rect_y" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
                         <node concept="3clFbC" id="7aBwJYX4qc" role="3clFbw">
                           <node concept="Rm8GO" id="7aBwJYX4qd" role="3uHU7w">
@@ -3294,6 +3314,7 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbH" id="7aBwJYZ$e8" role="3cqZAp" />
                         </node>
                         <node concept="3clFbC" id="7aBwJYWPw9" role="3clFbw">
                           <node concept="Rm8GO" id="7aBwJYWPES" role="3uHU7w">
@@ -3416,19 +3437,62 @@
                           <property role="3SKdUp" value="distance to following text" />
                         </node>
                       </node>
-                      <node concept="3clFbF" id="61l2320Nh6v" role="3cqZAp">
-                        <node concept="37vLTI" id="61l2320NhHk" role="3clFbG">
-                          <node concept="2OqwBi" id="61l2320Nhd$" role="37vLTJ">
-                            <node concept="Xjq3P" id="61l2320Nh6t" role="2Oq$k0" />
-                            <node concept="2OwXpG" id="61l2320NhuH" role="2OqNvi">
-                              <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                      <node concept="3clFbJ" id="7aBwJYYF8y" role="3cqZAp">
+                        <node concept="3clFbS" id="7aBwJYYF8$" role="3clFbx">
+                          <node concept="3clFbF" id="7aBwJYZzDQ" role="3cqZAp">
+                            <node concept="2OqwBi" id="7aBwJYZzJQ" role="3clFbG">
+                              <node concept="Xjq3P" id="7aBwJYZzDH" role="2Oq$k0" />
+                              <node concept="liA8E" id="7aBwJYZzSk" role="2OqNvi">
+                                <ref role="37wK5l" to="g51k:~EditorCell_Basic.setY(int):void" resolve="setY" />
+                                <node concept="37vLTw" id="7aBwJYZAbJ" role="37wK5m">
+                                  <ref role="3cqZAo" node="7aBwJYZ$3e" resolve="rect_y" />
+                                </node>
+                              </node>
                             </node>
                           </node>
-                          <node concept="37vLTw" id="4NyX2wROHJ0" role="37vLTx">
-                            <ref role="3cqZAo" node="4NyX2wROHjr" resolve="myDistToFollowingText" />
+                          <node concept="3clFbF" id="7aBwJYZD6h" role="3cqZAp">
+                            <node concept="37vLTI" id="7aBwJYZD6i" role="3clFbG">
+                              <node concept="2OqwBi" id="7aBwJYZD6j" role="37vLTJ">
+                                <node concept="Xjq3P" id="7aBwJYZD6k" role="2Oq$k0" />
+                                <node concept="2OwXpG" id="7aBwJYZD6l" role="2OqNvi">
+                                  <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                                </node>
+                              </node>
+                              <node concept="37vLTw" id="7aBwJYZGrn" role="37vLTx">
+                                <ref role="3cqZAo" node="4NyX2wROHjr" resolve="myDistToFollowingText" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbH" id="7aBwJYZD6a" role="3cqZAp" />
+                        </node>
+                        <node concept="3clFbC" id="7aBwJYYF_v" role="3clFbw">
+                          <node concept="Rm8GO" id="7aBwJYYFFI" role="3uHU7w">
+                            <ref role="Rm8GQ" node="7aBwJYWNYd" resolve="TOP" />
+                            <ref role="1Px2BO" node="7aBwJYWNOB" resolve="HorizontalLineCellProvider.HorizontalProvider_StartPosition" />
+                          </node>
+                          <node concept="37vLTw" id="7aBwJYYFtp" role="3uHU7B">
+                            <ref role="3cqZAo" node="7aBwJYWO7S" resolve="myStartPosition" />
+                          </node>
+                        </node>
+                        <node concept="9aQIb" id="7aBwJYZDml" role="9aQIa">
+                          <node concept="3clFbS" id="7aBwJYZDmm" role="9aQI4">
+                            <node concept="3clFbF" id="7aBwJYZDmN" role="3cqZAp">
+                              <node concept="37vLTI" id="61l2320NhHk" role="3clFbG">
+                                <node concept="2OqwBi" id="61l2320Nhd$" role="37vLTJ">
+                                  <node concept="Xjq3P" id="61l2320Nh6t" role="2Oq$k0" />
+                                  <node concept="2OwXpG" id="61l2320NhuH" role="2OqNvi">
+                                    <ref role="2Oxat5" to="g51k:~EditorCell_Basic.myHeight" resolve="myHeight" />
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="4NyX2wROHJ0" role="37vLTx">
+                                  <ref role="3cqZAo" node="4NyX2wROHjr" resolve="myDistToFollowingText" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="7aBwJYYF0Q" role="3cqZAp" />
                     </node>
                     <node concept="2AHcQZ" id="61l2320NfS8" role="2AJF6D">
                       <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -5316,7 +5380,7 @@
                                     </node>
                                   </node>
                                   <node concept="Xl_RD" id="Eft$85y6IL" role="3uHU7B">
-                                    <property role="Xl_RC" value="| " />
+                                    <property role="Xl_RC" value="∧ " />
                                   </node>
                                 </node>
                               </node>
