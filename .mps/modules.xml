@@ -22,6 +22,7 @@
       <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.GPL" />
       <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro/Lampiro.msd" folder="caseStudies" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro_new/Lampiro_new.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/Prop4J/Prop4J.msd" folder="caseStudies.Prop4J" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/Prop4J_NoVar/Prop4J_NoVar.msd" folder="caseStudies.Prop4J.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.junit/org.junit.msd" folder="caseStudies.Prop4J.source" />

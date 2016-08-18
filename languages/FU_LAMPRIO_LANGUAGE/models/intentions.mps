@@ -234,7 +234,7 @@
                 <node concept="2ShNRf" id="277o1kLSOUc" role="37vLTx">
                   <node concept="3zrR0B" id="277o1kLSOUa" role="2ShVmc">
                     <node concept="3Tqbb2" id="277o1kLSOUb" role="3zrR0E">
-                      <ref role="ehGHo" to="tpee:f_0N3wd" resolve="ShortType" />
+                      <ref role="ehGHo" to="tpee:f_0Pron" resolve="ByteType" />
                     </node>
                   </node>
                 </node>
