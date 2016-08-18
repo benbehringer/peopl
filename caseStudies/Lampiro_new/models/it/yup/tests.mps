@@ -555,8 +555,8 @@
                 <node concept="3cpWsn" id="4Jye5ZhncIQ" role="3cpWs9">
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="packet" />
-                  <node concept="3uibUv" id="4Jye5ZhncIS" role="1tU5fm">
-                    <ref role="3uigEE" to=":4Jye5ZhmQrZ" resolve="Element" />
+                  <node concept="3uibUv" id="7si0S0cyd1$" role="1tU5fm">
+                    <ref role="3uigEE" to="mahp:tgFBuwxFCG" resolve="Element" />
                   </node>
                   <node concept="10Nm6u" id="4Jye5ZhncIT" role="33vP2m" />
                 </node>
@@ -565,8 +565,8 @@
                 <node concept="3cpWsn" id="4Jye5ZhncIU" role="3cpWs9">
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="parser" />
-                  <node concept="3uibUv" id="4Jye5ZhncIW" role="1tU5fm">
-                    <ref role="3uigEE" to=":4Jye5Zhn89l" resolve="KXmlParser" />
+                  <node concept="3uibUv" id="7si0S0cyd60" role="1tU5fm">
+                    <ref role="3uigEE" to="mahp:tgFBuwxFuK" resolve="KXmlParser" />
                   </node>
                   <node concept="2ShNRf" id="4Jye5Zhnw3c" role="33vP2m">
                     <node concept="1pGfFk" id="4Jye5Zhnw3d" role="2ShVmc">
@@ -709,8 +709,8 @@
                 <node concept="3cpWsn" id="4Jye5ZhncJA" role="3cpWs9">
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="decodedPacket" />
-                  <node concept="3uibUv" id="4Jye5ZhncJC" role="1tU5fm">
-                    <ref role="3uigEE" to=":4Jye5ZhmQrZ" resolve="Element" />
+                  <node concept="3uibUv" id="7si0S0cydbS" role="1tU5fm">
+                    <ref role="3uigEE" to="mahp:tgFBuwxFCG" resolve="Element" />
                   </node>
                   <node concept="2YIFZM" id="4Jye5Zhnw3F" role="33vP2m">
                     <ref role="37wK5l" to="mahp:4Jye5ZhmPKj" resolve="parse" />
@@ -1611,7 +1611,7 @@
               </node>
               <node concept="3clFbS" id="4Jye5ZhmLAs" role="9aQI4">
                 <node concept="XkiVB" id="4Jye5Zhnwo1" role="3cqZAp">
-                  <ref role="37wK5l" node="4Jye5ZhmLAo" resolve="RMSTestMidlet.TestForm" />
+                  <ref role="37wK5l" to="fe9x:~Form.&lt;init&gt;(java.lang.String)" resolve="Form" />
                   <node concept="37vLTw" id="4Jye5ZhmLAz" role="37wK5m">
                     <ref role="3cqZAo" node="4Jye5ZhmLAq" resolve="title" />
                   </node>
@@ -2754,7 +2754,7 @@
         <property role="eg7rD" value="false" />
         <property role="TrG5h" value="stream" />
         <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="4Jye5ZhncyR" role="1tU5fm">
+        <node concept="3uibUv" id="7si0S0cyMJf" role="1tU5fm">
           <ref role="3uigEE" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
         </node>
       </node>
@@ -2961,12 +2961,14 @@
             <ref role="HV5vE" node="4Jye5ZhncxC" resolve="XMPPTestClient.Listener" />
           </node>
         </node>
+        <node concept="3Tmbuc" id="7si0S0cyMQq" role="1B3o_S" />
       </node>
       <node concept="312cEu" id="4Jye5Zhncyo" role="jymVt">
         <property role="TrG5h" value="Echoer" />
         <property role="2bfB8j" value="true" />
         <property role="1sVAO0" value="false" />
         <property role="1EXbeo" value="false" />
+        <node concept="2tJIrI" id="7si0S0cyMVK" role="jymVt" />
         <node concept="3uibUv" id="4Jye5Zhncyp" role="EKbjA">
           <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
         </node>
@@ -2977,8 +2979,8 @@
           <node concept="37vLTG" id="4Jye5Zhncyr" role="3clF46">
             <property role="TrG5h" value="e" />
             <property role="3TUv4t" value="false" />
-            <node concept="3uibUv" id="4Jye5Zhncys" role="1tU5fm">
-              <ref role="3uigEE" to=":4Jye5ZhmQrZ" resolve="Element" />
+            <node concept="3uibUv" id="7si0S0cyMQU" role="1tU5fm">
+              <ref role="3uigEE" to="mahp:tgFBuwxFCG" resolve="Element" />
             </node>
           </node>
           <node concept="3Tm1VV" id="4Jye5ZhncyN" role="1B3o_S" />
@@ -3079,7 +3081,7 @@
                 </node>
                 <node concept="3clFbF" id="4Jye5ZhncyI" role="3cqZAp">
                   <node concept="2OqwBi" id="4Jye5Zhnwtk" role="3clFbG">
-                    <node concept="37vLTw" id="4Jye5Zhnwtj" role="2Oq$k0">
+                    <node concept="37vLTw" id="7si0S0cydJB" role="2Oq$k0">
                       <ref role="3cqZAo" node="4Jye5ZhncyP" resolve="stream" />
                     </node>
                     <node concept="liA8E" id="4Jye5Zhnwtl" role="2OqNvi">
@@ -3104,6 +3106,7 @@
             <ref role="1C2YfU" node="3f4G5dHqO$1" resolve="Fragment_3730300263734135041" />
           </node>
         </node>
+        <node concept="3Tmbuc" id="7si0S0cyMNF" role="1B3o_S" />
       </node>
       <node concept="3clFb_" id="4Jye5ZhncyZ" role="jymVt">
         <property role="TrG5h" value="startClient" />
@@ -3120,7 +3123,7 @@
                     <ref role="3cqZAo" node="4Jye5ZhncyP" resolve="stream" />
                   </node>
                   <node concept="2ShNRf" id="4Jye5Zhnwtm" role="37vLTx">
-                    <node concept="HV5vD" id="4Jye5Zhnwtn" role="2ShVmc">
+                    <node concept="HV5vD" id="7si0S0cyN8E" role="2ShVmc">
                       <ref role="HV5vE" to="zeob:tgFBuwxGOj" resolve="SocketStream" />
                     </node>
                   </node>
@@ -3164,19 +3167,15 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="4Jye5Zhnczi" role="3cqZAp">
-                <node concept="2OqwBi" id="4Jye5Zhnwty" role="3clFbG">
-                  <node concept="37vLTw" id="4Jye5Zhnwtx" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jye5ZhncyP" resolve="stream" />
+              <node concept="3clFbF" id="7si0S0cz37B" role="3cqZAp">
+                <node concept="2YIFZM" id="7si0S0cz3ft" role="3clFbG">
+                  <ref role="37wK5l" to="zeob:4Jye5Zhnb5L" resolve="addEventListener" />
+                  <ref role="1Pybhc" to="zeob:tgFBuwxGOj" resolve="SocketStream" />
+                  <node concept="37vLTw" id="7si0S0cz3ha" role="37wK5m">
+                    <ref role="3cqZAo" node="4Jye5Zhnczb" resolve="qAuth" />
                   </node>
-                  <node concept="liA8E" id="4Jye5Zhnwtz" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="addEventListener" />
-                    <node concept="37vLTw" id="4Jye5Zhnczk" role="37wK5m">
-                      <ref role="3cqZAo" node="4Jye5Zhnczb" resolve="qAuth" />
-                    </node>
-                    <node concept="37vLTw" id="4Jye5Zhnczl" role="37wK5m">
-                      <ref role="3cqZAo" node="4Jye5ZhncyV" resolve="listener" />
-                    </node>
+                  <node concept="37vLTw" id="7si0S0cz3iv" role="37wK5m">
+                    <ref role="3cqZAo" node="4Jye5ZhncyV" resolve="listener" />
                   </node>
                 </node>
               </node>
@@ -3199,20 +3198,16 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="4Jye5Zhnczt" role="3cqZAp">
-                <node concept="2OqwBi" id="4Jye5ZhnwtD" role="3clFbG">
-                  <node concept="37vLTw" id="4Jye5ZhnwtC" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4Jye5ZhncyP" resolve="stream" />
+              <node concept="3clFbF" id="7si0S0cz3qo" role="3cqZAp">
+                <node concept="2YIFZM" id="7si0S0cz3xc" role="3clFbG">
+                  <ref role="37wK5l" to="zeob:4Jye5Zhnb5L" resolve="addEventListener" />
+                  <ref role="1Pybhc" to="zeob:tgFBuwxGOj" resolve="SocketStream" />
+                  <node concept="37vLTw" id="7si0S0cz3z7" role="37wK5m">
+                    <ref role="3cqZAo" node="4Jye5Zhnczm" resolve="qMessage" />
                   </node>
-                  <node concept="liA8E" id="4Jye5ZhnwtE" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="addEventListener" />
-                    <node concept="37vLTw" id="4Jye5Zhnczv" role="37wK5m">
-                      <ref role="3cqZAo" node="4Jye5Zhnczm" resolve="qMessage" />
-                    </node>
-                    <node concept="2ShNRf" id="4Jye5ZhnwtF" role="37wK5m">
-                      <node concept="HV5vD" id="4Jye5ZhnwtG" role="2ShVmc">
-                        <ref role="HV5vE" node="4Jye5Zhncyo" resolve="XMPPTestClient.Echoer" />
-                      </node>
+                  <node concept="2ShNRf" id="7si0S0cz3$b" role="37wK5m">
+                    <node concept="HV5vD" id="7si0S0cz3R6" role="2ShVmc">
+                      <ref role="HV5vE" node="4Jye5Zhncyo" resolve="XMPPTestClient.Echoer" />
                     </node>
                   </node>
                 </node>
@@ -8924,13 +8919,18 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2OqwBi" id="4Jye5ZhngnN" role="3uHU7w">
-                      <node concept="1eOMI4" id="4Jye5ZhngnR" role="2Oq$k0">
-                        <node concept="37vLTw" id="4Jye5ZhngnP" role="1eOMHV">
-                          <ref role="3cqZAo" node="4Jye5ZhngnC" resolve="item" />
+                    <node concept="2OqwBi" id="7si0S0cyctR" role="3uHU7w">
+                      <node concept="1eOMI4" id="7si0S0cycki" role="2Oq$k0">
+                        <node concept="10QFUN" id="7si0S0cyckf" role="1eOMHV">
+                          <node concept="3uibUv" id="7si0S0cyclk" role="10QFUM">
+                            <ref role="3uigEE" to="9suc:tgFBuwxEXq" resolve="UICheckbox" />
+                          </node>
+                          <node concept="37vLTw" id="7si0S0cycop" role="10QFUP">
+                            <ref role="3cqZAo" node="4Jye5ZhngnC" resolve="item" />
+                          </node>
                         </node>
                       </node>
-                      <node concept="liA8E" id="4Jye5ZhngnS" role="2OqNvi">
+                      <node concept="liA8E" id="7si0S0cycC6" role="2OqNvi">
                         <ref role="37wK5l" to="9suc:4Jye5ZhmMHy" resolve="isChecked" />
                       </node>
                     </node>
@@ -9373,13 +9373,18 @@
                             <node concept="Xl_RD" id="4Jye5ZhngpW" role="3uHU7B">
                               <property role="Xl_RC" value="ContMenu has been pressed: " />
                             </node>
-                            <node concept="2OqwBi" id="4Jye5ZhngpX" role="3uHU7w">
-                              <node concept="1eOMI4" id="4Jye5Zhngq1" role="2Oq$k0">
-                                <node concept="37vLTw" id="4Jye5ZhngpZ" role="1eOMHV">
-                                  <ref role="3cqZAo" node="4Jye5Zhngps" resolve="item" />
+                            <node concept="2OqwBi" id="7si0S0cyc1o" role="3uHU7w">
+                              <node concept="1eOMI4" id="7si0S0cybQo" role="2Oq$k0">
+                                <node concept="10QFUN" id="7si0S0cybQl" role="1eOMHV">
+                                  <node concept="3uibUv" id="7si0S0cybRH" role="10QFUM">
+                                    <ref role="3uigEE" to="9suc:tgFBuwxETP" resolve="UILabel" />
+                                  </node>
+                                  <node concept="37vLTw" id="7si0S0cybW8" role="10QFUP">
+                                    <ref role="3cqZAo" node="4Jye5Zhngps" resolve="item" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="liA8E" id="4Jye5Zhngq2" role="2OqNvi">
+                              <node concept="liA8E" id="7si0S0cyccm" role="2OqNvi">
                                 <ref role="37wK5l" to="9suc:4Jye5Zhn6vJ" resolve="getText" />
                               </node>
                             </node>

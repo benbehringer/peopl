@@ -22,6 +22,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="true">fc3aa1b1-051e-4d27-ac7b-282a0925f904(Lampiro)</dependency>
   </dependencies>
   <languageVersions>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.baseLanguageExtension" version="0" />
@@ -38,6 +39,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="fc3aa1b1-051e-4d27-ac7b-282a0925f904(Lampiro)" version="0" />
     <module reference="63655c89-3af5-4104-8b6c-504e26175416(Lampiro_new)" version="0" />
   </dependencyVersions>
 </solution>
