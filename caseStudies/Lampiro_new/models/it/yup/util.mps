@@ -4625,6 +4625,18 @@
                   <property role="3SKdUp" value="#ifndef GLIDER" />
                 </node>
               </node>
+            </node>
+            <node concept="1V74GB" id="tgFBuwxFN3" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_527112985219873987" />
+              <ref role="1V74Hf" to="ergm:tgFBuwxFN5" resolve="VPToFragment_527112985219873989" />
+              <ref role="3aRQVk" to="ergm:tgFBuwxFN6" resolve="ModuleToFragment_527112985219873990" />
+              <ref role="a64iB" to="ergm:tgFBuwxEpq" resolve="Base" />
+              <ref role="25GeQm" node="tgFBuwxFN7" resolve="PeoplBlockReference_527112985219873991" />
+            </node>
+          </node>
+          <node concept="2wexfA" id="7Ge7wkG_awa" role="3cqZAp">
+            <node concept="3clFbS" id="7Ge7wkG_awb" role="9aQI4">
               <node concept="3cpWs8" id="4Jye5ZhmU8K" role="3cqZAp">
                 <node concept="3cpWsn" id="4Jye5ZhmU8J" role="3cpWs9">
                   <property role="3TUv4t" value="false" />
@@ -4663,6 +4675,19 @@
                   </node>
                 </node>
               </node>
+            </node>
+            <node concept="1V74GB" id="7Ge7wkG_awc" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8867057723910694924" />
+              <ref role="1V74Hf" to="ergm:7Ge7wkG_awe" resolve="VPToFragment_8867057723910694926" />
+              <ref role="a64iB" to="ergm:7Ge7wkGz3Sx" resolve="x_notGlider" />
+              <ref role="3aRQVk" to="ergm:7Ge7wkG_chx" resolve="ModuleToFragment_8867057723910702177" />
+            </node>
+          </node>
+          <node concept="2wexfA" id="7Ge7wkG_aw2" role="3cqZAp">
+            <ref role="ojxm_" node="tgFBuwxFMR" resolve="ResourceManager" />
+            <ref role="ojxmB" node="4Jye5ZhmU8C" resolve="ResourceManager" />
+            <node concept="3clFbS" id="7Ge7wkG_aw3" role="9aQI4">
               <node concept="3SKdUt" id="4Jye5ZhmUaO" role="3cqZAp">
                 <node concept="3SKdUq" id="4Jye5ZhmUaN" role="3SKWNk">
                   <property role="3SKdUp" value="#endif" />
@@ -4897,13 +4922,13 @@
                 </node>
               </node>
             </node>
-            <node concept="1V74GB" id="tgFBuwxFN3" role="lGtFl">
+            <node concept="1V74GB" id="7Ge7wkG_aw4" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_527112985219873987" />
-              <ref role="1V74Hf" to="ergm:tgFBuwxFN5" resolve="VPToFragment_527112985219873989" />
-              <ref role="3aRQVk" to="ergm:tgFBuwxFN6" resolve="ModuleToFragment_527112985219873990" />
+              <property role="TrG5h" value="Fragment_8867057723910694916" />
+              <ref role="1V74Hf" to="ergm:7Ge7wkG_aw6" resolve="VPToFragment_8867057723910694918" />
+              <ref role="3aRQVk" to="ergm:7Ge7wkG_aw7" resolve="ModuleToFragment_8867057723910694919" />
               <ref role="a64iB" to="ergm:tgFBuwxEpq" resolve="Base" />
-              <ref role="25GeQm" node="tgFBuwxFN7" resolve="PeoplBlockReference_527112985219873991" />
+              <ref role="25GeQm" node="7Ge7wkG_aw8" resolve="PeoplBlockReference_8867057723910694920" />
             </node>
           </node>
         </node>
@@ -4912,6 +4937,11 @@
           <property role="TrG5h" value="PeoplBlockReference_527112985219873991" />
           <ref role="ocbYS" node="tgFBuwxFN1" />
           <ref role="1C2YfU" node="tgFBuwxFN3" resolve="Fragment_527112985219873987" />
+        </node>
+        <node concept="ocbFV" id="7Ge7wkG_aw8" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8867057723910694920" />
+          <ref role="ocbYS" node="7Ge7wkG_aw2" />
+          <ref role="1C2YfU" node="7Ge7wkG_aw4" resolve="Fragment_8867057723910694916" />
         </node>
       </node>
       <node concept="2YIFZL" id="4Jye5ZhmUa6" role="jymVt">
