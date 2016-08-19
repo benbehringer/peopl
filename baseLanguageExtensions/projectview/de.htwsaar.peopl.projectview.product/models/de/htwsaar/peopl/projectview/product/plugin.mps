@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)">
+<model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
@@ -289,11 +289,11 @@
         </node>
         <node concept="14a6R6" id="4GrfODAR9g7" role="37wK5m" />
       </node>
-      <node concept="3clFbT" id="1Z9n1aML9NX" role="2q6PdT">
-        <property role="3clFbU" value="false" />
-      </node>
       <node concept="3clFbT" id="1Z9n1aML9V3" role="19oFX3">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3clFbT" id="1Z9n1aML9NX" role="2q6PdT">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="14aYG3" id="75_oBQVXuuy" role="14aYEy">
@@ -769,11 +769,11 @@
           <ref role="14b0Uw" node="7diJr$Rx11N" resolve="peoplModuleDefinition" />
         </node>
       </node>
-      <node concept="3clFbT" id="L5cqXO8Zr1" role="2q6PdT">
-        <property role="3clFbU" value="false" />
-      </node>
       <node concept="3clFbT" id="L5cqXO8ZwU" role="19oFX3">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3clFbT" id="L5cqXO8Zr1" role="2q6PdT">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="14aYG3" id="6x2HjBtaqmQ" role="14aYEy">
@@ -847,11 +847,11 @@
           </node>
         </node>
       </node>
-      <node concept="3clFbT" id="1sh5U6QaCeV" role="2q6PdT">
-        <property role="3clFbU" value="false" />
-      </node>
       <node concept="3clFbT" id="1sh5U6QaCkr" role="19oFX3">
         <property role="3clFbU" value="true" />
+      </node>
+      <node concept="3clFbT" id="1sh5U6QaCeV" role="2q6PdT">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="Xl_RD" id="L5cqXO6YAZ" role="3GFWDq">

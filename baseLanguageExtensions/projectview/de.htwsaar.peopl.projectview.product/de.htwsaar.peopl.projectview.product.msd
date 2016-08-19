@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.htwsaar.peopl.projectview.product" uuid="b6142a83-3492-4283-8cef-a5f4103cb306" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
+<solution name="de.htwsaar.peopl.projectview.product" uuid="b6142a83-3492-4283-8cef-a5f4103cb306" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
