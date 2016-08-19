@@ -3883,11 +3883,6 @@
             </node>
           </node>
         </node>
-        <node concept="ocbFV" id="6NxsX3uW6uS" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_7845679366786803640" />
-          <ref role="ocbYS" node="6NxsX3uW6uM" />
-          <ref role="1C2YfU" node="6NxsX3uW6uO" resolve="Fragment_7845679366786803636" />
-        </node>
         <node concept="ocbFV" id="6NxsX3uWab7" role="lGtFl">
           <property role="TrG5h" value="PeoplBlockReference_7845679366786818759" />
           <ref role="ocbYS" node="6NxsX3uWab1" />
