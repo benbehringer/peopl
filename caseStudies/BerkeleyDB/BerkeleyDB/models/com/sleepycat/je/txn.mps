@@ -26514,10 +26514,6 @@
           <ref role="ocbYS" node="6$_V4iGDCPR" />
           <ref role="1C2YfU" node="6$_V4iGDCPT" resolve="Fragment_7576721727819255161" />
         </node>
-        <node concept="1C2YfN" id="1x7zZZgC6S6" role="lGtFl">
-          <property role="TrG5h" value="FragmentUpdater_1749525309136334342" />
-          <ref role="1C2YfU" node="1x7zZZgC6RZ" resolve="Fragment_1749525309136334335" />
-        </node>
         <node concept="3uibUv" id="2y7plEIvLmg" role="3clF45">
           <ref role="3uigEE" node="6$_V4iGDCHY" resolve="Locker" />
         </node>

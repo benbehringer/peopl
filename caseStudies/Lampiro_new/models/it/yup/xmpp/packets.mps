@@ -15,7 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ww8v" ref="r:643b6ce8-396b-4484-8e66-f03138278162(it.yup.xmpp)" />
     <import index="ergm" ref="r:beded04c-db0a-4b5a-b204-45e91642cc79(peoplConfig)" />
-    <import index="q59p" ref="r:51f86216-13bf-495c-b46c-e9d26c834ab5(it.yup.xmlstream)" />
+    <import index="zeob" ref="r:644cc58b-bd9e-4d58-b05f-acc6080f061e(it.yup.xmlstream)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3965,8 +3965,8 @@
         <ref role="3aRQVk" to="ergm:tgFBuwxHbE" resolve="ModuleToFragment_527112985219879658" />
       </node>
       <node concept="2tJIrI" id="tgFBuwxHbG" role="jymVt" />
-      <node concept="3uibUv" id="1oyjYrTjq$5" role="EKbjA">
-        <ref role="3uigEE" to="q59p:3EZ4ze0BOjt" resolve="PacketListener" />
+      <node concept="3uibUv" id="mc6I30gbjO" role="EKbjA">
+        <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
       </node>
       <node concept="3clFb_" id="4Jye5Zhn6_B" role="jymVt">
         <property role="TrG5h" value="packetReceived" />

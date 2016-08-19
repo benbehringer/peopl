@@ -23,8 +23,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="abfz" ref="63655c89-3af5-4104-8b6c-504e26175416/java:javax.microedition.midlet(Lampiro_new/)" />
     <import index="ergm" ref="r:beded04c-db0a-4b5a-b204-45e91642cc79(peoplConfig)" />
-    <import index="q59p" ref="r:51f86216-13bf-495c-b46c-e9d26c834ab5(it.yup.xmlstream)" />
-    <import index="nr1p" ref="r:ee702946-c847-41a4-a9b1-0361d397b42e(it.yup.screens)" />
+    <import index="zeob" ref="r:644cc58b-bd9e-4d58-b05f-acc6080f061e(it.yup.xmlstream)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -12010,8 +12009,8 @@
       <node concept="3uibUv" id="4Jye5ZhmT2V" role="EKbjA">
         <ref role="3uigEE" to="fe9x:~CommandListener" resolve="CommandListener" />
       </node>
-      <node concept="3uibUv" id="4Jye5ZhmT2W" role="EKbjA">
-        <ref role="3uigEE" to="q59p:3EZ4ze0C7R6" resolve="StreamEventListener" />
+      <node concept="3uibUv" id="mc6I30dWKU" role="EKbjA">
+        <ref role="3uigEE" to="zeob:4Jye5Zhnh9D" resolve="StreamEventListener" />
       </node>
       <node concept="3uibUv" id="4Jye5ZhmT2U" role="1zkMxy">
         <ref role="3uigEE" to="fe9x:~Form" resolve="Form" />
@@ -12426,7 +12425,7 @@
         <property role="TrG5h" value="reg" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="4Jye5ZhmT4Q" role="1tU5fm">
-          <ref role="3uigEE" to="q59p:277o1kM2HrB" resolve="EventQueryRegistration" />
+          <ref role="3uigEE" to="zeob:tgFBuwxGNQ" resolve="EventQueryRegistration" />
         </node>
         <node concept="3Tm6S6" id="4Jye5ZhmT4R" role="1B3o_S" />
       </node>
@@ -13812,14 +13811,14 @@
                                     <property role="3TUv4t" value="false" />
                                     <property role="TrG5h" value="qAuth" />
                                     <node concept="3uibUv" id="4Jye5ZhmTaw" role="1tU5fm">
-                                      <ref role="3uigEE" to="q59p:277o1kM2HuY" resolve="EventQuery" />
+                                      <ref role="3uigEE" to="zeob:tgFBuwxH6b" resolve="EventQuery" />
                                     </node>
                                     <node concept="2ShNRf" id="4Jye5ZhnB_m" role="33vP2m">
                                       <node concept="1pGfFk" id="4Jye5ZhnB_n" role="2ShVmc">
-                                        <ref role="37wK5l" to="q59p:3EZ4ze0C87R" resolve="EventQuery" />
+                                        <ref role="37wK5l" to="zeob:4Jye5Zhnhqq" resolve="EventQuery" />
                                         <node concept="10M0yZ" id="4Jye5ZhqulQ" role="37wK5m">
-                                          <ref role="1PxDUh" to="q59p:277o1kM2HuY" resolve="EventQuery" />
-                                          <ref role="3cqZAo" to="q59p:3EZ4ze0C87N" resolve="ANY_EVENT" />
+                                          <ref role="1PxDUh" to="zeob:tgFBuwxH6b" resolve="EventQuery" />
+                                          <ref role="3cqZAo" to="zeob:4Jye5Zhnhqm" resolve="ANY_EVENT" />
                                         </node>
                                         <node concept="10Nm6u" id="4Jye5ZhmTaz" role="37wK5m" />
                                         <node concept="10Nm6u" id="4Jye5ZhmTa$" role="37wK5m" />
@@ -13833,8 +13832,8 @@
                                       <ref role="3cqZAo" node="4Jye5ZhmT4O" resolve="reg" />
                                     </node>
                                     <node concept="2YIFZM" id="4Jye5ZhnB_v" role="37vLTx">
-                                      <ref role="1Pybhc" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                                      <ref role="37wK5l" to="q59p:3EZ4ze0C1Ne" resolve="addEventListener" />
+                                      <ref role="1Pybhc" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                                      <ref role="37wK5l" to="zeob:4Jye5Zhnb5L" resolve="addEventListener" />
                                       <node concept="37vLTw" id="4Jye5ZhmTaD" role="37wK5m">
                                         <ref role="3cqZAo" node="4Jye5ZhmTau" resolve="qAuth" />
                                       </node>
@@ -13926,8 +13925,8 @@
                   <node concept="22lmx$" id="4Jye5ZhmTbq" role="3uHU7B">
                     <node concept="2OqwBi" id="4Jye5ZhnB_E" role="3uHU7B">
                       <node concept="10M0yZ" id="4Jye5ZhqulR" role="2Oq$k0">
-                        <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                        <ref role="3cqZAo" to="q59p:3EZ4ze0C1J7" resolve="STREAM_ERROR" />
+                        <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                        <ref role="3cqZAo" to="zeob:4Jye5Zhnb1E" resolve="STREAM_ERROR" />
                       </node>
                       <node concept="liA8E" id="4Jye5ZhnB_F" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -13938,8 +13937,8 @@
                     </node>
                     <node concept="2OqwBi" id="4Jye5ZhnB_I" role="3uHU7w">
                       <node concept="10M0yZ" id="4Jye5ZhqulS" role="2Oq$k0">
-                        <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                        <ref role="3cqZAo" to="q59p:3EZ4ze0C1Jr" resolve="CONNECTION_FAILED" />
+                        <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                        <ref role="3cqZAo" to="zeob:4Jye5Zhnb1Y" resolve="CONNECTION_FAILED" />
                       </node>
                       <node concept="liA8E" id="4Jye5ZhnB_J" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -13951,8 +13950,8 @@
                   </node>
                   <node concept="2OqwBi" id="4Jye5ZhnB_M" role="3uHU7w">
                     <node concept="10M0yZ" id="4Jye5ZhqulT" role="2Oq$k0">
-                      <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                      <ref role="3cqZAo" to="q59p:3EZ4ze0C1Jf" resolve="CONNECTION_LOST" />
+                      <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                      <ref role="3cqZAo" to="zeob:4Jye5Zhnb1M" resolve="CONNECTION_LOST" />
                     </node>
                     <node concept="liA8E" id="4Jye5ZhnB_N" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -13965,8 +13964,8 @@
                 <node concept="3clFbJ" id="4Jye5ZhmTcw" role="9aQIa">
                   <node concept="2OqwBi" id="4Jye5ZhnB_Q" role="3clFbw">
                     <node concept="10M0yZ" id="4Jye5ZhqulU" role="2Oq$k0">
-                      <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                      <ref role="3cqZAo" to="q59p:3EZ4ze0C1J3" resolve="STREAM_INITIALIZED" />
+                      <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                      <ref role="3cqZAo" to="zeob:4Jye5Zhnb1A" resolve="STREAM_INITIALIZED" />
                     </node>
                     <node concept="liA8E" id="4Jye5ZhnB_R" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -13982,7 +13981,7 @@
                           <ref role="3cqZAo" node="4Jye5ZhmT4O" resolve="reg" />
                         </node>
                         <node concept="liA8E" id="4Jye5ZhnB_V" role="2OqNvi">
-                          <ref role="37wK5l" to="q59p:3EZ4ze0BI3x" resolve="remove" />
+                          <ref role="37wK5l" to="zeob:4Jye5ZhmRm4" resolve="remove" />
                         </node>
                       </node>
                     </node>
@@ -14005,7 +14004,7 @@
                         <ref role="3cqZAo" node="4Jye5ZhmT4O" resolve="reg" />
                       </node>
                       <node concept="liA8E" id="4Jye5ZhnBA3" role="2OqNvi">
-                        <ref role="37wK5l" to="q59p:3EZ4ze0BI3x" resolve="remove" />
+                        <ref role="37wK5l" to="zeob:4Jye5ZhmRm4" resolve="remove" />
                       </node>
                     </node>
                   </node>
@@ -14029,8 +14028,8 @@
                   <node concept="3clFbJ" id="4Jye5ZhmTbF" role="3cqZAp">
                     <node concept="2OqwBi" id="4Jye5ZhnBAa" role="3clFbw">
                       <node concept="10M0yZ" id="4Jye5ZhqulV" role="2Oq$k0">
-                        <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                        <ref role="3cqZAo" to="q59p:3EZ4ze0C1Jr" resolve="CONNECTION_FAILED" />
+                        <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                        <ref role="3cqZAo" to="zeob:4Jye5Zhnb1Y" resolve="CONNECTION_FAILED" />
                       </node>
                       <node concept="liA8E" id="4Jye5ZhnBAb" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -14042,8 +14041,8 @@
                     <node concept="3clFbJ" id="4Jye5ZhmTbO" role="9aQIa">
                       <node concept="2OqwBi" id="4Jye5ZhnBAe" role="3clFbw">
                         <node concept="10M0yZ" id="4Jye5ZhqulW" role="2Oq$k0">
-                          <ref role="1PxDUh" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                          <ref role="3cqZAo" to="q59p:3EZ4ze0C1Jf" resolve="CONNECTION_LOST" />
+                          <ref role="1PxDUh" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                          <ref role="3cqZAo" to="zeob:4Jye5Zhnb1M" resolve="CONNECTION_LOST" />
                         </node>
                         <node concept="liA8E" id="4Jye5ZhnBAf" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
@@ -15569,8 +15568,8 @@
       <node concept="3uibUv" id="4Jye5ZhmYfL" role="EKbjA">
         <ref role="3uigEE" to="fe9x:~CommandListener" resolve="CommandListener" />
       </node>
-      <node concept="3uibUv" id="4Jye5ZhmYfM" role="EKbjA">
-        <ref role="3uigEE" to="q59p:3EZ4ze0BOjt" resolve="PacketListener" />
+      <node concept="3uibUv" id="mc6I30dM6J" role="EKbjA">
+        <ref role="3uigEE" to="zeob:4Jye5ZhmXA0" resolve="PacketListener" />
       </node>
       <node concept="3uibUv" id="4Jye5ZhmYfK" role="1zkMxy">
         <ref role="3uigEE" to="fe9x:~Canvas" resolve="Canvas" />
@@ -15864,7 +15863,7 @@
         <property role="TrG5h" value="reg" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="383JOgDO65x" role="1tU5fm">
-          <ref role="3uigEE" to="q59p:277o1kM2HrB" resolve="EventQueryRegistration" />
+          <ref role="3uigEE" to="zeob:tgFBuwxGNQ" resolve="EventQueryRegistration" />
         </node>
         <node concept="10Nm6u" id="4Jye5ZhmYh$" role="33vP2m" />
         <node concept="3Tm6S6" id="4Jye5ZhmYh_" role="1B3o_S" />
@@ -16534,11 +16533,11 @@
                   <property role="3TUv4t" value="false" />
                   <property role="TrG5h" value="q" />
                   <node concept="3uibUv" id="383JOgDOPoQ" role="1tU5fm">
-                    <ref role="3uigEE" to="q59p:277o1kM2HuY" resolve="EventQuery" />
+                    <ref role="3uigEE" to="zeob:tgFBuwxH6b" resolve="EventQuery" />
                   </node>
                   <node concept="2ShNRf" id="4Jye5ZhnBE6" role="33vP2m">
                     <node concept="1pGfFk" id="4Jye5ZhnBE7" role="2ShVmc">
-                      <ref role="37wK5l" to="q59p:3EZ4ze0C87R" resolve="EventQuery" />
+                      <ref role="37wK5l" to="zeob:4Jye5Zhnhqq" resolve="EventQuery" />
                       <node concept="Xl_RD" id="4Jye5ZhmYkM" role="37wK5m">
                         <property role="Xl_RC" value="message" />
                       </node>
@@ -16555,12 +16554,12 @@
                       <ref role="3cqZAo" node="4Jye5ZhmYkI" resolve="q" />
                     </node>
                     <node concept="2OwXpG" id="383JOgDOPqf" role="2OqNvi">
-                      <ref role="2Oxat5" to="q59p:3EZ4ze0C87E" resolve="child" />
+                      <ref role="2Oxat5" to="zeob:4Jye5Zhnhqd" resolve="child" />
                     </node>
                   </node>
                   <node concept="2ShNRf" id="4Jye5ZhnBEc" role="37vLTx">
                     <node concept="1pGfFk" id="4Jye5ZhnBEd" role="2ShVmc">
-                      <ref role="37wK5l" to="q59p:3EZ4ze0C87R" resolve="EventQuery" />
+                      <ref role="37wK5l" to="zeob:4Jye5Zhnhqq" resolve="EventQuery" />
                       <node concept="Xl_RD" id="4Jye5ZhmYkT" role="37wK5m">
                         <property role="Xl_RC" value="body" />
                       </node>
@@ -16576,8 +16575,8 @@
                     <ref role="3cqZAo" node="4Jye5ZhmYhx" resolve="reg" />
                   </node>
                   <node concept="2YIFZM" id="4Jye5ZhnBEf" role="37vLTx">
-                    <ref role="1Pybhc" to="q59p:277o1kM2HsD" resolve="BasicXmlStream" />
-                    <ref role="37wK5l" to="q59p:3EZ4ze0C1Ne" resolve="addEventListener" />
+                    <ref role="1Pybhc" to="zeob:tgFBuwxGLx" resolve="BasicXmlStream" />
+                    <ref role="37wK5l" to="zeob:4Jye5Zhnb5L" resolve="addEventListener" />
                     <node concept="37vLTw" id="4Jye5ZhmYl0" role="37wK5m">
                       <ref role="3cqZAo" node="4Jye5ZhmYkI" resolve="q" />
                     </node>
@@ -16627,7 +16626,7 @@
                         <ref role="3cqZAo" node="4Jye5ZhmYhx" resolve="reg" />
                       </node>
                       <node concept="liA8E" id="4Jye5ZhnBEj" role="2OqNvi">
-                        <ref role="37wK5l" to="q59p:3EZ4ze0BI3x" resolve="remove" />
+                        <ref role="37wK5l" to="zeob:4Jye5ZhmRm4" resolve="remove" />
                       </node>
                     </node>
                   </node>
