@@ -409,7 +409,7 @@
         </node>
         <node concept="3cpWs8" id="6q8vRaHyYRw" role="3cqZAp">
           <node concept="3cpWsn" id="6q8vRaHyYRx" role="3cpWs9">
-            <property role="TrG5h" value="cCache" />
+            <property role="TrG5h" value="calculatedFragmentsCache" />
             <node concept="3uibUv" id="6q8vRaHyYRy" role="1tU5fm">
               <ref role="3uigEE" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
             </node>
@@ -510,7 +510,7 @@
               <ref role="3cqZAo" node="2QN4XY8NlIV" resolve="leftSideFrags" />
             </node>
             <node concept="37vLTw" id="6q8vRaH$uFy" role="37wK5m">
-              <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="cCache" />
+              <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="calculatedFragmentsCache" />
             </node>
           </node>
         </node>
@@ -524,7 +524,7 @@
               <ref role="3cqZAo" node="2QN4XY8NlJp" resolve="rightSideFrags" />
             </node>
             <node concept="37vLTw" id="6q8vRaH$uGD" role="37wK5m">
-              <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="cCache" />
+              <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="calculatedFragmentsCache" />
             </node>
           </node>
         </node>
@@ -1372,7 +1372,7 @@
                             <node concept="3clFbF" id="6q8vRaHzoTb" role="3cqZAp">
                               <node concept="2OqwBi" id="6q8vRaHzp0r" role="3clFbG">
                                 <node concept="37vLTw" id="6q8vRaHzoT9" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="cCache" />
+                                  <ref role="3cqZAo" node="6q8vRaHyYRx" resolve="calculatedFragmentsCache" />
                                 </node>
                                 <node concept="liA8E" id="6q8vRaHzp92" role="2OqNvi">
                                   <ref role="37wK5l" to="zur:6q8vRaHz5Gk" resolve="addConflictingFragments" />
@@ -1679,7 +1679,7 @@
               <node concept="2qgKlT" id="7MEoPae84H1" role="2OqNvi">
                 <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
                 <node concept="37vLTw" id="7MEoPae84GY" role="37wK5m">
-                  <ref role="3cqZAo" node="7MEoPae84GV" resolve="module" />
+                  <ref role="3cqZAo" node="7MEoPae84GV" resolve="sModule" />
                 </node>
               </node>
             </node>
@@ -1687,7 +1687,7 @@
         </node>
         <node concept="3SKdUt" id="2mxUwyW7Rtm" role="3cqZAp">
           <node concept="3SKdUq" id="2mxUwyW7Rtn" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: why does the generator leave the transient module here and works on the original instead???" />
+            <property role="3SKdUp" value="TODO: why does the generator leave the transient sModule here and works on the original instead???" />
           </node>
         </node>
         <node concept="3clFbJ" id="7MEoPae84KA" role="3cqZAp">
@@ -1877,7 +1877,7 @@
                         <node concept="2qgKlT" id="7MEoPae8gpQ" role="2OqNvi">
                           <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
                           <node concept="37vLTw" id="7MEoPae8gCF" role="37wK5m">
-                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="module" />
+                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="sModule" />
                           </node>
                         </node>
                       </node>
@@ -2001,7 +2001,7 @@
                         <node concept="2qgKlT" id="7MEoPae8tq6" role="2OqNvi">
                           <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
                           <node concept="37vLTw" id="7MEoPae8tFH" role="37wK5m">
-                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="module" />
+                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="sModule" />
                           </node>
                         </node>
                       </node>
@@ -2095,7 +2095,7 @@
                         <node concept="2qgKlT" id="7MEoPae8$kv" role="2OqNvi">
                           <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
                           <node concept="37vLTw" id="7MEoPae8$BN" role="37wK5m">
-                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="module" />
+                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="sModule" />
                           </node>
                         </node>
                       </node>
@@ -2118,7 +2118,7 @@
                         <node concept="2qgKlT" id="7MEoPae8BXq" role="2OqNvi">
                           <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
                           <node concept="37vLTw" id="7MEoPae8Che" role="37wK5m">
-                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="module" />
+                            <ref role="3cqZAo" node="7MEoPae84GV" resolve="sModule" />
                           </node>
                         </node>
                       </node>
@@ -2139,7 +2139,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="7MEoPae84GV" role="3clF46">
-        <property role="TrG5h" value="module" />
+        <property role="TrG5h" value="sModule" />
         <node concept="3uibUv" id="7MEoPae84GW" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>

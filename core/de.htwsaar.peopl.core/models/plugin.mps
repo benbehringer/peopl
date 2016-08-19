@@ -4173,5 +4173,35 @@
     <node concept="2tJIrI" id="2An04PNr3m1" role="jymVt" />
     <node concept="3Tm1VV" id="2An04PNr3m2" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="2y7plEILBoL">
+    <property role="3GE5qa" value="Global" />
+    <property role="TrG5h" value="CalculatedFragmentsDocumentCache" />
+    <node concept="2tJIrI" id="2y7plEILBoM" role="jymVt" />
+    <node concept="2tJIrI" id="2y7plEILBoN" role="jymVt" />
+    <node concept="312cEu" id="2y7plEILBoO" role="jymVt">
+      <property role="2bfB8j" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="1EXbeo" value="false" />
+      <property role="TrG5h" value="Holder" />
+      <node concept="Wx3nA" id="2y7plEILBoP" role="jymVt">
+        <property role="2dlcS1" value="false" />
+        <property role="2dld4O" value="false" />
+        <property role="TrG5h" value="myInstance" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="2y7plEILBoQ" role="1tU5fm">
+          <ref role="3uigEE" node="2y7plEILBoL" resolve="CalculatedFragmentsDocumentCache" />
+        </node>
+        <node concept="2ShNRf" id="2y7plEILBoR" role="33vP2m">
+          <node concept="HV5vD" id="2y7plEILBoS" role="2ShVmc">
+            <ref role="HV5vE" node="2y7plEILBoL" resolve="CalculatedFragmentsDocumentCache" />
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="2y7plEILBoT" role="1B3o_S" />
+      </node>
+      <node concept="3Tm6S6" id="2y7plEILBoU" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2y7plEILBoV" role="jymVt" />
+    <node concept="3Tm1VV" id="2y7plEILBtz" role="1B3o_S" />
+  </node>
 </model>
 

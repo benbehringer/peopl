@@ -1619,6 +1619,18 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2y7plEILDBI" role="3cqZAp" />
+        <node concept="3SKdUt" id="2y7plEILDDl" role="3cqZAp">
+          <node concept="3SKdUq" id="2y7plEILDDm" role="3SKWNk">
+            <property role="3SKdUp" value="we either compute a full product variant or just a document variant" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2y7plEILDEb" role="3cqZAp" />
+        <node concept="3SKdUt" id="ECJov0zvwB" role="3cqZAp">
+          <node concept="3SKdUq" id="ECJov0zvwC" role="3SKWNk">
+            <property role="3SKdUp" value="full variant" />
+          </node>
+        </node>
         <node concept="2Gpval" id="2QN4XY8NPTT" role="3cqZAp">
           <node concept="2GrKxI" id="2QN4XY8NPTV" role="2Gsz3X">
             <property role="TrG5h" value="inter" />
@@ -1714,6 +1726,13 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="ECJov0zvy6" role="3cqZAp" />
+        <node concept="3SKdUt" id="ECJov0zvIl" role="3cqZAp">
+          <node concept="3SKdUq" id="ECJov0zvIm" role="3SKWNk">
+            <property role="3SKdUp" value="document variant" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="ECJov0zvB$" role="3cqZAp" />
         <node concept="1X3_iC" id="2mxUwyW8chG" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
