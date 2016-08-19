@@ -2,7 +2,7 @@
 <model ref="r:5e9b2ecc-07ec-4f95-8b08-30e75e041292(de.htwsaar.peopl.baseLanguageExtension.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -66,9 +66,6 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -191,12 +188,6 @@
   </registry>
   <node concept="bUwia" id="7MEoPae8DL7">
     <property role="TrG5h" value="main" />
-    <node concept="3aamgX" id="3fgD4aX9xuf" role="3acgRq">
-      <ref role="30HIoZ" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
-      <node concept="j$656" id="3fgD4aX9xuj" role="1lVwrX">
-        <ref role="v9R2y" node="3fgD4aX7NTu" resolve="reduce_PeoplBlockStatement" />
-      </node>
-    </node>
     <node concept="3lhOvk" id="mc6I2ZPEur" role="3lj3bC">
       <ref role="30HIoZ" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
       <ref role="3lhOvi" node="mc6I2ZPEut" resolve="map_PeoplEntryPoint_abstract" />
@@ -322,6 +313,12 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="3fgD4aX9xuf" role="3acgRq">
+      <ref role="30HIoZ" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+      <node concept="j$656" id="3fgD4aX9xuj" role="1lVwrX">
+        <ref role="v9R2y" node="3fgD4aX7NTu" resolve="reduce_PeoplBlockStatement" />
+      </node>
+    </node>
   </node>
   <node concept="13MO4I" id="3fgD4aX7NTu">
     <property role="TrG5h" value="reduce_PeoplBlockStatement" />
@@ -422,10 +419,8 @@
                 <node concept="1PgB_6" id="92zQE_FnRq" role="2OqNvi" />
               </node>
             </node>
-            <node concept="3clFbF" id="92zQE_CDKj" role="3cqZAp">
-              <node concept="1eOMI4" id="92zQE_CDKh" role="3clFbG">
-                <node concept="30H73N" id="92zQE_CGy2" role="1eOMHV" />
-              </node>
+            <node concept="3cpWs6" id="5PCLkhXIdu_" role="3cqZAp">
+              <node concept="30H73N" id="5PCLkhXIdxK" role="3cqZAk" />
             </node>
           </node>
         </node>
