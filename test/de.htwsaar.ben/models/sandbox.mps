@@ -42,9 +42,6 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
-        <child id="1182160096073" name="cls" index="YeSDq" />
-      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -137,9 +134,6 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
-      <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
-        <reference id="1170346070688" name="classifier" index="1Y3XeK" />
-      </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
       <concept id="2609645270097570911" name="de.htwsaar.peopl.core.structure.Wrappee" flags="ng" index="3lLJVk" />
@@ -1017,32 +1011,25 @@
             <node concept="3uibUv" id="4roxMAFLDDS" role="1tU5fm">
               <ref role="3uigEE" node="4roxMAFLDxD" resolve="OuterClass" />
             </node>
-            <node concept="2ShNRf" id="4roxMAFLDEA" role="33vP2m">
-              <node concept="1pGfFk" id="5PCLkhXI9o4" role="2ShVmc">
-                <ref role="37wK5l" node="5PCLkhXI9n7" resolve="OuterClass" />
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbH" id="5PCLkhXI9ol" role="3cqZAp" />
-        <node concept="3clFbH" id="5PCLkhXIa_v" role="3cqZAp" />
-        <node concept="3cpWs6" id="5PCLkhXIa_U" role="3cqZAp">
-          <node concept="2ShNRf" id="5PCLkhXI9oO" role="3cqZAk">
-            <node concept="YeOm9" id="5PCLkhXIauZ" role="2ShVmc">
-              <node concept="1Y3b0j" id="5PCLkhXIav2" role="YeSDq">
-                <property role="2bfB8j" value="true" />
-                <ref role="37wK5l" node="5PCLkhXI9n7" resolve="OuterClass" />
-                <ref role="1Y3XeK" node="4roxMAFLDxD" resolve="OuterClass" />
-                <node concept="3Tm1VV" id="5PCLkhXIav3" role="1B3o_S" />
-              </node>
-            </node>
+        <node concept="3cpWs8" id="2M_g4HkGEzT" role="3cqZAp">
+          <node concept="3cpWsn" id="2M_g4HkGEzW" role="3cpWs9">
+            <property role="TrG5h" value="x" />
+            <node concept="10Oyi0" id="2M_g4HkGEzR" role="1tU5fm" />
           </node>
         </node>
+        <node concept="3clFbH" id="2M_g4HkGEU4" role="3cqZAp" />
+        <node concept="3cpWs6" id="2M_g4HkGFjY" role="3cqZAp">
+          <node concept="37vLTw" id="2M_g4HkGFkx" role="3cqZAk">
+            <ref role="3cqZAo" node="2M_g4HkGEzW" resolve="x" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2M_g4HkGE_6" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="4roxMAFLDD4" role="1B3o_S" />
-      <node concept="3uibUv" id="5PCLkhXIa$K" role="3clF45">
-        <ref role="3uigEE" node="4roxMAFLDxD" resolve="OuterClass" />
-      </node>
+      <node concept="10Oyi0" id="2M_g4HkGFiQ" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="4roxMAFLDCU" role="jymVt" />
     <node concept="3Tm1VV" id="4roxMAFLDCC" role="1B3o_S" />
