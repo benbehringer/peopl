@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="GPL_NoVar" uuid="c3c9ec72-1a47-4a21-911e-917260acfae1" moduleVersion="0" compileInMPS="true">
+<solution name="GPL_NoVar" uuid="c3c9ec72-1a47-4a21-911e-917260acfae1" moduleVersion="0" compileInMPS="false">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
