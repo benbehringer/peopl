@@ -15,21 +15,23 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="caseStudies.BerkeleyDB" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/EPL/EPL.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies.GPL" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.GPL.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.GPL" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro/Lampiro.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro_new/Lampiro_new.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/Prop4J/Prop4J.msd" folder="caseStudies.Prop4J" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/Prop4J_NoVar/Prop4J_NoVar.msd" folder="caseStudies.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.junit/org.junit.msd" folder="caseStudies.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.sat4j.core/org.sat4j.core.msd" folder="caseStudies.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies.SimpleTextEditor" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.SimpleTextEditor.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="caseStudies.SimpleTextEditor.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="caseStudies.CIDE.BerkeleyDB" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/EPL/EPL.msd" folder="caseStudies.DeltaJ" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies.CIDE.GPL" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.CIDE.GPL.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.CIDE.GPL" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="caseStudies.CIDE" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro_new/Lampiro_new.msd" folder="caseStudies.CIDE" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/Prop4J/Prop4J.msd" folder="caseStudies.FH.Prop4J" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/Prop4J_NoVar/Prop4J_NoVar.msd" folder="caseStudies.FH.Prop4J.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.junit/org.junit.msd" folder="caseStudies.FH.Prop4J.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.sat4j.core/org.sat4j.core.msd" folder="caseStudies.FH.Prop4J.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies.DeltaJ.SimpleTextEditor" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/Vistex.msd" folder="caseStudies.FH.Vistex" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/sources/Vistex_NoVar.msd" folder="caseStudies.FH.Vistex.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/lib/jgraphx/jgraphx.msd" folder="caseStudies.FH.Vistex.source" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core.problemSpace" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.solutionSpace" />

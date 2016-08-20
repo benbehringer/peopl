@@ -5894,7 +5894,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8Q" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBbWA">
@@ -5932,14 +5932,14 @@
       <node concept="l2Vlx" id="1KlbCrsBbWN" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK93" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBnIt">
     <property role="3GE5qa" value="Statement.Wrapper.For" />
     <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
     <node concept="2aJ2om" id="5xDdmRRWJY5" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="1KlbCrsBnIz" role="6VMZX">
       <property role="3EZMnw" value="true" />
@@ -5977,7 +5977,7 @@
     <property role="3GE5qa" value="Statement.Wrapper.If" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
     <node concept="2aJ2om" id="5xDdmRRWK8G" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="3hPixgKA3aP" role="2wV5jI">
       <node concept="PMmxH" id="3hPixgKA3aY" role="3EZMnx">
@@ -6002,7 +6002,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8L" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBi8z">
@@ -6018,7 +6018,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8V" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBkUg">
@@ -6056,7 +6056,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWJXZ" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="2ABfQD" id="5xDdmRRWJXS">
@@ -6064,42 +6064,42 @@
     <property role="TrG5h" value="BaseLanguageExtensionHints" />
     <node concept="2BsEeg" id="5xDdmRRWJXT" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="Standard" />
+      <property role="TrG5h" value="annotative" />
       <property role="2BUmq6" value="An annotative editor." />
     </node>
     <node concept="2BsEeg" id="1jQ1A8E0r3v" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="Hiding" />
+      <property role="TrG5h" value="hiding" />
       <property role="2BUmq6" value="Hide chosen module and VP in the standard editor." />
     </node>
     <node concept="2BsEeg" id="57rZcVzwarK" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="Product" />
-      <property role="2BUmq6" value="Product editor, that only shows fragments, which are included in the module configuration." />
+      <property role="TrG5h" value="product" />
+      <property role="2BUmq6" value="product editor, that only shows fragments, which are included in the module configuration." />
     </node>
     <node concept="2BsEeg" id="2iVkojt1MhA" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="ColoredProduct" />
+      <property role="TrG5h" value="coloredProduct" />
       <property role="2BUmq6" value="Colorful product editor." />
     </node>
     <node concept="2BsEeg" id="35LN$25D8Xf" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="ModuleExplorer" />
+      <property role="TrG5h" value="moduleExplorer" />
       <property role="2BUmq6" value="Module explorer." />
     </node>
     <node concept="2BsEeg" id="2c8WkvQiez2" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="FOP" />
-      <property role="2BUmq6" value="FOP-like editors." />
+      <property role="TrG5h" value="modular" />
+      <property role="2BUmq6" value="Modular AHEAD-like editors." />
     </node>
     <node concept="2BsEeg" id="5tqlr2bKCop" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="Embedded" />
+      <property role="TrG5h" value="embedded" />
       <property role="2BUmq6" value="Embed annotation markers into FOP-like methods on demand." />
     </node>
     <node concept="2BsEeg" id="4qYOtWHqbUC" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="EmbeddedFull" />
+      <property role="TrG5h" value="embeddedFull" />
       <property role="2BUmq6" value="Embed annotations and their content into FOP-like methods on demand." />
     </node>
   </node>
@@ -6107,7 +6107,7 @@
     <property role="3GE5qa" value="Statement.Wrapper.Try" />
     <ref role="1XX52x" to="tpee:gWTDmSJ" resolve="CatchClause" />
     <node concept="2aJ2om" id="5xDdmRRWRIl" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="PMmxH" id="5xDdmRRWRz_" role="2wV5jI">
       <ref role="PMmxG" node="50moBti4O_3" resolve="Colored_ModuleChooser_CatchClause_Component" />
@@ -6117,7 +6117,7 @@
     <property role="3GE5qa" value="Statement.Wrapper.If" />
     <ref role="1XX52x" to="tpee:hzeNFgq" resolve="ElsifClause" />
     <node concept="2aJ2om" id="5xDdmRRWRIi" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="PMmxH" id="79iFG02RiYP" role="2wV5jI">
       <ref role="PMmxG" node="79iFG02Rhra" resolve="Colored_ModuleChooser_ElseifClause_Component" />
@@ -6648,7 +6648,7 @@
     <property role="3GE5qa" value="Fragment" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="1jQ1A8DZnpC" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="1QoScp" id="5OyDuE7Mly$" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -7479,14 +7479,14 @@
       </node>
     </node>
     <node concept="2aJ2om" id="1jQ1A8DZqi6" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="7uhzxTPLuds">
     <property role="3GE5qa" value="Statement" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="2aJ2om" id="1jQ1A8DZqjy" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="3xqByZNYoy5" role="2wV5jI">
       <ref role="34QXea" node="7uhzxTPLHzy" resolve="Peopl_Statement_KeyMap" />
@@ -7502,7 +7502,7 @@
     <property role="3GE5qa" value="Statement" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="2aJ2om" id="1jQ1A8DZqmw" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="2aJ2om" id="4kBSDWF16Ky" role="CpUAK">
       <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
@@ -8061,7 +8061,7 @@
       <node concept="l2Vlx" id="i0uUEZH" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="1jQ1A8DZqU2" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="312cEu" id="JlQX3G$Pe6">
@@ -9137,7 +9137,7 @@
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
     <node concept="2aJ2om" id="1jQ1A8DZrEX" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="6mG5wL3fbiS" role="2wV5jI">
       <node concept="l2Vlx" id="6mG5wL3fbiT" role="2iSdaV" />
@@ -9204,7 +9204,7 @@
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="xf8r:1j2uYRA5nhd" resolve="ExpressionAlternative" />
     <node concept="2aJ2om" id="1jQ1A8DZrO0" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="bO4uKcu5w9" role="2wV5jI">
       <node concept="l2Vlx" id="bO4uKcu5wa" role="2iSdaV" />
@@ -9271,7 +9271,7 @@
     <property role="3GE5qa" value="SingleNodeAlternative.TypeAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="2aJ2om" id="1jQ1A8DZrJC" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="6k$OKHdwOdR" role="2wV5jI">
       <node concept="gc7cB" id="6k$OKHdwOKG" role="3EZMnx">
@@ -9293,7 +9293,7 @@
                       <node concept="2i4dXS" id="6k$OKHdwOKR" role="2ShVmc">
                         <node concept="17QB3L" id="6k$OKHdwOKS" role="HW$YZ" />
                         <node concept="2pYGij" id="6k$OKHdwOKT" role="HW$Y0">
-                          <ref role="2pYH_C" node="5xDdmRRWJXT" resolve="Standard" />
+                          <ref role="2pYH_C" node="5xDdmRRWJXT" resolve="annotative" />
                         </node>
                       </node>
                     </node>
@@ -9353,7 +9353,7 @@
     <property role="3GE5qa" value="SingleNodeAlternative.ExpressionAlternative" />
     <ref role="1XX52x" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="2aJ2om" id="1jQ1A8DZrS7" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
     <node concept="1QoScp" id="bhXZjNNr59" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -9396,7 +9396,7 @@
                         <node concept="2i4dXS" id="6k$OKHdk5sW" role="2ShVmc">
                           <node concept="17QB3L" id="6k$OKHdk5sX" role="HW$YZ" />
                           <node concept="2pYGij" id="6k$OKHdk5sY" role="HW$Y0">
-                            <ref role="2pYH_C" node="5xDdmRRWJXT" resolve="Standard" />
+                            <ref role="2pYH_C" node="5xDdmRRWJXT" resolve="annotative" />
                           </node>
                         </node>
                       </node>
@@ -9462,7 +9462,7 @@
       <node concept="l2Vlx" id="43ncpYmNLUq" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="43ncpYmNLUt" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="Standard" />
+      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
     </node>
   </node>
   <node concept="PKFIW" id="50moBti4O_3">
