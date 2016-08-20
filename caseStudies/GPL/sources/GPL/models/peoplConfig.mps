@@ -351,6 +351,22 @@
         <property role="TrG5h" value="ModuleToFragment_4738903999894823247" />
         <ref role="3aRQSO" to="u6nm:473Y1i2q9tr" resolve="Fragment_4738903999894820699" />
       </node>
+      <node concept="3aRQSP" id="4WIioTR8rBo" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157879768" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8rnl" resolve="Fragment_5705578654157878741" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8rH9" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157880137" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8r77" resolve="Fragment_5705578654157877703" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8zWd" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157913869" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8zG2" resolve="Fragment_5705578654157912834" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8$im" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157915286" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8$28" resolve="Fragment_5705578654157914248" />
+      </node>
     </node>
     <node concept="1V77HM" id="4L6K1Kv9XaV" role="288GmO">
       <property role="2_7ToJ" value="0" />
@@ -462,6 +478,26 @@
       <node concept="3aRQSP" id="4L2DE6iIA0U" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_5495137708227059770" />
         <ref role="3aRQSO" to="u6nm:4L2DE6iIA0R" resolve="Fragment_5495137708227059767" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR89Ur" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157807259" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR888i" resolve="Fragment_5705578654157799954" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8dmQ" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157821366" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8b$B" resolve="Fragment_5705578654157814055" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8kPz" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157852003" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8kGm" resolve="Fragment_5705578654157851414" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8nb9" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157861577" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8mLn" resolve="Fragment_5705578654157859927" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR9hvI" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654158100462" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR9hml" resolve="Fragment_5705578654158099861" />
       </node>
     </node>
     <node concept="1V77HM" id="4L6K1Kv9XjZ" role="288GmO">
@@ -1064,6 +1100,10 @@
         <property role="TrG5h" value="ModuleToFragment_2656723451286736306" />
         <ref role="3aRQSO" to="u6nm:2ju$YsGpkhe" resolve="Fragment_2656723451286733902" />
       </node>
+      <node concept="3aRQSP" id="4WIioTR8$Za" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157918154" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8$IB" resolve="Fragment_5705578654157917095" />
+      </node>
     </node>
     <node concept="1V77HM" id="4L6K1Kv9XBi" role="288GmO">
       <property role="2_7ToJ" value="108" />
@@ -1094,6 +1134,10 @@
       <node concept="3aRQSP" id="2ju$YsGpjYk" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_2656723451286732692" />
         <ref role="3aRQSO" to="u6nm:2ju$YsGpjnW" resolve="Fragment_2656723451286730236" />
+      </node>
+      <node concept="3aRQSP" id="4WIioTR8$CH" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_5705578654157916717" />
+        <ref role="3aRQSO" to="u6nm:4WIioTR8$of" resolve="Fragment_5705578654157915663" />
       </node>
     </node>
     <node concept="1V77HM" id="4L6K1Kv9XDj" role="288GmO">
@@ -3207,151 +3251,223 @@
           <ref role="1V74G_" to="u6nm:5PCLkhXEoNf" resolve="Fragment_6730846541061917903" />
         </node>
       </node>
+      <node concept="1V74G3" id="4WIioTR888j" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157799955" />
+        <node concept="1V74G$" id="4WIioTR888k" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157799956" />
+          <ref role="1V74G_" to="u6nm:4WIioTR888i" resolve="Fragment_5705578654157799954" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8b$C" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157814056" />
+        <node concept="1V74G$" id="4WIioTR8b$D" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157814057" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8b$B" resolve="Fragment_5705578654157814055" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8kGn" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157851415" />
+        <node concept="1V74G$" id="4WIioTR8kGo" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157851416" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8kGm" resolve="Fragment_5705578654157851414" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8mLo" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157859928" />
+        <node concept="1V74G$" id="4WIioTR8mLp" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157859929" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8mLn" resolve="Fragment_5705578654157859927" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8r78" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157877704" />
+        <node concept="1V74G$" id="4WIioTR8r79" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157877705" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8r77" resolve="Fragment_5705578654157877703" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8rnm" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157878742" />
+        <node concept="1V74G$" id="4WIioTR8rnn" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157878743" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8rnl" resolve="Fragment_5705578654157878741" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8zG3" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157912835" />
+        <node concept="1V74G$" id="4WIioTR8zG4" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157912836" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8zG2" resolve="Fragment_5705578654157912834" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8$29" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157914249" />
+        <node concept="1V74G$" id="4WIioTR8$2a" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157914250" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8$28" resolve="Fragment_5705578654157914248" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8$og" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157915664" />
+        <node concept="1V74G$" id="4WIioTR8$oh" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157915665" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8$of" resolve="Fragment_5705578654157915663" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR8$IC" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654157917096" />
+        <node concept="1V74G$" id="4WIioTR8$ID" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654157917097" />
+          <ref role="1V74G_" to="u6nm:4WIioTR8$IB" resolve="Fragment_5705578654157917095" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="4WIioTR9hmm" role="2$Fqj6">
+        <property role="TrG5h" value="VP_5705578654158099862" />
+        <node concept="1V74G$" id="4WIioTR9hmn" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_5705578654158099863" />
+          <ref role="1V74G_" to="u6nm:4WIioTR9hml" resolve="Fragment_5705578654158099861" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="AZ7IhMm23R">
-    <ref role="2M0niE" node="5PCLkhXE9es" />
-    <node concept="u25OH" id="AZ7IhMm23S" role="2M0niC">
-      <node concept="2Hijyl" id="AZ7IhMm23T" role="2Hjnvt">
-        <node concept="u2itq" id="3MulsmM2uAu" role="3clFbG">
-          <node concept="u2itq" id="2eKF1hWlPYA" role="3uHU7B">
-            <node concept="u2itq" id="473Y1i2qrLj" role="3uHU7B">
-              <node concept="u2itq" id="473Y1i2pznV" role="3uHU7B">
-                <node concept="u2itq" id="6E3bS1n5Nce" role="3uHU7B">
-                  <node concept="u2itq" id="6E3bS1n5NaL" role="3uHU7B">
-                    <node concept="u2itq" id="2ju$YsGpn2r" role="3uHU7B">
-                      <node concept="u2itq" id="2ju$YsGpn1F" role="3uHU7B">
-                        <node concept="u2itq" id="kpALUD83mR" role="3uHU7B">
-                          <node concept="u2itw" id="kpALUD83n7" role="3uHU7w">
+    <ref role="2M0niE" node="4WIioTR8Ehi" />
+    <node concept="u25OH" id="4WIioTR8EgJ" role="2M0niC">
+      <node concept="2Hijyl" id="4WIioTR8EgK" role="2Hjnvt">
+        <node concept="u2itq" id="4WIioTR8EgL" role="3clFbG">
+          <node concept="1eOMI4" id="4WIioTR8EgM" role="3uHU7w">
+            <node concept="u2its" id="4WIioTR8EgN" role="1eOMHV">
+              <node concept="u2itw" id="4WIioTR8EgO" role="3uHU7w">
+                <ref role="u2itx" node="4L6K1Kv9Xew" resolve="Edges_Undirected" />
+              </node>
+              <node concept="u2itw" id="4WIioTR8EgP" role="3uHU7B">
+                <ref role="u2itx" node="4L6K1Kv9XcH" resolve="Edges_Directed" />
+              </node>
+            </node>
+          </node>
+          <node concept="u2itq" id="4WIioTR8EgQ" role="3uHU7B">
+            <node concept="1eOMI4" id="4WIioTR8EgR" role="3uHU7w">
+              <node concept="u2its" id="4WIioTR8EgS" role="1eOMHV">
+                <node concept="u2itw" id="4WIioTR8EgT" role="3uHU7w">
+                  <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
+                </node>
+                <node concept="u2itw" id="4WIioTR8EgU" role="3uHU7B">
+                  <ref role="u2itx" node="4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
+                </node>
+              </node>
+            </node>
+            <node concept="u2itq" id="4WIioTR8EgV" role="3uHU7B">
+              <node concept="u2itw" id="4WIioTR8EgW" role="3uHU7w">
+                <ref role="u2itx" node="4L6K1Kv9Xxl" resolve="Alg_Connected" />
+              </node>
+              <node concept="u2itq" id="4WIioTR8EgX" role="3uHU7B">
+                <node concept="u2itw" id="4WIioTR8EgY" role="3uHU7w">
+                  <ref role="u2itx" node="4L6K1Kv9XFl" resolve="Alg_Cycle" />
+                </node>
+                <node concept="u2itq" id="4WIioTR8EgZ" role="3uHU7B">
+                  <node concept="u2itw" id="4WIioTR8Eh0" role="3uHU7w">
+                    <ref role="u2itx" node="4L6K1Kv9X_i" resolve="Alg_MSTPrim" />
+                  </node>
+                  <node concept="u2itq" id="4WIioTR8Eh1" role="3uHU7B">
+                    <node concept="u2itw" id="4WIioTR8Eh2" role="3uHU7w">
+                      <ref role="u2itx" node="4L6K1Kv9Xvo" resolve="Alg_Number" />
+                    </node>
+                    <node concept="u2itq" id="4WIioTR8Eh3" role="3uHU7B">
+                      <node concept="u2itw" id="4WIioTR8Eh4" role="3uHU7w">
+                        <ref role="u2itx" node="4L6K1Kv9XDj" resolve="Alg_Shortest" />
+                      </node>
+                      <node concept="u2itq" id="4WIioTR8Eh5" role="3uHU7B">
+                        <node concept="u2itw" id="4WIioTR8Eh6" role="3uHU7w">
+                          <ref role="u2itx" node="4L6K1Kv9XHo" resolve="Alg_StronglyConnected" />
+                        </node>
+                        <node concept="u2itq" id="4WIioTR8Eh7" role="3uHU7B">
+                          <node concept="u2itw" id="4WIioTR8Eh8" role="3uHU7w">
                             <ref role="u2itx" node="4L6K1Kv9Xzj" resolve="Alg_Transpose" />
                           </node>
-                          <node concept="u2itq" id="kpALUD83m_" role="3uHU7B">
-                            <node concept="u2itq" id="n9_gPCExVT" role="3uHU7B">
-                              <node concept="u2itw" id="kpALUD83lp" role="3uHU7w">
-                                <ref role="u2itx" node="4L6K1Kv9XHo" resolve="Alg_StronglyConnected" />
+                          <node concept="u2itq" id="4WIioTR8Eh9" role="3uHU7B">
+                            <node concept="u2itw" id="4WIioTR8Eha" role="3uHU7w">
+                              <ref role="u2itx" node="2ju$YsGmurW" resolve="GN_OnlyNeighbors#Weighted" />
+                            </node>
+                            <node concept="u2itq" id="4WIioTR8Ehb" role="3uHU7B">
+                              <node concept="u2itw" id="4WIioTR8Ehc" role="3uHU7w">
+                                <ref role="u2itx" node="3XSKgTnGhTj" resolve="SearchAlg" />
                               </node>
-                              <node concept="1eOMI4" id="kpALUD88Ia" role="3uHU7B">
-                                <node concept="u2its" id="kpALUD8OR5" role="1eOMHV">
-                                  <node concept="u2its" id="kpALUD88IC" role="3uHU7B">
-                                    <node concept="u2its" id="kpALUD88IX" role="3uHU7B">
-                                      <node concept="u2itw" id="kpALUD88Ix" role="3uHU7B">
-                                        <ref role="u2itx" node="4L6K1Kv9XlQ" resolve="GEN_Edges" />
-                                      </node>
-                                      <node concept="u2itw" id="3HHfejH18yB" role="3uHU7w">
-                                        <ref role="u2itx" node="4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
-                                      </node>
-                                    </node>
-                                    <node concept="u2itw" id="6yhXOCjh$C$" role="3uHU7w">
-                                      <ref role="u2itx" node="4L6K1Kv9XjZ" resolve="G_NoEdges" />
-                                    </node>
+                              <node concept="u2itq" id="4WIioTR8Ehd" role="3uHU7B">
+                                <node concept="u2itw" id="4WIioTR8Ehe" role="3uHU7w">
+                                  <ref role="u2itx" node="4L6K1Kv9Xrx" resolve="SearchAlg_BFS" />
+                                </node>
+                                <node concept="u2itq" id="4WIioTR8Ehf" role="3uHU7B">
+                                  <node concept="u2itw" id="4WIioTR8Ehg" role="3uHU7B">
+                                    <ref role="u2itx" node="4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
                                   </node>
-                                  <node concept="u2itw" id="4D2je8PAK$8" role="3uHU7w">
-                                    <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
+                                  <node concept="u2itw" id="4WIioTR8Ehh" role="3uHU7w">
+                                    <ref role="u2itx" node="4L6K1Kv9Xgk" resolve="Weighted" />
                                   </node>
                                 </node>
                               </node>
                             </node>
-                            <node concept="u2itw" id="kpALUD83mL" role="3uHU7w">
-                              <ref role="u2itx" node="3XSKgTnGhTj" resolve="SearchAlg" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1eOMI4" id="2ju$YsGprxi" role="3uHU7w">
-                          <node concept="u2its" id="2ju$YsGps4_" role="1eOMHV">
-                            <node concept="u2itw" id="2ju$YsGps4K" role="3uHU7w">
-                              <ref role="u2itx" node="4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
-                            </node>
-                            <node concept="u2itw" id="2ju$YsGps4q" role="3uHU7B">
-                              <ref role="u2itx" node="4L6K1Kv9XlQ" resolve="GEN_Edges" />
-                            </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="u2itw" id="2ju$YsGpn2N" role="3uHU7w">
-                        <ref role="u2itx" node="4L6K1Kv9Xvo" resolve="Alg_Number" />
-                      </node>
-                    </node>
-                    <node concept="u2itw" id="6E3bS1n5NbH" role="3uHU7w">
-                      <ref role="u2itx" node="4L6K1Kv9Xgk" resolve="Weighted" />
                     </node>
                   </node>
-                  <node concept="u2itw" id="6E3bS1n5Nde" role="3uHU7w">
-                    <ref role="u2itx" node="2ju$YsGmurW" resolve="GN_OnlyNeighbors#Weighted" />
-                  </node>
-                </node>
-                <node concept="u2itw" id="473Y1i2pzoZ" role="3uHU7w">
-                  <ref role="u2itx" node="3XSKgTnE_v6" resolve="G_NoEdges#Weighted" />
                 </node>
               </node>
-              <node concept="u2itw" id="50EEHoePlJx" role="3uHU7w">
-                <ref role="u2itx" node="4L6K1Kv9XFl" resolve="Alg_Cycle" />
-              </node>
             </node>
-            <node concept="u2itw" id="4L2DE6iIFl2" role="3uHU7w">
-              <ref role="u2itx" node="4L6K1Kv9X9a" resolve="Benchmark" />
-            </node>
-          </node>
-          <node concept="u2itw" id="4L2DE6iHW9T" role="3uHU7w">
-            <ref role="u2itx" node="2eKF1hWlJvC" resolve="Alg_StronglyConnected#Benchmark" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="u25OH" id="5PCLkhXE9es" role="2M0niC">
-      <node concept="2Hijyl" id="5PCLkhXE9et" role="2Hjnvt">
-        <node concept="u2itq" id="5PCLkhXE9eu" role="3clFbG">
-          <node concept="1eOMI4" id="5PCLkhXE9ev" role="3uHU7w">
-            <node concept="u2its" id="5PCLkhXE9ew" role="1eOMHV">
-              <node concept="u2itw" id="5PCLkhXE9ex" role="3uHU7w">
-                <ref role="u2itx" node="4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
+    <node concept="u25OH" id="4WIioTR8Ehi" role="2M0niC">
+      <node concept="2Hijyl" id="4WIioTR8Ehj" role="2Hjnvt">
+        <node concept="u2itq" id="4WIioTR8Ehk" role="3clFbG">
+          <node concept="1eOMI4" id="4WIioTR8Ehl" role="3uHU7w">
+            <node concept="u2its" id="4WIioTR8Ehm" role="1eOMHV">
+              <node concept="u2itw" id="4WIioTR8Ehn" role="3uHU7w">
+                <ref role="u2itx" node="4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
               </node>
-              <node concept="u2itw" id="5PCLkhXE9ey" role="3uHU7B">
-                <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
+              <node concept="u2itw" id="4WIioTR8Eho" role="3uHU7B">
+                <ref role="u2itx" node="4L6K1Kv9XlQ" resolve="GEN_Edges" />
               </node>
             </node>
           </node>
-          <node concept="u2itq" id="5PCLkhXE9ez" role="3uHU7B">
-            <node concept="1eOMI4" id="5PCLkhXE9e$" role="3uHU7w">
-              <node concept="u2its" id="5PCLkhXE9e_" role="1eOMHV">
-                <node concept="u2itw" id="5PCLkhXE9eA" role="3uHU7w">
-                  <ref role="u2itx" node="4L6K1Kv9Xew" resolve="Edges_Undirected" />
+          <node concept="u2itq" id="4WIioTR8Ehp" role="3uHU7B">
+            <node concept="1eOMI4" id="4WIioTR8Ehq" role="3uHU7w">
+              <node concept="u2its" id="4WIioTR8Ehr" role="1eOMHV">
+                <node concept="u2itw" id="4WIioTR8Ehs" role="3uHU7w">
+                  <ref role="u2itx" node="AZ7IhMm23Q" resolve="Base" />
                 </node>
-                <node concept="u2itw" id="5PCLkhXE9eB" role="3uHU7B">
-                  <ref role="u2itx" node="4L6K1Kv9XcH" resolve="Edges_Directed" />
+                <node concept="u2itw" id="4WIioTR8Eht" role="3uHU7B">
+                  <ref role="u2itx" node="4L6K1Kv9XlQ" resolve="GEN_Edges" />
                 </node>
               </node>
             </node>
-            <node concept="u2itq" id="5PCLkhXE9eC" role="3uHU7B">
-              <node concept="u2itw" id="5PCLkhXE9eD" role="3uHU7w">
+            <node concept="u2itq" id="4WIioTR8Ehu" role="3uHU7B">
+              <node concept="u2itw" id="4WIioTR8Ehv" role="3uHU7w">
                 <ref role="u2itx" node="4L6K1Kv9XFl" resolve="Alg_Cycle" />
               </node>
-              <node concept="u2itq" id="5PCLkhXE9eE" role="3uHU7B">
-                <node concept="u2itw" id="5PCLkhXE9eF" role="3uHU7w">
-                  <ref role="u2itx" node="4L6K1Kv9XHo" resolve="Alg_StronglyConnected" />
+              <node concept="u2itq" id="4WIioTR8Ehw" role="3uHU7B">
+                <node concept="u2itw" id="4WIioTR8Ehx" role="3uHU7w">
+                  <ref role="u2itx" node="4L6K1Kv9X_i" resolve="Alg_MSTPrim" />
                 </node>
-                <node concept="u2itq" id="5PCLkhXE9eG" role="3uHU7B">
-                  <node concept="u2itw" id="5PCLkhXE9eH" role="3uHU7w">
-                    <ref role="u2itx" node="4L6K1Kv9Xzj" resolve="Alg_Transpose" />
+                <node concept="u2itq" id="4WIioTR8Ehy" role="3uHU7B">
+                  <node concept="u2itw" id="4WIioTR8Ehz" role="3uHU7w">
+                    <ref role="u2itx" node="4L6K1Kv9Xvo" resolve="Alg_Number" />
                   </node>
-                  <node concept="u2itq" id="5PCLkhXE9eI" role="3uHU7B">
-                    <node concept="u2itw" id="5PCLkhXE9eJ" role="3uHU7w">
-                      <ref role="u2itx" node="2ju$YsGmurW" resolve="GN_OnlyNeighbors#Weighted" />
+                  <node concept="u2itq" id="4WIioTR8Eh$" role="3uHU7B">
+                    <node concept="u2itw" id="4WIioTR8Eh_" role="3uHU7w">
+                      <ref role="u2itx" node="4L6K1Kv9XDj" resolve="Alg_Shortest" />
                     </node>
-                    <node concept="u2itq" id="5PCLkhXE9eK" role="3uHU7B">
-                      <node concept="u2itw" id="5PCLkhXE9eL" role="3uHU7w">
-                        <ref role="u2itx" node="2ju$YsGmurW" resolve="GN_OnlyNeighbors#Weighted" />
+                    <node concept="u2itq" id="4WIioTR8EhA" role="3uHU7B">
+                      <node concept="u2itw" id="4WIioTR8EhB" role="3uHU7w">
+                        <ref role="u2itx" node="4L6K1Kv9XaV" resolve="Prog" />
                       </node>
-                      <node concept="u2itq" id="5PCLkhXE9eM" role="3uHU7B">
-                        <node concept="u2itw" id="5PCLkhXE9eN" role="3uHU7w">
+                      <node concept="u2itq" id="4WIioTR8EhC" role="3uHU7B">
+                        <node concept="u2itw" id="4WIioTR8EhD" role="3uHU7B">
                           <ref role="u2itx" node="3XSKgTnGhTj" resolve="SearchAlg" />
                         </node>
-                        <node concept="u2itq" id="5PCLkhXE9eO" role="3uHU7B">
-                          <node concept="u2itw" id="5PCLkhXE9eP" role="3uHU7B">
-                            <ref role="u2itx" node="4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
-                          </node>
-                          <node concept="u2itw" id="5PCLkhXE9eQ" role="3uHU7w">
-                            <ref role="u2itx" node="4L6K1Kv9Xgk" resolve="Weighted" />
-                          </node>
+                        <node concept="u2itw" id="4WIioTR8EhE" role="3uHU7w">
+                          <ref role="u2itx" node="4L6K1Kv9Xgk" resolve="Weighted" />
                         </node>
                       </node>
                     </node>
