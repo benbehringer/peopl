@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,9 +41,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="2621000434129553333" name="jetbrains.mps.baseLanguage.structure.UnknownDotCall" flags="nn" index="Wc6QR">
-        <property id="4872723285943177972" name="callee" index="10XrrR" />
-      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -51,6 +50,9 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
@@ -65,9 +67,6 @@
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
-      <concept id="3304084122476667220" name="jetbrains.mps.baseLanguage.structure.UnknownNew" flags="nn" index="31S9pk">
-        <property id="3304084122476721463" name="className" index="31Ss8R" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -125,6 +124,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -141,7 +141,6 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
-      <concept id="8473865358220097975" name="jetbrains.mps.baseLanguage.structure.UnknownNameRef" flags="nn" index="3yEOSi" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -265,21 +264,26 @@
         <node concept="10Oyi0" id="7JAXn_9gC1Z" role="10Q1$1" />
       </node>
       <node concept="2BsdOp" id="7JAXn_9gC27" role="33vP2m">
-        <node concept="3yEOSi" id="7JAXn_9gC21" role="2BsfMF">
-          <property role="1CJj6V" value="Font.PLAIN" />
+        <node concept="10M0yZ" id="2M_g4HkPi19" role="2BsfMF">
+          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+          <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
         </node>
-        <node concept="3yEOSi" id="7JAXn_9gC22" role="2BsfMF">
-          <property role="1CJj6V" value="Font.BOLD" />
+        <node concept="10M0yZ" id="2M_g4HkPiaS" role="2BsfMF">
+          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+          <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
         </node>
-        <node concept="3yEOSi" id="7JAXn_9gC23" role="2BsfMF">
-          <property role="1CJj6V" value="Font.ITALIC" />
+        <node concept="10M0yZ" id="2M_g4HkPicB" role="2BsfMF">
+          <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+          <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
         </node>
         <node concept="3cpWs3" id="7JAXn_9gC24" role="2BsfMF">
-          <node concept="3yEOSi" id="7JAXn_9gC25" role="3uHU7B">
-            <property role="1CJj6V" value="Font.BOLD" />
+          <node concept="10M0yZ" id="2M_g4HkPhWt" role="3uHU7B">
+            <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+            <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
           </node>
-          <node concept="3yEOSi" id="7JAXn_9gC26" role="3uHU7w">
-            <property role="1CJj6V" value="Font.ITALIC" />
+          <node concept="10M0yZ" id="2M_g4HkPhVL" role="3uHU7w">
+            <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+            <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
           </node>
         </node>
       </node>
@@ -347,11 +351,13 @@
             <node concept="37vLTw" id="7JAXn_9gC2v" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC1D" resolve="fontDialog" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC2w" role="37vLTx">
-              <property role="31Ss8R" value="JDialog" />
-              <node concept="Xjq3P" id="7JAXn_9gC2x" role="37wK5m" />
-              <node concept="Xl_RD" id="7JAXn_9gC2y" role="37wK5m">
-                <property role="Xl_RC" value="Font" />
+            <node concept="2ShNRf" id="2M_g4HkPhV4" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPhV_" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JDialog.&lt;init&gt;(java.awt.Window,java.lang.String)" resolve="JDialog" />
+                <node concept="Xjq3P" id="7JAXn_9gC2x" role="37wK5m" />
+                <node concept="Xl_RD" id="7JAXn_9gC2y" role="37wK5m">
+                  <property role="Xl_RC" value="Font" />
+                </node>
               </node>
             </node>
           </node>
@@ -380,10 +386,13 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDpp" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setLayout" />
-              <node concept="31S9pk" id="7JAXn_9gC2D" role="37wK5m">
-                <property role="31Ss8R" value="FlowLayout" />
-                <node concept="3yEOSi" id="7JAXn_9gC2E" role="37wK5m">
-                  <property role="1CJj6V" value="FlowLayout.LEFT" />
+              <node concept="2ShNRf" id="2M_g4HkPhUZ" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPhV0" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~FlowLayout.&lt;init&gt;(int)" resolve="FlowLayout" />
+                  <node concept="10M0yZ" id="2M_g4HkPiaF" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~FlowLayout" resolve="FlowLayout" />
+                    <ref role="3cqZAo" to="z60i:~FlowLayout.LEFT" resolve="LEFT" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -413,10 +422,12 @@
             <node concept="3uibUv" id="7JAXn_9gC2L" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JLabel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC2M" role="33vP2m">
-              <property role="31Ss8R" value="JLabel" />
-              <node concept="Xl_RD" id="7JAXn_9gC2N" role="37wK5m">
-                <property role="Xl_RC" value="Schriftart(F):" />
+            <node concept="2ShNRf" id="2M_g4HkPhTm" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPhTx" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <node concept="Xl_RD" id="7JAXn_9gC2N" role="37wK5m">
+                  <property role="Xl_RC" value="Schriftart(F):" />
+                </node>
               </node>
             </node>
           </node>
@@ -428,13 +439,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDp_" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC2Q" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC2R" role="37wK5m">
-                  <property role="3cmrfH" value="100" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC2S" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPi3i" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi3j" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC2R" role="37wK5m">
+                    <property role="3cmrfH" value="100" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC2S" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -447,10 +460,12 @@
             <node concept="3uibUv" id="7JAXn_9gC2V" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JLabel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC2W" role="33vP2m">
-              <property role="31Ss8R" value="JLabel" />
-              <node concept="Xl_RD" id="7JAXn_9gC2X" role="37wK5m">
-                <property role="Xl_RC" value="Schriftschnitt(Y):" />
+            <node concept="2ShNRf" id="2M_g4HkPi07" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPi0z" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <node concept="Xl_RD" id="7JAXn_9gC2X" role="37wK5m">
+                  <property role="Xl_RC" value="Schriftschnitt(Y):" />
+                </node>
               </node>
             </node>
           </node>
@@ -462,13 +477,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDpE" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC30" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC31" role="37wK5m">
-                  <property role="3cmrfH" value="100" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC32" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPi2o" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi2p" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC31" role="37wK5m">
+                    <property role="3cmrfH" value="100" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC32" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -481,10 +498,12 @@
             <node concept="3uibUv" id="7JAXn_9gC35" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JLabel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC36" role="33vP2m">
-              <property role="31Ss8R" value="JLabel" />
-              <node concept="Xl_RD" id="7JAXn_9gC37" role="37wK5m">
-                <property role="Xl_RC" value="Schriftgrad(S):" />
+            <node concept="2ShNRf" id="2M_g4HkPhT_" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPhTK" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <node concept="Xl_RD" id="7JAXn_9gC37" role="37wK5m">
+                  <property role="Xl_RC" value="Schriftgrad(S):" />
+                </node>
               </node>
             </node>
           </node>
@@ -496,13 +515,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDpJ" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC3a" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC3b" role="37wK5m">
-                  <property role="3cmrfH" value="100" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC3c" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPi8t" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi8u" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC3b" role="37wK5m">
+                    <property role="3cmrfH" value="100" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC3c" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -513,10 +534,12 @@
             <node concept="37vLTw" id="7JAXn_9gC3f" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC1G" resolve="tfFont" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC3g" role="37vLTx">
-              <property role="31Ss8R" value="JTextField" />
-              <node concept="3cmrfG" id="7JAXn_9gC3h" role="37wK5m">
-                <property role="3cmrfH" value="15" />
+            <node concept="2ShNRf" id="2M_g4HkPhUG" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPhUV" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;(int)" resolve="JTextField" />
+                <node concept="3cmrfG" id="7JAXn_9gC3h" role="37wK5m">
+                  <property role="3cmrfH" value="15" />
+                </node>
               </node>
             </node>
           </node>
@@ -556,13 +579,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDq3" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC3p" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC3q" role="37wK5m">
-                  <property role="3cmrfH" value="200" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC3r" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPi9j" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi9k" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC3q" role="37wK5m">
+                    <property role="3cmrfH" value="200" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC3r" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -573,10 +598,12 @@
             <node concept="37vLTw" id="7JAXn_9gC3u" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC1M" resolve="tfStyle" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC3v" role="37vLTx">
-              <property role="31Ss8R" value="JTextField" />
-              <node concept="3cmrfG" id="7JAXn_9gC3w" role="37wK5m">
-                <property role="3cmrfH" value="15" />
+            <node concept="2ShNRf" id="2M_g4HkPi2z" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPi2M" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;(int)" resolve="JTextField" />
+                <node concept="3cmrfG" id="7JAXn_9gC3w" role="37wK5m">
+                  <property role="3cmrfH" value="15" />
+                </node>
               </node>
             </node>
           </node>
@@ -591,8 +618,9 @@
                 <ref role="37wK5l" to=":^" resolve="getStyle" />
               </node>
             </node>
-            <node concept="3yEOSi" id="7JAXn_9gC3$" role="3uHU7w">
-              <property role="1CJj6V" value="Font.PLAIN" />
+            <node concept="10M0yZ" id="2M_g4HkPhYf" role="3uHU7w">
+              <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+              <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
             </node>
           </node>
           <node concept="3clFbJ" id="7JAXn_9gC3C" role="9aQIa">
@@ -605,8 +633,9 @@
                   <ref role="37wK5l" to=":^" resolve="getStyle" />
                 </node>
               </node>
-              <node concept="3yEOSi" id="7JAXn_9gC3F" role="3uHU7w">
-                <property role="1CJj6V" value="Font.BOLD" />
+              <node concept="10M0yZ" id="2M_g4HkPhTQ" role="3uHU7w">
+                <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
               </node>
             </node>
             <node concept="3clFbJ" id="7JAXn_9gC3J" role="9aQIa">
@@ -619,8 +648,9 @@
                     <ref role="37wK5l" to=":^" resolve="getStyle" />
                   </node>
                 </node>
-                <node concept="3yEOSi" id="7JAXn_9gC3M" role="3uHU7w">
-                  <property role="1CJj6V" value="Font.ITALIC" />
+                <node concept="10M0yZ" id="2M_g4HkPhUi" role="3uHU7w">
+                  <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                  <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                 </node>
               </node>
               <node concept="3clFbJ" id="7JAXn_9gC3Q" role="9aQIa">
@@ -635,11 +665,13 @@
                   </node>
                   <node concept="1eOMI4" id="7JAXn_9gC3W" role="3uHU7w">
                     <node concept="3cpWs3" id="7JAXn_9gC3T" role="1eOMHV">
-                      <node concept="3yEOSi" id="7JAXn_9gC3U" role="3uHU7B">
-                        <property role="1CJj6V" value="Font.BOLD" />
+                      <node concept="10M0yZ" id="2M_g4HkPhSW" role="3uHU7B">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
                       </node>
-                      <node concept="3yEOSi" id="7JAXn_9gC3V" role="3uHU7w">
-                        <property role="1CJj6V" value="Font.ITALIC" />
+                      <node concept="10M0yZ" id="2M_g4HkPi7H" role="3uHU7w">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                       </node>
                     </node>
                   </node>
@@ -725,13 +757,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDqZ" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC48" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC49" role="37wK5m">
-                  <property role="3cmrfH" value="200" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC4a" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPi8n" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi8o" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC49" role="37wK5m">
+                    <property role="3cmrfH" value="200" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC4a" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -742,10 +776,12 @@
             <node concept="37vLTw" id="7JAXn_9gC4d" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC1J" resolve="tfSize" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC4e" role="37vLTx">
-              <property role="31Ss8R" value="JTextField" />
-              <node concept="3cmrfG" id="7JAXn_9gC4f" role="37wK5m">
-                <property role="3cmrfH" value="8" />
+            <node concept="2ShNRf" id="2M_g4HkPhXz" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPhXH" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;(int)" resolve="JTextField" />
+                <node concept="3cmrfG" id="7JAXn_9gC4f" role="37wK5m">
+                  <property role="3cmrfH" value="8" />
+                </node>
               </node>
             </node>
           </node>
@@ -790,13 +826,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDrj" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC4p" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC4q" role="37wK5m">
-                  <property role="3cmrfH" value="200" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC4r" role="37wK5m">
-                  <property role="3cmrfH" value="20" />
+              <node concept="2ShNRf" id="2M_g4HkPicv" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPicw" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC4q" role="37wK5m">
+                    <property role="3cmrfH" value="200" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC4r" role="37wK5m">
+                    <property role="3cmrfH" value="20" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -832,10 +870,12 @@
             <node concept="37vLTw" id="7JAXn_9gC4B" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC4C" role="37vLTx">
-              <property role="31Ss8R" value="JList" />
-              <node concept="37vLTw" id="7JAXn_9gC4D" role="37wK5m">
-                <ref role="3cqZAo" node="7JAXn_9gC4s" resolve="fontStyle" />
+            <node concept="2ShNRf" id="2M_g4HkPi9p" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPia5" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JList.&lt;init&gt;(java.util.Vector)" resolve="JList" />
+                <node concept="37vLTw" id="7JAXn_9gC4D" role="37wK5m">
+                  <ref role="3cqZAo" node="7JAXn_9gC4s" resolve="fontStyle" />
+                </node>
               </node>
             </node>
           </node>
@@ -847,9 +887,9 @@
             <node concept="3uibUv" id="7JAXn_9gC4G" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="GraphicsEnvironment" />
             </node>
-            <node concept="Wc6QR" id="7JAXn_9gC4H" role="33vP2m">
-              <property role="10XrrR" value="getLocalGraphicsEnvironment" />
-              <property role="1CJj6V" value="GraphicsEnvironment" />
+            <node concept="2YIFZM" id="2M_g4HkPhZB" role="33vP2m">
+              <ref role="1Pybhc" to="z60i:~GraphicsEnvironment" resolve="GraphicsEnvironment" />
+              <ref role="37wK5l" to="z60i:~GraphicsEnvironment.getLocalGraphicsEnvironment():java.awt.GraphicsEnvironment" resolve="getLocalGraphicsEnvironment" />
             </node>
           </node>
         </node>
@@ -951,10 +991,12 @@
             <node concept="37vLTw" id="7JAXn_9gC5k" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC2b" resolve="listFont" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC5l" role="37vLTx">
-              <property role="31Ss8R" value="JList" />
-              <node concept="37vLTw" id="7JAXn_9gC5m" role="37wK5m">
-                <ref role="3cqZAo" node="7JAXn_9gC4I" resolve="fontName" />
+            <node concept="2ShNRf" id="2M_g4HkPi3s" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPi7B" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JList.&lt;init&gt;(java.util.Vector)" resolve="JList" />
+                <node concept="37vLTw" id="7JAXn_9gC5m" role="37wK5m">
+                  <ref role="3cqZAo" node="7JAXn_9gC4I" resolve="fontName" />
+                </node>
               </node>
             </node>
           </node>
@@ -979,8 +1021,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDrI" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setSelectionMode" />
-              <node concept="3yEOSi" id="7JAXn_9gC5s" role="37wK5m">
-                <property role="1CJj6V" value="ListSelectionModel.SINGLE_SELECTION" />
+              <node concept="10M0yZ" id="2M_g4HkPhYF" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~ListSelectionModel" resolve="ListSelectionModel" />
+                <ref role="3cqZAo" to="dxuu:~ListSelectionModel.SINGLE_SELECTION" resolve="SINGLE_SELECTION" />
               </node>
             </node>
           </node>
@@ -1037,6 +1080,7 @@
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
                     <ref role="1Y3XeK" to=":^" resolve="ListSelectionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3clFb_" id="7JAXn_9gC5F" role="jymVt">
                       <property role="TrG5h" value="valueChanged" />
                       <property role="DiZV1" value="false" />
@@ -1114,8 +1158,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDs_" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setSelectionMode" />
-              <node concept="3yEOSi" id="7JAXn_9gC5Y" role="37wK5m">
-                <property role="1CJj6V" value="ListSelectionModel.SINGLE_SELECTION" />
+              <node concept="10M0yZ" id="2M_g4HkPhNy" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~ListSelectionModel" resolve="ListSelectionModel" />
+                <ref role="3cqZAo" to="dxuu:~ListSelectionModel.SINGLE_SELECTION" resolve="SINGLE_SELECTION" />
               </node>
             </node>
           </node>
@@ -1130,8 +1175,9 @@
                 <ref role="37wK5l" to=":^" resolve="getStyle" />
               </node>
             </node>
-            <node concept="3yEOSi" id="7JAXn_9gC62" role="3uHU7w">
-              <property role="1CJj6V" value="Font.PLAIN" />
+            <node concept="10M0yZ" id="2M_g4HkPieX" role="3uHU7w">
+              <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+              <ref role="3cqZAo" to="z60i:~Font.PLAIN" resolve="PLAIN" />
             </node>
           </node>
           <node concept="3clFbJ" id="7JAXn_9gC66" role="9aQIa">
@@ -1144,8 +1190,9 @@
                   <ref role="37wK5l" to=":^" resolve="getStyle" />
                 </node>
               </node>
-              <node concept="3yEOSi" id="7JAXn_9gC69" role="3uHU7w">
-                <property role="1CJj6V" value="Font.BOLD" />
+              <node concept="10M0yZ" id="2M_g4HkPi2S" role="3uHU7w">
+                <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
               </node>
             </node>
             <node concept="3clFbJ" id="7JAXn_9gC6d" role="9aQIa">
@@ -1158,8 +1205,9 @@
                     <ref role="37wK5l" to=":^" resolve="getStyle" />
                   </node>
                 </node>
-                <node concept="3yEOSi" id="7JAXn_9gC6g" role="3uHU7w">
-                  <property role="1CJj6V" value="Font.ITALIC" />
+                <node concept="10M0yZ" id="2M_g4HkPhX9" role="3uHU7w">
+                  <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                  <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                 </node>
               </node>
               <node concept="3clFbJ" id="7JAXn_9gC6k" role="9aQIa">
@@ -1174,11 +1222,13 @@
                   </node>
                   <node concept="1eOMI4" id="7JAXn_9gC6q" role="3uHU7w">
                     <node concept="3cpWs3" id="7JAXn_9gC6n" role="1eOMHV">
-                      <node concept="3yEOSi" id="7JAXn_9gC6o" role="3uHU7B">
-                        <property role="1CJj6V" value="Font.BOLD" />
+                      <node concept="10M0yZ" id="2M_g4HkPhYV" role="3uHU7B">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.BOLD" resolve="BOLD" />
                       </node>
-                      <node concept="3yEOSi" id="7JAXn_9gC6p" role="3uHU7w">
-                        <property role="1CJj6V" value="Font.ITALIC" />
+                      <node concept="10M0yZ" id="2M_g4HkPhXN" role="3uHU7w">
+                        <ref role="1PxDUh" to="z60i:~Font" resolve="Font" />
+                        <ref role="3cqZAo" to="z60i:~Font.ITALIC" resolve="ITALIC" />
                       </node>
                     </node>
                   </node>
@@ -1299,6 +1349,7 @@
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
                     <ref role="1Y3XeK" to=":^" resolve="ListSelectionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3clFb_" id="7JAXn_9gC6K" role="jymVt">
                       <property role="TrG5h" value="valueChanged" />
                       <property role="DiZV1" value="false" />
@@ -1435,10 +1486,12 @@
             <node concept="37vLTw" id="7JAXn_9gC7o" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC2e" resolve="listSize" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC7p" role="37vLTx">
-              <property role="31Ss8R" value="JList" />
-              <node concept="37vLTw" id="7JAXn_9gC7q" role="37wK5m">
-                <ref role="3cqZAo" node="7JAXn_9gC71" resolve="fontSize" />
+            <node concept="2ShNRf" id="2M_g4HkPi8z" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPi9f" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JList.&lt;init&gt;(java.util.Vector)" resolve="JList" />
+                <node concept="37vLTw" id="7JAXn_9gC7q" role="37wK5m">
+                  <ref role="3cqZAo" node="7JAXn_9gC71" resolve="fontSize" />
+                </node>
               </node>
             </node>
           </node>
@@ -1542,8 +1595,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDut" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setSelectionMode" />
-              <node concept="3yEOSi" id="7JAXn_9gC81" role="37wK5m">
-                <property role="1CJj6V" value="ListSelectionModel.SINGLE_SELECTION" />
+              <node concept="10M0yZ" id="2M_g4HkPiar" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~ListSelectionModel" resolve="ListSelectionModel" />
+                <ref role="3cqZAo" to="dxuu:~ListSelectionModel.SINGLE_SELECTION" resolve="SINGLE_SELECTION" />
               </node>
             </node>
           </node>
@@ -1600,6 +1654,7 @@
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
                     <ref role="1Y3XeK" to=":^" resolve="ListSelectionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3clFb_" id="7JAXn_9gC8g" role="jymVt">
                       <property role="TrG5h" value="valueChanged" />
                       <property role="DiZV1" value="false" />
@@ -1675,10 +1730,12 @@
             <node concept="37vLTw" id="7JAXn_9gC8z" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC1T" resolve="fontOkButton" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC8$" role="37vLTx">
-              <property role="31Ss8R" value="JButton" />
-              <node concept="Xl_RD" id="7JAXn_9gC8_" role="37wK5m">
-                <property role="Xl_RC" value="OK" />
+            <node concept="2ShNRf" id="2M_g4HkPifn" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPifz" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="7JAXn_9gC8_" role="37wK5m">
+                  <property role="Xl_RC" value="OK" />
+                </node>
               </node>
             </node>
           </node>
@@ -1701,10 +1758,12 @@
             <node concept="3uibUv" id="7JAXn_9gC8F" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JButton" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC8G" role="33vP2m">
-              <property role="31Ss8R" value="JButton" />
-              <node concept="Xl_RD" id="7JAXn_9gC8H" role="37wK5m">
-                <property role="Xl_RC" value="Cancel" />
+            <node concept="2ShNRf" id="2M_g4HkPi0B" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPi13" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+                <node concept="Xl_RD" id="7JAXn_9gC8H" role="37wK5m">
+                  <property role="Xl_RC" value="Cancel" />
+                </node>
               </node>
             </node>
           </node>
@@ -1722,6 +1781,7 @@
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
                     <ref role="1Y3XeK" to=":^" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3clFb_" id="7JAXn_9gC8N" role="jymVt">
                       <property role="TrG5h" value="actionPerformed" />
                       <property role="DiZV1" value="false" />
@@ -1759,10 +1819,12 @@
             <node concept="37vLTw" id="7JAXn_9gC8X" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gC2h" resolve="sample" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC8Y" role="37vLTx">
-              <property role="31Ss8R" value="JLabel" />
-              <node concept="Xl_RD" id="7JAXn_9gC8Z" role="37wK5m">
-                <property role="Xl_RC" value="Notepad" />
+            <node concept="2ShNRf" id="2M_g4HkPhNN" role="37vLTx">
+              <node concept="1pGfFk" id="2M_g4HkPhOf" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <node concept="Xl_RD" id="7JAXn_9gC8Z" role="37wK5m">
+                  <property role="Xl_RC" value="Notepad" />
+                </node>
               </node>
             </node>
           </node>
@@ -1774,8 +1836,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDv_" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setHorizontalAlignment" />
-              <node concept="3yEOSi" id="7JAXn_9gC92" role="37wK5m">
-                <property role="1CJj6V" value="SwingConstants.CENTER" />
+              <node concept="10M0yZ" id="2M_g4HkPhWd" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~SwingConstants" resolve="SwingConstants" />
+                <ref role="3cqZAo" to="dxuu:~SwingConstants.CENTER" resolve="CENTER" />
               </node>
             </node>
           </node>
@@ -1787,13 +1850,15 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDvG" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setPreferredSize" />
-              <node concept="31S9pk" id="7JAXn_9gC95" role="37wK5m">
-                <property role="31Ss8R" value="Dimension" />
-                <node concept="3cmrfG" id="7JAXn_9gC96" role="37wK5m">
-                  <property role="3cmrfH" value="300" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gC97" role="37wK5m">
-                  <property role="3cmrfH" value="50" />
+              <node concept="2ShNRf" id="2M_g4HkPi01" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi02" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="7JAXn_9gC96" role="37wK5m">
+                    <property role="3cmrfH" value="300" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gC97" role="37wK5m">
+                    <property role="3cmrfH" value="50" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1806,8 +1871,10 @@
             <node concept="3uibUv" id="7JAXn_9gC9a" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JPanel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC9b" role="33vP2m">
-              <property role="31Ss8R" value="JPanel" />
+            <node concept="2ShNRf" id="2M_g4HkPi3o" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPi3p" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+              </node>
             </node>
           </node>
         </node>
@@ -1818,9 +1885,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDvL" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setBorder" />
-              <node concept="Wc6QR" id="7JAXn_9gC9e" role="37wK5m">
-                <property role="10XrrR" value="createTitledBorder" />
-                <property role="1CJj6V" value="BorderFactory" />
+              <node concept="2YIFZM" id="2M_g4HkPhR8" role="37wK5m">
+                <ref role="1Pybhc" to="dxuu:~BorderFactory" resolve="BorderFactory" />
+                <ref role="37wK5l" to="dxuu:~BorderFactory.createTitledBorder(java.lang.String):javax.swing.border.TitledBorder" resolve="createTitledBorder" />
                 <node concept="Xl_RD" id="7JAXn_9gC9f" role="37wK5m">
                   <property role="Xl_RC" value="Beispiel" />
                 </node>
@@ -1939,10 +2006,12 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDww" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="add" />
-              <node concept="31S9pk" id="7JAXn_9gC9E" role="37wK5m">
-                <property role="31Ss8R" value="JScrollPane" />
-                <node concept="37vLTw" id="7JAXn_9gC9F" role="37wK5m">
-                  <ref role="3cqZAo" node="7JAXn_9gC2b" resolve="listFont" />
+              <node concept="2ShNRf" id="2M_g4HkPieQ" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPieR" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                  <node concept="37vLTw" id="7JAXn_9gC9F" role="37wK5m">
+                    <ref role="3cqZAo" node="7JAXn_9gC2b" resolve="listFont" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1955,10 +2024,12 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDw_" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="add" />
-              <node concept="31S9pk" id="7JAXn_9gC9I" role="37wK5m">
-                <property role="31Ss8R" value="JScrollPane" />
-                <node concept="37vLTw" id="7JAXn_9gC9J" role="37wK5m">
-                  <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+              <node concept="2ShNRf" id="2M_g4HkPi2u" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPi2v" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                  <node concept="37vLTw" id="7JAXn_9gC9J" role="37wK5m">
+                    <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1971,10 +2042,12 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDwE" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="add" />
-              <node concept="31S9pk" id="7JAXn_9gC9M" role="37wK5m">
-                <property role="31Ss8R" value="JScrollPane" />
-                <node concept="37vLTw" id="7JAXn_9gC9N" role="37wK5m">
-                  <ref role="3cqZAo" node="7JAXn_9gC2e" resolve="listSize" />
+              <node concept="2ShNRf" id="2M_g4HkPhVE" role="37wK5m">
+                <node concept="1pGfFk" id="2M_g4HkPhVF" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                  <node concept="37vLTw" id="7JAXn_9gC9N" role="37wK5m">
+                    <ref role="3cqZAo" node="7JAXn_9gC2e" resolve="listSize" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2084,38 +2157,40 @@
             <node concept="3uibUv" id="7JAXn_9gCaf" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="Font" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCag" role="33vP2m">
-              <property role="31Ss8R" value="Font" />
-              <node concept="2OqwBi" id="7JAXn_9gDxc" role="37wK5m">
-                <node concept="37vLTw" id="7JAXn_9gDxb" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JAXn_9gC1G" resolve="tfFont" />
-                </node>
-                <node concept="liA8E" id="7JAXn_9gDxd" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getText" />
-                </node>
-              </node>
-              <node concept="AH0OO" id="7JAXn_9gCai" role="37wK5m">
-                <node concept="37vLTw" id="7JAXn_9gCaj" role="AHHXb">
-                  <ref role="3cqZAo" node="7JAXn_9gC1X" resolve="fontStyleConst" />
-                </node>
-                <node concept="2OqwBi" id="7JAXn_9gDxh" role="AHEQo">
-                  <node concept="37vLTw" id="7JAXn_9gDxg" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+            <node concept="2ShNRf" id="2M_g4HkPia9" role="33vP2m">
+              <node concept="1pGfFk" id="2M_g4HkPiaa" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
+                <node concept="2OqwBi" id="7JAXn_9gDxc" role="37wK5m">
+                  <node concept="37vLTw" id="7JAXn_9gDxb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JAXn_9gC1G" resolve="tfFont" />
                   </node>
-                  <node concept="liA8E" id="7JAXn_9gDxi" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getSelectedIndex" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2YIFZM" id="7JAXn_9gDxl" role="37wK5m">
-                <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                <node concept="2OqwBi" id="7JAXn_9gDxp" role="37wK5m">
-                  <node concept="37vLTw" id="7JAXn_9gDxo" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JAXn_9gC1J" resolve="tfSize" />
-                  </node>
-                  <node concept="liA8E" id="7JAXn_9gDxq" role="2OqNvi">
+                  <node concept="liA8E" id="7JAXn_9gDxd" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="getText" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="7JAXn_9gCai" role="37wK5m">
+                  <node concept="37vLTw" id="7JAXn_9gCaj" role="AHHXb">
+                    <ref role="3cqZAo" node="7JAXn_9gC1X" resolve="fontStyleConst" />
+                  </node>
+                  <node concept="2OqwBi" id="7JAXn_9gDxh" role="AHEQo">
+                    <node concept="37vLTw" id="7JAXn_9gDxg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+                    </node>
+                    <node concept="liA8E" id="7JAXn_9gDxi" role="2OqNvi">
+                      <ref role="37wK5l" to=":^" resolve="getSelectedIndex" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="7JAXn_9gDxl" role="37wK5m">
+                  <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                  <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                  <node concept="2OqwBi" id="7JAXn_9gDxp" role="37wK5m">
+                    <node concept="37vLTw" id="7JAXn_9gDxo" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7JAXn_9gC1J" resolve="tfSize" />
+                    </node>
+                    <node concept="liA8E" id="7JAXn_9gDxq" role="2OqNvi">
+                      <ref role="37wK5l" to=":^" resolve="getText" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2173,38 +2248,40 @@
                 <node concept="3uibUv" id="7JAXn_9gCaC" role="1tU5fm">
                   <ref role="3uigEE" to=":^" resolve="Font" />
                 </node>
-                <node concept="31S9pk" id="7JAXn_9gCaD" role="33vP2m">
-                  <property role="31Ss8R" value="java.awt.Font" />
-                  <node concept="2OqwBi" id="7JAXn_9gDxC" role="37wK5m">
-                    <node concept="37vLTw" id="7JAXn_9gDxB" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7JAXn_9gC1G" resolve="tfFont" />
-                    </node>
-                    <node concept="liA8E" id="7JAXn_9gDxD" role="2OqNvi">
-                      <ref role="37wK5l" to=":^" resolve="getText" />
-                    </node>
-                  </node>
-                  <node concept="AH0OO" id="7JAXn_9gCaF" role="37wK5m">
-                    <node concept="37vLTw" id="7JAXn_9gCaG" role="AHHXb">
-                      <ref role="3cqZAo" node="7JAXn_9gC1X" resolve="fontStyleConst" />
-                    </node>
-                    <node concept="2OqwBi" id="7JAXn_9gDxH" role="AHEQo">
-                      <node concept="37vLTw" id="7JAXn_9gDxG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+                <node concept="2ShNRf" id="2M_g4HkPieA" role="33vP2m">
+                  <node concept="1pGfFk" id="2M_g4HkPieB" role="2ShVmc">
+                    <ref role="37wK5l" to="z60i:~Font.&lt;init&gt;(java.lang.String,int,int)" resolve="Font" />
+                    <node concept="2OqwBi" id="7JAXn_9gDxC" role="37wK5m">
+                      <node concept="37vLTw" id="7JAXn_9gDxB" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7JAXn_9gC1G" resolve="tfFont" />
                       </node>
-                      <node concept="liA8E" id="7JAXn_9gDxI" role="2OqNvi">
-                        <ref role="37wK5l" to=":^" resolve="getSelectedIndex" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2YIFZM" id="7JAXn_9gDxL" role="37wK5m">
-                    <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
-                    <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
-                    <node concept="2OqwBi" id="7JAXn_9gDxP" role="37wK5m">
-                      <node concept="37vLTw" id="7JAXn_9gDxO" role="2Oq$k0">
-                        <ref role="3cqZAo" node="7JAXn_9gC1J" resolve="tfSize" />
-                      </node>
-                      <node concept="liA8E" id="7JAXn_9gDxQ" role="2OqNvi">
+                      <node concept="liA8E" id="7JAXn_9gDxD" role="2OqNvi">
                         <ref role="37wK5l" to=":^" resolve="getText" />
+                      </node>
+                    </node>
+                    <node concept="AH0OO" id="7JAXn_9gCaF" role="37wK5m">
+                      <node concept="37vLTw" id="7JAXn_9gCaG" role="AHHXb">
+                        <ref role="3cqZAo" node="7JAXn_9gC1X" resolve="fontStyleConst" />
+                      </node>
+                      <node concept="2OqwBi" id="7JAXn_9gDxH" role="AHEQo">
+                        <node concept="37vLTw" id="7JAXn_9gDxG" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7JAXn_9gC28" resolve="listStyle" />
+                        </node>
+                        <node concept="liA8E" id="7JAXn_9gDxI" role="2OqNvi">
+                          <ref role="37wK5l" to=":^" resolve="getSelectedIndex" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2YIFZM" id="7JAXn_9gDxL" role="37wK5m">
+                      <ref role="1Pybhc" to="wyt6:~Integer" resolve="Integer" />
+                      <ref role="37wK5l" to="wyt6:~Integer.parseInt(java.lang.String):int" resolve="parseInt" />
+                      <node concept="2OqwBi" id="7JAXn_9gDxP" role="37wK5m">
+                        <node concept="37vLTw" id="7JAXn_9gDxO" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7JAXn_9gC1J" resolve="tfSize" />
+                        </node>
+                        <node concept="liA8E" id="7JAXn_9gDxQ" role="2OqNvi">
+                          <ref role="37wK5l" to=":^" resolve="getText" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -2245,111 +2322,6 @@
         <property role="u1fJ8" value="true" />
         <property role="1XWMmp" value="false" />
         <property role="1CJj6V" value="schriftgroesse" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaU" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.Container" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaV" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.Dimension" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaW" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.FlowLayout" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaX" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.Font" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaY" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.GraphicsEnvironment" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCaZ" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.event.ActionEvent" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb0" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.event.ActionListener" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb1" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.BorderFactory" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb2" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JButton" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb3" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JDialog" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb4" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JEditorPane" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb5" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JFrame" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb6" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JLabel" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb7" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JList" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb8" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JPanel" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCb9" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JScrollPane" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCba" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JTextField" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCbb" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.ListSelectionModel" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCbc" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.SwingConstants" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCbd" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.event.ListSelectionEvent" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCbe" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.event.ListSelectionListener" />
       </node>
     </node>
   </node>
