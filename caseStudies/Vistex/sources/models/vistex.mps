@@ -8,6 +8,9 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -56,6 +59,10 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
         <child id="1164879758292" name="body" index="SfCbr" />
         <child id="1164903496223" name="catchClause" index="TEbGg" />
@@ -66,9 +73,6 @@
       <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
-      </concept>
-      <concept id="2621000434129553333" name="jetbrains.mps.baseLanguage.structure.UnknownDotCall" flags="nn" index="Wc6QR">
-        <property id="4872723285943177972" name="callee" index="10XrrR" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
@@ -200,7 +204,6 @@
       </concept>
       <concept id="1214918800624" name="jetbrains.mps.baseLanguage.structure.PostfixIncrementExpression" flags="nn" index="3uNrnE" />
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="8473865358220097975" name="jetbrains.mps.baseLanguage.structure.UnknownNameRef" flags="nn" index="3yEOSi" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -318,9 +321,9 @@
       </node>
       <node concept="3clFbS" id="7JAXn_9gCsl" role="3clF47">
         <node concept="3clFbF" id="7JAXn_9gCsm" role="3cqZAp">
-          <node concept="Wc6QR" id="7JAXn_9gCsn" role="3clFbG">
-            <property role="10XrrR" value="invokeLater" />
-            <property role="1CJj6V" value="java.awt.EventQueue" />
+          <node concept="2YIFZM" id="4Y2rxVNZViL" role="3clFbG">
+            <ref role="1Pybhc" to="z60i:~EventQueue" resolve="EventQueue" />
+            <ref role="37wK5l" to="z60i:~EventQueue.invokeLater(java.lang.Runnable):void" resolve="invokeLater" />
             <node concept="2ShNRf" id="7JAXn_9gCso" role="37wK5m">
               <node concept="YeOm9" id="7JAXn_9gCsp" role="2ShVmc">
                 <node concept="1Y3b0j" id="7JAXn_9gCsq" role="YeSDq">
@@ -374,8 +377,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsF" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrI" resolve="OverwriteDialog" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCsG" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JDialog" />
+            <node concept="2ShNRf" id="4Y2rxVNZVkH" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVkI" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JDialog.&lt;init&gt;()" resolve="JDialog" />
+              </node>
             </node>
           </node>
         </node>
@@ -384,8 +389,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsJ" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrA" resolve="OverwriteDLabel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCsK" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JLabel" />
+            <node concept="2ShNRf" id="4Y2rxVNZVjz" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVj$" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;()" resolve="JLabel" />
+              </node>
             </node>
           </node>
         </node>
@@ -394,8 +401,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsN" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCry" resolve="OverwriteDAbord" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCsO" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JButton" />
+            <node concept="2ShNRf" id="4Y2rxVNZVg6" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVg7" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;()" resolve="JButton" />
+              </node>
             </node>
           </node>
         </node>
@@ -404,8 +413,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsR" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrE" resolve="OverwriteDOK" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCsS" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JButton" />
+            <node concept="2ShNRf" id="4Y2rxVNZVsx" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVsy" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;()" resolve="JButton" />
+              </node>
             </node>
           </node>
         </node>
@@ -414,8 +425,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsV" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrq" resolve="ErrorDialog" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCsW" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JDialog" />
+            <node concept="2ShNRf" id="4Y2rxVNZVdm" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVdn" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JDialog.&lt;init&gt;()" resolve="JDialog" />
+              </node>
             </node>
           </node>
         </node>
@@ -424,8 +437,10 @@
             <node concept="37vLTw" id="7JAXn_9gCsZ" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrm" resolve="ErrorDOK" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCt0" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JButton" />
+            <node concept="2ShNRf" id="4Y2rxVNZVsF" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVsG" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;()" resolve="JButton" />
+              </node>
             </node>
           </node>
         </node>
@@ -434,8 +449,10 @@
             <node concept="37vLTw" id="7JAXn_9gCt3" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCri" resolve="ErrorDLabel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCt4" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JLabel" />
+            <node concept="2ShNRf" id="4Y2rxVNZVrd" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVre" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;()" resolve="JLabel" />
+              </node>
             </node>
           </node>
         </node>
@@ -444,8 +461,10 @@
             <node concept="37vLTw" id="7JAXn_9gCt7" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCru" resolve="Info" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCt8" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JDialog" />
+            <node concept="2ShNRf" id="4Y2rxVNZVkL" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVkM" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JDialog.&lt;init&gt;()" resolve="JDialog" />
+              </node>
             </node>
           </node>
         </node>
@@ -454,8 +473,10 @@
             <node concept="37vLTw" id="7JAXn_9gCtb" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrU" resolve="info_label" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCtc" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JLabel" />
+            <node concept="2ShNRf" id="4Y2rxVNZVjI" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVjJ" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;()" resolve="JLabel" />
+              </node>
             </node>
           </node>
         </node>
@@ -464,8 +485,10 @@
             <node concept="37vLTw" id="7JAXn_9gCtf" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrY" resolve="info_button" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCtg" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JButton" />
+            <node concept="2ShNRf" id="4Y2rxVNZVfY" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVfZ" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;()" resolve="JButton" />
+              </node>
             </node>
           </node>
         </node>
@@ -474,8 +497,10 @@
             <node concept="37vLTw" id="7JAXn_9gCtj" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrQ" resolve="jScrollPane1" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCtk" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JScrollPane" />
+            <node concept="2ShNRf" id="4Y2rxVNZVm0" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVm1" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;()" resolve="JScrollPane" />
+              </node>
             </node>
           </node>
         </node>
@@ -484,8 +509,10 @@
             <node concept="37vLTw" id="7JAXn_9gCtn" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCrM" resolve="editorPane" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCto" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JEditorPane" />
+            <node concept="2ShNRf" id="4Y2rxVNZVfk" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVfl" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JEditorPane.&lt;init&gt;()" resolve="JEditorPane" />
+              </node>
             </node>
           </node>
         </node>
@@ -494,8 +521,10 @@
             <node concept="37vLTw" id="7JAXn_9gCtr" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gCs2" resolve="jMenuBar1" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCts" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JMenuBar" />
+            <node concept="2ShNRf" id="4Y2rxVNZVde" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNZVdf" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JMenuBar.&lt;init&gt;()" resolve="JMenuBar" />
+              </node>
             </node>
           </node>
         </node>
@@ -548,8 +577,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gD$y" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setHorizontalAlignment" />
-              <node concept="3yEOSi" id="7JAXn_9gCtE" role="37wK5m">
-                <property role="1CJj6V" value="javax.swing.SwingConstants.CENTER" />
+              <node concept="10M0yZ" id="4Y2rxVNZVqZ" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~SwingConstants" resolve="SwingConstants" />
+                <ref role="3cqZAo" to="dxuu:~SwingConstants.CENTER" resolve="CENTER" />
               </node>
             </node>
           </node>
@@ -688,14 +718,16 @@
             <node concept="3uibUv" id="7JAXn_9gCui" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="javax.swing.GroupLayout" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCuj" role="33vP2m">
-              <property role="31Ss8R" value="javax.swing.GroupLayout" />
-              <node concept="2OqwBi" id="7JAXn_9gD_1" role="37wK5m">
-                <node concept="37vLTw" id="7JAXn_9gD_0" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JAXn_9gCrI" resolve="OverwriteDialog" />
-                </node>
-                <node concept="liA8E" id="7JAXn_9gD_2" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getContentPane" />
+            <node concept="2ShNRf" id="4Y2rxVNZVfv" role="33vP2m">
+              <node concept="1pGfFk" id="4Y2rxVNZVfw" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~GroupLayout.&lt;init&gt;(java.awt.Container)" resolve="GroupLayout" />
+                <node concept="2OqwBi" id="7JAXn_9gD_1" role="37wK5m">
+                  <node concept="37vLTw" id="7JAXn_9gD_0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JAXn_9gCrI" resolve="OverwriteDialog" />
+                  </node>
+                  <node concept="liA8E" id="7JAXn_9gD_2" role="2OqNvi">
+                    <ref role="37wK5l" to=":^" resolve="getContentPane" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -733,8 +765,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gD_h" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCuu" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVo6" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -764,8 +797,9 @@
                             </node>
                             <node concept="liA8E" id="7JAXn_9gD_t" role="2OqNvi">
                               <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                              <node concept="3yEOSi" id="7JAXn_9gCuC" role="37wK5m">
-                                <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                              <node concept="Rm8GO" id="4Y2rxVNZVg4" role="37wK5m">
+                                <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                                <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                               </node>
                             </node>
                           </node>
@@ -786,8 +820,9 @@
                                   <node concept="37vLTw" id="7JAXn_9gCuI" role="37wK5m">
                                     <ref role="3cqZAo" node="7JAXn_9gCrA" resolve="OverwriteDLabel" />
                                   </node>
-                                  <node concept="3yEOSi" id="7JAXn_9gCuJ" role="37wK5m">
-                                    <property role="1CJj6V" value="javax.swing.GroupLayout.DEFAULT_SIZE" />
+                                  <node concept="10M0yZ" id="4Y2rxVNZVb5" role="37wK5m">
+                                    <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                    <ref role="3cqZAo" to="dxuu:~GroupLayout.DEFAULT_SIZE" resolve="DEFAULT_SIZE" />
                                   </node>
                                   <node concept="3cmrfG" id="7JAXn_9gCuK" role="37wK5m">
                                     <property role="3cmrfH" value="480" />
@@ -806,8 +841,9 @@
                         </node>
                         <node concept="liA8E" id="7JAXn_9gCuN" role="2OqNvi">
                           <ref role="37wK5l" to=":^" resolve="addGroup" />
-                          <node concept="3yEOSi" id="7JAXn_9gCuO" role="37wK5m">
-                            <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.TRAILING" />
+                          <node concept="Rm8GO" id="4Y2rxVNZVkR" role="37wK5m">
+                            <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                            <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.TRAILING" resolve="TRAILING" />
                           </node>
                           <node concept="2OqwBi" id="7JAXn_9gCuP" role="37wK5m">
                             <node concept="2OqwBi" id="7JAXn_9gCuQ" role="2Oq$k0">
@@ -826,21 +862,24 @@
                                     <node concept="37vLTw" id="7JAXn_9gCuV" role="37wK5m">
                                       <ref role="3cqZAo" node="7JAXn_9gCrE" resolve="OverwriteDOK" />
                                     </node>
-                                    <node concept="3yEOSi" id="7JAXn_9gCuW" role="37wK5m">
-                                      <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                    <node concept="10M0yZ" id="4Y2rxVNZVhS" role="37wK5m">
+                                      <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                      <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                     </node>
                                     <node concept="3cmrfG" id="7JAXn_9gCuX" role="37wK5m">
                                       <property role="3cmrfH" value="208" />
                                     </node>
-                                    <node concept="3yEOSi" id="7JAXn_9gCuY" role="37wK5m">
-                                      <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                    <node concept="10M0yZ" id="4Y2rxVNZVi8" role="37wK5m">
+                                      <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                      <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="7JAXn_9gCuZ" role="2OqNvi">
                                   <ref role="37wK5l" to=":^" resolve="addPreferredGap" />
-                                  <node concept="3yEOSi" id="7JAXn_9gCv0" role="37wK5m">
-                                    <property role="1CJj6V" value="javax.swing.LayoutStyle.ComponentPlacement.RELATED" />
+                                  <node concept="Rm8GO" id="4Y2rxVNZVrV" role="37wK5m">
+                                    <ref role="1Px2BO" to="dxuu:~LayoutStyle$ComponentPlacement" resolve="LayoutStyle.ComponentPlacement" />
+                                    <ref role="Rm8GQ" to="dxuu:~LayoutStyle$ComponentPlacement.RELATED" resolve="RELATED" />
                                   </node>
                                 </node>
                               </node>
@@ -887,8 +926,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gDA0" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCvb" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVjx" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -920,8 +960,9 @@
                         </node>
                         <node concept="liA8E" id="7JAXn_9gCvm" role="2OqNvi">
                           <ref role="37wK5l" to=":^" resolve="addPreferredGap" />
-                          <node concept="3yEOSi" id="7JAXn_9gCvn" role="37wK5m">
-                            <property role="1CJj6V" value="javax.swing.LayoutStyle.ComponentPlacement.RELATED" />
+                          <node concept="Rm8GO" id="4Y2rxVNZVsT" role="37wK5m">
+                            <ref role="1Px2BO" to="dxuu:~LayoutStyle$ComponentPlacement" resolve="LayoutStyle.ComponentPlacement" />
+                            <ref role="Rm8GQ" to="dxuu:~LayoutStyle$ComponentPlacement.RELATED" resolve="RELATED" />
                           </node>
                           <node concept="3cmrfG" id="7JAXn_9gCvo" role="37wK5m">
                             <property role="3cmrfH" value="64" />
@@ -942,8 +983,9 @@
                               </node>
                               <node concept="liA8E" id="7JAXn_9gDAh" role="2OqNvi">
                                 <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                                <node concept="3yEOSi" id="7JAXn_9gCvu" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.BASELINE" />
+                                <node concept="Rm8GO" id="4Y2rxVNZVrZ" role="37wK5m">
+                                  <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                                  <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.BASELINE" resolve="BASELINE" />
                                 </node>
                               </node>
                             </node>
@@ -1062,8 +1104,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDAG" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setHorizontalAlignment" />
-              <node concept="3yEOSi" id="7JAXn_9gCvX" role="37wK5m">
-                <property role="1CJj6V" value="javax.swing.SwingConstants.CENTER" />
+              <node concept="10M0yZ" id="4Y2rxVNZVsj" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~SwingConstants" resolve="SwingConstants" />
+                <ref role="3cqZAo" to="dxuu:~SwingConstants.CENTER" resolve="CENTER" />
               </node>
             </node>
           </node>
@@ -1088,14 +1131,16 @@
             <node concept="3uibUv" id="7JAXn_9gCw3" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="javax.swing.GroupLayout" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCw4" role="33vP2m">
-              <property role="31Ss8R" value="javax.swing.GroupLayout" />
-              <node concept="2OqwBi" id="7JAXn_9gDAR" role="37wK5m">
-                <node concept="37vLTw" id="7JAXn_9gDAQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JAXn_9gCrq" resolve="ErrorDialog" />
-                </node>
-                <node concept="liA8E" id="7JAXn_9gDAS" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getContentPane" />
+            <node concept="2ShNRf" id="4Y2rxVNZVfo" role="33vP2m">
+              <node concept="1pGfFk" id="4Y2rxVNZVfp" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~GroupLayout.&lt;init&gt;(java.awt.Container)" resolve="GroupLayout" />
+                <node concept="2OqwBi" id="7JAXn_9gDAR" role="37wK5m">
+                  <node concept="37vLTw" id="7JAXn_9gDAQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JAXn_9gCrq" resolve="ErrorDialog" />
+                  </node>
+                  <node concept="liA8E" id="7JAXn_9gDAS" role="2OqNvi">
+                    <ref role="37wK5l" to=":^" resolve="getContentPane" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1133,8 +1178,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gDB7" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCwf" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVfW" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -1160,8 +1206,9 @@
                               </node>
                               <node concept="liA8E" id="7JAXn_9gDBj" role="2OqNvi">
                                 <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                                <node concept="3yEOSi" id="7JAXn_9gCwo" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                                <node concept="Rm8GO" id="4Y2rxVNZVfS" role="37wK5m">
+                                  <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                                  <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                                 </node>
                               </node>
                             </node>
@@ -1186,8 +1233,9 @@
                                   <node concept="37vLTw" id="7JAXn_9gCwv" role="37wK5m">
                                     <ref role="3cqZAo" node="7JAXn_9gCri" resolve="ErrorDLabel" />
                                   </node>
-                                  <node concept="3yEOSi" id="7JAXn_9gCww" role="37wK5m">
-                                    <property role="1CJj6V" value="javax.swing.GroupLayout.DEFAULT_SIZE" />
+                                  <node concept="10M0yZ" id="4Y2rxVNZVkv" role="37wK5m">
+                                    <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                    <ref role="3cqZAo" to="dxuu:~GroupLayout.DEFAULT_SIZE" resolve="DEFAULT_SIZE" />
                                   </node>
                                   <node concept="3cmrfG" id="7JAXn_9gCwx" role="37wK5m">
                                     <property role="3cmrfH" value="642" />
@@ -1230,14 +1278,16 @@
                                 <node concept="37vLTw" id="7JAXn_9gCwG" role="37wK5m">
                                   <ref role="3cqZAo" node="7JAXn_9gCrm" resolve="ErrorDOK" />
                                 </node>
-                                <node concept="3yEOSi" id="7JAXn_9gCwH" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                <node concept="10M0yZ" id="4Y2rxVNZVk6" role="37wK5m">
+                                  <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                  <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                 </node>
                                 <node concept="3cmrfG" id="7JAXn_9gCwI" role="37wK5m">
                                   <property role="3cmrfH" value="186" />
                                 </node>
-                                <node concept="3yEOSi" id="7JAXn_9gCwJ" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                <node concept="10M0yZ" id="4Y2rxVNZVix" role="37wK5m">
+                                  <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                  <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                 </node>
                               </node>
                             </node>
@@ -1268,8 +1318,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gDBM" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCwP" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVgU" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -1301,8 +1352,9 @@
                         </node>
                         <node concept="liA8E" id="7JAXn_9gCx0" role="2OqNvi">
                           <ref role="37wK5l" to=":^" resolve="addPreferredGap" />
-                          <node concept="3yEOSi" id="7JAXn_9gCx1" role="37wK5m">
-                            <property role="1CJj6V" value="javax.swing.LayoutStyle.ComponentPlacement.RELATED" />
+                          <node concept="Rm8GO" id="4Y2rxVNZVsB" role="37wK5m">
+                            <ref role="1Px2BO" to="dxuu:~LayoutStyle$ComponentPlacement" resolve="LayoutStyle.ComponentPlacement" />
+                            <ref role="Rm8GQ" to="dxuu:~LayoutStyle$ComponentPlacement.RELATED" resolve="RELATED" />
                           </node>
                           <node concept="3cmrfG" id="7JAXn_9gCx2" role="37wK5m">
                             <property role="3cmrfH" value="45" />
@@ -1362,8 +1414,9 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDCd" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setHorizontalAlignment" />
-              <node concept="3yEOSi" id="7JAXn_9gCxf" role="37wK5m">
-                <property role="1CJj6V" value="javax.swing.SwingConstants.CENTER" />
+              <node concept="10M0yZ" id="4Y2rxVNZVfC" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~SwingConstants" resolve="SwingConstants" />
+                <ref role="3cqZAo" to="dxuu:~SwingConstants.CENTER" resolve="CENTER" />
               </node>
             </node>
           </node>
@@ -1445,14 +1498,16 @@
             <node concept="3uibUv" id="7JAXn_9gCxA" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="javax.swing.GroupLayout" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gCxB" role="33vP2m">
-              <property role="31Ss8R" value="javax.swing.GroupLayout" />
-              <node concept="2OqwBi" id="7JAXn_9gDCy" role="37wK5m">
-                <node concept="37vLTw" id="7JAXn_9gDCx" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JAXn_9gCru" resolve="Info" />
-                </node>
-                <node concept="liA8E" id="7JAXn_9gDCz" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getContentPane" />
+            <node concept="2ShNRf" id="4Y2rxVNZVjB" role="33vP2m">
+              <node concept="1pGfFk" id="4Y2rxVNZVjC" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~GroupLayout.&lt;init&gt;(java.awt.Container)" resolve="GroupLayout" />
+                <node concept="2OqwBi" id="7JAXn_9gDCy" role="37wK5m">
+                  <node concept="37vLTw" id="7JAXn_9gDCx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JAXn_9gCru" resolve="Info" />
+                  </node>
+                  <node concept="liA8E" id="7JAXn_9gDCz" role="2OqNvi">
+                    <ref role="37wK5l" to=":^" resolve="getContentPane" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1490,8 +1545,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gDCM" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCxM" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVo2" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -1517,8 +1573,9 @@
                               </node>
                               <node concept="liA8E" id="7JAXn_9gDCY" role="2OqNvi">
                                 <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                                <node concept="3yEOSi" id="7JAXn_9gCxV" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                                <node concept="Rm8GO" id="4Y2rxVNZVgQ" role="37wK5m">
+                                  <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                                  <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                                 </node>
                               </node>
                             </node>
@@ -1543,8 +1600,9 @@
                                   <node concept="37vLTw" id="7JAXn_9gCy2" role="37wK5m">
                                     <ref role="3cqZAo" node="7JAXn_9gCrU" resolve="info_label" />
                                   </node>
-                                  <node concept="3yEOSi" id="7JAXn_9gCy3" role="37wK5m">
-                                    <property role="1CJj6V" value="javax.swing.GroupLayout.DEFAULT_SIZE" />
+                                  <node concept="10M0yZ" id="4Y2rxVNZVs3" role="37wK5m">
+                                    <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                    <ref role="3cqZAo" to="dxuu:~GroupLayout.DEFAULT_SIZE" resolve="DEFAULT_SIZE" />
                                   </node>
                                   <node concept="3cmrfG" id="7JAXn_9gCy4" role="37wK5m">
                                     <property role="3cmrfH" value="430" />
@@ -1587,14 +1645,16 @@
                                 <node concept="37vLTw" id="7JAXn_9gCyf" role="37wK5m">
                                   <ref role="3cqZAo" node="7JAXn_9gCrY" resolve="info_button" />
                                 </node>
-                                <node concept="3yEOSi" id="7JAXn_9gCyg" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                <node concept="10M0yZ" id="4Y2rxVNZVlx" role="37wK5m">
+                                  <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                  <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                 </node>
                                 <node concept="3cmrfG" id="7JAXn_9gCyh" role="37wK5m">
                                   <property role="3cmrfH" value="169" />
                                 </node>
-                                <node concept="3yEOSi" id="7JAXn_9gCyi" role="37wK5m">
-                                  <property role="1CJj6V" value="javax.swing.GroupLayout.PREFERRED_SIZE" />
+                                <node concept="10M0yZ" id="4Y2rxVNZVbl" role="37wK5m">
+                                  <ref role="1PxDUh" to="dxuu:~GroupLayout" resolve="GroupLayout" />
+                                  <ref role="3cqZAo" to="dxuu:~GroupLayout.PREFERRED_SIZE" resolve="PREFERRED_SIZE" />
                                 </node>
                               </node>
                             </node>
@@ -1625,8 +1685,9 @@
                   </node>
                   <node concept="liA8E" id="7JAXn_9gDDt" role="2OqNvi">
                     <ref role="37wK5l" to=":^" resolve="createParallelGroup" />
-                    <node concept="3yEOSi" id="7JAXn_9gCyo" role="37wK5m">
-                      <property role="1CJj6V" value="javax.swing.GroupLayout.Alignment.LEADING" />
+                    <node concept="Rm8GO" id="4Y2rxVNZVdk" role="37wK5m">
+                      <ref role="1Px2BO" to="dxuu:~GroupLayout$Alignment" resolve="GroupLayout.Alignment" />
+                      <ref role="Rm8GQ" to="dxuu:~GroupLayout$Alignment.LEADING" resolve="LEADING" />
                     </node>
                   </node>
                 </node>
@@ -1658,8 +1719,9 @@
                         </node>
                         <node concept="liA8E" id="7JAXn_9gCyz" role="2OqNvi">
                           <ref role="37wK5l" to=":^" resolve="addPreferredGap" />
-                          <node concept="3yEOSi" id="7JAXn_9gCy$" role="37wK5m">
-                            <property role="1CJj6V" value="javax.swing.LayoutStyle.ComponentPlacement.RELATED" />
+                          <node concept="Rm8GO" id="4Y2rxVNZVoa" role="37wK5m">
+                            <ref role="1Px2BO" to="dxuu:~LayoutStyle$ComponentPlacement" resolve="LayoutStyle.ComponentPlacement" />
+                            <ref role="Rm8GQ" to="dxuu:~LayoutStyle$ComponentPlacement.RELATED" resolve="RELATED" />
                           </node>
                           <node concept="3cmrfG" id="7JAXn_9gCy_" role="37wK5m">
                             <property role="3cmrfH" value="36" />
@@ -1689,18 +1751,22 @@
         <node concept="3clFbF" id="7JAXn_9gCyE" role="3cqZAp">
           <node concept="1rXfSq" id="7JAXn_9gCyF" role="3clFbG">
             <ref role="37wK5l" to=":^" resolve="setDefaultCloseOperation" />
-            <node concept="3yEOSi" id="7JAXn_9gCyG" role="37wK5m">
-              <property role="1CJj6V" value="javax.swing.WindowConstants.EXIT_ON_CLOSE" />
+            <node concept="10M0yZ" id="4Y2rxVNZUY4" role="37wK5m">
+              <ref role="1PxDUh" to="dxuu:~WindowConstants" resolve="WindowConstants" />
+              <ref role="3cqZAo" to="dxuu:~WindowConstants.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="7JAXn_9gCyH" role="3cqZAp">
           <node concept="1rXfSq" id="7JAXn_9gCyI" role="3clFbG">
             <ref role="37wK5l" to=":^" resolve="setCursor" />
-            <node concept="31S9pk" id="7JAXn_9gCyJ" role="37wK5m">
-              <property role="31Ss8R" value="java.awt.Cursor" />
-              <node concept="3yEOSi" id="7JAXn_9gCyK" role="37wK5m">
-                <property role="1CJj6V" value="java.awt.Cursor.DEFAULT_CURSOR" />
+            <node concept="2ShNRf" id="4Y2rxVNZVhv" role="37wK5m">
+              <node concept="1pGfFk" id="4Y2rxVNZVhw" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Cursor.&lt;init&gt;(int)" resolve="Cursor" />
+                <node concept="10M0yZ" id="4Y2rxVNZVds" role="37wK5m">
+                  <ref role="1PxDUh" to="z60i:~Cursor" resolve="Cursor" />
+                  <ref role="3cqZAo" to="z60i:~Cursor.DEFAULT_CURSOR" resolve="DEFAULT_CURSOR" />
+                </node>
               </node>
             </node>
           </node>
@@ -1738,19 +1804,21 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDDR" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setMargin" />
-              <node concept="31S9pk" id="7JAXn_9gCyT" role="37wK5m">
-                <property role="31Ss8R" value="java.awt.Insets" />
-                <node concept="3cmrfG" id="7JAXn_9gCyU" role="37wK5m">
-                  <property role="3cmrfH" value="7" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCyV" role="37wK5m">
-                  <property role="3cmrfH" value="7" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCyW" role="37wK5m">
-                  <property role="3cmrfH" value="7" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCyX" role="37wK5m">
-                  <property role="3cmrfH" value="7" />
+              <node concept="2ShNRf" id="4Y2rxVNZVsJ" role="37wK5m">
+                <node concept="1pGfFk" id="4Y2rxVNZVsK" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
+                  <node concept="3cmrfG" id="7JAXn_9gCyU" role="37wK5m">
+                    <property role="3cmrfH" value="7" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCyV" role="37wK5m">
+                    <property role="3cmrfH" value="7" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCyW" role="37wK5m">
+                    <property role="3cmrfH" value="7" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCyX" role="37wK5m">
+                    <property role="3cmrfH" value="7" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1763,16 +1831,18 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gDDW" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setSelectionColor" />
-              <node concept="31S9pk" id="7JAXn_9gCz0" role="37wK5m">
-                <property role="31Ss8R" value="java.awt.Color" />
-                <node concept="3cmrfG" id="7JAXn_9gCz1" role="37wK5m">
-                  <property role="3cmrfH" value="168" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCz2" role="37wK5m">
-                  <property role="3cmrfH" value="51" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCz3" role="37wK5m">
-                  <property role="3cmrfH" value="94" />
+              <node concept="2ShNRf" id="4Y2rxVNZVrh" role="37wK5m">
+                <node concept="1pGfFk" id="4Y2rxVNZVrN" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+                  <node concept="3cmrfG" id="7JAXn_9gCz1" role="37wK5m">
+                    <property role="3cmrfH" value="168" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCz2" role="37wK5m">
+                    <property role="3cmrfH" value="51" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCz3" role="37wK5m">
+                    <property role="3cmrfH" value="94" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1864,19 +1934,21 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gCzy" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setLayout" />
-              <node concept="31S9pk" id="7JAXn_9gCzz" role="37wK5m">
-                <property role="31Ss8R" value="GridLayout" />
-                <node concept="3cmrfG" id="7JAXn_9gCz$" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="37vLTw" id="7JAXn_9gCz_" role="37wK5m">
-                  <ref role="3cqZAo" node="7JAXn_9gCo4" resolve="member" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCzA" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gCzB" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
+              <node concept="2ShNRf" id="4Y2rxVNZVlS" role="37wK5m">
+                <node concept="1pGfFk" id="4Y2rxVNZVlT" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
+                  <node concept="3cmrfG" id="7JAXn_9gCz$" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="37vLTw" id="7JAXn_9gCz_" role="37wK5m">
+                    <ref role="3cqZAo" node="7JAXn_9gCo4" resolve="member" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCzA" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gCzB" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1929,12 +2001,12 @@
         <ref role="3uigEE" to=":^" resolve="Dimension" />
       </node>
       <node concept="2OqwBi" id="7JAXn_9gCoa" role="33vP2m">
-        <node concept="Wc6QR" id="7JAXn_9gCob" role="2Oq$k0">
-          <property role="10XrrR" value="getDefaultToolkit" />
-          <property role="1CJj6V" value="Toolkit" />
+        <node concept="2YIFZM" id="4Y2rxVNZUYn" role="2Oq$k0">
+          <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+          <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
         </node>
         <node concept="liA8E" id="7JAXn_9gCoc" role="2OqNvi">
-          <ref role="37wK5l" to=":^" resolve="getScreenSize" />
+          <ref role="37wK5l" to="z60i:~Toolkit.getScreenSize():java.awt.Dimension" resolve="getScreenSize" />
         </node>
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gCod" role="1B3o_S" />
@@ -1963,13 +2035,15 @@
       <node concept="3uibUv" id="7JAXn_9gCon" role="1tU5fm">
         <ref role="3uigEE" to=":^" resolve="Dimension" />
       </node>
-      <node concept="31S9pk" id="7JAXn_9gCoo" role="33vP2m">
-        <property role="31Ss8R" value="Dimension" />
-        <node concept="37vLTw" id="7JAXn_9gCop" role="37wK5m">
-          <ref role="3cqZAo" node="7JAXn_9gCoe" resolve="designerWidth" />
-        </node>
-        <node concept="37vLTw" id="7JAXn_9gCoq" role="37wK5m">
-          <ref role="3cqZAo" node="7JAXn_9gCoi" resolve="designerHeight" />
+      <node concept="2ShNRf" id="4Y2rxVNZVga" role="33vP2m">
+        <node concept="1pGfFk" id="4Y2rxVNZVgb" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+          <node concept="37vLTw" id="7JAXn_9gCop" role="37wK5m">
+            <ref role="3cqZAo" node="7JAXn_9gCoe" resolve="designerWidth" />
+          </node>
+          <node concept="37vLTw" id="7JAXn_9gCoq" role="37wK5m">
+            <ref role="3cqZAo" node="7JAXn_9gCoi" resolve="designerHeight" />
+          </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gCor" role="1B3o_S" />
@@ -2073,10 +2147,12 @@
       <node concept="3uibUv" id="7JAXn_9gCp8" role="1tU5fm">
         <ref role="3uigEE" to=":^" resolve="ImageIcon" />
       </node>
-      <node concept="31S9pk" id="7JAXn_9gCp9" role="33vP2m">
-        <property role="31Ss8R" value="ImageIcon" />
-        <node concept="Xl_RD" id="7JAXn_9gCpa" role="37wK5m">
-          <property role="Xl_RC" value="jte.png" />
+      <node concept="2ShNRf" id="4Y2rxVNZVbz" role="33vP2m">
+        <node concept="1pGfFk" id="4Y2rxVNZVcy" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.lang.String)" resolve="ImageIcon" />
+          <node concept="Xl_RD" id="7JAXn_9gCpa" role="37wK5m">
+            <property role="Xl_RC" value="jte.png" />
+          </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gCpb" role="1B3o_S" />
@@ -2164,10 +2240,12 @@
       <node concept="3uibUv" id="7JAXn_9gCpF" role="1tU5fm">
         <ref role="3uigEE" to=":^" resolve="File" />
       </node>
-      <node concept="31S9pk" id="7JAXn_9gCpG" role="33vP2m">
-        <property role="31Ss8R" value="File" />
-        <node concept="Xl_RD" id="7JAXn_9gCpH" role="37wK5m">
-          <property role="Xl_RC" value="" />
+      <node concept="2ShNRf" id="4Y2rxVNZVoe" role="33vP2m">
+        <node concept="1pGfFk" id="4Y2rxVNZVoE" role="2ShVmc">
+          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+          <node concept="Xl_RD" id="7JAXn_9gCpH" role="37wK5m">
+            <property role="Xl_RC" value="" />
+          </node>
         </node>
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gCpI" role="1B3o_S" />
@@ -2675,8 +2753,10 @@
                 <node concept="3uibUv" id="7JAXn_9gC$7" role="1tU5fm">
                   <ref role="3uigEE" to=":^" resolve="JFileChooser" />
                 </node>
-                <node concept="31S9pk" id="7JAXn_9gC$8" role="33vP2m">
-                  <property role="31Ss8R" value="JFileChooser" />
+                <node concept="2ShNRf" id="4Y2rxVNZVda" role="33vP2m">
+                  <node concept="1pGfFk" id="4Y2rxVNZVdb" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~JFileChooser.&lt;init&gt;()" resolve="JFileChooser" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2728,8 +2808,9 @@
                 <node concept="37vLTw" id="7JAXn_9gC$n" role="3uHU7B">
                   <ref role="3cqZAo" node="7JAXn_9gC$g" resolve="returnVal" />
                 </node>
-                <node concept="3yEOSi" id="7JAXn_9gC$o" role="3uHU7w">
-                  <property role="1CJj6V" value="JFileChooser.APPROVE_OPTION" />
+                <node concept="10M0yZ" id="4Y2rxVNZVm6" role="3uHU7w">
+                  <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+                  <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
                 </node>
               </node>
               <node concept="3clFbS" id="7JAXn_9gC$q" role="3clFbx">
@@ -4369,12 +4450,12 @@
           </node>
           <node concept="3clFbS" id="7JAXn_9gCCs" role="SfCbr">
             <node concept="3clFbF" id="7JAXn_9gCCt" role="3cqZAp">
-              <node concept="Wc6QR" id="7JAXn_9gCCu" role="3clFbG">
-                <property role="10XrrR" value="setLookAndFeel" />
-                <property role="1CJj6V" value="UIManager" />
-                <node concept="Wc6QR" id="7JAXn_9gCCv" role="37wK5m">
-                  <property role="10XrrR" value="getSystemLookAndFeelClassName" />
-                  <property role="1CJj6V" value="UIManager" />
+              <node concept="2YIFZM" id="4Y2rxVNZVdM" role="3clFbG">
+                <ref role="1Pybhc" to="dxuu:~UIManager" resolve="UIManager" />
+                <ref role="37wK5l" to="dxuu:~UIManager.setLookAndFeel(java.lang.String):void" resolve="setLookAndFeel" />
+                <node concept="2YIFZM" id="4Y2rxVNZVpk" role="37wK5m">
+                  <ref role="1Pybhc" to="dxuu:~UIManager" resolve="UIManager" />
+                  <ref role="37wK5l" to="dxuu:~UIManager.getSystemLookAndFeelClassName():java.lang.String" resolve="getSystemLookAndFeelClassName" />
                 </node>
               </node>
             </node>
@@ -4486,14 +4567,16 @@
                 <node concept="37vLTw" id="7JAXn_9gCDe" role="37vLTJ">
                   <ref role="3cqZAo" node="7JAXn_9gCpD" resolve="MainPath" />
                 </node>
-                <node concept="31S9pk" id="7JAXn_9gCDf" role="37vLTx">
-                  <property role="31Ss8R" value="File" />
-                  <node concept="2OqwBi" id="7JAXn_9gCDg" role="37wK5m">
-                    <node concept="1rXfSq" id="7JAXn_9gCDh" role="2Oq$k0">
-                      <ref role="37wK5l" node="7JAXn_9gCE8" resolve="getDocumentBase" />
-                    </node>
-                    <node concept="liA8E" id="7JAXn_9gCDi" role="2OqNvi">
-                      <ref role="37wK5l" to=":^" resolve="getPath" />
+                <node concept="2ShNRf" id="4Y2rxVNZVjM" role="37vLTx">
+                  <node concept="1pGfFk" id="4Y2rxVNZVjY" role="2ShVmc">
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.net.URI)" resolve="File" />
+                    <node concept="2OqwBi" id="7JAXn_9gCDg" role="37wK5m">
+                      <node concept="1rXfSq" id="7JAXn_9gCDh" role="2Oq$k0">
+                        <ref role="37wK5l" node="7JAXn_9gCE8" resolve="getDocumentBase" />
+                      </node>
+                      <node concept="liA8E" id="7JAXn_9gCDi" role="2OqNvi">
+                        <ref role="37wK5l" to=":^" resolve="getPath" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -4596,10 +4679,12 @@
                 <node concept="37vLTw" id="7JAXn_9gCDN" role="37vLTJ">
                   <ref role="3cqZAo" node="7JAXn_9gCp7" resolve="icon_res" />
                 </node>
-                <node concept="31S9pk" id="7JAXn_9gCDO" role="37vLTx">
-                  <property role="31Ss8R" value="ImageIcon" />
-                  <node concept="37vLTw" id="7JAXn_9gCDP" role="37wK5m">
-                    <ref role="3cqZAo" node="7JAXn_9gCDj" resolve="path_to_icon" />
+                <node concept="2ShNRf" id="4Y2rxVNZVgW" role="37vLTx">
+                  <node concept="1pGfFk" id="4Y2rxVNZVhr" role="2ShVmc">
+                    <ref role="37wK5l" to="dxuu:~ImageIcon.&lt;init&gt;(java.lang.String)" resolve="ImageIcon" />
+                    <node concept="37vLTw" id="7JAXn_9gCDP" role="37wK5m">
+                      <ref role="3cqZAo" node="7JAXn_9gCDj" resolve="path_to_icon" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -4839,11 +4924,13 @@
                 <node concept="37vLTw" id="7JAXn_9gCEX" role="37vLTJ">
                   <ref role="3cqZAo" node="7JAXn_9gCEb" resolve="rc" />
                 </node>
-                <node concept="31S9pk" id="7JAXn_9gCEY" role="37vLTx">
-                  <property role="31Ss8R" value="URL" />
-                  <node concept="10Nm6u" id="7JAXn_9gCEZ" role="37wK5m" />
-                  <node concept="37vLTw" id="7JAXn_9gCF0" role="37wK5m">
-                    <ref role="3cqZAo" node="7JAXn_9gCEt" resolve="tmp" />
+                <node concept="2ShNRf" id="4Y2rxVNZVsX" role="37vLTx">
+                  <node concept="1pGfFk" id="4Y2rxVNZVsY" role="2ShVmc">
+                    <ref role="37wK5l" to="zf81:~URL.&lt;init&gt;(java.net.URL,java.lang.String)" resolve="URL" />
+                    <node concept="10Nm6u" id="7JAXn_9gCEZ" role="37wK5m" />
+                    <node concept="37vLTw" id="7JAXn_9gCF0" role="37wK5m">
+                      <ref role="3cqZAo" node="7JAXn_9gCEt" resolve="tmp" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6542,93 +6629,6 @@
         <ref role="3uigEE" to=":^" resolve="javax.swing.JMenuBar" />
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gCs5" role="1B3o_S" />
-    </node>
-    <node concept="1lrU7d" id="7JAXn_9gCMo" role="lGtFl">
-      <node concept="u1fJn" id="7JAXn_9gCMp" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="vistex" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMq" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.event.ActionListener" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMr" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.event.ActionEvent" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMs" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.EOFException" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMt" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.File" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMu" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.io.IOException" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMv" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.net.MalformedURLException" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMw" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.net.URL" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMx" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.GridLayout" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMy" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.Toolkit" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMz" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="java.awt.Dimension" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCM$" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.filechooser.FileFilter" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCM_" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JFileChooser" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMA" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JMenu" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMB" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JMenuItem" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMC" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.UIManager" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gCMD" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.ImageIcon" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="7JAXn_9gCeR">

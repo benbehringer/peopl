@@ -7,6 +7,8 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -40,6 +42,9 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -48,9 +53,6 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
-      </concept>
-      <concept id="3304084122476667220" name="jetbrains.mps.baseLanguage.structure.UnknownNew" flags="nn" index="31S9pk">
-        <property id="3304084122476721463" name="className" index="31Ss8R" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -88,6 +90,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -103,7 +106,6 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
-      <concept id="8473865358220097975" name="jetbrains.mps.baseLanguage.structure.UnknownNameRef" flags="nn" index="3yEOSi" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -154,7 +156,7 @@
       <property role="TrG5h" value="jMenuItem1" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="7JAXn_9gNy9" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="javax.swing.JMenuItem" />
+        <ref role="3uigEE" to="dxuu:~JMenuItem" resolve="JMenuItem" />
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gNya" role="1B3o_S" />
     </node>
@@ -174,24 +176,28 @@
               <ref role="3cqZAo" node="7JAXn_9gNy7" resolve="jMenuItem1" />
             </node>
             <node concept="liA8E" id="7JAXn_9gNzB" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="setAccelerator" />
-              <node concept="Wc6QR" id="7JAXn_9gNyh" role="37wK5m">
-                <property role="10XrrR" value="getKeyStroke" />
-                <property role="1CJj6V" value="javax.swing.KeyStroke" />
-                <node concept="3yEOSi" id="7JAXn_9gNyi" role="37wK5m">
-                  <property role="1CJj6V" value="java.awt.event.KeyEvent.VK_H" />
+              <ref role="37wK5l" to="dxuu:~JMenuItem.setAccelerator(javax.swing.KeyStroke):void" resolve="setAccelerator" />
+              <node concept="2YIFZM" id="4Y2rxVNXZNn" role="37wK5m">
+                <ref role="1Pybhc" to="dxuu:~KeyStroke" resolve="KeyStroke" />
+                <ref role="37wK5l" to="dxuu:~KeyStroke.getKeyStroke(int,int):javax.swing.KeyStroke" resolve="getKeyStroke" />
+                <node concept="10M0yZ" id="4Y2rxVNXZMj" role="37wK5m">
+                  <ref role="1PxDUh" to="hyam:~KeyEvent" resolve="KeyEvent" />
+                  <ref role="3cqZAo" to="hyam:~KeyEvent.VK_H" resolve="VK_H" />
                 </node>
                 <node concept="pVOtf" id="7JAXn_9gNyj" role="37wK5m">
                   <node concept="pVOtf" id="7JAXn_9gNyk" role="3uHU7B">
-                    <node concept="3yEOSi" id="7JAXn_9gNyl" role="3uHU7B">
-                      <property role="1CJj6V" value="java.awt.event.InputEvent.ALT_MASK" />
+                    <node concept="10M0yZ" id="4Y2rxVNXZR7" role="3uHU7B">
+                      <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
+                      <ref role="3cqZAo" to="hyam:~InputEvent.ALT_MASK" resolve="ALT_MASK" />
                     </node>
-                    <node concept="3yEOSi" id="7JAXn_9gNym" role="3uHU7w">
-                      <property role="1CJj6V" value="java.awt.event.InputEvent.SHIFT_MASK" />
+                    <node concept="10M0yZ" id="4Y2rxVNXZLV" role="3uHU7w">
+                      <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
+                      <ref role="3cqZAo" to="hyam:~InputEvent.SHIFT_MASK" resolve="SHIFT_MASK" />
                     </node>
                   </node>
-                  <node concept="3yEOSi" id="7JAXn_9gNyn" role="3uHU7w">
-                    <property role="1CJj6V" value="java.awt.event.InputEvent.CTRL_MASK" />
+                  <node concept="10M0yZ" id="4Y2rxVNXZU4" role="3uHU7w">
+                    <ref role="1PxDUh" to="hyam:~InputEvent" resolve="InputEvent" />
+                    <ref role="3cqZAo" to="hyam:~InputEvent.CTRL_MASK" resolve="CTRL_MASK" />
                   </node>
                 </node>
               </node>
@@ -204,7 +210,7 @@
               <ref role="3cqZAo" node="7JAXn_9gNy7" resolve="jMenuItem1" />
             </node>
             <node concept="liA8E" id="7JAXn_9gNzQ" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="setText" />
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setText(java.lang.String):void" resolve="setText" />
               <node concept="Xl_RD" id="7JAXn_9gNyq" role="37wK5m">
                 <property role="Xl_RC" value="HTML" />
               </node>
@@ -217,13 +223,14 @@
               <ref role="3cqZAo" node="7JAXn_9gNy7" resolve="jMenuItem1" />
             </node>
             <node concept="liA8E" id="7JAXn_9gNzV" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="addActionListener" />
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener):void" resolve="addActionListener" />
               <node concept="2ShNRf" id="7JAXn_9gNyt" role="37wK5m">
                 <node concept="YeOm9" id="7JAXn_9gNyu" role="2ShVmc">
                   <node concept="1Y3b0j" id="7JAXn_9gNyv" role="YeSDq">
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
-                    <ref role="1Y3XeK" to=":^" resolve="java.awt.event.ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
                     <node concept="3clFb_" id="7JAXn_9gNyw" role="jymVt">
                       <property role="TrG5h" value="actionPerformed" />
                       <property role="DiZV1" value="false" />
@@ -232,7 +239,7 @@
                         <property role="TrG5h" value="evt" />
                         <property role="3TUv4t" value="false" />
                         <node concept="3uibUv" id="7JAXn_9gNyy" role="1tU5fm">
-                          <ref role="3uigEE" to=":^" resolve="java.awt.event.ActionEvent" />
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
                         </node>
                       </node>
                       <node concept="3clFbS" id="7JAXn_9gNyz" role="3clF47">
@@ -275,7 +282,7 @@
         <property role="TrG5h" value="evt" />
         <property role="3TUv4t" value="false" />
         <node concept="3uibUv" id="7JAXn_9gNyK" role="1tU5fm">
-          <ref role="3uigEE" to=":^" resolve="java.awt.event.ActionEvent" />
+          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
         </node>
       </node>
       <node concept="3clFbS" id="7JAXn_9gNyL" role="3clF47">
@@ -342,8 +349,10 @@
             <node concept="37vLTw" id="7JAXn_9gNza" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gNy7" resolve="jMenuItem1" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gNzb" role="37vLTx">
-              <property role="31Ss8R" value="javax.swing.JMenuItem" />
+            <node concept="2ShNRf" id="4Y2rxVNXZXb" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNXZXc" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JMenuItem.&lt;init&gt;()" resolve="JMenuItem" />
+              </node>
             </node>
           </node>
         </node>

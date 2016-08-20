@@ -7,6 +7,12 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
+    <import index="1njx" ref="662a655c-4034-4b83-a62d-a167cda5c121/java:com.mxgraph.view(jgraphx/)" />
+    <import index="p8va" ref="662a655c-4034-4b83-a62d-a167cda5c121/java:com.mxgraph.swing(jgraphx/)" />
+    <import index="5u6a" ref="662a655c-4034-4b83-a62d-a167cda5c121/java:com.mxgraph.layout(jgraphx/)" />
+    <import index="99ht" ref="662a655c-4034-4b83-a62d-a167cda5c121/java:com.mxgraph.model(jgraphx/)" implicit="true" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -16,6 +22,7 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="28358707492436943" name="jetbrains.mps.baseLanguage.structure.JavaImport" flags="ng" index="u1fJn">
         <property id="28358707492436944" name="onDemand" index="u1fJ8" />
         <property id="5574384225470059890" name="static" index="1XWMmp" />
@@ -52,9 +59,6 @@
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
-      </concept>
-      <concept id="3304084122476667220" name="jetbrains.mps.baseLanguage.structure.UnknownNew" flags="nn" index="31S9pk">
-        <property id="3304084122476721463" name="className" index="31Ss8R" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
@@ -155,8 +159,8 @@
     <property role="1sVAO0" value="false" />
     <property role="1EXbeo" value="false" />
     <node concept="3Tm1VV" id="7JAXn_9gBZb" role="1B3o_S" />
-    <node concept="3uibUv" id="7JAXn_9gBZc" role="1zkMxy">
-      <ref role="3uigEE" to=":^" resolve="JPanel" />
+    <node concept="3uibUv" id="4Y2rxVNRpAq" role="1zkMxy">
+      <ref role="3uigEE" to="dxuu:~JPanel" resolve="JPanel" />
     </node>
     <node concept="Wx3nA" id="7JAXn_9gBZd" role="jymVt">
       <property role="TrG5h" value="serialVersionUID" />
@@ -174,8 +178,8 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="graph" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="7JAXn_9gBZk" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="mxGraph" />
+      <node concept="3uibUv" id="4Y2rxVNRqfT" role="1tU5fm">
+        <ref role="3uigEE" to="1njx:~mxGraph" resolve="mxGraph" />
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gBZl" role="1B3o_S" />
     </node>
@@ -184,8 +188,8 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="graphComponent" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="7JAXn_9gBZo" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="mxGraphComponent" />
+      <node concept="3uibUv" id="4Y2rxVNRt81" role="1tU5fm">
+        <ref role="3uigEE" to="p8va:~mxGraphComponent" resolve="mxGraphComponent" />
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gBZp" role="1B3o_S" />
     </node>
@@ -194,8 +198,8 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="layout" />
       <property role="3TUv4t" value="false" />
-      <node concept="3uibUv" id="7JAXn_9gBZs" role="1tU5fm">
-        <ref role="3uigEE" to=":^" resolve="mxFastOrganicLayout" />
+      <node concept="3uibUv" id="4Y2rxVNRtAm" role="1tU5fm">
+        <ref role="3uigEE" to="5u6a:~mxFastOrganicLayout" resolve="mxFastOrganicLayout" />
       </node>
       <node concept="3Tm6S6" id="7JAXn_9gBZt" role="1B3o_S" />
     </node>
@@ -219,8 +223,10 @@
             <node concept="37vLTw" id="7JAXn_9gBZB" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gBZC" role="37vLTx">
-              <property role="31Ss8R" value="mxGraph" />
+            <node concept="2ShNRf" id="4Y2rxVNRp4I" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNRp4J" role="2ShVmc">
+                <ref role="37wK5l" to="1njx:~mxGraph.&lt;init&gt;()" resolve="mxGraph" />
+              </node>
             </node>
           </node>
         </node>
@@ -236,7 +242,7 @@
                 <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
               </node>
               <node concept="liA8E" id="7JAXn_9gD65" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="getDefaultParent" />
+                <ref role="37wK5l" to="1njx:~mxGraph.getDefaultParent():java.lang.Object" resolve="getDefaultParent" />
               </node>
             </node>
           </node>
@@ -248,11 +254,11 @@
                 <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
               </node>
               <node concept="liA8E" id="7JAXn_9gD6a" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="getModel" />
+                <ref role="37wK5l" to="1njx:~mxGraph.getModel():com.mxgraph.model.mxIGraphModel" resolve="getModel" />
               </node>
             </node>
             <node concept="liA8E" id="7JAXn_9gBZK" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="beginUpdate" />
+              <ref role="37wK5l" to="99ht:~mxIGraphModel.beginUpdate():void" resolve="beginUpdate" />
             </node>
           </node>
         </node>
@@ -262,7 +268,7 @@
               <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
             </node>
             <node concept="liA8E" id="7JAXn_9gD6f" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="insertVertex" />
+              <ref role="37wK5l" to="1njx:~mxGraph.insertVertex(java.lang.Object,java.lang.String,java.lang.Object,double,double,double,double):java.lang.Object" resolve="insertVertex" />
               <node concept="37vLTw" id="7JAXn_9gBZN" role="37wK5m">
                 <ref role="3cqZAo" node="7JAXn_9gBZD" resolve="parent" />
               </node>
@@ -292,11 +298,11 @@
                 <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
               </node>
               <node concept="liA8E" id="7JAXn_9gD6k" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="getModel" />
+                <ref role="37wK5l" to="1njx:~mxGraph.getModel():com.mxgraph.model.mxIGraphModel" resolve="getModel" />
               </node>
             </node>
             <node concept="liA8E" id="7JAXn_9gBZX" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="endUpdate" />
+              <ref role="37wK5l" to="99ht:~mxIGraphModel.endUpdate():void" resolve="endUpdate" />
             </node>
           </node>
         </node>
@@ -305,10 +311,12 @@
             <node concept="37vLTw" id="7JAXn_9gC00" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gBZq" resolve="layout" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC01" role="37vLTx">
-              <property role="31Ss8R" value="mxFastOrganicLayout" />
-              <node concept="37vLTw" id="7JAXn_9gC02" role="37wK5m">
-                <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
+            <node concept="2ShNRf" id="4Y2rxVNRp4T" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNRp4U" role="2ShVmc">
+                <ref role="37wK5l" to="5u6a:~mxFastOrganicLayout.&lt;init&gt;(com.mxgraph.view.mxGraph)" resolve="mxFastOrganicLayout" />
+                <node concept="37vLTw" id="7JAXn_9gC02" role="37wK5m">
+                  <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
+                </node>
               </node>
             </node>
           </node>
@@ -318,10 +326,12 @@
             <node concept="37vLTw" id="7JAXn_9gC05" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gC06" role="37vLTx">
-              <property role="31Ss8R" value="mxGraphComponent" />
-              <node concept="37vLTw" id="7JAXn_9gC07" role="37wK5m">
-                <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
+            <node concept="2ShNRf" id="4Y2rxVNRp4O" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNRp4P" role="2ShVmc">
+                <ref role="37wK5l" to="p8va:~mxGraphComponent.&lt;init&gt;(com.mxgraph.view.mxGraph)" resolve="mxGraphComponent" />
+                <node concept="37vLTw" id="7JAXn_9gC07" role="37wK5m">
+                  <ref role="3cqZAo" node="7JAXn_9gBZi" resolve="graph" />
+                </node>
               </node>
             </node>
           </node>
@@ -330,7 +340,7 @@
           <node concept="2OqwBi" id="7JAXn_9gC09" role="3clFbG">
             <node concept="Xjq3P" id="7JAXn_9gC0a" role="2Oq$k0" />
             <node concept="liA8E" id="7JAXn_9gC0b" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="add" />
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component):java.awt.Component" resolve="add" />
               <node concept="37vLTw" id="7JAXn_9gC0c" role="37wK5m">
                 <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
               </node>
@@ -348,11 +358,11 @@
                   <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
                 </node>
                 <node concept="liA8E" id="7JAXn_9gD6p" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getGraph" />
+                  <ref role="37wK5l" to="p8va:~mxGraphComponent.getGraph():com.mxgraph.view.mxGraph" resolve="getGraph" />
                 </node>
               </node>
               <node concept="liA8E" id="7JAXn_9gC0i" role="2OqNvi">
-                <ref role="37wK5l" to=":^" resolve="getSelectionCell" />
+                <ref role="37wK5l" to="1njx:~mxGraph.getSelectionCell():java.lang.Object" resolve="getSelectionCell" />
               </node>
             </node>
           </node>
@@ -373,15 +383,15 @@
                       <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
                     </node>
                     <node concept="liA8E" id="7JAXn_9gD6u" role="2OqNvi">
-                      <ref role="37wK5l" to=":^" resolve="getGraph" />
+                      <ref role="37wK5l" to="p8va:~mxGraphComponent.getGraph():com.mxgraph.view.mxGraph" resolve="getGraph" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7JAXn_9gC0s" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getModel" />
+                    <ref role="37wK5l" to="1njx:~mxGraph.getModel():com.mxgraph.model.mxIGraphModel" resolve="getModel" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7JAXn_9gC0t" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getChildCount" />
+                  <ref role="37wK5l" to="99ht:~mxIGraphModel.getChildCount(java.lang.Object):int" resolve="getChildCount" />
                   <node concept="37vLTw" id="7JAXn_9gC0u" role="37wK5m">
                     <ref role="3cqZAo" node="7JAXn_9gBZu" resolve="cell" />
                   </node>
@@ -404,11 +414,11 @@
                       <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
                     </node>
                     <node concept="liA8E" id="7JAXn_9gD6z" role="2OqNvi">
-                      <ref role="37wK5l" to=":^" resolve="getGraph" />
+                      <ref role="37wK5l" to="p8va:~mxGraphComponent.getGraph():com.mxgraph.view.mxGraph" resolve="getGraph" />
                     </node>
                   </node>
                   <node concept="liA8E" id="7JAXn_9gC0B" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getDefaultParent" />
+                    <ref role="37wK5l" to="1njx:~mxGraph.getDefaultParent():java.lang.Object" resolve="getDefaultParent" />
                   </node>
                 </node>
               </node>
@@ -421,7 +431,7 @@
               <ref role="3cqZAo" node="7JAXn_9gBZq" resolve="layout" />
             </node>
             <node concept="liA8E" id="7JAXn_9gD6C" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="execute" />
+              <ref role="37wK5l" to="5u6a:~mxFastOrganicLayout.execute(java.lang.Object):void" resolve="execute" />
               <node concept="37vLTw" id="7JAXn_9gC0E" role="37wK5m">
                 <ref role="3cqZAo" node="7JAXn_9gBZu" resolve="cell" />
               </node>
@@ -434,7 +444,7 @@
               <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
             </node>
             <node concept="liA8E" id="7JAXn_9gD6H" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="setEnabled" />
+              <ref role="37wK5l" to="dxuu:~JComponent.setEnabled(boolean):void" resolve="setEnabled" />
               <node concept="1rXfSq" id="7JAXn_9gC0H" role="37wK5m">
                 <ref role="37wK5l" node="7JAXn_9gC0P" resolve="setEditable" />
               </node>
@@ -444,6 +454,8 @@
       </node>
       <node concept="3Tm1VV" id="7JAXn_9gC0I" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="4Y2rxVNXW0O" role="jymVt" />
+    <node concept="2tJIrI" id="4Y2rxVNXW61" role="jymVt" />
     <node concept="3clFb_" id="7JAXn_9gC0J" role="jymVt">
       <property role="TrG5h" value="getGraphComponent" />
       <property role="DiZV1" value="false" />
@@ -457,7 +469,7 @@
       </node>
       <node concept="3Tm1VV" id="7JAXn_9gC0N" role="1B3o_S" />
       <node concept="3uibUv" id="7JAXn_9gC0O" role="3clF45">
-        <ref role="3uigEE" to=":^" resolve="mxGraphComponent" />
+        <ref role="3uigEE" to="p8va:~mxGraphComponent" resolve="mxGraphComponent" />
       </node>
     </node>
     <node concept="3clFb_" id="7JAXn_9gC0P" role="jymVt">
@@ -487,7 +499,7 @@
       </node>
       <node concept="3Tm1VV" id="7JAXn_9gC0Z" role="1B3o_S" />
       <node concept="3uibUv" id="7JAXn_9gC10" role="3clF45">
-        <ref role="3uigEE" to=":^" resolve="mxGraph" />
+        <ref role="3uigEE" to="1njx:~mxGraph" resolve="mxGraph" />
       </node>
     </node>
     <node concept="3clFb_" id="7JAXn_9gC11" role="jymVt">
@@ -503,7 +515,7 @@
       </node>
       <node concept="3Tm1VV" id="7JAXn_9gC15" role="1B3o_S" />
       <node concept="3uibUv" id="7JAXn_9gC16" role="3clF45">
-        <ref role="3uigEE" to=":^" resolve="mxFastOrganicLayout" />
+        <ref role="3uigEE" to="5u6a:~mxFastOrganicLayout" resolve="mxFastOrganicLayout" />
       </node>
     </node>
     <node concept="3clFb_" id="7JAXn_9gC17" role="jymVt">
@@ -533,7 +545,7 @@
               <ref role="3cqZAo" node="7JAXn_9gBZm" resolve="graphComponent" />
             </node>
             <node concept="liA8E" id="7JAXn_9gD6M" role="2OqNvi">
-              <ref role="37wK5l" to=":^" resolve="setBounds" />
+              <ref role="37wK5l" to="z60i:~Component.setBounds(int,int,int,int):void" resolve="setBounds" />
               <node concept="3cmrfG" id="7JAXn_9gC1h" role="37wK5m">
                 <property role="3cmrfH" value="0" />
               </node>
@@ -544,22 +556,22 @@
                 <node concept="2OqwBi" id="7JAXn_9gC1k" role="2Oq$k0">
                   <node concept="Xjq3P" id="7JAXn_9gC1l" role="2Oq$k0" />
                   <node concept="liA8E" id="7JAXn_9gC1m" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getParent" />
+                    <ref role="37wK5l" to="z60i:~Component.getParent():java.awt.Container" resolve="getParent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7JAXn_9gC1n" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getWidth" />
+                  <ref role="37wK5l" to="z60i:~Component.getWidth():int" resolve="getWidth" />
                 </node>
               </node>
               <node concept="2OqwBi" id="7JAXn_9gC1o" role="37wK5m">
                 <node concept="2OqwBi" id="7JAXn_9gC1p" role="2Oq$k0">
                   <node concept="Xjq3P" id="7JAXn_9gC1q" role="2Oq$k0" />
                   <node concept="liA8E" id="7JAXn_9gC1r" role="2OqNvi">
-                    <ref role="37wK5l" to=":^" resolve="getParent" />
+                    <ref role="37wK5l" to="z60i:~Component.getParent():java.awt.Container" resolve="getParent" />
                   </node>
                 </node>
                 <node concept="liA8E" id="7JAXn_9gC1s" role="2OqNvi">
-                  <ref role="37wK5l" to=":^" resolve="getHeight" />
+                  <ref role="37wK5l" to="z60i:~Component.getHeight():int" resolve="getHeight" />
                 </node>
               </node>
             </node>
@@ -568,33 +580,6 @@
       </node>
       <node concept="3Tm1VV" id="7JAXn_9gC1t" role="1B3o_S" />
       <node concept="3cqZAl" id="7JAXn_9gC1u" role="3clF45" />
-    </node>
-    <node concept="1lrU7d" id="7JAXn_9gC1v" role="lGtFl">
-      <node concept="u1fJn" id="7JAXn_9gC1w" role="u1e2Z">
-        <property role="u1fJ8" value="true" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="graphanzeige" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gC1x" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="javax.swing.JPanel" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gC1y" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.mxgraph.layout.mxFastOrganicLayout" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gC1z" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.mxgraph.swing.mxGraphComponent" />
-      </node>
-      <node concept="u1fJn" id="7JAXn_9gC1$" role="u1e2Z">
-        <property role="u1fJ8" value="false" />
-        <property role="1XWMmp" value="false" />
-        <property role="1CJj6V" value="com.mxgraph.view.mxGraph" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="7JAXn_9gBFM">
@@ -666,8 +651,10 @@
             <node concept="3uibUv" id="7JAXn_9gBGd" role="1tU5fm">
               <ref role="3uigEE" to=":^" resolve="JPanel" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gBGe" role="33vP2m">
-              <property role="31Ss8R" value="JPanel" />
+            <node concept="2ShNRf" id="4Y2rxVNRwdf" role="33vP2m">
+              <node concept="1pGfFk" id="4Y2rxVNRwdg" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
+              </node>
             </node>
           </node>
         </node>
@@ -678,19 +665,21 @@
             </node>
             <node concept="liA8E" id="7JAXn_9gD6R" role="2OqNvi">
               <ref role="37wK5l" to=":^" resolve="setLayout" />
-              <node concept="31S9pk" id="7JAXn_9gBGh" role="37wK5m">
-                <property role="31Ss8R" value="GridLayout" />
-                <node concept="3cmrfG" id="7JAXn_9gBGi" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gBGj" role="37wK5m">
-                  <property role="3cmrfH" value="1" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gBGk" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
-                </node>
-                <node concept="3cmrfG" id="7JAXn_9gBGl" role="37wK5m">
-                  <property role="3cmrfH" value="0" />
+              <node concept="2ShNRf" id="4Y2rxVNRwio" role="37wK5m">
+                <node concept="1pGfFk" id="4Y2rxVNRwip" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~GridLayout.&lt;init&gt;(int,int,int,int)" resolve="GridLayout" />
+                  <node concept="3cmrfG" id="7JAXn_9gBGi" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gBGj" role="37wK5m">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gBGk" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="3cmrfG" id="7JAXn_9gBGl" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -766,10 +755,12 @@
             <node concept="37vLTw" id="7JAXn_9gBGI" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gBFU" resolve="GraphMenu" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gBGJ" role="37vLTx">
-              <property role="31Ss8R" value="JMenu" />
-              <node concept="Xl_RD" id="7JAXn_9gBGK" role="37wK5m">
-                <property role="Xl_RC" value="Graph" />
+            <node concept="2ShNRf" id="4Y2rxVNRwiw" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNRwiF" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JMenu.&lt;init&gt;(java.lang.String)" resolve="JMenu" />
+                <node concept="Xl_RD" id="7JAXn_9gBGK" role="37wK5m">
+                  <property role="Xl_RC" value="Graph" />
+                </node>
               </node>
             </node>
           </node>
@@ -779,10 +770,12 @@
             <node concept="37vLTw" id="7JAXn_9gBGN" role="37vLTJ">
               <ref role="3cqZAo" node="7JAXn_9gBG2" resolve="jMenuItem_newNode" />
             </node>
-            <node concept="31S9pk" id="7JAXn_9gBGO" role="37vLTx">
-              <property role="31Ss8R" value="JMenuItem" />
-              <node concept="Xl_RD" id="7JAXn_9gBGP" role="37wK5m">
-                <property role="Xl_RC" value="New Node" />
+            <node concept="2ShNRf" id="4Y2rxVNRwdj" role="37vLTx">
+              <node concept="1pGfFk" id="4Y2rxVNRwe0" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JMenuItem.&lt;init&gt;(java.lang.String)" resolve="JMenuItem" />
+                <node concept="Xl_RD" id="7JAXn_9gBGP" role="37wK5m">
+                  <property role="Xl_RC" value="New Node" />
+                </node>
               </node>
             </node>
           </node>
@@ -800,6 +793,7 @@
                     <property role="1sVAO0" value="false" />
                     <property role="1EXbeo" value="false" />
                     <ref role="1Y3XeK" to=":^" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3clFb_" id="7JAXn_9gBGV" role="jymVt">
                       <property role="TrG5h" value="actionPerformed" />
                       <property role="DiZV1" value="false" />
@@ -824,11 +818,11 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7JAXn_9gBH3" role="2OqNvi">
-                                <ref role="37wK5l" to=":^" resolve="getModel" />
+                                <ref role="37wK5l" to="1njx:~mxGraph.getModel():com.mxgraph.model.mxIGraphModel" resolve="getModel" />
                               </node>
                             </node>
                             <node concept="liA8E" id="7JAXn_9gBH4" role="2OqNvi">
-                              <ref role="37wK5l" to=":^" resolve="beginUpdate" />
+                              <ref role="37wK5l" to="99ht:~mxIGraphModel.beginUpdate():void" resolve="beginUpdate" />
                             </node>
                           </node>
                         </node>
@@ -843,7 +837,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="7JAXn_9gBH8" role="2OqNvi">
-                              <ref role="37wK5l" to=":^" resolve="insertVertex" />
+                              <ref role="37wK5l" to="1njx:~mxGraph.insertVertex(java.lang.Object,java.lang.String,java.lang.Object,double,double,double,double):java.lang.Object" resolve="insertVertex" />
                               <node concept="2OqwBi" id="7JAXn_9gBH9" role="37wK5m">
                                 <node concept="2OqwBi" id="7JAXn_9gD7s" role="2Oq$k0">
                                   <node concept="37vLTw" id="7JAXn_9gD7r" role="2Oq$k0">
@@ -854,7 +848,7 @@
                                   </node>
                                 </node>
                                 <node concept="liA8E" id="7JAXn_9gBHb" role="2OqNvi">
-                                  <ref role="37wK5l" to=":^" resolve="getDefaultParent" />
+                                  <ref role="37wK5l" to="1njx:~mxGraph.getDefaultParent():java.lang.Object" resolve="getDefaultParent" />
                                 </node>
                               </node>
                               <node concept="10Nm6u" id="7JAXn_9gBHc" role="37wK5m" />
@@ -888,11 +882,11 @@
                                 </node>
                               </node>
                               <node concept="liA8E" id="7JAXn_9gBHm" role="2OqNvi">
-                                <ref role="37wK5l" to=":^" resolve="getModel" />
+                                <ref role="37wK5l" to="1njx:~mxGraph.getModel():com.mxgraph.model.mxIGraphModel" resolve="getModel" />
                               </node>
                             </node>
                             <node concept="liA8E" id="7JAXn_9gBHn" role="2OqNvi">
-                              <ref role="37wK5l" to=":^" resolve="endUpdate" />
+                              <ref role="37wK5l" to="99ht:~mxIGraphModel.endUpdate():void" resolve="endUpdate" />
                             </node>
                           </node>
                         </node>
