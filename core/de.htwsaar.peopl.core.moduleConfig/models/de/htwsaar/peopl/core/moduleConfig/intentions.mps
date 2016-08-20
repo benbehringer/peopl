@@ -10,7 +10,6 @@
   <imports>
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="v6m6" ref="r:9bd4aec2-d8a6-47c3-a8e6-30af6a2a5c90(de.htwsaar.peopl.core.peoplTest.plugin)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
@@ -907,7 +906,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjURX" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraktion" />
+                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraction" />
                   </node>
                 </node>
               </node>
@@ -935,7 +934,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjUCs" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraktion" />
+                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraction" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1GERpNhjUx5" role="37vLTJ">
