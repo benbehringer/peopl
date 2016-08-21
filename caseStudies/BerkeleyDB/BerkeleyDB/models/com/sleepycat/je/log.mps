@@ -15121,313 +15121,368 @@
                 <ref role="ojxm_" node="6$_V4iGD$XJ" resolve="FileReader" />
                 <ref role="ojxmB" node="3ME3zLf8G4P" resolve="fillReadBuffer" />
                 <node concept="3clFbS" id="6NxsX3v698q" role="9aQI4">
-                  <node concept="3clFbF" id="3ME3zLf8G51" role="3cqZAp">
-                    <node concept="1rXfSq" id="3ME3zLf8G52" role="3clFbG">
-                      <ref role="37wK5l" node="3ME3zLf8G2A" resolve="adjustReadBufferSize" />
-                      <node concept="37vLTw" id="3ME3zLf8G53" role="37wK5m">
-                        <ref role="3cqZAo" node="3ME3zLf8G4Q" resolve="bytesNeeded" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="3ME3zLf8Gck" role="3cqZAp">
-                    <node concept="3SKdUq" id="3ME3zLf8Gcj" role="3SKWNk">
-                      <property role="3SKdUp" value="Get a file handle to read in more log. " />
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="3ME3zLf8G54" role="3cqZAp">
-                    <node concept="37vLTI" id="3ME3zLf8G55" role="3clFbG">
-                      <node concept="37vLTw" id="3ME3zLf8G56" role="37vLTJ">
-                        <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
-                      </node>
-                      <node concept="2OqwBi" id="3ME3zLf96LR" role="37vLTx">
-                        <node concept="37vLTw" id="3ME3zLf96LQ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
+                  <node concept="SfApY" id="1vNpxl5EKjV" role="3cqZAp">
+                    <node concept="TDmWw" id="1vNpxl5EL4R" role="TEbGg">
+                      <node concept="3clFbS" id="1vNpxl5EL4S" role="TDEfX">
+                        <node concept="3clFbF" id="1vNpxl5EL4T" role="3cqZAp">
+                          <node concept="2OqwBi" id="1vNpxl5EL4U" role="3clFbG">
+                            <node concept="37vLTw" id="1vNpxl5EL4V" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1vNpxl5EL59" resolve="e" />
+                            </node>
+                            <node concept="liA8E" id="1vNpxl5EL4W" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="3ME3zLf96LS" role="2OqNvi">
-                          <ref role="37wK5l" node="3ME3zLf8CQz" resolve="getFileHandle" />
-                          <node concept="37vLTw" id="3ME3zLf8G58" role="37wK5m">
-                            <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
+                        <node concept="YS8fn" id="1vNpxl5EL4X" role="3cqZAp">
+                          <node concept="2ShNRf" id="1vNpxl5EL4Y" role="YScLw">
+                            <node concept="1pGfFk" id="1vNpxl5EL4Z" role="2ShVmc">
+                              <ref role="37wK5l" to="75si:3ME3zLf8V$Y" resolve="DatabaseException" />
+                              <node concept="3cpWs3" id="1vNpxl5EL50" role="37wK5m">
+                                <node concept="3cpWs3" id="1vNpxl5EL51" role="3uHU7B">
+                                  <node concept="3cpWs3" id="1vNpxl5EL52" role="3uHU7B">
+                                    <node concept="Xl_RD" id="1vNpxl5EL53" role="3uHU7B">
+                                      <property role="Xl_RC" value="Problem in fillReadBuffer, readBufferFileNum = " />
+                                    </node>
+                                    <node concept="37vLTw" id="1vNpxl5EL54" role="3uHU7w">
+                                      <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="1vNpxl5EL55" role="3uHU7w">
+                                    <property role="Xl_RC" value=": " />
+                                  </node>
+                                </node>
+                                <node concept="2OqwBi" id="1vNpxl5EL56" role="3uHU7w">
+                                  <node concept="37vLTw" id="1vNpxl5EL57" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1vNpxl5EL59" resolve="e" />
+                                  </node>
+                                  <node concept="liA8E" id="1vNpxl5EL58" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="3cpWs8" id="3ME3zLf8G5a" role="3cqZAp">
-                    <node concept="3cpWsn" id="3ME3zLf8G59" role="3cpWs9">
-                      <property role="3TUv4t" value="false" />
-                      <property role="TrG5h" value="fileOk" />
-                      <node concept="10P_77" id="3ME3zLf8G5b" role="1tU5fm" />
-                      <node concept="3clFbT" id="3ME3zLf8G5c" role="33vP2m">
-                        <property role="3clFbU" value="false" />
+                      <node concept="3cpWsn" id="1vNpxl5EL59" role="TDEfY">
+                        <property role="3TUv4t" value="false" />
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="1vNpxl5EL5a" role="1tU5fm">
+                          <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                        </node>
                       </node>
                     </node>
-                  </node>
-                  <node concept="3SKdUt" id="3ME3zLf8Gcm" role="3cqZAp">
-                    <node concept="3SKdUq" id="3ME3zLf8Gcl" role="3SKWNk">
-                      <property role="3SKdUp" value="Check to see if we've come to the end of the file.  If so, get" />
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="3ME3zLf8Gco" role="3cqZAp">
-                    <node concept="3SKdUq" id="3ME3zLf8Gcn" role="3SKWNk">
-                      <property role="3SKdUp" value="the next file." />
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="3ME3zLf8G5d" role="3cqZAp">
-                    <node concept="3eOVzh" id="3ME3zLf8G5e" role="3clFbw">
-                      <node concept="37vLTw" id="3ME3zLf8G5f" role="3uHU7B">
-                        <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                    <node concept="3clFbS" id="1vNpxl5EKjX" role="SfCbr">
+                      <node concept="3clFbF" id="3ME3zLf8G51" role="3cqZAp">
+                        <node concept="1rXfSq" id="3ME3zLf8G52" role="3clFbG">
+                          <ref role="37wK5l" node="3ME3zLf8G2A" resolve="adjustReadBufferSize" />
+                          <node concept="37vLTw" id="3ME3zLf8G53" role="37wK5m">
+                            <ref role="3cqZAo" node="3ME3zLf8G4Q" resolve="bytesNeeded" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="2OqwBi" id="3ME3zLf8G5g" role="3uHU7w">
-                        <node concept="2OqwBi" id="3ME3zLf96LW" role="2Oq$k0">
-                          <node concept="37vLTw" id="3ME3zLf96LV" role="2Oq$k0">
+                      <node concept="3SKdUt" id="3ME3zLf8Gck" role="3cqZAp">
+                        <node concept="3SKdUq" id="3ME3zLf8Gcj" role="3SKWNk">
+                          <property role="3SKdUp" value="Get a file handle to read in more log. " />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="3ME3zLf8G54" role="3cqZAp">
+                        <node concept="37vLTI" id="3ME3zLf8G55" role="3clFbG">
+                          <node concept="37vLTw" id="3ME3zLf8G56" role="37vLTJ">
                             <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
                           </node>
-                          <node concept="liA8E" id="3ME3zLf96LX" role="2OqNvi">
-                            <ref role="37wK5l" node="3ME3zLf8IKK" resolve="getFile" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="3ME3zLf8G5i" role="2OqNvi">
-                          <ref role="37wK5l" to="guwi:~RandomAccessFile.length():long" resolve="length" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="9aQIb" id="3ME3zLf8G5p" role="9aQIa">
-                      <node concept="3clFbS" id="3ME3zLf8G5q" role="9aQI4">
-                        <node concept="3SKdUt" id="3ME3zLf8Gcq" role="3cqZAp">
-                          <node concept="3SKdUq" id="3ME3zLf8Gcp" role="3SKWNk">
-                            <property role="3SKdUp" value="This file is done -- can we read in the next file? " />
-                          </node>
-                        </node>
-                        <node concept="3clFbJ" id="3ME3zLf8G5r" role="3cqZAp">
-                          <node concept="3fqX7Q" id="3ME3zLf8G5s" role="3clFbw">
-                            <node concept="37vLTw" id="3ME3zLf8G5t" role="3fr31v">
-                              <ref role="3cqZAo" node="3ME3zLf8FMY" resolve="singleFile" />
+                          <node concept="2OqwBi" id="3ME3zLf96LR" role="37vLTx">
+                            <node concept="37vLTw" id="3ME3zLf96LQ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
                             </node>
-                          </node>
-                          <node concept="3clFbS" id="3ME3zLf8G5v" role="3clFbx">
-                            <node concept="3cpWs8" id="3ME3zLf8G5x" role="3cqZAp">
-                              <node concept="3cpWsn" id="3ME3zLf8G5w" role="3cpWs9">
-                                <property role="3TUv4t" value="false" />
-                                <property role="TrG5h" value="nextFile" />
-                                <node concept="3uibUv" id="3ME3zLf8G5y" role="1tU5fm">
-                                  <ref role="3uigEE" to="wyt6:~Long" resolve="Long" />
-                                </node>
-                                <node concept="2OqwBi" id="3ME3zLf96M1" role="33vP2m">
-                                  <node concept="37vLTw" id="3ME3zLf96M0" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
-                                  </node>
-                                  <node concept="liA8E" id="3ME3zLf96M2" role="2OqNvi">
-                                    <ref role="37wK5l" node="3ME3zLf8CJe" resolve="getFollowingFileNum" />
-                                    <node concept="37vLTw" id="3ME3zLf8G5$" role="37wK5m">
-                                      <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
-                                    </node>
-                                    <node concept="37vLTw" id="3ME3zLf8G5_" role="37wK5m">
-                                      <ref role="3cqZAo" node="3ME3zLf8FN6" resolve="forward" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3clFbJ" id="3ME3zLf8G5A" role="3cqZAp">
-                              <node concept="3y3z36" id="3ME3zLf8G5B" role="3clFbw">
-                                <node concept="37vLTw" id="3ME3zLf8G5C" role="3uHU7B">
-                                  <ref role="3cqZAo" node="3ME3zLf8G5w" resolve="nextFile" />
-                                </node>
-                                <node concept="10Nm6u" id="3ME3zLf8G5D" role="3uHU7w" />
-                              </node>
-                              <node concept="3clFbS" id="3ME3zLf8G5F" role="3clFbx">
-                                <node concept="3clFbF" id="3ME3zLf8G5G" role="3cqZAp">
-                                  <node concept="37vLTI" id="3ME3zLf8G5H" role="3clFbG">
-                                    <node concept="37vLTw" id="3ME3zLf8G5I" role="37vLTJ">
-                                      <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
-                                    </node>
-                                    <node concept="2OqwBi" id="3ME3zLf96M6" role="37vLTx">
-                                      <node concept="37vLTw" id="3ME3zLf96M5" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="3ME3zLf8G5w" resolve="nextFile" />
-                                      </node>
-                                      <node concept="liA8E" id="3ME3zLf96M7" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~Long.longValue():long" resolve="longValue" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="2wexfA" id="6NxsX3v6cKS" role="3cqZAp">
-                                  <node concept="3clFbS" id="6NxsX3v6cKT" role="9aQI4">
-                                    <node concept="3clFbF" id="3ME3zLf8G5K" role="3cqZAp">
-                                      <node concept="2OqwBi" id="3ME3zLf96Mb" role="3clFbG">
-                                        <node concept="37vLTw" id="3ME3zLf96Ma" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
-                                        </node>
-                                        <node concept="liA8E" id="3ME3zLf96Mc" role="2OqNvi">
-                                          <ref role="37wK5l" node="3ME3zLf8IL6" resolve="release" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="1V74GB" id="6NxsX3v6cKU" role="lGtFl">
-                                    <property role="32Xqk$" value="chosenModule" />
-                                    <property role="TrG5h" value="Fragment_7845679366789450810" />
-                                    <ref role="1V74Hf" to="oc6c:6NxsX3v6cKW" resolve="VPToFragment_7845679366789450812" />
-                                    <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
-                                    <ref role="3aRQVk" to="oc6c:6NxsX3v6fbq" resolve="ModuleToFragment_7845679366789460698" />
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="3ME3zLf8G5M" role="3cqZAp">
-                                  <node concept="37vLTI" id="3ME3zLf8G5N" role="3clFbG">
-                                    <node concept="37vLTw" id="3ME3zLf8G5O" role="37vLTJ">
-                                      <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
-                                    </node>
-                                    <node concept="2OqwBi" id="3ME3zLf96Mg" role="37vLTx">
-                                      <node concept="37vLTw" id="3ME3zLf96Mf" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
-                                      </node>
-                                      <node concept="liA8E" id="3ME3zLf96Mh" role="2OqNvi">
-                                        <ref role="37wK5l" node="3ME3zLf8CQz" resolve="getFileHandle" />
-                                        <node concept="37vLTw" id="3ME3zLf8G5Q" role="37wK5m">
-                                          <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="3ME3zLf8G5R" role="3cqZAp">
-                                  <node concept="37vLTI" id="3ME3zLf8G5S" role="3clFbG">
-                                    <node concept="37vLTw" id="3ME3zLf8G5T" role="37vLTJ">
-                                      <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
-                                    </node>
-                                    <node concept="3clFbT" id="3ME3zLf8G5U" role="37vLTx">
-                                      <property role="3clFbU" value="true" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="3ME3zLf8G5V" role="3cqZAp">
-                                  <node concept="37vLTI" id="3ME3zLf8G5W" role="3clFbG">
-                                    <node concept="37vLTw" id="3ME3zLf8G5X" role="37vLTJ">
-                                      <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
-                                    </node>
-                                    <node concept="3cmrfG" id="3ME3zLf8G5Y" role="37vLTx">
-                                      <property role="3cmrfH" value="0" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3clFbF" id="3ME3zLf8G5Z" role="3cqZAp">
-                                  <node concept="37vLTI" id="3ME3zLf8G60" role="3clFbG">
-                                    <node concept="37vLTw" id="3ME3zLf8G61" role="37vLTJ">
-                                      <ref role="3cqZAo" node="3ME3zLf8FNQ" resolve="nextEntryOffset" />
-                                    </node>
-                                    <node concept="3cmrfG" id="3ME3zLf8G62" role="37vLTx">
-                                      <property role="3cmrfH" value="0" />
-                                    </node>
-                                  </node>
-                                </node>
+                            <node concept="liA8E" id="3ME3zLf96LS" role="2OqNvi">
+                              <ref role="37wK5l" node="3ME3zLf8CQz" resolve="getFileHandle" />
+                              <node concept="37vLTw" id="3ME3zLf8G58" role="37wK5m">
+                                <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="3clFbS" id="3ME3zLf8G5k" role="3clFbx">
-                      <node concept="3clFbF" id="3ME3zLf8G5l" role="3cqZAp">
-                        <node concept="37vLTI" id="3ME3zLf8G5m" role="3clFbG">
-                          <node concept="37vLTw" id="3ME3zLf8G5n" role="37vLTJ">
-                            <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
-                          </node>
-                          <node concept="3clFbT" id="3ME3zLf8G5o" role="37vLTx">
-                            <property role="3clFbU" value="true" />
+                      <node concept="3cpWs8" id="3ME3zLf8G5a" role="3cqZAp">
+                        <node concept="3cpWsn" id="3ME3zLf8G59" role="3cpWs9">
+                          <property role="3TUv4t" value="false" />
+                          <property role="TrG5h" value="fileOk" />
+                          <node concept="10P_77" id="3ME3zLf8G5b" role="1tU5fm" />
+                          <node concept="3clFbT" id="3ME3zLf8G5c" role="33vP2m">
+                            <property role="3clFbU" value="false" />
                           </node>
                         </node>
                       </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbJ" id="3ME3zLf8G63" role="3cqZAp">
-                    <node concept="37vLTw" id="3ME3zLf8G64" role="3clFbw">
-                      <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
-                    </node>
-                    <node concept="9aQIb" id="3ME3zLf8G6u" role="9aQIa">
-                      <node concept="3clFbS" id="3ME3zLf8G6v" role="9aQI4">
-                        <node concept="YS8fn" id="3ME3zLf8G6x" role="3cqZAp">
-                          <node concept="2ShNRf" id="3ME3zLf96Mi" role="YScLw">
-                            <node concept="HV5vD" id="3ME3zLf96Mj" role="2ShVmc">
-                              <ref role="HV5vE" node="3ME3zLf8FMB" resolve="FileReader.EOFException" />
-                            </node>
-                          </node>
+                      <node concept="3SKdUt" id="3ME3zLf8Gcm" role="3cqZAp">
+                        <node concept="3SKdUq" id="3ME3zLf8Gcl" role="3SKWNk">
+                          <property role="3SKdUp" value="Check to see if we've come to the end of the file.  If so, get" />
                         </node>
                       </node>
-                    </node>
-                    <node concept="3clFbS" id="3ME3zLf8G66" role="3clFbx">
-                      <node concept="3clFbF" id="3ME3zLf8G67" role="3cqZAp">
-                        <node concept="2OqwBi" id="3ME3zLf96Mn" role="3clFbG">
-                          <node concept="37vLTw" id="3ME3zLf96Mm" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
-                          </node>
-                          <node concept="liA8E" id="3ME3zLf96Mo" role="2OqNvi">
-                            <ref role="37wK5l" to="zfbc:~Buffer.clear():java.nio.Buffer" resolve="clear" />
-                          </node>
+                      <node concept="3SKdUt" id="3ME3zLf8Gco" role="3cqZAp">
+                        <node concept="3SKdUq" id="3ME3zLf8Gcn" role="3SKWNk">
+                          <property role="3SKdUp" value="the next file." />
                         </node>
                       </node>
-                      <node concept="3clFbF" id="3ME3zLf8G69" role="3cqZAp">
-                        <node concept="2OqwBi" id="3ME3zLf96Ms" role="3clFbG">
-                          <node concept="37vLTw" id="3ME3zLf96Mr" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
+                      <node concept="3clFbJ" id="3ME3zLf8G5d" role="3cqZAp">
+                        <node concept="3eOVzh" id="3ME3zLf8G5e" role="3clFbw">
+                          <node concept="37vLTw" id="3ME3zLf8G5f" role="3uHU7B">
+                            <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
                           </node>
-                          <node concept="liA8E" id="3ME3zLf96Mt" role="2OqNvi">
-                            <ref role="37wK5l" node="3ME3zLf8D3M" resolve="readFromFile" />
-                            <node concept="2OqwBi" id="3ME3zLf96Mx" role="37wK5m">
-                              <node concept="37vLTw" id="3ME3zLf96Mw" role="2Oq$k0">
+                          <node concept="2OqwBi" id="3ME3zLf8G5g" role="3uHU7w">
+                            <node concept="2OqwBi" id="3ME3zLf96LW" role="2Oq$k0">
+                              <node concept="37vLTw" id="3ME3zLf96LV" role="2Oq$k0">
                                 <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
                               </node>
-                              <node concept="liA8E" id="3ME3zLf96My" role="2OqNvi">
+                              <node concept="liA8E" id="3ME3zLf96LX" role="2OqNvi">
                                 <ref role="37wK5l" node="3ME3zLf8IKK" resolve="getFile" />
                               </node>
                             </node>
-                            <node concept="37vLTw" id="3ME3zLf8G6c" role="37wK5m">
-                              <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
-                            </node>
-                            <node concept="37vLTw" id="3ME3zLf8G6d" role="37wK5m">
-                              <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                            <node concept="liA8E" id="3ME3zLf8G5i" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~RandomAccessFile.length():long" resolve="length" />
                             </node>
                           </node>
                         </node>
-                      </node>
-                      <node concept="1gVbGN" id="3ME3zLf8G6f" role="3cqZAp">
-                        <node concept="2YIFZM" id="3ME3zLf96M_" role="1gVkn0">
-                          <ref role="37wK5l" to="7twk:3ME3zLf8yPG" resolve="maybeForceYield" />
-                          <ref role="1Pybhc" to="7twk:6$_V4iGDzBa" resolve="EnvironmentImpl" />
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="3ME3zLf8G6g" role="3cqZAp">
-                        <node concept="37vLTI" id="3ME3zLf8G6h" role="3clFbG">
-                          <node concept="37vLTw" id="3ME3zLf8G6i" role="37vLTJ">
-                            <ref role="3cqZAo" node="3ME3zLf8FNe" resolve="readBufferFileStart" />
-                          </node>
-                          <node concept="37vLTw" id="3ME3zLf8G6j" role="37vLTx">
-                            <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbF" id="3ME3zLf8G6k" role="3cqZAp">
-                        <node concept="37vLTI" id="3ME3zLf8G6l" role="3clFbG">
-                          <node concept="37vLTw" id="3ME3zLf8G6m" role="37vLTJ">
-                            <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
-                          </node>
-                          <node concept="3cpWs3" id="3ME3zLf8G6n" role="37vLTx">
-                            <node concept="37vLTw" id="3ME3zLf8G6o" role="3uHU7B">
-                              <ref role="3cqZAo" node="3ME3zLf8FNe" resolve="readBufferFileStart" />
+                        <node concept="9aQIb" id="3ME3zLf8G5p" role="9aQIa">
+                          <node concept="3clFbS" id="3ME3zLf8G5q" role="9aQI4">
+                            <node concept="3SKdUt" id="3ME3zLf8Gcq" role="3cqZAp">
+                              <node concept="3SKdUq" id="3ME3zLf8Gcp" role="3SKWNk">
+                                <property role="3SKdUp" value="This file is done -- can we read in the next file? " />
+                              </node>
                             </node>
-                            <node concept="1rXfSq" id="3ME3zLf8G6p" role="3uHU7w">
-                              <ref role="37wK5l" node="3ME3zLf8G7G" resolve="threadSafeBufferPosition" />
-                              <node concept="37vLTw" id="3ME3zLf8G6q" role="37wK5m">
-                                <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                            <node concept="3clFbJ" id="3ME3zLf8G5r" role="3cqZAp">
+                              <node concept="3fqX7Q" id="3ME3zLf8G5s" role="3clFbw">
+                                <node concept="37vLTw" id="3ME3zLf8G5t" role="3fr31v">
+                                  <ref role="3cqZAo" node="3ME3zLf8FMY" resolve="singleFile" />
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="3ME3zLf8G5v" role="3clFbx">
+                                <node concept="3cpWs8" id="3ME3zLf8G5x" role="3cqZAp">
+                                  <node concept="3cpWsn" id="3ME3zLf8G5w" role="3cpWs9">
+                                    <property role="3TUv4t" value="false" />
+                                    <property role="TrG5h" value="nextFile" />
+                                    <node concept="3uibUv" id="3ME3zLf8G5y" role="1tU5fm">
+                                      <ref role="3uigEE" to="wyt6:~Long" resolve="Long" />
+                                    </node>
+                                    <node concept="2OqwBi" id="3ME3zLf96M1" role="33vP2m">
+                                      <node concept="37vLTw" id="3ME3zLf96M0" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
+                                      </node>
+                                      <node concept="liA8E" id="3ME3zLf96M2" role="2OqNvi">
+                                        <ref role="37wK5l" node="3ME3zLf8CJe" resolve="getFollowingFileNum" />
+                                        <node concept="37vLTw" id="3ME3zLf8G5$" role="37wK5m">
+                                          <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
+                                        </node>
+                                        <node concept="37vLTw" id="3ME3zLf8G5_" role="37wK5m">
+                                          <ref role="3cqZAo" node="3ME3zLf8FN6" resolve="forward" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3clFbJ" id="3ME3zLf8G5A" role="3cqZAp">
+                                  <node concept="3y3z36" id="3ME3zLf8G5B" role="3clFbw">
+                                    <node concept="37vLTw" id="3ME3zLf8G5C" role="3uHU7B">
+                                      <ref role="3cqZAo" node="3ME3zLf8G5w" resolve="nextFile" />
+                                    </node>
+                                    <node concept="10Nm6u" id="3ME3zLf8G5D" role="3uHU7w" />
+                                  </node>
+                                  <node concept="3clFbS" id="3ME3zLf8G5F" role="3clFbx">
+                                    <node concept="3clFbF" id="3ME3zLf8G5G" role="3cqZAp">
+                                      <node concept="37vLTI" id="3ME3zLf8G5H" role="3clFbG">
+                                        <node concept="37vLTw" id="3ME3zLf8G5I" role="37vLTJ">
+                                          <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
+                                        </node>
+                                        <node concept="2OqwBi" id="3ME3zLf96M6" role="37vLTx">
+                                          <node concept="37vLTw" id="3ME3zLf96M5" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="3ME3zLf8G5w" resolve="nextFile" />
+                                          </node>
+                                          <node concept="liA8E" id="3ME3zLf96M7" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Long.longValue():long" resolve="longValue" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="2wexfA" id="6NxsX3v6cKS" role="3cqZAp">
+                                      <node concept="3clFbS" id="6NxsX3v6cKT" role="9aQI4">
+                                        <node concept="3clFbF" id="3ME3zLf8G5K" role="3cqZAp">
+                                          <node concept="2OqwBi" id="3ME3zLf96Mb" role="3clFbG">
+                                            <node concept="37vLTw" id="3ME3zLf96Ma" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
+                                            </node>
+                                            <node concept="liA8E" id="3ME3zLf96Mc" role="2OqNvi">
+                                              <ref role="37wK5l" node="3ME3zLf8IL6" resolve="release" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="1V74GB" id="6NxsX3v6cKU" role="lGtFl">
+                                        <property role="32Xqk$" value="chosenModule" />
+                                        <property role="TrG5h" value="Fragment_7845679366789450810" />
+                                        <ref role="a64iB" to="oc6c:3Mj07xysoIZ" resolve="Latches" />
+                                        <ref role="3aRQVk" to="oc6c:1vNpxl5EKwa" resolve="ModuleToFragment_1725835323762214922" />
+                                        <ref role="1V74Hf" to="oc6c:1vNpxl5EKwc" resolve="VPToFragment_1725835323762214924" />
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="3ME3zLf8G5M" role="3cqZAp">
+                                      <node concept="37vLTI" id="3ME3zLf8G5N" role="3clFbG">
+                                        <node concept="37vLTw" id="3ME3zLf8G5O" role="37vLTJ">
+                                          <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
+                                        </node>
+                                        <node concept="2OqwBi" id="3ME3zLf96Mg" role="37vLTx">
+                                          <node concept="37vLTw" id="3ME3zLf96Mf" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
+                                          </node>
+                                          <node concept="liA8E" id="3ME3zLf96Mh" role="2OqNvi">
+                                            <ref role="37wK5l" node="3ME3zLf8CQz" resolve="getFileHandle" />
+                                            <node concept="37vLTw" id="3ME3zLf8G5Q" role="37wK5m">
+                                              <ref role="3cqZAo" node="3ME3zLf8FNa" resolve="readBufferFileNum" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="3ME3zLf8G5R" role="3cqZAp">
+                                      <node concept="37vLTI" id="3ME3zLf8G5S" role="3clFbG">
+                                        <node concept="37vLTw" id="3ME3zLf8G5T" role="37vLTJ">
+                                          <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
+                                        </node>
+                                        <node concept="3clFbT" id="3ME3zLf8G5U" role="37vLTx">
+                                          <property role="3clFbU" value="true" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="3ME3zLf8G5V" role="3cqZAp">
+                                      <node concept="37vLTI" id="3ME3zLf8G5W" role="3clFbG">
+                                        <node concept="37vLTw" id="3ME3zLf8G5X" role="37vLTJ">
+                                          <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                                        </node>
+                                        <node concept="3cmrfG" id="3ME3zLf8G5Y" role="37vLTx">
+                                          <property role="3cmrfH" value="0" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3clFbF" id="3ME3zLf8G5Z" role="3cqZAp">
+                                      <node concept="37vLTI" id="3ME3zLf8G60" role="3clFbG">
+                                        <node concept="37vLTw" id="3ME3zLf8G61" role="37vLTJ">
+                                          <ref role="3cqZAo" node="3ME3zLf8FNQ" resolve="nextEntryOffset" />
+                                        </node>
+                                        <node concept="3cmrfG" id="3ME3zLf8G62" role="37vLTx">
+                                          <property role="3cmrfH" value="0" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="3ME3zLf8G5k" role="3clFbx">
+                          <node concept="3clFbF" id="3ME3zLf8G5l" role="3cqZAp">
+                            <node concept="37vLTI" id="3ME3zLf8G5m" role="3clFbG">
+                              <node concept="37vLTw" id="3ME3zLf8G5n" role="37vLTJ">
+                                <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
+                              </node>
+                              <node concept="3clFbT" id="3ME3zLf8G5o" role="37vLTx">
+                                <property role="3clFbU" value="true" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbF" id="3ME3zLf8G6r" role="3cqZAp">
-                        <node concept="1rXfSq" id="3ME3zLf8G6s" role="3clFbG">
-                          <ref role="37wK5l" node="3ME3zLf8G7l" resolve="threadSafeBufferFlip" />
-                          <node concept="37vLTw" id="3ME3zLf8G6t" role="37wK5m">
-                            <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                      <node concept="3clFbJ" id="3ME3zLf8G63" role="3cqZAp">
+                        <node concept="37vLTw" id="3ME3zLf8G64" role="3clFbw">
+                          <ref role="3cqZAo" node="3ME3zLf8G59" resolve="fileOk" />
+                        </node>
+                        <node concept="9aQIb" id="3ME3zLf8G6u" role="9aQIa">
+                          <node concept="3clFbS" id="3ME3zLf8G6v" role="9aQI4">
+                            <node concept="YS8fn" id="3ME3zLf8G6x" role="3cqZAp">
+                              <node concept="2ShNRf" id="3ME3zLf96Mi" role="YScLw">
+                                <node concept="HV5vD" id="3ME3zLf96Mj" role="2ShVmc">
+                                  <ref role="HV5vE" node="3ME3zLf8FMB" resolve="FileReader.EOFException" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="3ME3zLf8G66" role="3clFbx">
+                          <node concept="3clFbF" id="3ME3zLf8G67" role="3cqZAp">
+                            <node concept="2OqwBi" id="3ME3zLf96Mn" role="3clFbG">
+                              <node concept="37vLTw" id="3ME3zLf96Mm" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                              </node>
+                              <node concept="liA8E" id="3ME3zLf96Mo" role="2OqNvi">
+                                <ref role="37wK5l" to="zfbc:~Buffer.clear():java.nio.Buffer" resolve="clear" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="3ME3zLf8G69" role="3cqZAp">
+                            <node concept="2OqwBi" id="3ME3zLf96Ms" role="3clFbG">
+                              <node concept="37vLTw" id="3ME3zLf96Mr" role="2Oq$k0">
+                                <ref role="3cqZAo" node="3ME3zLf8FMI" resolve="fileManager" />
+                              </node>
+                              <node concept="liA8E" id="3ME3zLf96Mt" role="2OqNvi">
+                                <ref role="37wK5l" node="3ME3zLf8D3M" resolve="readFromFile" />
+                                <node concept="2OqwBi" id="3ME3zLf96Mx" role="37wK5m">
+                                  <node concept="37vLTw" id="3ME3zLf96Mw" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="3ME3zLf8G4V" resolve="fileHandle" />
+                                  </node>
+                                  <node concept="liA8E" id="3ME3zLf96My" role="2OqNvi">
+                                    <ref role="37wK5l" node="3ME3zLf8IKK" resolve="getFile" />
+                                  </node>
+                                </node>
+                                <node concept="37vLTw" id="3ME3zLf8G6c" role="37wK5m">
+                                  <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                                </node>
+                                <node concept="37vLTw" id="3ME3zLf8G6d" role="37wK5m">
+                                  <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1gVbGN" id="3ME3zLf8G6f" role="3cqZAp">
+                            <node concept="2YIFZM" id="3ME3zLf96M_" role="1gVkn0">
+                              <ref role="37wK5l" to="7twk:3ME3zLf8yPG" resolve="maybeForceYield" />
+                              <ref role="1Pybhc" to="7twk:6$_V4iGDzBa" resolve="EnvironmentImpl" />
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="3ME3zLf8G6g" role="3cqZAp">
+                            <node concept="37vLTI" id="3ME3zLf8G6h" role="3clFbG">
+                              <node concept="37vLTw" id="3ME3zLf8G6i" role="37vLTJ">
+                                <ref role="3cqZAo" node="3ME3zLf8FNe" resolve="readBufferFileStart" />
+                              </node>
+                              <node concept="37vLTw" id="3ME3zLf8G6j" role="37vLTx">
+                                <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="3ME3zLf8G6k" role="3cqZAp">
+                            <node concept="37vLTI" id="3ME3zLf8G6l" role="3clFbG">
+                              <node concept="37vLTw" id="3ME3zLf8G6m" role="37vLTJ">
+                                <ref role="3cqZAo" node="3ME3zLf8FNi" resolve="readBufferFileEnd" />
+                              </node>
+                              <node concept="3cpWs3" id="3ME3zLf8G6n" role="37vLTx">
+                                <node concept="37vLTw" id="3ME3zLf8G6o" role="3uHU7B">
+                                  <ref role="3cqZAo" node="3ME3zLf8FNe" resolve="readBufferFileStart" />
+                                </node>
+                                <node concept="1rXfSq" id="3ME3zLf8G6p" role="3uHU7w">
+                                  <ref role="37wK5l" node="3ME3zLf8G7G" resolve="threadSafeBufferPosition" />
+                                  <node concept="37vLTw" id="3ME3zLf8G6q" role="37wK5m">
+                                    <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="3clFbF" id="3ME3zLf8G6r" role="3cqZAp">
+                            <node concept="1rXfSq" id="3ME3zLf8G6s" role="3clFbG">
+                              <ref role="37wK5l" node="3ME3zLf8G7l" resolve="threadSafeBufferFlip" />
+                              <node concept="37vLTw" id="3ME3zLf8G6t" role="37wK5m">
+                                <ref role="3cqZAo" node="3ME3zLf8FMM" resolve="readBuffer" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -23187,13 +23242,16 @@
             <ref role="ojxmB" node="3ME3zLf8Tb5" resolve="setProvisional" />
             <node concept="3clFbS" id="6$_V4iGD_4y" role="9aQI4">
               <node concept="3cpWs6" id="3ME3zLf8Tb9" role="3cqZAp">
-                <node concept="1eOMI4" id="3ME3zLf8Tbe" role="3cqZAk">
-                  <node concept="pVOtf" id="3ME3zLf8Tbb" role="1eOMHV">
-                    <node concept="37vLTw" id="3ME3zLf8Tbc" role="3uHU7B">
-                      <ref role="3cqZAo" node="3ME3zLf8Tb6" resolve="version" />
-                    </node>
-                    <node concept="37vLTw" id="3ME3zLf8Tbd" role="3uHU7w">
-                      <ref role="3cqZAo" node="3ME3zLf8T7W" resolve="PROVISIONAL_MASK" />
+                <node concept="10QFUN" id="1vNpxl5FhPz" role="3cqZAk">
+                  <node concept="10PrrI" id="1vNpxl5FhUG" role="10QFUM" />
+                  <node concept="1eOMI4" id="3ME3zLf8Tbe" role="10QFUP">
+                    <node concept="pVOtf" id="3ME3zLf8Tbb" role="1eOMHV">
+                      <node concept="37vLTw" id="3ME3zLf8Tbc" role="3uHU7B">
+                        <ref role="3cqZAo" node="3ME3zLf8Tb6" resolve="version" />
+                      </node>
+                      <node concept="37vLTw" id="3ME3zLf8Tbd" role="3uHU7w">
+                        <ref role="3cqZAo" node="3ME3zLf8T7W" resolve="PROVISIONAL_MASK" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -23238,13 +23296,16 @@
             <ref role="ojxmB" node="3ME3zLf8Tbi" resolve="clearProvisional" />
             <node concept="3clFbS" id="6$_V4iGD_4D" role="9aQI4">
               <node concept="3cpWs6" id="3ME3zLf8Tbm" role="3cqZAp">
-                <node concept="1eOMI4" id="3ME3zLf8Tbr" role="3cqZAk">
-                  <node concept="pVHWs" id="3ME3zLf8Tbo" role="1eOMHV">
-                    <node concept="37vLTw" id="3ME3zLf8Tbp" role="3uHU7B">
-                      <ref role="3cqZAo" node="3ME3zLf8Tbj" resolve="version" />
-                    </node>
-                    <node concept="37vLTw" id="3ME3zLf8Tbq" role="3uHU7w">
-                      <ref role="3cqZAo" node="3ME3zLf8T83" resolve="IGNORE_PROVISIONAL" />
+                <node concept="10QFUN" id="1vNpxl5Fh_H" role="3cqZAk">
+                  <node concept="10PrrI" id="1vNpxl5FhEQ" role="10QFUM" />
+                  <node concept="1eOMI4" id="3ME3zLf8Tbr" role="10QFUP">
+                    <node concept="pVHWs" id="3ME3zLf8Tbo" role="1eOMHV">
+                      <node concept="37vLTw" id="3ME3zLf8Tbp" role="3uHU7B">
+                        <ref role="3cqZAo" node="3ME3zLf8Tbj" resolve="version" />
+                      </node>
+                      <node concept="37vLTw" id="3ME3zLf8Tbq" role="3uHU7w">
+                        <ref role="3cqZAo" node="3ME3zLf8T83" resolve="IGNORE_PROVISIONAL" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -29746,7 +29807,18 @@
                     </node>
                     <node concept="9aQIb" id="3ME3zLf8CRC" role="9aQIa">
                       <node concept="3clFbS" id="3ME3zLf8CRD" role="9aQI4">
-                        <node concept="3zACq4" id="3ME3zLf8CRE" role="3cqZAp" />
+                        <node concept="2wexfA" id="1vNpxl5Fo4r" role="3cqZAp">
+                          <node concept="3clFbS" id="1vNpxl5Fo4s" role="9aQI4">
+                            <node concept="3zACq4" id="3ME3zLf8CRE" role="3cqZAp" />
+                          </node>
+                          <node concept="1V74GB" id="1vNpxl5Fo4t" role="lGtFl">
+                            <property role="32Xqk$" value="chosenModule" />
+                            <property role="TrG5h" value="Fragment_1725835323762376989" />
+                            <ref role="1V74Hf" to="oc6c:1vNpxl5Fo4v" resolve="VPToFragment_1725835323762376991" />
+                            <ref role="a64iB" to="oc6c:3Mj07xysm9Q" resolve="FileHandleCache" />
+                            <ref role="3aRQVk" to="oc6c:1vNpxl5Fr2_" resolve="ModuleToFragment_1725835323762389157" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbS" id="3ME3zLf8CR_" role="3clFbx">
