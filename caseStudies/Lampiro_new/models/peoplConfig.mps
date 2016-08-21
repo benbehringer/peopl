@@ -21,7 +21,6 @@
     <import index="wf7l" ref="r:20c6eb2d-71a7-4d46-93bc-e10f1f849d65(it.yup.xmpp.packets)" />
     <import index="denk" ref="r:39a18098-5458-4053-a937-26fd38c68546(com.jcraft.jzlib)" />
     <import index="5bfz" ref="r:237d9ba4-67ee-4ec6-bf5e-74dced1a8c91(lampiro.screens)" />
-    <import index="tt1v" ref="63655c89-3af5-4104-8b6c-504e26175416/java:org.microemu(Lampiro_new/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">

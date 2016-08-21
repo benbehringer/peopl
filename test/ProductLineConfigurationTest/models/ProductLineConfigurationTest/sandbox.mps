@@ -6,10 +6,7 @@
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
-  <imports>
-    <import index="6ehx" ref="1a3a0b62-fb00-47d1-8423-98da4001b216/f:descriptor#1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core/de.htwsaar.peopl.core@descriptor)" />
-    <import index="lvc2" ref="42727bc4-0771-4379-872f-090530265ce4/f:descriptor#42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig@descriptor)" />
-  </imports>
+  <imports />
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
@@ -62,7 +59,7 @@
         <child id="3060579791629663683" name="modules" index="3WEA3p" />
       </concept>
       <concept id="7037608403905313314" name="de.htwsaar.peopl.core.featureConfig.structure.Feature" flags="ng" index="mJI6G" />
-      <concept id="6975064677845893442" name="de.htwsaar.peopl.core.featureConfig.structure.XorExpression" flags="ng" index="oFm$s" />
+      <concept id="6975064677845893442" name="de.htwsaar.peopl.core.featureConfig.structure.XorOperation" flags="ng" index="oFm$s" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -82,6 +79,10 @@
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
       <concept id="5543868949657485306" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleExpression" flags="ng" index="2Hijyl" />
+      <concept id="1473120132588955227" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConfigurations" flags="ng" index="2M0niJ">
+        <reference id="1473120132588955230" name="activeConfig" index="2M0niE" />
+        <child id="1473120132588955228" name="configs" index="2M0niC" />
+      </concept>
     </language>
   </registry>
   <node concept="mJI6d" id="4MKTqUTfjv2">
@@ -297,6 +298,16 @@
       <property role="TrG5h" value="Base" />
     </node>
     <node concept="2$Fqj1" id="4MKTqUTgHQG" role="lGtFl" />
+  </node>
+  <node concept="2M0niJ" id="1BbwgJJxWSx">
+    <ref role="2M0niE" node="1BbwgJJxWSy" />
+    <node concept="u25OH" id="1BbwgJJxWSy" role="2M0niC">
+      <node concept="2Hijyl" id="1BbwgJJxWSz" role="2Hjnvt">
+        <node concept="u2itw" id="1BbwgJJxWS_" role="3clFbG">
+          <ref role="u2itx" node="4MKTqUTgHQF" resolve="Base" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
