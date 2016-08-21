@@ -7,8 +7,6 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1299,7 +1297,7 @@
                     <node concept="liA8E" id="7XiQv3fe0CL" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="2pYGij" id="1jQ1A8DZNOD" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
                       </node>
                     </node>
                   </node>
@@ -1790,7 +1788,7 @@
                     <node concept="liA8E" id="16liNxk7TSk" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="2pYGij" id="1jQ1A8DZAIJ" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
                       </node>
                     </node>
                   </node>
@@ -1935,7 +1933,7 @@
                     <node concept="liA8E" id="7XiQv3fdLkx" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="2pYGij" id="1jQ1A8DZN4V" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
                       </node>
                     </node>
                   </node>
@@ -4147,7 +4145,7 @@
                     <node concept="liA8E" id="3XSKgTnIf2j" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="2pYGij" id="1jQ1A8DZPdH" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
                       </node>
                     </node>
                   </node>
@@ -4416,7 +4414,7 @@
                     <node concept="liA8E" id="2Ja598TNHcP" role="2OqNvi">
                       <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
                       <node concept="2pYGij" id="1jQ1A8DZNnZ" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="Standard" />
+                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
                       </node>
                     </node>
                   </node>
