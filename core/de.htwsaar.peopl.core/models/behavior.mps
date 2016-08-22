@@ -6731,21 +6731,6 @@
             <node concept="3GX2aA" id="2HiZdrZ$QKx" role="2OqNvi" />
           </node>
           <node concept="3clFbS" id="2HiZdrZ$Ndz" role="3clFbx">
-            <node concept="3clFbF" id="2HiZdrZ$S1P" role="3cqZAp">
-              <node concept="2OqwBi" id="2HiZdrZ$SAQ" role="3clFbG">
-                <node concept="2OqwBi" id="2HiZdrZ$S2U" role="2Oq$k0">
-                  <node concept="37vLTw" id="2HiZdrZ$S1N" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2HiZdrZ$JY7" resolve="updateProvider" />
-                  </node>
-                  <node concept="3CFZ6_" id="2HiZdrZ$S5e" role="2OqNvi">
-                    <node concept="3CFYIy" id="2HiZdrZ$S5M" role="3CFYIz">
-                      <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2Kehj3" id="2HiZdrZ$VsG" role="2OqNvi" />
-              </node>
-            </node>
             <node concept="2Gpval" id="17fl253zoYf" role="3cqZAp">
               <node concept="2GrKxI" id="17fl253zoYg" role="2Gsz3X">
                 <property role="TrG5h" value="fragmentUpdater" />
@@ -6769,6 +6754,21 @@
                 <node concept="37vLTw" id="2HiZdrZ$WxI" role="2Oq$k0">
                   <ref role="3cqZAo" node="2HiZdrZ$JY7" resolve="updateProvider" />
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2HiZdrZ$S1P" role="3cqZAp">
+              <node concept="2OqwBi" id="2HiZdrZ$SAQ" role="3clFbG">
+                <node concept="2OqwBi" id="2HiZdrZ$S2U" role="2Oq$k0">
+                  <node concept="37vLTw" id="2HiZdrZ$S1N" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2HiZdrZ$JY7" resolve="updateProvider" />
+                  </node>
+                  <node concept="3CFZ6_" id="2HiZdrZ$S5e" role="2OqNvi">
+                    <node concept="3CFYIy" id="2HiZdrZ$S5M" role="3CFYIz">
+                      <ref role="3CFYIx" to="xf8r:7irj4gs$aYR" resolve="FragmentUpdater" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Kehj3" id="2HiZdrZ$VsG" role="2OqNvi" />
               </node>
             </node>
           </node>

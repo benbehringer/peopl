@@ -2732,12 +2732,22 @@
         </node>
         <node concept="3clFbJ" id="4HKw9xXwGn2" role="3cqZAp">
           <node concept="3clFbS" id="4HKw9xXwGn4" role="3clFbx">
-            <node concept="3clFbF" id="4HKw9xXwHkM" role="3cqZAp">
-              <node concept="BsUDl" id="4HKw9xXwHkK" role="3clFbG">
-                <ref role="37wK5l" node="4HKw9xXwHct" resolve="openConfigurationConflictTool" />
-                <node concept="37vLTw" id="4HKw9xXwHl3" role="37wK5m">
-                  <ref role="3cqZAo" node="3YR93ntF$pJ" resolve="currentSModule" />
+            <node concept="1X3_iC" id="2xsxSmkIbpp" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="4HKw9xXwHkM" role="8Wnug">
+                <node concept="BsUDl" id="4HKw9xXwHkK" role="3clFbG">
+                  <ref role="37wK5l" node="4HKw9xXwHct" resolve="openConfigurationConflictTool" />
+                  <node concept="37vLTw" id="4HKw9xXwHl3" role="37wK5m">
+                    <ref role="3cqZAo" node="3YR93ntF$pJ" resolve="currentSModule" />
+                  </node>
                 </node>
+              </node>
+            </node>
+            <node concept="34ab3g" id="2xsxSmkIbGX" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="Xl_RD" id="2xsxSmkIbGZ" role="34bqiv">
+                <property role="Xl_RC" value="Conflicting Fragments" />
               </node>
             </node>
           </node>
@@ -3542,6 +3552,7 @@
           </node>
         </node>
         <node concept="3clFbH" id="MUpUk2LHO3" role="3cqZAp" />
+        <node concept="3clFbH" id="3OHjtH348Bz" role="3cqZAp" />
         <node concept="1X3_iC" id="MUpUk2LHG0" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -3571,7 +3582,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="3OHjtH348Bz" role="3cqZAp" />
         <node concept="3clFbJ" id="4xZ$jUAR1Xb" role="3cqZAp">
           <node concept="3clFbS" id="4xZ$jUAR1Xd" role="3clFbx">
             <node concept="1X3_iC" id="4xZ$jUAS2rW" role="lGtFl">

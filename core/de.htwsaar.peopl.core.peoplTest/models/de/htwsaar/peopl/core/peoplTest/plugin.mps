@@ -660,11 +660,11 @@
           <node concept="3cpWsn" id="1GERpNhamLi" role="3cpWs9">
             <property role="TrG5h" value="dialog" />
             <node concept="3uibUv" id="1GERpNhamLj" role="1tU5fm">
-              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="ConfigEvalDialog" />
+              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="EvaluationDialog" />
             </node>
             <node concept="2ShNRf" id="1GERpNhanov" role="33vP2m">
               <node concept="1pGfFk" id="1GERpNhanlx" role="2ShVmc">
-                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="ConfigEvalDialog" />
+                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="EvaluationDialog" />
                 <node concept="2OqwBi" id="1GERpNhanE1" role="37wK5m">
                   <node concept="2WthIp" id="1GERpNhanE4" role="2Oq$k0">
                     <ref role="32nkFo" node="7YnyADp2uFu" resolve="MeasureFullVariantCalculation" />
@@ -1878,11 +1878,11 @@
           <node concept="3cpWsn" id="68HxCMivSuu" role="3cpWs9">
             <property role="TrG5h" value="dialog" />
             <node concept="3uibUv" id="68HxCMivSuv" role="1tU5fm">
-              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="ConfigEvalDialog" />
+              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="EvaluationDialog" />
             </node>
             <node concept="2ShNRf" id="68HxCMivSuw" role="33vP2m">
               <node concept="1pGfFk" id="68HxCMivSux" role="2ShVmc">
-                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="ConfigEvalDialog" />
+                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="EvaluationDialog" />
                 <node concept="2OqwBi" id="68HxCMivY4x" role="37wK5m">
                   <node concept="2WthIp" id="68HxCMivY4$" role="2Oq$k0" />
                   <node concept="1DTwFV" id="68HxCMivY4A" role="2OqNvi">
@@ -2641,6 +2641,45 @@
                                                       </node>
                                                     </node>
                                                   </node>
+                                                  <node concept="3clFbH" id="2xsxSmkIEdJ" role="3cqZAp" />
+                                                  <node concept="3clFbJ" id="4Y0OrDTX0Ib" role="3cqZAp">
+                                                    <node concept="3clFbS" id="4Y0OrDTX0Id" role="3clFbx">
+                                                      <node concept="34ab3g" id="4Y0OrDTX7mr" role="3cqZAp">
+                                                        <property role="35gtTG" value="error" />
+                                                        <node concept="Xl_RD" id="4Y0OrDTX7mt" role="34bqiv">
+                                                          <property role="Xl_RC" value="Found Conflicting Fragments" />
+                                                        </node>
+                                                      </node>
+                                                      <node concept="3clFbF" id="4Y0OrDTXgpA" role="3cqZAp">
+                                                        <node concept="2OqwBi" id="4Y0OrDTXhXa" role="3clFbG">
+                                                          <node concept="2YIFZM" id="4Y0OrDTXhcR" role="2Oq$k0">
+                                                            <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                                                            <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                                                          </node>
+                                                          <node concept="liA8E" id="4Y0OrDTXiKo" role="2OqNvi">
+                                                            <ref role="37wK5l" to="zur:7FXTvks5R_3" resolve="deleteConflictingFragments" />
+                                                            <node concept="37vLTw" id="4Y0OrDTXkbB" role="37wK5m">
+                                                              <ref role="3cqZAo" node="4WIioTRaLmN" resolve="solutionModule" />
+                                                            </node>
+                                                          </node>
+                                                        </node>
+                                                      </node>
+                                                    </node>
+                                                    <node concept="2OqwBi" id="4Y0OrDTX3GN" role="3clFbw">
+                                                      <node concept="2YIFZM" id="4Y0OrDTX2WK" role="2Oq$k0">
+                                                        <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                                                        <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
+                                                      </node>
+                                                      <node concept="liA8E" id="4Y0OrDTX4vH" role="2OqNvi">
+                                                        <ref role="37wK5l" to="zur:4uXybS306K_" resolve="hasConflictingFragments" />
+                                                        <node concept="37vLTw" id="4Y0OrDTX5Xu" role="37wK5m">
+                                                          <ref role="3cqZAo" node="4WIioTRaLmN" resolve="solutionModule" />
+                                                        </node>
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                  <node concept="3clFbH" id="2xsxSmkIFzX" role="3cqZAp" />
+                                                  <node concept="3clFbH" id="2xsxSmkIEPc" role="3cqZAp" />
                                                   <node concept="3SKdUt" id="4WIioTRaLbv" role="3cqZAp">
                                                     <node concept="3SKdUq" id="4WIioTRaLbw" role="3SKWNk">
                                                       <property role="3SKdUp" value="if eval already exists" />
@@ -3630,11 +3669,15 @@
                                           <property role="3SKdUp" value="delete Files " />
                                         </node>
                                       </node>
-                                      <node concept="3clFbF" id="4WIioTRaLh_" role="3cqZAp">
-                                        <node concept="1rXfSq" id="4WIioTRaLhA" role="3clFbG">
-                                          <ref role="37wK5l" node="4WIioTRaLi3" resolve="deleteFilesInFolder" />
-                                          <node concept="37vLTw" id="4WIioTRaLhB" role="37wK5m">
-                                            <ref role="3cqZAo" node="4WIioTRaLen" resolve="outputFolderPath" />
+                                      <node concept="1X3_iC" id="2xsxSmkSwcL" role="lGtFl">
+                                        <property role="3V$3am" value="statement" />
+                                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                                        <node concept="3clFbF" id="4WIioTRaLh_" role="8Wnug">
+                                          <node concept="1rXfSq" id="4WIioTRaLhA" role="3clFbG">
+                                            <ref role="37wK5l" node="4WIioTRaLi3" resolve="deleteFilesInFolder" />
+                                            <node concept="37vLTw" id="4WIioTRaLhB" role="37wK5m">
+                                              <ref role="3cqZAo" node="4WIioTRaLen" resolve="outputFolderPath" />
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
@@ -9427,11 +9470,11 @@
           <node concept="3cpWsn" id="ECJov0$gzF" role="3cpWs9">
             <property role="TrG5h" value="dialog" />
             <node concept="3uibUv" id="ECJov0$gzG" role="1tU5fm">
-              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="ConfigEvalDialog" />
+              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="EvaluationDialog" />
             </node>
             <node concept="2ShNRf" id="ECJov0$gzH" role="33vP2m">
               <node concept="1pGfFk" id="ECJov0$gzI" role="2ShVmc">
-                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="ConfigEvalDialog" />
+                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="EvaluationDialog" />
                 <node concept="2OqwBi" id="ECJov0$gzJ" role="37wK5m">
                   <node concept="2WthIp" id="ECJov0$gzK" role="2Oq$k0">
                     <ref role="32nkFo" node="ECJov0$gyt" resolve="MeasureDocumentVariantCalculation" />

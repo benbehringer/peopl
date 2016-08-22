@@ -2493,6 +2493,35 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5h5WElAielv" role="jymVt" />
+    <node concept="3clFb_" id="7FXTvks5R_3" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="deleteConflictingFragments" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7FXTvks5R_6" role="3clF47">
+        <node concept="3clFbF" id="7FXTvks5Tks" role="3cqZAp">
+          <node concept="2OqwBi" id="7FXTvks5Txr" role="3clFbG">
+            <node concept="37vLTw" id="7FXTvks5Tkr" role="2Oq$k0">
+              <ref role="3cqZAo" node="4uXybS2ZVI1" resolve="conflictingFragmentsMap" />
+            </node>
+            <node concept="kI3uX" id="7FXTvks5TWu" role="2OqNvi">
+              <node concept="37vLTw" id="7FXTvks5U47" role="kIiFs">
+                <ref role="3cqZAo" node="7FXTvks5Sr_" resolve="smodule" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7FXTvks5QHC" role="1B3o_S" />
+      <node concept="3cqZAl" id="7FXTvks5RzU" role="3clF45" />
+      <node concept="37vLTG" id="7FXTvks5Sr_" role="3clF46">
+        <property role="TrG5h" value="smodule" />
+        <node concept="3uibUv" id="7FXTvks5Sr$" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="5h5WElAi3Vg" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="6D3NPsjbEk6">
