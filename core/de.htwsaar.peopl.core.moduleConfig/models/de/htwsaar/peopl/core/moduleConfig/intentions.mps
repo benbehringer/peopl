@@ -9,8 +9,8 @@
   </languages>
   <imports>
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="v6m6" ref="r:9bd4aec2-d8a6-47c3-a8e6-30af6a2a5c90(de.htwsaar.peopl.core.peoplTest.plugin)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -842,11 +842,11 @@
           <node concept="3cpWsn" id="1GERpNhjSRQ" role="3cpWs9">
             <property role="TrG5h" value="dialog" />
             <node concept="3uibUv" id="1GERpNhjSRR" role="1tU5fm">
-              <ref role="3uigEE" to="v6m6:1GERpNha2AT" resolve="ConfigEvalDialog" />
+              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="ConfigEvalDialog" />
             </node>
             <node concept="2ShNRf" id="1GERpNhjSTv" role="33vP2m">
               <node concept="1pGfFk" id="1GERpNhjSTu" role="2ShVmc">
-                <ref role="37wK5l" to="v6m6:1GERpNha32a" resolve="ConfigEvalDialog" />
+                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="ConfigEvalDialog" />
                 <node concept="2YIFZM" id="1GERpNhjTw0" role="37wK5m">
                   <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
@@ -892,7 +892,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjUQG" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhduL3" resolve="getBaseModule" />
+                    <ref role="37wK5l" to="1z58:1GERpNhduL3" resolve="getBaseModule" />
                   </node>
                 </node>
               </node>
@@ -906,7 +906,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjURX" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraction" />
+                    <ref role="37wK5l" to="1z58:1GERpNhi_1m" resolve="useSubtraction" />
                   </node>
                 </node>
               </node>
@@ -919,7 +919,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjUwC" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhduL3" resolve="getBaseModule" />
+                    <ref role="37wK5l" to="1z58:1GERpNhduL3" resolve="getBaseModule" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1GERpNhjUp_" role="37vLTJ">
@@ -934,7 +934,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjUCs" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhi_1m" resolve="useSubtraction" />
+                    <ref role="37wK5l" to="1z58:1GERpNhi_1m" resolve="useSubtraction" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1GERpNhjUx5" role="37vLTJ">
@@ -951,7 +951,7 @@
                     <ref role="3cqZAo" node="1GERpNhjSRQ" resolve="dialog" />
                   </node>
                   <node concept="liA8E" id="1GERpNhjUVn" role="2OqNvi">
-                    <ref role="37wK5l" to="v6m6:1GERpNhdsfu" resolve="getChosenNumber" />
+                    <ref role="37wK5l" to="1z58:1GERpNhdsfu" resolve="getChosenNumber" />
                   </node>
                 </node>
               </node>
@@ -973,11 +973,11 @@
               <node concept="3cpWsn" id="1GERpNhjV4L" role="3cpWs9">
                 <property role="TrG5h" value="builder" />
                 <node concept="3uibUv" id="1GERpNhjV4M" role="1tU5fm">
-                  <ref role="3uigEE" to="v6m6:7YnyADp39PS" resolve="ModConfBuilder" />
+                  <ref role="3uigEE" to="1z58:7YnyADp39PS" resolve="ModuleConfigurationBuilder" />
                 </node>
                 <node concept="2ShNRf" id="1GERpNhjV4N" role="33vP2m">
                   <node concept="1pGfFk" id="1GERpNhjV4O" role="2ShVmc">
-                    <ref role="37wK5l" to="v6m6:7YnyADp3aEB" resolve="ModConfBuilder" />
+                    <ref role="37wK5l" to="1z58:7YnyADp3aEB" resolve="ModuleConfigurationBuilder" />
                     <node concept="37vLTw" id="1GERpNhjVnC" role="37wK5m">
                       <ref role="3cqZAo" node="1GERpNhjVg8" resolve="modConf" />
                     </node>
@@ -1023,7 +1023,7 @@
                           <ref role="3cqZAo" node="1GERpNhjV4L" resolve="builder" />
                         </node>
                         <node concept="liA8E" id="1GERpNhjVGM" role="2OqNvi">
-                          <ref role="37wK5l" to="v6m6:7YnyADp3iNr" resolve="createSingleModConf" />
+                          <ref role="37wK5l" to="1z58:7YnyADp3iNr" resolve="createSingleModConf" />
                         </node>
                       </node>
                     </node>
