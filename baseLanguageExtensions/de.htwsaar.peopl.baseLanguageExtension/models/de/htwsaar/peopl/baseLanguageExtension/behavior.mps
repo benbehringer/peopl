@@ -11922,6 +11922,47 @@
     </node>
     <node concept="2tJIrI" id="ECJov0zxwD" role="jymVt" />
     <node concept="2tJIrI" id="ECJov0zxzS" role="jymVt" />
+    <node concept="3clFb_" id="1KOwwIjepqq" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="checkCacheAndRebuildForDataFlowAnalysis" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1KOwwIjepqt" role="3clF47">
+        <node concept="3clFbJ" id="1KOwwIjeqIj" role="3cqZAp">
+          <node concept="3clFbS" id="1KOwwIjeqIl" role="3clFbx">
+            <node concept="3cpWs6" id="1KOwwIjeJF1" role="3cqZAp">
+              <node concept="1rXfSq" id="1KOwwIjeJKT" role="3cqZAk">
+                <ref role="37wK5l" node="5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                <node concept="37vLTw" id="1KOwwIjeJQX" role="37wK5m">
+                  <ref role="3cqZAo" node="1KOwwIjepzF" resolve="node" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="10M0yZ" id="1KOwwIjeJzk" role="3clFbw">
+            <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+            <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
+          </node>
+          <node concept="9aQIb" id="1KOwwIjeK8_" role="9aQIa">
+            <node concept="3clFbS" id="1KOwwIjeK8A" role="9aQI4">
+              <node concept="3cpWs6" id="1KOwwIjeKfy" role="3cqZAp">
+                <node concept="3clFbT" id="1KOwwIjeKjG" role="3cqZAk">
+                  <property role="3clFbU" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1KOwwIjeph4" role="1B3o_S" />
+      <node concept="10P_77" id="1KOwwIjepqh" role="3clF45" />
+      <node concept="37vLTG" id="1KOwwIjepzF" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="1KOwwIjepzE" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1KOwwIjem_I" role="jymVt" />
     <node concept="3clFb_" id="5BOueCCLQ9p" role="jymVt">
       <property role="TrG5h" value="checkCacheAndRebuildIfNecessary" />
       <property role="DiZV1" value="false" />
@@ -11969,6 +12010,11 @@
               <node concept="3clFbS" id="5BOueCCMMcU" role="3clFbx">
                 <node concept="SfApY" id="5BOueCCLQa9" role="3cqZAp">
                   <node concept="3clFbS" id="5BOueCCLQaa" role="SfCbr">
+                    <node concept="3SKdUt" id="1KOwwIj83Iu" role="3cqZAp">
+                      <node concept="3SKdUq" id="1KOwwIj83Iv" role="3SKWNk">
+                        <property role="3SKdUp" value="this fills the cache with content" />
+                      </node>
+                    </node>
                     <node concept="3clFbF" id="5BOueCCLQab" role="3cqZAp">
                       <node concept="2OqwBi" id="5BOueCCLQac" role="3clFbG">
                         <node concept="37vLTw" id="ECJov0$3bT" role="2Oq$k0">

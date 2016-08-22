@@ -47,6 +47,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="1213273179528" name="description" index="1WHSii" />
+        <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -64,6 +65,7 @@
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
+      <concept id="1205681243813" name="jetbrains.mps.lang.plugin.structure.IsApplicableBlock" flags="in" index="2ScWuX" />
       <concept id="5538333046911348654" name="jetbrains.mps.lang.plugin.structure.RequiredCondition" flags="ng" index="1oajcY" />
       <concept id="1217252042208" name="jetbrains.mps.lang.plugin.structure.ActionDataParameterDeclaration" flags="ng" index="1DS2jV">
         <reference id="1217252646389" name="key" index="1DUlNI" />
@@ -189,6 +191,9 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -2814,6 +2819,12 @@
     <property role="3GE5qa" value="Actions" />
     <property role="2f7twF" value="PEoPL" />
     <node concept="ftmFs" id="2yX483RIVpc" role="ftER_">
+      <node concept="tCFHf" id="1KOwwIji_g2" role="ftvYc">
+        <ref role="tCJdB" node="1KOwwIji4mz" resolve="VariantDataFlowAnalysis" />
+      </node>
+      <node concept="tCFHf" id="1KOwwIji_ga" role="ftvYc">
+        <ref role="tCJdB" node="1KOwwIjijJK" resolve="ProductLineDataFlowAnalysis" />
+      </node>
       <node concept="tCFHf" id="48zfXGK0RPc" role="ftvYc">
         <ref role="tCJdB" node="48zfXGK0rQy" resolve="ConvertToPeoplSolution" />
       </node>
@@ -3085,6 +3096,66 @@
             <node concept="liA8E" id="1XdDtYp0Aw9" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~SModule.getModels():java.lang.Iterable" resolve="getModels" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="1KOwwIji4mz">
+    <property role="3GE5qa" value="Actions" />
+    <property role="2uzpH1" value="Data Flow Analysis for Variant (Instead of Product Line)" />
+    <property role="TrG5h" value="VariantDataFlowAnalysis" />
+    <node concept="tnohg" id="1KOwwIji4ub" role="tncku">
+      <node concept="3clFbS" id="1KOwwIji4uc" role="2VODD2">
+        <node concept="3clFbF" id="1KOwwIjijxd" role="3cqZAp">
+          <node concept="37vLTI" id="1KOwwIjijFV" role="3clFbG">
+            <node concept="3clFbT" id="1KOwwIjijHU" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="10M0yZ" id="1KOwwIjijxf" role="37vLTJ">
+              <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+              <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="1KOwwIjiiYD" role="tmbBb">
+      <node concept="3clFbS" id="1KOwwIjiiYE" role="2VODD2">
+        <node concept="3clFbF" id="1KOwwIjij6A" role="3cqZAp">
+          <node concept="3fqX7Q" id="1KOwwIjijqh" role="3clFbG">
+            <node concept="10M0yZ" id="1KOwwIjijqj" role="3fr31v">
+              <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+              <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="1KOwwIjijJK">
+    <property role="3GE5qa" value="Actions" />
+    <property role="2uzpH1" value="Data Flow Analysis for Product Line (Instead of Variant)" />
+    <property role="TrG5h" value="ProductLineDataFlowAnalysis" />
+    <node concept="tnohg" id="1KOwwIjijJL" role="tncku">
+      <node concept="3clFbS" id="1KOwwIjijJM" role="2VODD2">
+        <node concept="3clFbF" id="1KOwwIjijJN" role="3cqZAp">
+          <node concept="37vLTI" id="1KOwwIjijJO" role="3clFbG">
+            <node concept="3clFbT" id="1KOwwIjijJP" role="37vLTx" />
+            <node concept="10M0yZ" id="1KOwwIjijJQ" role="37vLTJ">
+              <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
+              <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2ScWuX" id="1KOwwIjijJR" role="tmbBb">
+      <node concept="3clFbS" id="1KOwwIjijJS" role="2VODD2">
+        <node concept="3clFbF" id="1KOwwIjijJT" role="3cqZAp">
+          <node concept="10M0yZ" id="1KOwwIjijJV" role="3clFbG">
+            <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+            <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
           </node>
         </node>
       </node>

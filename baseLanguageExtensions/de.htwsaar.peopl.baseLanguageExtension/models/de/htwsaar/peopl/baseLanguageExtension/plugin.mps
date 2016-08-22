@@ -1180,51 +1180,59 @@
                     <node concept="3Tqbb2" id="3KUV$4NZ5c8" role="1tU5fm" />
                   </node>
                   <node concept="3clFbS" id="3KUV$4NZ5ca" role="3clF47">
-                    <node concept="3cpWs8" id="3KUV$4NZw5Z" role="3cqZAp">
-                      <node concept="3cpWsn" id="3KUV$4NZw62" role="3cpWs9">
-                        <property role="TrG5h" value="definingNode" />
-                        <node concept="3Tqbb2" id="3KUV$4NZw5W" role="1tU5fm" />
-                        <node concept="2YIFZM" id="3KUV$4NZwf4" role="33vP2m">
-                          <ref role="37wK5l" to="6r0h:4FBIHQ1NEd_" resolve="getDefiningNode" />
-                          <ref role="1Pybhc" to="6r0h:70Uiey240g9" resolve="CheckingHelper" />
-                          <node concept="37vLTw" id="3KUV$4NZwj4" role="37wK5m">
-                            <ref role="3cqZAo" node="3KUV$4NZ5c7" resolve="node" />
+                    <node concept="3clFbJ" id="1KOwwIjgngb" role="3cqZAp">
+                      <node concept="3clFbS" id="1KOwwIjgngd" role="3clFbx">
+                        <node concept="3cpWs8" id="3KUV$4NZw5Z" role="3cqZAp">
+                          <node concept="3cpWsn" id="3KUV$4NZw62" role="3cpWs9">
+                            <property role="TrG5h" value="definingNode" />
+                            <node concept="3Tqbb2" id="3KUV$4NZw5W" role="1tU5fm" />
+                            <node concept="2YIFZM" id="3KUV$4NZwf4" role="33vP2m">
+                              <ref role="37wK5l" to="6r0h:4FBIHQ1NEd_" resolve="getDefiningNode" />
+                              <ref role="1Pybhc" to="6r0h:70Uiey240g9" resolve="CheckingHelper" />
+                              <node concept="37vLTw" id="3KUV$4NZwj4" role="37wK5m">
+                                <ref role="3cqZAo" node="3KUV$4NZ5c7" resolve="node" />
+                              </node>
+                            </node>
                           </node>
                         </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbJ" id="3KUV$4NUvs5" role="3cqZAp">
-                      <node concept="3clFbS" id="3KUV$4NUvs6" role="3clFbx">
-                        <node concept="3cpWs6" id="3KUV$4NZxnC" role="3cqZAp">
-                          <node concept="3clFbT" id="3KUV$4NZxpI" role="3cqZAk">
-                            <property role="3clFbU" value="true" />
+                        <node concept="3clFbJ" id="3KUV$4NUvs5" role="3cqZAp">
+                          <node concept="3clFbS" id="3KUV$4NUvs6" role="3clFbx">
+                            <node concept="3cpWs6" id="3KUV$4NZxnC" role="3cqZAp">
+                              <node concept="3clFbT" id="3KUV$4NZxpI" role="3cqZAk">
+                                <property role="3clFbU" value="true" />
+                              </node>
+                            </node>
                           </node>
-                        </node>
-                      </node>
-                      <node concept="22lmx$" id="3KUV$4NUvsb" role="3clFbw">
-                        <node concept="3clFbC" id="3KUV$4O3f5e" role="3uHU7B">
-                          <node concept="37vLTw" id="3KUV$4NZyo5" role="3uHU7B">
-                            <ref role="3cqZAo" node="3KUV$4NZw62" resolve="definingNode" />
-                          </node>
-                          <node concept="10Nm6u" id="3KUV$4NZytk" role="3uHU7w" />
-                        </node>
-                        <node concept="2OqwBi" id="3KUV$4NUvsi" role="3uHU7w">
-                          <node concept="2YIFZM" id="3KUV$4NUvsj" role="2Oq$k0">
-                            <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
-                            <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
-                          </node>
-                          <node concept="liA8E" id="3KUV$4NUvsk" role="2OqNvi">
-                            <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
-                            <node concept="37vLTw" id="3KUV$4NZxwj" role="37wK5m">
-                              <ref role="3cqZAo" node="3KUV$4NZw62" resolve="definingNode" />
+                          <node concept="22lmx$" id="3KUV$4NUvsb" role="3clFbw">
+                            <node concept="3clFbC" id="3KUV$4O3f5e" role="3uHU7B">
+                              <node concept="37vLTw" id="3KUV$4NZyo5" role="3uHU7B">
+                                <ref role="3cqZAo" node="3KUV$4NZw62" resolve="definingNode" />
+                              </node>
+                              <node concept="10Nm6u" id="3KUV$4NZytk" role="3uHU7w" />
+                            </node>
+                            <node concept="2OqwBi" id="3KUV$4NUvsi" role="3uHU7w">
+                              <node concept="2YIFZM" id="3KUV$4NUvsj" role="2Oq$k0">
+                                <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                                <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                              </node>
+                              <node concept="liA8E" id="3KUV$4NUvsk" role="2OqNvi">
+                                <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                                <node concept="37vLTw" id="3KUV$4NZxwj" role="37wK5m">
+                                  <ref role="3cqZAo" node="3KUV$4NZw62" resolve="definingNode" />
+                                </node>
+                              </node>
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="10M0yZ" id="1KOwwIjgnAt" role="3clFbw">
+                        <ref role="1PxDUh" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
+                        <ref role="3cqZAo" to="zur:1KOwwIjezj_" resolve="variantDataFlowAnalysis" />
+                      </node>
                     </node>
                     <node concept="3cpWs6" id="3KUV$4NZyw0" role="3cqZAp">
                       <node concept="3clFbT" id="3KUV$4NZyyl" role="3cqZAk">
-                        <property role="3clFbU" value="false" />
+                        <property role="3clFbU" value="true" />
                       </node>
                     </node>
                   </node>
