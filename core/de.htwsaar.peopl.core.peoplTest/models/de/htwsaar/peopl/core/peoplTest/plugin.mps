@@ -52,12 +52,12 @@
     <import index="e8no" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.containers(MPS.IDEA/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
     <import index="xtun" ref="r:328162d4-44f7-42c4-9057-912106fa6c6e(de.htwsaar.peopl.core.csvWriter.writer)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" implicit="true" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -718,22 +718,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="1GERpNhiwiU" role="3cqZAp">
-              <node concept="3SKdUq" id="1GERpNhiwiW" role="3SKWNk">
-                <property role="3SKdUp" value="textfeld couldnt be converted into a number" />
-              </node>
-            </node>
-            <node concept="34ab3g" id="1GERpNhiKiO" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="1GERpNhiKlZ" role="34bqiv">
-                <node concept="37vLTw" id="1GERpNhiKmM" role="3uHU7w">
-                  <ref role="3cqZAo" node="7YnyADp4ZlX" resolve="baseModule" />
-                </node>
-                <node concept="Xl_RD" id="1GERpNhiKiQ" role="3uHU7B">
-                  <property role="Xl_RC" value="baseModule" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="1GERpNhiw1o" role="3cqZAp">
               <node concept="3clFbS" id="1GERpNhiw1q" role="3clFbx">
                 <node concept="3cpWs6" id="1GERpNhiwe5" role="3cqZAp" />
@@ -744,17 +728,6 @@
                 </node>
                 <node concept="37vLTw" id="1GERpNhiw2E" role="3uHU7B">
                   <ref role="3cqZAo" node="1GERpNhisMx" resolve="numberOfConfigs" />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="1GERpNhiKsr" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="1GERpNhiKvE" role="34bqiv">
-                <node concept="37vLTw" id="1GERpNhiKwt" role="3uHU7w">
-                  <ref role="3cqZAo" node="1GERpNhisMx" resolve="numberOfConfigs" />
-                </node>
-                <node concept="Xl_RD" id="1GERpNhiKst" role="3uHU7B">
-                  <property role="Xl_RC" value=" # " />
                 </node>
               </node>
             </node>
@@ -770,17 +743,6 @@
                 </node>
                 <node concept="37vLTw" id="1GERpNhiBT$" role="37vLTJ">
                   <ref role="3cqZAo" node="1GERpNhitla" resolve="useSubtraction" />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="1GERpNhiKAa" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="1GERpNhiKDt" role="34bqiv">
-                <node concept="37vLTw" id="1GERpNhiKEg" role="3uHU7w">
-                  <ref role="3cqZAo" node="1GERpNhitla" resolve="useSubtraction" />
-                </node>
-                <node concept="Xl_RD" id="1GERpNhiKAc" role="3uHU7B">
-                  <property role="Xl_RC" value=" sub : " />
                 </node>
               </node>
             </node>
@@ -819,8 +781,8 @@
                           <node concept="liA8E" id="5kbhqrPBKQt" role="2OqNvi">
                             <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
                             <node concept="2YIFZM" id="12WW719ifw$" role="37wK5m">
-                              <ref role="37wK5l" node="12WW719hWo1" resolve="getTask" />
                               <ref role="1Pybhc" node="12WW719hJK6" resolve="GeneralTestingTask" />
+                              <ref role="37wK5l" node="4WIioTRaL8e" resolve="getTask" />
                               <node concept="37vLTw" id="12WW719ifxC" role="37wK5m">
                                 <ref role="3cqZAo" node="1GERpNhisMx" resolve="numberOfConfigs" />
                               </node>
@@ -2046,46 +2008,46 @@
                           </node>
                           <node concept="liA8E" id="hZl_taPsIp" role="2OqNvi">
                             <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
-                            <node concept="2YIFZM" id="hZl_taPsIq" role="37wK5m">
-                              <ref role="37wK5l" node="12WW719hWo1" resolve="getTask" />
+                            <node concept="2YIFZM" id="7Q0i0PfYPO4" role="37wK5m">
+                              <ref role="37wK5l" node="4WIioTRaL8e" resolve="getTask" />
                               <ref role="1Pybhc" node="12WW719hJK6" resolve="GeneralTestingTask" />
-                              <node concept="37vLTw" id="68HxCMivU1i" role="37wK5m">
+                              <node concept="37vLTw" id="7Q0i0PfYPO5" role="37wK5m">
                                 <ref role="3cqZAo" node="68HxCMivRdn" resolve="numberOfConfigs" />
                               </node>
-                              <node concept="37vLTw" id="68HxCMivRW5" role="37wK5m">
+                              <node concept="37vLTw" id="7Q0i0PfYPO6" role="37wK5m">
                                 <ref role="3cqZAo" node="68HxCMivRcx" resolve="modConf" />
                               </node>
-                              <node concept="37vLTw" id="68HxCMivS05" role="37wK5m">
+                              <node concept="37vLTw" id="7Q0i0PfYPO7" role="37wK5m">
                                 <ref role="3cqZAo" node="68HxCMivRc_" resolve="modDef" />
                               </node>
-                              <node concept="37vLTw" id="68HxCMivS40" role="37wK5m">
+                              <node concept="37vLTw" id="7Q0i0PfYPO8" role="37wK5m">
                                 <ref role="3cqZAo" node="68HxCMivRdj" resolve="baseModule" />
                               </node>
-                              <node concept="37vLTw" id="68HxCMivXXo" role="37wK5m">
+                              <node concept="37vLTw" id="7Q0i0PfYPO9" role="37wK5m">
                                 <ref role="3cqZAo" node="68HxCMivRdr" resolve="useSubtraction" />
                               </node>
-                              <node concept="2OqwBi" id="hZl_taPtjO" role="37wK5m">
-                                <node concept="2WthIp" id="hZl_taPtjR" role="2Oq$k0" />
-                                <node concept="1DTwFV" id="hZl_taPtjT" role="2OqNvi">
+                              <node concept="2OqwBi" id="7Q0i0PfYPOa" role="37wK5m">
+                                <node concept="2WthIp" id="7Q0i0PfYPOb" role="2Oq$k0" />
+                                <node concept="1DTwFV" id="7Q0i0PfYPOc" role="2OqNvi">
                                   <ref role="2WH_rO" node="7G8hLbKxftz" resolve="ideaProject" />
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="hZl_taPsIz" role="37wK5m">
-                                <node concept="2WthIp" id="hZl_taPsI$" role="2Oq$k0" />
-                                <node concept="1DTwFV" id="hZl_taPsI_" role="2OqNvi">
+                              <node concept="2OqwBi" id="7Q0i0PfYPOd" role="37wK5m">
+                                <node concept="2WthIp" id="7Q0i0PfYPOe" role="2Oq$k0" />
+                                <node concept="1DTwFV" id="7Q0i0PfYPOf" role="2OqNvi">
                                   <ref role="2WH_rO" node="12dMDeSyzEZ" resolve="solutionModule" />
                                 </node>
                               </node>
-                              <node concept="2OqwBi" id="hZl_taPsIA" role="37wK5m">
-                                <node concept="2WthIp" id="hZl_taPsIB" role="2Oq$k0" />
-                                <node concept="1DTwFV" id="hZl_taPsIC" role="2OqNvi">
+                              <node concept="2OqwBi" id="7Q0i0PfYPOg" role="37wK5m">
+                                <node concept="2WthIp" id="7Q0i0PfYPOh" role="2Oq$k0" />
+                                <node concept="1DTwFV" id="7Q0i0PfYPOi" role="2OqNvi">
                                   <ref role="2WH_rO" node="2BjwmTy5x3F" resolve="mpsProject" />
                                 </node>
                               </node>
-                              <node concept="3clFbT" id="hZl_taPsID" role="37wK5m">
+                              <node concept="3clFbT" id="7Q0i0PfYPOj" role="37wK5m">
                                 <property role="3clFbU" value="true" />
                               </node>
-                              <node concept="3clFbT" id="ECJov0_l68" role="37wK5m">
+                              <node concept="3clFbT" id="7Q0i0PfYPOk" role="37wK5m">
                                 <property role="3clFbU" value="true" />
                               </node>
                             </node>
@@ -3669,15 +3631,11 @@
                                           <property role="3SKdUp" value="delete Files " />
                                         </node>
                                       </node>
-                                      <node concept="1X3_iC" id="2xsxSmkSwcL" role="lGtFl">
-                                        <property role="3V$3am" value="statement" />
-                                        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                        <node concept="3clFbF" id="4WIioTRaLh_" role="8Wnug">
-                                          <node concept="1rXfSq" id="4WIioTRaLhA" role="3clFbG">
-                                            <ref role="37wK5l" node="4WIioTRaLi3" resolve="deleteFilesInFolder" />
-                                            <node concept="37vLTw" id="4WIioTRaLhB" role="37wK5m">
-                                              <ref role="3cqZAo" node="4WIioTRaLen" resolve="outputFolderPath" />
-                                            </node>
+                                      <node concept="3clFbF" id="4WIioTRaLh_" role="3cqZAp">
+                                        <node concept="1rXfSq" id="4WIioTRaLhA" role="3clFbG">
+                                          <ref role="37wK5l" node="4WIioTRaLi3" resolve="deleteFilesInFolder" />
+                                          <node concept="37vLTw" id="4WIioTRaLhB" role="37wK5m">
+                                            <ref role="3cqZAo" node="4WIioTRaLen" resolve="outputFolderPath" />
                                           </node>
                                         </node>
                                       </node>
@@ -3750,6 +3708,7 @@
                                       </node>
                                     </node>
                                   </node>
+                                  <node concept="2tJIrI" id="5$sClh2xPfZ" role="jymVt" />
                                   <node concept="3clFb_" id="4WIioTRaLi3" role="jymVt">
                                     <property role="1EzhhJ" value="false" />
                                     <property role="TrG5h" value="deleteFilesInFolder" />
@@ -3757,6 +3716,7 @@
                                     <property role="DiZV1" value="false" />
                                     <property role="2aFKle" value="false" />
                                     <node concept="3clFbS" id="4WIioTRaLi4" role="3clF47">
+                                      <node concept="3clFbH" id="5$sClh2xP_e" role="3cqZAp" />
                                       <node concept="3cpWs8" id="4WIioTRaLi5" role="3cqZAp">
                                         <node concept="3cpWsn" id="4WIioTRaLi6" role="3cpWs9">
                                           <property role="TrG5h" value="directory" />
@@ -3773,47 +3733,31 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="SfApY" id="4WIioTRaLib" role="3cqZAp">
-                                        <node concept="3clFbS" id="4WIioTRaLic" role="SfCbr">
-                                          <node concept="3clFbF" id="4WIioTRaLid" role="3cqZAp">
-                                            <node concept="2YIFZM" id="4WIioTRaLie" role="3clFbG">
-                                              <ref role="37wK5l" to="8oaq:~FileUtils.cleanDirectory(java.io.File):void" resolve="cleanDirectory" />
-                                              <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                                              <node concept="37vLTw" id="4WIioTRaLif" role="37wK5m">
-                                                <ref role="3cqZAo" node="4WIioTRaLi6" resolve="directory" />
+                                      <node concept="1DcWWT" id="5$sClh2xQr_" role="3cqZAp">
+                                        <node concept="3clFbS" id="5$sClh2xQrB" role="2LFqv$">
+                                          <node concept="3clFbF" id="5$sClh2xSrN" role="3cqZAp">
+                                            <node concept="2OqwBi" id="5$sClh2xStr" role="3clFbG">
+                                              <node concept="37vLTw" id="5$sClh2xSrM" role="2Oq$k0">
+                                                <ref role="3cqZAo" node="5$sClh2xQrC" resolve="f" />
+                                              </node>
+                                              <node concept="liA8E" id="5$sClh2xSCC" role="2OqNvi">
+                                                <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
                                               </node>
                                             </node>
                                           </node>
-                                          <node concept="3clFbH" id="4WIioTRaLig" role="3cqZAp" />
                                         </node>
-                                        <node concept="TDmWw" id="4WIioTRaLih" role="TEbGg">
-                                          <node concept="3cpWsn" id="4WIioTRaLii" role="TDEfY">
-                                            <property role="TrG5h" value="e" />
-                                            <node concept="3uibUv" id="4WIioTRaLij" role="1tU5fm">
-                                              <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
-                                            </node>
+                                        <node concept="3cpWsn" id="5$sClh2xQrC" role="1Duv9x">
+                                          <property role="TrG5h" value="f" />
+                                          <node concept="3uibUv" id="5$sClh2xQH3" role="1tU5fm">
+                                            <ref role="3uigEE" to="guwi:~File" resolve="File" />
                                           </node>
-                                          <node concept="3clFbS" id="4WIioTRaLik" role="TDEfX">
-                                            <node concept="3clFbF" id="4WIioTRaLil" role="3cqZAp">
-                                              <node concept="2OqwBi" id="4WIioTRaLim" role="3clFbG">
-                                                <node concept="37vLTw" id="4WIioTRaLin" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="4WIioTRaLii" resolve="e" />
-                                                </node>
-                                                <node concept="liA8E" id="4WIioTRaLio" role="2OqNvi">
-                                                  <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace():void" resolve="printStackTrace" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                            <node concept="34ab3g" id="4WIioTRaLip" role="3cqZAp">
-                                              <property role="35gtTG" value="warn" />
-                                              <property role="34fQS0" value="true" />
-                                              <node concept="Xl_RD" id="4WIioTRaLiq" role="34bqiv">
-                                                <property role="Xl_RC" value="GeneralTestingTask -&gt; delete Files in Folder" />
-                                              </node>
-                                              <node concept="37vLTw" id="4WIioTRaLir" role="34bMjA">
-                                                <ref role="3cqZAo" node="4WIioTRaLii" resolve="e" />
-                                              </node>
-                                            </node>
+                                        </node>
+                                        <node concept="2OqwBi" id="5$sClh2xRe1" role="1DdaDG">
+                                          <node concept="37vLTw" id="5$sClh2xR3t" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="4WIioTRaLi6" resolve="directory" />
+                                          </node>
+                                          <node concept="liA8E" id="5$sClh2xRoc" role="2OqNvi">
+                                            <ref role="37wK5l" to="guwi:~File.listFiles():java.io.File[]" resolve="listFiles" />
                                           </node>
                                         </node>
                                       </node>
@@ -9532,22 +9476,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3SKdUt" id="ECJov0$g$5" role="3cqZAp">
-              <node concept="3SKdUq" id="ECJov0$g$6" role="3SKWNk">
-                <property role="3SKdUp" value="textfeld couldnt be converted into a number" />
-              </node>
-            </node>
-            <node concept="34ab3g" id="ECJov0$g$7" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="ECJov0$g$8" role="34bqiv">
-                <node concept="37vLTw" id="ECJov0$g$9" role="3uHU7w">
-                  <ref role="3cqZAo" node="ECJov0$gzs" resolve="baseModule" />
-                </node>
-                <node concept="Xl_RD" id="ECJov0$g$a" role="3uHU7B">
-                  <property role="Xl_RC" value="baseModule" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="ECJov0$g$b" role="3cqZAp">
               <node concept="3clFbS" id="ECJov0$g$c" role="3clFbx">
                 <node concept="3cpWs6" id="ECJov0$g$d" role="3cqZAp" />
@@ -9558,17 +9486,6 @@
                 </node>
                 <node concept="37vLTw" id="ECJov0$g$g" role="3uHU7B">
                   <ref role="3cqZAo" node="ECJov0$gzw" resolve="numberOfConfigs" />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="ECJov0$g$h" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="ECJov0$g$i" role="34bqiv">
-                <node concept="37vLTw" id="ECJov0$g$j" role="3uHU7w">
-                  <ref role="3cqZAo" node="ECJov0$gzw" resolve="numberOfConfigs" />
-                </node>
-                <node concept="Xl_RD" id="ECJov0$g$k" role="3uHU7B">
-                  <property role="Xl_RC" value=" # " />
                 </node>
               </node>
             </node>
@@ -9584,17 +9501,6 @@
                 </node>
                 <node concept="37vLTw" id="ECJov0$g$q" role="37vLTJ">
                   <ref role="3cqZAo" node="ECJov0$gz$" resolve="useSubtraction" />
-                </node>
-              </node>
-            </node>
-            <node concept="34ab3g" id="ECJov0$g$r" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="ECJov0$g$s" role="34bqiv">
-                <node concept="37vLTw" id="ECJov0$g$t" role="3uHU7w">
-                  <ref role="3cqZAo" node="ECJov0$gz$" resolve="useSubtraction" />
-                </node>
-                <node concept="Xl_RD" id="ECJov0$g$u" role="3uHU7B">
-                  <property role="Xl_RC" value=" sub : " />
                 </node>
               </node>
             </node>
@@ -9629,8 +9535,8 @@
                           <node concept="liA8E" id="ECJov0_iLu" role="2OqNvi">
                             <ref role="37wK5l" to="xygl:~ProgressManager.run(com.intellij.openapi.progress.Task):void" resolve="run" />
                             <node concept="2YIFZM" id="ECJov0_iLv" role="37wK5m">
-                              <ref role="37wK5l" node="12WW719hWo1" resolve="getTask" />
                               <ref role="1Pybhc" node="12WW719hJK6" resolve="GeneralTestingTask" />
+                              <ref role="37wK5l" node="4WIioTRaL8e" resolve="getTask" />
                               <node concept="37vLTw" id="ECJov0_iLw" role="37wK5m">
                                 <ref role="3cqZAo" node="ECJov0$gzw" resolve="numberOfConfigs" />
                               </node>
