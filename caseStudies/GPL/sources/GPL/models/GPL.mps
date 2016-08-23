@@ -11813,19 +11813,6 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="5PCLkhXHN0O" role="3cqZAp" />
-              <node concept="3cpWs6" id="5PCLkhXHQDd" role="3cqZAp">
-                <node concept="2ShNRf" id="5PCLkhXHQDe" role="3cqZAk">
-                  <node concept="YeOm9" id="5PCLkhXI02q" role="2ShVmc">
-                    <node concept="1Y3b0j" id="5PCLkhXI02t" role="YeSDq">
-                      <property role="2bfB8j" value="true" />
-                      <ref role="1Y3XeK" node="AZ7IhMm2bl" resolve="VertexIter" />
-                      <ref role="37wK5l" node="24MmuxSq6ss" resolve="VertexIter" />
-                      <node concept="3Tm1VV" id="5PCLkhXI02u" role="1B3o_S" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node concept="3clFbH" id="5PCLkhXHO8r" role="3cqZAp" />
             </node>
             <node concept="1V74GB" id="2ju$YsGnhZs" role="lGtFl">
