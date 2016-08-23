@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)" doNotGenerate="true">
+<model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
@@ -152,12 +152,6 @@
         <reference id="8309912865649636121" name="element" index="14b0Uw" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -171,12 +165,6 @@
       </concept>
       <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
         <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
-      </concept>
-      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
-        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
-      </concept>
-      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
-        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -592,81 +580,16 @@
                     <node concept="3zZkjj" id="$XellbeUEe" role="2OqNvi">
                       <node concept="1bVj0M" id="$XellbeUEg" role="23t8la">
                         <node concept="3clFbS" id="$XellbeUEh" role="1bW5cS">
-                          <node concept="1X3_iC" id="1Z9n1aMNbcy" role="lGtFl">
-                            <property role="3V$3am" value="statement" />
-                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                            <node concept="34ab3g" id="5BdxFtz$uZr" role="8Wnug">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="5BdxFtz$uZt" role="34bqiv">
-                                <property role="Xl_RC" value="check whether the cache contains the element" />
+                          <node concept="3clFbF" id="3sb$Fkl6j0x" role="3cqZAp">
+                            <node concept="2OqwBi" id="3sb$Fkl6j8Z" role="3clFbG">
+                              <node concept="2YIFZM" id="3sb$Fkl6j4n" role="2Oq$k0">
+                                <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                                <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                               </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbJ" id="5BOueCCKC_6" role="3cqZAp">
-                            <node concept="3clFbS" id="5BOueCCKC_8" role="3clFbx">
-                              <node concept="3clFbF" id="5BOueCCKDuL" role="3cqZAp">
-                                <node concept="2OqwBi" id="5BOueCCLQRE" role="3clFbG">
-                                  <node concept="2YIFZM" id="5BOueCCLQHa" role="2Oq$k0">
-                                    <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
-                                    <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
-                                  </node>
-                                  <node concept="liA8E" id="5BOueCCLQZ6" role="2OqNvi">
-                                    <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
-                                    <node concept="37vLTw" id="5BOueCCLR4m" role="37wK5m">
-                                      <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="3fqX7Q" id="5BOueCCKD02" role="3clFbw">
-                              <node concept="2OqwBi" id="5BOueCCKD04" role="3fr31v">
-                                <node concept="2YIFZM" id="5BOueCCKD05" role="2Oq$k0">
-                                  <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
-                                  <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
-                                </node>
-                                <node concept="liA8E" id="5BOueCCKD06" role="2OqNvi">
-                                  <ref role="37wK5l" to="zur:5h5WElAipks" resolve="isValid" />
-                                  <node concept="10QFUN" id="3YR93ntFSHs" role="37wK5m">
-                                    <node concept="3uibUv" id="3YR93ntFSUv" role="10QFUM">
-                                      <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-                                    </node>
-                                    <node concept="14b0Wr" id="3YR93ntFSAo" role="10QFUP">
-                                      <ref role="14b0Uw" node="7diJr$RuyJf" resolve="sModule" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbF" id="$XellbeUNK" role="3cqZAp">
-                            <node concept="2OqwBi" id="$XellbdXnq" role="3clFbG">
-                              <node concept="2YIFZM" id="$XellbdXg9" role="2Oq$k0">
-                                <ref role="1Pybhc" to="zur:5h5WElAi3Vf" resolve="CalculatedFragmentsCache" />
-                                <ref role="37wK5l" to="zur:5h5WElAiemo" resolve="getInstance" />
-                              </node>
-                              <node concept="liA8E" id="$XellbdXyo" role="2OqNvi">
-                                <ref role="37wK5l" to="zur:5h5WElAivEQ" resolve="contains" />
-                                <node concept="10QFUN" id="3YR93ntFT7i" role="37wK5m">
-                                  <node concept="3uibUv" id="3YR93ntFT7j" role="10QFUM">
-                                    <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-                                  </node>
-                                  <node concept="14b0Wr" id="3YR93ntFT7k" role="10QFUP">
-                                    <ref role="14b0Uw" node="7diJr$RuyJf" resolve="sModule" />
-                                  </node>
-                                </node>
-                                <node concept="2OqwBi" id="$XellbdZeC" role="37wK5m">
-                                  <node concept="2OqwBi" id="$XellbdXSj" role="2Oq$k0">
-                                    <node concept="37vLTw" id="$Xellbf6RH" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
-                                    </node>
-                                    <node concept="3CFZ6_" id="$XellbdYnJ" role="2OqNvi">
-                                      <node concept="3CFYIy" id="$Xellbf70S" role="3CFYIz">
-                                        <ref role="3CFYIx" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="1uHKPH" id="$Xellbe0Fp" role="2OqNvi" />
+                              <node concept="liA8E" id="3sb$Fkl6jdX" role="2OqNvi">
+                                <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                                <node concept="37vLTw" id="3sb$Fkl6jig" role="37wK5m">
+                                  <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
                                 </node>
                               </node>
                             </node>

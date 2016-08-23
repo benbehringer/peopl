@@ -45,7 +45,7 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/helper/org.apache.commons/org.apache.commons.msd" folder="peopl.core.lib" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/helper/org.apache.commons/org.apache.commons.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.favourites/com.mbeddr.mpsutil.favourites.mpl" folder="mbeddr.mpsutils" />
       <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.hyperlink/com.mbeddr.mpsutil.hyperlink.mpl" folder="mbeddr.mpsutils" />
       <modulePath path="$PROJECT_DIR$/mbeddr/mpsutils/com.mbeddr.mpsutil.iconchar/com.mbeddr.mpsutil.iconchar.mpl" folder="mbeddr.mpsutils" />
