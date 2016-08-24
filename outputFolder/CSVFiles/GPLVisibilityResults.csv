@@ -1,9 +1,0 @@
-numOfModules;numOfMethodPerModules;numOfVisibleMethods;percentageVisibile;numOfInvisibleMethods;percentageInvisible;
-0;0;0;0;0;0;
-1;79;79;100;0;0;
-2;10;9;90;1;10;
-3;5;3;60;2;40;
-4;3;3;100;0;0;
-6;1;0;0;1;100;
-8;2;2;100;0;0;
-9;1;0;0;1;100;
