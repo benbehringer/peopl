@@ -7,6 +7,7 @@
     <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
+    <use id="be143329-29b3-4afa-8ff0-750f4ac4d5fe" name="de.htwsaar.peopl.view.embedded" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -253,9 +254,20 @@
       </concept>
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
+    </language>
+    <language id="be143329-29b3-4afa-8ff0-750f4ac4d5fe" name="de.htwsaar.peopl.view.embedded">
+      <concept id="6294437645951090041" name="de.htwsaar.peopl.view.embedded.structure.ShowAnnotations" flags="ng" index="3sAez9" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1156234966388" name="shortDescription" index="OYnhT" />
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -1718,7 +1730,6 @@
               <ref role="25GeQm" node="3LJfT5KrNZl" resolve="PeoplBlockReference_4354769258579705813" />
             </node>
           </node>
-          <node concept="3clFbH" id="10Z$L974xl3" role="3cqZAp" />
           <node concept="2wexfA" id="7MIdZ4BDnzM" role="3cqZAp">
             <ref role="ojxmB" node="24MmuxSq6tL" resolve="getEdges" />
             <node concept="3clFbS" id="7MIdZ4BDnzN" role="9aQI4">
@@ -11018,7 +11029,7 @@
             <node concept="3clFbS" id="AZ7IhMm2dq" role="9aQI4">
               <node concept="3SKdUt" id="24MmuxSq69A" role="3cqZAp">
                 <node concept="3SKdUq" id="24MmuxSq69_" role="3SKWNk">
-                  <property role="3SKdUp" value="if the graph is directed is enough to check that the source node" />
+                  <property role="3SKdUp" value="if the graph is directed it is sufficient to check that the source node" />
                 </node>
               </node>
               <node concept="3SKdUt" id="24MmuxSq69C" role="3cqZAp">
@@ -12875,7 +12886,13 @@
           </node>
           <node concept="2wexfA" id="AZ7IhMm2fj" role="3cqZAp">
             <ref role="ojxmB" node="24MmuxSq6nF" resolve="addWeight" />
-            <node concept="3clFbS" id="AZ7IhMm2fk" role="9aQI4" />
+            <node concept="3clFbS" id="AZ7IhMm2fk" role="9aQI4">
+              <node concept="3SKdUt" id="3LF0QVYNeb6" role="3cqZAp">
+                <node concept="3SKdUq" id="3LF0QVYNeb7" role="3SKWNk">
+                  <property role="3SKdUp" value="adding weight is handled by interaction code" />
+                </node>
+              </node>
+            </node>
             <node concept="1V74GB" id="AZ7IhMm2fl" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_702314033412842453" />
@@ -12901,6 +12918,7 @@
           <ref role="ocbYS" node="AZ7IhMm2fj" />
           <ref role="1C2YfU" node="AZ7IhMm2fl" resolve="Fragment_702314033412842453" />
         </node>
+        <node concept="3sAez9" id="3LF0QVYNmXx" role="lGtFl" />
       </node>
       <node concept="3clFb_" id="24MmuxSq6nV" role="jymVt">
         <property role="TrG5h" value="setWeight" />
@@ -14544,6 +14562,132 @@
         <ref role="3aRQVk" to="ymfq:6Dv_8JO3jB3" resolve="ModuleToFragment_7665008419623745987" />
       </node>
     </node>
+  </node>
+  <node concept="HxVAC" id="3LF0QVYN9FM">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="G_NoEdges::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XjZ" resolve="G_NoEdges" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNb8j">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Weighted::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNoi$">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Weighted::Edge" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm2bU" resolve="Edge" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNrTR">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Edges_Directed::CycleWorkSpace" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XcH" resolve="Edges_Directed" />
+    <ref role="HxVAD" node="AZ7IhMm2cR" resolve="CycleWorkSpace" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNtji">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Edges_Undirected::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xew" resolve="Edges_Undirected" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNwM4">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GEN_Edges::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNzhA">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GEN_Edges::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYN$I7">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Alg_MSTPrim::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9X_i" resolve="Alg_MSTPrim" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNBd_">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Alg_MSTPrim::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9X_i" resolve="Alg_MSTPrim" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNCE6">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GN_OnlyNeighbors#Weighted::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:2ju$YsGmurW" resolve="GN_OnlyNeighbors#Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNF9$">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="G_NoEdges#Weighted::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:3XSKgTnE_v6" resolve="G_NoEdges#Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNHLf">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Weighted::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNMQx">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Weighted::Main" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xgk" resolve="Weighted" />
+    <ref role="HxVAD" node="AZ7IhMm2aQ" resolve="Main" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNPLB">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GN_OnlyNeighbors::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNRe8">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="SearchAlg::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:3XSKgTnGhTj" resolve="SearchAlg" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNVlF">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="SearchAlg::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:3XSKgTnGhTj" resolve="SearchAlg" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYNXPL">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="SearchAlg_DFS::Vertex" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9XpB" resolve="SearchAlg_DFS" />
+    <ref role="HxVAD" node="AZ7IhMm2dJ" resolve="Vertex" />
+  </node>
+  <node concept="HxVAC" id="3LF0QVYRvNW">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="GN_OnlyNeighbors::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>
 
