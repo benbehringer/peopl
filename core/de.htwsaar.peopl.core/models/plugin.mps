@@ -4496,5 +4496,135 @@
     <node concept="2tJIrI" id="4ex3EegUgvo" role="jymVt" />
     <node concept="3Tm1VV" id="2y7plEILBtz" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="5YIQQiODh2W">
+    <property role="TrG5h" value="ModulesInCurrentConfigurationCache" />
+    <property role="3GE5qa" value="Global" />
+    <node concept="312cEu" id="5YIQQiODh2X" role="jymVt">
+      <property role="2bfB8j" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="1EXbeo" value="false" />
+      <property role="TrG5h" value="Holder" />
+      <node concept="Wx3nA" id="5YIQQiODh2Y" role="jymVt">
+        <property role="2dlcS1" value="false" />
+        <property role="2dld4O" value="false" />
+        <property role="TrG5h" value="myInstance" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="5YIQQiODh2Z" role="1tU5fm">
+          <ref role="3uigEE" node="5YIQQiODh2W" resolve="ModulesInCurrentConfigurationCache" />
+        </node>
+        <node concept="2ShNRf" id="5YIQQiODh30" role="33vP2m">
+          <node concept="HV5vD" id="5YIQQiODh31" role="2ShVmc">
+            <ref role="HV5vE" node="5YIQQiODh2W" resolve="ModulesInCurrentConfigurationCache" />
+          </node>
+        </node>
+        <node concept="3Tm6S6" id="5YIQQiODh32" role="1B3o_S" />
+      </node>
+      <node concept="3Tm6S6" id="5YIQQiODh33" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5YIQQiODh34" role="jymVt" />
+    <node concept="312cEg" id="5YIQQiODh35" role="jymVt">
+      <property role="34CwA1" value="true" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentModuleSet" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="5YIQQiODh36" role="1B3o_S" />
+      <node concept="2hMVRd" id="5YIQQiODhp3" role="1tU5fm">
+        <node concept="3Tqbb2" id="5YIQQiODhuh" role="2hN53Y">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+      <node concept="10Nm6u" id="5YIQQiODh38" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="5YIQQiODh39" role="jymVt" />
+    <node concept="2YIFZL" id="5YIQQiODh3a" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5YIQQiODh3b" role="3clF47">
+        <node concept="3clFbF" id="5YIQQiODh3c" role="3cqZAp">
+          <node concept="10M0yZ" id="5YIQQiODh3d" role="3clFbG">
+            <ref role="3cqZAo" node="5YIQQiODh2Y" resolve="myInstance" />
+            <ref role="1PxDUh" node="5YIQQiODh2X" resolve="ModulesInCurrentConfigurationCache.Holder" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5YIQQiODh3e" role="1B3o_S" />
+      <node concept="3uibUv" id="5YIQQiODh3f" role="3clF45">
+        <ref role="3uigEE" node="5YIQQiODh2W" resolve="ModulesInCurrentConfigurationCache" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5YIQQiODh3g" role="jymVt" />
+    <node concept="3clFb_" id="5YIQQiODh3h" role="jymVt">
+      <property role="TrG5h" value="getModules" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5YIQQiODh3i" role="3clF47">
+        <node concept="3cpWs6" id="5YIQQiODh3j" role="3cqZAp">
+          <node concept="37vLTw" id="5YIQQiODh3k" role="3cqZAk">
+            <ref role="3cqZAo" node="5YIQQiODh35" resolve="currentModuleSet" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5YIQQiODh3l" role="1B3o_S" />
+      <node concept="2hMVRd" id="5YIQQiODi1h" role="3clF45">
+        <node concept="3Tqbb2" id="5YIQQiODi1i" role="2hN53Y">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5YIQQiODh3n" role="jymVt" />
+    <node concept="3clFb_" id="5YIQQiODh3o" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="setModules" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="5YIQQiODiak" role="3clF46">
+        <property role="TrG5h" value="currentModules" />
+        <node concept="2hMVRd" id="5YIQQiODieI" role="1tU5fm">
+          <node concept="3Tqbb2" id="5YIQQiODieJ" role="2hN53Y">
+            <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="5YIQQiODh3p" role="3clF47">
+        <node concept="3clFbF" id="5YIQQiODh3q" role="3cqZAp">
+          <node concept="37vLTI" id="5YIQQiODh3r" role="3clFbG">
+            <node concept="37vLTw" id="5YIQQiODh3t" role="37vLTJ">
+              <ref role="3cqZAo" node="5YIQQiODh35" resolve="currentModuleSet" />
+            </node>
+            <node concept="37vLTw" id="5YIQQiODitG" role="37vLTx">
+              <ref role="3cqZAo" node="5YIQQiODiak" resolve="currentModules" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5YIQQiODh3u" role="1B3o_S" />
+      <node concept="3cqZAl" id="5YIQQiODh3v" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5YIQQiODh3y" role="jymVt" />
+    <node concept="3clFb_" id="5YIQQiODh3z" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="clearBuffer" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5YIQQiODh3$" role="3clF47">
+        <node concept="3clFbF" id="5YIQQiODh3_" role="3cqZAp">
+          <node concept="37vLTI" id="5YIQQiODh3A" role="3clFbG">
+            <node concept="10Nm6u" id="5YIQQiODh3B" role="37vLTx" />
+            <node concept="37vLTw" id="5YIQQiODh3C" role="37vLTJ">
+              <ref role="3cqZAo" node="5YIQQiODh35" resolve="currentModuleSet" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5YIQQiODh3D" role="1B3o_S" />
+      <node concept="3cqZAl" id="5YIQQiODh3E" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="5YIQQiODh3F" role="1B3o_S" />
+  </node>
 </model>
 

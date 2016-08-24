@@ -6,11 +6,12 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
     <import index="nsly" ref="r:5670a179-ee5c-45d1-b0cb-1e412bfcf47f(de.htwsaar.peopl.core.featureConfig.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="6izd" ref="r:7777f1b3-e430-49d8-910e-a8dd679c2e2f(de.htwsaar.peopl.core.featureConfig.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -278,10 +279,10 @@
                         </node>
                         <node concept="2OqwBi" id="1AgTw_zMaQ9" role="3uHU7w">
                           <node concept="35c_gC" id="1AgTw_zMaG$" role="2Oq$k0">
-                            <ref role="35c_gD" to="nsly:63cq5TSo7xX" resolve="Constraint" />
+                            <ref role="35c_gD" to="xf8r:63cq5TSo7xX" resolve="Constraint" />
                           </node>
                           <node concept="2qgKlT" id="1AgTw_zMaZ2" role="2OqNvi">
-                            <ref role="37wK5l" to="6izd:4p4J_SJvsEo" resolve="printNode" />
+                            <ref role="37wK5l" to="kpvh:4p4J_SJvsEo" resolve="printNode" />
                             <node concept="2GrUjf" id="1AgTw_zMb9K" role="37wK5m">
                               <ref role="2Gs0qQ" node="4p4J_SJv3Hz" resolve="constraint" />
                             </node>

@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="nsly" ref="r:5670a179-ee5c-45d1-b0cb-1e412bfcf47f(de.htwsaar.peopl.core.featureConfig.structure)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
@@ -343,14 +344,14 @@
                             <node concept="3y3z36" id="2y1QvqmrBPW" role="3uHU7w">
                               <node concept="zm4iT" id="7iMRBOOg8e4" role="3uHU7B" />
                               <node concept="3TUQnm" id="7iMRBOOg8e5" role="3uHU7w">
-                                <ref role="3TV0OU" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                                <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                               </node>
                             </node>
                           </node>
                           <node concept="3y3z36" id="2y1QvqmrBX9" role="3uHU7w">
                             <node concept="zm4iT" id="7iMRBOOg8e7" role="3uHU7B" />
                             <node concept="3TUQnm" id="7iMRBOOg8e8" role="3uHU7w">
-                              <ref role="3TV0OU" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                              <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                             </node>
                           </node>
                         </node>
@@ -444,14 +445,14 @@
                                   <node concept="3y3z36" id="4u4XQEatZTp" role="3uHU7w">
                                     <node concept="zm4iT" id="4u4XQEatZTq" role="3uHU7B" />
                                     <node concept="3TUQnm" id="4u4XQEatZTr" role="3uHU7w">
-                                      <ref role="3TV0OU" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                                      <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                                     </node>
                                   </node>
                                 </node>
                                 <node concept="3y3z36" id="4u4XQEatZTs" role="3uHU7w">
                                   <node concept="zm4iT" id="4u4XQEatZTt" role="3uHU7B" />
                                   <node concept="3TUQnm" id="4u4XQEatZTu" role="3uHU7w">
-                                    <ref role="3TV0OU" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                                    <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                                   </node>
                                 </node>
                               </node>
@@ -592,13 +593,13 @@
                   <node concept="3clFbC" id="4u4XQEas1$F" role="3uHU7B">
                     <node concept="zm4iT" id="4u4XQEas1$G" role="3uHU7B" />
                     <node concept="3TUQnm" id="4u4XQEas1$H" role="3uHU7w">
-                      <ref role="3TV0OU" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                      <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                     </node>
                   </node>
                   <node concept="3clFbC" id="4u4XQEas1$I" role="3uHU7w">
                     <node concept="zm4iT" id="4u4XQEas1$J" role="3uHU7B" />
                     <node concept="3TUQnm" id="4u4XQEas1$K" role="3uHU7w">
-                      <ref role="3TV0OU" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                      <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                     </node>
                   </node>
                 </node>
@@ -615,7 +616,7 @@
       <property role="3mWRNi" value="Add Implies Operator to Auto-complete menu" />
       <ref role="3UNGvu" to="nsly:66EASTR6M9Y" resolve="FeatureConnector" />
       <node concept="tYCnQ" id="3EFFV1XxD_i" role="_1QTJ">
-        <ref role="uz4UX" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+        <ref role="uz4UX" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
         <node concept="Cmt7Y" id="3EFFV1XxEee" role="uz6Si">
           <node concept="Cnhdc" id="3EFFV1XxEeg" role="Cncma">
             <node concept="3clFbS" id="3EFFV1XxEei" role="2VODD2">
@@ -640,12 +641,12 @@
                 <node concept="3cpWsn" id="3EFFV1XxFRx" role="3cpWs9">
                   <property role="TrG5h" value="implies" />
                   <node concept="3Tqbb2" id="3EFFV1XxFRs" role="1tU5fm">
-                    <ref role="ehGHo" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                    <ref role="ehGHo" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                   </node>
                   <node concept="2ShNRf" id="3EFFV1XxFXV" role="33vP2m">
                     <node concept="3zrR0B" id="3EFFV1XxFXT" role="2ShVmc">
                       <node concept="3Tqbb2" id="3EFFV1XxFXU" role="3zrR0E">
-                        <ref role="ehGHo" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                        <ref role="ehGHo" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                       </node>
                     </node>
                   </node>
@@ -743,7 +744,7 @@
         </node>
       </node>
       <node concept="tYCnQ" id="3EFFV1XxQUY" role="_1QTJ">
-        <ref role="uz4UX" to="nsly:63cq5TSog52" resolve="XorExpression" />
+        <ref role="uz4UX" to="xf8r:63cq5TSog52" resolve="XorOperation" />
         <node concept="Cmt7Y" id="3EFFV1XxQY0" role="uz6Si">
           <node concept="Cnhdc" id="3EFFV1XxQY2" role="Cncma">
             <node concept="3clFbS" id="3EFFV1XxQY4" role="2VODD2">
@@ -768,12 +769,12 @@
                 <node concept="3cpWsn" id="3EFFV1XxRfe" role="3cpWs9">
                   <property role="TrG5h" value="xor" />
                   <node concept="3Tqbb2" id="3EFFV1XxRf9" role="1tU5fm">
-                    <ref role="ehGHo" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                    <ref role="ehGHo" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                   </node>
                   <node concept="2ShNRf" id="3EFFV1XxRkq" role="33vP2m">
                     <node concept="3zrR0B" id="3EFFV1XxRrv" role="2ShVmc">
                       <node concept="3Tqbb2" id="3EFFV1XxRrx" role="3zrR0E">
-                        <ref role="ehGHo" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                        <ref role="ehGHo" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                       </node>
                     </node>
                   </node>
@@ -892,14 +893,14 @@
                     <node concept="3y3z36" id="3EFFV1XxMC7" role="3uHU7w">
                       <node concept="zm4iT" id="3EFFV1XxMwY" role="3uHU7B" />
                       <node concept="3TUQnm" id="3EFFV1XxMH1" role="3uHU7w">
-                        <ref role="3TV0OU" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                        <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                       </node>
                     </node>
                   </node>
                   <node concept="3y3z36" id="3EFFV1XxNyd" role="3uHU7w">
                     <node concept="zm4iT" id="3EFFV1XxNpR" role="3uHU7B" />
                     <node concept="3TUQnm" id="3EFFV1XxNCk" role="3uHU7w">
-                      <ref role="3TV0OU" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                      <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                     </node>
                   </node>
                 </node>
@@ -913,7 +914,7 @@
       <property role="7I3sp" value="left" />
       <ref role="3UNGvu" to="nsly:66EASTR6M9Y" resolve="FeatureConnector" />
       <node concept="tYCnQ" id="3EFFV1Xy5a8" role="_1QTJ">
-        <ref role="uz4UX" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+        <ref role="uz4UX" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
         <node concept="Cmt7Y" id="3EFFV1Xy5eT" role="uz6Si">
           <node concept="Cnhdc" id="3EFFV1Xy5eV" role="Cncma">
             <node concept="3clFbS" id="3EFFV1Xy5eX" role="2VODD2">
@@ -938,12 +939,12 @@
                 <node concept="3cpWsn" id="3EFFV1Xy5E1" role="3cpWs9">
                   <property role="TrG5h" value="implies" />
                   <node concept="3Tqbb2" id="3EFFV1Xy5DW" role="1tU5fm">
-                    <ref role="ehGHo" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                    <ref role="ehGHo" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                   </node>
                   <node concept="2ShNRf" id="3EFFV1Xy5Pj" role="33vP2m">
                     <node concept="3zrR0B" id="3EFFV1Xy5Ph" role="2ShVmc">
                       <node concept="3Tqbb2" id="3EFFV1Xy5Pi" role="3zrR0E">
-                        <ref role="ehGHo" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                        <ref role="ehGHo" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                       </node>
                     </node>
                   </node>
@@ -1042,7 +1043,7 @@
         </node>
       </node>
       <node concept="tYCnQ" id="3EFFV1Xy1iY" role="_1QTJ">
-        <ref role="uz4UX" to="nsly:63cq5TSog52" resolve="XorExpression" />
+        <ref role="uz4UX" to="xf8r:63cq5TSog52" resolve="XorOperation" />
         <node concept="Cmt7Y" id="3EFFV1Xy1TC" role="uz6Si">
           <node concept="Cnhdc" id="3EFFV1Xy1TE" role="Cncma">
             <node concept="3clFbS" id="3EFFV1Xy1TG" role="2VODD2">
@@ -1067,12 +1068,12 @@
                 <node concept="3cpWsn" id="3EFFV1Xy2lo" role="3cpWs9">
                   <property role="TrG5h" value="xor" />
                   <node concept="3Tqbb2" id="3EFFV1Xy2lj" role="1tU5fm">
-                    <ref role="ehGHo" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                    <ref role="ehGHo" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                   </node>
                   <node concept="2ShNRf" id="3EFFV1Xy2rw" role="33vP2m">
                     <node concept="3zrR0B" id="3EFFV1Xy2ru" role="2ShVmc">
                       <node concept="3Tqbb2" id="3EFFV1Xy2rv" role="3zrR0E">
-                        <ref role="ehGHo" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                        <ref role="ehGHo" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                       </node>
                     </node>
                   </node>
@@ -1174,14 +1175,14 @@
                     <node concept="3y3z36" id="3EFFV1Xy8qU" role="3uHU7w">
                       <node concept="zm4iT" id="3EFFV1Xy8qV" role="3uHU7B" />
                       <node concept="3TUQnm" id="3EFFV1Xy8qW" role="3uHU7w">
-                        <ref role="3TV0OU" to="nsly:66EASTR57Cx" resolve="ImpliesExpression" />
+                        <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                       </node>
                     </node>
                   </node>
                   <node concept="3y3z36" id="3EFFV1Xy8qX" role="3uHU7w">
                     <node concept="zm4iT" id="3EFFV1Xy8qY" role="3uHU7B" />
                     <node concept="3TUQnm" id="3EFFV1Xy8qZ" role="3uHU7w">
-                      <ref role="3TV0OU" to="nsly:63cq5TSog52" resolve="XorExpression" />
+                      <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                     </node>
                   </node>
                 </node>
