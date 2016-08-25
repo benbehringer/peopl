@@ -1,5 +1,5 @@
 sep=;
 id;NumberOfModules;NumberOfFragments;EvaluationTime;GenerationTime;FullGenerationTime;ModuleConfiguration;
-1;20;217;5.596;320.854;326450;SearchAlg_DFS + Weighted + SearchAlg_BFS + SearchAlg + Prog + GN_OnlyNeighbors#Weighted + Benchmark + Alg_Transpose + Alg_StronglyConnected#Benchmark + Alg_StronglyConnected + Alg_Shortest + Alg_MSTPrim + Alg_MSTKruskal + Alg_Cycle + ( GEN_Edges -> Base -> GN_OnlyNeighbors -> SearchAlg_SearchBase ) + ( Edges_Undirected -> Edges_Directed );
-2;16;182;3.66;295.672;299332;SearchAlg_SearchBase + Weighted + SearchAlg + G_NoEdges#Weighted#Edges_Undirected + G_NoEdges#Weighted + G_NoEdges#Edges_Undirected + Benchmark + Alg_Shortest + Alg_Number + Alg_MSTPrim + Alg_MSTKruskal + Alg_Connected + ( Base -> G_NoEdges -> Edges_Undirected -> Edges_Directed );
-3;7;91;1.2;304.762;305962;Edges_Directed + SearchAlg + Alg_Shortest + Alg_Cycle + ( GEN_Edges -> Base -> SearchAlg_SearchBase );
+1;10;145;2.047;260.649;262.696;SearchAlg + Weighted + GN_OnlyNeighbors#Weighted + Alg_Transpose + Alg_StronglyConnected + Alg_Shortest + Alg_Number + Alg_Cycle + ( Base -> GN_OnlyNeighbors );
+2;6;100;1.196;235.551;236.747;Alg_Transpose + SearchAlg + Alg_StronglyConnected + ( Base -> GEN_Edges -> SearchAlg_SearchBase );
+3;2;43;0.238;294.665;294.903;Base + Prog;
