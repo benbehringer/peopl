@@ -6,7 +6,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -22,6 +22,7 @@
         <child id="7588428831955550186" name="multiple" index="HhnKV" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
@@ -165,6 +166,12 @@
     <property role="34LRSv" value="Module definition" />
     <property role="MwhBj" value="${module}/icons/peoplModulesAlternative_layout.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="21x6ayXLClK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
     <node concept="1TJgyj" id="7Ufy5VQFkRE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="modules" />
@@ -430,6 +437,53 @@
     <node concept="PrWs8" id="7irj4gs$gtA" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="63cq5TSog52">
+    <property role="1pbfSe" value="651335264" />
+    <property role="TrG5h" value="XorOperation" />
+    <property role="34LRSv" value="^" />
+    <property role="R4oN_" value="exclusive-or-operation" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" node="_uCk0nlSop" resolve="Operation" />
+    <node concept="PrWs8" id="63cq5TSog56" role="PzmwI">
+      <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="66EASTR6M9Y">
+    <property role="1pbfSe" value="658129396" />
+    <property role="TrG5h" value="DepModuleConnector" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="66EASTR6Ok8" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="connectedModule" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="66EASTR57Cx">
+    <property role="1pbfSe" value="658565713" />
+    <property role="TrG5h" value="ImpliesOperation" />
+    <property role="34LRSv" value="=&gt;" />
+    <property role="R4oN_" value="implies-operation" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" node="_uCk0nlSop" resolve="Operation" />
+    <node concept="PrWs8" id="66EASTR5z7m" role="PzmwI">
+      <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="63cq5TSo7xX">
+    <property role="1pbfSe" value="651370277" />
+    <property role="TrG5h" value="Constraint" />
+    <property role="3GE5qa" value="Constraints" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="_uCk0nlSop">
+    <property role="1pbfSe" value="548808537" />
+    <property role="3GE5qa" value="Constraints" />
+    <property role="TrG5h" value="Operation" />
+    <property role="34LRSv" value="?" />
+    <ref role="1TJDcQ" to="tpee:fJuHJVf" resolve="BinaryOperation" />
   </node>
 </model>
 
