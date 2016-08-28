@@ -122,7 +122,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAY9" role="m$_w8">
         <node concept="3Mxwew" id="F_DJLMfAYl" role="3MwsjC">
-          <property role="3MwjfP" value="0.5" />
+          <property role="3MwjfP" value="0.6" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
@@ -920,7 +920,7 @@
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.htwsaar.peopl.projectview.product" />
         <property role="3LESm3" value="b6142a83-3492-4283-8cef-a5f4103cb306" />
-        <property role="2GAjPV" value="true" />
+        <property role="2GAjPV" value="false" />
         <node concept="55IIr" id="4RAsyl5Pw7_" role="3LF7KH">
           <node concept="2Ry0Ak" id="4RAsyl5Pwme" role="iGT6I">
             <property role="2Ry0Am" value="baseLanguageExtensions" />
@@ -1319,6 +1319,12 @@
         <node concept="1SiIV0" id="3OZy2vMPiEQ" role="3bR37C">
           <node concept="1Busua" id="3OZy2vMPiER" role="1SiIV1">
             <ref role="1Busuk" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Dudqztstpy" role="3bR37C">
+          <node concept="3bR9La" id="Dudqztstpz" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
       </node>
