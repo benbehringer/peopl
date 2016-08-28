@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language namespace="org.jmlspecs.mps.jml" uuid="4c628e69-5777-4a29-b17e-18719cf7a36b" compileInMPS="true" doNotGenerateAdapters="false">
+  <models>
+    <modelRoot path="${language_descriptor}/languageModels" namespacePrefix="org.jmlspecs.mps.jml" />
+  </models>
+  <accessoryModels />
+  <generators />
+  <dependencies>
+    <dependency reexport="false">37a3367b-1fb2-44d8-aa6b-18075e74e003(MPS.Classpath)</dependency>
+  </dependencies>
+  <usedLanguages>
+    <usedLanguage>7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)</usedLanguage>
+    <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
+    <usedLanguage>83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)</usedLanguage>
+  </usedLanguages>
+  <usedDevKits>
+    <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
+  </usedDevKits>
+  <extendedLanguages>
+    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+    <extendedLanguage>ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</extendedLanguage>
+  </extendedLanguages>
+</language>
+

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/13/trunk/languages/jml/languageModels
+END
+structure.history
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/10/trunk/languages/jml/languageModels/structure.history
+END
+editor.mps
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/13/trunk/languages/jml/languageModels/editor.mps
+END
+typesystem.mps
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/13/trunk/languages/jml/languageModels/typesystem.mps
+END
+constraints.mps
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/languages/jml/languageModels/constraints.mps
+END
+intentions.mps
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/languages/jml/languageModels/intentions.mps
+END
+structure.mps
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/13/trunk/languages/jml/languageModels/structure.mps
+END
+dataFlow.mps
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/10/trunk/languages/jml/languageModels/dataFlow.mps
+END

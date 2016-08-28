@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<history>
+  <StructureModification>
+    <dependencies>
+      <model index="6y9x" modelUID="r:af84dd3a-e8bc-4126-9300-2fe2fc7b76fb(org.jmlspecs.mps.jml.structure)" version="0" />
+    </dependencies>
+    <rename id="6y9x.4026335021286806431" type="PROPERTY" from="hasDeclaration" to="hasJMLDeclaration" />
+  </StructureModification>
+  <StructureModification>
+    <dependencies>
+      <model index="6y9x" modelUID="r:af84dd3a-e8bc-4126-9300-2fe2fc7b76fb(org.jmlspecs.mps.jml.structure)" version="1" />
+    </dependencies>
+    <rename id="6y9x.6370784139326985512" type="CONCEPT" from="Precondition" to="Postcondition" />
+  </StructureModification>
+</history>
+
