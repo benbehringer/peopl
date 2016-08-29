@@ -29,6 +29,7 @@
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies.DeltaJ.SimpleTextEditor" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="caseStudies" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/Vistex.msd" folder="caseStudies.FH.Vistex" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/sources/Vistex_NoVar.msd" folder="caseStudies.FH.Vistex.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/lib/jgraphx/jgraphx.msd" folder="caseStudies.FH.Vistex.source" />
