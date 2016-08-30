@@ -2,10 +2,10 @@
 <model ref="r:c9de4fde-5e92-40dc-91c6-01caccf9c831(de.htwsaar.peopl.view.modular.intentions)">
   <persistence version="9" />
   <languages>
-    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="-1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -16,6 +16,7 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" implicit="true" />
@@ -49,12 +50,17 @@
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
+      <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -72,6 +78,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
@@ -6004,11 +6011,20 @@
         <node concept="3cpWs8" id="3e2$E$Vh2Ry" role="3cqZAp">
           <node concept="3cpWsn" id="3e2$E$Vh2Rz" role="3cpWs9">
             <property role="TrG5h" value="startTime" />
-            <node concept="3cpWsb" id="3e2$E$Vh2R$" role="1tU5fm" />
-            <node concept="2YIFZM" id="3e2$E$Vh2R_" role="33vP2m">
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <node concept="2OqwBi" id="1TSiJUXHPuk" role="33vP2m">
+              <node concept="Rm8GO" id="1TSiJUXHPul" role="2Oq$k0">
+                <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+              </node>
+              <node concept="liA8E" id="1TSiJUXHPum" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~TimeUnit.toMicros(long):long" resolve="toMicros" />
+                <node concept="2YIFZM" id="1TSiJUXHPun" role="37wK5m">
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+                </node>
+              </node>
             </node>
+            <node concept="3cpWsb" id="3e2$E$Vh2R$" role="1tU5fm" />
           </node>
         </node>
         <node concept="3clFbH" id="3e2$E$VhGvd" role="3cqZAp" />
@@ -6041,11 +6057,20 @@
         <node concept="3cpWs8" id="3e2$E$Vh2UD" role="3cqZAp">
           <node concept="3cpWsn" id="3e2$E$Vh2UE" role="3cpWs9">
             <property role="TrG5h" value="endTime" />
-            <node concept="3cpWsb" id="3e2$E$Vh2UF" role="1tU5fm" />
-            <node concept="2YIFZM" id="3e2$E$Vh2UG" role="33vP2m">
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
+            <node concept="2OqwBi" id="1TSiJUXHPCG" role="33vP2m">
+              <node concept="Rm8GO" id="1TSiJUXHPCH" role="2Oq$k0">
+                <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+                <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+              </node>
+              <node concept="liA8E" id="1TSiJUXHPCI" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~TimeUnit.toMicros(long):long" resolve="toMicros" />
+                <node concept="2YIFZM" id="1TSiJUXHPCJ" role="37wK5m">
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+                </node>
+              </node>
             </node>
+            <node concept="3cpWsb" id="3e2$E$Vh2UF" role="1tU5fm" />
           </node>
         </node>
         <node concept="34ab3g" id="3e2$E$Vh2UH" role="3cqZAp">
@@ -6060,13 +6085,23 @@
               </node>
               <node concept="2YIFZM" id="3e2$E$Vh2UM" role="3uHU7w">
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
-                <node concept="3cpWsd" id="3e2$E$Vh2UN" role="37wK5m">
-                  <node concept="37vLTw" id="3e2$E$Vh2UO" role="3uHU7w">
-                    <ref role="3cqZAo" node="3e2$E$Vh2Rz" resolve="startTime" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(double):java.lang.String" resolve="valueOf" />
+                <node concept="FJ1c_" id="1TSiJUXHPJc" role="37wK5m">
+                  <node concept="3cmrfG" id="1TSiJUXHPJd" role="3uHU7w">
+                    <property role="3cmrfH" value="1000" />
                   </node>
-                  <node concept="37vLTw" id="3e2$E$Vh2UP" role="3uHU7B">
-                    <ref role="3cqZAo" node="3e2$E$Vh2UE" resolve="endTime" />
+                  <node concept="1eOMI4" id="1TSiJUXHPJe" role="3uHU7B">
+                    <node concept="3cpWsd" id="1TSiJUXHPJf" role="1eOMHV">
+                      <node concept="37vLTw" id="1TSiJUXHPJg" role="3uHU7w">
+                        <ref role="3cqZAo" node="3e2$E$Vh2Rz" resolve="startTime" />
+                      </node>
+                      <node concept="10QFUN" id="1TSiJUXHPJh" role="3uHU7B">
+                        <node concept="10P55v" id="1TSiJUXHPJi" role="10QFUM" />
+                        <node concept="37vLTw" id="1TSiJUXHPJj" role="10QFUP">
+                          <ref role="3cqZAo" node="3e2$E$Vh2UE" resolve="endTime" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -6161,11 +6196,20 @@
         <node concept="3cpWs8" id="3e2$E$Vh1ko" role="3cqZAp">
           <node concept="3cpWsn" id="3e2$E$Vh1kr" role="3cpWs9">
             <property role="TrG5h" value="startTime" />
-            <node concept="3cpWsb" id="3e2$E$Vh1km" role="1tU5fm" />
-            <node concept="2YIFZM" id="3e2$E$Vh1B$" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            <node concept="2OqwBi" id="1TSiJUXHOph" role="33vP2m">
+              <node concept="Rm8GO" id="1TSiJUXHOjw" role="2Oq$k0">
+                <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+                <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+              </node>
+              <node concept="liA8E" id="1TSiJUXHO$r" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~TimeUnit.toMicros(long):long" resolve="toMicros" />
+                <node concept="2YIFZM" id="1TSiJUXHOCJ" role="37wK5m">
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                </node>
+              </node>
             </node>
+            <node concept="3cpWsb" id="3e2$E$Vh1km" role="1tU5fm" />
           </node>
         </node>
         <node concept="3clFbH" id="3e2$E$VhGow" role="3cqZAp" />
@@ -6198,11 +6242,20 @@
         <node concept="3cpWs8" id="3e2$E$Vh1Cf" role="3cqZAp">
           <node concept="3cpWsn" id="3e2$E$Vh1Ci" role="3cpWs9">
             <property role="TrG5h" value="endTime" />
-            <node concept="3cpWsb" id="3e2$E$Vh1Cd" role="1tU5fm" />
-            <node concept="2YIFZM" id="3e2$E$Vh1Dn" role="33vP2m">
-              <ref role="37wK5l" to="wyt6:~System.currentTimeMillis():long" resolve="currentTimeMillis" />
-              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            <node concept="2OqwBi" id="1TSiJUXHOEW" role="33vP2m">
+              <node concept="Rm8GO" id="1TSiJUXHOEX" role="2Oq$k0">
+                <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+              </node>
+              <node concept="liA8E" id="1TSiJUXHOEY" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~TimeUnit.toMicros(long):long" resolve="toMicros" />
+                <node concept="2YIFZM" id="1TSiJUXHOEZ" role="37wK5m">
+                  <ref role="37wK5l" to="wyt6:~System.nanoTime():long" resolve="nanoTime" />
+                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                </node>
+              </node>
             </node>
+            <node concept="3cpWsb" id="3e2$E$Vh1Cd" role="1tU5fm" />
           </node>
         </node>
         <node concept="34ab3g" id="3e2$E$Vh1Ma" role="3cqZAp">
@@ -6216,14 +6269,24 @@
                 <property role="Xl_RC" value="Move original() took : " />
               </node>
               <node concept="2YIFZM" id="3e2$E$Vh2iv" role="3uHU7w">
-                <ref role="37wK5l" to="wyt6:~String.valueOf(long):java.lang.String" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                <node concept="3cpWsd" id="3e2$E$Vh2pp" role="37wK5m">
-                  <node concept="37vLTw" id="3e2$E$Vh2r6" role="3uHU7w">
-                    <ref role="3cqZAo" node="3e2$E$Vh1kr" resolve="startTime" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(double):java.lang.String" resolve="valueOf" />
+                <node concept="FJ1c_" id="1TSiJUXHP2S" role="37wK5m">
+                  <node concept="3cmrfG" id="1TSiJUXHP2Y" role="3uHU7w">
+                    <property role="3cmrfH" value="1000" />
                   </node>
-                  <node concept="37vLTw" id="3e2$E$Vh2jj" role="3uHU7B">
-                    <ref role="3cqZAo" node="3e2$E$Vh1Ci" resolve="endTime" />
+                  <node concept="1eOMI4" id="1TSiJUXHOTv" role="3uHU7B">
+                    <node concept="3cpWsd" id="3e2$E$Vh2pp" role="1eOMHV">
+                      <node concept="37vLTw" id="3e2$E$Vh2r6" role="3uHU7w">
+                        <ref role="3cqZAo" node="3e2$E$Vh1kr" resolve="startTime" />
+                      </node>
+                      <node concept="10QFUN" id="1TSiJUXHOHs" role="3uHU7B">
+                        <node concept="10P55v" id="1TSiJUXHOK7" role="10QFUM" />
+                        <node concept="37vLTw" id="3e2$E$Vh2jj" role="10QFUP">
+                          <ref role="3cqZAo" node="3e2$E$Vh1Ci" resolve="endTime" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
