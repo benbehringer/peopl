@@ -12714,7 +12714,26 @@
             <property role="3SKdUp" value="TODO: we couldn't find a location for insertion... just create a block, or what?" />
           </node>
         </node>
-        <node concept="3clFbH" id="3GmnFE_TScy" role="3cqZAp" />
+        <node concept="3cpWs8" id="OCU8ijfGTN" role="3cqZAp">
+          <node concept="3cpWsn" id="OCU8ijfGTQ" role="3cpWs9">
+            <property role="TrG5h" value="baseMethod" />
+            <node concept="3Tqbb2" id="OCU8ijfGTL" role="1tU5fm">
+              <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+            </node>
+            <node concept="2OqwBi" id="OCU8ijfHCA" role="33vP2m">
+              <node concept="37vLTw" id="OCU8ijfH$n" role="2Oq$k0">
+                <ref role="3cqZAo" node="3GmnFE_LLDp" resolve="selectedNode" />
+              </node>
+              <node concept="2Xjw5R" id="OCU8ijfHG9" role="2OqNvi">
+                <node concept="1xMEDy" id="OCU8ijfHGb" role="1xVPHs">
+                  <node concept="chp4Y" id="OCU8ijfHGC" role="ri$Ld">
+                    <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3GmnFE_Spxk" role="3cqZAp">
           <node concept="3cpWsn" id="3GmnFE_Spxl" role="3cpWs9">
             <property role="TrG5h" value="lastStatement" />
@@ -13501,19 +13520,48 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="3aNrrk2Q4P8" role="3clFbw">
-                <node concept="2OqwBi" id="3aNrrk2Q3JY" role="2Oq$k0">
-                  <node concept="2GrUjf" id="3aNrrk2Q3Hj" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="3aNrrk2PJoi" resolve="cell" />
+              <node concept="1Wc70l" id="OCU8ijfHJc" role="3clFbw">
+                <node concept="3clFbC" id="OCU8ijfKBM" role="3uHU7w">
+                  <node concept="37vLTw" id="OCU8ijfL1X" role="3uHU7w">
+                    <ref role="3cqZAo" node="OCU8ijfGTQ" resolve="baseMethod" />
                   </node>
-                  <node concept="liA8E" id="3aNrrk2Q3Wo" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                  <node concept="2OqwBi" id="OCU8ijfJv7" role="3uHU7B">
+                    <node concept="1eOMI4" id="OCU8ijfIPl" role="2Oq$k0">
+                      <node concept="10QFUN" id="OCU8ijfIPi" role="1eOMHV">
+                        <node concept="3Tqbb2" id="OCU8ijfJaD" role="10QFUM" />
+                        <node concept="2OqwBi" id="OCU8ijfI9s" role="10QFUP">
+                          <node concept="2GrUjf" id="OCU8ijfI5p" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="3aNrrk2PJoi" resolve="cell" />
+                          </node>
+                          <node concept="liA8E" id="OCU8ijfIuX" role="2OqNvi">
+                            <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2Xjw5R" id="OCU8ijfJQh" role="2OqNvi">
+                      <node concept="1xMEDy" id="OCU8ijfJQj" role="1xVPHs">
+                        <node concept="chp4Y" id="OCU8ijfKah" role="ri$Ld">
+                          <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="3aNrrk2QZF4" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
-                  <node concept="35c_gC" id="3aNrrk2QZIT" role="37wK5m">
-                    <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
+                <node concept="2OqwBi" id="3aNrrk2Q4P8" role="3uHU7B">
+                  <node concept="2OqwBi" id="3aNrrk2Q3JY" role="2Oq$k0">
+                    <node concept="2GrUjf" id="3aNrrk2Q3Hj" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="3aNrrk2PJoi" resolve="cell" />
+                    </node>
+                    <node concept="liA8E" id="3aNrrk2Q3Wo" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.getSNode():org.jetbrains.mps.openapi.model.SNode" resolve="getSNode" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="3aNrrk2QZF4" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                    <node concept="35c_gC" id="3aNrrk2QZIT" role="37wK5m">
+                      <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
+                    </node>
                   </node>
                 </node>
               </node>
