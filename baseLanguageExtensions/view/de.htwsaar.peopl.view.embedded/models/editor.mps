@@ -357,7 +357,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="2GBhTn6XBZC" role="1QoVPY">
-        <ref role="PMmxG" to="i3mx:1QkN9AHXsVZ" resolve="Modular_Fragment_Component" />
+        <ref role="PMmxG" to="i3mx:1Xb0dGx39lp" resolve="Fragment_modular_component" />
       </node>
       <node concept="1QoScp" id="1k3hL0SvknG" role="1QoS34">
         <property role="1QpmdY" value="true" />
@@ -927,7 +927,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="4qYOtWHqbWh" role="1QoVPY">
-        <ref role="PMmxG" to="i3mx:1QkN9AHXsVZ" resolve="Modular_Fragment_Component" />
+        <ref role="PMmxG" to="i3mx:1Xb0dGx39lp" resolve="Fragment_modular_component" />
       </node>
       <node concept="1QoScp" id="4qYOtWHqbWi" role="1QoS34">
         <property role="1QpmdY" value="true" />
