@@ -6081,7 +6081,7 @@
                       </node>
                       <node concept="2ShNRf" id="6k$OKHdudd2" role="3g7hyw">
                         <node concept="1pGfFk" id="6k$OKHduejN" role="2ShVmc">
-                          <ref role="37wK5l" node="6k$OKHduayH" resolve="CustomNextApplicableEditor.ReplaceWith_Expression_cellMenu" />
+                          <ref role="37wK5l" node="6k$OKHduayH" resolve="CustomNextApplicableEditor.ReplaceWith_Custom_cellMenu" />
                         </node>
                       </node>
                     </node>
@@ -6103,7 +6103,7 @@
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
       <property role="1EXbeo" value="false" />
-      <property role="TrG5h" value="ReplaceWith_Expression_cellMenu" />
+      <property role="TrG5h" value="ReplaceWith_Custom_cellMenu" />
       <node concept="3clFbW" id="6k$OKHduayH" role="jymVt">
         <node concept="3cqZAl" id="6k$OKHduayI" role="3clF45" />
         <node concept="3clFbS" id="6k$OKHduayK" role="3clF47" />
