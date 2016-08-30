@@ -77,6 +77,7 @@
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
+        <property id="1211298967294" name="outsideCommandExecution" index="72QZ$" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
@@ -502,6 +503,7 @@
     <property role="TrG5h" value="NewPeoplSolution" />
     <property role="2uzpH1" value="Peopl Solution" />
     <property role="3GE5qa" value="Actions" />
+    <property role="72QZ$" value="true" />
     <node concept="1DS2jV" id="1lfFv49lVdi" role="1NuT2Z">
       <property role="TrG5h" value="currentProject" />
       <ref role="1DUlNI" to="qq04:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
