@@ -7583,7 +7583,7 @@
       <node concept="3clFbS" id="57bdhMlW9XH" role="2VODD2">
         <node concept="3clFbF" id="57bdhMlW9Z8" role="3cqZAp">
           <node concept="Xl_RD" id="57bdhMlW9Z7" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; Reorder Method" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Reorder Method (according to Module Definition Ordering)" />
           </node>
         </node>
       </node>
