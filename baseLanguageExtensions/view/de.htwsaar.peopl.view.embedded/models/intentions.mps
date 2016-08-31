@@ -187,13 +187,13 @@
     </language>
   </registry>
   <node concept="2S6QgY" id="5tqlr2bKGD7">
-    <property role="TrG5h" value="EmbedAnnotationMarkers" />
+    <property role="TrG5h" value="IntegrateAnnotationMarkers" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="5tqlr2bKGD8" role="2ZfVej">
       <node concept="3clFbS" id="5tqlr2bKGD9" role="2VODD2">
         <node concept="3clFbF" id="5$T2IgTak2H" role="3cqZAp">
           <node concept="Xl_RD" id="5$T2IgTak5J" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; Embed Annotation Markers" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Integrate Annotation Markers" />
           </node>
         </node>
       </node>
@@ -524,13 +524,13 @@
     </node>
   </node>
   <node concept="2S6QgY" id="4qYOtWHr32U">
-    <property role="TrG5h" value="EmbedAnnotationsContent" />
+    <property role="TrG5h" value="IntegrateAnnotationsContent" />
     <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="2S6ZIM" id="4qYOtWHr32V" role="2ZfVej">
       <node concept="3clFbS" id="4qYOtWHr32W" role="2VODD2">
         <node concept="3clFbF" id="4qYOtWHr35g" role="3cqZAp">
           <node concept="Xl_RD" id="4qYOtWHr35h" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; Embed Annotations and Content" />
+            <property role="Xl_RC" value="@PEoPL -&gt; Integrate Annotations and Content" />
           </node>
         </node>
       </node>
