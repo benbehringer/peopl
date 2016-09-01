@@ -34,6 +34,7 @@
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
@@ -540,6 +541,51 @@
           </node>
           <node concept="1Xhbcc" id="4GrfODAWBPr" role="37wK5m">
             <property role="1XhdNS" value="." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="14aYG3" id="6Dv_8JO2x7Z" role="14aYEy">
+      <property role="TrG5h" value="interfaces" />
+      <property role="38sH__" value="false" />
+      <ref role="14a85i" node="7diJr$Rw$m0" resolve="sModel" />
+      <ref role="3GDMyY" node="3ZnFyBjojbx" resolve="node" />
+      <node concept="2OqwBi" id="475mIV34V8O" role="14bQOc">
+        <node concept="2OqwBi" id="475mIV34V8P" role="2Oq$k0">
+          <node concept="1eOMI4" id="475mIV34V8Q" role="2Oq$k0">
+            <node concept="10QFUN" id="475mIV34V8R" role="1eOMHV">
+              <node concept="H_c77" id="475mIV34V8S" role="10QFUM" />
+              <node concept="14b0Wr" id="475mIV34V8T" role="10QFUP">
+                <ref role="14b0Uw" node="7diJr$Rw$m0" resolve="sModel" />
+              </node>
+            </node>
+          </node>
+          <node concept="2RRcyG" id="475mIV34V8U" role="2OqNvi">
+            <ref role="2RRcyH" to="tpee:g7HP654" resolve="Interface" />
+          </node>
+        </node>
+        <node concept="3zZkjj" id="475mIV34ZEt" role="2OqNvi">
+          <node concept="1bVj0M" id="475mIV34ZEv" role="23t8la">
+            <node concept="3clFbS" id="475mIV34ZEw" role="1bW5cS">
+              <node concept="3clFbF" id="475mIV34ZEx" role="3cqZAp">
+                <node concept="2OqwBi" id="475mIV34V98" role="3clFbG">
+                  <node concept="2YIFZM" id="475mIV34V99" role="2Oq$k0">
+                    <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                    <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="475mIV34V9a" role="2OqNvi">
+                    <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <node concept="37vLTw" id="475mIV34ZRc" role="37wK5m">
+                      <ref role="3cqZAo" node="475mIV34ZEF" resolve="it" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Rh6nW" id="475mIV34ZEF" role="1bW2Oz">
+              <property role="TrG5h" value="it" />
+              <node concept="2jxLKc" id="475mIV34ZEG" role="1tU5fm" />
+            </node>
           </node>
         </node>
       </node>
