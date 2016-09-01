@@ -52,8 +52,8 @@
     </node>
     <node concept="M6xJ_" id="5tqlr2bKFPU" role="lGtFl">
       <property role="Hh88m" value="ShowAnnotations" />
-      <node concept="trNpa" id="1QkN9AHWNSE" role="EQaZv">
-        <ref role="trN6q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      <node concept="trNpa" id="7pOsYQqAtzo" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
       <node concept="tn0Fv" id="5tqlr2bKGCO" role="HhnKV">
         <property role="tnX3d" value="false" />
