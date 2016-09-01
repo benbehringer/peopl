@@ -70,6 +70,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <property id="1140524450554" name="vertical" index="2czwfN" />
         <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
@@ -18819,11 +18820,21 @@
   </node>
   <node concept="24kQdi" id="43jzTaI8GdD">
     <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-    <node concept="3F0ifn" id="43jzTaI8Kyp" role="2wV5jI">
-      <property role="3F0ifm" value="Test" />
-    </node>
     <node concept="2aJ2om" id="43jzTaI8Kym" role="CpUAK">
       <ref role="2$4xQ3" to="nbbm:2c8WkvQiez2" resolve="modular" />
+    </node>
+    <node concept="3EZMnI" id="62a2r2ctxOr" role="2wV5jI">
+      <ref role="1ERwB7" to="nbbm:kX2Y4DxvlX" resolve="Peopl_AnnotativeView_ActionMap" />
+      <node concept="3EZMnI" id="62a2r2cy2PP" role="3EZMnx">
+        <node concept="3F2HdR" id="62a2r2cy37a" role="3EZMnx">
+          <property role="S$F3r" value="true" />
+          <property role="2czwfO" value=" " />
+          <ref role="1NtTu8" to="uqoo:4qvLkVcGGJq" />
+          <node concept="2iRkQZ" id="62a2r2cy3nb" role="2czzBx" />
+        </node>
+        <node concept="2iRkQZ" id="62a2r2cy2PQ" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="62a2r2ctxOs" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="49iY_BmQqzT">
