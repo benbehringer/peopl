@@ -2728,20 +2728,25 @@
             </node>
             <node concept="3clFbH" id="3GodQGCb$Zq" role="3cqZAp" />
             <node concept="34ab3g" id="3GodQGCb_hx" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="3GodQGCb_kF" role="34bqiv">
-                <node concept="Xl_RD" id="3GodQGCb_hz" role="3uHU7B">
-                  <property role="Xl_RC" value="time to calculate fragments in ms: " />
+              <property role="35gtTG" value="info" />
+              <node concept="3cpWs3" id="7pOsYQqCyWs" role="34bqiv">
+                <node concept="Xl_RD" id="7pOsYQqCyYa" role="3uHU7w">
+                  <property role="Xl_RC" value=" ms" />
                 </node>
-                <node concept="2OqwBi" id="3GodQGCb_zY" role="3uHU7w">
-                  <node concept="Rm8GO" id="3GodQGCb_vY" role="2Oq$k0">
-                    <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-                    <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+                <node concept="3cpWs3" id="3GodQGCb_kF" role="3uHU7B">
+                  <node concept="Xl_RD" id="3GodQGCb_hz" role="3uHU7B">
+                    <property role="Xl_RC" value="Time to calculate variant set: " />
                   </node>
-                  <node concept="liA8E" id="3GodQGCb_Q$" role="2OqNvi">
-                    <ref role="37wK5l" to="5zyv:~TimeUnit.toMillis(long):long" resolve="toMillis" />
-                    <node concept="37vLTw" id="3GodQGCb_RE" role="37wK5m">
-                      <ref role="3cqZAo" node="3GodQGCb$VI" resolve="timeElapsed" />
+                  <node concept="2OqwBi" id="3GodQGCb_zY" role="3uHU7w">
+                    <node concept="Rm8GO" id="3GodQGCb_vY" role="2Oq$k0">
+                      <ref role="1Px2BO" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+                      <ref role="Rm8GQ" to="5zyv:~TimeUnit.NANOSECONDS" resolve="NANOSECONDS" />
+                    </node>
+                    <node concept="liA8E" id="3GodQGCb_Q$" role="2OqNvi">
+                      <ref role="37wK5l" to="5zyv:~TimeUnit.toMillis(long):long" resolve="toMillis" />
+                      <node concept="37vLTw" id="3GodQGCb_RE" role="37wK5m">
+                        <ref role="3cqZAo" node="3GodQGCb$VI" resolve="timeElapsed" />
+                      </node>
                     </node>
                   </node>
                 </node>
