@@ -219,7 +219,7 @@
   <node concept="3UOs0u" id="OCU8ijgl3p">
     <property role="TrG5h" value="MoveOriginal_SideTransform" />
     <node concept="3UNGvq" id="OCU8ijgl3q" role="3UOs0v">
-      <property role="7I3sp" value="left" />
+      <property role="7I3sp" value="both" />
       <property role="2uHTBK" value="default_RTransform" />
       <ref role="3UNGvu" to="tpee:fzclF8l" resolve="Statement" />
       <node concept="tYCnQ" id="OCU8ijgl3u" role="_1QTJ">
