@@ -491,6 +491,24 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="475mIV35D3c" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="pushHint" />
+      <node concept="3clFbS" id="475mIV35D3f" role="3clF47" />
+      <node concept="3Tm1VV" id="475mIV35D3g" role="1B3o_S" />
+      <node concept="3cqZAl" id="475mIV35CZV" role="3clF45" />
+      <node concept="37vLTG" id="475mIV35D8p" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3uibUv" id="475mIV35D8o" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="475mIV35Dcw" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="475mIV35Dgn" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="4CFdEKN9mKd" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="4CFdEKN9pwR">

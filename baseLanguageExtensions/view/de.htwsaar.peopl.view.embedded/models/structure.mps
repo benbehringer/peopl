@@ -44,18 +44,36 @@
   </registry>
   <node concept="1TIwiD" id="5tqlr2bKFPT">
     <property role="1pbfSe" value="484633815" />
-    <property role="TrG5h" value="ShowAnnotations" />
+    <property role="TrG5h" value="ShowMethodAnnotations" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyi" id="5tqlr2bKGCQ" role="1TKVEl">
       <property role="TrG5h" value="visible" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="M6xJ_" id="5tqlr2bKFPU" role="lGtFl">
-      <property role="Hh88m" value="ShowAnnotations" />
-      <node concept="trNpa" id="1QkN9AHWNSE" role="EQaZv">
-        <ref role="trN6q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      <property role="Hh88m" value="ShowMethodAnnotations" />
+      <node concept="trNpa" id="7pOsYQqAtzo" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
       <node concept="tn0Fv" id="5tqlr2bKGCO" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7pOsYQqEfkx">
+    <property role="1pbfSe" value="287140110" />
+    <property role="TrG5h" value="ShowFieldDeclarations" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="7pOsYQqEfky" role="1TKVEl">
+      <property role="TrG5h" value="visible" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="M6xJ_" id="7pOsYQqEfkz" role="lGtFl">
+      <property role="Hh88m" value="ShowFieldDeclarations" />
+      <node concept="trNpa" id="7pOsYQqEfk$" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="7pOsYQqEfk_" role="HhnKV">
         <property role="tnX3d" value="false" />
       </node>
     </node>
