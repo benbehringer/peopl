@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:224dd9b2-9ae7-4858-87b7-402cacb618df(de.htwsaar.peopl.projectview.annotative.plugin)">
+<model ref="r:224dd9b2-9ae7-4858-87b7-402cacb618df(de.htwsaar.peopl.projectview.annotative.plugin)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
