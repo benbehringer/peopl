@@ -33,6 +33,7 @@
       <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/Vistex.msd" folder="caseStudies.FH.Vistex" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/sources/Vistex_NoVar.msd" folder="caseStudies.FH.Vistex.source" />
       <modulePath path="$PROJECT_DIR$/caseStudies/lib/jgraphx/jgraphx.msd" folder="caseStudies.FH.Vistex.source" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.solutionSpace" />
