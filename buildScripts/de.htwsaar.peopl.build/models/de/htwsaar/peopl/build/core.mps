@@ -124,7 +124,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="0.6" />
+          <property role="3MwjfP" value="0.6.1" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
@@ -278,12 +278,6 @@
           <node concept="3bR9La" id="53z0aTzOu9p" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="DudqztsruZ" role="3bR37C">
-          <node concept="3bR9La" id="Dudqztsrv0" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="Dudqztsrv1" role="3bR37C">

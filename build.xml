@@ -3,7 +3,7 @@
   <property name="build.dir" location="build" />
   <property name="build.tmp" location="${build.dir}/tmp/peoplBaseLanguageExtension" />
   <property name="build.layout" location="${build.dir}/artifacts/peoplBaseLanguageExtension" />
-  <property name="mps_home_dep" location="${basedir}/../../../../Applications/PEoPL 0.5 MPS 3.3.6 (JRE 1.8 plist).app/Contents" />
+  <property name="mps_home_dep" location="${basedir}/../../../../Applications/PEoPL 0.6.app/Contents" />
   <property name="artifacts.mps" location="${mps_home_dep}" />
   <property name="artifacts.peoplCore" location="${build.dir}/artifacts/peoplCore" />
   <property name="artifacts.peoplMbeddrPluginsBundle" location="${build.dir}/artifacts/peoplMbeddrPluginsBundle" />
@@ -33,7 +33,7 @@
         <id>peoplBaseLanguageExtension</id>
         <name>PEoPL BaseLanguage Extension</name>
         <description>A set of additions to PEoPL's core based on MPS baselanguage. For instance, adding support for views and better editing experience.</description>
-        <version>0.6</version>
+        <version>0.6.1</version>
         <depends>peoplCore</depends>
         <depends>peoplMbeddrPluginsBundle</depends>
         
@@ -431,46 +431,6 @@
     </jar>
     <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages" />
     <mkdir dir="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar/META-INF/module.xml">
-      <module namespace="de.htwsaar.peopl.projectview.annotative" type="solution" uuid="4484a2af-196c-4d85-a3b4-7d1f95e035ed">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <sources jar="de.htwsaar.peopl.projectview.annotative-src.jar" descriptor="de.htwsaar.peopl.projectview.annotative.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.annotative.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.annotative" />
-      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen" includes="**/trace.info, **/exports" />
-      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.projectview.annotative.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.annotative-models">
-      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view.projectview/de.htwsaar.peopl.projectview.annotative-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-      </fileset>
-      <zipfileset file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.annotative-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar/META-INF/module.xml">
@@ -617,7 +577,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.de.htwsaar.peopl.baseLanguageExtension, java.compile.de.htwsaar.peopl.baseLanguageExtension#8983101612966976582, java.compile.de.htwsaar.peopl.baseLanguageExtension.runtime, java.compile.de.htwsaar.peopl.baseLanguageExtension.statistics, java.compile.de.htwsaar.peopl.projectview.annotative, java.compile.de.htwsaar.peopl.projectview.common, java.compile.de.htwsaar.peopl.projectview.modular, java.compile.de.htwsaar.peopl.projectview.product, java.compile.de.htwsaar.peopl.view.runtime, java.compile.de.htwsaar.peopl.view.hiding, java.compile.de.htwsaar.peopl.view.hiding#4333012423315885155, java.compile.de.htwsaar.peopl.view.modular, java.compile.de.htwsaar.peopl.view.modular#7318492937659888230, java.compile.de.htwsaar.peopl.view.product, java.compile.de.htwsaar.peopl.view.product#5898586102482007080, java.compile.de.htwsaar.peopl.view.embedded, java.compile.de.htwsaar.peopl.view.embedded#7137718890894127273" />
+  <target name="compileJava" depends="java.compile.de.htwsaar.peopl.baseLanguageExtension, java.compile.de.htwsaar.peopl.baseLanguageExtension#8983101612966976582, java.compile.de.htwsaar.peopl.baseLanguageExtension.runtime, java.compile.de.htwsaar.peopl.baseLanguageExtension.statistics, java.compile.de.htwsaar.peopl.projectview.common, java.compile.de.htwsaar.peopl.projectview.modular, java.compile.de.htwsaar.peopl.projectview.product, java.compile.de.htwsaar.peopl.view.runtime, java.compile.de.htwsaar.peopl.view.hiding, java.compile.de.htwsaar.peopl.view.hiding#4333012423315885155, java.compile.de.htwsaar.peopl.view.modular, java.compile.de.htwsaar.peopl.view.modular#7318492937659888230, java.compile.de.htwsaar.peopl.view.product, java.compile.de.htwsaar.peopl.view.product#5898586102482007080, java.compile.de.htwsaar.peopl.view.embedded, java.compile.de.htwsaar.peopl.view.embedded#7137718890894127273" />
   
   <target name="processResources" />
   
@@ -743,7 +703,6 @@
         <module file="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.mpl" />
         <module file="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/de.htwsaar.peopl.baseLanguageExtension.runtime.msd" />
         <module file="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.statistics/de.htwsaar.peopl.baseLanguageExtension.statistics.msd" />
-        <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/de.htwsaar.peopl.projectview.annotative.msd" />
         <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" />
         <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" />
         <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" />
@@ -988,62 +947,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.de.htwsaar.peopl.projectview.annotative" depends="java.compile.de.htwsaar.peopl.baseLanguageExtension, java.compile.de.htwsaar.peopl.projectview.common, fetchDependencies">
-    <mkdir dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.annotative" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.annotative" fork="true" encoding="utf8" includeantruntime="false">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.baseLanguageExtension" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/lib/commons-io-2.4.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/lib/commons-lang3-3.3.2.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/lib/commons-math3-3.3.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/lib/commons-primitives-1.0.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/lib/commons-csv-1.0.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.4.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/xstream-1.4.3.jar" />
-        <fileset file="${artifacts.mps}/lib/asm-all.jar" />
-        <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/languages/mbeddr.projectview/com.mbeddr.mpsutil.projectview.runtime.jar" />
-        <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.jar" />
-        <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.moduleConfig.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${build.tmp}/deps/peoplMbeddrPluginsBundle/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/languages/mbeddr.helper/org.apache.commons.jar" />
       </classpath>
     </javac>
   </target>
@@ -1711,7 +1614,6 @@
     <delete dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/generator/source_gen" />
     <delete dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/source_gen" />
     <delete dir="${basedir}/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.statistics/source_gen" />
-    <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.annotative/source_gen" />
     <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" />
     <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" />
     <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/source_gen" />
