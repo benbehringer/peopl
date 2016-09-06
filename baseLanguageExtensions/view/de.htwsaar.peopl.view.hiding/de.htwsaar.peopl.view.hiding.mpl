@@ -7,12 +7,8 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="de.htwsaar.peopl.view.hiding#4333012423315885155" uuid="52cb87e0-93d5-4fdf-bb16-dbcfd369735c">
-      <models>
-        <modelRoot contentPath="/Users/ben/Workspace/peopl/baseLanguageExtensions/view/de.htwsaar.peopl.view.annotative" type="default">
-          <sourceRoot location="generator/template" />
-        </modelRoot>
-      </models>
+    <generator name="" generatorUID="de.htwsaar.peopl.view.hiding#4333012423315885155" uuid="52cb87e0-93d5-4fdf-bb16-dbcfd369735c">
+      <models />
       <external-templates />
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
