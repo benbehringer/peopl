@@ -29,6 +29,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="17ze" ref="r:1d1b7c21-78ab-422c-9cd5-20e6bc04ad41(de.htwsaar.peopl.core.intentions)" />
     <import index="3xdn" ref="r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.lang.smodel.query.structure)" implicit="true" />
   </imports>
   <registry>
@@ -5907,7 +5908,27 @@
       </node>
     </node>
     <node concept="13hLZK" id="3Rbb6fgoJ0E" role="13h7CW">
-      <node concept="3clFbS" id="3Rbb6fgoJ0F" role="2VODD2" />
+      <node concept="3clFbS" id="3Rbb6fgoJ0F" role="2VODD2">
+        <node concept="3clFbF" id="7HI4S9lJgT2" role="3cqZAp">
+          <node concept="37vLTI" id="7HI4S9lJh28" role="3clFbG">
+            <node concept="2ShNRf" id="7HI4S9lJh3K" role="37vLTx">
+              <node concept="3zrR0B" id="7HI4S9lJh2B" role="2ShVmc">
+                <node concept="3Tqbb2" id="7HI4S9lJh2C" role="3zrR0E">
+                  <ref role="ehGHo" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7HI4S9lJgU$" role="37vLTJ">
+              <node concept="13iPFW" id="7HI4S9lJgT1" role="2Oq$k0" />
+              <node concept="3CFZ6_" id="7HI4S9lJgZm" role="2OqNvi">
+                <node concept="3CFYIy" id="7HI4S9lJgZP" role="3CFYIz">
+                  <ref role="3CFYIx" to="xf8r:5L3eIBSVDSC" resolve="VariabilityDataStorage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="1Fk50g35sy5">
