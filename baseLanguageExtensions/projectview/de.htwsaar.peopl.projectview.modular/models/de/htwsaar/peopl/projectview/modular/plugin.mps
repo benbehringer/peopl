@@ -2389,10 +2389,6 @@
           <ref role="tCJdB" to="tprs:7BBQIYkR4kU" resolve="SafeDelete" />
         </node>
       </node>
-      <node concept="2a7GMi" id="2xB8AYJdZay" role="ftvYc" />
-      <node concept="tCFHf" id="2xB8AYJewhM" role="ftvYc">
-        <ref role="tCJdB" to="w88:7LWFAMfAqWk" resolve="ShowNodeInExplorer" />
-      </node>
       <node concept="2a7GMi" id="2xB8AYJ8u4x" role="ftvYc" />
     </node>
   </node>
@@ -2495,10 +2491,6 @@
           <ref role="tCJdB" to="tprs:7BBQIYkR4kU" resolve="SafeDelete" />
         </node>
       </node>
-      <node concept="2a7GMi" id="HDlZQSV6Pf" role="ftvYc" />
-      <node concept="tCFHf" id="HDlZQSV6Pg" role="ftvYc">
-        <ref role="tCJdB" to="w88:7LWFAMfAqWk" resolve="ShowNodeInExplorer" />
-      </node>
       <node concept="2a7GMi" id="HDlZQSV6Ph" role="ftvYc" />
       <node concept="tCFHf" id="3ol4LRRN_U$" role="ftvYc">
         <ref role="tCJdB" node="HDlZQSV4sQ" resolve="OpenModuleExplorer" />
@@ -2545,15 +2537,19 @@
         <ref role="tCJdB" node="1k3hL0S$oKS" resolve="OpenPeoplEntryPointExplorer" />
       </node>
       <node concept="2a7GMi" id="1k3hL0S$oPn" role="ftvYc" />
-      <node concept="tCFHf" id="1k3hL0S$oQj" role="ftvYc">
-        <ref role="tCJdB" to="tprs:hSPYZl3" resolve="DeleteNode" />
+      <node concept="1X3_iC" id="7HI4S9lSz36" role="lGtFl">
+        <property role="3V$3am" value="reference" />
+        <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
+        <node concept="tCFHf" id="1k3hL0S$oQj" role="8Wnug">
+          <ref role="tCJdB" to="tprs:hSPYZl3" resolve="DeleteNode" />
+        </node>
       </node>
-      <node concept="tCFHf" id="1k3hL0S$oQ_" role="ftvYc">
-        <ref role="tCJdB" to="tprs:7BBQIYkR4kU" resolve="SafeDelete" />
-      </node>
-      <node concept="2a7GMi" id="1k3hL0S$oPD" role="ftvYc" />
-      <node concept="tCFHf" id="1k3hL0S$oQT" role="ftvYc">
-        <ref role="tCJdB" to="w88:7LWFAMfAqWk" resolve="ShowNodeInExplorer" />
+      <node concept="1X3_iC" id="7HI4S9lSz37" role="lGtFl">
+        <property role="3V$3am" value="reference" />
+        <property role="3V$3ak" value="28f9e497-3b42-4291-aeba-0a1039153ab1/1207145163717/1207145201301" />
+        <node concept="tCFHf" id="1k3hL0S$oQ_" role="8Wnug">
+          <ref role="tCJdB" to="tprs:7BBQIYkR4kU" resolve="SafeDelete" />
+        </node>
       </node>
       <node concept="2a7GMi" id="1k3hL0S$oPv" role="ftvYc" />
     </node>
