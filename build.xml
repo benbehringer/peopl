@@ -33,7 +33,7 @@
         <id>peoplBaseLanguageExtension</id>
         <name>PEoPL BaseLanguage Extension</name>
         <description>A set of additions to PEoPL's core based on MPS baselanguage. For instance, adding support for views and better editing experience.</description>
-        <version>0.6.2</version>
+        <version>0.6.3</version>
         <depends>peoplCore</depends>
         <depends>peoplMbeddrPluginsBundle</depends>
         
