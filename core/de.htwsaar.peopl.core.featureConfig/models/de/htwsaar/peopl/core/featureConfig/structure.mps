@@ -149,6 +149,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -185,6 +186,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -209,10 +211,26 @@
     <node concept="1TJgyj" id="4p4J_SJuKZz" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="activeProduct" />
-      <ref role="20lvS9" node="66EASTR58zE" resolve="Product" />
+      <ref role="20lvS9" node="66EASTR58zE" resolve="Variant" />
+    </node>
+    <node concept="1TJgyj" id="4FIuYsSmg27" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="moduleDefinition" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+    </node>
+    <node concept="1TJgyj" id="4FIuYsSmg2e" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="moduleConfiguration" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="sj65:1hL$JiAsepr" resolve="ModuleConfigurations" />
     </node>
     <node concept="1TJgyi" id="4PzgrElSLmA" role="1TKVEl">
       <property role="TrG5h" value="usesOrdering" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="4FIuYsSmaau" role="1TKVEl">
+      <property role="TrG5h" value="oneToOneMapping" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="66EASTR6AUB" role="1TKVEi">
@@ -220,12 +238,6 @@
       <property role="20kJfa" value="features" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="66EASTR57Cy" resolve="Feature" />
-    </node>
-    <node concept="1TJgyj" id="2DTnhFmONR3" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="modules" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     </node>
     <node concept="1TJgyj" id="66EASTR5D5G" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -241,9 +253,9 @@
     </node>
     <node concept="1TJgyj" id="66EASTR58zH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="products" />
+      <property role="20kJfa" value="variant" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="66EASTR58zE" resolve="Product" />
+      <ref role="20lvS9" node="66EASTR58zE" resolve="Variant" />
     </node>
     <node concept="PrWs8" id="66EASTR6Bep" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -259,7 +271,7 @@
   </node>
   <node concept="1TIwiD" id="66EASTR58zE">
     <property role="1pbfSe" value="658561928" />
-    <property role="TrG5h" value="Product" />
+    <property role="TrG5h" value="Variant" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="66EASTR58zF" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -267,13 +279,14 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="66EASTR6M9Y" resolve="FeatureConnector" />
     </node>
-    <node concept="1TJgyj" id="1O4JIwTwwSD" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="singleModuleConfiguration" />
-      <ref role="20lvS9" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
-    </node>
     <node concept="PrWs8" id="66EASTR6AAL" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="39ZsZHfyBNj" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="singleModuleConfiguration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
     </node>
   </node>
   <node concept="1TIwiD" id="66EASTR58zW">
@@ -291,6 +304,12 @@
       <property role="20kJfa" value="whenExpression" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="39ZsZHfxBN4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="operation" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="39ZsZHfxSJf" resolve="FeatureOperation" />
     </node>
     <node concept="PrWs8" id="hz2VgHDNtQ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1150,6 +1169,33 @@
     <property role="1pbfSe" value="254006715" />
     <property role="TrG5h" value="FeatureConstraint" />
     <ref role="1TJDcQ" to="xf8r:63cq5TSo7xX" resolve="Constraint" />
+  </node>
+  <node concept="1TIwiD" id="39ZsZHfxSJf">
+    <property role="1pbfSe" value="2113470518" />
+    <property role="TrG5h" value="FeatureOperation" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="39ZsZHfxSJs">
+    <property role="1pbfSe" value="2113470505" />
+    <property role="TrG5h" value="Removal" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <property role="34LRSv" value="removal" />
+    <ref role="1TJDcQ" node="39ZsZHfxSJf" resolve="FeatureOperation" />
+  </node>
+  <node concept="1TIwiD" id="39ZsZHfxSJt">
+    <property role="1pbfSe" value="2113470504" />
+    <property role="TrG5h" value="Addition" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <property role="34LRSv" value="addition" />
+    <ref role="1TJDcQ" node="39ZsZHfxSJf" resolve="FeatureOperation" />
+  </node>
+  <node concept="1TIwiD" id="39ZsZHfxSJu">
+    <property role="1pbfSe" value="2113470503" />
+    <property role="TrG5h" value="Overriding" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <property role="34LRSv" value="overriding" />
+    <ref role="1TJDcQ" node="39ZsZHfxSJf" resolve="FeatureOperation" />
   </node>
 </model>
 

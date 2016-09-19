@@ -692,5 +692,12 @@
     <ref role="HxVAF" to="90bj:6U7BgSPiA$v" resolve="Apfel" />
     <ref role="HxVAD" node="4roxMAFLrdX" resolve="Stack" />
   </node>
+  <node concept="HxVAC" id="4FIuYsSm8xu">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::OrangeClass" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="90bj:6U7BgSPiAxJ" resolve="Base" />
+    <ref role="HxVAD" node="5BdxFtz$EPw" resolve="OrangeClass" />
+  </node>
 </model>
 
