@@ -254,7 +254,7 @@
     <node concept="1TJgyj" id="66EASTR58zH" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="variant" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="66EASTR58zE" resolve="Variant" />
     </node>
     <node concept="PrWs8" id="66EASTR6Bep" role="PzmwI">
@@ -285,7 +285,7 @@
     <node concept="1TJgyj" id="39ZsZHfyBNj" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="singleModuleConfiguration" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="sj65:_uCk0nlJLH" resolve="SingleModuleConfiguration" />
     </node>
   </node>

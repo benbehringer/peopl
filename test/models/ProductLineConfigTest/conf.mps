@@ -46,17 +46,20 @@
       <concept id="7037608403905749630" name="de.htwsaar.peopl.core.featureConfig.structure.FeatureConnector" flags="ng" index="mGrBK">
         <reference id="7037608403905758472" name="connectedFeature" index="mGtU6" />
       </concept>
+      <concept id="7037608403905317098" name="de.htwsaar.peopl.core.featureConfig.structure.Variant" flags="ng" index="mJxd$">
+        <child id="7037608403905317099" name="features" index="mJxd_" />
+      </concept>
       <concept id="7037608403905317116" name="de.htwsaar.peopl.core.featureConfig.structure.Partition" flags="ng" index="mJxdM">
         <child id="3060579791629672114" name="whenExpression" index="3WEweC" />
         <child id="3060579791629672112" name="selectedModules" index="3WEweE" />
         <child id="3638754547146849476" name="operation" index="1XYgWZ" />
       </concept>
       <concept id="7037608403905313283" name="de.htwsaar.peopl.core.featureConfig.structure.ProductLineConfig" flags="ng" index="mJI6d">
-        <reference id="5063381192804077539" name="activeProduct" index="1DfV6X" />
         <reference id="5399389236276822151" name="moduleDefinition" index="1MHRHw" />
         <reference id="5399389236276822158" name="moduleConfiguration" index="1MHRHD" />
         <child id="7037608403905703591" name="features" index="mGfkD" />
         <child id="7037608403905450348" name="constraints" index="mJ0Fy" />
+        <child id="7037608403905317101" name="variant" index="mJxdz" />
         <child id="3060579791629673437" name="partitions" index="3WEzV7" />
       </concept>
       <concept id="7037608403905313314" name="de.htwsaar.peopl.core.featureConfig.structure.Feature" flags="ng" index="mJI6G" />
@@ -87,9 +90,17 @@
   </registry>
   <node concept="mJI6d" id="30KZkukmcLQ">
     <property role="TrG5h" value="EPL" />
-    <ref role="1DfV6X" node="5Z9ULuf4YqJ" resolve="Basic" />
     <ref role="1MHRHw" node="4FIuYsSmpUZ" resolve="Test" />
     <ref role="1MHRHD" node="4FIuYsSmpV6" resolve="Test" />
+    <node concept="mJxd$" id="3e2hZxxHKGT" role="mJxdz">
+      <property role="TrG5h" value="Basic" />
+      <node concept="mGrBK" id="3e2hZxxHRTS" role="mJxd_">
+        <ref role="mGtU6" node="30KZkukmcLR" resolve="Lit" />
+      </node>
+      <node concept="mGrBK" id="3e2hZxxHRTX" role="mJxd_">
+        <ref role="mGtU6" node="30KZkukmeZn" resolve="Print" />
+      </node>
+    </node>
     <node concept="1Wc70l" id="3GF6lyPGJqB" role="mJ0Fy">
       <node concept="mGrBK" id="3GF6lyPGJqv" role="3uHU7B">
         <ref role="mGtU6" node="30KZkukmcLR" resolve="Lit" />
