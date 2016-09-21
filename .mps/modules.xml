@@ -62,7 +62,7 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/solutions/Jochen/Jochen.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/ProductLineConfigTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
