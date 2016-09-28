@@ -17,6 +17,7 @@
     <import index="nsly" ref="r:5670a179-ee5c-45d1-b0cb-1e412bfcf47f(de.htwsaar.peopl.core.featureConfig.structure)" />
     <import index="cmfw" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.event(MPS.OpenAPI/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -241,6 +242,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
@@ -485,6 +487,8 @@
     <property role="3GE5qa" value="Builder" />
     <property role="TrG5h" value="FeatureToModConfBuilder" />
     <node concept="2tJIrI" id="5pWSW8LOekb" role="jymVt" />
+    <node concept="2tJIrI" id="5A9c4ERkpO5" role="jymVt" />
+    <node concept="2tJIrI" id="5A9c4ERkqfl" role="jymVt" />
     <node concept="312cEg" id="5pWSW8LOUI2" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -571,12 +575,34 @@
             <ref role="37wK5l" node="63qf$RmfLDY" resolve="findInformation" />
           </node>
         </node>
-        <node concept="3clFbF" id="63qf$Rmhj$W" role="3cqZAp">
-          <node concept="1rXfSq" id="63qf$Rmhj$X" role="3clFbG">
-            <ref role="37wK5l" node="5pWSW8LO1HH" resolve="createAlternativeData" />
+        <node concept="1X3_iC" id="5A9c4ERlPst" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="63qf$Rmhj$W" role="8Wnug">
+            <node concept="1rXfSq" id="63qf$Rmhj$X" role="3clFbG">
+              <ref role="37wK5l" node="5pWSW8LO1HH" resolve="createAlternativeData" />
+            </node>
           </node>
         </node>
-        <node concept="3clFbH" id="63qf$Rmhj$O" role="3cqZAp" />
+        <node concept="3clFbF" id="5A9c4ERlPvR" role="3cqZAp">
+          <node concept="37vLTI" id="5A9c4ERlPMD" role="3clFbG">
+            <node concept="2OqwBi" id="5A9c4ERlUVk" role="37vLTx">
+              <node concept="2YIFZM" id="5A9c4ERlUQx" role="2Oq$k0">
+                <ref role="37wK5l" to="zur:5A9c4ERlCDt" resolve="getInstance" />
+                <ref role="1Pybhc" to="zur:5A9c4ERkbB$" resolve="AlternativesCache" />
+              </node>
+              <node concept="liA8E" id="5A9c4ERlV2g" role="2OqNvi">
+                <ref role="37wK5l" to="zur:5A9c4ERkuzr" resolve="getAlternativeModules" />
+                <node concept="37vLTw" id="5A9c4ERlV7W" role="37wK5m">
+                  <ref role="3cqZAo" node="5pWSW8LO1tB" resolve="mySModule" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5A9c4ERlPvP" role="37vLTJ">
+              <ref role="3cqZAo" node="5pWSW8LO1ts" resolve="alternativeData" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="63qf$RmdyyE" role="1B3o_S" />
       <node concept="37vLTG" id="63qf$RmdH$i" role="3clF46">
@@ -700,8 +726,16 @@
       </node>
       <node concept="3Tm6S6" id="63qf$RmfLaY" role="1B3o_S" />
       <node concept="3cqZAl" id="63qf$RmfLDW" role="3clF45" />
+      <node concept="P$JXv" id="5A9c4ERkqHa" role="lGtFl">
+        <node concept="TZ5HA" id="5A9c4ERkqHb" role="TZ5H$">
+          <node concept="1dT_AC" id="5A9c4ERkqHc" role="1dT_Ay">
+            <property role="1dT_AB" value="Initializes the necessary data for the build process" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="63qf$RmfKJ1" role="jymVt" />
+    <node concept="2tJIrI" id="5A9c4ERkqI7" role="jymVt" />
     <node concept="3clFb_" id="63qf$RmerKB" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="updateSingleModConfs" />
@@ -709,26 +743,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="63qf$RmerKE" role="3clF47">
-        <node concept="3clFbH" id="m30d51YitO" role="3cqZAp" />
-        <node concept="1X3_iC" id="m30d52Hjc3" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbJ" id="m30d51Zlzs" role="8Wnug">
-            <node concept="3clFbS" id="m30d51Zlzu" role="3clFbx">
-              <node concept="34ab3g" id="m30d520UDH" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="m30d520UDJ" role="34bqiv">
-                  <property role="Xl_RC" value="Found whenExpression in illegal state" />
-                </node>
-              </node>
-              <node concept="3cpWs6" id="m30d520fgj" role="3cqZAp" />
-            </node>
-            <node concept="1rXfSq" id="m30d524FHr" role="3clFbw">
-              <ref role="37wK5l" node="m30d51YrwE" resolve="whenExpressionIllegalState" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="m30d520fgo" role="3cqZAp" />
+        <node concept="3clFbH" id="5A9c4ERkrcr" role="3cqZAp" />
         <node concept="1DcWWT" id="63qf$RmfJDj" role="3cqZAp">
           <node concept="3clFbS" id="63qf$RmfJDl" role="2LFqv$">
             <node concept="3clFbF" id="63qf$RmfUQ2" role="3cqZAp">
@@ -897,97 +912,31 @@
       </node>
       <node concept="3Tm1VV" id="63qf$RmeCv5" role="1B3o_S" />
       <node concept="3cqZAl" id="63qf$RmerK_" role="3clF45" />
-    </node>
-    <node concept="2tJIrI" id="5pWSW8LO1uV" role="jymVt" />
-    <node concept="1X3_iC" id="26M783Ku5rJ" role="lGtFl">
-      <property role="3V$3am" value="member" />
-      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
-      <node concept="3clFb_" id="m30d51YrwE" role="8Wnug">
-        <property role="1EzhhJ" value="false" />
-        <property role="TrG5h" value="whenExpressionIllegalState" />
-        <property role="od$2w" value="false" />
-        <property role="DiZV1" value="false" />
-        <property role="2aFKle" value="false" />
-        <node concept="3clFbS" id="m30d51YrwH" role="3clF47">
-          <node concept="3cpWs8" id="m30d52piBG" role="3cqZAp">
-            <node concept="3cpWsn" id="m30d52piBH" role="3cpWs9">
-              <property role="TrG5h" value="illegal" />
-              <node concept="10P_77" id="m30d52piBI" role="1tU5fm" />
-              <node concept="3clFbT" id="m30d52piBJ" role="33vP2m">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
+      <node concept="P$JXv" id="5A9c4ERkrdz" role="lGtFl">
+        <node concept="TZ5HA" id="5A9c4ERkrd$" role="TZ5H$">
+          <node concept="1dT_AC" id="5A9c4ERkrd_" role="1dT_Ay">
+            <property role="1dT_AB" value="Run over all Variants in an FeatureConfig. " />
           </node>
-          <node concept="1DcWWT" id="m30d52oYXj" role="3cqZAp">
-            <node concept="3clFbS" id="m30d52oYXk" role="2LFqv$">
-              <node concept="3clFbJ" id="m30d52oYXl" role="3cqZAp">
-                <node concept="3clFbS" id="m30d52oYXm" role="3clFbx">
-                  <node concept="3clFbF" id="m30d52oYXp" role="3cqZAp">
-                    <node concept="37vLTI" id="m30d52oYXq" role="3clFbG">
-                      <node concept="3clFbT" id="m30d52oYXr" role="37vLTx">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                      <node concept="37vLTw" id="m30d52pslU" role="37vLTJ">
-                        <ref role="3cqZAo" node="m30d52piBH" resolve="illegal" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbC" id="m30d52oYXt" role="3clFbw">
-                  <node concept="2OqwBi" id="m30d52oYXu" role="3uHU7B">
-                    <node concept="37vLTw" id="m30d52oYXv" role="2Oq$k0">
-                      <ref role="3cqZAo" node="m30d52oYYh" resolve="part" />
-                    </node>
-                    <node concept="3TrEf2" id="m30d52oYXw" role="2OqNvi">
-                      <ref role="3Tt5mk" to="nsly:2DTnhFmOPUM" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="m30d52oYXx" role="3uHU7w" />
-                </node>
-                <node concept="9aQIb" id="m30d52oYXy" role="9aQIa">
-                  <node concept="3clFbS" id="m30d52oYXz" role="9aQI4" />
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWsn" id="m30d52oYYh" role="1Duv9x">
-              <property role="TrG5h" value="part" />
-              <node concept="3Tqbb2" id="m30d52oYYi" role="1tU5fm">
-                <ref role="ehGHo" to="nsly:66EASTR58zW" resolve="Partition" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="m30d52oYYj" role="1DdaDG">
-              <node concept="37vLTw" id="m30d52oYYk" role="2Oq$k0">
-                <ref role="3cqZAo" node="5pWSW8LOUI2" resolve="plc" />
-              </node>
-              <node concept="3Tsc0h" id="m30d52oYYl" role="2OqNvi">
-                <ref role="3TtcxE" to="nsly:2DTnhFmOQft" />
-              </node>
-            </node>
-          </node>
-          <node concept="34ab3g" id="m30d52oYYm" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="m30d52oYYn" role="34bqiv">
-              <node concept="37vLTw" id="m30d52pwPl" role="3uHU7w">
-                <ref role="3cqZAo" node="m30d52piBH" resolve="illegal" />
-              </node>
-              <node concept="Xl_RD" id="m30d52oYYp" role="3uHU7B">
-                <property role="Xl_RC" value=" illegal : " />
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs6" id="m30d52p_H2" role="3cqZAp">
-            <node concept="37vLTw" id="m30d52p_H3" role="3cqZAk">
-              <ref role="3cqZAo" node="m30d52piBH" resolve="illegal" />
-            </node>
-          </node>
-          <node concept="3clFbH" id="m30d52pxn1" role="3cqZAp" />
         </node>
-        <node concept="3Tm6S6" id="m30d51Yja9" role="1B3o_S" />
-        <node concept="10P_77" id="m30d51YnEJ" role="3clF45" />
+        <node concept="TZ5HA" id="5A9c4ERkreG" role="TZ5H$">
+          <node concept="1dT_AC" id="5A9c4ERkreH" role="1dT_Ay">
+            <property role="1dT_AB" value="Fill the feature cache with the current variant so that the partitions are evaluated according to the current variant." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5A9c4ERkreu" role="TZ5H$">
+          <node concept="1dT_AC" id="5A9c4ERkrev" role="1dT_Ay">
+            <property role="1dT_AB" value="Create a list of modules, based on the Partitions that evaluate to true." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5A9c4ERkre$" role="TZ5H$">
+          <node concept="1dT_AC" id="5A9c4ERkre_" role="1dT_Ay">
+            <property role="1dT_AB" value="Start the building process of singleModConf , replace old singleModConf with the updated one" />
+          </node>
+        </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5pWSW8LO1uV" role="jymVt" />
     <node concept="2tJIrI" id="m30d52F4iL" role="jymVt" />
-    <node concept="2tJIrI" id="63qf$RmfN5U" role="jymVt" />
     <node concept="3clFb_" id="63qf$RmfTPI" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="fillFeatureCache" />
@@ -4836,6 +4785,18 @@
     <node concept="2tJIrI" id="5pWSW8LO1P6" role="jymVt" />
     <node concept="2tJIrI" id="5pWSW8LNWB5" role="jymVt" />
     <node concept="3Tm1VV" id="5pWSW8LNWAG" role="1B3o_S" />
+    <node concept="3UR2Jj" id="5A9c4ERkqFo" role="lGtFl">
+      <node concept="TZ5HA" id="5A9c4ERkqFp" role="TZ5H$">
+        <node concept="1dT_AC" id="5A9c4ERkqFq" role="1dT_Ay">
+          <property role="1dT_AB" value="This class generates SingleModuleConfigurations based on the selected Features in a Variant and the Partions in a FeatureConfiguration." />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="5A9c4ERkqGR" role="TZ5H$">
+        <node concept="1dT_AC" id="5A9c4ERkqGS" role="1dT_Ay">
+          <property role="1dT_AB" value="" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

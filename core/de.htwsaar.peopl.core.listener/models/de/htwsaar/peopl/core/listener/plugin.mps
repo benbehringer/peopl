@@ -7380,6 +7380,25 @@
                                       </node>
                                     </node>
                                   </node>
+                                  <node concept="3SKdUt" id="5A9c4ERlCZZ" role="3cqZAp">
+                                    <node concept="3SKdUq" id="5A9c4ERlD01" role="3SKWNk">
+                                      <property role="3SKdUp" value="invalidate the alternative cache" />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="5A9c4ERlznq" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5A9c4ERlCPO" role="3clFbG">
+                                      <node concept="2YIFZM" id="5A9c4ERlCPe" role="2Oq$k0">
+                                        <ref role="37wK5l" to="zur:5A9c4ERlCDt" resolve="getInstance" />
+                                        <ref role="1Pybhc" to="zur:5A9c4ERkbB$" resolve="AlternativesCache" />
+                                      </node>
+                                      <node concept="liA8E" id="5A9c4ERlCUF" role="2OqNvi">
+                                        <ref role="37wK5l" to="zur:5A9c4ERkBF$" resolve="invalidate" />
+                                        <node concept="37vLTw" id="5A9c4ERlCVQ" role="37wK5m">
+                                          <ref role="3cqZAo" node="4uCbWdTKLvv" resolve="currentSModule" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
                                 </node>
                                 <node concept="1Wc70l" id="4uCbWdTKLxQ" role="3clFbw">
                                   <node concept="37vLTw" id="4uCbWdTKLxR" role="3uHU7B">
@@ -7850,6 +7869,25 @@
                                       <node concept="liA8E" id="4uCbWdTKL$U" role="2OqNvi">
                                         <ref role="37wK5l" to="zur:5h5WElAithO" resolve="setInvalid" />
                                         <node concept="37vLTw" id="4uCbWdTKL$V" role="37wK5m">
+                                          <ref role="3cqZAo" node="4uCbWdTKLzf" resolve="currentSModule" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                  <node concept="3SKdUt" id="5A9c4ERlD0l" role="3cqZAp">
+                                    <node concept="3SKdUq" id="5A9c4ERlD0m" role="3SKWNk">
+                                      <property role="3SKdUp" value="invalidate the alternative cache" />
+                                    </node>
+                                  </node>
+                                  <node concept="3clFbF" id="5A9c4ERlD0n" role="3cqZAp">
+                                    <node concept="2OqwBi" id="5A9c4ERlD0o" role="3clFbG">
+                                      <node concept="2YIFZM" id="5A9c4ERlD0p" role="2Oq$k0">
+                                        <ref role="37wK5l" to="zur:5A9c4ERlCDt" resolve="getInstance" />
+                                        <ref role="1Pybhc" to="zur:5A9c4ERkbB$" resolve="AlternativesCache" />
+                                      </node>
+                                      <node concept="liA8E" id="5A9c4ERlD0q" role="2OqNvi">
+                                        <ref role="37wK5l" to="zur:5A9c4ERkBF$" resolve="invalidate" />
+                                        <node concept="37vLTw" id="5A9c4ERlD0r" role="37wK5m">
                                           <ref role="3cqZAo" node="4uCbWdTKLzf" resolve="currentSModule" />
                                         </node>
                                       </node>
