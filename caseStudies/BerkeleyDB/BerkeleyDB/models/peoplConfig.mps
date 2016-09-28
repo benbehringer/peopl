@@ -7,6 +7,7 @@
     <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="505b86b7-3a95-44b0-823f-afd50a2eafaa" name="de.htwsaar.peopl.core.featureConfig" version="0" />
   </languages>
   <imports>
     <import index="75si" ref="r:8b32435f-e433-45ef-99c4-290e6d8b44ac(com.sleepycat.je)" />
@@ -30,6 +31,16 @@
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
@@ -64,6 +75,31 @@
         <reference id="8523334110550977740" name="modRef" index="1Z59JV" />
       </concept>
     </language>
+    <language id="505b86b7-3a95-44b0-823f-afd50a2eafaa" name="de.htwsaar.peopl.core.featureConfig">
+      <concept id="7037608403905749630" name="de.htwsaar.peopl.core.featureConfig.structure.FeatureConnector" flags="ng" index="mGrBK">
+        <reference id="7037608403905758472" name="connectedFeature" index="mGtU6" />
+      </concept>
+      <concept id="7037608403905317098" name="de.htwsaar.peopl.core.featureConfig.structure.Variant" flags="ng" index="mJxd$">
+        <reference id="3638754547147111635" name="singleModuleConfiguration" index="1XXgWC" />
+        <child id="7037608403905317099" name="features" index="mJxd_" />
+      </concept>
+      <concept id="7037608403905317116" name="de.htwsaar.peopl.core.featureConfig.structure.Partition" flags="ng" index="mJxdM">
+        <child id="3060579791629672114" name="whenExpression" index="3WEweC" />
+        <child id="3060579791629672112" name="selectedModules" index="3WEweE" />
+        <child id="3638754547146849476" name="operation" index="1XYgWZ" />
+      </concept>
+      <concept id="7037608403905313283" name="de.htwsaar.peopl.core.featureConfig.structure.ProductLineConfig" flags="ng" index="mJI6d">
+        <property id="5576373033249215910" name="usesOrdering" index="3ow5gs" />
+        <reference id="5399389236276822151" name="moduleDefinition" index="1MHRHw" />
+        <reference id="5399389236276822158" name="moduleConfiguration" index="1MHRHD" />
+        <child id="7037608403905703591" name="features" index="mGfkD" />
+        <child id="7037608403905317101" name="variant" index="mJxdz" />
+        <child id="3060579791629673437" name="partitions" index="3WEzV7" />
+      </concept>
+      <concept id="7037608403905313314" name="de.htwsaar.peopl.core.featureConfig.structure.Feature" flags="ng" index="mJI6G" />
+      <concept id="3638754547146918878" name="de.htwsaar.peopl.core.featureConfig.structure.Overriding" flags="ng" index="1XYfw_" />
+      <concept id="3638754547146918863" name="de.htwsaar.peopl.core.featureConfig.structure.FeatureOperation" flags="ng" index="1XYfwO" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -76,6 +112,8 @@
       <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
+      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743900" name="de.htwsaar.peopl.core.moduleConfig.structure.Overriding" flags="ng" index="u2its" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -68876,12 +68914,136 @@
     </node>
   </node>
   <node concept="2M0niJ" id="6$_V4iGDnc6">
+    <property role="TrG5h" value="MyModConf" />
     <ref role="2M0niE" node="5PCLkhXIi9x" />
     <node concept="u25OH" id="5PCLkhXIi9x" role="2M0niC">
       <node concept="2Hijyl" id="5PCLkhXIi9y" role="2Hjnvt">
         <node concept="u2itw" id="1m3ZvXg0K3E" role="3clFbG">
           <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
         </node>
+      </node>
+    </node>
+    <node concept="u25OH" id="5A9c4ERjkuW" role="2M0niC">
+      <node concept="2Hijyl" id="5A9c4ERjkuX" role="2Hjnvt">
+        <node concept="u2itq" id="5A9c4ERjkuZ" role="3clFbG">
+          <node concept="1eOMI4" id="5A9c4ERjkv0" role="3uHU7w">
+            <node concept="u2its" id="5A9c4ERjkv1" role="1eOMHV">
+              <node concept="u2itw" id="5A9c4ERjkv2" role="3uHU7w">
+                <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
+              </node>
+              <node concept="u2itw" id="5A9c4ERjkv3" role="3uHU7B">
+                <ref role="u2itx" node="3Mj07xys9ig" resolve="CP_Time" />
+              </node>
+            </node>
+          </node>
+          <node concept="u2itq" id="5A9c4ERjkv4" role="3uHU7B">
+            <node concept="u2itw" id="5A9c4ERjkv5" role="3uHU7w">
+              <ref role="u2itx" node="3Mj07xys8ru" resolve="CP_Bytes" />
+            </node>
+            <node concept="u2itq" id="5A9c4ERjkv6" role="3uHU7B">
+              <node concept="u2itw" id="5A9c4ERjkv7" role="3uHU7w">
+                <ref role="u2itx" node="3Mj07xyswvg" resolve="Logging_Finest" />
+              </node>
+              <node concept="u2itq" id="5A9c4ERjkv8" role="3uHU7B">
+                <node concept="u2itw" id="5A9c4ERjkv9" role="3uHU7w">
+                  <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
+                </node>
+                <node concept="u2itq" id="5A9c4ERjkva" role="3uHU7B">
+                  <node concept="u2itw" id="5A9c4ERjkvb" role="3uHU7w">
+                    <ref role="u2itx" node="76PMcPR$hWn" resolve="CP_Bytes#Logging_Finest" />
+                  </node>
+                  <node concept="u2itq" id="5A9c4ERjkvc" role="3uHU7B">
+                    <node concept="u2itw" id="5A9c4ERjkvd" role="3uHU7w">
+                      <ref role="u2itx" node="2xM8HVGaMHh" resolve="CP_Bytes#CP_Time" />
+                    </node>
+                    <node concept="u2itq" id="5A9c4ERjkve" role="3uHU7B">
+                      <node concept="u2itw" id="5A9c4ERjkvf" role="3uHU7B">
+                        <ref role="u2itx" node="6NxsX3v0wtX" resolve="CP_Bytes#CheckpointerDaemon" />
+                      </node>
+                      <node concept="u2itw" id="5A9c4ERjkvg" role="3uHU7w">
+                        <ref role="u2itx" node="76PMcPR$keK" resolve="CP_Time#Logging_Finest" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="mJI6d" id="5A9c4ERh6Yb">
+    <property role="3ow5gs" value="false" />
+    <property role="TrG5h" value="Berkley_Feature_Config" />
+    <ref role="1MHRHw" node="6$_V4iGDnc4" resolve="ModuleDefinitions" />
+    <ref role="1MHRHD" node="6$_V4iGDnc6" resolve="MyModConf" />
+    <node concept="mJxd$" id="5A9c4ERh6Zt" role="mJxdz">
+      <property role="TrG5h" value="MyVar1" />
+      <ref role="1XXgWC" node="5A9c4ERjkuW" />
+      <node concept="mGrBK" id="5A9c4ERjfkJ" role="mJxd_">
+        <ref role="mGtU6" node="5A9c4ERh6Yc" resolve="Fea1" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERjkuC" role="mJxd_">
+        <ref role="mGtU6" node="5A9c4ERh6YN" resolve="Fea3" />
+      </node>
+    </node>
+    <node concept="mJI6G" id="5A9c4ERh6Yc" role="mGfkD">
+      <property role="TrG5h" value="Fea1" />
+      <property role="3clFbU" value="true" />
+    </node>
+    <node concept="mJI6G" id="5A9c4ERh6Yx" role="mGfkD">
+      <property role="TrG5h" value="Fea2" />
+      <property role="3clFbU" value="true" />
+    </node>
+    <node concept="mJI6G" id="5A9c4ERh6YN" role="mGfkD">
+      <property role="TrG5h" value="Fea3" />
+      <property role="3clFbU" value="true" />
+    </node>
+    <node concept="mJI6G" id="5A9c4ERh6Z9" role="mGfkD">
+      <property role="TrG5h" value="Fea4" />
+    </node>
+    <node concept="mJxdM" id="5A9c4ERh6Yd" role="3WEzV7">
+      <node concept="u2itw" id="5A9c4ERh6Zx" role="3WEweE">
+        <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERh6Z$" role="3WEweC">
+        <ref role="mGtU6" node="5A9c4ERh6Yc" resolve="Fea1" />
+      </node>
+    </node>
+    <node concept="mJxdM" id="5A9c4ERh6ZX" role="3WEzV7">
+      <node concept="u2itw" id="5A9c4ERhaex" role="3WEweE">
+        <ref role="u2itx" node="3Mj07xys9ig" resolve="CP_Time" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERhMSB" role="3WEweC">
+        <ref role="mGtU6" node="5A9c4ERh6Yc" resolve="Fea1" />
+      </node>
+      <node concept="1XYfw_" id="5A9c4ERh70o" role="1XYgWZ" />
+    </node>
+    <node concept="mJxdM" id="5A9c4ERhfZV" role="3WEzV7">
+      <node concept="u2itw" id="5A9c4ERhg08" role="3WEweE">
+        <ref role="u2itx" node="3Mj07xys8ru" resolve="CP_Bytes" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERhg0b" role="3WEweC">
+        <ref role="mGtU6" node="5A9c4ERh6Yc" resolve="Fea1" />
+      </node>
+      <node concept="1XYfw_" id="5A9c4ERhg0R" role="1XYgWZ" />
+    </node>
+    <node concept="mJxdM" id="5A9c4ERhg0A" role="3WEzV7">
+      <node concept="u2itw" id="5A9c4ERhMS6" role="3WEweE">
+        <ref role="u2itx" node="3Mj07xyswvg" resolve="Logging_Finest" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERhg0X" role="3WEweC">
+        <ref role="mGtU6" node="5A9c4ERh6Yc" resolve="Fea1" />
+      </node>
+      <node concept="1XYfwO" id="5A9c4ERhg1P" role="1XYgWZ" />
+    </node>
+    <node concept="mJxdM" id="5A9c4ERhg1R" role="3WEzV7">
+      <node concept="u2itw" id="5A9c4ERhg2c" role="3WEweE">
+        <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
+      </node>
+      <node concept="mGrBK" id="5A9c4ERjku0" role="3WEweC">
+        <ref role="mGtU6" node="5A9c4ERh6YN" resolve="Fea3" />
       </node>
     </node>
   </node>
