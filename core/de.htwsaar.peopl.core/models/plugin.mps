@@ -267,9 +267,13 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1176921879268" name="jetbrains.mps.baseLanguage.collections.structure.IntersectOperation" flags="nn" index="60FfQ" />
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
         <child id="1226511765987" name="elementType" index="2hN53Y" />
@@ -4865,6 +4869,77 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5A9c4ERkrGq" role="jymVt" />
+    <node concept="3clFb_" id="72Mw9zmsodW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="someModulesAreAlternatives" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="72Mw9zmsodZ" role="3clF47">
+        <node concept="3SKdUt" id="72Mw9zmu9zv" role="3cqZAp">
+          <node concept="3SKdUq" id="72Mw9zmu9zx" role="3SKWNk">
+            <property role="3SKdUp" value="the list of modules has modules that are alternative to each other , that means that in one of" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="72Mw9zmtLgq" role="3cqZAp">
+          <node concept="2OqwBi" id="72Mw9zmtOJD" role="3cqZAk">
+            <node concept="1rXfSq" id="72Mw9zmtNqR" role="2Oq$k0">
+              <ref role="37wK5l" node="5A9c4ERkuzr" resolve="getAlternativeModules" />
+              <node concept="37vLTw" id="72Mw9zmtR_n" role="37wK5m">
+                <ref role="3cqZAo" node="72Mw9zmsVU9" resolve="currentSModule" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="72Mw9zmtQbm" role="2OqNvi">
+              <node concept="1bVj0M" id="72Mw9zmtQbo" role="23t8la">
+                <node concept="3clFbS" id="72Mw9zmtQbp" role="1bW5cS">
+                  <node concept="3clFbF" id="72Mw9zmtSLR" role="3cqZAp">
+                    <node concept="3eOSWO" id="72Mw9zmu5SK" role="3clFbG">
+                      <node concept="3cmrfG" id="72Mw9zmu76H" role="3uHU7w">
+                        <property role="3cmrfH" value="1" />
+                      </node>
+                      <node concept="2OqwBi" id="72Mw9zmu3d7" role="3uHU7B">
+                        <node concept="2OqwBi" id="72Mw9zmtZht" role="2Oq$k0">
+                          <node concept="37vLTw" id="72Mw9zmtXVO" role="2Oq$k0">
+                            <ref role="3cqZAo" node="72Mw9zmtQbq" resolve="it" />
+                          </node>
+                          <node concept="60FfQ" id="72Mw9zmu0HB" role="2OqNvi">
+                            <node concept="37vLTw" id="72Mw9zmu1XA" role="576Qk">
+                              <ref role="3cqZAo" node="72Mw9zmsUN3" resolve="possibleAlternatives" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="34oBXx" id="72Mw9zmu4wx" role="2OqNvi" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="72Mw9zmtQbq" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="72Mw9zmtQbr" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="72Mw9zmsn3i" role="1B3o_S" />
+      <node concept="10P_77" id="72Mw9zmsodQ" role="3clF45" />
+      <node concept="37vLTG" id="72Mw9zmsUN3" role="3clF46">
+        <property role="TrG5h" value="possibleAlternatives" />
+        <node concept="_YKpA" id="72Mw9zmsUN1" role="1tU5fm">
+          <node concept="3Tqbb2" id="72Mw9zmsVTs" role="_ZDj9">
+            <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="72Mw9zmsVU9" role="3clF46">
+        <property role="TrG5h" value="currentSModule" />
+        <node concept="3uibUv" id="72Mw9zmsX0F" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="72Mw9zmslLv" role="jymVt" />
     <node concept="3clFb_" id="5A9c4ERkuzr" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getAlternativeModules" />
