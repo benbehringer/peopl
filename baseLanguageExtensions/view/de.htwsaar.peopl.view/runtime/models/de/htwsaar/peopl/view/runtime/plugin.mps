@@ -348,11 +348,14 @@
       <node concept="tCFHf" id="2H0DQTMG4wc" role="ftvYc">
         <ref role="tCJdB" node="2H0DQTMG4vZ" resolve="Activate_AnnotativeView_HideModuleVP" />
       </node>
+      <node concept="tCFHf" id="3Yg59hlbGIr" role="ftvYc">
+        <ref role="tCJdB" node="3Yg59hlbqph" resolve="Activate_ProductView_Colored" />
+      </node>
       <node concept="tCFHf" id="3M$6oZspNPK" role="ftvYc">
         <ref role="tCJdB" node="3M$6oZspbOO" resolve="Activate_ProductView" />
       </node>
-      <node concept="tCFHf" id="3Yg59hlbGIr" role="ftvYc">
-        <ref role="tCJdB" node="3Yg59hlbqph" resolve="Activate_ProductView_Colored" />
+      <node concept="tCFHf" id="5uxPYTH3GYT" role="ftvYc">
+        <ref role="tCJdB" node="5uxPYTGZa8U" resolve="Activate_PreprocessorView" />
       </node>
       <node concept="tCFHf" id="1sCUscXPcmD" role="ftvYc">
         <ref role="tCJdB" node="1sCUscXPcmm" resolve="ShowDependenciesInEditor" />
@@ -2631,6 +2634,113 @@
       <node concept="10P_77" id="1UKLsXaAuRU" role="1tU5fm" />
     </node>
     <node concept="3Tm1VV" id="1UKLsXaAupn" role="1B3o_S" />
+  </node>
+  <node concept="Zd50a" id="5uxPYTGZa8R">
+    <property role="3GE5qa" value="viewMenu" />
+    <property role="TrG5h" value="Activate_PreprocessorView" />
+    <node concept="Zd509" id="5uxPYTGZa8S" role="Zd508">
+      <ref role="1bYAoF" node="5uxPYTGZa8U" resolve="Activate_PreprocessorView" />
+      <node concept="pLAjd" id="5uxPYTGZa8T" role="Zd501">
+        <property role="pLAjc" value="ctrl+alt" />
+        <property role="pLAjf" value="VK_5" />
+      </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="5uxPYTGZa8U">
+    <property role="3GE5qa" value="viewMenu" />
+    <property role="TrG5h" value="Activate_PreprocessorView" />
+    <property role="2uzpH1" value="Activate C-Preprocessor-like View" />
+    <property role="fJN8o" value="true" />
+    <node concept="1DS2jV" id="5uxPYTGZa8V" role="1NuT2Z">
+      <property role="TrG5h" value="mpsProject" />
+      <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+      <node concept="1oajcY" id="5uxPYTGZa8W" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="5uxPYTGZa8X" role="1NuT2Z">
+      <property role="TrG5h" value="editorComponent" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_COMPONENT" resolve="EDITOR_COMPONENT" />
+      <node concept="1oajcY" id="5uxPYTGZa8Y" role="1oa70y" />
+    </node>
+    <node concept="2S4$dB" id="5uxPYTGZa8Z" role="1NuT2Z">
+      <property role="TrG5h" value="currentNode" />
+      <node concept="3Tm6S6" id="5uxPYTGZa90" role="1B3o_S" />
+      <node concept="1oajcY" id="5uxPYTGZa91" role="1oa70y" />
+      <node concept="3Tqbb2" id="5uxPYTGZa92" role="1tU5fm" />
+    </node>
+    <node concept="tnohg" id="5uxPYTGZa93" role="tncku">
+      <node concept="3clFbS" id="5uxPYTGZa94" role="2VODD2">
+        <node concept="3cpWs8" id="5uxPYTGZa95" role="3cqZAp">
+          <node concept="3cpWsn" id="5uxPYTGZa96" role="3cpWs9">
+            <property role="TrG5h" value="editorHints" />
+            <node concept="10Q1$e" id="5uxPYTGZa97" role="1tU5fm">
+              <node concept="17QB3L" id="5uxPYTGZa98" role="10Q1$1" />
+            </node>
+            <node concept="2BsdOp" id="5uxPYTGZa99" role="33vP2m">
+              <node concept="2pYGij" id="5uxPYTGZa9a" role="2BsfMF">
+                <ref role="2pYH_C" to="nbbm:5uxPYTGW6me" resolve="preprocessor" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uxPYTGZa9b" role="3cqZAp">
+          <node concept="2OqwBi" id="5uxPYTGZa9c" role="3clFbG">
+            <node concept="2OqwBi" id="5uxPYTGZa9d" role="2Oq$k0">
+              <node concept="liA8E" id="5uxPYTGZa9e" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+              </node>
+              <node concept="2OqwBi" id="5uxPYTGZa9f" role="2Oq$k0">
+                <node concept="2WthIp" id="5uxPYTGZa9g" role="2Oq$k0" />
+                <node concept="1DTwFV" id="5uxPYTGZa9h" role="2OqNvi">
+                  <ref role="2WH_rO" node="5uxPYTGZa8X" resolve="editorComponent" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="5uxPYTGZa9i" role="2OqNvi">
+              <ref role="37wK5l" to="22ra:~Updater.setInitialEditorHints(java.lang.String[]):boolean" resolve="setInitialEditorHints" />
+              <node concept="37vLTw" id="5uxPYTGZa9j" role="37wK5m">
+                <ref role="3cqZAo" node="5uxPYTGZa96" resolve="editorHints" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5uxPYTGZa9k" role="3cqZAp">
+          <node concept="2OqwBi" id="5uxPYTGZa9l" role="3clFbG">
+            <node concept="liA8E" id="5uxPYTGZa9m" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
+            </node>
+            <node concept="2OqwBi" id="5uxPYTGZa9n" role="2Oq$k0">
+              <node concept="2WthIp" id="5uxPYTGZa9o" role="2Oq$k0" />
+              <node concept="1DTwFV" id="5uxPYTGZa9p" role="2OqNvi">
+                <ref role="2WH_rO" node="5uxPYTGZa8X" resolve="editorComponent" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="mfpdH" id="5uxPYTGZa9q" role="med8o" />
+    <node concept="2ScWuX" id="5uxPYTGZa9r" role="tmbBb">
+      <node concept="3clFbS" id="5uxPYTGZa9s" role="2VODD2">
+        <node concept="3clFbF" id="5uxPYTGZa9t" role="3cqZAp">
+          <node concept="2OqwBi" id="5uxPYTGZa9u" role="3clFbG">
+            <node concept="2OqwBi" id="5uxPYTGZa9v" role="2Oq$k0">
+              <node concept="2OqwBi" id="5uxPYTGZa9w" role="2Oq$k0">
+                <node concept="2WthIp" id="5uxPYTGZa9x" role="2Oq$k0" />
+                <node concept="3gHZIF" id="5uxPYTGZa9y" role="2OqNvi">
+                  <ref role="2WH_rO" node="5uxPYTGZa8Z" resolve="currentNode" />
+                </node>
+              </node>
+              <node concept="2Rxl7S" id="5uxPYTGZa9z" role="2OqNvi" />
+            </node>
+            <node concept="1mIQ4w" id="5uxPYTGZa9$" role="2OqNvi">
+              <node concept="chp4Y" id="5uxPYTGZa9_" role="cj9EA">
+                <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
