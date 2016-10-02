@@ -10593,6 +10593,25 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="5uxPYTH2HDg" role="3cqZAp" />
+                <node concept="3clFbF" id="1iXnMjZiAR$" role="3cqZAp">
+                  <node concept="2OqwBi" id="1iXnMjZiAR_" role="3clFbG">
+                    <node concept="37vLTw" id="1iXnMjZiARA" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5uxPYTH2HAA" resolve="referenceCell" />
+                    </node>
+                    <node concept="liA8E" id="1iXnMjZiARB" role="2OqNvi">
+                      <ref role="37wK5l" to="f4zo:~EditorCell.setSubstituteInfo(jetbrains.mps.openapi.editor.cells.SubstituteInfo):void" resolve="setSubstituteInfo" />
+                      <node concept="2OqwBi" id="1iXnMjZiARC" role="37wK5m">
+                        <node concept="37vLTw" id="1iXnMjZiARD" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5uxPYTH2HAl" resolve="provider" />
+                        </node>
+                        <node concept="liA8E" id="1iXnMjZiARE" role="2OqNvi">
+                          <ref role="37wK5l" to="emqf:~CellProviderWithRole.createDefaultSubstituteInfo():jetbrains.mps.openapi.editor.cells.SubstituteInfo" resolve="createDefaultSubstituteInfo" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="1iXnMjZiAA1" role="3cqZAp" />
                 <node concept="3cpWs8" id="5uxPYTH2HDh" role="3cqZAp">
                   <node concept="3cpWsn" id="5uxPYTH2HDi" role="3cpWs9">
                     <property role="TrG5h" value="attributeConcept" />
