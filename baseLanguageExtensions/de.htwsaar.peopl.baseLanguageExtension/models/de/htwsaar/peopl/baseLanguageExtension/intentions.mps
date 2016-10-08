@@ -1783,14 +1783,27 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="16liNxk7TEt" role="3clFbw">
-                    <node concept="2GrUjf" id="16liNxk7T_u" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="16liNxk7SFD" resolve="hint" />
+                  <node concept="22lmx$" id="7DlsM$el2PT" role="3clFbw">
+                    <node concept="2OqwBi" id="7DlsM$el34q" role="3uHU7w">
+                      <node concept="2GrUjf" id="7DlsM$el2X8" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="16liNxk7SFD" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="7DlsM$el3k$" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="7DlsM$el3pP" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="coloredProduct" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="16liNxk7TSk" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="2pYGij" id="1jQ1A8DZAIJ" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                    <node concept="2OqwBi" id="16liNxk7TEt" role="3uHU7B">
+                      <node concept="2GrUjf" id="16liNxk7T_u" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="16liNxk7SFD" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="16liNxk7TSk" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="1jQ1A8DZAIJ" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1928,14 +1941,27 @@
                     </node>
                     <node concept="3zACq4" id="7XiQv3feebO" role="3cqZAp" />
                   </node>
-                  <node concept="2OqwBi" id="7XiQv3fdLkv" role="3clFbw">
-                    <node concept="2GrUjf" id="7XiQv3fdLkw" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="7XiQv3fdLjx" resolve="hint" />
+                  <node concept="22lmx$" id="7DlsM$emPw7" role="3clFbw">
+                    <node concept="2OqwBi" id="7XiQv3fdLkv" role="3uHU7B">
+                      <node concept="2GrUjf" id="7XiQv3fdLkw" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="7XiQv3fdLjx" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="7XiQv3fdLkx" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="1jQ1A8DZN4V" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="7XiQv3fdLkx" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="2pYGij" id="1jQ1A8DZN4V" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                    <node concept="2OqwBi" id="7DlsM$emPAS" role="3uHU7w">
+                      <node concept="2GrUjf" id="7DlsM$emPAT" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="7XiQv3fdLjx" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="7DlsM$emPAU" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="7DlsM$emPAV" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="coloredProduct" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4140,14 +4166,27 @@
                     </node>
                     <node concept="3zACq4" id="3XSKgTnIf2f" role="3cqZAp" />
                   </node>
-                  <node concept="2OqwBi" id="3XSKgTnIf2h" role="3clFbw">
-                    <node concept="2GrUjf" id="3XSKgTnIf2i" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3XSKgTnIf1n" resolve="hint" />
+                  <node concept="22lmx$" id="7DlsM$emRs3" role="3clFbw">
+                    <node concept="2OqwBi" id="3XSKgTnIf2h" role="3uHU7B">
+                      <node concept="2GrUjf" id="3XSKgTnIf2i" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3XSKgTnIf1n" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="3XSKgTnIf2j" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="1jQ1A8DZPdH" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="3XSKgTnIf2j" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="2pYGij" id="1jQ1A8DZPdH" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                    <node concept="2OqwBi" id="7DlsM$emRAL" role="3uHU7w">
+                      <node concept="2GrUjf" id="7DlsM$emRAM" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3XSKgTnIf1n" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="7DlsM$emRAN" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="7DlsM$emRAO" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="coloredProduct" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4409,14 +4448,27 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="2Ja598TNHcN" role="3clFbw">
-                    <node concept="2GrUjf" id="2Ja598TNHcO" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="2Ja598TNHbT" resolve="hint" />
+                  <node concept="22lmx$" id="7DlsM$emPWa" role="3clFbw">
+                    <node concept="2OqwBi" id="2Ja598TNHcN" role="3uHU7B">
+                      <node concept="2GrUjf" id="2Ja598TNHcO" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2Ja598TNHbT" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="2Ja598TNHcP" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="1jQ1A8DZNnZ" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                        </node>
+                      </node>
                     </node>
-                    <node concept="liA8E" id="2Ja598TNHcP" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
-                      <node concept="2pYGij" id="1jQ1A8DZNnZ" role="37wK5m">
-                        <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                    <node concept="2OqwBi" id="7DlsM$emQ1F" role="3uHU7w">
+                      <node concept="2GrUjf" id="7DlsM$emQ1G" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="2Ja598TNHbT" resolve="hint" />
+                      </node>
+                      <node concept="liA8E" id="7DlsM$emQ1H" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contentEquals(java.lang.CharSequence):boolean" resolve="contentEquals" />
+                        <node concept="2pYGij" id="7DlsM$emQ1I" role="37wK5m">
+                          <ref role="2pYH_C" to="nbbm:2iVkojt1MhA" resolve="coloredProduct" />
+                        </node>
                       </node>
                     </node>
                   </node>

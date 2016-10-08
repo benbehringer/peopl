@@ -2710,9 +2710,9 @@
             </node>
             <node concept="liA8E" id="4DWAEpifBeO" role="2OqNvi">
               <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
-              <node concept="Rm8GO" id="5IGMYLdM2eB" role="37wK5m">
+              <node concept="Rm8GO" id="7wh6a8YGy6f" role="37wK5m">
+                <ref role="Rm8GQ" to="tqa7:47WRMVuScgA" resolve="NEXT_NEXT_SIBLING" />
                 <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
-                <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
               </node>
             </node>
           </node>
@@ -2837,9 +2837,9 @@
             </node>
             <node concept="liA8E" id="52YGS1mlMyh" role="2OqNvi">
               <ref role="37wK5l" to="tqa7:47WRMVuScic" resolve="setHeightOrientation" />
-              <node concept="Rm8GO" id="52YGS1mlMyi" role="37wK5m">
+              <node concept="Rm8GO" id="7wh6a8YGSHL" role="37wK5m">
+                <ref role="Rm8GQ" to="tqa7:47WRMVuScgA" resolve="NEXT_NEXT_SIBLING" />
                 <ref role="1Px2BO" to="tqa7:47WRMVuScgy" resolve="VerticalLineCellProvider.VerticalProvider_HeightOrientation" />
-                <ref role="Rm8GQ" to="tqa7:47WRMVuScg_" resolve="NEXT_SIBLING" />
               </node>
             </node>
           </node>
@@ -6980,6 +6980,22 @@
             </node>
           </node>
           <node concept="3EZMnI" id="4XXs7o04hg_" role="1QoVPY">
+            <node concept="gc7cB" id="4XXs7o02iwU" role="3EZMnx">
+              <node concept="3VJUX4" id="4XXs7o02iwW" role="3YsKMw">
+                <node concept="3clFbS" id="4XXs7o02iwY" role="2VODD2">
+                  <node concept="3clFbF" id="3TvCtTg_MJW" role="3cqZAp">
+                    <node concept="2YIFZM" id="3TvCtTg_MSM" role="3clFbG">
+                      <ref role="1Pybhc" node="3TvCtTg_wZj" resolve="VerticalLineHelper" />
+                      <ref role="37wK5l" node="3TvCtTg_IpA" resolve="drawVerticalLine" />
+                      <node concept="pncrf" id="3TvCtTg_MT7" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="VPM3Z" id="4XXs7o04$UL" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+            </node>
             <node concept="2iR$Sn" id="PhUrn4z7_c" role="2iSdaV" />
             <node concept="gc7cB" id="52YGS1mjTAZ" role="3EZMnx">
               <node concept="3VJUX4" id="52YGS1mjTB0" role="3YsKMw">
@@ -6997,22 +7013,6 @@
                 </node>
               </node>
               <node concept="VPM3Z" id="52YGS1mjTCC" role="3F10Kt">
-                <property role="VOm3f" value="false" />
-              </node>
-            </node>
-            <node concept="gc7cB" id="4XXs7o02iwU" role="3EZMnx">
-              <node concept="3VJUX4" id="4XXs7o02iwW" role="3YsKMw">
-                <node concept="3clFbS" id="4XXs7o02iwY" role="2VODD2">
-                  <node concept="3clFbF" id="3TvCtTg_MJW" role="3cqZAp">
-                    <node concept="2YIFZM" id="3TvCtTg_MSM" role="3clFbG">
-                      <ref role="1Pybhc" node="3TvCtTg_wZj" resolve="VerticalLineHelper" />
-                      <ref role="37wK5l" node="3TvCtTg_IpA" resolve="drawVerticalLine" />
-                      <node concept="pncrf" id="3TvCtTg_MT7" role="37wK5m" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="VPM3Z" id="4XXs7o04$UL" role="3F10Kt">
                 <property role="VOm3f" value="false" />
               </node>
             </node>
@@ -7079,6 +7079,22 @@
           </node>
           <node concept="3EZMnI" id="4DWAEpia53u" role="1QoS34">
             <node concept="2iR$Sn" id="3caQtCiB6uQ" role="2iSdaV" />
+            <node concept="gc7cB" id="4DWAEpifAb$" role="3EZMnx">
+              <node concept="VPM3Z" id="65TivjU_Uaz" role="3F10Kt">
+                <property role="VOm3f" value="false" />
+              </node>
+              <node concept="3VJUX4" id="4DWAEpifAbA" role="3YsKMw">
+                <node concept="3clFbS" id="4DWAEpifAbC" role="2VODD2">
+                  <node concept="3clFbF" id="3TvCtTgBbyW" role="3cqZAp">
+                    <node concept="2YIFZM" id="3TvCtTgBb$k" role="3clFbG">
+                      <ref role="1Pybhc" node="3TvCtTg_wZj" resolve="VerticalLineHelper" />
+                      <ref role="37wK5l" node="3TvCtTgAPWC" resolve="drawBaseCodeBlock" />
+                      <node concept="pncrf" id="3TvCtTgBb$l" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="gc7cB" id="3Sk5uha3c5c" role="3EZMnx">
               <node concept="3VJUX4" id="3Sk5uha3c5e" role="3YsKMw">
                 <node concept="3clFbS" id="3Sk5uha3c5g" role="2VODD2">
@@ -7096,22 +7112,6 @@
               </node>
               <node concept="VPM3Z" id="3Sk5uha3ct9" role="3F10Kt">
                 <property role="VOm3f" value="false" />
-              </node>
-            </node>
-            <node concept="gc7cB" id="4DWAEpifAb$" role="3EZMnx">
-              <node concept="VPM3Z" id="65TivjU_Uaz" role="3F10Kt">
-                <property role="VOm3f" value="false" />
-              </node>
-              <node concept="3VJUX4" id="4DWAEpifAbA" role="3YsKMw">
-                <node concept="3clFbS" id="4DWAEpifAbC" role="2VODD2">
-                  <node concept="3clFbF" id="3TvCtTgBbyW" role="3cqZAp">
-                    <node concept="2YIFZM" id="3TvCtTgBb$k" role="3clFbG">
-                      <ref role="1Pybhc" node="3TvCtTg_wZj" resolve="VerticalLineHelper" />
-                      <ref role="37wK5l" node="3TvCtTgAPWC" resolve="drawBaseCodeBlock" />
-                      <node concept="pncrf" id="3TvCtTgBb$l" role="37wK5m" />
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
             <node concept="3EZMnI" id="3RWLRWHQLBL" role="3EZMnx">
