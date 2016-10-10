@@ -24,6 +24,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.mouse)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -78,7 +79,12 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -113,6 +119,9 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -178,6 +187,7 @@
         <node concept="3cpWs8" id="2vJRo8g$$xl" role="3cqZAp">
           <node concept="3cpWsn" id="2vJRo8g$$xm" role="3cpWs9">
             <property role="TrG5h" value="ideaProject" />
+            <property role="3TUv4t" value="true" />
             <node concept="3uibUv" id="2vJRo8g$$xn" role="1tU5fm">
               <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
             </node>
@@ -253,9 +263,19 @@
                           <node concept="2OqwBi" id="80_psBV2kq" role="3clFbG">
                             <node concept="2YIFZM" id="66gx8lPws0T" role="2Oq$k0">
                               <ref role="37wK5l" to="fchx:630t2b8ee$K" resolve="getInstance" />
-                              <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="DragSelectionMouseListener" />
+                              <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="SelectionMouseListener" />
                               <node concept="37vLTw" id="66gx8lPws0U" role="37wK5m">
                                 <ref role="3cqZAo" node="2vJRo8g$$xM" resolve="editorComponent" />
+                              </node>
+                              <node concept="1eOMI4" id="442OlezEtqn" role="37wK5m">
+                                <node concept="10QFUN" id="442OlezEtqk" role="1eOMHV">
+                                  <node concept="3uibUv" id="442OlezEtHa" role="10QFUM">
+                                    <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+                                  </node>
+                                  <node concept="37vLTw" id="442OlezEtoN" role="10QFUP">
+                                    <ref role="3cqZAo" node="2vJRo8g$$xm" resolve="ideaProject" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                             <node concept="liA8E" id="80_psBV3mD" role="2OqNvi">
@@ -285,10 +305,20 @@
                         <node concept="3clFbF" id="80_psBV3s3" role="3cqZAp">
                           <node concept="2OqwBi" id="80_psBV3s4" role="3clFbG">
                             <node concept="2YIFZM" id="80_psBV3s5" role="2Oq$k0">
-                              <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="DragSelectionMouseListener" />
+                              <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="SelectionMouseListener" />
                               <ref role="37wK5l" to="fchx:630t2b8ee$K" resolve="getInstance" />
                               <node concept="37vLTw" id="80_psBV3Dp" role="37wK5m">
                                 <ref role="3cqZAo" node="2vJRo8g$$xW" resolve="editorComponent" />
+                              </node>
+                              <node concept="1eOMI4" id="442OlezEtIE" role="37wK5m">
+                                <node concept="10QFUN" id="442OlezEtIB" role="1eOMHV">
+                                  <node concept="3uibUv" id="442OlezEtPU" role="10QFUM">
+                                    <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+                                  </node>
+                                  <node concept="37vLTw" id="442OlezEqNM" role="10QFUP">
+                                    <ref role="3cqZAo" node="2vJRo8g$$xm" resolve="ideaProject" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
                             <node concept="liA8E" id="80_psBV3s7" role="2OqNvi">
@@ -342,7 +372,7 @@
         </node>
         <node concept="3clFbF" id="80_psC71Lu" role="3cqZAp">
           <node concept="2YIFZM" id="80_psC71N1" role="3clFbG">
-            <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="DragSelectionMouseListener" />
+            <ref role="1Pybhc" to="fchx:630t2b8ee$$" resolve="SelectionMouseListener" />
             <ref role="37wK5l" to="fchx:630t2b8ee_g" resolve="uninstallAll" />
           </node>
         </node>
