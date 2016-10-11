@@ -28,7 +28,6 @@
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="np75" ref="48477037-d528-4d3e-ac50-a885e9fa80e6/java:org.jnativehook.mouse(jNativeHook/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -74,7 +73,6 @@
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1213,139 +1211,6 @@
     <node concept="3Tm1VV" id="1CHBEReQz_S" role="1B3o_S" />
     <node concept="3uibUv" id="1CHBEReQ$HM" role="1zkMxy">
       <ref role="3uigEE" to="hyam:~KeyAdapter" resolve="KeyAdapter" />
-    </node>
-  </node>
-  <node concept="312cEu" id="5rS_iYW_EFv">
-    <property role="TrG5h" value="GlobalMouseListener" />
-    <node concept="3Tm1VV" id="5rS_iYW_EFw" role="1B3o_S" />
-    <node concept="3uibUv" id="5rS_iYW_GXw" role="EKbjA">
-      <ref role="3uigEE" to="np75:~NativeMouseInputListener" resolve="NativeMouseInputListener" />
-    </node>
-    <node concept="3clFb_" id="5rS_iYW_Llb" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="nativeMouseClicked" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="5rS_iYW_Llc" role="1B3o_S" />
-      <node concept="3cqZAl" id="5rS_iYW_Lle" role="3clF45" />
-      <node concept="37vLTG" id="5rS_iYW_Llf" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="5rS_iYW_Llg" role="1tU5fm">
-          <ref role="3uigEE" to="np75:~NativeMouseEvent" resolve="NativeMouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5rS_iYW_Llj" role="3clF47">
-        <node concept="1X3_iC" id="4HYbdr6cEmv" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7iJdbfH3rPm" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="7iJdbfH3rPo" role="34bqiv">
-              <property role="Xl_RC" value="nativeMouseClicked" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="5rS_iYW_Lme" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="nativeMousePressed" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="5rS_iYW_Lmf" role="1B3o_S" />
-      <node concept="3cqZAl" id="5rS_iYW_Lmh" role="3clF45" />
-      <node concept="37vLTG" id="5rS_iYW_Lmi" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="5rS_iYW_Lmj" role="1tU5fm">
-          <ref role="3uigEE" to="np75:~NativeMouseEvent" resolve="NativeMouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5rS_iYW_Lmm" role="3clF47">
-        <node concept="34ab3g" id="7iJdbfH3rPs" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="7iJdbfH3rPt" role="34bqiv">
-            <property role="Xl_RC" value="nativeMousePressed" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="5rS_iYW_Lo7" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="nativeMouseReleased" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="5rS_iYW_Lo8" role="1B3o_S" />
-      <node concept="3cqZAl" id="5rS_iYW_Loa" role="3clF45" />
-      <node concept="37vLTG" id="5rS_iYW_Lob" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="5rS_iYW_Loc" role="1tU5fm">
-          <ref role="3uigEE" to="np75:~NativeMouseEvent" resolve="NativeMouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5rS_iYW_Lof" role="3clF47">
-        <node concept="1X3_iC" id="4HYbdr6cEmF" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7iJdbfH3rPw" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="7iJdbfH3rPx" role="34bqiv">
-              <property role="Xl_RC" value="nativeMouseReleased" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="5rS_iYW_Lp3" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="nativeMouseMoved" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="5rS_iYW_Lp4" role="1B3o_S" />
-      <node concept="3cqZAl" id="5rS_iYW_Lp6" role="3clF45" />
-      <node concept="37vLTG" id="5rS_iYW_Lp7" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="5rS_iYW_Lp8" role="1tU5fm">
-          <ref role="3uigEE" to="np75:~NativeMouseEvent" resolve="NativeMouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5rS_iYW_Lpc" role="3clF47">
-        <node concept="1X3_iC" id="4HYbdr6cEmL" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7iJdbfH3rP$" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="7iJdbfH3rP_" role="34bqiv">
-              <property role="Xl_RC" value="nativeMouseMoved" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="5rS_iYW_Lqh" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="nativeMouseDragged" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3Tm1VV" id="5rS_iYW_Lqi" role="1B3o_S" />
-      <node concept="3cqZAl" id="5rS_iYW_Lqk" role="3clF45" />
-      <node concept="37vLTG" id="5rS_iYW_Lql" role="3clF46">
-        <property role="TrG5h" value="event" />
-        <node concept="3uibUv" id="5rS_iYW_Lqm" role="1tU5fm">
-          <ref role="3uigEE" to="np75:~NativeMouseEvent" resolve="NativeMouseEvent" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="5rS_iYW_Lqq" role="3clF47">
-        <node concept="1X3_iC" id="4HYbdr6cEmR" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7iJdbfH3rPC" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="7iJdbfH3rPD" role="34bqiv">
-              <property role="Xl_RC" value="nativeMouseDragged" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
 </model>

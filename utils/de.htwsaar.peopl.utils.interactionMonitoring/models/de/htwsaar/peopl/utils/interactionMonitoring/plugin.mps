@@ -25,7 +25,6 @@
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
     <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.listener)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
-    <import index="6ysa" ref="48477037-d528-4d3e-ac50-a885e9fa80e6/java:org.jnativehook(jNativeHook/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -54,9 +53,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ng" index="IEa8$">
         <property id="1224848525476" name="isDeprecated" index="IEkAT" />
       </concept>
@@ -64,16 +60,8 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
-      <concept id="1164879751025" name="jetbrains.mps.baseLanguage.structure.TryCatchStatement" flags="nn" index="SfApY">
-        <child id="1164879758292" name="body" index="SfCbr" />
-        <child id="1164903496223" name="catchClause" index="TEbGg" />
-      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
@@ -163,10 +151,8 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
         <property id="1167245565795" name="severity" index="35gtTG" />
         <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -185,13 +171,6 @@
       <node concept="3Tm6S6" id="66gx8lPwoMl" role="1B3o_S" />
       <node concept="3uibUv" id="66gx8lPwpUe" role="1tU5fm">
         <ref role="3uigEE" to="4b2m:~MessageBusConnection" resolve="MessageBusConnection" />
-      </node>
-    </node>
-    <node concept="2BZ0e9" id="7iJdbfH43D4" role="2uRRBA">
-      <property role="TrG5h" value="myMouseListener" />
-      <node concept="3Tm6S6" id="7iJdbfH43D5" role="1B3o_S" />
-      <node concept="3uibUv" id="7iJdbfH43N2" role="1tU5fm">
-        <ref role="3uigEE" to="fchx:5rS_iYW_EFv" resolve="GlobalMouseListener" />
       </node>
     </node>
     <node concept="2uRRBT" id="66gx8lPwpXw" role="2uRRB$">
@@ -371,76 +350,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7iJdbfH3Jil" role="3cqZAp" />
-        <node concept="SfApY" id="7iJdbfH3K3D" role="3cqZAp">
-          <node concept="3clFbS" id="7iJdbfH3K3F" role="SfCbr">
-            <node concept="3clFbF" id="7iJdbfH3JJO" role="3cqZAp">
-              <node concept="2YIFZM" id="7iJdbfH3JP1" role="3clFbG">
-                <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-                <ref role="37wK5l" to="6ysa:~GlobalScreen.registerNativeHook():void" resolve="registerNativeHook" />
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="7iJdbfH3K3G" role="TEbGg">
-            <node concept="3cpWsn" id="7iJdbfH3K3I" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="7iJdbfH3Kkt" role="1tU5fm">
-                <ref role="3uigEE" to="6ysa:~NativeHookException" resolve="NativeHookException" />
-              </node>
-            </node>
-            <node concept="3clFbS" id="7iJdbfH3K3M" role="TDEfX">
-              <node concept="34ab3g" id="7iJdbfH3KoJ" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="7iJdbfH3KoL" role="34bqiv">
-                  <property role="Xl_RC" value="There was a problem registering the native hook in the interaction monitoring subsystem." />
-                </node>
-                <node concept="37vLTw" id="7iJdbfH3KoN" role="34bMjA">
-                  <ref role="3cqZAo" node="7iJdbfH3K3I" resolve="e" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="7iJdbfH3JkI" role="3cqZAp" />
-        <node concept="3clFbF" id="7iJdbfH448p" role="3cqZAp">
-          <node concept="37vLTI" id="7iJdbfH44fA" role="3clFbG">
-            <node concept="2ShNRf" id="7iJdbfH44hX" role="37vLTx">
-              <node concept="HV5vD" id="7iJdbfH44BY" role="2ShVmc">
-                <ref role="HV5vE" to="fchx:5rS_iYW_EFv" resolve="GlobalMouseListener" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7iJdbfH448j" role="37vLTJ">
-              <node concept="2WthIp" id="7iJdbfH448m" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="7iJdbfH448o" role="2OqNvi">
-                <ref role="2WH_rO" node="7iJdbfH43D4" resolve="myMouseListener" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7iJdbfH42RE" role="3cqZAp">
-          <node concept="2YIFZM" id="7iJdbfH430M" role="3clFbG">
-            <ref role="37wK5l" to="6ysa:~GlobalScreen.addNativeMouseListener(org.jnativehook.mouse.NativeMouseListener):void" resolve="addNativeMouseListener" />
-            <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-            <node concept="2OqwBi" id="7iJdbfH44Cf" role="37wK5m">
-              <node concept="2WthIp" id="7iJdbfH44Ci" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="7iJdbfH44Ck" role="2OqNvi">
-                <ref role="2WH_rO" node="7iJdbfH43D4" resolve="myMouseListener" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7iJdbfH43gx" role="3cqZAp">
-          <node concept="2YIFZM" id="7iJdbfH43mr" role="3clFbG">
-            <ref role="37wK5l" to="6ysa:~GlobalScreen.addNativeMouseMotionListener(org.jnativehook.mouse.NativeMouseMotionListener):void" resolve="addNativeMouseMotionListener" />
-            <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-            <node concept="2OqwBi" id="7iJdbfH44CT" role="37wK5m">
-              <node concept="2WthIp" id="7iJdbfH44CW" role="2Oq$k0" />
-              <node concept="2BZ7hE" id="7iJdbfH44CY" role="2OqNvi">
-                <ref role="2WH_rO" node="7iJdbfH43D4" resolve="myMouseListener" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7iJdbfH3KvS" role="3cqZAp" />
       </node>
     </node>
@@ -491,38 +400,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="7iJdbfH43qP" role="3cqZAp" />
-        <node concept="3clFbJ" id="7iJdbfH43vU" role="3cqZAp">
-          <node concept="3clFbS" id="7iJdbfH43vW" role="3clFbx">
-            <node concept="3clFbF" id="7iJdbfH43Cr" role="3cqZAp">
-              <node concept="2YIFZM" id="7iJdbfH43CN" role="3clFbG">
-                <ref role="37wK5l" to="6ysa:~GlobalScreen.removeNativeMouseListener(org.jnativehook.mouse.NativeMouseListener):void" resolve="removeNativeMouseListener" />
-                <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-                <node concept="2OqwBi" id="7iJdbfH44DF" role="37wK5m">
-                  <node concept="2WthIp" id="7iJdbfH44DI" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="7iJdbfH44DK" role="2OqNvi">
-                    <ref role="2WH_rO" node="7iJdbfH43D4" resolve="myMouseListener" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="7iJdbfH44KD" role="3cqZAp">
-              <node concept="2YIFZM" id="7iJdbfH44Ll" role="3clFbG">
-                <ref role="37wK5l" to="6ysa:~GlobalScreen.removeNativeMouseMotionListener(org.jnativehook.mouse.NativeMouseMotionListener):void" resolve="removeNativeMouseMotionListener" />
-                <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-                <node concept="2OqwBi" id="7iJdbfH44Ly" role="37wK5m">
-                  <node concept="2WthIp" id="7iJdbfH44L_" role="2Oq$k0" />
-                  <node concept="2BZ7hE" id="7iJdbfH44LB" role="2OqNvi">
-                    <ref role="2WH_rO" node="7iJdbfH43D4" resolve="myMouseListener" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2YIFZM" id="7iJdbfH43xP" role="3clFbw">
-            <ref role="37wK5l" to="6ysa:~GlobalScreen.isNativeHookRegistered():boolean" resolve="isNativeHookRegistered" />
-            <ref role="1Pybhc" to="6ysa:~GlobalScreen" resolve="GlobalScreen" />
-          </node>
-        </node>
       </node>
     </node>
   </node>
