@@ -60,7 +60,6 @@
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
-      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -194,6 +193,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
       <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
       <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
         <reference id="6832197706140518108" name="param" index="zr_51" />
@@ -213,6 +215,7 @@
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
+      <concept id="4948473272651335344" name="jetbrains.mps.baseLanguage.javadoc.structure.EmptyBlockDocTag" flags="ng" index="1Ciki9" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -231,45 +234,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="312cEu" id="5I0bs5jxCua">
-    <property role="TrG5h" value="DropboxUploader" />
-    <node concept="2tJIrI" id="5I0bs5jxDR4" role="jymVt" />
-    <node concept="312cEg" id="5I0bs5jxEww" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="file" />
-      <property role="3TUv4t" value="false" />
-      <node concept="17QB3L" id="5I0bs5jxEvp" role="1tU5fm" />
-      <node concept="3Tm6S6" id="5I0bs5jxEBR" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="5I0bs5jxDXW" role="jymVt" />
-    <node concept="3Tm1VV" id="5I0bs5jxCub" role="1B3o_S" />
-    <node concept="3clFbW" id="5I0bs5jxDZT" role="jymVt">
-      <node concept="3cqZAl" id="5I0bs5jxDZU" role="3clF45" />
-      <node concept="3Tm1VV" id="5I0bs5jxDZV" role="1B3o_S" />
-      <node concept="3clFbS" id="5I0bs5jxDZX" role="3clF47">
-        <node concept="3clFbF" id="5I0bs5jxEzw" role="3cqZAp">
-          <node concept="37vLTI" id="5I0bs5jxEGH" role="3clFbG">
-            <node concept="37vLTw" id="5I0bs5jxEIO" role="37vLTx">
-              <ref role="3cqZAo" node="5I0bs5jxE9N" resolve="file" />
-            </node>
-            <node concept="2OqwBi" id="5I0bs5jxEzK" role="37vLTJ">
-              <node concept="Xjq3P" id="5I0bs5jxEzv" role="2Oq$k0" />
-              <node concept="2OwXpG" id="5I0bs5jxEEv" role="2OqNvi">
-                <ref role="2Oxat5" node="5I0bs5jxEww" resolve="file" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="5I0bs5jxE9N" role="3clF46">
-        <property role="TrG5h" value="file" />
-        <node concept="17QB3L" id="5I0bs5jxEbC" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5I0bs5jxEKa" role="jymVt" />
-    <node concept="2tJIrI" id="5I0bs5jxEKU" role="jymVt" />
-  </node>
   <node concept="3HP615" id="5I0bs5jxCRs">
     <property role="TrG5h" value="Constants" />
     <node concept="Wx3nA" id="5I0bs5jxD96" role="jymVt">
@@ -311,6 +275,42 @@
       <node concept="10Oyi0" id="5I0bs5jy5bF" role="1tU5fm" />
       <node concept="3cmrfG" id="5I0bs5jy5k0" role="33vP2m">
         <property role="3cmrfH" value="5" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="6gsD8CfW091" role="jymVt">
+      <property role="TrG5h" value="REMOTE_FILE_LARGER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6gsD8CfW092" role="1B3o_S" />
+      <node concept="17QB3L" id="6gsD8CfW37Q" role="1tU5fm" />
+      <node concept="Xl_RD" id="6gsD8CfW2SZ" role="33vP2m">
+        <property role="Xl_RC" value="remoteFileLarger" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="6gsD8CfW1Bx" role="jymVt">
+      <property role="TrG5h" value="LOCAL_FILE_LARGER" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6gsD8CfW1By" role="1B3o_S" />
+      <node concept="17QB3L" id="6gsD8CfW39I" role="1tU5fm" />
+      <node concept="Xl_RD" id="6gsD8CfW3j8" role="33vP2m">
+        <property role="Xl_RC" value="localFileLarger" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="6gsD8CfW1MS" role="jymVt">
+      <property role="TrG5h" value="FILE_SIZE_IDENTICAL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6gsD8CfW1MT" role="1B3o_S" />
+      <node concept="17QB3L" id="6gsD8CfW3cN" role="1tU5fm" />
+      <node concept="Xl_RD" id="6gsD8CfW3oJ" role="33vP2m">
+        <property role="Xl_RC" value="fileSizeIdentical" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="6gsD8CfW25e" role="jymVt">
+      <property role="TrG5h" value="FILE_SIZE_ERROR" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="6gsD8CfW25f" role="1B3o_S" />
+      <node concept="17QB3L" id="6gsD8CfW3f2" role="1tU5fm" />
+      <node concept="Xl_RD" id="6gsD8CfW3sT" role="33vP2m">
+        <property role="Xl_RC" value="fileSizeError" />
       </node>
     </node>
     <node concept="3Tm1VV" id="5I0bs5jxCRt" role="1B3o_S" />
@@ -394,7 +394,7 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5I0bs5jxLHV" role="1B3o_S" />
-      <node concept="3cqZAl" id="5I0bs5j$2Jg" role="3clF45" />
+      <node concept="10P_77" id="6gsD8CfVQzL" role="3clF45" />
       <node concept="37vLTG" id="5I0bs5jxM9g" role="3clF46">
         <property role="TrG5h" value="localFile" />
         <node concept="3uibUv" id="5I0bs5jxM9f" role="1tU5fm">
@@ -407,8 +407,28 @@
             <property role="1dT_AB" value="Upload file wtih simple upload API if small enough, otherwise use chunkedUpload" />
           </node>
         </node>
+        <node concept="TZ5HA" id="6gsD8CfWIjN" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWIjO" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfWIjV" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWIjW" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfWImB" role="3nqlJM">
+          <property role="TUZQ4" value="file to upload" />
+          <node concept="zr_55" id="6gsD8CfWIop" role="zr_5Q">
+            <ref role="zr_51" node="5I0bs5jxM9g" resolve="localFile" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfWT8O" role="3nqlJM">
+          <property role="x79VB" value="true if upload was successful, false otherwise" />
+        </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="6gsD8CfWy9E" role="jymVt" />
     <node concept="3clFb_" id="6gsD8CfUq7v" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="upload" />
@@ -551,11 +571,35 @@
             <property role="1dT_AB" value="Upload file wtih simple upload API if small enough, otherwise use chunkedUpload" />
           </node>
         </node>
+        <node concept="TZ5HA" id="6gsD8CfWHUf" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWHUg" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfWHUr" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWHUs" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfWHWl" role="3nqlJM">
+          <property role="TUZQ4" value="file to upload" />
+          <node concept="zr_55" id="6gsD8CfWHXl" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfUq88" resolve="localFile" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfWI2C" role="3nqlJM">
+          <property role="TUZQ4" value="boolean flag which indicates whether a remote file with same name should be overwritten" />
+          <node concept="zr_55" id="6gsD8CfWI5o" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfUrpc" resolve="overwrite" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfWTlL" role="3nqlJM">
+          <property role="x79VB" value="true if upload was successful, false otherwise" />
+        </node>
+        <node concept="1Ciki9" id="6gsD8CfWTkJ" role="3nqlJM" />
       </node>
     </node>
     <node concept="2tJIrI" id="6gsD8CfUovk" role="jymVt" />
-    <node concept="2tJIrI" id="6gsD8CfUoSH" role="jymVt" />
-    <node concept="2tJIrI" id="5I0bs5jxN5C" role="jymVt" />
     <node concept="2tJIrI" id="5I0bs5j$4TB" role="jymVt" />
     <node concept="3clFb_" id="5I0bs5jxNfG" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -894,12 +938,27 @@
             <property role="1dT_AB" value="method taken from: https://github.com/dropbox/dropbox-sdk-java/blob/master/examples/upload-file/src/main/java/com/dropbox/core/examples/upload_file/Main.java" />
           </node>
         </node>
+        <node concept="TZ5HA" id="6gsD8CfWxWR" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWxWS" role="1dT_Ay">
+            <property role="1dT_AB" value="and modified" />
+          </node>
+        </node>
         <node concept="TUZQ0" id="5I0bs5j$77k" role="3nqlJM">
           <property role="TUZQ4" value="local file to upload" />
           <node concept="zr_55" id="5I0bs5j$7bO" role="zr_5Q">
             <ref role="zr_51" node="5I0bs5jxNCy" resolve="localFile" />
           </node>
         </node>
+        <node concept="TUZQ0" id="6gsD8CfWTwX" role="3nqlJM">
+          <property role="TUZQ4" value="boolean flag which indicates whether a remote file with the same name should be overwritten" />
+          <node concept="zr_55" id="6gsD8CfWTFa" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfUs_h" resolve="overwrite" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfWVkB" role="3nqlJM">
+          <property role="x79VB" value="true if upload was successful, false otherwise" />
+        </node>
+        <node concept="1Ciki9" id="6gsD8CfWVc8" role="3nqlJM" />
       </node>
     </node>
     <node concept="2tJIrI" id="5I0bs5jxIs$" role="jymVt" />
@@ -1041,6 +1100,11 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="3SKdUt" id="6gsD8CfWG4E" role="3cqZAp">
+                  <node concept="3SKdUq" id="6gsD8CfWG4G" role="3SKWNk">
+                    <property role="3SKdUp" value="skip already uploaded bytes if retrying" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="5I0bs5jy9Ul" role="3cqZAp">
@@ -1937,19 +2001,34 @@
           <node concept="1dT_AC" id="5I0bs5j$eZh" role="1dT_Ay">
             <property role="1dT_AB" value="method taken from: https://github.com/dropbox/dropbox-sdk-java/blob/master/examples/upload-file/src/main/java/com/dropbox/core/examples/upload_file/Main.java" />
           </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfWzyr" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWzys" role="1dT_Ay">
+            <property role="1dT_AB" value="and modified" />
+          </node>
           <node concept="1dT_AC" id="5I0bs5j$cVq" role="1dT_Ay">
             <property role="1dT_AB" value="" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5I0bs5j$ddA" role="3nqlJM">
+        <node concept="TUZQ0" id="6gsD8CfXa6H" role="3nqlJM">
           <property role="TUZQ4" value="local file to upload" />
-          <node concept="zr_55" id="5I0bs5j$dwv" role="zr_5Q">
+          <node concept="zr_55" id="6gsD8CfXbuA" role="zr_5Q">
             <ref role="zr_51" node="5I0bs5jy3yI" resolve="localFile" />
           </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfXe4R" role="3nqlJM">
+          <property role="TUZQ4" value="boolean flag which indicates whether a remote file with the same name should be overwritten" />
+          <node concept="zr_55" id="6gsD8CfXeJ0" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfUxiD" resolve="overwrite" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfXn6j" role="3nqlJM">
+          <property role="x79VB" value="true if upload was successful, false otherwise" />
         </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5I0bs5jyKmx" role="jymVt" />
+    <node concept="2tJIrI" id="6gsD8CfWBOe" role="jymVt" />
     <node concept="3clFb_" id="5I0bs5jyHK1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="sleepQuietly" />
@@ -2010,8 +2089,27 @@
         <property role="TrG5h" value="millis" />
         <node concept="3cpWsb" id="5I0bs5jyIqz" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="6gsD8CfWD9S" role="lGtFl">
+        <node concept="TZ5HA" id="6gsD8CfWD9T" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWD9U" role="1dT_Ay">
+            <property role="1dT_AB" value="Used to sleep for the backoff time." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfXrGn" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfXrGo" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfXrJV" role="3nqlJM">
+          <property role="TUZQ4" value="backofftime in milli seconds" />
+          <node concept="zr_55" id="6gsD8CfXrKV" role="zr_5Q">
+            <ref role="zr_51" node="5I0bs5jyIq$" resolve="millis" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5I0bs5j$NN6" role="jymVt" />
+    <node concept="2tJIrI" id="6gsD8CfW_3S" role="jymVt" />
     <node concept="3clFb_" id="6gsD8CfTU10" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="printProgress" />
@@ -2070,6 +2168,35 @@
         <property role="TrG5h" value="size" />
         <node concept="3cpWsb" id="6gsD8CfTVzm" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="6gsD8CfWApu" role="lGtFl">
+        <node concept="TZ5HA" id="6gsD8CfWApv" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfWApw" role="1dT_Ay">
+            <property role="1dT_AB" value="Debug method which prints the progress of an upload." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfXuk7" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfXuk8" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfXukd" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfXuke" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfXuoz" role="3nqlJM">
+          <property role="TUZQ4" value="bytes already uploaded" />
+          <node concept="zr_55" id="6gsD8CfXuqj" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfTV5$" resolve="uploaded" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfXuM_" role="3nqlJM">
+          <property role="TUZQ4" value="complete file size in bytes" />
+          <node concept="zr_55" id="6gsD8CfXuOp" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfTVlO" resolve="size" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6gsD8CfSWzd" role="jymVt" />
     <node concept="3clFb_" id="5I0bs5j$Qsb" role="jymVt">
@@ -2079,58 +2206,59 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="5I0bs5j$Qse" role="3clF47">
-        <node concept="3cpWs6" id="6gsD8CfTFwY" role="3cqZAp">
-          <node concept="3clFbC" id="6gsD8CfTIj8" role="3cqZAk">
-            <node concept="3cmrfG" id="6gsD8CfTJcw" role="3uHU7w">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="1rXfSq" id="6gsD8CfTGqt" role="3uHU7B">
-              <ref role="37wK5l" node="6gsD8CfT3Hb" resolve="onlineFileSize" />
-              <node concept="37vLTw" id="6gsD8CfTHmz" role="37wK5m">
-                <ref role="3cqZAo" node="5I0bs5j$Rlo" resolve="localFile" />
+        <node concept="1X3_iC" id="6gsD8CfXDUZ" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs6" id="6gsD8CfTFwY" role="8Wnug">
+            <node concept="3clFbC" id="6gsD8CfTIj8" role="3cqZAk">
+              <node concept="10M0yZ" id="6gsD8CfWb$J" role="3uHU7w">
+                <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                <ref role="3cqZAo" node="6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
+              </node>
+              <node concept="1rXfSq" id="6gsD8CfTGqt" role="3uHU7B">
+                <ref role="37wK5l" node="6gsD8CfT3Hb" resolve="remoteFileSize" />
+                <node concept="37vLTw" id="6gsD8CfTHmz" role="37wK5m">
+                  <ref role="3cqZAo" node="5I0bs5j$Rlo" resolve="localFile" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="6gsD8CfT_uO" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="SfApY" id="5I0bs5j_0hd" role="8Wnug">
-            <node concept="3clFbS" id="5I0bs5j_0he" role="SfCbr">
-              <node concept="3cpWs8" id="5I0bs5j_2tu" role="3cqZAp">
-                <node concept="3cpWsn" id="5I0bs5j_2tv" role="3cpWs9">
-                  <property role="TrG5h" value="metadata" />
-                  <node concept="3uibUv" id="5I0bs5j_2tw" role="1tU5fm">
-                    <ref role="3uigEE" to="1p3p:~FileMetadata" resolve="FileMetadata" />
-                  </node>
-                  <node concept="1eOMI4" id="5I0bs5j_2xI" role="33vP2m">
-                    <node concept="10QFUN" id="5I0bs5j_2xF" role="1eOMHV">
-                      <node concept="3uibUv" id="5I0bs5j_2T1" role="10QFUM">
-                        <ref role="3uigEE" to="1p3p:~FileMetadata" resolve="FileMetadata" />
-                      </node>
-                      <node concept="2OqwBi" id="5I0bs5j_5Y9" role="10QFUP">
-                        <node concept="2OqwBi" id="5I0bs5j_5kj" role="2Oq$k0">
-                          <node concept="37vLTw" id="5I0bs5j_3k_" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5I0bs5jxIXz" resolve="dbxClient" />
-                          </node>
-                          <node concept="liA8E" id="5I0bs5j_5lu" role="2OqNvi">
-                            <ref role="37wK5l" to="1hzg:~DbxClientV2Base.files():com.dropbox.core.v2.files.DbxUserFilesRequests" resolve="files" />
-                          </node>
+        <node concept="SfApY" id="6gsD8CfXNy6" role="3cqZAp">
+          <node concept="3clFbS" id="6gsD8CfXNy7" role="SfCbr">
+            <node concept="3cpWs8" id="6gsD8CfXHHW" role="3cqZAp">
+              <node concept="3cpWsn" id="6gsD8CfXHHX" role="3cpWs9">
+                <property role="TrG5h" value="metadata" />
+                <node concept="3uibUv" id="6gsD8CfXHHY" role="1tU5fm">
+                  <ref role="3uigEE" to="1p3p:~FileMetadata" resolve="FileMetadata" />
+                </node>
+                <node concept="1eOMI4" id="6gsD8CfXIVK" role="33vP2m">
+                  <node concept="10QFUN" id="6gsD8CfXIVH" role="1eOMHV">
+                    <node concept="3uibUv" id="6gsD8CfXJmB" role="10QFUM">
+                      <ref role="3uigEE" to="1p3p:~FileMetadata" resolve="FileMetadata" />
+                    </node>
+                    <node concept="2OqwBi" id="6gsD8CfXLuJ" role="10QFUP">
+                      <node concept="2OqwBi" id="6gsD8CfXKB6" role="2Oq$k0">
+                        <node concept="37vLTw" id="6gsD8CfXJLz" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5I0bs5jxIXz" resolve="dbxClient" />
                         </node>
-                        <node concept="liA8E" id="5I0bs5j_79_" role="2OqNvi">
-                          <ref role="37wK5l" to="1p3p:~DbxUserFilesRequests.getMetadata(java.lang.String):com.dropbox.core.v2.files.Metadata" resolve="getMetadata" />
-                          <node concept="3cpWs3" id="6gsD8CfSSGP" role="37wK5m">
-                            <node concept="Xl_RD" id="6gsD8CfSTxI" role="3uHU7B">
-                              <property role="Xl_RC" value="/" />
+                        <node concept="liA8E" id="6gsD8CfXKD9" role="2OqNvi">
+                          <ref role="37wK5l" to="1hzg:~DbxClientV2Base.files():com.dropbox.core.v2.files.DbxUserFilesRequests" resolve="files" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6gsD8CfXMns" role="2OqNvi">
+                        <ref role="37wK5l" to="1p3p:~DbxUserFilesRequests.getMetadata(java.lang.String):com.dropbox.core.v2.files.Metadata" resolve="getMetadata" />
+                        <node concept="3cpWs3" id="6gsD8CfXMxk" role="37wK5m">
+                          <node concept="2OqwBi" id="6gsD8CfXMAD" role="3uHU7w">
+                            <node concept="37vLTw" id="6gsD8CfXMz$" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5I0bs5j$Rlo" resolve="localFile" />
                             </node>
-                            <node concept="2OqwBi" id="5I0bs5j_7i5" role="3uHU7w">
-                              <node concept="37vLTw" id="5I0bs5j_7dS" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5I0bs5j$Rlo" resolve="localFile" />
-                              </node>
-                              <node concept="liA8E" id="5I0bs5j_7qr" role="2OqNvi">
-                                <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
-                              </node>
+                            <node concept="liA8E" id="6gsD8CfXME6" role="2OqNvi">
+                              <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
                             </node>
+                          </node>
+                          <node concept="Xl_RD" id="6gsD8CfXMsV" role="3uHU7B">
+                            <property role="Xl_RC" value="/" />
                           </node>
                         </node>
                       </node>
@@ -2138,57 +2266,43 @@
                   </node>
                 </node>
               </node>
-              <node concept="3cpWs6" id="5I0bs5j_dAr" role="3cqZAp">
-                <node concept="3clFbC" id="5I0bs5j_hSd" role="3cqZAk">
-                  <node concept="2OqwBi" id="5I0bs5j_j_J" role="3uHU7w">
-                    <node concept="37vLTw" id="5I0bs5j_iIO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5I0bs5j_2tv" resolve="metadata" />
-                    </node>
-                    <node concept="liA8E" id="5I0bs5j_jRR" role="2OqNvi">
-                      <ref role="37wK5l" to="1p3p:~FileMetadata.getSize():long" resolve="getSize" />
-                    </node>
+            </node>
+            <node concept="3clFbJ" id="6gsD8CfXOTq" role="3cqZAp">
+              <node concept="3clFbS" id="6gsD8CfXOTs" role="3clFbx">
+                <node concept="3cpWs6" id="6gsD8CfXP_6" role="3cqZAp">
+                  <node concept="3clFbT" id="6gsD8CfXPUR" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
                   </node>
-                  <node concept="2OqwBi" id="5I0bs5j_g8y" role="3uHU7B">
-                    <node concept="37vLTw" id="5I0bs5j_fix" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5I0bs5j$Rlo" resolve="localFile" />
-                    </node>
-                    <node concept="liA8E" id="5I0bs5j_h02" role="2OqNvi">
-                      <ref role="37wK5l" to="guwi:~File.length():long" resolve="length" />
-                    </node>
+                </node>
+              </node>
+              <node concept="3eOSWO" id="6gsD8CfXPjN" role="3clFbw">
+                <node concept="3cmrfG" id="6gsD8CfXPt_" role="3uHU7w">
+                  <property role="3cmrfH" value="0" />
+                </node>
+                <node concept="2OqwBi" id="6gsD8CfXP50" role="3uHU7B">
+                  <node concept="37vLTw" id="6gsD8CfXP1j" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6gsD8CfXHHX" resolve="metadata" />
+                  </node>
+                  <node concept="liA8E" id="6gsD8CfXPa0" role="2OqNvi">
+                    <ref role="37wK5l" to="1p3p:~FileMetadata.getSize():long" resolve="getSize" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="TDmWw" id="5I0bs5j_0h5" role="TEbGg">
-              <node concept="3clFbS" id="5I0bs5j_0h6" role="TDEfX">
-                <node concept="3cpWs6" id="5I0bs5j_o_U" role="3cqZAp">
-                  <node concept="3clFbT" id="5I0bs5j_oMy" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWsn" id="5I0bs5j_0h7" role="TDEfY">
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="5I0bs5j_0h8" role="1tU5fm">
-                  <ref role="3uigEE" to="1p3p:~GetMetadataErrorException" resolve="GetMetadataErrorException" />
-                </node>
+          </node>
+          <node concept="TDmWw" id="6gsD8CfXNxY" role="TEbGg">
+            <node concept="3clFbS" id="6gsD8CfXNxZ" role="TDEfX" />
+            <node concept="3cpWsn" id="6gsD8CfXNy0" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6gsD8CfXNy1" role="1tU5fm">
+                <ref role="3uigEE" to="15i6:~DbxException" resolve="DbxException" />
               </node>
             </node>
-            <node concept="TDmWw" id="5I0bs5j_0h9" role="TEbGg">
-              <node concept="3clFbS" id="5I0bs5j_0ha" role="TDEfX">
-                <node concept="3cpWs6" id="5I0bs5j_pBU" role="3cqZAp">
-                  <node concept="3clFbT" id="5I0bs5j_pOF" role="3cqZAk">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3cpWsn" id="5I0bs5j_0hb" role="TDEfY">
-                <property role="TrG5h" value="e" />
-                <node concept="3uibUv" id="5I0bs5j_0hc" role="1tU5fm">
-                  <ref role="3uigEE" to="15i6:~DbxException" resolve="DbxException" />
-                </node>
-              </node>
-            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6gsD8CfXXIH" role="3cqZAp">
+          <node concept="3clFbT" id="6gsD8CfXXKi" role="3cqZAk">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
       </node>
@@ -2203,8 +2317,22 @@
       <node concept="P$JXv" id="6gsD8CfSXrQ" role="lGtFl">
         <node concept="TZ5HA" id="6gsD8CfSXrR" role="TZ5H$">
           <node concept="1dT_AC" id="6gsD8CfSXrS" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks if a file is already online." />
+            <property role="1dT_AB" value="Checks if a file is already online. Uses filesize in byte to compare" />
           </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfW$mS" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfW$mT" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfW$oG" role="3nqlJM">
+          <property role="TUZQ4" value="local file to check" />
+          <node concept="zr_55" id="6gsD8CfW$qu" role="zr_5Q">
+            <ref role="zr_51" node="5I0bs5j$Rlo" resolve="localFile" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfXvjt" role="3nqlJM">
+          <property role="x79VB" value="true if local file size is identical with remtoe file size" />
         </node>
       </node>
     </node>
@@ -2212,7 +2340,7 @@
     <node concept="2tJIrI" id="6gsD8CfTKgw" role="jymVt" />
     <node concept="3clFb_" id="6gsD8CfT3Hb" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="onlineFileSize" />
+      <property role="TrG5h" value="remoteFileSize" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -2263,8 +2391,9 @@
             <node concept="3clFbJ" id="6gsD8CfTm_D" role="3cqZAp">
               <node concept="3clFbS" id="6gsD8CfTm_F" role="3clFbx">
                 <node concept="3cpWs6" id="6gsD8CfToZK" role="3cqZAp">
-                  <node concept="3cmrfG" id="6gsD8CfTpVk" role="3cqZAk">
-                    <property role="3cmrfH" value="-1" />
+                  <node concept="10M0yZ" id="6gsD8CfW6c1" role="3cqZAk">
+                    <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                    <ref role="3cqZAo" node="6gsD8CfW1Bx" resolve="LOCAL_FILE_LARGER" />
                   </node>
                 </node>
               </node>
@@ -2307,8 +2436,9 @@
                 </node>
                 <node concept="3clFbS" id="6gsD8CfTqUt" role="3eOfB_">
                   <node concept="3cpWs6" id="6gsD8CfTuap" role="3cqZAp">
-                    <node concept="3cmrfG" id="6gsD8CfTv6e" role="3cqZAk">
-                      <property role="3cmrfH" value="1" />
+                    <node concept="10M0yZ" id="6gsD8CfWfGw" role="3cqZAk">
+                      <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                      <ref role="3cqZAo" node="6gsD8CfW091" resolve="REMOTE_FILE_LARGER" />
                     </node>
                   </node>
                 </node>
@@ -2316,8 +2446,9 @@
               <node concept="9aQIb" id="6gsD8CfTw35" role="9aQIa">
                 <node concept="3clFbS" id="6gsD8CfTw36" role="9aQI4">
                   <node concept="3cpWs6" id="6gsD8CfTwYs" role="3cqZAp">
-                    <node concept="3cmrfG" id="6gsD8CfTxXm" role="3cqZAk">
-                      <property role="3cmrfH" value="0" />
+                    <node concept="10M0yZ" id="6gsD8CfWlAH" role="3cqZAk">
+                      <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                      <ref role="3cqZAo" node="6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
                     </node>
                   </node>
                 </node>
@@ -2327,8 +2458,9 @@
           <node concept="TDmWw" id="6gsD8CfT61w" role="TEbGg">
             <node concept="3clFbS" id="6gsD8CfT61x" role="TDEfX">
               <node concept="3cpWs6" id="6gsD8CfT61y" role="3cqZAp">
-                <node concept="3cmrfG" id="6gsD8CfTz1d" role="3cqZAk">
-                  <property role="3cmrfH" value="-10" />
+                <node concept="10M0yZ" id="6gsD8CfWo3l" role="3cqZAk">
+                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                  <ref role="3cqZAo" node="6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
                 </node>
               </node>
             </node>
@@ -2342,8 +2474,9 @@
           <node concept="TDmWw" id="6gsD8CfT61A" role="TEbGg">
             <node concept="3clFbS" id="6gsD8CfT61B" role="TDEfX">
               <node concept="3cpWs6" id="6gsD8CfT61C" role="3cqZAp">
-                <node concept="3cmrfG" id="6gsD8CfT$bR" role="3cqZAk">
-                  <property role="3cmrfH" value="-10" />
+                <node concept="10M0yZ" id="6gsD8CfWqvF" role="3cqZAk">
+                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
+                  <ref role="3cqZAo" node="6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
                 </node>
               </node>
             </node>
@@ -2357,7 +2490,7 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6gsD8CfT3j0" role="1B3o_S" />
-      <node concept="10Oyi0" id="6gsD8CfTfjV" role="3clF45" />
+      <node concept="17QB3L" id="6gsD8CfWajX" role="3clF45" />
       <node concept="37vLTG" id="6gsD8CfT4Ga" role="3clF46">
         <property role="TrG5h" value="localFile" />
         <node concept="3uibUv" id="6gsD8CfT4G9" role="1tU5fm">
@@ -2369,6 +2502,20 @@
           <node concept="1dT_AC" id="6gsD8CfTLk7" role="1dT_Ay">
             <property role="1dT_AB" value="Compares file size of localfile and remote file with same name." />
           </node>
+        </node>
+        <node concept="TZ5HA" id="6gsD8CfW$C1" role="TZ5H$">
+          <node concept="1dT_AC" id="6gsD8CfW$C2" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="6gsD8CfW$Ih" role="3nqlJM">
+          <property role="TUZQ4" value="local file to check" />
+          <node concept="zr_55" id="6gsD8CfW$ND" role="zr_5Q">
+            <ref role="zr_51" node="6gsD8CfT4Ga" resolve="localFile" />
+          </node>
+        </node>
+        <node concept="x79VA" id="6gsD8CfXv_A" role="3nqlJM">
+          <property role="x79VB" value="indication whether local file is larger" />
         </node>
       </node>
     </node>

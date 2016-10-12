@@ -288,13 +288,13 @@
               <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
             </node>
             <node concept="liA8E" id="6gsD8CfT7RD" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println(int):void" resolve="println" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
               <node concept="2OqwBi" id="6gsD8CfT7RE" role="37wK5m">
                 <node concept="37vLTw" id="6gsD8CfT7RF" role="2Oq$k0">
                   <ref role="3cqZAo" node="5I0bs5j_yJA" resolve="client" />
                 </node>
                 <node concept="liA8E" id="6gsD8CfT7RG" role="2OqNvi">
-                  <ref role="37wK5l" to="b6uq:6gsD8CfT3Hb" resolve="onlineFileSize" />
+                  <ref role="37wK5l" to="b6uq:6gsD8CfT3Hb" resolve="remoteFileSize" />
                   <node concept="2ShNRf" id="6gsD8CfT7RH" role="37wK5m">
                     <node concept="1pGfFk" id="6gsD8CfT7RI" role="2ShVmc">
                       <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
@@ -330,9 +330,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbT" id="6gsD8CfV2FU" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
+                <node concept="3clFbT" id="6gsD8CfV2FU" role="37wK5m" />
               </node>
             </node>
             <node concept="37vLTw" id="6gsD8CfV$Si" role="37vLTJ">
