@@ -15,6 +15,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="1p3p" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2.files(de.htwsaar.usageTracking/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.usageTracking.common)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -59,7 +60,6 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
-      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -179,8 +179,6 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="1225892208569" name="jetbrains.mps.baseLanguage.structure.ShiftLeftExpression" flags="nn" index="1GRDU$" />
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
@@ -234,87 +232,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="3HP615" id="5I0bs5jxCRs">
-    <property role="TrG5h" value="Constants" />
-    <node concept="Wx3nA" id="5I0bs5jxD96" role="jymVt">
-      <property role="TrG5h" value="ACCESS_TOKEN" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5I0bs5jxD97" role="1B3o_S" />
-      <node concept="17QB3L" id="5I0bs5jxD3Z" role="1tU5fm" />
-      <node concept="Xl_RD" id="8jcS_zkuHP" role="33vP2m">
-        <property role="Xl_RC" value="2RCmEsdqt9oAAAAAAAAa285p2iG5_kqxsyGVvnGejle1eZsDR2iujrwB-6HTylZR" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5I0bs5jxK_C" role="jymVt">
-      <property role="TrG5h" value="APP_NAME" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5I0bs5jxK_D" role="1B3o_S" />
-      <node concept="17QB3L" id="5I0bs5jxKz4" role="1tU5fm" />
-      <node concept="Xl_RD" id="5I0bs5jxKA9" role="33vP2m">
-        <property role="Xl_RC" value="peopl" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5I0bs5jy4l$" role="jymVt">
-      <property role="TrG5h" value="CHUNKED_UPLOAD_CHUNK_SIZE" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5I0bs5jy4l_" role="1B3o_S" />
-      <node concept="3cpWsb" id="5I0bs5jy4eK" role="1tU5fm" />
-      <node concept="1GRDU$" id="5I0bs5jy4Ns" role="33vP2m">
-        <node concept="3cmrfG" id="5I0bs5jy4ND" role="3uHU7w">
-          <property role="3cmrfH" value="20" />
-        </node>
-        <node concept="1adDum" id="5I0bs5jy4od" role="3uHU7B">
-          <property role="1adDun" value="8L" />
-        </node>
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5I0bs5jy5iv" role="jymVt">
-      <property role="TrG5h" value="CHUNKED_UPLOAD_MAX_ATTEMPTS" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5I0bs5jy5iw" role="1B3o_S" />
-      <node concept="10Oyi0" id="5I0bs5jy5bF" role="1tU5fm" />
-      <node concept="3cmrfG" id="5I0bs5jy5k0" role="33vP2m">
-        <property role="3cmrfH" value="5" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="6gsD8CfW091" role="jymVt">
-      <property role="TrG5h" value="REMOTE_FILE_LARGER" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6gsD8CfW092" role="1B3o_S" />
-      <node concept="17QB3L" id="6gsD8CfW37Q" role="1tU5fm" />
-      <node concept="Xl_RD" id="6gsD8CfW2SZ" role="33vP2m">
-        <property role="Xl_RC" value="remoteFileLarger" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="6gsD8CfW1Bx" role="jymVt">
-      <property role="TrG5h" value="LOCAL_FILE_LARGER" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6gsD8CfW1By" role="1B3o_S" />
-      <node concept="17QB3L" id="6gsD8CfW39I" role="1tU5fm" />
-      <node concept="Xl_RD" id="6gsD8CfW3j8" role="33vP2m">
-        <property role="Xl_RC" value="localFileLarger" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="6gsD8CfW1MS" role="jymVt">
-      <property role="TrG5h" value="FILE_SIZE_IDENTICAL" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6gsD8CfW1MT" role="1B3o_S" />
-      <node concept="17QB3L" id="6gsD8CfW3cN" role="1tU5fm" />
-      <node concept="Xl_RD" id="6gsD8CfW3oJ" role="33vP2m">
-        <property role="Xl_RC" value="fileSizeIdentical" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="6gsD8CfW25e" role="jymVt">
-      <property role="TrG5h" value="FILE_SIZE_ERROR" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6gsD8CfW25f" role="1B3o_S" />
-      <node concept="17QB3L" id="6gsD8CfW3f2" role="1tU5fm" />
-      <node concept="Xl_RD" id="6gsD8CfW3sT" role="33vP2m">
-        <property role="Xl_RC" value="fileSizeError" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="5I0bs5jxCRt" role="1B3o_S" />
-  </node>
   <node concept="312cEu" id="5I0bs5jxEYn">
     <property role="TrG5h" value="DbAccess" />
     <node concept="2tJIrI" id="5I0bs5jxIrr" role="jymVt" />
@@ -344,8 +261,8 @@
               <node concept="1pGfFk" id="5I0bs5jxKm5" role="2ShVmc">
                 <ref role="37wK5l" to="15i6:~DbxRequestConfig.&lt;init&gt;(java.lang.String)" resolve="DbxRequestConfig" />
                 <node concept="10M0yZ" id="5I0bs5jxKP2" role="37wK5m">
-                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                  <ref role="3cqZAo" node="5I0bs5jxK_C" resolve="APP_NAME" />
+                  <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                  <ref role="3cqZAo" to="q7u:5I0bs5jxK_C" resolve="APP_NAME" />
                 </node>
               </node>
             </node>
@@ -360,8 +277,8 @@
                   <ref role="3cqZAo" node="5I0bs5jxJaM" resolve="config" />
                 </node>
                 <node concept="10M0yZ" id="5I0bs5jxLhD" role="37wK5m">
-                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                  <ref role="3cqZAo" node="5I0bs5jxD96" resolve="ACCESS_TOKEN" />
+                  <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                  <ref role="3cqZAo" to="q7u:5I0bs5jxD96" resolve="ACCESS_TOKEN" />
                 </node>
               </node>
             </node>
@@ -479,8 +396,8 @@
           <node concept="2dkUwp" id="6gsD8CfUq7G" role="3clFbw">
             <node concept="17qRlL" id="6gsD8CfUq7H" role="3uHU7w">
               <node concept="10M0yZ" id="6gsD8CfUq7I" role="3uHU7w">
-                <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
               </node>
               <node concept="3cmrfG" id="6gsD8CfUq7J" role="3uHU7B">
                 <property role="3cmrfH" value="2" />
@@ -1067,8 +984,8 @@
                         </node>
                       </node>
                       <node concept="10M0yZ" id="5I0bs5jy8pJ" role="37wK5m">
-                        <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                        <ref role="3cqZAo" node="5I0bs5jy5iv" resolve="CHUNKED_UPLOAD_MAX_ATTEMPTS" />
+                        <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                        <ref role="3cqZAo" to="q7u:5I0bs5jy5iv" resolve="CHUNKED_UPLOAD_MAX_ATTEMPTS" />
                       </node>
                     </node>
                   </node>
@@ -1151,8 +1068,8 @@
                                 <ref role="3cqZAo" node="5I0bs5jy8Te" resolve="in" />
                               </node>
                               <node concept="10M0yZ" id="5I0bs5jyc8t" role="37wK5m">
-                                <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                                <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                                <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                                <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
                               </node>
                             </node>
                           </node>
@@ -1168,8 +1085,8 @@
                     <node concept="3clFbF" id="5I0bs5jycP_" role="3cqZAp">
                       <node concept="d57v9" id="5I0bs5jyd1e" role="3clFbG">
                         <node concept="10M0yZ" id="5I0bs5jyd7Q" role="37vLTx">
-                          <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                          <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                          <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                          <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
                         </node>
                         <node concept="37vLTw" id="5I0bs5jycPz" role="37vLTJ">
                           <ref role="3cqZAo" node="5I0bs5jy5Gk" resolve="uploaded" />
@@ -1247,8 +1164,8 @@
                             <ref role="3cqZAo" node="5I0bs5jy8Te" resolve="in" />
                           </node>
                           <node concept="10M0yZ" id="5I0bs5jykZ1" role="37wK5m">
-                            <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                            <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                            <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                            <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
                           </node>
                         </node>
                       </node>
@@ -1256,8 +1173,8 @@
                     <node concept="3clFbF" id="5I0bs5jylFF" role="3cqZAp">
                       <node concept="d57v9" id="5I0bs5jylVf" role="3clFbG">
                         <node concept="10M0yZ" id="5I0bs5jyma6" role="37vLTx">
-                          <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                          <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                          <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                          <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
                         </node>
                         <node concept="37vLTw" id="5I0bs5jylFD" role="37vLTJ">
                           <ref role="3cqZAo" node="5I0bs5jy5Gk" resolve="uploaded" />
@@ -1296,8 +1213,8 @@
                   </node>
                   <node concept="3eOSWO" id="5I0bs5jygF4" role="2$JKZa">
                     <node concept="10M0yZ" id="5I0bs5jygQt" role="3uHU7w">
-                      <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                      <ref role="3cqZAo" node="5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
+                      <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                      <ref role="3cqZAo" to="q7u:5I0bs5jy4l$" resolve="CHUNKED_UPLOAD_CHUNK_SIZE" />
                     </node>
                     <node concept="1eOMI4" id="5I0bs5jyg7t" role="3uHU7B">
                       <node concept="3cpWsd" id="5I0bs5jygsQ" role="1eOMHV">
@@ -1911,8 +1828,8 @@
           </node>
           <node concept="3eOVzh" id="5I0bs5jy6NJ" role="1Dwp0S">
             <node concept="10M0yZ" id="5I0bs5jy6S6" role="3uHU7w">
-              <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-              <ref role="3cqZAo" node="5I0bs5jy5iv" resolve="CHUNKED_UPLOAD_MAX_ATTEMPTS" />
+              <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+              <ref role="3cqZAo" to="q7u:5I0bs5jy5iv" resolve="CHUNKED_UPLOAD_MAX_ATTEMPTS" />
             </node>
             <node concept="37vLTw" id="5I0bs5jy6J0" role="3uHU7B">
               <ref role="3cqZAo" node="5I0bs5jy6A_" resolve="i" />
@@ -2212,8 +2129,8 @@
           <node concept="3cpWs6" id="6gsD8CfTFwY" role="8Wnug">
             <node concept="3clFbC" id="6gsD8CfTIj8" role="3cqZAk">
               <node concept="10M0yZ" id="6gsD8CfWb$J" role="3uHU7w">
-                <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                <ref role="3cqZAo" node="6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
+                <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                <ref role="3cqZAo" to="q7u:6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
               </node>
               <node concept="1rXfSq" id="6gsD8CfTGqt" role="3uHU7B">
                 <ref role="37wK5l" node="6gsD8CfT3Hb" resolve="remoteFileSize" />
@@ -2392,8 +2309,8 @@
               <node concept="3clFbS" id="6gsD8CfTm_F" role="3clFbx">
                 <node concept="3cpWs6" id="6gsD8CfToZK" role="3cqZAp">
                   <node concept="10M0yZ" id="6gsD8CfW6c1" role="3cqZAk">
-                    <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                    <ref role="3cqZAo" node="6gsD8CfW1Bx" resolve="LOCAL_FILE_LARGER" />
+                    <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                    <ref role="3cqZAo" to="q7u:6gsD8CfW1Bx" resolve="LOCAL_FILE_LARGER" />
                   </node>
                 </node>
               </node>
@@ -2437,8 +2354,8 @@
                 <node concept="3clFbS" id="6gsD8CfTqUt" role="3eOfB_">
                   <node concept="3cpWs6" id="6gsD8CfTuap" role="3cqZAp">
                     <node concept="10M0yZ" id="6gsD8CfWfGw" role="3cqZAk">
-                      <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                      <ref role="3cqZAo" node="6gsD8CfW091" resolve="REMOTE_FILE_LARGER" />
+                      <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                      <ref role="3cqZAo" to="q7u:6gsD8CfW091" resolve="REMOTE_FILE_LARGER" />
                     </node>
                   </node>
                 </node>
@@ -2447,8 +2364,8 @@
                 <node concept="3clFbS" id="6gsD8CfTw36" role="9aQI4">
                   <node concept="3cpWs6" id="6gsD8CfTwYs" role="3cqZAp">
                     <node concept="10M0yZ" id="6gsD8CfWlAH" role="3cqZAk">
-                      <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                      <ref role="3cqZAo" node="6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
+                      <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                      <ref role="3cqZAo" to="q7u:6gsD8CfW1MS" resolve="FILE_SIZE_IDENTICAL" />
                     </node>
                   </node>
                 </node>
@@ -2459,8 +2376,8 @@
             <node concept="3clFbS" id="6gsD8CfT61x" role="TDEfX">
               <node concept="3cpWs6" id="6gsD8CfT61y" role="3cqZAp">
                 <node concept="10M0yZ" id="6gsD8CfWo3l" role="3cqZAk">
-                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                  <ref role="3cqZAo" node="6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
+                  <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                  <ref role="3cqZAo" to="q7u:6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
                 </node>
               </node>
             </node>
@@ -2475,8 +2392,8 @@
             <node concept="3clFbS" id="6gsD8CfT61B" role="TDEfX">
               <node concept="3cpWs6" id="6gsD8CfT61C" role="3cqZAp">
                 <node concept="10M0yZ" id="6gsD8CfWqvF" role="3cqZAk">
-                  <ref role="1PxDUh" node="5I0bs5jxCRs" resolve="Constants" />
-                  <ref role="3cqZAo" node="6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
+                  <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                  <ref role="3cqZAo" to="q7u:6gsD8CfW25e" resolve="FILE_SIZE_ERROR" />
                 </node>
               </node>
             </node>
