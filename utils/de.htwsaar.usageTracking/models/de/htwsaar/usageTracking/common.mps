@@ -457,6 +457,23 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5RdHCNBLzcX" role="3cqZAp">
+          <node concept="2OqwBi" id="5RdHCNBLziL" role="3clFbG">
+            <node concept="37vLTw" id="5RdHCNBLzcV" role="2Oq$k0">
+              <ref role="3cqZAo" node="aG5PjzeakH" resolve="properties" />
+            </node>
+            <node concept="liA8E" id="5RdHCNBLz_b" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Properties.setProperty(java.lang.String,java.lang.String):java.lang.Object" resolve="setProperty" />
+              <node concept="10M0yZ" id="5RdHCNBLzCn" role="37wK5m">
+                <ref role="1PxDUh" node="76Lb2vBYmgu" resolve="Constants" />
+                <ref role="3cqZAo" node="5RdHCNBLzIX" resolve="APP_PATH" />
+              </node>
+              <node concept="37vLTw" id="5RdHCNBLzZS" role="37wK5m">
+                <ref role="3cqZAo" node="aG5PjzejJ4" resolve="appPath" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="SfApY" id="76Lb2vBYNtd" role="3cqZAp">
           <node concept="3clFbS" id="76Lb2vBYNte" role="SfCbr">
             <node concept="3clFbF" id="76Lb2vBYEFz" role="3cqZAp">
@@ -899,7 +916,7 @@
     <node concept="2tJIrI" id="aG5PjzeD9O" role="jymVt" />
     <node concept="3clFb_" id="aG5Pjzerps" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="userID" />
+      <property role="TrG5h" value="getUUID" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
@@ -930,6 +947,32 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1zXKmhkeyY3" role="jymVt" />
+    <node concept="3clFb_" id="5RdHCNBL$uw" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getAppPath" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5RdHCNBL$uz" role="3clF47">
+        <node concept="3cpWs6" id="5RdHCNBL$_M" role="3cqZAp">
+          <node concept="2OqwBi" id="5RdHCNBL$Hz" role="3cqZAk">
+            <node concept="37vLTw" id="5RdHCNBL$BV" role="2Oq$k0">
+              <ref role="3cqZAo" node="aG5PjzeakH" resolve="properties" />
+            </node>
+            <node concept="liA8E" id="5RdHCNBL_1F" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Properties.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+              <node concept="10M0yZ" id="5RdHCNBL_4R" role="37wK5m">
+                <ref role="1PxDUh" node="76Lb2vBYmgu" resolve="Constants" />
+                <ref role="3cqZAo" node="5RdHCNBLzIX" resolve="APP_PATH" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5RdHCNBL$nE" role="1B3o_S" />
+      <node concept="17QB3L" id="5RdHCNBL$uu" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5RdHCNBL_aM" role="jymVt" />
     <node concept="2tJIrI" id="aG5PjzeDWC" role="jymVt" />
     <node concept="3Tm1VV" id="1zXKmhkexm2" role="1B3o_S" />
     <node concept="3clFb_" id="76Lb2vBZ2RN" role="jymVt">
@@ -1064,6 +1107,15 @@
       <node concept="17QB3L" id="76Lb2vBYKsV" role="1tU5fm" />
       <node concept="Xl_RD" id="76Lb2vBYK$1" role="33vP2m">
         <property role="Xl_RC" value="peopl.properties" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="5RdHCNBLzIX" role="jymVt">
+      <property role="TrG5h" value="APP_PATH" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="5RdHCNBLzIY" role="1B3o_S" />
+      <node concept="17QB3L" id="5RdHCNBLzIV" role="1tU5fm" />
+      <node concept="Xl_RD" id="5RdHCNBLzK9" role="33vP2m">
+        <property role="Xl_RC" value="appPath" />
       </node>
     </node>
     <node concept="3Tm1VV" id="76Lb2vBYmgv" role="1B3o_S" />
