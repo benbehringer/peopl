@@ -427,7 +427,7 @@
   </node>
   <node concept="H$gyE" id="6$_V4iGDzqD">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="oc6c:6$_V4iGDnc6" />
+    <ref role="H$gyF" to="oc6c:6$_V4iGDnc6" resolve="MyModConf" />
   </node>
   <node concept="2SvMkh" id="6$_V4iGDzqE">
     <property role="TrG5h" value="DatabaseImpl" />
@@ -8563,7 +8563,7 @@
               <property role="TrG5h" value="Fragment_5461224532191444231" />
               <ref role="1V74Hf" to="oc6c:4JaaGrRURO9" resolve="VPToFragment_5461224532191444233" />
               <ref role="a64iB" to="oc6c:3Mj07xysBps" resolve="Statistics" />
-              <ref role="3aRQVk" to="oc6c:4JaaGrRUWKr" resolve="ModuleToFragment_5461224532191464475" />
+              <ref role="3aRQVk" to="oc6c:1iXnMjZj9z4" resolve="ModuleToFragment_1494455263863544004" />
             </node>
             <node concept="3lQQLj" id="4JaaGrRUROb" role="lGtFl">
               <ref role="1_Aa3I" node="4JaaGrRUROc" />

@@ -69,7 +69,6 @@
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
       <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743899" name="de.htwsaar.peopl.core.moduleConfig.structure.Subtraction" flags="ng" index="u2itr" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -103,8 +102,15 @@
       </node>
     </node>
     <node concept="mJI6J" id="4FIuYsSm8BM" role="2tDTRo">
-      <node concept="mGrBK" id="4FIuYsSm8$Y" role="3uHU7B">
-        <ref role="mGtU6" node="7A5hYwQxN8l" resolve="MLitEval" />
+      <node concept="1Wc70l" id="UJ3E2uf_08" role="3uHU7B">
+        <node concept="3fqX7Q" id="UJ3E2uf_0u" role="3uHU7w">
+          <node concept="mGrBK" id="UJ3E2uf_0R" role="3fr31v">
+            <ref role="mGtU6" node="7A5hYwQxN8i" resolve="MRemAdd" />
+          </node>
+        </node>
+        <node concept="mGrBK" id="4FIuYsSm8$Y" role="3uHU7B">
+          <ref role="mGtU6" node="7A5hYwQxN8l" resolve="MLitEval" />
+        </node>
       </node>
       <node concept="mGrBK" id="4FIuYsSm8C6" role="3uHU7w">
         <ref role="mGtU6" node="7A5hYwQxN8p" resolve="MAddEval" />
@@ -129,6 +135,21 @@
       </node>
       <node concept="mGrBK" id="4FIuYsSm8$F" role="3uHU7w">
         <ref role="mGtU6" node="7A5hYwQxN8$" resolve="MNegPrint" />
+      </node>
+    </node>
+    <node concept="mJI6J" id="UJ3E2uf_67" role="2tDTRo">
+      <node concept="mGrBK" id="UJ3E2uf_72" role="3uHU7w">
+        <ref role="mGtU6" node="7A5hYwQxN8N" resolve="MOptionalPrint" />
+      </node>
+      <node concept="1Wc70l" id="UJ3E2uf_2T" role="3uHU7B">
+        <node concept="mGrBK" id="UJ3E2uf_2s" role="3uHU7B">
+          <ref role="mGtU6" node="7A5hYwQxN8u" resolve="MNeg" />
+        </node>
+        <node concept="3fqX7Q" id="UJ3E2uf_3_" role="3uHU7w">
+          <node concept="mGrBK" id="UJ3E2uf_3Y" role="3fr31v">
+            <ref role="mGtU6" node="7A5hYwQxN8i" resolve="MRemAdd" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1V77HM" id="7A5hYwQxN8b" role="288GmO">
@@ -445,11 +466,11 @@
     <ref role="2M0niE" node="7A5hYwQxN8d" />
     <node concept="u25OH" id="7A5hYwQxN8d" role="2M0niC">
       <node concept="2Hijyl" id="7A5hYwQxN8e" role="2Hjnvt">
-        <node concept="u2itr" id="4FIuYsSm8M7" role="3clFbG">
+        <node concept="u2itq" id="UJ3E2uf_7e" role="3clFbG">
           <node concept="u2itw" id="7A5hYwQxN8f" role="3uHU7B">
             <ref role="u2itx" node="7A5hYwQxN8b" resolve="MLitAddPrint" />
           </node>
-          <node concept="u2itw" id="4FIuYsSm8Me" role="3uHU7w">
+          <node concept="u2itw" id="UJ3E2uf_oR" role="3uHU7w">
             <ref role="u2itx" node="7A5hYwQxN8i" resolve="MRemAdd" />
           </node>
         </node>

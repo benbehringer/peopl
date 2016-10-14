@@ -218,7 +218,7 @@
   </registry>
   <node concept="H$gyE" id="1RNHMnnKzu">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="fmn5:1RNHMnnKzp" />
+    <ref role="H$gyF" to="fmn5:1RNHMnnKzp" resolve="Stack" />
   </node>
   <node concept="2SvMkh" id="1yv_rrpLv1G">
     <property role="TrG5h" value="Stack" />
@@ -374,19 +374,8 @@
             </node>
             <node concept="3clFbS" id="4BnE3LKXA7k" role="1HWHxc">
               <node concept="3lLJVk" id="4BnE3LKXAC5" role="lGtFl" />
-              <node concept="2wexfA" id="yOFyOwe_2g" role="3cqZAp">
-                <node concept="3clFbS" id="yOFyOwe_2h" role="9aQI4" />
-                <node concept="1V74GB" id="yOFyOwe_2i" role="lGtFl">
-                  <property role="32Xqk$" value="chosenModule" />
-                  <property role="TrG5h" value="Fragment_627317756948795538" />
-                  <ref role="1V74Hf" to="fmn5:yOFyOwe_2k" resolve="VPToFragment_627317756948795540" />
-                  <ref role="3aRQVk" to="fmn5:yOFyOwe_2l" resolve="ModuleToFragment_627317756948795541" />
-                  <ref role="a64iB" to="fmn5:1yv_rrpLC_T" resolve="Overflow" />
-                </node>
-              </node>
               <node concept="3clFbJ" id="yOFyOwe_f4" role="3cqZAp">
                 <node concept="3clFbS" id="yOFyOwe_f6" role="3clFbx">
-                  <node concept="3clFbH" id="yOFyOweAgF" role="3cqZAp" />
                   <node concept="3lLJVk" id="yOFyOweAgZ" role="lGtFl" />
                   <node concept="2wexfA" id="yOFyOweAgG" role="3cqZAp">
                     <node concept="3clFbS" id="yOFyOweAgH" role="9aQI4">

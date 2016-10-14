@@ -262,7 +262,7 @@
       </concept>
     </language>
     <language id="be143329-29b3-4afa-8ff0-750f4ac4d5fe" name="de.htwsaar.peopl.view.embedded">
-      <concept id="6294437645951090041" name="de.htwsaar.peopl.view.embedded.structure.ShowAnnotations" flags="ng" index="3sAez9" />
+      <concept id="6294437645951090041" name="de.htwsaar.peopl.view.embedded.structure.ShowMethodAnnotations" flags="ng" index="3sAez9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -882,6 +882,7 @@
           <ref role="1C2YfU" node="AZ7IhMm25q" resolve="Fragment_702314033412841818" />
         </node>
       </node>
+      <node concept="2tJIrI" id="1JQk4r82a80" role="jymVt" />
     </node>
   </node>
   <node concept="2SvMkh" id="AZ7IhMm25w">
@@ -1282,6 +1283,11 @@
                   <property role="3SKdUp" value="if not using GEN than we must build the edges on the fly" />
                 </node>
               </node>
+              <node concept="3SKdUt" id="28ua9SXy1jj" role="3cqZAp">
+                <node concept="3SKdUq" id="28ua9SXy1jk" role="3SKWNk">
+                  <property role="3SKdUp" value="this is a simple responsiveness check and actually its now quite fast.... that asökdfjaösldkfjaösdlkfjasdf" />
+                </node>
+              </node>
               <node concept="3SKdUt" id="7MIdZ4BDq5t" role="3cqZAp">
                 <node concept="3SKdUq" id="7MIdZ4BDq5u" role="3SKWNk">
                   <property role="3SKdUp" value="this block is just just a simple empty alternative to the code below (until the next indicator starts)" />
@@ -1296,9 +1302,9 @@
             <node concept="1V74GB" id="7MIdZ4BDnzV" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8984179815542520059" />
-              <ref role="a64iB" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
-              <ref role="3aRQVk" to="ymfq:10Z$L974sKJ" resolve="ModuleToFragment_1170816134850661423" />
               <ref role="1V74Hf" to="ymfq:10Z$L974sKL" resolve="VPToFragment_1170816134850661425" />
+              <ref role="a64iB" to="ymfq:4L6K1Kv9XlQ" resolve="GEN_Edges" />
+              <ref role="3aRQVk" to="ymfq:28ua9SXy1Tb" resolve="ModuleToFragment_2458447106693144139" />
             </node>
           </node>
           <node concept="2wexfA" id="AZ7IhMm26s" role="3cqZAp">
@@ -1361,6 +1367,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="7DlsM$el2b7" role="3cqZAp" />
                   <node concept="3SKdUt" id="24MmuxSq6Q2" role="3cqZAp">
                     <node concept="3SKdUq" id="24MmuxSq6Q1" role="3SKWNk">
                       <property role="3SKdUp" value="G" />
@@ -1526,6 +1533,7 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3clFbH" id="28ua9SXynzK" role="3cqZAp" />
                           <node concept="1Dw8fO" id="24MmuxSq6u_" role="3cqZAp">
                             <node concept="3eOVzh" id="24MmuxSq6uI" role="1Dwp0S">
                               <node concept="37vLTw" id="24MmuxSq6uJ" role="3uHU7B">
@@ -1806,6 +1814,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="66gx8lPuAf6" role="3cqZAp" />
             </node>
             <node concept="1V74GB" id="7MIdZ4BDnzO" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
@@ -1838,6 +1847,7 @@
           <ref role="ocbYS" node="7MIdZ4BDnzM" />
           <ref role="1C2YfU" node="7MIdZ4BDnzO" resolve="Fragment_8984179815542520052" />
         </node>
+        <node concept="3sAez9" id="28ua9SXyhBB" role="lGtFl" />
       </node>
       <node concept="2tJIrI" id="10Z$L974mtA" role="jymVt" />
       <node concept="3clFb_" id="24MmuxSq6vz" role="jymVt">
@@ -1891,6 +1901,7 @@
         </node>
       </node>
       <node concept="2tJIrI" id="3XSKgTnDztg" role="jymVt" />
+      <node concept="2tJIrI" id="61OwgoSG81P" role="jymVt" />
       <node concept="3clFb_" id="24MmuxSq6vI" role="jymVt">
         <property role="TrG5h" value="sortEdges" />
         <property role="DiZV1" value="false" />
@@ -2080,7 +2091,7 @@
               <ref role="3aRQVk" to="ymfq:3XSKgTnEDDp" resolve="ModuleToFragment_4573617688939240025" />
             </node>
           </node>
-          <node concept="3clFbH" id="3XSKgTnEXDB" role="3cqZAp" />
+          <node concept="3clFbH" id="7wh6a8YFvK8" role="3cqZAp" />
           <node concept="2wexfA" id="kpALUD8iOh" role="3cqZAp">
             <node concept="3clFbS" id="kpALUD8iOi" role="9aQI4">
               <node concept="3cpWs6" id="24MmuxSq6wf" role="3cqZAp">
@@ -14963,6 +14974,57 @@
     <property role="TrG5h" value="GN_OnlyNeighbors::Graph" />
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="ymfq:4L6K1Kv9Xi9" resolve="GN_OnlyNeighbors" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="61OwgoSGszE">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="SearchAlg_SearchBase::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:4L6K1Kv9Xts" resolve="SearchAlg_SearchBase" />
+    <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
+  </node>
+  <node concept="HxVAC" id="66gx8lPvad5">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Neighbor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm29e" resolve="Neighbor" />
+  </node>
+  <node concept="HxVAC" id="1JQk4r82a5h">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::EdgeIter" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="AZ7IhMm258" resolve="EdgeIter" />
+  </node>
+  <node concept="2SvMkh" id="1JQk4r82a$6">
+    <property role="TrG5h" value="Test" />
+    <node concept="3GWJoq" id="1JQk4r82a$7" role="2abgUk">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="Test" />
+      <node concept="3Tm1VV" id="1JQk4r82a$8" role="1B3o_S" />
+      <node concept="1V74GB" id="1JQk4r82a$9" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_2014886148228819209" />
+        <ref role="1V74Hf" to="ymfq:1JQk4r82a$b" resolve="VPToFragment_2014886148228819211" />
+        <ref role="a64iB" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+        <ref role="3aRQVk" to="ymfq:1JQk4r82a$e" resolve="ModuleToFragment_2014886148228819214" />
+      </node>
+      <node concept="2tJIrI" id="1JQk4r82a$g" role="jymVt" />
+    </node>
+  </node>
+  <node concept="HxVAC" id="1JQk4r82aVq">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Test" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
+    <ref role="HxVAD" node="1JQk4r82a$7" resolve="Test" />
+  </node>
+  <node concept="HxVAC" id="1JQk4r82bJ8">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::Graph" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="ymfq:AZ7IhMm23Q" resolve="Base" />
     <ref role="HxVAD" node="AZ7IhMm266" resolve="Graph" />
   </node>
 </model>
