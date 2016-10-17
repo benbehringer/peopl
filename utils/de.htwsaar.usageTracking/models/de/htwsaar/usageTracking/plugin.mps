@@ -16,12 +16,15 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1210179134063" name="jetbrains.mps.lang.plugin.structure.PreferencesComponentDeclaration" flags="ng" index="34j2dQ">
+        <child id="1210676907584" name="afterReadBlock" index="3xXSXp" />
         <child id="1210684426855" name="preferencePage" index="3yq$HY" />
       </concept>
+      <concept id="1210676879526" name="jetbrains.mps.lang.plugin.structure.OnAfterReadBlock" flags="in" index="3xXM6Z" />
       <concept id="1210684385183" name="jetbrains.mps.lang.plugin.structure.PreferencePage" flags="ng" index="3yqqq6">
         <child id="1210686845551" name="component" index="3yzNdQ" />
         <child id="1210686936988" name="resetBlock" index="3y$9q5" />
@@ -72,6 +75,7 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
@@ -175,7 +179,7 @@
   <node concept="34j2dQ" id="7M2jmo9GWPH">
     <property role="TrG5h" value="UserTracking" />
     <node concept="3yqqq6" id="7M2jmo9GWVd" role="3yq$HY">
-      <property role="TrG5h" value="UserTrackingPreferences" />
+      <property role="TrG5h" value="Tracking" />
       <node concept="3B8pKI" id="7M2jmo9GWVf" role="3B8L_j">
         <node concept="3clFbS" id="7M2jmo9GWVg" role="2VODD2">
           <node concept="3clFbF" id="5RdHCNBKxL4" role="3cqZAp">
@@ -293,6 +297,16 @@
         </node>
       </node>
     </node>
+    <node concept="3xXM6Z" id="1ZgOEdnHIZE" role="3xXSXp">
+      <node concept="3clFbS" id="1ZgOEdnHIZF" role="2VODD2">
+        <node concept="3clFbF" id="1ZgOEdnHJ6l" role="3cqZAp">
+          <node concept="2YIFZM" id="1ZgOEdnHJ7f" role="3clFbG">
+            <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+            <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="7M2jmo9H32x">
     <property role="TrG5h" value="AllowTrackingPreferencesUI" />
@@ -322,8 +336,8 @@
       <property role="TrG5h" value="uuidValue" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="7M2jmo9JuDy" role="1B3o_S" />
-      <node concept="3uibUv" id="7M2jmo9JvOq" role="1tU5fm">
-        <ref role="3uigEE" to="dxuu:~JLabel" resolve="JLabel" />
+      <node concept="3uibUv" id="6yc_CKhihCW" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JTextField" resolve="JTextField" />
       </node>
     </node>
     <node concept="312cEg" id="7M2jmo9HhAI" role="jymVt">
@@ -418,22 +432,6 @@
             <node concept="2ShNRf" id="7M2jmo9It2p" role="33vP2m">
               <node concept="1pGfFk" id="7M2jmo9IuoP" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JPanel.&lt;init&gt;()" resolve="JPanel" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7M2jmo9I$mN" role="3cqZAp">
-          <node concept="2OqwBi" id="7M2jmo9I$Ji" role="3clFbG">
-            <node concept="37vLTw" id="7M2jmo9I$mL" role="2Oq$k0">
-              <ref role="3cqZAo" node="7M2jmo9IsD8" resolve="firstRow" />
-            </node>
-            <node concept="liA8E" id="7M2jmo9I_xm" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setSize(int,int):void" resolve="setSize" />
-              <node concept="3cmrfG" id="7M2jmo9I_Qh" role="37wK5m">
-                <property role="3cmrfH" value="20" />
-              </node>
-              <node concept="3cmrfG" id="7M2jmo9IAfn" role="37wK5m">
-                <property role="3cmrfH" value="20" />
               </node>
             </node>
           </node>
@@ -614,22 +612,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7M2jmo9IS5C" role="3cqZAp">
-          <node concept="2OqwBi" id="7M2jmo9ISwP" role="3clFbG">
-            <node concept="37vLTw" id="7M2jmo9IS5A" role="2Oq$k0">
-              <ref role="3cqZAo" node="7M2jmo9IOQD" resolve="secondRow" />
-            </node>
-            <node concept="liA8E" id="7M2jmo9ITkM" role="2OqNvi">
-              <ref role="37wK5l" to="z60i:~Component.setSize(int,int):void" resolve="setSize" />
-              <node concept="3cmrfG" id="7M2jmo9ITDH" role="37wK5m">
-                <property role="3cmrfH" value="20" />
-              </node>
-              <node concept="3cmrfG" id="7M2jmo9IU2J" role="37wK5m">
-                <property role="3cmrfH" value="20" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="7M2jmo9IVrA" role="3cqZAp">
           <node concept="2OqwBi" id="7M2jmo9IVTz" role="3clFbG">
             <node concept="37vLTw" id="7M2jmo9IVr$" role="2Oq$k0">
@@ -651,7 +633,7 @@
               <node concept="1pGfFk" id="7M2jmo9J0m4" role="2ShVmc">
                 <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
                 <node concept="Xl_RD" id="7M2jmo9J0FT" role="37wK5m">
-                  <property role="Xl_RC" value="UUID" />
+                  <property role="Xl_RC" value="UUID:" />
                 </node>
               </node>
             </node>
@@ -664,7 +646,7 @@
           <node concept="37vLTI" id="7M2jmo9Jx4u" role="3clFbG">
             <node concept="2ShNRf" id="7M2jmo9JxQp" role="37vLTx">
               <node concept="1pGfFk" id="7M2jmo9JxPy" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JLabel.&lt;init&gt;(java.lang.String)" resolve="JLabel" />
+                <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;(java.lang.String)" resolve="JTextField" />
                 <node concept="2OqwBi" id="5RdHCNBKHXF" role="37wK5m">
                   <node concept="2YIFZM" id="5RdHCNBKHVI" role="2Oq$k0">
                     <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
@@ -678,6 +660,62 @@
             </node>
             <node concept="37vLTw" id="7M2jmo9JwSE" role="37vLTJ">
               <ref role="3cqZAo" node="7M2jmo9JvPo" resolve="uuidValue" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6yc_CKhiNSU" role="3cqZAp">
+          <node concept="2OqwBi" id="6yc_CKhiOut" role="3clFbG">
+            <node concept="37vLTw" id="6yc_CKhiNSS" role="2Oq$k0">
+              <ref role="3cqZAo" node="7M2jmo9JvPo" resolve="uuidValue" />
+            </node>
+            <node concept="liA8E" id="6yc_CKhiPFm" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension):void" resolve="setPreferredSize" />
+              <node concept="2ShNRf" id="6yc_CKhiR0L" role="37wK5m">
+                <node concept="1pGfFk" id="6yc_CKhiS$1" role="2ShVmc">
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="6yc_CKhiUPB" role="37wK5m">
+                    <property role="3cmrfH" value="290" />
+                  </node>
+                  <node concept="3cmrfG" id="6yc_CKhiTmg" role="37wK5m">
+                    <property role="3cmrfH" value="24" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6yc_CKhizZi" role="3cqZAp">
+          <node concept="2OqwBi" id="6yc_CKhi$zZ" role="3clFbG">
+            <node concept="37vLTw" id="6yc_CKhizZg" role="2Oq$k0">
+              <ref role="3cqZAo" node="7M2jmo9JvPo" resolve="uuidValue" />
+            </node>
+            <node concept="liA8E" id="6yc_CKhiA7R" role="2OqNvi">
+              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean):void" resolve="setEditable" />
+              <node concept="3clFbT" id="6yc_CKhiAu1" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6yc_CKhiFPx" role="3cqZAp">
+          <node concept="2OqwBi" id="6yc_CKhiGq0" role="3clFbG">
+            <node concept="37vLTw" id="6yc_CKhiFPv" role="2Oq$k0">
+              <ref role="3cqZAo" node="7M2jmo9JvPo" resolve="uuidValue" />
+            </node>
+            <node concept="liA8E" id="6yc_CKhiH_Z" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setBackground(java.awt.Color):void" resolve="setBackground" />
+              <node concept="10Nm6u" id="6yc_CKhiHW1" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6yc_CKhiJue" role="3cqZAp">
+          <node concept="2OqwBi" id="6yc_CKhiK42" role="3clFbG">
+            <node concept="37vLTw" id="6yc_CKhiJuc" role="2Oq$k0">
+              <ref role="3cqZAo" node="7M2jmo9JvPo" resolve="uuidValue" />
+            </node>
+            <node concept="liA8E" id="6yc_CKhiLgx" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setBorder(javax.swing.border.Border):void" resolve="setBorder" />
+              <node concept="10Nm6u" id="6yc_CKhiLQF" role="37wK5m" />
             </node>
           </node>
         </node>
