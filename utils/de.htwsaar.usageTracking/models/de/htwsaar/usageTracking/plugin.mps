@@ -15,6 +15,7 @@
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.usageTracking.common)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" implicit="true" />
   </imports>
@@ -157,6 +158,12 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -305,6 +312,17 @@
             <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
           </node>
         </node>
+        <node concept="3clFbF" id="7bnIPgYNvL" role="3cqZAp">
+          <node concept="2OqwBi" id="7bnIPgYNxC" role="3clFbG">
+            <node concept="2YIFZM" id="7bnIPgYNwM" role="2Oq$k0">
+              <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+              <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+            </node>
+            <node concept="liA8E" id="7bnIPgYNWl" role="2OqNvi">
+              <ref role="37wK5l" to="q7u:7bnIPgYH7I" resolve="getProxy" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -423,6 +441,28 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7M2jmo9Hik4" role="3clF47">
+        <node concept="34ab3g" id="7bnIPh7Pi6" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="2OqwBi" id="7bnIPh7RdC" role="34bqiv">
+            <node concept="2OqwBi" id="7bnIPh7QWE" role="2Oq$k0">
+              <node concept="2OqwBi" id="7bnIPh7QHh" role="2Oq$k0">
+                <node concept="2YIFZM" id="7bnIPh7QxR" role="2Oq$k0">
+                  <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                  <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                </node>
+                <node concept="liA8E" id="7bnIPh7QVI" role="2OqNvi">
+                  <ref role="37wK5l" to="q7u:7bnIPgYH7I" resolve="getProxy" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7bnIPh7R9_" role="2OqNvi">
+                <ref role="37wK5l" to="zf81:~Proxy.type():java.net.Proxy$Type" resolve="type" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7bnIPh7RGT" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~Enum.toString():java.lang.String" resolve="toString" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7M2jmo9IsD7" role="3cqZAp">
           <node concept="3cpWsn" id="7M2jmo9IsD8" role="3cpWs9">
             <property role="TrG5h" value="firstRow" />
