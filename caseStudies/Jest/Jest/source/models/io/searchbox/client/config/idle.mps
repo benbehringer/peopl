@@ -11,8 +11,8 @@
     <import index="up3q" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.nio.conn(Jest_new/)" />
     <import index="45kb" ref="r:e04685b0-c14e-4ddf-a7e6-c17a3838833e(io.searchbox.client.config)" />
     <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest_new/)" />
-    <import index="wyx4" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.common.util.concurrent(Jest_new/)" />
     <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest_new/)" />
+    <import index="wyx4" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.common.util.concurrent(Jest/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -638,7 +638,7 @@
                     <node concept="3cqZAl" id="6HfJGniTsOj" role="3clF45" />
                     <node concept="37vLTG" id="6HfJGniTsOk" role="3clF46">
                       <property role="TrG5h" value="from" />
-                      <node concept="3uibUv" id="6HfJGniTsOl" role="1tU5fm">
+                      <node concept="3uibUv" id="3DVg7mH3DmM" role="1tU5fm">
                         <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
                       </node>
                     </node>
@@ -667,7 +667,7 @@
                     <node concept="3cqZAl" id="6HfJGniTsOv" role="3clF45" />
                     <node concept="37vLTG" id="6HfJGniTsOw" role="3clF46">
                       <property role="TrG5h" value="from" />
-                      <node concept="3uibUv" id="6HfJGniTsOx" role="1tU5fm">
+                      <node concept="3uibUv" id="3DVg7mH3Dru" role="1tU5fm">
                         <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
                       </node>
                     </node>
@@ -696,7 +696,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2YIFZM" id="7pCVAX3X7h0" role="37wK5m">
+            <node concept="2YIFZM" id="3DVg7mH2W7Y" role="37wK5m">
               <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
               <ref role="37wK5l" to="wyx4:~MoreExecutors.directExecutor():java.util.concurrent.Executor" resolve="directExecutor" />
             </node>
