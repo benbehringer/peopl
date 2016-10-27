@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.monitor)">
+<model ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.eventConsumer)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -10,6 +10,7 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
+    <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.listener)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -390,8 +391,8 @@
       <property role="TrG5h" value="enteredEvent" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="gMSQjqZskP" role="1B3o_S" />
-      <node concept="3uibUv" id="gMSQjqZt9v" role="1tU5fm">
-        <ref role="3uigEE" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+      <node concept="3uibUv" id="7yp9hS_wFO6" role="1tU5fm">
+        <ref role="3uigEE" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
       </node>
     </node>
     <node concept="312cEg" id="5$QG6AgAkEI" role="jymVt">
@@ -400,8 +401,8 @@
       <property role="TrG5h" value="exitedEvent" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="5$QG6AgAkBM" role="1B3o_S" />
-      <node concept="3uibUv" id="5$QG6AgAkEF" role="1tU5fm">
-        <ref role="3uigEE" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+      <node concept="3uibUv" id="7yp9hS_wGxU" role="1tU5fm">
+        <ref role="3uigEE" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
       </node>
     </node>
     <node concept="312cEg" id="5$QG6AgArNW" role="jymVt">
@@ -501,8 +502,8 @@
                       <node concept="37vLTI" id="5$QG6AgAkOj" role="3clFbG">
                         <node concept="1eOMI4" id="5$QG6AgAkOk" role="37vLTx">
                           <node concept="10QFUN" id="5$QG6AgAkOl" role="1eOMHV">
-                            <node concept="3uibUv" id="5$QG6AgAkOm" role="10QFUM">
-                              <ref role="3uigEE" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+                            <node concept="3uibUv" id="7yp9hS_wGM3" role="10QFUM">
+                              <ref role="3uigEE" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
                             </node>
                             <node concept="37vLTw" id="5$QG6AgAkOn" role="10QFUP">
                               <ref role="3cqZAo" node="gMSQjqZ07A" resolve="monEv" />
@@ -518,16 +519,16 @@
                   <node concept="2OqwBi" id="5$QG6AgAjWb" role="3clFbw">
                     <node concept="1eOMI4" id="5$QG6AgAjUV" role="2Oq$k0">
                       <node concept="10QFUN" id="5$QG6AgAjUS" role="1eOMHV">
-                        <node concept="3uibUv" id="5$QG6AgAjVA" role="10QFUM">
-                          <ref role="3uigEE" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+                        <node concept="3uibUv" id="7yp9hS_wGKR" role="10QFUM">
+                          <ref role="3uigEE" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
                         </node>
                         <node concept="37vLTw" id="5$QG6AgAjVU" role="10QFUP">
                           <ref role="3cqZAo" node="gMSQjqZ07A" resolve="monEv" />
                         </node>
                       </node>
                     </node>
-                    <node concept="2OwXpG" id="5$QG6AgAjXO" role="2OqNvi">
-                      <ref role="2Oxat5" to="e9fh:gMSQjqZPTM" resolve="mouseEntered" />
+                    <node concept="2OwXpG" id="7yp9hS_wGLD" role="2OqNvi">
+                      <ref role="2Oxat5" to="fchx:gMSQjqZPTM" resolve="mouseEntered" />
                     </node>
                   </node>
                   <node concept="9aQIb" id="5$QG6AgAkPE" role="9aQIa">
@@ -539,8 +540,8 @@
                           </node>
                           <node concept="1eOMI4" id="5$QG6AgAkRB" role="37vLTx">
                             <node concept="10QFUN" id="5$QG6AgAkRC" role="1eOMHV">
-                              <node concept="3uibUv" id="5$QG6AgAkRD" role="10QFUM">
-                                <ref role="3uigEE" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+                              <node concept="3uibUv" id="7yp9hS_wGMA" role="10QFUM">
+                                <ref role="3uigEE" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
                               </node>
                               <node concept="37vLTw" id="5$QG6AgAkRE" role="10QFUP">
                                 <ref role="3cqZAo" node="gMSQjqZ07A" resolve="monEv" />
@@ -565,7 +566,7 @@
                 <node concept="liA8E" id="5$QG6AgAica" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                   <node concept="3VsKOn" id="5$QG6AgAicb" role="37wK5m">
-                    <ref role="3VsUkX" to="e9fh:5ime7PBvKSe" resolve="AWTMouseEvent" />
+                    <ref role="3VsUkX" to="fchx:7yp9hS_vZUK" resolve="AWTEventListener_Provider.AWT_EE_MouseEvent" />
                   </node>
                 </node>
               </node>
@@ -579,7 +580,7 @@
                     <property role="3SKdUp" value="CASE 1" />
                   </node>
                 </node>
-                <node concept="1X3_iC" id="7QLetM0K8QL" role="lGtFl">
+                <node concept="1X3_iC" id="2krr7wPYTff" role="lGtFl">
                   <property role="3V$3am" value="statement" />
                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                   <node concept="34ab3g" id="3SXsBE6JyGR" role="8Wnug">
@@ -643,7 +644,7 @@
                       <property role="3SKdUp" value="CASE 2" />
                     </node>
                   </node>
-                  <node concept="1X3_iC" id="7QLetM0K8Mx" role="lGtFl">
+                  <node concept="1X3_iC" id="2krr7wPYTiU" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                     <node concept="34ab3g" id="3SXsBE6Jy_J" role="8Wnug">
@@ -717,7 +718,7 @@
                       <property role="3SKdUp" value="CASE 3" />
                     </node>
                   </node>
-                  <node concept="1X3_iC" id="3SXsBE6JBKM" role="lGtFl">
+                  <node concept="1X3_iC" id="2krr7wPYTnc" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                     <node concept="34ab3g" id="3SXsBE6Jyen" role="8Wnug">
@@ -786,11 +787,31 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="1X3_iC" id="7yp9hS_x3TC" role="lGtFl">
+                    <property role="3V$3am" value="statement" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                    <node concept="34ab3g" id="7yp9hS_x2dY" role="8Wnug">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="3cpWs3" id="7yp9hS_x2A2" role="34bqiv">
+                        <node concept="2OqwBi" id="7yp9hS_x2GR" role="3uHU7w">
+                          <node concept="37vLTw" id="7yp9hS_x2At" role="2Oq$k0">
+                            <ref role="3cqZAo" node="gMSQjqZj6Q" resolve="buffer" />
+                          </node>
+                          <node concept="liA8E" id="7yp9hS_x2Wz" role="2OqNvi">
+                            <ref role="37wK5l" to="33ny:~ArrayList.size():int" resolve="size" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="7yp9hS_x2e0" role="3uHU7B">
+                          <property role="Xl_RC" value="buffer size : " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="3SXsBE6JFqC" role="3cqZAp">
                     <node concept="3clFbS" id="3SXsBE6JFqE" role="3clFbx">
                       <node concept="3clFbJ" id="5$QG6AgAnMo" role="3cqZAp">
                         <node concept="3clFbS" id="5$QG6AgAnMq" role="3clFbx">
-                          <node concept="1X3_iC" id="7QLetM0K8$C" role="lGtFl">
+                          <node concept="1X3_iC" id="2krr7wPYTHd" role="lGtFl">
                             <property role="3V$3am" value="statement" />
                             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                             <node concept="34ab3g" id="3SXsBE6JC$3" role="8Wnug">
@@ -870,7 +891,7 @@
                         </node>
                         <node concept="9aQIb" id="3SXsBE6Jz_I" role="9aQIa">
                           <node concept="3clFbS" id="3SXsBE6Jz_J" role="9aQI4">
-                            <node concept="1X3_iC" id="7QLetM0K8$q" role="lGtFl">
+                            <node concept="1X3_iC" id="2krr7wPYTV5" role="lGtFl">
                               <property role="3V$3am" value="statement" />
                               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                               <node concept="34ab3g" id="3SXsBE6JCK$" role="8Wnug">
@@ -909,6 +930,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="7yp9hS_wUJz" role="3cqZAp" />
                 </node>
               </node>
               <node concept="3eNFk2" id="5$QG6AgAqBG" role="3eNLev">
@@ -932,7 +954,7 @@
                       <property role="3SKdUp" value="CASE 4" />
                     </node>
                   </node>
-                  <node concept="1X3_iC" id="3SXsBE6JC4j" role="lGtFl">
+                  <node concept="1X3_iC" id="2krr7wPYTVj" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                     <node concept="34ab3g" id="3SXsBE6Jxyq" role="8Wnug">
@@ -940,11 +962,6 @@
                       <node concept="Xl_RD" id="3SXsBE6Jxys" role="34bqiv">
                         <property role="Xl_RC" value="case : 4" />
                       </node>
-                    </node>
-                  </node>
-                  <node concept="3SKdUt" id="5$QG6AgArzG" role="3cqZAp">
-                    <node concept="3SKdUq" id="5$QG6AgArzH" role="3SKWNk">
-                      <property role="3SKdUp" value="this case should only happen if we are within waitForExitTime, but we will check again anyway" />
                     </node>
                   </node>
                   <node concept="3cpWs8" id="5$QG6AgAsgN" role="3cqZAp">
@@ -995,7 +1012,7 @@
                   </node>
                   <node concept="3clFbJ" id="5$QG6AgArYD" role="3cqZAp">
                     <node concept="3clFbS" id="5$QG6AgArYE" role="3clFbx">
-                      <node concept="1X3_iC" id="7QLetM0K8$g" role="lGtFl">
+                      <node concept="1X3_iC" id="2krr7wPYUfA" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                         <node concept="34ab3g" id="3SXsBE6JA1Y" role="8Wnug">
@@ -1026,7 +1043,7 @@
                     </node>
                     <node concept="9aQIb" id="3SXsBE6JnRD" role="9aQIa">
                       <node concept="3clFbS" id="3SXsBE6JnRE" role="9aQI4">
-                        <node concept="1X3_iC" id="7QLetM0K8m8" role="lGtFl">
+                        <node concept="1X3_iC" id="2krr7wPYUfK" role="lGtFl">
                           <property role="3V$3am" value="statement" />
                           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                           <node concept="34ab3g" id="3SXsBE6J_Hb" role="8Wnug">
@@ -1038,12 +1055,12 @@
                         </node>
                         <node concept="3SKdUt" id="3SXsBE6JqSS" role="3cqZAp">
                           <node concept="3SKdUq" id="3SXsBE6JqST" role="3SKWNk">
-                            <property role="3SKdUp" value="enter and exit came far apart, acutally this should not happen as the timer in case 3 should have " />
+                            <property role="3SKdUp" value="enter and exit came far apart. No other event happened between enter and exit, as case 3 would have" />
                           </node>
                         </node>
                         <node concept="3SKdUt" id="3SXsBE6JqT7" role="3cqZAp">
                           <node concept="3SKdUq" id="3SXsBE6JqT9" role="3SKWNk">
-                            <property role="3SKdUp" value="taken care of this. But we just do the same thing as in case 3 above" />
+                            <property role="3SKdUp" value="taken care of this" />
                           </node>
                         </node>
                         <node concept="3clFbF" id="3SXsBE6JAsu" role="3cqZAp">
@@ -1136,6 +1153,7 @@
         <node concept="3clFbH" id="5$QG6AgAkvT" role="3cqZAp" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7yp9hS_wVyR" role="jymVt" />
     <node concept="3Tm1VV" id="2WEWlo0EpsN" role="1B3o_S" />
     <node concept="3uibUv" id="2WEWlo0EsQ9" role="1zkMxy">
       <ref role="3uigEE" node="5ime7PBwcf1" resolve="AbstractConsumer" />
