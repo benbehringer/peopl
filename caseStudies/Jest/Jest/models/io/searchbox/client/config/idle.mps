@@ -4,6 +4,11 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
+    <use id="be143329-29b3-4afa-8ff0-750f4ac4d5fe" name="de.htwsaar.peopl.view.embedded" version="0" />
+    <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
+    <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -13,15 +18,20 @@
     <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest_new/)" />
     <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest_new/)" />
     <import index="wyx4" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.common.util.concurrent(Jest/)" />
+    <import index="x0nt" ref="r:cb4e30dd-584a-40ec-8a59-8a7b1c91a0d3(peoplConfig)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -120,6 +130,7 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
+        <property id="1211504562189" name="nestedName" index="jj94n" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
@@ -150,6 +161,31 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
+    <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
+        <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
+      </concept>
+      <concept id="7784659551878701497" name="de.htwsaar.peopl.core.structure.Fragment" flags="ng" index="1V74GB">
+        <property id="8624758018078469788" name="chosenModuleLinkName" index="32Xqk$" />
+        <reference id="9153151524794690374" name="fragmentUpdater" index="25GeQm" />
+        <reference id="3673167173362250418" name="chosenModule" index="a64iB" />
+        <reference id="6242855909345491595" name="moduleIntermediate" index="3aRQVk" />
+        <reference id="7784659551878701521" name="vpIntermediate" index="1V74Hf" />
+      </concept>
+    </language>
+    <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
+      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
+        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
+      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
+        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
+        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
+      </concept>
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
+        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
+      </concept>
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+    </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
@@ -164,10 +200,16 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+      <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
+        <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
   </registry>
@@ -196,521 +238,672 @@
       <node concept="3clFbS" id="7j$WnoQNSm0" role="3clF47" />
       <node concept="3cqZAl" id="7j$WnoQNSm1" role="3clF45" />
     </node>
+    <node concept="1V74GB" id="7nDaBAKzmCW" role="lGtFl">
+      <property role="32Xqk$" value="chosenModule" />
+      <property role="TrG5h" value="Fragment_8496368874152618556" />
+      <ref role="1V74Hf" to="x0nt:7nDaBAKzmCY" resolve="VPToFragment_8496368874152618558" />
+      <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+      <ref role="3aRQVk" to="x0nt:7nDaBAKzmD1" resolve="ModuleToFragment_8496368874152618561" />
+    </node>
   </node>
-  <node concept="312cEu" id="7j$WnoQNZmK">
+  <node concept="H$gyE" id="7nDaBAKzmBL">
+    <property role="TrG5h" value="ConfigurationLink" />
+    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" />
+  </node>
+  <node concept="2SvMkh" id="7nDaBAKzmBM">
     <property role="TrG5h" value="HttpReapableConnectionManager" />
-    <property role="2bfB8j" value="true" />
-    <property role="1sVAO0" value="false" />
-    <property role="1EXbeo" value="false" />
-    <node concept="3Tm1VV" id="7j$WnoQNZmL" role="1B3o_S" />
-    <node concept="3uibUv" id="7j$WnoQNZmM" role="EKbjA">
-      <ref role="3uigEE" node="7j$WnoQNSlS" resolve="ReapableConnectionManager" />
-    </node>
-    <node concept="312cEg" id="7j$WnoQNZmN" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="connectionManager" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7pCVAX45QDX" role="1tU5fm">
-        <ref role="3uigEE" to="73zw:~HttpClientConnectionManager" resolve="HttpClientConnectionManager" />
+    <node concept="3GWJoq" id="7nDaBAKzmBN" role="2abgUk">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="HttpReapableConnectionManager" />
+      <property role="1EXbeo" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="jj94n" value="HttpReapableConnectionManager" />
+      <property role="OYnhT" value="class (i.s.c.config.idle)" />
+      <node concept="3Tm1VV" id="7nDaBAKzmBO" role="1B3o_S" />
+      <node concept="1V74GB" id="7nDaBAKzmBP" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_8496368874152618485" />
+        <ref role="1V74Hf" to="x0nt:7nDaBAKzmBR" resolve="VPToFragment_8496368874152618487" />
+        <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+        <ref role="3aRQVk" to="x0nt:7nDaBAKzmBU" resolve="ModuleToFragment_8496368874152618490" />
       </node>
-      <node concept="3Tm6S6" id="7j$WnoQNZmQ" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7j$WnoQNZmR" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="nConnectionManager" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7j$WnoQNZmT" role="1tU5fm">
-        <ref role="3uigEE" to="up3q:~NHttpClientConnectionManager" resolve="NHttpClientConnectionManager" />
-      </node>
-      <node concept="3Tm6S6" id="7j$WnoQNZmU" role="1B3o_S" />
-    </node>
-    <node concept="3clFbW" id="7j$WnoQNZmV" role="jymVt">
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3cqZAl" id="7j$WnoQNZmW" role="3clF45" />
-      <node concept="37vLTG" id="7j$WnoQNZmX" role="3clF46">
-        <property role="TrG5h" value="connectionManager" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="7pCVAX45QGf" role="1tU5fm">
-          <ref role="3uigEE" to="73zw:~HttpClientConnectionManager" resolve="HttpClientConnectionManager" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="7j$WnoQNZmZ" role="3clF46">
-        <property role="TrG5h" value="nConnectionManager" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="7j$WnoQNZn0" role="1tU5fm">
-          <ref role="3uigEE" to="up3q:~NHttpClientConnectionManager" resolve="NHttpClientConnectionManager" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="7j$WnoQNZn1" role="3clF47">
-        <node concept="3clFbJ" id="7j$WnoQNZn2" role="3cqZAp">
-          <node concept="22lmx$" id="7j$WnoQNZn3" role="3clFbw">
-            <node concept="3clFbC" id="7j$WnoQNZn4" role="3uHU7B">
-              <node concept="37vLTw" id="7j$WnoQNZn5" role="3uHU7B">
-                <ref role="3cqZAo" node="7j$WnoQNZmX" resolve="connectionManager" />
-              </node>
-              <node concept="10Nm6u" id="7j$WnoQNZn6" role="3uHU7w" />
-            </node>
-            <node concept="3clFbC" id="7j$WnoQNZn7" role="3uHU7w">
-              <node concept="37vLTw" id="7j$WnoQNZn8" role="3uHU7B">
-                <ref role="3cqZAo" node="7j$WnoQNZmZ" resolve="nConnectionManager" />
-              </node>
-              <node concept="10Nm6u" id="7j$WnoQNZn9" role="3uHU7w" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="7j$WnoQNZnc" role="3clFbx">
-            <node concept="YS8fn" id="7j$WnoQNZnb" role="3cqZAp">
-              <node concept="2ShNRf" id="7j$WnoQP8fN" role="YScLw">
-                <node concept="1pGfFk" id="7j$WnoQP8fO" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;()" resolve="IllegalArgumentException" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7j$WnoQNZnd" role="3cqZAp">
-          <node concept="37vLTI" id="7j$WnoQNZne" role="3clFbG">
-            <node concept="2OqwBi" id="7j$WnoQNZnf" role="37vLTJ">
-              <node concept="Xjq3P" id="7j$WnoQNZng" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7j$WnoQNZnh" role="2OqNvi">
-                <ref role="2Oxat5" node="7j$WnoQNZmN" resolve="connectionManager" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7j$WnoQNZni" role="37vLTx">
-              <ref role="3cqZAo" node="7j$WnoQNZmX" resolve="connectionManager" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7j$WnoQNZnj" role="3cqZAp">
-          <node concept="37vLTI" id="7j$WnoQNZnk" role="3clFbG">
-            <node concept="2OqwBi" id="7j$WnoQNZnl" role="37vLTJ">
-              <node concept="Xjq3P" id="7j$WnoQNZnm" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7j$WnoQNZnn" role="2OqNvi">
-                <ref role="2Oxat5" node="7j$WnoQNZmR" resolve="nConnectionManager" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7j$WnoQNZno" role="37vLTx">
-              <ref role="3cqZAo" node="7j$WnoQNZmZ" resolve="nConnectionManager" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="7j$WnoQNZnp" role="1B3o_S" />
-    </node>
-    <node concept="3clFb_" id="7j$WnoQNZnq" role="jymVt">
-      <property role="TrG5h" value="closeIdleConnections" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="7j$WnoQNZnr" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="37vLTG" id="7j$WnoQNZns" role="3clF46">
-        <property role="TrG5h" value="idleTimeout" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3cpWsb" id="7j$WnoQNZnt" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7j$WnoQNZnu" role="3clF46">
-        <property role="TrG5h" value="unit" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="7j$WnoQNZnv" role="1tU5fm">
-          <ref role="3uigEE" to="5zyv:~TimeUnit" resolve="TimeUnit" />
-        </node>
-      </node>
-      <node concept="3clFbS" id="7j$WnoQNZnw" role="3clF47">
-        <node concept="3clFbF" id="7j$WnoQNZnx" role="3cqZAp">
-          <node concept="2OqwBi" id="7j$WnoQP8fS" role="3clFbG">
-            <node concept="37vLTw" id="7j$WnoQP8fR" role="2Oq$k0">
-              <ref role="3cqZAo" node="7j$WnoQNZmN" resolve="connectionManager" />
-            </node>
-            <node concept="liA8E" id="7j$WnoQP8fT" role="2OqNvi">
-              <ref role="37wK5l" to="73zw:~HttpClientConnectionManager.closeIdleConnections(long,java.util.concurrent.TimeUnit):void" resolve="closeIdleConnections" />
-              <node concept="37vLTw" id="7j$WnoQNZnz" role="37wK5m">
-                <ref role="3cqZAo" node="7j$WnoQNZns" resolve="idleTimeout" />
-              </node>
-              <node concept="37vLTw" id="7j$WnoQNZn$" role="37wK5m">
-                <ref role="3cqZAo" node="7j$WnoQNZnu" resolve="unit" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7j$WnoQNZn_" role="3cqZAp">
-          <node concept="2OqwBi" id="7j$WnoQP8fX" role="3clFbG">
-            <node concept="37vLTw" id="7j$WnoQP8fW" role="2Oq$k0">
-              <ref role="3cqZAo" node="7j$WnoQNZmR" resolve="nConnectionManager" />
-            </node>
-            <node concept="liA8E" id="7j$WnoQP8fY" role="2OqNvi">
-              <ref role="37wK5l" to="up3q:~NHttpClientConnectionManager.closeIdleConnections(long,java.util.concurrent.TimeUnit):void" resolve="closeIdleConnections" />
-              <node concept="37vLTw" id="7j$WnoQNZnB" role="37wK5m">
-                <ref role="3cqZAo" node="7j$WnoQNZns" resolve="idleTimeout" />
-              </node>
-              <node concept="37vLTw" id="7j$WnoQNZnC" role="37wK5m">
-                <ref role="3cqZAo" node="7j$WnoQNZnu" resolve="unit" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="7j$WnoQNZnD" role="1B3o_S" />
-      <node concept="3cqZAl" id="7j$WnoQNZnE" role="3clF45" />
-    </node>
-  </node>
-  <node concept="312cEu" id="7j$WnoQO57c">
-    <property role="TrG5h" value="IdleConnectionReaper" />
-    <property role="2bfB8j" value="true" />
-    <property role="1sVAO0" value="false" />
-    <property role="1EXbeo" value="false" />
-    <node concept="3Tm1VV" id="7j$WnoQO57d" role="1B3o_S" />
-    <node concept="3uibUv" id="7j$WnoQO57e" role="1zkMxy">
-      <ref role="3uigEE" to="wyx4:~AbstractScheduledService" resolve="AbstractScheduledService" />
-    </node>
-    <node concept="3UR2Jj" id="7j$WnoQO58P" role="lGtFl">
-      <node concept="TZ5HA" id="7j$WnoQO591" role="TZ5H$">
-        <node concept="1dT_AC" id="7j$WnoQO592" role="1dT_Ay">
-          <property role="1dT_AB" value="Used to reap idle connections from the connection manager." />
-        </node>
-      </node>
-    </node>
-    <node concept="Wx3nA" id="7j$WnoQO57f" role="jymVt">
-      <property role="TrG5h" value="logger" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7j$WnoQO57g" role="1tU5fm">
-        <ref role="3uigEE" to="jqqh:~Logger" resolve="Logger" />
-      </node>
-      <node concept="2YIFZM" id="7pCVAX3X7gX" role="33vP2m">
-        <ref role="1Pybhc" to="jqqh:~LoggerFactory" resolve="LoggerFactory" />
-        <ref role="37wK5l" to="jqqh:~LoggerFactory.getLogger(java.lang.Class):org.slf4j.Logger" resolve="getLogger" />
-        <node concept="3VsKOn" id="7j$WnoQO57j" role="37wK5m">
-          <ref role="3VsUkX" node="7j$WnoQO57c" resolve="IdleConnectionReaper" />
-        </node>
-      </node>
-    </node>
-    <node concept="312cEg" id="7j$WnoQO57k" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="reapableConnectionManager" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7j$WnoQO57m" role="1tU5fm">
+      <node concept="2tJIrI" id="7nDaBAKzmBW" role="jymVt" />
+      <node concept="3uibUv" id="7j$WnoQNZmM" role="EKbjA">
         <ref role="3uigEE" node="7j$WnoQNSlS" resolve="ReapableConnectionManager" />
       </node>
-      <node concept="3Tm6S6" id="7j$WnoQO57n" role="1B3o_S" />
-    </node>
-    <node concept="312cEg" id="7j$WnoQO57o" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="clientConfig" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3uibUv" id="7j$WnoQO57q" role="1tU5fm">
-        <ref role="3uigEE" to="45kb:7j$WnoQNYSi" resolve="ClientConfig" />
+      <node concept="312cEg" id="7j$WnoQNZmN" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="connectionManager" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7pCVAX45QDX" role="1tU5fm">
+          <ref role="3uigEE" to="73zw:~HttpClientConnectionManager" resolve="HttpClientConnectionManager" />
+        </node>
+        <node concept="3Tm6S6" id="7j$WnoQNZmQ" role="1B3o_S" />
       </node>
-      <node concept="3Tm6S6" id="7j$WnoQO57r" role="1B3o_S" />
-    </node>
-    <node concept="3clFbW" id="7j$WnoQO57s" role="jymVt">
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="3cqZAl" id="7j$WnoQO57t" role="3clF45" />
-      <node concept="37vLTG" id="7j$WnoQO57u" role="3clF46">
-        <property role="TrG5h" value="clientConfig" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="7j$WnoQO57v" role="1tU5fm">
-          <ref role="3uigEE" to="45kb:7j$WnoQNYSi" resolve="ClientConfig" />
+      <node concept="312cEg" id="7j$WnoQNZmR" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="nConnectionManager" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7j$WnoQNZmT" role="1tU5fm">
+          <ref role="3uigEE" to="up3q:~NHttpClientConnectionManager" resolve="NHttpClientConnectionManager" />
+        </node>
+        <node concept="3Tm6S6" id="7j$WnoQNZmU" role="1B3o_S" />
+      </node>
+      <node concept="3clFbW" id="7j$WnoQNZmV" role="jymVt">
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3cqZAl" id="7j$WnoQNZmW" role="3clF45" />
+        <node concept="37vLTG" id="7j$WnoQNZmX" role="3clF46">
+          <property role="TrG5h" value="connectionManager" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="7pCVAX45QGf" role="1tU5fm">
+            <ref role="3uigEE" to="73zw:~HttpClientConnectionManager" resolve="HttpClientConnectionManager" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="7j$WnoQNZmZ" role="3clF46">
+          <property role="TrG5h" value="nConnectionManager" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="7j$WnoQNZn0" role="1tU5fm">
+            <ref role="3uigEE" to="up3q:~NHttpClientConnectionManager" resolve="NHttpClientConnectionManager" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7j$WnoQNZn1" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmBX" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmBN" resolve="HttpReapableConnectionManager" />
+            <ref role="ojxmB" node="7j$WnoQNZmV" resolve="HttpReapableConnectionManager" />
+            <node concept="3clFbS" id="7nDaBAKzmBY" role="9aQI4">
+              <node concept="3clFbJ" id="7j$WnoQNZn2" role="3cqZAp">
+                <node concept="22lmx$" id="7j$WnoQNZn3" role="3clFbw">
+                  <node concept="3clFbC" id="7j$WnoQNZn4" role="3uHU7B">
+                    <node concept="37vLTw" id="7j$WnoQNZn5" role="3uHU7B">
+                      <ref role="3cqZAo" node="7j$WnoQNZmX" resolve="connectionManager" />
+                    </node>
+                    <node concept="10Nm6u" id="7j$WnoQNZn6" role="3uHU7w" />
+                  </node>
+                  <node concept="3clFbC" id="7j$WnoQNZn7" role="3uHU7w">
+                    <node concept="37vLTw" id="7j$WnoQNZn8" role="3uHU7B">
+                      <ref role="3cqZAo" node="7j$WnoQNZmZ" resolve="nConnectionManager" />
+                    </node>
+                    <node concept="10Nm6u" id="7j$WnoQNZn9" role="3uHU7w" />
+                  </node>
+                </node>
+                <node concept="3clFbS" id="7j$WnoQNZnc" role="3clFbx">
+                  <node concept="YS8fn" id="7j$WnoQNZnb" role="3cqZAp">
+                    <node concept="2ShNRf" id="7j$WnoQP8fN" role="YScLw">
+                      <node concept="1pGfFk" id="7j$WnoQP8fO" role="2ShVmc">
+                        <ref role="37wK5l" to="wyt6:~IllegalArgumentException.&lt;init&gt;()" resolve="IllegalArgumentException" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7j$WnoQNZnd" role="3cqZAp">
+                <node concept="37vLTI" id="7j$WnoQNZne" role="3clFbG">
+                  <node concept="2OqwBi" id="7j$WnoQNZnf" role="37vLTJ">
+                    <node concept="Xjq3P" id="7j$WnoQNZng" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="7j$WnoQNZnh" role="2OqNvi">
+                      <ref role="2Oxat5" node="7j$WnoQNZmN" resolve="connectionManager" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7j$WnoQNZni" role="37vLTx">
+                    <ref role="3cqZAo" node="7j$WnoQNZmX" resolve="connectionManager" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7j$WnoQNZnj" role="3cqZAp">
+                <node concept="37vLTI" id="7j$WnoQNZnk" role="3clFbG">
+                  <node concept="2OqwBi" id="7j$WnoQNZnl" role="37vLTJ">
+                    <node concept="Xjq3P" id="7j$WnoQNZnm" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="7j$WnoQNZnn" role="2OqNvi">
+                      <ref role="2Oxat5" node="7j$WnoQNZmR" resolve="nConnectionManager" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7j$WnoQNZno" role="37vLTx">
+                    <ref role="3cqZAo" node="7j$WnoQNZmZ" resolve="nConnectionManager" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="7nDaBAKzmBZ" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618495" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmC1" resolve="VPToFragment_8496368874152618497" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmC2" resolve="ModuleToFragment_8496368874152618498" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmC3" resolve="PeoplBlockReference_8496368874152618499" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="7j$WnoQNZnp" role="1B3o_S" />
+        <node concept="ocbFV" id="7nDaBAKzmC3" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618499" />
+          <ref role="ocbYS" node="7nDaBAKzmBX" />
+          <ref role="1C2YfU" node="7nDaBAKzmBZ" resolve="Fragment_8496368874152618495" />
         </node>
       </node>
-      <node concept="37vLTG" id="7j$WnoQO57w" role="3clF46">
+      <node concept="3clFb_" id="7j$WnoQNZnq" role="jymVt">
+        <property role="TrG5h" value="closeIdleConnections" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="7j$WnoQNZnr" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="37vLTG" id="7j$WnoQNZns" role="3clF46">
+          <property role="TrG5h" value="idleTimeout" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3cpWsb" id="7j$WnoQNZnt" role="1tU5fm" />
+        </node>
+        <node concept="37vLTG" id="7j$WnoQNZnu" role="3clF46">
+          <property role="TrG5h" value="unit" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="7j$WnoQNZnv" role="1tU5fm">
+            <ref role="3uigEE" to="5zyv:~TimeUnit" resolve="TimeUnit" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7j$WnoQNZnw" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmC5" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmBN" resolve="HttpReapableConnectionManager" />
+            <ref role="ojxmB" node="7j$WnoQNZnq" resolve="closeIdleConnections" />
+            <node concept="3clFbS" id="7nDaBAKzmC6" role="9aQI4">
+              <node concept="3clFbF" id="7j$WnoQNZnx" role="3cqZAp">
+                <node concept="2OqwBi" id="7j$WnoQP8fS" role="3clFbG">
+                  <node concept="37vLTw" id="7j$WnoQP8fR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7j$WnoQNZmN" resolve="connectionManager" />
+                  </node>
+                  <node concept="liA8E" id="7j$WnoQP8fT" role="2OqNvi">
+                    <ref role="37wK5l" to="73zw:~HttpClientConnectionManager.closeIdleConnections(long,java.util.concurrent.TimeUnit):void" resolve="closeIdleConnections" />
+                    <node concept="37vLTw" id="7j$WnoQNZnz" role="37wK5m">
+                      <ref role="3cqZAo" node="7j$WnoQNZns" resolve="idleTimeout" />
+                    </node>
+                    <node concept="37vLTw" id="7j$WnoQNZn$" role="37wK5m">
+                      <ref role="3cqZAo" node="7j$WnoQNZnu" resolve="unit" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7j$WnoQNZn_" role="3cqZAp">
+                <node concept="2OqwBi" id="7j$WnoQP8fX" role="3clFbG">
+                  <node concept="37vLTw" id="7j$WnoQP8fW" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7j$WnoQNZmR" resolve="nConnectionManager" />
+                  </node>
+                  <node concept="liA8E" id="7j$WnoQP8fY" role="2OqNvi">
+                    <ref role="37wK5l" to="up3q:~NHttpClientConnectionManager.closeIdleConnections(long,java.util.concurrent.TimeUnit):void" resolve="closeIdleConnections" />
+                    <node concept="37vLTw" id="7j$WnoQNZnB" role="37wK5m">
+                      <ref role="3cqZAo" node="7j$WnoQNZns" resolve="idleTimeout" />
+                    </node>
+                    <node concept="37vLTw" id="7j$WnoQNZnC" role="37wK5m">
+                      <ref role="3cqZAo" node="7j$WnoQNZnu" resolve="unit" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="7nDaBAKzmC7" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618503" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmC9" resolve="VPToFragment_8496368874152618505" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmCa" resolve="ModuleToFragment_8496368874152618506" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmCb" resolve="PeoplBlockReference_8496368874152618507" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="7j$WnoQNZnD" role="1B3o_S" />
+        <node concept="3cqZAl" id="7j$WnoQNZnE" role="3clF45" />
+        <node concept="ocbFV" id="7nDaBAKzmCb" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618507" />
+          <ref role="ocbYS" node="7nDaBAKzmC5" />
+          <ref role="1C2YfU" node="7nDaBAKzmC7" resolve="Fragment_8496368874152618503" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2SvMkh" id="7nDaBAKzmCf">
+    <property role="TrG5h" value="IdleConnectionReaper" />
+    <node concept="3GWJoq" id="7nDaBAKzmCg" role="2abgUk">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="IdleConnectionReaper" />
+      <property role="1EXbeo" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="jj94n" value="IdleConnectionReaper" />
+      <property role="OYnhT" value="class (i.s.c.config.idle)" />
+      <node concept="3Tm1VV" id="7nDaBAKzmCh" role="1B3o_S" />
+      <node concept="1V74GB" id="7nDaBAKzmCi" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_8496368874152618514" />
+        <ref role="1V74Hf" to="x0nt:7nDaBAKzmCk" resolve="VPToFragment_8496368874152618516" />
+        <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+        <ref role="3aRQVk" to="x0nt:7nDaBAKzmCn" resolve="ModuleToFragment_8496368874152618519" />
+      </node>
+      <node concept="2tJIrI" id="7nDaBAKzmCp" role="jymVt" />
+      <node concept="3uibUv" id="7j$WnoQO57e" role="1zkMxy">
+        <ref role="3uigEE" to="wyx4:~AbstractScheduledService" resolve="AbstractScheduledService" />
+      </node>
+      <node concept="Wx3nA" id="7j$WnoQO57f" role="jymVt">
+        <property role="TrG5h" value="logger" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7j$WnoQO57g" role="1tU5fm">
+          <ref role="3uigEE" to="jqqh:~Logger" resolve="Logger" />
+        </node>
+        <node concept="2YIFZM" id="7pCVAX3X7gX" role="33vP2m">
+          <ref role="1Pybhc" to="jqqh:~LoggerFactory" resolve="LoggerFactory" />
+          <ref role="37wK5l" to="jqqh:~LoggerFactory.getLogger(java.lang.Class):org.slf4j.Logger" resolve="getLogger" />
+          <node concept="3VsKOn" id="7j$WnoQO57j" role="37wK5m">
+            <ref role="3VsUkX" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
+          </node>
+        </node>
+      </node>
+      <node concept="312cEg" id="7j$WnoQO57k" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
         <property role="TrG5h" value="reapableConnectionManager" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3uibUv" id="7j$WnoQO57x" role="1tU5fm">
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7j$WnoQO57m" role="1tU5fm">
           <ref role="3uigEE" node="7j$WnoQNSlS" resolve="ReapableConnectionManager" />
         </node>
+        <node concept="3Tm6S6" id="7j$WnoQO57n" role="1B3o_S" />
       </node>
-      <node concept="3clFbS" id="7j$WnoQO57y" role="3clF47">
-        <node concept="3clFbF" id="7j$WnoQO57z" role="3cqZAp">
-          <node concept="37vLTI" id="7j$WnoQO57$" role="3clFbG">
-            <node concept="2OqwBi" id="7j$WnoQO57_" role="37vLTJ">
-              <node concept="Xjq3P" id="7j$WnoQO57A" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7j$WnoQO57B" role="2OqNvi">
-                <ref role="2Oxat5" node="7j$WnoQO57k" resolve="reapableConnectionManager" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7j$WnoQO57C" role="37vLTx">
-              <ref role="3cqZAo" node="7j$WnoQO57w" resolve="reapableConnectionManager" />
-            </node>
+      <node concept="312cEg" id="7j$WnoQO57o" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="clientConfig" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7j$WnoQO57q" role="1tU5fm">
+          <ref role="3uigEE" to="45kb:7nDaBAKzmzZ" resolve="ClientConfig" />
+        </node>
+        <node concept="3Tm6S6" id="7j$WnoQO57r" role="1B3o_S" />
+      </node>
+      <node concept="3clFbW" id="7j$WnoQO57s" role="jymVt">
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="3cqZAl" id="7j$WnoQO57t" role="3clF45" />
+        <node concept="37vLTG" id="7j$WnoQO57u" role="3clF46">
+          <property role="TrG5h" value="clientConfig" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="7j$WnoQO57v" role="1tU5fm">
+            <ref role="3uigEE" to="45kb:7nDaBAKzmzZ" resolve="ClientConfig" />
           </node>
         </node>
-        <node concept="3clFbF" id="7j$WnoQO57D" role="3cqZAp">
-          <node concept="37vLTI" id="7j$WnoQO57E" role="3clFbG">
-            <node concept="2OqwBi" id="7j$WnoQO57F" role="37vLTJ">
-              <node concept="Xjq3P" id="7j$WnoQO57G" role="2Oq$k0" />
-              <node concept="2OwXpG" id="7j$WnoQO57H" role="2OqNvi">
-                <ref role="2Oxat5" node="7j$WnoQO57o" resolve="clientConfig" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="7j$WnoQO57I" role="37vLTx">
-              <ref role="3cqZAo" node="7j$WnoQO57u" resolve="clientConfig" />
-            </node>
+        <node concept="37vLTG" id="7j$WnoQO57w" role="3clF46">
+          <property role="TrG5h" value="reapableConnectionManager" />
+          <property role="3TUv4t" value="false" />
+          <node concept="3uibUv" id="7j$WnoQO57x" role="1tU5fm">
+            <ref role="3uigEE" node="7j$WnoQNSlS" resolve="ReapableConnectionManager" />
           </node>
         </node>
-      </node>
-      <node concept="3Tm1VV" id="7j$WnoQO57J" role="1B3o_S" />
-    </node>
-    <node concept="3clFb_" id="7j$WnoQO57K" role="jymVt">
-      <property role="TrG5h" value="runOneIteration" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="7j$WnoQO57L" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="3uibUv" id="7j$WnoQO57M" role="Sfmx6">
-        <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-      </node>
-      <node concept="3clFbS" id="7j$WnoQO57N" role="3clF47">
-        <node concept="3clFbF" id="7j$WnoQO57O" role="3cqZAp">
-          <node concept="2OqwBi" id="7j$WnoQPc3b" role="3clFbG">
-            <node concept="37vLTw" id="7j$WnoQPc3a" role="2Oq$k0">
-              <ref role="3cqZAo" node="7j$WnoQO57f" resolve="logger" />
-            </node>
-            <node concept="liA8E" id="7j$WnoQPc3c" role="2OqNvi">
-              <ref role="37wK5l" to="jqqh:~Logger.debug(java.lang.String,java.lang.Object...):void" resolve="debug" />
-              <node concept="Xl_RD" id="7j$WnoQO57Q" role="37wK5m">
-                <property role="Xl_RC" value="closing idle connections..." />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="7j$WnoQO57R" role="3cqZAp">
-          <node concept="2OqwBi" id="7j$WnoQPc3g" role="3clFbG">
-            <node concept="37vLTw" id="7j$WnoQPc3f" role="2Oq$k0">
-              <ref role="3cqZAo" node="7j$WnoQO57k" resolve="reapableConnectionManager" />
-            </node>
-            <node concept="liA8E" id="7j$WnoQPc3h" role="2OqNvi">
-              <ref role="37wK5l" node="7j$WnoQNSlU" resolve="closeIdleConnections" />
-              <node concept="2OqwBi" id="7j$WnoQPc3l" role="37wK5m">
-                <node concept="37vLTw" id="7j$WnoQPc3k" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
-                </node>
-                <node concept="liA8E" id="7j$WnoQPc3m" role="2OqNvi">
-                  <ref role="37wK5l" to="45kb:7j$WnoQNZ2o" resolve="getMaxConnectionIdleTime" />
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7j$WnoQPc3q" role="37wK5m">
-                <node concept="37vLTw" id="7j$WnoQPc3p" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
-                </node>
-                <node concept="liA8E" id="7j$WnoQPc3r" role="2OqNvi">
-                  <ref role="37wK5l" to="45kb:7j$WnoQNZ2u" resolve="getMaxConnectionIdleTimeDurationTimeUnit" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="7j$WnoQO57V" role="1B3o_S" />
-      <node concept="3cqZAl" id="7j$WnoQO57W" role="3clF45" />
-    </node>
-    <node concept="3clFb_" id="7j$WnoQO57X" role="jymVt">
-      <property role="TrG5h" value="scheduler" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="7j$WnoQO57Y" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="3clFbS" id="7j$WnoQO57Z" role="3clF47">
-        <node concept="3cpWs6" id="7j$WnoQO580" role="3cqZAp">
-          <node concept="2YIFZM" id="7pCVAX45QWG" role="3cqZAk">
-            <ref role="1Pybhc" to="wyx4:~AbstractScheduledService$Scheduler" resolve="AbstractScheduledService.Scheduler" />
-            <ref role="37wK5l" to="wyx4:~AbstractScheduledService$Scheduler.newFixedDelaySchedule(long,long,java.util.concurrent.TimeUnit):com.google.common.util.concurrent.AbstractScheduledService$Scheduler" resolve="newFixedDelaySchedule" />
-            <node concept="1adDum" id="7j$WnoQO582" role="37wK5m">
-              <property role="1adDun" value="0L" />
-            </node>
-            <node concept="2OqwBi" id="7j$WnoQPc3x" role="37wK5m">
-              <node concept="37vLTw" id="7j$WnoQPc3w" role="2Oq$k0">
-                <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
-              </node>
-              <node concept="liA8E" id="7j$WnoQPc3y" role="2OqNvi">
-                <ref role="37wK5l" to="45kb:7j$WnoQNZ2o" resolve="getMaxConnectionIdleTime" />
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7j$WnoQPc3A" role="37wK5m">
-              <node concept="37vLTw" id="7j$WnoQPc3_" role="2Oq$k0">
-                <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
-              </node>
-              <node concept="liA8E" id="7j$WnoQPc3B" role="2OqNvi">
-                <ref role="37wK5l" to="45kb:7j$WnoQNZ2u" resolve="getMaxConnectionIdleTimeDurationTimeUnit" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tmbuc" id="7j$WnoQO585" role="1B3o_S" />
-      <node concept="3uibUv" id="7j$WnoQO586" role="3clF45">
-        <ref role="3uigEE" to="wyx4:~AbstractScheduledService$Scheduler" resolve="AbstractScheduledService.Scheduler" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="7j$WnoQO587" role="jymVt">
-      <property role="TrG5h" value="executor" />
-      <property role="DiZV1" value="false" />
-      <property role="od$2w" value="false" />
-      <node concept="2AHcQZ" id="7j$WnoQO588" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-      <node concept="3clFbS" id="7j$WnoQO589" role="3clF47">
-        <node concept="3cpWs8" id="7j$WnoQO58b" role="3cqZAp">
-          <node concept="3cpWsn" id="7j$WnoQO58a" role="3cpWs9">
-            <property role="3TUv4t" value="true" />
-            <property role="TrG5h" value="executor" />
-            <node concept="3uibUv" id="7j$WnoQO58c" role="1tU5fm">
-              <ref role="3uigEE" to="5zyv:~ScheduledExecutorService" resolve="ScheduledExecutorService" />
-            </node>
-            <node concept="2YIFZM" id="7j$WnoQPc3E" role="33vP2m">
-              <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
-              <ref role="37wK5l" to="5zyv:~Executors.newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory):java.util.concurrent.ScheduledExecutorService" resolve="newSingleThreadScheduledExecutor" />
-              <node concept="2OqwBi" id="7j$WnoQO58e" role="37wK5m">
-                <node concept="2OqwBi" id="7j$WnoQO58f" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7j$WnoQO58g" role="2Oq$k0">
-                    <node concept="2ShNRf" id="7pCVAX3X7gT" role="2Oq$k0">
-                      <node concept="1pGfFk" id="7pCVAX3X7gU" role="2ShVmc">
-                        <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.&lt;init&gt;()" resolve="ThreadFactoryBuilder" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="7j$WnoQO58i" role="2OqNvi">
-                      <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.setDaemon(boolean):com.google.common.util.concurrent.ThreadFactoryBuilder" resolve="setDaemon" />
-                      <node concept="3clFbT" id="7j$WnoQO58j" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+        <node concept="3clFbS" id="7j$WnoQO57y" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmCq" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
+            <ref role="ojxmB" node="7j$WnoQO57s" resolve="IdleConnectionReaper" />
+            <node concept="3clFbS" id="7nDaBAKzmCr" role="9aQI4">
+              <node concept="3clFbF" id="7j$WnoQO57z" role="3cqZAp">
+                <node concept="37vLTI" id="7j$WnoQO57$" role="3clFbG">
+                  <node concept="2OqwBi" id="7j$WnoQO57_" role="37vLTJ">
+                    <node concept="Xjq3P" id="7j$WnoQO57A" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="7j$WnoQO57B" role="2OqNvi">
+                      <ref role="2Oxat5" node="7j$WnoQO57k" resolve="reapableConnectionManager" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="7j$WnoQO58k" role="2OqNvi">
-                    <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.setNameFormat(java.lang.String):com.google.common.util.concurrent.ThreadFactoryBuilder" resolve="setNameFormat" />
-                    <node concept="1rXfSq" id="7j$WnoQO58l" role="37wK5m">
-                      <ref role="37wK5l" to="wyx4:~AbstractScheduledService.serviceName():java.lang.String" resolve="serviceName" />
+                  <node concept="37vLTw" id="7j$WnoQO57C" role="37vLTx">
+                    <ref role="3cqZAo" node="7j$WnoQO57w" resolve="reapableConnectionManager" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="7j$WnoQO57D" role="3cqZAp">
+                <node concept="37vLTI" id="7j$WnoQO57E" role="3clFbG">
+                  <node concept="2OqwBi" id="7j$WnoQO57F" role="37vLTJ">
+                    <node concept="Xjq3P" id="7j$WnoQO57G" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="7j$WnoQO57H" role="2OqNvi">
+                      <ref role="2Oxat5" node="7j$WnoQO57o" resolve="clientConfig" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7j$WnoQO57I" role="37vLTx">
+                    <ref role="3cqZAo" node="7j$WnoQO57u" resolve="clientConfig" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="7nDaBAKzmCs" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618524" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmCu" resolve="VPToFragment_8496368874152618526" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmCv" resolve="ModuleToFragment_8496368874152618527" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmCw" resolve="PeoplBlockReference_8496368874152618528" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="7j$WnoQO57J" role="1B3o_S" />
+        <node concept="ocbFV" id="7nDaBAKzmCw" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618528" />
+          <ref role="ocbYS" node="7nDaBAKzmCq" />
+          <ref role="1C2YfU" node="7nDaBAKzmCs" resolve="Fragment_8496368874152618524" />
+        </node>
+      </node>
+      <node concept="3clFb_" id="7j$WnoQO57K" role="jymVt">
+        <property role="TrG5h" value="runOneIteration" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="7j$WnoQO57L" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="3uibUv" id="7j$WnoQO57M" role="Sfmx6">
+          <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+        </node>
+        <node concept="3clFbS" id="7j$WnoQO57N" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmCy" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
+            <ref role="ojxmB" node="7j$WnoQO57K" resolve="runOneIteration" />
+            <node concept="3clFbS" id="7nDaBAKzmCz" role="9aQI4">
+              <node concept="3clFbF" id="7j$WnoQO57O" role="3cqZAp">
+                <node concept="2OqwBi" id="7j$WnoQPc3b" role="3clFbG">
+                  <node concept="37vLTw" id="7j$WnoQPc3a" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7j$WnoQO57f" resolve="logger" />
+                  </node>
+                  <node concept="liA8E" id="7j$WnoQPc3c" role="2OqNvi">
+                    <ref role="37wK5l" to="jqqh:~Logger.debug(java.lang.String,java.lang.Object...):void" resolve="debug" />
+                    <node concept="Xl_RD" id="7j$WnoQO57Q" role="37wK5m">
+                      <property role="Xl_RC" value="closing idle connections..." />
                     </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="7j$WnoQO58m" role="2OqNvi">
-                  <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.build():java.util.concurrent.ThreadFactory" resolve="build" />
+              </node>
+              <node concept="3clFbF" id="7j$WnoQO57R" role="3cqZAp">
+                <node concept="2OqwBi" id="7j$WnoQPc3g" role="3clFbG">
+                  <node concept="37vLTw" id="7j$WnoQPc3f" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7j$WnoQO57k" resolve="reapableConnectionManager" />
+                  </node>
+                  <node concept="liA8E" id="7j$WnoQPc3h" role="2OqNvi">
+                    <ref role="37wK5l" node="7j$WnoQNSlU" resolve="closeIdleConnections" />
+                    <node concept="2OqwBi" id="7j$WnoQPc3l" role="37wK5m">
+                      <node concept="37vLTw" id="7j$WnoQPc3k" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
+                      </node>
+                      <node concept="liA8E" id="7j$WnoQPc3m" role="2OqNvi">
+                        <ref role="37wK5l" to="45kb:7j$WnoQNZ2o" resolve="getMaxConnectionIdleTime" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7j$WnoQPc3q" role="37wK5m">
+                      <node concept="37vLTw" id="7j$WnoQPc3p" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
+                      </node>
+                      <node concept="liA8E" id="7j$WnoQPc3r" role="2OqNvi">
+                        <ref role="37wK5l" to="45kb:7j$WnoQNZ2u" resolve="getMaxConnectionIdleTimeDurationTimeUnit" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
+            <node concept="1V74GB" id="7nDaBAKzmC$" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618532" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmCA" resolve="VPToFragment_8496368874152618534" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmCB" resolve="ModuleToFragment_8496368874152618535" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmCC" resolve="PeoplBlockReference_8496368874152618536" />
+            </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="7j$WnoQO594" role="3cqZAp">
-          <node concept="3SKdUq" id="7j$WnoQO593" role="3SKWNk">
-            <property role="3SKdUp" value="Add a listener to shutdown the executor after the service is stopped.  This ensures that the" />
-          </node>
+        <node concept="3Tmbuc" id="7j$WnoQO57V" role="1B3o_S" />
+        <node concept="3cqZAl" id="7j$WnoQO57W" role="3clF45" />
+        <node concept="ocbFV" id="7nDaBAKzmCC" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618536" />
+          <ref role="ocbYS" node="7nDaBAKzmCy" />
+          <ref role="1C2YfU" node="7nDaBAKzmC$" resolve="Fragment_8496368874152618532" />
         </node>
-        <node concept="3SKdUt" id="7j$WnoQO596" role="3cqZAp">
-          <node concept="3SKdUq" id="7j$WnoQO595" role="3SKWNk">
-            <property role="3SKdUp" value="JVM shutdown will not be prevented from exiting after this service has stopped or failed." />
-          </node>
+      </node>
+      <node concept="3clFb_" id="7j$WnoQO57X" role="jymVt">
+        <property role="TrG5h" value="scheduler" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="7j$WnoQO57Y" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
-        <node concept="3SKdUt" id="7j$WnoQO598" role="3cqZAp">
-          <node concept="3SKdUq" id="7j$WnoQO597" role="3SKWNk">
-            <property role="3SKdUp" value="Technically this listener is added after start() was called so it is a little gross, but it" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7j$WnoQO59a" role="3cqZAp">
-          <node concept="3SKdUq" id="7j$WnoQO599" role="3SKWNk">
-            <property role="3SKdUp" value="is called within doStart() so we know that the service cannot terminate or fail concurrently" />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="7j$WnoQO59c" role="3cqZAp">
-          <node concept="3SKdUq" id="7j$WnoQO59b" role="3SKWNk">
-            <property role="3SKdUp" value="with adding this listener so it is impossible to miss an event that we are interested in." />
-          </node>
-        </node>
-        <node concept="3clFbF" id="7j$WnoQO58n" role="3cqZAp">
-          <node concept="1rXfSq" id="7j$WnoQO58o" role="3clFbG">
-            <ref role="37wK5l" to="wyx4:~AbstractScheduledService.addListener(com.google.common.util.concurrent.Service$Listener,java.util.concurrent.Executor):void" resolve="addListener" />
-            <node concept="2ShNRf" id="7j$WnoQO58p" role="37wK5m">
-              <node concept="YeOm9" id="6HfJGniTsMN" role="2ShVmc">
-                <node concept="1Y3b0j" id="6HfJGniTsMQ" role="YeSDq">
-                  <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="wyx4:~Service$Listener" resolve="Service.Listener" />
-                  <ref role="37wK5l" to="wyx4:~Service$Listener.&lt;init&gt;()" resolve="Service.Listener" />
-                  <node concept="3Tm1VV" id="6HfJGniTsMR" role="1B3o_S" />
-                  <node concept="3clFb_" id="6HfJGniTsOg" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="terminated" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tm1VV" id="6HfJGniTsOh" role="1B3o_S" />
-                    <node concept="3cqZAl" id="6HfJGniTsOj" role="3clF45" />
-                    <node concept="37vLTG" id="6HfJGniTsOk" role="3clF46">
-                      <property role="TrG5h" value="from" />
-                      <node concept="3uibUv" id="3DVg7mH3DmM" role="1tU5fm">
-                        <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
-                      </node>
+        <node concept="3clFbS" id="7j$WnoQO57Z" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmCE" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
+            <ref role="ojxmB" node="7j$WnoQO57X" resolve="scheduler" />
+            <node concept="3clFbS" id="7nDaBAKzmCF" role="9aQI4">
+              <node concept="3cpWs6" id="7j$WnoQO580" role="3cqZAp">
+                <node concept="2YIFZM" id="7pCVAX45QWG" role="3cqZAk">
+                  <ref role="1Pybhc" to="wyx4:~AbstractScheduledService$Scheduler" resolve="AbstractScheduledService.Scheduler" />
+                  <ref role="37wK5l" to="wyx4:~AbstractScheduledService$Scheduler.newFixedDelaySchedule(long,long,java.util.concurrent.TimeUnit):com.google.common.util.concurrent.AbstractScheduledService$Scheduler" resolve="newFixedDelaySchedule" />
+                  <node concept="1adDum" id="7j$WnoQO582" role="37wK5m">
+                    <property role="1adDun" value="0L" />
+                  </node>
+                  <node concept="2OqwBi" id="7j$WnoQPc3x" role="37wK5m">
+                    <node concept="37vLTw" id="7j$WnoQPc3w" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
                     </node>
-                    <node concept="3clFbS" id="6HfJGniTsOn" role="3clF47">
-                      <node concept="3clFbF" id="6HfJGniTsYf" role="3cqZAp">
-                        <node concept="2OqwBi" id="6HfJGniTsZb" role="3clFbG">
-                          <node concept="37vLTw" id="6HfJGniTsYe" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
+                    <node concept="liA8E" id="7j$WnoQPc3y" role="2OqNvi">
+                      <ref role="37wK5l" to="45kb:7j$WnoQNZ2o" resolve="getMaxConnectionIdleTime" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="7j$WnoQPc3A" role="37wK5m">
+                    <node concept="37vLTw" id="7j$WnoQPc3_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7j$WnoQO57o" resolve="clientConfig" />
+                    </node>
+                    <node concept="liA8E" id="7j$WnoQPc3B" role="2OqNvi">
+                      <ref role="37wK5l" to="45kb:7j$WnoQNZ2u" resolve="getMaxConnectionIdleTimeDurationTimeUnit" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="7nDaBAKzmCG" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618540" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmCI" resolve="VPToFragment_8496368874152618542" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmCJ" resolve="ModuleToFragment_8496368874152618543" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmCK" resolve="PeoplBlockReference_8496368874152618544" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tmbuc" id="7j$WnoQO585" role="1B3o_S" />
+        <node concept="3uibUv" id="7j$WnoQO586" role="3clF45">
+          <ref role="3uigEE" to="wyx4:~AbstractScheduledService$Scheduler" resolve="AbstractScheduledService.Scheduler" />
+        </node>
+        <node concept="ocbFV" id="7nDaBAKzmCK" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618544" />
+          <ref role="ocbYS" node="7nDaBAKzmCE" />
+          <ref role="1C2YfU" node="7nDaBAKzmCG" resolve="Fragment_8496368874152618540" />
+        </node>
+      </node>
+      <node concept="3clFb_" id="7j$WnoQO587" role="jymVt">
+        <property role="TrG5h" value="executor" />
+        <property role="DiZV1" value="false" />
+        <property role="od$2w" value="false" />
+        <node concept="2AHcQZ" id="7j$WnoQO588" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+        <node concept="3clFbS" id="7j$WnoQO589" role="3clF47">
+          <node concept="2wexfA" id="7nDaBAKzmCM" role="3cqZAp">
+            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
+            <ref role="ojxmB" node="7j$WnoQO587" resolve="executor" />
+            <node concept="3clFbS" id="7nDaBAKzmCN" role="9aQI4">
+              <node concept="3cpWs8" id="7j$WnoQO58b" role="3cqZAp">
+                <node concept="3cpWsn" id="7j$WnoQO58a" role="3cpWs9">
+                  <property role="3TUv4t" value="true" />
+                  <property role="TrG5h" value="executor" />
+                  <node concept="3uibUv" id="7j$WnoQO58c" role="1tU5fm">
+                    <ref role="3uigEE" to="5zyv:~ScheduledExecutorService" resolve="ScheduledExecutorService" />
+                  </node>
+                  <node concept="2YIFZM" id="7j$WnoQPc3E" role="33vP2m">
+                    <ref role="1Pybhc" to="5zyv:~Executors" resolve="Executors" />
+                    <ref role="37wK5l" to="5zyv:~Executors.newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory):java.util.concurrent.ScheduledExecutorService" resolve="newSingleThreadScheduledExecutor" />
+                    <node concept="2OqwBi" id="7j$WnoQO58e" role="37wK5m">
+                      <node concept="2OqwBi" id="7j$WnoQO58f" role="2Oq$k0">
+                        <node concept="2OqwBi" id="7j$WnoQO58g" role="2Oq$k0">
+                          <node concept="2ShNRf" id="7pCVAX3X7gT" role="2Oq$k0">
+                            <node concept="1pGfFk" id="7pCVAX3X7gU" role="2ShVmc">
+                              <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.&lt;init&gt;()" resolve="ThreadFactoryBuilder" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="6HfJGniTt09" role="2OqNvi">
-                            <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown():void" resolve="shutdown" />
+                          <node concept="liA8E" id="7j$WnoQO58i" role="2OqNvi">
+                            <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.setDaemon(boolean):com.google.common.util.concurrent.ThreadFactoryBuilder" resolve="setDaemon" />
+                            <node concept="3clFbT" id="7j$WnoQO58j" role="37wK5m">
+                              <property role="3clFbU" value="true" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7j$WnoQO58k" role="2OqNvi">
+                          <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.setNameFormat(java.lang.String):com.google.common.util.concurrent.ThreadFactoryBuilder" resolve="setNameFormat" />
+                          <node concept="1rXfSq" id="7j$WnoQO58l" role="37wK5m">
+                            <ref role="37wK5l" to="wyx4:~AbstractScheduledService.serviceName():java.lang.String" resolve="serviceName" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7j$WnoQO58m" role="2OqNvi">
+                        <ref role="37wK5l" to="wyx4:~ThreadFactoryBuilder.build():java.util.concurrent.ThreadFactory" resolve="build" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3SKdUt" id="7j$WnoQO594" role="3cqZAp">
+                <node concept="3SKdUq" id="7j$WnoQO593" role="3SKWNk">
+                  <property role="3SKdUp" value="Add a listener to shutdown the executor after the service is stopped.  This ensures that the" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="7j$WnoQO596" role="3cqZAp">
+                <node concept="3SKdUq" id="7j$WnoQO595" role="3SKWNk">
+                  <property role="3SKdUp" value="JVM shutdown will not be prevented from exiting after this service has stopped or failed." />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="7j$WnoQO598" role="3cqZAp">
+                <node concept="3SKdUq" id="7j$WnoQO597" role="3SKWNk">
+                  <property role="3SKdUp" value="Technically this listener is added after start() was called so it is a little gross, but it" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="7j$WnoQO59a" role="3cqZAp">
+                <node concept="3SKdUq" id="7j$WnoQO599" role="3SKWNk">
+                  <property role="3SKdUp" value="is called within doStart() so we know that the service cannot terminate or fail concurrently" />
+                </node>
+              </node>
+              <node concept="3SKdUt" id="7j$WnoQO59c" role="3cqZAp">
+                <node concept="3SKdUq" id="7j$WnoQO59b" role="3SKWNk">
+                  <property role="3SKdUp" value="with adding this listener so it is impossible to miss an event that we are interested in." />
+                </node>
+              </node>
+              <node concept="3clFbF" id="7j$WnoQO58n" role="3cqZAp">
+                <node concept="1rXfSq" id="7j$WnoQO58o" role="3clFbG">
+                  <ref role="37wK5l" to="wyx4:~AbstractScheduledService.addListener(com.google.common.util.concurrent.Service$Listener,java.util.concurrent.Executor):void" resolve="addListener" />
+                  <node concept="2ShNRf" id="7j$WnoQO58p" role="37wK5m">
+                    <node concept="YeOm9" id="6HfJGniTsMN" role="2ShVmc">
+                      <node concept="1Y3b0j" id="6HfJGniTsMQ" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <ref role="1Y3XeK" to="wyx4:~Service$Listener" resolve="Service.Listener" />
+                        <ref role="37wK5l" to="wyx4:~Service$Listener.&lt;init&gt;()" resolve="Service.Listener" />
+                        <node concept="3Tm1VV" id="6HfJGniTsMR" role="1B3o_S" />
+                        <node concept="3clFb_" id="6HfJGniTsOg" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="terminated" />
+                          <property role="DiZV1" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="3Tm1VV" id="6HfJGniTsOh" role="1B3o_S" />
+                          <node concept="3cqZAl" id="6HfJGniTsOj" role="3clF45" />
+                          <node concept="37vLTG" id="6HfJGniTsOk" role="3clF46">
+                            <property role="TrG5h" value="from" />
+                            <node concept="3uibUv" id="3DVg7mH3DmM" role="1tU5fm">
+                              <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6HfJGniTsOn" role="3clF47">
+                            <node concept="3clFbF" id="6HfJGniTsYf" role="3cqZAp">
+                              <node concept="2OqwBi" id="6HfJGniTsZb" role="3clFbG">
+                                <node concept="37vLTw" id="6HfJGniTsYe" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
+                                </node>
+                                <node concept="liA8E" id="6HfJGniTt09" role="2OqNvi">
+                                  <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown():void" resolve="shutdown" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="6HfJGniTsOo" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                          </node>
+                        </node>
+                        <node concept="3clFb_" id="6HfJGniTsOs" role="jymVt">
+                          <property role="1EzhhJ" value="false" />
+                          <property role="TrG5h" value="failed" />
+                          <property role="DiZV1" value="false" />
+                          <property role="od$2w" value="false" />
+                          <node concept="3Tm1VV" id="6HfJGniTsOt" role="1B3o_S" />
+                          <node concept="3cqZAl" id="6HfJGniTsOv" role="3clF45" />
+                          <node concept="37vLTG" id="6HfJGniTsOw" role="3clF46">
+                            <property role="TrG5h" value="from" />
+                            <node concept="3uibUv" id="3DVg7mH3Dru" role="1tU5fm">
+                              <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
+                            </node>
+                          </node>
+                          <node concept="37vLTG" id="6HfJGniTsOy" role="3clF46">
+                            <property role="TrG5h" value="failure" />
+                            <node concept="3uibUv" id="6HfJGniTsOz" role="1tU5fm">
+                              <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6HfJGniTsO_" role="3clF47">
+                            <node concept="3clFbF" id="6HfJGniTt2y" role="3cqZAp">
+                              <node concept="2OqwBi" id="6HfJGniTt3i" role="3clFbG">
+                                <node concept="37vLTw" id="6HfJGniTt2x" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
+                                </node>
+                                <node concept="liA8E" id="6HfJGniTt4S" role="2OqNvi">
+                                  <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown():void" resolve="shutdown" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="6HfJGniTsOA" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="2AHcQZ" id="6HfJGniTsOo" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                    </node>
                   </node>
-                  <node concept="3clFb_" id="6HfJGniTsOs" role="jymVt">
-                    <property role="1EzhhJ" value="false" />
-                    <property role="TrG5h" value="failed" />
-                    <property role="DiZV1" value="false" />
-                    <property role="od$2w" value="false" />
-                    <node concept="3Tm1VV" id="6HfJGniTsOt" role="1B3o_S" />
-                    <node concept="3cqZAl" id="6HfJGniTsOv" role="3clF45" />
-                    <node concept="37vLTG" id="6HfJGniTsOw" role="3clF46">
-                      <property role="TrG5h" value="from" />
-                      <node concept="3uibUv" id="3DVg7mH3Dru" role="1tU5fm">
-                        <ref role="3uigEE" to="wyx4:~Service$State" resolve="Service.State" />
-                      </node>
-                    </node>
-                    <node concept="37vLTG" id="6HfJGniTsOy" role="3clF46">
-                      <property role="TrG5h" value="failure" />
-                      <node concept="3uibUv" id="6HfJGniTsOz" role="1tU5fm">
-                        <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-                      </node>
-                    </node>
-                    <node concept="3clFbS" id="6HfJGniTsO_" role="3clF47">
-                      <node concept="3clFbF" id="6HfJGniTt2y" role="3cqZAp">
-                        <node concept="2OqwBi" id="6HfJGniTt3i" role="3clFbG">
-                          <node concept="37vLTw" id="6HfJGniTt2x" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
-                          </node>
-                          <node concept="liA8E" id="6HfJGniTt4S" role="2OqNvi">
-                            <ref role="37wK5l" to="5zyv:~ExecutorService.shutdown():void" resolve="shutdown" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2AHcQZ" id="6HfJGniTsOA" role="2AJF6D">
-                      <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                    </node>
+                  <node concept="2YIFZM" id="3DVg7mH2W7Y" role="37wK5m">
+                    <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
+                    <ref role="37wK5l" to="wyx4:~MoreExecutors.directExecutor():java.util.concurrent.Executor" resolve="directExecutor" />
                   </node>
                 </node>
               </node>
+              <node concept="3cpWs6" id="7j$WnoQO58L" role="3cqZAp">
+                <node concept="37vLTw" id="7j$WnoQO58M" role="3cqZAk">
+                  <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
+                </node>
+              </node>
             </node>
-            <node concept="2YIFZM" id="3DVg7mH2W7Y" role="37wK5m">
-              <ref role="1Pybhc" to="wyx4:~MoreExecutors" resolve="MoreExecutors" />
-              <ref role="37wK5l" to="wyx4:~MoreExecutors.directExecutor():java.util.concurrent.Executor" resolve="directExecutor" />
+            <node concept="1V74GB" id="7nDaBAKzmCO" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_8496368874152618548" />
+              <ref role="1V74Hf" to="x0nt:7nDaBAKzmCQ" resolve="VPToFragment_8496368874152618550" />
+              <ref role="3aRQVk" to="x0nt:7nDaBAKzmCR" resolve="ModuleToFragment_8496368874152618551" />
+              <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
+              <ref role="25GeQm" node="7nDaBAKzmCS" resolve="PeoplBlockReference_8496368874152618552" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="7j$WnoQO58L" role="3cqZAp">
-          <node concept="37vLTw" id="7j$WnoQO58M" role="3cqZAk">
-            <ref role="3cqZAo" node="7j$WnoQO58a" resolve="executor" />
-          </node>
+        <node concept="3Tmbuc" id="7j$WnoQO58N" role="1B3o_S" />
+        <node concept="3uibUv" id="7j$WnoQO58O" role="3clF45">
+          <ref role="3uigEE" to="5zyv:~ScheduledExecutorService" resolve="ScheduledExecutorService" />
+        </node>
+        <node concept="ocbFV" id="7nDaBAKzmCS" role="lGtFl">
+          <property role="TrG5h" value="PeoplBlockReference_8496368874152618552" />
+          <ref role="ocbYS" node="7nDaBAKzmCM" />
+          <ref role="1C2YfU" node="7nDaBAKzmCO" resolve="Fragment_8496368874152618548" />
         </node>
       </node>
-      <node concept="3Tmbuc" id="7j$WnoQO58N" role="1B3o_S" />
-      <node concept="3uibUv" id="7j$WnoQO58O" role="3clF45">
-        <ref role="3uigEE" to="5zyv:~ScheduledExecutorService" resolve="ScheduledExecutorService" />
+      <node concept="3UR2Jj" id="7j$WnoQO58P" role="lGtFl">
+        <node concept="TZ5HA" id="7j$WnoQO591" role="TZ5H$">
+          <node concept="1dT_AC" id="7j$WnoQO592" role="1dT_Ay">
+            <property role="1dT_AB" value="Used to reap idle connections from the connection manager." />
+          </node>
+        </node>
       </node>
     </node>
   </node>
