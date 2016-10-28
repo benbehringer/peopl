@@ -29,7 +29,6 @@
     <import index="7aj9" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.index.mapper.core(Jest_new/)" />
     <import index="khbs" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.index.mapper(Jest_new/)" />
     <import index="o4ie" ref="r:0939a94f-705d-487e-bced-f0272166acc0(io.searchbox.indices.template)" />
-    <import index="zhql" ref="r:146ce614-13c9-4600-8b38-b965a5ef18fc(io.searchbox.common)" />
     <import index="9pym" ref="r:dc5d80ad-cebb-43a0-94f1-47a5e5414f06(io.searchbox.action)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="fcgr" ref="r:51721a43-bbd1-4edc-af1d-75408a5d4a04(io.searchbox.client)" />
@@ -254,7 +253,7 @@
   </registry>
   <node concept="H$gyE" id="7nDaBAKzeWX">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" />
+    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" resolve="Jest" />
   </node>
   <node concept="2SvMkh" id="7nDaBAKzeWY">
     <property role="TrG5h" value="Snapshot" />

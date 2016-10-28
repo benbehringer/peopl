@@ -14,7 +14,6 @@
     <import index="71il" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.test(Jest_new/)" />
     <import index="talx" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action.index(Jest_new/)" />
     <import index="9pym" ref="r:dc5d80ad-cebb-43a0-94f1-47a5e5414f06(io.searchbox.action)" />
-    <import index="zhql" ref="r:146ce614-13c9-4600-8b38-b965a5ef18fc(io.searchbox.common)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fcgr" ref="r:51721a43-bbd1-4edc-af1d-75408a5d4a04(io.searchbox.client)" />
@@ -155,7 +154,7 @@
   </registry>
   <node concept="H$gyE" id="7nDaBAKzmEO">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" />
+    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" resolve="Jest" />
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmEP">
     <property role="TrG5h" value="TypeExist" />
