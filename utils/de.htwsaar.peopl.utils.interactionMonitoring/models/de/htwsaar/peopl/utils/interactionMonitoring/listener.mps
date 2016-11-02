@@ -1597,7 +1597,7 @@
               </node>
             </node>
             <node concept="liA8E" id="50zZCcaRX7n" role="2OqNvi">
-              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.offer(java.lang.Object):boolean" resolve="offer" />
+              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
               <node concept="2ShNRf" id="50zZCcaRXcG" role="37wK5m">
                 <node concept="1pGfFk" id="50zZCcaSqQB" role="2ShVmc">
                   <ref role="37wK5l" node="50zZCcaRUYi" resolve="EditorComponentKeyListener.EditorKeyEvent" />
@@ -1686,11 +1686,12 @@
       <node concept="3clFbW" id="50zZCcaRUYi" role="jymVt">
         <node concept="3cqZAl" id="50zZCcaRUYj" role="3clF45" />
         <node concept="3clFbS" id="50zZCcaRUYl" role="3clF47">
-          <node concept="XkiVB" id="50zZCcb1$wC" role="3cqZAp">
+          <node concept="XkiVB" id="7AOYwIIZ_NS" role="3cqZAp">
             <ref role="37wK5l" to="e9fh:50zZCcb1xwd" resolve="MonitorEvent" />
-            <node concept="37vLTw" id="50zZCcb1$yK" role="37wK5m">
+            <node concept="37vLTw" id="7AOYwIIZ_Qp" role="37wK5m">
               <ref role="3cqZAo" node="50zZCcaRV0x" resolve="creator" />
             </node>
+            <node concept="10Nm6u" id="7AOYwIJ0dKw" role="37wK5m" />
           </node>
           <node concept="3clFbF" id="50zZCcaRV8p" role="3cqZAp">
             <node concept="37vLTI" id="50zZCcaRVch" role="3clFbG">
@@ -1765,16 +1766,7 @@
         <node concept="10P_77" id="gMSQjqZPTN" role="1tU5fm" />
         <node concept="3Tm1VV" id="gMSQjqZSj7" role="1B3o_S" />
       </node>
-      <node concept="312cEg" id="4jnYSPQuIC$" role="jymVt">
-        <property role="34CwA1" value="false" />
-        <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="uiEntety" />
-        <property role="3TUv4t" value="false" />
-        <node concept="3Tm1VV" id="4jnYSPQuHyv" role="1B3o_S" />
-        <node concept="3uibUv" id="4jnYSPQuHO4" role="1tU5fm">
-          <ref role="3uigEE" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
-        </node>
-      </node>
+      <node concept="2tJIrI" id="7AOYwIIZNXl" role="jymVt" />
       <node concept="2tJIrI" id="5ime7PBvNfh" role="jymVt" />
       <node concept="3clFbW" id="gMSQjqYY18" role="jymVt">
         <node concept="3cqZAl" id="gMSQjqYY19" role="3clF45" />
@@ -1784,8 +1776,8 @@
             <node concept="37vLTw" id="vTvH2Zqscj" role="37wK5m">
               <ref role="3cqZAo" node="gMSQjqYY2u" resolve="creator" />
             </node>
-            <node concept="37vLTw" id="vTvH2ZqsLa" role="37wK5m">
-              <ref role="3cqZAo" node="gMSQjqZQkb" resolve="source" />
+            <node concept="37vLTw" id="7AOYwIJ0d3i" role="37wK5m">
+              <ref role="3cqZAo" node="4jnYSPQuODO" resolve="entity" />
             </node>
           </node>
           <node concept="3clFbF" id="gMSQjqZQgM" role="3cqZAp">
@@ -1797,33 +1789,6 @@
                 <node concept="Xjq3P" id="gMSQjqZQgQ" role="2Oq$k0" />
                 <node concept="2OwXpG" id="gMSQjqZQgR" role="2OqNvi">
                   <ref role="2Oxat5" node="gMSQjqZPTM" resolve="mouseEntered" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="gMSQjqYYZX" role="3cqZAp">
-            <node concept="37vLTI" id="gMSQjqYZ2x" role="3clFbG">
-              <node concept="2OqwBi" id="gMSQjqYZ0f" role="37vLTJ">
-                <node concept="Xjq3P" id="gMSQjqYYZW" role="2Oq$k0" />
-                <node concept="2OwXpG" id="gMSQjqYZ10" role="2OqNvi">
-                  <ref role="2Oxat5" to="e9fh:gMSQjqYWBU" resolve="date" />
-                </node>
-              </node>
-              <node concept="2YIFZM" id="gMSQjqZ1kh" role="37vLTx">
-                <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
-                <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4jnYSPQuLKP" role="3cqZAp">
-            <node concept="37vLTI" id="4jnYSPQuM5L" role="3clFbG">
-              <node concept="37vLTw" id="4jnYSPQuQ_D" role="37vLTx">
-                <ref role="3cqZAo" node="4jnYSPQuODO" resolve="entety" />
-              </node>
-              <node concept="2OqwBi" id="4jnYSPQuLMI" role="37vLTJ">
-                <node concept="Xjq3P" id="4jnYSPQuLKN" role="2Oq$k0" />
-                <node concept="2OwXpG" id="4jnYSPQuM2o" role="2OqNvi">
-                  <ref role="2Oxat5" node="4jnYSPQuIC$" resolve="uiEntety" />
                 </node>
               </node>
             </node>
@@ -1840,14 +1805,8 @@
           <property role="TrG5h" value="mouseEntered" />
           <node concept="10P_77" id="gMSQjqZQka" role="1tU5fm" />
         </node>
-        <node concept="37vLTG" id="gMSQjqZQkb" role="3clF46">
-          <property role="TrG5h" value="source" />
-          <node concept="3uibUv" id="gMSQjqZQkc" role="1tU5fm">
-            <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-          </node>
-        </node>
         <node concept="37vLTG" id="4jnYSPQuODO" role="3clF46">
-          <property role="TrG5h" value="entety" />
+          <property role="TrG5h" value="entity" />
           <node concept="3uibUv" id="4jnYSPQuOPs" role="1tU5fm">
             <ref role="3uigEE" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
           </node>
@@ -1866,7 +1825,10 @@
         </node>
         <node concept="3clFbS" id="gMSQjqZXHx" role="3clF47">
           <node concept="3cpWs6" id="gMSQjqZXX4" role="3cqZAp">
-            <node concept="3cpWs3" id="gMSQjr01kq" role="3cqZAk">
+            <node concept="3cpWs3" id="7AOYwIIZOSL" role="3cqZAk">
+              <node concept="37vLTw" id="7AOYwIIZP3c" role="3uHU7w">
+                <ref role="3cqZAo" to="e9fh:7AOYwIIZNzg" resolve="entity" />
+              </node>
               <node concept="3cpWs3" id="gMSQjqZZTb" role="3uHU7B">
                 <node concept="3cpWs3" id="gMSQjqZYIf" role="3uHU7B">
                   <node concept="Xl_RD" id="gMSQjqZY3J" role="3uHU7B">
@@ -1879,9 +1841,6 @@
                 <node concept="Xl_RD" id="gMSQjqZZXH" role="3uHU7w">
                   <property role="Xl_RC" value=" / UIEntetie = " />
                 </node>
-              </node>
-              <node concept="37vLTw" id="4jnYSPQuOdu" role="3uHU7w">
-                <ref role="3cqZAo" node="4jnYSPQuIC$" resolve="uiEntety" />
               </node>
             </node>
           </node>
@@ -2004,9 +1963,6 @@
                                 <node concept="3clFbT" id="gMSQjqZQCI" role="37wK5m">
                                   <property role="3clFbU" value="true" />
                                 </node>
-                                <node concept="37vLTw" id="4jnYSPQv3iu" role="37wK5m">
-                                  <ref role="3cqZAo" node="5ime7PBw0nV" resolve="o" />
-                                </node>
                                 <node concept="1rXfSq" id="4jnYSPQv3ym" role="37wK5m">
                                   <ref role="37wK5l" node="4jnYSPQuQQN" resolve="identify" />
                                   <node concept="37vLTw" id="4jnYSPQv3EU" role="37wK5m">
@@ -2028,7 +1984,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="gMSQjqZ4DK" role="2OqNvi">
-                              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
                               <node concept="37vLTw" id="gMSQjqZ4DL" role="37wK5m">
                                 <ref role="3cqZAo" node="gMSQjqZ4Dw" resolve="fe" />
                               </node>
@@ -2065,9 +2021,6 @@
                                 <node concept="3clFbT" id="gMSQjqZR0B" role="37wK5m">
                                   <property role="3clFbU" value="false" />
                                 </node>
-                                <node concept="37vLTw" id="gMSQjqZRcr" role="37wK5m">
-                                  <ref role="3cqZAo" node="5ime7PBw0nV" resolve="o" />
-                                </node>
                                 <node concept="1rXfSq" id="4jnYSPQv3Vj" role="37wK5m">
                                   <ref role="37wK5l" node="4jnYSPQuQQN" resolve="identify" />
                                   <node concept="37vLTw" id="4jnYSPQv43T" role="37wK5m">
@@ -2089,7 +2042,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="gMSQjqZ4OO" role="2OqNvi">
-                              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
                               <node concept="37vLTw" id="gMSQjqZ4OP" role="37wK5m">
                                 <ref role="3cqZAo" node="gMSQjqZ4O$" resolve="fe" />
                               </node>
@@ -2287,7 +2240,7 @@
                         <node concept="3clFbS" id="4jnYSPQvjr0" role="3eOfB_">
                           <node concept="3cpWs6" id="4jnYSPQvl_p" role="3cqZAp">
                             <node concept="Rm8GO" id="4jnYSPQvmiE" role="3cqZAk">
-                              <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="Editor" />
+                              <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="NodeEditor" />
                               <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
                             </node>
                           </node>
@@ -2428,6 +2381,7 @@
             <node concept="37vLTw" id="2krr7wPY6yf" role="37wK5m">
               <ref role="3cqZAo" node="3SXsBE6Khnf" resolve="creator" />
             </node>
+            <node concept="10Nm6u" id="7AOYwIJ0a5G" role="37wK5m" />
           </node>
           <node concept="3clFbF" id="3SXsBE6KkyO" role="3cqZAp">
             <node concept="37vLTI" id="3SXsBE6Kk_U" role="3clFbG">
@@ -2874,7 +2828,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7QLetM0K3rb" role="2OqNvi">
-                          <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                          <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
                           <node concept="37vLTw" id="7QLetM0K3z5" role="37wK5m">
                             <ref role="3cqZAo" node="7QLetM0JT$k" resolve="acEv" />
                           </node>
