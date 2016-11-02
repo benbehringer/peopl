@@ -11,6 +11,7 @@
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="vuw5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.keymap(MPS.IDEA/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -27,7 +28,12 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
+        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
+      </concept>
+      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475587102" name="jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" flags="nn" index="XkiVB" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -37,9 +43,13 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
@@ -67,6 +77,7 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -96,6 +107,25 @@
     <node concept="3clFbW" id="50zZCcb1xwd" role="jymVt">
       <node concept="3cqZAl" id="50zZCcb1xwe" role="3clF45" />
       <node concept="3clFbS" id="50zZCcb1xwg" role="3clF47">
+        <node concept="XkiVB" id="vTvH2ZqrvS" role="3cqZAp">
+          <ref role="37wK5l" to="33ny:~EventObject.&lt;init&gt;(java.lang.Object)" resolve="EventObject" />
+          <node concept="37vLTw" id="vTvH2ZqrwK" role="37wK5m">
+            <ref role="3cqZAo" node="vTvH2Zqrue" resolve="source" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="vTvH2ZqrxU" role="3cqZAp">
+          <node concept="37vLTI" id="vTvH2Zqr_O" role="3clFbG">
+            <node concept="37vLTw" id="vTvH2ZqrAP" role="37vLTx">
+              <ref role="3cqZAo" node="50zZCcb1zse" resolve="creator" />
+            </node>
+            <node concept="2OqwBi" id="vTvH2ZqryV" role="37vLTJ">
+              <node concept="Xjq3P" id="vTvH2ZqrxS" role="2Oq$k0" />
+              <node concept="2OwXpG" id="vTvH2Zqr$u" role="2OqNvi">
+                <ref role="2Oxat5" node="5ime7PBvKXm" resolve="creator" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="50zZCcb1xwL" role="3cqZAp">
           <node concept="37vLTI" id="50zZCcb1xzA" role="3clFbG">
             <node concept="2YIFZM" id="50zZCcb1xHj" role="37vLTx">
@@ -116,6 +146,12 @@
         <property role="TrG5h" value="creator" />
         <node concept="3uibUv" id="50zZCcb1zsd" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="vTvH2Zqrue" role="3clF46">
+        <property role="TrG5h" value="source" />
+        <node concept="3uibUv" id="vTvH2Zqrvf" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
       </node>
     </node>
@@ -150,6 +186,50 @@
       <node concept="17QB3L" id="2krr7wQ86Lk" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="5ime7PBvKRJ" role="1B3o_S" />
+    <node concept="3uibUv" id="vTvH2ZqqWS" role="1zkMxy">
+      <ref role="3uigEE" to="33ny:~EventObject" resolve="EventObject" />
+    </node>
+  </node>
+  <node concept="Qs71p" id="4jnYSPQuDbw">
+    <property role="TrG5h" value="UIEntity" />
+    <node concept="2tJIrI" id="4jnYSPQuLPe" role="jymVt" />
+    <node concept="QsSxf" id="4jnYSPQuDc9" role="Qtgdg">
+      <property role="TrG5h" value="Modular_ProjectTree" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDd5" role="Qtgdg">
+      <property role="TrG5h" value="Product_ProjecTree" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDez" role="Qtgdg">
+      <property role="TrG5h" value="Standard_ProjectTree" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDfK" role="Qtgdg">
+      <property role="TrG5h" value="Messages" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDgJ" role="Qtgdg">
+      <property role="TrG5h" value="Usages" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDhJ" role="Qtgdg">
+      <property role="TrG5h" value="VersionControl_LocalChanges" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQvtDv" role="Qtgdg">
+      <property role="TrG5h" value="VersionControl_Log" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuDje" role="Qtgdg">
+      <property role="TrG5h" value="Editor" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="4jnYSPQuLPK" role="Qtgdg">
+      <property role="TrG5h" value="Unknown" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="3Tm1VV" id="4jnYSPQuDbx" role="1B3o_S" />
   </node>
 </model>
 

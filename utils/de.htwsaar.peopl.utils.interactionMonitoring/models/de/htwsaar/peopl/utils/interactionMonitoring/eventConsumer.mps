@@ -11,6 +11,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.listener)" />
+    <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -236,6 +237,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="vTvH2Zqp3N" role="jymVt" />
     <node concept="2tJIrI" id="2WEWlo0EqnA" role="jymVt" />
     <node concept="2tJIrI" id="2WEWlo0EqbV" role="jymVt" />
     <node concept="2tJIrI" id="2WEWlo0E8I$" role="jymVt" />
@@ -326,7 +328,6 @@
       <node concept="3Tm1VV" id="5ime7PBwcfH" role="1B3o_S" />
       <node concept="3cqZAl" id="5ime7PBwcfJ" role="3clF45" />
       <node concept="3clFbS" id="5ime7PBwcfK" role="3clF47">
-        <node concept="3clFbH" id="2WEWlo0E8b8" role="3cqZAp" />
         <node concept="2$JKZl" id="5ime7PBwvD_" role="3cqZAp">
           <node concept="3clFbS" id="5ime7PBwvDB" role="2LFqv$">
             <node concept="3clFbF" id="2WEWlo0Es5z" role="3cqZAp">
@@ -359,7 +360,7 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="2WEWlo0ErR1" role="3clF47" />
-      <node concept="3Tm1VV" id="2WEWlo0ErLN" role="1B3o_S" />
+      <node concept="3Tm1VV" id="4jnYSPQvIzO" role="1B3o_S" />
       <node concept="3cqZAl" id="2WEWlo0ErQW" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="5ime7PBwcf2" role="1B3o_S" />
@@ -1263,6 +1264,59 @@
     <node concept="3uibUv" id="gMSQjqZW6s" role="1zkMxy">
       <ref role="3uigEE" node="5ime7PBwcf1" resolve="AbstractConsumer" />
     </node>
+  </node>
+  <node concept="312cEu" id="4jnYSPQvGLK">
+    <property role="TrG5h" value="Distributor" />
+    <node concept="2tJIrI" id="4jnYSPQvGMc" role="jymVt" />
+    <node concept="3clFbW" id="4jnYSPQvGP_" role="jymVt">
+      <node concept="37vLTG" id="4jnYSPQvIax" role="3clF46">
+        <property role="TrG5h" value="input" />
+        <node concept="3uibUv" id="4jnYSPQvIay" role="1tU5fm">
+          <ref role="3uigEE" to="5zyv:~ConcurrentLinkedQueue" resolve="ConcurrentLinkedQueue" />
+          <node concept="3uibUv" id="4jnYSPQvIaz" role="11_B2D">
+            <ref role="3uigEE" to="e9fh:5ime7PBvKRI" resolve="MonitorEvent" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4jnYSPQvGPA" role="3clF45" />
+      <node concept="3clFbS" id="4jnYSPQvGPC" role="3clF47">
+        <node concept="XkiVB" id="vTvH2ZpW9N" role="3cqZAp">
+          <ref role="37wK5l" node="2WEWlo0E8BP" resolve="AbstractConsumer" />
+          <node concept="37vLTw" id="vTvH2ZpWao" role="37wK5m">
+            <ref role="3cqZAo" node="4jnYSPQvIax" resolve="input" />
+          </node>
+          <node concept="10Nm6u" id="vTvH2ZpWbI" role="37wK5m" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4jnYSPQvGP1" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="4jnYSPQvIiA" role="jymVt" />
+    <node concept="2tJIrI" id="4jnYSPQvIjO" role="jymVt" />
+    <node concept="312cEg" id="4jnYSPQvIG8" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentFocus" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4jnYSPQvInD" role="1B3o_S" />
+      <node concept="3uibUv" id="4jnYSPQvIEr" role="1tU5fm">
+        <ref role="3uigEE" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4jnYSPQvIkS" role="jymVt" />
+    <node concept="2tJIrI" id="uxZ5JEosgV" role="jymVt" />
+    <node concept="3clFb_" id="uxZ5JEoBYU" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="consume" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="uxZ5JEoBYW" role="1B3o_S" />
+      <node concept="3cqZAl" id="uxZ5JEoBYX" role="3clF45" />
+      <node concept="3clFbS" id="uxZ5JEoBYY" role="3clF47">
+        <node concept="3clFbH" id="uxZ5JEoC1e" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4jnYSPQvGLL" role="1B3o_S" />
   </node>
 </model>
 

@@ -421,10 +421,6 @@
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNZnp" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmC3" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618499" />
-          <ref role="ocbYS" node="7nDaBAKzmBX" />
-        </node>
       </node>
       <node concept="3clFb_" id="7j$WnoQNZnq" role="jymVt">
         <property role="TrG5h" value="closeIdleConnections" />
@@ -503,10 +499,6 @@
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNZnD" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNZnE" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmCb" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618507" />
-          <ref role="ocbYS" node="7nDaBAKzmC5" />
-        </node>
       </node>
     </node>
   </node>
