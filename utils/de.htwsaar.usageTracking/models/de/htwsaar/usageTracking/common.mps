@@ -413,6 +413,62 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="lAMQjh4T8b" role="3cqZAp">
+          <node concept="3cpWsn" id="lAMQjh4T8c" role="3cpWs9">
+            <property role="TrG5h" value="archiveDir" />
+            <node concept="3uibUv" id="lAMQjh4T8d" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="lAMQjh4TiG" role="33vP2m">
+              <node concept="1pGfFk" id="lAMQjh4Uy6" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="3cpWs3" id="lAMQjh4V9C" role="37wK5m">
+                  <node concept="Xl_RD" id="lAMQjh4ViQ" role="3uHU7w">
+                    <property role="Xl_RC" value="/" />
+                  </node>
+                  <node concept="3cpWs3" id="lAMQjh4UQz" role="3uHU7B">
+                    <node concept="3cpWs3" id="lAMQjh4UGG" role="3uHU7B">
+                      <node concept="37vLTw" id="lAMQjh4U_r" role="3uHU7B">
+                        <ref role="3cqZAo" node="aG5PjzejJ4" resolve="appPath" />
+                      </node>
+                      <node concept="Xl_RD" id="lAMQjh4UMx" role="3uHU7w">
+                        <property role="Xl_RC" value="/" />
+                      </node>
+                    </node>
+                    <node concept="10M0yZ" id="lAMQjh4V03" role="3uHU7w">
+                      <ref role="1PxDUh" node="76Lb2vBYmgu" resolve="Constants" />
+                      <ref role="3cqZAo" node="7kgjkPljxed" resolve="LOGGING_ARCHIVE_PATH" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="lAMQjh4VrR" role="3cqZAp">
+          <node concept="3clFbS" id="lAMQjh4VrT" role="3clFbx">
+            <node concept="3clFbF" id="lAMQjh4VID" role="3cqZAp">
+              <node concept="2OqwBi" id="lAMQjh4VKP" role="3clFbG">
+                <node concept="37vLTw" id="lAMQjh4WR2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="lAMQjh4T8c" resolve="archiveDir" />
+                </node>
+                <node concept="liA8E" id="lAMQjh4VMG" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.mkdirs():boolean" resolve="mkdirs" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="lAMQjh4VyA" role="3clFbw">
+            <node concept="2OqwBi" id="lAMQjh4VD6" role="3fr31v">
+              <node concept="37vLTw" id="lAMQjh4V_W" role="2Oq$k0">
+                <ref role="3cqZAo" node="lAMQjh4T8c" resolve="archiveDir" />
+              </node>
+              <node concept="liA8E" id="lAMQjh4VEh" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~File.exists():boolean" resolve="exists" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="76Lb2vBZ5bL" role="3cqZAp">
           <node concept="1rXfSq" id="76Lb2vBZ5bJ" role="3clFbG">
             <ref role="37wK5l" node="76Lb2vBYUDG" resolve="readProperties" />
@@ -1350,22 +1406,13 @@
         <property role="Xl_RC" value="appPath" />
       </node>
     </node>
-    <node concept="Wx3nA" id="7kgjkPljwWC" role="jymVt">
-      <property role="TrG5h" value="CURRENT_LOGGING_PATH" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="7kgjkPljwWD" role="1B3o_S" />
-      <node concept="17QB3L" id="7kgjkPljwPO" role="1tU5fm" />
-      <node concept="Xl_RD" id="7kgjkPljwYI" role="33vP2m">
-        <property role="Xl_RC" value="current_log" />
-      </node>
-    </node>
     <node concept="Wx3nA" id="7kgjkPljxed" role="jymVt">
       <property role="TrG5h" value="LOGGING_ARCHIVE_PATH" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="7kgjkPljxee" role="1B3o_S" />
       <node concept="17QB3L" id="7kgjkPljx7p" role="1tU5fm" />
       <node concept="Xl_RD" id="7kgjkPljxiT" role="33vP2m">
-        <property role="Xl_RC" value="archive_log" />
+        <property role="Xl_RC" value="archive" />
       </node>
     </node>
     <node concept="3Tm1VV" id="76Lb2vBYmgv" role="1B3o_S" />
