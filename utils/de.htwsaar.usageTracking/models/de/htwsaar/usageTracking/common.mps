@@ -1350,6 +1350,24 @@
         <property role="Xl_RC" value="appPath" />
       </node>
     </node>
+    <node concept="Wx3nA" id="7kgjkPljwWC" role="jymVt">
+      <property role="TrG5h" value="CURRENT_LOGGING_PATH" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7kgjkPljwWD" role="1B3o_S" />
+      <node concept="17QB3L" id="7kgjkPljwPO" role="1tU5fm" />
+      <node concept="Xl_RD" id="7kgjkPljwYI" role="33vP2m">
+        <property role="Xl_RC" value="current_log" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7kgjkPljxed" role="jymVt">
+      <property role="TrG5h" value="LOGGING_ARCHIVE_PATH" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7kgjkPljxee" role="1B3o_S" />
+      <node concept="17QB3L" id="7kgjkPljx7p" role="1tU5fm" />
+      <node concept="Xl_RD" id="7kgjkPljxiT" role="33vP2m">
+        <property role="Xl_RC" value="archive_log" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="76Lb2vBYmgv" role="1B3o_S" />
   </node>
 </model>
