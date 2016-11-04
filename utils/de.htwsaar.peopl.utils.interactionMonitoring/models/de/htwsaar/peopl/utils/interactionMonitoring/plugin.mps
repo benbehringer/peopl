@@ -879,12 +879,6 @@
     </node>
     <node concept="2uRRBN" id="1qBBsls9ZQc" role="2uRRB_">
       <node concept="3clFbS" id="1qBBsls9ZQd" role="2VODD2">
-        <node concept="34ab3g" id="1qBBslsa1em" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="1qBBslsa1eo" role="34bqiv">
-            <property role="Xl_RC" value=" Dispose" />
-          </node>
-        </node>
         <node concept="3clFbF" id="1qBBsls9ZWu" role="3cqZAp">
           <node concept="2OqwBi" id="1qBBsls9ZXV" role="3clFbG">
             <node concept="2YIFZM" id="1qBBsls9ZWV" role="2Oq$k0">
@@ -892,7 +886,7 @@
               <ref role="1Pybhc" to="jjr1:4jnYSPQvGLK" resolve="Distributor" />
             </node>
             <node concept="liA8E" id="1qBBslsa02C" role="2OqNvi">
-              <ref role="37wK5l" to="jjr1:1qBBsls9XQp" resolve="printMessageTime" />
+              <ref role="37wK5l" to="jjr1:1qBBsls9XQp" resolve="printHandlerTimes" />
             </node>
           </node>
         </node>

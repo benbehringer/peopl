@@ -1626,14 +1626,14 @@
             <node concept="3cpWs3" id="7AOYwIIZUwQ" role="3uHU7B">
               <node concept="3cpWs3" id="7AOYwIIZUuC" role="3uHU7B">
                 <node concept="Xl_RD" id="7AOYwIIZUtm" role="3uHU7B">
-                  <property role="Xl_RC" value="Handler : " />
+                  <property role="Xl_RC" value="H: " />
                 </node>
                 <node concept="37vLTw" id="7AOYwIIZUuT" role="3uHU7w">
                   <ref role="3cqZAo" node="7AOYwIIZIrY" resolve="self" />
                 </node>
               </node>
               <node concept="Xl_RD" id="7AOYwIIZUyi" role="3uHU7w">
-                <property role="Xl_RC" value="  ///  " />
+                <property role="Xl_RC" value=" | " />
               </node>
             </node>
           </node>

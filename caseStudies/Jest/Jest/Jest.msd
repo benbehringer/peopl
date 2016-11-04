@@ -149,7 +149,6 @@
   <languageVersions>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" fqName="de.htwsaar.peopl.baseLanguageExtension" version="0" />
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" fqName="de.htwsaar.peopl.core" version="0" />
-    <language id="505b86b7-3a95-44b0-823f-afd50a2eafaa" fqName="de.htwsaar.peopl.core.featureConfig" version="0" />
     <language id="42727bc4-0771-4379-872f-090530265ce4" fqName="de.htwsaar.peopl.core.moduleConfig" version="0" />
     <language id="be143329-29b3-4afa-8ff0-750f4ac4d5fe" fqName="de.htwsaar.peopl.view.embedded" version="0" />
     <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" fqName="de.htwsaar.peopl.view.modular" version="0" />
