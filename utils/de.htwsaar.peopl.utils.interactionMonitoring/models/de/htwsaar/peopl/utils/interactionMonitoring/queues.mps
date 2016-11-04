@@ -9,6 +9,7 @@
     <import index="e9fh" ref="r:4bd0da13-bf88-4c83-b2c2-b886687e552b(de.htwsaar.peopl.utils.interactionMonitoring.events)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
+    <import index="6oac" ref="r:7dfb55fa-ed11-4b91-9a6c-d6b93aaa89a6(de.htwsaar.peopl.utils.interactionMonitoring.xmlwriter)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -154,6 +155,16 @@
         <ref role="3uigEE" node="7AOYwIIYgRu" resolve="ObservableQueue" />
       </node>
     </node>
+    <node concept="312cEg" id="6X2hyGIT5u_" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="xmlWriterQueue" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="6X2hyGIT5jl" role="1B3o_S" />
+      <node concept="3uibUv" id="6X2hyGITroG" role="1tU5fm">
+        <ref role="3uigEE" node="6X2hyGITo$i" resolve="XMLWriterQueue" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="2WEWlo0Et$g" role="jymVt" />
     <node concept="2tJIrI" id="2WEWlo0Etwl" role="jymVt" />
     <node concept="2tJIrI" id="5ime7PBw9Vn" role="jymVt" />
@@ -181,6 +192,18 @@
               <node concept="1pGfFk" id="7AOYwIIYoJs" role="2ShVmc">
                 <ref role="37wK5l" node="7AOYwIIYhG3" resolve="ObservableQueue" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6X2hyGIT5AN" role="3cqZAp">
+          <node concept="37vLTI" id="6X2hyGIT5CV" role="3clFbG">
+            <node concept="2ShNRf" id="6X2hyGIT5Fq" role="37vLTx">
+              <node concept="1pGfFk" id="6X2hyGIT5Fp" role="2ShVmc">
+                <ref role="37wK5l" node="6X2hyGIToQY" resolve="XMLWriterQueue" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6X2hyGIT5AL" role="37vLTJ">
+              <ref role="3cqZAo" node="6X2hyGIT5u_" resolve="xmlWriterQueue" />
             </node>
           </node>
         </node>
@@ -459,6 +482,236 @@
     </node>
     <node concept="2tJIrI" id="7AOYwIIYEF4" role="jymVt" />
     <node concept="3Tm1VV" id="7AOYwIIYgRv" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6X2hyGITo$i">
+    <property role="TrG5h" value="XMLWriterQueue" />
+    <node concept="312cEg" id="6X2hyGIToQP" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="queue" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6X2hyGIToQQ" role="1B3o_S" />
+      <node concept="3uibUv" id="6X2hyGIToQR" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~ConcurrentLinkedQueue" resolve="ConcurrentLinkedQueue" />
+        <node concept="3uibUv" id="6X2hyGITpnH" role="11_B2D">
+          <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="6X2hyGIToQT" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="observer" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6X2hyGIToQU" role="1B3o_S" />
+      <node concept="3uibUv" id="6X2hyGIToQV" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~ArrayList" resolve="ArrayList" />
+        <node concept="3uibUv" id="6X2hyGIToQW" role="11_B2D">
+          <ref role="3uigEE" to="mnlj:~PropertyChangeListener" resolve="PropertyChangeListener" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToQX" role="jymVt" />
+    <node concept="3clFbW" id="6X2hyGIToQY" role="jymVt">
+      <node concept="3cqZAl" id="6X2hyGIToQZ" role="3clF45" />
+      <node concept="3clFbS" id="6X2hyGIToR0" role="3clF47">
+        <node concept="3clFbF" id="6X2hyGIToR1" role="3cqZAp">
+          <node concept="37vLTI" id="6X2hyGIToR2" role="3clFbG">
+            <node concept="2ShNRf" id="6X2hyGIToR3" role="37vLTx">
+              <node concept="1pGfFk" id="6X2hyGIToR4" role="2ShVmc">
+                <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.&lt;init&gt;()" resolve="ConcurrentLinkedQueue" />
+                <node concept="3uibUv" id="6X2hyGITpTZ" role="1pMfVU">
+                  <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6X2hyGIToR6" role="37vLTJ">
+              <ref role="3cqZAo" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6X2hyGIToR7" role="3cqZAp">
+          <node concept="37vLTI" id="6X2hyGIToR8" role="3clFbG">
+            <node concept="2ShNRf" id="6X2hyGIToR9" role="37vLTx">
+              <node concept="1pGfFk" id="6X2hyGIToRa" role="2ShVmc">
+                <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
+                <node concept="3uibUv" id="6X2hyGIToRb" role="1pMfVU">
+                  <ref role="3uigEE" to="mnlj:~PropertyChangeListener" resolve="PropertyChangeListener" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6X2hyGIToRc" role="37vLTJ">
+              <ref role="3cqZAo" node="6X2hyGIToQT" resolve="observer" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGIToRd" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToRe" role="jymVt" />
+    <node concept="3clFb_" id="6X2hyGIToRf" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="offer" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGIToRg" role="3clF47">
+        <node concept="3clFbF" id="6X2hyGIToRh" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGIToRi" role="3clFbG">
+            <node concept="37vLTw" id="6X2hyGIToRj" role="2Oq$k0">
+              <ref role="3cqZAo" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+            <node concept="liA8E" id="6X2hyGIToRk" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.offer(java.lang.Object):boolean" resolve="offer" />
+              <node concept="37vLTw" id="6X2hyGIToRl" role="37wK5m">
+                <ref role="3cqZAo" node="6X2hyGIToRq" resolve="event" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6X2hyGIToRm" role="3cqZAp">
+          <node concept="1rXfSq" id="6X2hyGIToRn" role="3clFbG">
+            <ref role="37wK5l" node="6X2hyGIToRJ" resolve="notifyListeners" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGIToRo" role="1B3o_S" />
+      <node concept="3cqZAl" id="6X2hyGIToRp" role="3clF45" />
+      <node concept="37vLTG" id="6X2hyGIToRq" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="6X2hyGITq50" role="1tU5fm">
+          <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToRs" role="jymVt" />
+    <node concept="3clFb_" id="6X2hyGIToRt" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="poll" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGIToRu" role="3clF47">
+        <node concept="3cpWs6" id="6X2hyGIToRv" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGIToRw" role="3cqZAk">
+            <node concept="37vLTw" id="6X2hyGIToRx" role="2Oq$k0">
+              <ref role="3cqZAo" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+            <node concept="liA8E" id="6X2hyGIToRy" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.poll():java.lang.Object" resolve="poll" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGIToRz" role="1B3o_S" />
+      <node concept="3uibUv" id="6X2hyGITqsb" role="3clF45">
+        <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToR_" role="jymVt" />
+    <node concept="3clFb_" id="6X2hyGIToRA" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="peek" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGIToRB" role="3clF47">
+        <node concept="3cpWs6" id="6X2hyGIToRC" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGIToRD" role="3cqZAk">
+            <node concept="37vLTw" id="6X2hyGIToRE" role="2Oq$k0">
+              <ref role="3cqZAo" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+            <node concept="liA8E" id="6X2hyGIToRF" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.peek():java.lang.Object" resolve="peek" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGIToRG" role="1B3o_S" />
+      <node concept="3uibUv" id="6X2hyGITqYz" role="3clF45">
+        <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToRI" role="jymVt" />
+    <node concept="3clFb_" id="6X2hyGIToRJ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="notifyListeners" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGIToRK" role="3clF47">
+        <node concept="1DcWWT" id="6X2hyGIToRL" role="3cqZAp">
+          <node concept="3cpWsn" id="6X2hyGIToRM" role="1Duv9x">
+            <property role="TrG5h" value="listener" />
+            <node concept="3uibUv" id="6X2hyGIToRN" role="1tU5fm">
+              <ref role="3uigEE" to="mnlj:~PropertyChangeListener" resolve="PropertyChangeListener" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="6X2hyGIToRO" role="1DdaDG">
+            <ref role="3cqZAo" node="6X2hyGIToQT" resolve="observer" />
+          </node>
+          <node concept="3clFbS" id="6X2hyGIToRP" role="2LFqv$">
+            <node concept="3clFbF" id="6X2hyGIToRQ" role="3cqZAp">
+              <node concept="2OqwBi" id="6X2hyGIToRR" role="3clFbG">
+                <node concept="37vLTw" id="6X2hyGIToRS" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6X2hyGIToRM" resolve="listener" />
+                </node>
+                <node concept="liA8E" id="6X2hyGIToRT" role="2OqNvi">
+                  <ref role="37wK5l" to="mnlj:~PropertyChangeListener.propertyChange(java.beans.PropertyChangeEvent):void" resolve="propertyChange" />
+                  <node concept="2ShNRf" id="6X2hyGIToRU" role="37wK5m">
+                    <node concept="1pGfFk" id="6X2hyGIToRV" role="2ShVmc">
+                      <ref role="37wK5l" to="mnlj:~PropertyChangeEvent.&lt;init&gt;(java.lang.Object,java.lang.String,java.lang.Object,java.lang.Object)" resolve="PropertyChangeEvent" />
+                      <node concept="Xjq3P" id="6X2hyGIToRW" role="37wK5m" />
+                      <node concept="Xl_RD" id="6X2hyGIToRX" role="37wK5m" />
+                      <node concept="Xl_RD" id="6X2hyGIToRY" role="37wK5m">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                      <node concept="Xl_RD" id="6X2hyGIToRZ" role="37wK5m">
+                        <property role="Xl_RC" value="" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6X2hyGIToS0" role="1B3o_S" />
+      <node concept="3cqZAl" id="6X2hyGIToS1" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="6X2hyGIToS2" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addChangeListener" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGIToS3" role="3clF47">
+        <node concept="3clFbF" id="6X2hyGIToS4" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGIToS5" role="3clFbG">
+            <node concept="37vLTw" id="6X2hyGIToS6" role="2Oq$k0">
+              <ref role="3cqZAo" node="6X2hyGIToQT" resolve="observer" />
+            </node>
+            <node concept="liA8E" id="6X2hyGIToS7" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="37vLTw" id="6X2hyGIToS8" role="37wK5m">
+                <ref role="3cqZAo" node="6X2hyGIToSb" resolve="listener" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGIToS9" role="1B3o_S" />
+      <node concept="3cqZAl" id="6X2hyGIToSa" role="3clF45" />
+      <node concept="37vLTG" id="6X2hyGIToSb" role="3clF46">
+        <property role="TrG5h" value="listener" />
+        <node concept="3uibUv" id="6X2hyGIToSc" role="1tU5fm">
+          <ref role="3uigEE" to="mnlj:~PropertyChangeListener" resolve="PropertyChangeListener" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGIToPX" role="jymVt" />
+    <node concept="3Tm1VV" id="6X2hyGITo$j" role="1B3o_S" />
   </node>
 </model>
 
