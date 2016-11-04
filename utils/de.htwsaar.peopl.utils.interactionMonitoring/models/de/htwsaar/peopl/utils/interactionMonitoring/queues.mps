@@ -39,6 +39,7 @@
       </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -631,6 +632,28 @@
       <node concept="3uibUv" id="6X2hyGITqYz" role="3clF45">
         <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="InteractionDataContainer" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="6X2hyGJ91Ag" role="jymVt" />
+    <node concept="3clFb_" id="6X2hyGJ92zK" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="size" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6X2hyGJ92zN" role="3clF47">
+        <node concept="3cpWs6" id="6X2hyGJ93dO" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGJ93Ve" role="3cqZAk">
+            <node concept="37vLTw" id="6X2hyGJ93y7" role="2Oq$k0">
+              <ref role="3cqZAo" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+            <node concept="liA8E" id="6X2hyGJ94ri" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.size():int" resolve="size" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6X2hyGJ92cI" role="1B3o_S" />
+      <node concept="10Oyi0" id="6X2hyGJ92yQ" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="6X2hyGIToRI" role="jymVt" />
     <node concept="3clFb_" id="6X2hyGIToRJ" role="jymVt">

@@ -29,6 +29,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.usageTracking.common)" />
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.usageTracking.DropboxInteraction)" />
+    <import index="6oac" ref="r:7dfb55fa-ed11-4b91-9a6c-d6b93aaa89a6(de.htwsaar.peopl.utils.interactionMonitoring.xmlwriter)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -915,6 +916,47 @@
     <property role="TrG5h" value="XMLUpload" />
     <node concept="2uRRBT" id="7obFNLleCcA" role="2uRRB$">
       <node concept="3clFbS" id="7obFNLleCcB" role="2VODD2">
+        <node concept="3cpWs8" id="6X2hyGIT8I2" role="3cqZAp">
+          <node concept="3cpWsn" id="6X2hyGIT8I3" role="3cpWs9">
+            <property role="TrG5h" value="observer" />
+            <node concept="3uibUv" id="6X2hyGIT8I4" role="1tU5fm">
+              <ref role="3uigEE" to="6oac:6X2hyGIT64h" resolve="XMLWriterQueue_Observer" />
+            </node>
+            <node concept="2ShNRf" id="6X2hyGIT8Oa" role="33vP2m">
+              <node concept="1pGfFk" id="6X2hyGITmGi" role="2ShVmc">
+                <ref role="37wK5l" to="6oac:6X2hyGIT6Et" resolve="XMLWriterQueue_Observer" />
+                <node concept="2OqwBi" id="6X2hyGITCZf" role="37wK5m">
+                  <node concept="2YIFZM" id="6X2hyGITCZg" role="2Oq$k0">
+                    <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                    <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                  </node>
+                  <node concept="liA8E" id="6X2hyGITCZh" role="2OqNvi">
+                    <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6X2hyGITmT6" role="3cqZAp">
+          <node concept="2OqwBi" id="6X2hyGITnbi" role="3clFbG">
+            <node concept="2OqwBi" id="6X2hyGITn27" role="2Oq$k0">
+              <node concept="2YIFZM" id="6X2hyGITmYj" role="2Oq$k0">
+                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+              </node>
+              <node concept="2OwXpG" id="6X2hyGITn7D" role="2OqNvi">
+                <ref role="2Oxat5" to="30sj:6X2hyGIT5u_" resolve="xmlWriterQueue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6X2hyGITngp" role="2OqNvi">
+              <ref role="37wK5l" to="30sj:6X2hyGIToS2" resolve="addChangeListener" />
+              <node concept="37vLTw" id="6X2hyGITnkp" role="37wK5m">
+                <ref role="3cqZAo" node="6X2hyGIT8I3" resolve="observer" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3SKdUt" id="lAMQjh5b44" role="3cqZAp">
           <node concept="3SKdUq" id="lAMQjh5b46" role="3SKWNk">
             <property role="3SKdUp" value="upload the zip files in the apppath" />
