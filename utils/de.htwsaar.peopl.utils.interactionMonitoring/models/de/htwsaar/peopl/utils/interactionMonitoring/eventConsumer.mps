@@ -784,14 +784,36 @@
         <node concept="3clFbH" id="dxrcT7Sch9" role="3cqZAp" />
         <node concept="3clFbJ" id="dxrcT7S9hq" role="3cqZAp">
           <node concept="3clFbS" id="dxrcT7S9hs" role="3clFbx">
-            <node concept="3clFbH" id="dxrcT7S9hr" role="3cqZAp" />
+            <node concept="3clFbF" id="dxrcT7SdwO" role="3cqZAp">
+              <node concept="1rXfSq" id="dxrcT7SdwM" role="3clFbG">
+                <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="dxrcT7Sdyd" role="3cqZAp">
+              <node concept="37vLTI" id="dxrcT7Sdzp" role="3clFbG">
+                <node concept="10Nm6u" id="dxrcT7Sd$0" role="37vLTx" />
+                <node concept="37vLTw" id="dxrcT7Sdyb" role="37vLTJ">
+                  <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="dxrcT7SkNc" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="34ab3g" id="dxrcT7Sd_J" role="8Wnug">
+                <property role="35gtTG" value="warn" />
+                <node concept="Xl_RD" id="dxrcT7Sd_L" role="34bqiv">
+                  <property role="Xl_RC" value=" Writing out DataObjects" />
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="3eOSWO" id="dxrcT7Sdau" role="3clFbw">
-            <node concept="3cmrfG" id="dxrcT7Sdlx" role="3uHU7w">
-              <property role="3cmrfH" value="300000" />
-            </node>
             <node concept="37vLTw" id="dxrcT7ScWD" role="3uHU7B">
               <ref role="3cqZAo" node="dxrcT7Scu6" resolve="timeDifMilliSecs" />
+            </node>
+            <node concept="3cmrfG" id="dxrcT7SdC5" role="3uHU7w">
+              <property role="3cmrfH" value="300000" />
             </node>
           </node>
         </node>
@@ -893,22 +915,51 @@
                   <ref role="3cqZAo" node="7AOYwIIZMbQ" resolve="handlers" />
                 </node>
                 <node concept="liA8E" id="2Qzkdny4FAu" role="2OqNvi">
-                  <ref role="37wK5l" to="33ny:~HashMap.remove(java.lang.Object,java.lang.Object):boolean" resolve="remove" />
+                  <ref role="37wK5l" to="33ny:~HashMap.remove(java.lang.Object):java.lang.Object" resolve="remove" />
                   <node concept="37vLTw" id="2Qzkdny4FHz" role="37wK5m">
                     <ref role="3cqZAo" node="2Qzkdny4B$n" resolve="handler" />
                   </node>
-                  <node concept="2OqwBi" id="2Qzkdny4Pwr" role="37wK5m">
-                    <node concept="2OqwBi" id="2Qzkdny4Pfw" role="2Oq$k0">
-                      <node concept="37vLTw" id="2Qzkdny4PbG" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2Qzkdny4B$n" resolve="handler" />
-                      </node>
-                      <node concept="liA8E" id="2Qzkdny4Po3" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                      </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="dxrcT7ShVh" role="3cqZAp">
+              <node concept="3cpWsn" id="dxrcT7ShVi" role="3cpWs9">
+                <property role="TrG5h" value="newHandler" />
+                <node concept="3uibUv" id="dxrcT7ShVj" role="1tU5fm">
+                  <ref role="3uigEE" node="7AOYwIIZIrl" resolve="AbstractEntityHandler" />
+                </node>
+                <node concept="2OqwBi" id="dxrcT7Si1U" role="33vP2m">
+                  <node concept="2OqwBi" id="dxrcT7Si1V" role="2Oq$k0">
+                    <node concept="37vLTw" id="dxrcT7Si1W" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2Qzkdny4B$n" resolve="handler" />
                     </node>
-                    <node concept="liA8E" id="2Qzkdny4PGO" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.newInstance():java.lang.Object" resolve="newInstance" />
+                    <node concept="liA8E" id="dxrcT7Si1X" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                     </node>
+                  </node>
+                  <node concept="liA8E" id="dxrcT7Si1Y" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.newInstance():java.lang.Object" resolve="newInstance" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="dxrcT7SfHI" role="3cqZAp">
+              <node concept="2OqwBi" id="dxrcT7SgCj" role="3clFbG">
+                <node concept="37vLTw" id="dxrcT7SfHG" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7AOYwIIZMbQ" resolve="handlers" />
+                </node>
+                <node concept="liA8E" id="dxrcT7Sh5D" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+                  <node concept="2OqwBi" id="dxrcT7Siqx" role="37wK5m">
+                    <node concept="37vLTw" id="dxrcT7Sihb" role="2Oq$k0">
+                      <ref role="3cqZAo" node="dxrcT7ShVi" resolve="newHandler" />
+                    </node>
+                    <node concept="2OwXpG" id="dxrcT7SizI" role="2OqNvi">
+                      <ref role="2Oxat5" node="7AOYwIIZIrY" resolve="entity" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="dxrcT7SiQl" role="37wK5m">
+                    <ref role="3cqZAo" node="dxrcT7ShVi" resolve="newHandler" />
                   </node>
                 </node>
               </node>
