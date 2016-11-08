@@ -119,6 +119,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -148,6 +151,7 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1213999088275" name="jetbrains.mps.baseLanguage.classifiers.structure.DefaultClassifierFieldDeclaration" flags="ig" index="2BZ0e9" />
@@ -1034,19 +1038,39 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="7obFNLlDV5s" role="3clFbw">
-                <node concept="2OqwBi" id="7obFNLlDV5t" role="2Oq$k0">
-                  <node concept="37vLTw" id="7obFNLlDV5u" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7obFNLlDV5y" resolve="f" />
-                  </node>
-                  <node concept="liA8E" id="7obFNLlDV5v" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+              <node concept="1Wc70l" id="5xPDaeLButg" role="3clFbw">
+                <node concept="3fqX7Q" id="5xPDaeLBuve" role="3uHU7w">
+                  <node concept="2OqwBi" id="5xPDaeLBuKh" role="3fr31v">
+                    <node concept="2OqwBi" id="5xPDaeLBuyX" role="2Oq$k0">
+                      <node concept="37vLTw" id="5xPDaeLBuw8" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7obFNLlDV5y" resolve="f" />
+                      </node>
+                      <node concept="liA8E" id="5xPDaeLBuGZ" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5xPDaeLBuXq" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                      <node concept="Xl_RD" id="5xPDaeLBuYN" role="37wK5m">
+                        <property role="Xl_RC" value="_temp.zip" />
+                      </node>
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="7obFNLlDV5w" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                  <node concept="Xl_RD" id="7obFNLlDV5x" role="37wK5m">
-                    <property role="Xl_RC" value="zip" />
+                <node concept="2OqwBi" id="7obFNLlDV5s" role="3uHU7B">
+                  <node concept="2OqwBi" id="7obFNLlDV5t" role="2Oq$k0">
+                    <node concept="37vLTw" id="7obFNLlDV5u" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7obFNLlDV5y" resolve="f" />
+                    </node>
+                    <node concept="liA8E" id="7obFNLlDV5v" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7obFNLlDV5w" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="7obFNLlDV5x" role="37wK5m">
+                      <property role="Xl_RC" value="zip" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1134,19 +1158,39 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="7obFNLlfUy$" role="3clFbw">
-                <node concept="2OqwBi" id="7obFNLlfUiu" role="2Oq$k0">
-                  <node concept="37vLTw" id="7obFNLlfUgm" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7obFNLlfSJS" resolve="f" />
+              <node concept="1Wc70l" id="5xPDaeLBv6u" role="3clFbw">
+                <node concept="2OqwBi" id="7obFNLlfUy$" role="3uHU7B">
+                  <node concept="2OqwBi" id="7obFNLlfUiu" role="2Oq$k0">
+                    <node concept="37vLTw" id="7obFNLlfUgm" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7obFNLlfSJS" resolve="f" />
+                    </node>
+                    <node concept="liA8E" id="7obFNLlfUvb" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="7obFNLlfUvb" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                  <node concept="liA8E" id="7obFNLlfULy" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="7obFNLlfUN2" role="37wK5m">
+                      <property role="Xl_RC" value="zip" />
+                    </node>
                   </node>
                 </node>
-                <node concept="liA8E" id="7obFNLlfULy" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
-                  <node concept="Xl_RD" id="7obFNLlfUN2" role="37wK5m">
-                    <property role="Xl_RC" value="zip" />
+                <node concept="3fqX7Q" id="5xPDaeLBv7V" role="3uHU7w">
+                  <node concept="2OqwBi" id="5xPDaeLBv7W" role="3fr31v">
+                    <node concept="2OqwBi" id="5xPDaeLBv7X" role="2Oq$k0">
+                      <node concept="37vLTw" id="5xPDaeLBv7Y" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7obFNLlfSJS" resolve="f" />
+                      </node>
+                      <node concept="liA8E" id="5xPDaeLBv7Z" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="5xPDaeLBv80" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                      <node concept="Xl_RD" id="5xPDaeLBv81" role="37wK5m">
+                        <property role="Xl_RC" value="_temp.zip" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
