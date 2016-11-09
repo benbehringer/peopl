@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.solutionSpace.tools" />
@@ -49,8 +50,8 @@
       <modulePath path="$PROJECT_DIR$/test/ProductLineConfigTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
-      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.usageTracking/de.htwsaar.usageTracking.msd" folder="peopl.utils" />
     </projectModules>
   </component>
 </project>
