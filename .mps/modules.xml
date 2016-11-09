@@ -16,25 +16,6 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="caseStudies.CIDE.BerkeleyDB" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/EPL/EPL.msd" folder="caseStudies.DeltaJ" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoAlt/GPL_NoAlt.msd" folder="caseStudies.CIDE.GPL" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoVar/GPL_NoVar.msd" folder="caseStudies.CIDE.GPL.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="caseStudies.CIDE.GPL" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="caseStudies.CIDE" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Jest/Jest/Jest.msd" folder="caseStudies.Jest" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Lampiro_new/Lampiro_new.msd" folder="caseStudies.CIDE" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/Prop4J/Prop4J.msd" folder="caseStudies.FH.Prop4J" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/Prop4J_NoVar/Prop4J_NoVar.msd" folder="caseStudies.FH.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.junit/org.junit.msd" folder="caseStudies.FH.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Prop4J/source/org.sat4j.core/org.sat4j.core.msd" folder="caseStudies.FH.Prop4J.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="caseStudies.DeltaJ.SimpleTextEditor" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/SimpleTextEditor_NoVar/SimpleTextEditor_NoVar.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="caseStudies.DeltaJ.SimpleTextEditor.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="caseStudies" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/Vistex.msd" folder="caseStudies.FH.Vistex" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Vistex/sources/Vistex_NoVar.msd" folder="caseStudies.FH.Vistex.source" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/lib/jgraphx/jgraphx.msd" folder="caseStudies.FH.Vistex.source" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.solutionSpace.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.solutionSpace.tools" />
@@ -65,11 +46,9 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/test/JestTest/JestTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/ProductLineConfigTest.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.usageTracking/de.htwsaar.usageTracking.msd" folder="peopl.utils" />
     </projectModules>
   </component>
