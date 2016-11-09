@@ -311,7 +311,7 @@
       <node concept="3Tm6S6" id="7kgjkPlcL1R" role="1B3o_S" />
       <node concept="17QB3L" id="7kgjkPlcLa7" role="1tU5fm" />
       <node concept="Xl_RD" id="7kgjkPlcHZT" role="33vP2m">
-        <property role="Xl_RC" value="yyyy-MM-dd'T'HH:mm:ss" />
+        <property role="Xl_RC" value="yyyy-MM-dd'T'HH:mm:ss:SSS" />
       </node>
     </node>
     <node concept="Wx3nA" id="1jqsANa$4lU" role="jymVt">

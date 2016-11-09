@@ -126,6 +126,7 @@
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -137,6 +138,10 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -980,11 +985,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="lAMQjh5b44" role="3cqZAp">
-          <node concept="3SKdUq" id="lAMQjh5b46" role="3SKWNk">
-            <property role="3SKdUp" value="upload the zip files in the apppath" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="7obFNLlDV54" role="3cqZAp">
           <node concept="3cpWsn" id="7obFNLlDV55" role="3cpWs9">
             <property role="TrG5h" value="appFolder" />
@@ -996,8 +996,8 @@
                 <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
                 <node concept="2OqwBi" id="7obFNLlDV59" role="37wK5m">
                   <node concept="2YIFZM" id="7obFNLlDV5a" role="2Oq$k0">
-                    <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
                     <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                    <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
                   </node>
                   <node concept="liA8E" id="7obFNLlDV5b" role="2OqNvi">
                     <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
@@ -1005,6 +1005,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="lAMQjh5b44" role="3cqZAp">
+          <node concept="3SKdUq" id="lAMQjh5b46" role="3SKWNk">
+            <property role="3SKdUp" value="upload the zip files in the apppath" />
           </node>
         </node>
         <node concept="1DcWWT" id="7obFNLlDV5c" role="3cqZAp">
@@ -1075,6 +1080,36 @@
                     <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
                     <node concept="Xl_RD" id="7obFNLlDV5x" role="37wK5m">
                       <property role="Xl_RC" value="zip" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3eNFk2" id="2BpFwoaoeMH" role="3eNLev">
+                <node concept="2OqwBi" id="2BpFwoaof65" role="3eO9$A">
+                  <node concept="2OqwBi" id="2BpFwoaoeRp" role="2Oq$k0">
+                    <node concept="37vLTw" id="2BpFwoaoePh" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7obFNLlDV5y" resolve="f" />
+                    </node>
+                    <node concept="liA8E" id="2BpFwoaof2q" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2BpFwoaofit" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String):boolean" resolve="endsWith" />
+                    <node concept="Xl_RD" id="2BpFwoaofjX" role="37wK5m">
+                      <property role="Xl_RC" value="_temp.zip" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="2BpFwoaoeMJ" role="3eOfB_">
+                  <node concept="3clFbF" id="2BpFwoaofwX" role="3cqZAp">
+                    <node concept="2OqwBi" id="2BpFwoaofyF" role="3clFbG">
+                      <node concept="37vLTw" id="2BpFwoaofwW" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7obFNLlDV5y" resolve="f" />
+                      </node>
+                      <node concept="liA8E" id="2BpFwoaofHG" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
+                      </node>
                     </node>
                   </node>
                 </node>
