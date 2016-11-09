@@ -238,13 +238,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="5I0bs5jxEYn">
@@ -267,9 +260,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="lAMQjh5deP" role="1B3o_S" />
       <node concept="10P_77" id="lAMQjh5dVd" role="1tU5fm" />
-      <node concept="3clFbT" id="lAMQjh5eDE" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="lAMQjh5eDE" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="lAMQjh5eED" role="jymVt" />
     <node concept="3Tm1VV" id="5I0bs5jxEYo" role="1B3o_S" />
@@ -277,41 +268,6 @@
       <node concept="3cqZAl" id="5I0bs5jxFEq" role="3clF45" />
       <node concept="3Tm1VV" id="5I0bs5j_sRn" role="1B3o_S" />
       <node concept="3clFbS" id="5I0bs5jxFEt" role="3clF47">
-        <node concept="1X3_iC" id="7bnIPh84k3" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="7bnIPh7VVW" role="8Wnug">
-            <node concept="3cpWsn" id="7bnIPh7VVX" role="3cpWs9">
-              <property role="TrG5h" value="httpRequestor" />
-              <node concept="3uibUv" id="7bnIPh7VVY" role="1tU5fm">
-                <ref role="3uigEE" to="rn14:~HttpRequestor" resolve="HttpRequestor" />
-              </node>
-              <node concept="2OqwBi" id="7bnIPh7XHH" role="33vP2m">
-                <node concept="2OqwBi" id="7bnIPh7XBb" role="2Oq$k0">
-                  <node concept="2YIFZM" id="7bnIPh7XAG" role="2Oq$k0">
-                    <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config.builder():com.dropbox.core.http.StandardHttpRequestor$Config$Builder" resolve="builder" />
-                    <ref role="1Pybhc" to="rn14:~StandardHttpRequestor$Config" resolve="StandardHttpRequestor.Config" />
-                  </node>
-                  <node concept="liA8E" id="7bnIPh7XBY" role="2OqNvi">
-                    <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config$Builder.withProxy(java.net.Proxy):com.dropbox.core.http.StandardHttpRequestor$Config$Builder" resolve="withProxy" />
-                    <node concept="2OqwBi" id="7bnIPh7XF3" role="37wK5m">
-                      <node concept="2YIFZM" id="7bnIPh7XEc" role="2Oq$k0">
-                        <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
-                        <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
-                      </node>
-                      <node concept="liA8E" id="7bnIPh7XGT" role="2OqNvi">
-                        <ref role="37wK5l" to="q7u:7bnIPgYH7I" resolve="getProxy" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="7bnIPh7XJD" role="2OqNvi">
-                  <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config$Builder.build():com.dropbox.core.http.StandardHttpRequestor$Config" resolve="build" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="7bnIPh86kf" role="3cqZAp">
           <node concept="3cpWsn" id="7bnIPh86kg" role="3cpWs9">
             <property role="TrG5h" value="requestor" />
@@ -342,30 +298,6 @@
                   </node>
                   <node concept="liA8E" id="7bnIPh84hV" role="2OqNvi">
                     <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config$Builder.build():com.dropbox.core.http.StandardHttpRequestor$Config" resolve="build" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="7bnIPh7Xpe" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3cpWs8" id="5I0bs5jxJaL" role="8Wnug">
-            <node concept="3cpWsn" id="5I0bs5jxJaM" role="3cpWs9">
-              <property role="TrG5h" value="config" />
-              <node concept="3uibUv" id="5I0bs5jxJaN" role="1tU5fm">
-                <ref role="3uigEE" to="15i6:~DbxRequestConfig" resolve="DbxRequestConfig" />
-              </node>
-              <node concept="2ShNRf" id="5I0bs5jxJeN" role="33vP2m">
-                <node concept="1pGfFk" id="5I0bs5jxKm5" role="2ShVmc">
-                  <ref role="37wK5l" to="15i6:~DbxRequestConfig.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="DbxRequestConfig" />
-                  <node concept="10M0yZ" id="5I0bs5jxKP2" role="37wK5m">
-                    <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
-                    <ref role="3cqZAo" to="q7u:5I0bs5jxK_C" resolve="APP_NAME" />
-                  </node>
-                  <node concept="Xl_RD" id="7bnIPh7Vuy" role="37wK5m">
-                    <property role="Xl_RC" value="de-DE" />
                   </node>
                 </node>
               </node>
