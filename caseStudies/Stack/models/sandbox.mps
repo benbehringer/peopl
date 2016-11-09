@@ -14,8 +14,8 @@
   </languages>
   <imports>
     <import index="fmn5" ref="r:1cf0ff90-0b07-4bf9-9ba8-7c3615ff093e(peoplConfig)" />
+    <import index="q7tw" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:org.apache.log4j(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -55,9 +55,6 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -213,13 +210,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
       <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
@@ -294,6 +284,12 @@
             <ref role="ojxm_" node="1yv_rrpLv1H" resolve="Stack" />
             <ref role="ojxmB" node="5pEbcVRWLdf" resolve="Stack" />
             <node concept="3clFbS" id="5pEbcVRWLdk" role="9aQI4">
+              <node concept="3clFbF" id="3cWsfR6xgl1" role="3cqZAp">
+                <node concept="2YIFZM" id="3cWsfR6xguj" role="3clFbG">
+                  <ref role="37wK5l" to="q7tw:~BasicConfigurator.configure():void" resolve="configure" />
+                  <ref role="1Pybhc" to="q7tw:~BasicConfigurator" resolve="BasicConfigurator" />
+                </node>
+              </node>
               <node concept="3clFbF" id="5pEbcVRWLwD" role="3cqZAp">
                 <node concept="37vLTI" id="5pEbcVRWL$u" role="3clFbG">
                   <node concept="37vLTw" id="5pEbcVRWL_M" role="37vLTx">
@@ -882,44 +878,17 @@
               <node concept="3clFbH" id="5pEbcVRWOdS" role="3cqZAp" />
               <node concept="2$JKZl" id="5pEbcVRWOi4" role="3cqZAp">
                 <node concept="3clFbS" id="5pEbcVRWOi6" role="2LFqv$">
-                  <node concept="3clFbF" id="21M04hjslLk" role="3cqZAp">
-                    <node concept="2OqwBi" id="21M04hjslO0" role="3clFbG">
-                      <node concept="10M0yZ" id="21M04hjslLj" role="2Oq$k0">
-                        <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                        <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                      </node>
-                      <node concept="liA8E" id="21M04hjslRO" role="2OqNvi">
-                        <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
-                        <node concept="2YIFZM" id="21M04hjsmEc" role="37wK5m">
-                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                          <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                          <node concept="2OqwBi" id="21M04hjsmEd" role="37wK5m">
-                            <node concept="37vLTw" id="21M04hjsmEe" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5pEbcVRWJro" resolve="myStack" />
-                            </node>
-                            <node concept="liA8E" id="21M04hjsmEf" role="2OqNvi">
-                              <ref role="37wK5l" node="1yv_rrpLv4J" resolve="pop" />
-                            </node>
-                          </node>
+                  <node concept="34ab3g" id="74e0r53Urk5" role="3cqZAp">
+                    <property role="35gtTG" value="info" />
+                    <node concept="2YIFZM" id="74e0r53UrnL" role="34bqiv">
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                      <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
+                      <node concept="2OqwBi" id="74e0r53Urlm" role="37wK5m">
+                        <node concept="37vLTw" id="74e0r53UrkL" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5pEbcVRWJro" resolve="myStack" />
                         </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="1X3_iC" id="21M04hjsmPP" role="lGtFl">
-                    <property role="3V$3am" value="statement" />
-                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="74e0r53Urk5" role="8Wnug">
-                      <property role="35gtTG" value="info" />
-                      <node concept="2YIFZM" id="74e0r53UrnL" role="34bqiv">
-                        <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                        <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-                        <node concept="2OqwBi" id="74e0r53Urlm" role="37wK5m">
-                          <node concept="37vLTw" id="74e0r53UrkL" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5pEbcVRWJro" resolve="myStack" />
-                          </node>
-                          <node concept="liA8E" id="74e0r53Urmk" role="2OqNvi">
-                            <ref role="37wK5l" node="1yv_rrpLv4J" resolve="pop" />
-                          </node>
+                        <node concept="liA8E" id="74e0r53Urmk" role="2OqNvi">
+                          <ref role="37wK5l" node="1yv_rrpLv4J" resolve="pop" />
                         </node>
                       </node>
                     </node>
