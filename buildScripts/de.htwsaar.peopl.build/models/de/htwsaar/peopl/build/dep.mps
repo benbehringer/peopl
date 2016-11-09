@@ -1223,6 +1223,12 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6rNn2DPJ0Bf" role="3bR37C">
+          <node concept="3bR9La" id="6rNn2DPJ0Bg" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="4RAsyl5PvSG" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1600,7 +1606,7 @@
                 <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4Hgkuxipt9A" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.6.app" />
+                    <property role="2Ry0Am" value="PEoPL 0.6 2.app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptbt" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>

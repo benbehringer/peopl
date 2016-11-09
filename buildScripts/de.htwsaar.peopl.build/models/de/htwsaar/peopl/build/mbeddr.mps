@@ -842,6 +842,12 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6rNn2DPIR0j" role="3bR37C">
+          <node concept="3bR9La" id="6rNn2DPIR0k" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LgV" resolve="jetbrains.mps.make.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4RAsyl5JV3q" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1001,6 +1007,18 @@
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="ffeo:7YI57w6K0nr" resolve="jetbrains.mps.lang.plugin#1203080439937" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6rNn2DPIQWZ" role="3bR37C">
+          <node concept="3bR9La" id="6rNn2DPIQX0" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6rNn2DPIQX1" role="3bR37C">
+          <node concept="3bR9La" id="6rNn2DPIQX2" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
       </node>
@@ -1460,7 +1478,7 @@
                 <node concept="2Ry0Ak" id="4RAsyl5JUe8" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4HgkuxiptkO" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.6.app" />
+                    <property role="2Ry0Am" value="PEoPL 0.6 2.app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptqv" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>

@@ -9,7 +9,6 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
-    <import index="uz8b" ref="642f71f8-327a-425b-84f9-44ad58786d27/f:project#fdcdc48f-bfd8-4831-aa76-5abac2ffa010(jetbrains.mps.lang.project.modules/module.jetbrains.mps.baseLanguage.jdk8@project_stub)" />
     <import index="1hzg" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2(de.htwsaar.usageTracking/)" />
     <import index="15i6" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core(de.htwsaar.usageTracking/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />

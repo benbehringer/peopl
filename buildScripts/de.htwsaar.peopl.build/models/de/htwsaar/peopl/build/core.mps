@@ -899,7 +899,7 @@
                 <node concept="2Ry0Ak" id="2EkRjvM2V9i" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4Hgkuxipt9A" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.6.app" />
+                    <property role="2Ry0Am" value="PEoPL 0.6 2.app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptbt" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
