@@ -38,6 +38,7 @@
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
     <import index="uvcm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.newvfs(MPS.IDEA/)" />
     <import index="p3o1" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.newvfs.events(MPS.IDEA/)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -616,7 +617,7 @@
               </node>
             </node>
             <node concept="liA8E" id="2krr7wPYk3C" role="2OqNvi">
-              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
               <node concept="2ShNRf" id="2krr7wPYka_" role="37wK5m">
                 <node concept="1pGfFk" id="2krr7wPYO83" role="2ShVmc">
                   <ref role="37wK5l" node="50zZCcb1vM3" resolve="EditorComponentMouseListener.EditorMouseEvent_clicked" />
@@ -768,7 +769,7 @@
               </node>
             </node>
             <node concept="liA8E" id="7yp9hS_xgCi" role="2OqNvi">
-              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
               <node concept="37vLTw" id="7yp9hS_xhSJ" role="37wK5m">
                 <ref role="3cqZAo" node="7yp9hS_xgYj" resolve="scrollEvent" />
               </node>
@@ -906,7 +907,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6fNbIXdEj4w" role="2OqNvi">
-              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
               <node concept="37vLTw" id="6fNbIXdEj4x" role="37wK5m">
                 <ref role="3cqZAo" node="6fNbIXdEj4j" resolve="moveEvent" />
               </node>
@@ -1667,7 +1668,7 @@
               </node>
             </node>
             <node concept="liA8E" id="50zZCcaRX7n" role="2OqNvi">
-              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
               <node concept="2ShNRf" id="50zZCcaRXcG" role="37wK5m">
                 <node concept="1pGfFk" id="50zZCcaSqQB" role="2ShVmc">
                   <ref role="37wK5l" node="50zZCcaRUYi" resolve="EditorComponentKeyListener.EditorKeyEvent" />
@@ -1901,7 +1902,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="gMSQjqZ4DK" role="2OqNvi">
-                              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+                              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                               <node concept="37vLTw" id="gMSQjqZ4DL" role="37wK5m">
                                 <ref role="3cqZAo" node="gMSQjqZ4Dw" resolve="fe" />
                               </node>
@@ -1961,7 +1962,7 @@
                               </node>
                             </node>
                             <node concept="liA8E" id="gMSQjqZ4OO" role="2OqNvi">
-                              <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+                              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                               <node concept="37vLTw" id="gMSQjqZ4OP" role="37wK5m">
                                 <ref role="3cqZAo" node="gMSQjqZ4O$" resolve="fe" />
                               </node>
@@ -2822,7 +2823,7 @@
                           </node>
                         </node>
                         <node concept="liA8E" id="7QLetM0K3rb" role="2OqNvi">
-                          <ref role="37wK5l" to="30sj:7AOYwIIYi20" resolve="offer" />
+                          <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                           <node concept="37vLTw" id="7QLetM0K3z5" role="37wK5m">
                             <ref role="3cqZAo" node="7QLetM0JT$k" resolve="acEv" />
                           </node>

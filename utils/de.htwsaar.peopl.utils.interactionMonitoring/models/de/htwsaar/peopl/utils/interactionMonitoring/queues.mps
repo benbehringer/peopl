@@ -142,8 +142,11 @@
       <property role="TrG5h" value="mainQueue" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="5ime7PBw7oE" role="1B3o_S" />
-      <node concept="3uibUv" id="7AOYwIIYout" role="1tU5fm">
-        <ref role="3uigEE" node="7AOYwIIYgRu" resolve="ObservableQueue" />
+      <node concept="3uibUv" id="4X0xypuvN$g" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~BlockingQueue" resolve="BlockingQueue" />
+        <node concept="3uibUv" id="4X0xypuvRt0" role="11_B2D">
+          <ref role="3uigEE" to="e9fh:5ime7PBvKRI" resolve="MonitorEvent" />
+        </node>
       </node>
     </node>
     <node concept="312cEg" id="2WEWlo0EtBU" role="jymVt">
@@ -152,8 +155,11 @@
       <property role="TrG5h" value="mouseFilteredQueue" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="2WEWlo0EtBV" role="1B3o_S" />
-      <node concept="3uibUv" id="7AOYwIIYovo" role="1tU5fm">
-        <ref role="3uigEE" node="7AOYwIIYgRu" resolve="ObservableQueue" />
+      <node concept="3uibUv" id="4X0xypuvN_c" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~BlockingQueue" resolve="BlockingQueue" />
+        <node concept="3uibUv" id="4X0xypuvRFG" role="11_B2D">
+          <ref role="3uigEE" to="e9fh:5ime7PBvKRI" resolve="MonitorEvent" />
+        </node>
       </node>
     </node>
     <node concept="312cEg" id="6X2hyGIT5u_" role="jymVt">
@@ -173,10 +179,13 @@
       <node concept="3cqZAl" id="5ime7PBw7aV" role="3clF45" />
       <node concept="3clFbS" id="5ime7PBw7aX" role="3clF47">
         <node concept="3clFbF" id="5ime7PBw9WW" role="3cqZAp">
-          <node concept="37vLTI" id="5ime7PBw9YQ" role="3clFbG">
-            <node concept="2ShNRf" id="7AOYwIIYoyz" role="37vLTx">
-              <node concept="1pGfFk" id="7AOYwIIYoIZ" role="2ShVmc">
-                <ref role="37wK5l" node="7AOYwIIYhG3" resolve="ObservableQueue" />
+          <node concept="37vLTI" id="4X0xypuvPlb" role="3clFbG">
+            <node concept="2ShNRf" id="4X0xypuvPm6" role="37vLTx">
+              <node concept="1pGfFk" id="4X0xypuvPSR" role="2ShVmc">
+                <ref role="37wK5l" to="5zyv:~LinkedBlockingQueue.&lt;init&gt;()" resolve="LinkedBlockingQueue" />
+                <node concept="3uibUv" id="4X0xypuvR$$" role="1pMfVU">
+                  <ref role="3uigEE" to="e9fh:5ime7PBvKRI" resolve="MonitorEvent" />
+                </node>
               </node>
             </node>
             <node concept="37vLTw" id="5ime7PBw9WV" role="37vLTJ">
@@ -189,9 +198,12 @@
             <node concept="37vLTw" id="2WEWlo0EtJL" role="37vLTJ">
               <ref role="3cqZAo" node="2WEWlo0EtBU" resolve="mouseFilteredQueue" />
             </node>
-            <node concept="2ShNRf" id="7AOYwIIYoJr" role="37vLTx">
-              <node concept="1pGfFk" id="7AOYwIIYoJs" role="2ShVmc">
-                <ref role="37wK5l" node="7AOYwIIYhG3" resolve="ObservableQueue" />
+            <node concept="2ShNRf" id="4X0xypuvPUZ" role="37vLTx">
+              <node concept="1pGfFk" id="4X0xypuvPV0" role="2ShVmc">
+                <ref role="37wK5l" to="5zyv:~LinkedBlockingQueue.&lt;init&gt;()" resolve="LinkedBlockingQueue" />
+                <node concept="3uibUv" id="4X0xypuvRNm" role="1pMfVU">
+                  <ref role="3uigEE" to="e9fh:5ime7PBvKRI" resolve="MonitorEvent" />
+                </node>
               </node>
             </node>
           </node>
