@@ -7,6 +7,7 @@
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="1hzg" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2(de.htwsaar.usageTracking/)" />
@@ -17,6 +18,7 @@
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.fileUpload.common)" />
     <import index="rn14" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.http(de.htwsaar.usageTracking/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="guzq" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2.users(de.htwsaar.fileUpload/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -69,6 +71,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
@@ -230,12 +233,27 @@
       <concept id="4948473272651335344" name="jetbrains.mps.baseLanguage.javadoc.structure.EmptyBlockDocTag" flags="ng" index="1Ciki9" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167228628751" name="hasException" index="34fQS0" />
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+        <child id="1167227561449" name="exception" index="34bMjA" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -332,21 +350,49 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5I0bs5jxKVF" role="3cqZAp">
-          <node concept="37vLTI" id="5I0bs5jxKYh" role="3clFbG">
-            <node concept="2ShNRf" id="5I0bs5jxL1G" role="37vLTx">
-              <node concept="1pGfFk" id="5I0bs5jxL1F" role="2ShVmc">
+        <node concept="1X3_iC" id="4dcC0gGYZW" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="5I0bs5jxKVF" role="8Wnug">
+            <node concept="37vLTI" id="5I0bs5jxKYh" role="3clFbG">
+              <node concept="2ShNRf" id="5I0bs5jxL1G" role="37vLTx">
+                <node concept="1pGfFk" id="5I0bs5jxL1F" role="2ShVmc">
+                  <ref role="37wK5l" to="1hzg:~DbxClientV2.&lt;init&gt;(com.dropbox.core.DbxRequestConfig,java.lang.String)" resolve="DbxClientV2" />
+                  <node concept="37vLTw" id="5I0bs5jxL5Q" role="37wK5m">
+                    <ref role="3cqZAo" node="7bnIPh7XnI" resolve="config" />
+                  </node>
+                  <node concept="10M0yZ" id="5I0bs5jxLhD" role="37wK5m">
+                    <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                    <ref role="3cqZAo" to="q7u:5I0bs5jxD96" resolve="ACCESS_TOKEN" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="5I0bs5jxKVD" role="37vLTJ">
+                <ref role="3cqZAo" node="5I0bs5jxIXz" resolve="dbxClient" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4dcC0gGY55" role="3cqZAp">
+          <node concept="37vLTI" id="4dcC0gGY56" role="3clFbG">
+            <node concept="2ShNRf" id="4dcC0gGY57" role="37vLTx">
+              <node concept="1pGfFk" id="4dcC0gGY58" role="2ShVmc">
                 <ref role="37wK5l" to="1hzg:~DbxClientV2.&lt;init&gt;(com.dropbox.core.DbxRequestConfig,java.lang.String)" resolve="DbxClientV2" />
-                <node concept="37vLTw" id="5I0bs5jxL5Q" role="37wK5m">
+                <node concept="37vLTw" id="4dcC0gGY59" role="37wK5m">
                   <ref role="3cqZAo" node="7bnIPh7XnI" resolve="config" />
                 </node>
-                <node concept="10M0yZ" id="5I0bs5jxLhD" role="37wK5m">
-                  <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
-                  <ref role="3cqZAo" to="q7u:5I0bs5jxD96" resolve="ACCESS_TOKEN" />
+                <node concept="2OqwBi" id="4dcC0gH0oF" role="37wK5m">
+                  <node concept="2YIFZM" id="4dcC0gH0nM" role="2Oq$k0">
+                    <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                    <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                  </node>
+                  <node concept="liA8E" id="4dcC0gH0qH" role="2OqNvi">
+                    <ref role="37wK5l" to="q7u:4dcC0gGSwc" resolve="getAPIKey" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="5I0bs5jxKVD" role="37vLTJ">
+            <node concept="37vLTw" id="4dcC0gGY5b" role="37vLTJ">
               <ref role="3cqZAo" node="5I0bs5jxIXz" resolve="dbxClient" />
             </node>
           </node>
@@ -354,6 +400,182 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5I0bs5jxFNi" role="jymVt" />
+    <node concept="2YIFZL" id="4dcC0gHYZY" role="jymVt">
+      <property role="TrG5h" value="connectionPossible" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="4dcC0gHZ01" role="3clF47">
+        <node concept="3cpWs8" id="4dcC0gI2Qt" role="3cqZAp">
+          <node concept="3cpWsn" id="4dcC0gI2Qw" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="10P_77" id="4dcC0gI2Qr" role="1tU5fm" />
+            <node concept="3clFbT" id="4dcC0gI2U9" role="33vP2m">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4dcC0gI0yh" role="3cqZAp">
+          <node concept="3cpWsn" id="4dcC0gI0yi" role="3cpWs9">
+            <property role="TrG5h" value="requestor" />
+            <node concept="3uibUv" id="4dcC0gI0yj" role="1tU5fm">
+              <ref role="3uigEE" to="rn14:~StandardHttpRequestor" resolve="StandardHttpRequestor" />
+            </node>
+            <node concept="2ShNRf" id="4dcC0gI0yk" role="33vP2m">
+              <node concept="1pGfFk" id="4dcC0gI0yl" role="2ShVmc">
+                <ref role="37wK5l" to="rn14:~StandardHttpRequestor.&lt;init&gt;(com.dropbox.core.http.StandardHttpRequestor$Config)" resolve="StandardHttpRequestor" />
+                <node concept="2OqwBi" id="4dcC0gI0ym" role="37wK5m">
+                  <node concept="2OqwBi" id="4dcC0gI0yn" role="2Oq$k0">
+                    <node concept="2YIFZM" id="4dcC0gI0yo" role="2Oq$k0">
+                      <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config.builder():com.dropbox.core.http.StandardHttpRequestor$Config$Builder" resolve="builder" />
+                      <ref role="1Pybhc" to="rn14:~StandardHttpRequestor$Config" resolve="StandardHttpRequestor.Config" />
+                    </node>
+                    <node concept="liA8E" id="4dcC0gI0yp" role="2OqNvi">
+                      <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config$Builder.withProxy(java.net.Proxy):com.dropbox.core.http.StandardHttpRequestor$Config$Builder" resolve="withProxy" />
+                      <node concept="2OqwBi" id="4dcC0gI0yq" role="37wK5m">
+                        <node concept="2YIFZM" id="4dcC0gI0yr" role="2Oq$k0">
+                          <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                          <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                        </node>
+                        <node concept="liA8E" id="4dcC0gI0ys" role="2OqNvi">
+                          <ref role="37wK5l" to="q7u:7bnIPgYH7I" resolve="getProxy" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4dcC0gI0yt" role="2OqNvi">
+                    <ref role="37wK5l" to="rn14:~StandardHttpRequestor$Config$Builder.build():com.dropbox.core.http.StandardHttpRequestor$Config" resolve="build" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4dcC0gI0yu" role="3cqZAp">
+          <node concept="3cpWsn" id="4dcC0gI0yv" role="3cpWs9">
+            <property role="TrG5h" value="config" />
+            <node concept="3uibUv" id="4dcC0gI0yw" role="1tU5fm">
+              <ref role="3uigEE" to="15i6:~DbxRequestConfig" resolve="DbxRequestConfig" />
+            </node>
+            <node concept="2OqwBi" id="4dcC0gI0yx" role="33vP2m">
+              <node concept="2OqwBi" id="4dcC0gI0yy" role="2Oq$k0">
+                <node concept="2YIFZM" id="4dcC0gI0yz" role="2Oq$k0">
+                  <ref role="37wK5l" to="15i6:~DbxRequestConfig.newBuilder(java.lang.String):com.dropbox.core.DbxRequestConfig$Builder" resolve="newBuilder" />
+                  <ref role="1Pybhc" to="15i6:~DbxRequestConfig" resolve="DbxRequestConfig" />
+                  <node concept="10M0yZ" id="4dcC0gI0y$" role="37wK5m">
+                    <ref role="3cqZAo" to="q7u:5I0bs5jxK_C" resolve="APP_NAME" />
+                    <ref role="1PxDUh" to="q7u:76Lb2vBYmgu" resolve="Constants" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4dcC0gI0y_" role="2OqNvi">
+                  <ref role="37wK5l" to="15i6:~DbxRequestConfig$Builder.withHttpRequestor(com.dropbox.core.http.HttpRequestor):com.dropbox.core.DbxRequestConfig$Builder" resolve="withHttpRequestor" />
+                  <node concept="37vLTw" id="4dcC0gI0yA" role="37wK5m">
+                    <ref role="3cqZAo" node="4dcC0gI0yi" resolve="requestor" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4dcC0gI0yB" role="2OqNvi">
+                <ref role="37wK5l" to="15i6:~DbxRequestConfig$Builder.build():com.dropbox.core.DbxRequestConfig" resolve="build" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4dcC0gI1$P" role="3cqZAp">
+          <node concept="3cpWsn" id="4dcC0gI1$Q" role="3cpWs9">
+            <property role="TrG5h" value="client" />
+            <node concept="3uibUv" id="4dcC0gI1$R" role="1tU5fm">
+              <ref role="3uigEE" to="1hzg:~DbxClientV2" resolve="DbxClientV2" />
+            </node>
+            <node concept="2ShNRf" id="4dcC0gI0yG" role="33vP2m">
+              <node concept="1pGfFk" id="4dcC0gI0yH" role="2ShVmc">
+                <ref role="37wK5l" to="1hzg:~DbxClientV2.&lt;init&gt;(com.dropbox.core.DbxRequestConfig,java.lang.String)" resolve="DbxClientV2" />
+                <node concept="37vLTw" id="4dcC0gI0yI" role="37wK5m">
+                  <ref role="3cqZAo" node="4dcC0gI0yv" resolve="config" />
+                </node>
+                <node concept="37vLTw" id="4dcC0gI7GO" role="37wK5m">
+                  <ref role="3cqZAo" node="4dcC0gI7uw" resolve="apiKey" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4dcC0gI2Y2" role="3cqZAp" />
+        <node concept="3cpWs8" id="4dcC0gI4fN" role="3cqZAp">
+          <node concept="3cpWsn" id="4dcC0gI4fO" role="3cpWs9">
+            <property role="TrG5h" value="dbxAccountInfo" />
+            <node concept="3uibUv" id="4dcC0gI4fP" role="1tU5fm">
+              <ref role="3uigEE" to="guzq:~FullAccount" resolve="FullAccount" />
+            </node>
+          </node>
+        </node>
+        <node concept="SfApY" id="4dcC0gI4Pt" role="3cqZAp">
+          <node concept="3clFbS" id="4dcC0gI4Pu" role="SfCbr">
+            <node concept="3clFbF" id="4dcC0gI4qQ" role="3cqZAp">
+              <node concept="37vLTI" id="4dcC0gI4ul" role="3clFbG">
+                <node concept="2OqwBi" id="4dcC0gI4zY" role="37vLTx">
+                  <node concept="2OqwBi" id="4dcC0gI4xW" role="2Oq$k0">
+                    <node concept="37vLTw" id="4dcC0gI4xe" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4dcC0gI1$Q" resolve="client" />
+                    </node>
+                    <node concept="liA8E" id="4dcC0gI4zg" role="2OqNvi">
+                      <ref role="37wK5l" to="1hzg:~DbxClientV2Base.users():com.dropbox.core.v2.users.DbxUserUsersRequests" resolve="users" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4dcC0gI4_c" role="2OqNvi">
+                    <ref role="37wK5l" to="guzq:~DbxUserUsersRequests.getCurrentAccount():com.dropbox.core.v2.users.FullAccount" resolve="getCurrentAccount" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4dcC0gI4qO" role="37vLTJ">
+                  <ref role="3cqZAo" node="4dcC0gI4fO" resolve="dbxAccountInfo" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4dcC0gI7ne" role="3cqZAp">
+              <node concept="37vLTI" id="4dcC0gI7t6" role="3clFbG">
+                <node concept="3clFbT" id="4dcC0gI7ty" role="37vLTx">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="37vLTw" id="4dcC0gI7r_" role="37vLTJ">
+                  <ref role="3cqZAo" node="4dcC0gI2Qw" resolve="result" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="4dcC0gI4Pl" role="TEbGg">
+            <node concept="3clFbS" id="4dcC0gI4Pm" role="TDEfX">
+              <node concept="3clFbF" id="4dcC0gI6IK" role="3cqZAp">
+                <node concept="37vLTI" id="4dcC0gI6JH" role="3clFbG">
+                  <node concept="3clFbT" id="4dcC0gI6K7" role="37vLTx">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                  <node concept="37vLTw" id="4dcC0gI6IJ" role="37vLTJ">
+                    <ref role="3cqZAo" node="4dcC0gI2Qw" resolve="result" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWsn" id="4dcC0gI4Pn" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="4dcC0gI5Qd" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4dcC0gI6Pc" role="3cqZAp">
+          <node concept="37vLTw" id="4dcC0gI6Tl" role="3cqZAk">
+            <ref role="3cqZAo" node="4dcC0gI2Qw" resolve="result" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4dcC0gHYnp" role="1B3o_S" />
+      <node concept="10P_77" id="4dcC0gHYZW" role="3clF45" />
+      <node concept="37vLTG" id="4dcC0gI7uw" role="3clF46">
+        <property role="TrG5h" value="apiKey" />
+        <node concept="17QB3L" id="4dcC0gI7uv" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4dcC0gHWPi" role="jymVt" />
     <node concept="3clFb_" id="7obFNLlKSf0" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="getUserFolder" />
@@ -846,6 +1068,16 @@
                   </node>
                 </node>
               </node>
+              <node concept="34ab3g" id="4dcC0gKTjW" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <property role="34fQS0" value="true" />
+                <node concept="Xl_RD" id="4dcC0gKTjY" role="34bqiv">
+                  <property role="Xl_RC" value="Error uploading to Dropbox: " />
+                </node>
+                <node concept="37vLTw" id="4dcC0gKTk0" role="34bMjA">
+                  <ref role="3cqZAo" node="5I0bs5jxOCU" resolve="e" />
+                </node>
+              </node>
             </node>
             <node concept="3cpWsn" id="5I0bs5jxOCU" role="TDEfY">
               <property role="TrG5h" value="e" />
@@ -888,6 +1120,26 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="34ab3g" id="4dcC0gKU2S" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <property role="34fQS0" value="true" />
+                <node concept="3cpWs3" id="4dcC0gKVRi" role="34bqiv">
+                  <node concept="Xl_RD" id="4dcC0gKW0W" role="3uHU7w">
+                    <property role="Xl_RC" value="\&quot;: " />
+                  </node>
+                  <node concept="3cpWs3" id="4dcC0gKVyC" role="3uHU7B">
+                    <node concept="Xl_RD" id="4dcC0gKU2U" role="3uHU7B">
+                      <property role="Xl_RC" value="Error reading from file \&quot;" />
+                    </node>
+                    <node concept="37vLTw" id="4dcC0gKVGz" role="3uHU7w">
+                      <ref role="3cqZAo" node="5I0bs5jxNCy" resolve="localFile" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4dcC0gKU2W" role="34bMjA">
+                  <ref role="3cqZAo" node="5I0bs5jxXqB" resolve="e" />
                 </node>
               </node>
             </node>
@@ -1721,6 +1973,16 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="34ab3g" id="4dcC0gKOGD" role="3cqZAp">
+                          <property role="35gtTG" value="error" />
+                          <property role="34fQS0" value="true" />
+                          <node concept="Xl_RD" id="4dcC0gKOGF" role="34bqiv">
+                            <property role="Xl_RC" value="Error uploading to Dropbox: " />
+                          </node>
+                          <node concept="37vLTw" id="4dcC0gKOGH" role="34bMjA">
+                            <ref role="3cqZAo" node="5I0bs5jyV_R" resolve="e" />
+                          </node>
+                        </node>
                         <node concept="3cpWs6" id="5I0bs5jza16" role="3cqZAp">
                           <node concept="3clFbT" id="6gsD8CfVcuQ" role="3cqZAk">
                             <property role="3clFbU" value="false" />
@@ -1857,6 +2119,16 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="34ab3g" id="4dcC0gKIQr" role="3cqZAp">
+                          <property role="35gtTG" value="error" />
+                          <property role="34fQS0" value="true" />
+                          <node concept="Xl_RD" id="4dcC0gKIQt" role="34bqiv">
+                            <property role="Xl_RC" value="Error uploading to Dropbox: " />
+                          </node>
+                          <node concept="37vLTw" id="4dcC0gKIQv" role="34bMjA">
+                            <ref role="3cqZAo" node="5I0bs5jzasC" resolve="e" />
+                          </node>
+                        </node>
                         <node concept="3cpWs6" id="5I0bs5jzpDx" role="3cqZAp">
                           <node concept="3clFbT" id="6gsD8CfVfos" role="3cqZAk">
                             <property role="3clFbU" value="false" />
@@ -1897,6 +2169,16 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="34ab3g" id="4dcC0gKCOf" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <property role="34fQS0" value="true" />
+                    <node concept="Xl_RD" id="4dcC0gKCOh" role="34bqiv">
+                      <property role="Xl_RC" value="Error uploading to Dropbox: " />
+                    </node>
+                    <node concept="37vLTw" id="4dcC0gKCOj" role="34bMjA">
+                      <ref role="3cqZAo" node="5I0bs5jzqeQ" resolve="e" />
                     </node>
                   </node>
                   <node concept="3cpWs6" id="5I0bs5jz$Vb" role="3cqZAp">
@@ -1946,6 +2228,26 @@
                           </node>
                         </node>
                       </node>
+                    </node>
+                  </node>
+                  <node concept="34ab3g" id="4dcC0gKt9C" role="3cqZAp">
+                    <property role="35gtTG" value="error" />
+                    <property role="34fQS0" value="true" />
+                    <node concept="3cpWs3" id="4dcC0gK_2D" role="34bqiv">
+                      <node concept="Xl_RD" id="4dcC0gK_Jf" role="3uHU7w">
+                        <property role="Xl_RC" value="\&quot;" />
+                      </node>
+                      <node concept="3cpWs3" id="4dcC0gKzA_" role="3uHU7B">
+                        <node concept="Xl_RD" id="4dcC0gKt9E" role="3uHU7B">
+                          <property role="Xl_RC" value="Error reading from file\&quot;" />
+                        </node>
+                        <node concept="37vLTw" id="4dcC0gK$k8" role="3uHU7w">
+                          <ref role="3cqZAo" node="5I0bs5jy3yI" resolve="localFile" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="37vLTw" id="4dcC0gKt9G" role="34bMjA">
+                      <ref role="3cqZAo" node="5I0bs5jzAZo" resolve="e" />
                     </node>
                   </node>
                   <node concept="3cpWs6" id="5I0bs5jzN5i" role="3cqZAp">
@@ -2005,6 +2307,22 @@
                   <property role="Xl_RC" value="Maxed out upload attempts to Dropbox. Most recent error: " />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="34ab3g" id="4dcC0gKhyp" role="3cqZAp">
+          <property role="35gtTG" value="error" />
+          <node concept="3cpWs3" id="4dcC0gKoR0" role="34bqiv">
+            <node concept="2OqwBi" id="4dcC0gKqJh" role="3uHU7w">
+              <node concept="37vLTw" id="4dcC0gKq1S" role="2Oq$k0">
+                <ref role="3cqZAo" node="5I0bs5jy5Wq" resolve="thrown" />
+              </node>
+              <node concept="liA8E" id="4dcC0gKqLC" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Throwable.getMessage():java.lang.String" resolve="getMessage" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="4dcC0gKhyr" role="3uHU7B">
+              <property role="Xl_RC" value="Maxed out upload attempts to Dropbox. Most recent error: " />
             </node>
           </node>
         </node>
@@ -2119,13 +2437,14 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="5I0bs5jyKc5" role="3cqZAp">
-                <node concept="2YIFZM" id="5I0bs5jyKhj" role="3clFbG">
-                  <ref role="37wK5l" to="wyt6:~System.exit(int):void" resolve="exit" />
-                  <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
-                  <node concept="3cmrfG" id="5I0bs5jyKjz" role="37wK5m">
-                    <property role="3cmrfH" value="1" />
-                  </node>
+              <node concept="34ab3g" id="4dcC0gKdDc" role="3cqZAp">
+                <property role="35gtTG" value="error" />
+                <property role="34fQS0" value="true" />
+                <node concept="Xl_RD" id="4dcC0gKdDe" role="34bqiv">
+                  <property role="Xl_RC" value="Error uploading to Dropbox: interrupted during backoff." />
+                </node>
+                <node concept="37vLTw" id="4dcC0gKe8f" role="34bMjA">
+                  <ref role="3cqZAo" node="5I0bs5jyJey" resolve="e" />
                 </node>
               </node>
             </node>
