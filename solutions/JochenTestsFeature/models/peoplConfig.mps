@@ -70,6 +70,7 @@
       </concept>
       <concept id="7037608403905313283" name="de.htwsaar.peopl.core.featureConfig.structure.ProductLineConfig" flags="ng" index="mJI6d">
         <property id="5576373033249215910" name="usesOrdering" index="3ow5gs" />
+        <reference id="5063381192804077539" name="activeProduct" index="1DfV6X" />
         <reference id="5399389236276822151" name="moduleDefinition" index="1MHRHw" />
         <reference id="5399389236276822158" name="moduleConfiguration" index="1MHRHD" />
         <child id="7037608403905703591" name="features" index="mGfkD" />
@@ -94,7 +95,8 @@
       <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
+      <concept id="675154290793743899" name="de.htwsaar.peopl.core.moduleConfig.structure.Subtraction" flags="ng" index="u2itr" />
+      <concept id="675154290793743900" name="de.htwsaar.peopl.core.moduleConfig.structure.Overriding" flags="ng" index="u2its" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -273,8 +275,8 @@
     </node>
   </node>
   <node concept="2M0niJ" id="$yeJAEsUo6">
-    <property role="TrG5h" value="Conf" />
-    <ref role="2M0niE" node="$yeJAEsUo7" />
+    <property role="TrG5h" value="ModuleConfig" />
+    <ref role="2M0niE" node="7heAEfhDAob" />
     <node concept="u25OH" id="$yeJAEsUo7" role="2M0niC">
       <node concept="2Hijyl" id="$yeJAEsUo8" role="2Hjnvt">
         <node concept="u2itw" id="$yeJAEsUo9" role="3clFbG">
@@ -282,17 +284,33 @@
         </node>
       </node>
     </node>
-    <node concept="u25OH" id="758VCfPhC1w" role="2M0niC">
-      <node concept="2Hijyl" id="758VCfPhC1x" role="2Hjnvt">
-        <node concept="u2itq" id="758VCfPhC1y" role="3clFbG">
-          <node concept="GjJxx" id="758VCfPhC1z" role="3uHU7B">
-            <node concept="u2itw" id="758VCfPhC1_" role="1eOMHV">
-              <ref role="u2itx" node="4mFYJLZjTSh" resolve="fi" />
+    <node concept="u25OH" id="7heAEfhDAob" role="2M0niC">
+      <node concept="2Hijyl" id="7heAEfhDAoc" role="2Hjnvt">
+        <node concept="1eOMI4" id="7heAEfhDAoh" role="3clFbG">
+          <node concept="u2its" id="7heAEfhDAoi" role="1eOMHV">
+            <node concept="GjJxx" id="7heAEfhDAoj" role="3uHU7w">
+              <node concept="u2itw" id="7heAEfhDAol" role="1eOMHV">
+                <ref role="u2itx" node="$yeJAEsUoc" resolve="A1" />
+              </node>
             </node>
-          </node>
-          <node concept="GjJxx" id="758VCfPhC1A" role="3uHU7w">
-            <node concept="u2itw" id="758VCfPhC1C" role="1eOMHV">
-              <ref role="u2itx" node="4mFYJLZjTR$" resolve="gu" />
+            <node concept="u2its" id="7heAEfhDAom" role="3uHU7B">
+              <node concept="GjJxx" id="7heAEfhDAon" role="3uHU7w">
+                <node concept="u2itw" id="7heAEfhDAop" role="1eOMHV">
+                  <ref role="u2itx" node="$yeJAEsUof" resolve="B1" />
+                </node>
+              </node>
+              <node concept="u2itr" id="7heAEfhDAoq" role="3uHU7B">
+                <node concept="GjJxx" id="7heAEfhDAor" role="3uHU7w">
+                  <node concept="u2itw" id="7heAEfhDAot" role="1eOMHV">
+                    <ref role="u2itx" node="48wNwyUxtbw" resolve="D1" />
+                  </node>
+                </node>
+                <node concept="GjJxx" id="7heAEfhDAou" role="3uHU7B">
+                  <node concept="u2itw" id="7heAEfhDAow" role="1eOMHV">
+                    <ref role="u2itx" node="$yeJAEsUoj" resolve="C1" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -301,14 +319,16 @@
   </node>
   <node concept="mJI6d" id="5U_OcYCX4Fh">
     <property role="3ow5gs" value="false" />
-    <property role="TrG5h" value="FeatureConf" />
+    <property role="TrG5h" value="FeatureConfig" />
     <ref role="1MHRHw" node="$yeJAEsUo3" resolve="ModuleDefinitions" />
-    <ref role="1MHRHD" node="$yeJAEsUo6" resolve="Conf" />
-    <node concept="mJxd$" id="62bhZ6rXLKe" role="mJxdz">
-      <property role="TrG5h" value="MysecondVar" />
-      <ref role="1XXgWC" node="758VCfPhC1w" />
-      <node concept="mGrBK" id="758VCfPhC1u" role="mJxd_">
-        <ref role="mGtU6" node="4mFYJLZjTTe" resolve="Fea3" />
+    <ref role="1MHRHD" node="$yeJAEsUo6" resolve="ModuleConfig" />
+    <ref role="2M0niE" node="7heAEfhD$6G" resolve="Base" />
+    <ref role="1DfV6X" node="7heAEfhDAo5" resolve="Base" />
+    <node concept="mJxd$" id="7heAEfhDAo5" role="mJxdz">
+      <property role="TrG5h" value="Base" />
+      <ref role="1XXgWC" node="7heAEfhDAob" />
+      <node concept="mGrBK" id="7heAEfhDAo9" role="mJxd_">
+        <ref role="mGtU6" node="5U_OcYCX4Fp" resolve="Fea1" />
       </node>
     </node>
     <node concept="mJI6G" id="5U_OcYCX4Fp" role="mGfkD">
