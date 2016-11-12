@@ -694,7 +694,7 @@
       <node concept="P$JXv" id="7kgjkPlra1y" role="lGtFl">
         <node concept="TZ5HA" id="7kgjkPlra1z" role="TZ5H$">
           <node concept="1dT_AC" id="7kgjkPlra1$" role="1dT_Ay">
-            <property role="1dT_AB" value="Writes an InteractionDataContainer,serialized as XML in a file." />
+            <property role="1dT_AB" value="Writes an XMLDataObject,serialized as XML in a file." />
           </node>
         </node>
         <node concept="TZ5HA" id="1jqsANaTasR" role="TZ5H$">
@@ -703,7 +703,7 @@
           </node>
         </node>
         <node concept="TUZQ0" id="1jqsANaTay8" role="3nqlJM">
-          <property role="TUZQ4" value="the InteractionDataContainer" />
+          <property role="TUZQ4" value="the XMLDataObject" />
           <node concept="zr_55" id="1jqsANaTa$f" role="zr_5Q">
             <ref role="zr_51" node="7kgjkPkSwp0" resolve="container" />
           </node>
@@ -1012,7 +1012,7 @@
       <node concept="P$JXv" id="7kgjkPlr1KP" role="lGtFl">
         <node concept="TZ5HA" id="7kgjkPlr1KQ" role="TZ5H$">
           <node concept="1dT_AC" id="7kgjkPlr1KR" role="1dT_Ay">
-            <property role="1dT_AB" value="Writes an InterActionDataContainer, serialized as XML in a zip file. This reduces the need to first" />
+            <property role="1dT_AB" value="Writes an XMLDataObject serialized as XML in a zip file. This reduces the need to first" />
           </node>
         </node>
         <node concept="TZ5HA" id="7kgjkPlr2k3" role="TZ5H$">
@@ -1079,11 +1079,11 @@
       <node concept="P$JXv" id="6hyiCA8doxj" role="lGtFl">
         <node concept="TZ5HA" id="6hyiCA8doxk" role="TZ5H$">
           <node concept="1dT_AC" id="6hyiCA8doxl" role="1dT_Ay">
-            <property role="1dT_AB" value="Allows to append an InteractionDataContainer to an existing zip." />
+            <property role="1dT_AB" value="Allows to append an XMLDataObject to an existing zip." />
           </node>
         </node>
         <node concept="TUZQ0" id="6hyiCA8doxm" role="TUOzN">
-          <property role="TUZQ4" value="the InteractionDataContainer" />
+          <property role="TUZQ4" value="the XMLDataObject" />
           <node concept="zr_55" id="6hyiCA8doxo" role="zr_5Q">
             <ref role="zr_51" node="7obFNLlfAGb" resolve="container" />
           </node>
@@ -1614,11 +1614,11 @@
       <node concept="P$JXv" id="1jqsANa$zTF" role="lGtFl">
         <node concept="TZ5HA" id="1jqsANa$zTG" role="TZ5H$">
           <node concept="1dT_AC" id="1jqsANa$zTH" role="1dT_Ay">
-            <property role="1dT_AB" value="Allows to append an InteractionDataContainer to an existing zip." />
+            <property role="1dT_AB" value="Allows to append an XMLDataObject to an existing zip." />
           </node>
         </node>
         <node concept="TUZQ0" id="1jqsANa$zTI" role="TUOzN">
-          <property role="TUZQ4" value="the InteractionDataContainer" />
+          <property role="TUZQ4" value="the XMLDataObjectr" />
           <node concept="zr_55" id="1jqsANa$zTK" role="zr_5Q">
             <ref role="zr_51" node="1jqsANa$bsM" resolve="container" />
           </node>
