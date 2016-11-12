@@ -279,7 +279,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="features" />
       <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="66EASTR6M9Y" resolve="FeatureConnector" />
+      <ref role="20lvS9" node="21326cAYBZ2" resolve="FeatureConnectorVariant" />
     </node>
     <node concept="PrWs8" id="66EASTR6AAL" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -1201,8 +1201,30 @@
   </node>
   <node concept="1TIwiD" id="5rorRdU_Dsi">
     <property role="1pbfSe" value="781252987" />
-    <property role="TrG5h" value="Feature_ParenthesizedExpression" />
+    <property role="TrG5h" value="FeatureParenthesizedExpression" />
     <ref role="1TJDcQ" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
+  </node>
+  <node concept="1TIwiD" id="21326cAYBZ2">
+    <property role="1pbfSe" value="1195214885" />
+    <property role="TrG5h" value="FeatureConnectorVariant" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="21326cAYBZ3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="feature" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="66EASTR57Cy" resolve="Feature" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="21326cAZt4U">
+    <property role="1pbfSe" value="1195432349" />
+    <property role="TrG5h" value="FeatureConnectorWhenClause" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="21326cAZt4V" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="feature" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="66EASTR57Cy" resolve="Feature" />
+    </node>
   </node>
 </model>
 

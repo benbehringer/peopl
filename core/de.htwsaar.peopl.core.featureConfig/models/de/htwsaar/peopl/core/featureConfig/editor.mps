@@ -917,7 +917,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5rorRdU_Dso">
-    <ref role="1XX52x" to="nsly:5rorRdU_Dsi" resolve="Feature_ParenthesizedExpression" />
+    <ref role="1XX52x" to="nsly:5rorRdU_Dsi" resolve="FeatureParenthesizedExpression" />
     <node concept="3EZMnI" id="fJ_4HUD" role="2wV5jI">
       <property role="3EZMnw" value="false" />
       <node concept="3F0ifn" id="fJ_4HUE" role="3EZMnx">
@@ -951,6 +951,30 @@
         </node>
       </node>
       <node concept="l2Vlx" id="i0v36HC" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="21326cAYGmD">
+    <ref role="1XX52x" to="nsly:21326cAYBZ2" resolve="FeatureConnectorVariant" />
+    <node concept="1iCGBv" id="21326cAYGmI" role="2wV5jI">
+      <ref role="1NtTu8" to="nsly:21326cAYBZ3" />
+      <node concept="1sVBvm" id="21326cAYGmK" role="1sWHZn">
+        <node concept="3F0A7n" id="21326cAYGmR" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="21326cAZt52">
+    <ref role="1XX52x" to="nsly:21326cAZt4U" resolve="FeatureConnectorWhenClause" />
+    <node concept="1iCGBv" id="21326cAZt57" role="2wV5jI">
+      <ref role="1NtTu8" to="nsly:21326cAZt4V" />
+      <node concept="1sVBvm" id="21326cAZt59" role="1sWHZn">
+        <node concept="3F0A7n" id="21326cAZt5g" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
