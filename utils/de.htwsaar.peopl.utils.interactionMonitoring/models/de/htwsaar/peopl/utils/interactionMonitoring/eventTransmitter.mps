@@ -400,7 +400,7 @@
       <node concept="3Tm6S6" id="20ujiCwHQg1" role="1B3o_S" />
       <node concept="3cpWsb" id="20ujiCwHR8b" role="1tU5fm" />
       <node concept="3cmrfG" id="20ujiCwHS13" role="33vP2m">
-        <property role="3cmrfH" value="300" />
+        <property role="3cmrfH" value="10" />
       </node>
     </node>
     <node concept="2tJIrI" id="dxrcT7S2Ux" role="jymVt" />
