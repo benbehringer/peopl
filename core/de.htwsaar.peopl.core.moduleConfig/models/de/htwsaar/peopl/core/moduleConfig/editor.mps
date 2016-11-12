@@ -54,6 +54,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -395,6 +396,7 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="sj65:_uCk0nlSow" resolve="ModuleConnector" />
     <node concept="1iCGBv" id="7MEoPae7Vpn" role="2wV5jI">
+      <property role="1$x2rV" value="choose module" />
       <ref role="1NtTu8" to="sj65:_uCk0nlSox" />
       <node concept="1sVBvm" id="7MEoPae7Vpp" role="1sWHZn">
         <node concept="3F0A7n" id="7MEoPae7VsF" role="2wV5jI">

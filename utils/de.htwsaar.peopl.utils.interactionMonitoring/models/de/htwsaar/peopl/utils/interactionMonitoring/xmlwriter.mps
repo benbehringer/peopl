@@ -842,8 +842,9 @@
                                 <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
                               </node>
                             </node>
-                            <node concept="Xl_RD" id="lAMQjhj29u" role="3uHU7w">
-                              <property role="Xl_RC" value="/" />
+                            <node concept="10M0yZ" id="3r08ekHvHW7" role="3uHU7w">
+                              <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                              <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
                             </node>
                           </node>
                         </node>
@@ -1133,8 +1134,9 @@
                     <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="lAMQjhj4f9" role="3uHU7w">
-                  <property role="Xl_RC" value="/" />
+                <node concept="10M0yZ" id="3r08ekHvInM" role="3uHU7w">
+                  <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                  <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
                 </node>
               </node>
             </node>
@@ -1461,6 +1463,17 @@
                 </node>
               </node>
             </node>
+            <node concept="3SKdUt" id="3r08ekH_xob" role="3cqZAp">
+              <node concept="3SKdUq" id="3r08ekH_xod" role="3SKWNk">
+                <property role="3SKdUp" value="Needed on windows before deleting, moving, renaming a file because of file locks" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="3r08ekHxB5$" role="3cqZAp">
+              <node concept="2YIFZM" id="3r08ekHxBmy" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
+                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              </node>
+            </node>
             <node concept="3clFbF" id="1jqsANa$Cg_" role="3cqZAp">
               <node concept="2OqwBi" id="1jqsANa$CBY" role="3clFbG">
                 <node concept="37vLTw" id="1jqsANa$Cy_" role="2Oq$k0">
@@ -1469,6 +1482,12 @@
                 <node concept="liA8E" id="1jqsANa$CIY" role="2OqNvi">
                   <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3r08ekHxBB7" role="3cqZAp">
+              <node concept="2YIFZM" id="3r08ekHxBRq" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
+                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               </node>
             </node>
             <node concept="3clFbF" id="1jqsANa$D8c" role="3cqZAp">
@@ -1528,7 +1547,10 @@
                       <ref role="3cqZAo" node="7obFNLlfzMX" resolve="uploader" />
                     </node>
                     <node concept="liA8E" id="4TUiWVnz0YV" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Thread.join():void" resolve="join" />
+                      <ref role="37wK5l" to="wyt6:~Thread.join(long):void" resolve="join" />
+                      <node concept="3cmrfG" id="3r08ekHuQkz" role="37wK5m">
+                        <property role="3cmrfH" value="10000" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -1663,9 +1685,6 @@
                     <ref role="37wK5l" to="eydd:~ZipFile.&lt;init&gt;(java.lang.String)" resolve="ZipFile" />
                     <node concept="3cpWs3" id="lAMQjhpPyp" role="37wK5m">
                       <node concept="3cpWs3" id="lAMQjhpPKq" role="3uHU7B">
-                        <node concept="Xl_RD" id="lAMQjhpPMU" role="3uHU7w">
-                          <property role="Xl_RC" value="/" />
-                        </node>
                         <node concept="2OqwBi" id="lAMQjhpPEy" role="3uHU7B">
                           <node concept="2YIFZM" id="lAMQjhpPCu" role="2Oq$k0">
                             <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
@@ -1674,6 +1693,10 @@
                           <node concept="liA8E" id="lAMQjhpPHr" role="2OqNvi">
                             <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
                           </node>
+                        </node>
+                        <node concept="10M0yZ" id="3r08ekHvIUT" role="3uHU7w">
+                          <ref role="1PxDUh" to="guwi:~File" resolve="File" />
+                          <ref role="3cqZAo" to="guwi:~File.separator" resolve="separator" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="1jqsANaMbqZ" role="3uHU7w">

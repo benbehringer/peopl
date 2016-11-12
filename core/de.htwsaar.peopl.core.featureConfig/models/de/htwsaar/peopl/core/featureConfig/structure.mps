@@ -250,7 +250,7 @@
     <node concept="1TJgyj" id="2DTnhFmOQft" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="partitions" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="66EASTR58zW" resolve="Partition" />
     </node>
     <node concept="1TJgyj" id="66EASTR58zH" role="1TKVEi">
@@ -297,7 +297,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2DTnhFmOPUK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="selectedModules" />
+      <property role="20kJfa" value="module" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" to="sj65:_uCk0nlSow" resolve="ModuleConnector" />
     </node>

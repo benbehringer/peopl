@@ -517,7 +517,6 @@
                           <node concept="3cpWs8" id="26M783K_I2j" role="3cqZAp">
                             <node concept="3cpWsn" id="26M783K_I2k" role="3cpWs9">
                               <property role="TrG5h" value="changeOfFeatureConnector" />
-                              <node concept="10P_77" id="26M783K_I2l" role="1tU5fm" />
                               <node concept="1Wc70l" id="26M783K_I2m" role="33vP2m">
                                 <node concept="2OqwBi" id="26M783K_I2n" role="3uHU7B">
                                   <node concept="2OqwBi" id="26M783K_I2o" role="2Oq$k0">
@@ -554,6 +553,7 @@
                                   <node concept="10Nm6u" id="26M783K_I2$" role="3uHU7w" />
                                 </node>
                               </node>
+                              <node concept="10P_77" id="26M783K_I2l" role="1tU5fm" />
                             </node>
                           </node>
                           <node concept="3cpWs8" id="758VCfPj70J" role="3cqZAp">

@@ -57,6 +57,7 @@
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">025f762f-786f-4451-80b1-6bae4ee9fdde(de.htwsaar.peopl.core.listener)</dependency>
     <dependency reexport="false">460f6b79-4c4a-45a6-8edd-4bf53c672f9d(de.htwsaar.peopl.core.featureListener)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>

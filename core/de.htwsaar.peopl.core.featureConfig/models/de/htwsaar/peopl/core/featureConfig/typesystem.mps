@@ -15,6 +15,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
+    <import index="b8vt" ref="f:diff_old#r:cea9c09e-d2ae-4c23-9561-49ffb11a5e7d(de.htwsaar.peopl.core.featureConfig.typesystem@old)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -408,7 +409,7 @@
                 <node concept="2OqwBi" id="2Td5c7S0XxW" role="37vLTJ">
                   <node concept="2OqwBi" id="2Td5c7S0XxX" role="2Oq$k0">
                     <node concept="2GrUjf" id="2Td5c7S0XxY" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="2Td5c7S0XxO" resolve="feature" />
+                      <ref role="2Gs0qQ" to="b8vt:2Td5c7S0XxO" resolve="feature" />
                     </node>
                     <node concept="3TrEf2" id="2Td5c7S0XxZ" role="2OqNvi">
                       <ref role="3Tt5mk" to="nsly:66EASTR6Ok8" />
@@ -428,11 +429,11 @@
               </node>
               <node concept="TSZUe" id="2Td5c7S0Xy4" role="2OqNvi">
                 <node concept="2OqwBi" id="2Td5c7S0Xy5" role="25WWJ7">
-                  <node concept="2GrUjf" id="2Td5c7S0Xy6" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="2Td5c7S0XxO" resolve="feature" />
-                  </node>
                   <node concept="3TrEf2" id="2Td5c7S0Xy7" role="2OqNvi">
                     <ref role="3Tt5mk" to="nsly:66EASTR6Ok8" />
+                  </node>
+                  <node concept="2GrUjf" id="2Td5c7S0Xy6" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="2Td5c7S0XxO" resolve="feature" />
                   </node>
                 </node>
               </node>
