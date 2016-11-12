@@ -427,7 +427,7 @@
           <node concept="TDmWw" id="7kgjkPlrGm0" role="TEbGg">
             <node concept="3clFbS" id="7kgjkPlrGm1" role="TDEfX">
               <node concept="34ab3g" id="2OGs3nCv6DI" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
+                <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="Xl_RD" id="2OGs3nCv6DK" role="34bqiv">
                   <property role="Xl_RC" value="jaxbcontextcreation" />
@@ -990,7 +990,7 @@
                 </node>
               </node>
               <node concept="34ab3g" id="PmX8cutRZg" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
+                <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="Xl_RD" id="PmX8cutRZi" role="34bqiv" />
                 <node concept="37vLTw" id="PmX8cutRZk" role="34bMjA">
@@ -1592,7 +1592,7 @@
                 </node>
               </node>
               <node concept="34ab3g" id="PmX8cutRTA" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
+                <property role="35gtTG" value="error" />
                 <property role="34fQS0" value="true" />
                 <node concept="Xl_RD" id="PmX8cutRTC" role="34bqiv" />
                 <node concept="37vLTw" id="PmX8cutRTE" role="34bMjA">
