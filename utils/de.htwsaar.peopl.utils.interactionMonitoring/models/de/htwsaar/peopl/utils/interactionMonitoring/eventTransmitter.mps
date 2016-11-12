@@ -586,6 +586,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1K$tCF0$Poi" role="3cqZAp">
+          <node concept="2OqwBi" id="1K$tCF0$PBe" role="3clFbG">
+            <node concept="37vLTw" id="1K$tCF0$Pog" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="1K$tCF0$Q3h" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="1K$tCF0$QcB" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:1K$tCF0$klK" resolve="EditorComponentCreateListener_Provider.EditorComponent_Event" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
@@ -1115,6 +1128,10 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7AOYwIIZJql" role="jymVt" />
+    <node concept="2tJIrI" id="4o6Lg9q7Oel" role="jymVt" />
+    <node concept="2tJIrI" id="4o6Lg9q7P3a" role="jymVt" />
+    <node concept="2tJIrI" id="4o6Lg9q7PS0" role="jymVt" />
+    <node concept="2tJIrI" id="4o6Lg9q7PYS" role="jymVt" />
     <node concept="3clFb_" id="2Qzkdny4Bou" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="replaceWithNewHandler" />
