@@ -324,7 +324,7 @@
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="66EASTR6Ok8" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="connectedFeature" />
+      <property role="20kJfa" value="feature" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="66EASTR57Cy" resolve="Feature" />
     </node>
