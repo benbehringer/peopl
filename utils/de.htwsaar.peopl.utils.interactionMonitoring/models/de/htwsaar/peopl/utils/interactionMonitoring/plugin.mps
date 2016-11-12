@@ -34,6 +34,7 @@
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -928,7 +929,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1R0T08haXjT" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="1R0T08haXjU" role="TEbGg">
             <node concept="3cpWsn" id="1R0T08haXjV" role="TDEfY">
@@ -1182,6 +1182,71 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="3sUM20rSof0" role="3cqZAp">
+          <node concept="3SKdUq" id="3sUM20rSof2" role="3SKWNk">
+            <property role="3SKdUp" value="add application startup timestamp to queue" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3sUM20rSQMo" role="3cqZAp">
+          <node concept="3cpWsn" id="3sUM20rSQMp" role="3cpWs9">
+            <property role="TrG5h" value="startup" />
+            <node concept="3uibUv" id="3sUM20rSQMq" role="1tU5fm">
+              <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="XMLDataObject" />
+            </node>
+            <node concept="2ShNRf" id="3sUM20rSQVu" role="33vP2m">
+              <node concept="1pGfFk" id="3sUM20rSRBZ" role="2ShVmc">
+                <ref role="37wK5l" to="6oac:2OGs3nCvdlk" resolve="XMLDataObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3sUM20rSRVh" role="3cqZAp">
+          <node concept="2OqwBi" id="3sUM20rSSjz" role="3clFbG">
+            <node concept="2OqwBi" id="3sUM20rSS4r" role="2Oq$k0">
+              <node concept="37vLTw" id="3sUM20rSRVf" role="2Oq$k0">
+                <ref role="3cqZAo" node="3sUM20rSQMp" resolve="startup" />
+              </node>
+              <node concept="liA8E" id="3sUM20rSSc_" role="2OqNvi">
+                <ref role="37wK5l" to="6oac:7kgjkPkSfhz" resolve="getEntries" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3sUM20rSSWd" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="2ShNRf" id="3sUM20rSKo4" role="37wK5m">
+                <node concept="1pGfFk" id="3sUM20rSL0O" role="2ShVmc">
+                  <ref role="37wK5l" to="6oac:3sUM20rSJHz" resolve="ApplicationRuntime" />
+                  <node concept="Xl_RD" id="3sUM20rSLhr" role="37wK5m">
+                    <property role="Xl_RC" value="start" />
+                  </node>
+                  <node concept="2ShNRf" id="3sUM20rSLoi" role="37wK5m">
+                    <node concept="1pGfFk" id="3sUM20rSQoe" role="2ShVmc">
+                      <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3sUM20rSoAm" role="3cqZAp">
+          <node concept="2OqwBi" id="3sUM20rSoVw" role="3clFbG">
+            <node concept="2OqwBi" id="3sUM20rSoMe" role="2Oq$k0">
+              <node concept="2YIFZM" id="3sUM20rSoGV" role="2Oq$k0">
+                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+              </node>
+              <node concept="2OwXpG" id="3sUM20rSoTx" role="2OqNvi">
+                <ref role="2Oxat5" to="30sj:6X2hyGIT5u_" resolve="xmlWriterQueue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3sUM20rSp22" role="2OqNvi">
+              <ref role="37wK5l" to="30sj:6X2hyGIToRf" resolve="offer" />
+              <node concept="37vLTw" id="3sUM20rST7N" role="37wK5m">
+                <ref role="3cqZAo" node="3sUM20rSQMp" resolve="startup" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3Tm1VV" id="1R0T08haYJb" role="1B3o_S" />
       <node concept="3cqZAl" id="1R0T08haYMK" role="3clF45" />
@@ -1309,6 +1374,72 @@
             </node>
           </node>
         </node>
+        <node concept="3SKdUt" id="3sUM20rSTfn" role="3cqZAp">
+          <node concept="3SKdUq" id="3sUM20rSTfo" role="3SKWNk">
+            <property role="3SKdUp" value="add application stop timestamp to queue" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3sUM20rSTfp" role="3cqZAp">
+          <node concept="3cpWsn" id="3sUM20rSTfq" role="3cpWs9">
+            <property role="TrG5h" value="stop" />
+            <node concept="3uibUv" id="3sUM20rSTfr" role="1tU5fm">
+              <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="XMLDataObject" />
+            </node>
+            <node concept="2ShNRf" id="3sUM20rSTfs" role="33vP2m">
+              <node concept="1pGfFk" id="3sUM20rSTft" role="2ShVmc">
+                <ref role="37wK5l" to="6oac:2OGs3nCvdlk" resolve="XMLDataObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3sUM20rSTfu" role="3cqZAp">
+          <node concept="2OqwBi" id="3sUM20rSTfv" role="3clFbG">
+            <node concept="2OqwBi" id="3sUM20rSTfw" role="2Oq$k0">
+              <node concept="37vLTw" id="3sUM20rSTfx" role="2Oq$k0">
+                <ref role="3cqZAo" node="3sUM20rSTfq" resolve="stop" />
+              </node>
+              <node concept="liA8E" id="3sUM20rSTfy" role="2OqNvi">
+                <ref role="37wK5l" to="6oac:7kgjkPkSfhz" resolve="getEntries" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3sUM20rSTfz" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="2ShNRf" id="3sUM20rSTf$" role="37wK5m">
+                <node concept="1pGfFk" id="3sUM20rSTf_" role="2ShVmc">
+                  <ref role="37wK5l" to="6oac:3sUM20rSJHz" resolve="ApplicationRuntime" />
+                  <node concept="Xl_RD" id="3sUM20rSTfA" role="37wK5m">
+                    <property role="Xl_RC" value="stop" />
+                  </node>
+                  <node concept="2ShNRf" id="3sUM20rSTfB" role="37wK5m">
+                    <node concept="1pGfFk" id="3sUM20rSTfC" role="2ShVmc">
+                      <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3sUM20rSTfD" role="3cqZAp">
+          <node concept="2OqwBi" id="3sUM20rSTfE" role="3clFbG">
+            <node concept="2OqwBi" id="3sUM20rSTfF" role="2Oq$k0">
+              <node concept="2YIFZM" id="3sUM20rSTfG" role="2Oq$k0">
+                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+              </node>
+              <node concept="2OwXpG" id="3sUM20rSTfH" role="2OqNvi">
+                <ref role="2Oxat5" to="30sj:6X2hyGIT5u_" resolve="xmlWriterQueue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="3sUM20rSTfI" role="2OqNvi">
+              <ref role="37wK5l" to="30sj:6X2hyGIToRf" resolve="offer" />
+              <node concept="37vLTw" id="3sUM20rSTfJ" role="37wK5m">
+                <ref role="3cqZAo" node="3sUM20rSTfq" resolve="stop" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3sUM20rUAjU" role="3cqZAp" />
         <node concept="3clFbF" id="1R0T08haZ8_" role="3cqZAp">
           <node concept="2OqwBi" id="1R0T08haZ8A" role="3clFbG">
             <node concept="2OqwBi" id="1R0T08haZ8B" role="2Oq$k0">
