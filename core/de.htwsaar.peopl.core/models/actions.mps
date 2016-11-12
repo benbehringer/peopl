@@ -446,7 +446,7 @@
                   <node concept="3y3z36" id="6cQtm9g2B$4" role="3uHU7B">
                     <node concept="zm4iT" id="6cQtm9g2B$5" role="3uHU7B" />
                     <node concept="3TUQnm" id="6cQtm9g2B$6" role="3uHU7w">
-                      <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                      <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                     </node>
                   </node>
                 </node>
@@ -471,7 +471,7 @@
                 <node concept="3y3z36" id="6cQtm9g2LTC" role="33vP2m">
                   <node concept="zm4iT" id="6cQtm9g2LTD" role="3uHU7B" />
                   <node concept="3TUQnm" id="6cQtm9g2LTE" role="3uHU7w">
-                    <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                    <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                   </node>
                 </node>
               </node>
@@ -508,8 +508,8 @@
                 <node concept="2OqwBi" id="6cQtm9g1Dq3" role="3uHU7w">
                   <node concept="GyYSE" id="6cQtm9g1D7s" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="6cQtm9g1DHT" role="2OqNvi">
-                    <node concept="chp4Y" id="6cQtm9g1DXj" role="cj9EA">
-                      <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                    <node concept="chp4Y" id="6flM_ZX0r2h" role="cj9EA">
+                      <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                     </node>
                   </node>
                 </node>
@@ -579,8 +579,8 @@
                   <node concept="2OqwBi" id="6cQtm9g3EcS" role="3clFbw">
                     <node concept="3bvxqY" id="6cQtm9g3DHi" role="2Oq$k0" />
                     <node concept="1mIQ4w" id="6cQtm9g3EK5" role="2OqNvi">
-                      <node concept="chp4Y" id="6cQtm9g3FeX" role="cj9EA">
-                        <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                      <node concept="chp4Y" id="6flM_ZX0rRh" role="cj9EA">
+                        <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                       </node>
                     </node>
                   </node>
@@ -613,8 +613,8 @@
                                             <ref role="3cqZAo" node="6cQtm9g3JDb" resolve="it" />
                                           </node>
                                           <node concept="1mIQ4w" id="6cQtm9g3JD5" role="2OqNvi">
-                                            <node concept="chp4Y" id="6cQtm9g3JD6" role="cj9EA">
-                                              <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                                            <node concept="chp4Y" id="6flM_ZX0qHs" role="cj9EA">
+                                              <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                                             </node>
                                           </node>
                                         </node>
@@ -666,8 +666,8 @@
                                           <ref role="3cqZAo" node="6cQtm9g3JDv" resolve="it" />
                                         </node>
                                         <node concept="1mIQ4w" id="6cQtm9g3JDt" role="2OqNvi">
-                                          <node concept="chp4Y" id="6cQtm9g3JDu" role="cj9EA">
-                                            <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                                          <node concept="chp4Y" id="6flM_ZX0ssZ" role="cj9EA">
+                                            <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                                           </node>
                                         </node>
                                       </node>
@@ -696,8 +696,8 @@
                             <node concept="2OqwBi" id="6cQtm9g45ZT" role="3fr31v">
                               <node concept="3bvxqY" id="6cQtm9g45ZU" role="2Oq$k0" />
                               <node concept="1mIQ4w" id="6cQtm9g45ZV" role="2OqNvi">
-                                <node concept="chp4Y" id="6cQtm9g46ni" role="cj9EA">
-                                  <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                                <node concept="chp4Y" id="6flM_ZX0sLR" role="cj9EA">
+                                  <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                                 </node>
                               </node>
                             </node>
@@ -764,8 +764,8 @@
                                       <ref role="3cqZAo" node="6cQtm9g26Ap" resolve="it" />
                                     </node>
                                     <node concept="1mIQ4w" id="6cQtm9g26Aj" role="2OqNvi">
-                                      <node concept="chp4Y" id="6cQtm9g26Ak" role="cj9EA">
-                                        <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                                      <node concept="chp4Y" id="6flM_ZX0rAh" role="cj9EA">
+                                        <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                                       </node>
                                     </node>
                                   </node>
@@ -817,8 +817,8 @@
                                     <ref role="3cqZAo" node="6cQtm9g26AH" resolve="it" />
                                   </node>
                                   <node concept="1mIQ4w" id="6cQtm9g26AF" role="2OqNvi">
-                                    <node concept="chp4Y" id="6cQtm9g26AG" role="cj9EA">
-                                      <ref role="cht4Q" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                                    <node concept="chp4Y" id="6flM_ZX0t4O" role="cj9EA">
+                                      <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                                     </node>
                                   </node>
                                 </node>
@@ -1011,7 +1011,7 @@
         </node>
       </node>
       <node concept="tYCnQ" id="Utjg2saJN6" role="_1QTJ">
-        <ref role="uz4UX" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+        <ref role="uz4UX" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
         <node concept="Cmt7Y" id="Utjg2saJS2" role="uz6Si">
           <node concept="Cnhdc" id="Utjg2saJS3" role="Cncma">
             <node concept="3clFbS" id="Utjg2saJS4" role="2VODD2">
@@ -1036,12 +1036,12 @@
                 <node concept="3cpWsn" id="Utjg2saJTB" role="3cpWs9">
                   <property role="TrG5h" value="alternative" />
                   <node concept="3Tqbb2" id="Utjg2saJTC" role="1tU5fm">
-                    <ref role="ehGHo" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                    <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                   </node>
                   <node concept="2ShNRf" id="Utjg2saJTD" role="33vP2m">
                     <node concept="3zrR0B" id="Utjg2saJTE" role="2ShVmc">
                       <node concept="3Tqbb2" id="Utjg2saJTF" role="3zrR0E">
-                        <ref role="ehGHo" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                        <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                       </node>
                     </node>
                   </node>
@@ -1097,7 +1097,7 @@
             </node>
           </node>
           <node concept="2h1dTh" id="Utjg2saJTp" role="Cn2iK">
-            <property role="2h1i$Z" value="&lt;&gt;" />
+            <property role="2h1i$Z" value="*||" />
           </node>
         </node>
       </node>
@@ -1106,7 +1106,7 @@
       <property role="3mWRNi" value="add Alternative Operation right" />
       <ref role="3UNGvu" to="xf8r:66EASTR6M9Y" resolve="DepModuleConnector" />
       <node concept="tYCnQ" id="Utjg2s9Id3" role="_1QTJ">
-        <ref role="uz4UX" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+        <ref role="uz4UX" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
         <node concept="Cmt7Y" id="Utjg2s9InB" role="uz6Si">
           <node concept="Cnhdc" id="Utjg2s9InC" role="Cncma">
             <node concept="3clFbS" id="Utjg2s9InD" role="2VODD2">
@@ -1131,12 +1131,12 @@
                 <node concept="3cpWsn" id="Utjg2s9Iov" role="3cpWs9">
                   <property role="TrG5h" value="alternative" />
                   <node concept="3Tqbb2" id="Utjg2s9Iow" role="1tU5fm">
-                    <ref role="ehGHo" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                    <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                   </node>
                   <node concept="2ShNRf" id="Utjg2s9Iox" role="33vP2m">
                     <node concept="3zrR0B" id="Utjg2s9Ioy" role="2ShVmc">
                       <node concept="3Tqbb2" id="Utjg2s9Ioz" role="3zrR0E">
-                        <ref role="ehGHo" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                        <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                       </node>
                     </node>
                   </node>
@@ -1192,7 +1192,7 @@
             </node>
           </node>
           <node concept="2h1dTh" id="Utjg2s9Ioi" role="Cn2iK">
-            <property role="2h1i$Z" value="&lt;&gt;" />
+            <property role="2h1i$Z" value="*||" />
           </node>
         </node>
       </node>
@@ -1466,7 +1466,7 @@
                   <node concept="3y3z36" id="Utjg2scQIw" role="3cqZAk">
                     <node concept="zm4iT" id="Utjg2scQIx" role="3uHU7B" />
                     <node concept="3TUQnm" id="Utjg2scQIy" role="3uHU7w">
-                      <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                      <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                     </node>
                   </node>
                 </node>
@@ -1532,7 +1532,7 @@
                       <node concept="3y3z36" id="Utjg2scQry" role="3uHU7w">
                         <node concept="zm4iT" id="Utjg2scQrz" role="3uHU7B" />
                         <node concept="3TUQnm" id="Utjg2scQr$" role="3uHU7w">
-                          <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                          <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                         </node>
                       </node>
                     </node>
@@ -1780,7 +1780,7 @@
                   <node concept="3y3z36" id="Utjg2scR2d" role="3cqZAk">
                     <node concept="zm4iT" id="Utjg2scR2e" role="3uHU7B" />
                     <node concept="3TUQnm" id="Utjg2scR2f" role="3uHU7w">
-                      <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                      <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                     </node>
                   </node>
                 </node>
@@ -1846,7 +1846,7 @@
                       <node concept="3y3z36" id="Utjg2scR2I" role="3uHU7w">
                         <node concept="zm4iT" id="Utjg2scR2J" role="3uHU7B" />
                         <node concept="3TUQnm" id="Utjg2scR2K" role="3uHU7w">
-                          <ref role="3TV0OU" to="xf8r:Utjg2s9iVR" resolve="AlternativeOperation" />
+                          <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="DepModuleConnectorAlternative" />
                         </node>
                       </node>
                     </node>
