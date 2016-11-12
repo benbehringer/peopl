@@ -7,13 +7,19 @@
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="kh3s" ref="r:78cda911-8566-4bd6-81b9-a68540abf5da(de.htwsaar.peopl.core.featureConfig.plugin)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="nsly" ref="r:5670a179-ee5c-45d1-b0cb-1e412bfcf47f(de.htwsaar.peopl.core.featureConfig.structure)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1161622753914" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_operationContext" flags="nn" index="1Q79dO" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -34,6 +40,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
@@ -183,6 +192,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -234,6 +244,7 @@
       <node concept="zlxcR" id="63cq5TSodlx" role="tZc4B">
         <node concept="zlMOO" id="63cq5TSodly" role="zmozY">
           <node concept="3clFbS" id="63cq5TSodlz" role="2VODD2">
+            <node concept="3clFbH" id="5pW0Dg$qib8" role="3cqZAp" />
             <node concept="3cpWs8" id="4u4XQEat_E6" role="3cqZAp">
               <node concept="3cpWsn" id="4u4XQEat_E9" role="3cpWs9">
                 <property role="TrG5h" value="topExpression" />
@@ -601,34 +612,10 @@
             <node concept="3cpWs6" id="4u4XQEas1$_" role="3cqZAp">
               <node concept="22lmx$" id="21326cAZt9G" role="3cqZAk">
                 <node concept="22lmx$" id="21326cAYZ08" role="3uHU7B">
-                  <node concept="22lmx$" id="4u4XQEas1$A" role="3uHU7B">
-                    <node concept="22lmx$" id="3IPuGvT6Sue" role="3uHU7B">
-                      <node concept="22lmx$" id="4u4XQEas1$E" role="3uHU7B">
-                        <node concept="3clFbC" id="4u4XQEas1$F" role="3uHU7B">
-                          <node concept="zm4iT" id="4u4XQEas1$G" role="3uHU7B" />
-                          <node concept="3TUQnm" id="4u4XQEas1$H" role="3uHU7w">
-                            <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
-                          </node>
-                        </node>
-                        <node concept="3clFbC" id="4u4XQEas1$I" role="3uHU7w">
-                          <node concept="zm4iT" id="4u4XQEas1$J" role="3uHU7B" />
-                          <node concept="3TUQnm" id="4u4XQEas1$K" role="3uHU7w">
-                            <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="3clFbC" id="3IPuGvT6S_$" role="3uHU7w">
-                        <node concept="zm4iT" id="3IPuGvT6S__" role="3uHU7B" />
-                        <node concept="3TUQnm" id="3IPuGvT6S_A" role="3uHU7w">
-                          <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="3clFbC" id="4u4XQEas1$B" role="3uHU7w">
-                      <node concept="zm4iT" id="4u4XQEas1$D" role="3uHU7B" />
-                      <node concept="3TUQnm" id="4u4XQEas1$C" role="3uHU7w">
-                        <ref role="3TV0OU" to="nsly:66EASTR6M9Y" resolve="FeatureConnector" />
-                      </node>
+                  <node concept="3clFbC" id="4u4XQEas1$B" role="3uHU7B">
+                    <node concept="zm4iT" id="4u4XQEas1$D" role="3uHU7B" />
+                    <node concept="3TUQnm" id="4u4XQEas1$C" role="3uHU7w">
+                      <ref role="3TV0OU" to="nsly:66EASTR6M9Y" resolve="FeatureConnector" />
                     </node>
                   </node>
                   <node concept="3clFbC" id="21326cAYZbX" role="3uHU7w">
@@ -1121,43 +1108,72 @@
                       <ref role="3TV0OU" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
                     </node>
                   </node>
-                  <node concept="1Wc70l" id="3EFFV1Xy8qH" role="3uHU7B">
-                    <node concept="1Wc70l" id="3EFFV1Xy8qI" role="3uHU7B">
-                      <node concept="1Wc70l" id="3EFFV1Xy8qJ" role="3uHU7B">
-                        <node concept="1Wc70l" id="3EFFV1Xy8qK" role="3uHU7B">
-                          <node concept="3y3z36" id="3EFFV1Xy8qL" role="3uHU7B">
-                            <node concept="zm4iT" id="3EFFV1Xy8qM" role="3uHU7B" />
-                            <node concept="3TUQnm" id="3EFFV1Xy8qN" role="3uHU7w">
-                              <ref role="3TV0OU" to="tpee:fHWc73I" resolve="AndExpression" />
-                            </node>
-                          </node>
-                          <node concept="3y3z36" id="3EFFV1Xy8qO" role="3uHU7w">
-                            <node concept="zm4iT" id="3EFFV1Xy8qP" role="3uHU7B" />
-                            <node concept="3TUQnm" id="3EFFV1Xy8qQ" role="3uHU7w">
-                              <ref role="3TV0OU" to="tpee:fI2lmyv" resolve="OrExpression" />
-                            </node>
+                  <node concept="1Wc70l" id="3EFFV1Xy8qI" role="3uHU7B">
+                    <node concept="1Wc70l" id="3EFFV1Xy8qJ" role="3uHU7B">
+                      <node concept="1Wc70l" id="3EFFV1Xy8qK" role="3uHU7B">
+                        <node concept="3y3z36" id="3EFFV1Xy8qL" role="3uHU7B">
+                          <node concept="zm4iT" id="3EFFV1Xy8qM" role="3uHU7B" />
+                          <node concept="3TUQnm" id="3EFFV1Xy8qN" role="3uHU7w">
+                            <ref role="3TV0OU" to="tpee:fHWc73I" resolve="AndExpression" />
                           </node>
                         </node>
-                        <node concept="3y3z36" id="3EFFV1Xy8qR" role="3uHU7w">
-                          <node concept="zm4iT" id="3EFFV1Xy8qS" role="3uHU7B" />
-                          <node concept="3TUQnm" id="3EFFV1Xy8qT" role="3uHU7w">
-                            <ref role="3TV0OU" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
+                        <node concept="3y3z36" id="3EFFV1Xy8qO" role="3uHU7w">
+                          <node concept="zm4iT" id="3EFFV1Xy8qP" role="3uHU7B" />
+                          <node concept="3TUQnm" id="3EFFV1Xy8qQ" role="3uHU7w">
+                            <ref role="3TV0OU" to="tpee:fI2lmyv" resolve="OrExpression" />
                           </node>
                         </node>
                       </node>
-                      <node concept="3y3z36" id="3EFFV1Xy8qU" role="3uHU7w">
-                        <node concept="zm4iT" id="3EFFV1Xy8qV" role="3uHU7B" />
-                        <node concept="3TUQnm" id="3EFFV1Xy8qW" role="3uHU7w">
-                          <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
+                      <node concept="3y3z36" id="3EFFV1Xy8qR" role="3uHU7w">
+                        <node concept="zm4iT" id="3EFFV1Xy8qS" role="3uHU7B" />
+                        <node concept="3TUQnm" id="3EFFV1Xy8qT" role="3uHU7w">
+                          <ref role="3TV0OU" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3y3z36" id="3IPuGvT6SZz" role="3uHU7w">
-                      <node concept="zm4iT" id="3IPuGvT6SZ$" role="3uHU7B" />
-                      <node concept="3TUQnm" id="3IPuGvT6SZ_" role="3uHU7w">
-                        <ref role="3TV0OU" to="xf8r:63cq5TSog52" resolve="XorOperation" />
+                    <node concept="3y3z36" id="3EFFV1Xy8qU" role="3uHU7w">
+                      <node concept="zm4iT" id="3EFFV1Xy8qV" role="3uHU7B" />
+                      <node concept="3TUQnm" id="3EFFV1Xy8qW" role="3uHU7w">
+                        <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dQSNN" id="5pW0Dg$r$EN" role="_1QTJ">
+        <node concept="3dQ6bb" id="5pW0Dg$r$EO" role="3dQV3f">
+          <node concept="3clFbS" id="5pW0Dg$r$EP" role="2VODD2">
+            <node concept="3SKdUt" id="5pW0Dg$r$EQ" role="3cqZAp">
+              <node concept="3SKdUq" id="5pW0Dg$r$ER" role="3SKWNk">
+                <property role="3SKdUp" value="TODO_BB: I don't get why OneOutOfManyOperation and ImpliesOperation are listed twice here?!?!" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="5pW0Dg$r$ES" role="3cqZAp">
+              <node concept="3SKdUq" id="5pW0Dg$r$ET" role="3SKWNk">
+                <property role="3SKdUp" value="TODO_BB: This is a pretty dirty workaround to fix this issue" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5pW0Dg$r$EU" role="3cqZAp">
+              <node concept="2OqwBi" id="5pW0Dg$r$EV" role="3cqZAk">
+                <node concept="2YIFZM" id="5pW0Dg$r$EW" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5pW0Dg$qYPZ" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5pW0Dg$qYPL" resolve="CurrentMenuEntryCache" />
+                </node>
+                <node concept="liA8E" id="5pW0Dg$r$EX" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5pW0Dg$qYQ6" resolve="isDuplicate" />
+                  <node concept="2OqwBi" id="5pW0Dg$r$EY" role="37wK5m">
+                    <node concept="1Q79dO" id="5pW0Dg$r$EZ" role="2Oq$k0" />
+                    <node concept="liA8E" id="5pW0Dg$r$F0" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5pW0Dg$r$F1" role="37wK5m">
+                    <node concept="zm4iT" id="5pW0Dg$r$F2" role="2Oq$k0" />
+                    <node concept="1rGIog" id="5pW0Dg$r$F3" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -1883,6 +1899,43 @@
                     <node concept="3TUQnm" id="21326cAZtLn" role="3uHU7w">
                       <ref role="3TV0OU" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                     </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3dQSNN" id="5pW0Dg$qMfP" role="_1QTJ">
+        <node concept="3dQ6bb" id="5pW0Dg$qMfR" role="3dQV3f">
+          <node concept="3clFbS" id="5pW0Dg$qMfT" role="2VODD2">
+            <node concept="3SKdUt" id="5pW0Dg$qQLZ" role="3cqZAp">
+              <node concept="3SKdUq" id="5pW0Dg$qQM0" role="3SKWNk">
+                <property role="3SKdUp" value="TODO_BB: I don't get why OneOutOfManyOperation and ImpliesOperation are listed twice here?!?!" />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="5pW0Dg$qQZ3" role="3cqZAp">
+              <node concept="3SKdUq" id="5pW0Dg$qQZ4" role="3SKWNk">
+                <property role="3SKdUp" value="TODO_BB: This is a pretty dirty workaround to fix this issue" />
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5pW0Dg$qMl1" role="3cqZAp">
+              <node concept="2OqwBi" id="5pW0Dg$rxoX" role="3cqZAk">
+                <node concept="2YIFZM" id="5pW0Dg$rxn_" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:5pW0Dg$qYPZ" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:5pW0Dg$qYPL" resolve="CurrentMenuEntryCache" />
+                </node>
+                <node concept="liA8E" id="5pW0Dg$rxsc" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:5pW0Dg$qYQ6" resolve="isDuplicate" />
+                  <node concept="2OqwBi" id="5pW0Dg$qRdX" role="37wK5m">
+                    <node concept="1Q79dO" id="5pW0Dg$qRc$" role="2Oq$k0" />
+                    <node concept="liA8E" id="5pW0Dg$qRxP" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="5pW0Dg$rxBp" role="37wK5m">
+                    <node concept="zm4iT" id="5pW0Dg$rxyE" role="2Oq$k0" />
+                    <node concept="1rGIog" id="5pW0Dg$rxFz" role="2OqNvi" />
                   </node>
                 </node>
               </node>

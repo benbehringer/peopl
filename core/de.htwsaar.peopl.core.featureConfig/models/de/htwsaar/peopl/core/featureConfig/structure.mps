@@ -149,6 +149,7 @@
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -1224,6 +1225,28 @@
       <property role="20kJfa" value="feature" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="66EASTR57Cy" resolve="Feature" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6flM_ZX01WJ">
+    <property role="1pbfSe" value="1624631694" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <property role="TrG5h" value="FeatureConnectoreWhenClauseAlternative" />
+    <property role="R4oN_" value="One-out-of-many operation" />
+    <property role="34LRSv" value="*||" />
+    <ref role="1TJDcQ" to="xf8r:_uCk0nlSop" resolve="Operation" />
+    <node concept="PrWs8" id="6flM_ZX01WK" role="PzmwI">
+      <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5pW0Dg$h68_">
+    <property role="1pbfSe" value="2059429049" />
+    <property role="3GE5qa" value="FeatureOperation" />
+    <property role="TrG5h" value="FeatureConnectorAlternative" />
+    <property role="34LRSv" value="*||" />
+    <property role="R4oN_" value="One-out-of-many operation" />
+    <ref role="1TJDcQ" to="xf8r:_uCk0nlSop" resolve="Operation" />
+    <node concept="PrWs8" id="5pW0Dg$h68A" role="PzmwI">
+      <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
     </node>
   </node>
 </model>

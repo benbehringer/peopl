@@ -9499,7 +9499,7 @@
             <node concept="3clFbS" id="Utjg2scgXX" role="3eOfB_">
               <node concept="3cpWs6" id="Utjg2sch4x" role="3cqZAp">
                 <node concept="Xl_RD" id="Utjg2sch5c" role="3cqZAk">
-                  <property role="Xl_RC" value=" &lt;&gt; " />
+                  <property role="Xl_RC" value=" *|| " />
                 </node>
               </node>
             </node>

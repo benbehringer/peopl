@@ -15,6 +15,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
+    <import index="6izd" ref="r:7777f1b3-e430-49d8-910e-a8dd679c2e2f(de.htwsaar.peopl.core.featureConfig.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -145,6 +146,9 @@
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -412,7 +416,7 @@
       <node concept="3clFbH" id="2Td5c7S0XvW" role="3cqZAp" />
       <node concept="1DcWWT" id="2Td5c7S0Eof" role="3cqZAp">
         <node concept="3cpWsn" id="2Td5c7S0Eog" role="1Duv9x">
-          <property role="TrG5h" value="constrain" />
+          <property role="TrG5h" value="constraint" />
           <node concept="3Tqbb2" id="2Td5c7S0EqU" role="1tU5fm">
             <ref role="ehGHo" to="tpee:fz3vP1J" resolve="Expression" />
           </node>
@@ -439,11 +443,29 @@
             <node concept="3clFbS" id="2Td5c7S0Yqt" role="SfCbr">
               <node concept="3clFbJ" id="2Td5c7S0Ysa" role="3cqZAp">
                 <node concept="3clFbS" id="2Td5c7S0Ysb" role="3clFbx">
-                  <node concept="2MkqsV" id="2Td5c7S11YD" role="3cqZAp">
-                    <node concept="Xl_RD" id="2Td5c7S12be" role="2MkJ7o">
-                      <property role="Xl_RC" value=" Constraints not met" />
+                  <node concept="2MkqsV" id="4p4J_SJvxHD" role="3cqZAp">
+                    <node concept="3cpWs3" id="1AgTw_zLYql" role="2MkJ7o">
+                      <node concept="Xl_RD" id="1AgTw_zLYvN" role="3uHU7w">
+                        <property role="Xl_RC" value="\' not met by current configuration" />
+                      </node>
+                      <node concept="3cpWs3" id="4p4J_SJvxKY" role="3uHU7B">
+                        <node concept="Xl_RD" id="4p4J_SJvxHP" role="3uHU7B">
+                          <property role="Xl_RC" value="Domain-specific constraint \'" />
+                        </node>
+                        <node concept="2OqwBi" id="5pW0Dg$pDpx" role="3uHU7w">
+                          <node concept="35c_gC" id="5pW0Dg$pDlx" role="2Oq$k0">
+                            <ref role="35c_gD" to="nsly:3GF6lyPGh3H" resolve="FeatureConstraint" />
+                          </node>
+                          <node concept="2qgKlT" id="5pW0Dg$pDzU" role="2OqNvi">
+                            <ref role="37wK5l" to="6izd:4p4J_SJvsEo" resolve="printNode" />
+                            <node concept="37vLTw" id="5pW0Dg$pD_4" role="37wK5m">
+                              <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constraint" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
-                    <node concept="1YBJjd" id="2Td5c7S12gG" role="2OEOjV">
+                    <node concept="1YBJjd" id="5pW0Dg$pBmk" role="2OEOjV">
                       <ref role="1YBMHb" node="2Td5c7S0Eo6" resolve="variant" />
                     </node>
                   </node>
@@ -453,7 +475,7 @@
                     <node concept="10P_77" id="2Td5c7S11Uy" role="10QFUM" />
                     <node concept="2OqwBi" id="2Td5c7S11Uz" role="10QFUP">
                       <node concept="37vLTw" id="2Td5c7S11U$" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constrain" />
+                        <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constraint" />
                       </node>
                       <node concept="2qgKlT" id="2Td5c7S11U_" role="2OqNvi">
                         <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
@@ -476,7 +498,7 @@
                 <node concept="2MkqsV" id="2Td5c7S0ZZA" role="3cqZAp">
                   <node concept="3cpWs3" id="2Td5c7S108e" role="2MkJ7o">
                     <node concept="37vLTw" id="2Td5c7S10bS" role="3uHU7w">
-                      <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constrain" />
+                      <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constraint" />
                     </node>
                     <node concept="Xl_RD" id="2Td5c7S0ZZV" role="3uHU7B">
                       <property role="Xl_RC" value="Could not evaluate constrain : " />
