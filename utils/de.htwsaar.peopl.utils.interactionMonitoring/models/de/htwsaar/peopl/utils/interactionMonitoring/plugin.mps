@@ -1367,12 +1367,6 @@
         <node concept="3clFbH" id="3sUM20rUAjU" role="3cqZAp" />
         <node concept="3clFbJ" id="3r08ekHyxps" role="3cqZAp">
           <node concept="3clFbS" id="3r08ekHyxpu" role="3clFbx">
-            <node concept="34ab3g" id="3r08ekH$ECS" role="3cqZAp">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="3r08ekH$ECU" role="34bqiv">
-                <property role="Xl_RC" value="stopping distributor" />
-              </node>
-            </node>
             <node concept="3clFbF" id="3r08ekHyy8G" role="3cqZAp">
               <node concept="2OqwBi" id="3r08ekHyyaA" role="3clFbG">
                 <node concept="10M0yZ" id="3r08ekHyy8F" role="2Oq$k0">
