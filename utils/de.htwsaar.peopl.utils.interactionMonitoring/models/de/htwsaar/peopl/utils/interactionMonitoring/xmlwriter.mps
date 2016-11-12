@@ -18,8 +18,6 @@
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
     <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.queues)" />
-    <import index="dv94" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.reflect(org.apache.commons/)" />
-    <import index="8oaq" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.io(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1465,55 +1463,43 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3r08ekHwD6f" role="3cqZAp">
-              <node concept="2YIFZM" id="3r08ekHwDIU" role="3clFbG">
-                <ref role="37wK5l" to="8oaq:~FileUtils.forceDelete(java.io.File):void" resolve="forceDelete" />
-                <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                <node concept="37vLTw" id="3r08ekHwDU$" role="37wK5m">
+            <node concept="3SKdUt" id="3r08ekH_xob" role="3cqZAp">
+              <node concept="3SKdUq" id="3r08ekH_xod" role="3SKWNk">
+                <property role="3SKdUp" value="Needed on windows before deleting, moving, renaming a file because of file locks" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="3r08ekHxB5$" role="3cqZAp">
+              <node concept="2YIFZM" id="3r08ekHxBmy" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
+                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1jqsANa$Cg_" role="3cqZAp">
+              <node concept="2OqwBi" id="1jqsANa$CBY" role="3clFbG">
+                <node concept="37vLTw" id="1jqsANa$Cy_" role="2Oq$k0">
                   <ref role="3cqZAo" node="1jqsANa$_al" resolve="oldFile" />
                 </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="3r08ekHwDZL" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="1jqsANa$Cg_" role="8Wnug">
-                <node concept="2OqwBi" id="1jqsANa$CBY" role="3clFbG">
-                  <node concept="37vLTw" id="1jqsANa$Cy_" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1jqsANa$_al" resolve="oldFile" />
-                  </node>
-                  <node concept="liA8E" id="1jqsANa$CIY" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
-                  </node>
+                <node concept="liA8E" id="1jqsANa$CIY" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.delete():boolean" resolve="delete" />
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="3r08ekHwFou" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="1jqsANa$D8c" role="8Wnug">
-                <node concept="2OqwBi" id="1jqsANa$DtD" role="3clFbG">
-                  <node concept="37vLTw" id="1jqsANa$DnO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1jqsANa$AIz" resolve="newFile" />
-                  </node>
-                  <node concept="liA8E" id="1jqsANa$D$L" role="2OqNvi">
-                    <ref role="37wK5l" to="guwi:~File.renameTo(java.io.File):boolean" resolve="renameTo" />
-                    <node concept="37vLTw" id="1jqsANa$DIU" role="37wK5m">
-                      <ref role="3cqZAo" node="1jqsANa$_al" resolve="oldFile" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="3clFbF" id="3r08ekHxBB7" role="3cqZAp">
+              <node concept="2YIFZM" id="3r08ekHxBRq" role="3clFbG">
+                <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
+                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
               </node>
             </node>
-            <node concept="3clFbF" id="3r08ekHwEx8" role="3cqZAp">
-              <node concept="2YIFZM" id="3r08ekHwFCT" role="3clFbG">
-                <ref role="37wK5l" to="8oaq:~FileUtils.moveFile(java.io.File,java.io.File):void" resolve="moveFile" />
-                <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
-                <node concept="37vLTw" id="3r08ekHwFIn" role="37wK5m">
+            <node concept="3clFbF" id="1jqsANa$D8c" role="3cqZAp">
+              <node concept="2OqwBi" id="1jqsANa$DtD" role="3clFbG">
+                <node concept="37vLTw" id="1jqsANa$DnO" role="2Oq$k0">
                   <ref role="3cqZAo" node="1jqsANa$AIz" resolve="newFile" />
                 </node>
-                <node concept="37vLTw" id="3r08ekHwFSI" role="37wK5m">
-                  <ref role="3cqZAo" node="1jqsANa$_al" resolve="oldFile" />
+                <node concept="liA8E" id="1jqsANa$D$L" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.renameTo(java.io.File):boolean" resolve="renameTo" />
+                  <node concept="37vLTw" id="1jqsANa$DIU" role="37wK5m">
+                    <ref role="3cqZAo" node="1jqsANa$_al" resolve="oldFile" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -3182,7 +3168,7 @@
                     </node>
                   </node>
                   <node concept="3cmrfG" id="6X2hyGIUL_l" role="3uHU7w">
-                    <property role="3cmrfH" value="150000" />
+                    <property role="3cmrfH" value="15000" />
                   </node>
                 </node>
                 <node concept="9aQIb" id="6X2hyGIUMfu" role="9aQIa">
