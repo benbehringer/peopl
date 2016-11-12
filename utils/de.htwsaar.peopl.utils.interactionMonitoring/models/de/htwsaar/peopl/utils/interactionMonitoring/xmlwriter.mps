@@ -3168,7 +3168,7 @@
                     </node>
                   </node>
                   <node concept="3cmrfG" id="6X2hyGIUL_l" role="3uHU7w">
-                    <property role="3cmrfH" value="150000" />
+                    <property role="3cmrfH" value="15000" />
                   </node>
                 </node>
                 <node concept="9aQIb" id="6X2hyGIUMfu" role="9aQIa">
