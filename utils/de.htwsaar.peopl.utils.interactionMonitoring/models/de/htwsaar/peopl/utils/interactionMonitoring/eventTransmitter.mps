@@ -599,6 +599,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="1nzFpHSiwi7" role="3cqZAp">
+          <node concept="2OqwBi" id="1nzFpHSiwzE" role="3clFbG">
+            <node concept="37vLTw" id="1nzFpHSiwi5" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="1nzFpHSiwY8" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="1nzFpHSizAh" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:1nzFpHSgSol" resolve="FocusListener_Provider.EditorFocusEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
@@ -932,7 +945,7 @@
       <node concept="3clFbS" id="7AOYwIIZIlo" role="3clF47">
         <node concept="3clFbH" id="dxrcT7S6$6" role="3cqZAp" />
         <node concept="3clFbH" id="3khGHOKE2us" role="3cqZAp" />
-        <node concept="1X3_iC" id="1ZljV50FVFk" role="lGtFl">
+        <node concept="1X3_iC" id="1nzFpHSjK3p" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="34ab3g" id="3khGHOKE2H7" role="8Wnug">
