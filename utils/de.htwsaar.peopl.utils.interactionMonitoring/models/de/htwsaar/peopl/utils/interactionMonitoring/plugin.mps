@@ -541,7 +541,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="1R0T08haPL0" role="3cqZAp" />
+            <node concept="3clFbH" id="2wGnBKf32hi" role="3cqZAp" />
+            <node concept="3clFbF" id="2wGnBKf33kd" role="3cqZAp">
+              <node concept="2OqwBi" id="2wGnBKf33nt" role="3clFbG">
+                <node concept="37vLTw" id="2wGnBKf33kb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1R0T08haTEk" resolve="myMsgBusConnection" />
+                </node>
+                <node concept="liA8E" id="2wGnBKf33r8" role="2OqNvi">
+                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
+                  <node concept="10M0yZ" id="2wGnBKf340h" role="37wK5m">
+                    <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+                    <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
+                  </node>
+                  <node concept="2YIFZM" id="2wGnBKf349U" role="37wK5m">
+                    <ref role="37wK5l" to="fchx:5H_hR7I0A5y" resolve="getListener" />
+                    <ref role="1Pybhc" to="fchx:5H_hR7I0uFJ" resolve="FileEditorManagerAdapter_Provider" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="37vLTw" id="1R0T08haPL1" role="3clFbw">
             <ref role="3cqZAo" node="1R0T08haPKt" resolve="run1" />
