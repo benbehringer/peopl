@@ -549,9 +549,9 @@
                 </node>
                 <node concept="liA8E" id="2wGnBKf33r8" role="2OqNvi">
                   <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
-                  <node concept="10M0yZ" id="2wGnBKf340h" role="37wK5m">
-                    <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
-                    <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
+                  <node concept="10M0yZ" id="2wGnBKf5mqs" role="37wK5m">
+                    <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener$Before" resolve="FileEditorManagerListener.Before" />
+                    <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener$Before.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
                   </node>
                   <node concept="2YIFZM" id="2wGnBKf349U" role="37wK5m">
                     <ref role="37wK5l" to="fchx:5H_hR7I0A5y" resolve="getListener" />
@@ -605,21 +605,25 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1R0T08haPLr" role="3cqZAp">
-              <node concept="2OqwBi" id="1R0T08haPLs" role="3clFbG">
-                <node concept="liA8E" id="1R0T08haPLw" role="2OqNvi">
-                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
-                  <node concept="10M0yZ" id="1R0T08haPLx" role="37wK5m">
-                    <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
-                    <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
+            <node concept="1X3_iC" id="2wGnBKf5msC" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="1R0T08haPLr" role="8Wnug">
+                <node concept="2OqwBi" id="1R0T08haPLs" role="3clFbG">
+                  <node concept="liA8E" id="1R0T08haPLw" role="2OqNvi">
+                    <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
+                    <node concept="10M0yZ" id="1R0T08haPLx" role="37wK5m">
+                      <ref role="1PxDUh" to="iwsx:~FileEditorManagerListener" resolve="FileEditorManagerListener" />
+                      <ref role="3cqZAo" to="iwsx:~FileEditorManagerListener.FILE_EDITOR_MANAGER" resolve="FILE_EDITOR_MANAGER" />
+                    </node>
+                    <node concept="2YIFZM" id="1R0T08haPLy" role="37wK5m">
+                      <ref role="1Pybhc" to="fchx:5H_hR7I0uFJ" resolve="FileEditorManagerAdapter_Provider" />
+                      <ref role="37wK5l" to="fchx:5H_hR7I0A5y" resolve="getListener" />
+                    </node>
                   </node>
-                  <node concept="2YIFZM" id="1R0T08haPLy" role="37wK5m">
-                    <ref role="1Pybhc" to="fchx:5H_hR7I0uFJ" resolve="FileEditorManagerAdapter_Provider" />
-                    <ref role="37wK5l" to="fchx:5H_hR7I0A5y" resolve="getListener" />
+                  <node concept="37vLTw" id="1R0T08haVf3" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1R0T08haTEk" resolve="myMsgBusConnection" />
                   </node>
-                </node>
-                <node concept="37vLTw" id="1R0T08haVf3" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1R0T08haTEk" resolve="myMsgBusConnection" />
                 </node>
               </node>
             </node>
