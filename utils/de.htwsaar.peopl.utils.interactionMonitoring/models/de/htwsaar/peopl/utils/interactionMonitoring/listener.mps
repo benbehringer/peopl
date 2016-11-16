@@ -39,9 +39,6 @@
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
     <import index="uvcm" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.newvfs(MPS.IDEA/)" />
     <import index="p3o1" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.newvfs.events(MPS.IDEA/)" />
-    <import index="sjuh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.impl(MPS.IDEA/)" />
-    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
@@ -1760,6 +1757,9 @@
                   <node concept="37vLTw" id="50zZCcaSrfx" role="37wK5m">
                     <ref role="3cqZAo" node="1CHBEReQ_Cm" resolve="event" />
                   </node>
+                  <node concept="37vLTw" id="6nmR8pwMmhq" role="37wK5m">
+                    <ref role="3cqZAo" node="1CHBEReQzy8" resolve="myEditorComponent" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -1777,7 +1777,15 @@
       <property role="1sVAO0" value="false" />
       <property role="1EXbeo" value="false" />
       <property role="TrG5h" value="EditorKeyEvent" />
-      <node concept="2tJIrI" id="50zZCcaRU$v" role="jymVt" />
+      <node concept="2tJIrI" id="6nmR8pwMle1" role="jymVt" />
+      <node concept="312cEg" id="6nmR8pwMl7M" role="jymVt">
+        <property role="TrG5h" value="editorComponent" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm1VV" id="6nmR8pwMlq1" role="1B3o_S" />
+        <node concept="3uibUv" id="6nmR8pwMl7P" role="1tU5fm">
+          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+        </node>
+      </node>
       <node concept="312cEg" id="50zZCcaRUQx" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
@@ -1815,6 +1823,19 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="6nmR8pwMlL8" role="3cqZAp">
+            <node concept="37vLTI" id="6nmR8pwMlX$" role="3clFbG">
+              <node concept="37vLTw" id="6nmR8pwMm7s" role="37vLTx">
+                <ref role="3cqZAo" node="6nmR8pwMkT_" resolve="editorComponent" />
+              </node>
+              <node concept="2OqwBi" id="6nmR8pwMlQn" role="37vLTJ">
+                <node concept="Xjq3P" id="6nmR8pwMlL6" role="2Oq$k0" />
+                <node concept="2OwXpG" id="6nmR8pwMlSb" role="2OqNvi">
+                  <ref role="2Oxat5" node="6nmR8pwMl7M" resolve="editorComponent" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="3Tm1VV" id="50zZCcaRUUX" role="1B3o_S" />
         <node concept="37vLTG" id="50zZCcaRV0x" role="3clF46">
@@ -1827,6 +1848,12 @@
           <property role="TrG5h" value="event" />
           <node concept="3uibUv" id="50zZCcaRV3W" role="1tU5fm">
             <ref role="3uigEE" to="hyam:~KeyEvent" resolve="KeyEvent" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="6nmR8pwMkT_" role="3clF46">
+          <property role="TrG5h" value="editorComponent" />
+          <node concept="3uibUv" id="6nmR8pwMkTA" role="1tU5fm">
+            <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
           </node>
         </node>
       </node>
@@ -3923,56 +3950,64 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="2wGnBKf5k_w" role="3clF47">
-                    <node concept="34ab3g" id="2wGnBKf5nGK" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="2wGnBKf5nGM" role="34bqiv">
-                        <property role="Xl_RC" value="before opened" />
+                    <node concept="1X3_iC" id="6nmR8pwM98_" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="2wGnBKf5nGK" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="Xl_RD" id="2wGnBKf5nGM" role="34bqiv">
+                          <property role="Xl_RC" value="before opened" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="2wGnBKf5l3D" role="3cqZAp">
-                      <node concept="2OqwBi" id="2wGnBKf5l3E" role="3clFbG">
-                        <node concept="2OqwBi" id="2wGnBKf5l3F" role="2Oq$k0">
-                          <node concept="2YIFZM" id="2wGnBKf5l3G" role="2Oq$k0">
-                            <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
-                            <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                    <node concept="1X3_iC" id="6nmR8pwM91s" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3clFbF" id="2wGnBKf5l3D" role="8Wnug">
+                        <node concept="2OqwBi" id="2wGnBKf5l3E" role="3clFbG">
+                          <node concept="2OqwBi" id="2wGnBKf5l3F" role="2Oq$k0">
+                            <node concept="2YIFZM" id="2wGnBKf5l3G" role="2Oq$k0">
+                              <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+                              <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                            </node>
+                            <node concept="2OwXpG" id="2wGnBKf5l3H" role="2OqNvi">
+                              <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+                            </node>
                           </node>
-                          <node concept="2OwXpG" id="2wGnBKf5l3H" role="2OqNvi">
-                            <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="2wGnBKf5l3I" role="2OqNvi">
-                          <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
-                          <node concept="2ShNRf" id="2wGnBKf5l3J" role="37wK5m">
-                            <node concept="1pGfFk" id="2wGnBKf5l3K" role="2ShVmc">
-                              <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifecycleEvent" />
-                              <node concept="2OqwBi" id="2wGnBKf5l3L" role="37wK5m">
-                                <node concept="Xjq3P" id="2wGnBKf5l3M" role="2Oq$k0" />
-                                <node concept="liA8E" id="2wGnBKf5l3N" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                                </node>
-                              </node>
-                              <node concept="Rm8GO" id="2wGnBKf5l3O" role="37wK5m">
-                                <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
-                                <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="NodeEditor" />
-                              </node>
-                              <node concept="2OqwBi" id="2wGnBKf5l3P" role="37wK5m">
-                                <node concept="2OqwBi" id="2wGnBKf5l3Q" role="2Oq$k0">
-                                  <node concept="37vLTw" id="2wGnBKf5ljW" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2wGnBKf5k_q" resolve="p0" />
+                          <node concept="liA8E" id="2wGnBKf5l3I" role="2OqNvi">
+                            <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                            <node concept="2ShNRf" id="2wGnBKf5l3J" role="37wK5m">
+                              <node concept="1pGfFk" id="2wGnBKf5l3K" role="2ShVmc">
+                                <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
+                                <node concept="2OqwBi" id="2wGnBKf5l3L" role="37wK5m">
+                                  <node concept="Xjq3P" id="2wGnBKf5l3M" role="2Oq$k0" />
+                                  <node concept="liA8E" id="2wGnBKf5l3N" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
                                   </node>
-                                  <node concept="liA8E" id="2wGnBKf5l3S" role="2OqNvi">
-                                    <ref role="37wK5l" to="iwsx:~FileEditorManager.getSelectedEditor(com.intellij.openapi.vfs.VirtualFile):com.intellij.openapi.fileEditor.FileEditor" resolve="getSelectedEditor" />
-                                    <node concept="37vLTw" id="2wGnBKf5lwp" role="37wK5m">
-                                      <ref role="3cqZAo" node="2wGnBKf5k_t" resolve="p1" />
+                                </node>
+                                <node concept="Rm8GO" id="2wGnBKf5l3O" role="37wK5m">
+                                  <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+                                  <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="NodeEditor" />
+                                </node>
+                                <node concept="2OqwBi" id="2wGnBKf5l3P" role="37wK5m">
+                                  <node concept="2OqwBi" id="2wGnBKf5l3Q" role="2Oq$k0">
+                                    <node concept="37vLTw" id="2wGnBKf5ljW" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="2wGnBKf5k_q" resolve="p0" />
+                                    </node>
+                                    <node concept="liA8E" id="2wGnBKf5l3S" role="2OqNvi">
+                                      <ref role="37wK5l" to="iwsx:~FileEditorManager.getSelectedEditor(com.intellij.openapi.vfs.VirtualFile):com.intellij.openapi.fileEditor.FileEditor" resolve="getSelectedEditor" />
+                                      <node concept="37vLTw" id="2wGnBKf5lwp" role="37wK5m">
+                                        <ref role="3cqZAo" node="2wGnBKf5k_t" resolve="p1" />
+                                      </node>
                                     </node>
                                   </node>
+                                  <node concept="liA8E" id="2wGnBKf5l3U" role="2OqNvi">
+                                    <ref role="37wK5l" to="iwsx:~FileEditor.getComponent():javax.swing.JComponent" resolve="getComponent" />
+                                  </node>
                                 </node>
-                                <node concept="liA8E" id="2wGnBKf5l3U" role="2OqNvi">
-                                  <ref role="37wK5l" to="iwsx:~FileEditor.getComponent():javax.swing.JComponent" resolve="getComponent" />
+                                <node concept="3clFbT" id="2wGnBKf5l3V" role="37wK5m">
+                                  <property role="3clFbU" value="true" />
                                 </node>
-                              </node>
-                              <node concept="3clFbT" id="2wGnBKf5l3V" role="37wK5m">
-                                <property role="3clFbU" value="true" />
                               </node>
                             </node>
                           </node>
@@ -4007,10 +4042,14 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="2wGnBKf5k_G" role="3clF47">
-                    <node concept="34ab3g" id="2wGnBKf5o8$" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="2wGnBKf5o8A" role="34bqiv">
-                        <property role="Xl_RC" value="before closed" />
+                    <node concept="1X3_iC" id="6nmR8pwM9dr" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="2wGnBKf5o8$" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="Xl_RD" id="2wGnBKf5o8A" role="34bqiv">
+                          <property role="Xl_RC" value="before closed" />
+                        </node>
                       </node>
                     </node>
                     <node concept="3clFbF" id="2wGnBKf5l_$" role="3cqZAp">
@@ -4028,7 +4067,7 @@
                           <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                           <node concept="2ShNRf" id="2wGnBKf5l_E" role="37wK5m">
                             <node concept="1pGfFk" id="2wGnBKf5l_F" role="2ShVmc">
-                              <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifecycleEvent" />
+                              <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
                               <node concept="2OqwBi" id="2wGnBKf5l_G" role="37wK5m">
                                 <node concept="Xjq3P" id="2wGnBKf5l_H" role="2Oq$k0" />
                                 <node concept="liA8E" id="2wGnBKf5l_I" role="2OqNvi">
@@ -4230,7 +4269,7 @@
                             <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                             <node concept="2ShNRf" id="2wGnBKf3MAU" role="37wK5m">
                               <node concept="1pGfFk" id="2wGnBKf4ei_" role="2ShVmc">
-                                <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifecycleEvent" />
+                                <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
                                 <node concept="2OqwBi" id="2wGnBKf4eEl" role="37wK5m">
                                   <node concept="Xjq3P" id="2wGnBKf4etx" role="2Oq$k0" />
                                   <node concept="liA8E" id="2wGnBKf4eMM" role="2OqNvi">
@@ -4324,7 +4363,7 @@
                             <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                             <node concept="2ShNRf" id="2wGnBKf4hb5" role="37wK5m">
                               <node concept="1pGfFk" id="2wGnBKf4hb6" role="2ShVmc">
-                                <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifecycleEvent" />
+                                <ref role="37wK5l" node="2wGnBKf3zdA" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
                                 <node concept="2OqwBi" id="2wGnBKf4hb7" role="37wK5m">
                                   <node concept="Xjq3P" id="2wGnBKf4hb8" role="2Oq$k0" />
                                   <node concept="liA8E" id="2wGnBKf4hb9" role="2OqNvi">
@@ -4378,7 +4417,7 @@
       <property role="2bfB8j" value="false" />
       <property role="1sVAO0" value="false" />
       <property role="1EXbeo" value="false" />
-      <property role="TrG5h" value="FileEditorLifecycleEvent" />
+      <property role="TrG5h" value="FileEditorLifeCycleEvent" />
       <node concept="2tJIrI" id="2wGnBKf3ywu" role="jymVt" />
       <node concept="312cEg" id="2wGnBKf3yGf" role="jymVt">
         <property role="34CwA1" value="false" />

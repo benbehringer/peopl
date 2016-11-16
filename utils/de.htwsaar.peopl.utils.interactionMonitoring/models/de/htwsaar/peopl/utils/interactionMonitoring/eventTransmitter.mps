@@ -233,8 +233,8 @@
           <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
           <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
         </node>
-        <node concept="2OwXpG" id="1K$tCF0yKze" role="2OqNvi">
-          <ref role="2Oxat5" to="30sj:2WEWlo0EtBU" resolve="mouseFilteredQueue" />
+        <node concept="2OwXpG" id="6nmR8pwLK1b" role="2OqNvi">
+          <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
         </node>
       </node>
     </node>
@@ -612,6 +612,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="5ahGEqwwpFT" role="3cqZAp">
+          <node concept="2OqwBi" id="5ahGEqwwpYN" role="3clFbG">
+            <node concept="37vLTw" id="5ahGEqwwpFR" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="5ahGEqwwqBk" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="5ahGEqwwvdK" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:2wGnBKf3xXm" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
@@ -637,7 +650,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIIZWR4" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIIZXvb" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZV_p" resolve="ModularProjectTree" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZV_p" resolve="ModularProjectTree_Handler" />
                 </node>
               </node>
             </node>
@@ -656,7 +669,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIIZZ8e" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIIZZwH" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZVDJ" resolve="ProductProjectTree" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZVDJ" resolve="ProductProjectTree_Handler" />
                 </node>
               </node>
             </node>
@@ -675,7 +688,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIIZZIf" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIIZZIg" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZVKS" resolve="StandardProjectTree" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZVKS" resolve="StandardProjectTree_Handler" />
                 </node>
               </node>
             </node>
@@ -694,7 +707,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIIZZYY" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIIZZYZ" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZKtJ" resolve="Messages" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZKtJ" resolve="Messages_Handler" />
                 </node>
               </node>
             </node>
@@ -713,7 +726,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIJ00hr" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIJ00hs" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZVQZ" resolve="Usages" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZVQZ" resolve="Usages_Handler" />
                 </node>
               </node>
             </node>
@@ -732,7 +745,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIJ00Ae" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIJ00Af" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZVU9" resolve="VC_LocalChanges" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZVU9" resolve="VCLocalChanges_Handler" />
                 </node>
               </node>
             </node>
@@ -751,7 +764,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIJ00Xn" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIJ00Xo" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZW22" resolve="VC_Log" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZW22" resolve="VCLog_Handler" />
                 </node>
               </node>
             </node>
@@ -764,13 +777,13 @@
             </node>
             <node concept="liA8E" id="7AOYwIJ01cS" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
-              <node concept="Rm8GO" id="7AOYwIJ04dT" role="37wK5m">
+              <node concept="Rm8GO" id="6nmR8pwNNa3" role="37wK5m">
                 <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="NodeEditor" />
                 <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
               </node>
-              <node concept="2ShNRf" id="7AOYwIJ01cU" role="37wK5m">
-                <node concept="1pGfFk" id="7AOYwIJ01cV" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZKMr" resolve="NodeEditor" />
+              <node concept="2ShNRf" id="6nmR8pwNREk" role="37wK5m">
+                <node concept="1pGfFk" id="6nmR8pwNRTA" role="2ShVmc">
+                  <ref role="37wK5l" to="oeof:7AOYwIIZKMr" resolve="NodeEditor_Handler" />
                 </node>
               </node>
             </node>
@@ -789,7 +802,7 @@
               </node>
               <node concept="2ShNRf" id="7AOYwIJ01tK" role="37wK5m">
                 <node concept="1pGfFk" id="7AOYwIJ01tL" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:7AOYwIIZW5C" resolve="Unknown" />
+                  <ref role="37wK5l" to="oeof:7AOYwIIZW5C" resolve="Unknown_Handler" />
                 </node>
               </node>
             </node>
@@ -808,7 +821,7 @@
               </node>
               <node concept="2ShNRf" id="71bn0eB256l" role="37wK5m">
                 <node concept="1pGfFk" id="71bn0eB25kb" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:71bn0eB22KB" resolve="ModuleDependencies" />
+                  <ref role="37wK5l" to="oeof:71bn0eB22KB" resolve="ModuleDependencies_Handler" />
                 </node>
               </node>
             </node>
@@ -827,7 +840,7 @@
               </node>
               <node concept="2ShNRf" id="6fNbIXdDFwD" role="37wK5m">
                 <node concept="1pGfFk" id="6fNbIXdDHXf" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:6fNbIXdDGI9" resolve="Statistics" />
+                  <ref role="37wK5l" to="oeof:6fNbIXdDGI9" resolve="Statistics_Handler" />
                 </node>
               </node>
             </node>
@@ -846,7 +859,7 @@
               </node>
               <node concept="2ShNRf" id="20ujiCwFFnR" role="37wK5m">
                 <node concept="1pGfFk" id="20ujiCwFFIL" role="2ShVmc">
-                  <ref role="37wK5l" to="oeof:20ujiCwFzQI" resolve="Unbound" />
+                  <ref role="37wK5l" to="oeof:20ujiCwFzQI" resolve="Unbound_Handler" />
                 </node>
               </node>
             </node>
@@ -945,7 +958,7 @@
       <node concept="3clFbS" id="7AOYwIIZIlo" role="3clF47">
         <node concept="3clFbH" id="dxrcT7S6$6" role="3cqZAp" />
         <node concept="3clFbH" id="3khGHOKE2us" role="3cqZAp" />
-        <node concept="1X3_iC" id="1nzFpHSjK3p" role="lGtFl">
+        <node concept="1X3_iC" id="5ahGEqwwU0O" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="34ab3g" id="3khGHOKE2H7" role="8Wnug">
