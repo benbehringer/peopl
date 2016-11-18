@@ -2,12 +2,12 @@
 <model ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)">
   <persistence version="9" />
   <languages>
-    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="fdcdc48f-bfd8-4831-aa76-5abac2ffa010" name="jetbrains.mps.baseLanguage.jdk8" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
   </languages>
   <imports>
     <import index="1hzg" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2(de.htwsaar.usageTracking/)" />
@@ -585,22 +585,64 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7obFNLlKSf3" role="3clF47">
-        <node concept="3cpWs6" id="7obFNLlKTI7" role="3cqZAp">
-          <node concept="3cpWs3" id="7obFNLlL3qe" role="3cqZAk">
-            <node concept="Xl_RD" id="7obFNLlL4By" role="3uHU7w">
-              <property role="Xl_RC" value="/" />
-            </node>
-            <node concept="3cpWs3" id="7obFNLlKXlO" role="3uHU7B">
-              <node concept="Xl_RD" id="7obFNLlKUWG" role="3uHU7B">
-                <property role="Xl_RC" value="/" />
-              </node>
-              <node concept="2OqwBi" id="7obFNLlL0Yk" role="3uHU7w">
-                <node concept="2YIFZM" id="7obFNLlKZMp" role="2Oq$k0">
-                  <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
-                  <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+        <node concept="3clFbJ" id="2nq$R4ZKWkK" role="3cqZAp">
+          <node concept="3clFbS" id="2nq$R4ZKWkM" role="3clFbx">
+            <node concept="3cpWs6" id="2nq$R4ZL1$j" role="3cqZAp">
+              <node concept="3cpWs3" id="2nq$R4ZL1$k" role="3cqZAk">
+                <node concept="Xl_RD" id="2nq$R4ZL1$l" role="3uHU7w">
+                  <property role="Xl_RC" value="/" />
                 </node>
-                <node concept="liA8E" id="7obFNLlL2dG" role="2OqNvi">
-                  <ref role="37wK5l" to="q7u:aG5Pjzerps" resolve="getUUID" />
+                <node concept="3cpWs3" id="2nq$R4ZL1$m" role="3uHU7B">
+                  <node concept="3cpWs3" id="2nq$R4ZL2UF" role="3uHU7B">
+                    <node concept="Xl_RD" id="2nq$R4ZL4eW" role="3uHU7w">
+                      <property role="Xl_RC" value="test/" />
+                    </node>
+                    <node concept="Xl_RD" id="2nq$R4ZL1$n" role="3uHU7B">
+                      <property role="Xl_RC" value="/" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2nq$R4ZL1$o" role="3uHU7w">
+                    <node concept="2YIFZM" id="2nq$R4ZL1$p" role="2Oq$k0">
+                      <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                      <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                    </node>
+                    <node concept="liA8E" id="2nq$R4ZL1$q" role="2OqNvi">
+                      <ref role="37wK5l" to="q7u:aG5Pjzerps" resolve="getUUID" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="2nq$R4ZKXCE" role="3clFbw">
+            <ref role="3cqZAo" node="lAMQjh5dWV" resolve="DEBUG" />
+          </node>
+          <node concept="9aQIb" id="2nq$R4ZKYWi" role="9aQIa">
+            <node concept="3clFbS" id="2nq$R4ZKYWj" role="9aQI4">
+              <node concept="3cpWs6" id="7obFNLlKTI7" role="3cqZAp">
+                <node concept="3cpWs3" id="7obFNLlL3qe" role="3cqZAk">
+                  <node concept="Xl_RD" id="7obFNLlL4By" role="3uHU7w">
+                    <property role="Xl_RC" value="/" />
+                  </node>
+                  <node concept="3cpWs3" id="7obFNLlKXlO" role="3uHU7B">
+                    <node concept="3cpWs3" id="2nq$R4ZL8cb" role="3uHU7B">
+                      <node concept="Xl_RD" id="2nq$R4ZL9wA" role="3uHU7w">
+                        <property role="Xl_RC" value="chalmers/" />
+                      </node>
+                      <node concept="Xl_RD" id="7obFNLlKUWG" role="3uHU7B">
+                        <property role="Xl_RC" value="/" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="7obFNLlL0Yk" role="3uHU7w">
+                      <node concept="2YIFZM" id="7obFNLlKZMp" role="2Oq$k0">
+                        <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+                        <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+                      </node>
+                      <node concept="liA8E" id="7obFNLlL2dG" role="2OqNvi">
+                        <ref role="37wK5l" to="q7u:aG5Pjzerps" resolve="getUUID" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
