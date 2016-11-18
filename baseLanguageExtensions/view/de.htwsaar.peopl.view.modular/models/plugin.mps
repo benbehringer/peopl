@@ -120,12 +120,16 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
+      <concept id="3729007189729192406" name="jetbrains.mps.lang.extension.structure.ExtensionPointDeclaration" flags="ng" index="vrV6u">
+        <child id="8029776554053057803" name="objectType" index="luc8K" />
+      </concept>
       <concept id="126958800891274162" name="jetbrains.mps.lang.extension.structure.Extension" flags="ig" index="1lYeZD">
         <reference id="126958800891274597" name="extensionPoint" index="1lYe$Y" />
       </concept>
@@ -464,6 +468,24 @@
         <ref role="1QQUv3" node="F_DJLM6VXl" resolve="get" />
       </node>
     </node>
+  </node>
+  <node concept="vrV6u" id="4J86HTC_Q$_">
+    <property role="TrG5h" value="Ext_ModularView" />
+    <node concept="3uibUv" id="4J86HTC_QOB" role="luc8K">
+      <ref role="3uigEE" node="4J86HTC_Q$C" resolve="IExt_ModularView" />
+    </node>
+  </node>
+  <node concept="3HP615" id="4J86HTC_Q$C">
+    <property role="TrG5h" value="IExt_ModularView" />
+    <node concept="3clFb_" id="4J86HTC_QIr" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="typedOriginal" />
+      <node concept="3clFbS" id="4J86HTC_QIu" role="3clF47" />
+      <node concept="3Tm1VV" id="4J86HTC_QIv" role="1B3o_S" />
+      <node concept="3cqZAl" id="4J86HTC_QIf" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="4J86HTC_Q$D" role="1B3o_S" />
   </node>
 </model>
 

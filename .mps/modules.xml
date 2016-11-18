@@ -30,7 +30,9 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection/de.slisson.mps.reflection.mpl" folder="mbeddr.helper" />
@@ -53,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
+      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.msd" folder="peopl.utils" />
     </projectModules>
   </component>
 </project>
