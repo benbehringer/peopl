@@ -729,6 +729,34 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="6vHH8ZdfdeD" role="3cqZAp">
+              <node concept="37vLTI" id="6vHH8ZdfdeE" role="3clFbG">
+                <node concept="10M0yZ" id="6vHH8ZdfdeF" role="37vLTJ">
+                  <ref role="1PxDUh" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
+                  <ref role="3cqZAo" to="fchx:5H_hR7HZRGK" resolve="listener" />
+                </node>
+                <node concept="2YIFZM" id="6vHH8ZdfdeG" role="37vLTx">
+                  <ref role="1Pybhc" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
+                  <ref role="37wK5l" to="fchx:5H_hR7HZRD_" resolve="getListener" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1R0T08haPMu" role="3cqZAp">
+              <node concept="2OqwBi" id="1R0T08haPMv" role="3clFbG">
+                <node concept="2YIFZM" id="1R0T08haPMw" role="2Oq$k0">
+                  <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
+                  <ref role="37wK5l" to="qkt:~ActionManager.getInstance():com.intellij.openapi.actionSystem.ActionManager" resolve="getInstance" />
+                </node>
+                <node concept="liA8E" id="1R0T08haPMx" role="2OqNvi">
+                  <ref role="37wK5l" to="qkt:~ActionManager.addAnActionListener(com.intellij.openapi.actionSystem.ex.AnActionListener):void" resolve="addAnActionListener" />
+                  <node concept="10M0yZ" id="1R0T08haPMy" role="37wK5m">
+                    <ref role="3cqZAo" to="fchx:5H_hR7HZRGK" resolve="listener" />
+                    <ref role="1PxDUh" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6vHH8Zdfdcc" role="3cqZAp" />
           </node>
           <node concept="37vLTw" id="1R0T08haPL1" role="3clFbw">
             <ref role="3cqZAo" node="1R0T08haPKt" resolve="run1" />
@@ -890,18 +918,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1R0T08haPMc" role="3cqZAp">
-              <node concept="37vLTI" id="1R0T08haPMd" role="3clFbG">
-                <node concept="10M0yZ" id="1R0T08haPMe" role="37vLTJ">
-                  <ref role="3cqZAo" to="fchx:5H_hR7HZRGK" resolve="listener" />
-                  <ref role="1PxDUh" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
-                </node>
-                <node concept="2YIFZM" id="1R0T08haPMf" role="37vLTx">
-                  <ref role="37wK5l" to="fchx:5H_hR7HZRD_" resolve="getListener" />
-                  <ref role="1Pybhc" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="1R0T08haPMg" role="3cqZAp">
               <node concept="37vLTI" id="1R0T08haPMh" role="3clFbG">
                 <node concept="2YIFZM" id="1R0T08haPMi" role="37vLTx">
@@ -940,21 +956,6 @@
                   <node concept="10M0yZ" id="1R0T08haPMt" role="37wK5m">
                     <ref role="3cqZAo" to="fchx:5H_hR7I02CE" resolve="listener" />
                     <ref role="1PxDUh" to="fchx:5H_hR7I02x7" resolve="ReloadListener_Provider" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1R0T08haPMu" role="3cqZAp">
-              <node concept="2OqwBi" id="1R0T08haPMv" role="3clFbG">
-                <node concept="2YIFZM" id="1R0T08haPMw" role="2Oq$k0">
-                  <ref role="1Pybhc" to="qkt:~ActionManager" resolve="ActionManager" />
-                  <ref role="37wK5l" to="qkt:~ActionManager.getInstance():com.intellij.openapi.actionSystem.ActionManager" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="1R0T08haPMx" role="2OqNvi">
-                  <ref role="37wK5l" to="qkt:~ActionManager.addAnActionListener(com.intellij.openapi.actionSystem.ex.AnActionListener):void" resolve="addAnActionListener" />
-                  <node concept="10M0yZ" id="1R0T08haPMy" role="37wK5m">
-                    <ref role="3cqZAo" to="fchx:5H_hR7HZRGK" resolve="listener" />
-                    <ref role="1PxDUh" to="fchx:5H_hR7HZQa_" resolve="AnActionListener_Provider" />
                   </node>
                 </node>
               </node>
