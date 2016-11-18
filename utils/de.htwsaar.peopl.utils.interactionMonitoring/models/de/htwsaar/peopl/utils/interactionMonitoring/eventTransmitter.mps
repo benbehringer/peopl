@@ -625,6 +625,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3xHMfzLbQLw" role="3cqZAp">
+          <node concept="2OqwBi" id="3xHMfzLbR7L" role="3clFbG">
+            <node concept="37vLTw" id="3xHMfzLbQLu" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="3xHMfzLbRL$" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="3xHMfzLbSkv" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
