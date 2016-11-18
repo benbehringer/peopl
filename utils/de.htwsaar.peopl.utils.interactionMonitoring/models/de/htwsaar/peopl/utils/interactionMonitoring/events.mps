@@ -446,6 +446,10 @@
       <property role="TrG5h" value="Unbound" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
+    <node concept="QsSxf" id="7JMHa6NJaVc" role="Qtgdg">
+      <property role="TrG5h" value="ModularView" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
     <node concept="3Tm1VV" id="4jnYSPQuDbx" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="71bn0eB1VWU">
@@ -1089,6 +1093,58 @@
     <node concept="3Tm1VV" id="6jgnRutUoNR" role="1B3o_S" />
     <node concept="3uibUv" id="6jgnRutUrsH" role="1zkMxy">
       <ref role="3uigEE" node="5ime7PBvKRI" resolve="MonitorEvent" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7JMHa6NIG_g">
+    <property role="TrG5h" value="TypedOriginalEvent" />
+    <node concept="2tJIrI" id="7JMHa6NIJeZ" role="jymVt" />
+    <node concept="3clFbW" id="7JMHa6NIJk$" role="jymVt">
+      <node concept="3cqZAl" id="7JMHa6NIJk_" role="3clF45" />
+      <node concept="3Tm1VV" id="7JMHa6NIJkA" role="1B3o_S" />
+      <node concept="3clFbS" id="7JMHa6NIJkC" role="3clF47">
+        <node concept="XkiVB" id="7JMHa6NIJkE" role="3cqZAp">
+          <ref role="37wK5l" node="50zZCcb1xwd" resolve="MonitorEvent" />
+          <node concept="37vLTw" id="7JMHa6NIJkI" role="37wK5m">
+            <ref role="3cqZAo" node="7JMHa6NIJkF" resolve="creator" />
+          </node>
+          <node concept="37vLTw" id="7JMHa6NIJkM" role="37wK5m">
+            <ref role="3cqZAo" node="7JMHa6NIJkJ" resolve="entity" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7JMHa6NIJkF" role="3clF46">
+        <property role="TrG5h" value="creator" />
+        <node concept="3uibUv" id="7JMHa6NIJkH" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7JMHa6NIJkJ" role="3clF46">
+        <property role="TrG5h" value="entity" />
+        <node concept="3uibUv" id="7JMHa6NIJkL" role="1tU5fm">
+          <ref role="3uigEE" node="4jnYSPQuDbw" resolve="UIEntity" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7JMHa6NIJf5" role="jymVt" />
+    <node concept="3Tm1VV" id="7JMHa6NIG_h" role="1B3o_S" />
+    <node concept="3uibUv" id="7JMHa6NIJea" role="1zkMxy">
+      <ref role="3uigEE" node="5ime7PBvKRI" resolve="MonitorEvent" />
+    </node>
+    <node concept="3clFb_" id="7JMHa6NIJen" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getInfo" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="7JMHa6NIJep" role="1B3o_S" />
+      <node concept="17QB3L" id="7JMHa6NIJeq" role="3clF45" />
+      <node concept="3clFbS" id="7JMHa6NIJer" role="3clF47">
+        <node concept="3cpWs6" id="7JMHa6NIJfP" role="3cqZAp">
+          <node concept="Xl_RD" id="7JMHa6NIJgc" role="3cqZAk">
+            <property role="Xl_RC" value="typed original in modular view" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

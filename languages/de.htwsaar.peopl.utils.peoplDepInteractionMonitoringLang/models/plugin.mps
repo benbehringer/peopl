@@ -306,7 +306,7 @@
                               </node>
                             </node>
                             <node concept="Rm8GO" id="6jgnRutU$3m" role="37wK5m">
-                              <ref role="Rm8GQ" to="e9fh:71bn0eB1LYm" resolve="ModuleDependecies" />
+                              <ref role="Rm8GQ" to="e9fh:71bn0eB1LYm" resolve="ModuleDependencies" />
                               <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
                             </node>
                             <node concept="2OqwBi" id="6jgnRutQ$yq" role="37wK5m">
@@ -411,6 +411,37 @@
                     <node concept="3SKdUt" id="4J86HTC_UuX" role="3cqZAp">
                       <node concept="3SKdUq" id="4J86HTC_UuY" role="3SKWNk">
                         <property role="3SKdUp" value="TODO: just count how often we typed &quot;original&quot; + timestamp" />
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="7JMHa6NJ5Ea" role="3cqZAp">
+                      <node concept="2OqwBi" id="7JMHa6NJ5TS" role="3clFbG">
+                        <node concept="2OqwBi" id="7JMHa6NJ5FT" role="2Oq$k0">
+                          <node concept="2YIFZM" id="7JMHa6NJ5Fl" role="2Oq$k0">
+                            <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                            <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+                          </node>
+                          <node concept="2OwXpG" id="7JMHa6NJ5J1" role="2OqNvi">
+                            <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7JMHa6NJ6gR" role="2OqNvi">
+                          <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                          <node concept="2ShNRf" id="7JMHa6NJ6kO" role="37wK5m">
+                            <node concept="1pGfFk" id="7JMHa6NJaw6" role="2ShVmc">
+                              <ref role="37wK5l" to="e9fh:7JMHa6NIJk$" resolve="TypedOriginalEvent" />
+                              <node concept="2OqwBi" id="7JMHa6NJa_E" role="37wK5m">
+                                <node concept="Xjq3P" id="7JMHa6NJaxW" role="2Oq$k0" />
+                                <node concept="liA8E" id="7JMHa6NJaGV" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                </node>
+                              </node>
+                              <node concept="Rm8GO" id="7JMHa6NJb6z" role="37wK5m">
+                                <ref role="Rm8GQ" to="e9fh:7JMHa6NJaVc" resolve="ModularView" />
+                                <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
