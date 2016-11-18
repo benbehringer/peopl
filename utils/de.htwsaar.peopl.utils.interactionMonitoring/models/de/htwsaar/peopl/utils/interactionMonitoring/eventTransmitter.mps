@@ -638,6 +638,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6jgnRutTUcl" role="3cqZAp">
+          <node concept="2OqwBi" id="6jgnRutTUzX" role="3clFbG">
+            <node concept="37vLTw" id="6jgnRutTUcj" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="6jgnRutTVf2" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="6jgnRutUx7g" role="37wK5m">
+                <ref role="3VsUkX" to="e9fh:6jgnRutUoNQ" resolve="DependencyDoubleClickEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
@@ -829,7 +842,7 @@
             <node concept="liA8E" id="71bn0eB24$j" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
               <node concept="Rm8GO" id="71bn0eB24RH" role="37wK5m">
-                <ref role="Rm8GQ" to="e9fh:71bn0eB1LYm" resolve="ModuleDependecies" />
+                <ref role="Rm8GQ" to="e9fh:71bn0eB1LYm" resolve="ModuleDependencies" />
                 <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
               </node>
               <node concept="2ShNRf" id="71bn0eB256l" role="37wK5m">
@@ -873,6 +886,25 @@
               <node concept="2ShNRf" id="20ujiCwFFnR" role="37wK5m">
                 <node concept="1pGfFk" id="20ujiCwFFIL" role="2ShVmc">
                   <ref role="37wK5l" to="oeof:20ujiCwFzQI" resolve="Unbound_Handler" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jgnRutUOR1" role="3cqZAp">
+          <node concept="2OqwBi" id="6jgnRutUPib" role="3clFbG">
+            <node concept="37vLTw" id="6jgnRutUOQZ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7AOYwIIZMbQ" resolve="handlers" />
+            </node>
+            <node concept="liA8E" id="6jgnRutUPZ6" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="Rm8GO" id="6jgnRutWRjd" role="37wK5m">
+                <ref role="Rm8GQ" to="e9fh:71bn0eB1LYm" resolve="ModuleDependencies" />
+                <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+              </node>
+              <node concept="2ShNRf" id="6jgnRutUQyL" role="37wK5m">
+                <node concept="1pGfFk" id="6jgnRutUQVu" role="2ShVmc">
+                  <ref role="37wK5l" to="oeof:71bn0eB22KB" resolve="ModuleDependencies_Handler" />
                 </node>
               </node>
             </node>
