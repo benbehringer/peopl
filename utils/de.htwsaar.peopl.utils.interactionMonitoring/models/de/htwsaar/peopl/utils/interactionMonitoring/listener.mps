@@ -41,6 +41,7 @@
     <import index="p3o1" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs.newvfs.events(MPS.IDEA/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="r1wh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.event(MPS.IDEA/)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -55,6 +56,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
@@ -244,6 +246,7 @@
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
@@ -279,9 +282,13 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -290,6 +297,7 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
+      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
@@ -3424,7 +3432,119 @@
                       <ref role="3uigEE" to="4iir:~CommandEvent" resolve="CommandEvent" />
                     </node>
                   </node>
-                  <node concept="3clFbS" id="5H_hR7HZYZt" role="3clF47" />
+                  <node concept="3clFbS" id="5H_hR7HZYZt" role="3clF47">
+                    <node concept="3clFbJ" id="5H_hR7HZZ05" role="3cqZAp">
+                      <node concept="3clFbS" id="5H_hR7HZZ06" role="3clFbx">
+                        <node concept="1X3_iC" id="7qy6ePoE09o" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="34ab3g" id="5H_hR7HZZ07" role="8Wnug">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="3cpWs3" id="5H_hR7HZZ08" role="34bqiv">
+                              <node concept="Xl_RD" id="5H_hR7HZZ09" role="3uHU7B">
+                                <property role="Xl_RC" value="commandFinished: " />
+                              </node>
+                              <node concept="2OqwBi" id="5H_hR7HZZ0a" role="3uHU7w">
+                                <node concept="37vLTw" id="5H_hR7HZZ0b" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5H_hR7HZYZr" resolve="event" />
+                                </node>
+                                <node concept="liA8E" id="5H_hR7HZZ0c" role="2OqNvi">
+                                  <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="7qy6ePoDYI1" role="3cqZAp">
+                          <node concept="3clFbS" id="7qy6ePoDYI3" role="3clFbx">
+                            <node concept="3SKdUt" id="7qy6ePoE2aT" role="3cqZAp">
+                              <node concept="3SKdUq" id="7qy6ePoE2aU" role="3SKWNk">
+                                <property role="3SKdUp" value="todo: get all editor components" />
+                              </node>
+                            </node>
+                            <node concept="34ab3g" id="7qy6ePoEarO" role="3cqZAp">
+                              <property role="35gtTG" value="warn" />
+                              <node concept="Xl_RD" id="7qy6ePoEarQ" role="34bqiv">
+                                <property role="Xl_RC" value="Before Close Active Editor" />
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="7qy6ePoE34N" role="3cqZAp">
+                              <node concept="2OqwBi" id="7qy6ePoE3oO" role="3clFbG">
+                                <node concept="2YIFZM" id="7qy6ePoE3iy" role="2Oq$k0">
+                                  <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
+                                  <ref role="37wK5l" to="kvq8:2WlJ6VKOSU7" resolve="findAllInstances" />
+                                </node>
+                                <node concept="2es0OD" id="7qy6ePoE3Ft" role="2OqNvi">
+                                  <node concept="1bVj0M" id="7qy6ePoE3Fv" role="23t8la">
+                                    <node concept="3clFbS" id="7qy6ePoE3Fw" role="1bW5cS">
+                                      <node concept="34ab3g" id="7qy6ePoEgCv" role="3cqZAp">
+                                        <property role="35gtTG" value="warn" />
+                                        <node concept="2OqwBi" id="7qy6ePoEjbZ" role="34bqiv">
+                                          <node concept="37vLTw" id="7qy6ePoEiVJ" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7qy6ePoE3Fx" resolve="it" />
+                                          </node>
+                                          <node concept="liA8E" id="7qy6ePoEjNZ" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="Rh6nW" id="7qy6ePoE3Fx" role="1bW2Oz">
+                                      <property role="TrG5h" value="it" />
+                                      <node concept="2jxLKc" id="7qy6ePoE3Fy" role="1tU5fm" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="7qy6ePoE133" role="3clFbw">
+                            <node concept="2OqwBi" id="7qy6ePoDYRi" role="2Oq$k0">
+                              <node concept="37vLTw" id="7qy6ePoDYRj" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5H_hR7HZYZr" resolve="event" />
+                              </node>
+                              <node concept="liA8E" id="7qy6ePoDYRk" role="2OqNvi">
+                                <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="7qy6ePoE1fo" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <node concept="Xl_RD" id="7qy6ePoDZ3b" role="37wK5m">
+                                <property role="Xl_RC" value="Close Active Editor" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="5H_hR7HZZ0d" role="3clFbw">
+                        <node concept="3y3z36" id="5H_hR7HZZ0e" role="3uHU7w">
+                          <node concept="10Nm6u" id="5H_hR7HZZ0f" role="3uHU7w" />
+                          <node concept="2OqwBi" id="5H_hR7HZZ0g" role="3uHU7B">
+                            <node concept="37vLTw" id="5H_hR7HZZ0h" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5H_hR7HZYZr" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="5H_hR7HZZ0i" role="2OqNvi">
+                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommand():java.lang.Runnable" resolve="getCommand" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3y3z36" id="5H_hR7HZZ0j" role="3uHU7B">
+                          <node concept="2OqwBi" id="5H_hR7HZZ0k" role="3uHU7B">
+                            <node concept="37vLTw" id="5H_hR7HZZ0l" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5H_hR7HZYZr" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="5H_hR7HZZ0m" role="2OqNvi">
+                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="5H_hR7HZZ0n" role="3uHU7w">
+                            <property role="Xl_RC" value="" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7qy6ePoE7bv" role="3cqZAp" />
+                  </node>
                 </node>
                 <node concept="3clFb_" id="5H_hR7HZYZu" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -3439,7 +3559,119 @@
                       <ref role="3uigEE" to="4iir:~CommandEvent" resolve="CommandEvent" />
                     </node>
                   </node>
-                  <node concept="3clFbS" id="5H_hR7HZYZz" role="3clF47" />
+                  <node concept="3clFbS" id="5H_hR7HZYZz" role="3clF47">
+                    <node concept="3clFbJ" id="7qy6ePoEkSo" role="3cqZAp">
+                      <node concept="3clFbS" id="7qy6ePoEkSp" role="3clFbx">
+                        <node concept="1X3_iC" id="7qy6ePoEkSq" role="lGtFl">
+                          <property role="3V$3am" value="statement" />
+                          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                          <node concept="34ab3g" id="7qy6ePoEkSr" role="8Wnug">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="3cpWs3" id="7qy6ePoEkSs" role="34bqiv">
+                              <node concept="Xl_RD" id="7qy6ePoEkSt" role="3uHU7B">
+                                <property role="Xl_RC" value="commandFinished: " />
+                              </node>
+                              <node concept="2OqwBi" id="7qy6ePoEkSu" role="3uHU7w">
+                                <node concept="37vLTw" id="7qy6ePoEkSv" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5H_hR7HZYZx" resolve="event" />
+                                </node>
+                                <node concept="liA8E" id="7qy6ePoEkSw" role="2OqNvi">
+                                  <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="7qy6ePoEkSx" role="3cqZAp">
+                          <node concept="3clFbS" id="7qy6ePoEkSy" role="3clFbx">
+                            <node concept="3SKdUt" id="7qy6ePoEkSz" role="3cqZAp">
+                              <node concept="3SKdUq" id="7qy6ePoEkS$" role="3SKWNk">
+                                <property role="3SKdUp" value="todo: get all editor components" />
+                              </node>
+                            </node>
+                            <node concept="34ab3g" id="7qy6ePoEkS_" role="3cqZAp">
+                              <property role="35gtTG" value="warn" />
+                              <node concept="Xl_RD" id="7qy6ePoEkSA" role="34bqiv">
+                                <property role="Xl_RC" value="After Close Active Editor" />
+                              </node>
+                            </node>
+                            <node concept="3clFbF" id="7qy6ePoEkSB" role="3cqZAp">
+                              <node concept="2OqwBi" id="7qy6ePoEkSC" role="3clFbG">
+                                <node concept="2YIFZM" id="7qy6ePoEkSD" role="2Oq$k0">
+                                  <ref role="37wK5l" to="kvq8:2WlJ6VKOSU7" resolve="findAllInstances" />
+                                  <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
+                                </node>
+                                <node concept="2es0OD" id="7qy6ePoEkSE" role="2OqNvi">
+                                  <node concept="1bVj0M" id="7qy6ePoEkSF" role="23t8la">
+                                    <node concept="3clFbS" id="7qy6ePoEkSG" role="1bW5cS">
+                                      <node concept="34ab3g" id="7qy6ePoEkSH" role="3cqZAp">
+                                        <property role="35gtTG" value="warn" />
+                                        <node concept="2OqwBi" id="7qy6ePoElqm" role="34bqiv">
+                                          <node concept="37vLTw" id="7qy6ePoEruv" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="7qy6ePoEkSL" resolve="it" />
+                                          </node>
+                                          <node concept="liA8E" id="7qy6ePoEmDY" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="Rh6nW" id="7qy6ePoEkSL" role="1bW2Oz">
+                                      <property role="TrG5h" value="it" />
+                                      <node concept="2jxLKc" id="7qy6ePoEkSM" role="1tU5fm" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="7qy6ePoEkSN" role="3clFbw">
+                            <node concept="2OqwBi" id="7qy6ePoEkSO" role="2Oq$k0">
+                              <node concept="37vLTw" id="7qy6ePoEkSP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5H_hR7HZYZx" resolve="event" />
+                              </node>
+                              <node concept="liA8E" id="7qy6ePoEkSQ" role="2OqNvi">
+                                <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="7qy6ePoEkSR" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                              <node concept="Xl_RD" id="7qy6ePoEkSS" role="37wK5m">
+                                <property role="Xl_RC" value="Close Active Editor" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="1Wc70l" id="7qy6ePoEkST" role="3clFbw">
+                        <node concept="3y3z36" id="7qy6ePoEkSU" role="3uHU7w">
+                          <node concept="10Nm6u" id="7qy6ePoEkSV" role="3uHU7w" />
+                          <node concept="2OqwBi" id="7qy6ePoEkSW" role="3uHU7B">
+                            <node concept="37vLTw" id="7qy6ePoEkSX" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5H_hR7HZYZx" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="7qy6ePoEkSY" role="2OqNvi">
+                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommand():java.lang.Runnable" resolve="getCommand" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3y3z36" id="7qy6ePoEkSZ" role="3uHU7B">
+                          <node concept="2OqwBi" id="7qy6ePoEkT0" role="3uHU7B">
+                            <node concept="37vLTw" id="7qy6ePoEkT1" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5H_hR7HZYZx" resolve="event" />
+                            </node>
+                            <node concept="liA8E" id="7qy6ePoEkT2" role="2OqNvi">
+                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="7qy6ePoEkT3" role="3uHU7w">
+                            <property role="Xl_RC" value="" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7qy6ePoEpZc" role="3cqZAp" />
+                  </node>
                 </node>
                 <node concept="3clFb_" id="5H_hR7HZYZ$" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -3530,52 +3762,13 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbJ" id="5H_hR7HZZ05" role="3cqZAp">
-                      <node concept="3clFbS" id="5H_hR7HZZ06" role="3clFbx">
-                        <node concept="34ab3g" id="5H_hR7HZZ07" role="3cqZAp">
-                          <property role="35gtTG" value="warn" />
-                          <node concept="3cpWs3" id="5H_hR7HZZ08" role="34bqiv">
-                            <node concept="Xl_RD" id="5H_hR7HZZ09" role="3uHU7B">
-                              <property role="Xl_RC" value="commandFinished: " />
-                            </node>
-                            <node concept="2OqwBi" id="5H_hR7HZZ0a" role="3uHU7w">
-                              <node concept="37vLTw" id="5H_hR7HZZ0b" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5H_hR7HZYZB" resolve="event" />
-                              </node>
-                              <node concept="liA8E" id="5H_hR7HZZ0c" role="2OqNvi">
-                                <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="1Wc70l" id="5H_hR7HZZ0d" role="3clFbw">
-                        <node concept="3y3z36" id="5H_hR7HZZ0e" role="3uHU7w">
-                          <node concept="10Nm6u" id="5H_hR7HZZ0f" role="3uHU7w" />
-                          <node concept="2OqwBi" id="5H_hR7HZZ0g" role="3uHU7B">
-                            <node concept="37vLTw" id="5H_hR7HZZ0h" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5H_hR7HZYZB" resolve="event" />
-                            </node>
-                            <node concept="liA8E" id="5H_hR7HZZ0i" role="2OqNvi">
-                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommand():java.lang.Runnable" resolve="getCommand" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="3y3z36" id="5H_hR7HZZ0j" role="3uHU7B">
-                          <node concept="2OqwBi" id="5H_hR7HZZ0k" role="3uHU7B">
-                            <node concept="37vLTw" id="5H_hR7HZZ0l" role="2Oq$k0">
-                              <ref role="3cqZAo" node="5H_hR7HZYZB" resolve="event" />
-                            </node>
-                            <node concept="liA8E" id="5H_hR7HZZ0m" role="2OqNvi">
-                              <ref role="37wK5l" to="4iir:~CommandEvent.getCommandName():java.lang.String" resolve="getCommandName" />
-                            </node>
-                          </node>
-                          <node concept="Xl_RD" id="5H_hR7HZZ0n" role="3uHU7w">
-                            <property role="Xl_RC" value="" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
+                    <node concept="3clFbH" id="7qy6ePoEkRJ" role="lGtFl" />
+                    <node concept="3clFbH" id="7qy6ePoEkRg" role="lGtFl" />
+                    <node concept="3clFbH" id="7qy6ePoEdoc" role="lGtFl" />
+                    <node concept="3clFbH" id="7qy6ePoEdnJ" role="lGtFl" />
+                    <node concept="3clFbH" id="7qy6ePoEkSf" role="3cqZAp" />
+                    <node concept="3clFbH" id="7qy6ePoEkSk" role="3cqZAp" />
+                    <node concept="3clFbH" id="7qy6ePoEkSh" role="3cqZAp" />
                   </node>
                 </node>
                 <node concept="3clFb_" id="5H_hR7HZZ0o" role="jymVt">
