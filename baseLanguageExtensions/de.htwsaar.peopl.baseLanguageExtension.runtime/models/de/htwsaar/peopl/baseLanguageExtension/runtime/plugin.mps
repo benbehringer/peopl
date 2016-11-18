@@ -3176,8 +3176,8 @@
   <node concept="sE7Ow" id="N2c_jix8_0">
     <property role="3GE5qa" value="Actions" />
     <property role="TrG5h" value="FixFragmentPosition" />
-    <property role="2uzpH1" value="Fix position of fragments" />
-    <property role="1WHSii" value="Fix position of fragments in PEoPL-blocks" />
+    <property role="2uzpH1" value="Fix Unavailable References in Completion Menu" />
+    <property role="1WHSii" value="Fixes the position of fragments in feature blocks" />
     <node concept="1DS2jV" id="N2c_jixb79" role="1NuT2Z">
       <property role="TrG5h" value="solutionModule" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.CONTEXT_MODULE" resolve="CONTEXT_MODULE" />
@@ -3651,7 +3651,7 @@
                                             </node>
                                             <node concept="3cpWs3" id="N2c_jix_VB" role="3uHU7B">
                                               <node concept="Xl_RD" id="N2c_jix_KV" role="3uHU7B">
-                                                <property role="Xl_RC" value="fixed " />
+                                                <property role="Xl_RC" value="Fixed " />
                                               </node>
                                               <node concept="37vLTw" id="N2c_jixA18" role="3uHU7w">
                                                 <ref role="3cqZAo" node="N2c_jixzsi" resolve="fixes" />

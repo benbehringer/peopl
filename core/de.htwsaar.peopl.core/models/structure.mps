@@ -166,17 +166,17 @@
     <property role="34LRSv" value="Module definition" />
     <property role="MwhBj" value="${module}/icons/peoplModulesAlternative_layout.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="21x6ayXLClK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="constraints" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
     <node concept="1TJgyj" id="7Ufy5VQFkRE" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="modules" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
+    <node concept="1TJgyj" id="21x6ayXLClK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="constraints" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="7Ufy5VQFkRH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

@@ -134,7 +134,7 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5JUeq" role="m$_w8">
         <node concept="3Mxwew" id="4RAsyl5JUeG" role="3MwsjC">
-          <property role="3MwjfP" value="0.6.3" />
+          <property role="3MwjfP" value="0.6.6" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5JUes" role="m$_yQ">
@@ -683,12 +683,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4RAsyl5JYyx" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5JYyy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" node="4RAsyl5JUxS" resolve="com.mbeddr.mpsutil.intentions" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4RAsyl5JYyz" role="3bR37C">
           <node concept="1Busua" id="4RAsyl5JYy$" role="1SiIV1">
             <ref role="1Busuk" to="ffeo:7Kfy9QB6L7y" resolve="jetbrains.mps.lang.intentions" />
@@ -735,12 +729,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4RAsyl5JYyf" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5JYyg" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4x" resolve="jetbrains.mps.lang.constraints" />
           </node>
         </node>
         <node concept="1SiIV0" id="4RAsyl5JYyh" role="3bR37C">
@@ -1228,12 +1216,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="4RAsyl5JYuX" role="3bR37C">
-          <node concept="3bR9La" id="4RAsyl5JYuY" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
-          </node>
-        </node>
         <node concept="1E0d5M" id="4RAsyl5JYuZ" role="1E1XAP">
           <ref role="1E0d5P" node="4RAsyl5JVSD" resolve="de.itemis.mps.tooltips.runtime" />
         </node>
@@ -1478,7 +1460,7 @@
                 <node concept="2Ry0Ak" id="4RAsyl5JUe8" role="2Ry0An">
                   <property role="2Ry0Am" value="Applications" />
                   <node concept="2Ry0Ak" id="4HgkuxiptkO" role="2Ry0An">
-                    <property role="2Ry0Am" value="PEoPL 0.6 2.app" />
+                    <property role="2Ry0Am" value="PEoPL 0.6.app" />
                     <node concept="2Ry0Ak" id="4Hgkuxiptqv" role="2Ry0An">
                       <property role="2Ry0Am" value="Contents" />
                     </node>
