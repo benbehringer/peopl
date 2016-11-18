@@ -3354,7 +3354,7 @@
     <node concept="312cEg" id="20ujiCwI0Rl" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="compEntries" />
+      <property role="TrG5h" value="compEntry" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="20ujiCwI0Rm" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
@@ -3379,12 +3379,19 @@
         <node concept="2B6LJw" id="20ujiCwI1am" role="2B76xF">
           <ref role="2B6OnR" to="m3wx:~XmlElementWrapper.name()" resolve="name" />
           <node concept="Xl_RD" id="20ujiCwI1aG" role="2B70Vg">
-            <property role="Xl_RC" value="mouseEvents" />
+            <property role="Xl_RC" value="ComponentEntries" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1ZljV50F1o1" role="jymVt" />
+    <node concept="312cEg" id="6vHH8ZdeqFe" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="timesAltEnterPressed" />
+      <property role="3TUv4t" value="false" />
+      <node concept="10Oyi0" id="6vHH8ZdeqvX" role="1tU5fm" />
+      <node concept="3Tm1VV" id="6vHH8ZdeqHK" role="1B3o_S" />
+    </node>
     <node concept="2tJIrI" id="20ujiCwI0hh" role="jymVt" />
     <node concept="3clFbW" id="20ujiCwI2mx" role="jymVt">
       <node concept="3cqZAl" id="20ujiCwI2my" role="3clF45" />
