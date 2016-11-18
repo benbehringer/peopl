@@ -664,6 +664,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="2aiVlhvFJ8V" role="3cqZAp">
+          <node concept="2OqwBi" id="2aiVlhvFJzh" role="3clFbG">
+            <node concept="37vLTw" id="2aiVlhvFJ8T" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="2aiVlhvFKgU" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="2aiVlhvFK_y" role="37wK5m">
+                <ref role="3VsUkX" to="e9fh:7JMHa6NIG_g" resolve="TypedOriginalEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="2Qzkdny4jaP" role="3cqZAp" />
       </node>
       <node concept="3Tm6S6" id="2Qzkdny4hqD" role="1B3o_S" />
@@ -918,6 +931,25 @@
               <node concept="2ShNRf" id="6jgnRutUQyL" role="37wK5m">
                 <node concept="1pGfFk" id="6jgnRutUQVu" role="2ShVmc">
                   <ref role="37wK5l" to="oeof:71bn0eB22KB" resolve="ModuleDependencies_Handler" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2aiVlhvFKZP" role="3cqZAp">
+          <node concept="2OqwBi" id="2aiVlhvFLnF" role="3clFbG">
+            <node concept="37vLTw" id="2aiVlhvFKZN" role="2Oq$k0">
+              <ref role="3cqZAo" node="7AOYwIIZMbQ" resolve="handlers" />
+            </node>
+            <node concept="liA8E" id="2aiVlhvFM5E" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~HashMap.put(java.lang.Object,java.lang.Object):java.lang.Object" resolve="put" />
+              <node concept="Rm8GO" id="2aiVlhvFMxA" role="37wK5m">
+                <ref role="Rm8GQ" to="e9fh:7JMHa6NJaVc" resolve="ModularView" />
+                <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+              </node>
+              <node concept="2ShNRf" id="2aiVlhvFMK6" role="37wK5m">
+                <node concept="1pGfFk" id="2aiVlhvFO7i" role="2ShVmc">
+                  <ref role="37wK5l" to="oeof:7JMHa6NJcBa" resolve="ModularView_Handler" />
                 </node>
               </node>
             </node>
