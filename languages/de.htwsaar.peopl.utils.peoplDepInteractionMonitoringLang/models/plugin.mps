@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e1cdfa95-8203-4365-8f16-980c0a53b090(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.extensions)">
+<model ref="r:b3e590ec-601c-4289-8033-6eab75cc322a(de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.plugin)">
   <persistence version="9" />
   <languages>
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="gdbn" ref="r:b91777f9-f446-48cd-aaff-34f62ecc4eb1(de.htwsaar.peopl.core.tools.moduleDependenciesTool)" />
+    <import index="fizn" ref="r:fd69ee87-5891-45ef-a12b-740b59a10d80(de.htwsaar.peopl.core.toolsLanguage.plugin)" />
     <import index="47yi" ref="r:5cf17c21-ed65-4226-8f9a-87715e905f3c(de.htwsaar.peopl.view.modular.plugin)" />
-    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
+    <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -17,6 +18,9 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
@@ -82,6 +86,12 @@
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
       </concept>
     </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
+        <property id="1167245565795" name="severity" index="35gtTG" />
+        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
     </language>
@@ -93,7 +103,7 @@
   </registry>
   <node concept="1lYeZD" id="2DaI_9b2CKX">
     <property role="TrG5h" value="ExtDef_DependencyTool" />
-    <ref role="1lYe$Y" to="gdbn:2DaI_9b2yMP" resolve="Ext_DependencyTool" />
+    <ref role="1lYe$Y" to="fizn:2DaI_9b2yMP" resolve="Ext_DependencyTool" />
     <node concept="3Tm1VV" id="2DaI_9b2CKY" role="1B3o_S" />
     <node concept="2tJIrI" id="2DaI_9b2CKZ" role="jymVt" />
     <node concept="3tTeZs" id="2DaI_9b2CL0" role="jymVt">
@@ -115,8 +125,8 @@
             <node concept="YeOm9" id="2DaI_9b2E9z" role="2ShVmc">
               <node concept="1Y3b0j" id="2DaI_9b2E9A" role="YeSDq">
                 <property role="2bfB8j" value="true" />
-                <ref role="1Y3XeK" to="gdbn:2DaI_9b2yMS" resolve="IExt_DependencyTool" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                <ref role="1Y3XeK" to="fizn:2DaI_9b2yMS" resolve="IExt_DependencyTool" />
                 <node concept="3Tm1VV" id="2DaI_9b2E9B" role="1B3o_S" />
                 <node concept="3clFb_" id="2DaI_9b2E9C" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -132,6 +142,12 @@
                     <node concept="3SKdUt" id="4J86HTC_Y3U" role="3cqZAp">
                       <node concept="3SKdUq" id="4J86HTC_Y3V" role="3SKWNk">
                         <property role="3SKdUp" value="TODO: save a map of node id + concept for the node itself and each ancestor + timestamp" />
+                      </node>
+                    </node>
+                    <node concept="34ab3g" id="4J86HTC_Ye3" role="3cqZAp">
+                      <property role="35gtTG" value="warn" />
+                      <node concept="Xl_RD" id="4J86HTC_Ye5" role="34bqiv">
+                        <property role="Xl_RC" value="doubleClickHook" />
                       </node>
                     </node>
                   </node>
@@ -194,8 +210,8 @@
         </node>
       </node>
       <node concept="q3mfm" id="4J86HTC_S1K" role="3clF45">
-        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="4J86HTC_S1F" resolve="get" />
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
       </node>
     </node>
   </node>

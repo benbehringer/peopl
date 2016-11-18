@@ -203,7 +203,7 @@
       <node concept="3clFbS" id="4p4J_SJuKZG" role="2VODD2">
         <node concept="3clFbF" id="4p4J_SJuL4s" role="3cqZAp">
           <node concept="Xl_RD" id="4p4J_SJuL4r" role="3clFbG">
-            <property role="Xl_RC" value="Set This Product Active" />
+            <property role="Xl_RC" value="Set This Variant Configuration Active" />
           </node>
         </node>
       </node>
