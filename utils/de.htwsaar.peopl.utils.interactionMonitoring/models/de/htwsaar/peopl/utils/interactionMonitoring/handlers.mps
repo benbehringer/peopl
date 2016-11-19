@@ -1154,7 +1154,7 @@
             <node concept="34ab3g" id="4cUJtW9nBfx" role="3cqZAp">
               <property role="35gtTG" value="warn" />
               <node concept="Xl_RD" id="4cUJtW9nBfz" role="34bqiv">
-                <property role="Xl_RC" value=" openEditorEV" />
+                <property role="Xl_RC" value=" ------ start  Close Process -----" />
               </node>
             </node>
             <node concept="3cpWs8" id="6vHH8ZdgA4M" role="3cqZAp">
@@ -1232,35 +1232,15 @@
                     <node concept="3clFbS" id="4a82Tge5TaN" role="1bW5cS">
                       <node concept="34ab3g" id="4a82Tge5Vz_" role="3cqZAp">
                         <property role="35gtTG" value="warn" />
-                        <node concept="3cpWs3" id="4a82Tge6jVe" role="34bqiv">
-                          <node concept="2YIFZM" id="4a82Tge5VzA" role="3uHU7w">
-                            <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                            <node concept="2OqwBi" id="4a82Tge5VzB" role="37wK5m">
-                              <node concept="37vLTw" id="4a82Tge5VOE" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4a82Tge5TaO" resolve="openEditor" />
-                              </node>
-                              <node concept="liA8E" id="4a82Tge5VzD" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
-                              </node>
+                        <node concept="2YIFZM" id="4a82Tge5VzA" role="34bqiv">
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <node concept="2OqwBi" id="4a82Tge5VzB" role="37wK5m">
+                            <node concept="37vLTw" id="4a82Tge5VOE" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4a82Tge5TaO" resolve="openEditor" />
                             </node>
-                          </node>
-                          <node concept="3cpWs3" id="4a82Tge6bih" role="3uHU7B">
-                            <node concept="2OqwBi" id="4a82Tge5VzF" role="3uHU7B">
-                              <node concept="2OqwBi" id="4a82Tge5VzG" role="2Oq$k0">
-                                <node concept="37vLTw" id="4a82Tge5VVx" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4a82Tge5TaO" resolve="openEditor" />
-                                </node>
-                                <node concept="liA8E" id="4a82Tge5VzI" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="4a82Tge5VzJ" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Class.toString():java.lang.String" resolve="toString" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="4a82Tge6kcN" role="3uHU7w">
-                              <property role="Xl_RC" value=", " />
+                            <node concept="liA8E" id="4a82Tge5VzD" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
                             </node>
                           </node>
                         </node>
@@ -1278,7 +1258,7 @@
             <node concept="34ab3g" id="4a82Tge69Wf" role="3cqZAp">
               <property role="35gtTG" value="warn" />
               <node concept="Xl_RD" id="4a82Tge69Wh" role="34bqiv">
-                <property role="Xl_RC" value="openHandlers" />
+                <property role="Xl_RC" value="openHandlers before " />
               </node>
             </node>
             <node concept="3clFbF" id="4a82Tge5NfY" role="3cqZAp">
@@ -1291,35 +1271,15 @@
                     <node concept="3clFbS" id="4a82Tge5O5i" role="1bW5cS">
                       <node concept="34ab3g" id="7qy6ePoEgCv" role="3cqZAp">
                         <property role="35gtTG" value="warn" />
-                        <node concept="3cpWs3" id="4a82Tge6eua" role="34bqiv">
-                          <node concept="2YIFZM" id="6a8iK3Q8Ke8" role="3uHU7w">
-                            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-                            <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-                            <node concept="2OqwBi" id="7qy6ePoEjbZ" role="37wK5m">
-                              <node concept="37vLTw" id="7qy6ePoEiVJ" role="2Oq$k0">
-                                <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openEditorHandler" />
-                              </node>
-                              <node concept="liA8E" id="7qy6ePoEjNZ" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
-                              </node>
+                        <node concept="2YIFZM" id="6a8iK3Q8Ke8" role="34bqiv">
+                          <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+                          <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+                          <node concept="2OqwBi" id="7qy6ePoEjbZ" role="37wK5m">
+                            <node concept="37vLTw" id="7qy6ePoEiVJ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openHandlerComponent" />
                             </node>
-                          </node>
-                          <node concept="3cpWs3" id="4a82Tge6kz9" role="3uHU7B">
-                            <node concept="2OqwBi" id="6a8iK3Q8NFv" role="3uHU7B">
-                              <node concept="2OqwBi" id="6a8iK3Q8Mh1" role="2Oq$k0">
-                                <node concept="37vLTw" id="6a8iK3Q8M1T" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openEditorHandler" />
-                                </node>
-                                <node concept="liA8E" id="6a8iK3Q8NzO" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="6a8iK3Q8O2Z" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Class.toString():java.lang.String" resolve="toString" />
-                              </node>
-                            </node>
-                            <node concept="Xl_RD" id="4a82Tge6kNk" role="3uHU7w">
-                              <property role="Xl_RC" value=", " />
+                            <node concept="liA8E" id="7qy6ePoEjNZ" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
                             </node>
                           </node>
                         </node>
@@ -1347,25 +1307,9 @@
                                     <node concept="liA8E" id="6ZZ6ksSsskQ" role="2OqNvi">
                                       <ref role="37wK5l" to="33ny:~HashMap.get(java.lang.Object):java.lang.Object" resolve="get" />
                                       <node concept="37vLTw" id="6ZZ6ksSssDZ" role="37wK5m">
-                                        <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openEditorHandler" />
+                                        <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openHandlerComponent" />
                                       </node>
                                     </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="34ab3g" id="6taxJqQT5C7" role="3cqZAp">
-                                <property role="35gtTG" value="warn" />
-                                <node concept="3cpWs3" id="6taxJqQT7Jh" role="34bqiv">
-                                  <node concept="2OqwBi" id="6taxJqQT8a5" role="3uHU7w">
-                                    <node concept="37vLTw" id="6taxJqQT7Xc" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6ZZ6ksSsskM" resolve="compHandler" />
-                                    </node>
-                                    <node concept="2OwXpG" id="6taxJqQT8oc" role="2OqNvi">
-                                      <ref role="2Oxat5" node="6CwTPwGsWQm" resolve="rootNodeName" />
-                                    </node>
-                                  </node>
-                                  <node concept="Xl_RD" id="6taxJqQT5C9" role="3uHU7B">
-                                    <property role="Xl_RC" value=" going to close : " />
                                   </node>
                                 </node>
                               </node>
@@ -1386,7 +1330,7 @@
                             <node concept="2OqwBi" id="6ZZ6ksSslT2" role="3clFbw">
                               <node concept="2OqwBi" id="6ZZ6ksSskwB" role="2Oq$k0">
                                 <node concept="37vLTw" id="6ZZ6ksSsklA" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openEditorHandler" />
+                                  <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openHandlerComponent" />
                                 </node>
                                 <node concept="liA8E" id="6ZZ6ksSslFu" role="2OqNvi">
                                   <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
@@ -1413,7 +1357,7 @@
                             </node>
                             <node concept="3JPx81" id="6ZZ6ksSsngQ" role="2OqNvi">
                               <node concept="37vLTw" id="6ZZ6ksSsngR" role="25WWJ7">
-                                <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openEditorHandler" />
+                                <ref role="3cqZAo" node="4a82Tge5O5j" resolve="openHandlerComponent" />
                               </node>
                             </node>
                           </node>
@@ -1421,7 +1365,7 @@
                       </node>
                     </node>
                     <node concept="Rh6nW" id="4a82Tge5O5j" role="1bW2Oz">
-                      <property role="TrG5h" value="openEditorHandler" />
+                      <property role="TrG5h" value="openHandlerComponent" />
                       <node concept="2jxLKc" id="4a82Tge5O5k" role="1tU5fm" />
                     </node>
                   </node>
@@ -1453,6 +1397,12 @@
               </node>
               <node concept="37vLTw" id="6taxJqQTb8e" role="1DdaDG">
                 <ref role="3cqZAo" node="6taxJqQSSd2" resolve="handlersToClose" />
+              </node>
+            </node>
+            <node concept="34ab3g" id="2ntIzZMKSUW" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="2ntIzZMKSUX" role="34bqiv">
+                <property role="Xl_RC" value=" ------ end  Close Process -----" />
               </node>
             </node>
             <node concept="3clFbH" id="6Qwrj0nV06H" role="3cqZAp" />
@@ -1986,6 +1936,32 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="34ab3g" id="2ntIzZMKQEl" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="3cpWs3" id="2ntIzZMKTuB" role="34bqiv">
+              <node concept="2OqwBi" id="2ntIzZMKT$b" role="3uHU7w">
+                <node concept="37vLTw" id="2ntIzZMKTwj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6nmR8pwM_wR" resolve="component" />
+                </node>
+                <node concept="liA8E" id="2ntIzZMKUHJ" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                </node>
+              </node>
+              <node concept="3cpWs3" id="2ntIzZMKTiu" role="3uHU7B">
+                <node concept="3cpWs3" id="2ntIzZMKQPB" role="3uHU7B">
+                  <node concept="Xl_RD" id="2ntIzZMKQEn" role="3uHU7B">
+                    <property role="Xl_RC" value="new Handler for :" />
+                  </node>
+                  <node concept="37vLTw" id="2ntIzZMKTgh" role="3uHU7w">
+                    <ref role="3cqZAo" node="6CwTPwGsY$M" resolve="rootNodeName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="2ntIzZMKTjG" role="3uHU7w">
+                  <property role="Xl_RC" value="    with hash :" />
                 </node>
               </node>
             </node>
@@ -2620,6 +2596,22 @@
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
         <node concept="3clFbS" id="6nmR8pwNsNp" role="3clF47">
+          <node concept="34ab3g" id="2ntIzZMKPa7" role="3cqZAp">
+            <property role="35gtTG" value="warn" />
+            <node concept="3cpWs3" id="2ntIzZMKPeK" role="34bqiv">
+              <node concept="2OqwBi" id="2ntIzZMKPkq" role="3uHU7w">
+                <node concept="37vLTw" id="2ntIzZMKPg7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1ZljV50EPLT" resolve="editorComponent" />
+                </node>
+                <node concept="liA8E" id="2ntIzZMKQtW" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~Object.hashCode():int" resolve="hashCode" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="2ntIzZMKPa9" role="3uHU7B">
+                <property role="Xl_RC" value=" closing myself : " />
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="6nmR8pwNz6O" role="3cqZAp">
             <node concept="37vLTI" id="6nmR8pwNz8p" role="3clFbG">
               <node concept="2OqwBi" id="6nmR8pwNzaT" role="37vLTx">

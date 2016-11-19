@@ -42,6 +42,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="r1wh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor.event(MPS.IDEA/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
+    <import index="zyr2" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.inspector(MPS.Editor/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -4221,17 +4222,21 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="6Yc6lmJHzlz" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="3cpWs3" id="6Yc6lmJHznU" role="34bqiv">
-                        <node concept="2OqwBi" id="6Yc6lmJH$0Z" role="3uHU7w">
-                          <node concept="37vLTw" id="6Yc6lmJHzFl" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6Yc6lmJHcCZ" resolve="comps" />
+                    <node concept="1X3_iC" id="2ntIzZMKRkw" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="6Yc6lmJHzlz" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="3cpWs3" id="6Yc6lmJHznU" role="34bqiv">
+                          <node concept="2OqwBi" id="6Yc6lmJH$0Z" role="3uHU7w">
+                            <node concept="37vLTw" id="6Yc6lmJHzFl" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6Yc6lmJHcCZ" resolve="comps" />
+                            </node>
+                            <node concept="34oBXx" id="6Yc6lmJH$jk" role="2OqNvi" />
                           </node>
-                          <node concept="34oBXx" id="6Yc6lmJH$jk" role="2OqNvi" />
-                        </node>
-                        <node concept="Xl_RD" id="6Yc6lmJHzl_" role="3uHU7B">
-                          <property role="Xl_RC" value=" size: " />
+                          <node concept="Xl_RD" id="6Yc6lmJHzl_" role="3uHU7B">
+                            <property role="Xl_RC" value=" size: " />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -4826,35 +4831,62 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbF" id="1K$tCF0_0y9" role="3cqZAp">
-                      <node concept="2OqwBi" id="1K$tCF0_0ya" role="3clFbG">
-                        <node concept="2OqwBi" id="1K$tCF0_0yb" role="2Oq$k0">
-                          <node concept="2YIFZM" id="1K$tCF0_0yc" role="2Oq$k0">
-                            <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
-                            <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
-                          </node>
-                          <node concept="2OwXpG" id="1K$tCF0_0yd" role="2OqNvi">
-                            <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="1K$tCF0_0ye" role="2OqNvi">
-                          <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
-                          <node concept="2ShNRf" id="1K$tCF0_0yf" role="37wK5m">
-                            <node concept="1pGfFk" id="1K$tCF0_0yg" role="2ShVmc">
-                              <ref role="37wK5l" node="1K$tCF0$kSU" resolve="EditorComponentCreateListener_Provider.EditorComponent_Event" />
-                              <node concept="2OqwBi" id="1K$tCF0_0yh" role="37wK5m">
-                                <node concept="Xjq3P" id="1K$tCF0_0yi" role="2Oq$k0" />
-                                <node concept="liA8E" id="1K$tCF0_0yj" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    <node concept="3SKdUt" id="2ntIzZMKHVJ" role="3cqZAp">
+                      <node concept="3SKdUq" id="2ntIzZMKHVL" role="3SKWNk">
+                        <property role="3SKdUp" value="Dont care about the InspectorEditorComponent" />
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="2ntIzZMKzDH" role="3cqZAp">
+                      <node concept="3clFbS" id="2ntIzZMKzDJ" role="3clFbx">
+                        <node concept="3clFbF" id="2ntIzZMKAVl" role="3cqZAp">
+                          <node concept="2OqwBi" id="2ntIzZMKAVm" role="3clFbG">
+                            <node concept="2OqwBi" id="2ntIzZMKAVn" role="2Oq$k0">
+                              <node concept="2YIFZM" id="2ntIzZMKAVo" role="2Oq$k0">
+                                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+                                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                              </node>
+                              <node concept="2OwXpG" id="2ntIzZMKAVp" role="2OqNvi">
+                                <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2ntIzZMKAVq" role="2OqNvi">
+                              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                              <node concept="2ShNRf" id="2ntIzZMKAVr" role="37wK5m">
+                                <node concept="1pGfFk" id="2ntIzZMKAVs" role="2ShVmc">
+                                  <ref role="37wK5l" node="1K$tCF0$kSU" resolve="EditorComponentCreateListener_Provider.EditorComponent_Event" />
+                                  <node concept="2OqwBi" id="2ntIzZMKAVt" role="37wK5m">
+                                    <node concept="Xjq3P" id="2ntIzZMKAVu" role="2Oq$k0" />
+                                    <node concept="liA8E" id="2ntIzZMKAVv" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                    </node>
+                                  </node>
+                                  <node concept="37vLTw" id="2ntIzZMKAVw" role="37wK5m">
+                                    <ref role="3cqZAo" node="E85bRdX_6e" resolve="component" />
+                                  </node>
+                                  <node concept="3clFbT" id="2ntIzZMKAVx" role="37wK5m" />
+                                  <node concept="37vLTw" id="2ntIzZMKAVy" role="37wK5m">
+                                    <ref role="3cqZAo" node="5H_hR7I0wK0" resolve="project" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="37vLTw" id="1K$tCF0_0yk" role="37wK5m">
-                                <ref role="3cqZAo" node="E85bRdX_6e" resolve="component" />
-                              </node>
-                              <node concept="3clFbT" id="1K$tCF0_0yl" role="37wK5m" />
-                              <node concept="37vLTw" id="1K$tCF0_3QU" role="37wK5m">
-                                <ref role="3cqZAo" node="5H_hR7I0wK0" resolve="project" />
-                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3fqX7Q" id="2ntIzZMKGAd" role="3clFbw">
+                        <node concept="2OqwBi" id="2ntIzZMKGAf" role="3fr31v">
+                          <node concept="2OqwBi" id="2ntIzZMKGAg" role="2Oq$k0">
+                            <node concept="37vLTw" id="2ntIzZMKGAh" role="2Oq$k0">
+                              <ref role="3cqZAo" node="E85bRdX_6e" resolve="component" />
+                            </node>
+                            <node concept="liA8E" id="2ntIzZMKGAi" role="2OqNvi">
+                              <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2ntIzZMKGAj" role="2OqNvi">
+                            <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                            <node concept="3VsKOn" id="2ntIzZMKGAk" role="37wK5m">
+                              <ref role="3VsUkX" to="zyr2:~InspectorEditorComponent" resolve="InspectorEditorComponent" />
                             </node>
                           </node>
                         </node>
@@ -4926,6 +4958,7 @@
         <node concept="17QB3L" id="1K$tCF0__Dc" role="1tU5fm" />
       </node>
       <node concept="2tJIrI" id="1K$tCF0$lyw" role="jymVt" />
+      <node concept="2tJIrI" id="2ntIzZMKBsd" role="jymVt" />
       <node concept="3clFbW" id="1K$tCF0$kSU" role="jymVt">
         <node concept="3cqZAl" id="1K$tCF0$kSV" role="3clF45" />
         <node concept="3clFbS" id="1K$tCF0$kSX" role="3clF47">
