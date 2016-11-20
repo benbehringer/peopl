@@ -398,6 +398,7 @@
   </node>
   <node concept="Qs71p" id="4jnYSPQuDbw">
     <property role="TrG5h" value="UIEntity" />
+    <node concept="2tJIrI" id="3knepgZPkQE" role="jymVt" />
     <node concept="QsSxf" id="4jnYSPQuDc9" role="Qtgdg">
       <property role="TrG5h" value="Modular_ProjectTree" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
@@ -448,6 +449,10 @@
     </node>
     <node concept="QsSxf" id="7JMHa6NJaVc" role="Qtgdg">
       <property role="TrG5h" value="ModularView" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="3knepgZNOt$" role="Qtgdg">
+      <property role="TrG5h" value="EditorComponent" />
       <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
     </node>
     <node concept="3Tm1VV" id="4jnYSPQuDbx" role="1B3o_S" />
