@@ -1028,6 +1028,39 @@
         </node>
       </node>
       <node concept="3clFbS" id="66gx8lPx4Ia" role="3clF47">
+        <node concept="3clFbF" id="5rhzEvt6nt0" role="3cqZAp">
+          <node concept="2OqwBi" id="5rhzEvt6nO4" role="3clFbG">
+            <node concept="2OqwBi" id="5rhzEvt6nuf" role="2Oq$k0">
+              <node concept="2YIFZM" id="5rhzEvt6ntH" role="2Oq$k0">
+                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+              </node>
+              <node concept="2OwXpG" id="5rhzEvt6nwJ" role="2OqNvi">
+                <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5rhzEvt6o8$" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+              <node concept="2ShNRf" id="5rhzEvt6oe8" role="37wK5m">
+                <node concept="1pGfFk" id="5rhzEvt87Go" role="2ShVmc">
+                  <ref role="37wK5l" node="5rhzEvt6fgF" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
+                  <node concept="2OqwBi" id="5rhzEvt88n4" role="37wK5m">
+                    <node concept="Xjq3P" id="5rhzEvt87K7" role="2Oq$k0" />
+                    <node concept="liA8E" id="5rhzEvt88xG" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5rhzEvt89gZ" role="37wK5m">
+                    <ref role="3cqZAo" node="630t2b8ee_I" resolve="myEditorComponent" />
+                  </node>
+                  <node concept="3clFbT" id="5rhzEvt88HQ" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1X3_iC" id="5anajahgo8J" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1097,6 +1130,40 @@
         </node>
       </node>
       <node concept="3clFbS" id="66gx8lPx5P_" role="3clF47">
+        <node concept="3clFbF" id="5rhzEvt89oN" role="3cqZAp">
+          <node concept="2OqwBi" id="5rhzEvt89oO" role="3clFbG">
+            <node concept="2OqwBi" id="5rhzEvt89oP" role="2Oq$k0">
+              <node concept="2YIFZM" id="5rhzEvt89oQ" role="2Oq$k0">
+                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+              </node>
+              <node concept="2OwXpG" id="5rhzEvt89oR" role="2OqNvi">
+                <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+              </node>
+            </node>
+            <node concept="liA8E" id="5rhzEvt89oS" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+              <node concept="2ShNRf" id="5rhzEvt89oT" role="37wK5m">
+                <node concept="1pGfFk" id="5rhzEvt89oU" role="2ShVmc">
+                  <ref role="37wK5l" node="5rhzEvt6fgF" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
+                  <node concept="2OqwBi" id="5rhzEvt89oV" role="37wK5m">
+                    <node concept="Xjq3P" id="5rhzEvt89oW" role="2Oq$k0" />
+                    <node concept="liA8E" id="5rhzEvt89oX" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5rhzEvt89oY" role="37wK5m">
+                    <ref role="3cqZAo" node="630t2b8ee_I" resolve="myEditorComponent" />
+                  </node>
+                  <node concept="3clFbT" id="5rhzEvt89oZ" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5rhzEvt89oL" role="3cqZAp" />
         <node concept="1X3_iC" id="5anajahgoaI" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1389,6 +1456,104 @@
       </node>
     </node>
     <node concept="2tJIrI" id="50zZCcb1tZs" role="jymVt" />
+    <node concept="312cEu" id="5rhzEvt6e9n" role="jymVt">
+      <property role="2bfB8j" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="1EXbeo" value="false" />
+      <property role="TrG5h" value="EditorMouseEvent_EE" />
+      <node concept="312cEg" id="5rhzEvt6gDI" role="jymVt">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="entered" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm1VV" id="5rhzEvt6g_D" role="1B3o_S" />
+        <node concept="10P_77" id="5rhzEvt6gDG" role="1tU5fm" />
+      </node>
+      <node concept="3clFbW" id="5rhzEvt6fgF" role="jymVt">
+        <node concept="3cqZAl" id="5rhzEvt6fgG" role="3clF45" />
+        <node concept="3clFbS" id="5rhzEvt6fgI" role="3clF47">
+          <node concept="XkiVB" id="5rhzEvt6fBD" role="3cqZAp">
+            <ref role="37wK5l" node="6fNbIXdEhKQ" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+            <node concept="37vLTw" id="5rhzEvt6fS3" role="37wK5m">
+              <ref role="3cqZAo" node="5rhzEvt6fGI" resolve="creator" />
+            </node>
+            <node concept="37vLTw" id="5rhzEvt6gjz" role="37wK5m">
+              <ref role="3cqZAo" node="5rhzEvt6fMf" resolve="editorComponent" />
+            </node>
+          </node>
+        </node>
+        <node concept="3Tm1VV" id="5rhzEvt6f1I" role="1B3o_S" />
+        <node concept="37vLTG" id="5rhzEvt6fGI" role="3clF46">
+          <property role="TrG5h" value="creator" />
+          <node concept="3uibUv" id="5rhzEvt6fGH" role="1tU5fm">
+            <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="5rhzEvt6fMf" role="3clF46">
+          <property role="TrG5h" value="editorComponent" />
+          <node concept="3uibUv" id="5rhzEvt6fMg" role="1tU5fm">
+            <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="5rhzEvt6gpN" role="3clF46">
+          <property role="TrG5h" value="enterd" />
+          <node concept="10P_77" id="5rhzEvt6gur" role="1tU5fm" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="5rhzEvt6gjU" role="jymVt" />
+      <node concept="3clFb_" id="5rhzEvt6gma" role="jymVt">
+        <property role="1EzhhJ" value="false" />
+        <property role="TrG5h" value="getInfo" />
+        <property role="od$2w" value="false" />
+        <property role="DiZV1" value="false" />
+        <property role="2aFKle" value="false" />
+        <node concept="3Tm1VV" id="5rhzEvt6gmc" role="1B3o_S" />
+        <node concept="17QB3L" id="5rhzEvt6gmd" role="3clF45" />
+        <node concept="3clFbS" id="5rhzEvt6gmf" role="3clF47">
+          <node concept="3clFbJ" id="5rhzEvt6gRf" role="3cqZAp">
+            <node concept="37vLTw" id="5rhzEvt6gYJ" role="3clFbw">
+              <ref role="3cqZAo" node="5rhzEvt6gDI" resolve="entered" />
+            </node>
+            <node concept="3clFbS" id="5rhzEvt6gRh" role="3clFbx">
+              <node concept="3cpWs6" id="5rhzEvt6h9Z" role="3cqZAp">
+                <node concept="3cpWs3" id="5rhzEvt6hFq" role="3cqZAk">
+                  <node concept="2OqwBi" id="5rhzEvt6hZ0" role="3uHU7w">
+                    <node concept="Xjq3P" id="5rhzEvt6hTu" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="5rhzEvt6i46" role="2OqNvi">
+                      <ref role="2Oxat5" node="1K$tCF0_Dez" resolve="component" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="5rhzEvt6hgE" role="3uHU7B">
+                    <property role="Xl_RC" value="Mouse entered -&gt; " />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="5rhzEvt6i9V" role="9aQIa">
+              <node concept="3clFbS" id="5rhzEvt6i9W" role="9aQI4">
+                <node concept="3cpWs6" id="5rhzEvt6ioO" role="3cqZAp">
+                  <node concept="3cpWs3" id="5rhzEvt6js5" role="3cqZAk">
+                    <node concept="2OqwBi" id="5rhzEvt6jAo" role="3uHU7w">
+                      <node concept="Xjq3P" id="5rhzEvt6jvQ" role="2Oq$k0" />
+                      <node concept="2OwXpG" id="5rhzEvt6jGv" role="2OqNvi">
+                        <ref role="2Oxat5" node="1K$tCF0_Dez" resolve="component" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5rhzEvt6isF" role="3uHU7B">
+                      <property role="Xl_RC" value="Mouse exited &lt;- " />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5rhzEvt6dCQ" role="1B3o_S" />
+      <node concept="3uibUv" id="5rhzEvt6eRY" role="1zkMxy">
+        <ref role="3uigEE" node="6fNbIXdEgXK" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="50zZCcb1u4h" role="jymVt" />
     <node concept="312cEu" id="7yp9hS_x8ds" role="jymVt">
       <property role="2bfB8j" value="false" />

@@ -393,7 +393,7 @@
       <node concept="3Tm6S6" id="20ujiCwHQg1" role="1B3o_S" />
       <node concept="3cpWsb" id="20ujiCwHR8b" role="1tU5fm" />
       <node concept="3cmrfG" id="1K$tCF0zVdb" role="33vP2m">
-        <property role="3cmrfH" value="120" />
+        <property role="3cmrfH" value="45" />
       </node>
     </node>
     <node concept="2tJIrI" id="dxrcT7S2Ux" role="jymVt" />
@@ -559,6 +559,19 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="3LwTVmkSnIA" role="37wK5m">
                 <ref role="3VsUkX" to="fchx:6fNbIXdEe9j" resolve="EditorComponentMouseListener.EditorMouseEvent_moved" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rhzEvt8ffG" role="3cqZAp">
+          <node concept="2OqwBi" id="5rhzEvt8fCo" role="3clFbG">
+            <node concept="37vLTw" id="5rhzEvt8ffE" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="5rhzEvt8gmn" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="5rhzEvt8gHO" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:5rhzEvt6e9n" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
               </node>
             </node>
           </node>
