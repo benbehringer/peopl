@@ -448,11 +448,11 @@
     <node concept="312cEg" id="2$MQ_LKSqRb" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="lastActiveComponent" />
+      <property role="TrG5h" value="lastActiveComponentHandler" />
       <property role="3TUv4t" value="false" />
       <node concept="3Tm1VV" id="2$MQ_LKSoyw" role="1B3o_S" />
-      <node concept="3uibUv" id="2$MQ_LKStcr" role="1tU5fm">
-        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+      <node concept="3uibUv" id="2$MQ_LKTdi6" role="1tU5fm">
+        <ref role="3uigEE" node="1ZljV50EOX9" resolve="NodeEditor_Handler.Component_Handler" />
       </node>
       <node concept="10Nm6u" id="2$MQ_LKStmZ" role="33vP2m" />
     </node>
@@ -504,7 +504,192 @@
       <node concept="3Tm1VV" id="7AOYwIIZKLO" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2Qzkdny4AgJ" role="jymVt" />
+    <node concept="3clFb_" id="2$MQ_LKSDhZ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="hasFocus" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2$MQ_LKSDi2" role="3clF47">
+        <node concept="1DcWWT" id="2$MQ_LKSFII" role="3cqZAp">
+          <node concept="3cpWsn" id="2$MQ_LKSFIJ" role="1Duv9x">
+            <property role="TrG5h" value="handler" />
+            <node concept="3uibUv" id="2$MQ_LKSFLA" role="1tU5fm">
+              <ref role="3uigEE" node="1ZljV50EOX9" resolve="NodeEditor_Handler.Component_Handler" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2$MQ_LKSG7$" role="1DdaDG">
+            <node concept="37vLTw" id="2$MQ_LKSFUr" role="2Oq$k0">
+              <ref role="3cqZAo" node="6fNbIXdENg1" resolve="handlers" />
+            </node>
+            <node concept="liA8E" id="2$MQ_LKSHBy" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~LinkedHashMap.values():java.util.Collection" resolve="values" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="2$MQ_LKSFIL" role="2LFqv$">
+            <node concept="3clFbJ" id="2$MQ_LKSHP0" role="3cqZAp">
+              <node concept="2OqwBi" id="2$MQ_LKSHS7" role="3clFbw">
+                <node concept="37vLTw" id="2$MQ_LKSHQy" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2$MQ_LKSFIJ" resolve="handler" />
+                </node>
+                <node concept="liA8E" id="2$MQ_LKSHUK" role="2OqNvi">
+                  <ref role="37wK5l" node="2$MQ_LKQK_N" resolve="hasFocus" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="2$MQ_LKSHP2" role="3clFbx">
+                <node concept="3cpWs6" id="2$MQ_LKSHVM" role="3cqZAp">
+                  <node concept="3clFbT" id="2$MQ_LKSJQf" role="3cqZAk">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="2$MQ_LKSO3i" role="3cqZAp">
+          <node concept="3clFbT" id="2$MQ_LKSSaI" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2$MQ_LKSAUa" role="1B3o_S" />
+      <node concept="10P_77" id="2$MQ_LKSDfu" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="6nmR8pwLii6" role="jymVt" />
+    <node concept="2tJIrI" id="2$MQ_LKSWEO" role="jymVt" />
+    <node concept="3clFb_" id="2$MQ_LKSZ4f" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="focusLost" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="2$MQ_LKSZ4A" role="1B3o_S" />
+      <node concept="3cqZAl" id="2$MQ_LKSZ4B" role="3clF45" />
+      <node concept="37vLTG" id="2$MQ_LKSZ4C" role="3clF46">
+        <property role="TrG5h" value="date" />
+        <node concept="3uibUv" id="2$MQ_LKSZ4D" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2$MQ_LKSZ4E" role="3clF47">
+        <node concept="3clFbF" id="2$MQ_LKSZ4I" role="3cqZAp">
+          <node concept="3nyPlj" id="2$MQ_LKSZ4H" role="3clFbG">
+            <ref role="37wK5l" node="1qBBslsacYD" resolve="focusLost" />
+            <node concept="37vLTw" id="2$MQ_LKSZ4G" role="37wK5m">
+              <ref role="3cqZAo" node="2$MQ_LKSZ4C" resolve="date" />
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="2$MQ_LKT1C$" role="3cqZAp">
+          <node concept="3clFbS" id="2$MQ_LKT1CA" role="2LFqv$">
+            <node concept="3clFbJ" id="2$MQ_LKT42R" role="3cqZAp">
+              <node concept="3clFbS" id="2$MQ_LKT42T" role="3clFbx">
+                <node concept="3clFbF" id="2$MQ_LKT4al" role="3cqZAp">
+                  <node concept="37vLTI" id="2$MQ_LKT4jF" role="3clFbG">
+                    <node concept="37vLTw" id="2$MQ_LKT4sY" role="37vLTx">
+                      <ref role="3cqZAo" node="2$MQ_LKT1CB" resolve="handler" />
+                    </node>
+                    <node concept="37vLTw" id="2$MQ_LKT4aj" role="37vLTJ">
+                      <ref role="3cqZAo" node="2$MQ_LKSqRb" resolve="lastActiveComponentHandler" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="2$MQ_LKTcZi" role="3cqZAp">
+                  <node concept="2OqwBi" id="2$MQ_LKTd0A" role="3clFbG">
+                    <node concept="37vLTw" id="2$MQ_LKTcZg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2$MQ_LKT1CB" resolve="handler" />
+                    </node>
+                    <node concept="liA8E" id="2$MQ_LKTd3l" role="2OqNvi">
+                      <ref role="37wK5l" node="2$MQ_LKPZab" resolve="focusLost" />
+                      <node concept="37vLTw" id="2$MQ_LKTd4$" role="37wK5m">
+                        <ref role="3cqZAo" node="2$MQ_LKSZ4C" resolve="date" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="2$MQ_LKT45X" role="3clFbw">
+                <node concept="37vLTw" id="2$MQ_LKT44s" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2$MQ_LKT1CB" resolve="handler" />
+                </node>
+                <node concept="liA8E" id="2$MQ_LKT48A" role="2OqNvi">
+                  <ref role="37wK5l" node="2$MQ_LKQK_N" resolve="hasFocus" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="2$MQ_LKT1CB" role="1Duv9x">
+            <property role="TrG5h" value="handler" />
+            <node concept="3uibUv" id="2$MQ_LKT1Kn" role="1tU5fm">
+              <ref role="3uigEE" node="1ZljV50EOX9" resolve="NodeEditor_Handler.Component_Handler" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2$MQ_LKT2jX" role="1DdaDG">
+            <node concept="37vLTw" id="2$MQ_LKT1Y$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6fNbIXdENg1" resolve="handlers" />
+            </node>
+            <node concept="liA8E" id="2$MQ_LKT3PC" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~LinkedHashMap.values():java.util.Collection" resolve="values" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2$MQ_LKSZ4F" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2$MQ_LKSUhG" role="jymVt" />
+    <node concept="3clFb_" id="2$MQ_LKT7xk" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="focusGained" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="2$MQ_LKT7xq" role="1B3o_S" />
+      <node concept="3cqZAl" id="2$MQ_LKT7xr" role="3clF45" />
+      <node concept="37vLTG" id="2$MQ_LKT7xs" role="3clF46">
+        <property role="TrG5h" value="date" />
+        <node concept="3uibUv" id="2$MQ_LKT7xt" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="2$MQ_LKT7xu" role="3clF47">
+        <node concept="3clFbF" id="2$MQ_LKT7xy" role="3cqZAp">
+          <node concept="3nyPlj" id="2$MQ_LKT7xx" role="3clFbG">
+            <ref role="37wK5l" node="1qBBslsabWw" resolve="focusGained" />
+            <node concept="37vLTw" id="2$MQ_LKT7xw" role="37wK5m">
+              <ref role="3cqZAo" node="2$MQ_LKT7xs" resolve="date" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2$MQ_LKTds0" role="3cqZAp">
+          <node concept="2OqwBi" id="2$MQ_LKTdym" role="3clFbG">
+            <node concept="37vLTw" id="2$MQ_LKTdrY" role="2Oq$k0">
+              <ref role="3cqZAo" node="2$MQ_LKSqRb" resolve="lastActiveComponentHandler" />
+            </node>
+            <node concept="liA8E" id="2$MQ_LKTdDQ" role="2OqNvi">
+              <ref role="37wK5l" node="2$MQ_LKPP7I" resolve="focusGained" />
+              <node concept="37vLTw" id="2$MQ_LKTdFd" role="37wK5m">
+                <ref role="3cqZAo" node="2$MQ_LKT7xs" resolve="date" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2$MQ_LKTdMR" role="3cqZAp">
+          <node concept="37vLTI" id="2$MQ_LKTdTQ" role="3clFbG">
+            <node concept="10Nm6u" id="2$MQ_LKTe0n" role="37vLTx" />
+            <node concept="37vLTw" id="2$MQ_LKTdMP" role="37vLTJ">
+              <ref role="3cqZAo" node="2$MQ_LKSqRb" resolve="lastActiveComponentHandler" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2$MQ_LKT7xv" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2$MQ_LKTa8H" role="jymVt" />
+    <node concept="2tJIrI" id="2$MQ_LKTarN" role="jymVt" />
     <node concept="3clFb_" id="7mR4HHEYvAj" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="reset" />
