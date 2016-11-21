@@ -6,6 +6,8 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="e9fh" ref="r:4bd0da13-bf88-4c83-b2c2-b886687e552b(de.htwsaar.peopl.utils.interactionMonitoring.events)" />
@@ -223,6 +225,16 @@
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
   </registry>
@@ -1110,6 +1122,14 @@
             </node>
             <node concept="liA8E" id="GCoVzA44_N" role="2OqNvi">
               <ref role="37wK5l" node="GCoVzA3V14" resolve="resetTimer" />
+              <node concept="2OqwBi" id="6yeG_p4Dq$O" role="37wK5m">
+                <node concept="37vLTw" id="6yeG_p4DqzI" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X0xypuwC8R" resolve="monEv" />
+                </node>
+                <node concept="2OwXpG" id="6yeG_p4DqAj" role="2OqNvi">
+                  <ref role="2Oxat5" to="e9fh:gMSQjqYWBU" resolve="date" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2776,7 +2796,7 @@
       <property role="eg7rD" value="false" />
       <property role="TrG5h" value="afkTimeDef" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="GCoVzA3WEm" role="1B3o_S" />
+      <node concept="3Tm6S6" id="6yeG_p4D9vQ" role="1B3o_S" />
       <node concept="10Oyi0" id="GCoVzA3WGp" role="1tU5fm" />
       <node concept="3cmrfG" id="GCoVzA3WIX" role="33vP2m">
         <property role="3cmrfH" value="10000" />
@@ -2787,7 +2807,7 @@
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="afkTimer" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="GCoVzA3V2_" role="1B3o_S" />
+      <node concept="3Tm6S6" id="6yeG_p4D9x5" role="1B3o_S" />
       <node concept="3uibUv" id="GCoVzA3V2W" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~Timer" resolve="Timer" />
       </node>
@@ -2810,7 +2830,18 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1P$dGVVv9TB" role="jymVt" />
+    <node concept="312cEg" id="6yeG_p4D9zi" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="currentHandler" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6yeG_p4D9qb" role="1B3o_S" />
+      <node concept="3uibUv" id="6yeG_p4D9zg" role="1tU5fm">
+        <ref role="3uigEE" to="oeof:7AOYwIIZIrl" resolve="AbstractEntityHandler" />
+      </node>
+      <node concept="10Nm6u" id="6yeG_p4DwD6" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="6yeG_p4D9kz" role="jymVt" />
     <node concept="3clFbW" id="1P$dGVVva0b" role="jymVt">
       <node concept="37vLTG" id="1P$dGVVva3U" role="3clF46">
         <property role="TrG5h" value="handlers" />
@@ -2849,6 +2880,38 @@
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="GCoVzA3V17" role="3clF47">
         <node concept="3clFbH" id="GCoVzA3Y3V" role="3cqZAp" />
+        <node concept="3clFbJ" id="6yeG_p4DhC4" role="3cqZAp">
+          <node concept="3clFbS" id="6yeG_p4DhC6" role="3clFbx">
+            <node concept="3clFbF" id="6yeG_p4Di06" role="3cqZAp">
+              <node concept="2OqwBi" id="6yeG_p4Di0M" role="3clFbG">
+                <node concept="37vLTw" id="6yeG_p4Di04" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6yeG_p4D9zi" resolve="currentHandler" />
+                </node>
+                <node concept="liA8E" id="6yeG_p4DtDg" role="2OqNvi">
+                  <ref role="37wK5l" to="oeof:1qBBslsabWw" resolve="focusGained" />
+                  <node concept="37vLTw" id="6yeG_p4DtDS" role="37wK5m">
+                    <ref role="3cqZAo" node="6yeG_p4Dtxt" resolve="time" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6yeG_p4DhHk" role="3clFbw">
+            <node concept="10Nm6u" id="6yeG_p4DhJl" role="3uHU7w" />
+            <node concept="37vLTw" id="6yeG_p4DhF8" role="3uHU7B">
+              <ref role="3cqZAo" node="6yeG_p4D9zi" resolve="currentHandler" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6yeG_p4DhPW" role="3cqZAp">
+          <node concept="37vLTI" id="6yeG_p4DhXm" role="3clFbG">
+            <node concept="10Nm6u" id="6yeG_p4DhZm" role="37vLTx" />
+            <node concept="37vLTw" id="6yeG_p4DhPU" role="37vLTJ">
+              <ref role="3cqZAo" node="6yeG_p4D9zi" resolve="currentHandler" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6yeG_p4DhMD" role="3cqZAp" />
         <node concept="3cpWs8" id="GCoVzA3V3C" role="3cqZAp">
           <node concept="3cpWsn" id="GCoVzA3V3D" role="3cpWs9">
             <property role="TrG5h" value="afkTimerTask" />
@@ -2950,6 +3013,12 @@
       </node>
       <node concept="3Tm1VV" id="GCoVzA3V0L" role="1B3o_S" />
       <node concept="3cqZAl" id="GCoVzA3V0Y" role="3clF45" />
+      <node concept="37vLTG" id="6yeG_p4Dtxt" role="3clF46">
+        <property role="TrG5h" value="time" />
+        <node concept="3uibUv" id="6yeG_p4Dtxs" role="1tU5fm">
+          <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="GCoVzA3UjY" role="jymVt" />
     <node concept="3clFb_" id="GCoVzA3YdP" role="jymVt">
@@ -2968,6 +3037,57 @@
           <property role="35gtTG" value="warn" />
           <node concept="Xl_RD" id="GCoVzA46DI" role="34bqiv">
             <property role="Xl_RC" value="you are AFK!" />
+          </node>
+        </node>
+        <node concept="2Gpval" id="6yeG_p4D$HU" role="3cqZAp">
+          <node concept="2GrKxI" id="6yeG_p4D$HW" role="2Gsz3X">
+            <property role="TrG5h" value="handler" />
+          </node>
+          <node concept="2OqwBi" id="6yeG_p4D$Y_" role="2GsD0m">
+            <node concept="37vLTw" id="6yeG_p4D$IK" role="2Oq$k0">
+              <ref role="3cqZAo" node="GCoVzA4lq2" resolve="myHandlers" />
+            </node>
+            <node concept="liA8E" id="6yeG_p4D_AF" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~HashMap.values():java.util.Collection" resolve="values" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6yeG_p4D$I0" role="2LFqv$">
+            <node concept="3clFbJ" id="6yeG_p4D_Ku" role="3cqZAp">
+              <node concept="3clFbS" id="6yeG_p4D_Kw" role="3clFbx">
+                <node concept="3clFbF" id="6yeG_p4D_Wv" role="3cqZAp">
+                  <node concept="37vLTI" id="6yeG_p4D_Yc" role="3clFbG">
+                    <node concept="2GrUjf" id="6yeG_p4D_YM" role="37vLTx">
+                      <ref role="2Gs0qQ" node="6yeG_p4D$HW" resolve="handler" />
+                    </node>
+                    <node concept="37vLTw" id="6yeG_p4D_Wt" role="37vLTJ">
+                      <ref role="3cqZAo" node="6yeG_p4D9zi" resolve="currentHandler" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6yeG_p4DA4E" role="3cqZAp">
+                  <node concept="2OqwBi" id="6yeG_p4DAak" role="3clFbG">
+                    <node concept="2GrUjf" id="6yeG_p4DA4C" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="6yeG_p4D$HW" resolve="handler" />
+                    </node>
+                    <node concept="liA8E" id="6yeG_p4DAgp" role="2OqNvi">
+                      <ref role="37wK5l" to="oeof:1qBBslsacYD" resolve="focusLost" />
+                      <node concept="2YIFZM" id="6yeG_p4DAo5" role="37wK5m">
+                        <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                        <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6yeG_p4D_Qc" role="3clFbw">
+                <node concept="2GrUjf" id="6yeG_p4D_PB" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="6yeG_p4D$HW" resolve="handler" />
+                </node>
+                <node concept="liA8E" id="6yeG_p4D_VO" role="2OqNvi">
+                  <ref role="37wK5l" to="oeof:2$MQ_LKSxWF" resolve="hasFocus" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
