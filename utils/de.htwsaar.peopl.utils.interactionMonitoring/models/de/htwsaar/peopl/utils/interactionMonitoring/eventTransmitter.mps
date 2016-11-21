@@ -2882,6 +2882,12 @@
         <node concept="3clFbH" id="GCoVzA3Y3V" role="3cqZAp" />
         <node concept="3clFbJ" id="6yeG_p4DhC4" role="3cqZAp">
           <node concept="3clFbS" id="6yeG_p4DhC6" role="3clFbx">
+            <node concept="34ab3g" id="2OLZ$Odjo7H" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="Xl_RD" id="2OLZ$Odjo7J" role="34bqiv">
+                <property role="Xl_RC" value="not AFK anymore" />
+              </node>
+            </node>
             <node concept="3clFbF" id="6yeG_p4Di06" role="3cqZAp">
               <node concept="2OqwBi" id="6yeG_p4Di0M" role="3clFbG">
                 <node concept="37vLTw" id="6yeG_p4Di04" role="2Oq$k0">
