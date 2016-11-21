@@ -3126,5 +3126,77 @@
     </node>
     <node concept="3Tm1VV" id="GCoVzA3TvB" role="1B3o_S" />
   </node>
+  <node concept="312cEu" id="6GVZiXzm4Is">
+    <property role="TrG5h" value="AFKControl" />
+    <node concept="2tJIrI" id="6GVZiXzm4IT" role="jymVt" />
+    <node concept="3clFb_" id="6GVZiXzmeBW" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="handleAFKEvent" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="37vLTG" id="6GVZiXzm8QO" role="3clF46">
+        <property role="TrG5h" value="lastHandlerWithFocus" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3uibUv" id="6GVZiXzm8QQ" role="1tU5fm">
+          <ref role="3uigEE" to="oeof:7AOYwIIZIrl" resolve="AbstractEntityHandler" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6GVZiXzmeBQ" role="3clF47">
+        <node concept="3SKdUt" id="6GVZiXzmeBM" role="3cqZAp">
+          <node concept="3SKdUq" id="6GVZiXzmeBI" role="3SKWNk">
+            <property role="3SKdUp" value="do the timer stuff, i.e., transmit loose focus etc." />
+          </node>
+        </node>
+        <node concept="34ab3g" id="6GVZiXzmeC0" role="3cqZAp">
+          <property role="35gtTG" value="warn" />
+          <node concept="Xl_RD" id="6GVZiXzmeC6" role="34bqiv">
+            <property role="Xl_RC" value="you are AFK!" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6GVZiXzmeBE" role="3cqZAp">
+          <node concept="3clFbS" id="6GVZiXzmeBK" role="3clFbx">
+            <node concept="3clFbJ" id="6GVZiXzmeBG" role="3cqZAp">
+              <node concept="3clFbS" id="6GVZiXzmeCg" role="3clFbx">
+                <node concept="3clFbF" id="6GVZiXzmeCc" role="3cqZAp">
+                  <node concept="2OqwBi" id="6GVZiXzmeBY" role="3clFbG">
+                    <node concept="37vLTw" id="6GVZiXzm95u" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6GVZiXzm8QO" resolve="lastHandlerWithFocus" />
+                    </node>
+                    <node concept="liA8E" id="6GVZiXzmeBS" role="2OqNvi">
+                      <ref role="37wK5l" to="oeof:1qBBslsacYD" resolve="focusLost" />
+                      <node concept="2YIFZM" id="6GVZiXzmeCe" role="37wK5m">
+                        <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+                        <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6GVZiXzmeBU" role="3clFbw">
+                <node concept="37vLTw" id="6GVZiXzm94n" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GVZiXzm8QO" resolve="lastHandlerWithFocus" />
+                </node>
+                <node concept="liA8E" id="6GVZiXzmeBO" role="2OqNvi">
+                  <ref role="37wK5l" to="oeof:2$MQ_LKSxWF" resolve="hasFocus" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="6GVZiXzmeCa" role="3clFbw">
+            <node concept="10Nm6u" id="6GVZiXzmeC8" role="3uHU7w" />
+            <node concept="37vLTw" id="6GVZiXzm93X" role="3uHU7B">
+              <ref role="3cqZAo" node="6GVZiXzm8QO" resolve="lastHandlerWithFocus" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6GVZiXzmeC4" role="1B3o_S" />
+      <node concept="3cqZAl" id="6GVZiXzmeC2" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6GVZiXzm4IV" role="jymVt" />
+    <node concept="2tJIrI" id="6GVZiXzm4IY" role="jymVt" />
+    <node concept="3Tm1VV" id="6GVZiXzm4It" role="1B3o_S" />
+  </node>
 </model>
 
