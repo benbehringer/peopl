@@ -21,6 +21,7 @@
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -951,10 +952,14 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="34ab3g" id="70BgIMLsH79" role="3cqZAp">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="70BgIMLsH7b" role="34bqiv">
-                        <property role="Xl_RC" value=" after creation" />
+                    <node concept="1X3_iC" id="7ZHevZ8aulW" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="34ab3g" id="70BgIMLsH79" role="8Wnug">
+                        <property role="35gtTG" value="warn" />
+                        <node concept="Xl_RD" id="70BgIMLsH7b" role="34bqiv">
+                          <property role="Xl_RC" value=" after creation" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -1765,8 +1770,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6vHH8Zdgm1Z" role="3cqZAp" />
-        <node concept="3clFbH" id="6vHH8Zdeog4" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="1qBBslsatlz" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
@@ -2235,8 +2238,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="75myAL0vEQG" role="3cqZAp" />
-        <node concept="3clFbH" id="75myAL0vDUU" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="6nmR8pwMUj0" role="1B3o_S" />
       <node concept="3cqZAl" id="6nmR8pwMUYd" role="3clF45" />
