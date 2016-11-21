@@ -522,7 +522,6 @@
         <node concept="3clFbH" id="6CwTPwGx7cM" role="3cqZAp" />
         <node concept="3clFbJ" id="1R0T08haPKA" role="3cqZAp">
           <node concept="3clFbS" id="1R0T08haPKB" role="3clFbx">
-            <node concept="3clFbH" id="1R0T08haPKC" role="3cqZAp" />
             <node concept="3clFbF" id="1R0T08haPKD" role="3cqZAp">
               <node concept="2OqwBi" id="1R0T08haPKE" role="3clFbG">
                 <node concept="2YIFZM" id="1R0T08haPKF" role="2Oq$k0">
@@ -533,7 +532,7 @@
                   <ref role="37wK5l" to="z60i:~Toolkit.addAWTEventListener(java.awt.event.AWTEventListener,long):void" resolve="addAWTEventListener" />
                   <node concept="2YIFZM" id="1R0T08haPKH" role="37wK5m">
                     <ref role="1Pybhc" to="fchx:2DsZ_Gnbqdu" resolve="AWTEventListener_Provider" />
-                    <ref role="37wK5l" to="fchx:2DsZ_GnbsZJ" resolve="getListener" />
+                    <ref role="37wK5l" to="fchx:2DsZ_GnbsZJ" resolve="getMouseListener" />
                   </node>
                   <node concept="10M0yZ" id="1R0T08haPKI" role="37wK5m">
                     <ref role="1PxDUh" to="z60i:~AWTEvent" resolve="AWTEvent" />
@@ -542,6 +541,65 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="6AOjiXNZfFz" role="3cqZAp">
+              <node concept="2OqwBi" id="6AOjiXNZfRj" role="3clFbG">
+                <node concept="2YIFZM" id="6AOjiXNZfPY" role="2Oq$k0">
+                  <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                  <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                </node>
+                <node concept="liA8E" id="6AOjiXNZfXc" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Toolkit.addAWTEventListener(java.awt.event.AWTEventListener,long):void" resolve="addAWTEventListener" />
+                  <node concept="2YIFZM" id="6AOjiXNZg44" role="37wK5m">
+                    <ref role="37wK5l" to="fchx:6AOjiXNYBhV" resolve="getMouseMotionListener" />
+                    <ref role="1Pybhc" to="fchx:2DsZ_Gnbqdu" resolve="AWTEventListener_Provider" />
+                  </node>
+                  <node concept="10M0yZ" id="6AOjiXNZgbh" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~AWTEvent" resolve="AWTEvent" />
+                    <ref role="3cqZAo" to="z60i:~AWTEvent.MOUSE_MOTION_EVENT_MASK" resolve="MOUSE_MOTION_EVENT_MASK" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5Hjm9vv632V" role="3cqZAp">
+              <node concept="2OqwBi" id="5Hjm9vv632W" role="3clFbG">
+                <node concept="2YIFZM" id="5Hjm9vv632X" role="2Oq$k0">
+                  <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                  <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                </node>
+                <node concept="liA8E" id="5Hjm9vv632Y" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Toolkit.addAWTEventListener(java.awt.event.AWTEventListener,long):void" resolve="addAWTEventListener" />
+                  <node concept="2YIFZM" id="5Hjm9vv63GI" role="37wK5m">
+                    <ref role="37wK5l" to="fchx:5Hjm9vv5G0y" resolve="getMouseWheelListener" />
+                    <ref role="1Pybhc" to="fchx:2DsZ_Gnbqdu" resolve="AWTEventListener_Provider" />
+                  </node>
+                  <node concept="10M0yZ" id="5Hjm9vv6330" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~AWTEvent" resolve="AWTEvent" />
+                    <ref role="3cqZAo" to="z60i:~AWTEvent.MOUSE_WHEEL_EVENT_MASK" resolve="MOUSE_WHEEL_EVENT_MASK" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5Hjm9vv68cb" role="3cqZAp">
+              <node concept="2OqwBi" id="5Hjm9vv68cc" role="3clFbG">
+                <node concept="2YIFZM" id="5Hjm9vv68cd" role="2Oq$k0">
+                  <ref role="37wK5l" to="z60i:~Toolkit.getDefaultToolkit():java.awt.Toolkit" resolve="getDefaultToolkit" />
+                  <ref role="1Pybhc" to="z60i:~Toolkit" resolve="Toolkit" />
+                </node>
+                <node concept="liA8E" id="5Hjm9vv68ce" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Toolkit.addAWTEventListener(java.awt.event.AWTEventListener,long):void" resolve="addAWTEventListener" />
+                  <node concept="2YIFZM" id="5nTlMTWajzm" role="37wK5m">
+                    <ref role="37wK5l" to="fchx:5nTlMTW9E7g" resolve="getKeyEventListener" />
+                    <ref role="1Pybhc" to="fchx:2DsZ_Gnbqdu" resolve="AWTEventListener_Provider" />
+                  </node>
+                  <node concept="10M0yZ" id="5Hjm9vv68cg" role="37wK5m">
+                    <ref role="1PxDUh" to="z60i:~AWTEvent" resolve="AWTEvent" />
+                    <ref role="3cqZAo" to="z60i:~AWTEvent.KEY_EVENT_MASK" resolve="KEY_EVENT_MASK" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6AOjiXNZgjn" role="3cqZAp" />
+            <node concept="3clFbH" id="5Hjm9vv6862" role="3cqZAp" />
             <node concept="1X3_iC" id="4VdT7FDspKk" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
