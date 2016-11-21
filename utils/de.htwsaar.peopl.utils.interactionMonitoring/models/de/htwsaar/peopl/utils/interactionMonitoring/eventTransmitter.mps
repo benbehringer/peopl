@@ -2,10 +2,10 @@
 <model ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.eventTransmitter)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
   <imports>
     <import index="e9fh" ref="r:4bd0da13-bf88-4c83-b2c2-b886687e552b(de.htwsaar.peopl.utils.interactionMonitoring.events)" />
@@ -1082,18 +1082,6 @@
       <node concept="3Tm6S6" id="4X0xypuwKWr" role="1B3o_S" />
       <node concept="3cqZAl" id="7AOYwIIZIll" role="3clF45" />
       <node concept="3clFbS" id="7AOYwIIZIlo" role="3clF47">
-        <node concept="3clFbH" id="dxrcT7S6$6" role="3cqZAp" />
-<<<<<<< HEAD
-        <node concept="3clFbF" id="GCoVzA44fg" role="3cqZAp">
-          <node concept="2OqwBi" id="GCoVzA44sF" role="3clFbG">
-            <node concept="37vLTw" id="GCoVzA44fe" role="2Oq$k0">
-              <ref role="3cqZAo" node="GCoVzA422M" resolve="afkHandler" />
-            </node>
-            <node concept="liA8E" id="GCoVzA44_N" role="2OqNvi">
-              <ref role="37wK5l" node="GCoVzA3V14" resolve="resetTimer" />
-            </node>
-          </node>
-        </node>
         <node concept="1X3_iC" id="1P$dGVVv7U$" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -1107,21 +1095,21 @@
                 <node concept="liA8E" id="3khGHOKE3Sa" role="2OqNvi">
                   <ref role="37wK5l" to="e9fh:gMSQjqZXDV" resolve="getInfo" />
                 </node>
-=======
-        <node concept="34ab3g" id="3khGHOKE2H7" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="3khGHOKE2Xn" role="34bqiv">
-            <node concept="2OqwBi" id="3khGHOKE3R9" role="3uHU7w">
-              <node concept="37vLTw" id="4X0xypuwDMs" role="2Oq$k0">
-                <ref role="3cqZAo" node="4X0xypuwC8R" resolve="monEv" />
->>>>>>> 49ff0657a0d850bef762e8ff64759e11a0c8f342
               </node>
-              <node concept="liA8E" id="3khGHOKE3Sa" role="2OqNvi">
-                <ref role="37wK5l" to="e9fh:gMSQjqZXDV" resolve="getInfo" />
+              <node concept="Xl_RD" id="3khGHOKE2H9" role="3uHU7B">
+                <property role="Xl_RC" value="Dist : " />
               </node>
             </node>
-            <node concept="Xl_RD" id="3khGHOKE2H9" role="3uHU7B">
-              <property role="Xl_RC" value="Dist : " />
+          </node>
+        </node>
+        <node concept="3clFbH" id="dxrcT7S6$6" role="3cqZAp" />
+        <node concept="3clFbF" id="GCoVzA44fg" role="3cqZAp">
+          <node concept="2OqwBi" id="GCoVzA44sF" role="3clFbG">
+            <node concept="37vLTw" id="GCoVzA44fe" role="2Oq$k0">
+              <ref role="3cqZAo" node="GCoVzA422M" resolve="afkHandler" />
+            </node>
+            <node concept="liA8E" id="GCoVzA44_N" role="2OqNvi">
+              <ref role="37wK5l" node="GCoVzA3V14" resolve="resetTimer" />
             </node>
           </node>
         </node>
