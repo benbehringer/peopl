@@ -515,13 +515,13 @@
                   </node>
                   <node concept="3clFbS" id="2tJHIt1cKCa" role="3clF47">
                     <node concept="3clFbF" id="2tJHIt1cU61" role="3cqZAp">
-                      <node concept="2YIFZM" id="2tJHIt1cU6C" role="3clFbG">
-                        <ref role="37wK5l" to="951u:7mR4HHEYKay" resolve="addNewListener" />
-                        <ref role="1Pybhc" to="951u:7mR4HHEYKax" resolve="FragmentMonitoringListener" />
-                        <node concept="37vLTw" id="2tJHIt1cU7w" role="37wK5m">
+                      <node concept="2YIFZM" id="2tJHIt1d3A6" role="3clFbG">
+                        <ref role="37wK5l" to="951u:4abErjGKlAI" resolve="addNewListener" />
+                        <ref role="1Pybhc" to="951u:4abErjGKkRA" resolve="MonitoringSNodeChangeListener" />
+                        <node concept="37vLTw" id="2tJHIt1d3A7" role="37wK5m">
                           <ref role="3cqZAo" node="2tJHIt1cKC5" resolve="project" />
                         </node>
-                        <node concept="37vLTw" id="2tJHIt1cUaF" role="37wK5m">
+                        <node concept="37vLTw" id="2tJHIt1d3A8" role="37wK5m">
                           <ref role="3cqZAo" node="2tJHIt1cKC7" resolve="model" />
                         </node>
                       </node>
