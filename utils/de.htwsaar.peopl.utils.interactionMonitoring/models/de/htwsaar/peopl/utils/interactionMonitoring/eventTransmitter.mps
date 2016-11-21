@@ -2,12 +2,12 @@
 <model ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.eventTransmitter)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
-    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="-1" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
   </languages>
   <imports>
     <import index="e9fh" ref="r:4bd0da13-bf88-4c83-b2c2-b886687e552b(de.htwsaar.peopl.utils.interactionMonitoring.events)" />
@@ -429,6 +429,16 @@
       <node concept="3Tm6S6" id="GCoVzA40Vk" role="1B3o_S" />
       <node concept="3uibUv" id="GCoVzA422d" role="1tU5fm">
         <ref role="3uigEE" node="GCoVzA3TvA" resolve="AFKTimer" />
+      </node>
+    </node>
+    <node concept="312cEg" id="2tJHIt1dlei" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="UIEntitiyWithFocus_tmp" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="2tJHIt1dk5R" role="1B3o_S" />
+      <node concept="3uibUv" id="2tJHIt1dmoW" role="1tU5fm">
+        <ref role="3uigEE" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
       </node>
     </node>
     <node concept="2tJIrI" id="1K$tCF0yBPd" role="jymVt" />
@@ -1446,6 +1456,32 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbJ" id="2tJHIt1dqsb" role="3cqZAp">
+                  <node concept="3clFbS" id="2tJHIt1dqsc" role="3clFbx">
+                    <node concept="3clFbF" id="2tJHIt1drtM" role="3cqZAp">
+                      <node concept="2OqwBi" id="2tJHIt1drue" role="3clFbG">
+                        <node concept="37vLTw" id="2tJHIt1drtK" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7mR4HHEYmZf" resolve="newHandler" />
+                        </node>
+                        <node concept="liA8E" id="2tJHIt1dr$1" role="2OqNvi">
+                          <ref role="37wK5l" to="oeof:1qBBslsabWw" resolve="focusGained" />
+                          <node concept="2YIFZM" id="2tJHIt1drNR" role="37wK5m">
+                            <ref role="37wK5l" to="28m1:~LocalDateTime.now():java.time.LocalDateTime" resolve="now" />
+                            <ref role="1Pybhc" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="2tJHIt1dqsj" role="3clFbw">
+                    <node concept="37vLTw" id="2tJHIt1dqsk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2Qzkdny4B$n" resolve="handler" />
+                    </node>
+                    <node concept="liA8E" id="2tJHIt1dqsl" role="2OqNvi">
+                      <ref role="37wK5l" to="oeof:2$MQ_LKSxWF" resolve="hasFocus" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="7mR4HHEYmZm" role="3cqZAp">
                   <node concept="2OqwBi" id="7mR4HHEYmZn" role="3clFbG">
                     <node concept="37vLTw" id="7mR4HHEYmZo" role="2Oq$k0">
@@ -1485,12 +1521,6 @@
               </node>
               <node concept="9aQIb" id="7mR4HHEYnud" role="9aQIa">
                 <node concept="3clFbS" id="7mR4HHEYnue" role="9aQI4">
-                  <node concept="34ab3g" id="7mR4HHEYzSB" role="3cqZAp">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="Xl_RD" id="7mR4HHEYzSD" role="34bqiv">
-                      <property role="Xl_RC" value=" restting NodeEditor_Handler " />
-                    </node>
-                  </node>
                   <node concept="3clFbF" id="7mR4HHEYnCy" role="3cqZAp">
                     <node concept="2OqwBi" id="7mR4HHEYnCL" role="3clFbG">
                       <node concept="liA8E" id="7mR4HHEYzOd" role="2OqNvi">
