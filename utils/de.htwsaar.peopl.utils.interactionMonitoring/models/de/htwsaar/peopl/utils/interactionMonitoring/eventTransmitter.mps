@@ -21,6 +21,7 @@
     <import index="6oac" ref="r:7dfb55fa-ed11-4b91-9a6c-d6b93aaa89a6(de.htwsaar.peopl.utils.interactionMonitoring.xmlwriter)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="oeof" ref="r:690091b8-0320-4ca6-9149-41b19f0816e0(de.htwsaar.peopl.utils.interactionMonitoring.handlers)" />
+    <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -431,16 +432,7 @@
         <ref role="3uigEE" node="GCoVzA3TvA" resolve="AFKTimer" />
       </node>
     </node>
-    <node concept="312cEg" id="2tJHIt1dlei" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="UIEntitiyWithFocus_tmp" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="2tJHIt1dk5R" role="1B3o_S" />
-      <node concept="3uibUv" id="2tJHIt1dmoW" role="1tU5fm">
-        <ref role="3uigEE" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
-      </node>
-    </node>
+    <node concept="2tJIrI" id="2tJHIt1eoBy" role="jymVt" />
     <node concept="2tJIrI" id="1K$tCF0yBPd" role="jymVt" />
     <node concept="2tJIrI" id="1K$tCF0yowI" role="jymVt" />
     <node concept="Wx3nA" id="20ujiCwHR8v" role="jymVt">
@@ -746,6 +738,32 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="2aiVlhvFK_y" role="37wK5m">
                 <ref role="3VsUkX" to="e9fh:7JMHa6NIG_g" resolve="TypedOriginalEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2tJHIt1eHDw" role="3cqZAp">
+          <node concept="2OqwBi" id="2tJHIt1eI6l" role="3clFbG">
+            <node concept="37vLTw" id="2tJHIt1eHDu" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="2tJHIt1eJ6m" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="2tJHIt1eRB3" role="37wK5m">
+                <ref role="3VsUkX" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2tJHIt1eS5T" role="3cqZAp">
+          <node concept="2OqwBi" id="2tJHIt1eSEj" role="3clFbG">
+            <node concept="37vLTw" id="2tJHIt1eS5R" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="2tJHIt1eTFA" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="2tJHIt1eUa2" role="37wK5m">
+                <ref role="3VsUkX" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
               </node>
             </node>
           </node>
