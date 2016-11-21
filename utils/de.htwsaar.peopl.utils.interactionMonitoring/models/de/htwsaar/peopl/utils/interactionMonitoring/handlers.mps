@@ -445,6 +445,18 @@
       <node concept="10Oyi0" id="6vHH8Zdemet" role="1tU5fm" />
     </node>
     <node concept="2tJIrI" id="6vHH8Zdej1C" role="jymVt" />
+    <node concept="312cEg" id="2$MQ_LKSqRb" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="lastActiveComponent" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="2$MQ_LKSoyw" role="1B3o_S" />
+      <node concept="3uibUv" id="2$MQ_LKStcr" role="1tU5fm">
+        <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
+      </node>
+      <node concept="10Nm6u" id="2$MQ_LKStmZ" role="33vP2m" />
+    </node>
+    <node concept="2tJIrI" id="2$MQ_LKSk4d" role="jymVt" />
     <node concept="3clFbW" id="7AOYwIIZKMr" role="jymVt">
       <node concept="3cqZAl" id="7AOYwIIZKMs" role="3clF45" />
       <node concept="3clFbS" id="7AOYwIIZKMu" role="3clF47">
@@ -4009,6 +4021,26 @@
           <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
         </node>
       </node>
+    </node>
+    <node concept="2tJIrI" id="2$MQ_LKStpC" role="jymVt" />
+    <node concept="3clFb_" id="2$MQ_LKSxWF" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="hasFocus" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2$MQ_LKSxWI" role="3clF47">
+        <node concept="3cpWs6" id="2$MQ_LKS$h_" role="3cqZAp">
+          <node concept="3y3z36" id="2$MQ_LKS$qN" role="3cqZAk">
+            <node concept="10Nm6u" id="2$MQ_LKS$tO" role="3uHU7w" />
+            <node concept="37vLTw" id="2$MQ_LKS$kp" role="3uHU7B">
+              <ref role="3cqZAo" node="1qBBsls9Qbe" resolve="focusGain" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2$MQ_LKSvEQ" role="1B3o_S" />
+      <node concept="10P_77" id="2$MQ_LKSxUn" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="1qBBslsadEW" role="jymVt" />
     <node concept="3clFb_" id="1qBBslsaf5r" role="jymVt">
