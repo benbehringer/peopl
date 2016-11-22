@@ -124,7 +124,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="0.6.6" />
+          <property role="3MwjfP" value="0.6.7" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
@@ -782,6 +782,34 @@
             <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
+        </node>
+        <node concept="1SiIV0" id="1axwK2aDMVm" role="3bR37C">
+          <node concept="3bR9La" id="1axwK2aDMVn" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1axwK2aDMPu" resolve="de.htwsaar.peopl.core.toolsLanguage" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="1axwK2aDMPu" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.htwsaar.peopl.core.toolsLanguage" />
+        <property role="3LESm3" value="c7fb82d0-90f3-4c08-b61c-d6ac12547689" />
+        <property role="2GAjPV" value="false" />
+        <node concept="55IIr" id="1axwK2aDMPx" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1axwK2aDMU4" role="iGT6I">
+            <property role="2Ry0Am" value="core" />
+            <node concept="2Ry0Ak" id="1axwK2aDMU9" role="2Ry0An">
+              <property role="2Ry0Am" value="de.htwsaar.peopl.core.toolsLanguage" />
+              <node concept="2Ry0Ak" id="1axwK2aDMUe" role="2Ry0An">
+                <property role="2Ry0Am" value="de.htwsaar.peopl.core.toolsLanguage.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="1axwK2aDMVb" role="1TViLv">
+          <property role="TrG5h" value="de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
+          <property role="3LESm3" value="df999683-b7da-4db6-bb3d-a89824bf9763" />
+          <property role="2GAjPV" value="false" />
         </node>
       </node>
       <node concept="1E1JtA" id="5ZyLyheqt4I" role="2G$12L">
