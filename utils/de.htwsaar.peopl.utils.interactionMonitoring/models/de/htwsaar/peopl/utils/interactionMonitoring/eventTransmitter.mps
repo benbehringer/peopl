@@ -1187,37 +1187,33 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6GVZiXzmYlO" role="3cqZAp">
-          <node concept="3clFbS" id="6GVZiXzmYlQ" role="3clFbx">
-            <node concept="3SKdUt" id="6GVZiXzn9EH" role="3cqZAp">
-              <node concept="3SKdUq" id="6GVZiXzn9EI" role="3SKWNk">
-                <property role="3SKdUp" value="We are AFK and thus neither writeOutData or handle external events" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="6GVZiXznpTs" role="3cqZAp">
-              <node concept="1rXfSq" id="6GVZiXznpTq" role="3clFbG">
+        <node concept="3clFbH" id="7BPcdCLo5tX" role="3cqZAp" />
+        <node concept="3clFbJ" id="7BPcdCLo5Jg" role="3cqZAp">
+          <node concept="3clFbS" id="7BPcdCLo5Ji" role="3clFbx">
+            <node concept="3clFbF" id="7BPcdCLoqSz" role="3cqZAp">
+              <node concept="1rXfSq" id="7BPcdCLoqSx" role="3clFbG">
                 <ref role="37wK5l" node="7SuYorROaHg" resolve="handleAFKEvent" />
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="6GVZiXzmZAX" role="3clFbw">
-            <node concept="2OqwBi" id="6GVZiXzmZqF" role="2Oq$k0">
-              <node concept="37vLTw" id="6GVZiXzmYzn" role="2Oq$k0">
+          <node concept="2OqwBi" id="7BPcdCLoarQ" role="3clFbw">
+            <node concept="2OqwBi" id="7BPcdCLoa91" role="2Oq$k0">
+              <node concept="37vLTw" id="7BPcdCLo9XS" role="2Oq$k0">
                 <ref role="3cqZAo" node="4X0xypuwC8R" resolve="monEv" />
               </node>
-              <node concept="liA8E" id="6GVZiXzmZ$N" role="2OqNvi">
+              <node concept="liA8E" id="7BPcdCLoala" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
               </node>
             </node>
-            <node concept="liA8E" id="6GVZiXzmZVl" role="2OqNvi">
+            <node concept="liA8E" id="7BPcdCLoaG7" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-              <node concept="3VsKOn" id="6GVZiXzn5XT" role="37wK5m">
+              <node concept="3VsKOn" id="7BPcdCLoaRZ" role="37wK5m">
                 <ref role="3VsUkX" node="71bn0eB29Sn" resolve="AFK_Provider.AFKEvent" />
               </node>
             </node>
           </node>
-          <node concept="9aQIb" id="6GVZiXzn94J" role="9aQIa">
-            <node concept="3clFbS" id="6GVZiXzn94K" role="9aQI4">
+          <node concept="9aQIb" id="7BPcdCLoaU_" role="9aQIa">
+            <node concept="3clFbS" id="7BPcdCLoaUA" role="9aQI4">
               <node concept="3clFbF" id="GCoVzA44fg" role="3cqZAp">
                 <node concept="2OqwBi" id="GCoVzA44sF" role="3clFbG">
                   <node concept="37vLTw" id="GCoVzA44fe" role="2Oq$k0">
@@ -1249,8 +1245,7 @@
                   <ref role="37wK5l" node="6JmQuzhbq5C" resolve="printFocusHandler" />
                 </node>
               </node>
-              <node concept="3clFbH" id="5C1SAHq8Zwe" role="lGtFl" />
-              <node concept="3clFbH" id="5C1SAHq8ZH1" role="3cqZAp" />
+              <node concept="3clFbH" id="2PCZJjNAVhq" role="3cqZAp" />
               <node concept="3clFbJ" id="dxrcT7S8fv" role="3cqZAp">
                 <node concept="3clFbS" id="dxrcT7S8fx" role="3clFbx">
                   <node concept="3clFbF" id="dxrcT7S8Jc" role="3cqZAp">
@@ -1277,8 +1272,8 @@
                   <node concept="3cpWsb" id="dxrcT7Scu7" role="1tU5fm" />
                   <node concept="2OqwBi" id="dxrcT7Scu8" role="33vP2m">
                     <node concept="Rm8GO" id="dxrcT7Scu9" role="2Oq$k0">
-                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MILLIS" resolve="MILLIS" />
                       <ref role="1Px2BO" to="dzyv:~ChronoUnit" resolve="ChronoUnit" />
+                      <ref role="Rm8GQ" to="dzyv:~ChronoUnit.MILLIS" resolve="MILLIS" />
                     </node>
                     <node concept="liA8E" id="dxrcT7Scua" role="2OqNvi">
                       <ref role="37wK5l" to="dzyv:~ChronoUnit.between(java.time.temporal.Temporal,java.time.temporal.Temporal):long" resolve="between" />
@@ -1337,7 +1332,7 @@
                       <node concept="3cmrfG" id="20ujiCwHSbp" role="3uHU7w">
                         <property role="3cmrfH" value="1000" />
                       </node>
-                      <node concept="37vLTw" id="6GVZiXzn9lK" role="3uHU7B">
+                      <node concept="37vLTw" id="2PCZJjNAVhO" role="3uHU7B">
                         <ref role="3cqZAo" node="20ujiCwHR8v" resolve="writeOutTimeInSeconds" />
                       </node>
                     </node>
@@ -3696,12 +3691,6 @@
       <node concept="10P_77" id="6Eg$QreNMB5" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="20Q2bdRxLng" role="1B3o_S" />
-  </node>
-  <node concept="312cEu" id="6xl3Ncz7DNN">
-    <property role="TrG5h" value="AFK_Handler" />
-    <node concept="2tJIrI" id="6xl3Ncz7DOd" role="jymVt" />
-    <node concept="2tJIrI" id="6xl3Ncz7DOf" role="jymVt" />
-    <node concept="3Tm1VV" id="6xl3Ncz7DNO" role="1B3o_S" />
   </node>
 </model>
 
