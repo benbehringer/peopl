@@ -117,7 +117,6 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -439,7 +438,7 @@
       <property role="TrG5h" value="afkTimer" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="7SuYorRNYwx" role="1tU5fm">
-        <ref role="3uigEE" node="GCoVzA3TvA" resolve="AFKHandler" />
+        <ref role="3uigEE" node="GCoVzA3TvA" resolve="AFK_Provider" />
       </node>
       <node concept="3Tm6S6" id="GCoVzA40Vk" role="1B3o_S" />
     </node>
@@ -500,7 +499,7 @@
             </node>
             <node concept="2ShNRf" id="GCoVzA43ay" role="37vLTx">
               <node concept="HV5vD" id="7SuYorRNYXy" role="2ShVmc">
-                <ref role="HV5vE" node="GCoVzA3TvA" resolve="AFKHandler" />
+                <ref role="HV5vE" node="GCoVzA3TvA" resolve="AFK_Provider" />
               </node>
             </node>
           </node>
@@ -1136,7 +1135,7 @@
               <ref role="37wK5l" node="7SuYorROigj" resolve="clearLastHandlerWithFocus" />
               <node concept="2ShNRf" id="5C1SAHq9eeT" role="37wK5m">
                 <node concept="1pGfFk" id="5C1SAHq9eeU" role="2ShVmc">
-                  <ref role="37wK5l" node="20Q2bdRxGJq" resolve="AFKHandler.KeepAliveEvent" />
+                  <ref role="37wK5l" node="20Q2bdRxGJq" resolve="AFK_Provider.KeepAliveEvent" />
                   <node concept="2OqwBi" id="5C1SAHq9ihZ" role="37wK5m">
                     <node concept="Xjq3P" id="5C1SAHq9idh" role="2Oq$k0" />
                     <node concept="liA8E" id="5C1SAHq9iox" role="2OqNvi">
@@ -1168,19 +1167,23 @@
       <node concept="3Tm6S6" id="4X0xypuwKWr" role="1B3o_S" />
       <node concept="3cqZAl" id="7AOYwIIZIll" role="3clF45" />
       <node concept="3clFbS" id="7AOYwIIZIlo" role="3clF47">
-        <node concept="34ab3g" id="3khGHOKE2H7" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="3khGHOKE2Xn" role="34bqiv">
-            <node concept="2OqwBi" id="3khGHOKE3R9" role="3uHU7w">
-              <node concept="37vLTw" id="4X0xypuwDMs" role="2Oq$k0">
-                <ref role="3cqZAo" node="4X0xypuwC8R" resolve="monEv" />
+        <node concept="1X3_iC" id="6AMg3r2$5ot" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="34ab3g" id="3khGHOKE2H7" role="8Wnug">
+            <property role="35gtTG" value="warn" />
+            <node concept="3cpWs3" id="3khGHOKE2Xn" role="34bqiv">
+              <node concept="2OqwBi" id="3khGHOKE3R9" role="3uHU7w">
+                <node concept="37vLTw" id="4X0xypuwDMs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4X0xypuwC8R" resolve="monEv" />
+                </node>
+                <node concept="liA8E" id="3khGHOKE3Sa" role="2OqNvi">
+                  <ref role="37wK5l" to="e9fh:gMSQjqZXDV" resolve="getInfo" />
+                </node>
               </node>
-              <node concept="liA8E" id="3khGHOKE3Sa" role="2OqNvi">
-                <ref role="37wK5l" to="e9fh:gMSQjqZXDV" resolve="getInfo" />
+              <node concept="Xl_RD" id="3khGHOKE2H9" role="3uHU7B">
+                <property role="Xl_RC" value="Dist : " />
               </node>
-            </node>
-            <node concept="Xl_RD" id="3khGHOKE2H9" role="3uHU7B">
-              <property role="Xl_RC" value="Dist : " />
             </node>
           </node>
         </node>
@@ -1209,7 +1212,7 @@
             <node concept="liA8E" id="6GVZiXzmZVl" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
               <node concept="3VsKOn" id="6GVZiXzn5XT" role="37wK5m">
-                <ref role="3VsUkX" node="71bn0eB29Sn" resolve="AFKHandler.AFKEvent" />
+                <ref role="3VsUkX" node="71bn0eB29Sn" resolve="AFK_Provider.AFKEvent" />
               </node>
             </node>
           </node>
@@ -1241,13 +1244,9 @@
                   </node>
                 </node>
               </node>
-              <node concept="1X3_iC" id="5C1SAHq8YAT" role="lGtFl">
-                <property role="3V$3am" value="statement" />
-                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="3clFbF" id="6JmQuzhbqu2" role="8Wnug">
-                  <node concept="1rXfSq" id="6JmQuzhbqu0" role="3clFbG">
-                    <ref role="37wK5l" node="6JmQuzhbq5C" resolve="printFocusHandler" />
-                  </node>
+              <node concept="3clFbF" id="6JmQuzhbqu2" role="3cqZAp">
+                <node concept="1rXfSq" id="6JmQuzhbqu0" role="3clFbG">
+                  <ref role="37wK5l" node="6JmQuzhbq5C" resolve="printFocusHandler" />
                 </node>
               </node>
               <node concept="3clFbH" id="5C1SAHq8Zwe" role="lGtFl" />
@@ -1642,7 +1641,7 @@
               <node concept="liA8E" id="6JmQuzh9HBj" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="3VsKOn" id="6JmQuzh9HkP" role="37wK5m">
-                  <ref role="3VsUkX" node="20Q2bdRxGJp" resolve="AFKHandler.KeepAliveEvent" />
+                  <ref role="3VsUkX" node="20Q2bdRxGJp" resolve="AFK_Provider.KeepAliveEvent" />
                 </node>
               </node>
             </node>
@@ -3197,7 +3196,7 @@
     </node>
   </node>
   <node concept="312cEu" id="GCoVzA3TvA">
-    <property role="TrG5h" value="AFKHandler" />
+    <property role="TrG5h" value="AFK_Provider" />
     <node concept="2tJIrI" id="GCoVzA3UjW" role="jymVt" />
     <node concept="312cEg" id="GCoVzA3WGv" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -3323,7 +3322,7 @@
                               <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
                               <node concept="2ShNRf" id="7SuYorRO3V3" role="37wK5m">
                                 <node concept="1pGfFk" id="7SuYorRO4gV" role="2ShVmc">
-                                  <ref role="37wK5l" node="71bn0eB2aW2" resolve="AFKHandler.AFKEvent" />
+                                  <ref role="37wK5l" node="71bn0eB2aW2" resolve="AFK_Provider.AFKEvent" />
                                   <node concept="2OqwBi" id="7SuYorRO4mE" role="37wK5m">
                                     <node concept="Xjq3P" id="7SuYorRO4j2" role="2Oq$k0" />
                                     <node concept="liA8E" id="7SuYorRO4s8" role="2OqNvi">
@@ -3385,7 +3384,7 @@
               <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
               <node concept="2ShNRf" id="20Q2bdRyvyu" role="37wK5m">
                 <node concept="1pGfFk" id="20Q2bdRyxdZ" role="2ShVmc">
-                  <ref role="37wK5l" node="20Q2bdRxGJq" resolve="AFKHandler.KeepAliveEvent" />
+                  <ref role="37wK5l" node="20Q2bdRxGJq" resolve="AFK_Provider.KeepAliveEvent" />
                   <node concept="37vLTw" id="1RkmTix5C5a" role="37wK5m">
                     <ref role="3cqZAo" node="1RkmTix5BYJ" resolve="senderClass" />
                   </node>
@@ -3450,7 +3449,9 @@
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
         <node concept="3Tm1VV" id="71bn0eB2bW9" role="1B3o_S" />
-        <node concept="17QB3L" id="71bn0eB2bWa" role="3clF45" />
+        <node concept="3uibUv" id="6AMg3r2zXCj" role="3clF45">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
         <node concept="3clFbS" id="71bn0eB2bWb" role="3clF47">
           <node concept="3cpWs6" id="71bn0eB2c1S" role="3cqZAp">
             <node concept="3cpWs3" id="71bn0eB2SWe" role="3cqZAk">
@@ -3518,7 +3519,9 @@
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
         <node concept="3Tm1VV" id="20Q2bdRxGJB" role="1B3o_S" />
-        <node concept="17QB3L" id="20Q2bdRxGJC" role="3clF45" />
+        <node concept="3uibUv" id="6AMg3r2zXxh" role="3clF45">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
         <node concept="3clFbS" id="20Q2bdRxGJD" role="3clF47">
           <node concept="3cpWs6" id="20Q2bdRxGJE" role="3cqZAp">
             <node concept="3cpWs3" id="20Q2bdRxGJF" role="3cqZAk">
@@ -3693,6 +3696,12 @@
       <node concept="10P_77" id="6Eg$QreNMB5" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="20Q2bdRxLng" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6xl3Ncz7DNN">
+    <property role="TrG5h" value="AFK_Handler" />
+    <node concept="2tJIrI" id="6xl3Ncz7DOd" role="jymVt" />
+    <node concept="2tJIrI" id="6xl3Ncz7DOf" role="jymVt" />
+    <node concept="3Tm1VV" id="6xl3Ncz7DNO" role="1B3o_S" />
   </node>
 </model>
 
