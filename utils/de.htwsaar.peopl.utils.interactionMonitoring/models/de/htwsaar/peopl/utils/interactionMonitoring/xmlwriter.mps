@@ -1600,19 +1600,6 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="4TUiWVnz0WY" role="3cqZAp">
-                  <node concept="2OqwBi" id="4TUiWVnz0Y9" role="3clFbG">
-                    <node concept="37vLTw" id="4TUiWVnz0WW" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7obFNLlfzMX" resolve="uploader" />
-                    </node>
-                    <node concept="liA8E" id="4TUiWVnz0YV" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Thread.join(long):void" resolve="join" />
-                      <node concept="3cmrfG" id="3r08ekHuQkz" role="37wK5m">
-                        <property role="3cmrfH" value="10000" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="37vLTw" id="7obFNLlfoaD" role="3clFbw">
                 <ref role="3cqZAo" node="7obFNLlfmkV" resolve="upload" />

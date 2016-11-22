@@ -19,6 +19,7 @@
     <import index="rn14" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.http(de.htwsaar.usageTracking/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="guzq" ref="e3f46ef7-61eb-4bce-9e09-9c1792246fd2/java:com.dropbox.core.v2.users(de.htwsaar.fileUpload/)" />
+    <import index="6oac" ref="r:7dfb55fa-ed11-4b91-9a6c-d6b93aaa89a6(de.htwsaar.peopl.utils.interactionMonitoring.xmlwriter)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -3002,6 +3003,30 @@
       <node concept="3Tm1VV" id="7obFNLlfq7Q" role="1B3o_S" />
       <node concept="3cqZAl" id="7obFNLlfq7S" role="3clF45" />
       <node concept="3clFbS" id="7obFNLlfq7T" role="3clF47">
+        <node concept="SfApY" id="6brzEgcuYMN" role="3cqZAp">
+          <node concept="3clFbS" id="6brzEgcuYMO" role="SfCbr">
+            <node concept="3clFbF" id="6brzEgcuY8$" role="3cqZAp">
+              <node concept="2OqwBi" id="6brzEgcuYjt" role="3clFbG">
+                <node concept="2YIFZM" id="6brzEgcuYeW" role="2Oq$k0">
+                  <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                  <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                </node>
+                <node concept="liA8E" id="6brzEgcuYp0" role="2OqNvi">
+                  <ref role="37wK5l" to="6oac:6brzEgctEtd" resolve="getLock" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6brzEgcuYMJ" role="TEbGg">
+            <node concept="3clFbS" id="6brzEgcuYMK" role="TDEfX" />
+            <node concept="3cpWsn" id="6brzEgcuYML" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6brzEgcuYMM" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="7obFNLlfqJ5" role="3cqZAp">
           <node concept="3cpWsn" id="7obFNLlfqJ6" role="3cpWs9">
             <property role="TrG5h" value="client" />
@@ -3186,6 +3211,17 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6brzEgcuYwc" role="3cqZAp">
+          <node concept="2OqwBi" id="6brzEgcuYGa" role="3clFbG">
+            <node concept="2YIFZM" id="6brzEgcuYBl" role="2Oq$k0">
+              <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+              <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+            </node>
+            <node concept="liA8E" id="6brzEgcuYLZ" role="2OqNvi">
+              <ref role="37wK5l" to="6oac:6brzEgctEAJ" resolve="releaseLock" />
             </node>
           </node>
         </node>
