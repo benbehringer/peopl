@@ -18,6 +18,7 @@
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
     <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.queues)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -106,6 +107,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -179,6 +181,7 @@
         <child id="1212687122400" name="typeParameter" index="1pMfVU" />
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
@@ -341,8 +344,7 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="5V1pRD1mV78" role="jymVt" />
-    <node concept="2tJIrI" id="7kgjkPlrCoH" role="jymVt" />
+    <node concept="2tJIrI" id="6brzEgctASv" role="jymVt" />
     <node concept="2YIFZL" id="7kgjkPlytc2" role="jymVt">
       <property role="TrG5h" value="getInstance" />
       <property role="DiZV1" value="false" />
@@ -4436,6 +4438,151 @@
     </node>
     <node concept="2tJIrI" id="2tJHIt1f8WB" role="jymVt" />
     <node concept="3Tm1VV" id="2tJHIt1f8VN" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6brzEgctD_0">
+    <property role="TrG5h" value="XMLWriterLock" />
+    <node concept="2tJIrI" id="6brzEgctD_k" role="jymVt" />
+    <node concept="312cEu" id="6brzEgctDC2" role="jymVt">
+      <property role="2bfB8j" value="false" />
+      <property role="1sVAO0" value="false" />
+      <property role="1EXbeo" value="false" />
+      <property role="TrG5h" value="SingletonHolder" />
+      <node concept="3Tm6S6" id="6brzEgctDBL" role="1B3o_S" />
+      <node concept="Wx3nA" id="6brzEgctDCY" role="jymVt">
+        <property role="2dlcS1" value="false" />
+        <property role="2dld4O" value="false" />
+        <property role="TrG5h" value="INSTANCE" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3Tm1VV" id="6brzEgctDCG" role="1B3o_S" />
+        <node concept="3uibUv" id="6brzEgctDCL" role="1tU5fm">
+          <ref role="3uigEE" node="6brzEgctD_0" resolve="XMLWriterLock" />
+        </node>
+        <node concept="2ShNRf" id="6brzEgctDDJ" role="33vP2m">
+          <node concept="1pGfFk" id="6brzEgctDXK" role="2ShVmc">
+            <ref role="37wK5l" node="6brzEgctDAg" resolve="XMLWriterLock" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6brzEgctDYi" role="jymVt" />
+    <node concept="2YIFZL" id="6brzEgctDZK" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6brzEgctDZN" role="3clF47">
+        <node concept="3cpWs6" id="6brzEgctE0A" role="3cqZAp">
+          <node concept="10M0yZ" id="6brzEgctE18" role="3cqZAk">
+            <ref role="1PxDUh" node="6brzEgctDC2" resolve="XMLWriterLock.SingletonHolder" />
+            <ref role="3cqZAo" node="6brzEgctDCY" resolve="INSTANCE" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6brzEgctDZ5" role="1B3o_S" />
+      <node concept="3uibUv" id="6brzEgctDZx" role="3clF45">
+        <ref role="3uigEE" node="6brzEgctD_0" resolve="XMLWriterLock" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6brzEgctE2c" role="jymVt" />
+    <node concept="312cEg" id="6brzEgctE4k" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="fileLock" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="6brzEgctE3n" role="1B3o_S" />
+      <node concept="3uibUv" id="6brzEgctE4f" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~Semaphore" resolve="Semaphore" />
+      </node>
+      <node concept="2ShNRf" id="6brzEgctE5B" role="33vP2m">
+        <node concept="1pGfFk" id="6brzEgctEpA" role="2ShVmc">
+          <ref role="37wK5l" to="5zyv:~Semaphore.&lt;init&gt;(int)" resolve="Semaphore" />
+          <node concept="3cmrfG" id="6brzEgctEq0" role="37wK5m">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6brzEgctD_s" role="jymVt" />
+    <node concept="3Tm1VV" id="6brzEgctD_1" role="1B3o_S" />
+    <node concept="3clFbW" id="6brzEgctDAg" role="jymVt">
+      <node concept="3cqZAl" id="6brzEgctDAh" role="3clF45" />
+      <node concept="3Tm6S6" id="6brzEgctDAx" role="1B3o_S" />
+      <node concept="3clFbS" id="6brzEgctDAk" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="6brzEgctEqk" role="jymVt" />
+    <node concept="3clFb_" id="6brzEgctEtd" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getLock" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6brzEgctEtg" role="3clF47">
+        <node concept="3clFbF" id="6brzEgctEv5" role="3cqZAp">
+          <node concept="2OqwBi" id="6brzEgctEvI" role="3clFbG">
+            <node concept="37vLTw" id="6brzEgctEv4" role="2Oq$k0">
+              <ref role="3cqZAo" node="6brzEgctE4k" resolve="fileLock" />
+            </node>
+            <node concept="liA8E" id="6brzEgctExj" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6brzEgctEsd" role="1B3o_S" />
+      <node concept="3cqZAl" id="6brzEgctEuf" role="3clF45" />
+      <node concept="3uibUv" id="6brzEgctExS" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6brzEgctEyT" role="jymVt" />
+    <node concept="3clFb_" id="6brzEgctEAJ" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="releaseLock" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6brzEgctEAM" role="3clF47">
+        <node concept="3clFbF" id="6brzEgctECJ" role="3cqZAp">
+          <node concept="2OqwBi" id="6brzEgctEDo" role="3clFbG">
+            <node concept="37vLTw" id="6brzEgctECI" role="2Oq$k0">
+              <ref role="3cqZAo" node="6brzEgctE4k" resolve="fileLock" />
+            </node>
+            <node concept="liA8E" id="6brzEgctEEn" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~Semaphore.release():void" resolve="release" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6brzEgctE_5" role="1B3o_S" />
+      <node concept="3cqZAl" id="6brzEgctE_K" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6brzEgcv2q9" role="jymVt" />
+    <node concept="3clFb_" id="6brzEgcv2A2" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="hasAvailablePermit" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6brzEgcv2A5" role="3clF47">
+        <node concept="3cpWs6" id="6brzEgcv2Ci" role="3cqZAp">
+          <node concept="3clFbC" id="6brzEgcv2NW" role="3cqZAk">
+            <node concept="3cmrfG" id="6brzEgcv2PZ" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="6brzEgcv2G2" role="3uHU7B">
+              <node concept="37vLTw" id="6brzEgcv2E3" role="2Oq$k0">
+                <ref role="3cqZAo" node="6brzEgctE4k" resolve="fileLock" />
+              </node>
+              <node concept="liA8E" id="6brzEgcv2I_" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~Semaphore.availablePermits():int" resolve="availablePermits" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6brzEgcv2$d" role="1B3o_S" />
+      <node concept="10P_77" id="6brzEgcv2A0" role="3clF45" />
+    </node>
   </node>
 </model>
 

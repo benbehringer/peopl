@@ -1151,6 +1151,47 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="6brzEgcw_nW" role="3cqZAp" />
+        <node concept="3SKdUt" id="6brzEgcv7eN" role="3cqZAp">
+          <node concept="3SKdUq" id="6brzEgcv7eP" role="3SKWNk">
+            <property role="3SKdUp" value="on ending blocks until a running upload thread is ready an then releases immediately the lock again" />
+          </node>
+        </node>
+        <node concept="SfApY" id="6brzEgcv7bH" role="3cqZAp">
+          <node concept="3clFbS" id="6brzEgcv7bI" role="SfCbr">
+            <node concept="3clFbF" id="6brzEgcv72P" role="3cqZAp">
+              <node concept="2OqwBi" id="6brzEgcv749" role="3clFbG">
+                <node concept="2YIFZM" id="6brzEgcv73C" role="2Oq$k0">
+                  <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                  <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                </node>
+                <node concept="liA8E" id="6brzEgcv75R" role="2OqNvi">
+                  <ref role="37wK5l" to="6oac:6brzEgctEtd" resolve="getLock" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="TDmWw" id="6brzEgcv7bD" role="TEbGg">
+            <node concept="3clFbS" id="6brzEgcv7bE" role="TDEfX" />
+            <node concept="3cpWsn" id="6brzEgcv7bF" role="TDEfY">
+              <property role="TrG5h" value="e" />
+              <node concept="3uibUv" id="6brzEgcv7bG" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6brzEgcv777" role="3cqZAp">
+          <node concept="2OqwBi" id="6brzEgcv794" role="3clFbG">
+            <node concept="2YIFZM" id="6brzEgcv78h" role="2Oq$k0">
+              <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+              <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+            </node>
+            <node concept="liA8E" id="6brzEgcv7b3" role="2OqNvi">
+              <ref role="37wK5l" to="6oac:6brzEgctEAJ" resolve="releaseLock" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1K$tCF0yBOI" role="3cqZAp">
           <node concept="1rXfSq" id="1K$tCF0yBOH" role="3clFbG">
             <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
@@ -1303,16 +1344,34 @@
               </node>
               <node concept="3clFbJ" id="dxrcT7S9hq" role="3cqZAp">
                 <node concept="3clFbS" id="dxrcT7S9hs" role="3clFbx">
-                  <node concept="3clFbF" id="dxrcT7SdwO" role="3cqZAp">
-                    <node concept="1rXfSq" id="dxrcT7SdwM" role="3clFbG">
-                      <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+                  <node concept="3SKdUt" id="6brzEgcw_q5" role="3cqZAp">
+                    <node concept="3SKdUq" id="6brzEgcw_q7" role="3SKWNk">
+                      <property role="3SKdUp" value="only write out data if we can acquire the lock, hence no file is uploaded at the time" />
                     </node>
                   </node>
-                  <node concept="3clFbF" id="dxrcT7Sdyd" role="3cqZAp">
-                    <node concept="37vLTI" id="dxrcT7Sdzp" role="3clFbG">
-                      <node concept="10Nm6u" id="dxrcT7Sd$0" role="37vLTx" />
-                      <node concept="37vLTw" id="dxrcT7Sdyb" role="37vLTJ">
-                        <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                  <node concept="3clFbJ" id="6brzEgcv2m$" role="3cqZAp">
+                    <node concept="3clFbS" id="6brzEgcv2mA" role="3clFbx">
+                      <node concept="3clFbF" id="dxrcT7SdwO" role="3cqZAp">
+                        <node concept="1rXfSq" id="dxrcT7SdwM" role="3clFbG">
+                          <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+                        </node>
+                      </node>
+                      <node concept="3clFbF" id="dxrcT7Sdyd" role="3cqZAp">
+                        <node concept="37vLTI" id="dxrcT7Sdzp" role="3clFbG">
+                          <node concept="10Nm6u" id="dxrcT7Sd$0" role="37vLTx" />
+                          <node concept="37vLTw" id="dxrcT7Sdyb" role="37vLTJ">
+                            <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6brzEgcv4TV" role="3clFbw">
+                      <node concept="2YIFZM" id="6brzEgcv2o9" role="2Oq$k0">
+                        <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                        <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                      </node>
+                      <node concept="liA8E" id="6brzEgcv4VB" role="2OqNvi">
+                        <ref role="37wK5l" to="6oac:6brzEgcv2A2" resolve="hasAvailablePermit" />
                       </node>
                     </node>
                   </node>
