@@ -430,6 +430,12 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1O4Ef7_q8tk" role="3bR37C">
+          <node concept="3bR9La" id="1O4Ef7_q8tl" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" node="1axwK2aDKP6" resolve="de.htwsaar.peopl.utils.interactionMonitoring" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="1axwK2aDMZK" role="2G$12L">
         <property role="BnDLt" value="true" />

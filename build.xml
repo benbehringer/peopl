@@ -401,13 +401,14 @@
     </ant>
   </target>
   
-  <target name="java.compile.java.modules.cycle.1" depends="java.compile.de.htwsaar.fileUpload, fetchDependencies">
+  <target name="java.compile.java.modules.cycle.1" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.1" />
     <javac destdir="${build.tmp}/java.modules.cycle.1" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${basedir}/utils/de.htwsaar.peopl.utils.interactionMonitoring/source_gen" />
         <path location="${basedir}/utils/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring/source_gen" />
+        <path location="${basedir}/utils/de.htwsaar.fileUpload/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -453,12 +454,11 @@
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.listener.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.toolsLanguage.jar" />
         <fileset file="${build.tmp}/deps/peoplBaseLanguageExtension/peoplBaseLanguageExtension.zip/peoplBaseLanguageExtension/languages/dep.view/de.htwsaar.peopl.view.modular.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.fileUpload" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.de.htwsaar.peopl.utils.interactionMonitoring" depends="java.compile.de.htwsaar.fileUpload, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.de.htwsaar.peopl.utils.interactionMonitoring" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/utils/de.htwsaar.peopl.utils.interactionMonitoring/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.utils.interactionMonitoring" />
     <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.utils.interactionMonitoring" fork="true" encoding="utf8" includeantruntime="false">
@@ -481,7 +481,6 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.fileUpload" />
         <fileset file="${basedir}/utils/de.htwsaar.fileUpload/libs/dropbox-core-sdk-2.1.2.jar" />
         <fileset file="${basedir}/utils/de.htwsaar.fileUpload/libs/jackson-core-2.7.4.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
@@ -565,7 +564,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.de.htwsaar.fileUpload" depends="fetchDependencies">
+  <target name="java.compile.de.htwsaar.fileUpload" depends="java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${basedir}/utils/de.htwsaar.fileUpload/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.fileUpload" />
     <javac destdir="${build.tmp}/java/out/de.htwsaar.fileUpload" fork="true" encoding="utf8" includeantruntime="false">
@@ -600,6 +599,7 @@
         <fileset file="${artifacts.mps}/lib/diffutils-1.2.1.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.1" />
       </classpath>
     </javac>
   </target>
