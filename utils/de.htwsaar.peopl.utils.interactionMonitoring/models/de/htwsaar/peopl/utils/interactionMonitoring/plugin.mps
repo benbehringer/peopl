@@ -1294,6 +1294,30 @@
           <node concept="3clFbS" id="1R0T08haYYa" role="2LFqv$">
             <node concept="3clFbJ" id="1R0T08haYYb" role="3cqZAp">
               <node concept="3clFbS" id="1R0T08haYYc" role="3clFbx">
+                <node concept="SfApY" id="6cueWXld8_p" role="3cqZAp">
+                  <node concept="3clFbS" id="6cueWXld8_q" role="SfCbr">
+                    <node concept="3clFbF" id="6cueWXld8wp" role="3cqZAp">
+                      <node concept="2OqwBi" id="6cueWXld8y2" role="3clFbG">
+                        <node concept="2YIFZM" id="6cueWXld8xu" role="2Oq$k0">
+                          <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                          <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                        </node>
+                        <node concept="liA8E" id="6cueWXld8$Q" role="2OqNvi">
+                          <ref role="37wK5l" to="6oac:6brzEgctEtd" resolve="getLock" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="TDmWw" id="6cueWXld8_l" role="TEbGg">
+                    <node concept="3clFbS" id="6cueWXld8_m" role="TDEfX" />
+                    <node concept="3cpWsn" id="6cueWXld8_n" role="TDEfY">
+                      <property role="TrG5h" value="e" />
+                      <node concept="3uibUv" id="6cueWXld8_o" role="1tU5fm">
+                        <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3cpWs8" id="1R0T08haYYd" role="3cqZAp">
                   <node concept="3cpWsn" id="1R0T08haYYe" role="3cpWs9">
                     <property role="TrG5h" value="uploader" />
