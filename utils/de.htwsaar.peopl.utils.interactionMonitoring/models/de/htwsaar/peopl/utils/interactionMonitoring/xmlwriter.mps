@@ -2987,6 +2987,17 @@
       <node concept="3Tm6S6" id="6X2hyGITCkJ" role="1B3o_S" />
       <node concept="17QB3L" id="6X2hyGITCm7" role="1tU5fm" />
     </node>
+    <node concept="312cEg" id="5AGu6A$emPR" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="UPLOAD_SIZE_IN_BYTE" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="5AGu6A$emKv" role="1B3o_S" />
+      <node concept="10Oyi0" id="5AGu6A$emPt" role="1tU5fm" />
+      <node concept="3cmrfG" id="5AGu6A$emVB" role="33vP2m">
+        <property role="3cmrfH" value="2000" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6X2hyGIT6Cu" role="jymVt" />
     <node concept="3Tm1VV" id="6X2hyGIT64i" role="1B3o_S" />
     <node concept="3uibUv" id="6X2hyGIT6kx" role="EKbjA">
@@ -3276,8 +3287,8 @@
                       <ref role="37wK5l" to="guwi:~File.length():long" resolve="length" />
                     </node>
                   </node>
-                  <node concept="3cmrfG" id="6X2hyGIUL_l" role="3uHU7w">
-                    <property role="3cmrfH" value="15000" />
+                  <node concept="37vLTw" id="5AGu6A$emX8" role="3uHU7w">
+                    <ref role="3cqZAo" node="5AGu6A$emPR" resolve="UPLOAD_SIZE_IN_BYTE" />
                   </node>
                 </node>
                 <node concept="9aQIb" id="6X2hyGIUMfu" role="9aQIa">
@@ -3323,6 +3334,17 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5aqGY9Ql8Uf" role="3cqZAp">
+          <node concept="2OqwBi" id="5aqGY9Ql9_G" role="3clFbG">
+            <node concept="2YIFZM" id="5aqGY9Ql970" role="2Oq$k0">
+              <ref role="37wK5l" node="6brzEgctDZK" resolve="getInstance" />
+              <ref role="1Pybhc" node="6brzEgctD_0" resolve="XMLWriterLock" />
+            </node>
+            <node concept="liA8E" id="5aqGY9Ql9Kz" role="2OqNvi">
+              <ref role="37wK5l" node="5aqGY9QkK8C" resolve="releaseShutdownLock" />
             </node>
           </node>
         </node>
@@ -4552,6 +4574,24 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="5aqGY9QkInu" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="shutdownLock" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="5aqGY9QkIkE" role="1B3o_S" />
+      <node concept="3uibUv" id="5aqGY9QkInn" role="1tU5fm">
+        <ref role="3uigEE" to="5zyv:~Semaphore" resolve="Semaphore" />
+      </node>
+      <node concept="2ShNRf" id="5aqGY9QkIqB" role="33vP2m">
+        <node concept="1pGfFk" id="5aqGY9QkJHL" role="2ShVmc">
+          <ref role="37wK5l" to="5zyv:~Semaphore.&lt;init&gt;(int)" resolve="Semaphore" />
+          <node concept="3cmrfG" id="5aqGY9QkJIe" role="37wK5m">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="6brzEgctD_s" role="jymVt" />
     <node concept="3Tm1VV" id="6brzEgctD_1" role="1B3o_S" />
     <node concept="3clFbW" id="6brzEgctDAg" role="jymVt">
@@ -4606,7 +4646,54 @@
       <node concept="3Tm1VV" id="6brzEgctE_5" role="1B3o_S" />
       <node concept="3cqZAl" id="6brzEgctE_K" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="5aqGY9QkJIy" role="jymVt" />
+    <node concept="3clFb_" id="5aqGY9QkJQH" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getShutdownLock" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5aqGY9QkJQK" role="3clF47">
+        <node concept="3clFbF" id="5aqGY9QkJTU" role="3cqZAp">
+          <node concept="2OqwBi" id="5aqGY9QkJUz" role="3clFbG">
+            <node concept="37vLTw" id="5aqGY9QkJTT" role="2Oq$k0">
+              <ref role="3cqZAo" node="5aqGY9QkInu" resolve="shutdownLock" />
+            </node>
+            <node concept="liA8E" id="5aqGY9QkJW9" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~Semaphore.acquire():void" resolve="acquire" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5aqGY9QkJNO" role="1B3o_S" />
+      <node concept="3cqZAl" id="5aqGY9QkJQD" role="3clF45" />
+      <node concept="3uibUv" id="5aqGY9QkJWI" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="6brzEgcv2q9" role="jymVt" />
+    <node concept="3clFb_" id="5aqGY9QkK8C" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="releaseShutdownLock" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5aqGY9QkK8F" role="3clF47">
+        <node concept="3clFbF" id="5aqGY9QkKcm" role="3cqZAp">
+          <node concept="2OqwBi" id="5aqGY9QkKcZ" role="3clFbG">
+            <node concept="37vLTw" id="5aqGY9QkKcl" role="2Oq$k0">
+              <ref role="3cqZAo" node="5aqGY9QkInu" resolve="shutdownLock" />
+            </node>
+            <node concept="liA8E" id="5aqGY9QkKey" role="2OqNvi">
+              <ref role="37wK5l" to="5zyv:~Semaphore.release():void" resolve="release" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5aqGY9QkK5g" role="1B3o_S" />
+      <node concept="3cqZAl" id="5aqGY9QkK6v" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5aqGY9QkK1X" role="jymVt" />
     <node concept="3clFb_" id="6brzEgcv2A2" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="hasAvailablePermit" />

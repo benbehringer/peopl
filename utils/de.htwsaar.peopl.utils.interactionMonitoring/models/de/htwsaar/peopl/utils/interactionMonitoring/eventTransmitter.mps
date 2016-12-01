@@ -22,7 +22,9 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="oeof" ref="r:690091b8-0320-4ca6-9149-41b19f0816e0(de.htwsaar.peopl.utils.interactionMonitoring.handlers)" />
     <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.fileUpload.common)" />
+    <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1155,41 +1157,6 @@
         <node concept="3SKdUt" id="6brzEgcv7eN" role="3cqZAp">
           <node concept="3SKdUq" id="6brzEgcv7eP" role="3SKWNk">
             <property role="3SKdUp" value="on ending blocks until a running upload thread is ready an then releases immediately the lock again" />
-          </node>
-        </node>
-        <node concept="SfApY" id="6brzEgcv7bH" role="3cqZAp">
-          <node concept="3clFbS" id="6brzEgcv7bI" role="SfCbr">
-            <node concept="3clFbF" id="6brzEgcv72P" role="3cqZAp">
-              <node concept="2OqwBi" id="6brzEgcv749" role="3clFbG">
-                <node concept="2YIFZM" id="6brzEgcv73C" role="2Oq$k0">
-                  <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
-                  <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
-                </node>
-                <node concept="liA8E" id="6brzEgcv75R" role="2OqNvi">
-                  <ref role="37wK5l" to="6oac:6brzEgctEtd" resolve="getLock" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="TDmWw" id="6brzEgcv7bD" role="TEbGg">
-            <node concept="3clFbS" id="6brzEgcv7bE" role="TDEfX" />
-            <node concept="3cpWsn" id="6brzEgcv7bF" role="TDEfY">
-              <property role="TrG5h" value="e" />
-              <node concept="3uibUv" id="6brzEgcv7bG" role="1tU5fm">
-                <ref role="3uigEE" to="wyt6:~InterruptedException" resolve="InterruptedException" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6brzEgcv777" role="3cqZAp">
-          <node concept="2OqwBi" id="6brzEgcv794" role="3clFbG">
-            <node concept="2YIFZM" id="6brzEgcv78h" role="2Oq$k0">
-              <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
-              <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
-            </node>
-            <node concept="liA8E" id="6brzEgcv7b3" role="2OqNvi">
-              <ref role="37wK5l" to="6oac:6brzEgctEAJ" resolve="releaseLock" />
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="1K$tCF0yBOI" role="3cqZAp">

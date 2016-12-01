@@ -3227,6 +3227,17 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="5A_PfKBeuPi" role="3cqZAp">
+              <node concept="2OqwBi" id="5A_PfKBeuQS" role="3clFbG">
+                <node concept="2YIFZM" id="5A_PfKBeuQw" role="2Oq$k0">
+                  <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                  <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                </node>
+                <node concept="liA8E" id="5A_PfKBeuSh" role="2OqNvi">
+                  <ref role="37wK5l" to="6oac:5aqGY9QkK8C" resolve="releaseShutdownLock" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
