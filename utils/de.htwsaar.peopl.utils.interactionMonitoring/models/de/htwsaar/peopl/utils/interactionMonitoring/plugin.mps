@@ -290,10 +290,33 @@
                 <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
               </node>
             </node>
+<<<<<<< HEAD
             <node concept="3clFbF" id="3mgCFey87QJ" role="3cqZAp">
               <node concept="2YIFZM" id="3mgCFey87RC" role="3clFbG">
                 <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
                 <ref role="37wK5l" node="1R0T08haYMM" resolve="init" />
+=======
+            <node concept="3clFbF" id="7tbijWIVY20" role="3cqZAp">
+              <node concept="2OqwBi" id="7tbijWIVY3y" role="3clFbG">
+                <node concept="2YIFZM" id="7tbijWIVY2R" role="2Oq$k0">
+                  <ref role="37wK5l" to="30sj:2An04PNr3eS" resolve="getInstance" />
+                  <ref role="1Pybhc" to="30sj:7tbijWIUDyW" resolve="EditorComponentCache" />
+                </node>
+                <node concept="liA8E" id="7tbijWIVY55" role="2OqNvi">
+                  <ref role="37wK5l" to="30sj:7tbijWIUPzV" resolve="init" />
+                  <node concept="1KvdUw" id="7tbijWIVY5z" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="4aADlLlPy$c" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="3mgCFey87QJ" role="8Wnug">
+                <node concept="2YIFZM" id="3mgCFey87RC" role="3clFbG">
+                  <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
+                  <ref role="37wK5l" node="1R0T08haYMM" resolve="init" />
+                </node>
+>>>>>>> efad861c39e9ca0ec6d4a415cb540122f614531a
               </node>
             </node>
           </node>
@@ -324,10 +347,32 @@
             <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
           </node>
         </node>
+<<<<<<< HEAD
         <node concept="3clFbF" id="3mgCFey87YF" role="3cqZAp">
           <node concept="2YIFZM" id="3mgCFey87Zs" role="3clFbG">
             <ref role="37wK5l" node="1R0T08haYUv" resolve="dispose" />
             <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
+=======
+        <node concept="3clFbF" id="7tbijWIVY6L" role="3cqZAp">
+          <node concept="2OqwBi" id="7tbijWIVY6M" role="3clFbG">
+            <node concept="2YIFZM" id="7tbijWIVY6N" role="2Oq$k0">
+              <ref role="1Pybhc" to="30sj:7tbijWIUDyW" resolve="EditorComponentCache" />
+              <ref role="37wK5l" to="30sj:2An04PNr3eS" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="7tbijWIVY9a" role="2OqNvi">
+              <ref role="37wK5l" to="30sj:7tbijWIUPvz" resolve="dispose" />
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="4aADlLlPyzE" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="3mgCFey87YF" role="8Wnug">
+            <node concept="2YIFZM" id="3mgCFey87Zs" role="3clFbG">
+              <ref role="37wK5l" node="1R0T08haYUv" resolve="dispose" />
+              <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
+            </node>
+>>>>>>> efad861c39e9ca0ec6d4a415cb540122f614531a
           </node>
         </node>
       </node>
@@ -728,7 +773,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="1TOnLUV7mxQ" role="3cqZAp" />
-            <node concept="3clFbH" id="1TOnLUV7mCA" role="3cqZAp" />
+            <node concept="3SKdUt" id="7tbijWIUJWx" role="3cqZAp">
+              <node concept="3SKdUq" id="7tbijWIUJWy" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: remove monitoring listeners not done?!?!?!?" />
+              </node>
+            </node>
             <node concept="1DcWWT" id="2tJHIt1cG4Y" role="3cqZAp">
               <node concept="3clFbS" id="2tJHIt1cG50" role="2LFqv$">
                 <node concept="3clFbJ" id="2tJHIt1cKhY" role="3cqZAp">
