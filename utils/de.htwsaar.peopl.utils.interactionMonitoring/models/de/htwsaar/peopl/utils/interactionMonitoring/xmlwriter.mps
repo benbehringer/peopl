@@ -17,7 +17,7 @@
     <import index="eydd" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.zip(JDK/)" />
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
     <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
-    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.queues)" />
+    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.caches)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -3006,7 +3006,7 @@
       <node concept="3Tm6S6" id="16HEF1bV4KE" role="1B3o_S" />
       <node concept="10P_77" id="16HEF1bV4Se" role="1tU5fm" />
       <node concept="3clFbT" id="16HEF1bV50b" role="33vP2m">
-        <property role="3clFbU" value="false" />
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="2tJIrI" id="6X2hyGIT6Cu" role="jymVt" />
@@ -3076,6 +3076,17 @@
                 </node>
                 <node concept="liA8E" id="6cueWXld7N2" role="2OqNvi">
                   <ref role="37wK5l" node="6brzEgctEtd" resolve="getLock" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4WCjPxHCA6L" role="3cqZAp">
+              <node concept="2OqwBi" id="4WCjPxHCA8E" role="3clFbG">
+                <node concept="2YIFZM" id="4WCjPxHCA8g" role="2Oq$k0">
+                  <ref role="37wK5l" node="6brzEgctDZK" resolve="getInstance" />
+                  <ref role="1Pybhc" node="6brzEgctD_0" resolve="XMLWriterLock" />
+                </node>
+                <node concept="liA8E" id="4WCjPxHCAa6" role="2OqNvi">
+                  <ref role="37wK5l" node="5aqGY9QkJQH" resolve="getShutdownLock" />
                 </node>
               </node>
             </node>
