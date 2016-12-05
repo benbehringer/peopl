@@ -5384,7 +5384,7 @@
                         </node>
                         <node concept="3SKdUt" id="2LT8oMWLzau" role="3cqZAp">
                           <node concept="3SKdUq" id="2LT8oMWLzav" role="3SKWNk">
-                            <property role="3SKdUp" value="TODO: some voodoo magic! we obtain the current editor (!= inspectorComponent) and lookup the hints" />
+                            <property role="3SKdUp" value="TODO: some voodoo magic! we obtain the current inspector editor and lookup the hints" />
                           </node>
                         </node>
                         <node concept="3cpWs8" id="TaAP9S_0L_" role="3cqZAp">
