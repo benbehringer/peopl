@@ -25,7 +25,7 @@
     <import index="4iir" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.command(MPS.IDEA/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="jjr1" ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.eventTransmitter)" />
-    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.queues)" />
+    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.caches)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.fileUpload.common)" />
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
@@ -257,6 +257,18 @@
                 <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
               </node>
             </node>
+            <node concept="3clFbF" id="7tbijWIVY20" role="3cqZAp">
+              <node concept="2OqwBi" id="7tbijWIVY3y" role="3clFbG">
+                <node concept="2YIFZM" id="7tbijWIVY2R" role="2Oq$k0">
+                  <ref role="37wK5l" to="30sj:2An04PNr3eS" resolve="getInstance" />
+                  <ref role="1Pybhc" to="30sj:7tbijWIUDyW" resolve="EditorComponentCache" />
+                </node>
+                <node concept="liA8E" id="7tbijWIVY55" role="2OqNvi">
+                  <ref role="37wK5l" to="30sj:7tbijWIUPzV" resolve="init" />
+                  <node concept="1KvdUw" id="7tbijWIVY5z" role="37wK5m" />
+                </node>
+              </node>
+            </node>
             <node concept="1X3_iC" id="4aADlLlPy$c" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -293,6 +305,17 @@
           <node concept="2YIFZM" id="1R0T08haPxs" role="3clFbG">
             <ref role="37wK5l" node="1R0T08haPbe" resolve="dispose" />
             <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7tbijWIVY6L" role="3cqZAp">
+          <node concept="2OqwBi" id="7tbijWIVY6M" role="3clFbG">
+            <node concept="2YIFZM" id="7tbijWIVY6N" role="2Oq$k0">
+              <ref role="1Pybhc" to="30sj:7tbijWIUDyW" resolve="EditorComponentCache" />
+              <ref role="37wK5l" to="30sj:2An04PNr3eS" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="7tbijWIVY9a" role="2OqNvi">
+              <ref role="37wK5l" to="30sj:7tbijWIUPvz" resolve="dispose" />
+            </node>
           </node>
         </node>
         <node concept="1X3_iC" id="4aADlLlPyzE" role="lGtFl">
@@ -703,7 +726,11 @@
               </node>
             </node>
             <node concept="3clFbH" id="1TOnLUV7mxQ" role="3cqZAp" />
-            <node concept="3clFbH" id="1TOnLUV7mCA" role="3cqZAp" />
+            <node concept="3SKdUt" id="7tbijWIUJWx" role="3cqZAp">
+              <node concept="3SKdUq" id="7tbijWIUJWy" role="3SKWNk">
+                <property role="3SKdUp" value="TODO: remove monitoring listeners not done?!?!?!?" />
+              </node>
+            </node>
             <node concept="1DcWWT" id="2tJHIt1cG4Y" role="3cqZAp">
               <node concept="3clFbS" id="2tJHIt1cG50" role="2LFqv$">
                 <node concept="3clFbJ" id="2tJHIt1cKhY" role="3cqZAp">
