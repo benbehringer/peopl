@@ -453,7 +453,7 @@
       <node concept="3Tm6S6" id="20ujiCwHQg1" role="1B3o_S" />
       <node concept="3cpWsb" id="20ujiCwHR8b" role="1tU5fm" />
       <node concept="3cmrfG" id="1K$tCF0zVdb" role="33vP2m">
-        <property role="3cmrfH" value="300" />
+        <property role="3cmrfH" value="60" />
       </node>
     </node>
     <node concept="312cEg" id="2Qzkdny4flA" role="jymVt">
@@ -1316,32 +1316,52 @@
                       <property role="3SKdUp" value="only write out data if we can acquire the lock, hence no file is uploaded at the time" />
                     </node>
                   </node>
-                  <node concept="3clFbJ" id="6brzEgcv2m$" role="3cqZAp">
-                    <node concept="3clFbS" id="6brzEgcv2mA" role="3clFbx">
-                      <node concept="3clFbF" id="dxrcT7SdwO" role="3cqZAp">
-                        <node concept="1rXfSq" id="dxrcT7SdwM" role="3clFbG">
-                          <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+                  <node concept="1X3_iC" id="4aADlLlPHhu" role="lGtFl">
+                    <property role="3V$3am" value="statement" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                    <node concept="3clFbJ" id="6brzEgcv2m$" role="8Wnug">
+                      <node concept="3clFbS" id="6brzEgcv2mA" role="3clFbx">
+                        <node concept="3clFbF" id="dxrcT7SdwO" role="3cqZAp">
+                          <node concept="1rXfSq" id="dxrcT7SdwM" role="3clFbG">
+                            <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+                          </node>
                         </node>
-                      </node>
-                      <node concept="3clFbF" id="dxrcT7Sdyd" role="3cqZAp">
-                        <node concept="37vLTI" id="dxrcT7Sdzp" role="3clFbG">
-                          <node concept="10Nm6u" id="dxrcT7Sd$0" role="37vLTx" />
-                          <node concept="37vLTw" id="dxrcT7Sdyb" role="37vLTJ">
-                            <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                        <node concept="3clFbF" id="dxrcT7Sdyd" role="3cqZAp">
+                          <node concept="37vLTI" id="dxrcT7Sdzp" role="3clFbG">
+                            <node concept="10Nm6u" id="dxrcT7Sd$0" role="37vLTx" />
+                            <node concept="37vLTw" id="dxrcT7Sdyb" role="37vLTJ">
+                              <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                            </node>
                           </node>
                         </node>
                       </node>
-                    </node>
-                    <node concept="2OqwBi" id="6brzEgcv4TV" role="3clFbw">
-                      <node concept="2YIFZM" id="6brzEgcv2o9" role="2Oq$k0">
-                        <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
-                        <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
-                      </node>
-                      <node concept="liA8E" id="6brzEgcv4VB" role="2OqNvi">
-                        <ref role="37wK5l" to="6oac:6brzEgcv2A2" resolve="hasAvailablePermit" />
+                      <node concept="2OqwBi" id="6brzEgcv4TV" role="3clFbw">
+                        <node concept="2YIFZM" id="6brzEgcv2o9" role="2Oq$k0">
+                          <ref role="37wK5l" to="6oac:6brzEgctDZK" resolve="getInstance" />
+                          <ref role="1Pybhc" to="6oac:6brzEgctD_0" resolve="XMLWriterLock" />
+                        </node>
+                        <node concept="liA8E" id="6brzEgcv4VB" role="2OqNvi">
+                          <ref role="37wK5l" to="6oac:6brzEgcv2A2" resolve="hasAvailablePermit" />
+                        </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="3clFbH" id="4aADlLlPHdD" role="3cqZAp" />
+                  <node concept="3clFbF" id="4aADlLlPHfN" role="3cqZAp">
+                    <node concept="1rXfSq" id="4aADlLlPHfO" role="3clFbG">
+                      <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="4aADlLlPHfP" role="3cqZAp">
+                    <node concept="37vLTI" id="4aADlLlPHfQ" role="3clFbG">
+                      <node concept="10Nm6u" id="4aADlLlPHfR" role="37vLTx" />
+                      <node concept="37vLTw" id="4aADlLlPHfS" role="37vLTJ">
+                        <ref role="3cqZAo" node="dxrcT7S5WE" resolve="firstEventAfterWriteOut" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="4aADlLlPHeP" role="3cqZAp" />
+                  <node concept="3clFbH" id="4aADlLlPHdS" role="3cqZAp" />
                   <node concept="1X3_iC" id="7ZHevZ8ayNS" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />

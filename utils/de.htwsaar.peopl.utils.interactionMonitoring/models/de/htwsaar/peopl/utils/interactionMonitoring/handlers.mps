@@ -24,6 +24,7 @@
     <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -423,7 +424,7 @@
       <node concept="3Tm1VV" id="4EGqCPVhThC" role="1B3o_S" />
       <node concept="3uibUv" id="6fNbIXdENsQ" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~LinkedHashMap" resolve="LinkedHashMap" />
-        <node concept="3uibUv" id="1ZljV50EQ_Q" role="11_B2D">
+        <node concept="3uibUv" id="5jbLjdDBiN0" role="11_B2D">
           <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
         </node>
         <node concept="3uibUv" id="1ZljV50EQXn" role="11_B2D">
@@ -485,7 +486,7 @@
             <node concept="2ShNRf" id="1ZljV50ET0X" role="37vLTx">
               <node concept="1pGfFk" id="1ZljV50ESYX" role="2ShVmc">
                 <ref role="37wK5l" to="33ny:~LinkedHashMap.&lt;init&gt;()" resolve="LinkedHashMap" />
-                <node concept="3uibUv" id="1ZljV50ESYY" role="1pMfVU">
+                <node concept="3uibUv" id="5jbLjdDBbRd" role="1pMfVU">
                   <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                 </node>
                 <node concept="3uibUv" id="1ZljV50ESYZ" role="1pMfVU">
@@ -885,7 +886,7 @@
                         <ref role="3cqZAo" node="1K$tCF0_BLv" resolve="createEvent" />
                       </node>
                       <node concept="2OwXpG" id="6nmR8pwMqYl" role="2OqNvi">
-                        <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorCompent" />
+                        <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorComponent" />
                       </node>
                     </node>
                   </node>
@@ -923,7 +924,7 @@
                                 <ref role="3cqZAo" node="1K$tCF0_BLv" resolve="createEvent" />
                               </node>
                               <node concept="2OwXpG" id="4VdT7FDzQa9" role="2OqNvi">
-                                <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorCompent" />
+                                <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorComponent" />
                               </node>
                             </node>
                             <node concept="Xjq3P" id="4VdT7FDzQaa" role="37wK5m" />
@@ -951,7 +952,7 @@
                               <ref role="3cqZAo" node="1K$tCF0_BLv" resolve="createEvent" />
                             </node>
                             <node concept="2OwXpG" id="4VdT7FDzQah" role="2OqNvi">
-                              <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorCompent" />
+                              <ref role="2Oxat5" to="fchx:1K$tCF0$lA8" resolve="editorComponent" />
                             </node>
                           </node>
                           <node concept="37vLTw" id="4VdT7FDzQai" role="37wK5m">
@@ -1403,7 +1404,7 @@
               <node concept="3cpWsn" id="6vHH8ZdgvK4" role="3cpWs9">
                 <property role="TrG5h" value="handlerComponents" />
                 <node concept="2hMVRd" id="6vHH8Zdg$Lu" role="1tU5fm">
-                  <node concept="3uibUv" id="6vHH8Zdg$Lw" role="2hN53Y">
+                  <node concept="3uibUv" id="5jbLjdDBb46" role="2hN53Y">
                     <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                   </node>
                 </node>
@@ -2016,7 +2017,7 @@
             <node concept="3cpWs8" id="5rhzEvtasto" role="3cqZAp">
               <node concept="3cpWsn" id="5rhzEvtastp" role="3cpWs9">
                 <property role="TrG5h" value="comp" />
-                <node concept="3uibUv" id="5rhzEvtastq" role="1tU5fm">
+                <node concept="3uibUv" id="5jbLjdDBnL5" role="1tU5fm">
                   <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                 </node>
                 <node concept="2OqwBi" id="5rhzEvtasA0" role="33vP2m">
@@ -2324,7 +2325,7 @@
         <property role="TrG5h" value="editorComponent" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="1ZljV50EPJo" role="1B3o_S" />
-        <node concept="3uibUv" id="1ZljV50EPOq" role="1tU5fm">
+        <node concept="3uibUv" id="5jbLjdDBsgK" role="1tU5fm">
           <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
         </node>
       </node>
@@ -2560,7 +2561,7 @@
         <node concept="3Tm1VV" id="1ZljV50FBRT" role="1B3o_S" />
         <node concept="37vLTG" id="6nmR8pwM_wR" role="3clF46">
           <property role="TrG5h" value="component" />
-          <node concept="3uibUv" id="6nmR8pwM_wQ" role="1tU5fm">
+          <node concept="3uibUv" id="5jbLjdDBwOA" role="1tU5fm">
             <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
           </node>
         </node>

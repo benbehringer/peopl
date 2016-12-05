@@ -2995,7 +2995,18 @@
       <node concept="3Tm6S6" id="5AGu6A$emKv" role="1B3o_S" />
       <node concept="10Oyi0" id="5AGu6A$emPt" role="1tU5fm" />
       <node concept="3cmrfG" id="5AGu6A$emVB" role="33vP2m">
-        <property role="3cmrfH" value="2000" />
+        <property role="3cmrfH" value="500" />
+      </node>
+    </node>
+    <node concept="312cEg" id="16HEF1bV4Sg" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="upload" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="16HEF1bV4KE" role="1B3o_S" />
+      <node concept="10P_77" id="16HEF1bV4Se" role="1tU5fm" />
+      <node concept="3clFbT" id="16HEF1bV50b" role="33vP2m">
+        <property role="3clFbU" value="false" />
       </node>
     </node>
     <node concept="2tJIrI" id="6X2hyGIT6Cu" role="jymVt" />
@@ -3325,8 +3336,8 @@
                               <ref role="37wK5l" to="guwi:~File.getName():java.lang.String" resolve="getName" />
                             </node>
                           </node>
-                          <node concept="3clFbT" id="4TUiWVnyXpr" role="37wK5m">
-                            <property role="3clFbU" value="true" />
+                          <node concept="37vLTw" id="16HEF1bV50W" role="37wK5m">
+                            <ref role="3cqZAo" node="16HEF1bV4Sg" resolve="upload" />
                           </node>
                         </node>
                       </node>
