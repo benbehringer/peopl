@@ -3463,7 +3463,7 @@
     <node concept="312cEg" id="20ujiCwI0Rl" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="compEntry" />
+      <property role="TrG5h" value="editorComponentHandlers" />
       <property role="3TUv4t" value="false" />
       <node concept="3uibUv" id="20ujiCwI0Rm" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
@@ -3482,13 +3482,19 @@
       <node concept="3Tm1VV" id="20ujiCwI0Xr" role="1B3o_S" />
       <node concept="2AHcQZ" id="20ujiCwI0Zm" role="2AJF6D">
         <ref role="2AI5Lk" to="m3wx:~XmlElement" resolve="XmlElement" />
+        <node concept="2B6LJw" id="7q9r9ZfgNL5" role="2B76xF">
+          <ref role="2B6OnR" to="m3wx:~XmlElement.name()" resolve="name" />
+          <node concept="Xl_RD" id="7q9r9ZfgNLr" role="2B70Vg">
+            <property role="Xl_RC" value="editorComponent" />
+          </node>
+        </node>
       </node>
       <node concept="2AHcQZ" id="20ujiCwI12i" role="2AJF6D">
         <ref role="2AI5Lk" to="m3wx:~XmlElementWrapper" resolve="XmlElementWrapper" />
         <node concept="2B6LJw" id="20ujiCwI1am" role="2B76xF">
           <ref role="2B6OnR" to="m3wx:~XmlElementWrapper.name()" resolve="name" />
           <node concept="Xl_RD" id="20ujiCwI1aG" role="2B70Vg">
-            <property role="Xl_RC" value="ComponentEntries" />
+            <property role="Xl_RC" value="editorComponents" />
           </node>
         </node>
       </node>
