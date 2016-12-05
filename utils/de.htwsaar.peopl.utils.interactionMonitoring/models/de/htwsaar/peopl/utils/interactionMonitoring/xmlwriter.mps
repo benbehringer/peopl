@@ -3006,7 +3006,7 @@
       <node concept="3Tm6S6" id="16HEF1bV4KE" role="1B3o_S" />
       <node concept="10P_77" id="16HEF1bV4Se" role="1tU5fm" />
       <node concept="3clFbT" id="16HEF1bV50b" role="33vP2m">
-        <property role="3clFbU" value="false" />
+        <property role="3clFbU" value="true" />
       </node>
     </node>
     <node concept="2tJIrI" id="6X2hyGIT6Cu" role="jymVt" />
@@ -3076,6 +3076,17 @@
                 </node>
                 <node concept="liA8E" id="6cueWXld7N2" role="2OqNvi">
                   <ref role="37wK5l" node="6brzEgctEtd" resolve="getLock" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4WCjPxHCA6L" role="3cqZAp">
+              <node concept="2OqwBi" id="4WCjPxHCA8E" role="3clFbG">
+                <node concept="2YIFZM" id="4WCjPxHCA8g" role="2Oq$k0">
+                  <ref role="37wK5l" node="6brzEgctDZK" resolve="getInstance" />
+                  <ref role="1Pybhc" node="6brzEgctD_0" resolve="XMLWriterLock" />
+                </node>
+                <node concept="liA8E" id="4WCjPxHCAa6" role="2OqNvi">
+                  <ref role="37wK5l" node="5aqGY9QkJQH" resolve="getShutdownLock" />
                 </node>
               </node>
             </node>
