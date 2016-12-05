@@ -1159,6 +1159,17 @@
             <property role="3SKdUp" value="on ending blocks until a running upload thread is ready an then releases immediately the lock again" />
           </node>
         </node>
+        <node concept="3clFbF" id="29p$lrh2b83" role="3cqZAp">
+          <node concept="37vLTI" id="29p$lrh2ba8" role="3clFbG">
+            <node concept="3clFbT" id="29p$lrh2baC" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="10M0yZ" id="29p$lrh2b82" role="37vLTJ">
+              <ref role="1PxDUh" to="6oac:6X2hyGIT64h" resolve="XMLWriterQueue_Observer" />
+              <ref role="3cqZAo" to="6oac:29p$lrh24Jl" resolve="lastData" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1K$tCF0yBOI" role="3cqZAp">
           <node concept="1rXfSq" id="1K$tCF0yBOH" role="3clFbG">
             <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />

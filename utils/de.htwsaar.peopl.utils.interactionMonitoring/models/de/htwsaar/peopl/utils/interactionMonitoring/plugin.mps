@@ -7,6 +7,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="4b2m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.messages(MPS.IDEA/)" />
@@ -14,7 +15,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="rlg8" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.highlighter(MPS.Editor/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" />
-    <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.listener)" />
+    <import index="fchx" ref="r:0baac641-431c-4bd2-b40d-ec333e9722a5(de.htwsaar.peopl.utils.interactionMonitoring.provider)" />
     <import index="iwsx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.fileEditor(MPS.IDEA/)" />
     <import index="jlff" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.vfs(MPS.IDEA/)" />
     <import index="8fk4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij(MPS.IDEA/)" />
@@ -25,7 +26,7 @@
     <import index="4iir" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.command(MPS.IDEA/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="jjr1" ref="r:cf252dcd-9165-4782-92a4-f356395abaa4(de.htwsaar.peopl.utils.interactionMonitoring.eventTransmitter)" />
-    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.queues)" />
+    <import index="30sj" ref="r:90678b18-d26b-4a28-8dfe-d62c93a217df(de.htwsaar.peopl.utils.interactionMonitoring.caches)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.fileUpload.common)" />
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
@@ -39,9 +40,9 @@
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="oeof" ref="r:690091b8-0320-4ca6-9149-41b19f0816e0(de.htwsaar.peopl.utils.interactionMonitoring.handlers)" />
+    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
-    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -277,16 +278,6 @@
       <node concept="3clFbS" id="60chUlwRQMd" role="2VODD2">
         <node concept="3clFbJ" id="3sUM20rOoJ0" role="3cqZAp">
           <node concept="3clFbS" id="3sUM20rOoJ2" role="3clFbx">
-            <node concept="1X3_iC" id="5EPSiezetmO" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="3mgCFey87QJ" role="8Wnug">
-                <node concept="2YIFZM" id="4xMhmDbM_q0" role="3clFbG">
-                  <ref role="37wK5l" node="1R0T08haYMM" resolve="init" />
-                  <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="1R0T08haY3i" role="3cqZAp">
               <node concept="2YIFZM" id="1R0T08haY3Q" role="3clFbG">
                 <ref role="37wK5l" node="1R0T08haPIn" resolve="init" />
@@ -312,7 +303,12 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4xMhmDbMKSL" role="3cqZAp" />
+            <node concept="3clFbF" id="3mgCFey87QJ" role="3cqZAp">
+              <node concept="2YIFZM" id="4xMhmDbM_q0" role="3clFbG">
+                <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
+                <ref role="37wK5l" node="1R0T08haYMM" resolve="init" />
+              </node>
+            </node>
           </node>
           <node concept="2OqwBi" id="3sUM20rOoMl" role="3clFbw">
             <node concept="2YIFZM" id="3sUM20rOoL9" role="2Oq$k0">
@@ -328,16 +324,6 @@
     </node>
     <node concept="2uRRBN" id="60chUlwRQMq" role="2uRRB_">
       <node concept="3clFbS" id="60chUlwRQMr" role="2VODD2">
-        <node concept="1X3_iC" id="5EPSiezetnN" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3mgCFey87YF" role="8Wnug">
-            <node concept="2YIFZM" id="3mgCFey87Zs" role="3clFbG">
-              <ref role="37wK5l" node="1R0T08haYUv" resolve="dispose" />
-              <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1R0T08haYaM" role="3cqZAp">
           <node concept="2YIFZM" id="1R0T08haYbm" role="3clFbG">
             <ref role="37wK5l" node="1R0T08haWO2" resolve="dispose" />
@@ -360,6 +346,12 @@
             <node concept="liA8E" id="7tbijWIVY9a" role="2OqNvi">
               <ref role="37wK5l" to="fchx:7tbijWIUPvz" resolve="dispose" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3mgCFey87YF" role="3cqZAp">
+          <node concept="2YIFZM" id="3mgCFey87Zs" role="3clFbG">
+            <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLUploadInitializer" />
+            <ref role="37wK5l" node="1R0T08haYUv" resolve="dispose" />
           </node>
         </node>
       </node>
