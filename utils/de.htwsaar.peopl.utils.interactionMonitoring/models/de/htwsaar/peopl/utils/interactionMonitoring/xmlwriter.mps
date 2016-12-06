@@ -2994,7 +2994,7 @@
       <property role="2dld4O" value="false" />
       <node concept="10Oyi0" id="RaEvWJd2qL" role="1tU5fm" />
       <node concept="3cmrfG" id="RaEvWJd2qM" role="33vP2m">
-        <property role="3cmrfH" value="500" />
+        <property role="3cmrfH" value="10000" />
       </node>
       <node concept="3Tm6S6" id="RaEvWJd2qK" role="1B3o_S" />
     </node>
