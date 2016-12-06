@@ -52,6 +52,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat6" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -753,6 +756,31 @@
       </node>
       <node concept="3Tm1VV" id="6X2hyGJ92cI" role="1B3o_S" />
       <node concept="10Oyi0" id="6X2hyGJ92yQ" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="RaEvWJd4WB" role="jymVt" />
+    <node concept="3clFb_" id="RaEvWJd87q" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getQueue" />
+      <property role="od$2w" value="true" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="RaEvWJd87t" role="3clF47">
+        <node concept="3cpWs6" id="RaEvWJd8OT" role="3cqZAp">
+          <node concept="2OqwBi" id="RaEvWJd9sy" role="3cqZAk">
+            <node concept="Xjq3P" id="RaEvWJd97t" role="2Oq$k0" />
+            <node concept="2OwXpG" id="RaEvWJd9Lb" role="2OqNvi">
+              <ref role="2Oxat6" node="6X2hyGIToQP" resolve="queue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="RaEvWJd7Le" role="1B3o_S" />
+      <node concept="3uibUv" id="RaEvWJd8tA" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~ConcurrentLinkedQueue" resolve="ConcurrentLinkedQueue" />
+        <node concept="3uibUv" id="RaEvWJd8MA" role="11_B2D">
+          <ref role="3uigEE" to="6oac:7kgjkPkRKOj" resolve="XMLDataObject" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6X2hyGIToRI" role="jymVt" />
     <node concept="3clFb_" id="6X2hyGIToRJ" role="jymVt">
