@@ -21,6 +21,7 @@
     <import index="a2pm" ref="r:3788c327-0d10-43eb-95a4-e201485a14f7(de.htwsaar.peopl.utils.interactionMonitoring.plugin)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
@@ -28,6 +29,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -54,6 +58,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -79,6 +84,11 @@
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -103,6 +113,11 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -430,31 +445,91 @@
                         <property role="3SKdUp" value="TODO: just count how often we typed &quot;original&quot; + timestamp" />
                       </node>
                     </node>
-                    <node concept="3clFbF" id="7JMHa6NJ5Ea" role="3cqZAp">
-                      <node concept="2OqwBi" id="7JMHa6NJ5TS" role="3clFbG">
-                        <node concept="2OqwBi" id="7JMHa6NJ5FT" role="2Oq$k0">
-                          <node concept="2YIFZM" id="7JMHa6NJ5Fl" role="2Oq$k0">
-                            <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
-                            <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
-                          </node>
-                          <node concept="2OwXpG" id="7JMHa6NJ5J1" role="2OqNvi">
-                            <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
-                          </node>
+                    <node concept="3cpWs8" id="6J0kluKGMxG" role="3cqZAp">
+                      <node concept="3cpWsn" id="6J0kluKGMxH" role="3cpWs9">
+                        <property role="TrG5h" value="editorComponent" />
+                        <node concept="3uibUv" id="6J0kluKGMxI" role="1tU5fm">
+                          <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                         </node>
-                        <node concept="liA8E" id="7JMHa6NJ6gR" role="2OqNvi">
-                          <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
-                          <node concept="2ShNRf" id="7JMHa6NJ6kO" role="37wK5m">
-                            <node concept="1pGfFk" id="7JMHa6NJaw6" role="2ShVmc">
-                              <ref role="37wK5l" to="e9fh:7JMHa6NIJk$" resolve="TypedOriginalEvent" />
-                              <node concept="2OqwBi" id="7JMHa6NJa_E" role="37wK5m">
-                                <node concept="Xjq3P" id="7JMHa6NJaxW" role="2Oq$k0" />
-                                <node concept="liA8E" id="7JMHa6NJaGV" role="2OqNvi">
-                                  <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                        <node concept="2YIFZM" id="6J0kluKGLIF" role="33vP2m">
+                          <ref role="1Pybhc" to="a2pm:5v03mDvy3go" resolve="PeoplEditorHelper" />
+                          <ref role="37wK5l" to="a2pm:5v03mDvy9yX" resolve="getCurrentEditorIfPossible" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="6J0kluKGMQU" role="3cqZAp">
+                      <node concept="3clFbS" id="6J0kluKGMQW" role="3clFbx">
+                        <node concept="3clFbF" id="6J0kluKGNj$" role="3cqZAp">
+                          <node concept="2OqwBi" id="6J0kluKGNj_" role="3clFbG">
+                            <node concept="2OqwBi" id="6J0kluKGNjA" role="2Oq$k0">
+                              <node concept="2YIFZM" id="6J0kluKGNjB" role="2Oq$k0">
+                                <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                                <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+                              </node>
+                              <node concept="2OwXpG" id="6J0kluKGNjC" role="2OqNvi">
+                                <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6J0kluKGNjD" role="2OqNvi">
+                              <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                              <node concept="2ShNRf" id="6J0kluKGNjE" role="37wK5m">
+                                <node concept="1pGfFk" id="6J0kluKGNjF" role="2ShVmc">
+                                  <ref role="37wK5l" to="e9fh:6J0kluKGIiE" resolve="TypedOriginalEvent" />
+                                  <node concept="2OqwBi" id="6J0kluKGNjG" role="37wK5m">
+                                    <node concept="Xjq3P" id="6J0kluKGNjH" role="2Oq$k0" />
+                                    <node concept="liA8E" id="6J0kluKGNjI" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                    </node>
+                                  </node>
+                                  <node concept="Rm8GO" id="6J0kluKGNw6" role="37wK5m">
+                                    <ref role="Rm8GQ" to="e9fh:4jnYSPQuDje" resolve="NodeEditor" />
+                                    <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+                                  </node>
+                                  <node concept="37vLTw" id="6J0kluKGNLu" role="37wK5m">
+                                    <ref role="3cqZAo" node="6J0kluKGMxH" resolve="editorComponent" />
+                                  </node>
                                 </node>
                               </node>
-                              <node concept="Rm8GO" id="7JMHa6NJb6z" role="37wK5m">
-                                <ref role="Rm8GQ" to="e9fh:7JMHa6NJaVc" resolve="ModularView" />
-                                <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3y3z36" id="6J0kluKGN4T" role="3clFbw">
+                        <node concept="10Nm6u" id="6J0kluKGN9g" role="3uHU7w" />
+                        <node concept="37vLTw" id="6J0kluKGMWn" role="3uHU7B">
+                          <ref role="3cqZAo" node="6J0kluKGMxH" resolve="editorComponent" />
+                        </node>
+                      </node>
+                      <node concept="9aQIb" id="6J0kluKGN9y" role="9aQIa">
+                        <node concept="3clFbS" id="6J0kluKGN9z" role="9aQI4">
+                          <node concept="3clFbF" id="7JMHa6NJ5Ea" role="3cqZAp">
+                            <node concept="2OqwBi" id="7JMHa6NJ5TS" role="3clFbG">
+                              <node concept="2OqwBi" id="7JMHa6NJ5FT" role="2Oq$k0">
+                                <node concept="2YIFZM" id="7JMHa6NJ5Fl" role="2Oq$k0">
+                                  <ref role="37wK5l" to="30sj:5ime7PBwavo" resolve="getInstance" />
+                                  <ref role="1Pybhc" to="30sj:5ime7PBw77P" resolve="QueueCache" />
+                                </node>
+                                <node concept="2OwXpG" id="7JMHa6NJ5J1" role="2OqNvi">
+                                  <ref role="2Oxat5" to="30sj:5ime7PBw9U6" resolve="mainQueue" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="7JMHa6NJ6gR" role="2OqNvi">
+                                <ref role="37wK5l" to="5zyv:~BlockingQueue.offer(java.lang.Object):boolean" resolve="offer" />
+                                <node concept="2ShNRf" id="7JMHa6NJ6kO" role="37wK5m">
+                                  <node concept="1pGfFk" id="7JMHa6NJaw6" role="2ShVmc">
+                                    <ref role="37wK5l" to="e9fh:7JMHa6NIJk$" resolve="TypedOriginalEvent" />
+                                    <node concept="2OqwBi" id="7JMHa6NJa_E" role="37wK5m">
+                                      <node concept="Xjq3P" id="7JMHa6NJaxW" role="2Oq$k0" />
+                                      <node concept="liA8E" id="7JMHa6NJaGV" role="2OqNvi">
+                                        <ref role="37wK5l" to="wyt6:~Object.getClass():java.lang.Class" resolve="getClass" />
+                                      </node>
+                                    </node>
+                                    <node concept="Rm8GO" id="7JMHa6NJb6z" role="37wK5m">
+                                      <ref role="1Px2BO" to="e9fh:4jnYSPQuDbw" resolve="UIEntity" />
+                                      <ref role="Rm8GQ" to="e9fh:7JMHa6NJaVc" resolve="ModularView" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
