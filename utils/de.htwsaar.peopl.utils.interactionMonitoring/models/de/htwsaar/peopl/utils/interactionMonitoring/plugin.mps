@@ -301,8 +301,8 @@
             </node>
             <node concept="3clFbF" id="3mgCFey87QJ" role="3cqZAp">
               <node concept="2YIFZM" id="4xMhmDbM_q0" role="3clFbG">
-                <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLInitializer" />
                 <ref role="37wK5l" node="1R0T08haYMM" resolve="init" />
+                <ref role="1Pybhc" node="1R0T08haYEX" resolve="XMLInitializer" />
               </node>
             </node>
           </node>
@@ -1397,16 +1397,16 @@
               </node>
             </node>
             <node concept="10M0yZ" id="1yMLnUPKZU0" role="37vLTJ">
-              <ref role="1PxDUh" node="1R0T08haYEX" resolve="XMLInitializer" />
               <ref role="3cqZAo" node="1yMLnUPKZVS" resolve="myInstance" />
+              <ref role="1PxDUh" node="1R0T08haYEX" resolve="XMLInitializer" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="1yMLnUPL_x5" role="3cqZAp">
           <node concept="2OqwBi" id="1yMLnUPL_zW" role="3clFbG">
             <node concept="10M0yZ" id="1yMLnUPL_x4" role="2Oq$k0">
-              <ref role="1PxDUh" node="1R0T08haYEX" resolve="XMLInitializer" />
               <ref role="3cqZAo" node="1yMLnUPKZVS" resolve="myInstance" />
+              <ref role="1PxDUh" node="1R0T08haYEX" resolve="XMLInitializer" />
             </node>
             <node concept="liA8E" id="1yMLnUPL_DI" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Thread.start():void" resolve="start" />
