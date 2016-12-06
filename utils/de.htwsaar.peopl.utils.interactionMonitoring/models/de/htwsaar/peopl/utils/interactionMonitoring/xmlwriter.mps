@@ -3821,6 +3821,30 @@
         </node>
       </node>
     </node>
+    <node concept="312cEg" id="6e8BFl7lcOq" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="additionalKeyEventCount" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="6e8BFl7lcN5" role="1B3o_S" />
+      <node concept="3cpWsb" id="6e8BFl7lcOk" role="1tU5fm" />
+    </node>
+    <node concept="312cEg" id="4kUGPYaVbdu" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="selectUpAndDown" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="4kUGPYaVbco" role="1B3o_S" />
+      <node concept="3cpWsb" id="4kUGPYaVbds" role="1tU5fm" />
+    </node>
+    <node concept="312cEg" id="4kUGPYaV$uK" role="jymVt">
+      <property role="34CwA1" value="false" />
+      <property role="eg7rD" value="false" />
+      <property role="TrG5h" value="selectPreviousAndNext" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm1VV" id="4kUGPYaV$uL" role="1B3o_S" />
+      <node concept="3cpWsb" id="4kUGPYaV$uM" role="1tU5fm" />
+    </node>
     <node concept="312cEg" id="1TfHG863hSD" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
