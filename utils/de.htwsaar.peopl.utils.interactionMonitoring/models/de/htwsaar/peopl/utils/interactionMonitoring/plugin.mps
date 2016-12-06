@@ -41,6 +41,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="oeof" ref="r:690091b8-0320-4ca6-9149-41b19f0816e0(de.htwsaar.peopl.utils.interactionMonitoring.handlers)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
+    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
@@ -136,6 +138,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -250,6 +253,9 @@
         <child id="1167227561449" name="exception" index="34bMjA" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
@@ -267,6 +273,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
@@ -752,6 +761,42 @@
               </node>
             </node>
             <node concept="3clFbH" id="1TOnLUV7mxQ" role="3cqZAp" />
+            <node concept="1X3_iC" id="QYQoNa9UjY" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="2UeI4qT898E" role="8Wnug">
+                <node concept="37vLTI" id="2UeI4qT898F" role="3clFbG">
+                  <node concept="2YIFZM" id="2UeI4qT898G" role="37vLTx">
+                    <ref role="37wK5l" to="fchx:5H_hR7HZYZg" resolve="getListener" />
+                    <ref role="1Pybhc" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                  </node>
+                  <node concept="10M0yZ" id="2UeI4qT898H" role="37vLTJ">
+                    <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                    <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1X3_iC" id="QYQoNa9UjZ" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="2UeI4qT898K" role="8Wnug">
+                <node concept="2OqwBi" id="2UeI4qT898L" role="3clFbG">
+                  <node concept="2YIFZM" id="2UeI4qT898M" role="2Oq$k0">
+                    <ref role="37wK5l" to="4iir:~CommandProcessor.getInstance():com.intellij.openapi.command.CommandProcessor" resolve="getInstance" />
+                    <ref role="1Pybhc" to="4iir:~CommandProcessor" resolve="CommandProcessor" />
+                  </node>
+                  <node concept="liA8E" id="2UeI4qT898N" role="2OqNvi">
+                    <ref role="37wK5l" to="4iir:~CommandProcessor.addCommandListener(com.intellij.openapi.command.CommandListener):void" resolve="addCommandListener" />
+                    <node concept="10M0yZ" id="2UeI4qT898O" role="37wK5m">
+                      <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
+                      <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="2UeI4qT88TH" role="3cqZAp" />
             <node concept="3SKdUt" id="7tbijWIUJWx" role="3cqZAp">
               <node concept="3SKdUq" id="7tbijWIUJWy" role="3SKWNk">
                 <property role="3SKdUp" value="TODO: remove monitoring listeners not done?!?!?!?" />
@@ -2168,6 +2213,50 @@
     <property role="3GE5qa" value="ext" />
     <node concept="3uibUv" id="7mR4HHEZ1tT" role="luc8K">
       <ref role="3uigEE" node="7mR4HHEZ0Iq" resolve="IExt_MonitoringListener" />
+    </node>
+  </node>
+  <node concept="3HP615" id="5FCOv167fxe">
+    <property role="3GE5qa" value="ext" />
+    <property role="TrG5h" value="IExt_ModularityTracker" />
+    <node concept="2tJIrI" id="5FCOv167f_1" role="jymVt" />
+    <node concept="3clFb_" id="5FCOv167cnt" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isModular" />
+      <node concept="3clFbS" id="5FCOv167cnw" role="3clF47" />
+      <node concept="3Tm1VV" id="5FCOv167cnx" role="1B3o_S" />
+      <node concept="10P_77" id="5FCOv167cn2" role="3clF45" />
+      <node concept="37vLTG" id="5FCOv167f4y" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="5FCOv167f4x" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="1X3_iC" id="21skTrkcHds" role="lGtFl">
+      <property role="3V$3am" value="member" />
+      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+      <node concept="3clFb_" id="5FCOv167flp" role="8Wnug">
+        <property role="1EzhhJ" value="true" />
+        <property role="2aFKle" value="false" />
+        <property role="TrG5h" value="getModuleHints" />
+        <node concept="3clFbS" id="5FCOv167fls" role="3clF47" />
+        <node concept="3Tm1VV" id="5FCOv167flt" role="1B3o_S" />
+        <node concept="37vLTG" id="5FCOv167ftp" role="3clF46">
+          <property role="TrG5h" value="node" />
+          <node concept="3Tqbb2" id="5FCOv167fto" role="1tU5fm" />
+        </node>
+        <node concept="_YKpA" id="5FCOv167fhs" role="3clF45">
+          <node concept="17QB3L" id="5FCOv167flm" role="_ZDj9" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5FCOv167f_3" role="jymVt" />
+    <node concept="3Tm1VV" id="5FCOv167fxf" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="5FCOv167fxk">
+    <property role="3GE5qa" value="ext" />
+    <property role="TrG5h" value="Ext_ModularityTracker" />
+    <node concept="3uibUv" id="5FCOv167f$P" role="luc8K">
+      <ref role="3uigEE" node="5FCOv167fxe" resolve="IExt_ModularityTracker" />
     </node>
   </node>
 </model>
