@@ -41,13 +41,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="oeof" ref="r:690091b8-0320-4ca6-9149-41b19f0816e0(de.htwsaar.peopl.utils.interactionMonitoring.handlers)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-<<<<<<< HEAD
-    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
-=======
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
->>>>>>> 97768db009f45841ea7ef2135b58c3adbaa943a4
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
@@ -744,6 +739,27 @@
             </node>
             <node concept="3clFbH" id="6AOjiXNZgjn" role="3cqZAp" />
             <node concept="3clFbH" id="5Hjm9vv6862" role="3cqZAp" />
+            <node concept="3clFbF" id="1R0T08haPKR" role="3cqZAp">
+              <node concept="2OqwBi" id="1R0T08haPKS" role="3clFbG">
+                <node concept="37vLTw" id="48wjeJueCyV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="1R0T08haTEk" resolve="myMsgBusConnection" />
+                </node>
+                <node concept="liA8E" id="1R0T08haPKW" role="2OqNvi">
+                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
+                  <node concept="10M0yZ" id="1R0T08haPKX" role="37wK5m">
+                    <ref role="1PxDUh" to="rlg8:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
+                    <ref role="3cqZAo" to="rlg8:~EditorComponentCreateListener.EDITOR_COMPONENT_CREATION" resolve="EDITOR_COMPONENT_CREATION" />
+                  </node>
+                  <node concept="2YIFZM" id="1R0T08haPKY" role="37wK5m">
+                    <ref role="37wK5l" to="fchx:5H_hR7I0vOw" resolve="getListener" />
+                    <ref role="1Pybhc" to="fchx:5H_hR7I0vAw" resolve="EditorComponentCreateListener_Provider" />
+                    <node concept="37vLTw" id="1R0T08haUJQ" role="37wK5m">
+                      <ref role="3cqZAo" node="1R0T08haTRe" resolve="project" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="1X3_iC" id="4VdT7FDspKk" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
@@ -764,27 +780,6 @@
                   </node>
                   <node concept="Xl_RD" id="1R0T08haPKQ" role="3uHU7B">
                     <property role="Xl_RC" value=" # running AWT Listeners : " />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="1R0T08haPKR" role="3cqZAp">
-              <node concept="2OqwBi" id="1R0T08haPKS" role="3clFbG">
-                <node concept="37vLTw" id="1R0T08haUpn" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1R0T08haTEk" resolve="myMsgBusConnection" />
-                </node>
-                <node concept="liA8E" id="1R0T08haPKW" role="2OqNvi">
-                  <ref role="37wK5l" to="4b2m:~MessageBusConnection.subscribe(com.intellij.util.messages.Topic,java.lang.Object):void" resolve="subscribe" />
-                  <node concept="10M0yZ" id="1R0T08haPKX" role="37wK5m">
-                    <ref role="1PxDUh" to="rlg8:~EditorComponentCreateListener" resolve="EditorComponentCreateListener" />
-                    <ref role="3cqZAo" to="rlg8:~EditorComponentCreateListener.EDITOR_COMPONENT_CREATION" resolve="EDITOR_COMPONENT_CREATION" />
-                  </node>
-                  <node concept="2YIFZM" id="1R0T08haPKY" role="37wK5m">
-                    <ref role="37wK5l" to="fchx:5H_hR7I0vOw" resolve="getListener" />
-                    <ref role="1Pybhc" to="fchx:5H_hR7I0vAw" resolve="EditorComponentCreateListener_Provider" />
-                    <node concept="37vLTw" id="1R0T08haUJQ" role="37wK5m">
-                      <ref role="3cqZAo" node="1R0T08haTRe" resolve="project" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -839,42 +834,6 @@
               </node>
             </node>
             <node concept="3clFbH" id="1TOnLUV7mxQ" role="3cqZAp" />
-            <node concept="1X3_iC" id="QYQoNa9UjY" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="2UeI4qT898E" role="8Wnug">
-                <node concept="37vLTI" id="2UeI4qT898F" role="3clFbG">
-                  <node concept="2YIFZM" id="2UeI4qT898G" role="37vLTx">
-                    <ref role="37wK5l" to="fchx:5H_hR7HZYZg" resolve="getListener" />
-                    <ref role="1Pybhc" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
-                  </node>
-                  <node concept="10M0yZ" id="2UeI4qT898H" role="37vLTJ">
-                    <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
-                    <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1X3_iC" id="QYQoNa9UjZ" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="3clFbF" id="2UeI4qT898K" role="8Wnug">
-                <node concept="2OqwBi" id="2UeI4qT898L" role="3clFbG">
-                  <node concept="2YIFZM" id="2UeI4qT898M" role="2Oq$k0">
-                    <ref role="37wK5l" to="4iir:~CommandProcessor.getInstance():com.intellij.openapi.command.CommandProcessor" resolve="getInstance" />
-                    <ref role="1Pybhc" to="4iir:~CommandProcessor" resolve="CommandProcessor" />
-                  </node>
-                  <node concept="liA8E" id="2UeI4qT898N" role="2OqNvi">
-                    <ref role="37wK5l" to="4iir:~CommandProcessor.addCommandListener(com.intellij.openapi.command.CommandListener):void" resolve="addCommandListener" />
-                    <node concept="10M0yZ" id="2UeI4qT898O" role="37wK5m">
-                      <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
-                      <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="2UeI4qT88TH" role="3cqZAp" />
             <node concept="3SKdUt" id="7tbijWIUJWx" role="3cqZAp">
               <node concept="3SKdUq" id="7tbijWIUJWy" role="3SKWNk">
                 <property role="3SKdUp" value="TODO: remove monitoring listeners not done?!?!?!" />
@@ -1095,29 +1054,37 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1R0T08haPM8" role="3cqZAp">
-              <node concept="37vLTI" id="1R0T08haPM9" role="3clFbG">
-                <node concept="2YIFZM" id="1R0T08haPMa" role="37vLTx">
-                  <ref role="37wK5l" to="fchx:5H_hR7HZYZg" resolve="getListener" />
-                  <ref role="1Pybhc" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
-                </node>
-                <node concept="10M0yZ" id="1R0T08haPMb" role="37vLTJ">
-                  <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
-                  <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
+            <node concept="1X3_iC" id="3YtN9JDjfO$" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="1R0T08haPM8" role="8Wnug">
+                <node concept="37vLTI" id="1R0T08haPM9" role="3clFbG">
+                  <node concept="2YIFZM" id="1R0T08haPMa" role="37vLTx">
+                    <ref role="37wK5l" to="fchx:5H_hR7HZYZg" resolve="getListener" />
+                    <ref role="1Pybhc" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                  </node>
+                  <node concept="10M0yZ" id="1R0T08haPMb" role="37vLTJ">
+                    <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                    <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
+                  </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="1R0T08haPMk" role="3cqZAp">
-              <node concept="2OqwBi" id="1R0T08haPMl" role="3clFbG">
-                <node concept="2YIFZM" id="1R0T08haPMm" role="2Oq$k0">
-                  <ref role="1Pybhc" to="4iir:~CommandProcessor" resolve="CommandProcessor" />
-                  <ref role="37wK5l" to="4iir:~CommandProcessor.getInstance():com.intellij.openapi.command.CommandProcessor" resolve="getInstance" />
-                </node>
-                <node concept="liA8E" id="1R0T08haPMn" role="2OqNvi">
-                  <ref role="37wK5l" to="4iir:~CommandProcessor.addCommandListener(com.intellij.openapi.command.CommandListener):void" resolve="addCommandListener" />
-                  <node concept="10M0yZ" id="1R0T08haPMo" role="37wK5m">
-                    <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
-                    <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+            <node concept="1X3_iC" id="3YtN9JDjfO_" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="1R0T08haPMk" role="8Wnug">
+                <node concept="2OqwBi" id="1R0T08haPMl" role="3clFbG">
+                  <node concept="2YIFZM" id="1R0T08haPMm" role="2Oq$k0">
+                    <ref role="1Pybhc" to="4iir:~CommandProcessor" resolve="CommandProcessor" />
+                    <ref role="37wK5l" to="4iir:~CommandProcessor.getInstance():com.intellij.openapi.command.CommandProcessor" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="1R0T08haPMn" role="2OqNvi">
+                    <ref role="37wK5l" to="4iir:~CommandProcessor.addCommandListener(com.intellij.openapi.command.CommandListener):void" resolve="addCommandListener" />
+                    <node concept="10M0yZ" id="1R0T08haPMo" role="37wK5m">
+                      <ref role="3cqZAo" to="fchx:5H_hR7HZTPW" resolve="listener" />
+                      <ref role="1PxDUh" to="fchx:5H_hR7HZTEb" resolve="CommandListener_Provider" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1378,33 +1345,37 @@
             <property role="3SKdUp" value="remove Monitoring Listener" />
           </node>
         </node>
-        <node concept="3clFbJ" id="7P5Q1EvZhe4" role="3cqZAp">
-          <node concept="3clFbS" id="7P5Q1EvZhe5" role="3clFbx">
-            <node concept="3clFbF" id="7P5Q1EvZhe6" role="3cqZAp">
-              <node concept="2OqwBi" id="7P5Q1EvZhe7" role="3clFbG">
-                <node concept="2OqwBi" id="7P5Q1EvZhe8" role="2Oq$k0">
-                  <node concept="2OqwBi" id="7P5Q1EvZhe9" role="2Oq$k0">
-                    <node concept="2O5UvJ" id="7P5Q1EvZhea" role="2Oq$k0">
-                      <ref role="2O5UnU" node="7mR4HHEZ1qS" resolve="Ext_MonitoringListener" />
+        <node concept="1X3_iC" id="3YtN9JDkviD" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbJ" id="7P5Q1EvZhe4" role="8Wnug">
+            <node concept="3clFbS" id="7P5Q1EvZhe5" role="3clFbx">
+              <node concept="3clFbF" id="7P5Q1EvZhe6" role="3cqZAp">
+                <node concept="2OqwBi" id="7P5Q1EvZhe7" role="3clFbG">
+                  <node concept="2OqwBi" id="7P5Q1EvZhe8" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7P5Q1EvZhe9" role="2Oq$k0">
+                      <node concept="2O5UvJ" id="7P5Q1EvZhea" role="2Oq$k0">
+                        <ref role="2O5UnU" node="7mR4HHEZ1qS" resolve="Ext_MonitoringListener" />
+                      </node>
+                      <node concept="SfwO_" id="7P5Q1EvZheb" role="2OqNvi" />
                     </node>
-                    <node concept="SfwO_" id="7P5Q1EvZheb" role="2OqNvi" />
+                    <node concept="1uHKPH" id="7P5Q1EvZhec" role="2OqNvi" />
                   </node>
-                  <node concept="1uHKPH" id="7P5Q1EvZhec" role="2OqNvi" />
-                </node>
-                <node concept="liA8E" id="7P5Q1EvZ_cP" role="2OqNvi">
-                  <ref role="37wK5l" node="7P5Q1EvZ$QA" resolve="removeOldListener" />
+                  <node concept="liA8E" id="7P5Q1EvZ_cP" role="2OqNvi">
+                    <ref role="37wK5l" node="7P5Q1EvZ$QA" resolve="removeOldListener" />
+                  </node>
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="2OqwBi" id="7P5Q1EvZheg" role="3clFbw">
-            <node concept="2OqwBi" id="7P5Q1EvZheh" role="2Oq$k0">
-              <node concept="2O5UvJ" id="7P5Q1EvZhei" role="2Oq$k0">
-                <ref role="2O5UnU" node="7mR4HHEZ1qS" resolve="Ext_MonitoringListener" />
+            <node concept="2OqwBi" id="7P5Q1EvZheg" role="3clFbw">
+              <node concept="2OqwBi" id="7P5Q1EvZheh" role="2Oq$k0">
+                <node concept="2O5UvJ" id="7P5Q1EvZhei" role="2Oq$k0">
+                  <ref role="2O5UnU" node="7mR4HHEZ1qS" resolve="Ext_MonitoringListener" />
+                </node>
+                <node concept="SfwO_" id="7P5Q1EvZhej" role="2OqNvi" />
               </node>
-              <node concept="SfwO_" id="7P5Q1EvZhej" role="2OqNvi" />
+              <node concept="3GX2aA" id="7P5Q1EvZhek" role="2OqNvi" />
             </node>
-            <node concept="3GX2aA" id="7P5Q1EvZhek" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="7P5Q1EvZzVM" role="3cqZAp" />
@@ -2129,6 +2100,13 @@
       <ref role="3uigEE" node="7mR4HHEZ0Iq" resolve="IExt_MonitoringListener" />
     </node>
   </node>
+  <node concept="vrV6u" id="5FCOv167fxk">
+    <property role="3GE5qa" value="ext" />
+    <property role="TrG5h" value="Ext_ModularityTracker" />
+    <node concept="3uibUv" id="5FCOv167f$P" role="luc8K">
+      <ref role="3uigEE" node="5FCOv167fxe" resolve="IExt_ModularityTracker" />
+    </node>
+  </node>
   <node concept="3HP615" id="5FCOv167fxe">
     <property role="3GE5qa" value="ext" />
     <property role="TrG5h" value="IExt_ModularityTracker" />
@@ -2165,13 +2143,6 @@
     </node>
     <node concept="2tJIrI" id="5FCOv167f_3" role="jymVt" />
     <node concept="3Tm1VV" id="5FCOv167fxf" role="1B3o_S" />
-  </node>
-  <node concept="vrV6u" id="5FCOv167fxk">
-    <property role="3GE5qa" value="ext" />
-    <property role="TrG5h" value="Ext_ModularityTracker" />
-    <node concept="3uibUv" id="5FCOv167f$P" role="luc8K">
-      <ref role="3uigEE" node="5FCOv167fxe" resolve="IExt_ModularityTracker" />
-    </node>
   </node>
 </model>
 
