@@ -18,7 +18,7 @@
     <dependency reexport="false">025f762f-786f-4451-80b1-6bae4ee9fdde(de.htwsaar.peopl.core.listener)</dependency>
     <dependency reexport="false">3b64420c-53d0-4c15-9e71-c9cecf76d9db(de.htwsaar.peopl.view.modular)</dependency>
     <dependency reexport="false">c7fb82d0-90f3-4c08-b61c-d6ac12547689(de.htwsaar.peopl.core.toolsLanguage)</dependency>
-    <dependency reexport="false">9f1f4432-4bb8-4cf7-8c40-c78c9f1c6b00(de.htwsaar.peopl.utils.interactionMonitoring)</dependency>
+    <dependency reexport="true">9f1f4432-4bb8-4cf7-8c40-c78c9f1c6b00(de.htwsaar.peopl.utils.interactionMonitoring)</dependency>
   </dependencies>
   <languageVersions>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
