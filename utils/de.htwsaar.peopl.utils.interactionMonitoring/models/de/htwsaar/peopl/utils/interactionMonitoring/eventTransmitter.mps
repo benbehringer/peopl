@@ -454,7 +454,7 @@
       <node concept="3Tm6S6" id="20ujiCwHQg1" role="1B3o_S" />
       <node concept="3cpWsb" id="20ujiCwHR8b" role="1tU5fm" />
       <node concept="3cmrfG" id="1K$tCF0zVdb" role="33vP2m">
-        <property role="3cmrfH" value="60" />
+        <property role="3cmrfH" value="300" />
       </node>
     </node>
     <node concept="312cEg" id="2Qzkdny4flA" role="jymVt">
