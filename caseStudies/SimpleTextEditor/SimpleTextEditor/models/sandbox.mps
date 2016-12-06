@@ -298,8 +298,16 @@
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -606,6 +614,15 @@
                 </node>
               </node>
               <node concept="3clFbH" id="2FK7olFhODR" role="3cqZAp" />
+              <node concept="3clFbH" id="5b3bZppTDrd" role="3cqZAp" />
+              <node concept="3clFbH" id="73SakC2Sk0R" role="3cqZAp" />
+              <node concept="3SKdUt" id="7q9r9ZffDvN" role="3cqZAp">
+                <node concept="3SKdUq" id="7q9r9ZffDvO" role="3SKWNk">
+                  <property role="3SKdUp" value="this is a simple test to see " />
+                </node>
+              </node>
+              <node concept="3clFbH" id="7q9r9ZffC4i" role="3cqZAp" />
+              <node concept="3clFbH" id="5lDhL4ha0Rj" role="3cqZAp" />
               <node concept="3clFbF" id="7a6J9Uzi0Ac" role="3cqZAp">
                 <node concept="2OqwBi" id="7a6J9Uzi0Ad" role="3clFbG">
                   <node concept="2OqwBi" id="7a6J9Uzi0Ae" role="2Oq$k0">
@@ -15415,6 +15432,46 @@
         <ref role="3uigEE" node="Hs7vPomQ5P" resolve="TextField" />
       </node>
     </node>
+  </node>
+  <node concept="HxVAC" id="2uxPHl1Bpk7">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg03" resolve="Base" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="2uxPHl1Ct6T">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Single::SimpleTextEditor" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0b" resolve="Single" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="6sEBxxdqrFR">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Multiple::SimpleTextEditor" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0e" resolve="Multiple" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="4Swi6OQQ6Kp">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="LineWrap::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0t" resolve="LineWrap" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="yamZeL8g7w">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="SQL::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0P" resolve="SQL" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
+  </node>
+  <node concept="HxVAC" id="yamZeL8nhU">
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Java::SimpleTextEditor" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="byl9:Hs7vPomg0Z" resolve="Java" />
+    <ref role="HxVAD" node="Hs7vPomC0H" resolve="SimpleTextEditor" />
   </node>
 </model>
 

@@ -25,6 +25,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="q7u" ref="r:d520a361-085d-44e1-a3f9-dedb0ed01fe1(de.htwsaar.fileUpload.common)" />
     <import index="b6uq" ref="r:87d19f7e-6509-4223-9f9c-40061bcf6a29(de.htwsaar.fileUpload.DropboxInteraction)" />
+    <import index="a2pm" ref="r:3788c327-0d10-43eb-95a4-e201485a14f7(de.htwsaar.peopl.utils.interactionMonitoring.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -453,7 +454,7 @@
       <node concept="3Tm6S6" id="20ujiCwHQg1" role="1B3o_S" />
       <node concept="3cpWsb" id="20ujiCwHR8b" role="1tU5fm" />
       <node concept="3cmrfG" id="1K$tCF0zVdb" role="33vP2m">
-        <property role="3cmrfH" value="60" />
+        <property role="3cmrfH" value="300" />
       </node>
     </node>
     <node concept="312cEg" id="2Qzkdny4flA" role="jymVt">
@@ -558,7 +559,7 @@
       </node>
       <node concept="3Tm1VV" id="4X0xypuwKLV" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="7AOYwIIZJyv" role="jymVt" />
+    <node concept="2tJIrI" id="3lZtwNXFY$F" role="jymVt" />
     <node concept="3clFb_" id="2Qzkdny4hPW" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="initClasses" />
@@ -1154,25 +1155,17 @@
           </node>
         </node>
         <node concept="3clFbH" id="6brzEgcw_nW" role="3cqZAp" />
-        <node concept="3SKdUt" id="6brzEgcv7eN" role="3cqZAp">
-          <node concept="3SKdUq" id="6brzEgcv7eP" role="3SKWNk">
-            <property role="3SKdUp" value="on ending blocks until a running upload thread is ready an then releases immediately the lock again" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="29p$lrh2b83" role="3cqZAp">
-          <node concept="37vLTI" id="29p$lrh2ba8" role="3clFbG">
-            <node concept="3clFbT" id="29p$lrh2baC" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="10M0yZ" id="29p$lrh2b82" role="37vLTJ">
-              <ref role="1PxDUh" to="6oac:6X2hyGIT64h" resolve="XMLWriterQueue_Observer" />
-              <ref role="3cqZAo" to="6oac:29p$lrh24Jl" resolve="lastData" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="1K$tCF0yBOI" role="3cqZAp">
           <node concept="1rXfSq" id="1K$tCF0yBOH" role="3clFbG">
             <ref role="37wK5l" node="2Qzkdny5nvc" resolve="writeOutData" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3lZtwNXxJG1" role="3cqZAp">
+          <node concept="37vLTI" id="3lZtwNXxJLJ" role="3clFbG">
+            <node concept="10Nm6u" id="3lZtwNXxJMd" role="37vLTx" />
+            <node concept="37vLTw" id="3lZtwNXxJJl" role="37vLTJ">
+              <ref role="3cqZAo" node="1K$tCF0zBWO" resolve="thisThread" />
+            </node>
           </node>
         </node>
       </node>
@@ -3121,7 +3114,7 @@
     <node concept="2tJIrI" id="1K$tCF0yxmr" role="jymVt" />
     <node concept="2tJIrI" id="2ntIzZMNV_T" role="jymVt" />
     <node concept="Wx3nA" id="1K$tCF0zBWO" role="jymVt">
-      <property role="2dlcS1" value="false" />
+      <property role="2dlcS1" value="true" />
       <property role="2dld4O" value="false" />
       <property role="TrG5h" value="thisThread" />
       <property role="3TUv4t" value="false" />
