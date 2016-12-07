@@ -588,7 +588,20 @@
             <node concept="liA8E" id="2Qzkdny4jeZ" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="2Qzkdny4jnB" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:50zZCcaRT5C" resolve="EditorComponentKeyListener.EditorKeyEvent" />
+                <ref role="3VsUkX" to="fchx:50zZCcaRT5C" resolve="EditorKeyListener_Provider.EditorKeyEvent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3xHMfzLbQLw" role="3cqZAp">
+          <node concept="2OqwBi" id="3xHMfzLbR7L" role="3clFbG">
+            <node concept="37vLTw" id="3xHMfzLbQLu" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="3xHMfzLbRL$" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="3xHMfzLbSkv" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
               </node>
             </node>
           </node>
@@ -601,7 +614,7 @@
             <node concept="liA8E" id="3LwTVmkSnmS" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="3LwTVmkSnmT" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:7yp9hS_x8ds" resolve="EditorComponentMouseListener.EditorMouseEvent_Scroll" />
+                <ref role="3VsUkX" to="fchx:7yp9hS_x8ds" resolve="EditorMouseListener_Provider.EditorMouseEvent_Scroll" />
               </node>
             </node>
           </node>
@@ -614,7 +627,7 @@
             <node concept="liA8E" id="3LwTVmkSnye" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="3LwTVmkSnyf" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:50zZCcb1uOY" resolve="EditorComponentMouseListener.EditorMouseEvent_clicked" />
+                <ref role="3VsUkX" to="fchx:50zZCcb1uOY" resolve="EditorMouseListener_Provider.EditorMouseEvent_clicked" />
               </node>
             </node>
           </node>
@@ -627,7 +640,7 @@
             <node concept="liA8E" id="3LwTVmkSnI_" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="3LwTVmkSnIA" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:6fNbIXdEe9j" resolve="EditorComponentMouseListener.EditorMouseEvent_moved" />
+                <ref role="3VsUkX" to="fchx:6fNbIXdEe9j" resolve="EditorMouseListener_Provider.EditorMouseEvent_moved" />
               </node>
             </node>
           </node>
@@ -640,11 +653,25 @@
             <node concept="liA8E" id="5rhzEvt8gmn" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="5rhzEvt8gHO" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:5rhzEvt6e9n" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
+                <ref role="3VsUkX" to="fchx:5rhzEvt6e9n" resolve="EditorMouseListener_Provider.EditorMouseEvent_EE" />
               </node>
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3YtN9JDjrAH" role="3cqZAp">
+          <node concept="2OqwBi" id="3YtN9JDjrAI" role="3clFbG">
+            <node concept="37vLTw" id="3YtN9JDjrAJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
+            </node>
+            <node concept="liA8E" id="3YtN9JDjrAK" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
+              <node concept="3VsKOn" id="3YtN9JDjrAL" role="37wK5m">
+                <ref role="3VsUkX" to="fchx:3YtN9JDjjDK" resolve="AnActionListener_Provider.EditorAction_Event" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7$9Ei8Epni$" role="3cqZAp" />
         <node concept="3clFbF" id="20ujiCwFqhE" role="3cqZAp">
           <node concept="2OqwBi" id="20ujiCwFqwm" role="3clFbG">
             <node concept="37vLTw" id="20ujiCwFqhC" role="2Oq$k0">
@@ -693,19 +720,6 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="5ahGEqwwvdK" role="37wK5m">
                 <ref role="3VsUkX" to="fchx:2wGnBKf3xXm" resolve="FileEditorManagerAdapter_Provider.FileEditorLifeCycleEvent" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3xHMfzLbQLw" role="3cqZAp">
-          <node concept="2OqwBi" id="3xHMfzLbR7L" role="3clFbG">
-            <node concept="37vLTw" id="3xHMfzLbQLu" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
-            </node>
-            <node concept="liA8E" id="3xHMfzLbRL$" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
-              <node concept="3VsKOn" id="3xHMfzLbSkv" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
               </node>
             </node>
           </node>
@@ -771,19 +785,6 @@
               <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
               <node concept="3VsKOn" id="2tJHIt1eUa2" role="37wK5m">
                 <ref role="3VsUkX" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="3YtN9JDjrAH" role="3cqZAp">
-          <node concept="2OqwBi" id="3YtN9JDjrAI" role="3clFbG">
-            <node concept="37vLTw" id="3YtN9JDjrAJ" role="2Oq$k0">
-              <ref role="3cqZAo" node="2Qzkdny4flA" resolve="eventsWithFittingHandlers" />
-            </node>
-            <node concept="liA8E" id="3YtN9JDjrAK" role="2OqNvi">
-              <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
-              <node concept="3VsKOn" id="3YtN9JDjrAL" role="37wK5m">
-                <ref role="3VsUkX" to="fchx:3YtN9JDjjDK" resolve="AnActionListener_Provider.EditorAction_Event" />
               </node>
             </node>
           </node>
