@@ -21,7 +21,7 @@
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
+    <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.plugin)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
@@ -370,7 +370,7 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
       <node concept="3VsKOn" id="4EGqCPVhtvo" role="33vP2m">
-        <ref role="3VsUkX" to="fchx:6fNbIXdEgXK" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+        <ref role="3VsUkX" to="fchx:6fNbIXdEgXK" resolve="EditorMouseListener_Provider.EditorMouseEvent" />
       </node>
       <node concept="3Tm6S6" id="6vHH8Zdeesy" role="1B3o_S" />
     </node>
@@ -384,7 +384,7 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
       <node concept="3VsKOn" id="4EGqCPVhBs8" role="33vP2m">
-        <ref role="3VsUkX" to="fchx:50zZCcaRT5C" resolve="EditorComponentKeyListener.EditorKeyEvent" />
+        <ref role="3VsUkX" to="fchx:50zZCcaRT5C" resolve="EditorKeyListener_Provider.EditorKeyEvent" />
       </node>
     </node>
     <node concept="Wx3nA" id="6vHH8ZdeeGO" role="jymVt">
@@ -397,7 +397,7 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
       <node concept="3VsKOn" id="6vHH8ZdehwH" role="33vP2m">
-        <ref role="3VsUkX" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+        <ref role="3VsUkX" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
       </node>
     </node>
     <node concept="Wx3nA" id="6vHH8Zdgt_K" role="jymVt">
@@ -794,12 +794,12 @@
               <node concept="3cpWsn" id="1ZljV50Fyfc" role="3cpWs9">
                 <property role="TrG5h" value="mouseEvent" />
                 <node concept="3uibUv" id="1ZljV50FyjH" role="1tU5fm">
-                  <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+                  <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorMouseListener_Provider.EditorMouseEvent" />
                 </node>
                 <node concept="1eOMI4" id="1ZljV50Fyfe" role="33vP2m">
                   <node concept="10QFUN" id="1ZljV50Fyff" role="1eOMHV">
                     <node concept="3uibUv" id="1ZljV50Fyk6" role="10QFUM">
-                      <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+                      <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorMouseListener_Provider.EditorMouseEvent" />
                     </node>
                     <node concept="37vLTw" id="1ZljV50Fyfh" role="10QFUP">
                       <ref role="3cqZAo" node="1qBBslsatlw" resolve="event" />
@@ -1338,12 +1338,12 @@
                 <node concept="3cpWsn" id="1ZljV50Fya2" role="3cpWs9">
                   <property role="TrG5h" value="keyEvent" />
                   <node concept="3uibUv" id="1ZljV50Fyer" role="1tU5fm">
-                    <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorComponentKeyListener.EditorKeyEvent" />
+                    <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorKeyListener_Provider.EditorKeyEvent" />
                   </node>
                   <node concept="1eOMI4" id="1ZljV50Fya4" role="33vP2m">
                     <node concept="10QFUN" id="1ZljV50Fya5" role="1eOMHV">
                       <node concept="3uibUv" id="1ZljV50FyeN" role="10QFUM">
-                        <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorComponentKeyListener.EditorKeyEvent" />
+                        <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorKeyListener_Provider.EditorKeyEvent" />
                       </node>
                       <node concept="37vLTw" id="1ZljV50Fya7" role="10QFUP">
                         <ref role="3cqZAo" node="1qBBslsatlw" resolve="event" />
@@ -1432,12 +1432,12 @@
                 <node concept="3cpWsn" id="6RoaQhlYRJr" role="3cpWs9">
                   <property role="TrG5h" value="keyCombinationEvent" />
                   <node concept="3uibUv" id="6RoaQhlYRJs" role="1tU5fm">
-                    <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+                    <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
                   </node>
                   <node concept="1eOMI4" id="6RoaQhlYRLh" role="33vP2m">
                     <node concept="10QFUN" id="6RoaQhlYRLe" role="1eOMHV">
                       <node concept="3uibUv" id="6RoaQhlYRLZ" role="10QFUM">
-                        <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+                        <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
                       </node>
                       <node concept="37vLTw" id="6RoaQhlYRMO" role="10QFUP">
                         <ref role="3cqZAo" node="1qBBslsatlw" resolve="event" />
@@ -2357,14 +2357,14 @@
         <property role="3TUv4t" value="false" />
         <node concept="_YKpA" id="6RoaQhm55b0" role="1tU5fm">
           <node concept="3uibUv" id="6RoaQhm57er" role="_ZDj9">
-            <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+            <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
           </node>
         </node>
         <node concept="3Tm6S6" id="6RoaQhm55b2" role="1B3o_S" />
         <node concept="2ShNRf" id="6RoaQhm55b3" role="33vP2m">
           <node concept="2Jqq0_" id="6RoaQhm55b4" role="2ShVmc">
             <node concept="3uibUv" id="6RoaQhm57jn" role="HW$YZ">
-              <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+              <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
             </node>
           </node>
         </node>
@@ -2761,7 +2761,7 @@
                   <node concept="1eOMI4" id="2$MQ_LKQcMN" role="2Oq$k0">
                     <node concept="10QFUN" id="2$MQ_LKQcMK" role="1eOMHV">
                       <node concept="3uibUv" id="2$MQ_LKQvYz" role="10QFUM">
-                        <ref role="3uigEE" to="fchx:5rhzEvt6e9n" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
+                        <ref role="3uigEE" to="fchx:5rhzEvt6e9n" resolve="EditorMouseListener_Provider.EditorMouseEvent_EE" />
                       </node>
                       <node concept="37vLTw" id="2$MQ_LKQcRx" role="10QFUP">
                         <ref role="3cqZAo" node="1ZljV50Fmli" resolve="event" />
@@ -2818,7 +2818,7 @@
               <node concept="liA8E" id="2$MQ_LKQ6YU" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                 <node concept="3VsKOn" id="2$MQ_LKQ7ix" role="37wK5m">
-                  <ref role="3VsUkX" to="fchx:5rhzEvt6e9n" resolve="EditorComponentMouseListener.EditorMouseEvent_EE" />
+                  <ref role="3VsUkX" to="fchx:5rhzEvt6e9n" resolve="EditorMouseListener_Provider.EditorMouseEvent_EE" />
                 </node>
               </node>
             </node>
@@ -2837,7 +2837,7 @@
         <node concept="37vLTG" id="1ZljV50Fmli" role="3clF46">
           <property role="TrG5h" value="event" />
           <node concept="3uibUv" id="1ZljV50FmHm" role="1tU5fm">
-            <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorComponentMouseListener.EditorMouseEvent" />
+            <ref role="3uigEE" to="fchx:6fNbIXdEgXK" resolve="EditorMouseListener_Provider.EditorMouseEvent" />
           </node>
         </node>
       </node>
@@ -3176,7 +3176,7 @@
         <node concept="37vLTG" id="6RoaQhlYIKW" role="3clF46">
           <property role="TrG5h" value="event" />
           <node concept="3uibUv" id="6RoaQhlYIKV" role="1tU5fm">
-            <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="KeyListener_Provider.KeyCombinationPressedEvent" />
+            <ref role="3uigEE" to="fchx:3xHMfzLbxPp" resolve="EditorKeyListener_Provider.KeyCombinationPressedEvent" />
           </node>
         </node>
       </node>
@@ -3242,7 +3242,7 @@
         <node concept="37vLTG" id="1ZljV50Fqx4" role="3clF46">
           <property role="TrG5h" value="event" />
           <node concept="3uibUv" id="1ZljV50Fqx3" role="1tU5fm">
-            <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorComponentKeyListener.EditorKeyEvent" />
+            <ref role="3uigEE" to="fchx:50zZCcaRT5C" resolve="EditorKeyListener_Provider.EditorKeyEvent" />
           </node>
         </node>
       </node>
