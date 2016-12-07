@@ -19,7 +19,6 @@
     <import index="paf" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.ide.projectPane.logicalview(MPS.Workbench/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="a2pm" ref="r:3788c327-0d10-43eb-95a4-e201485a14f7(de.htwsaar.peopl.utils.interactionMonitoring.plugin)" />
-    <import index="n2ay" ref="r:b3ab4dd2-8f93-489d-902f-7f1f1e6d7e3a(de.htwsaar.peopl.utils.interactionMonitoring.extensions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -479,7 +478,7 @@
       <property role="od$2w" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="71bn0eB1WA9" role="3clF47">
-        <node concept="1X3_iC" id="71bn0eB1WAa" role="lGtFl">
+        <node concept="1X3_iC" id="Rlu2uDajS2" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="34ab3g" id="71bn0eB1WAb" role="8Wnug">
@@ -596,7 +595,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="71bn0eB1WAT" role="3cqZAp" />
           </node>
           <node concept="2OqwBi" id="71bn0eB1WAU" role="3clFbw">
             <node concept="37vLTw" id="71bn0eB1WAV" role="2Oq$k0">
@@ -728,14 +726,14 @@
                       <node concept="2OqwBi" id="2G0ABEx9Wpk" role="2Oq$k0">
                         <node concept="2OqwBi" id="2G0ABEx9Wpl" role="2Oq$k0">
                           <node concept="2O5UvJ" id="2G0ABEx9Wpm" role="2Oq$k0">
-                            <ref role="2O5UnU" to="n2ay:2G0ABEx9BRf" resolve="Ext_Identiefier" />
+                            <ref role="2O5UnU" to="a2pm:2G0ABEx9BRf" resolve="Ext_Identifier" />
                           </node>
                           <node concept="SfwO_" id="2G0ABEx9Wpn" role="2OqNvi" />
                         </node>
                         <node concept="1uHKPH" id="2G0ABEx9Wpo" role="2OqNvi" />
                       </node>
                       <node concept="liA8E" id="2G0ABEx9Wpp" role="2OqNvi">
-                        <ref role="37wK5l" to="n2ay:2G0ABEx9Nrt" resolve="identify" />
+                        <ref role="37wK5l" to="a2pm:2G0ABEx9Nrt" resolve="identify" />
                         <node concept="37vLTw" id="2G0ABEx9WSR" role="37wK5m">
                           <ref role="3cqZAo" node="71bn0eB1WAi" resolve="sC" />
                         </node>
@@ -746,7 +744,7 @@
                 <node concept="2OqwBi" id="7P5Q1EvZheg" role="3clFbw">
                   <node concept="2OqwBi" id="7P5Q1EvZheh" role="2Oq$k0">
                     <node concept="2O5UvJ" id="7P5Q1EvZhei" role="2Oq$k0">
-                      <ref role="2O5UnU" to="n2ay:2G0ABEx9BRf" resolve="Ext_Identiefier" />
+                      <ref role="2O5UnU" to="a2pm:2G0ABEx9BRf" resolve="Ext_Identifier" />
                     </node>
                     <node concept="SfwO_" id="7P5Q1EvZhej" role="2OqNvi" />
                   </node>

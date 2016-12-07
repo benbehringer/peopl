@@ -19,7 +19,6 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="gdbn" ref="r:b91777f9-f446-48cd-aaff-34f62ecc4eb1(de.htwsaar.peopl.core.tools.moduleDependenciesTool)" />
     <import index="uce1" ref="r:a268bac9-fde8-45f5-92f2-5958dfe8555d(de.htwsaar.peopl.core.statistics.plugin)" />
-    <import index="n2ay" ref="r:b3ab4dd2-8f93-489d-902f-7f1f1e6d7e3a(de.htwsaar.peopl.utils.interactionMonitoring.extensions)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" implicit="true" />
@@ -558,7 +557,7 @@
   </node>
   <node concept="1lYeZD" id="5FCOv167jKE">
     <property role="TrG5h" value="ExtDef_ModularityTracker" />
-    <ref role="1lYe$Y" to="n2ay:5FCOv167fxk" resolve="Ext_ModularityTracker" />
+    <ref role="1lYe$Y" to="a2pm:5FCOv167fxk" resolve="Ext_ModularityTracker" />
     <node concept="3Tm1VV" id="5FCOv167jKF" role="1B3o_S" />
     <node concept="2tJIrI" id="5FCOv167jKG" role="jymVt" />
     <node concept="3tTeZs" id="5FCOv167jKH" role="jymVt">
@@ -581,7 +580,7 @@
               <node concept="1Y3b0j" id="5FCOv167lRm" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <ref role="1Y3XeK" to="n2ay:5FCOv167fxe" resolve="IExt_ModularityTracker" />
+                <ref role="1Y3XeK" to="a2pm:5FCOv167fxe" resolve="IExt_ModularityTracker" />
                 <node concept="3Tm1VV" id="5FCOv167lRn" role="1B3o_S" />
                 <node concept="3clFb_" id="5FCOv167lRo" role="jymVt">
                   <property role="1EzhhJ" value="false" />
@@ -621,7 +620,7 @@
   </node>
   <node concept="1lYeZD" id="2G0ABEx9BZR">
     <property role="TrG5h" value="ExtDef_Identifier" />
-    <ref role="1lYe$Y" to="n2ay:2G0ABEx9BRf" resolve="Ext_Identiefier" />
+    <ref role="1lYe$Y" to="a2pm:2G0ABEx9BRf" resolve="Ext_Identifier" />
     <node concept="3Tm1VV" id="2G0ABEx9BZS" role="1B3o_S" />
     <node concept="2tJIrI" id="2G0ABEx9BZT" role="jymVt" />
     <node concept="3tTeZs" id="2G0ABEx9BZU" role="jymVt">
@@ -644,7 +643,7 @@
               <node concept="1Y3b0j" id="2G0ABEx9N9e" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <ref role="1Y3XeK" to="n2ay:2G0ABEx9BQg" resolve="IExt_Identifier" />
+                <ref role="1Y3XeK" to="a2pm:2G0ABEx9BQg" resolve="IExt_Identifier" />
                 <node concept="3Tm1VV" id="2G0ABEx9N9f" role="1B3o_S" />
                 <node concept="3clFb_" id="2G0ABEx9Nwy" role="jymVt">
                   <property role="1EzhhJ" value="false" />
