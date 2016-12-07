@@ -2986,6 +2986,15 @@
       <property role="2dld4O" value="false" />
       <node concept="17QB3L" id="RaEvWJd2gH" role="1tU5fm" />
       <node concept="3Tm6S6" id="RaEvWJd2gG" role="1B3o_S" />
+      <node concept="2OqwBi" id="4fwRAB_GOEb" role="33vP2m">
+        <node concept="2YIFZM" id="4fwRAB_GOB$" role="2Oq$k0">
+          <ref role="37wK5l" to="q7u:aG5PjzdZkX" resolve="getInstance" />
+          <ref role="1Pybhc" to="q7u:1zXKmhkexm1" resolve="PeoplProperties" />
+        </node>
+        <node concept="liA8E" id="4fwRAB_GOHn" role="2OqNvi">
+          <ref role="37wK5l" to="q7u:5RdHCNBL$uw" resolve="getAppPath" />
+        </node>
+      </node>
     </node>
     <node concept="Wx3nA" id="RaEvWJd2qI" role="jymVt">
       <property role="TrG5h" value="UPLOAD_SIZE_IN_BYTE" />
