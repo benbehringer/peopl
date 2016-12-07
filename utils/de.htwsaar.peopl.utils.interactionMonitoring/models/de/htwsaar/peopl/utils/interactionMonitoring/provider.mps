@@ -9,6 +9,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
@@ -10156,6 +10157,40 @@
       <node concept="3cqZAl" id="7Ipcxt23SO$" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="7Ipcxt23Sn2" role="jymVt" />
+    <node concept="2YIFZL" id="JAvTAYhDWy" role="jymVt">
+      <property role="TrG5h" value="uninstallAll" />
+      <property role="DiZV1" value="false" />
+      <property role="od$2w" value="false" />
+      <node concept="3clFbS" id="JAvTAYhDHe" role="3clF47">
+        <node concept="2Gpval" id="JAvTAYhEbQ" role="3cqZAp">
+          <node concept="2GrKxI" id="JAvTAYhEbR" role="2Gsz3X">
+            <property role="TrG5h" value="instance" />
+          </node>
+          <node concept="2OqwBi" id="JAvTAYhEbS" role="2GsD0m">
+            <node concept="10M0yZ" id="JAvTAYhEbT" role="2Oq$k0">
+              <ref role="1PxDUh" node="1U_45tOVHFf" resolve="UpdaterListener_Provider" />
+              <ref role="3cqZAo" node="7Ipcxt23IbW" resolve="instances" />
+            </node>
+            <node concept="T8wYR" id="JAvTAYhEbU" role="2OqNvi" />
+          </node>
+          <node concept="3clFbS" id="JAvTAYhEbV" role="2LFqv$">
+            <node concept="3clFbF" id="JAvTAYhEbW" role="3cqZAp">
+              <node concept="2OqwBi" id="JAvTAYhEbX" role="3clFbG">
+                <node concept="2GrUjf" id="JAvTAYhEbY" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="JAvTAYhEbR" resolve="instance" />
+                </node>
+                <node concept="liA8E" id="JAvTAYhEbZ" role="2OqNvi">
+                  <ref role="37wK5l" node="7Ipcxt23SOA" resolve="uninstall" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="JAvTAYhDBh" role="3clF45" />
+      <node concept="3Tm1VV" id="JAvTAYhDnF" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="JAvTAYhD6z" role="jymVt" />
     <node concept="2YIFZL" id="1U_45tOVJUY" role="jymVt">
       <property role="TrG5h" value="getListener" />
       <property role="od$2w" value="false" />
