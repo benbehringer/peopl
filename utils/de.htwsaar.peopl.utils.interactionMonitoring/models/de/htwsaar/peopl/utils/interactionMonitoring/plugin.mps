@@ -285,17 +285,17 @@
       <node concept="3clFbS" id="60chUlwRQMd" role="2VODD2">
         <node concept="3clFbJ" id="3sUM20rOoJ0" role="3cqZAp">
           <node concept="3clFbS" id="3sUM20rOoJ2" role="3clFbx">
+            <node concept="3clFbF" id="1R0T08haPnS" role="3cqZAp">
+              <node concept="2YIFZM" id="1R0T08haPog" role="3clFbG">
+                <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
+                <ref role="37wK5l" node="60chUlwRQYw" resolve="init" />
+              </node>
+            </node>
             <node concept="3clFbF" id="1R0T08haY3i" role="3cqZAp">
               <node concept="2YIFZM" id="1R0T08haY3Q" role="3clFbG">
                 <ref role="37wK5l" node="1R0T08haPIn" resolve="init" />
                 <ref role="1Pybhc" node="1R0T08haPzh" resolve="ListenerInitializer" />
                 <node concept="1KvdUw" id="1R0T08haY4b" role="37wK5m" />
-              </node>
-            </node>
-            <node concept="3clFbF" id="1R0T08haPnS" role="3cqZAp">
-              <node concept="2YIFZM" id="1R0T08haPog" role="3clFbG">
-                <ref role="37wK5l" node="60chUlwRQYw" resolve="init" />
-                <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
               </node>
             </node>
             <node concept="3clFbF" id="7tbijWIVY20" role="3cqZAp">
@@ -339,21 +339,21 @@
             <node concept="1KvdUw" id="1R0T08haYbE" role="37wK5m" />
           </node>
         </node>
-        <node concept="3clFbF" id="1R0T08haPwS" role="3cqZAp">
-          <node concept="2YIFZM" id="1R0T08haPxs" role="3clFbG">
-            <ref role="37wK5l" node="1R0T08haPbe" resolve="dispose" />
-            <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
-          </node>
-        </node>
         <node concept="3clFbF" id="7tbijWIVY6L" role="3cqZAp">
           <node concept="2OqwBi" id="7tbijWIVY6M" role="3clFbG">
             <node concept="2YIFZM" id="7tbijWIVY6N" role="2Oq$k0">
-              <ref role="37wK5l" to="fchx:2An04PNr3eS" resolve="getInstance" />
               <ref role="1Pybhc" to="fchx:7tbijWIUDyW" resolve="EditorComponent_Provider" />
+              <ref role="37wK5l" to="fchx:2An04PNr3eS" resolve="getInstance" />
             </node>
             <node concept="liA8E" id="7tbijWIVY9a" role="2OqNvi">
               <ref role="37wK5l" to="fchx:7tbijWIUPvz" resolve="dispose" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1R0T08haPwS" role="3cqZAp">
+          <node concept="2YIFZM" id="1R0T08haPxs" role="3clFbG">
+            <ref role="1Pybhc" node="60chUlwRQMC" resolve="ConsumerInitalizer" />
+            <ref role="37wK5l" node="1R0T08haPbe" resolve="dispose" />
           </node>
         </node>
         <node concept="3clFbH" id="6KsAI89tFlt" role="3cqZAp" />
@@ -2130,15 +2130,15 @@
   </node>
   <node concept="3HP615" id="5FCOv167fxe">
     <property role="3GE5qa" value="ext" />
-    <property role="TrG5h" value="IExt_ModularityTracker" />
+    <property role="TrG5h" value="IExt_ModularityHandle" />
     <node concept="2tJIrI" id="5FCOv167f_1" role="jymVt" />
     <node concept="3clFb_" id="5FCOv167cnt" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isModular" />
+      <property role="TrG5h" value="getTrueRootNode" />
       <node concept="3clFbS" id="5FCOv167cnw" role="3clF47" />
       <node concept="3Tm1VV" id="5FCOv167cnx" role="1B3o_S" />
-      <node concept="10P_77" id="5FCOv167cn2" role="3clF45" />
+      <node concept="3Tqbb2" id="5jSU_dFQ5je" role="3clF45" />
       <node concept="37vLTG" id="5FCOv167f4y" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="5FCOv167f4x" role="1tU5fm" />
@@ -2186,18 +2186,18 @@
     </node>
     <node concept="3Tm1VV" id="2G0ABEx9BQh" role="1B3o_S" />
   </node>
-  <node concept="vrV6u" id="5FCOv167fxk">
-    <property role="3GE5qa" value="ext" />
-    <property role="TrG5h" value="Ext_ModularityTracker" />
-    <node concept="3uibUv" id="5FCOv167f$P" role="luc8K">
-      <ref role="3uigEE" node="5FCOv167fxe" resolve="IExt_ModularityTracker" />
-    </node>
-  </node>
   <node concept="vrV6u" id="2G0ABEx9BRf">
     <property role="3GE5qa" value="ext" />
     <property role="TrG5h" value="Ext_Identifier" />
     <node concept="3uibUv" id="3OQGibwViof" role="luc8K">
       <ref role="3uigEE" node="2G0ABEx9BQg" resolve="IExt_Identifier" />
+    </node>
+  </node>
+  <node concept="vrV6u" id="5jSU_dFQ9d$">
+    <property role="3GE5qa" value="ext" />
+    <property role="TrG5h" value="Ext_ModularityHandle" />
+    <node concept="3uibUv" id="5jSU_dFQ9jz" role="luc8K">
+      <ref role="3uigEE" node="5FCOv167fxe" resolve="IExt_ModularityHandle" />
     </node>
   </node>
 </model>
