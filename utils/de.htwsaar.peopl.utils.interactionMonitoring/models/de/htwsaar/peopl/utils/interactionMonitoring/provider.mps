@@ -2348,17 +2348,6 @@
                 <property role="2bfB8j" value="true" />
                 <ref role="1Y3XeK" to="hyam:~AWTEventListener" resolve="AWTEventListener" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <node concept="312cEg" id="1RkmTix5a6C" role="jymVt">
-                  <property role="34CwA1" value="false" />
-                  <property role="eg7rD" value="false" />
-                  <property role="TrG5h" value="MOUSE_MOVE_EVENT" />
-                  <property role="3TUv4t" value="true" />
-                  <node concept="3Tm6S6" id="1RkmTix5a6D" role="1B3o_S" />
-                  <node concept="10Oyi0" id="1RkmTix5a6E" role="1tU5fm" />
-                  <node concept="3cmrfG" id="1RkmTix5a6F" role="33vP2m">
-                    <property role="3cmrfH" value="503" />
-                  </node>
-                </node>
                 <node concept="312cEg" id="6AOjiXNZiZl" role="jymVt">
                   <property role="34CwA1" value="false" />
                   <property role="eg7rD" value="false" />
@@ -2448,8 +2437,9 @@
                             </node>
                           </node>
                           <node concept="3clFbC" id="1RkmTix5jJf" role="3clFbw">
-                            <node concept="37vLTw" id="1RkmTix5k1v" role="3uHU7w">
-                              <ref role="3cqZAo" node="1RkmTix5a6C" resolve="MOUSE_MOVE_EVENT" />
+                            <node concept="10M0yZ" id="7HuNByuW5KA" role="3uHU7w">
+                              <ref role="1PxDUh" to="hyam:~MouseEvent" resolve="MouseEvent" />
+                              <ref role="3cqZAo" to="hyam:~MouseEvent.MOUSE_MOVED" resolve="MOUSE_MOVED" />
                             </node>
                             <node concept="37vLTw" id="1RkmTix5jx2" role="3uHU7B">
                               <ref role="3cqZAo" node="6AOjiXNZi5n" resolve="id" />
@@ -2492,17 +2482,6 @@
                 <property role="2bfB8j" value="true" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <ref role="1Y3XeK" to="hyam:~AWTEventListener" resolve="AWTEventListener" />
-                <node concept="312cEg" id="5Hjm9vv5G0C" role="jymVt">
-                  <property role="34CwA1" value="false" />
-                  <property role="eg7rD" value="false" />
-                  <property role="TrG5h" value="MOUSE_MOVE_WHEEL_EVENT" />
-                  <property role="3TUv4t" value="true" />
-                  <node concept="3Tm6S6" id="5Hjm9vv5G0D" role="1B3o_S" />
-                  <node concept="10Oyi0" id="5Hjm9vv5G0E" role="1tU5fm" />
-                  <node concept="3cmrfG" id="5Hjm9vv5G0F" role="33vP2m">
-                    <property role="3cmrfH" value="507" />
-                  </node>
-                </node>
                 <node concept="312cEg" id="5Hjm9vv5G0O" role="jymVt">
                   <property role="34CwA1" value="false" />
                   <property role="eg7rD" value="false" />
@@ -2582,8 +2561,9 @@
                             </node>
                           </node>
                           <node concept="3clFbC" id="5Hjm9vv5G1p" role="3clFbw">
-                            <node concept="37vLTw" id="5Hjm9vv5G1q" role="3uHU7w">
-                              <ref role="3cqZAo" node="5Hjm9vv5G0C" resolve="MOUSE_MOVE_WHEEL_EVENT" />
+                            <node concept="10M0yZ" id="7HuNByuW6EA" role="3uHU7w">
+                              <ref role="1PxDUh" to="hyam:~MouseEvent" resolve="MouseEvent" />
+                              <ref role="3cqZAo" to="hyam:~MouseEvent.MOUSE_WHEEL" resolve="MOUSE_WHEEL" />
                             </node>
                             <node concept="37vLTw" id="5Hjm9vv5G1r" role="3uHU7B">
                               <ref role="3cqZAo" node="5Hjm9vv5G17" resolve="id" />
@@ -2627,28 +2607,6 @@
                 <property role="2bfB8j" value="true" />
                 <ref role="1Y3XeK" to="hyam:~AWTEventListener" resolve="AWTEventListener" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-                <node concept="312cEg" id="20Q2bdRxA6$" role="jymVt">
-                  <property role="34CwA1" value="false" />
-                  <property role="eg7rD" value="false" />
-                  <property role="TrG5h" value="MOUSE_ENTER_ID" />
-                  <property role="3TUv4t" value="true" />
-                  <node concept="3Tm6S6" id="20Q2bdRx_Lt" role="1B3o_S" />
-                  <node concept="10Oyi0" id="20Q2bdRxA6y" role="1tU5fm" />
-                  <node concept="3cmrfG" id="20Q2bdRxAso" role="33vP2m">
-                    <property role="3cmrfH" value="504" />
-                  </node>
-                </node>
-                <node concept="312cEg" id="20Q2bdRxBo1" role="jymVt">
-                  <property role="34CwA1" value="false" />
-                  <property role="eg7rD" value="false" />
-                  <property role="TrG5h" value="MOUSE_EXIT_ID" />
-                  <property role="3TUv4t" value="true" />
-                  <node concept="3Tm6S6" id="20Q2bdRxB22" role="1B3o_S" />
-                  <node concept="10Oyi0" id="20Q2bdRxBnZ" role="1tU5fm" />
-                  <node concept="3cmrfG" id="20Q2bdRxBGN" role="33vP2m">
-                    <property role="3cmrfH" value="505" />
-                  </node>
-                </node>
                 <node concept="3Tm1VV" id="2DsZ_GnbE1v" role="1B3o_S" />
                 <node concept="312cEg" id="5ime7PBwakx" role="jymVt">
                   <property role="34CwA1" value="false" />
@@ -2721,8 +2679,9 @@
                         </node>
                       </node>
                       <node concept="3clFbC" id="5ime7PBw0Z4" role="3clFbw">
-                        <node concept="37vLTw" id="20Q2bdRxAIX" role="3uHU7w">
-                          <ref role="3cqZAo" node="20Q2bdRxA6$" resolve="MOUSE_ENTER_ID" />
+                        <node concept="10M0yZ" id="7HuNByuW71Y" role="3uHU7w">
+                          <ref role="1PxDUh" to="hyam:~MouseEvent" resolve="MouseEvent" />
+                          <ref role="3cqZAo" to="hyam:~MouseEvent.MOUSE_ENTERED" resolve="MOUSE_ENTERED" />
                         </node>
                         <node concept="37vLTw" id="5ime7PBw0Re" role="3uHU7B">
                           <ref role="3cqZAo" node="5ime7PBw00S" resolve="id" />
@@ -2740,8 +2699,9 @@
                           </node>
                         </node>
                         <node concept="3clFbC" id="gMSQjqZ3HY" role="3eO9$A">
-                          <node concept="37vLTw" id="20Q2bdRxBYV" role="3uHU7w">
-                            <ref role="3cqZAo" node="20Q2bdRxBo1" resolve="MOUSE_EXIT_ID" />
+                          <node concept="10M0yZ" id="7HuNByuW7qn" role="3uHU7w">
+                            <ref role="1PxDUh" to="hyam:~MouseEvent" resolve="MouseEvent" />
+                            <ref role="3cqZAo" to="hyam:~MouseEvent.MOUSE_EXITED" resolve="MOUSE_EXITED" />
                           </node>
                           <node concept="37vLTw" id="gMSQjqZ3xk" role="3uHU7B">
                             <ref role="3cqZAo" node="5ime7PBw00S" resolve="id" />
