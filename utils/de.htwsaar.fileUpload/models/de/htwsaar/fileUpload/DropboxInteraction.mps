@@ -73,6 +73,10 @@
         <child id="1164903359218" name="catchBody" index="TDEfX" />
         <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -2972,6 +2976,29 @@
       </node>
       <node concept="3Tm6S6" id="7obFNLlfque" role="1B3o_S" />
     </node>
+    <node concept="Wx3nA" id="4epq8QH$8Fs" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="isWindows" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="4epq8QH$8A9" role="1B3o_S" />
+      <node concept="10P_77" id="4epq8QH$8F8" role="1tU5fm" />
+      <node concept="2OqwBi" id="4epq8QH$8RK" role="33vP2m">
+        <node concept="2YIFZM" id="4epq8QH$8MZ" role="2Oq$k0">
+          <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String):java.lang.String" resolve="getProperty" />
+          <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+          <node concept="Xl_RD" id="4epq8QH$8Ob" role="37wK5m">
+            <property role="Xl_RC" value="os.name" />
+          </node>
+        </node>
+        <node concept="liA8E" id="4epq8QH$8V1" role="2OqNvi">
+          <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String):boolean" resolve="startsWith" />
+          <node concept="Xl_RD" id="4epq8QH$8W7" role="37wK5m">
+            <property role="Xl_RC" value="Windows" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="7obFNLlfqah" role="jymVt" />
     <node concept="3clFbW" id="7obFNLlfqyp" role="jymVt">
       <node concept="3cqZAl" id="7obFNLlfqyq" role="3clF45" />
@@ -3307,10 +3334,17 @@
                 <property role="3SKdUp" value="Needed on windows before deleting, moving, renaming a file because of file locks" />
               </node>
             </node>
-            <node concept="3clFbF" id="RaEvWJa5Gt" role="3cqZAp">
-              <node concept="2YIFZM" id="RaEvWJa5Gu" role="3clFbG">
-                <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
-                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+            <node concept="3clFbJ" id="4epq8QH$975" role="3cqZAp">
+              <node concept="3clFbS" id="4epq8QH$977" role="3clFbx">
+                <node concept="3clFbF" id="4epq8QH$9ie" role="3cqZAp">
+                  <node concept="2YIFZM" id="4epq8QH$9kp" role="3clFbG">
+                    <ref role="37wK5l" to="wyt6:~System.gc():void" resolve="gc" />
+                    <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="4epq8QH$9bW" role="3clFbw">
+                <ref role="3cqZAo" node="4epq8QH$8Fs" resolve="isWindows" />
               </node>
             </node>
             <node concept="3clFbF" id="RaEvWJa5Gv" role="3cqZAp">
