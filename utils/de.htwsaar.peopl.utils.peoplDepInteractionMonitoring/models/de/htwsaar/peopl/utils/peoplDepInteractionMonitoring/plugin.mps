@@ -67,18 +67,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -87,33 +77,29 @@
     <property role="TrG5h" value="MonitorListenerInit" />
     <node concept="2uRRBT" id="4fwRAB_GqA3" role="2uRRB$">
       <node concept="3clFbS" id="4fwRAB_GqA4" role="2VODD2">
-        <node concept="1X3_iC" id="4fwRAB_GzYr" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="1DcWWT" id="2tJHIt1cG4Y" role="8Wnug">
-            <node concept="3clFbS" id="2tJHIt1cG50" role="2LFqv$">
-              <node concept="3clFbF" id="4fwRAB_GqZO" role="3cqZAp">
-                <node concept="2YIFZM" id="4fwRAB_Gr0G" role="3clFbG">
-                  <ref role="37wK5l" to="uxk:4abErjGKlAI" resolve="addNewListener" />
-                  <ref role="1Pybhc" to="uxk:4abErjGKkRA" resolve="MonitoringSNodeChangeListener" />
-                  <node concept="1KvdUw" id="4fwRAB_Gr0Y" role="37wK5m" />
-                  <node concept="37vLTw" id="4fwRAB_Gr24" role="37wK5m">
-                    <ref role="3cqZAo" node="2tJHIt1cG51" resolve="m" />
-                  </node>
+        <node concept="1DcWWT" id="2tJHIt1cG4Y" role="3cqZAp">
+          <node concept="3clFbS" id="2tJHIt1cG50" role="2LFqv$">
+            <node concept="3clFbF" id="4fwRAB_GqZO" role="3cqZAp">
+              <node concept="2YIFZM" id="4fwRAB_Gr0G" role="3clFbG">
+                <ref role="37wK5l" to="uxk:4abErjGKlAI" resolve="addNewListener" />
+                <ref role="1Pybhc" to="uxk:4abErjGKkRA" resolve="MonitoringSNodeChangeListener" />
+                <node concept="1KvdUw" id="4fwRAB_Gr0Y" role="37wK5m" />
+                <node concept="37vLTw" id="4fwRAB_Gr24" role="37wK5m">
+                  <ref role="3cqZAo" node="2tJHIt1cG51" resolve="m" />
                 </node>
               </node>
             </node>
-            <node concept="3cpWsn" id="2tJHIt1cG51" role="1Duv9x">
-              <property role="TrG5h" value="m" />
-              <node concept="3uibUv" id="2tJHIt1cKh5" role="1tU5fm">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-              </node>
+          </node>
+          <node concept="3cpWsn" id="2tJHIt1cG51" role="1Duv9x">
+            <property role="TrG5h" value="m" />
+            <node concept="3uibUv" id="2tJHIt1cKh5" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
-            <node concept="2OqwBi" id="2tJHIt1cG$S" role="1DdaDG">
-              <node concept="1KvdUw" id="4fwRAB_Gr2L" role="2Oq$k0" />
-              <node concept="liA8E" id="2tJHIt1cH6a" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
-              </node>
+          </node>
+          <node concept="2OqwBi" id="2tJHIt1cG$S" role="1DdaDG">
+            <node concept="1KvdUw" id="4fwRAB_Gr2L" role="2Oq$k0" />
+            <node concept="liA8E" id="2tJHIt1cH6a" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
             </node>
           </node>
         </node>
@@ -121,14 +107,10 @@
     </node>
     <node concept="2uRRBN" id="4fwRAB_GqAh" role="2uRRB_">
       <node concept="3clFbS" id="4fwRAB_GqAi" role="2VODD2">
-        <node concept="1X3_iC" id="4fwRAB_GzYX" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="4fwRAB_GrYq" role="8Wnug">
-            <node concept="2YIFZM" id="4fwRAB_GrYX" role="3clFbG">
-              <ref role="37wK5l" to="uxk:4MowEXK58zy" resolve="removeOlSNodedListener" />
-              <ref role="1Pybhc" to="uxk:4abErjGKkRA" resolve="MonitoringSNodeChangeListener" />
-            </node>
+        <node concept="3clFbF" id="4fwRAB_GrYq" role="3cqZAp">
+          <node concept="2YIFZM" id="4fwRAB_GrYX" role="3clFbG">
+            <ref role="37wK5l" to="uxk:4MowEXK58zy" resolve="removeOlSNodedListener" />
+            <ref role="1Pybhc" to="uxk:4abErjGKkRA" resolve="MonitoringSNodeChangeListener" />
           </node>
         </node>
       </node>

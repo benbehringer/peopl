@@ -21,7 +21,7 @@
     <import index="dzyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time.temporal(JDK/)" />
     <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.listener)" />
+    <import index="951u" ref="r:27e21106-5f3c-476c-97f0-a3e1bc459759(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.plugin)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
@@ -436,7 +436,7 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
       <node concept="3VsKOn" id="5v03mDvyMkA" role="33vP2m">
-        <ref role="3VsUkX" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+        <ref role="3VsUkX" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
       </node>
     </node>
     <node concept="Wx3nA" id="5v03mDvyPT6" role="jymVt">
@@ -449,7 +449,7 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
       <node concept="3VsKOn" id="5v03mDvyPT9" role="33vP2m">
-        <ref role="3VsUkX" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+        <ref role="3VsUkX" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
       </node>
     </node>
     <node concept="Wx3nA" id="6J0kluKGTaF" role="jymVt">
@@ -1028,8 +1028,8 @@
                         <node concept="37vLTw" id="2LekglKcMGB" role="2Oq$k0">
                           <ref role="3cqZAo" node="2LekglKcMGr" resolve="intentionEvent" />
                         </node>
-                        <node concept="2OwXpG" id="2LekglKcMGC" role="2OqNvi">
-                          <ref role="2Oxat5" to="fchx:3YtN9JDk4GD" resolve="myEditorComponent" />
+                        <node concept="2OwXpG" id="4fwRAB_HbJ5" role="2OqNvi">
+                          <ref role="2Oxat5" to="fchx:5lmbTBUxlPV" resolve="myEditorComponent" />
                         </node>
                       </node>
                     </node>
@@ -1515,16 +1515,16 @@
               <node concept="3cpWs8" id="5v03mDvzaXf" role="3cqZAp">
                 <node concept="3cpWsn" id="5v03mDvzaXg" role="3cpWs9">
                   <property role="TrG5h" value="fragmentAddedEvent" />
-                  <node concept="3uibUv" id="5v03mDvzbYw" role="1tU5fm">
-                    <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+                  <node concept="3uibUv" id="4fwRAB_Hbkv" role="1tU5fm">
+                    <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
                   </node>
                   <node concept="1eOMI4" id="5v03mDvzaXi" role="33vP2m">
                     <node concept="10QFUN" id="5v03mDvzaXj" role="1eOMHV">
-                      <node concept="3uibUv" id="5v03mDvzcMr" role="10QFUM">
-                        <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
-                      </node>
                       <node concept="37vLTw" id="5v03mDvzaXl" role="10QFUP">
                         <ref role="3cqZAo" node="1qBBslsatlw" resolve="event" />
+                      </node>
+                      <node concept="3uibUv" id="4fwRAB_Hbpn" role="10QFUM">
+                        <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
                       </node>
                     </node>
                   </node>
@@ -1542,8 +1542,8 @@
                         <node concept="37vLTw" id="5v03mDvzaXs" role="2Oq$k0">
                           <ref role="3cqZAo" node="5v03mDvzaXg" resolve="fragmentAddedEvent" />
                         </node>
-                        <node concept="2OwXpG" id="5v03mDvzgRN" role="2OqNvi">
-                          <ref role="2Oxat5" to="951u:5v03mDvyx5w" resolve="editorComponent" />
+                        <node concept="2OwXpG" id="4fwRAB_HbvL" role="2OqNvi">
+                          <ref role="2Oxat5" to="e9fh:5v03mDvyx5w" resolve="editorComponent" />
                         </node>
                       </node>
                     </node>
@@ -1599,13 +1599,13 @@
               <node concept="3cpWs8" id="5v03mDvzeSi" role="3cqZAp">
                 <node concept="3cpWsn" id="5v03mDvzeSj" role="3cpWs9">
                   <property role="TrG5h" value="moduleChoiceChangedEvent" />
-                  <node concept="3uibUv" id="5v03mDvzfUP" role="1tU5fm">
-                    <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                  <node concept="3uibUv" id="4fwRAB_HbUb" role="1tU5fm">
+                    <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
                   </node>
                   <node concept="1eOMI4" id="5v03mDvzeSl" role="33vP2m">
                     <node concept="10QFUN" id="5v03mDvzeSm" role="1eOMHV">
-                      <node concept="3uibUv" id="5v03mDvzg0O" role="10QFUM">
-                        <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                      <node concept="3uibUv" id="4fwRAB_HbZx" role="10QFUM">
+                        <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
                       </node>
                       <node concept="37vLTw" id="5v03mDvzeSo" role="10QFUP">
                         <ref role="3cqZAo" node="1qBBslsatlw" resolve="event" />
@@ -1626,8 +1626,8 @@
                         <node concept="37vLTw" id="5v03mDvzeSv" role="2Oq$k0">
                           <ref role="3cqZAo" node="5v03mDvzeSj" resolve="moduleChoiceChangedEvent" />
                         </node>
-                        <node concept="2OwXpG" id="5v03mDvzgCW" role="2OqNvi">
-                          <ref role="2Oxat5" to="951u:5v03mDvyyQC" resolve="editorComponent" />
+                        <node concept="2OwXpG" id="4fwRAB_Hc5U" role="2OqNvi">
+                          <ref role="2Oxat5" to="e9fh:5v03mDvyyQC" resolve="editorComponent" />
                         </node>
                       </node>
                     </node>
@@ -2375,15 +2375,15 @@
         <property role="TrG5h" value="fragmentAddedEvents" />
         <property role="3TUv4t" value="false" />
         <node concept="_YKpA" id="5v03mDvzjFN" role="1tU5fm">
-          <node concept="3uibUv" id="5v03mDvzp6f" role="_ZDj9">
-            <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+          <node concept="3uibUv" id="4fwRAB_HcnE" role="_ZDj9">
+            <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
           </node>
         </node>
         <node concept="3Tm6S6" id="5v03mDvzjFP" role="1B3o_S" />
         <node concept="2ShNRf" id="5v03mDvzjFQ" role="33vP2m">
           <node concept="2Jqq0_" id="5v03mDvzjFR" role="2ShVmc">
-            <node concept="3uibUv" id="5v03mDvzpbo" role="HW$YZ">
-              <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+            <node concept="3uibUv" id="4fwRAB_Hc_9" role="HW$YZ">
+              <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
             </node>
           </node>
         </node>
@@ -2394,15 +2394,15 @@
         <property role="TrG5h" value="moduleChoiceChangedEvents" />
         <property role="3TUv4t" value="false" />
         <node concept="_YKpA" id="5v03mDvzmm4" role="1tU5fm">
-          <node concept="3uibUv" id="5v03mDvzpha" role="_ZDj9">
-            <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+          <node concept="3uibUv" id="4fwRAB_HcKd" role="_ZDj9">
+            <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
           </node>
         </node>
         <node concept="3Tm6S6" id="5v03mDvzmm6" role="1B3o_S" />
         <node concept="2ShNRf" id="5v03mDvzmm7" role="33vP2m">
           <node concept="2Jqq0_" id="5v03mDvzmm8" role="2ShVmc">
-            <node concept="3uibUv" id="5v03mDvzpmh" role="HW$YZ">
-              <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+            <node concept="3uibUv" id="4fwRAB_HcXO" role="HW$YZ">
+              <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
             </node>
           </node>
         </node>
@@ -3095,8 +3095,8 @@
         <node concept="3cqZAl" id="5v03mDvzuxM" role="3clF45" />
         <node concept="37vLTG" id="5v03mDvzH$V" role="3clF46">
           <property role="TrG5h" value="event" />
-          <node concept="3uibUv" id="5v03mDvzH$U" role="1tU5fm">
-            <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+          <node concept="3uibUv" id="4fwRAB_HbDS" role="1tU5fm">
+            <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
           </node>
         </node>
       </node>
@@ -3135,8 +3135,8 @@
         <node concept="3cqZAl" id="5v03mDvzA2I" role="3clF45" />
         <node concept="37vLTG" id="5v03mDvzK5w" role="3clF46">
           <property role="TrG5h" value="event" />
-          <node concept="3uibUv" id="5v03mDvzK5v" role="1tU5fm">
-            <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+          <node concept="3uibUv" id="4fwRAB_HcgW" role="1tU5fm">
+            <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
           </node>
         </node>
       </node>
@@ -4763,8 +4763,8 @@
                     <node concept="2GrUjf" id="5v03mDv$G95" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="5v03mDv$FRS" resolve="fragmentAddedEvent" />
                     </node>
-                    <node concept="2OwXpG" id="5v03mDv$Gft" role="2OqNvi">
-                      <ref role="2Oxat5" to="951u:2tJHIt1f8L1" resolve="FragmentID" />
+                    <node concept="2OwXpG" id="4fwRAB_Hd8L" role="2OqNvi">
+                      <ref role="2Oxat5" to="e9fh:2tJHIt1f8L1" resolve="FragmentID" />
                     </node>
                   </node>
                 </node>
@@ -4788,24 +4788,24 @@
                               <node concept="2GrUjf" id="5v03mDv_6VM" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="5v03mDv$FRS" resolve="fragmentAddedEvent" />
                               </node>
-                              <node concept="2OwXpG" id="5v03mDv_79E" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f8L1" resolve="FragmentID" />
+                              <node concept="2OwXpG" id="4fwRAB_HdaV" role="2OqNvi">
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f8L1" resolve="FragmentID" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_7IH" role="37wK5m">
                               <node concept="2GrUjf" id="5v03mDv_7o9" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="5v03mDv$FRS" resolve="fragmentAddedEvent" />
                               </node>
-                              <node concept="2OwXpG" id="5v03mDv_7R_" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f89i" resolve="parentType" />
+                              <node concept="2OwXpG" id="4fwRAB_HdiZ" role="2OqNvi">
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f89i" resolve="parentType" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_8fm" role="37wK5m">
                               <node concept="2GrUjf" id="5v03mDv_877" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="5v03mDv$FRS" resolve="fragmentAddedEvent" />
                               </node>
-                              <node concept="2OwXpG" id="5v03mDv_8oL" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f8tN" resolve="parentID" />
+                              <node concept="2OwXpG" id="4fwRAB_Hdrl" role="2OqNvi">
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f8tN" resolve="parentID" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_99$" role="37wK5m">
@@ -4813,7 +4813,7 @@
                                 <node concept="2GrUjf" id="5v03mDv_8CN" role="2Oq$k0">
                                   <ref role="2Gs0qQ" node="5v03mDv$FRS" resolve="fragmentAddedEvent" />
                                 </node>
-                                <node concept="2OwXpG" id="5v03mDv_8TN" role="2OqNvi">
+                                <node concept="2OwXpG" id="4fwRAB_Hm5V" role="2OqNvi">
                                   <ref role="2Oxat5" to="e9fh:gMSQjqYWBU" resolve="date" />
                                 </node>
                               </node>
@@ -4872,7 +4872,7 @@
                       <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                     </node>
                     <node concept="2OwXpG" id="5v03mDv_EHq" role="2OqNvi">
-                      <ref role="2Oxat5" to="951u:2tJHIt1f61D" resolve="fragmentID" />
+                      <ref role="2Oxat5" to="e9fh:2tJHIt1f61D" resolve="fragmentID" />
                     </node>
                   </node>
                 </node>
@@ -4897,7 +4897,7 @@
                                 <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                               </node>
                               <node concept="2OwXpG" id="5v03mDv_OTF" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f5l6" resolve="oldModuleName" />
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f5l6" resolve="oldModuleName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_PfR" role="37wK5m">
@@ -4905,7 +4905,7 @@
                                 <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                               </node>
                               <node concept="2OwXpG" id="5v03mDv_PoI" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f5Fj" resolve="newModuleName" />
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f5Fj" resolve="newModuleName" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_PKo" role="37wK5m">
@@ -4913,7 +4913,7 @@
                                 <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                               </node>
                               <node concept="2OwXpG" id="5v03mDv_PTT" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f61D" resolve="fragmentID" />
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f61D" resolve="fragmentID" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_Qhp" role="37wK5m">
@@ -4921,7 +4921,7 @@
                                 <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                               </node>
                               <node concept="2OwXpG" id="5v03mDv_QKC" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f6oq" resolve="parentType" />
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f6oq" resolve="parentType" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_R1u" role="37wK5m">
@@ -4929,7 +4929,7 @@
                                 <ref role="2Gs0qQ" node="5v03mDv_i7c" resolve="moduleChoiceChangedEvent" />
                               </node>
                               <node concept="2OwXpG" id="5v03mDv_Rb3" role="2OqNvi">
-                                <ref role="2Oxat5" to="951u:2tJHIt1f6JT" resolve="parentID" />
+                                <ref role="2Oxat5" to="e9fh:2tJHIt1f6JT" resolve="parentID" />
                               </node>
                             </node>
                             <node concept="2OqwBi" id="5v03mDv_RXr" role="37wK5m">
@@ -6407,8 +6407,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="2tJHIt1eVqG" role="1B3o_S" />
       <node concept="_YKpA" id="2tJHIt1eVHf" role="1tU5fm">
-        <node concept="3uibUv" id="2tJHIt1eVWY" role="_ZDj9">
-          <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+        <node concept="3uibUv" id="4fwRAB_HtwD" role="_ZDj9">
+          <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
         </node>
       </node>
     </node>
@@ -6419,8 +6419,8 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="2tJHIt1eX1p" role="1B3o_S" />
       <node concept="_YKpA" id="2tJHIt1eX1q" role="1tU5fm">
-        <node concept="3uibUv" id="2tJHIt1eXmA" role="_ZDj9">
-          <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+        <node concept="3uibUv" id="4fwRAB_HtQ2" role="_ZDj9">
+          <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
         </node>
       </node>
     </node>
@@ -6454,8 +6454,8 @@
           <node concept="37vLTI" id="2tJHIt1eW$F" role="3clFbG">
             <node concept="2ShNRf" id="2tJHIt1eWE0" role="37vLTx">
               <node concept="2Jqq0_" id="2tJHIt1eWDY" role="2ShVmc">
-                <node concept="3uibUv" id="2tJHIt1eWDZ" role="HW$YZ">
-                  <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+                <node concept="3uibUv" id="4fwRAB_Hu9_" role="HW$YZ">
+                  <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
                 </node>
               </node>
             </node>
@@ -6468,8 +6468,8 @@
           <node concept="37vLTI" id="2tJHIt1eXHV" role="3clFbG">
             <node concept="2ShNRf" id="2tJHIt1eXNh" role="37vLTx">
               <node concept="2Jqq0_" id="2tJHIt1eXKm" role="2ShVmc">
-                <node concept="3uibUv" id="2tJHIt1eXKn" role="HW$YZ">
-                  <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                <node concept="3uibUv" id="4fwRAB_Hucx" role="HW$YZ">
+                  <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
                 </node>
               </node>
             </node>
@@ -6554,13 +6554,13 @@
             <node concept="3cpWs8" id="2tJHIt1eYwD" role="3cqZAp">
               <node concept="3cpWsn" id="2tJHIt1eYwE" role="3cpWs9">
                 <property role="TrG5h" value="fragEv" />
-                <node concept="3uibUv" id="2tJHIt1eYwF" role="1tU5fm">
-                  <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+                <node concept="3uibUv" id="4fwRAB_HuyA" role="1tU5fm">
+                  <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
                 </node>
                 <node concept="1eOMI4" id="2tJHIt1eYxz" role="33vP2m">
                   <node concept="10QFUN" id="2tJHIt1eYxw" role="1eOMHV">
-                    <node concept="3uibUv" id="2tJHIt1eYxQ" role="10QFUM">
-                      <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+                    <node concept="3uibUv" id="4fwRAB_Hu_K" role="10QFUM">
+                      <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
                     </node>
                     <node concept="37vLTw" id="2tJHIt1eYyk" role="10QFUP">
                       <ref role="3cqZAo" node="20ujiCwFzV0" resolve="event" />
@@ -6594,7 +6594,7 @@
             <node concept="liA8E" id="2tJHIt1eYjo" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
               <node concept="3VsKOn" id="2tJHIt1eYtL" role="37wK5m">
-                <ref role="3VsUkX" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+                <ref role="3VsUkX" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
               </node>
             </node>
           </node>
@@ -6604,13 +6604,13 @@
             <node concept="3cpWs8" id="2tJHIt1eZpS" role="3cqZAp">
               <node concept="3cpWsn" id="2tJHIt1eZpT" role="3cpWs9">
                 <property role="TrG5h" value="mCEv" />
-                <node concept="3uibUv" id="2tJHIt1eZGI" role="1tU5fm">
-                  <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                <node concept="3uibUv" id="4fwRAB_HuG_" role="1tU5fm">
+                  <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
                 </node>
                 <node concept="1eOMI4" id="2tJHIt1eZpV" role="33vP2m">
                   <node concept="10QFUN" id="2tJHIt1eZpW" role="1eOMHV">
-                    <node concept="3uibUv" id="2tJHIt1eZJG" role="10QFUM">
-                      <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                    <node concept="3uibUv" id="4fwRAB_HuJJ" role="10QFUM">
+                      <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
                     </node>
                     <node concept="37vLTw" id="2tJHIt1eZpY" role="10QFUP">
                       <ref role="3cqZAo" node="20ujiCwFzV0" resolve="event" />
@@ -6644,7 +6644,7 @@
             <node concept="liA8E" id="2tJHIt1eZq8" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
               <node concept="3VsKOn" id="2tJHIt1eZq9" role="37wK5m">
-                <ref role="3VsUkX" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+                <ref role="3VsUkX" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
               </node>
             </node>
           </node>
@@ -6789,8 +6789,8 @@
                   <node concept="37vLTw" id="43drR01PfJb" role="2Oq$k0">
                     <ref role="3cqZAo" node="2tJHIt1fa07" resolve="ev" />
                   </node>
-                  <node concept="2OwXpG" id="43drR01P$50" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f8L1" resolve="FragmentID" />
+                  <node concept="2OwXpG" id="4fwRAB_HuZS" role="2OqNvi">
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f8L1" resolve="FragmentID" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="43drR01PfAS" role="37vLTJ">
@@ -6809,8 +6809,8 @@
                   <node concept="37vLTw" id="7nq63$lwl0y" role="2Oq$k0">
                     <ref role="3cqZAo" node="2tJHIt1fa07" resolve="ev" />
                   </node>
-                  <node concept="2OwXpG" id="7nq63$lwl5Q" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f8tN" resolve="parentID" />
+                  <node concept="2OwXpG" id="4fwRAB_Hv4E" role="2OqNvi">
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f8tN" resolve="parentID" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7nq63$lwkVx" role="37vLTJ">
@@ -6829,8 +6829,8 @@
                   <node concept="37vLTw" id="7nq63$lwle2" role="2Oq$k0">
                     <ref role="3cqZAo" node="2tJHIt1fa07" resolve="ev" />
                   </node>
-                  <node concept="2OwXpG" id="7nq63$lwloC" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f89i" resolve="parentType" />
+                  <node concept="2OwXpG" id="4fwRAB_Hv22" role="2OqNvi">
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f89i" resolve="parentType" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7nq63$lwl8_" role="37vLTJ">
@@ -6889,8 +6889,8 @@
           </node>
           <node concept="3cpWsn" id="2tJHIt1fa07" role="1Duv9x">
             <property role="TrG5h" value="ev" />
-            <node concept="3uibUv" id="2tJHIt1fc4h" role="1tU5fm">
-              <ref role="3uigEE" to="951u:2tJHIt1d72t" resolve="MonitoringSNodeChangeListener.FragmentAdded_Event" />
+            <node concept="3uibUv" id="4fwRAB_HuNL" role="1tU5fm">
+              <ref role="3uigEE" to="e9fh:6crMYJo$23h" resolve="FragmentAdded_Event" />
             </node>
           </node>
           <node concept="37vLTw" id="2tJHIt1fcO2" role="1DdaDG">
@@ -6919,7 +6919,7 @@
                     <ref role="3cqZAo" node="2tJHIt1fbdG" resolve="ev" />
                   </node>
                   <node concept="2OwXpG" id="2tJHIt1furH" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f61D" resolve="fragmentID" />
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f61D" resolve="fragmentID" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="2tJHIt1fuhR" role="37vLTJ">
@@ -6947,7 +6947,7 @@
                     <ref role="3cqZAo" node="2tJHIt1fbdG" resolve="ev" />
                   </node>
                   <node concept="2OwXpG" id="2tJHIt1fuM6" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f5Fj" resolve="newModuleName" />
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f5Fj" resolve="newModuleName" />
                   </node>
                 </node>
               </node>
@@ -6959,7 +6959,7 @@
                     <ref role="3cqZAo" node="2tJHIt1fbdG" resolve="ev" />
                   </node>
                   <node concept="2OwXpG" id="2tJHIt1fuYr" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f5l6" resolve="oldModuleName" />
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f5l6" resolve="oldModuleName" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="2tJHIt1fuOy" role="37vLTJ">
@@ -6979,7 +6979,7 @@
                     <ref role="3cqZAo" node="2tJHIt1fbdG" resolve="ev" />
                   </node>
                   <node concept="2OwXpG" id="2tJHIt1fvbu" role="2OqNvi">
-                    <ref role="2Oxat5" to="951u:2tJHIt1f6JT" resolve="parentID" />
+                    <ref role="2Oxat5" to="e9fh:2tJHIt1f6JT" resolve="parentID" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="2tJHIt1fv1_" role="37vLTJ">
@@ -7038,8 +7038,8 @@
           </node>
           <node concept="3cpWsn" id="2tJHIt1fbdG" role="1Duv9x">
             <property role="TrG5h" value="ev" />
-            <node concept="3uibUv" id="2tJHIt1fcht" role="1tU5fm">
-              <ref role="3uigEE" to="951u:2tJHIt1d4UG" resolve="MonitoringSNodeChangeListener.ModuleChoiceChanged_Event" />
+            <node concept="3uibUv" id="4fwRAB_Hv6P" role="1tU5fm">
+              <ref role="3uigEE" to="e9fh:6crMYJo$iih" resolve="ModuleChoiceChanged_Event" />
             </node>
           </node>
           <node concept="37vLTw" id="2tJHIt1fcuX" role="1DdaDG">
