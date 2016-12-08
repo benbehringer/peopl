@@ -4569,72 +4569,108 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="22lmx$" id="4kUGPYaUPQU" role="3clFbw">
-                      <node concept="22lmx$" id="4kUGPYaUOAx" role="3uHU7B">
-                        <node concept="22lmx$" id="4kUGPYaUNPo" role="3uHU7B">
-                          <node concept="2OqwBi" id="6e8BFl7kXwD" role="3uHU7B">
-                            <node concept="2OqwBi" id="6e8BFl7kXiK" role="2Oq$k0">
-                              <node concept="2GrUjf" id="6e8BFl7kXa0" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
+                    <node concept="22lmx$" id="6zf7cPkj87X" role="3clFbw">
+                      <node concept="22lmx$" id="6zf7cPkj5y$" role="3uHU7B">
+                        <node concept="22lmx$" id="4kUGPYaUPQU" role="3uHU7B">
+                          <node concept="22lmx$" id="4kUGPYaUOAx" role="3uHU7B">
+                            <node concept="22lmx$" id="4kUGPYaUNPo" role="3uHU7B">
+                              <node concept="2OqwBi" id="6e8BFl7kXwD" role="3uHU7B">
+                                <node concept="2OqwBi" id="6e8BFl7kXiK" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="6e8BFl7kXa0" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
+                                  </node>
+                                  <node concept="2OwXpG" id="6e8BFl7kXsJ" role="2OqNvi">
+                                    <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="6e8BFl7kXMA" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <node concept="Xl_RD" id="4kUGPYaUNgM" role="37wK5m">
+                                    <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveDown_Action" />
+                                  </node>
+                                </node>
                               </node>
-                              <node concept="2OwXpG" id="6e8BFl7kXsJ" role="2OqNvi">
-                                <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
+                              <node concept="2OqwBi" id="4kUGPYaUO0b" role="3uHU7w">
+                                <node concept="2OqwBi" id="4kUGPYaUO0c" role="2Oq$k0">
+                                  <node concept="2GrUjf" id="4kUGPYaUO0d" role="2Oq$k0">
+                                    <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
+                                  </node>
+                                  <node concept="2OwXpG" id="4kUGPYaUO0e" role="2OqNvi">
+                                    <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="4kUGPYaUO0f" role="2OqNvi">
+                                  <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                  <node concept="Xl_RD" id="4kUGPYaUO0g" role="37wK5m">
+                                    <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveUp_Action" />
+                                  </node>
+                                </node>
                               </node>
                             </node>
-                            <node concept="liA8E" id="6e8BFl7kXMA" role="2OqNvi">
-                              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                              <node concept="Xl_RD" id="4kUGPYaUNgM" role="37wK5m">
-                                <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveDown_Action" />
+                            <node concept="2OqwBi" id="4kUGPYaUOKP" role="3uHU7w">
+                              <node concept="2OqwBi" id="4kUGPYaUOKQ" role="2Oq$k0">
+                                <node concept="2GrUjf" id="4kUGPYaUOKR" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
+                                </node>
+                                <node concept="2OwXpG" id="4kUGPYaUOKS" role="2OqNvi">
+                                  <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="4kUGPYaUOKT" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                                <node concept="Xl_RD" id="4kUGPYaUOKU" role="37wK5m">
+                                  <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+                                </node>
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="4kUGPYaUO0b" role="3uHU7w">
-                            <node concept="2OqwBi" id="4kUGPYaUO0c" role="2Oq$k0">
-                              <node concept="2GrUjf" id="4kUGPYaUO0d" role="2Oq$k0">
+                          <node concept="2OqwBi" id="4kUGPYaUQ2a" role="3uHU7w">
+                            <node concept="2OqwBi" id="4kUGPYaUQ2b" role="2Oq$k0">
+                              <node concept="2GrUjf" id="4kUGPYaUQ2c" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
                               </node>
-                              <node concept="2OwXpG" id="4kUGPYaUO0e" role="2OqNvi">
+                              <node concept="2OwXpG" id="4kUGPYaUQ2d" role="2OqNvi">
                                 <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
                               </node>
                             </node>
-                            <node concept="liA8E" id="4kUGPYaUO0f" role="2OqNvi">
+                            <node concept="liA8E" id="4kUGPYaUQ2e" role="2OqNvi">
                               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                              <node concept="Xl_RD" id="4kUGPYaUO0g" role="37wK5m">
-                                <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveUp_Action" />
+                              <node concept="Xl_RD" id="4kUGPYaUQ2f" role="37wK5m">
+                                <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.Backspace_Action" />
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="4kUGPYaUOKP" role="3uHU7w">
-                          <node concept="2OqwBi" id="4kUGPYaUOKQ" role="2Oq$k0">
-                            <node concept="2GrUjf" id="4kUGPYaUOKR" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6zf7cPkiUl2" role="3uHU7w">
+                          <node concept="2OqwBi" id="6zf7cPkiTJL" role="2Oq$k0">
+                            <node concept="2GrUjf" id="6zf7cPkiTue" role="2Oq$k0">
                               <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
                             </node>
-                            <node concept="2OwXpG" id="4kUGPYaUOKS" role="2OqNvi">
+                            <node concept="2OwXpG" id="6zf7cPkiU2$" role="2OqNvi">
                               <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
                             </node>
                           </node>
-                          <node concept="liA8E" id="4kUGPYaUOKT" role="2OqNvi">
+                          <node concept="liA8E" id="6zf7cPkiUDt" role="2OqNvi">
                             <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                            <node concept="Xl_RD" id="4kUGPYaUOKU" role="37wK5m">
-                              <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+                            <node concept="Xl_RD" id="6zf7cPkiUW4" role="37wK5m">
+                              <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveRight_Action" />
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="4kUGPYaUQ2a" role="3uHU7w">
-                        <node concept="2OqwBi" id="4kUGPYaUQ2b" role="2Oq$k0">
-                          <node concept="2GrUjf" id="4kUGPYaUQ2c" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6zf7cPkiWd_" role="3uHU7w">
+                        <node concept="2OqwBi" id="6zf7cPkiWdA" role="2Oq$k0">
+                          <node concept="2GrUjf" id="6zf7cPkiWdB" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="23czwoRWr82" resolve="actionEvent" />
                           </node>
-                          <node concept="2OwXpG" id="4kUGPYaUQ2d" role="2OqNvi">
+                          <node concept="2OwXpG" id="6zf7cPkiWdC" role="2OqNvi">
                             <ref role="2Oxat5" to="fchx:23czwoRVO$W" resolve="myId" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="4kUGPYaUQ2e" role="2OqNvi">
+                        <node concept="liA8E" id="6zf7cPkiWdD" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
-                          <node concept="Xl_RD" id="4kUGPYaUQ2f" role="37wK5m">
-                            <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.Backspace_Action" />
+                          <node concept="Xl_RD" id="6zf7cPkiWdE" role="37wK5m">
+                            <property role="Xl_RC" value="jetbrains.mps.ide.editor.actions.MoveLeft_Action" />
                           </node>
                         </node>
                       </node>
