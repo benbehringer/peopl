@@ -36,7 +36,9 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn" />
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
@@ -153,6 +155,29 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="D8vYGmuxfO">
+    <property role="3GE5qa" value="Fragment" />
+    <property role="TrG5h" value="Module_Else_Hiding" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="D8vYGmuxA9" role="2wV5jI">
+      <property role="3F0ifm" value="" />
+      <node concept="pkWqt" id="D8vYGmuxAc" role="pqm2j">
+        <node concept="3clFbS" id="D8vYGmuxAd" role="2VODD2">
+          <node concept="3clFbF" id="D8vYGmuxAS" role="3cqZAp">
+            <node concept="3clFbT" id="D8vYGmuxAR" role="3clFbG">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="D8vYGmuxA5" role="1PM95z">
+      <ref role="1PE7su" to="nbbm:M7wQbfPuiL" resolve="Module_Else_annotative" />
+    </node>
+    <node concept="2aJ2om" id="D8vYGmuxA7" role="3XTboT">
+      <ref role="2$4xQ3" to="nbbm:1jQ1A8E0r3v" resolve="hiding" />
     </node>
   </node>
 </model>
