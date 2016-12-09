@@ -124,7 +124,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="0.6.7" />
+          <property role="3MwjfP" value="0.6.12" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
@@ -1019,7 +1019,7 @@
         </node>
         <node concept="1SiIV0" id="6Y_AHW5bqHo" role="3bR37C">
           <node concept="3bR9La" id="6Y_AHW5bqHp" role="1SiIV1">
-            <property role="3bR36h" value="false" />
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
