@@ -76,6 +76,7 @@
     <import index="7bx7" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.workbench.action(MPS.Platform/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="a2pm" ref="r:3788c327-0d10-43eb-95a4-e201485a14f7(de.htwsaar.peopl.utils.interactionMonitoring.plugin)" />
+    <import index="zwau" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.hintsSettings(MPS.Editor/)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -376,6 +377,9 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
+      <concept id="1226511727824" name="jetbrains.mps.baseLanguage.collections.structure.SetType" flags="in" index="2hMVRd">
+        <child id="1226511765987" name="elementType" index="2hN53Y" />
+      </concept>
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -6680,6 +6684,21 @@
           </node>
         </node>
       </node>
+      <node concept="312cEg" id="6JrnpUWN0Xm" role="jymVt">
+        <property role="34CwA1" value="true" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="mySystemEditorHints" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm1VV" id="6JrnpUWN0hJ" role="1B3o_S" />
+        <node concept="_YKpA" id="6JrnpUWN0SN" role="1tU5fm">
+          <node concept="17QB3L" id="6JrnpUWN0Xj" role="_ZDj9" />
+        </node>
+        <node concept="2ShNRf" id="6JrnpUWN1zf" role="33vP2m">
+          <node concept="Tc6Ow" id="6JrnpUWNHj$" role="2ShVmc">
+            <node concept="17QB3L" id="6JrnpUWNIpa" role="HW$YZ" />
+          </node>
+        </node>
+      </node>
       <node concept="312cEg" id="5jSU_dFQ1HL" role="jymVt">
         <property role="34CwA1" value="true" />
         <property role="eg7rD" value="false" />
@@ -7436,6 +7455,70 @@
                         </node>
                       </node>
                       <node concept="3clFbH" id="6sEBxxdpvW_" role="3cqZAp" />
+                      <node concept="3cpWs8" id="6JrnpUWNJ0y" role="3cqZAp">
+                        <node concept="3cpWsn" id="6JrnpUWNJ0_" role="3cpWs9">
+                          <property role="TrG5h" value="systemEditorHints" />
+                          <node concept="2hMVRd" id="6JrnpUWNJ0u" role="1tU5fm">
+                            <node concept="3uibUv" id="6JrnpUWNL67" role="2hN53Y">
+                              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="6JrnpUWNKWd" role="33vP2m">
+                            <node concept="2OqwBi" id="6JrnpUWNKJi" role="2Oq$k0">
+                              <node concept="2YIFZM" id="6JrnpUWNK69" role="2Oq$k0">
+                                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getInstance(com.intellij.openapi.project.Project):jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent" resolve="getInstance" />
+                                <ref role="1Pybhc" to="zwau:~ConceptEditorHintSettingsComponent" resolve="ConceptEditorHintSettingsComponent" />
+                                <node concept="2OqwBi" id="6JrnpUWNKsH" role="37wK5m">
+                                  <node concept="37vLTw" id="6JrnpUWNKjO" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="1K$tCF0_3px" resolve="project" />
+                                  </node>
+                                  <node concept="liA8E" id="6JrnpUWNKGU" role="2OqNvi">
+                                    <ref role="37wK5l" to="z1c4:~MPSProject.getProject():com.intellij.openapi.project.Project" resolve="getProject" />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="6JrnpUWNKUU" role="2OqNvi">
+                                <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent.getState():jetbrains.mps.nodeEditor.hintsSettings.ConceptEditorHintSettingsComponent$HintsState" resolve="getState" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6JrnpUWNKZ1" role="2OqNvi">
+                              <ref role="37wK5l" to="zwau:~ConceptEditorHintSettingsComponent$HintsState.getEnabledHints():java.util.Set" resolve="getEnabledHints" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbJ" id="6JrnpUWNLLg" role="3cqZAp">
+                        <node concept="3clFbS" id="6JrnpUWNLLi" role="3clFbx">
+                          <node concept="2Gpval" id="6JrnpUWNOha" role="3cqZAp">
+                            <node concept="2GrKxI" id="6JrnpUWNOhc" role="2Gsz3X">
+                              <property role="TrG5h" value="hint" />
+                            </node>
+                            <node concept="37vLTw" id="6JrnpUWNOuw" role="2GsD0m">
+                              <ref role="3cqZAo" node="6JrnpUWNJ0_" resolve="systemEditorHints" />
+                            </node>
+                            <node concept="3clFbS" id="6JrnpUWNOhg" role="2LFqv$">
+                              <node concept="3clFbF" id="6JrnpUWNOWH" role="3cqZAp">
+                                <node concept="2OqwBi" id="6JrnpUWNPbF" role="3clFbG">
+                                  <node concept="37vLTw" id="6JrnpUWNOWG" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6JrnpUWN0Xm" resolve="mySystemEditorHints" />
+                                  </node>
+                                  <node concept="TSZUe" id="6JrnpUWNPPx" role="2OqNvi">
+                                    <node concept="2GrUjf" id="6JrnpUWNPZh" role="25WWJ7">
+                                      <ref role="2Gs0qQ" node="6JrnpUWNOhc" resolve="hint" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="6JrnpUWNM_i" role="3clFbw">
+                          <node concept="37vLTw" id="6JrnpUWNMoj" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6JrnpUWNJ0_" resolve="systemEditorHints" />
+                          </node>
+                          <node concept="3GX2aA" id="6JrnpUWNN3L" role="2OqNvi" />
+                        </node>
+                      </node>
                       <node concept="1X3_iC" id="3pHT5ii4tmx" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
