@@ -32,6 +32,7 @@
     <import index="zyr2" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.inspector(MPS.Editor/)" />
     <import index="jhqu" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor.actions(MPS.Editor/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
+    <import index="a2pm" ref="r:3788c327-0d10-43eb-95a4-e201485a14f7(de.htwsaar.peopl.utils.interactionMonitoring.plugin)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -128,6 +129,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3513,6 +3515,36 @@
             <node concept="3clFbS" id="4VdT7FDzHqN" role="3clFbx">
               <node concept="3clFbJ" id="2KTrN7Rp$sH" role="3cqZAp">
                 <node concept="3clFbS" id="2KTrN7Rp$sJ" role="3clFbx">
+                  <node concept="3clFbJ" id="3qZF7kJBOr5" role="3cqZAp">
+                    <node concept="3clFbS" id="3qZF7kJBOr7" role="3clFbx">
+                      <node concept="3clFbF" id="3qZF7kJBPrF" role="3cqZAp">
+                        <node concept="37vLTI" id="3qZF7kJBPv$" role="3clFbG">
+                          <node concept="2OqwBi" id="3qZF7kJBPAZ" role="37vLTx">
+                            <node concept="37vLTw" id="3qZF7kJBPzK" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6nmR8pwMsab" resolve="createEvent" />
+                            </node>
+                            <node concept="2OwXpG" id="3qZF7kJBPEY" role="2OqNvi">
+                              <ref role="2Oxat5" to="fchx:1K$tCF0$zng" resolve="rootNodeName" />
+                            </node>
+                          </node>
+                          <node concept="37vLTw" id="3qZF7kJBPrD" role="37vLTJ">
+                            <ref role="3cqZAo" node="6CwTPwGsWQm" resolve="myRootNodeName" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="3qZF7kJBPeb" role="3clFbw">
+                      <node concept="2OqwBi" id="3qZF7kJBP8b" role="2Oq$k0">
+                        <node concept="37vLTw" id="3qZF7kJBP5H" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6nmR8pwMsab" resolve="createEvent" />
+                        </node>
+                        <node concept="2OwXpG" id="3qZF7kJBPai" role="2OqNvi">
+                          <ref role="2Oxat5" to="fchx:1K$tCF0$zng" resolve="rootNodeName" />
+                        </node>
+                      </node>
+                      <node concept="17RvpY" id="3qZF7kJBPk$" role="2OqNvi" />
+                    </node>
+                  </node>
                   <node concept="3clFbJ" id="4VdT7FDzQtW" role="3cqZAp">
                     <node concept="3clFbS" id="4VdT7FDzQtY" role="3clFbx">
                       <node concept="3SKdUt" id="4VdT7FDzSaL" role="3cqZAp">
@@ -4404,6 +4436,11 @@
                       <ref role="2Oxat5" to="6oac:3Wg1kohlEtG" resolve="rootNodeId" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3SKdUt" id="6Jf2klvKlgF" role="3cqZAp">
+                <node concept="3SKdUq" id="6Jf2klvKlgH" role="3SKWNk">
+                  <property role="3SKdUp" value="get new rootNodeName" />
                 </node>
               </node>
               <node concept="3clFbF" id="6CwTPwGuUhb" role="3cqZAp">
