@@ -321,55 +321,57 @@
               <property role="3SKdUp" value="using &quot;containing root&quot; instead of the downcast getContainingRoot() returns null" />
             </node>
           </node>
-          <node concept="3clFbF" id="78DnH90TnhB" role="3cqZAp">
-            <node concept="22lmx$" id="3qO9G22r5l4" role="3clFbG">
-              <node concept="1eOMI4" id="3qO9G22r5nS" role="3uHU7w">
-                <node concept="1Wc70l" id="3qO9G22r62W" role="1eOMHV">
-                  <node concept="2OqwBi" id="3qO9G22r6$z" role="3uHU7w">
-                    <node concept="2OqwBi" id="3qO9G22r6m$" role="2Oq$k0">
-                      <node concept="2OqwBi" id="3qO9G22r6cT" role="2Oq$k0">
-                        <node concept="2O5UvJ" id="3qO9G22r665" role="2Oq$k0">
-                          <ref role="2O5UnU" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
+          <node concept="3clFbF" id="5kLXF7Tfg8j" role="3cqZAp">
+            <node concept="22lmx$" id="5kLXF7TfhVv" role="3clFbG">
+              <node concept="1eOMI4" id="5kLXF7TfhYH" role="3uHU7w">
+                <node concept="1Wc70l" id="5kLXF7Tfi$x" role="1eOMHV">
+                  <node concept="1eOMI4" id="5kLXF7TfiC7" role="3uHU7w">
+                    <node concept="2OqwBi" id="5kLXF7Tfjfo" role="1eOMHV">
+                      <node concept="2OqwBi" id="5kLXF7TfiZv" role="2Oq$k0">
+                        <node concept="2OqwBi" id="5kLXF7TfiP2" role="2Oq$k0">
+                          <node concept="2O5UvJ" id="5kLXF7TfiFZ" role="2Oq$k0">
+                            <ref role="2O5UnU" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
+                          </node>
+                          <node concept="SfwO_" id="5kLXF7TfiSP" role="2OqNvi" />
                         </node>
-                        <node concept="SfwO_" id="3qO9G22r6gR" role="2OqNvi" />
+                        <node concept="1uHKPH" id="5kLXF7Tfj6L" role="2OqNvi" />
                       </node>
-                      <node concept="1uHKPH" id="3qO9G22r6tn" role="2OqNvi" />
-                    </node>
-                    <node concept="liA8E" id="3qO9G22r6El" role="2OqNvi">
-                      <ref role="37wK5l" to="zur:18ZMEb5jVwg" resolve="isPeoplBlock" />
-                      <node concept="2OqwBi" id="3qO9G22r6I_" role="37wK5m">
-                        <node concept="2JrnkZ" id="3qO9G22r6IA" role="2Oq$k0">
-                          <node concept="3bvxqY" id="3qO9G22r6IB" role="2JrQYb" />
-                        </node>
-                        <node concept="liA8E" id="3qO9G22r6IC" role="2OqNvi">
-                          <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                      <node concept="liA8E" id="5kLXF7TfjmQ" role="2OqNvi">
+                        <ref role="37wK5l" to="zur:3qO9G22qZ3M" resolve="isPeoplEntryPoint" />
+                        <node concept="2OqwBi" id="5kLXF7TfjBD" role="37wK5m">
+                          <node concept="2JrnkZ" id="5kLXF7Tfjyh" role="2Oq$k0">
+                            <node concept="3bvxqY" id="5kLXF7Tfjrc" role="2JrQYb" />
+                          </node>
+                          <node concept="liA8E" id="5kLXF7TfjJx" role="2OqNvi">
+                            <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="3qO9G22r5K2" role="3uHU7B">
-                    <node concept="2OqwBi" id="3qO9G22r5AN" role="2Oq$k0">
-                      <node concept="2O5UvJ" id="3qO9G22r5rB" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5kLXF7Tfikb" role="3uHU7B">
+                    <node concept="2OqwBi" id="5kLXF7Tfi9B" role="2Oq$k0">
+                      <node concept="2O5UvJ" id="5kLXF7Tfi23" role="2Oq$k0">
                         <ref role="2O5UnU" to="zur:4CFdEKN9pwR" resolve="Ext_PeoplCoreExtension" />
                       </node>
-                      <node concept="SfwO_" id="3qO9G22r5EM" role="2OqNvi" />
+                      <node concept="SfwO_" id="5kLXF7Tfie3" role="2OqNvi" />
                     </node>
-                    <node concept="3GX2aA" id="3qO9G22r5UC" role="2OqNvi" />
+                    <node concept="3GX2aA" id="5kLXF7TfiuH" role="2OqNvi" />
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="78DnH90Tnlx" role="3uHU7B">
-                <node concept="2OqwBi" id="78DnH90Tnly" role="2Oq$k0">
-                  <node concept="2JrnkZ" id="78DnH90Tnlz" role="2Oq$k0">
-                    <node concept="3bvxqY" id="78DnH90Tnl$" role="2JrQYb" />
+              <node concept="2OqwBi" id="5kLXF7Tfglo" role="3uHU7B">
+                <node concept="2OqwBi" id="5kLXF7Tfgel" role="2Oq$k0">
+                  <node concept="2JrnkZ" id="5kLXF7TfgbL" role="2Oq$k0">
+                    <node concept="3bvxqY" id="5kLXF7Tfg8h" role="2JrQYb" />
                   </node>
-                  <node concept="liA8E" id="78DnH90Tnl_" role="2OqNvi">
+                  <node concept="liA8E" id="5kLXF7TfgiX" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SNode.getContainingRoot():org.jetbrains.mps.openapi.model.SNode" resolve="getContainingRoot" />
                   </node>
                 </node>
-                <node concept="liA8E" id="78DnH90TnlA" role="2OqNvi">
+                <node concept="liA8E" id="5kLXF7Tfgqn" role="2OqNvi">
                   <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
-                  <node concept="35c_gC" id="78DnH90TnlB" role="37wK5m">
+                  <node concept="35c_gC" id="5kLXF7Tfgs9" role="37wK5m">
                     <ref role="35c_gD" to="tpee:fz12cDA" resolve="ClassConcept" />
                   </node>
                 </node>
