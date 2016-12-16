@@ -55,6 +55,7 @@
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
+      <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoringAnalysis/de.htwsaar.peopl.utils.interactionMonitoringAnalysis.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.msd" folder="peopl.utils" />
     </projectModules>
   </component>
