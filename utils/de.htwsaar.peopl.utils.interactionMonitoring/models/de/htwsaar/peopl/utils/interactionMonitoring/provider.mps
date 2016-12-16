@@ -9340,6 +9340,9 @@
                   <node concept="2YIFZM" id="74dZucuiYW9" role="33vP2m">
                     <ref role="37wK5l" to="30sj:2WlJ6VKOSU7" resolve="findAllNodeEditorComponentInstances" />
                     <ref role="1Pybhc" to="30sj:6pQs8EFW44Y" resolve="PeoplEditorComponentHacks" />
+                    <node concept="37vLTw" id="5PhHqbsQDTc" role="37wK5m">
+                      <ref role="3cqZAo" node="7tbijWIVa1q" resolve="myProject" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -9432,6 +9435,9 @@
               <node concept="2YIFZM" id="3iOxTja8GR0" role="2Oq$k0">
                 <ref role="37wK5l" to="30sj:2WlJ6VKOSU7" resolve="findAllNodeEditorComponentInstances" />
                 <ref role="1Pybhc" to="30sj:6pQs8EFW44Y" resolve="PeoplEditorComponentHacks" />
+                <node concept="37vLTw" id="5PhHqbsQDBj" role="37wK5m">
+                  <ref role="3cqZAo" node="7tbijWIVa1q" resolve="myProject" />
+                </node>
               </node>
               <node concept="ANE8D" id="2MzOVbcysFG" role="2OqNvi" />
             </node>
@@ -9621,6 +9627,9 @@
             <node concept="2YIFZM" id="74dZucuiZdj" role="37vLTx">
               <ref role="37wK5l" to="30sj:2WlJ6VKOSU7" resolve="findAllNodeEditorComponentInstances" />
               <ref role="1Pybhc" to="30sj:6pQs8EFW44Y" resolve="PeoplEditorComponentHacks" />
+              <node concept="37vLTw" id="5PhHqbsQF3N" role="37wK5m">
+                <ref role="3cqZAo" node="7tbijWIVa1q" resolve="myProject" />
+              </node>
             </node>
           </node>
         </node>
