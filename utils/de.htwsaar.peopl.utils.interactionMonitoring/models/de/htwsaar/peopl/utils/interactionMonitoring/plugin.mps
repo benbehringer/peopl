@@ -45,6 +45,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="e9fh" ref="r:4bd0da13-bf88-4c83-b2c2-b886687e552b(de.htwsaar.peopl.utils.interactionMonitoring.events)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -1473,6 +1474,21 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3gdecUQgJHw" role="3cqZAp">
+          <node concept="2OqwBi" id="3gdecUQgJLh" role="3clFbG">
+            <node concept="37vLTw" id="3gdecUQgJHu" role="2Oq$k0">
+              <ref role="3cqZAo" node="6KsAI89ucA6" resolve="stop" />
+            </node>
+            <node concept="liA8E" id="3gdecUQgJPH" role="2OqNvi">
+              <ref role="37wK5l" to="6oac:PmX8cuttB3" resolve="setTimestamp" />
+              <node concept="2ShNRf" id="3gdecUQgJS$" role="37wK5m">
+                <node concept="1pGfFk" id="3gdecUQhnad" role="2ShVmc">
+                  <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6KsAI89ucAl" role="3cqZAp">
           <node concept="2OqwBi" id="6KsAI89ucAm" role="3clFbG">
             <node concept="2OqwBi" id="6KsAI89ucAn" role="2Oq$k0">
@@ -1938,6 +1954,21 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbF" id="3gdecUQhny_" role="3cqZAp">
+            <node concept="2OqwBi" id="3gdecUQhnTs" role="3clFbG">
+              <node concept="37vLTw" id="3gdecUQhnyz" role="2Oq$k0">
+                <ref role="3cqZAo" node="3sUM20rSQMp" resolve="startup" />
+              </node>
+              <node concept="liA8E" id="3gdecUQhnXf" role="2OqNvi">
+                <ref role="37wK5l" to="6oac:PmX8cuttB3" resolve="setTimestamp" />
+                <node concept="2ShNRf" id="3gdecUQho1c" role="37wK5m">
+                  <node concept="1pGfFk" id="3gdecUQhoV9" role="2ShVmc">
+                    <ref role="37wK5l" to="33ny:~Date.&lt;init&gt;()" resolve="Date" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="3clFbF" id="3sUM20rSoAm" role="3cqZAp">
             <node concept="2OqwBi" id="3sUM20rSoVw" role="3clFbG">
               <node concept="2OqwBi" id="3sUM20rSoMe" role="2Oq$k0">
@@ -1979,7 +2010,7 @@
     <node concept="3Tm1VV" id="1R0T08haYEY" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="5v03mDvy3go">
-    <property role="TrG5h" value="PeoplEditorHelper" />
+    <property role="TrG5h" value="PeoplDataKeyHelper" />
     <node concept="2tJIrI" id="5v03mDvy3gM" role="jymVt" />
     <node concept="2YIFZL" id="5v03mDvy9yX" role="jymVt">
       <property role="TrG5h" value="getCurrentEditorIfPossible" />
@@ -2085,6 +2116,50 @@
       <node concept="3Tm1VV" id="5v03mDvy9cn" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="5v03mDvy3gR" role="jymVt" />
+    <node concept="2YIFZL" id="6Jf2klv_Qqm" role="jymVt">
+      <property role="TrG5h" value="getCurrentMPSProject" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="6Jf2klv_Qqp" role="3clF47">
+        <node concept="3cpWs8" id="6Jf2klv_QAN" role="3cqZAp">
+          <node concept="3cpWsn" id="6Jf2klv_QAO" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="6Jf2klv_QAP" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+            </node>
+            <node concept="2OqwBi" id="6Jf2klv_QVU" role="33vP2m">
+              <node concept="10M0yZ" id="6Jf2klv_QUg" role="2Oq$k0">
+                <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+              </node>
+              <node concept="liA8E" id="6Jf2klv_R0E" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                <node concept="2OqwBi" id="6Jf2klv_R7G" role="37wK5m">
+                  <node concept="2YIFZM" id="6Jf2klv_R62" role="2Oq$k0">
+                    <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                    <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+                  </node>
+                  <node concept="liA8E" id="6Jf2klv_Rb7" role="2OqNvi">
+                    <ref role="37wK5l" to="ddhc:~DataManager.getDataContext():com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6Jf2klv_RiE" role="3cqZAp">
+          <node concept="37vLTw" id="6Jf2klv_Rmk" role="3cqZAk">
+            <ref role="3cqZAo" node="6Jf2klv_QAO" resolve="project" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6Jf2klv_Qeo" role="1B3o_S" />
+      <node concept="3uibUv" id="6Jf2klv_Qqf" role="3clF45">
+        <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6Jf2klv_Q9f" role="jymVt" />
     <node concept="3Tm1VV" id="5v03mDvy3gp" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="7mR4HHEZ0Iq">

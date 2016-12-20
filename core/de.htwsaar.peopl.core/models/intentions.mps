@@ -2169,7 +2169,7 @@
       <node concept="3clFbS" id="7p8XNs9nxAR" role="2VODD2">
         <node concept="3clFbF" id="7p8XNs9nxI7" role="3cqZAp">
           <node concept="Xl_RD" id="7p8XNs9nxI6" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL-&gt; New Interaction Module" />
+            <property role="Xl_RC" value="@PEoPL -&gt; New Interaction Module" />
           </node>
         </node>
       </node>
