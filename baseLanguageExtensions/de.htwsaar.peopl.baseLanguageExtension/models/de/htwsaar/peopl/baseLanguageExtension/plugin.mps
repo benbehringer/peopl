@@ -429,6 +429,32 @@
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <ref role="1Y3XeK" to="zur:4CFdEKN9mKc" resolve="IExt_PeoplCoreExtension" />
                 <node concept="2tJIrI" id="6HVbCMlaNsx" role="jymVt" />
+                <node concept="2tJIrI" id="4DW_hyhBv$I" role="jymVt" />
+                <node concept="3clFb_" id="4DW_hyhBwK7" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="2aFKle" value="false" />
+                  <property role="TrG5h" value="checkDependencies" />
+                  <node concept="3Tm1VV" id="4DW_hyhBwK9" role="1B3o_S" />
+                  <node concept="3cqZAl" id="4DW_hyhBwKa" role="3clF45" />
+                  <node concept="37vLTG" id="4DW_hyhBwKb" role="3clF46">
+                    <property role="TrG5h" value="sModule" />
+                    <node concept="3uibUv" id="4DW_hyhBwKc" role="1tU5fm">
+                      <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="4DW_hyhBwKe" role="3clF47">
+                    <node concept="3clFbF" id="4DW_hyhBzi8" role="3cqZAp">
+                      <node concept="2YIFZM" id="4DW_hyhBziJ" role="3clFbG">
+                        <ref role="37wK5l" to="6r0h:4T3c2fISHW1" resolve="checkDependencies" />
+                        <ref role="1Pybhc" to="6r0h:4T3c2fISG75" resolve="BaseLanguageDependencyChecker" />
+                        <node concept="37vLTw" id="4DW_hyhBzmd" role="37wK5m">
+                          <ref role="3cqZAo" node="4DW_hyhBwKb" resolve="sModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="4DW_hyhBvCw" role="jymVt" />
                 <node concept="3clFb_" id="475mIV35DZ1" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
