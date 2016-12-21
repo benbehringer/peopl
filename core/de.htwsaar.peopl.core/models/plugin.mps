@@ -510,6 +510,21 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4DW_hyhBug2" role="jymVt" />
+    <node concept="3clFb_" id="4DW_hyhBvbF" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="checkDependencies" />
+      <node concept="3clFbS" id="4DW_hyhBvbI" role="3clF47" />
+      <node concept="3Tm1VV" id="4DW_hyhBvbJ" role="1B3o_S" />
+      <node concept="3cqZAl" id="4DW_hyhBv86" role="3clF45" />
+      <node concept="37vLTG" id="4DW_hyhBvhn" role="3clF46">
+        <property role="TrG5h" value="sModule" />
+        <node concept="3uibUv" id="4DW_hyhBwfK" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="4ex3EegKFTj" role="jymVt" />
     <node concept="3clFb_" id="bDbX50YhZ$" role="jymVt">
       <property role="1EzhhJ" value="true" />
