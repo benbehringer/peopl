@@ -7853,6 +7853,28 @@
         <property role="TrG5h" value="b" />
         <node concept="3cpWsb" id="2_Atery5ePp" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="5HiLjH4DlIn" role="lGtFl">
+        <node concept="TZ5HA" id="5HiLjH4DlIo" role="TZ5H$">
+          <node concept="1dT_AC" id="5HiLjH4DlIp" role="1dT_Ay">
+            <property role="1dT_AB" value="Little Helper, to compare Long values and return a value specified by the comparable interface." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5HiLjH4DlIq" role="TUOzN">
+          <property role="TUZQ4" value="first Long" />
+          <node concept="zr_55" id="5HiLjH4DlIs" role="zr_5Q">
+            <ref role="zr_51" node="2_Atery5bxp" resolve="a" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5HiLjH4DlIt" role="TUOzN">
+          <property role="TUZQ4" value="second Long" />
+          <node concept="zr_55" id="5HiLjH4DlIv" role="zr_5Q">
+            <ref role="zr_51" node="2_Atery5ePj" resolve="b" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5HiLjH4DlIw" role="x79VK">
+          <property role="x79VB" value="negative value if a smaller, 0 if same value, positive value if a greater" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5PhHqbsTYPt" role="jymVt" />
     <node concept="3clFb_" id="5FsHvZ6TjcF" role="jymVt">
@@ -11900,6 +11922,22 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="5HiLjH4DgcB" role="lGtFl">
+        <node concept="TZ5HA" id="5HiLjH4DgcC" role="TZ5H$">
+          <node concept="1dT_AC" id="5HiLjH4DgcD" role="1dT_Ay">
+            <property role="1dT_AB" value="Removes unncessary Generic_ActionEvents from a given list of Generic_ActionEvents." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5HiLjH4DgcE" role="TUOzN">
+          <property role="TUZQ4" value="given list of Generic_ActionEvents" />
+          <node concept="zr_55" id="5HiLjH4DgcG" role="zr_5Q">
+            <ref role="zr_51" node="7a7KmMnbLFZ" resolve="sourceList" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5HiLjH4DgcH" role="x79VK">
+          <property role="x79VB" value="new list without the filtered events" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="mIJqkTlZJW" role="jymVt" />
     <node concept="3clFb_" id="4Mq2JDk9LFG" role="jymVt">
@@ -12069,6 +12107,22 @@
         <property role="TrG5h" value="editorComponent" />
         <node concept="3uibUv" id="4Mq2JDk9PuY" role="1tU5fm">
           <ref role="3uigEE" to="6oac:1ZljV50F1YN" resolve="ComponentHandler_Entry" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5HiLjH4DbJD" role="lGtFl">
+        <node concept="TZ5HA" id="5HiLjH4DbJE" role="TZ5H$">
+          <node concept="1dT_AC" id="5HiLjH4DbJF" role="1dT_Ay">
+            <property role="1dT_AB" value="Fetches the current system hints." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5HiLjH4DbJG" role="TUOzN">
+          <property role="TUZQ4" value="the editor component form which the hints should get extracted" />
+          <node concept="zr_55" id="5HiLjH4DbJI" role="zr_5Q">
+            <ref role="zr_51" node="4Mq2JDk9PuZ" resolve="editorComponent" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5HiLjH4DbJJ" role="x79VK">
+          <property role="x79VB" value="hint combination as string" />
         </node>
       </node>
     </node>
@@ -12292,6 +12346,27 @@
         <property role="TrG5h" value="editorComponent" />
         <node concept="3uibUv" id="bX55XKcbv0" role="1tU5fm">
           <ref role="3uigEE" to="6oac:1ZljV50F1YN" resolve="ComponentHandler_Entry" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="5HiLjH4D68Y" role="lGtFl">
+        <node concept="TZ5HA" id="5HiLjH4D68Z" role="TZ5H$">
+          <node concept="1dT_AC" id="5HiLjH4D690" role="1dT_Ay">
+            <property role="1dT_AB" value="Fetches the active editor hints for a given editor component. If no editor hints are set, the system hints are" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5HiLjH4Datt" role="TZ5H$">
+          <node concept="1dT_AC" id="5HiLjH4Datu" role="1dT_Ay">
+            <property role="1dT_AB" value="returned." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="5HiLjH4D691" role="TUOzN">
+          <property role="TUZQ4" value="the editor component form which the hints should get extracted" />
+          <node concept="zr_55" id="5HiLjH4D693" role="zr_5Q">
+            <ref role="zr_51" node="bX55XKcbv1" resolve="editorComponent" />
+          </node>
+        </node>
+        <node concept="x79VA" id="5HiLjH4D694" role="x79VK">
+          <property role="x79VB" value="hint combination as string" />
         </node>
       </node>
     </node>
