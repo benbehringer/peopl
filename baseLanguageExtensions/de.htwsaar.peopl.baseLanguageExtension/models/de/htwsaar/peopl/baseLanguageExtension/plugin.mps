@@ -40,6 +40,7 @@
     <import index="6r0h" ref="r:6dcc499a-bf0b-47fa-8aa3-f9e8e7bc5ac9(de.htwsaar.peopl.baseLanguageExtension.typesystem)" />
     <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
@@ -288,6 +289,9 @@
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171310072040" name="jetbrains.mps.lang.smodel.structure.Node_GetContainingRootOperation" flags="nn" index="2Rxl7S" />
@@ -999,19 +1003,35 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="4ex3EegL70J" role="3cqZAp">
-                          <node concept="2OqwBi" id="4ex3EegL79p" role="3clFbG">
-                            <node concept="37vLTw" id="4ex3EegL70H" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4ex3EegL4Cm" resolve="entryPoints" />
+                        <node concept="3clFbJ" id="6gxZ6c5ApkZ" role="3cqZAp">
+                          <node concept="3clFbS" id="6gxZ6c5Apl1" role="3clFbx">
+                            <node concept="3clFbF" id="4ex3EegL70J" role="3cqZAp">
+                              <node concept="2OqwBi" id="4ex3EegL79p" role="3clFbG">
+                                <node concept="37vLTw" id="4ex3EegL70H" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="4ex3EegL4Cm" resolve="entryPoints" />
+                                </node>
+                                <node concept="X8dFx" id="4ex3EegL8M6" role="2OqNvi">
+                                  <node concept="2OqwBi" id="4ex3EegL7TF" role="25WWJ7">
+                                    <node concept="37vLTw" id="4ex3EegL7La" role="2Oq$k0">
+                                      <ref role="3cqZAo" node="4ex3EegL6Ib" resolve="model" />
+                                    </node>
+                                    <node concept="2RRcyG" id="4ex3EegL82I" role="2OqNvi">
+                                      <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
                             </node>
-                            <node concept="X8dFx" id="4ex3EegL8M6" role="2OqNvi">
-                              <node concept="2OqwBi" id="4ex3EegL7TF" role="25WWJ7">
-                                <node concept="37vLTw" id="4ex3EegL7La" role="2Oq$k0">
+                          </node>
+                          <node concept="3fqX7Q" id="6gxZ6c5Aq5B" role="3clFbw">
+                            <node concept="2OqwBi" id="6gxZ6c5Aq5D" role="3fr31v">
+                              <node concept="2JrnkZ" id="6gxZ6c5Aq5E" role="2Oq$k0">
+                                <node concept="37vLTw" id="6gxZ6c5Aq5F" role="2JrQYb">
                                   <ref role="3cqZAo" node="4ex3EegL6Ib" resolve="model" />
                                 </node>
-                                <node concept="2RRcyG" id="4ex3EegL82I" role="2OqNvi">
-                                  <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-                                </node>
+                              </node>
+                              <node concept="liA8E" id="6gxZ6c5Aq5G" role="2OqNvi">
+                                <ref role="37wK5l" to="mhbf:~SModel.isReadOnly():boolean" resolve="isReadOnly" />
                               </node>
                             </node>
                           </node>
