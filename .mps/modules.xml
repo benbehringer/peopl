@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="" />
@@ -32,6 +33,8 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwssar.peopl.core.variabilityconfiguration/de.htwsaar.peopl.core.variabilityconfiguration.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.hacks.editor/de.slisson.mps.hacks.editor.msd" folder="mbeddr.helper" />
       <modulePath path="$PROJECT_DIR$/mbeddr/helper/de.slisson.mps.reflection.runtime/de.slisson.mps.reflection.runtime.msd" folder="mbeddr.helper" />
@@ -51,12 +54,14 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips.runtime/de.itemis.mps.tooltips.runtime.msd" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/mbeddr/tooltips/de.itemis.mps.tooltips/de.itemis.mps.tooltips.mpl" folder="mbeddr.tooltips" />
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
+      <modulePath path="$PROJECT_DIR$/solutions/mbeddrTest/mbeddrTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoringAnalysis/de.htwsaar.peopl.utils.interactionMonitoringAnalysis.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.msd" folder="peopl.utils" />
+      <modulePath path="$USER_HOME$/Desktop/SPLE_Project/JestSPL/Jest/Jest.msd" folder="" />
     </projectModules>
   </component>
 </project>
