@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="glyn" ref="r:8f8dc9ed-12d7-45fa-a30e-3380f5b795b8(de.htwsaar.peopl.core.variabilityconfiguration.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -39,9 +40,22 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -55,7 +69,10 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="3F0ifn" id="1Aj5qEr_a1g" role="3EZMnx">
-          <property role="3F0ifm" value="VariabilityConfiguration" />
+          <property role="3F0ifm" value="VariabilityConfiguration:" />
+        </node>
+        <node concept="3F0A7n" id="5VMd6L4DzBg" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
       <node concept="3F0ifn" id="1Aj5qEr_a8T" role="3EZMnx">
@@ -93,7 +110,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1Aj5qEr_btp">
-    <ref role="1XX52x" to="glyn:1Aj5qEr_6j9" resolve="ConceptEntry" />
+    <ref role="1XX52x" to="glyn:1Aj5qEr_6j9" resolve="ConceptConstraintEntry" />
     <node concept="3EZMnI" id="1Aj5qEr_bxD" role="2wV5jI">
       <node concept="2iRkQZ" id="1Aj5qEr_bxG" role="2iSdaV" />
       <node concept="3EZMnI" id="1Aj5qEr_eC2" role="3EZMnx">
@@ -107,8 +124,15 @@
           <node concept="VPM3Z" id="1Aj5qEr_eGu" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
-          <node concept="3F0A7n" id="1Aj5qErAajv" role="3EZMnx">
-            <ref role="1NtTu8" to="glyn:1Aj5qErAa9X" resolve="conceptName" />
+          <node concept="1X3_iC" id="5VMd6L4CtMx" role="lGtFl">
+            <property role="3V$3am" value="childCellModel" />
+            <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
+            <node concept="3F0A7n" id="1Aj5qErAajv" role="8Wnug">
+              <ref role="1NtTu8" to="glyn:1Aj5qErAa9X" resolve="conceptName" />
+            </node>
+          </node>
+          <node concept="3F1sOY" id="nvbgyAdbx4" role="3EZMnx">
+            <ref role="1NtTu8" to="glyn:nvbgyAd7Y5" />
           </node>
           <node concept="3EZMnI" id="1Aj5qEr_eLE" role="3EZMnx">
             <node concept="VPM3Z" id="1Aj5qEr_eLG" role="3F10Kt">
