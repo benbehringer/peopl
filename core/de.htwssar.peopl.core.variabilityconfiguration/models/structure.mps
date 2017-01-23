@@ -43,27 +43,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="1Aj5qEr_5Fp">
-    <property role="1pbfSe" value="1255706493" />
-    <property role="TrG5h" value="VariabilityConfiguration" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="1Aj5qEr_5Ma" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="includedConcepts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1Aj5qEr_6j9" resolve="ConceptConstraintEntry" />
-    </node>
-    <node concept="1TJgyj" id="1Aj5qEr_5Qq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="excludedConcepts" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1Aj5qEr_6j9" resolve="ConceptConstraintEntry" />
-    </node>
-    <node concept="PrWs8" id="5VMd6L4DzAY" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1Aj5qEr_6j9">
     <property role="1pbfSe" value="1255703949" />
     <property role="TrG5h" value="ConceptConstraintEntry" />
@@ -91,16 +70,12 @@
       <property role="TrG5h" value="requiresHorizontalLine" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyi" id="1Aj5qErAa9X" role="1TKVEl">
-      <property role="TrG5h" value="conceptName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="1Aj5qEr_dXa" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="1TJgyj" id="nvbgyAd7Y5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="conceptCondition" />
+      <property role="20kJfa" value="conceptConditionFunction" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="nvbgyAd3gU" resolve="PeoplConceptFunction" />
     </node>
@@ -113,11 +88,29 @@
   <node concept="1TIwiD" id="5VMd6L4CMic">
     <property role="1pbfSe" value="1550493448" />
     <property role="TrG5h" value="ConceptFunctionParameter_checkingNode" />
-    <property role="34LRSv" value="checkingNode" />
+    <property role="34LRSv" value="node" />
     <property role="R4oN_" value="node&lt;&gt; to check" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
     <node concept="PrWs8" id="5VMd6L4CMiX" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7f83H_BXI0r">
+    <property role="1pbfSe" value="608243980" />
+    <property role="TrG5h" value="VariabilityConfiguration" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7f83H_BXI0s" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="included" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Aj5qEr_6j9" resolve="ConceptConstraintEntry" />
+    </node>
+    <node concept="1TJgyj" id="7f83H_BXI0u" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="excluded" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1Aj5qEr_6j9" resolve="ConceptConstraintEntry" />
     </node>
   </node>
 </model>
