@@ -36,6 +36,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -650,6 +651,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7u52TBbSrId" role="3cqZAp">
+          <node concept="3clFbS" id="7u52TBbSrIf" role="3clFbx">
+            <node concept="34ab3g" id="7u52TBbSu1W" role="3cqZAp">
+              <property role="35gtTG" value="error" />
+              <node concept="Xl_RD" id="7u52TBbSu1Y" role="34bqiv">
+                <property role="Xl_RC" value="ModuleConfigurationBuilder : NULL error" />
+              </node>
+            </node>
+          </node>
+          <node concept="22lmx$" id="7u52TBbSt7i" role="3clFbw">
+            <node concept="22lmx$" id="7u52TBbSssN" role="3uHU7B">
+              <node concept="3clFbC" id="7u52TBbSsac" role="3uHU7B">
+                <node concept="37vLTw" id="7u52TBbSs0a" role="3uHU7B">
+                  <ref role="3cqZAo" node="1s5U4Ykc4Vm" resolve="mySModule" />
+                </node>
+                <node concept="10Nm6u" id="7u52TBbSsjV" role="3uHU7w" />
+              </node>
+              <node concept="3clFbC" id="7u52TBbSsM$" role="3uHU7w">
+                <node concept="37vLTw" id="7u52TBbSsAQ" role="3uHU7B">
+                  <ref role="3cqZAo" node="7YnyADp3qPZ" resolve="baseModule" />
+                </node>
+                <node concept="10Nm6u" id="7u52TBbSsXE" role="3uHU7w" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="7u52TBbStmi" role="3uHU7w">
+              <node concept="37vLTw" id="7u52TBbStih" role="3uHU7B">
+                <ref role="3cqZAo" node="7YnyADp3acK" resolve="modDef" />
+              </node>
+              <node concept="10Nm6u" id="7u52TBbStxr" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7YnyADp3bCY" role="3cqZAp">
           <node concept="1rXfSq" id="7YnyADp3bCW" role="3clFbG">
             <ref role="37wK5l" node="7YnyADp3bwI" resolve="init" />
@@ -718,7 +751,7 @@
                 </node>
                 <node concept="liA8E" id="7YnyADp4JzN" role="2OqNvi">
                   <ref role="37wK5l" to="33ny:~ArrayList.add(java.lang.Object):boolean" resolve="add" />
-                  <node concept="37vLTw" id="7YnyADp4JFP" role="37wK5m">
+                  <node concept="37vLTw" id="7u52TBbUUP0" role="37wK5m">
                     <ref role="3cqZAo" node="7YnyADp4FS$" resolve="module" />
                   </node>
                 </node>
@@ -732,10 +765,10 @@
             </node>
           </node>
           <node concept="2OqwBi" id="7YnyADp4Gb9" role="1DdaDG">
-            <node concept="37vLTw" id="7YnyADp4G5$" role="2Oq$k0">
+            <node concept="37vLTw" id="7u52TBbUTky" role="2Oq$k0">
               <ref role="3cqZAo" node="7YnyADp3acK" resolve="modDef" />
             </node>
-            <node concept="3Tsc0h" id="7YnyADp4GiR" role="2OqNvi">
+            <node concept="3Tsc0h" id="7u52TBbUU7F" role="2OqNvi">
               <ref role="3TtcxE" to="xf8r:7Ufy5VQFkRE" />
             </node>
           </node>
@@ -787,6 +820,7 @@
       <node concept="3Tm6S6" id="7YnyADp3brT" role="1B3o_S" />
       <node concept="3cqZAl" id="7YnyADp3bwE" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="7u52TBbSI23" role="jymVt" />
     <node concept="2tJIrI" id="7YnyADp3fHv" role="jymVt" />
     <node concept="2tJIrI" id="3e2$E$VguZz" role="jymVt" />
     <node concept="3clFb_" id="7YnyADp3iNr" role="jymVt">

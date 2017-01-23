@@ -35,13 +35,6 @@
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
-      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
-        <child id="1079359253376" name="expression" index="1eOMHV" />
-      </concept>
-      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
-        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
-      </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
       <concept id="7049226118380955944" name="de.htwsaar.peopl.core.structure.IColor" flags="ng" index="6kOzA">
@@ -77,7 +70,7 @@
     </language>
     <language id="505b86b7-3a95-44b0-823f-afd50a2eafaa" name="de.htwsaar.peopl.core.featureConfig">
       <concept id="7037608403905749630" name="de.htwsaar.peopl.core.featureConfig.structure.FeatureConnector" flags="ng" index="mGrBK">
-        <reference id="7037608403905758472" name="connectedFeature" index="mGtU6" />
+        <reference id="7037608403905758472" name="feature" index="mGtU6" />
       </concept>
       <concept id="7037608403905317098" name="de.htwsaar.peopl.core.featureConfig.structure.Variant" flags="ng" index="mJxd$">
         <reference id="3638754547147111635" name="singleModuleConfiguration" index="1XXgWC" />
@@ -85,7 +78,7 @@
       </concept>
       <concept id="7037608403905317116" name="de.htwsaar.peopl.core.featureConfig.structure.Partition" flags="ng" index="mJxdM">
         <child id="3060579791629672114" name="whenExpression" index="3WEweC" />
-        <child id="3060579791629672112" name="selectedModules" index="3WEweE" />
+        <child id="3060579791629672112" name="module" index="3WEweE" />
         <child id="3638754547146849476" name="operation" index="1XYgWZ" />
       </concept>
       <concept id="7037608403905313283" name="de.htwsaar.peopl.core.featureConfig.structure.ProductLineConfig" flags="ng" index="mJI6d">
@@ -112,8 +105,6 @@
       <concept id="675154290793708653" name="de.htwsaar.peopl.core.moduleConfig.structure.SingleModuleConfiguration" flags="ng" index="u25OH">
         <child id="5543868949657202866" name="moduleExpression" index="2Hjnvt" />
       </concept>
-      <concept id="675154290793743898" name="de.htwsaar.peopl.core.moduleConfig.structure.Addition" flags="ng" index="u2itq" />
-      <concept id="675154290793743900" name="de.htwsaar.peopl.core.moduleConfig.structure.Overriding" flags="ng" index="u2its" />
       <concept id="675154290793743904" name="de.htwsaar.peopl.core.moduleConfig.structure.ModuleConnector" flags="ng" index="u2itw">
         <reference id="675154290793743905" name="connectedModule" index="u2itx" />
       </concept>
@@ -68920,55 +68911,6 @@
       <node concept="2Hijyl" id="5PCLkhXIi9y" role="2Hjnvt">
         <node concept="u2itw" id="1m3ZvXg0K3E" role="3clFbG">
           <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
-        </node>
-      </node>
-    </node>
-    <node concept="u25OH" id="5A9c4ERjkuW" role="2M0niC">
-      <node concept="2Hijyl" id="5A9c4ERjkuX" role="2Hjnvt">
-        <node concept="u2itq" id="5A9c4ERjkuZ" role="3clFbG">
-          <node concept="1eOMI4" id="5A9c4ERjkv0" role="3uHU7w">
-            <node concept="u2its" id="5A9c4ERjkv1" role="1eOMHV">
-              <node concept="u2itw" id="5A9c4ERjkv2" role="3uHU7w">
-                <ref role="u2itx" node="6$_V4iGDnc5" resolve="Base" />
-              </node>
-              <node concept="u2itw" id="5A9c4ERjkv3" role="3uHU7B">
-                <ref role="u2itx" node="3Mj07xys9ig" resolve="CP_Time" />
-              </node>
-            </node>
-          </node>
-          <node concept="u2itq" id="5A9c4ERjkv4" role="3uHU7B">
-            <node concept="u2itw" id="5A9c4ERjkv5" role="3uHU7w">
-              <ref role="u2itx" node="3Mj07xys8ru" resolve="CP_Bytes" />
-            </node>
-            <node concept="u2itq" id="5A9c4ERjkv6" role="3uHU7B">
-              <node concept="u2itw" id="5A9c4ERjkv7" role="3uHU7w">
-                <ref role="u2itx" node="3Mj07xyswvg" resolve="Logging_Finest" />
-              </node>
-              <node concept="u2itq" id="5A9c4ERjkv8" role="3uHU7B">
-                <node concept="u2itw" id="5A9c4ERjkv9" role="3uHU7w">
-                  <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
-                </node>
-                <node concept="u2itq" id="5A9c4ERjkva" role="3uHU7B">
-                  <node concept="u2itw" id="5A9c4ERjkvb" role="3uHU7w">
-                    <ref role="u2itx" node="76PMcPR$hWn" resolve="CP_Bytes#Logging_Finest" />
-                  </node>
-                  <node concept="u2itq" id="5A9c4ERjkvc" role="3uHU7B">
-                    <node concept="u2itw" id="5A9c4ERjkvd" role="3uHU7w">
-                      <ref role="u2itx" node="2xM8HVGaMHh" resolve="CP_Bytes#CP_Time" />
-                    </node>
-                    <node concept="u2itq" id="5A9c4ERjkve" role="3uHU7B">
-                      <node concept="u2itw" id="5A9c4ERjkvf" role="3uHU7B">
-                        <ref role="u2itx" node="6NxsX3v0wtX" resolve="CP_Bytes#CheckpointerDaemon" />
-                      </node>
-                      <node concept="u2itw" id="5A9c4ERjkvg" role="3uHU7w">
-                        <ref role="u2itx" node="76PMcPR$keK" resolve="CP_Time#Logging_Finest" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
       </node>
     </node>
