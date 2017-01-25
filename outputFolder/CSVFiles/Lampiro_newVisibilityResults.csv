@@ -1,9 +1,0 @@
-sep=;
-numOfModules;numOfMethodPerModules;numOfVisibleMethods;percentageVisibile;numOfInvisibleMethods;percentageInvisible;
-0;2691;0;0;2691;100;
-1;1567;1565;99;2;0;
-2;21;3;14;18;85;
-3;8;1;12;7;87;
-4;2;0;0;2;100;
-5;1;0;0;1;100;
-6;1;0;0;1;100;
