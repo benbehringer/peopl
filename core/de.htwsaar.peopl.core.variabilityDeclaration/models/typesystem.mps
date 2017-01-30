@@ -25,6 +25,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -32,6 +35,7 @@
   </registry>
   <node concept="1YbPZF" id="5z2fEueBTIt">
     <property role="TrG5h" value="typeof_ConceptFunctionParameter_sourceNode" />
+    <property role="3GE5qa" value="assign-variability" />
     <node concept="3clFbS" id="5z2fEueBTIu" role="18ibNy" />
     <node concept="1YaCAy" id="5z2fEueBTIw" role="1YuTPh">
       <property role="TrG5h" value="conceptFunctionParameter_sourceNode" />
