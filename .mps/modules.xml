@@ -16,10 +16,10 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view/runtime/de.htwsaar.peopl.view.runtime.msd" folder="peopl.baseLanguageExtension.view" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/BerkeleyDB/BerkeleyDB/BerkeleyDB.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/SimpleTextEditor/SimpleTextEditor.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/SimpleTextEditor/sources/org.eclipse.swt/org.eclipse.swt.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/GPL_NoAlt/GPL_NoAlt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/GPL/sources/GPL/GPL.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/JavaChat/JavaChat/JavaChat.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/caseStudies/Jest/Jest/Jest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.tools" />
