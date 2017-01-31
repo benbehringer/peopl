@@ -65,7 +65,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tp25:h3TUQj6" resolve="ConceptRefExpression" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="14Db1DY8RGO">
@@ -147,7 +147,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tp25:h3TUQj6" resolve="ConceptRefExpression" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Ikqw6mcyh6">
