@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -65,7 +65,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Db1DY9947" resolve="ConceptDeclarationConnector" />
+      <ref role="20lvS9" to="tp25:h3TUQj6" resolve="ConceptRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="14Db1DY8RGO">
@@ -138,18 +138,6 @@
     <property role="TrG5h" value="VariabilityConceptFunction" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
-  <node concept="1TIwiD" id="14Db1DY9947">
-    <property role="1pbfSe" value="1890730719" />
-    <property role="TrG5h" value="ConceptDeclarationConnector" />
-    <property role="3GE5qa" value="" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="14Db1DY9948" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="concept" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpce:h0PkWnZ" resolve="AbstractConceptDeclaration" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5Ikqw6m9ULV">
     <property role="1pbfSe" value="239331716" />
     <property role="TrG5h" value="SimpleConceptExclusion" />
@@ -159,7 +147,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Db1DY9947" resolve="ConceptDeclarationConnector" />
+      <ref role="20lvS9" to="tp25:h3TUQj6" resolve="ConceptRefExpression" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Ikqw6mcyh6">
@@ -182,13 +170,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nonOptionalNode" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="14Db1DY9947" resolve="ConceptDeclarationConnector" />
+      <ref role="20lvS9" to="tp25:h8chp0G" resolve="RefConcept_Reference" />
     </node>
     <node concept="1TJgyj" id="5Ikqw6mcBmK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="14Db1DY9947" resolve="ConceptDeclarationConnector" />
+      <ref role="20lvS9" to="tp25:h8chp0G" resolve="RefConcept_Reference" />
     </node>
   </node>
 </model>
