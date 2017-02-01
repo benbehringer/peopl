@@ -170,13 +170,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nonOptionalNode" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tp25:h8chp0G" resolve="RefConcept_Reference" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
     <node concept="1TJgyj" id="5Ikqw6mcBmK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tp25:h8chp0G" resolve="RefConcept_Reference" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
     </node>
   </node>
 </model>
