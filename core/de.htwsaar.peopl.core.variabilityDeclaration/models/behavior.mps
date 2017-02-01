@@ -6,7 +6,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="glyn" ref="r:8f8dc9ed-12d7-45fa-a30e-3380f5b795b8(de.htwsaar.peopl.core.variabilityconfiguration.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="ovfz" ref="r:eb6286b8-ef89-4955-b26e-5b8680512c44(de.htwsaar.peopl.core.variabilityDeclaration.structure)" implicit="true" />
@@ -144,7 +143,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="14Db1DY9gnA">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_sourceNode" />
     <node concept="13hLZK" id="14Db1DY9gnB" role="13h7CW">
       <node concept="3clFbS" id="14Db1DY9gnC" role="2VODD2" />
@@ -170,6 +169,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="5z2fEueBHnp">
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:nvbgyAd3gU" resolve="VariabilityConceptFunction" />
     <node concept="13i0hz" id="5z2fEueBHpU" role="13h7CS">
       <property role="13i0is" value="false" />
@@ -301,25 +301,11 @@
   <node concept="13h7C7" id="5Ikqw6miLal">
     <ref role="13h7C2" to="ovfz:14Db1DY8RGP" resolve="VariabilityDeclaration" />
     <node concept="13hLZK" id="5Ikqw6miLam" role="13h7CW">
-      <node concept="3clFbS" id="5Ikqw6miLan" role="2VODD2">
-        <node concept="3clFbF" id="5Ikqw6miLap" role="3cqZAp">
-          <node concept="37vLTI" id="5Ikqw6miLlN" role="3clFbG">
-            <node concept="3clFbT" id="5Ikqw6miLn7" role="37vLTx">
-              <property role="3clFbU" value="true" />
-            </node>
-            <node concept="2OqwBi" id="5Ikqw6miLbZ" role="37vLTJ">
-              <node concept="13iPFW" id="5Ikqw6miLao" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5Ikqw6miLfD" role="2OqNvi">
-                <ref role="3TsBF5" to="ovfz:5Ikqw6miJGo" resolve="allNodesFromCanAssignVariability" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="5Ikqw6miLan" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="2FVYQByK_RY">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:5Ikqw6mcyh6" resolve="ParametrizedConceptExclusion" />
     <node concept="13hLZK" id="2FVYQByK_RZ" role="13h7CW">
       <node concept="3clFbS" id="2FVYQByK_S0" role="2VODD2" />
@@ -356,7 +342,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2FVYQByKAj0">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:14Db1DY8RGO" resolve="ParametrizedConceptInclusion" />
     <node concept="13hLZK" id="2FVYQByKAj1" role="13h7CW">
       <node concept="3clFbS" id="2FVYQByKAj2" role="2VODD2" />
@@ -393,7 +379,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2FVYQByKKVm">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:14Db1DY8RGM" resolve="ConceptVariability" />
     <node concept="13i0hz" id="2FVYQByKKVp" role="13h7CS">
       <property role="TrG5h" value="getName" />
@@ -408,7 +394,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2FVYQByLg2P">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:5Ikqw6m9ULV" resolve="SimpleConceptExclusion" />
     <node concept="13hLZK" id="2FVYQByLg2Q" role="13h7CW">
       <node concept="3clFbS" id="2FVYQByLg2R" role="2VODD2" />
@@ -430,7 +416,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="2FVYQByLg5i">
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:14Db1DY8RGN" resolve="SimpleConceptInclusion" />
     <node concept="13hLZK" id="2FVYQByLg5j" role="13h7CW">
       <node concept="3clFbS" id="2FVYQByLg5k" role="2VODD2" />
@@ -449,6 +435,26 @@
         </node>
       </node>
       <node concept="17QB3L" id="2FVYQByLg5q" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="4DWUWsTbU$D">
+    <ref role="13h7C2" to="ovfz:7BIYFTBzC0t" resolve="AlternativeConfig" />
+    <node concept="13hLZK" id="4DWUWsTbU$E" role="13h7CW">
+      <node concept="3clFbS" id="4DWUWsTbU$F" role="2VODD2">
+        <node concept="3clFbF" id="4DWUWsTdAIh" role="3cqZAp">
+          <node concept="37vLTI" id="4DWUWsTdAQS" role="3clFbG">
+            <node concept="3clFbT" id="4DWUWsTdARi" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+            <node concept="2OqwBi" id="4DWUWsTdAJw" role="37vLTJ">
+              <node concept="13iPFW" id="4DWUWsTdAIf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4DWUWsTdNz5" role="2OqNvi">
+                <ref role="3TsBF5" to="ovfz:4DWUWsTdNwu" resolve="allNodesFromCanAssignVariability" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

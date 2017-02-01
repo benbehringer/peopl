@@ -53,13 +53,13 @@
     <property role="TrG5h" value="ConceptVariability" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="14Db1DY8RGN">
     <property role="1pbfSe" value="1890801843" />
     <property role="TrG5h" value="SimpleConceptInclusion" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" node="14Db1DY8RGM" resolve="ConceptVariability" />
     <node concept="1TJgyj" id="14Db1DY973f" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -71,7 +71,7 @@
   <node concept="1TIwiD" id="14Db1DY8RGO">
     <property role="1pbfSe" value="1890801842" />
     <property role="TrG5h" value="ParametrizedConceptInclusion" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" node="14Db1DY8RGM" resolve="ConceptVariability" />
     <node concept="1TJgyj" id="14Db1DY97$j" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -85,38 +85,17 @@
     <property role="19KtqR" value="true" />
     <property role="TrG5h" value="VariabilityDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5Ikqw6miJGo" role="1TKVEl">
-      <property role="TrG5h" value="allNodesFromCanAssignVariability" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="14Db1DY8RGQ" role="1TKVEi">
+    <node concept="1TJgyj" id="7BIYFTBzCnS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="simpleInclusion" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="14Db1DY8RGN" resolve="SimpleConceptInclusion" />
+      <property role="20kJfa" value="assignVariabilityConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7BIYFTBzC0s" resolve="AssignVariabilityConfig" />
     </node>
-    <node concept="1TJgyj" id="5Ikqw6m9Wl9" role="1TKVEi">
+    <node concept="1TJgyj" id="7BIYFTBzCnU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parametrizedInclusions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="14Db1DY8RGO" resolve="ParametrizedConceptInclusion" />
-    </node>
-    <node concept="1TJgyj" id="5Ikqw6m9Wll" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="simpleExclusion" />
-      <ref role="20lvS9" node="5Ikqw6m9ULV" resolve="SimpleConceptExclusion" />
-    </node>
-    <node concept="1TJgyj" id="5Ikqw6mczYs" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="parametrizedExclusions" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5Ikqw6mcyh6" resolve="ParametrizedConceptExclusion" />
-    </node>
-    <node concept="1TJgyj" id="5Ikqw6miyMD" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="nonOptionalAlternatives" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5Ikqw6mcBld" resolve="NonOptionalAlternative" />
+      <property role="20kJfa" value="alternativeConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7BIYFTBzC0t" resolve="AlternativeConfig" />
     </node>
     <node concept="PrWs8" id="5Ikqw6miBqE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -127,7 +106,7 @@
     <property role="TrG5h" value="ConceptFunctionParameter_sourceNode" />
     <property role="34LRSv" value="sourceNode" />
     <property role="R4oN_" value="node&lt;&gt; to check" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
     <node concept="PrWs8" id="5VMd6L4CMiX" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -136,12 +115,13 @@
   <node concept="1TIwiD" id="nvbgyAd3gU">
     <property role="1pbfSe" value="1408016062" />
     <property role="TrG5h" value="VariabilityConceptFunction" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
   <node concept="1TIwiD" id="5Ikqw6m9ULV">
     <property role="1pbfSe" value="239331716" />
     <property role="TrG5h" value="SimpleConceptExclusion" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" node="14Db1DY8RGM" resolve="ConceptVariability" />
     <node concept="1TJgyj" id="5Ikqw6m9ULX" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -153,7 +133,7 @@
   <node concept="1TIwiD" id="5Ikqw6mcyh6">
     <property role="1pbfSe" value="238645689" />
     <property role="TrG5h" value="ParametrizedConceptExclusion" />
-    <property role="3GE5qa" value="assign-variability" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" node="14Db1DY8RGM" resolve="ConceptVariability" />
     <node concept="1TJgyj" id="5Ikqw6mcyh7" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
@@ -177,6 +157,71 @@
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7BIYFTBzC0s">
+    <property role="1pbfSe" value="511870246" />
+    <property role="TrG5h" value="AssignVariabilityConfig" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7BIYFTBzCoW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simpleInclusion" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="14Db1DY8RGN" resolve="SimpleConceptInclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCoX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parametrizedInclusions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="14Db1DY8RGO" resolve="ParametrizedConceptInclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCoY" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simpleExclusion" />
+      <ref role="20lvS9" node="5Ikqw6m9ULV" resolve="SimpleConceptExclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCoZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parametrizedExclusions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Ikqw6mcyh6" resolve="ParametrizedConceptExclusion" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7BIYFTBzC0t">
+    <property role="1pbfSe" value="511870245" />
+    <property role="TrG5h" value="AlternativeConfig" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7BIYFTBzCn2" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simpleInclusion" />
+      <ref role="20lvS9" node="14Db1DY8RGN" resolve="SimpleConceptInclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCn4" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parametrizedInclusions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="14Db1DY8RGO" resolve="ParametrizedConceptInclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCnd" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="simpleExclusion" />
+      <ref role="20lvS9" node="5Ikqw6m9ULV" resolve="SimpleConceptExclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCnh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="parametrizedExclusions" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Ikqw6mcyh6" resolve="ParametrizedConceptExclusion" />
+    </node>
+    <node concept="1TJgyj" id="7BIYFTBzCnZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="nonOptionalAlternatives" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="5Ikqw6mcBld" resolve="NonOptionalAlternative" />
+    </node>
+    <node concept="1TJgyi" id="4DWUWsTdNwu" role="1TKVEl">
+      <property role="TrG5h" value="allNodesFromCanAssignVariability" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
