@@ -10,6 +10,7 @@
     <dependency reexport="false">b56fbef2-5461-4b30-b8d3-8d727c262dec(de.htwsaar.peopl.core.variabilityDeclaration)</dependency>
   </dependencies>
   <languageVersions>
+    <language id="f3335bfd-d7dc-423b-b3cd-356f2c06afa7" fqName="JSON" version="0" />
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" fqName="de.htwsaar.peopl.core.variabilityDeclaration" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
