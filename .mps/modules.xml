@@ -48,6 +48,7 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mbeddr.projectview" />
       <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/moritzTests/JSON.mpl" folder="moritzTests" />
+      <modulePath path="$PROJECT_DIR$/moritzTests/JSONVar/JSONVar.mpl" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/MbeddrTest/MbeddrTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/MoritzTestsVariability.msd" folder="moritzTests" />
