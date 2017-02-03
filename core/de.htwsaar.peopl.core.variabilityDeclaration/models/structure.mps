@@ -8,6 +8,7 @@
   <imports>
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -85,12 +86,6 @@
     <property role="19KtqR" value="true" />
     <property role="TrG5h" value="VariabilityDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="BFOVkKtx55" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="referencedLanguage" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
-    </node>
     <node concept="1TJgyj" id="7BIYFTBzCnS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="assignVariabilityConfig" />
@@ -247,6 +242,12 @@
     <property role="TrG5h" value="VariabilityDeclarationDescriptor" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2J2yX0KM9Vl" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="languageRefExpression" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
   </node>
 </model>
 

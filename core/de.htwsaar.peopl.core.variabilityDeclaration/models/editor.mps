@@ -149,12 +149,6 @@
         <node concept="3F0A7n" id="BFOVkKtF5v" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
-        <node concept="3F0ifn" id="BFOVkKtF5L" role="3EZMnx">
-          <property role="3F0ifm" value="-&gt;" />
-        </node>
-        <node concept="3F1sOY" id="BFOVkKtx5v" role="3EZMnx">
-          <ref role="1NtTu8" to="ovfz:BFOVkKtx55" />
-        </node>
         <node concept="2iRfu4" id="4DWUWsTc5Hf" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="5FwP3vUAZfh" role="3EZMnx" />
@@ -513,8 +507,8 @@
   </node>
   <node concept="24kQdi" id="20Az8RpddJu">
     <ref role="1XX52x" to="ovfz:20Az8RpddJo" resolve="VariabilityDeclarationDescriptor" />
-    <node concept="3F0ifn" id="20Az8RpddJw" role="2wV5jI">
-      <property role="3F0ifm" value="Required to auto-generate the infrastructure." />
+    <node concept="3F0ifn" id="2J2yX0KMGDs" role="2wV5jI">
+      <property role="3F0ifm" value="Variability declaration descriptor plugin handler" />
     </node>
   </node>
 </model>

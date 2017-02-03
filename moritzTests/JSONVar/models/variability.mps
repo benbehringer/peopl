@@ -10,9 +10,6 @@
     <import index="oje3" ref="r:b6007a68-36f3-4cb0-8886-ca228bf2e0d1(JSON.structure)" implicit="true" />
   </imports>
   <registry>
-    <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
-      <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
-    </language>
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration">
       <concept id="8786235618734538780" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.AssignVariabilityConfig" flags="ng" index="uo7Ey">
         <child id="8786235618734540348" name="simpleInclusion" index="uo7M2" />
@@ -57,10 +54,10 @@
     </node>
     <node concept="uo7Ey" id="2xG5o$wBaKl" role="uo7X6">
       <node concept="1J2_sD" id="2xG5o$wBaKC" role="uo7M2">
-        <node concept="35c_gC" id="2xG5o$wBaKE" role="1J3lNl">
+        <node concept="35c_gC" id="2J2yX0KMGbg" role="1J3lNl">
           <ref role="35c_gD" to="oje3:5FwP3vUB51u" resolve="object" />
         </node>
-        <node concept="35c_gC" id="2xG5o$wBaKN" role="1J3lNl">
+        <node concept="35c_gC" id="2J2yX0KMGbp" role="1J3lNl">
           <ref role="35c_gD" to="oje3:5FwP3vUB51v" resolve="string" />
         </node>
       </node>
@@ -69,6 +66,5 @@
       <property role="1NiXfp" value="true" />
     </node>
   </node>
-  <node concept="2DaZZR" id="2xG5o$wE5XT" />
 </model>
 
