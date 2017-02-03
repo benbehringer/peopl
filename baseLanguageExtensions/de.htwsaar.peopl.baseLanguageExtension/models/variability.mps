@@ -52,6 +52,7 @@
       <concept id="6841588423541859468" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_sourceNode" flags="ng" index="qkh3w" />
       <concept id="8786235618734538780" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.AssignVariabilityConfig" flags="ng" index="uo7Ey">
         <child id="8786235618734540350" name="simpleExclusion" index="uo7M0" />
+        <child id="8786235618734540351" name="parametrizedExclusions" index="uo7M1" />
         <child id="8786235618734540348" name="simpleInclusion" index="uo7M2" />
         <child id="8786235618734540349" name="parametrizedInclusions" index="uo7M3" />
       </concept>
@@ -60,6 +61,9 @@
         <child id="8786235618734540228" name="parametrizedInclusions" index="uo7XU" />
       </concept>
       <concept id="423106405167543354" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityConceptFunction" flags="ig" index="2zUL$M" />
+      <concept id="6599015909051999302" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ParametrizedConceptExclusion" flags="ng" index="3dD$T7">
+        <child id="6599015909051999303" name="conceptFunction" index="3dD$T6" />
+      </concept>
       <concept id="6599015909051313275" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptExclusion" flags="ng" index="3dGWpU">
         <child id="6599015909051313277" name="applicableConcepts" index="3dGWpW" />
       </concept>
@@ -72,13 +76,21 @@
       <concept id="1236568064986938165" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityDeclaration" flags="ng" index="1J2_sJ">
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
+        <child id="714897741023940933" name="referencedLanguage" index="TBsbK" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -115,6 +127,34 @@
   <node concept="1J2_sJ" id="23vxL33szMA">
     <property role="TrG5h" value="Java" />
     <node concept="uo7Ey" id="23vxL33szMB" role="uo7X6">
+      <node concept="3dD$T7" id="BFOVkKsdWS" role="uo7M1">
+        <node concept="2zUL$M" id="BFOVkKsdWT" role="3dD$T6">
+          <node concept="3clFbS" id="BFOVkKsdWU" role="2VODD2">
+            <node concept="3clFbF" id="BFOVkKseeZ" role="3cqZAp">
+              <node concept="1Wc70l" id="BFOVkKse$M" role="3clFbG">
+                <node concept="2OqwBi" id="BFOVkKseGN" role="3uHU7w">
+                  <node concept="qkh3w" id="BFOVkKseCr" role="2Oq$k0" />
+                  <node concept="1BlSNk" id="BFOVkKseNf" role="2OqNvi">
+                    <ref role="1BmUXE" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                    <ref role="1Bn3mz" to="tpee:fzclF7X" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="BFOVkKseoM" role="3uHU7B">
+                  <node concept="2OqwBi" id="BFOVkKsehh" role="2Oq$k0">
+                    <node concept="qkh3w" id="BFOVkKseeY" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="BFOVkKsek2" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="BFOVkKsetf" role="2OqNvi">
+                    <node concept="chp4Y" id="BFOVkKsevr" role="cj9EA">
+                      <ref role="cht4Q" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1J2_sI" id="23vxL33sUNU" role="uo7M3">
         <node concept="2zUL$M" id="23vxL33sUNV" role="1J3lk9">
           <node concept="3clFbS" id="23vxL33sUNW" role="2VODD2">
@@ -485,6 +525,12 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="pHN19" id="BFOVkKt__E" role="TBsbK">
+      <node concept="2V$Bhx" id="BFOVkKt__L" role="2V$M_3">
+        <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
       </node>
     </node>
   </node>

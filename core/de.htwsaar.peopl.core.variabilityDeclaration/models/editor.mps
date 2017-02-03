@@ -146,8 +146,14 @@
         <node concept="3F0ifn" id="4DWUWsTc5He" role="3EZMnx">
           <property role="3F0ifm" value="VariabilityDeclaration for Language:" />
         </node>
-        <node concept="3F0A7n" id="4DWUWsTc5Hw" role="3EZMnx">
+        <node concept="3F0A7n" id="BFOVkKtF5v" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="BFOVkKtF5L" role="3EZMnx">
+          <property role="3F0ifm" value="-&gt;" />
+        </node>
+        <node concept="3F1sOY" id="BFOVkKtx5v" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:BFOVkKtx55" />
         </node>
         <node concept="2iRfu4" id="4DWUWsTc5Hf" role="2iSdaV" />
       </node>
@@ -491,6 +497,18 @@
       </node>
       <node concept="3F0ifn" id="7BIYFTBzC_z" role="3EZMnx" />
       <node concept="2iRkQZ" id="7BIYFTBzC_2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4qduh90ja0M">
+    <ref role="1XX52x" to="ovfz:4qduh90ja0x" resolve="LanguageRefinementSpecification" />
+    <node concept="3EZMnI" id="4qduh90ja0X" role="2wV5jI">
+      <node concept="3F0ifn" id="4qduh90ja14" role="3EZMnx">
+        <property role="3F0ifm" value="Refined Language:" />
+      </node>
+      <node concept="3F1sOY" id="4qduh90ja1a" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:4qduh90ja0F" />
+      </node>
+      <node concept="2iRfu4" id="4qduh90ja10" role="2iSdaV" />
     </node>
   </node>
 </model>

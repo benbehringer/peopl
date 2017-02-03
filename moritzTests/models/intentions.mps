@@ -211,6 +211,23 @@
                   </node>
                 </node>
               </node>
+              <node concept="34ab3g" id="23vxL33rCCG" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="3cpWs3" id="23vxL33rKwe" role="34bqiv">
+                  <node concept="2OqwBi" id="23vxL33rKy2" role="3uHU7w">
+                    <node concept="37vLTw" id="23vxL33rKwD" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4ie3laHk9JJ" resolve="descriptor" />
+                    </node>
+                    <node concept="liA8E" id="23vxL33rK_e" role="2OqNvi">
+                      <ref role="37wK5l" to="ikxv:2FVYQByNiMr" resolve="canHaveAlternative" />
+                      <node concept="2Sf5sV" id="BFOVkKquqA" role="37wK5m" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="23vxL33rCCI" role="3uHU7B">
+                    <property role="Xl_RC" value="canHaveAlternative: " />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>

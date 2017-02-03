@@ -18,6 +18,8 @@
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="hfbu" ref="r:2ea71bfd-fe13-4525-9346-023b05757b39(jetbrains.mps.lang.aspect.structure)" />
+    <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -5645,6 +5647,32 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="5pW0Dg$qYQ$" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="4qduh90irtt">
+    <property role="3GE5qa" value="extensions" />
+    <property role="TrG5h" value="IExt_PeoplVariabilityAspectExtension" />
+    <node concept="3clFb_" id="4qduh90iwds" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="varibilityAspectForLanguageOfNode" />
+      <node concept="3clFbS" id="4qduh90iwdv" role="3clF47" />
+      <node concept="3Tm1VV" id="4qduh90iwdw" role="1B3o_S" />
+      <node concept="3uibUv" id="4qduh90iw6o" role="3clF45">
+        <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="VariabilityAspectDescriptor" />
+      </node>
+      <node concept="37vLTG" id="4qduh90iwfh" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="4qduh90iwfg" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4qduh90irtu" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="4qduh90iwgR">
+    <property role="3GE5qa" value="extensions" />
+    <property role="TrG5h" value="Ext_PeoplVariabilityAspectExtension" />
+    <node concept="3uibUv" id="4qduh90iwh3" role="luc8K">
+      <ref role="3uigEE" node="4qduh90irtt" resolve="IExt_PeoplVariabilityAspectExtension" />
+    </node>
   </node>
 </model>
 

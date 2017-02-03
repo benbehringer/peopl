@@ -85,6 +85,12 @@
     <property role="19KtqR" value="true" />
     <property role="TrG5h" value="VariabilityDeclaration" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="BFOVkKtx55" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="referencedLanguage" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
+    </node>
     <node concept="1TJgyj" id="7BIYFTBzCnS" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="assignVariabilityConfig" />
@@ -97,7 +103,7 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7BIYFTBzC0t" resolve="AlternativeConfig" />
     </node>
-    <node concept="PrWs8" id="5Ikqw6miBqE" role="PzmwI">
+    <node concept="PrWs8" id="BFOVkKtF5k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
@@ -222,6 +228,18 @@
     <node concept="1TJgyi" id="4DWUWsTdNwu" role="1TKVEl">
       <property role="TrG5h" value="allNodesFromCanAssignVariability" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4qduh90ja0x">
+    <property role="1pbfSe" value="2032527053" />
+    <property role="TrG5h" value="LanguageRefinementSpecification" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4qduh90ja0F" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="language" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
   </node>
 </model>
