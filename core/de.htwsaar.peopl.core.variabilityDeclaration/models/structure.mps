@@ -242,5 +242,11 @@
       <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="20Az8RpddJo">
+    <property role="1pbfSe" value="111450011" />
+    <property role="TrG5h" value="VariabilityDeclarationDescriptor" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
 </model>
 

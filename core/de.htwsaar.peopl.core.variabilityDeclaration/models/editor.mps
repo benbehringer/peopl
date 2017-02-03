@@ -511,5 +511,11 @@
       <node concept="2iRfu4" id="4qduh90ja10" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="20Az8RpddJu">
+    <ref role="1XX52x" to="ovfz:20Az8RpddJo" resolve="VariabilityDeclarationDescriptor" />
+    <node concept="3F0ifn" id="20Az8RpddJw" role="2wV5jI">
+      <property role="3F0ifm" value="Required to auto-generate the infrastructure." />
+    </node>
+  </node>
 </model>
 
