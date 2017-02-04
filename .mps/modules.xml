@@ -38,11 +38,9 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwssar.peopl.core.variabilityconfiguration/de.htwsaar.peopl.core.variabilityconfiguration.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/languages/com.mbeddr.core.modules/modules.mpl" folder="mbeddr.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
-      <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.projectview.runtime.extension/de.htwsaar.projectview.runtime.extension.mpl" folder="mbeddr.projectview" />
       <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mbeddr.projectview" />
       <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.views/com.mbeddr.mpsutil.projectview.views.msd" folder="mbeddr.projectview" />
       <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mbeddr.projectview" />
@@ -50,17 +48,13 @@
       <modulePath path="$PROJECT_DIR$/moritzTests/JSON.mpl" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/moritzTests/JSONVar/JSONVar.mpl" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
-      <modulePath path="$PROJECT_DIR$/solutions/MbeddrTest/MbeddrTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/MoritzTestsVariability.msd" folder="moritzTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/ReflectionTesting/ReflectionTesting.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/VariabilityConfigurationTest/VariabilityConfigurationTest.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoringAnalysis/de.htwsaar.peopl.utils.interactionMonitoringAnalysis.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring/de.htwsaar.peopl.utils.peoplDepInteractionMonitoring.msd" folder="peopl.utils" />
-      <modulePath path="$USER_HOME$/Desktop/SPLE_Project/JestSPL/Jest/Jest.msd" folder="" />
     </projectModules>
   </component>
 </project>
