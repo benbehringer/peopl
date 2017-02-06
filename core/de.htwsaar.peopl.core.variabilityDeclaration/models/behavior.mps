@@ -298,12 +298,6 @@
       <node concept="3clFbS" id="5z2fEueBHnr" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="5Ikqw6miLal">
-    <ref role="13h7C2" to="ovfz:14Db1DY8RGP" resolve="VariabilityDeclaration" />
-    <node concept="13hLZK" id="5Ikqw6miLam" role="13h7CW">
-      <node concept="3clFbS" id="5Ikqw6miLan" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="2FVYQByK_RY">
     <property role="3GE5qa" value="common" />
     <ref role="13h7C2" to="ovfz:5Ikqw6mcyh6" resolve="ParametrizedConceptExclusion" />

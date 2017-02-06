@@ -493,18 +493,6 @@
       <node concept="2iRkQZ" id="7BIYFTBzC_2" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4qduh90ja0M">
-    <ref role="1XX52x" to="ovfz:4qduh90ja0x" resolve="LanguageRefinementSpecification" />
-    <node concept="3EZMnI" id="4qduh90ja0X" role="2wV5jI">
-      <node concept="3F0ifn" id="4qduh90ja14" role="3EZMnx">
-        <property role="3F0ifm" value="Refined Language:" />
-      </node>
-      <node concept="3F1sOY" id="4qduh90ja1a" role="3EZMnx">
-        <ref role="1NtTu8" to="ovfz:4qduh90ja0F" />
-      </node>
-      <node concept="2iRfu4" id="4qduh90ja10" role="2iSdaV" />
-    </node>
-  </node>
   <node concept="24kQdi" id="20Az8RpddJu">
     <ref role="1XX52x" to="ovfz:20Az8RpddJo" resolve="VariabilityDeclarationDescriptor" />
     <node concept="3F0ifn" id="2J2yX0KMGDs" role="2wV5jI">
