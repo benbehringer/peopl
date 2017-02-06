@@ -3216,7 +3216,7 @@
       <node concept="3clFbS" id="7wEfe$E1gZG" role="2VODD2">
         <node concept="3clFbF" id="7wEfe$E1h17" role="3cqZAp">
           <node concept="Xl_RD" id="7wEfe$E1h16" role="3clFbG">
-            <property role="Xl_RC" value="@PEoPL -&gt; Unassign Module" />
+            <property role="Xl_RC" value="@PEoPL (Core) -&gt; Unassign Module" />
           </node>
         </node>
       </node>
@@ -3401,10 +3401,10 @@
         </node>
         <node concept="3cpWs6" id="7wEfe$E1qrV" role="3cqZAp">
           <node concept="3y3z36" id="7wEfe$E1qEz" role="3cqZAk">
-            <node concept="10Nm6u" id="7wEfe$E1qH_" role="3uHU7w" />
             <node concept="37vLTw" id="7wEfe$E1q$l" role="3uHU7B">
               <ref role="3cqZAo" node="7wEfe$E1hkW" resolve="annotatedNode" />
             </node>
+            <node concept="10Nm6u" id="7wEfe$E1qH_" role="3uHU7w" />
           </node>
         </node>
       </node>
