@@ -1057,7 +1057,7 @@
             <property role="TrG5h" value="numberOfCalculations" />
             <node concept="10Oyi0" id="3$QOhd6iZ58" role="1tU5fm" />
             <node concept="3cmrfG" id="3$QOhd6iZ6Q" role="33vP2m">
-              <property role="3cmrfH" value="100" />
+              <property role="3cmrfH" value="10" />
             </node>
           </node>
         </node>
