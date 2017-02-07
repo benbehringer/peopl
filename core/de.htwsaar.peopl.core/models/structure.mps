@@ -314,8 +314,8 @@
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2gRkCJLV3Vp" role="lGtFl">
       <property role="Hh88m" value="Wrapper" />
-      <node concept="trNpa" id="7mKAM8KyPmg" role="EQaZv">
-        <ref role="trN6q" to="tpee:fzclF8l" resolve="Statement" />
+      <node concept="trNpa" id="7wEfe$EdKyD" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
     <node concept="1TJgyj" id="62w2A05eaEe" role="1TKVEi">
@@ -332,8 +332,8 @@
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="M6xJ_" id="2gRkCJLWqLw" role="lGtFl">
       <property role="Hh88m" value="Wrappee" />
-      <node concept="trNpa" id="7mKAM8KyPl5" role="EQaZv">
-        <ref role="trN6q" to="tpee:fzclF80" resolve="StatementList" />
+      <node concept="trNpa" id="7wEfe$EdKyF" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
     </node>
   </node>

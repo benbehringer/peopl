@@ -5650,7 +5650,7 @@
   </node>
   <node concept="3HP615" id="4qduh90irtt">
     <property role="3GE5qa" value="extensions" />
-    <property role="TrG5h" value="IExt_PeoplVariabilityAspectExtension" />
+    <property role="TrG5h" value="IExt_PeoplVariabilityAspectRuntime" />
     <node concept="3clFb_" id="4qduh90iwds" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -5669,9 +5669,9 @@
   </node>
   <node concept="vrV6u" id="4qduh90iwgR">
     <property role="3GE5qa" value="extensions" />
-    <property role="TrG5h" value="Ext_PeoplVariabilityAspectExtension" />
+    <property role="TrG5h" value="Ext_PeoplVariabilityAspectRuntime" />
     <node concept="3uibUv" id="4qduh90iwh3" role="luc8K">
-      <ref role="3uigEE" node="4qduh90irtt" resolve="IExt_PeoplVariabilityAspectExtension" />
+      <ref role="3uigEE" node="4qduh90irtt" resolve="IExt_PeoplVariabilityAspectRuntime" />
     </node>
   </node>
 </model>
