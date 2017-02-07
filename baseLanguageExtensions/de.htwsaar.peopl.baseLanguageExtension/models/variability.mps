@@ -49,6 +49,11 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration">
+      <concept id="9122230446655927851" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeBlock" flags="ng" index="aHlDD">
+        <child id="9122230446655928259" name="wrappeeConcept" index="aHlI1" />
+        <child id="9122230446655928257" name="wrapperConcept" index="aHlI3" />
+        <child id="9122230446655928273" name="wrapperWrappeeRelations" index="aHlIj" />
+      </concept>
       <concept id="6841588423541859468" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_sourceNode" flags="ng" index="qkh3w" />
       <concept id="8786235618734538780" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.AssignVariabilityConfig" flags="ng" index="uo7Ey">
         <child id="8786235618734540350" name="simpleExclusion" index="uo7M0" />
@@ -67,6 +72,11 @@
       <concept id="6599015909051313275" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptExclusion" flags="ng" index="3dGWpU">
         <child id="6599015909051313277" name="applicableConcepts" index="3dGWpW" />
       </concept>
+      <concept id="8658800205706496875" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeRelationship" flags="ng" index="1i7ju2" />
+      <concept id="8658800205706496852" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperDeclaration" flags="ng" index="1i7juX">
+        <child id="9122230446655928280" name="wrapperWrappeeBlocks" index="aHlIq" />
+      </concept>
+      <concept id="6093234279461270026" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptIdRefExpressionSimple" flags="ng" index="1G2zp1" />
       <concept id="1236568064986938163" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptInclusion" flags="ng" index="1J2_sD">
         <child id="1236568064987001039" name="applicableConcepts" index="1J3lNl" />
       </concept>
@@ -83,6 +93,10 @@
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -517,6 +531,36 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1i7juX" id="7UoF49OdxM2">
+    <node concept="aHlDD" id="7UoF49OdxM3" role="aHlIq">
+      <node concept="1i7ju2" id="7UoF49Od3rr" role="aHlIj">
+        <ref role="359W_F" to="tpee:gMLFqrC" />
+        <ref role="359W_E" to="tpee:gMLF5Fu" resolve="AbstractLoopStatement" />
+      </node>
+      <node concept="1i7ju2" id="7UoF49Od3rC" role="aHlIj">
+        <ref role="359W_E" to="tpee:gMGUZlm" resolve="TryStatement" />
+        <ref role="359W_F" to="tpee:gMGV8eI" />
+      </node>
+      <node concept="1i7ju2" id="7UoF49Od3rQ" role="aHlIj">
+        <ref role="359W_F" to="tpee:gWSfCfk" />
+        <ref role="359W_E" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
+      </node>
+      <node concept="1i7ju2" id="7UoF49OdCSO" role="aHlIj">
+        <ref role="359W_E" to="tpee:fzclF8n" resolve="IfStatement" />
+        <ref role="359W_F" to="tpee:fzclF8p" />
+      </node>
+      <node concept="1i7ju2" id="7UoF49Od3sl" role="aHlIj">
+        <ref role="359W_E" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
+        <ref role="359W_F" to="tpee:h1HWH_s" />
+      </node>
+      <node concept="1G2zp1" id="7UoF49OdxMk" role="aHlI3">
+        <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
+      </node>
+      <node concept="1G2zp1" id="7UoF49OdxMq" role="aHlI1">
+        <ref role="35c_gD" to="tpee:fzclF80" resolve="StatementList" />
       </node>
     </node>
   </node>
