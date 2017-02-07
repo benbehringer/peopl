@@ -237,5 +237,55 @@
       <ref role="20lvS9" to="tp25:3TEgbCBRn3N" resolve="LanguageRefExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7wEfe$EdKHk">
+    <property role="1pbfSe" value="1570682819" />
+    <property role="TrG5h" value="WrapperDeclaration" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7UoF49Obvvo" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wrapperWrappeeBlocks" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="7UoF49ObvoF" resolve="WrapperWrappeeBlock" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7wEfe$EdKHF">
+    <property role="1pbfSe" value="1570682796" />
+    <property role="TrG5h" value="WrapperWrappeeRelationship" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="5ifx4GSxr8a">
+    <property role="1pbfSe" value="1927989675" />
+    <property role="TrG5h" value="ConceptIdRefExpressionSimple" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="5ifx4GSxz9J">
+    <property role="1pbfSe" value="1927956806" />
+    <property role="TrG5h" value="LinkIdRefExpressionSimple" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="7UoF49ObvoF">
+    <property role="1pbfSe" value="221863315" />
+    <property role="TrG5h" value="WrapperWrappeeBlock" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7UoF49Obvv1" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wrapperConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="7UoF49Obvv3" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wrappeeConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="7UoF49Obvvh" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wrapperWrappeeRelations" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7wEfe$EdKHF" resolve="WrapperWrappeeRelationship" />
+    </node>
+  </node>
 </model>
 
