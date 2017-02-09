@@ -3721,8 +3721,8 @@
                               <node concept="2OqwBi" id="1jtqHQgoNTK" role="3uHU7B">
                                 <node concept="2OqwBi" id="1jtqHQgoMWp" role="2Oq$k0">
                                   <node concept="3CFZ6_" id="1jtqHQgoNjF" role="2OqNvi">
-                                    <node concept="3CFYIy" id="1jtqHQgoNmr" role="3CFYIz">
-                                      <ref role="3CFYIx" to="uqoo:4DWAEpij21t" resolve="PeoplBlockReference" />
+                                    <node concept="3CFYIy" id="31jQ6wLl0CC" role="3CFYIz">
+                                      <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
                                     </node>
                                   </node>
                                   <node concept="37vLTw" id="2OGjNYqzTb8" role="2Oq$k0">
