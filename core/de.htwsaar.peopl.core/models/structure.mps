@@ -496,5 +496,42 @@
       <ref role="PrY4T" to="tpee:3F8BxGibdn2" resolve="IConditional" />
     </node>
   </node>
+  <node concept="PlHQZ" id="6BiMxHywUCU">
+    <property role="1pbfSe" value="866749355" />
+    <property role="TrG5h" value="IFeatureContainer" />
+    <node concept="1TJgyi" id="3vAAWfK6JIr" role="1TKVEl">
+      <property role="TrG5h" value="isControlledByUser" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6BiMxHywZsk" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingNode" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyj" id="6BiMxHywZsg" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingContainer" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3vAAWfKkoNc">
+    <property role="1pbfSe" value="674769039" />
+    <property role="TrG5h" value="ContainerReference" />
+    <ref role="1TJDcQ" node="7irj4gs$aYR" resolve="FragmentUpdater" />
+    <node concept="1TJgyj" id="3vAAWfKkoOb" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="referencedContainer" />
+      <ref role="20lvS9" node="6BiMxHywUCU" resolve="IFeatureContainer" />
+    </node>
+    <node concept="M6xJ_" id="3vAAWfKkoNI" role="lGtFl">
+      <property role="Hh88m" value="ContainerReference" />
+      <node concept="trNpa" id="3vAAWfKkoNK" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="3vAAWfKkoNM" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 
