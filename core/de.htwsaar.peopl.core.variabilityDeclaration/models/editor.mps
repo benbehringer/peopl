@@ -588,6 +588,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ifx4GSxz9P">
+    <property role="3GE5qa" value="common" />
     <ref role="1XX52x" to="ovfz:5ifx4GSxz9J" resolve="LinkIdRefExpressionSimple" />
     <node concept="3EZMnI" id="5ifx4GSyCbW" role="2wV5jI">
       <node concept="1iCGBv" id="5ifx4GSyCbX" role="3EZMnx">
@@ -662,6 +663,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="5ifx4GSxr8g">
+    <property role="3GE5qa" value="common" />
     <ref role="1XX52x" to="ovfz:5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     <node concept="3EZMnI" id="5ifx4GSxr8l" role="2wV5jI">
       <node concept="1iCGBv" id="5ifx4GSxr8s" role="3EZMnx">

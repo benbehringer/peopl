@@ -66,7 +66,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
   </node>
   <node concept="1TIwiD" id="14Db1DY8RGO">
@@ -128,7 +128,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="applicableConcepts" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
   </node>
   <node concept="1TIwiD" id="5Ikqw6mcyh6">
@@ -151,13 +151,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nonOptionalNode" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
     <node concept="1TJgyj" id="5Ikqw6mcBmK" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
   </node>
   <node concept="1TIwiD" id="7BIYFTBzC0s">
@@ -257,11 +257,13 @@
   <node concept="1TIwiD" id="5ifx4GSxr8a">
     <property role="1pbfSe" value="1927989675" />
     <property role="TrG5h" value="ConceptIdRefExpressionSimple" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
   </node>
   <node concept="1TIwiD" id="5ifx4GSxz9J">
     <property role="1pbfSe" value="1927956806" />
     <property role="TrG5h" value="LinkIdRefExpressionSimple" />
+    <property role="3GE5qa" value="common" />
     <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
   </node>
   <node concept="1TIwiD" id="7UoF49ObvoF">
