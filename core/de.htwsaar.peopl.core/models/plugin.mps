@@ -2774,66 +2774,37 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1gAlcvBNgoT" role="jymVt" />
-    <node concept="312cEg" id="3E5iobqS4np" role="jymVt">
+    <node concept="2tJIrI" id="1gAlcvBNfoA" role="jymVt" />
+    <node concept="2tJIrI" id="1gAlcvBNfSI" role="jymVt" />
+    <node concept="312cEg" id="7mwBwTnhLGb" role="jymVt">
       <property role="34CwA1" value="true" />
       <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="myModuleConnectorDependencies" />
+      <property role="TrG5h" value="moduleOfDeclNode" />
       <property role="3TUv4t" value="false" />
-      <node concept="3Tm6S6" id="3E5iobqS4nq" role="1B3o_S" />
-      <node concept="3rvAFt" id="3E5iobqS4nr" role="1tU5fm">
-        <node concept="3uibUv" id="3E5iobqS4ns" role="3rvQeY">
-          <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+      <node concept="3Tm6S6" id="7mwBwTnhKUS" role="1B3o_S" />
+      <node concept="3rvAFt" id="7mwBwTnhLFp" role="1tU5fm">
+        <node concept="3Tqbb2" id="7mwBwTnhLFB" role="3rvQeY" />
+        <node concept="3Tqbb2" id="7mwBwTnhLFE" role="3rvSg0">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
         </node>
-        <node concept="3rvAFt" id="3E5iobqS4nt" role="3rvSg0">
-          <node concept="3Tqbb2" id="3E5iobqS4nu" role="3rvQeY">
+      </node>
+      <node concept="2ShNRf" id="7mwBwTnhMyi" role="33vP2m">
+        <node concept="3rGOSV" id="7mwBwTnhMy9" role="2ShVmc">
+          <node concept="3Tqbb2" id="7mwBwTnhMya" role="3rHrn6" />
+          <node concept="3Tqbb2" id="7mwBwTnhMyb" role="3rHtpV">
             <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
           </node>
-          <node concept="3rvAFt" id="3E5iobqS4nv" role="3rvSg0">
-            <node concept="3Tqbb2" id="3E5iobqS4nw" role="3rvQeY">
-              <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-            </node>
-            <node concept="2hMVRd" id="3E5iobqS4nx" role="3rvSg0">
-              <node concept="3Tqbb2" id="3E5iobqS4ny" role="2hN53Y" />
-            </node>
-          </node>
         </node>
       </node>
-      <node concept="2ShNRf" id="3E5iobqS4nz" role="33vP2m">
-        <node concept="32Fmki" id="3E5iobqS4n$" role="2ShVmc">
-          <node concept="3uibUv" id="3E5iobqS4n_" role="3rHrn6">
-            <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
-          </node>
-          <node concept="3rvAFt" id="3E5iobqS4nA" role="3rHtpV">
-            <node concept="3Tqbb2" id="3E5iobqS4nB" role="3rvQeY">
-              <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-            </node>
-            <node concept="3rvAFt" id="3E5iobqS4nC" role="3rvSg0">
-              <node concept="3Tqbb2" id="3E5iobqS4nD" role="3rvQeY">
-                <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
-              </node>
-              <node concept="2hMVRd" id="3E5iobqS4nE" role="3rvSg0">
-                <node concept="3Tqbb2" id="3E5iobqS4nF" role="2hN53Y" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="z59LJ" id="3E5iobqS4nG" role="lGtFl">
-        <node concept="TZ5HA" id="3E5iobqS4nH" role="TZ5H$">
-          <node concept="1dT_AC" id="3E5iobqS4nI" role="1dT_Ay">
-            <property role="1dT_AB" value="Our reference dependency cache allows us to get all references of a provider (i.e., the module our dependant" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3E5iobqS4nJ" role="TZ5H$">
-          <node concept="1dT_AC" id="3E5iobqS4nK" role="1dT_Ay">
-            <property role="1dT_AB" value="relies on). For instance, Base (dependant) =&gt; AnotherModule (provider) : foo() (method call)" />
+      <node concept="z59LJ" id="7mwBwTnkRFq" role="lGtFl">
+        <node concept="TZ5HA" id="7mwBwTnkRFr" role="TZ5H$">
+          <node concept="1dT_AC" id="7mwBwTnkRFs" role="1dT_Ay">
+            <property role="1dT_AB" value="Used to cache the module of a decl node (speedup the calculation)" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1gAlcvBNfoA" role="jymVt" />
-    <node concept="2tJIrI" id="1gAlcvBNfSI" role="jymVt" />
+    <node concept="2tJIrI" id="7mwBwTnhMzE" role="jymVt" />
     <node concept="2YIFZL" id="6D3NPsjbEtX" role="jymVt">
       <property role="TrG5h" value="getInstance" />
       <property role="od$2w" value="true" />
@@ -2853,6 +2824,71 @@
       </node>
     </node>
     <node concept="2tJIrI" id="6D3NPsjbEkg" role="jymVt" />
+    <node concept="3clFb_" id="7mwBwTnhTWd" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getCachedModule" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7mwBwTnhTWg" role="3clF47">
+        <node concept="3clFbF" id="69VI76rKFuy" role="3cqZAp">
+          <node concept="3EllGN" id="7mwBwTni50V" role="3clFbG">
+            <node concept="37vLTw" id="7mwBwTni53E" role="3ElVtu">
+              <ref role="3cqZAo" node="7mwBwTnhWJO" resolve="declNode" />
+            </node>
+            <node concept="37vLTw" id="7mwBwTni4UQ" role="3ElQJh">
+              <ref role="3cqZAo" node="7mwBwTnhLGb" resolve="moduleOfDeclNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7mwBwTnhTbk" role="1B3o_S" />
+      <node concept="3Tqbb2" id="7mwBwTnhTW3" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+      </node>
+      <node concept="37vLTG" id="7mwBwTnhWJO" role="3clF46">
+        <property role="TrG5h" value="declNode" />
+        <node concept="3Tqbb2" id="7mwBwTnhWJN" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7mwBwTnhY8E" role="jymVt" />
+    <node concept="3clFb_" id="7mwBwTnhZS2" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="addCachedModule" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="7mwBwTnhZS5" role="3clF47">
+        <node concept="3clFbF" id="7mwBwTni6Zh" role="3cqZAp">
+          <node concept="37vLTI" id="7mwBwTni7bD" role="3clFbG">
+            <node concept="37vLTw" id="7mwBwTni7eX" role="37vLTx">
+              <ref role="3cqZAo" node="7mwBwTni48R" resolve="module" />
+            </node>
+            <node concept="3EllGN" id="7mwBwTni74C" role="37vLTJ">
+              <node concept="37vLTw" id="7mwBwTni77H" role="3ElVtu">
+                <ref role="3cqZAo" node="7mwBwTni3rn" resolve="declNode" />
+              </node>
+              <node concept="37vLTw" id="7mwBwTni6Zg" role="3ElQJh">
+                <ref role="3cqZAo" node="7mwBwTnhLGb" resolve="moduleOfDeclNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7mwBwTnhZ3E" role="1B3o_S" />
+      <node concept="3cqZAl" id="7mwBwTnhZRR" role="3clF45" />
+      <node concept="37vLTG" id="7mwBwTni3rn" role="3clF46">
+        <property role="TrG5h" value="declNode" />
+        <node concept="3Tqbb2" id="7mwBwTni3rm" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7mwBwTni48R" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3Tqbb2" id="7mwBwTni4Qj" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7mwBwTnhQ0q" role="jymVt" />
     <node concept="3clFb_" id="1sCUscXNpxB" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="canRebuild" />
@@ -3574,11 +3610,19 @@
     <node concept="2tJIrI" id="1gAlcvBNRCq" role="jymVt" />
     <node concept="3clFb_" id="1gAlcvBNULu" role="jymVt">
       <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="clearReferenceDependencies" />
+      <property role="TrG5h" value="clear" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1gAlcvBNULv" role="3clF47">
+        <node concept="3clFbF" id="7mwBwTnkYjp" role="3cqZAp">
+          <node concept="2OqwBi" id="7mwBwTnkYxm" role="3clFbG">
+            <node concept="37vLTw" id="7mwBwTnkYjn" role="2Oq$k0">
+              <ref role="3cqZAo" node="7mwBwTnhLGb" resolve="moduleOfDeclNode" />
+            </node>
+            <node concept="1yHZxX" id="7mwBwTnkYE9" role="2OqNvi" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="1gAlcvBNW33" role="3cqZAp">
           <node concept="3cpWsn" id="1gAlcvBNW34" role="3cpWs9">
             <property role="TrG5h" value="sModuleRefDependencyMap" />

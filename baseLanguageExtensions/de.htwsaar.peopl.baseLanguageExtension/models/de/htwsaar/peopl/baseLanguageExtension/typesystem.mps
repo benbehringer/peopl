@@ -1655,15 +1655,66 @@
               <node concept="3cpWsn" id="4FBIHQ1GIpL" role="3cpWs9">
                 <property role="TrG5h" value="declNodeModule" />
                 <node concept="3Tqbb2" id="4FBIHQ1GIpG" role="1tU5fm" />
-                <node concept="1rXfSq" id="4FBIHQ1GIJ1" role="33vP2m">
-                  <ref role="37wK5l" node="4FBIHQ1GzQf" resolve="getDefiningModule" />
-                  <node concept="37vLTw" id="4FBIHQ1GIKx" role="37wK5m">
-                    <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                <node concept="2OqwBi" id="7mwBwTnibCV" role="33vP2m">
+                  <node concept="2YIFZM" id="7mwBwTnib$Q" role="2Oq$k0">
+                    <ref role="37wK5l" to="zur:6D3NPsjbEtX" resolve="getInstance" />
+                    <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
+                  </node>
+                  <node concept="liA8E" id="7mwBwTnibIk" role="2OqNvi">
+                    <ref role="37wK5l" to="zur:7mwBwTnhTWd" resolve="getCachedModule" />
+                    <node concept="37vLTw" id="7mwBwTnibNw" role="37wK5m">
+                      <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="4FBIHQ1GGNz" role="3cqZAp" />
+            <node concept="3clFbJ" id="7mwBwTniaYA" role="3cqZAp">
+              <node concept="3clFbS" id="7mwBwTniaYC" role="3clFbx">
+                <node concept="3clFbF" id="7mwBwTnickM" role="3cqZAp">
+                  <node concept="37vLTI" id="7mwBwTnico$" role="3clFbG">
+                    <node concept="37vLTw" id="7mwBwTnicmI" role="37vLTJ">
+                      <ref role="3cqZAo" node="4FBIHQ1GIpL" resolve="declNodeModule" />
+                    </node>
+                    <node concept="1rXfSq" id="4FBIHQ1GIJ1" role="37vLTx">
+                      <ref role="37wK5l" node="4FBIHQ1GzQf" resolve="getDefiningModule" />
+                      <node concept="37vLTw" id="4FBIHQ1GIKx" role="37wK5m">
+                        <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7mwBwTnicsp" role="3cqZAp">
+                  <node concept="2OqwBi" id="7mwBwTnicvo" role="3clFbG">
+                    <node concept="2YIFZM" id="7mwBwTnicuD" role="2Oq$k0">
+                      <ref role="37wK5l" to="zur:6D3NPsjbEtX" resolve="getInstance" />
+                      <ref role="1Pybhc" to="zur:6D3NPsjbEk6" resolve="TypesystemDependencyCache" />
+                    </node>
+                    <node concept="liA8E" id="7mwBwTnicyF" role="2OqNvi">
+                      <ref role="37wK5l" to="zur:7mwBwTnhZS2" resolve="addCachedModule" />
+                      <node concept="37vLTw" id="7mwBwTnicB$" role="37wK5m">
+                        <ref role="3cqZAo" node="70Uiey240J_" resolve="declNode" />
+                      </node>
+                      <node concept="10QFUN" id="7mwBwTnicKd" role="37wK5m">
+                        <node concept="3Tqbb2" id="7mwBwTnicL_" role="10QFUM">
+                          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+                        </node>
+                        <node concept="37vLTw" id="7mwBwTnicFh" role="10QFUP">
+                          <ref role="3cqZAo" node="4FBIHQ1GIpL" resolve="declNodeModule" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbC" id="7mwBwTnicWF" role="3clFbw">
+                <node concept="10Nm6u" id="7mwBwTnicYn" role="3uHU7w" />
+                <node concept="37vLTw" id="7mwBwTnicTW" role="3uHU7B">
+                  <ref role="3cqZAo" node="4FBIHQ1GIpL" resolve="declNodeModule" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="7mwBwTni97_" role="3cqZAp" />
             <node concept="3clFbJ" id="4FBIHQ1GJ4Z" role="3cqZAp">
               <node concept="3clFbS" id="4FBIHQ1GJ51" role="3clFbx">
                 <node concept="3clFbJ" id="4FBIHQ1GYzf" role="3cqZAp">
