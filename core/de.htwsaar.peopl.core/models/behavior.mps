@@ -11020,6 +11020,16 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="26HCxWIKOXK" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWIKOXL" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIKOXM" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a new sibling node of the concrete concept." />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWIKOXN" role="x79VK">
+          <property role="x79VB" value="sibling" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6BiMxHyB56P" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -11077,13 +11087,31 @@
           <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
         </node>
       </node>
-      <node concept="37vLTG" id="6BiMxHyB9kb" role="3clF46">
-        <property role="TrG5h" value="concept" />
-        <node concept="3bZ5Sz" id="6BiMxHyB9lw" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="5nWHL$GnoTD" role="3clF46">
         <property role="TrG5h" value="nodeInTree" />
         <node concept="3Tqbb2" id="5nWHL$Gnr0H" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWIKOYY" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWIKOYZ" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIKOZ0" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a new IFeatureContainer of the concrete concept." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIKOZ1" role="TUOzN">
+          <property role="TUZQ4" value="the module which is assigned to the container" />
+          <node concept="zr_55" id="26HCxWIKOZ3" role="zr_5Q">
+            <ref role="zr_51" node="6BiMxHyB5b1" resolve="module" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIKOZ7" role="TUOzN">
+          <property role="TUZQ4" value="used to get to matching VariabilityStorage" />
+          <node concept="zr_55" id="26HCxWIKOZ9" role="zr_5Q">
+            <ref role="zr_51" node="5nWHL$GnoTD" resolve="nodeInTree" />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWIKOZa" role="x79VK">
+          <property role="x79VB" value="newly created IFeatureContainer" />
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="6BiMxHy_0x1" role="13h7CS">
@@ -11139,6 +11167,16 @@
           <node concept="13iPFW" id="6BiMxHy_1pS" role="3cqZAk" />
         </node>
       </node>
+      <node concept="P$JXv" id="26HCxWILEd1" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILEd2" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEd3" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the definingNode." />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWILEd4" role="x79VK">
+          <property role="x79VB" value="defining node" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6BiMxHy_aly" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -11147,6 +11185,11 @@
       <node concept="3Tm1VV" id="6BiMxHy_alz" role="1B3o_S" />
       <node concept="10P_77" id="6BiMxHy_aoN" role="3clF45" />
       <node concept="3clFbS" id="6BiMxHy_al_" role="3clF47">
+        <node concept="3SKdUt" id="26HCxWILEmf" role="3cqZAp">
+          <node concept="3SKdUq" id="26HCxWILEmh" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: is this really correct? should be isNull imho" />
+          </node>
+        </node>
         <node concept="3cpWs6" id="6BiMxHy_aoQ" role="3cqZAp">
           <node concept="2OqwBi" id="6BiMxHy_azC" role="3cqZAk">
             <node concept="2OqwBi" id="6BiMxHy_ar4" role="2Oq$k0">
@@ -11157,6 +11200,21 @@
             </node>
             <node concept="3x8VRR" id="6BiMxHy_aBN" role="2OqNvi" />
           </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="26HCxWILEeM" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILEeN" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEeO" role="1dT_Ay">
+            <property role="1dT_AB" value="Return whether this container is baseCode or not." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="26HCxWILEga" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEgb" role="1dT_Ay">
+            <property role="1dT_AB" value="If definingNode is set, the node is no baseCode" />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWILEeP" role="x79VK">
+          <property role="x79VB" value="true, if " />
         </node>
       </node>
     </node>
@@ -11266,6 +11324,28 @@
         <property role="TrG5h" value="variabilityRootConcept" />
         <node concept="3bZ5Sz" id="1RjkcfJ5uTl" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="26HCxWILEnA" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILEnB" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEnC" role="1dT_Ay">
+            <property role="1dT_AB" value="Checks whether the currentNode is a potential basecontainer" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILEnD" role="TUOzN">
+          <property role="TUZQ4" value="the node to check" />
+          <node concept="zr_55" id="26HCxWILEnF" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ5lPQ" resolve="currentNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILEnG" role="TUOzN">
+          <property role="TUZQ4" value="concept of root, e.g. ClassConcept" />
+          <node concept="zr_55" id="26HCxWILEnI" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ5uRs" resolve="variabilityRootConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWILEnJ" role="x79VK">
+          <property role="x79VB" value="true, if potential basecontainer, false otherwise" />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="1RjkcfJ5lQ4" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -11310,11 +11390,35 @@
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="mergePeoplContainers" />
       <node concept="3Tm1VV" id="6BiMxHyACXe" role="1B3o_S" />
-      <node concept="3Tqbb2" id="6BiMxHyAD1f" role="3clF45" />
+      <node concept="3Tqbb2" id="6BiMxHyAD1f" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+      </node>
       <node concept="3clFbS" id="6BiMxHyACXg" role="3clF47" />
       <node concept="37vLTG" id="6BiMxHyAD1j" role="3clF46">
         <property role="TrG5h" value="peoplContainers" />
         <node concept="2I9FWS" id="6BiMxHyAD1i" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="26HCxWIJnYF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="splitContainerAtNode" />
+      <node concept="3Tm1VV" id="26HCxWIJnYG" role="1B3o_S" />
+      <node concept="3Tqbb2" id="26HCxWIJovC" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+      </node>
+      <node concept="3clFbS" id="26HCxWIJnYI" role="3clF47" />
+      <node concept="37vLTG" id="26HCxWIJovG" role="3clF46">
+        <property role="TrG5h" value="splitNode" />
+        <node concept="3Tqbb2" id="26HCxWIJovF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="26HCxWIJovU" role="3clF46">
+        <property role="TrG5h" value="asNextContainer" />
+        <node concept="10P_77" id="26HCxWIJow2" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="26HCxWIJowd" role="3clF46">
+        <property role="TrG5h" value="includeNodeInSplit" />
+        <node concept="10P_77" id="26HCxWIJown" role="1tU5fm" />
       </node>
     </node>
     <node concept="1X3_iC" id="3vAAWfK6JQr" role="lGtFl">
@@ -11562,6 +11666,13 @@
           </node>
         </node>
       </node>
+      <node concept="P$JXv" id="26HCxWILEuG" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILEuH" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEuI" role="1dT_Ay">
+            <property role="1dT_AB" value="Remove Containerreferences and disconnect from module and VP." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3vAAWfK5uYq" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -11668,6 +11779,19 @@
         <property role="TrG5h" value="targetNode" />
         <node concept="3Tqbb2" id="3vAAWfK5v3H" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="26HCxWILE$a" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILE$b" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILE$c" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates a new Containerreference and registers the referenceContainer." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILE$d" role="TUOzN">
+          <property role="TUZQ4" value="the node which should be annotated with the containerref" />
+          <node concept="zr_55" id="26HCxWILE$f" role="zr_5Q">
+            <ref role="zr_51" node="3vAAWfK5v3I" resolve="targetNode" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="1RjkcfJ3Rqa" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -11764,13 +11888,28 @@
           <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
         </node>
       </node>
-      <node concept="37vLTG" id="1RjkcfJ3RC3" role="3clF46">
-        <property role="TrG5h" value="sourceNode" />
-        <node concept="3Tqbb2" id="1RjkcfJ3RCb" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="1RjkcfJ3RCq" role="3clF46">
         <property role="TrG5h" value="targetNode" />
         <node concept="3Tqbb2" id="1RjkcfJ3RC$" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWILEE7" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILEE8" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILEE9" role="1dT_Ay">
+            <property role="1dT_AB" value="Updates the" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILEEa" role="TUOzN">
+          <property role="TUZQ4" value="the containerreference which should be updated" />
+          <node concept="zr_55" id="26HCxWILEEc" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ3RBN" resolve="containerRef" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILEEg" role="TUOzN">
+          <property role="TUZQ4" value="the referencedNode" />
+          <node concept="zr_55" id="26HCxWILEEi" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ3RCq" resolve="targetNode" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="1RjkcfJ47GI" role="13h7CS">
@@ -11804,9 +11943,6 @@
                         <node concept="37vLTw" id="1RjkcfJ4bPO" role="37wK5m">
                           <ref role="3cqZAo" node="1RjkcfJ4btp" resolve="it" />
                         </node>
-                        <node concept="37vLTw" id="1RjkcfJ4bRp" role="37wK5m">
-                          <ref role="3cqZAo" node="1RjkcfJ47V3" resolve="sourceNode" />
-                        </node>
                         <node concept="37vLTw" id="1RjkcfJ4bTf" role="37wK5m">
                           <ref role="3cqZAo" node="1RjkcfJ47Vv" resolve="targetNode" />
                         </node>
@@ -11830,6 +11966,30 @@
       <node concept="37vLTG" id="1RjkcfJ47Vv" role="3clF46">
         <property role="TrG5h" value="targetNode" />
         <node concept="3Tqbb2" id="1RjkcfJ47VB" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWILRI1" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILRI2" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILRI3" role="1dT_Ay">
+            <property role="1dT_AB" value="Update all containerreferences of targetNode with Containerreferences of sourceNode." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="26HCxWILTSw" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILTSx" role="1dT_Ay">
+            <property role="1dT_AB" value="Used when replacing nodes." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILRI4" role="TUOzN">
+          <property role="TUZQ4" value="node which provides the references" />
+          <node concept="zr_55" id="26HCxWILRI6" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ47V3" resolve="sourceNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILRI7" role="TUOzN">
+          <property role="TUZQ4" value="node which should now be referenced" />
+          <node concept="zr_55" id="26HCxWILRI9" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ47Vv" resolve="targetNode" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="1RjkcfJ4cgL" role="13h7CS">
@@ -11935,6 +12095,19 @@
         <property role="TrG5h" value="targetNode" />
         <node concept="3Tqbb2" id="1RjkcfJ4cvB" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="26HCxWILV_x" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILV_y" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILV_z" role="1dT_Ay">
+            <property role="1dT_AB" value="Removes Containerreferences from node and registers new ones." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILV_$" role="TUOzN">
+          <property role="TUZQ4" value="node which should be rewired" />
+          <node concept="zr_55" id="26HCxWILV_A" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ4cvC" resolve="targetNode" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1X3_iC" id="3vAAWfK6LiF" role="lGtFl">
       <property role="3V$3am" value="method" />
@@ -11967,7 +12140,7 @@
         <node concept="3clFbF" id="1RjkcfJ58zs" role="3cqZAp">
           <node concept="37vLTI" id="1RjkcfJ58GI" role="3clFbG">
             <node concept="37vLTw" id="1RjkcfJ58Hd" role="37vLTx">
-              <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="targetNode" />
+              <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="newDefiningNode" />
             </node>
             <node concept="2OqwBi" id="1RjkcfJ58$m" role="37vLTJ">
               <node concept="13iPFW" id="1RjkcfJ58zr" role="2Oq$k0" />
@@ -11984,7 +12157,7 @@
                 <node concept="2OqwBi" id="1RjkcfJ5c3b" role="37vLTx">
                   <node concept="2OqwBi" id="1RjkcfJ5bFC" role="2Oq$k0">
                     <node concept="37vLTw" id="1RjkcfJ5bE6" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="targetNode" />
+                      <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="newDefiningNode" />
                     </node>
                     <node concept="z$bX8" id="1RjkcfJ5bKT" role="2OqNvi" />
                   </node>
@@ -12038,7 +12211,7 @@
           <node concept="2OqwBi" id="1RjkcfJ59ch" role="3clFbw">
             <node concept="2OqwBi" id="1RjkcfJ58KO" role="2Oq$k0">
               <node concept="37vLTw" id="1RjkcfJ58JV" role="2Oq$k0">
-                <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="targetNode" />
+                <ref role="3cqZAo" node="6BiMxHy_uFT" resolve="newDefiningNode" />
               </node>
               <node concept="3CFZ6_" id="1RjkcfJ58MG" role="2OqNvi">
                 <node concept="3CFYIy" id="1RjkcfJ58MZ" role="3CFYIz">
@@ -12066,12 +12239,31 @@
         </node>
       </node>
       <node concept="37vLTG" id="6BiMxHy_uFT" role="3clF46">
-        <property role="TrG5h" value="targetNode" />
+        <property role="TrG5h" value="newDefiningNode" />
         <node concept="3Tqbb2" id="6BiMxHy_uFS" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1RjkcfJ5bux" role="3clF46">
         <property role="TrG5h" value="definingContainerConcept" />
         <node concept="3bZ5Sz" id="1RjkcfJ5bvk" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWILVAJ" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWILVAK" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWILVAL" role="1dT_Ay">
+            <property role="1dT_AB" value="Updates the definingNode of this IFeatureContainer" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILVAM" role="TUOzN">
+          <property role="TUZQ4" value="the new definingNode" />
+          <node concept="zr_55" id="26HCxWILVAO" role="zr_5Q">
+            <ref role="zr_51" node="6BiMxHy_uFT" resolve="newDefiningNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWILVAP" role="TUOzN">
+          <property role="TUZQ4" value="concept of definingContainer, e.g. ClassConcept" />
+          <node concept="zr_55" id="26HCxWILVAR" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ5bux" resolve="definingContainerConcept" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="6BiMxHy_uKf" role="13h7CS">
@@ -12109,6 +12301,25 @@
         <property role="TrG5h" value="definingContainerConcept" />
         <node concept="3bZ5Sz" id="1RjkcfJ5jFx" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="26HCxWIM0D1" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWIM0D2" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIM0D3" role="1dT_Ay">
+            <property role="1dT_AB" value="Invokes registering of targetNode an update of defining nodes." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIM0D4" role="TUOzN">
+          <property role="TUZQ4" value="node which should be registered" />
+          <node concept="zr_55" id="26HCxWIM0D6" role="zr_5Q">
+            <ref role="zr_51" node="6BiMxHy_uOh" resolve="targetNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIM0D7" role="TUOzN">
+          <property role="TUZQ4" value="concept of definingContainer, e.g. ClassConcept" />
+          <node concept="zr_55" id="26HCxWIM0D9" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfJ5jFp" resolve="definingContainerConcept" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3vAAWfK5kBc" role="13h7CS">
       <property role="13i0iv" value="false" />
@@ -12116,7 +12327,9 @@
       <property role="TrG5h" value="createBaseCodeContainer" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="3vAAWfK5kBd" role="1B3o_S" />
-      <node concept="3Tqbb2" id="3vAAWfK5kF$" role="3clF45" />
+      <node concept="3Tqbb2" id="3vAAWfK5kF$" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+      </node>
       <node concept="3clFbS" id="3vAAWfK5kBf" role="3clF47">
         <node concept="3cpWs8" id="3vAAWfK5kGk" role="3cqZAp">
           <node concept="3cpWsn" id="3vAAWfK5kGn" role="3cpWs9">
@@ -12160,9 +12373,6 @@
                     <node concept="3TrEf2" id="3vAAWfK5u$v" role="2OqNvi">
                       <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
                     </node>
-                  </node>
-                  <node concept="37vLTw" id="3vAAWfK5rjm" role="37wK5m">
-                    <ref role="3cqZAo" node="3vAAWfK5rfK" resolve="concreteConceptOfPeoplContainer" />
                   </node>
                   <node concept="37vLTw" id="5nWHL$GnHzg" role="37wK5m">
                     <ref role="3cqZAo" node="3vAAWfK5kFQ" resolve="nodeInTree" />
@@ -12275,7 +12485,7 @@
                                   <ref role="3cqZAo" node="3vAAWfK5yyc" resolve="it" />
                                 </node>
                                 <node concept="37vLTw" id="5nWHL$Gs8zi" role="37wK5m">
-                                  <ref role="3cqZAo" node="3vAAWfK5vKW" resolve="conceptOfContainer" />
+                                  <ref role="3cqZAo" node="3vAAWfK5vKW" resolve="definingContainerConcept" />
                                 </node>
                               </node>
                             </node>
@@ -12302,7 +12512,7 @@
               <ref role="3cqZAo" node="3vAAWfK5kFQ" resolve="nodeInTree" />
             </node>
             <node concept="37vLTw" id="5nWHL$GscCt" role="37wK5m">
-              <ref role="3cqZAo" node="3vAAWfK5vKW" resolve="conceptOfContainer" />
+              <ref role="3cqZAo" node="3vAAWfK5vKW" resolve="definingContainerConcept" />
             </node>
           </node>
         </node>
@@ -12327,9 +12537,6 @@
                 <node concept="3TrEf2" id="3vAAWfK6jPZ" role="2OqNvi">
                   <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
                 </node>
-              </node>
-              <node concept="37vLTw" id="3vAAWfK8J0h" role="37wK5m">
-                <ref role="3cqZAo" node="3vAAWfK5rfK" resolve="concreteConceptOfPeoplContainer" />
               </node>
               <node concept="37vLTw" id="5nWHL$GnHAb" role="37wK5m">
                 <ref role="3cqZAo" node="3vAAWfK5kFQ" resolve="nodeInTree" />
@@ -12397,13 +12604,37 @@
         <property role="TrG5h" value="nodeInTree" />
         <node concept="3Tqbb2" id="3vAAWfK5kFY" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="3vAAWfK5rfK" role="3clF46">
-        <property role="TrG5h" value="concreteConceptOfPeoplContainer" />
-        <node concept="3bZ5Sz" id="3vAAWfK5rgK" role="1tU5fm" />
-      </node>
       <node concept="37vLTG" id="3vAAWfK5vKW" role="3clF46">
-        <property role="TrG5h" value="conceptOfContainer" />
+        <property role="TrG5h" value="definingContainerConcept" />
         <node concept="3bZ5Sz" id="3vAAWfK5vM1" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWIM0Ev" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWIM0Ew" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIM0Ex" role="1dT_Ay">
+            <property role="1dT_AB" value="Creates new IFeatureContainer as base code." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIM0Ey" role="TUOzN">
+          <property role="TUZQ4" value="node which acts as definingNode for new IFeatureContainer" />
+          <node concept="zr_55" id="26HCxWIM0E$" role="zr_5Q">
+            <ref role="zr_51" node="3vAAWfK5kFC" resolve="targetNode" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIM0E_" role="TUOzN">
+          <property role="TUZQ4" value="used to access VariabilityStorage and to access definingContainer" />
+          <node concept="zr_55" id="26HCxWIM0EB" role="zr_5Q">
+            <ref role="zr_51" node="3vAAWfK5kFQ" resolve="nodeInTree" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIM0EF" role="TUOzN">
+          <property role="TUZQ4" value="concept of definingContainer, e.g. ClassConcept" />
+          <node concept="zr_55" id="26HCxWIM0EH" role="zr_5Q">
+            <ref role="zr_51" node="3vAAWfK5vKW" resolve="definingContainerConcept" />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWIM0EI" role="x79VK">
+          <property role="x79VB" value="newly created IFeatureContainer" />
+        </node>
       </node>
     </node>
     <node concept="13i0hz" id="1RjkcfIYrLr" role="13h7CS">
@@ -12412,7 +12643,9 @@
       <property role="TrG5h" value="createNonModuleBaseCodeContainer" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="1RjkcfIYrLs" role="1B3o_S" />
-      <node concept="3Tqbb2" id="1RjkcfIYs8t" role="3clF45" />
+      <node concept="3Tqbb2" id="1RjkcfIYs8t" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+      </node>
       <node concept="3clFbS" id="1RjkcfIYrLu" role="3clF47">
         <node concept="3cpWs8" id="1RjkcfIYs8G" role="3cqZAp">
           <node concept="3cpWsn" id="1RjkcfIYs8J" role="3cpWs9">
@@ -12489,45 +12722,6 @@
             </node>
           </node>
         </node>
-        <node concept="1X3_iC" id="31jQ6wLqalh" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1RjkcfIYu3q" role="8Wnug">
-            <node concept="2OqwBi" id="1RjkcfIYu7D" role="3clFbG">
-              <node concept="35c_gC" id="1RjkcfIYu3o" role="2Oq$k0">
-                <ref role="35c_gD" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-              </node>
-              <node concept="2qgKlT" id="1RjkcfIYujI" role="2OqNvi">
-                <ref role="37wK5l" node="1RjkcfIYsrl" resolve="annotateAndCreateVP" />
-                <node concept="37vLTw" id="1RjkcfIYul2" role="37wK5m">
-                  <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
-                </node>
-                <node concept="37vLTw" id="31jQ6wLppWe" role="37wK5m">
-                  <ref role="3cqZAo" node="1RjkcfIYs8x" resolve="definingNode" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="31jQ6wLqali" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="1RjkcfIYuCk" role="8Wnug">
-            <node concept="37vLTI" id="1RjkcfIYuQK" role="3clFbG">
-              <node concept="37vLTw" id="1RjkcfIYuTa" role="37vLTx">
-                <ref role="3cqZAo" node="1RjkcfIYs8x" resolve="definingNode" />
-              </node>
-              <node concept="2OqwBi" id="1RjkcfIYuGS" role="37vLTJ">
-                <node concept="37vLTw" id="1RjkcfIYuFJ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
-                </node>
-                <node concept="3TrEf2" id="1RjkcfIYuN9" role="2OqNvi">
-                  <ref role="3Tt5mk" to="xf8r:6BiMxHywZsk" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs6" id="1RjkcfIYuVH" role="3cqZAp">
           <node concept="37vLTw" id="1RjkcfIYv0r" role="3cqZAk">
             <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
@@ -12537,6 +12731,27 @@
       <node concept="37vLTG" id="1RjkcfIYs8x" role="3clF46">
         <property role="TrG5h" value="definingNode" />
         <node concept="3Tqbb2" id="1RjkcfIYs8w" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="26HCxWIMD4n" role="lGtFl">
+        <node concept="TZ5HA" id="26HCxWIMD4o" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIMD4p" role="1dT_Ay">
+            <property role="1dT_AB" value="Create IFeatureContainer which is not yet associated with a specific module, but is already registered" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="26HCxWIMDjp" role="TZ5H$">
+          <node concept="1dT_AC" id="26HCxWIMDjq" role="1dT_Ay">
+            <property role="1dT_AB" value="to his updater." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="26HCxWIMD4q" role="TUOzN">
+          <property role="TUZQ4" value="node which acts as updater" />
+          <node concept="zr_55" id="26HCxWIMD4s" role="zr_5Q">
+            <ref role="zr_51" node="1RjkcfIYs8x" resolve="definingNode" />
+          </node>
+        </node>
+        <node concept="x79VA" id="26HCxWIMD4t" role="x79VK">
+          <property role="x79VB" value="newly created IFeatureContainer" />
+        </node>
       </node>
     </node>
     <node concept="13hLZK" id="6BiMxHywZso" role="13h7CW">

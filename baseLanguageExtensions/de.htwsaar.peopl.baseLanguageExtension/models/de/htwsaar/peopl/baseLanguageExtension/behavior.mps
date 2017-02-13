@@ -324,7 +324,6 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
-      <concept id="334628810661441841" name="jetbrains.mps.lang.smodel.structure.AsSConcept" flags="nn" index="1rGIog" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -1124,16 +1123,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3vAAWfK3FPi" role="3cqZAp" />
-        <node concept="3SKdUt" id="3vAAWfK3KhN" role="3cqZAp">
-          <node concept="3SKdUq" id="3vAAWfK3KhP" role="3SKWNk">
-            <property role="3SKdUp" value="create new instance of this node to get &quot;concept&quot;. This is needed in featureContainer to " />
-          </node>
-        </node>
-        <node concept="3SKdUt" id="3vAAWfK3MwW" role="3cqZAp">
-          <node concept="3SKdUq" id="3vAAWfK3MwX" role="3SKWNk">
-            <property role="3SKdUp" value="create a specific node instance" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="6BiMxHyBa4t" role="3cqZAp">
           <node concept="10QFUN" id="6BiMxHyC4t_" role="3cqZAk">
             <node concept="3Tqbb2" id="6BiMxHyC6xo" role="10QFUM">
@@ -1145,10 +1134,6 @@
                 <ref role="37wK5l" to="kpvh:6BiMxHyB56P" resolve="create" />
                 <node concept="37vLTw" id="6BiMxHyBiyF" role="37wK5m">
                   <ref role="3cqZAo" node="9EinyMtdZd" resolve="module" />
-                </node>
-                <node concept="2OqwBi" id="3vAAWfK9__p" role="37wK5m">
-                  <node concept="13iPFW" id="3vAAWfK3pzx" role="2Oq$k0" />
-                  <node concept="1rGIog" id="3vAAWfK9Lkp" role="2OqNvi" />
                 </node>
                 <node concept="37vLTw" id="5nWHL$GnFuL" role="37wK5m">
                   <ref role="3cqZAo" node="9EinyMtp_i" resolve="nodeInTree" />
@@ -1772,9 +1757,6 @@
                   <node concept="37vLTw" id="5nWHL$GuCnW" role="37wK5m">
                     <ref role="3cqZAo" node="4DWAEpihRdN" resolve="nodeInTree" />
                   </node>
-                  <node concept="35c_gC" id="3vAAWfKhmVd" role="37wK5m">
-                    <ref role="35c_gD" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
-                  </node>
                   <node concept="35c_gC" id="3vAAWfKhn4$" role="37wK5m">
                     <ref role="35c_gD" to="tpee:fz12cDA" resolve="ClassConcept" />
                   </node>
@@ -2236,9 +2218,6 @@
               <ref role="37wK5l" to="kpvh:1RjkcfJ3Rqa" resolve="updateContainerReference" />
               <node concept="37vLTw" id="1RjkcfJ58tI" role="37wK5m">
                 <ref role="3cqZAo" node="1RjkcfJ57C6" resolve="peoplBlockRef" />
-              </node>
-              <node concept="37vLTw" id="1RjkcfJ58um" role="37wK5m">
-                <ref role="3cqZAo" node="1RjkcfJ57Cu" resolve="sourceMethod" />
               </node>
               <node concept="37vLTw" id="1RjkcfJ58xD" role="37wK5m">
                 <ref role="3cqZAo" node="1RjkcfJ57CX" resolve="targetMethod" />

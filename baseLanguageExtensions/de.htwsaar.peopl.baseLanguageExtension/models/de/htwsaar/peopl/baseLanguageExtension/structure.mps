@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -60,13 +61,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
   </registry>
   <node concept="1TIwiD" id="7bzdNbiQijk">
@@ -74,23 +68,17 @@
     <property role="TrG5h" value="PeoplBlockStatement" />
     <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
-    <node concept="1X3_iC" id="31jQ6wL6rt0" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="4DWAEpicCW1" role="8Wnug">
-        <property role="20lmBu" value="reference" />
-        <property role="20kJfa" value="definingMethod" />
-        <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-      </node>
+    <node concept="1TJgyj" id="4DWAEpicCW1" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingMethod" />
+      <ref role="20lvS9" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
+      <node concept="asaX9" id="26HCxWIMfx0" role="lGtFl" />
     </node>
-    <node concept="1X3_iC" id="31jQ6wL6rt1" role="lGtFl">
-      <property role="3V$3am" value="linkDeclaration" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
-      <node concept="1TJgyj" id="4DWAEpicCW3" role="8Wnug">
-        <property role="20lmBu" value="reference" />
-        <property role="20kJfa" value="definingClass" />
-        <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
-      </node>
+    <node concept="1TJgyj" id="4DWAEpicCW3" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="definingClass" />
+      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
+      <node concept="asaX9" id="26HCxWIMfx8" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6BiMxHyxvgr" role="PzmwI">
       <ref role="PrY4T" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
