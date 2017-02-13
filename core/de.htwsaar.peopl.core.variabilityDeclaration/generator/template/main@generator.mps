@@ -406,17 +406,17 @@
   </registry>
   <node concept="bUwia" id="14Db1DY8RCF">
     <property role="TrG5h" value="main" />
-    <node concept="3lhOvk" id="23vxL33rvUE" role="3lj3bC">
+    <node concept="3lhOvk" id="5ifx4GSxW38" role="3lj3bC">
+      <ref role="30HIoZ" to="ovfz:7wEfe$EdKHk" resolve="WrapperDeclaration" />
+      <ref role="3lhOvi" node="5ifx4GSxW3c" resolve="WrapperRuntime" />
+    </node>
+    <node concept="3lhOvk" id="1b8Z$YZDttr" role="3lj3bC">
       <ref role="30HIoZ" to="ovfz:14Db1DY8RGP" resolve="VariabilityDeclaration" />
       <ref role="3lhOvi" node="x_waXnQz8g" resolve="VariabilityAspectRuntime" />
     </node>
     <node concept="3lhOvk" id="4qduh90jBhL" role="3lj3bC">
-      <ref role="3lhOvi" node="4qduh90jBhO" resolve="ExtDef_VariabilityAspectRuntime" />
       <ref role="30HIoZ" to="ovfz:20Az8RpddJo" resolve="VariabilityDeclarationDescriptor" />
-    </node>
-    <node concept="3lhOvk" id="5ifx4GSxW38" role="3lj3bC">
-      <ref role="30HIoZ" to="ovfz:7wEfe$EdKHk" resolve="WrapperDeclaration" />
-      <ref role="3lhOvi" node="5ifx4GSxW3c" resolve="WrapperRuntime" />
+      <ref role="3lhOvi" node="4qduh90jBhO" resolve="ExtDef_VariabilityAspectRuntime" />
     </node>
     <node concept="2VPoh5" id="2FVYQByNpNi" role="2VS0gm">
       <ref role="2VPoh2" node="x_waXnQz8g" resolve="VariabilityAspectRuntime" />
@@ -429,24 +429,6 @@
                 <node concept="1st3f0" id="3V2zajGVAWt" role="2OqNvi" />
               </node>
               <node concept="3zA4fs" id="23vxL33tttX" role="2OqNvi">
-                <ref role="3zA4av" to="4a62:2FVYQByNgQM" resolve="variability" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2VPoh5" id="3apYWspa7Jx" role="2VS0gm">
-      <ref role="2VPoh2" node="5ifx4GSxW3c" resolve="WrapperRuntime" />
-      <node concept="2VP$b9" id="3apYWspa7JG" role="2VPoh3">
-        <node concept="3clFbS" id="3apYWspa7JH" role="2VODD2">
-          <node concept="3clFbF" id="3apYWspa7KM" role="3cqZAp">
-            <node concept="2OqwBi" id="3apYWspa7Qz" role="3clFbG">
-              <node concept="2OqwBi" id="3apYWspa7Mz" role="2Oq$k0">
-                <node concept="1iwH7S" id="3apYWspa7KL" role="2Oq$k0" />
-                <node concept="1st3f0" id="3apYWspa7Of" role="2OqNvi" />
-              </node>
-              <node concept="3zA4fs" id="3apYWspa7SA" role="2OqNvi">
                 <ref role="3zA4av" to="4a62:2FVYQByNgQM" resolve="variability" />
               </node>
             </node>
