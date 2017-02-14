@@ -1112,7 +1112,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1RWzVE2XsCP" role="3cqZAp" />
+        <node concept="3clFbF" id="4gEaZmVqCVa" role="3cqZAp">
+          <node concept="2OqwBi" id="4gEaZmVqD1F" role="3clFbG">
+            <node concept="37vLTw" id="4gEaZmVqCV8" role="2Oq$k0">
+              <ref role="3cqZAo" node="1RWzVE2Xsqm" resolve="newPeoplBlock" />
+            </node>
+            <node concept="2qgKlT" id="4gEaZmVqDjn" role="2OqNvi">
+              <ref role="37wK5l" node="4DWAEpijisK" resolve="registerPeoplBlock" />
+              <node concept="37vLTw" id="4gEaZmVqDkY" role="37wK5m">
+                <ref role="3cqZAo" node="1RWzVE2XspZ" resolve="definingMethod" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1RWzVE2XsqV" role="3cqZAp">
           <node concept="37vLTw" id="1RWzVE2XsqW" role="3clFbG">
             <ref role="3cqZAo" node="1RWzVE2Xsqm" resolve="newPeoplBlock" />
