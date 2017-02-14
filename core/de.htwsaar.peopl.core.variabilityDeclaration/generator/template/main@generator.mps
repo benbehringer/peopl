@@ -203,7 +203,6 @@
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
-        <child id="1167088157977" name="createRootRule" index="2VS0gm" />
         <child id="1167328349397" name="reductionMappingRule" index="3acgRq" />
         <child id="1167514678247" name="rootMappingRule" index="3lj3bC" />
       </concept>
@@ -226,11 +225,6 @@
         <reference id="1722980698497626483" name="template" index="v9R2y" />
         <child id="1722980698497626405" name="actualArgument" index="v9R3O" />
       </concept>
-      <concept id="1167087469898" name="jetbrains.mps.lang.generator.structure.CreateRootRule" flags="lg" index="2VPoh5">
-        <reference id="1167087469901" name="templateNode" index="2VPoh2" />
-        <child id="1167087469900" name="conditionFunction" index="2VPoh3" />
-      </concept>
-      <concept id="1167087518662" name="jetbrains.mps.lang.generator.structure.CreateRootRule_Condition" flags="in" index="2VP$b9" />
       <concept id="1167168920554" name="jetbrains.mps.lang.generator.structure.BaseMappingRule_Condition" flags="in" index="30G5F_" />
       <concept id="1167169188348" name="jetbrains.mps.lang.generator.structure.TemplateFunctionParameter_sourceNode" flags="nn" index="30H73N" />
       <concept id="1167169308231" name="jetbrains.mps.lang.generator.structure.BaseMappingRule" flags="ng" index="30H$t8">
@@ -289,10 +283,6 @@
       <concept id="2030416617761226491" name="jetbrains.mps.lang.slanguage.structure.Model_IsAspectOperation" flags="nn" index="3zA4fs">
         <reference id="2030416617761226680" name="aspect" index="3zA4av" />
       </concept>
-    </language>
-    <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
-      <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
-      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -417,24 +407,6 @@
     <node concept="3lhOvk" id="4qduh90jBhL" role="3lj3bC">
       <ref role="30HIoZ" to="ovfz:20Az8RpddJo" resolve="VariabilityDeclarationDescriptor" />
       <ref role="3lhOvi" node="4qduh90jBhO" resolve="ExtDef_VariabilityAspectRuntime" />
-    </node>
-    <node concept="2VPoh5" id="2FVYQByNpNi" role="2VS0gm">
-      <ref role="2VPoh2" node="x_waXnQz8g" resolve="VariabilityAspectRuntime" />
-      <node concept="2VP$b9" id="2FVYQByNpNk" role="2VPoh3">
-        <node concept="3clFbS" id="2FVYQByNpNl" role="2VODD2">
-          <node concept="3clFbF" id="7eFE78n2XSN" role="3cqZAp">
-            <node concept="2OqwBi" id="7eFE78n2Yjp" role="3clFbG">
-              <node concept="2OqwBi" id="7eFE78n2Yf1" role="2Oq$k0">
-                <node concept="1iwH7S" id="7eFE78n2XSM" role="2Oq$k0" />
-                <node concept="1st3f0" id="3V2zajGVAWt" role="2OqNvi" />
-              </node>
-              <node concept="3zA4fs" id="23vxL33tttX" role="2OqNvi">
-                <ref role="3zA4av" to="4a62:2FVYQByNgQM" resolve="variability" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="3aamgX" id="x_waXnQ__k" role="3acgRq">
       <ref role="30HIoZ" to="ovfz:14Db1DY8RGN" resolve="SimpleConceptInclusion" />
