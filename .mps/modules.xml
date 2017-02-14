@@ -32,6 +32,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.shortcuts/de.htwsaar.peopl.core.shortcuts.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" folder="peopl.core.tools" />
