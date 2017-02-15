@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="8u4i" ref="r:da2ac303-e47a-4f9c-9c44-3289c429d994(de.htwsaar.peopl.core.shortcuts.structure)" />
+    <import index="pyhz" ref="r:d53f26d0-7c28-491e-baee-5ba91c1aec80(de.htwsaar.peopl.core.shortcuts.runtime.plugin)" />
     <import index="tpeu" ref="r:00000000-0000-4000-0000-011c895902fa(jetbrains.mps.lang.smodel.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -73,8 +74,8 @@
       <ref role="30HIoZ" to="8u4i:1N0v3lIBdg4" resolve="Short_Fragment" />
       <node concept="gft3U" id="1N0v3lIBj09" role="1lVwrX">
         <node concept="2YIFZM" id="1N0v3lIBj0P" role="gfFT$">
-          <ref role="37wK5l" to="8u4i:1N0v3lIBdXx" resolve="getFragment" />
-          <ref role="1Pybhc" to="8u4i:1N0v3lIBdWY" resolve="VariabilityOperations" />
+          <ref role="1Pybhc" to="pyhz:2scfgFmip$I" resolve="VariabilityOperations" />
+          <ref role="37wK5l" to="pyhz:1N0v3lIBdXx" resolve="getFragment" />
           <node concept="10Nm6u" id="1N0v3lIBj12" role="37wK5m">
             <node concept="29HgVG" id="1N0v3lIBj1_" role="lGtFl">
               <node concept="3NFfHV" id="1N0v3lIBj1R" role="3NFExx">
@@ -83,6 +84,56 @@
                     <node concept="2OqwBi" id="1N0v3lIBj5g" role="3clFbG">
                       <node concept="30H73N" id="1N0v3lIBj2E" role="2Oq$k0" />
                       <node concept="2qgKlT" id="1N0v3lIBjeS" role="2OqNvi">
+                        <ref role="37wK5l" to="tpeu:hEwJdGu" resolve="getLeftExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="2scfgFmiteS" role="3acgRq">
+      <ref role="30HIoZ" to="8u4i:1N0v3lIBdga" resolve="Short_VP" />
+      <node concept="gft3U" id="2scfgFmitjr" role="1lVwrX">
+        <node concept="2YIFZM" id="2scfgFmitk2" role="gfFT$">
+          <ref role="37wK5l" to="pyhz:1N0v3lIBfNy" resolve="getVP" />
+          <ref role="1Pybhc" to="pyhz:2scfgFmip$I" resolve="VariabilityOperations" />
+          <node concept="10Nm6u" id="2scfgFmitkf" role="37wK5m">
+            <node concept="29HgVG" id="2scfgFmitkM" role="lGtFl">
+              <node concept="3NFfHV" id="2scfgFmitl4" role="3NFExx">
+                <node concept="3clFbS" id="2scfgFmitl5" role="2VODD2">
+                  <node concept="3clFbF" id="2scfgFmitlS" role="3cqZAp">
+                    <node concept="2OqwBi" id="2scfgFmitot" role="3clFbG">
+                      <node concept="30H73N" id="2scfgFmitlR" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="2scfgFmity5" role="2OqNvi">
+                        <ref role="37wK5l" to="tpeu:hEwJdGu" resolve="getLeftExpression" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="2scfgFmit_A" role="3acgRq">
+      <ref role="30HIoZ" to="8u4i:1N0v3lIBdgb" resolve="Short_Module" />
+      <node concept="gft3U" id="2scfgFmitHA" role="1lVwrX">
+        <node concept="2YIFZM" id="2scfgFmitId" role="gfFT$">
+          <ref role="37wK5l" to="pyhz:1N0v3lIBgot" resolve="getModule" />
+          <ref role="1Pybhc" to="pyhz:2scfgFmip$I" resolve="VariabilityOperations" />
+          <node concept="10Nm6u" id="2scfgFmitIq" role="37wK5m">
+            <node concept="29HgVG" id="2scfgFmitIX" role="lGtFl">
+              <node concept="3NFfHV" id="2scfgFmitJf" role="3NFExx">
+                <node concept="3clFbS" id="2scfgFmitJg" role="2VODD2">
+                  <node concept="3clFbF" id="2scfgFmitK3" role="3cqZAp">
+                    <node concept="2OqwBi" id="2scfgFmitMC" role="3clFbG">
+                      <node concept="30H73N" id="2scfgFmitK2" role="2Oq$k0" />
+                      <node concept="2qgKlT" id="2scfgFmitWg" role="2OqNvi">
                         <ref role="37wK5l" to="tpeu:hEwJdGu" resolve="getLeftExpression" />
                       </node>
                     </node>
