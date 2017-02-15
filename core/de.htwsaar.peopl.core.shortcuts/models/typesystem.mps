@@ -48,6 +48,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -132,6 +135,31 @@
     <node concept="1YaCAy" id="1N0v3lIBdm8" role="1YuTPh">
       <property role="TrG5h" value="short_Module" />
       <ref role="1YaFvo" to="8u4i:1N0v3lIBdgb" resolve="Short_Module" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5uiLeIoM4jR">
+    <property role="TrG5h" value="typeof_Short_Alternatives" />
+    <node concept="3clFbS" id="5uiLeIoM4jS" role="18ibNy">
+      <node concept="1Z5TYs" id="5uiLeIoM4nU" role="3cqZAp">
+        <node concept="mw_s8" id="5uiLeIoM4oe" role="1ZfhKB">
+          <node concept="2c44tf" id="5uiLeIoM4oa" role="mwGJk">
+            <node concept="2I9FWS" id="5uiLeIoM4q9" role="2c44tc">
+              <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="5uiLeIoM4nX" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5uiLeIoM4jY" role="mwGJk">
+            <node concept="1YBJjd" id="5uiLeIoM4kq" role="1Z2MuG">
+              <ref role="1YBMHb" node="5uiLeIoM4jU" resolve="short_Alternatives" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5uiLeIoM4jU" role="1YuTPh">
+      <property role="TrG5h" value="short_Alternatives" />
+      <ref role="1YaFvo" to="8u4i:5uiLeIoM4hi" resolve="Short_Alternatives" />
     </node>
   </node>
 </model>
