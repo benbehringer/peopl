@@ -98,6 +98,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="7BIYFTBzC0t" resolve="AlternativeConfig" />
     </node>
+    <node concept="1TJgyj" id="4UuYCFbLufU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="featureGroupConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4UuYCFbLueA" resolve="FeatureGroupConfig" />
+    </node>
     <node concept="PrWs8" id="BFOVkKtF5k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -291,6 +297,35 @@
       <property role="20kJfa" value="wrapperWrappeeRelations" />
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="7wEfe$EdKHF" resolve="WrapperWrappeeRelationship" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4UuYCFbLueA">
+    <property role="1pbfSe" value="442818096" />
+    <property role="TrG5h" value="FeatureGroupConfig" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4UuYCFbLueB" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="replaceableNode" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="4UuYCFbLXh$" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="concreteFeatureGroup" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="4UuYCFbU6EW" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="definingContainerConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="4UuYCFbU6F0" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="definingNodeConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
   </node>
 </model>

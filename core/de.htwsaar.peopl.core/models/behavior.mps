@@ -5732,9 +5732,7 @@
       </node>
       <node concept="37vLTG" id="2KmZcpndpE4" role="3clF46">
         <property role="TrG5h" value="potentialWrapper" />
-        <node concept="3Tqbb2" id="2KmZcpndpE3" role="1tU5fm">
-          <ref role="ehGHo" to="tpee:fzclF8l" resolve="Statement" />
-        </node>
+        <node concept="3Tqbb2" id="2KmZcpndpE3" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="1Fk50g357yE" role="13h7CS">
@@ -10988,7 +10986,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6BiMxHywZsn">
-    <ref role="13h7C2" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+    <ref role="13h7C2" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
     <node concept="13i0hz" id="6BiMxHyxamF" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -10998,7 +10996,7 @@
       <node concept="3clFbS" id="6BiMxHyxamI" role="3clF47">
         <node concept="3cpWs8" id="6BiMxHyxarX" role="3cqZAp">
           <node concept="3cpWsn" id="6BiMxHyxas0" role="3cpWs9">
-            <property role="TrG5h" value="siblingContainer" />
+            <property role="TrG5h" value="siblingGroup" />
             <node concept="3Tqbb2" id="6BiMxHyxarV" role="1tU5fm" />
             <node concept="2OqwBi" id="6BiMxHyxuG7" role="33vP2m">
               <node concept="2OqwBi" id="6BiMxHyxuy7" role="2Oq$k0">
@@ -11014,7 +11012,7 @@
             <node concept="13iPFW" id="6BiMxHyxasZ" role="2Oq$k0" />
             <node concept="HtI8k" id="6BiMxHyxayR" role="2OqNvi">
               <node concept="37vLTw" id="6BiMxHyxuMw" role="HtI8F">
-                <ref role="3cqZAo" node="6BiMxHyxas0" resolve="siblingContainer" />
+                <ref role="3cqZAo" node="6BiMxHyxas0" resolve="siblingGroup" />
               </node>
             </node>
           </node>
@@ -11038,14 +11036,14 @@
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="6BiMxHyB56Q" role="1B3o_S" />
       <node concept="3Tqbb2" id="6BiMxHyB5aX" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="6BiMxHyB56S" role="3clF47">
         <node concept="3cpWs8" id="6BiMxHyB5be" role="3cqZAp">
           <node concept="3cpWsn" id="6BiMxHyB5bh" role="3cpWs9">
-            <property role="TrG5h" value="newPeoplContainer" />
+            <property role="TrG5h" value="newGroup" />
             <node concept="3Tqbb2" id="6BiMxHyB5bd" role="1tU5fm">
-              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
             </node>
             <node concept="2OqwBi" id="1RjkcfIYxqD" role="33vP2m">
               <node concept="2OqwBi" id="1RjkcfIYx9R" role="2Oq$k0">
@@ -11064,7 +11062,7 @@
             <node concept="2qgKlT" id="6BiMxHyB9hL" role="2OqNvi">
               <ref role="37wK5l" node="6BiMxHyB6E_" resolve="annotateAndConnect" />
               <node concept="37vLTw" id="6BiMxHyB9qu" role="37wK5m">
-                <ref role="3cqZAo" node="6BiMxHyB5bh" resolve="newPeoplContainer" />
+                <ref role="3cqZAo" node="6BiMxHyB5bh" resolve="newGroup" />
               </node>
               <node concept="37vLTw" id="5nWHL$GlnFa" role="37wK5m">
                 <ref role="3cqZAo" node="6BiMxHyB5b1" resolve="module" />
@@ -11077,7 +11075,7 @@
         </node>
         <node concept="3cpWs6" id="6BiMxHyB9uf" role="3cqZAp">
           <node concept="37vLTw" id="6BiMxHyB9w7" role="3cqZAk">
-            <ref role="3cqZAo" node="6BiMxHyB5bh" resolve="newPeoplContainer" />
+            <ref role="3cqZAo" node="6BiMxHyB5bh" resolve="newGroup" />
           </node>
         </node>
       </node>
@@ -11094,7 +11092,7 @@
       <node concept="P$JXv" id="26HCxWIKOYY" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWIKOYZ" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWIKOZ0" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates a new IFeatureContainer of the concrete concept." />
+            <property role="1dT_AB" value="Creates a new IFeatureGroup of the concrete concept." />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWIKOZ1" role="TUOzN">
@@ -11181,7 +11179,7 @@
     <node concept="13i0hz" id="6BiMxHy_aly" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isBaseCodeContainer" />
+      <property role="TrG5h" value="isBaseCodeGroup" />
       <node concept="3Tm1VV" id="6BiMxHy_alz" role="1B3o_S" />
       <node concept="10P_77" id="6BiMxHy_aoN" role="3clF45" />
       <node concept="3clFbS" id="6BiMxHy_al_" role="3clF47">
@@ -11205,7 +11203,7 @@
       <node concept="P$JXv" id="26HCxWILEeM" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILEeN" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILEeO" role="1dT_Ay">
-            <property role="1dT_AB" value="Return whether this container is baseCode or not." />
+            <property role="1dT_AB" value="Return whether this group is baseCode or not." />
           </node>
         </node>
         <node concept="TZ5HA" id="26HCxWILEga" role="TZ5H$">
@@ -11221,7 +11219,7 @@
     <node concept="13i0hz" id="1RjkcfJ5lHT" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="isPotentialBaseContainer" />
+      <property role="TrG5h" value="isPotentialBaseGroup" />
       <node concept="3Tm1VV" id="1RjkcfJ5lHU" role="1B3o_S" />
       <node concept="10P_77" id="1RjkcfJ5lPM" role="3clF45" />
       <node concept="3clFbS" id="1RjkcfJ5lHW" role="3clF47">
@@ -11242,7 +11240,7 @@
           <node concept="3clFbS" id="1RjkcfJ5p6B" role="3clFbx">
             <node concept="3cpWs6" id="1RjkcfJ5rR$" role="3cqZAp">
               <node concept="BsUDl" id="1RjkcfJ5rRM" role="3cqZAk">
-                <ref role="37wK5l" node="1RjkcfJ5lQ4" resolve="isPotentialBaseContainer" />
+                <ref role="37wK5l" node="1RjkcfJ5lQ4" resolve="isPotentialBaseGroup" />
                 <node concept="2OqwBi" id="1RjkcfJ5uD$" role="37wK5m">
                   <node concept="2OqwBi" id="1RjkcfJ5sku" role="2Oq$k0">
                     <node concept="2OqwBi" id="1RjkcfJ5rSZ" role="2Oq$k0">
@@ -11267,7 +11265,7 @@
         </node>
         <node concept="3cpWs6" id="1RjkcfJ5uTI" role="3cqZAp">
           <node concept="BsUDl" id="1RjkcfJ5uVZ" role="3cqZAk">
-            <ref role="37wK5l" node="1RjkcfJ5lQ4" resolve="isPotentialBaseContainer" />
+            <ref role="37wK5l" node="1RjkcfJ5lQ4" resolve="isPotentialBaseGroup" />
             <node concept="2OqwBi" id="1RjkcfJ5_7l" role="37wK5m">
               <node concept="2OqwBi" id="1RjkcfJ5xx6" role="2Oq$k0">
                 <node concept="2OqwBi" id="1RjkcfJ5x1$" role="2Oq$k0">
@@ -11327,7 +11325,7 @@
       <node concept="P$JXv" id="26HCxWILEnA" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILEnB" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILEnC" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks whether the currentNode is a potential basecontainer" />
+            <property role="1dT_AB" value="Checks whether the currentNode is a potential base group" />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILEnD" role="TUOzN">
@@ -11350,7 +11348,7 @@
     <node concept="13i0hz" id="1RjkcfJ5lQ4" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
-      <property role="TrG5h" value="isPotentialBaseContainer" />
+      <property role="TrG5h" value="isPotentialBaseGroup" />
       <node concept="3Tm6S6" id="1RjkcfJ5lY3" role="1B3o_S" />
       <node concept="10P_77" id="1RjkcfJ5lY6" role="3clF45" />
       <node concept="3clFbS" id="1RjkcfJ5lQ7" role="3clF47">
@@ -11388,10 +11386,10 @@
     <node concept="13i0hz" id="6BiMxHyACXd" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="mergePeoplContainers" />
+      <property role="TrG5h" value="mergeFeatureGroups" />
       <node concept="3Tm1VV" id="6BiMxHyACXe" role="1B3o_S" />
       <node concept="3Tqbb2" id="6BiMxHyAD1f" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="6BiMxHyACXg" role="3clF47" />
       <node concept="37vLTG" id="6BiMxHyAD1j" role="3clF46">
@@ -11402,10 +11400,10 @@
     <node concept="13i0hz" id="26HCxWIJnYF" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="splitContainerAtNode" />
+      <property role="TrG5h" value="splitGroupAtNode" />
       <node concept="3Tm1VV" id="26HCxWIJnYG" role="1B3o_S" />
       <node concept="3Tqbb2" id="26HCxWIJovC" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="26HCxWIJnYI" role="3clF47" />
       <node concept="37vLTG" id="26HCxWIJovG" role="3clF46">
@@ -11545,7 +11543,7 @@
     <node concept="13i0hz" id="31jQ6wL4J3h" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="deleteContainerAndPossibleAnnotationsOnDefiningNode" />
+      <property role="TrG5h" value="deleteGroupAndPossibleAnnotationsOnDefiningNode" />
       <node concept="3Tm1VV" id="31jQ6wL4J3i" role="1B3o_S" />
       <node concept="3cqZAl" id="31jQ6wL4R3J" role="3clF45" />
       <node concept="3clFbS" id="31jQ6wL4J3k" role="3clF47">
@@ -11564,7 +11562,7 @@
                 </node>
                 <node concept="3CFZ6_" id="31jQ6wL4RyE" role="2OqNvi">
                   <node concept="3CFYIy" id="31jQ6wL4Rzq" role="3CFYIz">
-                    <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                    <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                   </node>
                 </node>
               </node>
@@ -11685,12 +11683,12 @@
           <node concept="3cpWsn" id="1RjkcfJ3I6$" role="3cpWs9">
             <property role="TrG5h" value="containerRef" />
             <node concept="3Tqbb2" id="1RjkcfJ3I6w" role="1tU5fm">
-              <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+              <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
             </node>
             <node concept="2ShNRf" id="1RjkcfJ3I72" role="33vP2m">
               <node concept="3zrR0B" id="1RjkcfJ3Iu3" role="2ShVmc">
                 <node concept="3Tqbb2" id="1RjkcfJ3Iu5" role="3zrR0E">
-                  <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                  <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                 </node>
               </node>
             </node>
@@ -11717,7 +11715,7 @@
               </node>
               <node concept="3CFZ6_" id="1RjkcfJ3IPv" role="2OqNvi">
                 <node concept="3CFYIy" id="1RjkcfJ3IQh" role="3CFYIz">
-                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                 </node>
               </node>
             </node>
@@ -11796,7 +11794,7 @@
     <node concept="13i0hz" id="1RjkcfJ3Rqa" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="updateContainerReference" />
+      <property role="TrG5h" value="updateGroupRef" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="1RjkcfJ3Rqb" role="1B3o_S" />
       <node concept="3cqZAl" id="1RjkcfJ3RBJ" role="3clF45" />
@@ -11885,7 +11883,7 @@
       <node concept="37vLTG" id="1RjkcfJ3RBN" role="3clF46">
         <property role="TrG5h" value="containerRef" />
         <node concept="3Tqbb2" id="1RjkcfJ3RBM" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+          <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
         </node>
       </node>
       <node concept="37vLTG" id="1RjkcfJ3RCq" role="3clF46">
@@ -11916,7 +11914,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="2Ki8OM" value="true" />
-      <property role="TrG5h" value="updateContainerReferences" />
+      <property role="TrG5h" value="updateGroupRefs" />
       <node concept="3Tm1VV" id="1RjkcfJ47GJ" role="1B3o_S" />
       <node concept="3cqZAl" id="1RjkcfJ47UZ" role="3clF45" />
       <node concept="3clFbS" id="1RjkcfJ47GL" role="3clF47">
@@ -11928,7 +11926,7 @@
               </node>
               <node concept="3CFZ6_" id="1RjkcfJ47Yg" role="2OqNvi">
                 <node concept="3CFYIy" id="1RjkcfJ47Z2" role="3CFYIz">
-                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                 </node>
               </node>
             </node>
@@ -11939,7 +11937,7 @@
                     <node concept="2OqwBi" id="1RjkcfJ4bKB" role="3clFbG">
                       <node concept="13iPFW" id="1RjkcfJ4bIU" role="2Oq$k0" />
                       <node concept="2qgKlT" id="1RjkcfJ4bO0" role="2OqNvi">
-                        <ref role="37wK5l" node="1RjkcfJ3Rqa" resolve="updateContainerReference" />
+                        <ref role="37wK5l" node="1RjkcfJ3Rqa" resolve="updateGroupRef" />
                         <node concept="37vLTw" id="1RjkcfJ4bPO" role="37wK5m">
                           <ref role="3cqZAo" node="1RjkcfJ4btp" resolve="it" />
                         </node>
@@ -11996,7 +11994,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
       <property role="2Ki8OM" value="true" />
-      <property role="TrG5h" value="rewireContainerReferences" />
+      <property role="TrG5h" value="rewireGroupRefs" />
       <node concept="3Tm1VV" id="1RjkcfJ4cgM" role="1B3o_S" />
       <node concept="3cqZAl" id="1RjkcfJ4cv$" role="3clF45" />
       <node concept="3clFbS" id="1RjkcfJ4cgO" role="3clF47">
@@ -12008,7 +12006,7 @@
               </node>
               <node concept="3CFZ6_" id="1RjkcfJ4cyi" role="2OqNvi">
                 <node concept="3CFYIy" id="1RjkcfJ4cz4" role="3CFYIz">
-                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                 </node>
               </node>
             </node>
@@ -12043,7 +12041,7 @@
             <node concept="2Rf3mk" id="1RjkcfJ4fPh" role="2OqNvi">
               <node concept="1xMEDy" id="1RjkcfJ4fPj" role="1xVPHs">
                 <node concept="chp4Y" id="1RjkcfJ4fPQ" role="ri$Ld">
-                  <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+                  <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                 </node>
               </node>
             </node>
@@ -12056,7 +12054,7 @@
                     <node concept="1eOMI4" id="1RjkcfJ4HbE" role="2Oq$k0">
                       <node concept="10QFUN" id="1RjkcfJ4HbB" role="1eOMHV">
                         <node concept="3Tqbb2" id="1RjkcfJ4HbT" role="10QFUM">
-                          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+                          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                         </node>
                         <node concept="2GrUjf" id="1RjkcfJ4Hc4" role="10QFUP">
                           <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="container" />
@@ -12076,7 +12074,7 @@
                 <node concept="1eOMI4" id="1RjkcfJ4H4a" role="2Oq$k0">
                   <node concept="10QFUN" id="1RjkcfJ4H47" role="1eOMHV">
                     <node concept="3Tqbb2" id="1RjkcfJ4H4M" role="10QFUM">
-                      <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+                      <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                     </node>
                     <node concept="2GrUjf" id="1RjkcfJ4H4X" role="10QFUP">
                       <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="container" />
@@ -12084,7 +12082,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="1RjkcfJ4HaR" role="2OqNvi">
-                  <ref role="37wK5l" node="6BiMxHy_aly" resolve="isBaseCodeContainer" />
+                  <ref role="37wK5l" node="6BiMxHy_aly" resolve="isBaseCodeGroup" />
                 </node>
               </node>
             </node>
@@ -12324,18 +12322,18 @@
     <node concept="13i0hz" id="3vAAWfK5kBc" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="createBaseCodeContainer" />
+      <property role="TrG5h" value="createBaseCodeGroup" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="3vAAWfK5kBd" role="1B3o_S" />
       <node concept="3Tqbb2" id="3vAAWfK5kF$" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="3vAAWfK5kBf" role="3clF47">
         <node concept="3cpWs8" id="3vAAWfK5kGk" role="3cqZAp">
           <node concept="3cpWsn" id="3vAAWfK5kGn" role="3cpWs9">
-            <property role="TrG5h" value="peoplContainer" />
+            <property role="TrG5h" value="featureGroup" />
             <node concept="3Tqbb2" id="3vAAWfK5kGj" role="1tU5fm">
-              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
             </node>
           </node>
         </node>
@@ -12379,7 +12377,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="3vAAWfK5n_h" role="37vLTJ">
-                  <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                  <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
                 </node>
               </node>
             </node>
@@ -12390,7 +12388,7 @@
                 </node>
                 <node concept="2OqwBi" id="3vAAWfK5uQF" role="37vLTJ">
                   <node concept="37vLTw" id="3vAAWfK5uPH" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                    <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
                   </node>
                   <node concept="3TrEf2" id="3vAAWfK5uTx" role="2OqNvi">
                     <ref role="3Tt5mk" to="xf8r:6BiMxHywZsk" />
@@ -12401,7 +12399,7 @@
             <node concept="3clFbF" id="3vAAWfK5vfg" role="3cqZAp">
               <node concept="2OqwBi" id="3vAAWfK5vi6" role="3clFbG">
                 <node concept="37vLTw" id="3vAAWfK5vgS" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                  <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
                 </node>
                 <node concept="2qgKlT" id="3vAAWfK5vx1" role="2OqNvi">
                   <ref role="37wK5l" node="3vAAWfK5uYq" resolve="register" />
@@ -12413,7 +12411,7 @@
             </node>
             <node concept="3cpWs6" id="3vAAWfK5vyI" role="3cqZAp">
               <node concept="37vLTw" id="3vAAWfK5v_1" role="3cqZAk">
-                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
               </node>
             </node>
           </node>
@@ -12543,7 +12541,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="3vAAWfK6gD3" role="37vLTJ">
-              <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+              <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
             </node>
           </node>
         </node>
@@ -12554,7 +12552,7 @@
             </node>
             <node concept="2OqwBi" id="3vAAWfK73b5" role="37vLTJ">
               <node concept="37vLTw" id="3vAAWfK739S" role="2Oq$k0">
-                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
               </node>
               <node concept="3TrEf2" id="3vAAWfK73eD" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:6BiMxHywZsg" />
@@ -12569,7 +12567,7 @@
             </node>
             <node concept="2OqwBi" id="3vAAWfK73tx" role="37vLTJ">
               <node concept="37vLTw" id="3vAAWfK73sk" role="2Oq$k0">
-                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+                <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
               </node>
               <node concept="3TrEf2" id="3vAAWfK73zn" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:6BiMxHywZsk" />
@@ -12580,7 +12578,7 @@
         <node concept="3clFbF" id="3vAAWfK740y" role="3cqZAp">
           <node concept="2OqwBi" id="3vAAWfK7470" role="3clFbG">
             <node concept="37vLTw" id="3vAAWfK745z" role="2Oq$k0">
-              <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+              <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
             </node>
             <node concept="2qgKlT" id="3vAAWfK74hq" role="2OqNvi">
               <ref role="37wK5l" node="3vAAWfK5uYq" resolve="register" />
@@ -12592,7 +12590,7 @@
         </node>
         <node concept="3cpWs6" id="3vAAWfK74mJ" role="3cqZAp">
           <node concept="37vLTw" id="3vAAWfK74tN" role="3cqZAk">
-            <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="peoplContainer" />
+            <ref role="3cqZAo" node="3vAAWfK5kGn" resolve="featureGroup" />
           </node>
         </node>
       </node>
@@ -12640,18 +12638,18 @@
     <node concept="13i0hz" id="1RjkcfIYrLr" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
-      <property role="TrG5h" value="createNonModuleBaseCodeContainer" />
+      <property role="TrG5h" value="createNonModuleBaseCodeGroup" />
       <property role="2Ki8OM" value="true" />
       <node concept="3Tm1VV" id="1RjkcfIYrLs" role="1B3o_S" />
       <node concept="3Tqbb2" id="1RjkcfIYs8t" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="1RjkcfIYrLu" role="3clF47">
         <node concept="3cpWs8" id="1RjkcfIYs8G" role="3cqZAp">
           <node concept="3cpWsn" id="1RjkcfIYs8J" role="3cpWs9">
-            <property role="TrG5h" value="nContainer" />
+            <property role="TrG5h" value="nGroup" />
             <node concept="3Tqbb2" id="1RjkcfIYs8F" role="1tU5fm">
-              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
             </node>
             <node concept="2OqwBi" id="1RjkcfIYwMx" role="33vP2m">
               <node concept="2OqwBi" id="1RjkcfIYw$0" role="2Oq$k0">
@@ -12675,7 +12673,7 @@
               <node concept="2qgKlT" id="31jQ6wLoUhx" role="2OqNvi">
                 <ref role="37wK5l" node="3osquR_uQ4" resolve="annotate" />
                 <node concept="37vLTw" id="31jQ6wLoUlO" role="37wK5m">
-                  <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
+                  <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nGroup" />
                 </node>
               </node>
             </node>
@@ -12701,7 +12699,7 @@
             </node>
             <node concept="2OqwBi" id="31jQ6wLoXbk" role="37vLTJ">
               <node concept="37vLTw" id="31jQ6wLoUX_" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
+                <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nGroup" />
               </node>
               <node concept="3TrEf2" id="31jQ6wLoXgP" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:6BiMxHywZsk" />
@@ -12712,7 +12710,7 @@
         <node concept="3clFbF" id="O_sdcqAvLX" role="3cqZAp">
           <node concept="2OqwBi" id="O_sdcqAvSw" role="3clFbG">
             <node concept="37vLTw" id="O_sdcqAvLV" role="2Oq$k0">
-              <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
+              <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nGroup" />
             </node>
             <node concept="2qgKlT" id="O_sdcqAw0g" role="2OqNvi">
               <ref role="37wK5l" node="3vAAWfK5uYq" resolve="register" />
@@ -12724,7 +12722,7 @@
         </node>
         <node concept="3cpWs6" id="1RjkcfIYuVH" role="3cqZAp">
           <node concept="37vLTw" id="1RjkcfIYv0r" role="3cqZAk">
-            <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nContainer" />
+            <ref role="3cqZAo" node="1RjkcfIYs8J" resolve="nGroup" />
           </node>
         </node>
       </node>
@@ -12754,12 +12752,47 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4UuYCFbL7Ge" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="exchangeWithGroup" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="4UuYCFbL7Gf" role="1B3o_S" />
+      <node concept="3Tqbb2" id="4UuYCFbL8FU" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+      </node>
+      <node concept="3clFbS" id="4UuYCFbL7Gh" role="3clF47" />
+      <node concept="37vLTG" id="4UuYCFbL8FY" role="3clF46">
+        <property role="TrG5h" value="nodeToReplace" />
+        <node concept="3Tqbb2" id="4UuYCFbL8FX" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4UuYCFbZBT1" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="deleteIfEmpty" />
+      <node concept="3Tm1VV" id="4UuYCFbZBT2" role="1B3o_S" />
+      <node concept="10P_77" id="4UuYCFbZChd" role="3clF45" />
+      <node concept="3clFbS" id="4UuYCFbZBT4" role="3clF47" />
+    </node>
+    <node concept="13i0hz" id="4UuYCFc7jUA" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="copyContentFromOtherNode" />
+      <node concept="3Tm1VV" id="4UuYCFc7jUB" role="1B3o_S" />
+      <node concept="3cqZAl" id="4UuYCFc7kiQ" role="3clF45" />
+      <node concept="3clFbS" id="4UuYCFc7jUD" role="3clF47" />
+      <node concept="37vLTG" id="4UuYCFc7kiU" role="3clF46">
+        <property role="TrG5h" value="contentNode" />
+        <node concept="3Tqbb2" id="4UuYCFc7kiT" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13hLZK" id="6BiMxHywZso" role="13h7CW">
       <node concept="3clFbS" id="6BiMxHywZsp" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="3vAAWfKkp72">
-    <ref role="13h7C2" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+    <ref role="13h7C2" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
     <node concept="13i0hz" id="3vAAWfKkqsT" role="13h7CS">
       <property role="TrG5h" value="getModuleOfContainer" />
       <node concept="3Tm1VV" id="3vAAWfKkqsU" role="1B3o_S" />
@@ -12829,7 +12862,7 @@
             </node>
             <node concept="3CFZ6_" id="3vAAWfKktY2" role="2OqNvi">
               <node concept="3CFYIy" id="3vAAWfKktYL" role="3CFYIz">
-                <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
               </node>
             </node>
           </node>

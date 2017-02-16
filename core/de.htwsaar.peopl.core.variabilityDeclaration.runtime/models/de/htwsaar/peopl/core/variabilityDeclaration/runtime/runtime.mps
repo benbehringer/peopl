@@ -14,6 +14,7 @@
     <import index="ze1i" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.runtime(MPS.Core/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -62,6 +63,9 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
+        <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -77,6 +81,7 @@
   </registry>
   <node concept="3HP615" id="2FVYQByNitn">
     <property role="TrG5h" value="IVariabilityAspectRuntime" />
+    <node concept="2tJIrI" id="4UuYCFbLF4h" role="jymVt" />
     <node concept="3clFb_" id="2FVYQByNiL2" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -87,6 +92,13 @@
       <node concept="37vLTG" id="2FVYQByNiLj" role="3clF46">
         <property role="TrG5h" value="sourceNode" />
         <node concept="3Tqbb2" id="2FVYQByNiLi" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="4UuYCFbLF5W" role="lGtFl">
+        <node concept="TZ5HA" id="4UuYCFbLF5X" role="TZ5H$">
+          <node concept="1dT_AC" id="4UuYCFbLF5Y" role="1dT_Ay">
+            <property role="1dT_AB" value="Assign variability specific methods" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="2FVYQByNiMr" role="jymVt">
@@ -194,6 +206,49 @@
         <property role="TrG5h" value="potentialWrapper" />
         <node concept="3Tqbb2" id="7wEfe$EdXJy" role="1tU5fm" />
       </node>
+    </node>
+    <node concept="2tJIrI" id="4UuYCFbLF6x" role="jymVt" />
+    <node concept="2tJIrI" id="4UuYCFbLFX1" role="jymVt" />
+    <node concept="3clFb_" id="4UuYCFbLFH5" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getReplaceableConcept" />
+      <node concept="3clFbS" id="4UuYCFbLFH8" role="3clF47" />
+      <node concept="3Tm1VV" id="4UuYCFbLFH9" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4UuYCFbLFH3" role="3clF45" />
+      <node concept="P$JXv" id="4UuYCFbLFYk" role="lGtFl">
+        <node concept="TZ5HA" id="4UuYCFbLFYl" role="TZ5H$">
+          <node concept="1dT_AC" id="4UuYCFbLFYm" role="1dT_Ay">
+            <property role="1dT_AB" value="Replace config specific methods" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="4UuYCFbM5x0" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getConcreteFeatureGroupConcept" />
+      <node concept="3clFbS" id="4UuYCFbM5x3" role="3clF47" />
+      <node concept="3Tm1VV" id="4UuYCFbM5x4" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4UuYCFbTxZV" role="3clF45">
+        <ref role="3bZ5Sy" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4UuYCFbYo4w" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getDefininingNodeConcept" />
+      <node concept="3clFbS" id="4UuYCFbYo4z" role="3clF47" />
+      <node concept="3Tm1VV" id="4UuYCFbYo4$" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4UuYCFbYo3a" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="4UuYCFbYoa4" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getDefiningContainerConcept" />
+      <node concept="3clFbS" id="4UuYCFbYoa7" role="3clF47" />
+      <node concept="3Tm1VV" id="4UuYCFbYoa8" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="4UuYCFbYo8E" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="2FVYQByNito" role="1B3o_S" />
     <node concept="3uibUv" id="2FVYQByNitQ" role="3HQHJm">

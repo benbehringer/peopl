@@ -53,6 +53,12 @@
       <concept id="2071792397521310724" name="de.htwsaar.peopl.core.shortcuts.structure.Short_Fragment" flags="ng" index="1MnawL" />
     </language>
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration">
+      <concept id="5665240855309837222" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.FeatureGroupConfig" flags="ng" index="25mL$G">
+        <child id="5665240855309964388" name="concreteFeatureGroup" index="25miVI" />
+        <child id="5665240855309837223" name="replaceableNode" index="25mL$H" />
+        <child id="5665240855312100028" name="definingContainerConcept" index="25tD0Q" />
+        <child id="5665240855312100032" name="definingNodeConcept" index="25tD1a" />
+      </concept>
       <concept id="9122230446655927851" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeBlock" flags="ng" index="aHlDD">
         <child id="9122230446655928259" name="wrappeeConcept" index="aHlI1" />
         <child id="9122230446655928257" name="wrapperConcept" index="aHlI3" />
@@ -94,6 +100,7 @@
         <child id="1236568064987003155" name="conceptFunction" index="1J3lk9" />
       </concept>
       <concept id="1236568064986938165" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityDeclaration" flags="ng" index="1J2_sJ">
+        <child id="5665240855309837306" name="featureGroupConfig" index="25mL_K" />
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
       </concept>
@@ -528,6 +535,20 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="25mL$G" id="4UuYCFbL$Qe" role="25mL_K">
+      <node concept="1G2zp1" id="4UuYCFbLUH_" role="25mL$H">
+        <ref role="35c_gD" to="tpee:fzclF8l" resolve="Statement" />
+      </node>
+      <node concept="1G2zp1" id="4UuYCFbM2gO" role="25miVI">
+        <ref role="35c_gD" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+      </node>
+      <node concept="1G2zp1" id="4UuYCFbUaou" role="25tD0Q">
+        <ref role="35c_gD" to="tpee:fz12cDA" resolve="ClassConcept" />
+      </node>
+      <node concept="1G2zp1" id="4UuYCFbUaoz" role="25tD1a">
+        <ref role="35c_gD" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
       </node>
     </node>
   </node>

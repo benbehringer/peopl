@@ -498,7 +498,7 @@
   </node>
   <node concept="PlHQZ" id="6BiMxHywUCU">
     <property role="1pbfSe" value="866749355" />
-    <property role="TrG5h" value="IFeatureContainer" />
+    <property role="TrG5h" value="IFeatureGroup" />
     <node concept="1TJgyi" id="3vAAWfK6JIr" role="1TKVEl">
       <property role="TrG5h" value="isControlledByUser" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
@@ -516,15 +516,15 @@
   </node>
   <node concept="1TIwiD" id="3vAAWfKkoNc">
     <property role="1pbfSe" value="674769039" />
-    <property role="TrG5h" value="ContainerReference" />
+    <property role="TrG5h" value="IFeatureGroupRef" />
     <ref role="1TJDcQ" node="7irj4gs$aYR" resolve="FragmentUpdater" />
     <node concept="1TJgyj" id="3vAAWfKkoOb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="referencedContainer" />
-      <ref role="20lvS9" node="6BiMxHywUCU" resolve="IFeatureContainer" />
+      <ref role="20lvS9" node="6BiMxHywUCU" resolve="IFeatureGroup" />
     </node>
     <node concept="M6xJ_" id="3vAAWfKkoNI" role="lGtFl">
-      <property role="Hh88m" value="ContainerReference" />
+      <property role="Hh88m" value="IFeatureGroupRef" />
       <node concept="trNpa" id="3vAAWfKkoNK" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
