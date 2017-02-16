@@ -83,6 +83,7 @@
       </concept>
       <concept id="8658800205706496875" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeRelationship" flags="ng" index="1i7ju2" />
       <concept id="8658800205706496852" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperDeclaration" flags="ng" index="1i7juX">
+        <property id="5665240855309640876" name="lang" index="25n1SA" />
         <child id="9122230446655928280" name="wrapperWrappeeBlocks" index="aHlIq" />
       </concept>
       <concept id="6093234279461270026" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptIdRefExpressionSimple" flags="ng" index="1G2zp1" />
@@ -531,6 +532,7 @@
     </node>
   </node>
   <node concept="1i7juX" id="7UoF49OdxM2">
+    <property role="25n1SA" value="Java" />
     <node concept="aHlDD" id="7UoF49OdxM3" role="aHlIq">
       <node concept="1i7ju2" id="7UoF49Od3rr" role="aHlIj">
         <ref role="359W_F" to="tpee:gMLFqrC" />

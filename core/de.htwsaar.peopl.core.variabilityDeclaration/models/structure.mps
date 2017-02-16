@@ -242,6 +242,10 @@
     <property role="TrG5h" value="WrapperDeclaration" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="4UuYCFbKIiG" role="1TKVEl">
+      <property role="TrG5h" value="lang" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7UoF49Obvvo" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="wrapperWrappeeBlocks" />

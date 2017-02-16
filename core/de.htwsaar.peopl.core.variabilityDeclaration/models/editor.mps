@@ -480,8 +480,14 @@
   <node concept="24kQdi" id="7wEfe$EdKHq">
     <ref role="1XX52x" to="ovfz:7wEfe$EdKHk" resolve="WrapperDeclaration" />
     <node concept="3EZMnI" id="7wEfe$EdKHs" role="2wV5jI">
-      <node concept="3F0ifn" id="7wEfe$Eek3X" role="3EZMnx">
-        <property role="3F0ifm" value="WrapperDeclaration" />
+      <node concept="3EZMnI" id="4UuYCFbKFeB" role="3EZMnx">
+        <node concept="2iRfu4" id="4UuYCFbKFeC" role="2iSdaV" />
+        <node concept="3F0ifn" id="7wEfe$Eek3X" role="3EZMnx">
+          <property role="3F0ifm" value="Wrappers that can be partially annotated in" />
+        </node>
+        <node concept="3F0A7n" id="4UuYCFbKIiP" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:4UuYCFbKIiG" resolve="lang" />
+        </node>
       </node>
       <node concept="ljvvj" id="7wEfe$EehMk" role="3F10Kt">
         <property role="VOm3f" value="true" />
@@ -497,7 +503,7 @@
     <ref role="1XX52x" to="ovfz:7wEfe$EdKHF" resolve="WrapperWrappeeRelationship" />
     <node concept="3EZMnI" id="7wEfe$EdKHS" role="2wV5jI">
       <node concept="3F0ifn" id="7wEfe$EdKHZ" role="3EZMnx">
-        <property role="3F0ifm" value="wrapper:" />
+        <property role="3F0ifm" value="type:" />
         <node concept="VechU" id="7wEfe$Eemo8" role="3F10Kt">
           <property role="Vb096" value="DARK_GREEN" />
         </node>
@@ -515,7 +521,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7wEfe$Ee0xQ" role="3EZMnx">
-        <property role="3F0ifm" value="with wrappee" />
+        <property role="3F0ifm" value="replaced by its" />
         <node concept="VechU" id="7wEfe$Ef0PV" role="3F10Kt">
           <property role="Vb096" value="DARK_GREEN" />
         </node>
