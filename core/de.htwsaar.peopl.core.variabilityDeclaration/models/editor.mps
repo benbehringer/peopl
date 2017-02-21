@@ -456,9 +456,24 @@
           <ref role="1NtTu8" to="ovfz:4DWUWsTdNwu" resolve="allNodesFromCanAssignVariability" />
         </node>
       </node>
-      <node concept="3F2HdR" id="7BIYFTBzCHJ" role="3EZMnx">
-        <ref role="1NtTu8" to="ovfz:7BIYFTBzCnZ" />
-        <node concept="2iRkQZ" id="7BIYFTBzCHK" role="2czzBx" />
+      <node concept="3EZMnI" id="1h5QCpZ0qRz" role="3EZMnx">
+        <node concept="2iRfu4" id="1h5QCpZ0qR$" role="2iSdaV" />
+        <node concept="3F0ifn" id="1h5QCpZ0nFp" role="3EZMnx">
+          <property role="3F0ifm" value="Allowed non-optional node concepts:" />
+          <node concept="VechU" id="1h5QCpZ0nIE" role="3F10Kt">
+            <property role="Vb096" value="DARK_GREEN" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1h5QCpZasSs" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+        <node concept="3F2HdR" id="7BIYFTBzCHJ" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:7BIYFTBzCnZ" />
+          <node concept="2iRkQZ" id="7BIYFTBzCHK" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1h5QCpZawIY" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
       </node>
       <node concept="3F1sOY" id="7BIYFTBzC_t" role="3EZMnx">
         <ref role="1NtTu8" to="ovfz:7BIYFTBzCn2" />
@@ -474,7 +489,11 @@
         <ref role="1NtTu8" to="ovfz:7BIYFTBzCnh" />
         <node concept="2iRkQZ" id="7BIYFTBzC_y" role="2czzBx" />
       </node>
-      <node concept="3F0ifn" id="7BIYFTBzC_z" role="3EZMnx" />
+      <node concept="3F2HdR" id="1h5QCpZ0F75" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:1h5QCpZ0F6Y" />
+        <node concept="2iRkQZ" id="1h5QCpZ0F77" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="1h5QCpZ0FcS" role="3EZMnx" />
       <node concept="2iRkQZ" id="7BIYFTBzC_2" role="2iSdaV" />
     </node>
   </node>
@@ -842,6 +861,27 @@
         </node>
       </node>
       <node concept="2iRfu4" id="14mWR7t_uvt" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="1h5QCpZ0F6c">
+    <ref role="1XX52x" to="ovfz:1h5QCpZ0ESS" resolve="SpecializedAlternativeBehavior" />
+    <node concept="3EZMnI" id="1h5QCpZ0F6h" role="2wV5jI">
+      <node concept="3EZMnI" id="1h5QCpZ0F6r" role="3EZMnx">
+        <node concept="VPM3Z" id="1h5QCpZ0F6t" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="1h5QCpZ0F6v" role="3EZMnx">
+          <property role="3F0ifm" value="Specialized alternative creation behavior for:" />
+        </node>
+        <node concept="3F1sOY" id="1h5QCpZ0F6E" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:1h5QCpZ0F6e" />
+        </node>
+        <node concept="2iRfu4" id="1h5QCpZ0F6w" role="2iSdaV" />
+      </node>
+      <node concept="3F1sOY" id="1h5QCpZ0F6Q" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:1h5QCpZ0F65" />
+      </node>
+      <node concept="2iRkQZ" id="1h5QCpZ0F6k" role="2iSdaV" />
     </node>
   </node>
 </model>

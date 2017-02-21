@@ -110,10 +110,10 @@
   </node>
   <node concept="1TIwiD" id="5VMd6L4CMic">
     <property role="1pbfSe" value="1550493448" />
-    <property role="TrG5h" value="ConceptFunctionParameter_sourceNode" />
-    <property role="34LRSv" value="sourceNode" />
+    <property role="TrG5h" value="ConceptFunctionParameter_node" />
     <property role="R4oN_" value="node&lt;&gt; to check" />
     <property role="3GE5qa" value="common" />
+    <property role="34LRSv" value="node" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
     <node concept="PrWs8" id="5VMd6L4CMiX" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
@@ -219,6 +219,12 @@
       <property role="20kJfa" value="nonOptionalAlternatives" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="1h5QCpZ0F6Y" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="specializedAlternativeBehavior" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1h5QCpZ0ESS" resolve="SpecializedAlternativeBehavior" />
     </node>
     <node concept="1TJgyi" id="4DWUWsTdNwu" role="1TKVEl">
       <property role="TrG5h" value="allNodesFromCanAssignVariability" />
@@ -326,6 +332,28 @@
     <property role="1pbfSe" value="290665617" />
     <property role="TrG5h" value="NonOptionalAlternativeRef" />
     <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
+  </node>
+  <node concept="1TIwiD" id="1h5QCpZ0ESS">
+    <property role="1pbfSe" value="1823962946" />
+    <property role="TrG5h" value="SpecializedAlternativeBehavior" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1h5QCpZ0F6e" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="applicableConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
+    </node>
+    <node concept="1TJgyj" id="1h5QCpZ0F65" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="behavior" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1h5QCpZ0EST" resolve="SpecializedAlternativeBehaviorConceptFunction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1h5QCpZ0EST">
+    <property role="1pbfSe" value="1823962945" />
+    <property role="TrG5h" value="SpecializedAlternativeBehaviorConceptFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 
