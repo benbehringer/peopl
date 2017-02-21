@@ -151,17 +151,11 @@
   </node>
   <node concept="1TIwiD" id="5Ikqw6mcBld">
     <property role="1pbfSe" value="238624946" />
-    <property role="TrG5h" value="NonOptionalAlternative" />
+    <property role="TrG5h" value="NonOptionalAlternativeMapping" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Ikqw6mcBle" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nonOptionalNode" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
-    </node>
-    <node concept="1TJgyj" id="5Ikqw6mcBmK" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="container" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
@@ -224,7 +218,7 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="nonOptionalAlternatives" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="5Ikqw6mcBld" resolve="NonOptionalAlternative" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
     <node concept="1TJgyi" id="4DWUWsTdNwu" role="1TKVEl">
       <property role="TrG5h" value="allNodesFromCanAssignVariability" />
@@ -327,6 +321,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="14mWR7t_tvY">
+    <property role="1pbfSe" value="290665617" />
+    <property role="TrG5h" value="NonOptionalAlternativeRef" />
+    <ref role="1TJDcQ" to="tp25:2iMJRNx_nol" resolve="LinkIdRefExpression" />
   </node>
 </model>
 
