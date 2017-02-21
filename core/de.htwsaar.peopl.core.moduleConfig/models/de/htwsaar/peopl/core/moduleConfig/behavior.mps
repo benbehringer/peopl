@@ -4341,7 +4341,7 @@
                     </node>
                     <node concept="3CFZ6_" id="162WospSd28" role="2OqNvi">
                       <node concept="3CFYIy" id="162WospSd29" role="3CFYIz">
-                        <ref role="3CFYIx" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
+                        <ref role="3CFYIx" to="xf8r:1Fk50g35gTs" resolve="NonOptionalAlternative" />
                       </node>
                     </node>
                   </node>
@@ -4356,7 +4356,7 @@
                 </node>
                 <node concept="1mIQ4w" id="1Fk50g35ryS" role="2OqNvi">
                   <node concept="chp4Y" id="1Fk50g35ryT" role="cj9EA">
-                    <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
+                    <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="NonOptionalAlternative" />
                   </node>
                 </node>
               </node>

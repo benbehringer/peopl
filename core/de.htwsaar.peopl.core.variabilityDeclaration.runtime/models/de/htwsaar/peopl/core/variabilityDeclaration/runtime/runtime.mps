@@ -78,6 +78,11 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+    </language>
   </registry>
   <node concept="3HP615" id="2FVYQByNitn">
     <property role="TrG5h" value="IVariabilityAspectRuntime" />
@@ -135,6 +140,42 @@
       <node concept="37vLTG" id="4FBHDTanz5O" role="3clF46">
         <property role="TrG5h" value="sourceNode" />
         <node concept="3Tqbb2" id="4FBHDTanz5N" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="14mWR7tAT06" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="nodeConceptIsNonOptional" />
+      <node concept="3clFbS" id="14mWR7tAT09" role="3clF47" />
+      <node concept="3Tm1VV" id="14mWR7tAT0a" role="1B3o_S" />
+      <node concept="10P_77" id="14mWR7tARXy" role="3clF45" />
+      <node concept="37vLTG" id="14mWR7tAU61" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3bZ5Sz" id="14mWR7tAU60" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="14mWR7tCvg_" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getNonOptionalConcepts" />
+      <node concept="3clFbS" id="14mWR7tCvgC" role="3clF47" />
+      <node concept="3Tm1VV" id="14mWR7tCvgD" role="1B3o_S" />
+      <node concept="_YKpA" id="14mWR7tCvdl" role="3clF45">
+        <node concept="3bZ5Sz" id="14mWR7tCvgy" role="_ZDj9" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="14mWR7tvcar" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="assignAlternative" />
+      <node concept="3clFbS" id="14mWR7tvcau" role="3clF47" />
+      <node concept="3Tm1VV" id="14mWR7tvcav" role="1B3o_S" />
+      <node concept="3Tqbb2" id="14mWR7tvb8k" role="3clF45">
+        <ref role="ehGHo" to="xf8r:1Fk50g35gTs" resolve="NonOptionalAlternative" />
+      </node>
+      <node concept="37vLTG" id="14mWR7tvdfD" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="14mWR7tvdfC" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="7wEfe$EdXQz" role="jymVt" />

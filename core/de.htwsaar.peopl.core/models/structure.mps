@@ -364,12 +364,18 @@
   <node concept="1TIwiD" id="1Fk50g35gTs">
     <property role="1pbfSe" value="501817952" />
     <property role="3GE5qa" value="Extensions.Alternatives" />
-    <property role="TrG5h" value="SingleChildAlternative" />
-    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="NonOptionalAlternative" />
+    <property role="R5$K7" value="false" />
     <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyj" id="14mWR7tAehm" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="alternative" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
     <node concept="M6xJ_" id="1Fk50g35gXV" role="lGtFl">
-      <property role="Hh88m" value="SingleChildAlternative" />
+      <property role="Hh88m" value="NonOptionalAlternative" />
       <node concept="trNpa" id="1Fk50g35h9q" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
@@ -382,7 +388,7 @@
     <property role="1pbfSe" value="501818243" />
     <property role="3GE5qa" value="Extensions.Alternatives.ConcreteTypes" />
     <property role="TrG5h" value="TypeAlternative" />
-    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="SingleChildAlternative" />
+    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="NonOptionalAlternative" />
     <node concept="1TJgyj" id="1Fk50g35h2w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
@@ -400,7 +406,7 @@
     <property role="1pbfSe" value="86511558" />
     <property role="3GE5qa" value="Extensions.Alternatives.ConcreteTypes" />
     <property role="TrG5h" value="ExpressionAlternative" />
-    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="SingleChildAlternative" />
+    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="NonOptionalAlternative" />
     <node concept="1TJgyj" id="1j2uYRA5nhg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
