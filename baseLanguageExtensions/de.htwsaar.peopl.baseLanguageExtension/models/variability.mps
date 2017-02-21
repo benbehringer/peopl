@@ -77,10 +77,6 @@
         <child id="8786235618734540228" name="parametrizedInclusions" index="uo7XU" />
       </concept>
       <concept id="423106405167543354" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityConceptFunction" flags="ig" index="2zUL$M" />
-      <concept id="6599015909052020045" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.NonOptionalAlternative" flags="ng" index="3dDxXc">
-        <child id="6599015909052020046" name="nonOptionalNode" index="3dDxXf" />
-        <child id="6599015909052020144" name="container" index="3dDxYL" />
-      </concept>
       <concept id="6599015909051999302" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ParametrizedConceptExclusion" flags="ng" index="3dD$T7">
         <child id="6599015909051999303" name="conceptFunction" index="3dD$T6" />
       </concept>
@@ -488,21 +484,11 @@
     </node>
     <node concept="uo7Ez" id="jXKS8Ww$6C" role="uo7X4">
       <property role="1NiXfp" value="true" />
-      <node concept="3dDxXc" id="4FBHDTanhPk" role="uo7X1">
-        <node concept="1G2zp1" id="1RjkcfIY6Vy" role="3dDxXf">
-          <ref role="35c_gD" to="tpee:fz3vP1H" resolve="Type" />
-        </node>
-        <node concept="1G2zp1" id="1RjkcfIY6VH" role="3dDxYL">
-          <ref role="35c_gD" to="xf8r:1Fk50g35gXZ" resolve="TypeAlternative" />
-        </node>
+      <node concept="1G2zp1" id="14mWR7tBHeS" role="uo7X1">
+        <ref role="35c_gD" to="tpee:fz3vP1H" resolve="Type" />
       </node>
-      <node concept="3dDxXc" id="4FBHDTanjpq" role="uo7X1">
-        <node concept="1G2zp1" id="1RjkcfIY6VS" role="3dDxXf">
-          <ref role="35c_gD" to="tpee:fz3vP1J" resolve="Expression" />
-        </node>
-        <node concept="1G2zp1" id="1RjkcfIY6W3" role="3dDxYL">
-          <ref role="35c_gD" to="xf8r:1j2uYRA5nhd" resolve="ExpressionAlternative" />
-        </node>
+      <node concept="1G2zp1" id="14mWR7tBHf4" role="uo7X1">
+        <ref role="35c_gD" to="tpee:fz3vP1J" resolve="Expression" />
       </node>
       <node concept="1J2_sI" id="jXKS8Ww_d3" role="uo7XU">
         <node concept="2zUL$M" id="jXKS8Ww_d4" role="1J3lk9">
