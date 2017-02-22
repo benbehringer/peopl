@@ -9246,7 +9246,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1h5QCpYYtAP">
-    <ref role="1XX52x" to="tpee:fz3vP1H" resolve="Type" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="B$lHz" id="1h5QCpYYxEH" role="2wV5jI" />
     <node concept="2aJ2om" id="1h5QCpYYxEF" role="CpUAK">
       <ref role="2$4xQ3" node="1h5QCpYYxED" resolve="core" />
