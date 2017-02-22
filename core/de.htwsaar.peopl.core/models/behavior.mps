@@ -11296,7 +11296,7 @@
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWIKOZ1" role="TUOzN">
-          <property role="TUZQ4" value="the module which is assigned to the container" />
+          <property role="TUZQ4" value="the module which is assigned to the group" />
           <node concept="zr_55" id="26HCxWIKOZ3" role="zr_5Q">
             <ref role="zr_51" node="6BiMxHyB5b1" resolve="module" />
           </node>
@@ -11308,7 +11308,7 @@
           </node>
         </node>
         <node concept="x79VA" id="26HCxWIKOZa" role="x79VK">
-          <property role="x79VB" value="newly created IFeatureContainer" />
+          <property role="x79VB" value="newly created IFeatureGroup" />
         </node>
       </node>
     </node>
@@ -11541,7 +11541,7 @@
           </node>
         </node>
         <node concept="x79VA" id="26HCxWILEnJ" role="x79VK">
-          <property role="x79VB" value="true, if potential basecontainer, false otherwise" />
+          <property role="x79VB" value="true, if potential baseGroup, false otherwise" />
         </node>
       </node>
     </node>
@@ -11593,7 +11593,7 @@
       </node>
       <node concept="3clFbS" id="6BiMxHyACXg" role="3clF47" />
       <node concept="37vLTG" id="6BiMxHyAD1j" role="3clF46">
-        <property role="TrG5h" value="peoplContainers" />
+        <property role="TrG5h" value="peoplGroups" />
         <node concept="2I9FWS" id="6BiMxHyAD1i" role="1tU5fm" />
       </node>
     </node>
@@ -11611,7 +11611,7 @@
         <node concept="3Tqbb2" id="26HCxWIJovF" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="26HCxWIJovU" role="3clF46">
-        <property role="TrG5h" value="asNextContainer" />
+        <property role="TrG5h" value="asNextGroup" />
         <node concept="10P_77" id="26HCxWIJow2" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="26HCxWIJowd" role="3clF46">
@@ -11859,7 +11859,7 @@
       <node concept="P$JXv" id="26HCxWILEuG" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILEuH" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILEuI" role="1dT_Ay">
-            <property role="1dT_AB" value="Remove Containerreferences and disconnect from module and VP." />
+            <property role="1dT_AB" value="Remove FeatureGroupReferences and disconnect from module and VP." />
           </node>
         </node>
       </node>
@@ -11873,7 +11873,7 @@
       <node concept="3clFbS" id="3vAAWfK5uYt" role="3clF47">
         <node concept="3cpWs8" id="1RjkcfJ3I6x" role="3cqZAp">
           <node concept="3cpWsn" id="1RjkcfJ3I6$" role="3cpWs9">
-            <property role="TrG5h" value="containerRef" />
+            <property role="TrG5h" value="featureGroupRef" />
             <node concept="3Tqbb2" id="1RjkcfJ3I6w" role="1tU5fm">
               <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
             </node>
@@ -11891,7 +11891,7 @@
             <node concept="13iPFW" id="1RjkcfJ3IL7" role="37vLTx" />
             <node concept="2OqwBi" id="1RjkcfJ3Iw$" role="37vLTJ">
               <node concept="37vLTw" id="1RjkcfJ3Iun" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="containerRef" />
+                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="featureGroupRef" />
               </node>
               <node concept="3TrEf2" id="1RjkcfJ3IBj" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:3vAAWfKkoOb" />
@@ -11913,7 +11913,7 @@
             </node>
             <node concept="TSZUe" id="1RjkcfJ3LRM" role="2OqNvi">
               <node concept="37vLTw" id="1RjkcfJ3LZ_" role="25WWJ7">
-                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="containerRef" />
+                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="featureGroupRef" />
               </node>
             </node>
           </node>
@@ -11933,7 +11933,7 @@
             </node>
             <node concept="2OqwBi" id="1RjkcfJ3M8t" role="37vLTJ">
               <node concept="37vLTw" id="1RjkcfJ3M5t" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="containerRef" />
+                <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="featureGroupRef" />
               </node>
               <node concept="3TrEf2" id="1RjkcfJ3MlD" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:7irj4gs$aYY" />
@@ -11944,7 +11944,7 @@
         <node concept="3clFbF" id="1RjkcfJ3Oc3" role="3cqZAp">
           <node concept="37vLTI" id="1RjkcfJ3Rja" role="3clFbG">
             <node concept="37vLTw" id="1RjkcfJ3RkB" role="37vLTx">
-              <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="containerRef" />
+              <ref role="3cqZAo" node="1RjkcfJ3I6$" resolve="featureGroupRef" />
             </node>
             <node concept="2OqwBi" id="1RjkcfJ3QZb" role="37vLTJ">
               <node concept="2OqwBi" id="1RjkcfJ3ODD" role="2Oq$k0">
@@ -11972,11 +11972,11 @@
       <node concept="P$JXv" id="26HCxWILE$a" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILE$b" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILE$c" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates a new Containerreference and registers the referenceContainer." />
+            <property role="1dT_AB" value="Creates a new GroupReference and registers the referencedGroup." />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILE$d" role="TUOzN">
-          <property role="TUZQ4" value="the node which should be annotated with the containerref" />
+          <property role="TUZQ4" value="the node which should be annotated with the featureGroupRef" />
           <node concept="zr_55" id="26HCxWILE$f" role="zr_5Q">
             <ref role="zr_51" node="3vAAWfK5v3I" resolve="targetNode" />
           </node>
@@ -11999,7 +11999,7 @@
             <node concept="2OqwBi" id="1RjkcfJ3RUv" role="37vLTJ">
               <node concept="2OqwBi" id="1RjkcfJ3RFo" role="2Oq$k0">
                 <node concept="37vLTw" id="1RjkcfJ3RCH" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="containerRef" />
+                  <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
                 </node>
                 <node concept="3TrEf2" id="1RjkcfJ3RM7" role="2OqNvi">
                   <ref role="3Tt5mk" to="xf8r:3vAAWfKkoOb" />
@@ -12014,14 +12014,14 @@
         <node concept="3clFbF" id="1RjkcfJ3S6R" role="3cqZAp">
           <node concept="37vLTI" id="1RjkcfJ3VCN" role="3clFbG">
             <node concept="37vLTw" id="1RjkcfJ3VGJ" role="37vLTx">
-              <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="containerRef" />
+              <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
             </node>
             <node concept="2OqwBi" id="1RjkcfJ3Vi_" role="37vLTJ">
               <node concept="2OqwBi" id="1RjkcfJ3SVI" role="2Oq$k0">
                 <node concept="2OqwBi" id="1RjkcfJ3Svd" role="2Oq$k0">
                   <node concept="2OqwBi" id="1RjkcfJ3S9D" role="2Oq$k0">
                     <node concept="37vLTw" id="1RjkcfJ3S6P" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="containerRef" />
+                      <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
                     </node>
                     <node concept="3TrEf2" id="1RjkcfJ3SmP" role="2OqNvi">
                       <ref role="3Tt5mk" to="xf8r:3vAAWfKkoOb" />
@@ -12047,7 +12047,7 @@
               <node concept="2OqwBi" id="1RjkcfJ3WuY" role="2Oq$k0">
                 <node concept="2OqwBi" id="1RjkcfJ3Wee" role="2Oq$k0">
                   <node concept="37vLTw" id="1RjkcfJ3Wa7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="containerRef" />
+                    <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
                   </node>
                   <node concept="3TrEf2" id="1RjkcfJ3Wmm" role="2OqNvi">
                     <ref role="3Tt5mk" to="xf8r:3vAAWfKkoOb" />
@@ -12063,7 +12063,7 @@
             </node>
             <node concept="2OqwBi" id="1RjkcfJ3VLE" role="37vLTJ">
               <node concept="37vLTw" id="1RjkcfJ3VID" role="2Oq$k0">
-                <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="containerRef" />
+                <ref role="3cqZAo" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
               </node>
               <node concept="3TrEf2" id="1RjkcfJ3VYQ" role="2OqNvi">
                 <ref role="3Tt5mk" to="xf8r:7irj4gs$aYY" />
@@ -12073,7 +12073,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="1RjkcfJ3RBN" role="3clF46">
-        <property role="TrG5h" value="containerRef" />
+        <property role="TrG5h" value="featureGroupRef" />
         <node concept="3Tqbb2" id="1RjkcfJ3RBM" role="1tU5fm">
           <ref role="ehGHo" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
         </node>
@@ -12089,9 +12089,9 @@
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILEEa" role="TUOzN">
-          <property role="TUZQ4" value="the containerreference which should be updated" />
+          <property role="TUZQ4" value="the featureGroupReference which should be updated" />
           <node concept="zr_55" id="26HCxWILEEc" role="zr_5Q">
-            <ref role="zr_51" node="1RjkcfJ3RBN" resolve="containerRef" />
+            <ref role="zr_51" node="1RjkcfJ3RBN" resolve="featureGroupRef" />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILEEg" role="TUOzN">
@@ -12160,7 +12160,7 @@
       <node concept="P$JXv" id="26HCxWILRI1" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILRI2" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILRI3" role="1dT_Ay">
-            <property role="1dT_AB" value="Update all containerreferences of targetNode with Containerreferences of sourceNode." />
+            <property role="1dT_AB" value="Update all featureGroupReferences of targetNode with featureGroupReferences of sourceNode." />
           </node>
         </node>
         <node concept="TZ5HA" id="26HCxWILTSw" role="TZ5H$">
@@ -12224,7 +12224,7 @@
         </node>
         <node concept="2Gpval" id="1RjkcfJ4fKb" role="3cqZAp">
           <node concept="2GrKxI" id="1RjkcfJ4fKd" role="2Gsz3X">
-            <property role="TrG5h" value="container" />
+            <property role="TrG5h" value="featureGroup" />
           </node>
           <node concept="2OqwBi" id="1RjkcfJ4fLR" role="2GsD0m">
             <node concept="37vLTw" id="1RjkcfJ4fKM" role="2Oq$k0">
@@ -12249,7 +12249,7 @@
                           <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                         </node>
                         <node concept="2GrUjf" id="1RjkcfJ4Hc4" role="10QFUP">
-                          <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="container" />
+                          <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="featureGroup" />
                         </node>
                       </node>
                     </node>
@@ -12269,7 +12269,7 @@
                       <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                     </node>
                     <node concept="2GrUjf" id="1RjkcfJ4H4X" role="10QFUP">
-                      <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="container" />
+                      <ref role="2Gs0qQ" node="1RjkcfJ4fKd" resolve="featureGroup" />
                     </node>
                   </node>
                 </node>
@@ -12288,7 +12288,7 @@
       <node concept="P$JXv" id="26HCxWILV_x" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILV_y" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILV_z" role="1dT_Ay">
-            <property role="1dT_AB" value="Removes Containerreferences from node and registers new ones." />
+            <property role="1dT_AB" value="Removes featureGroupReferences from node and registers new ones." />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILV_$" role="TUOzN">
@@ -12439,7 +12439,7 @@
       <node concept="P$JXv" id="26HCxWILVAJ" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWILVAK" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWILVAL" role="1dT_Ay">
-            <property role="1dT_AB" value="Updates the definingNode of this IFeatureContainer" />
+            <property role="1dT_AB" value="Updates the definingNode of this IFeatureGroup" />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWILVAM" role="TUOzN">
@@ -12801,11 +12801,11 @@
       <node concept="P$JXv" id="26HCxWIM0Ev" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWIM0Ew" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWIM0Ex" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates new IFeatureContainer as base code." />
+            <property role="1dT_AB" value="Creates new IFeatureGroup as base code." />
           </node>
         </node>
         <node concept="TUZQ0" id="26HCxWIM0Ey" role="TUOzN">
-          <property role="TUZQ4" value="node which acts as definingNode for new IFeatureContainer" />
+          <property role="TUZQ4" value="node which acts as definingNode for new IFeatureGroup" />
           <node concept="zr_55" id="26HCxWIM0E$" role="zr_5Q">
             <ref role="zr_51" node="3vAAWfK5kFC" resolve="targetNode" />
           </node>
@@ -12823,7 +12823,7 @@
           </node>
         </node>
         <node concept="x79VA" id="26HCxWIM0EI" role="x79VK">
-          <property role="x79VB" value="newly created IFeatureContainer" />
+          <property role="x79VB" value="newly created IFeatureGroup" />
         </node>
       </node>
     </node>
@@ -12925,7 +12925,7 @@
       <node concept="P$JXv" id="26HCxWIMD4n" role="lGtFl">
         <node concept="TZ5HA" id="26HCxWIMD4o" role="TZ5H$">
           <node concept="1dT_AC" id="26HCxWIMD4p" role="1dT_Ay">
-            <property role="1dT_AB" value="Create IFeatureContainer which is not yet associated with a specific module, but is already registered" />
+            <property role="1dT_AB" value="Create IFeatureGroup which is not yet associated with a specific module, but is already registered" />
           </node>
         </node>
         <node concept="TZ5HA" id="26HCxWIMDjp" role="TZ5H$">

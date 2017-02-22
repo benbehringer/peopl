@@ -526,7 +526,7 @@
     <ref role="1TJDcQ" node="7irj4gs$aYR" resolve="FragmentUpdater" />
     <node concept="1TJgyj" id="3vAAWfKkoOb" role="1TKVEi">
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="referencedContainer" />
+      <property role="20kJfa" value="referencedGroup" />
       <ref role="20lvS9" node="6BiMxHywUCU" resolve="IFeatureGroup" />
     </node>
     <node concept="M6xJ_" id="3vAAWfKkoNI" role="lGtFl">
