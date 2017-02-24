@@ -20,6 +20,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
@@ -5820,7 +5821,7 @@
               </node>
               <node concept="1mIQ4w" id="4hZHTjY8FTS" role="2OqNvi">
                 <node concept="chp4Y" id="4hZHTjY8FTT" role="cj9EA">
-                  <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
+                  <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="NonOptionalAlternative" />
                 </node>
               </node>
             </node>
@@ -12098,6 +12099,22 @@
                 </node>
               </node>
             </node>
+            <node concept="34ab3g" id="7fzIrfrSRWn" role="3cqZAp">
+              <property role="35gtTG" value="warn" />
+              <node concept="3cpWs3" id="7fzIrfrSS2j" role="34bqiv">
+                <node concept="2OqwBi" id="7fzIrfrSS6w" role="3uHU7w">
+                  <node concept="37vLTw" id="7fzIrfrSS3d" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2y7EocWdWpL" resolve="findLast" />
+                  </node>
+                  <node concept="2qgKlT" id="7fzIrfrSShD" role="2OqNvi">
+                    <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="7fzIrfrSRWp" role="3uHU7B">
+                  <property role="Xl_RC" value="findLast: " />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="2y7EocWdWq6" role="3cqZAp">
               <node concept="3clFbS" id="2y7EocWdWq7" role="3clFbx">
                 <node concept="3cpWs6" id="2y7EocWdWq8" role="3cqZAp">
@@ -12257,6 +12274,22 @@
                         </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="34ab3g" id="7fzIrfrSSlz" role="3cqZAp">
+                <property role="35gtTG" value="warn" />
+                <node concept="3cpWs3" id="7fzIrfrSSsi" role="34bqiv">
+                  <node concept="2OqwBi" id="7fzIrfrSSwv" role="3uHU7w">
+                    <node concept="37vLTw" id="7fzIrfrSStc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5rOrZhwuPuH" resolve="firstFound" />
+                    </node>
+                    <node concept="2qgKlT" id="7fzIrfrSSFC" role="2OqNvi">
+                      <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="7fzIrfrSSl_" role="3uHU7B">
+                    <property role="Xl_RC" value="firstFound: " />
                   </node>
                 </node>
               </node>
@@ -13838,7 +13871,7 @@
               </node>
               <node concept="1mIQ4w" id="Ue$aipDWYP" role="2OqNvi">
                 <node concept="chp4Y" id="Ue$aipDWYQ" role="cj9EA">
-                  <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="SingleChildAlternative" />
+                  <ref role="cht4Q" to="xf8r:1Fk50g35gTs" resolve="NonOptionalAlternative" />
                 </node>
               </node>
             </node>
