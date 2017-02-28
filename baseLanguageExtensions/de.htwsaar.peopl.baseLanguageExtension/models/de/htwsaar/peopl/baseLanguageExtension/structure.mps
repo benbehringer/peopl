@@ -65,7 +65,7 @@
   </registry>
   <node concept="1TIwiD" id="7bzdNbiQijk">
     <property role="1pbfSe" value="1169972230" />
-    <property role="TrG5h" value="PeoplBlockStatement" />
+    <property role="TrG5h" value="FeatureBlock" />
     <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1TJDcQ" to="tpee:fK9aQHR" resolve="BlockStatement" />
     <node concept="1TJgyj" id="4DWAEpicCW1" role="1TKVEi">
@@ -81,7 +81,7 @@
       <node concept="asaX9" id="26HCxWIMfx8" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="6BiMxHyxvgr" role="PzmwI">
-      <ref role="PrY4T" to="xf8r:6BiMxHywUCU" resolve="IFeatureContainer" />
+      <ref role="PrY4T" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
     </node>
   </node>
   <node concept="1TIwiD" id="6qqyTRuTqUc">
@@ -128,7 +128,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="myPeoplBlockStatement" />
       <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="7bzdNbiQijk" resolve="PeoplBlockStatement" />
+      <ref role="20lvS9" node="7bzdNbiQijk" resolve="FeatureBlock" />
     </node>
     <node concept="M6xJ_" id="4DWAEpij2ko" role="lGtFl">
       <property role="Hh88m" value="PeoplBlockReference" />
