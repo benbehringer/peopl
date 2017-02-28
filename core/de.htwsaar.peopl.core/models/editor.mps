@@ -7557,7 +7557,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="f3aruooxon" role="3EZMnx">
-        <ref role="PMmxG" node="14mWR7tBxH6" resolve="Module_BaseConcept_Core" />
+        <ref role="PMmxG" node="14mWR7tBxH6" resolve="Module_BaseConcept" />
       </node>
     </node>
   </node>
@@ -8115,7 +8115,7 @@
   </node>
   <node concept="PKFIW" id="14mWR7tBxH6">
     <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="Module_BaseConcept_Core" />
+    <property role="TrG5h" value="Module_BaseConcept" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QoScp" id="f3aruoowyn" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -9323,12 +9323,12 @@
   </node>
   <node concept="PKFIW" id="42BtosU6dz3">
     <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="ModuleAndVP_Fragment_Core" />
+    <property role="TrG5h" value="ModuleAndVP_Fragment" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="3EZMnI" id="f3aruoovkc" role="2wV5jI">
       <node concept="l2Vlx" id="f3aruoovkd" role="2iSdaV" />
       <node concept="PMmxH" id="f3aruoovka" role="3EZMnx">
-        <ref role="PMmxG" node="42BtosU6d$S" resolve="Module_Fragment_Core" />
+        <ref role="PMmxG" node="42BtosU6d$S" resolve="Module_Fragment" />
       </node>
       <node concept="3F0ifn" id="f3aruoovlM" role="3EZMnx">
         <property role="3F0ifm" value=":" />
@@ -9371,7 +9371,7 @@
   </node>
   <node concept="PKFIW" id="42BtosU6d$S">
     <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="Module_Fragment_Core" />
+    <property role="TrG5h" value="Module_Fragment" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="3EZMnI" id="1vimLgPTySL" role="2wV5jI">
       <node concept="3F0ifn" id="1vimLgPTyVy" role="3EZMnx">
@@ -9429,7 +9429,7 @@
   </node>
   <node concept="PKFIW" id="42BtosU6dXU">
     <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="ModuleAndVP_FragmentParents_BaseConcept_Core" />
+    <property role="TrG5h" value="ModuleAndVP_FragmentParents_BaseConcept" />
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1QoScp" id="2H0DQTMCSOf" role="2wV5jI">
       <property role="1QpmdY" value="true" />
