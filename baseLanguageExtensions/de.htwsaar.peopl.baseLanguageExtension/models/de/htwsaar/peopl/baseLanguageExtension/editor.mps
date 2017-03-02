@@ -81,15 +81,8 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="5944657839000868711" name="jetbrains.mps.lang.editor.structure.ConceptEditorContextHints" flags="ig" index="2ABfQD">
-        <child id="5944657839000877563" name="hints" index="2ABdcP" />
-      </concept>
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
-      </concept>
-      <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
-        <property id="168363875802087287" name="showInUI" index="2gpH_U" />
-        <property id="5944657839012629576" name="presentation" index="2BUmq6" />
       </concept>
       <concept id="8383079901754291618" name="jetbrains.mps.lang.editor.structure.CellModel_NextEditor" flags="ng" index="B$lHz">
         <child id="8383079901754291620" name="removeHints" index="B$lH_" />
@@ -5382,7 +5375,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8Q" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBbWA">
@@ -5420,14 +5413,14 @@
       <node concept="l2Vlx" id="1KlbCrsBbWN" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK93" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBnIt">
     <property role="3GE5qa" value="Statement.Wrapper.For" />
     <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
     <node concept="2aJ2om" id="5xDdmRRWJY5" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="1KlbCrsBnIz" role="6VMZX">
       <property role="3EZMnw" value="true" />
@@ -5464,8 +5457,8 @@
   <node concept="24kQdi" id="1KlbCrsBjXI">
     <property role="3GE5qa" value="Statement.Wrapper.If" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
-    <node concept="2aJ2om" id="5xDdmRRWK8G" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+    <node concept="2aJ2om" id="2W3sxLBwIIj" role="CpUAK">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="3hPixgKA3aP" role="2wV5jI">
       <node concept="2iRkQZ" id="3hPixgKA3aQ" role="2iSdaV" />
@@ -5998,7 +5991,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8L" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBi8z">
@@ -6014,7 +6007,7 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWK8V" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="1KlbCrsBkUg">
@@ -6052,68 +6045,14 @@
       </node>
     </node>
     <node concept="2aJ2om" id="5xDdmRRWJXZ" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
-    </node>
-  </node>
-  <node concept="2ABfQD" id="5xDdmRRWJXS">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="BaseLanguageExtensionHints" />
-    <node concept="2BsEeg" id="5xDdmRRWJXT" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="annotative" />
-      <property role="2BUmq6" value="An annotative editor." />
-    </node>
-    <node concept="2BsEeg" id="1jQ1A8E0r3v" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="hiding" />
-      <property role="2BUmq6" value="Hide chosen module and VP in the standard editor." />
-    </node>
-    <node concept="2BsEeg" id="57rZcVzwarK" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="product" />
-      <property role="2BUmq6" value="product editor, that only shows fragments, which are included in the module configuration." />
-    </node>
-    <node concept="2BsEeg" id="2iVkojt1MhA" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="coloredProduct" />
-      <property role="2BUmq6" value="Colorful product editor." />
-    </node>
-    <node concept="2BsEeg" id="5uxPYTGW6me" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="preprocessor" />
-      <property role="2BUmq6" value="C-Preprocessor-like annotations." />
-    </node>
-    <node concept="2BsEeg" id="35LN$25D8Xf" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="moduleExplorer" />
-      <property role="2BUmq6" value="Module explorer." />
-    </node>
-    <node concept="2BsEeg" id="2c8WkvQiez2" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="modular" />
-      <property role="2BUmq6" value="Modular AHEAD-like editors." />
-    </node>
-    <node concept="2BsEeg" id="5tqlr2bKCop" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateMarkers" />
-      <property role="2BUmq6" value="Integrates annotation markers into FOP-like methods on demand." />
-    </node>
-    <node concept="2BsEeg" id="4qYOtWHqbUC" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateContent" />
-      <property role="2BUmq6" value="Integrates annotations and their content into FOP-like methods on demand." />
-    </node>
-    <node concept="2BsEeg" id="7pOsYQqD9Xo" role="2ABdcP">
-      <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateFields" />
-      <property role="2BUmq6" value="Integrates available field declarations into the current FOP-editor" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="4NyX2wRLDCa">
     <property role="3GE5qa" value="Statement.Wrapper.Try" />
     <ref role="1XX52x" to="tpee:gWTDmSJ" resolve="CatchClause" />
     <node concept="2aJ2om" id="5xDdmRRWRIl" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="PMmxH" id="5xDdmRRWRz_" role="2wV5jI">
       <ref role="PMmxG" node="50moBti4O_3" resolve="Colored_ModuleChooser_CatchClause_Component" />
@@ -6123,7 +6062,7 @@
     <property role="3GE5qa" value="Statement.Wrapper.If" />
     <ref role="1XX52x" to="tpee:hzeNFgq" resolve="ElsifClause" />
     <node concept="2aJ2om" id="5xDdmRRWRIi" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="PMmxH" id="79iFG02RiYP" role="2wV5jI">
       <ref role="PMmxG" node="79iFG02Rhra" resolve="Colored_ModuleChooser_ElseifClause_Component" />
@@ -6527,7 +6466,7 @@
     <property role="3GE5qa" value="Fragment" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="1jQ1A8DZnpC" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="1QoScp" id="5OyDuE7Mly$" role="2wV5jI">
       <property role="1QpmdY" value="true" />
@@ -7225,14 +7164,14 @@
       </node>
     </node>
     <node concept="2aJ2om" id="1jQ1A8DZqi6" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="7uhzxTPLuds">
     <property role="3GE5qa" value="Statement" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="2aJ2om" id="1jQ1A8DZqjy" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="3xqByZNYoy5" role="2wV5jI">
       <ref role="34QXea" node="7uhzxTPLHzy" resolve="Peopl_Statement_KeyMap" />
@@ -7248,7 +7187,7 @@
     <property role="3GE5qa" value="Statement" />
     <ref role="1XX52x" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="2aJ2om" id="1jQ1A8DZqmw" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="2aJ2om" id="4kBSDWF16Ky" role="CpUAK">
       <ref role="2$4xQ3" to="tpco:3Rc6kd0K$RQ" resolve="comment" />
@@ -7288,7 +7227,7 @@
     <property role="3GE5qa" value="Statement" />
     <ref role="1XX52x" to="tpee:fK9aQHR" resolve="BlockStatement" />
     <node concept="2aJ2om" id="1jQ1A8DZqU2" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
     <node concept="3EZMnI" id="giqYO9V" role="2wV5jI">
       <property role="3EZMnw" value="true" />
@@ -8770,8 +8709,8 @@
       </node>
       <node concept="l2Vlx" id="43ncpYmNLUq" role="2iSdaV" />
     </node>
-    <node concept="2aJ2om" id="43ncpYmNLUt" role="CpUAK">
-      <ref role="2$4xQ3" node="5xDdmRRWJXT" resolve="annotative" />
+    <node concept="2aJ2om" id="2W3sxLBwAwI" role="CpUAK">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="PKFIW" id="50moBti4O_3">

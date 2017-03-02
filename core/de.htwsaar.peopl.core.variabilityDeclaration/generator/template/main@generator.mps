@@ -43,6 +43,9 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -121,11 +124,13 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
         <child id="1206060520071" name="elsifClauses" index="3eNLev" />
@@ -561,7 +566,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="2W3sxLBtAEy" role="3acgRq">
-      <ref role="30HIoZ" to="ovfz:2W3sxLBsrUY" resolve="ColoringHelperConceptFunction" />
+      <ref role="30HIoZ" to="ovfz:2W3sxLBsrUY" resolve="EditorHelperConceptFunction" />
       <node concept="j$656" id="2W3sxLBtAEz" role="1lVwrX">
         <ref role="v9R2y" node="2W3sxLBtAEw" resolve="reduce_ColoringHelperConceptFunction" />
       </node>
@@ -3776,7 +3781,7 @@
                     </node>
                     <node concept="3cpWs8" id="2J2yX0KMI6d" role="3cqZAp">
                       <node concept="3cpWsn" id="2J2yX0KMI6e" role="3cpWs9">
-                        <property role="TrG5h" value="runTime" />
+                        <property role="TrG5h" value="runtime" />
                         <node concept="3uibUv" id="2J2yX0KMI6f" role="1tU5fm">
                           <ref role="3uigEE" to="vndm:~LanguageRuntime" resolve="LanguageRuntime" />
                         </node>
@@ -3811,15 +3816,57 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3cpWs6" id="2J2yX0KMJd5" role="3cqZAp">
-                      <node concept="2OqwBi" id="2J2yX0KMJmw" role="3cqZAk">
-                        <node concept="37vLTw" id="2J2yX0KMJi$" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2J2yX0KMI6e" resolve="runTime" />
+                    <node concept="1X3_iC" id="2W3sxLBxFD6" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="3cpWs6" id="2J2yX0KMJd5" role="8Wnug">
+                        <node concept="2OqwBi" id="2J2yX0KMJmw" role="3cqZAk">
+                          <node concept="37vLTw" id="2J2yX0KMJi$" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2J2yX0KMI6e" resolve="runtime" />
+                          </node>
+                          <node concept="liA8E" id="2J2yX0KMJrk" role="2OqNvi">
+                            <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                            <node concept="3VsKOn" id="2J2yX0KMJ$b" role="37wK5m">
+                              <ref role="3VsUkX" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                            </node>
+                          </node>
                         </node>
-                        <node concept="liA8E" id="2J2yX0KMJrk" role="2OqNvi">
-                          <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
-                          <node concept="3VsKOn" id="2J2yX0KMJ$b" role="37wK5m">
-                            <ref role="3VsUkX" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="2W3sxLBxE$P" role="3cqZAp">
+                      <node concept="3clFbS" id="2W3sxLBxE$R" role="3clFbx">
+                        <node concept="3cpWs6" id="2W3sxLBxFgx" role="3cqZAp">
+                          <node concept="10Nm6u" id="2W3sxLBxFkf" role="3cqZAk" />
+                        </node>
+                      </node>
+                      <node concept="3clFbC" id="2W3sxLBxF9r" role="3clFbw">
+                        <node concept="10Nm6u" id="2W3sxLBxFd8" role="3uHU7w" />
+                        <node concept="2OqwBi" id="2W3sxLBxEPO" role="3uHU7B">
+                          <node concept="37vLTw" id="2W3sxLBxEPP" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2J2yX0KMI6e" resolve="runtime" />
+                          </node>
+                          <node concept="liA8E" id="2W3sxLBxEPQ" role="2OqNvi">
+                            <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                            <node concept="3VsKOn" id="2W3sxLBxEPR" role="37wK5m">
+                              <ref role="3VsUkX" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="9aQIb" id="2W3sxLBxFoO" role="9aQIa">
+                        <node concept="3clFbS" id="2W3sxLBxFoP" role="9aQI4">
+                          <node concept="3cpWs6" id="2W3sxLBxFug" role="3cqZAp">
+                            <node concept="2OqwBi" id="2W3sxLBxFzF" role="3cqZAk">
+                              <node concept="37vLTw" id="2W3sxLBxFzG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="2J2yX0KMI6e" resolve="runtime" />
+                              </node>
+                              <node concept="liA8E" id="2W3sxLBxFzH" role="2OqNvi">
+                                <ref role="37wK5l" to="vndm:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.ILanguageAspect" resolve="getAspect" />
+                                <node concept="3VsKOn" id="2W3sxLBxFzI" role="37wK5m">
+                                  <ref role="3VsUkX" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                                </node>
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -4466,7 +4513,7 @@
   </node>
   <node concept="13MO4I" id="2W3sxLBtAEw">
     <property role="TrG5h" value="reduce_ColoringHelperConceptFunction" />
-    <ref role="3gUMe" to="ovfz:2W3sxLBsrUY" resolve="ColoringHelperConceptFunction" />
+    <ref role="3gUMe" to="ovfz:2W3sxLBsrUY" resolve="EditorHelperConceptFunction" />
     <node concept="3clFb_" id="2W3sxLBtAFK" role="13RCb5">
       <property role="DiZV1" value="false" />
       <property role="od$2w" value="false" />
