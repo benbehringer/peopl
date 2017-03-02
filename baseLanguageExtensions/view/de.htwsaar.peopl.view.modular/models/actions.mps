@@ -60,7 +60,6 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534513062" name="jetbrains.mps.baseLanguage.structure.DoubleType" flags="in" index="10P55v" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -337,11 +336,11 @@
                 <node concept="3cpWsn" id="1Ec_TCAGzkm" role="3cpWs9">
                   <property role="TrG5h" value="baseCodeBlock" />
                   <node concept="3Tqbb2" id="1Ec_TCAGzkh" role="1tU5fm">
-                    <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                    <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="FeatureBlock" />
                   </node>
                   <node concept="10QFUN" id="31jQ6wLl5Dg" role="33vP2m">
                     <node concept="3Tqbb2" id="31jQ6wLl5MW" role="10QFUM">
-                      <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                      <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="FeatureBlock" />
                     </node>
                     <node concept="2OqwBi" id="1Ec_TCAGBIG" role="10QFUP">
                       <node concept="2OqwBi" id="1Ec_TCAG_aa" role="2Oq$k0">
@@ -351,7 +350,7 @@
                           </node>
                           <node concept="3CFZ6_" id="1Ec_TCAG$iG" role="2OqNvi">
                             <node concept="3CFYIy" id="31jQ6wLl3FE" role="3CFYIz">
-                              <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                              <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                             </node>
                           </node>
                         </node>
@@ -433,11 +432,8 @@
                             <node concept="37vLTw" id="3e2$E$Vh2r6" role="3uHU7w">
                               <ref role="3cqZAo" node="3e2$E$Vh1kr" resolve="startTime" />
                             </node>
-                            <node concept="10QFUN" id="1TSiJUXIkTW" role="3uHU7B">
-                              <node concept="10P55v" id="1TSiJUXIkYL" role="10QFUM" />
-                              <node concept="37vLTw" id="3e2$E$Vh2jj" role="10QFUP">
-                                <ref role="3cqZAo" node="3e2$E$Vh1Ci" resolve="endTime" />
-                              </node>
+                            <node concept="37vLTw" id="3e2$E$Vh2jj" role="3uHU7B">
+                              <ref role="3cqZAo" node="3e2$E$Vh1Ci" resolve="endTime" />
                             </node>
                           </node>
                         </node>
@@ -731,11 +727,11 @@
                     <node concept="3cpWsn" id="4BnE3LKX4co" role="3cpWs9">
                       <property role="TrG5h" value="baseCodeBlock" />
                       <node concept="3Tqbb2" id="4BnE3LKX4cp" role="1tU5fm">
-                        <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                        <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="FeatureBlock" />
                       </node>
                       <node concept="10QFUN" id="31jQ6wLleTE" role="33vP2m">
                         <node concept="3Tqbb2" id="31jQ6wLlfCT" role="10QFUM">
-                          <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="PeoplBlockStatement" />
+                          <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="FeatureBlock" />
                         </node>
                         <node concept="2OqwBi" id="4BnE3LKX4cq" role="10QFUP">
                           <node concept="2OqwBi" id="4BnE3LKX4cr" role="2Oq$k0">
@@ -745,7 +741,7 @@
                               </node>
                               <node concept="3CFZ6_" id="4BnE3LKX4cu" role="2OqNvi">
                                 <node concept="3CFYIy" id="31jQ6wLl6Jm" role="3CFYIz">
-                                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="ContainerReference" />
+                                  <ref role="3CFYIx" to="xf8r:3vAAWfKkoNc" resolve="IFeatureGroupRef" />
                                 </node>
                               </node>
                             </node>
@@ -827,11 +823,8 @@
                                 <node concept="37vLTw" id="4BnE3LKX4d1" role="3uHU7w">
                                   <ref role="3cqZAo" node="4BnE3LKX4bS" resolve="startTime" />
                                 </node>
-                                <node concept="10QFUN" id="4BnE3LKX4d2" role="3uHU7B">
-                                  <node concept="10P55v" id="4BnE3LKX4d3" role="10QFUM" />
-                                  <node concept="37vLTw" id="4BnE3LKX4d4" role="10QFUP">
-                                    <ref role="3cqZAo" node="4BnE3LKX4cL" resolve="endTime" />
-                                  </node>
+                                <node concept="37vLTw" id="4BnE3LKX4d4" role="3uHU7B">
+                                  <ref role="3cqZAo" node="4BnE3LKX4cL" resolve="endTime" />
                                 </node>
                               </node>
                             </node>

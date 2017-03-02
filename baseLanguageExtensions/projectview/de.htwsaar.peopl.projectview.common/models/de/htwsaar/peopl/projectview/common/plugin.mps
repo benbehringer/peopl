@@ -63,6 +63,7 @@
     <import index="rgfa" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.tree(JDK/)" />
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="yzb3" ref="r:f393bef6-f5eb-4c1c-b83e-eaf497787a21(com.mbeddr.mpsutil.projectview.plugin)" />
+    <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -2538,7 +2539,7 @@
                                   </node>
                                 </node>
                                 <node concept="2pYGij" id="1jQ1A8E0HpG" role="37vLTx">
-                                  <ref role="2pYH_C" to="nbbm:35LN$25D8Xf" resolve="moduleExplorer" />
+                                  <ref role="2pYH_C" to="tqa7:2W3sxLBwzzO" resolve="moduleExplorer" />
                                 </node>
                               </node>
                             </node>
@@ -2605,7 +2606,7 @@
                               <node concept="3clFbF" id="1k3hL0SuZDB" role="3cqZAp">
                                 <node concept="37vLTI" id="1k3hL0SuZKe" role="3clFbG">
                                   <node concept="2pYGij" id="1jQ1A8E0HWh" role="37vLTx">
-                                    <ref role="2pYH_C" to="nbbm:2c8WkvQiez2" resolve="modular" />
+                                    <ref role="2pYH_C" to="tqa7:2W3sxLBwzzW" resolve="modular" />
                                   </node>
                                   <node concept="AH0OO" id="1k3hL0SuZFY" role="37vLTJ">
                                     <node concept="3cmrfG" id="1k3hL0SuZHU" role="AHEQo">
@@ -3165,7 +3166,7 @@
                                 </node>
                               </node>
                               <node concept="2pYGij" id="1jQ1A8DZAIJ" role="37vLTx">
-                                <ref role="2pYH_C" to="nbbm:5xDdmRRWJXT" resolve="annotative" />
+                                <ref role="2pYH_C" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
                               </node>
                             </node>
                           </node>
@@ -3241,7 +3242,7 @@
                                 </node>
                               </node>
                               <node concept="2pYGij" id="1jQ1A8E0JBq" role="37vLTx">
-                                <ref role="2pYH_C" to="nbbm:57rZcVzwarK" resolve="product" />
+                                <ref role="2pYH_C" to="tqa7:2W3sxLBrwzM" resolve="product" />
                               </node>
                             </node>
                           </node>
