@@ -40,6 +40,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/languages/com.mbeddr.core.modules/modules.mpl" folder="mbeddr.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
