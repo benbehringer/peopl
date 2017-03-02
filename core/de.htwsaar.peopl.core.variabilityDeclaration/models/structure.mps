@@ -104,6 +104,12 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4UuYCFbLueA" resolve="FeatureGroupConfig" />
     </node>
+    <node concept="1TJgyj" id="2W3sxLBsvoR" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="editorHandlingConfig" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2W3sxLBsrUO" resolve="EditorHandling" />
+    </node>
     <node concept="PrWs8" id="BFOVkKtF5k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -354,6 +360,36 @@
     <property role="1pbfSe" value="1823962945" />
     <property role="TrG5h" value="SpecializedAlternativeBehaviorConceptFunction" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="2W3sxLBsrUO">
+    <property role="1pbfSe" value="1770704688" />
+    <property role="TrG5h" value="EditorHandling" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2W3sxLBsrUT" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="coloringHandledByConceptEditor" />
+      <ref role="20lvS9" node="2W3sxLBsrUY" resolve="EditorHelperConceptFunction" />
+    </node>
+    <node concept="1TJgyj" id="2W3sxLBsrUV" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="fragmentHandledByConceptEditor" />
+      <ref role="20lvS9" node="2W3sxLBsrUY" resolve="EditorHelperConceptFunction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W3sxLBsrUY">
+    <property role="1pbfSe" value="1770704678" />
+    <property role="TrG5h" value="EditorHelperConceptFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="2W3sxLBsrY$">
+    <property role="1pbfSe" value="1770704448" />
+    <property role="TrG5h" value="ConceptFunctionParameter_fragment" />
+    <property role="34LRSv" value="fragment" />
+    <property role="R4oN_" value="node&lt;fragment&gt; to check" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+    <node concept="PrWs8" id="2W3sxLBsrY_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
   </node>
 </model>
 

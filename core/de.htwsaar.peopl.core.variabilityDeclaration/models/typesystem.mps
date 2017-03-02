@@ -9,6 +9,7 @@
     <import index="ovfz" ref="r:eb6286b8-ef89-4955-b26e-5b8680512c44(de.htwsaar.peopl.core.variabilityDeclaration.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -215,6 +216,31 @@
     <node concept="1YaCAy" id="1h5QCpZb50_" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_node" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="2W3sxLBss0I">
+    <property role="TrG5h" value="typeof_ConceptFunctionParameter_fragment" />
+    <node concept="3clFbS" id="2W3sxLBss0J" role="18ibNy">
+      <node concept="1Z5TYs" id="2W3sxLBss3o" role="3cqZAp">
+        <node concept="mw_s8" id="2W3sxLBss3G" role="1ZfhKB">
+          <node concept="2c44tf" id="2W3sxLBss3C" role="mwGJk">
+            <node concept="3Tqbb2" id="2W3sxLBss3Z" role="2c44tc">
+              <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2W3sxLBss3r" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2W3sxLBss0Y" role="mwGJk">
+            <node concept="1YBJjd" id="2W3sxLBss1q" role="1Z2MuG">
+              <ref role="1YBMHb" node="2W3sxLBss0L" resolve="fragment" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2W3sxLBss0L" role="1YuTPh">
+      <property role="TrG5h" value="fragment" />
+      <ref role="1YaFvo" to="ovfz:2W3sxLBsrY$" resolve="ConceptFunctionParameter_fragment" />
     </node>
   </node>
 </model>

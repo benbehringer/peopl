@@ -315,6 +315,35 @@
       <node concept="3Tm1VV" id="4UuYCFbYoa8" role="1B3o_S" />
       <node concept="3bZ5Sz" id="4UuYCFbYo8E" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="2W3sxLBt1NS" role="jymVt" />
+    <node concept="3clFb_" id="2W3sxLBt1Tj" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isFragmentHandledByConceptEditor" />
+      <node concept="3clFbS" id="2W3sxLBt1Tm" role="3clF47" />
+      <node concept="3Tm1VV" id="2W3sxLBt1Tn" role="1B3o_S" />
+      <node concept="10P_77" id="2W3sxLBt1Rt" role="3clF45" />
+      <node concept="37vLTG" id="2W3sxLBt1Xm" role="3clF46">
+        <property role="TrG5h" value="fragment" />
+        <node concept="3Tqbb2" id="2W3sxLBt1Xl" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2W3sxLBt25F" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isColoringHandledByConceptEditor" />
+      <node concept="3clFbS" id="2W3sxLBt25I" role="3clF47" />
+      <node concept="3Tm1VV" id="2W3sxLBt25J" role="1B3o_S" />
+      <node concept="10P_77" id="2W3sxLBt23J" role="3clF45" />
+      <node concept="37vLTG" id="2W3sxLBt29O" role="3clF46">
+        <property role="TrG5h" value="fragment" />
+        <node concept="3Tqbb2" id="2W3sxLBt29N" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2FVYQByNito" role="1B3o_S" />
     <node concept="3uibUv" id="2FVYQByNitQ" role="3HQHJm">
       <ref role="3uigEE" to="ze1i:~ILanguageAspect" resolve="ILanguageAspect" />

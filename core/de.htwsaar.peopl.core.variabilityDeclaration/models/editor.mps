@@ -170,12 +170,19 @@
       <node concept="3F1sOY" id="7BIYFTBzHrh" role="3EZMnx">
         <ref role="1NtTu8" to="ovfz:7BIYFTBzCnS" />
       </node>
+      <node concept="3F0ifn" id="2W3sxLBsOzZ" role="3EZMnx" />
       <node concept="3F1sOY" id="7BIYFTBzHrn" role="3EZMnx">
         <ref role="1NtTu8" to="ovfz:7BIYFTBzCnU" />
       </node>
+      <node concept="3F0ifn" id="2W3sxLBsOzL" role="3EZMnx" />
       <node concept="3F1sOY" id="4UuYCFbL$Ra" role="3EZMnx">
         <ref role="1NtTu8" to="ovfz:4UuYCFbLufU" />
       </node>
+      <node concept="3F0ifn" id="2W3sxLBsOz$" role="3EZMnx" />
+      <node concept="3F1sOY" id="2W3sxLBsB6e" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:2W3sxLBsvoR" />
+      </node>
+      <node concept="3F0ifn" id="2W3sxLBsOzo" role="3EZMnx" />
       <node concept="2iRkQZ" id="14Db1DY90mA" role="2iSdaV" />
     </node>
   </node>
@@ -882,6 +889,70 @@
         <ref role="1NtTu8" to="ovfz:1h5QCpZ0F65" />
       </node>
       <node concept="2iRkQZ" id="1h5QCpZ0F6k" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2W3sxLBsveh">
+    <ref role="1XX52x" to="ovfz:2W3sxLBsrUO" resolve="EditorHandling" />
+    <node concept="3EZMnI" id="2W3sxLBsvej" role="2wV5jI">
+      <node concept="3F0ifn" id="2W3sxLBsveE" role="3EZMnx">
+        <property role="3F0ifm" value="Editor Handling Configuration" />
+      </node>
+      <node concept="gc7cB" id="2W3sxLBsveF" role="3EZMnx">
+        <node concept="3VJUX4" id="2W3sxLBsveG" role="3YsKMw">
+          <node concept="3clFbS" id="2W3sxLBsveH" role="2VODD2">
+            <node concept="3cpWs8" id="2W3sxLBsveI" role="3cqZAp">
+              <node concept="3cpWsn" id="2W3sxLBsveJ" role="3cpWs9">
+                <property role="TrG5h" value="provider" />
+                <node concept="3uibUv" id="2W3sxLBsveK" role="1tU5fm">
+                  <ref role="3uigEE" to="tqa7:61l2320N2tv" resolve="HorizontalLineCellProvider" />
+                </node>
+                <node concept="2ShNRf" id="2W3sxLBsveL" role="33vP2m">
+                  <node concept="1pGfFk" id="2W3sxLBsveM" role="2ShVmc">
+                    <ref role="37wK5l" to="tqa7:4XXs7nZI46S" resolve="HorizontalLineCellProvider" />
+                    <node concept="pncrf" id="2W3sxLBsveN" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2W3sxLBsveO" role="3cqZAp">
+              <node concept="2OqwBi" id="2W3sxLBsveP" role="3clFbG">
+                <node concept="37vLTw" id="2W3sxLBsveQ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2W3sxLBsveJ" resolve="provider" />
+                </node>
+                <node concept="liA8E" id="2W3sxLBsveR" role="2OqNvi">
+                  <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
+                  <node concept="Rm8GO" id="2W3sxLBsveS" role="37wK5m">
+                    <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
+                    <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="2W3sxLBsveT" role="3cqZAp">
+              <node concept="37vLTw" id="2W3sxLBsveU" role="3clFbG">
+                <ref role="3cqZAo" node="2W3sxLBsveJ" resolve="provider" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPM3Z" id="2W3sxLBsveV" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2W3sxLBsvgB" role="3EZMnx">
+        <property role="3F0ifm" value="Fragment handled by concept editor when" />
+      </node>
+      <node concept="3F1sOY" id="2W3sxLBsvjk" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:2W3sxLBsrUV" />
+      </node>
+      <node concept="3F0ifn" id="2W3sxLBsZGo" role="3EZMnx" />
+      <node concept="3F0ifn" id="2W3sxLBsvkG" role="3EZMnx">
+        <property role="3F0ifm" value="Coloring handled by concept editor when" />
+      </node>
+      <node concept="3F1sOY" id="2W3sxLBsvnt" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:2W3sxLBsrUT" />
+      </node>
+      <node concept="2iRkQZ" id="2W3sxLBsvem" role="2iSdaV" />
     </node>
   </node>
 </model>
