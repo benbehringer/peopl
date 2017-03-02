@@ -27,7 +27,6 @@
         <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
-      <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -102,7 +101,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -292,11 +290,23 @@
       <ref role="13i0hy" to="tpek:hGVcmek" resolve="getName" />
       <node concept="3Tm1VV" id="5z2fEueBHqz" role="1B3o_S" />
       <node concept="3clFbS" id="5z2fEueBHq$" role="3clF47">
-        <node concept="3clFbF" id="5z2fEueBHq_" role="3cqZAp">
-          <node concept="2OqwBi" id="5z2fEueBHqA" role="3clFbG">
-            <node concept="13iAh5" id="5z2fEueBHqB" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5z2fEueBHqC" role="2OqNvi">
-              <ref role="37wK5l" to="tpek:hGVcmek" resolve="getName" />
+        <node concept="3cpWs6" id="25mTXKUH5tL" role="3cqZAp">
+          <node concept="3cpWs3" id="25mTXKUH5x$" role="3cqZAk">
+            <node concept="2OqwBi" id="25mTXKUH5SP" role="3uHU7w">
+              <node concept="2OqwBi" id="25mTXKUH5NY" role="2Oq$k0">
+                <node concept="2JrnkZ" id="25mTXKUH5Ml" role="2Oq$k0">
+                  <node concept="13iPFW" id="25mTXKUH5xQ" role="2JrQYb" />
+                </node>
+                <node concept="liA8E" id="25mTXKUH5Rk" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId():org.jetbrains.mps.openapi.model.SNodeId" resolve="getNodeId" />
+                </node>
+              </node>
+              <node concept="liA8E" id="25mTXKUH5VP" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="25mTXKUH5tY" role="3uHU7B">
+              <property role="Xl_RC" value="variabilityConceptFunction_" />
             </node>
           </node>
         </node>

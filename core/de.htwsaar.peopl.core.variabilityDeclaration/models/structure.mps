@@ -375,6 +375,11 @@
       <property role="20kJfa" value="fragmentHandledByConceptEditor" />
       <ref role="20lvS9" node="2W3sxLBsrUY" resolve="EditorHelperConceptFunction" />
     </node>
+    <node concept="1TJgyj" id="25mTXKUG4ED" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="requiresHorizontalLine" />
+      <ref role="20lvS9" node="nvbgyAd3gU" resolve="VariabilityConceptFunction" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W3sxLBsrUY">
     <property role="1pbfSe" value="1770704678" />

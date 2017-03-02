@@ -6006,33 +6006,6 @@
               </node>
             </node>
           </node>
-          <node concept="3eNFk2" id="14mWR7ttOCx" role="3eNLev">
-            <node concept="2YIFZM" id="14mWR7ttPJ2" role="3eO9$A">
-              <ref role="37wK5l" to="i8bi:5IkW5anFeil" resolve="isInstanceOf" />
-              <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
-              <node concept="37vLTw" id="14mWR7ttPUw" role="37wK5m">
-                <ref role="3cqZAo" node="14mWR7ttpDv" resolve="originalNode" />
-              </node>
-              <node concept="2OqwBi" id="14mWR7ttQdL" role="37wK5m">
-                <node concept="37vLTw" id="14mWR7ttQ6X" role="2Oq$k0">
-                  <ref role="3cqZAo" node="14mWR7ttP2v" resolve="variabilityRuntime" />
-                </node>
-                <node concept="liA8E" id="14mWR7ttQis" role="2OqNvi">
-                  <ref role="37wK5l" to="ikxv:4UuYCFbYo4w" resolve="getDefininingNodeConcept" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="14mWR7ttOCz" role="3eOfB_">
-              <node concept="3cpWs6" id="14mWR7ttQsj" role="3cqZAp">
-                <node concept="10Nm6u" id="14mWR7ttQzs" role="3cqZAk" />
-              </node>
-              <node concept="3SKdUt" id="14mWR7ttSMy" role="3cqZAp">
-                <node concept="3SKdUq" id="14mWR7ttSM$" role="3SKWNk">
-                  <property role="3SKdUp" value="make this dynamic" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="9aQIb" id="14mWR7ttQ_r" role="9aQIa">
             <node concept="3clFbS" id="14mWR7ttQ_s" role="9aQI4">
               <node concept="3cpWs8" id="14mWR7ttQT8" role="3cqZAp">

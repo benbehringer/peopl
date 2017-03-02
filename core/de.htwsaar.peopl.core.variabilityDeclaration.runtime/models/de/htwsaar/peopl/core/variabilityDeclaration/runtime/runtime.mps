@@ -344,6 +344,18 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="25mTXKUG7Aa" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="requiresHorizontalLine" />
+      <node concept="3clFbS" id="25mTXKUG7Ad" role="3clF47" />
+      <node concept="3Tm1VV" id="25mTXKUG7Ae" role="1B3o_S" />
+      <node concept="10P_77" id="25mTXKUG7$8" role="3clF45" />
+      <node concept="37vLTG" id="25mTXKUG7ED" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="25mTXKUG7EC" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2FVYQByNito" role="1B3o_S" />
     <node concept="3uibUv" id="2FVYQByNitQ" role="3HQHJm">
       <ref role="3uigEE" to="ze1i:~ILanguageAspect" resolve="ILanguageAspect" />

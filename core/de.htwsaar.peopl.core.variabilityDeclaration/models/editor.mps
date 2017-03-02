@@ -952,6 +952,14 @@
       <node concept="3F1sOY" id="2W3sxLBsvnt" role="3EZMnx">
         <ref role="1NtTu8" to="ovfz:2W3sxLBsrUT" />
       </node>
+      <node concept="3F0ifn" id="25mTXKUG4EH" role="3EZMnx" />
+      <node concept="3F0ifn" id="25mTXKUG4Go" role="3EZMnx">
+        <property role="3F0ifm" value="Nodes which require a horizontal line" />
+      </node>
+      <node concept="3F1sOY" id="25mTXKUG4Ls" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:25mTXKUG4ED" />
+      </node>
+      <node concept="3F0ifn" id="25mTXKUG4JJ" role="3EZMnx" />
       <node concept="2iRkQZ" id="2W3sxLBsvem" role="2iSdaV" />
     </node>
   </node>
