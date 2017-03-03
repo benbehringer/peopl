@@ -41,8 +41,10 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.annotative/de.htwsaar.peopl.core.view.annotative.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.embedded/de.htwsaar.peopl.core.view.embedded.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/devkits/com.mbeddr.core/core.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/languages/com.mbeddr.core.modules/modules.mpl" folder="mbeddr.core" />
