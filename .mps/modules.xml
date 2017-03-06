@@ -59,6 +59,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/MoritzTestsVariability.msd" folder="moritzTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="moritzTests" />
+      <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
