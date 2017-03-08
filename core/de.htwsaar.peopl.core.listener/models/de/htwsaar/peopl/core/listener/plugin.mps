@@ -7503,12 +7503,6 @@
                                   <property role="3SKdUp" value="i.e., normally not just the StatementList is deleted but also the enclosing node" />
                                 </node>
                               </node>
-                              <node concept="34ab3g" id="3FjUMSPrurQ" role="3cqZAp">
-                                <property role="35gtTG" value="warn" />
-                                <node concept="Xl_RD" id="3FjUMSPrurS" role="34bqiv">
-                                  <property role="Xl_RC" value="in if statement" />
-                                </node>
-                              </node>
                               <node concept="3clFbJ" id="4uCbWdTKLwj" role="3cqZAp">
                                 <node concept="3clFbS" id="4uCbWdTKLwk" role="3clFbx">
                                   <node concept="3cpWs8" id="4uCbWdTKLwl" role="3cqZAp">
