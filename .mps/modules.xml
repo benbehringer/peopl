@@ -43,6 +43,7 @@
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.annotative/de.htwsaar.peopl.core.view.annotative.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.embedded/de.htwsaar.peopl.core.view.embedded.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.modular/de.htwsaar.peopl.core.view.modular.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" folder="peopl.core.view" />
