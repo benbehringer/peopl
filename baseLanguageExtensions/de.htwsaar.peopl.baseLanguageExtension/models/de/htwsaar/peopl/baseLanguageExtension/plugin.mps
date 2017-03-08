@@ -1974,7 +1974,7 @@
                 <node concept="3clFb_" id="7U4gdfRwhHF" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
-                  <property role="TrG5h" value="changeNameOfPeoplEntryPoint" />
+                  <property role="TrG5h" value="changeNameOfCompilationUnitContainer" />
                   <node concept="3Tm1VV" id="7U4gdfRwhHH" role="1B3o_S" />
                   <node concept="10P_77" id="7U4gdfRwhHI" role="3clF45" />
                   <node concept="37vLTG" id="7U4gdfRwhHJ" role="3clF46">
@@ -2108,7 +2108,7 @@
                 <node concept="3clFb_" id="6JE$RZ4X7nB" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
-                  <property role="TrG5h" value="automaticPeoplBaseCodeBlockCreation" />
+                  <property role="TrG5h" value="automaticFeatureBaseCodeGroupCreation" />
                   <node concept="3Tm1VV" id="6JE$RZ4X7nD" role="1B3o_S" />
                   <node concept="3cqZAl" id="6JE$RZ4X7nE" role="3clF45" />
                   <node concept="37vLTG" id="6JE$RZ4X7nF" role="3clF46">
@@ -2656,7 +2656,7 @@
                 <node concept="2tJIrI" id="3Yw7YYjGitP" role="jymVt" />
                 <node concept="3clFb_" id="6JE$RZ51ER4" role="jymVt">
                   <property role="1EzhhJ" value="false" />
-                  <property role="TrG5h" value="signOffPeoplBaseCodeBlock" />
+                  <property role="TrG5h" value="signOffFeatureBaseCodeGroup" />
                   <property role="od$2w" value="false" />
                   <property role="DiZV1" value="false" />
                   <property role="2aFKle" value="false" />

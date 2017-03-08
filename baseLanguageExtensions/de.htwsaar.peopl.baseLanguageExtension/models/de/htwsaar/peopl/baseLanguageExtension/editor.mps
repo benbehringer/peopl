@@ -564,19 +564,24 @@
   <node concept="24kQdi" id="4qvLkVcGXtu">
     <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
-    <node concept="3EZMnI" id="62a2r2ctxOr" role="2wV5jI">
-      <ref role="1ERwB7" node="kX2Y4DxvlX" resolve="Peopl_AnnotativeView_ActionMap" />
-      <node concept="3EZMnI" id="62a2r2cy2PP" role="3EZMnx">
-        <node concept="3F2HdR" id="62a2r2cy37a" role="3EZMnx">
-          <property role="S$F3r" value="true" />
-          <property role="2czwfO" value=" " />
-          <ref role="1NtTu8" to="uqoo:4qvLkVcGGJq" />
-          <node concept="2iRkQZ" id="62a2r2cy3nb" role="2czzBx" />
+    <node concept="1X3_iC" id="EpVRRuQ2cC" role="lGtFl">
+      <property role="3V$3am" value="cellModel" />
+      <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
+      <node concept="3EZMnI" id="62a2r2ctxOr" role="8Wnug">
+        <ref role="1ERwB7" node="kX2Y4DxvlX" resolve="Peopl_AnnotativeView_ActionMap" />
+        <node concept="3EZMnI" id="62a2r2cy2PP" role="3EZMnx">
+          <node concept="3F2HdR" id="62a2r2cy37a" role="3EZMnx">
+            <property role="S$F3r" value="true" />
+            <property role="2czwfO" value=" " />
+            <ref role="1NtTu8" to="uqoo:4qvLkVcGGJq" />
+            <node concept="2iRkQZ" id="62a2r2cy3nb" role="2czzBx" />
+          </node>
+          <node concept="2iRkQZ" id="62a2r2cy2PQ" role="2iSdaV" />
         </node>
-        <node concept="2iRkQZ" id="62a2r2cy2PQ" role="2iSdaV" />
+        <node concept="2iRkQZ" id="62a2r2ctxOs" role="2iSdaV" />
       </node>
-      <node concept="2iRkQZ" id="62a2r2ctxOs" role="2iSdaV" />
     </node>
+    <node concept="B$lHz" id="EpVRRuP2qL" role="2wV5jI" />
   </node>
   <node concept="24kQdi" id="4DWAEpijtvK">
     <property role="3GE5qa" value="Helper" />

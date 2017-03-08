@@ -96,14 +96,18 @@
     <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="5otajSr$_DL" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+    </node>
+    <node concept="PrWs8" id="EpVRRuxMFC" role="PzmwI">
+      <ref role="PrY4T" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
+    </node>
     <node concept="1TJgyj" id="4qvLkVcGGJq" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="peoplClasses" />
-      <property role="20lbJX" value="1..n" />
+      <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="62a2r2cufYE" resolve="PeoplClassConcept" />
-    </node>
-    <node concept="PrWs8" id="5otajSr$_DL" role="PzmwI">
-      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
+      <node concept="asaX9" id="EpVRRuQk4c" role="lGtFl" />
     </node>
   </node>
   <node concept="PlHQZ" id="70Uiey1XJat">
@@ -118,6 +122,9 @@
     <property role="R4oN_" value="Class declaration" />
     <property role="3GE5qa" value="CoreExtensions" />
     <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
+    <node concept="PrWs8" id="EpVRRux90C" role="PzmwI">
+      <ref role="PrY4T" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4DWAEpij21t">
     <property role="1pbfSe" value="1664566525" />
