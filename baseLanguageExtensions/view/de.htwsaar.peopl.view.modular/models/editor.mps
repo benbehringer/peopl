@@ -53,6 +53,7 @@
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
+    <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -10255,7 +10256,23 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbH" id="1Xb0dGx7Swy" role="3cqZAp" />
+                  <node concept="3clFbH" id="5iaKOVQzI6i" role="3cqZAp" />
+                  <node concept="3cpWs8" id="5iaKOVQzHT$" role="3cqZAp">
+                    <node concept="3cpWsn" id="5iaKOVQzHT_" role="3cpWs9">
+                      <property role="TrG5h" value="runtime" />
+                      <node concept="3uibUv" id="5iaKOVQzHTA" role="1tU5fm">
+                        <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                      </node>
+                      <node concept="2YIFZM" id="5iaKOVQzI60" role="33vP2m">
+                        <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+                        <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
+                        <node concept="37vLTw" id="5iaKOVQzIkc" role="37wK5m">
+                          <ref role="3cqZAo" node="1Xb0dGx7SvO" resolve="currentMethod" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="5iaKOVQzIaO" role="3cqZAp" />
                   <node concept="3clFbJ" id="1Xb0dGx7Swz" role="3cqZAp">
                     <node concept="3clFbS" id="1Xb0dGx7Sw$" role="3clFbx">
                       <node concept="3clFbF" id="1Xb0dGx7Sw_" role="3cqZAp">
@@ -10407,13 +10424,13 @@
                               <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="1Xb0dGx8Dtg" role="3uHU7B">
-                            <node concept="35c_gC" id="1Xb0dGx8Dp0" role="2Oq$k0">
-                              <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                          <node concept="2OqwBi" id="5iaKOVQzIvX" role="3uHU7B">
+                            <node concept="37vLTw" id="5iaKOVQzIr7" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5iaKOVQzHT_" resolve="runtime" />
                             </node>
-                            <node concept="2qgKlT" id="1Xb0dGx8D$1" role="2OqNvi">
-                              <ref role="37wK5l" to="1lrk:47AP7clvb8" resolve="getBaseModule" />
-                              <node concept="37vLTw" id="1Xb0dGx8DFm" role="37wK5m">
+                            <node concept="liA8E" id="5iaKOVQzIAo" role="2OqNvi">
+                              <ref role="37wK5l" to="ikxv:5iaKOVQxkyc" resolve="getBaseModule" />
+                              <node concept="37vLTw" id="5iaKOVQzIVp" role="37wK5m">
                                 <ref role="3cqZAo" node="1Xb0dGx7SvO" resolve="currentMethod" />
                               </node>
                             </node>
@@ -11861,6 +11878,22 @@
                     </node>
                   </node>
                   <node concept="3clFbH" id="1Xb0dGx6jHh" role="3cqZAp" />
+                  <node concept="3cpWs8" id="5iaKOVQzJi3" role="3cqZAp">
+                    <node concept="3cpWsn" id="5iaKOVQzJi4" role="3cpWs9">
+                      <property role="TrG5h" value="runtime" />
+                      <node concept="3uibUv" id="5iaKOVQzJi5" role="1tU5fm">
+                        <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
+                      </node>
+                      <node concept="2YIFZM" id="5iaKOVQzJs_" role="33vP2m">
+                        <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+                        <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
+                        <node concept="37vLTw" id="5iaKOVQzJxB" role="37wK5m">
+                          <ref role="3cqZAo" node="1Xb0dGx7ie4" resolve="currentMethod" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbH" id="5iaKOVQzIXT" role="3cqZAp" />
                   <node concept="3clFbJ" id="1Xb0dGx62ZE" role="3cqZAp">
                     <node concept="3clFbS" id="1Xb0dGx62ZG" role="3clFbx">
                       <node concept="3clFbF" id="1Xb0dGx6kTo" role="3cqZAp">
@@ -12012,13 +12045,13 @@
                               <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="1Xb0dGx8FT3" role="3uHU7B">
-                            <node concept="35c_gC" id="1Xb0dGx8FT4" role="2Oq$k0">
-                              <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                          <node concept="2OqwBi" id="5iaKOVQzJF0" role="3uHU7B">
+                            <node concept="37vLTw" id="5iaKOVQzJAa" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5iaKOVQzJi4" resolve="runtime" />
                             </node>
-                            <node concept="2qgKlT" id="1Xb0dGx8FT5" role="2OqNvi">
-                              <ref role="37wK5l" to="1lrk:47AP7clvb8" resolve="getBaseModule" />
-                              <node concept="37vLTw" id="1Xb0dGx8FT6" role="37wK5m">
+                            <node concept="liA8E" id="5iaKOVQzJLr" role="2OqNvi">
+                              <ref role="37wK5l" to="ikxv:5iaKOVQxkyc" resolve="getBaseModule" />
+                              <node concept="37vLTw" id="5iaKOVQzJSF" role="37wK5m">
                                 <ref role="3cqZAo" node="1Xb0dGx7ie4" resolve="currentMethod" />
                               </node>
                             </node>

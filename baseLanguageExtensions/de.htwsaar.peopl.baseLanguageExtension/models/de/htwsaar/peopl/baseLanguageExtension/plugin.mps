@@ -618,9 +618,7 @@
                       <node concept="3cpWsn" id="bDbX50YshW" role="3cpWs9">
                         <property role="TrG5h" value="hint" />
                         <node concept="10Q1$e" id="bDbX50YshX" role="1tU5fm">
-                          <node concept="3uibUv" id="bDbX50YshY" role="10Q1$1">
-                            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                          </node>
+                          <node concept="17QB3L" id="22P$DZt9pcL" role="10Q1$1" />
                         </node>
                         <node concept="2BsdOp" id="bDbX50YsqG" role="33vP2m">
                           <node concept="2pYGij" id="bDbX50YsrU" role="2BsfMF">
@@ -2094,17 +2092,32 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="3fIGxWm8Dx3" role="3clF47">
-                    <node concept="3clFbF" id="1oDDNomv5Ah" role="3cqZAp">
-                      <node concept="2OqwBi" id="1oDDNomv5B$" role="3clFbG">
-                        <node concept="35c_gC" id="1oDDNomv5$S" role="2Oq$k0">
-                          <ref role="35c_gD" to="uqoo:70Uiey1XJat" resolve="VariabilityHelper" />
+                    <node concept="3cpWs8" id="5iaKOVQzv4w" role="3cqZAp">
+                      <node concept="3cpWsn" id="5iaKOVQzv4x" role="3cpWs9">
+                        <property role="TrG5h" value="runtime" />
+                        <node concept="3uibUv" id="5iaKOVQzv4y" role="1tU5fm">
+                          <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
                         </node>
-                        <node concept="2qgKlT" id="1oDDNomv5HJ" role="2OqNvi">
-                          <ref role="37wK5l" to="1lrk:1oDDNomv1Ra" resolve="updateModuleInfo" />
-                          <node concept="37vLTw" id="1oDDNomv5KT" role="37wK5m">
+                        <node concept="2YIFZM" id="5iaKOVQzv8I" role="33vP2m">
+                          <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+                          <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
+                          <node concept="37vLTw" id="5iaKOVQzvbd" role="37wK5m">
                             <ref role="3cqZAo" node="3fIGxWm8DwY" resolve="baseNode" />
                           </node>
-                          <node concept="37vLTw" id="1oDDNomv5OI" role="37wK5m">
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5iaKOVQzv$R" role="3cqZAp">
+                      <node concept="2OqwBi" id="5iaKOVQzvBH" role="3clFbG">
+                        <node concept="37vLTw" id="5iaKOVQzv$P" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5iaKOVQzv4x" resolve="runtime" />
+                        </node>
+                        <node concept="liA8E" id="5iaKOVQzvIc" role="2OqNvi">
+                          <ref role="37wK5l" to="ikxv:7aLWWlGsXzd" resolve="updateModuleInfo" />
+                          <node concept="37vLTw" id="5iaKOVQzvKT" role="37wK5m">
+                            <ref role="3cqZAo" node="3fIGxWm8DwY" resolve="baseNode" />
+                          </node>
+                          <node concept="37vLTw" id="5iaKOVQzvRA" role="37wK5m">
                             <ref role="3cqZAo" node="3fIGxWm8Dx0" resolve="newModule" />
                           </node>
                         </node>
