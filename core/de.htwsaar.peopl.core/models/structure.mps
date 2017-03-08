@@ -539,5 +539,21 @@
       </node>
     </node>
   </node>
+  <node concept="PlHQZ" id="EpVRRuwHnf">
+    <property role="1pbfSe" value="383990452" />
+    <property role="3GE5qa" value="Core" />
+    <property role="TrG5h" value="CompilationUnit" />
+  </node>
+  <node concept="PlHQZ" id="EpVRRuwHph">
+    <property role="1pbfSe" value="383990322" />
+    <property role="3GE5qa" value="Core" />
+    <property role="TrG5h" value="CompilationUnitContainer" />
+    <node concept="1TJgyj" id="EpVRRuwHrj" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="compilationUnits" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="EpVRRuwHnf" resolve="CompilationUnit" />
+    </node>
+  </node>
 </model>
 

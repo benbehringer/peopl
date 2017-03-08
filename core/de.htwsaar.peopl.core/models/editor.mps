@@ -66,6 +66,7 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
@@ -12040,6 +12041,29 @@
     </node>
     <node concept="2tJIrI" id="25mTXKUFXK7" role="jymVt" />
     <node concept="3Tm1VV" id="25mTXKUFWZ2" role="1B3o_S" />
+  </node>
+  <node concept="24kQdi" id="EpVRRuxJjZ">
+    <property role="3GE5qa" value="Core" />
+    <ref role="1XX52x" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
+    <node concept="3EZMnI" id="EpVRRuxJk1" role="2wV5jI">
+      <node concept="3EZMnI" id="EpVRRuxJkb" role="3EZMnx">
+        <node concept="VPM3Z" id="EpVRRuxJkd" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F2HdR" id="EpVRRuxM6D" role="3EZMnx">
+          <property role="2czwfO" value=" " />
+          <ref role="1NtTu8" to="xf8r:EpVRRuwHrj" />
+          <node concept="2iRkQZ" id="EpVRRuxM6F" role="2czzBx" />
+        </node>
+        <node concept="2iRkQZ" id="EpVRRuxJkg" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="EpVRRuxJk4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="EpVRRuPCSn">
+    <property role="3GE5qa" value="Core" />
+    <ref role="1XX52x" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
+    <node concept="B$lHz" id="EpVRRuPCSp" role="2wV5jI" />
   </node>
 </model>
 
