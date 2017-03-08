@@ -408,16 +408,17 @@
         <property role="TrG5h" value="test" />
         <property role="2OOxQR" value="false" />
         <node concept="3XIRFW" id="4oksXpGRJKQ" role="3XIRFX">
-          <node concept="0ddOt" id="4oksXpGRJLt" role="3XIRFZ">
+          <node concept="0ddOt" id="6WaQT5n9rAD" role="3XIRFZ">
             <ref role="bkjOb" node="3FjUMSPqezM" resolve="MeinCTest" />
             <ref role="bkjOf" node="4oksXpGRJKO" resolve="test" />
-            <node concept="1V74GB" id="4oksXpGRJLv" role="lGtFl">
+            <node concept="3XISUE" id="6WaQT5n9rAE" role="3XIRFZ" />
+            <node concept="1V74GB" id="6WaQT5n9rAF" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
-              <property role="TrG5h" value="Fragment_5049788446975917151" />
-              <ref role="1V74Hf" to="9err:4oksXpGRJLx" resolve="VPToFragment_5049788446975917153" />
-              <ref role="3aRQVk" to="9err:4oksXpGRJLy" resolve="ModuleToFragment_5049788446975917154" />
+              <property role="TrG5h" value="Fragment_8001449105255938475" />
+              <ref role="1V74Hf" to="9err:6WaQT5n9rAH" resolve="VPToFragment_8001449105255938477" />
+              <ref role="3aRQVk" to="9err:6WaQT5n9rAI" resolve="ModuleToFragment_8001449105255938478" />
               <ref role="a64iB" to="9err:1WMwngv1zU$" resolve="Base" />
-              <ref role="25GeQm" node="4oksXpGRJLz" resolve="FeatureGroupReference_5049788446975917155" />
+              <ref role="25GeQm" node="6WaQT5n9rAJ" resolve="FeatureGroupReference_8001449105255938479" />
             </node>
           </node>
         </node>
@@ -425,10 +426,27 @@
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
         </node>
-        <node concept="37HLsf" id="4oksXpGRJLz" role="lGtFl">
-          <property role="TrG5h" value="FeatureGroupReference_5049788446975917155" />
-          <ref role="37HLr8" node="4oksXpGRJLt" />
-          <ref role="1C2YfU" node="4oksXpGRJLv" resolve="Fragment_5049788446975917151" />
+        <node concept="37HLsf" id="6WaQT5n9rAJ" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_8001449105255938479" />
+          <ref role="37HLr8" node="6WaQT5n9rAD" />
+          <ref role="1C2YfU" node="6WaQT5n9rAF" resolve="Fragment_8001449105255938475" />
+        </node>
+      </node>
+      <node concept="2NXPZ9" id="6WaQT5n9s01" role="N3F5h">
+        <property role="TrG5h" value="empty_1488983959923_1" />
+      </node>
+      <node concept="1S7NMz" id="22kUSJIobe8" role="N3F5h">
+        <property role="TrG5h" value="abc" />
+        <node concept="26Vqph" id="22kUSJIobe6" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+        <node concept="1V74GB" id="22kUSJIobeB" role="lGtFl">
+          <property role="32Xqk$" value="chosenModule" />
+          <property role="TrG5h" value="Fragment_2347760291999167399" />
+          <ref role="1V74Hf" to="9err:22kUSJIobeD" resolve="VPToFragment_2347760291999167401" />
+          <ref role="a64iB" to="9err:1WMwngv2H$P" resolve="Other" />
+          <ref role="3aRQVk" to="9err:22kUSJIobfb" resolve="ModuleToFragment_2347760291999167435" />
         </node>
       </node>
       <node concept="2NXPZ9" id="4oksXpGQHOv" role="N3F5h">
