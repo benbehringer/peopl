@@ -15,6 +15,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -38,7 +39,7 @@
       <node concept="l2Vlx" id="1WMwngv2W_d" role="2iSdaV" />
       <node concept="3F2HdR" id="1WMwngv2W_o" role="3EZMnx">
         <ref role="1NtTu8" to="c4fa:3CmSUB7Fp_m" />
-        <node concept="l2Vlx" id="1WMwngv2W_q" role="2czzBx" />
+        <node concept="2iRkQZ" id="2Ei5o1HKBwi" role="2czzBx" />
       </node>
     </node>
   </node>
