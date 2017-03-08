@@ -70,8 +70,16 @@
       <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
+    <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
+      <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.TmpPeoplClassConcept" flags="ng" index="HxVAC">
+        <property id="1525293860101035093" name="moduleRefName" index="wgJFU" />
+        <reference id="1514132034719907513" name="myClass" index="HxVAD" />
+        <reference id="1514132034719907515" name="myModule" index="HxVAF" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -81,6 +89,11 @@
     <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
       <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
+      </concept>
+    </language>
+    <language id="4c4bbb77-dae4-40ac-9819-555675af7c56" name="de.htwsaar.peopl.core.view.modular">
+      <concept id="763904935699803294" name="de.htwsaar.peopl.core.view.modular.structure.ModularCompilationUnit" flags="ng" index="3k50fz">
+        <property id="763904935699804171" name="moduleReferenceName" index="3k51XQ" />
       </concept>
     </language>
   </registry>
@@ -132,6 +145,35 @@
         <ref role="3aRQVk" to="kjo2:4oksXpGRlEY" resolve="ModuleToFragment_5049788446975810238" />
       </node>
     </node>
+    <node concept="3GWJoq" id="4oksXpGRMZ6" role="3k6NAI">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="TestClass_642" />
+      <node concept="3Tm1VV" id="4oksXpGRMZ7" role="1B3o_S" />
+      <node concept="1V74GB" id="4oksXpGRMZ9" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_5049788446975930313" />
+        <ref role="1V74Hf" to="kjo2:4oksXpGRMZa" resolve="VPToFragment_5049788446975930314" />
+        <ref role="a64iB" to="kjo2:1RjkcfJ5Y78" resolve="Other" />
+        <ref role="3aRQVk" to="kjo2:4oksXpGRN0w" resolve="ModuleToFragment_5049788446975930400" />
+      </node>
+      <node concept="2tJIrI" id="4oksXpGRMZb" role="jymVt" />
+    </node>
+  </node>
+  <node concept="HxVAC" id="6WaQT5n5PWc">
+    <property role="3k51XQ" value="module" />
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Base::TestClass" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="kjo2:1RjkcfJ5Y4L" resolve="Base" />
+    <ref role="HxVAD" node="4oksXpGRlDR" resolve="TestClass" />
+  </node>
+  <node concept="HxVAC" id="6WaQT5n5PWp">
+    <property role="3k51XQ" value="module" />
+    <property role="wgJFU" value="myModule" />
+    <property role="TrG5h" value="Other::TestClass_642" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="HxVAF" to="kjo2:1RjkcfJ5Y78" resolve="Other" />
+    <ref role="HxVAD" node="4oksXpGRMZ6" resolve="TestClass_642" />
   </node>
 </model>
 

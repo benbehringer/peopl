@@ -2385,8 +2385,8 @@
               <node concept="1mfA1w" id="5cacDZVsJaq" role="2OqNvi" />
             </node>
             <node concept="1mIQ4w" id="5cacDZVsJar" role="2OqNvi">
-              <node concept="chp4Y" id="5cacDZVsJas" role="cj9EA">
-                <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+              <node concept="chp4Y" id="4oksXpGRW3r" role="cj9EA">
+                <ref role="cht4Q" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
               </node>
             </node>
           </node>
