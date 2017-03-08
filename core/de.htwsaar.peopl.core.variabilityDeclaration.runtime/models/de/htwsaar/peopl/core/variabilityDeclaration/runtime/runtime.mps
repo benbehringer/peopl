@@ -33,6 +33,7 @@
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
+      <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -299,6 +300,14 @@
         <ref role="3bZ5Sy" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
     </node>
+    <node concept="3clFb_" id="3FjUMSPqh_l" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getInheritedFeatureGroupConcept" />
+      <node concept="3clFbS" id="3FjUMSPqh_o" role="3clF47" />
+      <node concept="3Tm1VV" id="3FjUMSPqh_p" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="3FjUMSPqhoF" role="3clF45" />
+    </node>
     <node concept="3clFb_" id="4UuYCFbYo4w" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
@@ -354,6 +363,24 @@
       <node concept="37vLTG" id="25mTXKUG7ED" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="25mTXKUG7EC" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="7aLWWlGsXzd" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="updateModuleInfo" />
+      <node concept="3clFbS" id="7aLWWlGsXzg" role="3clF47" />
+      <node concept="3Tm1VV" id="7aLWWlGsXzh" role="1B3o_S" />
+      <node concept="3cqZAl" id="7aLWWlGsXmk" role="3clF45" />
+      <node concept="37vLTG" id="7aLWWlGsXNf" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="7aLWWlGsXNe" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7aLWWlGsXTn" role="3clF46">
+        <property role="TrG5h" value="nModule" />
+        <node concept="3Tqbb2" id="7aLWWlGsXZt" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2FVYQByNito" role="1B3o_S" />

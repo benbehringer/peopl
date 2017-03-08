@@ -812,6 +812,12 @@
         <node concept="3F1sOY" id="4UuYCFbLXiW" role="3EZMnx">
           <ref role="1NtTu8" to="ovfz:4UuYCFbLXh$" />
         </node>
+        <node concept="3F0ifn" id="3FjUMSPqeDC" role="3EZMnx">
+          <property role="3F0ifm" value="inherits" />
+        </node>
+        <node concept="3F1sOY" id="3FjUMSPqeDQ" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:3FjUMSPqeCm" />
+        </node>
       </node>
       <node concept="3EZMnI" id="4UuYCFbU6Ga" role="3EZMnx">
         <node concept="VPM3Z" id="4UuYCFbU6Gc" role="3F10Kt">
