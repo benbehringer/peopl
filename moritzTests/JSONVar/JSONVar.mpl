@@ -18,7 +18,9 @@
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
       </usedDevKits>
       <languageVersions>
+        <language id="f3335bfd-d7dc-423b-b3cd-356f2c06afa7" fqName="JSON" version="0" />
         <language id="929ae229-f9e6-4484-9cfa-015acb9b81f3" fqName="JSONVar" version="-1" />
+        <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" fqName="de.htwsaar.peopl.core" version="0" />
         <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
         <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
         <language id="fd392034-7849-419d-9071-12563d152375" fqName="jetbrains.mps.baseLanguage.closures" version="0" />

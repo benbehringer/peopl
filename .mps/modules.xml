@@ -56,12 +56,10 @@
       <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mbeddr.projectview" />
       <modulePath path="$PROJECT_DIR$/mbeddr/selection/de.itemis.mps.selection.runtime/de.itemis.mps.selection.runtime.msd" folder="mbeddr.selection" />
       <modulePath path="$PROJECT_DIR$/moritzTests/JSON.mpl" folder="moritzTests" />
-      <modulePath path="$PROJECT_DIR$/moritzTests/JSONVar/JSONVar.mpl" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/JochenTestsFeature/JochenTestsFeature.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/MoritzTestsVariability.msd" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="moritzTests" />
-      <modulePath path="$PROJECT_DIR$/solutions/test/test.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.ben/de.htwsaar.ben.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/test/de.htwsaar.playground/de.htwsaar.playground.msd" folder="test" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
