@@ -9627,16 +9627,6 @@
       </node>
       <node concept="3cqZAl" id="5uxPYTH2H_l" role="3clF45" />
       <node concept="3clFbS" id="5uxPYTH2H_m" role="3clF47">
-        <node concept="3cpWs8" id="22P$DZt9phk" role="3cqZAp">
-          <node concept="3cpWsn" id="22P$DZt9phl" role="3cpWs9">
-            <property role="TrG5h" value="myHideParenthesis" />
-            <property role="3TUv4t" value="false" />
-            <node concept="10P_77" id="5uxPYTH2H_9" role="1tU5fm" />
-            <node concept="3clFbT" id="5uxPYTH2H_a" role="33vP2m">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
         <node concept="1VxSAg" id="5uxPYTH2H_n" role="3cqZAp">
           <ref role="37wK5l" node="5uxPYTH2H_x" resolve="SimpleChosenModule_CellProvider" />
           <node concept="37vLTw" id="5uxPYTH2H_o" role="37wK5m">
@@ -9647,16 +9637,6 @@
           </node>
           <node concept="37vLTw" id="5uxPYTH2H_q" role="37wK5m">
             <ref role="3cqZAo" node="5uxPYTH2H_h" resolve="showChosenModule" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="5uxPYTH2H_r" role="3cqZAp">
-          <node concept="37vLTI" id="5uxPYTH2H_s" role="3clFbG">
-            <node concept="37vLTw" id="5uxPYTH2H_t" role="37vLTx">
-              <ref role="3cqZAo" node="5uxPYTH2H_j" resolve="hideParenthesis" />
-            </node>
-            <node concept="3cpWsa" id="22P$DZt9phm" role="37vLTJ">
-              <ref role="3cqZAo" node="22P$DZt9phl" resolve="myHideParenthesis" />
-            </node>
           </node>
         </node>
       </node>
@@ -11975,11 +11955,6 @@
       </node>
       <node concept="2iRkQZ" id="EpVRRuxJk4" role="2iSdaV" />
     </node>
-  </node>
-  <node concept="24kQdi" id="EpVRRuPCSn">
-    <property role="3GE5qa" value="Core" />
-    <ref role="1XX52x" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
-    <node concept="B$lHz" id="EpVRRuPCSp" role="2wV5jI" />
   </node>
 </model>
 
