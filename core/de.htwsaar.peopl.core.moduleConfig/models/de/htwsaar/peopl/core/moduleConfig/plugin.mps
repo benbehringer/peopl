@@ -393,15 +393,13 @@
     <node concept="3clFb_" id="3OHjtH33fM8" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="removePeoplBlockReferences" />
+      <property role="TrG5h" value="removeFeatureBlockReferences" />
       <node concept="3clFbS" id="3OHjtH33fMb" role="3clF47" />
       <node concept="3Tm1VV" id="3OHjtH33fMc" role="1B3o_S" />
       <node concept="3cqZAl" id="3OHjtH33fLY" role="3clF45" />
       <node concept="37vLTG" id="3OHjtH33fSj" role="3clF46">
         <property role="TrG5h" value="baseMethod" />
-        <node concept="3Tqbb2" id="3OHjtH33fSi" role="1tU5fm">
-          <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-        </node>
+        <node concept="3Tqbb2" id="3OHjtH33fSi" role="1tU5fm" />
       </node>
     </node>
     <node concept="3Tm1VV" id="3OHjtH331dI" role="1B3o_S" />
