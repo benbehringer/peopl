@@ -271,6 +271,7 @@
         <property id="3542851458883439832" name="languageId" index="2V$B1T" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -3498,13 +3499,7 @@
                     </node>
                     <node concept="1uHKPH" id="4k0tKS$firY" role="2OqNvi" />
                   </node>
-                  <node concept="2Rf3mk" id="4k0tKS$fjiy" role="2OqNvi">
-                    <node concept="1xMEDy" id="4k0tKS$fji$" role="1xVPHs">
-                      <node concept="chp4Y" id="4k0tKS$fjpe" role="ri$Ld">
-                        <ref role="cht4Q" to="tpck:gw2VY9q" resolve="BaseConcept" />
-                      </node>
-                    </node>
-                  </node>
+                  <node concept="32TBzR" id="7MpTifTEPgT" role="2OqNvi" />
                 </node>
                 <node concept="1uHKPH" id="4k0tKS$fkwi" role="2OqNvi" />
               </node>
@@ -3600,7 +3595,7 @@
         </node>
         <node concept="3clFbH" id="6Zni_iE5zq2" role="3cqZAp" />
         <node concept="3clFbH" id="6Zni_iE5zsV" role="3cqZAp" />
-        <node concept="1X3_iC" id="4k0tKS$ePr1" role="lGtFl">
+        <node concept="1X3_iC" id="7MpTifTEOWO" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="2Gpval" id="3OHjtH34epn" role="8Wnug">
