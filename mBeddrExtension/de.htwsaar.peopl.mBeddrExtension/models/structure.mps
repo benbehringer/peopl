@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -55,12 +55,15 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="ImplementationModule container" />
     <property role="R4oN_" value="Container for (multiple, alternative) ImplementationModules" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
     <node concept="PrWs8" id="EpVRRuMiU1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="EpVRRuMiU6" role="PzmwI">
       <ref role="PrY4T" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
+    </node>
+    <node concept="PrWs8" id="7MpTifTEz9V" role="PzmwI">
+      <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
 </model>
