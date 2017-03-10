@@ -31,7 +31,6 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3477,6 +3476,11 @@
             <property role="3SKdUp" value="Hopefully this will get us the right runtime and allows us to do this in a generic way" />
           </node>
         </node>
+        <node concept="3SKdUt" id="7MpTifTJMVR" role="3cqZAp">
+          <node concept="3SKdUq" id="7MpTifTJMVT" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: MF find a better way which allows mixing of different languages" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6Zni_iE5ijk" role="3cqZAp">
           <node concept="3cpWsn" id="6Zni_iE5ijl" role="3cpWs9">
             <property role="TrG5h" value="runtime" />
@@ -3545,27 +3549,6 @@
             <node concept="3zZkjj" id="6Zni_iE5uNT" role="2OqNvi">
               <node concept="1bVj0M" id="6Zni_iE5uNV" role="23t8la">
                 <node concept="3clFbS" id="6Zni_iE5uNW" role="1bW5cS">
-                  <node concept="34ab3g" id="7MpTifTJk9R" role="3cqZAp">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="3cpWs3" id="7MpTifTJkcw" role="34bqiv">
-                      <node concept="2OqwBi" id="7MpTifTJkl1" role="3uHU7w">
-                        <node concept="2OqwBi" id="7MpTifTJkdY" role="2Oq$k0">
-                          <node concept="37vLTw" id="7MpTifTJkcO" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6Zni_iE5ijl" resolve="runtime" />
-                          </node>
-                          <node concept="liA8E" id="7MpTifTJkiZ" role="2OqNvi">
-                            <ref role="37wK5l" to="ikxv:4UuYCFbYo4w" resolve="getDefininingNodeConcept" />
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="7MpTifTJkpC" role="2OqNvi">
-                          <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="7MpTifTJk9T" role="3uHU7B">
-                        <property role="Xl_RC" value="def node concept " />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="3clFbJ" id="7MpTifTJevj" role="3cqZAp">
                     <node concept="3clFbS" id="7MpTifTJevl" role="3clFbx">
                       <node concept="34ab3g" id="7MpTifTJ8HP" role="3cqZAp">

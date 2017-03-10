@@ -13,7 +13,6 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" implicit="true" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -298,33 +297,6 @@
                 </node>
               </node>
             </node>
-            <node concept="2Gpval" id="7MpTifTI4n2" role="3cqZAp">
-              <node concept="2GrKxI" id="7MpTifTI4n4" role="2Gsz3X">
-                <property role="TrG5h" value="node" />
-              </node>
-              <node concept="2OqwBi" id="7MpTifTI4qz" role="2GsD0m">
-                <node concept="1Q6Npb" id="7MpTifTI4pH" role="2Oq$k0" />
-                <node concept="2RRcyG" id="7MpTifTI4rI" role="2OqNvi" />
-              </node>
-              <node concept="3clFbS" id="7MpTifTI4n8" role="2LFqv$">
-                <node concept="34ab3g" id="7MpTifTI4rR" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="7MpTifTI4u3" role="34bqiv">
-                    <node concept="2OqwBi" id="7MpTifTI4uy" role="3uHU7w">
-                      <node concept="2GrUjf" id="7MpTifTI4un" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="7MpTifTI4n4" resolve="node" />
-                      </node>
-                      <node concept="2qgKlT" id="7MpTifTI4$W" role="2OqNvi">
-                        <ref role="37wK5l" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
-                      </node>
-                    </node>
-                    <node concept="Xl_RD" id="7MpTifTI4rT" role="3uHU7B">
-                      <property role="Xl_RC" value="name: " />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="5rOrZhw_iKj" role="3cqZAp">
               <node concept="3clFbS" id="5rOrZhw_iKl" role="3clFbx">
                 <node concept="3cpWs8" id="7t9Yo1qRumb" role="3cqZAp">
@@ -358,7 +330,6 @@
                     <node concept="10Nm6u" id="jenxS68Akg" role="33vP2m" />
                   </node>
                 </node>
-                <node concept="3clFbH" id="7MpTifTISOe" role="3cqZAp" />
                 <node concept="3clFbJ" id="7t9Yo1qRso0" role="3cqZAp">
                   <node concept="3clFbS" id="7t9Yo1qRso2" role="3clFbx">
                     <node concept="1X3_iC" id="3keUGxJe5e0" role="lGtFl">
@@ -562,6 +533,11 @@
                         </node>
                         <node concept="9aQIb" id="jenxS68BL7" role="9aQIa">
                           <node concept="3clFbS" id="jenxS68BL8" role="9aQI4">
+                            <node concept="3SKdUt" id="4tH4MI47OfG" role="3cqZAp">
+                              <node concept="3SKdUq" id="4tH4MI47OfI" role="3SKWNk">
+                                <property role="3SKdUp" value="TODO MF Find a better way, or is this necessary?" />
+                              </node>
+                            </node>
                             <node concept="3clFbJ" id="7MpTifTIQ5v" role="3cqZAp">
                               <node concept="3clFbS" id="7MpTifTIQ5x" role="3clFbx">
                                 <node concept="3clFbF" id="7MpTifTIUsO" role="3cqZAp">
