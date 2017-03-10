@@ -4611,24 +4611,22 @@
                 <ref role="1Y3XeK" to="1z58:3OHjtH331dH" resolve="IExt_PeoplConfigExtension" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="3OHjtH33C3I" role="1B3o_S" />
-                <node concept="3clFb_" id="3OHjtH340Vv" role="jymVt">
+                <node concept="3clFb_" id="1Fc$omLwypu" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
-                  <property role="TrG5h" value="removePeoplBlockReferences" />
-                  <node concept="3Tm1VV" id="3OHjtH340Vx" role="1B3o_S" />
-                  <node concept="3cqZAl" id="3OHjtH340Vy" role="3clF45" />
-                  <node concept="37vLTG" id="3OHjtH340Vz" role="3clF46">
+                  <property role="TrG5h" value="removeFeatureBlockReferences" />
+                  <node concept="3Tm1VV" id="1Fc$omLwypw" role="1B3o_S" />
+                  <node concept="3cqZAl" id="1Fc$omLwypx" role="3clF45" />
+                  <node concept="37vLTG" id="1Fc$omLwypy" role="3clF46">
                     <property role="TrG5h" value="baseMethod" />
-                    <node concept="3Tqbb2" id="3OHjtH340V$" role="1tU5fm">
-                      <ref role="ehGHo" to="tpee:fzclF7W" resolve="BaseMethodDeclaration" />
-                    </node>
+                    <node concept="3Tqbb2" id="1Fc$omLwypz" role="1tU5fm" />
                   </node>
-                  <node concept="3clFbS" id="3OHjtH340VA" role="3clF47">
+                  <node concept="3clFbS" id="1Fc$omLwyp_" role="3clF47">
                     <node concept="3clFbF" id="3OHjtH34150" role="3cqZAp">
                       <node concept="2OqwBi" id="3OHjtH342Bp" role="3clFbG">
                         <node concept="2OqwBi" id="3OHjtH341dX" role="2Oq$k0">
                           <node concept="37vLTw" id="3OHjtH3414Z" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3OHjtH340Vz" resolve="baseMethod" />
+                            <ref role="3cqZAo" node="1Fc$omLwypy" resolve="baseMethod" />
                           </node>
                           <node concept="3CFZ6_" id="3OHjtH341Zt" role="2OqNvi">
                             <node concept="3CFYIy" id="31jQ6wLjxEz" role="3CFYIz">
