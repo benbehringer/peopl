@@ -410,6 +410,7 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
@@ -707,6 +708,47 @@
       <node concept="2ShNRf" id="1h5QCpZ1fCp" role="33vP2m">
         <node concept="Tc6Ow" id="1h5QCpZ1fOW" role="2ShVmc">
           <node concept="3bZ5Sz" id="1h5QCpZ1fVf" role="HW$YZ" />
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="4k0tKS$mjxH" role="lGtFl">
+      <property role="3V$3am" value="member" />
+      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/5375687026011219971" />
+      <node concept="312cEg" id="4k0tKS$fDjp" role="8Wnug">
+        <property role="34CwA1" value="false" />
+        <property role="eg7rD" value="false" />
+        <property role="TrG5h" value="filteredLanguages" />
+        <property role="3TUv4t" value="false" />
+        <node concept="3Tm6S6" id="4k0tKS$fAza" role="1B3o_S" />
+        <node concept="_YKpA" id="4k0tKS$fCuq" role="1tU5fm">
+          <node concept="3uibUv" id="4k0tKS$fDjc" role="_ZDj9">
+            <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+          </node>
+        </node>
+        <node concept="2ShNRf" id="4k0tKS$fG9G" role="33vP2m">
+          <node concept="Tc6Ow" id="4k0tKS$fG9A" role="2ShVmc">
+            <node concept="3uibUv" id="4k0tKS$fG9B" role="HW$YZ">
+              <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
+            </node>
+            <node concept="pHN19" id="4k0tKS$fGCE" role="HW$Y0">
+              <node concept="2V$Bhx" id="4k0tKS$fGPf" role="2V$M_3">
+                <property role="2V$B1T" value="42727bc4-0771-4379-872f-090530265ce4" />
+                <property role="2V$B1Q" value="de.htwsaar.peopl.core.moduleConfig" />
+              </node>
+            </node>
+            <node concept="pHN19" id="4k0tKS$fHk9" role="HW$Y0">
+              <node concept="2V$Bhx" id="4k0tKS$fHwP" role="2V$M_3">
+                <property role="2V$B1T" value="505b86b7-3a95-44b0-823f-afd50a2eafaa" />
+                <property role="2V$B1Q" value="de.htwsaar.peopl.core.featureConfig" />
+              </node>
+            </node>
+            <node concept="pHN19" id="4k0tKS$fHZV" role="HW$Y0">
+              <node concept="2V$Bhx" id="4k0tKS$fIcI" role="2V$M_3">
+                <property role="2V$B1T" value="b56fbef2-5461-4b30-b8d3-8d727c262dec" />
+                <property role="2V$B1Q" value="de.htwsaar.peopl.core.variabilityDeclaration" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
