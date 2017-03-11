@@ -5683,7 +5683,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="mergeWithSibling" />
-      <property role="2Ki8OM" value="true" />
+      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
       <node concept="3Tm1VV" id="bGFNiGngfa" role="1B3o_S" />
       <node concept="3clFbS" id="bGFNiGngfh" role="3clF47">
@@ -5691,9 +5691,7 @@
           <node concept="3fqX7Q" id="bGFNiGnj_2" role="3clFbw">
             <node concept="BsUDl" id="bGFNiGnj_i" role="3fr31v">
               <ref role="37wK5l" to="kpvh:7fzIrfrKh3u" resolve="siblingMergePossible" />
-              <node concept="37vLTw" id="bGFNiGnj_z" role="37wK5m">
-                <ref role="3cqZAo" node="bGFNiGngfi" resolve="featureGroup" />
-              </node>
+              <node concept="13iPFW" id="3D_IGKO74x7" role="37wK5m" />
               <node concept="37vLTw" id="bGFNiGnjAg" role="37wK5m">
                 <ref role="3cqZAo" node="bGFNiGngfk" resolve="lookInPrevSibling" />
               </node>
@@ -5716,9 +5714,7 @@
                 <node concept="3Tqbb2" id="bGFNiGnqVW" role="10QFUM">
                   <ref role="ehGHo" to="uqoo:7bzdNbiQijk" resolve="FeatureBlock" />
                 </node>
-                <node concept="37vLTw" id="bGFNiGnqXl" role="10QFUP">
-                  <ref role="3cqZAo" node="bGFNiGngfi" resolve="featureGroup" />
-                </node>
+                <node concept="13iPFW" id="3D_IGKO74xF" role="10QFUP" />
               </node>
             </node>
           </node>
@@ -6022,17 +6018,11 @@
         </node>
         <node concept="3clFbH" id="6HjfjW7dhNt" role="3cqZAp" />
       </node>
-      <node concept="37vLTG" id="bGFNiGngfi" role="3clF46">
-        <property role="TrG5h" value="featureGroup" />
-        <node concept="3Tqbb2" id="bGFNiGpGq9" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
-        </node>
-      </node>
       <node concept="37vLTG" id="bGFNiGngfk" role="3clF46">
         <property role="TrG5h" value="lookInPrevSibling" />
-        <node concept="10P_77" id="bGFNiGpGqa" role="1tU5fm" />
+        <node concept="10P_77" id="3D_IGKO74ww" role="1tU5fm" />
       </node>
-      <node concept="3Tqbb2" id="bGFNiGpGq8" role="3clF45">
+      <node concept="3Tqbb2" id="3D_IGKO74wv" role="3clF45">
         <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
     </node>

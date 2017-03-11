@@ -13355,18 +13355,12 @@
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="mergeWithSibling" />
-      <property role="2Ki8OM" value="true" />
+      <property role="2Ki8OM" value="false" />
       <node concept="3Tm1VV" id="bGFNiGn9Hj" role="1B3o_S" />
       <node concept="3Tqbb2" id="bGFNiGnaom" role="3clF45">
         <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
       <node concept="3clFbS" id="bGFNiGn9Hl" role="3clF47" />
-      <node concept="37vLTG" id="bGFNiGnaoq" role="3clF46">
-        <property role="TrG5h" value="featureGroup" />
-        <node concept="3Tqbb2" id="bGFNiGnaop" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
-        </node>
-      </node>
       <node concept="37vLTG" id="bGFNiGnaoI" role="3clF46">
         <property role="TrG5h" value="lookInPrevSibling" />
         <node concept="10P_77" id="bGFNiGnaoQ" role="1tU5fm" />

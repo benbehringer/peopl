@@ -560,7 +560,7 @@
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="false" />
       <property role="TrG5h" value="mergeWithSibling" />
-      <property role="2Ki8OM" value="true" />
+      <property role="2Ki8OM" value="false" />
       <ref role="13i0hy" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
       <node concept="3Tm1VV" id="1WMwngv1Azf" role="1B3o_S" />
       <node concept="3clFbS" id="1WMwngv1Azm" role="3clF47">
@@ -568,9 +568,7 @@
           <node concept="3fqX7Q" id="7MpTifTFY6t" role="3clFbw">
             <node concept="BsUDl" id="7MpTifTFY6H" role="3fr31v">
               <ref role="37wK5l" to="kpvh:7fzIrfrKh3u" resolve="siblingMergePossible" />
-              <node concept="37vLTw" id="7MpTifTFY6V" role="37wK5m">
-                <ref role="3cqZAo" node="1WMwngv1Azn" resolve="featureGroup" />
-              </node>
+              <node concept="13iPFW" id="3D_IGKO64EN" role="37wK5m" />
               <node concept="37vLTw" id="7MpTifTFY7m" role="37wK5m">
                 <ref role="3cqZAo" node="1WMwngv1Azp" resolve="lookInPrevSibling" />
               </node>
@@ -593,9 +591,7 @@
                 <node concept="3Tqbb2" id="7MpTifTFY9a" role="10QFUM">
                   <ref role="ehGHo" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
                 </node>
-                <node concept="37vLTw" id="7MpTifTFY9l" role="10QFUP">
-                  <ref role="3cqZAo" node="1WMwngv1Azn" resolve="featureGroup" />
-                </node>
+                <node concept="13iPFW" id="3D_IGKO64Fq" role="10QFUP" />
               </node>
             </node>
           </node>
@@ -852,12 +848,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="1WMwngv1Azn" role="3clF46">
-        <property role="TrG5h" value="featureGroup" />
-        <node concept="3Tqbb2" id="1WMwngv1Azo" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
         </node>
       </node>
       <node concept="37vLTG" id="1WMwngv1Azp" role="3clF46">

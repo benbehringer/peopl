@@ -6514,43 +6514,27 @@
                     <node concept="1PgB_6" id="6O5WzZw4kAd" role="2OqNvi" />
                   </node>
                 </node>
-                <node concept="3clFbF" id="bGFNiGnXKw" role="3cqZAp">
-                  <node concept="2OqwBi" id="bGFNiGnXYf" role="3clFbG">
-                    <node concept="2OqwBi" id="bGFNiGnXSm" role="2Oq$k0">
-                      <node concept="37vLTw" id="bGFNiGnXKu" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6O5WzZw4n_u" resolve="variabilityRuntime" />
-                      </node>
-                      <node concept="liA8E" id="bGFNiGnXWK" role="2OqNvi">
-                        <ref role="37wK5l" to="ikxv:4UuYCFbM5x0" resolve="getConcreteFeatureGroupConcept" />
-                      </node>
+                <node concept="3clFbF" id="3D_IGKO6AjF" role="3cqZAp">
+                  <node concept="2OqwBi" id="3D_IGKO6AAT" role="3clFbG">
+                    <node concept="37vLTw" id="3D_IGKO6Awk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6O5WzZw4k_Y" resolve="nGroup" />
                     </node>
-                    <node concept="2qgKlT" id="bGFNiGnY9q" role="2OqNvi">
+                    <node concept="2qgKlT" id="3D_IGKO6AG$" role="2OqNvi">
                       <ref role="37wK5l" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
-                      <node concept="37vLTw" id="bGFNiGnYlc" role="37wK5m">
-                        <ref role="3cqZAo" node="6O5WzZw4k_Y" resolve="nGroup" />
-                      </node>
-                      <node concept="3clFbT" id="bGFNiGnYsN" role="37wK5m">
+                      <node concept="3clFbT" id="3D_IGKO6AMv" role="37wK5m">
                         <property role="3clFbU" value="true" />
                       </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbF" id="bGFNiGnYu0" role="3cqZAp">
-                  <node concept="2OqwBi" id="bGFNiGnYu1" role="3clFbG">
-                    <node concept="2OqwBi" id="bGFNiGnYu2" role="2Oq$k0">
-                      <node concept="37vLTw" id="bGFNiGnYu3" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6O5WzZw4n_u" resolve="variabilityRuntime" />
-                      </node>
-                      <node concept="liA8E" id="bGFNiGnYu4" role="2OqNvi">
-                        <ref role="37wK5l" to="ikxv:4UuYCFbM5x0" resolve="getConcreteFeatureGroupConcept" />
-                      </node>
+                <node concept="3clFbF" id="3D_IGKO6ANA" role="3cqZAp">
+                  <node concept="2OqwBi" id="3D_IGKO6ANB" role="3clFbG">
+                    <node concept="37vLTw" id="3D_IGKO6ANC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6O5WzZw4k_Y" resolve="nGroup" />
                     </node>
-                    <node concept="2qgKlT" id="bGFNiGnYu5" role="2OqNvi">
+                    <node concept="2qgKlT" id="3D_IGKO6AND" role="2OqNvi">
                       <ref role="37wK5l" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
-                      <node concept="37vLTw" id="bGFNiGnYu6" role="37wK5m">
-                        <ref role="3cqZAo" node="6O5WzZw4k_Y" resolve="nGroup" />
-                      </node>
-                      <node concept="3clFbT" id="bGFNiGnYu7" role="37wK5m" />
+                      <node concept="3clFbT" id="3D_IGKO6ANE" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -8142,6 +8126,208 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="3ZUzYaqJNcV" role="1B3o_S" />
+  </node>
+  <node concept="2S6QgY" id="5xQSpTdY6Zr">
+    <property role="TrG5h" value="MergeWithNextGroup" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="5xQSpTdY6Zs" role="2ZfVej">
+      <node concept="3clFbS" id="5xQSpTdY6Zt" role="2VODD2">
+        <node concept="3clFbF" id="5xQSpTdY70W" role="3cqZAp">
+          <node concept="Xl_RD" id="5xQSpTdY70V" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL (Core) -&gt; Merge with Next Block" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5xQSpTdY6Zu" role="2ZfgGD">
+      <node concept="3clFbS" id="5xQSpTdY6Zv" role="2VODD2">
+        <node concept="3cpWs8" id="5xQSpTdY9zf" role="3cqZAp">
+          <node concept="3cpWsn" id="5xQSpTdY9zi" role="3cpWs9">
+            <property role="TrG5h" value="currentFeatureGroup" />
+            <node concept="3Tqbb2" id="5xQSpTdY9ze" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+            </node>
+            <node concept="2OqwBi" id="5xQSpTdY9_x" role="33vP2m">
+              <node concept="2Sf5sV" id="5xQSpTdY9$l" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5xQSpTdY9Dy" role="2OqNvi">
+                <node concept="1xMEDy" id="5xQSpTdY9D$" role="1xVPHs">
+                  <node concept="chp4Y" id="5xQSpTdY9DZ" role="ri$Ld">
+                    <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3D_IGKO66ib" role="3cqZAp">
+          <node concept="2OqwBi" id="3D_IGKO66kO" role="3clFbG">
+            <node concept="37vLTw" id="3D_IGKO66i9" role="2Oq$k0">
+              <ref role="3cqZAo" node="5xQSpTdY9zi" resolve="currentFeatureGroup" />
+            </node>
+            <node concept="2qgKlT" id="3D_IGKO66qt" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
+              <node concept="3clFbT" id="3D_IGKO66qE" role="37wK5m">
+                <property role="3clFbU" value="false" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5xQSpTdY7jB" role="2ZfVeh">
+      <node concept="3clFbS" id="5xQSpTdY7jC" role="2VODD2">
+        <node concept="3cpWs8" id="5xQSpTdY7rT" role="3cqZAp">
+          <node concept="3cpWsn" id="5xQSpTdY7rW" role="3cpWs9">
+            <property role="TrG5h" value="currentFeatureGroup" />
+            <node concept="3Tqbb2" id="5xQSpTdY7rS" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+            </node>
+            <node concept="2OqwBi" id="5xQSpTdY7yR" role="33vP2m">
+              <node concept="2Sf5sV" id="5xQSpTdY7xb" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5xQSpTdY7Bo" role="2OqNvi">
+                <node concept="1xMEDy" id="5xQSpTdY7Bq" role="1xVPHs">
+                  <node concept="chp4Y" id="5xQSpTdY7Cl" role="ri$Ld">
+                    <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5xQSpTdY7Ea" role="3cqZAp">
+          <node concept="3clFbS" id="5xQSpTdY7Ec" role="3clFbx">
+            <node concept="3cpWs6" id="5xQSpTdY7OA" role="3cqZAp">
+              <node concept="2OqwBi" id="5xQSpTdY9eH" role="3cqZAk">
+                <node concept="35c_gC" id="5xQSpTdY9bk" role="2Oq$k0">
+                  <ref role="35c_gD" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                </node>
+                <node concept="2qgKlT" id="5xQSpTdY9lb" role="2OqNvi">
+                  <ref role="37wK5l" to="kpvh:7fzIrfrKh3u" resolve="siblingMergePossible" />
+                  <node concept="37vLTw" id="5xQSpTdY9mk" role="37wK5m">
+                    <ref role="3cqZAo" node="5xQSpTdY7rW" resolve="currentFeatureGroup" />
+                  </node>
+                  <node concept="3clFbT" id="5xQSpTdY9oK" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5xQSpTdY7Hn" role="3clFbw">
+            <node concept="37vLTw" id="5xQSpTdY7Fd" role="2Oq$k0">
+              <ref role="3cqZAo" node="5xQSpTdY7rW" resolve="currentFeatureGroup" />
+            </node>
+            <node concept="3x8VRR" id="5xQSpTdY7NH" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5xQSpTdY9rA" role="3cqZAp">
+          <node concept="3clFbT" id="5xQSpTdY9tr" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5xQSpTdY9WR">
+    <property role="TrG5h" value="MergeWithPreviousGroup" />
+    <ref role="2ZfgGC" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="2S6ZIM" id="5xQSpTdY9WS" role="2ZfVej">
+      <node concept="3clFbS" id="5xQSpTdY9WT" role="2VODD2">
+        <node concept="3clFbF" id="5xQSpTdYawp" role="3cqZAp">
+          <node concept="Xl_RD" id="5xQSpTdYawq" role="3clFbG">
+            <property role="Xl_RC" value="@PEoPL (Core) -&gt; Merge with Previous Block" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5xQSpTdY9WU" role="2ZfgGD">
+      <node concept="3clFbS" id="5xQSpTdY9WV" role="2VODD2">
+        <node concept="3cpWs8" id="5xQSpTdYapQ" role="3cqZAp">
+          <node concept="3cpWsn" id="5xQSpTdYapR" role="3cpWs9">
+            <property role="TrG5h" value="currentFeatureGroup" />
+            <node concept="3Tqbb2" id="5xQSpTdYapS" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+            </node>
+            <node concept="2OqwBi" id="5xQSpTdYapT" role="33vP2m">
+              <node concept="2Sf5sV" id="5xQSpTdYapU" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5xQSpTdYapV" role="2OqNvi">
+                <node concept="1xMEDy" id="5xQSpTdYapW" role="1xVPHs">
+                  <node concept="chp4Y" id="5xQSpTdYapX" role="ri$Ld">
+                    <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3D_IGKO64Lg" role="3cqZAp">
+          <node concept="2OqwBi" id="3D_IGKO64MC" role="3clFbG">
+            <node concept="37vLTw" id="3D_IGKO64Le" role="2Oq$k0">
+              <ref role="3cqZAo" node="5xQSpTdYapR" resolve="currentFeatureGroup" />
+            </node>
+            <node concept="2qgKlT" id="3D_IGKO66ap" role="2OqNvi">
+              <ref role="37wK5l" to="kpvh:bGFNiGn9Hi" resolve="mergeWithSibling" />
+              <node concept="3clFbT" id="3D_IGKO66bf" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5xQSpTdYa75" role="2ZfVeh">
+      <node concept="3clFbS" id="5xQSpTdYa76" role="2VODD2">
+        <node concept="3cpWs8" id="5xQSpTdYaa0" role="3cqZAp">
+          <node concept="3cpWsn" id="5xQSpTdYaa1" role="3cpWs9">
+            <property role="TrG5h" value="currentFeatureGroup" />
+            <node concept="3Tqbb2" id="5xQSpTdYaa2" role="1tU5fm">
+              <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+            </node>
+            <node concept="2OqwBi" id="5xQSpTdYaa3" role="33vP2m">
+              <node concept="2Sf5sV" id="5xQSpTdYaa4" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="5xQSpTdYaa5" role="2OqNvi">
+                <node concept="1xMEDy" id="5xQSpTdYaa6" role="1xVPHs">
+                  <node concept="chp4Y" id="5xQSpTdYaa7" role="ri$Ld">
+                    <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5xQSpTdYaa8" role="3cqZAp">
+          <node concept="3clFbS" id="5xQSpTdYaa9" role="3clFbx">
+            <node concept="3cpWs6" id="5xQSpTdYaaa" role="3cqZAp">
+              <node concept="2OqwBi" id="5xQSpTdYaab" role="3cqZAk">
+                <node concept="35c_gC" id="5xQSpTdYaac" role="2Oq$k0">
+                  <ref role="35c_gD" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+                </node>
+                <node concept="2qgKlT" id="5xQSpTdYaad" role="2OqNvi">
+                  <ref role="37wK5l" to="kpvh:7fzIrfrKh3u" resolve="siblingMergePossible" />
+                  <node concept="37vLTw" id="5xQSpTdYaae" role="37wK5m">
+                    <ref role="3cqZAo" node="5xQSpTdYaa1" resolve="currentFeatureGroup" />
+                  </node>
+                  <node concept="3clFbT" id="5xQSpTdYaaf" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="5xQSpTdYaag" role="3clFbw">
+            <node concept="37vLTw" id="5xQSpTdYaah" role="2Oq$k0">
+              <ref role="3cqZAo" node="5xQSpTdYaa1" resolve="currentFeatureGroup" />
+            </node>
+            <node concept="3x8VRR" id="5xQSpTdYaai" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5xQSpTdYaaj" role="3cqZAp">
+          <node concept="3clFbT" id="5xQSpTdYaak" role="3cqZAk">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
