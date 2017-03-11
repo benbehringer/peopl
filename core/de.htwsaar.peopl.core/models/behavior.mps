@@ -11,6 +11,9 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
+    <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
+    <use id="d8f591ec-4d86-4af2-9f92-a9e93c803ffa" name="jetbrains.mps.lang.scopes" version="0" />
   </languages>
   <imports>
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
@@ -31,7 +34,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
-    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="3xdn" ref="r:935ba0ee-7291-4caa-a807-d76e8fc69391(jetbrains.mps.lang.smodel.query.structure)" implicit="true" />
   </imports>
   <registry>
@@ -11767,42 +11771,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="6BiMxHyACXd" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="mergeFeatureGroups" />
-      <node concept="3Tm1VV" id="6BiMxHyACXe" role="1B3o_S" />
-      <node concept="3Tqbb2" id="6BiMxHyAD1f" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
-      </node>
-      <node concept="3clFbS" id="6BiMxHyACXg" role="3clF47" />
-      <node concept="37vLTG" id="6BiMxHyAD1j" role="3clF46">
-        <property role="TrG5h" value="peoplGroups" />
-        <node concept="2I9FWS" id="6BiMxHyAD1i" role="1tU5fm" />
-      </node>
-    </node>
-    <node concept="13i0hz" id="26HCxWIJnYF" role="13h7CS">
-      <property role="13i0iv" value="true" />
-      <property role="13i0it" value="true" />
-      <property role="TrG5h" value="splitGroupAtNode" />
-      <node concept="3Tm1VV" id="26HCxWIJnYG" role="1B3o_S" />
-      <node concept="3Tqbb2" id="26HCxWIJovC" role="3clF45">
-        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
-      </node>
-      <node concept="3clFbS" id="26HCxWIJnYI" role="3clF47" />
-      <node concept="37vLTG" id="26HCxWIJovG" role="3clF46">
-        <property role="TrG5h" value="splitNode" />
-        <node concept="3Tqbb2" id="26HCxWIJovF" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="26HCxWIJovU" role="3clF46">
-        <property role="TrG5h" value="asNextGroup" />
-        <node concept="10P_77" id="26HCxWIJow2" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="26HCxWIJowd" role="3clF46">
-        <property role="TrG5h" value="includeNodeInSplit" />
-        <node concept="10P_77" id="26HCxWIJown" role="1tU5fm" />
-      </node>
-    </node>
     <node concept="13i0hz" id="3vAAWfK3OK7" role="13h7CS">
       <property role="13i0iv" value="false" />
       <property role="13i0it" value="true" />
@@ -13332,6 +13300,42 @@
       <node concept="37vLTG" id="7fzIrfrKkQF" role="3clF46">
         <property role="TrG5h" value="lookInPrevSibling" />
         <node concept="10P_77" id="7fzIrfrKkQN" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="6BiMxHyACXd" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="mergeFeatureGroups" />
+      <node concept="3Tm1VV" id="6BiMxHyACXe" role="1B3o_S" />
+      <node concept="3Tqbb2" id="6BiMxHyAD1f" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+      </node>
+      <node concept="3clFbS" id="6BiMxHyACXg" role="3clF47" />
+      <node concept="37vLTG" id="6BiMxHyAD1j" role="3clF46">
+        <property role="TrG5h" value="peoplGroups" />
+        <node concept="2I9FWS" id="6BiMxHyAD1i" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="26HCxWIJnYF" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="splitGroupAtNode" />
+      <node concept="3Tm1VV" id="26HCxWIJnYG" role="1B3o_S" />
+      <node concept="3Tqbb2" id="26HCxWIJovC" role="3clF45">
+        <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+      </node>
+      <node concept="3clFbS" id="26HCxWIJnYI" role="3clF47" />
+      <node concept="37vLTG" id="26HCxWIJovG" role="3clF46">
+        <property role="TrG5h" value="splitNode" />
+        <node concept="3Tqbb2" id="26HCxWIJovF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="26HCxWIJovU" role="3clF46">
+        <property role="TrG5h" value="asNextGroup" />
+        <node concept="10P_77" id="26HCxWIJow2" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="26HCxWIJowd" role="3clF46">
+        <property role="TrG5h" value="includeNodeInSplit" />
+        <node concept="10P_77" id="26HCxWIJown" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="EpVRRuNsC9" role="13h7CS">
