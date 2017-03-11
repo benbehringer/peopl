@@ -74,6 +74,7 @@
   <languageVersions>
     <language id="58e731a3-6aaa-444a-bf40-801b91c15878" fqName="com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
     <language id="161c12a2-d911-4beb-b2a3-fd23ec0ae175" fqName="de.htwsaar.peopl.core.shortcuts" version="0" />
+    <language id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" fqName="de.itemis.mps.selection.intentions" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
     <language id="ed6d7656-532c-4bc2-81d1-af945aeb8280" fqName="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" fqName="jetbrains.mps.baseLanguage.classifiers" version="0" />
