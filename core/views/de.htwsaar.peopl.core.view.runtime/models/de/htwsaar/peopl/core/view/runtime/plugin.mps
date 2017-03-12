@@ -240,7 +240,6 @@
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1143511969223" name="jetbrains.mps.lang.smodel.structure.Node_GetPrevSiblingOperation" flags="nn" index="YBYNd" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
-      <concept id="1171500988903" name="jetbrains.mps.lang.smodel.structure.Node_GetChildrenOperation" flags="nn" index="32TBzR" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -2025,17 +2024,11 @@
             <node concept="2YIFZM" id="5It2t$SmuUp" role="33vP2m">
               <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
               <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
-              <node concept="2OqwBi" id="5It2t$Smzi$" role="37wK5m">
-                <node concept="2OqwBi" id="5It2t$SmyVj" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5It2t$SmxEZ" role="2Oq$k0">
-                    <node concept="37vLTw" id="5It2t$SmxoV" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4WCCf32lry$" resolve="selectedNodes" />
-                    </node>
-                    <node concept="1uHKPH" id="5It2t$SmyhT" role="2OqNvi" />
-                  </node>
-                  <node concept="32TBzR" id="5It2t$Smz0$" role="2OqNvi" />
+              <node concept="2OqwBi" id="5It2t$SmxEZ" role="37wK5m">
+                <node concept="37vLTw" id="5It2t$SmxoV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4WCCf32lry$" resolve="selectedNodes" />
                 </node>
-                <node concept="1uHKPH" id="5It2t$SmzU_" role="2OqNvi" />
+                <node concept="1uHKPH" id="5It2t$SmyhT" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -2794,12 +2787,6 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="1k_HdRm4b3T" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="Xl_RD" id="1k_HdRm4b3V" role="34bqiv">
-            <property role="Xl_RC" value="core select up" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="5It2t$SmUGL" role="3cqZAp">
           <node concept="3cpWsn" id="5It2t$SmUGM" role="3cpWs9">
             <property role="TrG5h" value="selectedNodes" />
@@ -2829,17 +2816,11 @@
             <node concept="2YIFZM" id="5It2t$SmUGY" role="33vP2m">
               <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
               <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
-              <node concept="2OqwBi" id="5It2t$SmUGZ" role="37wK5m">
-                <node concept="2OqwBi" id="5It2t$SmUH0" role="2Oq$k0">
-                  <node concept="2OqwBi" id="5It2t$SmUH1" role="2Oq$k0">
-                    <node concept="37vLTw" id="5It2t$SmUH2" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5It2t$SmUGM" resolve="selectedNodes" />
-                    </node>
-                    <node concept="1uHKPH" id="5It2t$SmUH3" role="2OqNvi" />
-                  </node>
-                  <node concept="32TBzR" id="5It2t$SmUH4" role="2OqNvi" />
+              <node concept="2OqwBi" id="5It2t$SmUH1" role="37wK5m">
+                <node concept="37vLTw" id="5It2t$SmUH2" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5It2t$SmUGM" resolve="selectedNodes" />
                 </node>
-                <node concept="1uHKPH" id="5It2t$SmUH5" role="2OqNvi" />
+                <node concept="1uHKPH" id="5It2t$SmUH3" role="2OqNvi" />
               </node>
             </node>
           </node>
