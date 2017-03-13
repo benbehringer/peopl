@@ -75,9 +75,13 @@
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
     </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="6867589085886993301" name="com.mbeddr.core.base.structure.EmptyChunkDependency" flags="ng" index="1CU$1Q" />
+    </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
         <child id="6437088627575722833" name="contents" index="N3F5h" />
+        <child id="1317894735999304826" name="imports" index="2OODSX" />
       </concept>
       <concept id="6437088627575722830" name="com.mbeddr.core.modules.structure.ImplementationModule" flags="ng" index="N3F5e" />
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
@@ -146,6 +150,37 @@
   </node>
   <node concept="N3F5e" id="7MpTifTEmOM">
     <property role="TrG5h" value="map_CCompilationUnitContainer" />
+    <node concept="1CU$1Q" id="5OqwB2_TU$r" role="2OODSX">
+      <node concept="2b32R4" id="5OqwB2_TWQ8" role="lGtFl">
+        <node concept="3JmXsc" id="5OqwB2_TWQj" role="2P8S$">
+          <node concept="3clFbS" id="5OqwB2_TWQu" role="2VODD2">
+            <node concept="3clFbF" id="5OqwB2_Uc8Z" role="3cqZAp">
+              <node concept="2OqwBi" id="5OqwB2_Uc90" role="3clFbG">
+                <node concept="1eOMI4" id="5OqwB2_Uc91" role="2Oq$k0">
+                  <node concept="10QFUN" id="5OqwB2_Uc92" role="1eOMHV">
+                    <node concept="3Tqbb2" id="5OqwB2_Uc93" role="10QFUM">
+                      <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                    </node>
+                    <node concept="2OqwBi" id="5OqwB2_Uc94" role="10QFUP">
+                      <node concept="2OqwBi" id="5OqwB2_Uc95" role="2Oq$k0">
+                        <node concept="30H73N" id="5OqwB2_Uc96" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="5OqwB2_Uc97" role="2OqNvi">
+                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="5OqwB2_Uc98" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="5OqwB2_UdeD" role="2OqNvi">
+                  <ref role="3TtcxE" to="x27k:19a6$uAA8hU" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2NXPZ9" id="7MpTifTEmON" role="N3F5h">
       <property role="TrG5h" value="empty_1489143161081_1" />
       <node concept="2b32R4" id="7MpTifTEtl8" role="lGtFl">
