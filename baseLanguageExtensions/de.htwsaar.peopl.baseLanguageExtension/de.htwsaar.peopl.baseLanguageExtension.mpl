@@ -103,7 +103,7 @@
     <usedDevKit>2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)</usedDevKit>
   </usedDevKits>
   <languageVersions>
-    <language id="161c12a2-d911-4beb-b2a3-fd23ec0ae175" fqName="de.htwsaar.peopl.core.shortcuts" version="0" />
+    <language id="161c12a2-d911-4beb-b2a3-fd23ec0ae175" fqName="de.htwsaar.peopl.core.shortcuts" version="-1" />
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" fqName="de.htwsaar.peopl.core.variabilityDeclaration" version="0" />
     <language id="05f762a9-99f5-4971-a9ed-5a6481dc2be4" fqName="de.itemis.mps.selection.intentions" version="0" />
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" fqName="jetbrains.mps.baseLanguage" version="4" />
