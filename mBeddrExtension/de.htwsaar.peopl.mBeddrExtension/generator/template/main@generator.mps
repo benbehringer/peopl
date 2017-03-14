@@ -13,6 +13,7 @@
     <import index="gj7z" ref="r:b16002b4-3e9f-4cda-b9e1-53c91cafb2e8(de.htwsaar.peopl.mBeddrExtension.structure)" implicit="true" />
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -76,6 +77,10 @@
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="7139820346881560230" name="com.mbeddr.core.base.structure.Chunk" flags="ng" index="2cVJ9w">
+        <child id="143519404622854446" name="constraints" index="1r5_Gd" />
+      </concept>
+      <concept id="143519404622828937" name="com.mbeddr.core.base.structure.ChunkDependencyConstraint" flags="ng" index="1r5FuE" />
       <concept id="6867589085886993301" name="com.mbeddr.core.base.structure.EmptyChunkDependency" flags="ng" index="1CU$1Q" />
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -150,6 +155,37 @@
   </node>
   <node concept="N3F5e" id="7MpTifTEmOM">
     <property role="TrG5h" value="map_CCompilationUnitContainer" />
+    <node concept="1r5FuE" id="5OqwB2_UugU" role="1r5_Gd">
+      <node concept="2b32R4" id="5OqwB2_UuqQ" role="lGtFl">
+        <node concept="3JmXsc" id="5OqwB2_UuqS" role="2P8S$">
+          <node concept="3clFbS" id="5OqwB2_UuqU" role="2VODD2">
+            <node concept="3clFbF" id="5OqwB2_Uusi" role="3cqZAp">
+              <node concept="2OqwBi" id="5OqwB2_Uusj" role="3clFbG">
+                <node concept="1eOMI4" id="5OqwB2_Uusk" role="2Oq$k0">
+                  <node concept="10QFUN" id="5OqwB2_Uusl" role="1eOMHV">
+                    <node concept="3Tqbb2" id="5OqwB2_Uusm" role="10QFUM">
+                      <ref role="ehGHo" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
+                    </node>
+                    <node concept="2OqwBi" id="5OqwB2_Uusn" role="10QFUP">
+                      <node concept="2OqwBi" id="5OqwB2_Uuso" role="2Oq$k0">
+                        <node concept="30H73N" id="5OqwB2_Uusp" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="5OqwB2_Uusq" role="2OqNvi">
+                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="5OqwB2_Uusr" role="2OqNvi" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tsc0h" id="5OqwB2_UvsA" role="2OqNvi">
+                  <ref role="3TtcxE" to="vs0r:7XSydqUV$I" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1CU$1Q" id="5OqwB2_TU$r" role="2OODSX">
       <node concept="2b32R4" id="5OqwB2_TWQ8" role="lGtFl">
         <node concept="3JmXsc" id="5OqwB2_TWQj" role="2P8S$">
