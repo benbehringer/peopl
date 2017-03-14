@@ -17,6 +17,8 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" />
+    <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -2163,6 +2165,12 @@
         </node>
       </node>
       <node concept="10P_77" id="7MpTifTE$_U" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="3nhXnhIzW6V">
+    <ref role="13h7C2" to="gj7z:3nhXnhIzlt_" resolve="FeatureBlockVarRef" />
+    <node concept="13hLZK" id="3nhXnhIzW6W" role="13h7CW">
+      <node concept="3clFbS" id="3nhXnhIzW6X" role="2VODD2" />
     </node>
   </node>
 </model>

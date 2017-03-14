@@ -66,5 +66,11 @@
       <ref role="PrY4T" to="x27k:19a6$uAAqkn" resolve="IModuleContentContainer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3nhXnhIzlt_">
+    <property role="1pbfSe" value="1537258279" />
+    <property role="TrG5h" value="FeatureBlockVarRef" />
+    <property role="R4oN_" value="var ref in feature block" />
+    <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+  </node>
 </model>
 
