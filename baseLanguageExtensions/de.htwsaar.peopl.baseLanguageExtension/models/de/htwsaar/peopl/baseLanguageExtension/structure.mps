@@ -239,5 +239,11 @@
     <property role="MwhBj" value="${module}/icons/annotativeView_documentation.png" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="3nhXnhI$u5M">
+    <property role="1pbfSe" value="1536960794" />
+    <property role="3GE5qa" value="CoreExtensions" />
+    <property role="TrG5h" value="FeatureBlockVarRef" />
+    <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
+  </node>
 </model>
 
