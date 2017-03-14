@@ -150,14 +150,14 @@
             <node concept="3cpWsn" id="2tBHhziJtMM" role="3cpWs9">
               <property role="TrG5h" value="scopeProvider" />
               <node concept="3Tqbb2" id="2tBHhziJtMN" role="1tU5fm">
-                <ref role="ehGHo" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+                <ref role="ehGHo" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
               </node>
               <node concept="2OqwBi" id="2tBHhziJtMO" role="33vP2m">
                 <node concept="21POm0" id="2tBHhziJtMP" role="2Oq$k0" />
                 <node concept="2Xjw5R" id="2tBHhziJtMQ" role="2OqNvi">
                   <node concept="1xMEDy" id="2tBHhziJtMR" role="1xVPHs">
-                    <node concept="chp4Y" id="2tBHhziJtMS" role="ri$Ld">
-                      <ref role="cht4Q" to="c4fa:1OcdQnySJNS" resolve="ILocalVarScopeProvider" />
+                    <node concept="chp4Y" id="3nhXnhIARFH" role="ri$Ld">
+                      <ref role="cht4Q" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
                     </node>
                   </node>
                   <node concept="1xIGOp" id="2tBHhziJtMT" role="1xVPHs" />
