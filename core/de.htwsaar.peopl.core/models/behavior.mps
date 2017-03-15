@@ -6795,49 +6795,13 @@
             <node concept="3uibUv" id="14mWR7tCq5U" role="1tU5fm">
               <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
             </node>
-            <node concept="10Nm6u" id="14mWR7tCqnA" role="33vP2m" />
-          </node>
-        </node>
-        <node concept="2Gpval" id="14mWR7tCqrr" role="3cqZAp">
-          <node concept="2GrKxI" id="14mWR7tCqrt" role="2Gsz3X">
-            <property role="TrG5h" value="variabilityExtension" />
-          </node>
-          <node concept="3clFbS" id="14mWR7tCqrx" role="2LFqv$">
-            <node concept="3clFbF" id="14mWR7tCryu" role="3cqZAp">
-              <node concept="37vLTI" id="14mWR7tCr$F" role="3clFbG">
-                <node concept="2OqwBi" id="14mWR7tCrT4" role="37vLTx">
-                  <node concept="2GrUjf" id="14mWR7tCrCS" role="2Oq$k0">
-                    <ref role="2Gs0qQ" node="14mWR7tCqrt" resolve="variabilityExtension" />
-                  </node>
-                  <node concept="liA8E" id="14mWR7tCrYr" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:4qduh90iwds" resolve="varibilityAspectForLanguageOfNode" />
-                    <node concept="37vLTw" id="7s$FAS3zxd2" role="37wK5m">
-                      <ref role="3cqZAo" node="7s$FAS3zvMv" resolve="node" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="37vLTw" id="14mWR7tCryt" role="37vLTJ">
-                  <ref role="3cqZAo" node="14mWR7tCq5T" resolve="variabilityRuntime" />
-                </node>
+            <node concept="2YIFZM" id="1e3Ulh2WidA" role="33vP2m">
+              <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+              <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
+              <node concept="37vLTw" id="1e3Ulh2Wig0" role="37wK5m">
+                <ref role="3cqZAo" node="7s$FAS3zvMv" resolve="node" />
               </node>
             </node>
-            <node concept="3clFbJ" id="14mWR7tCsag" role="3cqZAp">
-              <node concept="3clFbS" id="14mWR7tCsai" role="3clFbx">
-                <node concept="3zACq4" id="14mWR7tCsnk" role="3cqZAp" />
-              </node>
-              <node concept="3y3z36" id="14mWR7tCsh3" role="3clFbw">
-                <node concept="10Nm6u" id="14mWR7tCska" role="3uHU7w" />
-                <node concept="37vLTw" id="14mWR7tCsds" role="3uHU7B">
-                  <ref role="3cqZAo" node="14mWR7tCq5T" resolve="variabilityRuntime" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="14mWR7tCqQr" role="2GsD0m">
-            <node concept="2O5UvJ" id="14mWR7tt2vN" role="2Oq$k0">
-              <ref role="2O5UnU" to="zur:4qduh90iwgR" resolve="Ext_PeoplVariabilityAspectRuntime" />
-            </node>
-            <node concept="SfwO_" id="14mWR7tCqTa" role="2OqNvi" />
           </node>
         </node>
         <node concept="3cpWs8" id="14mWR7tCnNK" role="3cqZAp">
@@ -6852,45 +6816,55 @@
             </node>
           </node>
         </node>
-        <node concept="2Gpval" id="14mWR7tCoe7" role="3cqZAp">
-          <node concept="2GrKxI" id="14mWR7tCoe9" role="2Gsz3X">
-            <property role="TrG5h" value="concept" />
-          </node>
-          <node concept="2OqwBi" id="14mWR7tCoKr" role="2GsD0m">
-            <node concept="2OqwBi" id="14mWR7tCo$b" role="2Oq$k0">
-              <node concept="37vLTw" id="7s$FAS3zxn6" role="2Oq$k0">
-                <ref role="3cqZAo" node="7s$FAS3zvMv" resolve="node" />
+        <node concept="3clFbJ" id="1e3Ulh2WEGJ" role="3cqZAp">
+          <node concept="3clFbS" id="1e3Ulh2WEGL" role="3clFbx">
+            <node concept="2Gpval" id="14mWR7tCoe7" role="3cqZAp">
+              <node concept="2GrKxI" id="14mWR7tCoe9" role="2Gsz3X">
+                <property role="TrG5h" value="concept" />
               </node>
-              <node concept="2yIwOk" id="14mWR7tCoGd" role="2OqNvi" />
+              <node concept="2OqwBi" id="14mWR7tCoKr" role="2GsD0m">
+                <node concept="2OqwBi" id="14mWR7tCo$b" role="2Oq$k0">
+                  <node concept="37vLTw" id="7s$FAS3zxn6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7s$FAS3zvMv" resolve="node" />
+                  </node>
+                  <node concept="2yIwOk" id="14mWR7tCoGd" role="2OqNvi" />
+                </node>
+                <node concept="3oJPKh" id="1e3Ulh2WEB4" role="2OqNvi" />
+              </node>
+              <node concept="3clFbS" id="14mWR7tCoed" role="2LFqv$">
+                <node concept="3clFbJ" id="14mWR7tCoT9" role="3cqZAp">
+                  <node concept="2OqwBi" id="14mWR7tCstN" role="3clFbw">
+                    <node concept="37vLTw" id="14mWR7tCsqd" role="2Oq$k0">
+                      <ref role="3cqZAo" node="14mWR7tCq5T" resolve="variabilityRuntime" />
+                    </node>
+                    <node concept="liA8E" id="14mWR7tCB8t" role="2OqNvi">
+                      <ref role="37wK5l" to="ikxv:14mWR7tAT06" resolve="nodeConceptIsNonOptional" />
+                      <node concept="2GrUjf" id="14mWR7tCBe6" role="37wK5m">
+                        <ref role="2Gs0qQ" node="14mWR7tCoe9" resolve="concept" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="14mWR7tCoTb" role="3clFbx">
+                    <node concept="3clFbF" id="14mWR7tCBhC" role="3cqZAp">
+                      <node concept="37vLTI" id="14mWR7tCBoi" role="3clFbG">
+                        <node concept="2GrUjf" id="14mWR7tCBum" role="37vLTx">
+                          <ref role="2Gs0qQ" node="14mWR7tCoe9" resolve="concept" />
+                        </node>
+                        <node concept="37vLTw" id="14mWR7tCBhB" role="37vLTJ">
+                          <ref role="3cqZAo" node="14mWR7tCnNN" resolve="targetConcept" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3zACq4" id="14mWR7tCBBP" role="3cqZAp" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="3oJPKh" id="14mWR7tCoRu" role="2OqNvi" />
           </node>
-          <node concept="3clFbS" id="14mWR7tCoed" role="2LFqv$">
-            <node concept="3clFbJ" id="14mWR7tCoT9" role="3cqZAp">
-              <node concept="2OqwBi" id="14mWR7tCstN" role="3clFbw">
-                <node concept="37vLTw" id="14mWR7tCsqd" role="2Oq$k0">
-                  <ref role="3cqZAo" node="14mWR7tCq5T" resolve="variabilityRuntime" />
-                </node>
-                <node concept="liA8E" id="14mWR7tCB8t" role="2OqNvi">
-                  <ref role="37wK5l" to="ikxv:14mWR7tAT06" resolve="nodeConceptIsNonOptional" />
-                  <node concept="2GrUjf" id="14mWR7tCBe6" role="37wK5m">
-                    <ref role="2Gs0qQ" node="14mWR7tCoe9" resolve="concept" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="14mWR7tCoTb" role="3clFbx">
-                <node concept="3clFbF" id="14mWR7tCBhC" role="3cqZAp">
-                  <node concept="37vLTI" id="14mWR7tCBoi" role="3clFbG">
-                    <node concept="2GrUjf" id="14mWR7tCBum" role="37vLTx">
-                      <ref role="2Gs0qQ" node="14mWR7tCoe9" resolve="concept" />
-                    </node>
-                    <node concept="37vLTw" id="14mWR7tCBhB" role="37vLTJ">
-                      <ref role="3cqZAo" node="14mWR7tCnNN" resolve="targetConcept" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="3zACq4" id="14mWR7tCBBP" role="3cqZAp" />
-              </node>
+          <node concept="3y3z36" id="1e3Ulh2WENb" role="3clFbw">
+            <node concept="10Nm6u" id="1e3Ulh2WEOY" role="3uHU7w" />
+            <node concept="37vLTw" id="1e3Ulh2WEKO" role="3uHU7B">
+              <ref role="3cqZAo" node="14mWR7tCq5T" resolve="variabilityRuntime" />
             </node>
           </node>
         </node>
