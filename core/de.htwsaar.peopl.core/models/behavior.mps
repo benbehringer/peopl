@@ -6795,10 +6795,10 @@
             <node concept="3uibUv" id="14mWR7tCq5U" role="1tU5fm">
               <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
             </node>
-            <node concept="2YIFZM" id="1e3Ulh2WidA" role="33vP2m">
-              <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+            <node concept="2YIFZM" id="5MWIJNXoOBy" role="33vP2m">
+              <ref role="37wK5l" to="zur:5MWIJNXoNBa" resolve="getRuntimeForNodeDebug" />
               <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
-              <node concept="37vLTw" id="1e3Ulh2Wig0" role="37wK5m">
+              <node concept="37vLTw" id="5MWIJNXoOBz" role="37wK5m">
                 <ref role="3cqZAo" node="7s$FAS3zvMv" resolve="node" />
               </node>
             </node>
