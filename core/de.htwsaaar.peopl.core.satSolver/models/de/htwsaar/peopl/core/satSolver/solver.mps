@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1a97bc00-81aa-408d-b28b-f60a0a006137(de.htwsaaar.peopl.core.satSolver.solver)">
+<model ref="r:1a97bc00-81aa-408d-b28b-f60a0a006137(de.htwsaar.peopl.core.satSolver.solver)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
@@ -2209,7 +2209,7 @@
                   <node concept="1eOMI4" id="1R_y_aAG63j" role="37wK5m">
                     <node concept="10QFUN" id="1R_y_aAG63g" role="1eOMHV">
                       <node concept="3Tqbb2" id="1R_y_aAG63l" role="10QFUM">
-                        <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="AlternativeOperation" />
+                        <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
                       </node>
                       <node concept="37vLTw" id="1R_y_aAG63m" role="10QFUP">
                         <ref role="3cqZAo" node="1R_y_aAD1NX" resolve="op" />
@@ -2228,7 +2228,7 @@
               </node>
               <node concept="1mIQ4w" id="6qqWbCQnlBy" role="2OqNvi">
                 <node concept="chp4Y" id="6flM_ZX0kI9" role="cj9EA">
-                  <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="AlternativeOperation" />
+                  <ref role="cht4Q" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
                 </node>
               </node>
             </node>
@@ -3927,7 +3927,7 @@
       <node concept="37vLTG" id="1R_y_aAFCts" role="3clF46">
         <property role="TrG5h" value="alt" />
         <node concept="3Tqbb2" id="1R_y_aAFCtr" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="AlternativeOperation" />
+          <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
         </node>
       </node>
       <node concept="P$JXv" id="4CMyctzM3Z_" role="lGtFl">
@@ -4053,7 +4053,7 @@
       <node concept="37vLTG" id="1R_y_aAFF7c" role="3clF46">
         <property role="TrG5h" value="alt" />
         <node concept="3Tqbb2" id="1R_y_aAFF7b" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="AlternativeOperation" />
+          <ref role="ehGHo" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
         </node>
       </node>
       <node concept="_YKpA" id="1R_y_aAG023" role="3clF45">
