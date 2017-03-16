@@ -8,6 +8,7 @@
   <imports>
     <import index="c4fa" ref="r:9f0e84b6-2ec7-4f9e-83e0-feedc77b63a3(com.mbeddr.core.statements.structure)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
+    <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -504,9 +505,17 @@
       </node>
       <node concept="18sGMy" id="1WMwngv1GoG" role="18sGM_">
         <node concept="3clFbS" id="1WMwngv1GoH" role="2VODD2">
-          <node concept="3clFbF" id="1WMwngv1GpP" role="3cqZAp">
-            <node concept="3clFbT" id="1WMwngv1GpO" role="3clFbG">
-              <property role="3clFbU" value="false" />
+          <node concept="3cpWs6" id="4AplRoHXjku" role="3cqZAp">
+            <node concept="2OqwBi" id="4AplRoHXjC1" role="3cqZAk">
+              <node concept="2OqwBi" id="4AplRoHXjqe" role="2Oq$k0">
+                <node concept="18sGQS" id="4AplRoHXjmE" role="2Oq$k0" />
+                <node concept="1mfA1w" id="4AplRoHXjwR" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="4AplRoHXjGw" role="2OqNvi">
+                <node concept="chp4Y" id="4AplRoHXjIj" role="cj9EA">
+                  <ref role="cht4Q" to="c4fa:5so5TTr6Vvn" resolve="IfStatement" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -534,6 +543,18 @@
       <node concept="1i7ju2" id="1WMwngv1BF8" role="aHlIj">
         <ref role="359W_E" to="c4fa:5so5TTr6Vvn" resolve="IfStatement" />
         <ref role="359W_F" to="c4fa:5so5TTr6Vvp" />
+      </node>
+      <node concept="1i7ju2" id="4AplRoHUESw" role="aHlIj">
+        <ref role="359W_E" to="c4fa:7k_CvRMmYVM" resolve="WhileStatement" />
+        <ref role="359W_F" to="c4fa:7k_CvRMmYVO" />
+      </node>
+      <node concept="1i7ju2" id="4AplRoHUESG" role="aHlIj">
+        <ref role="359W_E" to="c4fa:7k_CvRMnubc" resolve="DoWhileStatement" />
+        <ref role="359W_F" to="c4fa:7k_CvRMnube" />
+      </node>
+      <node concept="1i7ju2" id="4AplRoHUEST" role="aHlIj">
+        <ref role="359W_E" to="k146:5uVxDlUcwL6" resolve="ForEachStatement" />
+        <ref role="359W_F" to="k146:5uVxDlUcwL9" />
       </node>
     </node>
   </node>
