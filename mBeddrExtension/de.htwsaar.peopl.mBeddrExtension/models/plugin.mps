@@ -43,9 +43,6 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -168,12 +165,6 @@
       <concept id="6478870542308703666" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MemberPlaceholder" flags="ng" index="3tTeZs">
         <property id="6478870542308703667" name="caption" index="3tTeZt" />
         <reference id="6478870542308703669" name="decl" index="3tTeZr" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -366,11 +357,6 @@
                     </node>
                   </node>
                   <node concept="3clFbS" id="EpVRRuMUGM" role="3clF47">
-                    <node concept="3SKdUt" id="EpVRRuNbAk" role="3cqZAp">
-                      <node concept="3SKdUq" id="EpVRRuNbAl" role="3SKWNk">
-                        <property role="3SKdUp" value="TODO implement this in a generic way... see VariabilityHelper" />
-                      </node>
-                    </node>
                     <node concept="3cpWs8" id="7aLWWlGsAJK" role="3cqZAp">
                       <node concept="3cpWsn" id="7aLWWlGsAJL" role="3cpWs9">
                         <property role="TrG5h" value="runtime" />
@@ -445,12 +431,6 @@
                         </node>
                         <node concept="3clFbJ" id="EpVRRuNxRt" role="3cqZAp">
                           <node concept="3clFbS" id="EpVRRuNxRv" role="3clFbx">
-                            <node concept="34ab3g" id="4oksXpGQDc2" role="3cqZAp">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="4oksXpGQDc4" role="34bqiv">
-                                <property role="Xl_RC" value="baseFunction not null" />
-                              </node>
-                            </node>
                             <node concept="3cpWs8" id="EpVRRuNzLZ" role="3cqZAp">
                               <node concept="3cpWsn" id="EpVRRuNzM2" role="3cpWs9">
                                 <property role="TrG5h" value="nFeatureBlock" />
@@ -529,12 +509,6 @@
                                     <ref role="3cqZAo" node="EpVRRuN_Nk" resolve="nStatement" />
                                   </node>
                                 </node>
-                              </node>
-                            </node>
-                            <node concept="34ab3g" id="4oksXpGQDDk" role="3cqZAp">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="4oksXpGQDDm" role="34bqiv">
-                                <property role="Xl_RC" value="added statement to block" />
                               </node>
                             </node>
                             <node concept="3cpWs8" id="6ab3W7cfpHv" role="3cqZAp">
