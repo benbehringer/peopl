@@ -2506,5 +2506,16 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="i2SPV5a1Hg">
+    <ref role="1XX52x" to="gj7z:EpVRRuMcke" resolve="CCompilationUnit" />
+    <node concept="3EZMnI" id="i2SPV5a1HH" role="2wV5jI">
+      <node concept="3XFhqQ" id="i2SPV5a1HI" role="3EZMnx" />
+      <node concept="B$lHz" id="i2SPV5a1HJ" role="3EZMnx" />
+      <node concept="l2Vlx" id="i2SPV5a1HK" role="2iSdaV" />
+    </node>
+    <node concept="2aJ2om" id="i2SPV5a1HP" role="CpUAK">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrwzM" resolve="product" />
+    </node>
+  </node>
 </model>
 
