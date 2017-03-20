@@ -933,7 +933,7 @@
             </node>
           </node>
           <node concept="3F0ifn" id="5uxPYTH0kXQ" role="3EZMnx">
-            <property role="3F0ifm" value="⬆" />
+            <property role="3F0ifm" value="*" />
             <node concept="pkWqt" id="5uxPYTH0onI" role="pqm2j">
               <node concept="3clFbS" id="5uxPYTH0onJ" role="2VODD2">
                 <node concept="3cpWs8" id="5uxPYTH0ool" role="3cqZAp">
@@ -1534,7 +1534,7 @@
           </node>
         </node>
         <node concept="3F0ifn" id="5uxPYTH3vfk" role="3EZMnx">
-          <property role="3F0ifm" value="⬆" />
+          <property role="3F0ifm" value="*" />
           <node concept="11LMrY" id="5uxPYTH3vkJ" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
