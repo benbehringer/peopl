@@ -337,6 +337,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -403,6 +404,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4AWdyVI0t6s">
+    <property role="3GE5qa" value="productView" />
     <ref role="1XX52x" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     <node concept="2aJ2om" id="4AWdyVI0tHx" role="CpUAK">
       <ref role="2$4xQ3" to="tqa7:2W3sxLBrwzM" resolve="product" />
@@ -425,6 +427,7 @@
   </node>
   <node concept="312cEu" id="27QooFz3gyk">
     <property role="TrG5h" value="StatementList_productView_AbstractCellProvider" />
+    <property role="3GE5qa" value="productView" />
     <node concept="2tJIrI" id="27QooFz3gyC" role="jymVt" />
     <node concept="312cEg" id="27QooFz3ixx" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -1669,12 +1672,6 @@
           </node>
           <node concept="3clFbJ" id="6HiUIyL74aH" role="3cqZAp">
             <node concept="3clFbS" id="6HiUIyL74aI" role="3clFbx">
-              <node concept="34ab3g" id="4Yf2ORqL$1" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="4Yf2ORqL$2" role="34bqiv">
-                  <property role="Xl_RC" value="case: listOwner is FeatureBlock or no FeatureBlock as ancestor" />
-                </node>
-              </node>
               <node concept="3cpWs6" id="6HiUIyL74aJ" role="3cqZAp">
                 <node concept="1rXfSq" id="6HiUIyL74aK" role="3cqZAk">
                   <ref role="37wK5l" node="6bj2b$tJQfN" resolve="internalCreateNodeCell" />
@@ -1730,12 +1727,6 @@
             <node concept="3clFbS" id="6HiUIyL74b5" role="3clFbx">
               <node concept="3clFbJ" id="6HiUIyL74b8" role="3cqZAp">
                 <node concept="3clFbS" id="6HiUIyL74b9" role="3clFbx">
-                  <node concept="34ab3g" id="4Yf2ORqMSn" role="3cqZAp">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="Xl_RD" id="4Yf2ORqMSp" role="34bqiv">
-                      <property role="Xl_RC" value="case: wrapper in buffer" />
-                    </node>
-                  </node>
                   <node concept="3SKdUt" id="67Zezm_rTEp" role="3cqZAp">
                     <node concept="3SKdUq" id="67Zezm_rTEr" role="3SKWNk">
                       <property role="3SKdUp" value="show the wrapper if statement's fragment is in buffer" />
@@ -1782,12 +1773,6 @@
               <node concept="3SKdUt" id="67Zezm_rUCR" role="3cqZAp">
                 <node concept="3SKdUq" id="67Zezm_rUCT" role="3SKWNk">
                   <property role="3SKdUp" value="else show only the wrappee" />
-                </node>
-              </node>
-              <node concept="34ab3g" id="4Yf2ORqNHw" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="4Yf2ORqNHy" role="34bqiv">
-                  <property role="Xl_RC" value="case: show only wrappEE" />
                 </node>
               </node>
               <node concept="3cpWs6" id="6HiUIyL74bn" role="3cqZAp">
@@ -1845,12 +1830,6 @@
           </node>
           <node concept="3clFbJ" id="6HiUIyL74bI" role="3cqZAp">
             <node concept="3clFbS" id="6HiUIyL74bJ" role="3clFbx">
-              <node concept="34ab3g" id="4Yf2ORqOBi" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="4Yf2ORqOBk" role="34bqiv">
-                  <property role="Xl_RC" value="case: if else part" />
-                </node>
-              </node>
               <node concept="3SKdUt" id="67Zezm_rWEB" role="3cqZAp">
                 <node concept="3SKdUq" id="67Zezm_rWED" role="3SKWNk">
                   <property role="3SKdUp" value="first hit is a wrapper and thus we need to show the code" />
@@ -1926,12 +1905,6 @@
           <node concept="3clFbH" id="6HiUIyL74c9" role="3cqZAp" />
           <node concept="3clFbJ" id="6HiUIyL74ca" role="3cqZAp">
             <node concept="3clFbS" id="6HiUIyL74cb" role="3clFbx">
-              <node concept="34ab3g" id="4Yf2ORqPtn" role="3cqZAp">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="4Yf2ORqPtp" role="34bqiv">
-                  <property role="Xl_RC" value="case: should be only empty statetments" />
-                </node>
-              </node>
               <node concept="3SKdUt" id="67Zezm_rY8j" role="3cqZAp">
                 <node concept="3SKdUq" id="67Zezm_rY8l" role="3SKWNk">
                   <property role="3SKdUp" value=" should be only empty statements which won't get shown in product view editor" />
@@ -1977,8 +1950,8 @@
                     <ref role="3cqZAo" node="27QooFz3CQK" resolve="listOwner" />
                   </node>
                   <node concept="1mIQ4w" id="6HiUIyL74ct" role="2OqNvi">
-                    <node concept="chp4Y" id="6HiUIyL74cu" role="cj9EA">
-                      <ref role="cht4Q" to="tpee:fzclF8l" resolve="Statement" />
+                    <node concept="chp4Y" id="5DOIsV4Ewjq" role="cj9EA">
+                      <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
                     </node>
                   </node>
                 </node>
@@ -2003,12 +1976,6 @@
                   <node concept="3w_OXm" id="6HiUIyL74cB" role="2OqNvi" />
                 </node>
               </node>
-            </node>
-          </node>
-          <node concept="34ab3g" id="4Yf2ORqQOi" role="3cqZAp">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="4Yf2ORqQOk" role="34bqiv">
-              <property role="Xl_RC" value="case: end create empty" />
             </node>
           </node>
           <node concept="3cpWs6" id="6HiUIyL74cD" role="3cqZAp">
@@ -2400,6 +2367,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="i2SPV5a1Hg">
+    <property role="3GE5qa" value="productView" />
     <ref role="1XX52x" to="gj7z:EpVRRuMcke" resolve="CCompilationUnit" />
     <node concept="3EZMnI" id="i2SPV5a1HH" role="2wV5jI">
       <node concept="3XFhqQ" id="i2SPV5a1HI" role="3EZMnx" />
@@ -2412,6 +2380,7 @@
   </node>
   <node concept="312cEu" id="4Yf2ORjnrW">
     <property role="TrG5h" value="FeatureBlockPositionUtil_productView" />
+    <property role="3GE5qa" value="productView" />
     <node concept="2tJIrI" id="4Yf2ORn5$L" role="jymVt" />
     <node concept="2YIFZL" id="4Yf2ORjnsg" role="jymVt">
       <property role="TrG5h" value="findOrInputNextSiblingFeatureBlock" />
@@ -5109,6 +5078,7 @@
   </node>
   <node concept="1h_SRR" id="4Yf2ORn7S_">
     <property role="TrG5h" value="Statement_product_Actions" />
+    <property role="3GE5qa" value="productView" />
     <ref role="1h_SK9" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="1hA7zw" id="4Yf2ORn7SA" role="1h_SK8">
       <property role="1hAc7j" value="insert_action_id" />
@@ -5246,6 +5216,7 @@
   </node>
   <node concept="1h_SRR" id="4Yf2ORnk$J">
     <property role="TrG5h" value="StatementList_product_Actions" />
+    <property role="3GE5qa" value="productView" />
     <ref role="1h_SK9" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
     <node concept="1hA7zw" id="4Yf2ORnk_q" role="1h_SK8">
       <property role="1hAc7j" value="insert_action_id" />
@@ -5279,6 +5250,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4Yf2ORnq7g">
+    <property role="3GE5qa" value="productView" />
     <ref role="1XX52x" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
     <node concept="3EZMnI" id="4Yf2ORnq7W" role="2wV5jI">
       <ref role="1ERwB7" node="4Yf2ORn7S_" resolve="Statement_product_Actions" />
@@ -5289,6 +5261,14 @@
       <ref role="2$4xQ3" to="tqa7:2W3sxLBrwzM" resolve="product" />
     </node>
     <node concept="B$lHz" id="4Yf2ORnq86" role="6VMZX" />
+  </node>
+  <node concept="24kQdi" id="5HPu$ZqK$Jv">
+    <ref role="1XX52x" to="gj7z:EpVRRuMcke" resolve="CCompilationUnit" />
+    <node concept="B$lHz" id="5HPu$ZqK$K8" role="2wV5jI" />
+    <node concept="2aJ2om" id="5HPu$ZqK$JY" role="CpUAK">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="modular" />
+    </node>
+    <node concept="B$lHz" id="5HPu$ZqK$Kb" role="6VMZX" />
   </node>
 </model>
 
