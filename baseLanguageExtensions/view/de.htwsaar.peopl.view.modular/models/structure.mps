@@ -79,9 +79,6 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
     </node>
-    <node concept="PrWs8" id="3Vd6OmUaFko" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="EpVRRuBZZK" role="PzmwI">
       <ref role="PrY4T" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
     </node>
