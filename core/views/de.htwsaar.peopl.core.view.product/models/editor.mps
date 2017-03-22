@@ -817,7 +817,7 @@
         <node concept="3clFbS" id="4g8OQuQ4wLo" role="2VODD2">
           <node concept="2Gpval" id="4g8OQuQ4yuf" role="3cqZAp">
             <node concept="2GrKxI" id="4g8OQuQ4yug" role="2Gsz3X">
-              <property role="TrG5h" value="peoplClass" />
+              <property role="TrG5h" value="compilationUnit" />
             </node>
             <node concept="2OqwBi" id="4g8OQuQ4yAv" role="2GsD0m">
               <node concept="pncrf" id="4g8OQuQ4yzK" role="2Oq$k0" />
@@ -835,7 +835,7 @@
                   <node concept="liA8E" id="4g8OQuQ4yTI" role="2OqNvi">
                     <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="2GrUjf" id="4g8OQuQ5fNx" role="37wK5m">
-                      <ref role="2Gs0qQ" node="4g8OQuQ4yug" resolve="peoplClass" />
+                      <ref role="2Gs0qQ" node="4g8OQuQ4yug" resolve="compilationUnit" />
                     </node>
                   </node>
                 </node>
