@@ -7,6 +7,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -89,6 +90,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration">
+      <concept id="6590308113118073138" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ProjectViewConfig" flags="ng" index="21GAHX">
+        <child id="6590308113118073855" name="modularCompilationUnitConcept" index="21GAAK" />
+      </concept>
       <concept id="5665240855309837222" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.FeatureGroupConfig" flags="ng" index="25mL$G">
         <child id="5665240855309964388" name="concreteFeatureGroup" index="25miVI" />
         <child id="5665240855309837223" name="replaceableNode" index="25mL$H" />
@@ -147,6 +151,7 @@
         <child id="1236568064987003155" name="conceptFunction" index="1J3lk9" />
       </concept>
       <concept id="1236568064986938165" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityDeclaration" flags="ng" index="1J2_sJ">
+        <child id="6590308113118074526" name="projectViewConfig" index="21GANh" />
         <child id="5665240855309837306" name="featureGroupConfig" index="25mL_K" />
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
@@ -1200,6 +1205,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="21GAHX" id="5HPu$ZqM3ba" role="21GANh">
+      <node concept="1G2zp1" id="5HPu$ZqMd0t" role="21GAAK">
+        <ref role="35c_gD" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
       </node>
     </node>
   </node>
