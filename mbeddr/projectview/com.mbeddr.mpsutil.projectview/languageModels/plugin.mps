@@ -251,7 +251,7 @@
       <node concept="312cEg" id="7WEW9M6pks2" role="jymVt">
         <property role="34CwA1" value="false" />
         <property role="eg7rD" value="false" />
-        <property role="TrG5h" value="peoplEntryPoint" />
+        <property role="TrG5h" value="compilationUnitContainer" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="7WEW9M6pks3" role="1B3o_S" />
         <node concept="3uibUv" id="7WEW9M6pks4" role="1tU5fm">
@@ -282,7 +282,7 @@
         <node concept="10Nm6u" id="7WEW9M6pksd" role="33vP2m" />
       </node>
       <node concept="312cEg" id="6hhB4BxiF_j" role="jymVt">
-        <property role="TrG5h" value="peoplClass" />
+        <property role="TrG5h" value="compilationUnit" />
         <property role="3TUv4t" value="false" />
         <node concept="3Tm1VV" id="6hhB4BxiFQz" role="1B3o_S" />
         <node concept="3uibUv" id="ahHvEFPgQ7" role="1tU5fm">
@@ -392,11 +392,11 @@
                       <node concept="3cpWs3" id="LgY1EVEuP2" role="37wK5m">
                         <node concept="3cpWs3" id="LgY1EVE9ij" role="3uHU7B">
                           <node concept="Xl_RD" id="LgY1EVE9in" role="3uHU7B">
-                            <property role="Xl_RC" value="Peopl entry point : " />
+                            <property role="Xl_RC" value="CompilationUnit Container : " />
                           </node>
                           <node concept="2OqwBi" id="LgY1EVE9ik" role="3uHU7w">
                             <node concept="37vLTw" id="LgY1EVE9WI" role="2Oq$k0">
-                              <ref role="3cqZAo" node="7WEW9M6pks2" resolve="peoplEntryPoint" />
+                              <ref role="3cqZAo" node="7WEW9M6pks2" resolve="compilationUnitContainer" />
                             </node>
                             <node concept="liA8E" id="LgY1EVE9im" role="2OqNvi">
                               <ref role="37wK5l" to="mhbf:~SNode.getName():java.lang.String" resolve="getName" />
@@ -417,7 +417,7 @@
             </node>
             <node concept="3y3z36" id="LgY1EVE9ip" role="3clFbw">
               <node concept="37vLTw" id="LgY1EVE9_x" role="3uHU7B">
-                <ref role="3cqZAo" node="7WEW9M6pks2" resolve="peoplEntryPoint" />
+                <ref role="3cqZAo" node="7WEW9M6pks2" resolve="compilationUnitContainer" />
               </node>
               <node concept="10Nm6u" id="LgY1EVE9iq" role="3uHU7w" />
             </node>
@@ -519,10 +519,10 @@
                         <ref role="37wK5l" to="wyt6:~String.concat(java.lang.String):java.lang.String" resolve="concat" />
                         <node concept="3cpWs3" id="6hhB4BxiHkE" role="37wK5m">
                           <node concept="37vLTw" id="6hhB4BxiHmm" role="3uHU7w">
-                            <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="peoplClass" />
+                            <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="compilationUnit" />
                           </node>
                           <node concept="Xl_RD" id="6hhB4BxiHbf" role="3uHU7B">
-                            <property role="Xl_RC" value="Alternative class : " />
+                            <property role="Xl_RC" value="Alternative compilationUnit : " />
                           </node>
                         </node>
                       </node>
@@ -537,7 +537,7 @@
             <node concept="3y3z36" id="6hhB4BxiGv8" role="3clFbw">
               <node concept="10Nm6u" id="6hhB4BxiGAw" role="3uHU7w" />
               <node concept="37vLTw" id="6hhB4BxiGeE" role="3uHU7B">
-                <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="peoplClass" />
+                <ref role="3cqZAo" node="6hhB4BxiF_j" resolve="compilationUnit" />
               </node>
             </node>
           </node>
