@@ -325,6 +325,14 @@
       <node concept="3Tm1VV" id="4UuYCFbYoa8" role="1B3o_S" />
       <node concept="3bZ5Sz" id="4UuYCFbYo8E" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="5HPu$ZqLMzB" role="jymVt">
+      <property role="1EzhhJ" value="true" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getModularCompilationUnitConcept" />
+      <node concept="3clFbS" id="5HPu$ZqLMzE" role="3clF47" />
+      <node concept="3Tm1VV" id="5HPu$ZqLMzF" role="1B3o_S" />
+      <node concept="3bZ5Sz" id="5HPu$ZqLMtg" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2W3sxLBt1NS" role="jymVt" />
     <node concept="3clFb_" id="2W3sxLBt1Tj" role="jymVt">
       <property role="1EzhhJ" value="true" />

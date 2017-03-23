@@ -183,6 +183,10 @@
         <ref role="1NtTu8" to="ovfz:2W3sxLBsvoR" />
       </node>
       <node concept="3F0ifn" id="2W3sxLBsOzo" role="3EZMnx" />
+      <node concept="3F1sOY" id="5HPu$ZqLMI0" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:5HPu$ZqLLqu" />
+      </node>
+      <node concept="3F0ifn" id="5HPu$ZqLMIh" role="3EZMnx" />
       <node concept="2iRkQZ" id="14Db1DY90mA" role="2iSdaV" />
     </node>
   </node>
@@ -967,6 +971,75 @@
       </node>
       <node concept="3F0ifn" id="25mTXKUG4JJ" role="3EZMnx" />
       <node concept="2iRkQZ" id="2W3sxLBsvem" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5HPu$ZqLLg6">
+    <ref role="1XX52x" to="ovfz:5HPu$ZqLL4M" resolve="ProjectViewConfig" />
+    <node concept="3EZMnI" id="5HPu$ZqLLgz" role="2wV5jI">
+      <node concept="3EZMnI" id="5HPu$ZqLLim" role="3EZMnx">
+        <node concept="VPM3Z" id="5HPu$ZqLLio" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5HPu$ZqLLiq" role="3EZMnx">
+          <property role="3F0ifm" value="Project view config" />
+        </node>
+        <node concept="2iRfu4" id="5HPu$ZqLLir" role="2iSdaV" />
+      </node>
+      <node concept="gc7cB" id="5HPu$ZqLLiB" role="3EZMnx">
+        <node concept="3VJUX4" id="5HPu$ZqLLiC" role="3YsKMw">
+          <node concept="3clFbS" id="5HPu$ZqLLiD" role="2VODD2">
+            <node concept="3cpWs8" id="5HPu$ZqLLiE" role="3cqZAp">
+              <node concept="3cpWsn" id="5HPu$ZqLLiF" role="3cpWs9">
+                <property role="TrG5h" value="provider" />
+                <node concept="3uibUv" id="5HPu$ZqLLiG" role="1tU5fm">
+                  <ref role="3uigEE" to="tqa7:61l2320N2tv" resolve="HorizontalLineCellProvider" />
+                </node>
+                <node concept="2ShNRf" id="5HPu$ZqLLiH" role="33vP2m">
+                  <node concept="1pGfFk" id="5HPu$ZqLLiI" role="2ShVmc">
+                    <ref role="37wK5l" to="tqa7:4XXs7nZI46S" resolve="HorizontalLineCellProvider" />
+                    <node concept="pncrf" id="5HPu$ZqLLiJ" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5HPu$ZqLLiK" role="3cqZAp">
+              <node concept="2OqwBi" id="5HPu$ZqLLiL" role="3clFbG">
+                <node concept="37vLTw" id="5HPu$ZqLLiM" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5HPu$ZqLLiF" resolve="provider" />
+                </node>
+                <node concept="liA8E" id="5HPu$ZqLLiN" role="2OqNvi">
+                  <ref role="37wK5l" to="tqa7:4XXs7nZEE5V" resolve="setWidthOrientation" />
+                  <node concept="Rm8GO" id="5HPu$ZqLLiO" role="37wK5m">
+                    <ref role="1Px2BO" to="tqa7:4XXs7nZEFJ$" resolve="HorizontalLineCellProvider.HorizontalProvider_WidthOrientation" />
+                    <ref role="Rm8GQ" to="tqa7:4XXs7nZFyQ7" resolve="PREVIOUS_SIBLING" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5HPu$ZqLLiP" role="3cqZAp">
+              <node concept="37vLTw" id="5HPu$ZqLLiQ" role="3clFbG">
+                <ref role="3cqZAo" node="5HPu$ZqLLiF" resolve="provider" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPM3Z" id="5HPu$ZqLLiR" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5HPu$ZqLLot" role="3EZMnx">
+        <node concept="VPM3Z" id="5HPu$ZqLLov" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="5HPu$ZqLLox" role="3EZMnx">
+          <property role="3F0ifm" value="Modular Compilation Unit Concept:" />
+        </node>
+        <node concept="3F1sOY" id="5HPu$ZqLLqp" role="3EZMnx">
+          <ref role="1NtTu8" to="ovfz:5HPu$ZqLLfZ" />
+        </node>
+        <node concept="2iRfu4" id="5HPu$ZqLLoy" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="5HPu$ZqLLgA" role="2iSdaV" />
     </node>
   </node>
 </model>

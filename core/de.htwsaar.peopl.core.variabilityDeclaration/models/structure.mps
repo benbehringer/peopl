@@ -110,6 +110,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2W3sxLBsrUO" resolve="EditorHandling" />
     </node>
+    <node concept="1TJgyj" id="5HPu$ZqLLqu" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="projectViewConfig" />
+      <ref role="20lvS9" node="5HPu$ZqLL4M" resolve="ProjectViewConfig" />
+    </node>
     <node concept="PrWs8" id="BFOVkKtF5k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -400,6 +405,17 @@
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
     <node concept="PrWs8" id="2W3sxLBsrY_" role="PzmwI">
       <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5HPu$ZqLL4M">
+    <property role="1pbfSe" value="909937537" />
+    <property role="TrG5h" value="ProjectViewConfig" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5HPu$ZqLLfZ" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="modularCompilationUnitConcept" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
   </node>
 </model>
