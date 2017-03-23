@@ -13,6 +13,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -40,6 +41,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -70,14 +72,16 @@
     <node concept="1TJgyj" id="1k3hL0SxfUT" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="myClass" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+      <node concept="asaX9" id="4B6UpFBCsVG" role="lGtFl" />
     </node>
     <node concept="1TJgyj" id="1k3hL0SxfUV" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="myModule" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+      <node concept="asaX9" id="4B6UpFBCsVI" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="EpVRRuBZZK" role="PzmwI">
       <ref role="PrY4T" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
@@ -85,6 +89,7 @@
     <node concept="1TJgyi" id="1kEVEWPq1hl" role="1TKVEl">
       <property role="TrG5h" value="moduleRefName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="566yw3PU_SM" role="lGtFl" />
     </node>
   </node>
 </model>
