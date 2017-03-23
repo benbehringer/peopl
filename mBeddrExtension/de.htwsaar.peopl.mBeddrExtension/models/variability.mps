@@ -86,6 +86,9 @@
       </concept>
     </language>
     <language id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration">
+      <concept id="6590308113118073138" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ProjectViewConfig" flags="ng" index="21GAHX">
+        <child id="6590308113118073855" name="modularCompilationUnitConcept" index="21GAAK" />
+      </concept>
       <concept id="5665240855309837222" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.FeatureGroupConfig" flags="ng" index="25mL$G">
         <child id="5665240855309964388" name="concreteFeatureGroup" index="25miVI" />
         <child id="5665240855309837223" name="replaceableNode" index="25mL$H" />
@@ -134,6 +137,7 @@
         <child id="1236568064987001039" name="applicableConcepts" index="1J3lNl" />
       </concept>
       <concept id="1236568064986938165" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.VariabilityDeclaration" flags="ng" index="1J2_sJ">
+        <child id="6590308113118074526" name="projectViewConfig" index="21GANh" />
         <child id="5665240855309837306" name="featureGroupConfig" index="25mL_K" />
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
@@ -537,6 +541,11 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="21GAHX" id="5HPu$ZqMdeX" role="21GANh">
+      <node concept="1G2zp1" id="5HPu$ZqMdrP" role="21GAAK">
+        <ref role="35c_gD" to="gj7z:5HPu$ZqJ8jv" resolve="ModularCCompilationUnit" />
       </node>
     </node>
   </node>
