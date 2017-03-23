@@ -11834,7 +11834,7 @@
                                 <ref role="3cqZAo" node="1RjkcfJ5wD0" resolve="it" />
                               </node>
                               <node concept="37vLTw" id="5nWHL$Gs_LE" role="37wK5m">
-                                <ref role="3cqZAo" node="1RjkcfJ5uRs" resolve="variabilityRootConcept" />
+                                <ref role="3cqZAo" node="1RjkcfJ5uRs" resolve="compilationUnitConcept" />
                               </node>
                             </node>
                           </node>
@@ -11866,7 +11866,7 @@
         <node concept="3Tqbb2" id="1RjkcfJ5lPP" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="1RjkcfJ5uRs" role="3clF46">
-        <property role="TrG5h" value="variabilityRootConcept" />
+        <property role="TrG5h" value="compilationUnitConcept" />
         <node concept="3bZ5Sz" id="1RjkcfJ5uTl" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="26HCxWILEnA" role="lGtFl">
@@ -11884,7 +11884,7 @@
         <node concept="TUZQ0" id="26HCxWILEnG" role="TUOzN">
           <property role="TUZQ4" value="concept of root, e.g. ClassConcept" />
           <node concept="zr_55" id="26HCxWILEnI" role="zr_5Q">
-            <ref role="zr_51" node="1RjkcfJ5uRs" resolve="variabilityRootConcept" />
+            <ref role="zr_51" node="1RjkcfJ5uRs" resolve="compilationUnitConcept" />
           </node>
         </node>
         <node concept="x79VA" id="26HCxWILEnJ" role="x79VK">

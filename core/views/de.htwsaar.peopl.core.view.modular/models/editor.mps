@@ -147,6 +147,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA">
+        <property id="6468716278899126575" name="isVolatile" index="2dlcS1" />
+        <property id="6468716278899125786" name="isTransient" index="2dld4O" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -164,7 +168,9 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -1840,6 +1846,30 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="7CRh4pHv356">
+    <property role="TrG5h" value="PeoplRoleHelper" />
+    <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
+      <property role="TrG5h" value="ORIGINAL_KEYWORD" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
+      <node concept="17QB3L" id="2H0DQTMFfyS" role="1tU5fm" />
+      <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
+        <property role="Xl_RC" value="basicModularityOriginalKeyword" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="5sQNYX854OM" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="ERROR_CELL" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="5sQNYX854MD" role="1B3o_S" />
+      <node concept="17QB3L" id="5sQNYX854OK" role="1tU5fm" />
+      <node concept="Xl_RD" id="5sQNYX854QC" role="33vP2m">
+        <property role="Xl_RC" value="basicModularityErrorCell" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7CRh4pHv357" role="1B3o_S" />
   </node>
 </model>
 

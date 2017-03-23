@@ -53,6 +53,7 @@
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
+    <import index="2gtk" ref="r:bc8063f9-de2b-445f-b5f5-bad59c142cdb(de.htwsaar.peopl.core.view.modular.editor)" />
     <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -2267,31 +2268,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="312cEu" id="3GmnFE_Pdqy">
-    <property role="3GE5qa" value="FOP" />
-    <property role="TrG5h" value="PeoplRoleHelper" />
-    <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
-      <property role="TrG5h" value="ORIGINAL_KEYWORD" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
-      <node concept="17QB3L" id="2H0DQTMFfyS" role="1tU5fm" />
-      <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
-        <property role="Xl_RC" value="basicModularityOriginalKeyword" />
-      </node>
-    </node>
-    <node concept="Wx3nA" id="5sQNYX854OM" role="jymVt">
-      <property role="2dlcS1" value="false" />
-      <property role="2dld4O" value="false" />
-      <property role="TrG5h" value="ERROR_CELL" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="5sQNYX854MD" role="1B3o_S" />
-      <node concept="17QB3L" id="5sQNYX854OK" role="1tU5fm" />
-      <node concept="Xl_RD" id="5sQNYX854QC" role="33vP2m">
-        <property role="Xl_RC" value="basicModularityErrorCell" />
-      </node>
-    </node>
-    <node concept="3Tm1VV" id="3GmnFE_Pdqz" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3Mm3FE9TBxI">
     <property role="3GE5qa" value="FOP" />
@@ -4731,8 +4707,8 @@
               <node concept="liA8E" id="1jtqHQgorfB" role="2OqNvi">
                 <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
                 <node concept="10M0yZ" id="1jtqHQgorfC" role="37wK5m">
-                  <ref role="3cqZAo" node="5sQNYX854OM" resolve="ERROR_CELL" />
-                  <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
+                  <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
+                  <ref role="3cqZAo" to="2gtk:5sQNYX854OM" resolve="ERROR_CELL" />
                 </node>
               </node>
             </node>
@@ -5109,8 +5085,8 @@
               <node concept="liA8E" id="3Mm3FE9U2YE" role="2OqNvi">
                 <ref role="37wK5l" to="g51k:~EditorCell_Basic.setRole(java.lang.String):void" resolve="setRole" />
                 <node concept="10M0yZ" id="3Mm3FE9U2YF" role="37wK5m">
-                  <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
-                  <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                  <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                  <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                 </node>
               </node>
             </node>
@@ -6815,8 +6791,8 @@
               <node concept="3eNFk2" id="3GmnFE_NSGJ" role="3eNLev">
                 <node concept="3clFbC" id="3GmnFE_OyVE" role="3eO9$A">
                   <node concept="10M0yZ" id="3GmnFE_Pd$s" role="3uHU7w">
-                    <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
-                    <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                    <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                    <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                   </node>
                   <node concept="2OqwBi" id="3GmnFE_OyQs" role="3uHU7B">
                     <node concept="37vLTw" id="3GmnFE_OyNL" role="2Oq$k0">
@@ -8484,8 +8460,8 @@
               <node concept="3eNFk2" id="2I$TSkbw7Yh" role="3eNLev">
                 <node concept="3clFbC" id="2I$TSkbw7Yi" role="3eO9$A">
                   <node concept="10M0yZ" id="2I$TSkbw7Yj" role="3uHU7w">
-                    <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
-                    <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                    <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                    <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                   </node>
                   <node concept="2OqwBi" id="2I$TSkbw7Yk" role="3uHU7B">
                     <node concept="37vLTw" id="2I$TSkbw7Yl" role="2Oq$k0">
@@ -9863,8 +9839,8 @@
                         </node>
                       </node>
                       <node concept="10M0yZ" id="fBIXl3yV2b" role="3uHU7w">
-                        <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
-                        <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
+                        <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                        <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                       </node>
                     </node>
                   </node>
@@ -10035,8 +10011,8 @@
                       </node>
                       <node concept="3clFbC" id="2I$TSkbvrOx" role="3clFbw">
                         <node concept="10M0yZ" id="2I$TSkbvs17" role="3uHU7w">
-                          <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
-                          <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
+                          <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
+                          <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
                         </node>
                         <node concept="2OqwBi" id="2I$TSkbvrnx" role="3uHU7B">
                           <node concept="2GrUjf" id="2I$TSkbvrki" role="2Oq$k0">
@@ -10226,8 +10202,8 @@
                             </node>
                           </node>
                           <node concept="10M0yZ" id="31m$Y867e4R" role="3uHU7w">
-                            <ref role="3cqZAo" node="~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
-                            <ref role="1PxDUh" node="3GmnFE_Pdqy" resolve="PeoplRoleHelper" />
+                            <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
+                            <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
                           </node>
                         </node>
                         <node concept="9aQIb" id="31m$Y867e6z" role="9aQIa">
