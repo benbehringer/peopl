@@ -36,6 +36,10 @@
   <node concept="PlHQZ" id="EpVRRuzuMu">
     <property role="1pbfSe" value="383263717" />
     <property role="TrG5h" value="ModularCompilationUnit" />
+    <node concept="1TJgyi" id="5HPu$ZqKgCg" role="1TKVEl">
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyi" id="EpVRRuzv0b" role="1TKVEl">
       <property role="TrG5h" value="moduleReferenceName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
