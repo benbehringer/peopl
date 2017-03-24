@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" implicit="true" />
     <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -91,6 +92,12 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
       <node concept="asaX9" id="566yw3PU_SM" role="lGtFl" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="1wmvoNaCmPl">
+    <property role="1pbfSe" value="491263263" />
+    <property role="3GE5qa" value="basicModularity" />
+    <property role="TrG5h" value="DotExpressionExtension" />
+    <ref role="1TJDcQ" to="tpee:hqOqwz4" resolve="DotExpression" />
   </node>
 </model>
 
