@@ -47,8 +47,6 @@
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" folder="peopl.core.view" />
-      <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/devkits/com.mbeddr.core/core.devkit" folder="" />
-      <modulePath path="$PROJECT_DIR$/experimental/com.mbeddr.core/languages/com.mbeddr.core.modules/modules.mpl" folder="mbeddr.core" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.commonHeaders/de.htwsaar.peopl.commonHeaders.msd" folder="mBeddrExtension" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.mpl" folder="mBeddrExtension" />
