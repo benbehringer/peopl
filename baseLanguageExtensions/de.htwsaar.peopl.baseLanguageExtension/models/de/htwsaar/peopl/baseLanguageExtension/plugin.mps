@@ -785,7 +785,6 @@
                       <node concept="3SKdUq" id="12FII_gOTZY" role="3SKWNk">
                         <property role="3SKdUp" value="not used anymore, commented out in Fragment_Behavior" />
                       </node>
-                      <node concept="3SKdUq" id="12FII_gOTZd" role="3SKWNk" />
                     </node>
                     <node concept="3clFbF" id="2xG5o$wDgnW" role="3cqZAp">
                       <node concept="3clFbT" id="2xG5o$wDgnV" role="3clFbG">

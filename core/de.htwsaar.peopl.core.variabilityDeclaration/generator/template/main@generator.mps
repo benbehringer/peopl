@@ -2072,7 +2072,6 @@
                           <node concept="3SKdUq" id="7wEfe$E35Pf" role="3SKWNk">
                             <property role="3SKdUp" value="Little bit hacky, as the concept is fetched by its name" />
                           </node>
-                          <node concept="3SKdUq" id="7wEfe$E35Oi" role="3SKWNk" />
                         </node>
                         <node concept="3cpWs8" id="17d$ld85TjX" role="3cqZAp">
                           <node concept="3cpWsn" id="17d$ld85TjY" role="3cpWs9">

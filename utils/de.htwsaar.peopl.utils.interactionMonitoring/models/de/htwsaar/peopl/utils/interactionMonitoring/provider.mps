@@ -11916,6 +11916,31 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFb_" id="7IyHfW7DR8g" role="jymVt">
+                  <property role="1EzhhJ" value="false" />
+                  <property role="TrG5h" value="editorUpdateStarted" />
+                  <property role="DiZV1" value="false" />
+                  <property role="od$2w" value="false" />
+                  <node concept="3Tm1VV" id="7IyHfW7DR8h" role="1B3o_S" />
+                  <node concept="3cqZAl" id="7IyHfW7DR8j" role="3clF45" />
+                  <node concept="37vLTG" id="7IyHfW7DR8k" role="3clF46">
+                    <property role="TrG5h" value="component" />
+                    <node concept="3uibUv" id="7IyHfW7DR8l" role="1tU5fm">
+                      <ref role="3uigEE" to="cj4x:~EditorComponent" resolve="EditorComponent" />
+                    </node>
+                  </node>
+                  <node concept="3clFbS" id="7IyHfW7DR8n" role="3clF47">
+                    <node concept="3SKdUt" id="7IyHfW7E4Gb" role="3cqZAp">
+                      <node concept="3SKdUq" id="7IyHfW7E4Gc" role="3SKWNk">
+                        <property role="3SKdUp" value="TODO: what to do here?" />
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7IyHfW7E4Gf" role="3cqZAp" />
+                  </node>
+                  <node concept="2AHcQZ" id="7IyHfW7DR8o" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

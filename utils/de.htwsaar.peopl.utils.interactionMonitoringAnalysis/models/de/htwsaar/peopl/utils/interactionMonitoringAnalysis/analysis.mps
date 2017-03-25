@@ -323,11 +323,9 @@
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
-      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv">
-        <child id="5858074156537516440" name="return" index="x79VK" />
-        <child id="8465538089690917625" name="param" index="TUOzN" />
-      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
@@ -3797,7 +3795,7 @@
             <property role="1dT_AB" value="Interprets an ApplicationRuntime entry. Creates a new session on &quot;start&quot;." />
           </node>
         </node>
-        <node concept="TUZQ0" id="TiW0aohU_L" role="TUOzN">
+        <node concept="TUZQ0" id="TiW0aohU_L" role="3nqlJM">
           <property role="TUZQ4" value="ApplicationRuntime entry" />
           <node concept="zr_55" id="TiW0aohU_N" role="zr_5Q">
             <ref role="zr_51" node="5PhHqbsUfbo" resolve="appRuntimeEntry" />
@@ -4946,19 +4944,19 @@
             <property role="1dT_AB" value="Updates existing ComponentHandler_Entry with new values." />
           </node>
         </node>
-        <node concept="TUZQ0" id="TiW0aohXlj" role="TUOzN">
+        <node concept="TUZQ0" id="TiW0aohXlj" role="3nqlJM">
           <property role="TUZQ4" value="existing ComponentHandler_Entry object" />
           <node concept="zr_55" id="TiW0aohXll" role="zr_5Q">
             <ref role="zr_51" node="5PhHqbsVj3n" resolve="existing" />
           </node>
         </node>
-        <node concept="TUZQ0" id="TiW0aohXlm" role="TUOzN">
+        <node concept="TUZQ0" id="TiW0aohXlm" role="3nqlJM">
           <property role="TUZQ4" value="updated ComponentHandler_Entry object" />
           <node concept="zr_55" id="TiW0aohXlo" role="zr_5Q">
             <ref role="zr_51" node="5PhHqbsVjvC" resolve="update" />
           </node>
         </node>
-        <node concept="x79VA" id="TiW0aohXlp" role="x79VK">
+        <node concept="x79VA" id="TiW0aohXlp" role="3nqlJM">
           <property role="x79VB" value="merged ComponentHandler_Entry object" />
         </node>
       </node>
@@ -5208,19 +5206,19 @@
             <property role="1dT_AB" value="Merges to lists of Primitives. Adds the values up if a Primitive already exists." />
           </node>
         </node>
-        <node concept="TUZQ0" id="TiW0aoi9k2" role="TUOzN">
+        <node concept="TUZQ0" id="TiW0aoi9k2" role="3nqlJM">
           <property role="TUZQ4" value="existing list of Primitives" />
           <node concept="zr_55" id="TiW0aoi9k4" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6DSL1" resolve="existing" />
           </node>
         </node>
-        <node concept="TUZQ0" id="TiW0aoi9k5" role="TUOzN">
+        <node concept="TUZQ0" id="TiW0aoi9k5" role="3nqlJM">
           <property role="TUZQ4" value="new list of Primitives" />
           <node concept="zr_55" id="TiW0aoi9k7" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6DTXO" resolve="update" />
           </node>
         </node>
-        <node concept="x79VA" id="TiW0aoi9k8" role="x79VK">
+        <node concept="x79VA" id="TiW0aoi9k8" role="3nqlJM">
           <property role="x79VB" value="merged list of Primitives" />
         </node>
       </node>
@@ -6248,19 +6246,19 @@
             <property role="1dT_AB" value="The values are also sorted in decreasing order to give a nicer view." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5EX70FoetC$" role="TUOzN">
+        <node concept="TUZQ0" id="5EX70FoetC$" role="3nqlJM">
           <property role="TUZQ4" value="the map we want to print" />
           <node concept="zr_55" id="5EX70FoetCA" role="zr_5Q">
             <ref role="zr_51" node="5EX70FoaWeu" resolve="resultMap" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5EX70FoetCB" role="TUOzN">
+        <node concept="TUZQ0" id="5EX70FoetCB" role="3nqlJM">
           <property role="TUZQ4" value="complete value to which we compare and calculate the percentage" />
           <node concept="zr_55" id="5EX70FoetCD" role="zr_5Q">
             <ref role="zr_51" node="5EX70FobaC6" resolve="complete" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5EX70FoetCE" role="TUOzN">
+        <node concept="TUZQ0" id="5EX70FoetCE" role="3nqlJM">
           <property role="TUZQ4" value="boolean flag which indicates if the values are time or regular integers" />
           <node concept="zr_55" id="5EX70FoetCG" role="zr_5Q">
             <ref role="zr_51" node="5EX70FocsDn" resolve="isTime" />
@@ -6393,19 +6391,19 @@
             <property role="1dT_AB" value="Checks if two editor components were open at the same time." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5FsHvZ6SmVW" role="TUOzN">
+        <node concept="TUZQ0" id="5FsHvZ6SmVW" role="3nqlJM">
           <property role="TUZQ4" value="first editorComponent" />
           <node concept="zr_55" id="5FsHvZ6SmVY" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6LLP6" resolve="lhs" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5FsHvZ6SmVZ" role="TUOzN">
+        <node concept="TUZQ0" id="5FsHvZ6SmVZ" role="3nqlJM">
           <property role="TUZQ4" value="second editorComponent" />
           <node concept="zr_55" id="5FsHvZ6SmW1" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6LNiV" resolve="rhs" />
           </node>
         </node>
-        <node concept="x79VA" id="5FsHvZ6SmW2" role="x79VK">
+        <node concept="x79VA" id="5FsHvZ6SmW2" role="3nqlJM">
           <property role="x79VB" value="true if both editors were open at the same time, false otherwise" />
         </node>
       </node>
@@ -6461,13 +6459,13 @@
             <property role="1dT_AB" value="Calculates the time in which a editor was opened." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5FsHvZ6SpVG" role="TUOzN">
+        <node concept="TUZQ0" id="5FsHvZ6SpVG" role="3nqlJM">
           <property role="TUZQ4" value="an editorComponent" />
           <node concept="zr_55" id="5FsHvZ6SpVI" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6PGH4" resolve="component" />
           </node>
         </node>
-        <node concept="x79VA" id="5FsHvZ6SpVJ" role="x79VK">
+        <node concept="x79VA" id="5FsHvZ6SpVJ" role="3nqlJM">
           <property role="x79VB" value="time in milliseconds " />
         </node>
       </node>
@@ -6942,19 +6940,19 @@
             <property role="1dT_AB" value="and uses the true root node if available. Editors with rootNodeID &quot;null&quot; are not considered valid." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5FsHvZ6Ss9W" role="TUOzN">
+        <node concept="TUZQ0" id="5FsHvZ6Ss9W" role="3nqlJM">
           <property role="TUZQ4" value="first editorComponent" />
           <node concept="zr_55" id="5FsHvZ6Ss9Y" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6MA06" resolve="lhs" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5FsHvZ6Ss9Z" role="TUOzN">
+        <node concept="TUZQ0" id="5FsHvZ6Ss9Z" role="3nqlJM">
           <property role="TUZQ4" value="second editorComponent" />
           <node concept="zr_55" id="5FsHvZ6Ssa1" role="zr_5Q">
             <ref role="zr_51" node="5FsHvZ6MBpN" resolve="rhs" />
           </node>
         </node>
-        <node concept="x79VA" id="5FsHvZ6Ssa2" role="x79VK">
+        <node concept="x79VA" id="5FsHvZ6Ssa2" role="3nqlJM">
           <property role="x79VB" value="true if the two editors edit the same node, false otherwise" />
         </node>
       </node>
@@ -7959,19 +7957,19 @@
             <property role="1dT_AB" value="Little Helper, to compare Long values and return a value specified by the comparable interface." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5HiLjH4DlIq" role="TUOzN">
+        <node concept="TUZQ0" id="5HiLjH4DlIq" role="3nqlJM">
           <property role="TUZQ4" value="first Long" />
           <node concept="zr_55" id="5HiLjH4DlIs" role="zr_5Q">
             <ref role="zr_51" node="2_Atery5bxp" resolve="a" />
           </node>
         </node>
-        <node concept="TUZQ0" id="5HiLjH4DlIt" role="TUOzN">
+        <node concept="TUZQ0" id="5HiLjH4DlIt" role="3nqlJM">
           <property role="TUZQ4" value="second Long" />
           <node concept="zr_55" id="5HiLjH4DlIv" role="zr_5Q">
             <ref role="zr_51" node="2_Atery5ePj" resolve="b" />
           </node>
         </node>
-        <node concept="x79VA" id="5HiLjH4DlIw" role="x79VK">
+        <node concept="x79VA" id="5HiLjH4DlIw" role="3nqlJM">
           <property role="x79VB" value="negative value if a smaller, 0 if same value, positive value if a greater" />
         </node>
       </node>
@@ -8415,7 +8413,7 @@
             <property role="1dT_AB" value="Calculates the overall time over all sessions in which MPS was opened." />
           </node>
         </node>
-        <node concept="x79VA" id="5EX70Foezg0" role="x79VK">
+        <node concept="x79VA" id="5EX70Foezg0" role="3nqlJM">
           <property role="x79VB" value="time in millis in which MPS was opened" />
         </node>
       </node>
@@ -8479,7 +8477,7 @@
             <property role="1dT_AB" value="Calculates the overall focusTime of the NodeEditor Component." />
           </node>
         </node>
-        <node concept="x79VA" id="5EX70FoeAOU" role="x79VK">
+        <node concept="x79VA" id="5EX70FoeAOU" role="3nqlJM">
           <property role="x79VB" value="overall focusTime in millis" />
         </node>
       </node>
@@ -12698,13 +12696,13 @@
             <property role="1dT_AB" value="Removes unncessary Generic_ActionEvents from a given list of Generic_ActionEvents." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5HiLjH4DgcE" role="TUOzN">
+        <node concept="TUZQ0" id="5HiLjH4DgcE" role="3nqlJM">
           <property role="TUZQ4" value="given list of Generic_ActionEvents" />
           <node concept="zr_55" id="5HiLjH4DgcG" role="zr_5Q">
             <ref role="zr_51" node="7a7KmMnbLFZ" resolve="sourceList" />
           </node>
         </node>
-        <node concept="x79VA" id="5HiLjH4DgcH" role="x79VK">
+        <node concept="x79VA" id="5HiLjH4DgcH" role="3nqlJM">
           <property role="x79VB" value="new list without the filtered events" />
         </node>
       </node>
@@ -12885,13 +12883,13 @@
             <property role="1dT_AB" value="Fetches the current system hints." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5HiLjH4DbJG" role="TUOzN">
+        <node concept="TUZQ0" id="5HiLjH4DbJG" role="3nqlJM">
           <property role="TUZQ4" value="the editor component form which the hints should get extracted" />
           <node concept="zr_55" id="5HiLjH4DbJI" role="zr_5Q">
             <ref role="zr_51" node="4Mq2JDk9PuZ" resolve="editorComponent" />
           </node>
         </node>
-        <node concept="x79VA" id="5HiLjH4DbJJ" role="x79VK">
+        <node concept="x79VA" id="5HiLjH4DbJJ" role="3nqlJM">
           <property role="x79VB" value="hint combination as string" />
         </node>
       </node>
@@ -13129,13 +13127,13 @@
             <property role="1dT_AB" value="returned." />
           </node>
         </node>
-        <node concept="TUZQ0" id="5HiLjH4D691" role="TUOzN">
+        <node concept="TUZQ0" id="5HiLjH4D691" role="3nqlJM">
           <property role="TUZQ4" value="the editor component form which the hints should get extracted" />
           <node concept="zr_55" id="5HiLjH4D693" role="zr_5Q">
             <ref role="zr_51" node="bX55XKcbv1" resolve="editorComponent" />
           </node>
         </node>
-        <node concept="x79VA" id="5HiLjH4D694" role="x79VK">
+        <node concept="x79VA" id="5HiLjH4D694" role="3nqlJM">
           <property role="x79VB" value="hint combination as string" />
         </node>
       </node>
@@ -13189,13 +13187,13 @@
             <property role="1dT_AB" value="Little Helper method which checks if the Keycombination is a combination defined by PEoPL." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3w2Pfi3b5Ap" role="TUOzN">
+        <node concept="TUZQ0" id="3w2Pfi3b5Ap" role="3nqlJM">
           <property role="TUZQ4" value="Keycombination_Entry to check" />
           <node concept="zr_55" id="3w2Pfi3b5Ar" role="zr_5Q">
             <ref role="zr_51" node="TiW0aokXmN" resolve="keycomb" />
           </node>
         </node>
-        <node concept="x79VA" id="3w2Pfi3b5As" role="x79VK">
+        <node concept="x79VA" id="3w2Pfi3b5As" role="3nqlJM">
           <property role="x79VB" value="true if peopl combination, false otherwise" />
         </node>
       </node>
@@ -13267,13 +13265,13 @@
             <property role="1dT_AB" value="Little Helper method which checks if an action is an action defined by PEoPL." />
           </node>
         </node>
-        <node concept="TUZQ0" id="3w2Pfi3b8D2" role="TUOzN">
+        <node concept="TUZQ0" id="3w2Pfi3b8D2" role="3nqlJM">
           <property role="TUZQ4" value="GenericActionEvent_Entry to check" />
           <node concept="zr_55" id="3w2Pfi3b8D4" role="zr_5Q">
             <ref role="zr_51" node="TiW0aokZD3" resolve="action" />
           </node>
         </node>
-        <node concept="x79VA" id="3w2Pfi3b8D5" role="x79VK">
+        <node concept="x79VA" id="3w2Pfi3b8D5" role="3nqlJM">
           <property role="x79VB" value="true if peopl action, false otherwise" />
         </node>
       </node>
