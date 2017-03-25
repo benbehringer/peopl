@@ -2,9 +2,9 @@
 <model ref="r:db04ae52-ccc4-4f7a-aba7-aca9749fc503(de.htwsaar.peopl.projectview.common.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
@@ -12,10 +12,10 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
   </languages>
   <imports>
     <import index="3kir" ref="r:cb848a2c-837a-4a77-9437-095eddffdfa6(de.htwsaar.peopl.view.modular.behavior)" />
@@ -71,9 +71,8 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.IconResource" flags="ng" index="1QGGSu" />
-      <concept id="8974276187400029898" name="jetbrains.mps.lang.resources.structure.Resource" flags="ng" index="1QGGTJ">
-        <property id="8974276187400029899" name="path" index="1QGGTI" />
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
+        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -796,7 +795,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2bP_SOPZ6fq" role="3Uehp1">
-      <property role="1QGGTI" value="${module}/icons/peopl_solution.png" />
+      <property role="1iqoE4" value="${module}/icons/peopl_solution.png" />
     </node>
   </node>
   <node concept="312cEu" id="1sh5U6QbZ9U">
@@ -2652,7 +2651,7 @@
                                               </node>
                                             </node>
                                             <node concept="3Tsc0h" id="4oksXpGRYdD" role="2OqNvi">
-                                              <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                                              <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                                             </node>
                                           </node>
                                           <node concept="1uHKPH" id="6hhB4BxiIHH" role="2OqNvi" />
@@ -2797,7 +2796,7 @@
                                                     <ref role="3cqZAo" node="1k3hL0SzKkT" resolve="it" />
                                                   </node>
                                                   <node concept="3TrEf2" id="5HPu$ZqLHf4" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzvnW" />
+                                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzvnW" resolve="module" />
                                                   </node>
                                                 </node>
                                                 <node concept="2OqwBi" id="DS4tmG16zg" role="3uHU7w">
@@ -2818,7 +2817,7 @@
                                                     <ref role="3cqZAo" node="1k3hL0SzKkT" resolve="it" />
                                                   </node>
                                                   <node concept="3TrEf2" id="5HPu$ZqLGZd" role="2OqNvi">
-                                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" />
+                                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" resolve="compilationUnit" />
                                                   </node>
                                                 </node>
                                               </node>

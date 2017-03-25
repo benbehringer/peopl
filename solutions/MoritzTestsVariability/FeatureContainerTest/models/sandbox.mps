@@ -294,11 +294,11 @@
                 </node>
               </node>
               <node concept="3clFbF" id="1wmvoNaCrEi" role="3cqZAp">
-                <node concept="2OqwBi" id="3FQ2F9IbCMB" role="3clFbG">
+                <node concept="2OqwBi" id="6Qhy1s7MVXF" role="3clFbG">
                   <node concept="37vLTw" id="1wmvoNaCrEg" role="2Oq$k0">
                     <ref role="3cqZAo" node="6uaRYGQIPLF" resolve="myList" />
                   </node>
-                  <node concept="1B$H19" id="3FQ2F9IbCMG" role="2OqNvi" />
+                  <node concept="1B$H19" id="6Qhy1s7MVXK" role="2OqNvi" />
                 </node>
               </node>
               <node concept="3clFbF" id="1wmvoNaCnOz" role="3cqZAp">
@@ -361,9 +361,12 @@
                   <property role="3SKdUp" value="blubb" />
                 </node>
               </node>
-              <node concept="3clFbF" id="2VBxSMVJWWu" role="3cqZAp">
-                <node concept="37vLTw" id="2VBxSMVJWWs" role="3clFbG">
-                  <ref role="3cqZAo" node="2VBxSMVJWV5" resolve="myTestVar" />
+              <node concept="3clFbF" id="4vUMMCuBvgI" role="3cqZAp">
+                <node concept="2OqwBi" id="4vUMMCuBvho" role="3clFbG">
+                  <node concept="Xjq3P" id="4vUMMCuBvgG" role="2Oq$k0" />
+                  <node concept="2OwXpG" id="4vUMMCuBvih" role="2OqNvi">
+                    <ref role="2Oxat5" node="2VBxSMVJWV5" resolve="myTestVar" />
+                  </node>
                 </node>
               </node>
               <node concept="3clFbF" id="2VBxSMVJWWQ" role="3cqZAp">
@@ -389,7 +392,7 @@
                   <property role="3SKdUp" value="do somemything" />
                 </node>
               </node>
-              <node concept="3clFbH" id="55hVuwoJ7jb" role="3cqZAp" />
+              <node concept="3clFbH" id="33L4rLMsgKB" role="3cqZAp" />
             </node>
             <node concept="1V74GB" id="2v5l7B$Gp1X" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
@@ -420,7 +423,7 @@
         <node concept="3Tm6S6" id="1_hkweg0yKb" role="1B3o_S" />
         <node concept="3cqZAl" id="1_hkweg0yKL" role="3clF45">
           <node concept="pKhDo" id="7CRh4pHt6qq" role="lGtFl">
-            <node concept="10P_77" id="7CRh4pHt6ra" role="3czxsB" />
+            <node concept="10P_77" id="33L4rLMsgKF" role="3czxsB" />
             <node concept="1V74GB" id="7CRh4pHt6q_" role="lGtFl">
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8806582665621038757" />

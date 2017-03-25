@@ -2,8 +2,8 @@
 <model ref="r:5cf17c21-ed65-4226-8f9a-87715e905f3c(de.htwsaar.peopl.view.modular.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -427,7 +427,7 @@
                         <node concept="3cpWs6" id="F_DJLM6Y4k" role="3cqZAp">
                           <node concept="2OqwBi" id="F_DJLM6YbF" role="3cqZAk">
                             <node concept="3TrEf2" id="F_DJLM6YIa" role="2OqNvi">
-                              <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" />
+                              <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" resolve="myModule" />
                             </node>
                             <node concept="1eOMI4" id="F_DJLM6YAI" role="2Oq$k0">
                               <node concept="10QFUN" id="F_DJLM6YiQ" role="1eOMHV">

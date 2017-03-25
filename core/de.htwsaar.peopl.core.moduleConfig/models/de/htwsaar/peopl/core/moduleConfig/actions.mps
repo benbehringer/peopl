@@ -2,12 +2,13 @@
 <model ref="r:536d99c3-6fd8-4344-8e86-7336f90b501c(de.htwsaar.peopl.core.moduleConfig.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="pic4" ref="r:beb2a9bf-0051-4696-9a13-33d1a94d2fec(de.htwsaar.peopl.core.moduleConfig.editor)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -118,6 +119,12 @@
       <concept id="1177333529597" name="jetbrains.mps.lang.actions.structure.ConceptPart" flags="ng" index="uyZFJ">
         <reference id="1177333551023" name="concept" index="uz4UX" />
         <child id="1177333559040" name="part" index="uz6Si" />
+      </concept>
+      <concept id="562388756457602485" name="jetbrains.mps.lang.actions.structure.MigrateManuallyAnnotation" flags="ng" index="xAzKH">
+        <reference id="562388756457602486" name="migrateTo" index="xAzKI" />
+      </concept>
+      <concept id="562388756457499018" name="jetbrains.mps.lang.actions.structure.MigratedToAnnotation" flags="ng" index="xBawi">
+        <reference id="562388756457499129" name="migratedTo" index="xBaxx" />
       </concept>
       <concept id="1177413882405" name="jetbrains.mps.lang.actions.structure.RemoveByConditionPart" flags="ng" index="zlxcR">
         <child id="1177414109676" name="condition" index="zmozY" />
@@ -283,6 +290,9 @@
             </node>
           </node>
         </node>
+        <node concept="xAzKH" id="q735wx1knK" role="lGtFl">
+          <ref role="xAzKI" to="pic4:q735wx1kn8" />
+        </node>
       </node>
       <node concept="3buRE8" id="5aEvvlDoWAz" role="3bvWUf">
         <node concept="3clFbS" id="5aEvvlDoWA$" role="2VODD2">
@@ -310,6 +320,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="xBawi" id="q735wx1kn7" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1kn8" />
       </node>
     </node>
     <node concept="3FOIzC" id="41YhkB7x3Dr" role="3FOPby">
@@ -417,6 +430,12 @@
             </node>
           </node>
         </node>
+        <node concept="xAzKH" id="q735wx1koJ" role="lGtFl">
+          <ref role="xAzKI" to="pic4:q735wx1knM" />
+        </node>
+      </node>
+      <node concept="xBawi" id="q735wx1knL" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1knM" />
       </node>
     </node>
   </node>
@@ -471,6 +490,9 @@
             </node>
           </node>
         </node>
+        <node concept="xAzKH" id="q735wx1kmQ" role="lGtFl">
+          <ref role="xAzKI" to="pic4:q735wx1kmF" />
+        </node>
       </node>
       <node concept="3kRJcU" id="62a2r2czIyE" role="3kShCk">
         <node concept="3clFbS" id="62a2r2czIyF" role="2VODD2">
@@ -488,6 +510,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="xBawi" id="q735wx1kmE" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1kmF" />
       </node>
     </node>
     <node concept="3UNGvq" id="2fACNxaTLxx" role="3UOs0v">
@@ -538,6 +563,12 @@
             </node>
           </node>
         </node>
+        <node concept="xAzKH" id="q735wx1kw2" role="lGtFl">
+          <ref role="xAzKI" to="pic4:q735wx1kvV" resolve="sidetransform_ModuleConfiguration_Operators_BinaryOperation_Contribution" />
+        </node>
+      </node>
+      <node concept="xBawi" id="q735wx1kw1" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1kvV" resolve="sidetransform_ModuleConfiguration_Operators_BinaryOperation_Contribution" />
       </node>
     </node>
     <node concept="3UNGvq" id="2fACNxaTKgx" role="3UOs0v">
@@ -580,6 +611,9 @@
             </node>
           </node>
         </node>
+        <node concept="xAzKH" id="q735wx1kn4" role="lGtFl">
+          <ref role="xAzKI" to="pic4:q735wx1kmS" />
+        </node>
       </node>
       <node concept="3kRJcU" id="2fACNxaTKh_" role="3kShCk">
         <node concept="3clFbS" id="2fACNxaTKhA" role="2VODD2">
@@ -599,6 +633,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="xBawi" id="q735wx1kmR" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1kmS" />
       </node>
     </node>
   </node>
@@ -633,7 +670,7 @@
                       <ref role="3cqZAo" node="73c7m80kwMJ" resolve="plcs" />
                     </node>
                     <node concept="3TrEf2" id="73c7m80k$PA" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" />
+                      <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" resolve="activeConfig" />
                     </node>
                   </node>
                   <node concept="1r4Lsj" id="73c7m80k$Y6" role="37vLTx" />
@@ -647,7 +684,7 @@
                     <ref role="3cqZAo" node="73c7m80kwMJ" resolve="plcs" />
                   </node>
                   <node concept="3Tsc0h" id="73c7m80kEPM" role="2OqNvi">
-                    <ref role="3TtcxE" to="sj65:1hL$JiAseps" />
+                    <ref role="3TtcxE" to="sj65:1hL$JiAseps" resolve="configs" />
                   </node>
                 </node>
                 <node concept="1v1jN8" id="73c7m80kH1m" role="2OqNvi" />
@@ -658,7 +695,7 @@
                     <ref role="3cqZAo" node="73c7m80kwMJ" resolve="plcs" />
                   </node>
                   <node concept="3TrEf2" id="73c7m80k$uw" role="2OqNvi">
-                    <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" />
+                    <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" resolve="activeConfig" />
                   </node>
                 </node>
                 <node concept="3w_OXm" id="73c7m80k$Gw" role="2OqNvi" />
@@ -835,7 +872,7 @@
                               <node concept="2OqwBi" id="7t9Yo1qQR0E" role="37vLTJ">
                                 <node concept="1r4Lsj" id="7t9Yo1qQQZ9" role="2Oq$k0" />
                                 <node concept="3TrEf2" id="7t9Yo1qQR3m" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="sj65:7t9Yo1qQf4F" />
+                                  <ref role="3Tt5mk" to="sj65:7t9Yo1qQf4F" resolve="productLineConfigurations" />
                                 </node>
                               </node>
                               <node concept="10QFUN" id="7t9Yo1qQRcr" role="37vLTx">
@@ -963,7 +1000,7 @@
                           </node>
                         </node>
                         <node concept="3Tsc0h" id="5mzTk9HhLwY" role="2OqNvi">
-                          <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" />
+                          <ref role="3TtcxE" to="xf8r:7p8XNs9n6N9" resolve="InteractionModuleIntermediate" />
                         </node>
                       </node>
                       <node concept="2DeJg1" id="5mzTk9HhRPc" role="2OqNvi" />
@@ -990,7 +1027,13 @@
           <node concept="2h1dTh" id="5mzTk9HhKik" role="Cn2iK">
             <property role="2h1i$Z" value="#" />
           </node>
+          <node concept="xBawi" id="q735wx1kvU" role="lGtFl">
+            <ref role="xBaxx" to="pic4:q735wx1kvs" />
+          </node>
         </node>
+      </node>
+      <node concept="xBawi" id="q735wx1kvr" role="lGtFl">
+        <ref role="xBaxx" to="pic4:q735wx1kvl" resolve="st_InteractionModule_Contribution" />
       </node>
     </node>
   </node>

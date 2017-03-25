@@ -2,7 +2,7 @@
 <model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
@@ -628,7 +628,7 @@
                         <ref role="3cqZAo" node="$Xellbdozw" resolve="it" />
                       </node>
                       <node concept="3Tsc0h" id="4oksXpGS9U6" role="2OqNvi">
-                        <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                        <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                       </node>
                     </node>
                     <node concept="3zZkjj" id="$XellbeUEe" role="2OqNvi">

@@ -2,9 +2,9 @@
 <model ref="r:77e55cd4-7226-480c-9275-379b273666c0(de.htwsaar.peopl.core.featureListener.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -556,7 +556,7 @@
                                             </node>
                                           </node>
                                           <node concept="3TrEf2" id="26M783K_I2z" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="nsly:66EASTR6Ok8" />
+                                            <ref role="3Tt5mk" to="nsly:66EASTR6Ok8" resolve="feature" />
                                           </node>
                                         </node>
                                         <node concept="10Nm6u" id="26M783K_I2$" role="3uHU7w" />
@@ -594,7 +594,7 @@
                                             </node>
                                           </node>
                                           <node concept="3TrEf2" id="4E4vx8Lt126" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="nsly:21326cAYBZ3" />
+                                            <ref role="3Tt5mk" to="nsly:21326cAYBZ3" resolve="feature" />
                                           </node>
                                         </node>
                                         <node concept="10Nm6u" id="4E4vx8Lt0Ak" role="3uHU7w" />
@@ -633,7 +633,7 @@
                                           </node>
                                         </node>
                                         <node concept="3TrEf2" id="4E4vx8Lt1m3" role="2OqNvi">
-                                          <ref role="3Tt5mk" to="nsly:21326cAZt4V" />
+                                          <ref role="3Tt5mk" to="nsly:21326cAZt4V" resolve="feature" />
                                         </node>
                                       </node>
                                       <node concept="10Nm6u" id="4E4vx8Lt0R$" role="3uHU7w" />
@@ -678,7 +678,7 @@
                                       </node>
                                     </node>
                                     <node concept="3TrEf2" id="758VCfPj7tM" role="2OqNvi">
-                                      <ref role="3Tt5mk" to="sj65:_uCk0nlSox" />
+                                      <ref role="3Tt5mk" to="sj65:_uCk0nlSox" resolve="connectedModule" />
                                     </node>
                                   </node>
                                   <node concept="10Nm6u" id="758VCfPj7f$" role="3uHU7w" />

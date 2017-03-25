@@ -3,9 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
   </languages>
   <imports>
     <import index="uce1" ref="r:a268bac9-fde8-45f5-92f2-5958dfe8555d(de.htwsaar.peopl.core.statistics.plugin)" />
@@ -952,7 +952,7 @@
                                     <ref role="3cqZAo" node="79TYYNi2KMM" resolve="inter" />
                                   </node>
                                   <node concept="3TrEf2" id="79TYYNi3lbH" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                                   </node>
                                 </node>
                                 <node concept="1mfA1w" id="79TYYNi3lbI" role="2OqNvi" />
@@ -975,11 +975,11 @@
                                     <ref role="3cqZAo" node="79TYYNi2KMM" resolve="inter" />
                                   </node>
                                   <node concept="3TrEf2" id="79TYYNi3rQi" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="79TYYNi3saU" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" />
+                                  <ref role="3Tt5mk" to="xf8r:3bTHxkSSvaM" resolve="chosenModule" />
                                 </node>
                               </node>
                               <node concept="2qgKlT" id="79TYYNi3swS" role="2OqNvi">
@@ -1041,7 +1041,7 @@
               <ref role="3cqZAo" node="6HVbCMl8l5T" resolve="varStor" />
             </node>
             <node concept="3Tsc0h" id="6HVbCMlbBee" role="2OqNvi">
-              <ref role="3TtcxE" to="xf8r:5L3eIBSVDSJ" />
+              <ref role="3TtcxE" to="xf8r:5L3eIBSVDSJ" resolve="vp" />
             </node>
           </node>
         </node>
@@ -1272,7 +1272,7 @@
               <ref role="3cqZAo" node="1IVGVoWtPE2" resolve="modDef" />
             </node>
             <node concept="3Tsc0h" id="1IVGVoWuxy3" role="2OqNvi">
-              <ref role="3TtcxE" to="xf8r:7Ufy5VQFkRE" />
+              <ref role="3TtcxE" to="xf8r:7Ufy5VQFkRE" resolve="modules" />
             </node>
           </node>
         </node>
@@ -1375,7 +1375,7 @@
                         <ref role="3cqZAo" node="6HVbCMlbLLi" resolve="vpToFrag" />
                       </node>
                       <node concept="3TrEf2" id="6HVbCMlc3s9" role="2OqNvi">
-                        <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                        <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                       </node>
                     </node>
                     <node concept="10Nm6u" id="6HVbCMlc3s6" role="3uHU7w" />
@@ -1395,7 +1395,7 @@
               <ref role="3cqZAo" node="6HVbCMlbJ08" resolve="vp" />
             </node>
             <node concept="3Tsc0h" id="6HVbCMlbUa9" role="2OqNvi">
-              <ref role="3TtcxE" to="xf8r:6K8EDSn5e6Y" />
+              <ref role="3TtcxE" to="xf8r:6K8EDSn5e6Y" resolve="fragmentIntermediates" />
             </node>
           </node>
         </node>

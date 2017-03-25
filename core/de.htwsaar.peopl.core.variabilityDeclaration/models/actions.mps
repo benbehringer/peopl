@@ -2,7 +2,7 @@
 <model ref="r:74979dd6-d4e0-479a-9a63-29b888636c4f(de.htwsaar.peopl.core.variabilityDeclaration.actions)">
   <persistence version="9" />
   <languages>
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="3" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -176,7 +176,7 @@
                   <node concept="1Wc70l" id="5VMd6L4Djlj" role="33vP2m">
                     <node concept="3y3z36" id="5VMd6L4Dj$o" role="3uHU7w">
                       <node concept="3TUQnm" id="5VMd6L4DjMp" role="3uHU7w">
-                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_sourceNode" />
+                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_node" />
                       </node>
                       <node concept="zm4iT" id="5VMd6L4DjrI" role="3uHU7B" />
                     </node>
@@ -300,7 +300,7 @@
                   <node concept="1Wc70l" id="5VMd6L4DnmZ" role="33vP2m">
                     <node concept="3y3z36" id="5VMd6L4Dnn0" role="3uHU7w">
                       <node concept="3TUQnm" id="5VMd6L4Dnn1" role="3uHU7w">
-                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_sourceNode" />
+                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_node" />
                       </node>
                       <node concept="zm4iT" id="5VMd6L4Dnn2" role="3uHU7B" />
                     </node>
@@ -364,7 +364,7 @@
                   <node concept="1Wc70l" id="5VMd6L4DomP" role="33vP2m">
                     <node concept="3y3z36" id="5VMd6L4DomQ" role="3uHU7w">
                       <node concept="3TUQnm" id="5VMd6L4DomR" role="3uHU7w">
-                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_sourceNode" />
+                        <ref role="3TV0OU" to="ovfz:5VMd6L4CMic" resolve="ConceptFunctionParameter_node" />
                       </node>
                       <node concept="zm4iT" id="5VMd6L4DomS" role="3uHU7B" />
                     </node>
@@ -547,7 +547,7 @@
               <node concept="2OqwBi" id="2J2yX0KNnyR" role="37vLTJ">
                 <node concept="1r4Lsj" id="2J2yX0KNnuo" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2J2yX0KNnEz" role="2OqNvi">
-                  <ref role="3Tt5mk" to="ovfz:2J2yX0KM9Vl" />
+                  <ref role="3Tt5mk" to="ovfz:2J2yX0KM9Vl" resolve="languageRefExpression" />
                 </node>
               </node>
             </node>
@@ -561,11 +561,11 @@
                 <node concept="2OqwBi" id="2J2yX0KNoz8" role="2Oq$k0">
                   <node concept="1r4Lsj" id="2J2yX0KNotP" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2J2yX0KNoEf" role="2OqNvi">
-                    <ref role="3Tt5mk" to="ovfz:2J2yX0KM9Vl" />
+                    <ref role="3Tt5mk" to="ovfz:2J2yX0KM9Vl" resolve="languageRefExpression" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="2J2yX0KNoY1" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" />
+                  <ref role="3Tt5mk" to="tp25:34EJa6aIpny" resolve="languageId" />
                 </node>
               </node>
             </node>

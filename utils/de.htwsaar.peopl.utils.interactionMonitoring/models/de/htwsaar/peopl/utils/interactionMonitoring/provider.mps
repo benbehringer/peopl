@@ -8,10 +8,10 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="2" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
   </languages>
@@ -12300,32 +12300,51 @@
         </node>
       </node>
       <node concept="3clFbS" id="3pwG8PSkQIM" role="3clF47">
-        <node concept="3cpWs8" id="3pwG8PSkQIO" role="3cqZAp">
-          <node concept="3cpWsn" id="3pwG8PSkQIN" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="project" />
-            <node concept="3uibUv" id="3pwG8PSkQIP" role="1tU5fm">
-              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        <node concept="3cpWs8" id="43HEdiV$8c1" role="3cqZAp">
+          <node concept="3cpWsn" id="43HEdiV$8c2" role="3cpWs9">
+            <property role="TrG5h" value="dataContext" />
+            <node concept="3uibUv" id="43HEdiV$8c3" role="1tU5fm">
+              <ref role="3uigEE" to="qkt:~DataContext" resolve="DataContext" />
             </node>
-            <node concept="2OqwBi" id="3pwG8PSkQIQ" role="33vP2m">
-              <node concept="2OqwBi" id="3pwG8PSkU0c" role="2Oq$k0">
-                <node concept="37vLTw" id="3pwG8PSkU0b" role="2Oq$k0">
+            <node concept="2OqwBi" id="43HEdiV$8Nt" role="33vP2m">
+              <node concept="2YIFZM" id="43HEdiV$8IH" role="2Oq$k0">
+                <ref role="37wK5l" to="ddhc:~DataManager.getInstance():com.intellij.ide.DataManager" resolve="getInstance" />
+                <ref role="1Pybhc" to="ddhc:~DataManager" resolve="DataManager" />
+              </node>
+              <node concept="liA8E" id="43HEdiV$8Ym" role="2OqNvi">
+                <ref role="37wK5l" to="ddhc:~DataManager.getDataContext(java.awt.Component):com.intellij.openapi.actionSystem.DataContext" resolve="getDataContext" />
+                <node concept="37vLTw" id="3gqwE7KZ0mF" role="37wK5m">
                   <ref role="3cqZAo" node="3pwG8PSkQAX" resolve="myEditorComponent" />
                 </node>
-                <node concept="liA8E" id="3pwG8PSkU0d" role="2OqNvi">
-                  <ref role="37wK5l" to="exr9:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3gqwE7KYXKC" role="3cqZAp">
+          <node concept="3cpWsn" id="3gqwE7KYXKD" role="3cpWs9">
+            <property role="3TUv4t" value="false" />
+            <property role="TrG5h" value="project" />
+            <node concept="2OqwBi" id="6LzhH3u5Vt$" role="33vP2m">
+              <node concept="10M0yZ" id="6LzhH3u5Vt_" role="2Oq$k0">
+                <ref role="1PxDUh" to="qq03:~MPSCommonDataKeys" resolve="MPSCommonDataKeys" />
+                <ref role="3cqZAo" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
+              </node>
+              <node concept="liA8E" id="6LzhH3u5VtA" role="2OqNvi">
+                <ref role="37wK5l" to="qkt:~DataKey.getData(com.intellij.openapi.actionSystem.DataContext):java.lang.Object" resolve="getData" />
+                <node concept="37vLTw" id="43HEdiV$9qK" role="37wK5m">
+                  <ref role="3cqZAo" node="43HEdiV$8c2" resolve="dataContext" />
                 </node>
               </node>
-              <node concept="liA8E" id="3pwG8PSkQIS" role="2OqNvi">
-                <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
-              </node>
+            </node>
+            <node concept="3uibUv" id="3gqwE7KYXKE" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
             </node>
           </node>
         </node>
         <node concept="3clFbJ" id="3pwG8PSkQIT" role="3cqZAp">
           <node concept="3clFbC" id="3pwG8PSkQIU" role="3clFbw">
-            <node concept="37vLTw" id="3pwG8PSkQIV" role="3uHU7B">
-              <ref role="3cqZAo" node="3pwG8PSkQIN" resolve="project" />
+            <node concept="37vLTw" id="3gqwE7KYYAZ" role="3uHU7B">
+              <ref role="3cqZAo" node="3gqwE7KYXKD" resolve="project" />
             </node>
             <node concept="10Nm6u" id="3pwG8PSkQIW" role="3uHU7w" />
           </node>
@@ -14105,26 +14124,21 @@
       <property role="od$2w" value="false" />
       <node concept="3clFbS" id="3pwG8PSkQQN" role="3clF47">
         <node concept="3cpWs6" id="3pwG8PSkQQO" role="3cqZAp">
-          <node concept="2OqwBi" id="3pwG8PSkQQP" role="3cqZAk">
-            <node concept="2OqwBi" id="3pwG8PSl48$" role="2Oq$k0">
-              <node concept="2OqwBi" id="3pwG8PSlA9j" role="2Oq$k0">
-                <node concept="2OqwBi" id="3pwG8PSlnxd" role="2Oq$k0">
-                  <node concept="37vLTw" id="3pwG8PSl48z" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3pwG8PSkQAX" resolve="myEditorComponent" />
-                  </node>
-                  <node concept="liA8E" id="3pwG8PSl$kT" role="2OqNvi">
-                    <ref role="37wK5l" to="exr9:~EditorComponent.getOperationContext():jetbrains.mps.smodel.IOperationContext" resolve="getOperationContext" />
-                  </node>
+          <node concept="2OqwBi" id="6LzhH3u5xk8" role="3cqZAk">
+            <node concept="2OqwBi" id="6LzhH3u5sNy" role="2Oq$k0">
+              <node concept="2OqwBi" id="6LzhH3u5nhR" role="2Oq$k0">
+                <node concept="37vLTw" id="3gqwE7KZ7JW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3pwG8PSkQAX" resolve="myEditorComponent" />
                 </node>
-                <node concept="liA8E" id="3pwG8PSlBK9" role="2OqNvi">
-                  <ref role="37wK5l" to="w1kc:~IOperationContext.getProject():jetbrains.mps.project.Project" resolve="getProject" />
+                <node concept="liA8E" id="6LzhH3u5qRS" role="2OqNvi">
+                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext():jetbrains.mps.nodeEditor.EditorContext" resolve="getEditorContext" />
                 </node>
               </node>
-              <node concept="liA8E" id="3pwG8PSl48_" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              <node concept="liA8E" id="6LzhH3u5uX8" role="2OqNvi">
+                <ref role="37wK5l" to="exr9:~EditorContext.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
               </node>
             </node>
-            <node concept="liA8E" id="3pwG8PSkQQR" role="2OqNvi">
+            <node concept="liA8E" id="6LzhH3u5zzP" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~SRepository.getModelAccess():org.jetbrains.mps.openapi.module.ModelAccess" resolve="getModelAccess" />
             </node>
           </node>

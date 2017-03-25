@@ -2,9 +2,9 @@
 <model ref="r:b3e590ec-601c-4289-8033-6eab75cc322a(de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -470,7 +470,7 @@
                           <ref role="3uigEE" to="exr9:~EditorComponent" resolve="EditorComponent" />
                         </node>
                         <node concept="2YIFZM" id="6J0kluKGLIF" role="33vP2m">
-                          <ref role="1Pybhc" to="a2pm:5v03mDvy3go" resolve="PeoplEditorHelper" />
+                          <ref role="1Pybhc" to="a2pm:5v03mDvy3go" resolve="PeoplDataKeyHelper" />
                           <ref role="37wK5l" to="a2pm:5v03mDvy9yX" resolve="getCurrentEditorIfPossible" />
                         </node>
                       </node>
@@ -631,7 +631,7 @@
                                 </node>
                               </node>
                               <node concept="3TrEf2" id="5jSU_dFQqY0" role="2OqNvi">
-                                <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUT" />
+                                <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUT" resolve="myClass" />
                               </node>
                             </node>
                             <node concept="2Rxl7S" id="3xFOrM4MhVZ" role="2OqNvi" />

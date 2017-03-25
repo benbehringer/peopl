@@ -2,10 +2,10 @@
 <model ref="r:058b6f74-ec57-4711-b0d2-040d94648e80(de.htwsaar.peopl.mBeddrExtension.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="0" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="0" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
     <use id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration" version="0" />
-    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="1" />
+    <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -501,7 +501,7 @@
                                     <ref role="3cqZAo" node="EpVRRuNzM2" resolve="nFeatureBlock" />
                                   </node>
                                   <node concept="3Tsc0h" id="EpVRRuNCg8" role="2OqNvi">
-                                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                                   </node>
                                 </node>
                                 <node concept="TSZUe" id="EpVRRuNHzY" role="2OqNvi">
@@ -576,7 +576,7 @@
                                               </node>
                                             </node>
                                             <node concept="3TrEf2" id="4oksXpGPY32" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="c4fa:7uLL3Mf3Z6z" />
+                                              <ref role="3Tt5mk" to="c4fa:7uLL3Mf3Z6z" resolve="textblock" />
                                             </node>
                                           </node>
                                         </node>
@@ -619,7 +619,7 @@
                                                 </node>
                                               </node>
                                               <node concept="3TrEf2" id="4oksXpGPZy3" role="2OqNvi">
-                                                <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" />
+                                                <ref role="3Tt5mk" to="c4fa:6iIoqg1yCmj" resolve="expr" />
                                               </node>
                                             </node>
                                           </node>
@@ -663,7 +663,7 @@
                                                 </node>
                                               </node>
                                               <node concept="3TrEf2" id="4oksXpGQ1IN" role="2OqNvi">
-                                                <ref role="3Tt5mk" to="c4fa:3CmSUB7Fw7R" />
+                                                <ref role="3Tt5mk" to="c4fa:3CmSUB7Fw7R" resolve="init" />
                                               </node>
                                             </node>
                                           </node>

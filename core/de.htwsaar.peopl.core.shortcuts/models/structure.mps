@@ -2,7 +2,8 @@
 <model ref="r:da2ac303-e47a-4f9c-9c44-3289c429d994(de.htwsaar.peopl.core.shortcuts.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -11,8 +12,8 @@
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -25,27 +26,27 @@
     </language>
   </registry>
   <node concept="1TIwiD" id="1N0v3lIBdg4">
-    <property role="1pbfSe" value="1956818887" />
     <property role="TrG5h" value="Short_Fragment" />
     <property role="34LRSv" value="fragment" />
+    <property role="EcuMT" value="2071792397521310724" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
   </node>
   <node concept="1TIwiD" id="1N0v3lIBdga">
-    <property role="1pbfSe" value="1956818881" />
     <property role="TrG5h" value="Short_VP" />
     <property role="34LRSv" value="vp" />
+    <property role="EcuMT" value="2071792397521310730" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
   </node>
   <node concept="1TIwiD" id="1N0v3lIBdgb">
-    <property role="1pbfSe" value="1956818880" />
     <property role="TrG5h" value="Short_Module" />
     <property role="34LRSv" value="module" />
+    <property role="EcuMT" value="2071792397521310731" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
   </node>
   <node concept="1TIwiD" id="5uiLeIoM4hi">
-    <property role="1pbfSe" value="262469315" />
     <property role="TrG5h" value="Short_Alternatives" />
     <property role="34LRSv" value="alternatives" />
+    <property role="EcuMT" value="6310322544059106386" />
     <ref role="1TJDcQ" to="tp25:g$eCIIG" resolve="SNodeOperation" />
   </node>
 </model>
