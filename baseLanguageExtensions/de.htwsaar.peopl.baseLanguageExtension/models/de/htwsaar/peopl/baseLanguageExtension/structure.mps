@@ -266,7 +266,7 @@
   </node>
   <node concept="1TIwiD" id="3nhXnhI$u5M">
     <property role="3GE5qa" value="CoreExtensions" />
-    <property role="TrG5h" value="FeatureBlockVarRef" />
+    <property role="TrG5h" value="FeatureBlockVarRefBaseLang" />
     <property role="EcuMT" value="3878150634562773362" />
     <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
   </node>
