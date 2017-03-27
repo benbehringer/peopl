@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">f4a807b3-557e-4f92-89bc-d43f4be25649(de.htwsaar.peopl.mBeddrExtension)</dependency>
+    <dependency reexport="false">~_PreferencesModule#peopl.__spreferences.PlatformTemplates(peopl.__spreferences.PlatformTemplates)</dependency>
   </dependencies>
   <usedDevKits>
     <usedDevKit>d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)</usedDevKit>
@@ -101,6 +102,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="7a5dda62-9140-4668-ab76-d5ed1746f2b2(jetbrains.mps.lang.typesystem)" version="0" />
     <module reference="ac704fe4-c709-439e-939d-6f1dff213ed8(mBeddrTest)" version="0" />
+    <module reference="~_PreferencesModule#peopl.__spreferences.PlatformTemplates(peopl.__spreferences.PlatformTemplates)" version="0" />
   </dependencyVersions>
 </solution>
 

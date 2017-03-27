@@ -13,6 +13,7 @@
   </languages>
   <imports>
     <import index="9err" ref="r:af154ac4-9353-4cc5-b3d5-3b134603ae15(peoplConfig)" />
+    <import index="5bw2" ref="r:6b36d553-160d-4543-9389-707dba7d9a1f(peopl.__spreferences.PlatformTemplates)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -50,6 +51,24 @@
       </concept>
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig">
+      <concept id="5046689135693761556" name="com.mbeddr.core.buildconfig.structure.Binary" flags="ng" index="2eOfOj">
+        <child id="5046689135693761559" name="referencedModules" index="2eOfOg" />
+      </concept>
+      <concept id="5046689135693761554" name="com.mbeddr.core.buildconfig.structure.Executable" flags="ng" index="2eOfOl">
+        <property id="3431613015799084476" name="isTest" index="iO3LB" />
+      </concept>
+      <concept id="7717755763392524104" name="com.mbeddr.core.buildconfig.structure.BuildConfiguration" flags="ng" index="2v9HqL">
+        <child id="5046689135694070731" name="binaries" index="2ePNbc" />
+        <child id="5323740605968447026" name="target" index="2AWWZH" />
+      </concept>
+      <concept id="7717755763392524107" name="com.mbeddr.core.buildconfig.structure.ModuleRef" flags="ng" index="2v9HqM">
+        <reference id="7717755763392524108" name="module" index="2v9HqP" />
+      </concept>
+      <concept id="8719112291175211294" name="com.mbeddr.core.buildconfig.structure.PlatformReference" flags="ng" index="2xfidK">
+        <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
@@ -147,6 +166,7 @@
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
+      <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
         <property id="2941277002448691247" name="volatile" index="2caQfQ" />
@@ -343,6 +363,27 @@
         <node concept="19Rifw" id="7MpTifTF$G3" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
+          <node concept="pKhDo" id="51tBmeq$fit" role="lGtFl">
+            <node concept="3TlMgk" id="51tBmeq$fpz" role="3czxsB">
+              <property role="2caQfQ" value="false" />
+              <property role="2c7vTL" value="false" />
+            </node>
+            <node concept="1V74GB" id="51tBmeq$fiC" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_5790957746988840104" />
+              <ref role="1V74Hf" to="9err:51tBmeq$fiD" resolve="VPToFragment_5790957746988840105" />
+              <ref role="a64iB" to="9err:1WMwngv2H$P" resolve="Other" />
+              <ref role="3aRQVk" to="9err:51tBmeq$fst" resolve="ModuleToFragment_5790957746988840733" />
+            </node>
+          </node>
+          <node concept="1V74GB" id="51tBmeq$fiv" role="lGtFl">
+            <property role="32Xqk$" value="chosenModule" />
+            <property role="TrG5h" value="Fragment_5790957746988840095" />
+            <ref role="1V74Hf" to="9err:51tBmeq$fix" resolve="VPToFragment_5790957746988840097" />
+            <ref role="a64iB" to="9err:1WMwngv1zU$" resolve="Base" />
+            <ref role="3aRQVk" to="9err:51tBmeq$fi$" resolve="ModuleToFragment_5790957746988840100" />
+            <ref role="25GeQm" node="51tBmeq$fiA" resolve="FragmentUpdater_5790957746988840102" />
+          </node>
         </node>
         <node concept="1V74GB" id="7MpTifTF$Hu" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
@@ -370,6 +411,10 @@
           <property role="TrG5h" value="FeatureGroupReference_1021755405501851678" />
           <ref role="37HLr8" node="SI0i2Shuwo" />
           <ref role="1C2YfU" node="SI0i2Shuwq" resolve="Fragment_1021755405501851674" />
+        </node>
+        <node concept="1C2YfN" id="51tBmeq$fiA" role="lGtFl">
+          <property role="TrG5h" value="FragmentUpdater_5790957746988840102" />
+          <ref role="1C2YfU" node="51tBmeq$fiv" resolve="Fragment_5790957746988840095" />
         </node>
       </node>
       <node concept="2NXPZ9" id="22hTNh98kOO" role="N3F5h">
@@ -435,8 +480,8 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_3526619484279344852" />
               <ref role="1V74Hf" to="9err:33L4rLMsgVl" resolve="VPToFragment_3526619484279344853" />
-              <ref role="a64iB" to="9err:1WMwngv1zU$" resolve="Base" />
-              <ref role="3aRQVk" to="9err:33L4rLMsh2g" resolve="ModuleToFragment_3526619484279345296" />
+              <ref role="a64iB" to="9err:1WMwngv2H$P" resolve="Other" />
+              <ref role="3aRQVk" to="9err:51tBmeq$hDG" resolve="ModuleToFragment_5790957746988849772" />
             </node>
           </node>
           <node concept="1V74GB" id="33L4rLMsgVb" role="lGtFl">
@@ -930,6 +975,18 @@
         <ref role="1V74Hf" to="9err:WdP3l65788" resolve="VPToFragment_1084756410540257800" />
         <ref role="a64iB" to="9err:1WMwngv1zU$" resolve="Base" />
         <ref role="3aRQVk" to="9err:WdP3l6578K" resolve="ModuleToFragment_1084756410540257840" />
+      </node>
+    </node>
+  </node>
+  <node concept="2v9HqL" id="51tBmeq_dam">
+    <node concept="2xfidK" id="51tBmeq_dap" role="2AWWZH">
+      <ref role="2xfifS" to="5bw2:20bzCXQDx_T" resolve="Desktop Platform" />
+    </node>
+    <node concept="2eOfOl" id="51tBmeq_dar" role="2ePNbc">
+      <property role="iO3LB" value="false" />
+      <property role="TrG5h" value="myExec" />
+      <node concept="2v9HqM" id="51tBmeq_dat" role="2eOfOg">
+        <ref role="2v9HqP" node="7aLWWlG$WTH" resolve="MeinCTest" />
       </node>
     </node>
   </node>
