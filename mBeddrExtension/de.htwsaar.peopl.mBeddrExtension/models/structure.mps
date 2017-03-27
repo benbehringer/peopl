@@ -74,7 +74,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="3nhXnhIzlt_">
-    <property role="TrG5h" value="FeatureBlockVarRef" />
+    <property role="TrG5h" value="FeatureBlockVarRefMBeddr" />
     <property role="R4oN_" value="var ref in feature block" />
     <property role="EcuMT" value="3878150634562475877" />
     <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
