@@ -209,5 +209,26 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="5XjX_2RAFdq">
+    <property role="TrG5h" value="ModuleAndVP_FragmentParents_Wrapper_core" />
+    <ref role="1XX52x" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
+    <node concept="1PE4EZ" id="5XjX_2RAFds" role="1PM95z">
+      <ref role="1PE7su" to="tqa7:4AplRoHYfdj" resolve="ModuleAndVP_FragmentParents_Wrapper" />
+    </node>
+    <node concept="2aJ2om" id="5XjX_2RAFdu" role="3XTboT">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3D" resolve="hiding" />
+    </node>
+    <node concept="3F0ifn" id="5XjX_2RAFeL" role="2wV5jI">
+      <node concept="pkWqt" id="5XjX_2RAFeM" role="pqm2j">
+        <node concept="3clFbS" id="5XjX_2RAFeN" role="2VODD2">
+          <node concept="3clFbF" id="5XjX_2RAFeO" role="3cqZAp">
+            <node concept="3clFbT" id="5XjX_2RAFeP" role="3clFbG">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
