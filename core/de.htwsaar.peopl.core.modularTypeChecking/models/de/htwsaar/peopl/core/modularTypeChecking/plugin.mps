@@ -245,7 +245,7 @@
                                     </node>
                                   </node>
                                   <node concept="3TrEf2" id="77FQfzmYfJ" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" />
+                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" resolve="compilationUnit" />
                                   </node>
                                 </node>
                                 <node concept="37vLTw" id="622kMIlpkdj" role="37wK5m">

@@ -88,7 +88,6 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1208623485264" name="jetbrains.mps.baseLanguage.structure.AbstractOperation" flags="nn" index="1B$H19" />
       <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
         <property id="6329021646629104958" name="text" index="3SKdUp" />
       </concept>
@@ -268,6 +267,7 @@
           <ref role="3aRQVk" to="kjo2:1wmvoNaD2vJ" resolve="ModuleToFragment_1735712750046554095" />
         </node>
       </node>
+      <node concept="2tJIrI" id="2oAVuIgRMkZ" role="jymVt" />
       <node concept="3clFb_" id="6uaRYGQIR8b" role="jymVt">
         <property role="1EzhhJ" value="false" />
         <property role="TrG5h" value="addToMyList" />
@@ -298,26 +298,23 @@
                   <node concept="37vLTw" id="1wmvoNaCrEg" role="2Oq$k0">
                     <ref role="3cqZAo" node="6uaRYGQIPLF" resolve="myList" />
                   </node>
-                  <node concept="1B$H19" id="6Qhy1s7MVXK" role="2OqNvi" />
+                  <node concept="TSZUe" id="2oAVuIgS45v" role="2OqNvi">
+                    <node concept="Xl_RD" id="2oAVuIgS4cq" role="25WWJ7">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                  </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="2oAVuIgPSuU" role="3cqZAp" />
               <node concept="3clFbF" id="1wmvoNaCnOz" role="3cqZAp">
                 <node concept="37vLTw" id="1wmvoNaCnOx" role="3clFbG">
                   <ref role="3cqZAo" node="6uaRYGQJ4O$" resolve="abcdef" />
                 </node>
               </node>
-              <node concept="3clFbF" id="3FQ2F9IaXJd" role="3cqZAp">
-                <node concept="2OqwBi" id="3FQ2F9Ib5gB" role="3clFbG">
-                  <node concept="Xjq3P" id="3FQ2F9IaXJb" role="2Oq$k0" />
-                  <node concept="1B$H19" id="3FQ2F9Ib5gG" role="2OqNvi" />
-                </node>
-              </node>
+              <node concept="3clFbH" id="2oAVuIgS77x" role="3cqZAp" />
               <node concept="3clFbF" id="1wmvoNaD2I5" role="3cqZAp">
-                <node concept="2OqwBi" id="1h92X78N8TP" role="3clFbG">
-                  <node concept="1rXfSq" id="1wmvoNaD2I3" role="2Oq$k0">
-                    <ref role="37wK5l" node="1wmvoNaD29j" resolve="getList" />
-                  </node>
-                  <node concept="1B$H19" id="1h92X78N8TU" role="2OqNvi" />
+                <node concept="1rXfSq" id="1wmvoNaD2I3" role="3clFbG">
+                  <ref role="37wK5l" node="1wmvoNaD29j" resolve="getList" />
                 </node>
               </node>
             </node>
@@ -619,6 +616,13 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="3k51E1" to="kjo2:6kwUmBU3IT6" resolve="Another" />
     <ref role="3k51XK" node="sDD23rHtJx" resolve="TestClass" />
+  </node>
+  <node concept="HxVAC" id="2oAVuIgPSp8">
+    <property role="3k51XQ" value="module" />
+    <property role="3GE5qa" value="tmp" />
+    <property role="21H71v" value="Another::Testclass" />
+    <ref role="3k51XK" node="sDD23rHtJx" resolve="TestClass" />
+    <ref role="3k51E1" to="kjo2:6kwUmBU3IT6" resolve="Another" />
   </node>
 </model>
 
