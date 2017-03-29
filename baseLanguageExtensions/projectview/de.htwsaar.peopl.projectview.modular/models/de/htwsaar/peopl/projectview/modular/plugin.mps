@@ -396,6 +396,7 @@
         <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
+        <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
@@ -2164,15 +2165,11 @@
     <node concept="Xl_RD" id="3dIcPvM6TOe" role="3GFWDq">
       <property role="Xl_RC" value="Modular View" />
     </node>
-    <node concept="1X3_iC" id="1Eg6dA78vbG" role="lGtFl">
-      <property role="3V$3am" value="icon" />
-      <property role="3V$3ak" value="1f1b4a81-113d-4b88-9b67-2bae3e4f8128/8309912865649284702/5782973724855443006" />
-      <node concept="2YIFZM" id="1Eg6dA78rCw" role="8Wnug">
-        <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-        <node concept="3nh3qo" id="1Eg6dA78rCx" role="37wK5m">
-          <ref role="3nh3qp" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
-        </node>
+    <node concept="2YIFZM" id="1Eg6dA78rCw" role="37b278">
+      <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
+      <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+      <node concept="3nh3qo" id="1Eg6dA78rCx" role="37wK5m">
+        <ref role="3nh3qp" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
       </node>
     </node>
   </node>
