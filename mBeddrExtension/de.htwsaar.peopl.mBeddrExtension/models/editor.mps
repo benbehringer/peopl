@@ -5655,11 +5655,6 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3cpWs6" id="7Q61pIvyiTd" role="3cqZAp">
-                        <node concept="3clFbT" id="7Q61pIvyiTe" role="3cqZAk">
-                          <property role="3clFbU" value="true" />
-                        </node>
-                      </node>
                     </node>
                     <node concept="2OqwBi" id="7Q61pIvyiTD" role="3clFbw">
                       <node concept="37vLTw" id="7Q61pIvyiTE" role="2Oq$k0">
