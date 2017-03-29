@@ -74,7 +74,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1k3hL0SxfUS">
-    <property role="TrG5h" value="TmpPeoplClassConcept" />
+    <property role="TrG5h" value="ModularJavaCompilationUnit" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="basicModularity" />
     <property role="EcuMT" value="1514132034719907512" />
