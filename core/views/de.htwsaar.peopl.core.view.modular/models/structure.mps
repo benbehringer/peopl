@@ -39,11 +39,6 @@
   <node concept="PlHQZ" id="EpVRRuzuMu">
     <property role="TrG5h" value="ModularCompilationUnit" />
     <property role="EcuMT" value="763904935699803294" />
-    <node concept="1TJgyi" id="5HPu$ZqKgCg" role="1TKVEl">
-      <property role="TrG5h" value="name" />
-      <property role="IQ2nx" value="6590308113117678096" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="EpVRRuzv0b" role="1TKVEl">
       <property role="TrG5h" value="moduleReferenceName" />
       <property role="IQ2nx" value="763904935699804171" />
