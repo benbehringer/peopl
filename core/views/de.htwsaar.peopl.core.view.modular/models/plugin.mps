@@ -211,7 +211,7 @@
                 <node concept="3clFb_" id="7_jGzxMc3VL" role="jymVt">
                   <property role="1EzhhJ" value="false" />
                   <property role="2aFKle" value="false" />
-                  <property role="TrG5h" value="setModualrCompilationUnitName" />
+                  <property role="TrG5h" value="setModularCompilationUnitName" />
                   <node concept="37vLTG" id="7_jGzxMc3VM" role="3clF46">
                     <property role="TrG5h" value="modularCompilationUnitNode" />
                     <node concept="3Tqbb2" id="7_jGzxMc3VN" role="1tU5fm" />

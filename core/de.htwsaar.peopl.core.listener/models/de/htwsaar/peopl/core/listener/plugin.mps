@@ -1039,7 +1039,7 @@
                                             <node concept="1uHKPH" id="4uCbWdTKLs4" role="2OqNvi" />
                                           </node>
                                           <node concept="liA8E" id="4uCbWdTKLs5" role="2OqNvi">
-                                            <ref role="37wK5l" node="1kEVEWPr6Xf" resolve="setModualrCompilationUnitName" />
+                                            <ref role="37wK5l" node="1kEVEWPr6Xf" resolve="setModularCompilationUnitName" />
                                             <node concept="37vLTw" id="4uCbWdTKLs6" role="37wK5m">
                                               <ref role="3cqZAo" node="4uCbWdTKLrz" resolve="node" />
                                             </node>
@@ -4529,7 +4529,7 @@
     <node concept="3clFb_" id="1kEVEWPr6Xf" role="jymVt">
       <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="setModualrCompilationUnitName" />
+      <property role="TrG5h" value="setModularCompilationUnitName" />
       <node concept="37vLTG" id="1kEVEWPr9ju" role="3clF46">
         <property role="TrG5h" value="modularCompilationUnitNode" />
         <node concept="3Tqbb2" id="1kEVEWPr9jt" role="1tU5fm" />
