@@ -84,9 +84,6 @@
     <property role="19KtqR" value="true" />
     <property role="EcuMT" value="6590308113117381855" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5HPu$ZqJ8ta" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="5HPu$ZqJ8tf" role="PzmwI">
       <ref role="PrY4T" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
     </node>

@@ -95,9 +95,6 @@
       <ref role="20lvS9" to="xf8r:6K8EDSn5d7G" resolve="Module" />
       <node concept="asaX9" id="4B6UpFBCsVI" role="lGtFl" />
     </node>
-    <node concept="PrWs8" id="2IN4pHdYmdH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="PrWs8" id="EpVRRuBZZK" role="PzmwI">
       <ref role="PrY4T" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
     </node>

@@ -121,7 +121,7 @@
   </registry>
   <node concept="13h7C7" id="7boOmZ483Vj">
     <property role="3GE5qa" value="basicModularity" />
-    <ref role="13h7C2" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+    <ref role="13h7C2" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
     <node concept="13hLZK" id="7boOmZ483Vk" role="13h7CW">
       <node concept="3clFbS" id="7boOmZ483Vl" role="2VODD2">
         <node concept="1X3_iC" id="7CRh4pHtc0E" role="lGtFl">
@@ -295,7 +295,7 @@
           </node>
         </node>
         <node concept="3Tqbb2" id="7boOmZ483Vu" role="3clF45">
-          <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+          <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
         </node>
         <node concept="37vLTG" id="7boOmZ483XH" role="3clF46">
           <property role="TrG5h" value="module" />
@@ -365,7 +365,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3TrcHB" id="5HPu$ZqLtdL" role="2OqNvi">
+                <node concept="3TrcHB" id="7_jGzxMpF73" role="2OqNvi">
                   <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
@@ -388,7 +388,7 @@
             </node>
             <node concept="2OqwBi" id="5HPu$ZqLrtV" role="37vLTJ">
               <node concept="13iPFW" id="5HPu$ZqLrqM" role="2Oq$k0" />
-              <node concept="3TrcHB" id="5HPu$ZqLryh" role="2OqNvi">
+              <node concept="3TrcHB" id="7_jGzxMpEdw" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
