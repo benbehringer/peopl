@@ -13600,6 +13600,25 @@
         <node concept="3Tqbb2" id="4UuYCFc7kiT" role="1tU5fm" />
       </node>
     </node>
+    <node concept="13i0hz" id="5p4tr4loU_U" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="addFeatureBlockToNewDefiningNode" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="5p4tr4loU_V" role="1B3o_S" />
+      <node concept="3cqZAl" id="5p4tr4loWeF" role="3clF45" />
+      <node concept="3clFbS" id="5p4tr4loU_X" role="3clF47" />
+      <node concept="37vLTG" id="5p4tr4loWn$" role="3clF46">
+        <property role="TrG5h" value="definingNode" />
+        <node concept="3Tqbb2" id="5p4tr4loWnz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5p4tr4loWox" role="3clF46">
+        <property role="TrG5h" value="featureGroup" />
+        <node concept="3Tqbb2" id="5p4tr4loWpc" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="6BiMxHywZso" role="13h7CW">
       <node concept="3clFbS" id="6BiMxHywZsp" role="2VODD2" />
     </node>

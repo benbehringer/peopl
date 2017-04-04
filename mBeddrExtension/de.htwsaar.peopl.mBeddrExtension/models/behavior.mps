@@ -1806,6 +1806,75 @@
         <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
       </node>
     </node>
+    <node concept="13i0hz" id="5p4tr4loWs2" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="addFeatureBlockToNewDefiningNode" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="kpvh:5p4tr4loU_U" resolve="addFeatureBlockToNewDefiningNode" />
+      <node concept="3Tm1VV" id="5p4tr4loWs3" role="1B3o_S" />
+      <node concept="3clFbS" id="5p4tr4loWsa" role="3clF47">
+        <node concept="3clFbJ" id="5p4tr4lpn19" role="3cqZAp">
+          <node concept="2OqwBi" id="5p4tr4lpn9m" role="3clFbw">
+            <node concept="37vLTw" id="5p4tr4lpn1t" role="2Oq$k0">
+              <ref role="3cqZAo" node="5p4tr4loWsb" resolve="definingNode" />
+            </node>
+            <node concept="1mIQ4w" id="5p4tr4lpniw" role="2OqNvi">
+              <node concept="chp4Y" id="5p4tr4lpnkr" role="cj9EA">
+                <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5p4tr4lpn1b" role="3clFbx">
+            <node concept="3clFbF" id="5p4tr4lpAyE" role="3cqZAp">
+              <node concept="2OqwBi" id="5p4tr4lpJ5v" role="3clFbG">
+                <node concept="2OqwBi" id="5p4tr4lpE6K" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5p4tr4lpBba" role="2Oq$k0">
+                    <node concept="1eOMI4" id="5p4tr4lpAyC" role="2Oq$k0">
+                      <node concept="10QFUN" id="5p4tr4lpAy_" role="1eOMHV">
+                        <node concept="3Tqbb2" id="5p4tr4lpAyZ" role="10QFUM">
+                          <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                        </node>
+                        <node concept="37vLTw" id="5p4tr4lpADw" role="10QFUP">
+                          <ref role="3cqZAo" node="5p4tr4loWsb" resolve="definingNode" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="5p4tr4lpC2d" role="2OqNvi">
+                      <ref role="3Tt5mk" to="x27k:3CmSUB7Fp_k" resolve="body" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="5p4tr4lpF61" role="2OqNvi">
+                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
+                  </node>
+                </node>
+                <node concept="2Ke4WJ" id="5p4tr4lpP8o" role="2OqNvi">
+                  <node concept="10QFUN" id="5p4tr4lpVgx" role="25WWJ7">
+                    <node concept="3Tqbb2" id="5p4tr4lpYcd" role="10QFUM">
+                      <ref role="ehGHo" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
+                    </node>
+                    <node concept="37vLTw" id="5p4tr4lpRWS" role="10QFUP">
+                      <ref role="3cqZAo" node="5p4tr4loWsd" resolve="featureGroup" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5p4tr4loWsb" role="3clF46">
+        <property role="TrG5h" value="definingNode" />
+        <node concept="3Tqbb2" id="5p4tr4loWsc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5p4tr4loWsd" role="3clF46">
+        <property role="TrG5h" value="featureGroup" />
+        <node concept="3Tqbb2" id="5p4tr4loWse" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5p4tr4loWsf" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="EpVRRuMcIE">
     <ref role="13h7C2" to="gj7z:EpVRRuMcke" resolve="CCompilationUnit" />
