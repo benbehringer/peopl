@@ -2846,12 +2846,17 @@
             <node concept="2YIFZM" id="4abErjGKnir" role="3fr31v">
               <ref role="37wK5l" node="4abErjGKn0X" resolve="isToBeIgnored" />
               <ref role="1Pybhc" node="9AU9SVEQVx" resolve="PeoplListenerHelper" />
-              <node concept="2OqwBi" id="4abErjGKnis" role="37wK5m">
-                <node concept="37vLTw" id="4abErjGKnit" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4abErjGKlLq" resolve="model" />
+              <node concept="2OqwBi" id="5p4tr4llG1L" role="37wK5m">
+                <node concept="2OqwBi" id="4abErjGKnis" role="2Oq$k0">
+                  <node concept="37vLTw" id="4abErjGKnit" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4abErjGKlLq" resolve="model" />
+                  </node>
+                  <node concept="liA8E" id="4abErjGKniu" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getName():org.jetbrains.mps.openapi.model.SModelName" resolve="getName" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="4abErjGKniu" role="2OqNvi">
-                  <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+                <node concept="liA8E" id="5p4tr4llGk1" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModelName.toString():java.lang.String" resolve="toString" />
                 </node>
               </node>
             </node>
@@ -5200,6 +5205,176 @@
     <node concept="2tJIrI" id="u6Rxog4KeB" role="jymVt" />
     <node concept="2tJIrI" id="u6Rxog4KeE" role="jymVt" />
     <node concept="3Tm1VV" id="u6Rxog4KdO" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="5p4tr4llhpn">
+    <property role="TrG5h" value="PeoplLangActionHook_Listener" />
+    <node concept="2YIFZL" id="5p4tr4lliyF" role="jymVt">
+      <property role="TrG5h" value="addNewListener" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="5p4tr4lliyI" role="3clF47">
+        <node concept="3clFbJ" id="5p4tr4lljdT" role="3cqZAp">
+          <node concept="3clFbS" id="5p4tr4lljdV" role="3clFbx">
+            <node concept="3cpWs8" id="5p4tr4lljse" role="3cqZAp">
+              <node concept="3cpWsn" id="5p4tr4lljsf" role="3cpWs9">
+                <property role="TrG5h" value="myListener" />
+                <node concept="3uibUv" id="5p4tr4lljsg" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SNodeChangeListener" resolve="SNodeChangeListener" />
+                </node>
+                <node concept="2ShNRf" id="5p4tr4llled" role="33vP2m">
+                  <node concept="YeOm9" id="5p4tr4lloyq" role="2ShVmc">
+                    <node concept="1Y3b0j" id="5p4tr4lloyt" role="YeSDq">
+                      <property role="2bfB8j" value="true" />
+                      <ref role="1Y3XeK" to="mhbf:~SNodeChangeListener" resolve="SNodeChangeListener" />
+                      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                      <node concept="3Tm1VV" id="5p4tr4lloyu" role="1B3o_S" />
+                      <node concept="3clFb_" id="5p4tr4lloyv" role="jymVt">
+                        <property role="1EzhhJ" value="false" />
+                        <property role="TrG5h" value="propertyChanged" />
+                        <property role="DiZV1" value="false" />
+                        <property role="od$2w" value="false" />
+                        <node concept="3Tm1VV" id="5p4tr4lloyw" role="1B3o_S" />
+                        <node concept="3cqZAl" id="5p4tr4lloyy" role="3clF45" />
+                        <node concept="37vLTG" id="5p4tr4lloyz" role="3clF46">
+                          <property role="TrG5h" value="p0" />
+                          <node concept="3uibUv" id="5p4tr4lloy$" role="1tU5fm">
+                            <ref role="3uigEE" to="cmfw:~SPropertyChangeEvent" resolve="SPropertyChangeEvent" />
+                          </node>
+                          <node concept="2AHcQZ" id="5p4tr4lloy_" role="2AJF6D">
+                            <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="5p4tr4lloyA" role="3clF47" />
+                      </node>
+                      <node concept="3clFb_" id="5p4tr4lloyC" role="jymVt">
+                        <property role="1EzhhJ" value="false" />
+                        <property role="TrG5h" value="referenceChanged" />
+                        <property role="DiZV1" value="false" />
+                        <property role="od$2w" value="false" />
+                        <node concept="3Tm1VV" id="5p4tr4lloyD" role="1B3o_S" />
+                        <node concept="3cqZAl" id="5p4tr4lloyF" role="3clF45" />
+                        <node concept="37vLTG" id="5p4tr4lloyG" role="3clF46">
+                          <property role="TrG5h" value="p0" />
+                          <node concept="3uibUv" id="5p4tr4lloyH" role="1tU5fm">
+                            <ref role="3uigEE" to="cmfw:~SReferenceChangeEvent" resolve="SReferenceChangeEvent" />
+                          </node>
+                          <node concept="2AHcQZ" id="5p4tr4lloyI" role="2AJF6D">
+                            <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="5p4tr4lloyJ" role="3clF47" />
+                      </node>
+                      <node concept="3clFb_" id="5p4tr4lloyL" role="jymVt">
+                        <property role="1EzhhJ" value="false" />
+                        <property role="TrG5h" value="nodeAdded" />
+                        <property role="DiZV1" value="false" />
+                        <property role="od$2w" value="false" />
+                        <node concept="3Tm1VV" id="5p4tr4lloyM" role="1B3o_S" />
+                        <node concept="3cqZAl" id="5p4tr4lloyO" role="3clF45" />
+                        <node concept="37vLTG" id="5p4tr4lloyP" role="3clF46">
+                          <property role="TrG5h" value="p0" />
+                          <node concept="3uibUv" id="5p4tr4lloyQ" role="1tU5fm">
+                            <ref role="3uigEE" to="cmfw:~SNodeAddEvent" resolve="SNodeAddEvent" />
+                          </node>
+                          <node concept="2AHcQZ" id="5p4tr4lloyR" role="2AJF6D">
+                            <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="5p4tr4lloyS" role="3clF47" />
+                      </node>
+                      <node concept="3clFb_" id="5p4tr4lloyU" role="jymVt">
+                        <property role="1EzhhJ" value="false" />
+                        <property role="TrG5h" value="nodeRemoved" />
+                        <property role="DiZV1" value="false" />
+                        <property role="od$2w" value="false" />
+                        <node concept="3Tm1VV" id="5p4tr4lloyV" role="1B3o_S" />
+                        <node concept="3cqZAl" id="5p4tr4lloyX" role="3clF45" />
+                        <node concept="37vLTG" id="5p4tr4lloyY" role="3clF46">
+                          <property role="TrG5h" value="p0" />
+                          <node concept="3uibUv" id="5p4tr4lloyZ" role="1tU5fm">
+                            <ref role="3uigEE" to="cmfw:~SNodeRemoveEvent" resolve="SNodeRemoveEvent" />
+                          </node>
+                          <node concept="2AHcQZ" id="5p4tr4lloz0" role="2AJF6D">
+                            <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+                          </node>
+                        </node>
+                        <node concept="3clFbS" id="5p4tr4lloz1" role="3clF47" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5p4tr4llp17" role="3cqZAp">
+              <node concept="2OqwBi" id="5p4tr4llpdL" role="3clFbG">
+                <node concept="37vLTw" id="5p4tr4llp15" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5p4tr4lliRI" resolve="model" />
+                </node>
+                <node concept="liA8E" id="5p4tr4llq9X" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.addChangeListener(org.jetbrains.mps.openapi.model.SNodeChangeListener):void" resolve="addChangeListener" />
+                  <node concept="37vLTw" id="5p4tr4llqaV" role="37wK5m">
+                    <ref role="3cqZAo" node="5p4tr4lljsf" resolve="myListener" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5p4tr4llqp8" role="3cqZAp">
+              <node concept="2YIFZM" id="5p4tr4llqxy" role="3clFbG">
+                <ref role="37wK5l" node="B$cJ$NfLbq" resolve="rememberSNodeChangeListener" />
+                <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="PeoplListenerCache" />
+                <node concept="37vLTw" id="5p4tr4llqyl" role="37wK5m">
+                  <ref role="3cqZAo" node="5p4tr4lliRI" resolve="model" />
+                </node>
+                <node concept="37vLTw" id="5p4tr4llq$P" role="37wK5m">
+                  <ref role="3cqZAo" node="5p4tr4lljsf" resolve="myListener" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5p4tr4llrw8" role="3cqZAp">
+              <node concept="37vLTw" id="5p4tr4llrLF" role="3cqZAk">
+                <ref role="3cqZAo" node="5p4tr4lljsf" resolve="myListener" />
+              </node>
+            </node>
+          </node>
+          <node concept="3fqX7Q" id="5p4tr4lljed" role="3clFbw">
+            <node concept="2YIFZM" id="5p4tr4lljee" role="3fr31v">
+              <ref role="1Pybhc" node="9AU9SVEQVx" resolve="PeoplListenerHelper" />
+              <ref role="37wK5l" node="4abErjGKn0X" resolve="isToBeIgnored" />
+              <node concept="2OqwBi" id="5p4tr4lljef" role="37wK5m">
+                <node concept="37vLTw" id="5p4tr4lljeg" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5p4tr4lliRI" resolve="model" />
+                </node>
+                <node concept="liA8E" id="5p4tr4lljeh" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getModelName():java.lang.String" resolve="getModelName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5p4tr4llsuG" role="3cqZAp">
+          <node concept="10Nm6u" id="5p4tr4llsyG" role="3cqZAk" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5p4tr4llibn" role="1B3o_S" />
+      <node concept="3uibUv" id="5p4tr4llinr" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNodeChangeListener" resolve="SNodeChangeListener" />
+      </node>
+      <node concept="37vLTG" id="5p4tr4lliQw" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="5p4tr4lliQv" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5p4tr4lliRI" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="5p4tr4llj4c" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="5p4tr4llhpo" role="1B3o_S" />
   </node>
 </model>
 
