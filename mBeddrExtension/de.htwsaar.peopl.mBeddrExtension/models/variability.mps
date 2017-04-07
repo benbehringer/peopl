@@ -15,6 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="gj7z" ref="r:b16002b4-3e9f-4cda-b9e1-53c91cafb2e8(de.htwsaar.peopl.mBeddrExtension.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
+    <import index="yq40" ref="r:152b3fc0-83a1-4bab-a8cd-565eb8483785(com.mbeddr.core.pointers.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -534,6 +535,9 @@
       </node>
       <node concept="1G2zp1" id="5MWIJNXoAG_" role="uo7X1">
         <ref role="35c_gD" to="mj1l:7FQByU3CrCQ" resolve="Type" />
+      </node>
+      <node concept="1G2zp1" id="5scI5LoynuV" role="uo7X1">
+        <ref role="35c_gD" to="yq40:5jmmCdxFBG4" resolve="StringType" />
       </node>
       <node concept="1G2zp1" id="5MWIJNXoAGK" role="uo7X1">
         <ref role="35c_gD" to="mj1l:7FQByU3CrCM" resolve="Expression" />
