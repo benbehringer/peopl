@@ -139,6 +139,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -255,6 +261,7 @@
       <concept id="1235566831861" name="jetbrains.mps.baseLanguage.collections.structure.AllOperation" flags="nn" index="2HxqBE" />
       <concept id="1227022159410" name="jetbrains.mps.baseLanguage.collections.structure.AddFirstElementOperation" flags="nn" index="2Ke4WJ" />
       <concept id="1227022179634" name="jetbrains.mps.baseLanguage.collections.structure.AddLastElementOperation" flags="nn" index="2Ke9KJ" />
+      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1175845471038" name="jetbrains.mps.baseLanguage.collections.structure.ReverseOperation" flags="nn" index="35Qw8J" />
@@ -1826,6 +1833,36 @@
             </node>
           </node>
           <node concept="3clFbS" id="5p4tr4lpn1b" role="3clFbx">
+            <node concept="3SKdUt" id="1dvU_wNUVvd" role="3cqZAp">
+              <node concept="3SKdUq" id="1dvU_wNUVvf" role="3SKWNk">
+                <property role="3SKdUp" value="we need to clear the statementlist first, because there is an empty statement which looks ugly" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="1dvU_wNUx30" role="3cqZAp">
+              <node concept="2OqwBi" id="1dvU_wNUx31" role="3clFbG">
+                <node concept="2OqwBi" id="1dvU_wNUx32" role="2Oq$k0">
+                  <node concept="2OqwBi" id="1dvU_wNUx33" role="2Oq$k0">
+                    <node concept="1eOMI4" id="1dvU_wNUx34" role="2Oq$k0">
+                      <node concept="10QFUN" id="1dvU_wNUx35" role="1eOMHV">
+                        <node concept="3Tqbb2" id="1dvU_wNUx36" role="10QFUM">
+                          <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                        </node>
+                        <node concept="37vLTw" id="1dvU_wNUx37" role="10QFUP">
+                          <ref role="3cqZAo" node="5p4tr4loWsb" resolve="definingNode" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="1dvU_wNUx38" role="2OqNvi">
+                      <ref role="3Tt5mk" to="x27k:3CmSUB7Fp_k" resolve="body" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="1dvU_wNUx39" role="2OqNvi">
+                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
+                  </node>
+                </node>
+                <node concept="2Kehj3" id="1dvU_wNUE8O" role="2OqNvi" />
+              </node>
+            </node>
             <node concept="3clFbF" id="5p4tr4lpAyE" role="3cqZAp">
               <node concept="2OqwBi" id="5p4tr4lpJ5v" role="3clFbG">
                 <node concept="2OqwBi" id="5p4tr4lpE6K" role="2Oq$k0">
