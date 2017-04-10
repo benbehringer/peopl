@@ -2753,13 +2753,13 @@
             <property role="TrG5h" value="tmpPeoplClasses" />
             <node concept="2hMVRd" id="7AMSGoMY_MU" role="1tU5fm">
               <node concept="3Tqbb2" id="7AMSGoMYAnV" role="2hN53Y">
-                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
               </node>
             </node>
             <node concept="2ShNRf" id="7AMSGoMYAEH" role="33vP2m">
               <node concept="2i4dXS" id="7AMSGoMYAEw" role="2ShVmc">
                 <node concept="3Tqbb2" id="7AMSGoMYAEx" role="HW$YZ">
-                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
               </node>
             </node>
@@ -2776,7 +2776,7 @@
                   <ref role="3cqZAo" node="7AMSGoMYr5E" resolve="currentModel" />
                 </node>
                 <node concept="2RRcyG" id="7AMSGoMY_qF" role="2OqNvi">
-                  <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
               </node>
             </node>
@@ -3380,12 +3380,12 @@
             <property role="TrG5h" value="tmpPClass" />
             <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="3272v3NZ$Ve" role="1tU5fm">
-              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
             </node>
             <node concept="1eOMI4" id="3272v3NZ_4J" role="33vP2m">
               <node concept="10QFUN" id="3272v3NZ_4G" role="1eOMHV">
                 <node concept="3Tqbb2" id="3272v3NZ_d1" role="10QFUM">
-                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
                 <node concept="37vLTw" id="3272v3NZ_e6" role="10QFUP">
                   <ref role="3cqZAo" node="3272v3NZzX4" resolve="editorRootNode" />
@@ -4151,12 +4151,12 @@
             <property role="TrG5h" value="tmpPClass" />
             <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="2bn$lqohQz6" role="1tU5fm">
-              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
             </node>
             <node concept="1eOMI4" id="2bn$lqohQz7" role="33vP2m">
               <node concept="10QFUN" id="2bn$lqohQz8" role="1eOMHV">
                 <node concept="3Tqbb2" id="2bn$lqohQz9" role="10QFUM">
-                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
                 <node concept="37vLTw" id="2bn$lqohQza" role="10QFUP">
                   <ref role="3cqZAo" node="2bn$lqohQyT" resolve="editorRootNode" />
@@ -8571,7 +8571,7 @@
                   <node concept="3cpWsn" id="7R0bsHOOVJU" role="3cpWs9">
                     <property role="TrG5h" value="tmpClass" />
                     <node concept="3Tqbb2" id="7R0bsHOOVJP" role="1tU5fm">
-                      <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                     <node concept="2OqwBi" id="470MJsrVPRb" role="33vP2m">
                       <node concept="2OqwBi" id="470MJsrVPRc" role="2Oq$k0">
@@ -8579,7 +8579,7 @@
                           <ref role="3cqZAo" node="470MJsrVPR6" resolve="currentModel" />
                         </node>
                         <node concept="2RRcyG" id="470MJsrVPRe" role="2OqNvi">
-                          <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                       <node concept="1z4cxt" id="470MJsrVPRf" role="2OqNvi">
@@ -8669,13 +8669,13 @@
             <property role="TrG5h" value="tmpPeoplClasses" />
             <node concept="_YKpA" id="7k_gvOUrn83" role="1tU5fm">
               <node concept="3Tqbb2" id="7k_gvOUrnp0" role="_ZDj9">
-                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
               </node>
             </node>
             <node concept="2ShNRf" id="7k_gvOUrnS$" role="33vP2m">
               <node concept="Tc6Ow" id="7k_gvOUrnSk" role="2ShVmc">
                 <node concept="3Tqbb2" id="7k_gvOUrnSl" role="HW$YZ">
-                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
               </node>
             </node>
@@ -8726,7 +8726,7 @@
                           <ref role="3cqZAo" node="7k_gvOUrmHA" resolve="currentModel" />
                         </node>
                         <node concept="2RRcyG" id="7k_gvOUrmHI" role="2OqNvi">
-                          <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="2RRcyH" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                       <node concept="3zZkjj" id="7k_gvOUrmHJ" role="2OqNvi">
@@ -8833,7 +8833,7 @@
       <node concept="3Tm1VV" id="7k_gvOUrjmH" role="1B3o_S" />
       <node concept="_YKpA" id="7k_gvOUrjK0" role="3clF45">
         <node concept="3Tqbb2" id="7k_gvOUrk3f" role="_ZDj9">
-          <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+          <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
         </node>
       </node>
     </node>
@@ -8865,7 +8865,7 @@
         <property role="TrG5h" value="tmpPeoplClasses" />
         <node concept="_YKpA" id="7k_gvOUruAj" role="1tU5fm">
           <node concept="3Tqbb2" id="7k_gvOUruTS" role="_ZDj9">
-            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
           </node>
         </node>
       </node>
@@ -9208,7 +9208,7 @@
                     <property role="TrG5h" value="tmpPeoplClasses" />
                     <node concept="_YKpA" id="7k_gvOUrwXo" role="1tU5fm">
                       <node concept="3Tqbb2" id="7k_gvOUrxxc" role="_ZDj9">
-                        <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7k_gvOUrw5W" role="33vP2m">

@@ -430,7 +430,7 @@
     <property role="3GE5qa" value="Extensions.Alternatives.ConcreteTypes" />
     <property role="TrG5h" value="TypeAlternative" />
     <property role="EcuMT" value="1933192147512921983" />
-    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="NonOptionalAlternative" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="1Fk50g35h2w" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
@@ -443,13 +443,16 @@
       <node concept="trNpa" id="1Fk50g35h9v" role="EQaZv">
         <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
       </node>
+      <node concept="tn0Fv" id="3BzdcH2J6BC" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1j2uYRA5nhd">
     <property role="3GE5qa" value="Extensions.Alternatives.ConcreteTypes" />
     <property role="TrG5h" value="ExpressionAlternative" />
     <property role="EcuMT" value="1495894287938057293" />
-    <ref role="1TJDcQ" node="1Fk50g35gTs" resolve="NonOptionalAlternative" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
     <node concept="1TJgyj" id="1j2uYRA5nhg" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20lbJX" value="1" />
@@ -459,8 +462,11 @@
     </node>
     <node concept="M6xJ_" id="1j2uYRA5nhe" role="lGtFl">
       <property role="Hh88m" value="ExpressionAlternative" />
-      <node concept="trNpa" id="7jz$C9KMgMw" role="EQaZv">
-        <ref role="trN6q" to="tpee:fz3vP1J" resolve="Expression" />
+      <node concept="trNpa" id="3BzdcH2JcJn" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+      <node concept="tn0Fv" id="3BzdcH2J6BH" role="HhnKV">
+        <property role="tnX3d" value="true" />
       </node>
     </node>
   </node>
