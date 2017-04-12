@@ -198,7 +198,7 @@
       <property role="20kJfa" value="constraints" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="2333173194972104048" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+      <ref role="20lvS9" node="63cq5TSo7xX" resolve="Constraint" />
     </node>
     <node concept="PrWs8" id="7Ufy5VQFkRH" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -534,7 +534,7 @@
     <property role="TrG5h" value="Constraint" />
     <property role="3GE5qa" value="Constraints" />
     <property role="EcuMT" value="6975064677845858429" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <ref role="1TJDcQ" to="tpee:fzclF8j" resolve="ExpressionStatement" />
   </node>
   <node concept="1TIwiD" id="_uCk0nlSop">
     <property role="3GE5qa" value="Constraints" />

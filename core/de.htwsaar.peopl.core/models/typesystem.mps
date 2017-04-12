@@ -80,6 +80,7 @@
       <concept id="1216383287005" name="jetbrains.mps.lang.typesystem.structure.QuickFixExecuteBlock" flags="in" index="Q5ZZ6" />
       <concept id="1216383337216" name="jetbrains.mps.lang.typesystem.structure.ConceptFunctionParameter_node" flags="nn" index="Q6c8r" />
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
+        <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1766949807893591548" name="overridesFun" index="bX4a1" />
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -171,11 +172,11 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="yl5h16jrlG" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xf8r:6K8EDSn5e7h" />
+                      <ref role="3Tt5mk" to="xf8r:6K8EDSn5e7h" resolve="vpIntermediate" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="yl5h16jrvh" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                    <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="yl5h16jrAg" role="37vLTx">
@@ -201,11 +202,11 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="yl5h16jrSk" role="2OqNvi">
-                      <ref role="3Tt5mk" to="xf8r:5qz55Ysv7Eb" />
+                      <ref role="3Tt5mk" to="xf8r:5qz55Ysv7Eb" resolve="moduleIntermediate" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="yl5h16jtlD" role="2OqNvi">
-                    <ref role="3Tt5mk" to="xf8r:5qz55Ysv7DF" />
+                    <ref role="3Tt5mk" to="xf8r:5qz55Ysv7DF" resolve="fragmentReference" />
                   </node>
                 </node>
                 <node concept="1eOMI4" id="yl5h16jrBT" role="37vLTx">
@@ -373,6 +374,39 @@
     <node concept="1YaCAy" id="1UqIoCVU2is" role="1YuTPh">
       <property role="TrG5h" value="expression" />
       <ref role="1YaFvo" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4nWeZLtr07i">
+    <property role="TrG5h" value="check_Constraint" />
+    <property role="3GE5qa" value="Constraints" />
+    <property role="18ip37" value="true" />
+    <node concept="3clFbS" id="4nWeZLtr07j" role="18ibNy">
+      <node concept="3clFbJ" id="4nWeZLtr07v" role="3cqZAp">
+        <node concept="3clFbS" id="4nWeZLtr07x" role="3clFbx">
+          <node concept="3SKdUt" id="4nWeZLtr1oR" role="3cqZAp">
+            <node concept="3SKdUq" id="4nWeZLtr1oT" role="3SKWNk">
+              <property role="3SKdUp" value="do nothing" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="4nWeZLtr10v" role="3clFbw">
+          <node concept="2OqwBi" id="4nWeZLtr0kb" role="2Oq$k0">
+            <node concept="1YBJjd" id="4nWeZLtr07I" role="2Oq$k0">
+              <ref role="1YBMHb" node="4nWeZLtr07l" resolve="constraint" />
+            </node>
+            <node concept="2Rxl7S" id="4nWeZLtr0G$" role="2OqNvi" />
+          </node>
+          <node concept="1mIQ4w" id="4nWeZLtr1a0" role="2OqNvi">
+            <node concept="chp4Y" id="4nWeZLtr1bN" role="cj9EA">
+              <ref role="cht4Q" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4nWeZLtr07l" role="1YuTPh">
+      <property role="TrG5h" value="constraint" />
+      <ref role="1YaFvo" to="xf8r:63cq5TSo7xX" resolve="Constraint" />
     </node>
   </node>
 </model>
