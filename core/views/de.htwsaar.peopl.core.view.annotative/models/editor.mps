@@ -248,7 +248,10 @@
                 <node concept="2YIFZM" id="25mTXKUGJ_d" role="33vP2m">
                   <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
                   <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
-                  <node concept="pncrf" id="25mTXKUGJAi" role="37wK5m" />
+                  <node concept="2OqwBi" id="nBYAaxA8f2" role="37wK5m">
+                    <node concept="pncrf" id="25mTXKUGJAi" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="nBYAaxA8vg" role="2OqNvi" />
+                  </node>
                 </node>
               </node>
             </node>
