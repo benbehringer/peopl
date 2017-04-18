@@ -13619,6 +13619,33 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1EW$7SZZHCr" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="aggregateStatementsIntoBlock" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="1EW$7SZZHCs" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1EW$7SZZIzd" role="3clF45" />
+      <node concept="3clFbS" id="1EW$7SZZHCu" role="3clF47" />
+      <node concept="37vLTG" id="1EW$7SZZI$h" role="3clF46">
+        <property role="TrG5h" value="startStatement" />
+        <node concept="3Tqbb2" id="1EW$7SZZI$g" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZI$X" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3Tqbb2" id="1EW$7SZZI_d" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZI_Y" role="3clF46">
+        <property role="TrG5h" value="addNextNodes" />
+        <node concept="10P_77" id="1EW$7SZZIAg" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZIB5" role="3clF46">
+        <property role="TrG5h" value="includeStartStatement" />
+        <node concept="10P_77" id="1EW$7SZZIBp" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13hLZK" id="6BiMxHywZso" role="13h7CW">
       <node concept="3clFbS" id="6BiMxHywZsp" role="2VODD2" />
     </node>
