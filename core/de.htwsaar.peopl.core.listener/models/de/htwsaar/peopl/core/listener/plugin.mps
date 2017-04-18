@@ -5477,6 +5477,31 @@
                               </node>
                             </node>
                           </node>
+                          <node concept="3SKdUt" id="1dvU_wNVbQg" role="3cqZAp">
+                            <node concept="3SKdUq" id="1dvU_wNVbQi" role="3SKWNk">
+                              <property role="3SKdUp" value="use the DataKeyHelper to get the current editedNode. There's no other way to check if" />
+                            </node>
+                          </node>
+                          <node concept="3SKdUt" id="1dvU_wNVcAs" role="3cqZAp">
+                            <node concept="3SKdUq" id="1dvU_wNVcAu" role="3SKWNk">
+                              <property role="3SKdUp" value="we edit a ModularCompilationUnit" />
+                            </node>
+                          </node>
+                          <node concept="3cpWs8" id="2f8PQpnEb2x" role="3cqZAp">
+                            <node concept="3cpWsn" id="2f8PQpnEb2$" role="3cpWs9">
+                              <property role="TrG5h" value="editedNode" />
+                              <node concept="3Tqbb2" id="2f8PQpnEb2v" role="1tU5fm" />
+                              <node concept="2OqwBi" id="2f8PQpnEcgP" role="33vP2m">
+                                <node concept="2YIFZM" id="2f8PQpnEbwS" role="2Oq$k0">
+                                  <ref role="37wK5l" to="zur:5v03mDvy9yX" resolve="getCurrentEditorIfPossible" />
+                                  <ref role="1Pybhc" to="zur:23CK2sgPD0j" resolve="PeoplDataKeyHelper" />
+                                </node>
+                                <node concept="liA8E" id="2f8PQpnEig2" role="2OqNvi">
+                                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
                           <node concept="3SKdUt" id="1dvU_wNVfi7" role="3cqZAp">
                             <node concept="3SKdUq" id="1dvU_wNVfi9" role="3SKWNk">
                               <property role="3SKdUp" value="SideTransformInfo interferes with the retrieval of the runtime, filter it with this if condition" />
@@ -5541,31 +5566,6 @@
                                     </node>
                                   </node>
                                   <node concept="3clFbH" id="2f8PQpnE7_P" role="3cqZAp" />
-                                  <node concept="3SKdUt" id="1dvU_wNVbQg" role="3cqZAp">
-                                    <node concept="3SKdUq" id="1dvU_wNVbQi" role="3SKWNk">
-                                      <property role="3SKdUp" value="use the DataKeyHelper to get the current editedNode. There's no other way to check if" />
-                                    </node>
-                                  </node>
-                                  <node concept="3SKdUt" id="1dvU_wNVcAs" role="3cqZAp">
-                                    <node concept="3SKdUq" id="1dvU_wNVcAu" role="3SKWNk">
-                                      <property role="3SKdUp" value="we edit a ModularCompilationUnit" />
-                                    </node>
-                                  </node>
-                                  <node concept="3cpWs8" id="2f8PQpnEb2x" role="3cqZAp">
-                                    <node concept="3cpWsn" id="2f8PQpnEb2$" role="3cpWs9">
-                                      <property role="TrG5h" value="editedNode" />
-                                      <node concept="3Tqbb2" id="2f8PQpnEb2v" role="1tU5fm" />
-                                      <node concept="2OqwBi" id="2f8PQpnEcgP" role="33vP2m">
-                                        <node concept="2YIFZM" id="2f8PQpnEbwS" role="2Oq$k0">
-                                          <ref role="37wK5l" to="zur:5v03mDvy9yX" resolve="getCurrentEditorIfPossible" />
-                                          <ref role="1Pybhc" to="zur:23CK2sgPD0j" resolve="PeoplDataKeyHelper" />
-                                        </node>
-                                        <node concept="liA8E" id="2f8PQpnEig2" role="2OqNvi">
-                                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
                                   <node concept="3clFbH" id="1dvU_wNVb6a" role="3cqZAp" />
                                   <node concept="3SKdUt" id="uNE9fg5w5W" role="3cqZAp">
                                     <node concept="3SKdUq" id="uNE9fg5w5Y" role="3SKWNk">
@@ -5818,7 +5818,17 @@
                                 </node>
                               </node>
                             </node>
-                            <node concept="1Wc70l" id="4_juaBmp0TB" role="3clFbw">
+                            <node concept="1Wc70l" id="3ilOAIrG2$v" role="3clFbw">
+                              <node concept="2OqwBi" id="3ilOAIrG3d0" role="3uHU7w">
+                                <node concept="37vLTw" id="3ilOAIrG33j" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2f8PQpnEb2$" resolve="editedNode" />
+                                </node>
+                                <node concept="1mIQ4w" id="3ilOAIrG3w$" role="2OqNvi">
+                                  <node concept="chp4Y" id="3ilOAIrG3zG" role="cj9EA">
+                                    <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="1Wc70l" id="5xFWr$cctmq" role="3uHU7B">
                                 <node concept="3fqX7Q" id="NTaetMdaFz" role="3uHU7B">
                                   <node concept="1rXfSq" id="NTaetMdaF_" role="3fr31v">
@@ -5841,23 +5851,6 @@
                                       <ref role="37wK5l" to="zur:7pJcSVRDGcN" resolve="getBypass" />
                                     </node>
                                   </node>
-                                </node>
-                              </node>
-                              <node concept="1eOMI4" id="4_juaBmp4lD" role="3uHU7w">
-                                <node concept="2OqwBi" id="4_juaBmp5He" role="1eOMHV">
-                                  <node concept="2OqwBi" id="4_juaBmp55u" role="2Oq$k0">
-                                    <node concept="37vLTw" id="4_juaBmp4TE" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="5p4tr4locEN" resolve="node" />
-                                    </node>
-                                    <node concept="2Xjw5R" id="4_juaBmp5r9" role="2OqNvi">
-                                      <node concept="1xMEDy" id="4_juaBmp5rb" role="1xVPHs">
-                                        <node concept="chp4Y" id="4_juaBmp5wq" role="ri$Ld">
-                                          <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="3x8VRR" id="4_juaBmp69r" role="2OqNvi" />
                                 </node>
                               </node>
                             </node>
