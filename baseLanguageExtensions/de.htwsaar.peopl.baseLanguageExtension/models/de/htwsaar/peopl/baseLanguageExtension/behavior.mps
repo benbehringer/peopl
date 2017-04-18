@@ -6303,6 +6303,52 @@
       </node>
       <node concept="3cqZAl" id="5p4tr4lq5kJ" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="1EW$7SZZIC9" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="aggregateStatementsIntoBlock" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="kpvh:1EW$7SZZHCr" resolve="aggregateStatementsIntoBlock" />
+      <node concept="3Tm1VV" id="1EW$7SZZICa" role="1B3o_S" />
+      <node concept="3clFbS" id="1EW$7SZZICl" role="3clF47">
+        <node concept="3cpWs6" id="1EW$7T01c4o" role="3cqZAp">
+          <node concept="BsUDl" id="1EW$7T01c8q" role="3cqZAk">
+            <ref role="37wK5l" node="5SRm4pnBMJo" resolve="aggregateStatementsIntoBlock" />
+            <node concept="37vLTw" id="1EW$7T01cvj" role="37wK5m">
+              <ref role="3cqZAo" node="1EW$7SZZICm" resolve="startStatement" />
+            </node>
+            <node concept="37vLTw" id="1EW$7T01czw" role="37wK5m">
+              <ref role="3cqZAo" node="1EW$7SZZICo" resolve="module" />
+            </node>
+            <node concept="37vLTw" id="1EW$7T01cBO" role="37wK5m">
+              <ref role="3cqZAo" node="1EW$7SZZICq" resolve="addNextNodes" />
+            </node>
+            <node concept="37vLTw" id="1EW$7T01cGi" role="37wK5m">
+              <ref role="3cqZAo" node="1EW$7SZZICs" resolve="includeStartStatement" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZICm" role="3clF46">
+        <property role="TrG5h" value="startStatement" />
+        <node concept="3Tqbb2" id="1EW$7SZZICn" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZICo" role="3clF46">
+        <property role="TrG5h" value="module" />
+        <node concept="3Tqbb2" id="1EW$7SZZICp" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6K8EDSn5d7G" resolve="Module" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZICq" role="3clF46">
+        <property role="TrG5h" value="addNextNodes" />
+        <node concept="10P_77" id="1EW$7SZZICr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1EW$7SZZICs" role="3clF46">
+        <property role="TrG5h" value="includeStartStatement" />
+        <node concept="10P_77" id="1EW$7SZZICt" role="1tU5fm" />
+      </node>
+      <node concept="3Tqbb2" id="1EW$7SZZICu" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="4qvLkVcGXOx">
     <property role="3GE5qa" value="CoreExtensions" />
