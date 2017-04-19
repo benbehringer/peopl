@@ -16,6 +16,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="xfo5" ref="r:dfa2c56b-b183-4ac7-8ae0-e1a0b6082999(de.htwsaar.peopl.projectview.modular.plugin)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
@@ -279,6 +280,17 @@
     </node>
     <node concept="tnohg" id="5p4tr4ltYY3" role="tncku">
       <node concept="3clFbS" id="5p4tr4ltYY4" role="2VODD2">
+        <node concept="3clFbF" id="G57OOPaqhk" role="3cqZAp">
+          <node concept="2OqwBi" id="G57OOPa_OS" role="3clFbG">
+            <node concept="2YIFZM" id="G57OOPay18" role="2Oq$k0">
+              <ref role="1Pybhc" to="zur:7pJcSVRD8nb" resolve="ActionListenerBypassCache" />
+              <ref role="37wK5l" to="zur:7pJcSVRDbzc" resolve="getInstance" />
+            </node>
+            <node concept="liA8E" id="G57OOPaDLX" role="2OqNvi">
+              <ref role="37wK5l" to="zur:7pJcSVRDFUh" resolve="setBypassTrue" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="5p4tr4lu377" role="3cqZAp">
           <node concept="3cpWsn" id="5p4tr4lu375" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -705,9 +717,9 @@
                           <node concept="37vLTw" id="5p4tr4lvUXb" role="37wK5m">
                             <ref role="3cqZAo" node="5p4tr4lu9Yb" resolve="currentRefineModule" />
                           </node>
-                          <node concept="2OqwBi" id="5p4tr4lvVtG" role="37wK5m">
-                            <node concept="2WthIp" id="5p4tr4lvVaL" role="2Oq$k0" />
-                            <node concept="3gHZIF" id="5p4tr4lvW33" role="2OqNvi">
+                          <node concept="2OqwBi" id="lEMblBwFnS" role="37wK5m">
+                            <node concept="2WthIp" id="lEMblBwC3R" role="2Oq$k0" />
+                            <node concept="3gHZIF" id="lEMblBwJLr" role="2OqNvi">
                               <ref role="2WH_rO" node="3272v3NYdlH" resolve="currentNode" />
                             </node>
                           </node>
@@ -790,6 +802,17 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="G57OOPaDNU" role="3cqZAp">
+              <node concept="2OqwBi" id="G57OOPaDNV" role="3clFbG">
+                <node concept="2YIFZM" id="G57OOPaDNW" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:7pJcSVRDbzc" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:7pJcSVRD8nb" resolve="ActionListenerBypassCache" />
+                </node>
+                <node concept="liA8E" id="G57OOPaDNX" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:7pJcSVRDFWb" resolve="setBypassFalse" />
                 </node>
               </node>
             </node>
