@@ -62,6 +62,7 @@
     <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" />
     <import index="k4jl" ref="r:35e61099-f609-4937-843b-e45e5c3797f1(com.mbeddr.mpsutil.projectview.plugin)" />
+    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -3323,6 +3324,17 @@
             <property role="3SKdUp" value="Find Information" />
           </node>
         </node>
+        <node concept="3clFbF" id="lEMblBwgOE" role="3cqZAp">
+          <node concept="2OqwBi" id="lEMblBwoEv" role="3clFbG">
+            <node concept="2YIFZM" id="lEMblBwlY1" role="2Oq$k0">
+              <ref role="37wK5l" to="zur:7pJcSVRDbzc" resolve="getInstance" />
+              <ref role="1Pybhc" to="zur:7pJcSVRD8nb" resolve="ActionListenerBypassCache" />
+            </node>
+            <node concept="liA8E" id="lEMblBwqWb" role="2OqNvi">
+              <ref role="37wK5l" to="zur:7pJcSVRDFUh" resolve="setBypassTrue" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3272v3NYPNN" role="3cqZAp">
           <node concept="3cpWsn" id="3272v3NYPNQ" role="3cpWs9">
             <property role="TrG5h" value="currentPClass" />
@@ -3710,9 +3722,6 @@
             </node>
           </node>
         </node>
-        <node concept="3SKdUt" id="DS4tmG88rG" role="3cqZAp">
-          <node concept="3SKdUq" id="DS4tmG88rI" role="3SKWNk" />
-        </node>
         <node concept="3clFbJ" id="5o$A43mm4bX" role="3cqZAp">
           <node concept="3clFbS" id="5o$A43mm4bY" role="3clFbx">
             <node concept="3cpWs8" id="5o$A43mm4bZ" role="3cqZAp">
@@ -3913,6 +3922,17 @@
               </node>
               <node concept="37vLTw" id="DS4tmG7pez" role="2GsD0m">
                 <ref role="3cqZAo" node="5o$A43mm4c0" resolve="selectedElements" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="lEMblBwu4W" role="3cqZAp">
+              <node concept="2OqwBi" id="lEMblBwu4X" role="3clFbG">
+                <node concept="2YIFZM" id="lEMblBwu4Y" role="2Oq$k0">
+                  <ref role="37wK5l" to="zur:7pJcSVRDbzc" resolve="getInstance" />
+                  <ref role="1Pybhc" to="zur:7pJcSVRD8nb" resolve="ActionListenerBypassCache" />
+                </node>
+                <node concept="liA8E" id="lEMblBwu4Z" role="2OqNvi">
+                  <ref role="37wK5l" to="zur:7pJcSVRDFWb" resolve="setBypassFalse" />
+                </node>
               </node>
             </node>
           </node>
