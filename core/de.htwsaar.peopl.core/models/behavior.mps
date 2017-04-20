@@ -290,6 +290,9 @@
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
+      </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
@@ -5834,6 +5837,18 @@
         <property role="TrG5h" value="potentialWrapper" />
         <node concept="3Tqbb2" id="2KmZcpndpE3" role="1tU5fm" />
       </node>
+      <node concept="P$JXv" id="SdWgf5Vd3v" role="lGtFl">
+        <node concept="TZ5HI" id="SdWgf5Vd3w" role="3nqlJM">
+          <node concept="TZ5HA" id="SdWgf5Vd3x" role="3HnX3l">
+            <node concept="1dT_AC" id="SdWgf5Vdn4" role="1dT_Ay">
+              <property role="1dT_AB" value=" use canBeWrapped in VariabilityAspectRuntime instead" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="SdWgf5Vd3y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
     </node>
     <node concept="13i0hz" id="1Fk50g357yE" role="13h7CS">
       <property role="TrG5h" value="getWrappee" />
@@ -6100,6 +6115,18 @@
       <node concept="37vLTG" id="z4oRObZmOY" role="3clF46">
         <property role="TrG5h" value="potentialWrapper" />
         <node concept="3Tqbb2" id="z4oRObZmOX" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="SdWgf5T0cM" role="lGtFl">
+        <node concept="TZ5HI" id="SdWgf5T0cN" role="3nqlJM">
+          <node concept="TZ5HA" id="SdWgf5T0cO" role="3HnX3l">
+            <node concept="1dT_AC" id="SdWgf5T1di" role="1dT_Ay">
+              <property role="1dT_AB" value=" use isWrapper in runtime instead" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="SdWgf5T0cP" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="1X3_iC" id="3_Ts9HS9JP$" role="lGtFl">
@@ -6631,6 +6658,18 @@
       <node concept="37vLTG" id="278ffzGzik0" role="3clF46">
         <property role="TrG5h" value="wrapperStatement" />
         <node concept="3Tqbb2" id="278ffzGzijZ" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="SdWgf5SZ5T" role="lGtFl">
+        <node concept="TZ5HI" id="SdWgf5SZ5U" role="3nqlJM">
+          <node concept="TZ5HA" id="SdWgf5SZ5V" role="3HnX3l">
+            <node concept="1dT_AC" id="SdWgf5SZbT" role="1dT_Ay">
+              <property role="1dT_AB" value=" Use assignWrapper in VariabilityAspectRuntime" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="SdWgf5SZ5W" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
       </node>
     </node>
     <node concept="13hLZK" id="7o3bbrGnmOm" role="13h7CW">
