@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="ovfz" ref="r:eb6286b8-ef89-4955-b26e-5b8680512c44(de.htwsaar.peopl.core.variabilityDeclaration.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
@@ -43,6 +44,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -152,11 +156,11 @@
                 <ref role="3cqZAo" node="1h5QCpZb50K" resolve="ancestor" />
               </node>
               <node concept="3TrEf2" id="1h5QCpZb5rs" role="2OqNvi">
-                <ref role="3Tt5mk" to="ovfz:1h5QCpZ0F6e" />
+                <ref role="3Tt5mk" to="ovfz:1h5QCpZ0F6e" resolve="applicableConcept" />
               </node>
             </node>
             <node concept="3TrEf2" id="1h5QCpZb5BK" role="2OqNvi">
-              <ref role="3Tt5mk" to="tp25:2iMJRNxweHl" />
+              <ref role="3Tt5mk" to="tp25:2iMJRNxweHl" resolve="conceptDeclaration" />
             </node>
           </node>
         </node>
@@ -241,6 +245,31 @@
     <node concept="1YaCAy" id="2W3sxLBss0L" role="1YuTPh">
       <property role="TrG5h" value="fragment" />
       <ref role="1YaFvo" to="ovfz:2W3sxLBsrY$" resolve="ConceptFunctionParameter_fragment" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4GdSHYm3A$K">
+    <property role="TrG5h" value="typeof_ConceptFunctionParameter_module" />
+    <node concept="3clFbS" id="4GdSHYm3A$L" role="18ibNy">
+      <node concept="1Z5TYs" id="4GdSHYm3APV" role="3cqZAp">
+        <node concept="mw_s8" id="4GdSHYm3AQf" role="1ZfhKB">
+          <node concept="2c44tf" id="4GdSHYm3AQb" role="mwGJk">
+            <node concept="3uibUv" id="4GdSHYm3JIw" role="2c44tc">
+              <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="4GdSHYm3APY" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4GdSHYm3A_V" role="mwGJk">
+            <node concept="1YBJjd" id="4GdSHYm3ABF" role="1Z2MuG">
+              <ref role="1YBMHb" node="4GdSHYm3A$N" resolve="conceptFunctionParameter_module" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4GdSHYm3A$N" role="1YuTPh">
+      <property role="TrG5h" value="conceptFunctionParameter_module" />
+      <ref role="1YaFvo" to="ovfz:4GdSHYm3A$D" resolve="ConceptFunctionParameter_module" />
     </node>
   </node>
 </model>

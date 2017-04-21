@@ -191,6 +191,10 @@
         <ref role="1NtTu8" to="ovfz:5HPu$ZqLLqu" resolve="projectViewConfig" />
       </node>
       <node concept="3F0ifn" id="5HPu$ZqLMIh" role="3EZMnx" />
+      <node concept="3F1sOY" id="4GdSHYm3UF8" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:4GdSHYm3UEJ" resolve="dependencyCheck" />
+      </node>
+      <node concept="3F0ifn" id="4GdSHYm3UFr" role="3EZMnx" />
       <node concept="2iRkQZ" id="14Db1DY90mA" role="2iSdaV" />
     </node>
   </node>
@@ -1051,6 +1055,18 @@
   </node>
   <node concept="3p36aQ" id="q735wx1hfd">
     <ref role="aqKnT" to="ovfz:2W3sxLBsrY$" resolve="ConceptFunctionParameter_fragment" />
+  </node>
+  <node concept="24kQdi" id="4GdSHYm3UB2">
+    <ref role="1XX52x" to="ovfz:4GdSHYm3A$C" resolve="DependencyCheckerConfig" />
+    <node concept="3EZMnI" id="4GdSHYm3UB4" role="2wV5jI">
+      <node concept="3F0ifn" id="4GdSHYm3UBb" role="3EZMnx">
+        <property role="3F0ifm" value="Specify which method gets called when invoking RebuildModuleDependencies" />
+      </node>
+      <node concept="3F1sOY" id="4GdSHYm3UEF" role="3EZMnx">
+        <ref role="1NtTu8" to="ovfz:4GdSHYm3Uey" resolve="dependencyChecker" />
+      </node>
+      <node concept="2iRkQZ" id="4GdSHYm3UB7" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

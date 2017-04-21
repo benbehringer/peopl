@@ -125,6 +125,12 @@
       <property role="IQ2ns" value="6590308113118074526" />
       <ref role="20lvS9" node="5HPu$ZqLL4M" resolve="ProjectViewConfig" />
     </node>
+    <node concept="1TJgyj" id="4GdSHYm3UEJ" role="1TKVEi">
+      <property role="IQ2ns" value="5408228177465027247" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dependencyCheck" />
+      <ref role="20lvS9" node="4GdSHYm3A$C" resolve="DependencyCheckerConfig" />
+    </node>
     <node concept="PrWs8" id="BFOVkKtF5k" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -458,6 +464,29 @@
       <property role="IQ2ns" value="6590308113118073855" />
       <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4GdSHYm3A$C">
+    <property role="EcuMT" value="5408228177464944936" />
+    <property role="TrG5h" value="DependencyCheckerConfig" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4GdSHYm3Uey" role="1TKVEi">
+      <property role="IQ2ns" value="5408228177465025442" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="dependencyChecker" />
+      <ref role="20lvS9" node="4GdSHYm3JJh" resolve="DependencyCheckingFunction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4GdSHYm3A$D">
+    <property role="EcuMT" value="5408228177464944937" />
+    <property role="TrG5h" value="ConceptFunctionParameter_module" />
+    <property role="34LRSv" value="module" />
+    <property role="R4oN_" value="SModule to check" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="4GdSHYm3JJh">
+    <property role="EcuMT" value="5408228177464982481" />
+    <property role="TrG5h" value="DependencyCheckingFunction" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 
