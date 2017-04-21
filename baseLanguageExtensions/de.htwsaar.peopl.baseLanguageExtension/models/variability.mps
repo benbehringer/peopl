@@ -9,6 +9,7 @@
   <imports>
     <import index="ao9j" ref="r:b80f9e70-f212-4520-8f6d-e3a57fb05da2(de.htwsaar.peopl.view.modular.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="6r0h" ref="r:6dcc499a-bf0b-47fa-8aa3-f9e8e7bc5ac9(de.htwsaar.peopl.baseLanguageExtension.typesystem)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -140,6 +141,11 @@
         <property id="5665240855309640876" name="lang" index="25n1SA" />
         <child id="9122230446655928280" name="wrapperWrappeeBlocks" index="aHlIq" />
       </concept>
+      <concept id="5408228177464982481" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.DependencyCheckingFunction" flags="ig" index="3t0L$e" />
+      <concept id="5408228177464944937" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_module" flags="ng" index="3t0SJQ" />
+      <concept id="5408228177464944936" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.DependencyCheckerConfig" flags="ng" index="3t0SJR">
+        <child id="5408228177465025442" name="dependencyChecker" index="3t0$5X" />
+      </concept>
       <concept id="1460813925342948920" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SpecializedAlternativeBehavior" flags="ng" index="1FhRiY">
         <child id="1460813925342949765" name="behavior" index="1FhQG3" />
         <child id="1460813925342949774" name="applicableConcept" index="1FhQG8" />
@@ -158,6 +164,7 @@
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
         <child id="3387676811032917559" name="editorHandlingConfig" index="18sCgF" />
+        <child id="5408228177465027247" name="dependencyCheck" index="3t0$xK" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1251,6 +1258,19 @@
     <node concept="21GAHX" id="5HPu$ZqM3ba" role="21GANh">
       <node concept="1G2zp1" id="5HPu$ZqMd0t" role="21GAAK">
         <ref role="35c_gD" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
+      </node>
+    </node>
+    <node concept="3t0SJR" id="3On0da1bM29" role="3t0$xK">
+      <node concept="3t0L$e" id="3On0da1bN48" role="3t0$5X">
+        <node concept="3clFbS" id="3On0da1bN49" role="2VODD2">
+          <node concept="3clFbF" id="3On0da1bN4v" role="3cqZAp">
+            <node concept="2YIFZM" id="3On0da1bN5m" role="3clFbG">
+              <ref role="37wK5l" to="6r0h:4GdSHYm1QcN" resolve="checkDependencies" />
+              <ref role="1Pybhc" to="6r0h:4T3c2fISG75" resolve="BaseLanguageDependencyChecker" />
+              <node concept="3t0SJQ" id="3On0da1bN5N" role="37wK5m" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>

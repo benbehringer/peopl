@@ -412,8 +412,8 @@
                   <node concept="3clFbS" id="4DW_hyhBwKe" role="3clF47">
                     <node concept="3clFbF" id="4DW_hyhBzi8" role="3cqZAp">
                       <node concept="2YIFZM" id="4DW_hyhBziJ" role="3clFbG">
-                        <ref role="37wK5l" to="6r0h:4T3c2fISHW1" resolve="checkDependencies" />
                         <ref role="1Pybhc" to="6r0h:4T3c2fISG75" resolve="BaseLanguageDependencyChecker" />
+                        <ref role="37wK5l" to="6r0h:4GdSHYm1QcN" resolve="checkDependencies" />
                         <node concept="37vLTw" id="4DW_hyhBzmd" role="37wK5m">
                           <ref role="3cqZAo" node="4DW_hyhBwKb" resolve="sModule" />
                         </node>
