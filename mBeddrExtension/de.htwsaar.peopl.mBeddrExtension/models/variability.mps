@@ -10,6 +10,7 @@
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="y54n" ref="r:9c15e354-92cb-47e0-8d53-9e77df1450b4(de.htwsaar.peopl.mBeddrExtension.typesystem)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -130,6 +131,11 @@
         <property id="5665240855309640876" name="lang" index="25n1SA" />
         <child id="9122230446655928280" name="wrapperWrappeeBlocks" index="aHlIq" />
       </concept>
+      <concept id="5408228177464982481" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.DependencyCheckingFunction" flags="ig" index="3t0L$e" />
+      <concept id="5408228177464944937" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_module" flags="ng" index="3t0SJQ" />
+      <concept id="5408228177464944936" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.DependencyCheckerConfig" flags="ng" index="3t0SJR">
+        <child id="5408228177465025442" name="dependencyChecker" index="3t0$5X" />
+      </concept>
       <concept id="1460813925342948920" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SpecializedAlternativeBehavior" flags="ng" index="1FhRiY">
         <child id="1460813925342949765" name="behavior" index="1FhQG3" />
         <child id="1460813925342949774" name="applicableConcept" index="1FhQG8" />
@@ -145,6 +151,7 @@
         <child id="8786235618734540282" name="alternativeConfig" index="uo7X4" />
         <child id="8786235618734540280" name="assignVariabilityConfig" index="uo7X6" />
         <child id="3387676811032917559" name="editorHandlingConfig" index="18sCgF" />
+        <child id="5408228177465027247" name="dependencyCheck" index="3t0$xK" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -656,6 +663,19 @@
     <node concept="21GAHX" id="5HPu$ZqMdeX" role="21GANh">
       <node concept="1G2zp1" id="5HPu$ZqMdrP" role="21GAAK">
         <ref role="35c_gD" to="gj7z:5HPu$ZqJ8jv" resolve="ModularCCompilationUnit" />
+      </node>
+    </node>
+    <node concept="3t0SJR" id="4GdSHYm6ynD" role="3t0$xK">
+      <node concept="3t0L$e" id="4GdSHYm6ynJ" role="3t0$5X">
+        <node concept="3clFbS" id="4GdSHYm6ynK" role="2VODD2">
+          <node concept="3clFbF" id="4GdSHYm6yql" role="3cqZAp">
+            <node concept="2YIFZM" id="4GdSHYm6yrc" role="3clFbG">
+              <ref role="37wK5l" to="y54n:2RLDy3Pzrd4" resolve="checkDependencies" />
+              <ref role="1Pybhc" to="y54n:2RLDy3Pzrbg" resolve="MBeddrDependencyChecker" />
+              <node concept="3t0SJQ" id="4GdSHYm6yrC" role="37wK5m" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
