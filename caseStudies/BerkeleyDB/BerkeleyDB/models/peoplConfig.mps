@@ -77,7 +77,7 @@
     </language>
     <language id="505b86b7-3a95-44b0-823f-afd50a2eafaa" name="de.htwsaar.peopl.core.featureConfig">
       <concept id="7037608403905749630" name="de.htwsaar.peopl.core.featureConfig.structure.FeatureConnector" flags="ng" index="mGrBK">
-        <reference id="7037608403905758472" name="connectedFeature" index="mGtU6" />
+        <reference id="7037608403905758472" name="feature" index="mGtU6" />
       </concept>
       <concept id="7037608403905317098" name="de.htwsaar.peopl.core.featureConfig.structure.Variant" flags="ng" index="mJxd$">
         <reference id="3638754547147111635" name="singleModuleConfiguration" index="1XXgWC" />
@@ -85,7 +85,7 @@
       </concept>
       <concept id="7037608403905317116" name="de.htwsaar.peopl.core.featureConfig.structure.Partition" flags="ng" index="mJxdM">
         <child id="3060579791629672114" name="whenExpression" index="3WEweC" />
-        <child id="3060579791629672112" name="selectedModules" index="3WEweE" />
+        <child id="3060579791629672112" name="module" index="3WEweE" />
         <child id="3638754547146849476" name="operation" index="1XYgWZ" />
       </concept>
       <concept id="7037608403905313283" name="de.htwsaar.peopl.core.featureConfig.structure.ProductLineConfig" flags="ng" index="mJI6d">
@@ -25988,10 +25988,6 @@
         <property role="TrG5h" value="ModuleToFragment_1749525309125586368" />
         <ref role="3aRQSO" to="m6tf:1x7zZZfZ3SG" resolve="Fragment_1749525309125574188" />
       </node>
-      <node concept="3aRQSP" id="1x7zZZfZa5O" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_1749525309125599604" />
-        <ref role="3aRQSO" to="75si:1x7zZZfZ78M" resolve="Fragment_1749525309125587506" />
-      </node>
       <node concept="3aRQSP" id="1x7zZZfZemH" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_1749525309125617069" />
         <ref role="3aRQSO" to="po8y:1x7zZZfZbpC" resolve="Fragment_1749525309125604968" />
@@ -26071,6 +26067,10 @@
       <node concept="3aRQSP" id="2y7plEIvPQf" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_2920414323522100623" />
         <ref role="3aRQSO" to="po8y:2y7plEIvPJ3" resolve="Fragment_2920414323522100163" />
+      </node>
+      <node concept="3aRQSP" id="1udTg97io5Y" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_1697264432537239934" />
+        <ref role="3aRQSO" to="75si:1udTg97ikAC" resolve="Fragment_1697264432537225640" />
       </node>
     </node>
     <node concept="1Z4xEI" id="1Du7fA5I44Z" role="288GmO">
@@ -68508,13 +68508,6 @@
           <ref role="1V74G_" to="m6tf:1x7zZZfZ3SG" resolve="Fragment_1749525309125574188" />
         </node>
       </node>
-      <node concept="1V74G3" id="1x7zZZfZ78N" role="2$Fqj6">
-        <property role="TrG5h" value="VP_1749525309125587507" />
-        <node concept="1V74G$" id="1x7zZZfZ78O" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_1749525309125587508" />
-          <ref role="1V74G_" to="75si:1x7zZZfZ78M" resolve="Fragment_1749525309125587506" />
-        </node>
-      </node>
       <node concept="1V74G3" id="1x7zZZfZbpD" role="2$Fqj6">
         <property role="TrG5h" value="VP_1749525309125604969" />
         <node concept="1V74G$" id="1x7zZZfZbpE" role="1V74Gw">
@@ -68911,11 +68904,18 @@
           <ref role="1V74G_" to="m6tf:1vNpxl5Fo4t" resolve="Fragment_1725835323762376989" />
         </node>
       </node>
+      <node concept="1V74G3" id="1udTg97ikAD" role="2$Fqj6">
+        <property role="TrG5h" value="VP_1697264432537225641" />
+        <node concept="1V74G$" id="1udTg97ikAE" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_1697264432537225642" />
+          <ref role="1V74G_" to="75si:1udTg97ikAC" resolve="Fragment_1697264432537225640" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="6$_V4iGDnc6">
     <property role="TrG5h" value="MyModConf" />
-    <ref role="2M0niE" node="5PCLkhXIi9x" />
+    <ref role="2M0niE" node="5A9c4ERjkuW" />
     <node concept="u25OH" id="5PCLkhXIi9x" role="2M0niC">
       <node concept="2Hijyl" id="5PCLkhXIi9y" role="2Hjnvt">
         <node concept="u2itw" id="1m3ZvXg0K3E" role="3clFbG">
@@ -68944,26 +68944,36 @@
               <node concept="u2itw" id="5A9c4ERjkv7" role="3uHU7w">
                 <ref role="u2itx" node="3Mj07xyswvg" resolve="Logging_Finest" />
               </node>
-              <node concept="u2itq" id="5A9c4ERjkv8" role="3uHU7B">
-                <node concept="u2itw" id="5A9c4ERjkv9" role="3uHU7w">
-                  <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
+              <node concept="u2itq" id="FVBTWb2aIn" role="3uHU7B">
+                <node concept="u2itw" id="FVBTWb2aLl" role="3uHU7w">
+                  <ref role="u2itx" node="5gW6yGMa1KO" resolve="Logging_Base#Logging_Finest" />
                 </node>
-                <node concept="u2itq" id="5A9c4ERjkva" role="3uHU7B">
-                  <node concept="u2itw" id="5A9c4ERjkvb" role="3uHU7w">
-                    <ref role="u2itx" node="76PMcPR$hWn" resolve="CP_Bytes#Logging_Finest" />
+                <node concept="u2itq" id="FVBTWb2aB7" role="3uHU7B">
+                  <node concept="u2itq" id="5A9c4ERjkv8" role="3uHU7B">
+                    <node concept="u2itq" id="5A9c4ERjkva" role="3uHU7B">
+                      <node concept="u2itw" id="5A9c4ERjkvb" role="3uHU7w">
+                        <ref role="u2itx" node="76PMcPR$hWn" resolve="CP_Bytes#Logging_Finest" />
+                      </node>
+                      <node concept="u2itq" id="5A9c4ERjkvc" role="3uHU7B">
+                        <node concept="u2itw" id="5A9c4ERjkvd" role="3uHU7w">
+                          <ref role="u2itx" node="2xM8HVGaMHh" resolve="CP_Bytes#CP_Time" />
+                        </node>
+                        <node concept="u2itq" id="5A9c4ERjkve" role="3uHU7B">
+                          <node concept="u2itw" id="5A9c4ERjkvf" role="3uHU7B">
+                            <ref role="u2itx" node="6NxsX3v0wtX" resolve="CP_Bytes#CheckpointerDaemon" />
+                          </node>
+                          <node concept="u2itw" id="5A9c4ERjkvg" role="3uHU7w">
+                            <ref role="u2itx" node="76PMcPR$keK" resolve="CP_Time#Logging_Finest" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="u2itw" id="5A9c4ERjkv9" role="3uHU7w">
+                      <ref role="u2itx" node="3Mj07xysaZR" resolve="CheckpointerDaemon" />
+                    </node>
                   </node>
-                  <node concept="u2itq" id="5A9c4ERjkvc" role="3uHU7B">
-                    <node concept="u2itw" id="5A9c4ERjkvd" role="3uHU7w">
-                      <ref role="u2itx" node="2xM8HVGaMHh" resolve="CP_Bytes#CP_Time" />
-                    </node>
-                    <node concept="u2itq" id="5A9c4ERjkve" role="3uHU7B">
-                      <node concept="u2itw" id="5A9c4ERjkvf" role="3uHU7B">
-                        <ref role="u2itx" node="6NxsX3v0wtX" resolve="CP_Bytes#CheckpointerDaemon" />
-                      </node>
-                      <node concept="u2itw" id="5A9c4ERjkvg" role="3uHU7w">
-                        <ref role="u2itx" node="76PMcPR$keK" resolve="CP_Time#Logging_Finest" />
-                      </node>
-                    </node>
+                  <node concept="u2itw" id="FVBTWb2aDb" role="3uHU7w">
+                    <ref role="u2itx" node="3Mj07xyspA4" resolve="Logging_Base" />
                   </node>
                 </node>
               </node>
