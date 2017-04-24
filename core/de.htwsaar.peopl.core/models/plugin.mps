@@ -5835,6 +5835,15 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4GsCNocF_sJ" role="3cqZAp">
+          <node concept="3cpWsn" id="4GsCNocF_sM" role="3cpWs9">
+            <property role="TrG5h" value="checkingNode" />
+            <node concept="3Tqbb2" id="4GsCNocF_sH" role="1tU5fm" />
+            <node concept="37vLTw" id="4GsCNocF_FT" role="33vP2m">
+              <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6ovGhgdE0mx" role="3cqZAp">
           <node concept="3cpWsn" id="6ovGhgdE0my" role="3cpWs9">
             <property role="TrG5h" value="runtime" />
@@ -5842,6 +5851,33 @@
               <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
             </node>
             <node concept="10Nm6u" id="6ovGhgdE0o$" role="33vP2m" />
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4GsCNocF$6O" role="3cqZAp">
+          <node concept="3clFbS" id="4GsCNocF$6Q" role="3clFbx">
+            <node concept="3clFbF" id="4GsCNocFAE$" role="3cqZAp">
+              <node concept="37vLTI" id="4GsCNocFANK" role="3clFbG">
+                <node concept="2OqwBi" id="4GsCNocFB1_" role="37vLTx">
+                  <node concept="37vLTw" id="4GsCNocFAVa" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+                  </node>
+                  <node concept="1mfA1w" id="4GsCNocFBdx" role="2OqNvi" />
+                </node>
+                <node concept="37vLTw" id="4GsCNocFAEz" role="37vLTJ">
+                  <ref role="3cqZAo" node="4GsCNocF_sM" resolve="checkingNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4GsCNocF$mF" role="3clFbw">
+            <node concept="37vLTw" id="4GsCNocF$eR" role="2Oq$k0">
+              <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+            </node>
+            <node concept="1mIQ4w" id="4GsCNocF$DH" role="2OqNvi">
+              <node concept="chp4Y" id="4GsCNocF$Jg" role="cj9EA">
+                <ref role="cht4Q" to="xf8r:4GsCNocFo6a" resolve="IFeatureGroupVariableRef" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="2Gpval" id="6ovGhgdDXbg" role="3cqZAp">
@@ -5863,15 +5899,15 @@
                   </node>
                   <node concept="liA8E" id="6ovGhgdDXbq" role="2OqNvi">
                     <ref role="37wK5l" node="4qduh90iwds" resolve="varibilityAspectForLanguageOfNode" />
-                    <node concept="37vLTw" id="6ovGhgdDXbr" role="37wK5m">
-                      <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+                    <node concept="37vLTw" id="4GsCNocF_VW" role="37wK5m">
+                      <ref role="3cqZAo" node="4GsCNocF_sM" resolve="checkingNode" />
                     </node>
                   </node>
                 </node>
                 <node concept="liA8E" id="6ovGhgdDXbs" role="2OqNvi">
                   <ref role="37wK5l" to="ikxv:2xG5o$wDyan" resolve="isMatchingDescriptor" />
-                  <node concept="37vLTw" id="6ovGhgdDXbt" role="37wK5m">
-                    <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+                  <node concept="37vLTw" id="4GsCNocFA8L" role="37wK5m">
+                    <ref role="3cqZAo" node="4GsCNocF_sM" resolve="checkingNode" />
                   </node>
                 </node>
               </node>
@@ -5884,8 +5920,8 @@
                       </node>
                       <node concept="liA8E" id="6ovGhgdE14n" role="2OqNvi">
                         <ref role="37wK5l" node="4qduh90iwds" resolve="varibilityAspectForLanguageOfNode" />
-                        <node concept="37vLTw" id="6ovGhgdE16K" role="37wK5m">
-                          <ref role="3cqZAo" node="2W3sxLBsmXX" resolve="node" />
+                        <node concept="37vLTw" id="4GsCNocFAn1" role="37wK5m">
+                          <ref role="3cqZAo" node="4GsCNocF_sM" resolve="checkingNode" />
                         </node>
                       </node>
                     </node>
