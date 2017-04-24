@@ -612,5 +612,9 @@
       <ref role="20lvS9" node="EpVRRuwHnf" resolve="CompilationUnit" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4GsCNocFo6a">
+    <property role="EcuMT" value="5412380304728752522" />
+    <property role="TrG5h" value="IFeatureGroupVariableRef" />
+  </node>
 </model>
 

@@ -269,6 +269,9 @@
     <property role="TrG5h" value="FeatureBlockVarRefBaseLang" />
     <property role="EcuMT" value="3878150634562773362" />
     <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
+    <node concept="PrWs8" id="4GsCNocFtjB" role="PzmwI">
+      <ref role="PrY4T" to="xf8r:4GsCNocFo6a" resolve="IFeatureGroupVariableRef" />
+    </node>
   </node>
 </model>
 

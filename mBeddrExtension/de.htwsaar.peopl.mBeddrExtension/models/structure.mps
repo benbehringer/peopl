@@ -73,6 +73,9 @@
     <property role="R4oN_" value="var ref in feature block" />
     <property role="EcuMT" value="3878150634562475877" />
     <ref role="1TJDcQ" to="c4fa:1OcdQnyStpU" resolve="LocalVarRef" />
+    <node concept="PrWs8" id="4GsCNocFo$z" role="PzmwI">
+      <ref role="PrY4T" to="xf8r:4GsCNocFo6a" resolve="IFeatureGroupVariableRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5HPu$ZqJ8jv">
     <property role="TrG5h" value="ModularCCompilationUnit" />
