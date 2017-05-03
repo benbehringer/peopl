@@ -273,5 +273,10 @@
       <ref role="PrY4T" to="xf8r:4GsCNocFo6a" resolve="IFeatureGroupVariableRef" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2yEo8dq$Umg">
+    <property role="EcuMT" value="2930260624834536848" />
+    <property role="TrG5h" value="FeatureBlockStaticFieldRefBaseLang" />
+    <ref role="1TJDcQ" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+  </node>
 </model>
 
