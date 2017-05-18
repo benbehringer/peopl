@@ -40,6 +40,9 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
@@ -53,6 +56,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
@@ -84,8 +88,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -186,8 +200,15 @@
       </node>
       <node concept="3EZMnI" id="6mG5wL3gT2D" role="3EZMnx">
         <node concept="2iRkQZ" id="6mG5wL3gT2E" role="2iSdaV" />
-        <node concept="PMmxH" id="1h5QCpYZ$bc" role="3EZMnx">
-          <ref role="PMmxG" to="tqa7:1h5QCpYZzZR" resolve="NonOptionalAlternativeNode" />
+        <node concept="1X3_iC" id="6AbGZ5KkiLU" role="lGtFl">
+          <property role="3V$3am" value="childCellModel" />
+          <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
+          <node concept="PMmxH" id="1h5QCpYZ$bc" role="8Wnug">
+            <ref role="PMmxG" to="tqa7:1h5QCpYZzZR" resolve="NonOptionalAlternativeNode" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="6AbGZ5KkiYp" role="3EZMnx">
+          <ref role="1NtTu8" to="xf8r:14mWR7tAehm" resolve="alternative" />
         </node>
         <node concept="gc7cB" id="6mG5wL3gT6U" role="3EZMnx">
           <node concept="3VJUX4" id="6mG5wL3gT6V" role="3YsKMw">
