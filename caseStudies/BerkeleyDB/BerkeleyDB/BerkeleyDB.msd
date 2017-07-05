@@ -16,7 +16,7 @@
     <language slang="l:505b86b7-3a95-44b0-823f-afd50a2eafaa:de.htwsaar.peopl.core.featureConfig" version="0" />
     <language slang="l:42727bc4-0771-4379-872f-090530265ce4:de.htwsaar.peopl.core.moduleConfig" version="0" />
     <language slang="l:3b64420c-53d0-4c15-9e71-c9cecf76d9db:de.htwsaar.peopl.view.modular" version="0" />
-    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="4" />
+    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="0" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />

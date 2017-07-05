@@ -2,7 +2,7 @@
 <model ref="r:da4d9b61-121a-4909-a779-f1902cf37a71(com.sleepycat.je.util)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="0" />
     <use id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension" version="0" />
@@ -181,7 +181,6 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
-      <concept id="1068581242866" name="jetbrains.mps.baseLanguage.structure.LocalVariableReference" flags="nn" index="3cpWsa" />
       <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
@@ -15634,7 +15633,7 @@
               </node>
               <node concept="3clFbF" id="3ME3zLf8HAT" role="3cqZAp">
                 <node concept="37vLTI" id="3ME3zLf8HAU" role="3clFbG">
-                  <node concept="3cpWsa" id="3ME3zLfqXmg" role="37vLTJ">
+                  <node concept="37vLTw" id="3ME3zLfqXmg" role="37vLTJ">
                     <ref role="3cqZAo" node="3ME3zLfqXmf" resolve="dupSort" />
                   </node>
                   <node concept="2OqwBi" id="3ME3zLf8HAW" role="37vLTx">
@@ -15658,7 +15657,7 @@
                   <node concept="37vLTw" id="3ME3zLf8HB1" role="37wK5m">
                     <ref role="3cqZAo" node="3ME3zLf8Hu2" resolve="outputFile" />
                   </node>
-                  <node concept="3cpWsa" id="3ME3zLfqXmi" role="37wK5m">
+                  <node concept="37vLTw" id="3ME3zLfqXmi" role="37wK5m">
                     <ref role="3cqZAo" node="3ME3zLfqXmf" resolve="dupSort" />
                   </node>
                   <node concept="37vLTw" id="3ME3zLf8HB3" role="37wK5m">
