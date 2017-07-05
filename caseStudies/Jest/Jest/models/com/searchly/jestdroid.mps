@@ -23,23 +23,23 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="9pym" ref="r:dc5d80ad-cebb-43a0-94f1-47a5e5414f06(io.searchbox.action)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="wy2b" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.gson(Jest_new/)" />
-    <import index="jy5h" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.socket(Jest_new/)" />
-    <import index="5ym0" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.auth(Jest_new/)" />
-    <import index="wt22" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.ssl(Jest_new/)" />
-    <import index="z2wa" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.impl.conn(Jest_new/)" />
-    <import index="8495" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.impl.client(Jest_new/)" />
-    <import index="fn5h" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.config(Jest_new/)" />
-    <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest_new/)" />
-    <import index="2zrq" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.entity(Jest_new/)" />
-    <import index="l0ab" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.entity(Jest_new/)" />
-    <import index="6wno" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.routing(Jest_new/)" />
-    <import index="xno2" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.config(Jest_new/)" />
-    <import index="ipci" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.util(Jest_new/)" />
-    <import index="frz3" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.methods(Jest_new/)" />
-    <import index="8u8u" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http(Jest_new/)" />
-    <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest_new/)" />
-    <import index="72cb" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client(Jest_new/)" />
+    <import index="wy2b" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.gson(Jest/)" />
+    <import index="jy5h" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.socket(Jest/)" />
+    <import index="5ym0" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.auth(Jest/)" />
+    <import index="wt22" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.ssl(Jest/)" />
+    <import index="z2wa" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.impl.conn(Jest/)" />
+    <import index="8495" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.impl.client(Jest/)" />
+    <import index="fn5h" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.config(Jest/)" />
+    <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest/)" />
+    <import index="2zrq" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.entity(Jest/)" />
+    <import index="l0ab" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.entity(Jest/)" />
+    <import index="6wno" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn.routing(Jest/)" />
+    <import index="xno2" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.config(Jest/)" />
+    <import index="ipci" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.util(Jest/)" />
+    <import index="frz3" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.methods(Jest/)" />
+    <import index="8u8u" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http(Jest/)" />
+    <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest/)" />
+    <import index="72cb" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client(Jest/)" />
     <import index="x0nt" ref="r:cb4e30dd-584a-40ec-8a59-8a7b1c91a0d3(peoplConfig)" />
     <import index="wyx4" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.common.util.concurrent(Jest/)" implicit="true" />
   </imports>
@@ -238,6 +238,16 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
+        <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
+        <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
+      </concept>
+      <concept id="4028078182582291660" name="de.htwsaar.peopl.core.structure.IFeatureGroupRef" flags="ng" index="37HLsf">
+        <reference id="4028078182582291723" name="referencedGroup" index="37HLr8" />
+      </concept>
+      <concept id="763904935699076689" name="de.htwsaar.peopl.core.structure.CompilationUnitContainer" flags="ng" index="3k6N$G">
+        <child id="763904935699076819" name="compilationUnits" index="3k6NAI" />
+      </concept>
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
@@ -250,16 +260,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
-        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
-      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -296,7 +298,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKznKG">
     <property role="TrG5h" value="DroidReapableConnectionManager" />
-    <node concept="3GWJoq" id="7nDaBAKznKH" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKznKH" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="DroidReapableConnectionManager" />
       <property role="1EXbeo" value="false" />
@@ -338,8 +340,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNXkx" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznKR" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznKH" resolve="DroidReapableConnectionManager" />
-            <ref role="ojxmB" node="7j$WnoQNXkt" resolve="DroidReapableConnectionManager" />
+            <ref role="bkjOf" node="7j$WnoQNXkt" resolve="DroidReapableConnectionManager" />
+            <ref role="bkjOb" node="7nDaBAKznKH" resolve="DroidReapableConnectionManager" />
             <node concept="3clFbS" id="7nDaBAKznKS" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNXky" role="3cqZAp">
                 <node concept="37vLTI" id="7j$WnoQNXkz" role="3clFbG">
@@ -359,16 +361,16 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623161" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznKV" resolve="VPToFragment_8496368874152623163" />
-              <ref role="25GeQm" node="7nDaBAKznKX" resolve="PeoplBlockReference_8496368874152623165" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsZS" resolve="ModuleToFragment_5157572018661609464" />
+              <ref role="25GeQm" node="2gRBml1Sjkm" resolve="FeatureGroupReference_2609727567307027734" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNXkC" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKznKX" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623165" />
-          <ref role="ocbYS" node="7nDaBAKznKR" />
+        <node concept="37HLsf" id="2gRBml1Sjkm" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027734" />
+          <ref role="37HLr8" node="7nDaBAKznKR" />
           <ref role="1C2YfU" node="7nDaBAKznKT" resolve="Fragment_8496368874152623161" />
         </node>
       </node>
@@ -393,8 +395,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNXkJ" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznKZ" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznKH" resolve="DroidReapableConnectionManager" />
-            <ref role="ojxmB" node="7j$WnoQNXkD" resolve="closeIdleConnections" />
+            <ref role="bkjOf" node="7j$WnoQNXkD" resolve="closeIdleConnections" />
+            <ref role="bkjOb" node="7nDaBAKznKH" resolve="DroidReapableConnectionManager" />
             <node concept="3clFbS" id="7nDaBAKznL0" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNXkK" role="3cqZAp">
                 <node concept="2OqwBi" id="7j$WnoQPKPW" role="3clFbG">
@@ -417,17 +419,17 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623169" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznL3" resolve="VPToFragment_8496368874152623171" />
-              <ref role="25GeQm" node="7nDaBAKznL5" resolve="PeoplBlockReference_8496368874152623173" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsZV" resolve="ModuleToFragment_5157572018661609467" />
+              <ref role="25GeQm" node="2gRBml1Sjkq" resolve="FeatureGroupReference_2609727567307027738" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNXkO" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNXkP" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznL5" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623173" />
-          <ref role="ocbYS" node="7nDaBAKznKZ" />
+        <node concept="37HLsf" id="2gRBml1Sjkq" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027738" />
+          <ref role="37HLr8" node="7nDaBAKznKZ" />
           <ref role="1C2YfU" node="7nDaBAKznL1" resolve="Fragment_8496368874152623169" />
         </node>
       </node>
@@ -435,7 +437,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKznL9">
     <property role="TrG5h" value="JestDroidClient" />
-    <node concept="3GWJoq" id="7nDaBAKznLa" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKznLa" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="JestDroidClient" />
       <property role="1EXbeo" value="false" />
@@ -532,7 +534,7 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNTx5" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznLk" role="3cqZAp">
-            <ref role="ojxmB" node="7j$WnoQNTwX" resolve="execute" />
+            <ref role="bkjOf" node="7j$WnoQNTwX" resolve="execute" />
             <node concept="3clFbS" id="7nDaBAKznLl" role="9aQI4">
               <node concept="3cpWs8" id="7j$WnoQNTx7" role="3cqZAp">
                 <node concept="3cpWsn" id="7j$WnoQNTx6" role="3cpWs9">
@@ -741,9 +743,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623190" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznLo" resolve="VPToFragment_8496368874152623192" />
-              <ref role="25GeQm" node="7nDaBAKznLq" resolve="PeoplBlockReference_8496368874152623194" />
               <ref role="a64iB" to="x0nt:4ujo6NbOoLN" resolve="Synchronous" />
               <ref role="3aRQVk" to="x0nt:1UxTei8FVCT" resolve="ModuleToFragment_2207296962585147961" />
+              <ref role="25GeQm" node="2gRBml1Sjku" resolve="FeatureGroupReference_2609727567307027742" />
             </node>
           </node>
         </node>
@@ -751,17 +753,17 @@
         <node concept="16syzq" id="7j$WnoQNTy5" role="3clF45">
           <ref role="16sUi3" node="7j$WnoQNTwZ" resolve="T" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznLq" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623194" />
-          <ref role="ocbYS" node="7nDaBAKznLk" />
-          <ref role="1C2YfU" node="7nDaBAKznLm" resolve="Fragment_8496368874152623190" />
-        </node>
         <node concept="1V74GB" id="1UxTei8FUpN" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
           <property role="TrG5h" value="Fragment_2207296962585142899" />
           <ref role="1V74Hf" to="x0nt:1UxTei8FUpP" resolve="VPToFragment_2207296962585142901" />
           <ref role="a64iB" to="x0nt:4ujo6NbOoLN" resolve="Synchronous" />
           <ref role="3aRQVk" to="x0nt:1UxTei8FVCN" resolve="ModuleToFragment_2207296962585147955" />
+        </node>
+        <node concept="37HLsf" id="2gRBml1Sjku" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027742" />
+          <ref role="37HLr8" node="7nDaBAKznLk" />
+          <ref role="1C2YfU" node="7nDaBAKznLm" resolve="Fragment_8496368874152623190" />
         </node>
       </node>
       <node concept="3clFb_" id="7j$WnoQNTy6" role="jymVt">
@@ -801,7 +803,7 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNTyh" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznLs" role="3cqZAp">
-            <ref role="ojxmB" node="7j$WnoQNTy6" resolve="executeAsync" />
+            <ref role="bkjOf" node="7j$WnoQNTy6" resolve="executeAsync" />
             <node concept="3clFbS" id="7nDaBAKznLt" role="9aQI4">
               <node concept="YS8fn" id="7j$WnoQNTyk" role="3cqZAp">
                 <node concept="2ShNRf" id="7j$WnoQPKQQ" role="YScLw">
@@ -818,25 +820,25 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623198" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznLw" resolve="VPToFragment_8496368874152623200" />
-              <ref role="25GeQm" node="7nDaBAKznLy" resolve="PeoplBlockReference_8496368874152623202" />
               <ref role="a64iB" to="x0nt:4ujo6NbOp97" resolve="Asynchronous" />
               <ref role="3aRQVk" to="x0nt:1UxTei8FXo0" resolve="ModuleToFragment_2207296962585155072" />
+              <ref role="25GeQm" node="2gRBml1Sjkx" resolve="FeatureGroupReference_2609727567307027745" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNTyl" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNTym" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznLy" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623202" />
-          <ref role="ocbYS" node="7nDaBAKznLs" />
-          <ref role="1C2YfU" node="7nDaBAKznLu" resolve="Fragment_8496368874152623198" />
-        </node>
         <node concept="1V74GB" id="1UxTei8FWfA" role="lGtFl">
           <property role="32Xqk$" value="chosenModule" />
           <property role="TrG5h" value="Fragment_2207296962585150438" />
           <ref role="1V74Hf" to="x0nt:1UxTei8FWfC" resolve="VPToFragment_2207296962585150440" />
           <ref role="a64iB" to="x0nt:4ujo6NbOp97" resolve="Asynchronous" />
           <ref role="3aRQVk" to="x0nt:1UxTei8FXnU" resolve="ModuleToFragment_2207296962585155066" />
+        </node>
+        <node concept="37HLsf" id="2gRBml1Sjkx" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027745" />
+          <ref role="37HLr8" node="7nDaBAKznLs" />
+          <ref role="1C2YfU" node="7nDaBAKznLu" resolve="Fragment_8496368874152623198" />
         </node>
       </node>
       <node concept="3clFb_" id="7j$WnoQNTyn" role="jymVt">
@@ -845,8 +847,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQNTyo" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznL$" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNTyn" resolve="shutdownClient" />
+            <ref role="bkjOf" node="7j$WnoQNTyn" resolve="shutdownClient" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznL_" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNTyp" role="3cqZAp">
                 <node concept="3nyPlj" id="7j$WnoQNTyq" role="3clFbG">
@@ -858,17 +860,17 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623206" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznLC" resolve="VPToFragment_8496368874152623208" />
-              <ref role="25GeQm" node="7nDaBAKznLE" resolve="PeoplBlockReference_8496368874152623210" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJA" resolve="ModuleToFragment_5157572018661620710" />
+              <ref role="25GeQm" node="2gRBml1Sjk$" resolve="FeatureGroupReference_2609727567307027748" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNTyr" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNTys" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznLE" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623210" />
-          <ref role="ocbYS" node="7nDaBAKznL$" />
+        <node concept="37HLsf" id="2gRBml1Sjk$" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027748" />
+          <ref role="37HLr8" node="7nDaBAKznL$" />
           <ref role="1C2YfU" node="7nDaBAKznLA" resolve="Fragment_8496368874152623206" />
         </node>
       </node>
@@ -893,8 +895,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNTy$" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznLG" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNTyt" resolve="constructHttpMethod" />
+            <ref role="bkjOf" node="7j$WnoQNTyt" resolve="constructHttpMethod" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznLH" role="9aQI4">
               <node concept="3cpWs8" id="7j$WnoQNTyA" role="3cqZAp">
                 <node concept="3cpWsn" id="7j$WnoQNTy_" role="3cpWs9">
@@ -1230,9 +1232,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623214" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznLK" resolve="VPToFragment_8496368874152623216" />
-              <ref role="25GeQm" node="7nDaBAKznLM" resolve="PeoplBlockReference_8496368874152623218" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJD" resolve="ModuleToFragment_5157572018661620713" />
+              <ref role="25GeQm" node="2gRBml1SjkC" resolve="FeatureGroupReference_2609727567307027752" />
             </node>
           </node>
         </node>
@@ -1240,9 +1242,9 @@
         <node concept="3uibUv" id="7j$WnoQNT$j" role="3clF45">
           <ref role="3uigEE" to="frz3:~HttpUriRequest" resolve="HttpUriRequest" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznLM" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623218" />
-          <ref role="ocbYS" node="7nDaBAKznLG" />
+        <node concept="37HLsf" id="2gRBml1SjkC" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027752" />
+          <ref role="37HLr8" node="7nDaBAKznLG" />
           <ref role="1C2YfU" node="7nDaBAKznLI" resolve="Fragment_8496368874152623214" />
         </node>
       </node>
@@ -1278,8 +1280,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNT$t" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznLO" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNT$k" resolve="deserializeResponse" />
+            <ref role="bkjOf" node="7j$WnoQNT$k" resolve="deserializeResponse" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznLP" role="9aQI4">
               <node concept="3cpWs8" id="7j$WnoQNT$v" role="3cqZAp">
                 <node concept="3cpWsn" id="7j$WnoQNT$u" role="3cpWs9">
@@ -1363,9 +1365,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623222" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznLS" resolve="VPToFragment_8496368874152623224" />
-              <ref role="25GeQm" node="7nDaBAKznLU" resolve="PeoplBlockReference_8496368874152623226" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJG" resolve="ModuleToFragment_5157572018661620716" />
+              <ref role="25GeQm" node="2gRBml1SjkG" resolve="FeatureGroupReference_2609727567307027756" />
             </node>
           </node>
         </node>
@@ -1373,9 +1375,9 @@
         <node concept="16syzq" id="7j$WnoQNT$J" role="3clF45">
           <ref role="16sUi3" node="7j$WnoQNT$l" resolve="T" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznLU" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623226" />
-          <ref role="ocbYS" node="7nDaBAKznLO" />
+        <node concept="37HLsf" id="2gRBml1SjkG" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027756" />
+          <ref role="37HLr8" node="7nDaBAKznLO" />
           <ref role="1C2YfU" node="7nDaBAKznLQ" resolve="Fragment_8496368874152623222" />
         </node>
       </node>
@@ -1385,8 +1387,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQNT$L" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznLW" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNT$K" resolve="getHttpClient" />
+            <ref role="bkjOf" node="7j$WnoQNT$K" resolve="getHttpClient" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznLX" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQNT$M" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQNT$N" role="3cqZAk">
@@ -1398,9 +1400,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623230" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznM0" resolve="VPToFragment_8496368874152623232" />
-              <ref role="25GeQm" node="7nDaBAKznM2" resolve="PeoplBlockReference_8496368874152623234" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJJ" resolve="ModuleToFragment_5157572018661620719" />
+              <ref role="25GeQm" node="2gRBml1SjkK" resolve="FeatureGroupReference_2609727567307027760" />
             </node>
           </node>
         </node>
@@ -1408,9 +1410,9 @@
         <node concept="3uibUv" id="7j$WnoQNT$P" role="3clF45">
           <ref role="3uigEE" to="72cb:~HttpClient" resolve="HttpClient" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznM2" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623234" />
-          <ref role="ocbYS" node="7nDaBAKznLW" />
+        <node concept="37HLsf" id="2gRBml1SjkK" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027760" />
+          <ref role="37HLr8" node="7nDaBAKznLW" />
           <ref role="1C2YfU" node="7nDaBAKznLY" resolve="Fragment_8496368874152623230" />
         </node>
       </node>
@@ -1427,8 +1429,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNT$T" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznM4" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNT$Q" resolve="setHttpClient" />
+            <ref role="bkjOf" node="7j$WnoQNT$Q" resolve="setHttpClient" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznM5" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNT$U" role="3cqZAp">
                 <node concept="37vLTI" id="7j$WnoQNT$V" role="3clFbG">
@@ -1448,17 +1450,17 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623238" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznM8" resolve="VPToFragment_8496368874152623240" />
-              <ref role="25GeQm" node="7nDaBAKznMa" resolve="PeoplBlockReference_8496368874152623242" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJM" resolve="ModuleToFragment_5157572018661620722" />
+              <ref role="25GeQm" node="2gRBml1SjkO" resolve="FeatureGroupReference_2609727567307027764" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNT_0" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNT_1" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznMa" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623242" />
-          <ref role="ocbYS" node="7nDaBAKznM4" />
+        <node concept="37HLsf" id="2gRBml1SjkO" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027764" />
+          <ref role="37HLr8" node="7nDaBAKznM4" />
           <ref role="1C2YfU" node="7nDaBAKznM6" resolve="Fragment_8496368874152623238" />
         </node>
       </node>
@@ -1468,8 +1470,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQNT_3" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznMc" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNT_2" resolve="getGson" />
+            <ref role="bkjOf" node="7j$WnoQNT_2" resolve="getGson" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznMd" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQNT_4" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQNT_5" role="3cqZAk">
@@ -1481,9 +1483,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623246" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznMg" resolve="VPToFragment_8496368874152623248" />
-              <ref role="25GeQm" node="7nDaBAKznMi" resolve="PeoplBlockReference_8496368874152623250" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJP" resolve="ModuleToFragment_5157572018661620725" />
+              <ref role="25GeQm" node="2gRBml1SjkS" resolve="FeatureGroupReference_2609727567307027768" />
             </node>
           </node>
         </node>
@@ -1491,9 +1493,9 @@
         <node concept="3uibUv" id="7j$WnoQNT_7" role="3clF45">
           <ref role="3uigEE" to="wy2b:~Gson" resolve="Gson" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznMi" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623250" />
-          <ref role="ocbYS" node="7nDaBAKznMc" />
+        <node concept="37HLsf" id="2gRBml1SjkS" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027768" />
+          <ref role="37HLr8" node="7nDaBAKznMc" />
           <ref role="1C2YfU" node="7nDaBAKznMe" resolve="Fragment_8496368874152623246" />
         </node>
       </node>
@@ -1510,8 +1512,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNT_b" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznMk" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznLa" resolve="JestDroidClient" />
-            <ref role="ojxmB" node="7j$WnoQNT_8" resolve="setGson" />
+            <ref role="bkjOf" node="7j$WnoQNT_8" resolve="setGson" />
+            <ref role="bkjOb" node="7nDaBAKznLa" resolve="JestDroidClient" />
             <node concept="3clFbS" id="7nDaBAKznMl" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNT_c" role="3cqZAp">
                 <node concept="37vLTI" id="7j$WnoQNT_d" role="3clFbG">
@@ -1531,17 +1533,17 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623254" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznMo" resolve="VPToFragment_8496368874152623256" />
-              <ref role="25GeQm" node="7nDaBAKznMq" resolve="PeoplBlockReference_8496368874152623258" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOvJS" resolve="ModuleToFragment_5157572018661620728" />
+              <ref role="25GeQm" node="2gRBml1SjkW" resolve="FeatureGroupReference_2609727567307027772" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNT_i" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNT_j" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznMq" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623258" />
-          <ref role="ocbYS" node="7nDaBAKznMk" />
+        <node concept="37HLsf" id="2gRBml1SjkW" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027772" />
+          <ref role="37HLr8" node="7nDaBAKznMk" />
           <ref role="1C2YfU" node="7nDaBAKznMm" resolve="Fragment_8496368874152623254" />
         </node>
       </node>
@@ -1556,7 +1558,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKznMu">
     <property role="TrG5h" value="DroidClientConfig" />
-    <node concept="3GWJoq" id="7nDaBAKznMv" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKznMv" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="DroidClientConfig" />
       <property role="1EXbeo" value="false" />
@@ -1674,8 +1676,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO5jc" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznMD" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5j8" resolve="DroidClientConfig" />
+            <ref role="bkjOf" node="7j$WnoQO5j8" resolve="DroidClientConfig" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznME" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPKT9" role="3cqZAp">
                 <ref role="37wK5l" to="45kb:7j$WnoQNZ0j" resolve="ClientConfig" />
@@ -1832,16 +1834,16 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623275" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznMH" resolve="VPToFragment_8496368874152623277" />
-              <ref role="25GeQm" node="7nDaBAKznMJ" resolve="PeoplBlockReference_8496368874152623279" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbj" resolve="ModuleToFragment_5157572018661606099" />
+              <ref role="25GeQm" node="2gRBml1Sjl0" resolve="FeatureGroupReference_2609727567307027776" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO5jZ" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKznMJ" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623279" />
-          <ref role="ocbYS" node="7nDaBAKznMD" />
+        <node concept="37HLsf" id="2gRBml1Sjl0" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027776" />
+          <ref role="37HLr8" node="7nDaBAKznMD" />
           <ref role="1C2YfU" node="7nDaBAKznMF" resolve="Fragment_8496368874152623275" />
         </node>
       </node>
@@ -1851,8 +1853,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5k1" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznML" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5k0" resolve="getMaxTotalConnectionPerRoute" />
+            <ref role="bkjOf" node="7j$WnoQO5k0" resolve="getMaxTotalConnectionPerRoute" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznMM" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5k2" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5k3" role="3cqZAk">
@@ -1864,9 +1866,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623283" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznMP" resolve="VPToFragment_8496368874152623285" />
-              <ref role="25GeQm" node="7nDaBAKznMR" resolve="PeoplBlockReference_8496368874152623287" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbm" resolve="ModuleToFragment_5157572018661606102" />
+              <ref role="25GeQm" node="2gRBml1Sjl4" resolve="FeatureGroupReference_2609727567307027780" />
             </node>
           </node>
         </node>
@@ -1880,9 +1882,9 @@
             <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
           </node>
         </node>
-        <node concept="ocbFV" id="7nDaBAKznMR" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623287" />
-          <ref role="ocbYS" node="7nDaBAKznML" />
+        <node concept="37HLsf" id="2gRBml1Sjl4" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027780" />
+          <ref role="37HLr8" node="7nDaBAKznML" />
           <ref role="1C2YfU" node="7nDaBAKznMN" resolve="Fragment_8496368874152623283" />
         </node>
       </node>
@@ -1892,8 +1894,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5k9" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznMT" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5k8" resolve="getMaxTotalConnection" />
+            <ref role="bkjOf" node="7j$WnoQO5k8" resolve="getMaxTotalConnection" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznMU" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5ka" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kb" role="3cqZAk">
@@ -1905,9 +1907,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623291" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznMX" resolve="VPToFragment_8496368874152623293" />
-              <ref role="25GeQm" node="7nDaBAKznMZ" resolve="PeoplBlockReference_8496368874152623295" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbp" resolve="ModuleToFragment_5157572018661606105" />
+              <ref role="25GeQm" node="2gRBml1Sjl8" resolve="FeatureGroupReference_2609727567307027784" />
             </node>
           </node>
         </node>
@@ -1915,9 +1917,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kd" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznMZ" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623295" />
-          <ref role="ocbYS" node="7nDaBAKznMT" />
+        <node concept="37HLsf" id="2gRBml1Sjl8" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027784" />
+          <ref role="37HLr8" node="7nDaBAKznMT" />
           <ref role="1C2YfU" node="7nDaBAKznMV" resolve="Fragment_8496368874152623291" />
         </node>
       </node>
@@ -1927,8 +1929,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kf" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznN1" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5ke" resolve="getDefaultMaxTotalConnectionPerRoute" />
+            <ref role="bkjOf" node="7j$WnoQO5ke" resolve="getDefaultMaxTotalConnectionPerRoute" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznN2" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5kg" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kh" role="3cqZAk">
@@ -1940,9 +1942,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623299" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznN5" resolve="VPToFragment_8496368874152623301" />
-              <ref role="25GeQm" node="7nDaBAKznN7" resolve="PeoplBlockReference_8496368874152623303" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbs" resolve="ModuleToFragment_5157572018661606108" />
+              <ref role="25GeQm" node="2gRBml1Sjlc" resolve="FeatureGroupReference_2609727567307027788" />
             </node>
           </node>
         </node>
@@ -1950,9 +1952,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kj" role="3clF45">
           <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznN7" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623303" />
-          <ref role="ocbYS" node="7nDaBAKznN1" />
+        <node concept="37HLsf" id="2gRBml1Sjlc" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027788" />
+          <ref role="37HLr8" node="7nDaBAKznN1" />
           <ref role="1C2YfU" node="7nDaBAKznN3" resolve="Fragment_8496368874152623299" />
         </node>
       </node>
@@ -1962,8 +1964,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kl" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznN9" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5kk" resolve="getCredentialsProvider" />
+            <ref role="bkjOf" node="7j$WnoQO5kk" resolve="getCredentialsProvider" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznNa" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5km" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kn" role="3cqZAk">
@@ -1975,9 +1977,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623307" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznNd" resolve="VPToFragment_8496368874152623309" />
-              <ref role="25GeQm" node="7nDaBAKznNf" resolve="PeoplBlockReference_8496368874152623311" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbv" resolve="ModuleToFragment_5157572018661606111" />
+              <ref role="25GeQm" node="2gRBml1Sjlg" resolve="FeatureGroupReference_2609727567307027792" />
             </node>
           </node>
         </node>
@@ -1985,9 +1987,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kp" role="3clF45">
           <ref role="3uigEE" to="72cb:~CredentialsProvider" resolve="CredentialsProvider" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznNf" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623311" />
-          <ref role="ocbYS" node="7nDaBAKznN9" />
+        <node concept="37HLsf" id="2gRBml1Sjlg" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027792" />
+          <ref role="37HLr8" node="7nDaBAKznN9" />
           <ref role="1C2YfU" node="7nDaBAKznNb" resolve="Fragment_8496368874152623307" />
         </node>
       </node>
@@ -1997,8 +1999,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kr" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznNh" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5kq" resolve="getSslSocketFactory" />
+            <ref role="bkjOf" node="7j$WnoQO5kq" resolve="getSslSocketFactory" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznNi" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5ks" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kt" role="3cqZAk">
@@ -2010,9 +2012,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623315" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznNl" resolve="VPToFragment_8496368874152623317" />
-              <ref role="25GeQm" node="7nDaBAKznNn" resolve="PeoplBlockReference_8496368874152623319" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsby" resolve="ModuleToFragment_5157572018661606114" />
+              <ref role="25GeQm" node="2gRBml1Sjlk" resolve="FeatureGroupReference_2609727567307027796" />
             </node>
           </node>
         </node>
@@ -2020,9 +2022,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kv" role="3clF45">
           <ref role="3uigEE" to="jy5h:~LayeredConnectionSocketFactory" resolve="LayeredConnectionSocketFactory" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznNn" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623319" />
-          <ref role="ocbYS" node="7nDaBAKznNh" />
+        <node concept="37HLsf" id="2gRBml1Sjlk" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027796" />
+          <ref role="37HLr8" node="7nDaBAKznNh" />
           <ref role="1C2YfU" node="7nDaBAKznNj" resolve="Fragment_8496368874152623315" />
         </node>
       </node>
@@ -2032,8 +2034,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kx" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznNp" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5kw" resolve="getPlainSocketFactory" />
+            <ref role="bkjOf" node="7j$WnoQO5kw" resolve="getPlainSocketFactory" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznNq" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5ky" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kz" role="3cqZAk">
@@ -2045,9 +2047,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623323" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznNt" resolve="VPToFragment_8496368874152623325" />
-              <ref role="25GeQm" node="7nDaBAKznNv" resolve="PeoplBlockReference_8496368874152623327" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsb_" resolve="ModuleToFragment_5157572018661606117" />
+              <ref role="25GeQm" node="2gRBml1Sjlo" resolve="FeatureGroupReference_2609727567307027800" />
             </node>
           </node>
         </node>
@@ -2055,9 +2057,9 @@
         <node concept="3uibUv" id="7j$WnoQO5k_" role="3clF45">
           <ref role="3uigEE" to="jy5h:~ConnectionSocketFactory" resolve="ConnectionSocketFactory" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznNv" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623327" />
-          <ref role="ocbYS" node="7nDaBAKznNp" />
+        <node concept="37HLsf" id="2gRBml1Sjlo" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027800" />
+          <ref role="37HLr8" node="7nDaBAKznNp" />
           <ref role="1C2YfU" node="7nDaBAKznNr" resolve="Fragment_8496368874152623323" />
         </node>
       </node>
@@ -2067,8 +2069,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kB" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznNx" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5kA" resolve="getHttpRoutePlanner" />
+            <ref role="bkjOf" node="7j$WnoQO5kA" resolve="getHttpRoutePlanner" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznNy" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5kC" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kD" role="3cqZAk">
@@ -2080,9 +2082,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623331" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznN_" resolve="VPToFragment_8496368874152623333" />
-              <ref role="25GeQm" node="7nDaBAKznNB" resolve="PeoplBlockReference_8496368874152623335" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbC" resolve="ModuleToFragment_5157572018661606120" />
+              <ref role="25GeQm" node="2gRBml1Sjls" resolve="FeatureGroupReference_2609727567307027804" />
             </node>
           </node>
         </node>
@@ -2090,9 +2092,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kF" role="3clF45">
           <ref role="3uigEE" to="6wno:~HttpRoutePlanner" resolve="HttpRoutePlanner" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznNB" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623335" />
-          <ref role="ocbYS" node="7nDaBAKznNx" />
+        <node concept="37HLsf" id="2gRBml1Sjls" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027804" />
+          <ref role="37HLr8" node="7nDaBAKznNx" />
           <ref role="1C2YfU" node="7nDaBAKznNz" resolve="Fragment_8496368874152623331" />
         </node>
       </node>
@@ -2102,8 +2104,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQO5kH" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznND" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-            <ref role="ojxmB" node="7j$WnoQO5kG" resolve="getProxyAuthenticationStrategy" />
+            <ref role="bkjOf" node="7j$WnoQO5kG" resolve="getProxyAuthenticationStrategy" />
+            <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
             <node concept="3clFbS" id="7nDaBAKznNE" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO5kI" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQO5kJ" role="3cqZAk">
@@ -2115,9 +2117,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623339" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznNH" resolve="VPToFragment_8496368874152623341" />
-              <ref role="25GeQm" node="7nDaBAKznNJ" resolve="PeoplBlockReference_8496368874152623343" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOsbF" resolve="ModuleToFragment_5157572018661606123" />
+              <ref role="25GeQm" node="2gRBml1Sjlw" resolve="FeatureGroupReference_2609727567307027808" />
             </node>
           </node>
         </node>
@@ -2125,9 +2127,9 @@
         <node concept="3uibUv" id="7j$WnoQO5kL" role="3clF45">
           <ref role="3uigEE" to="72cb:~AuthenticationStrategy" resolve="AuthenticationStrategy" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznNJ" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623343" />
-          <ref role="ocbYS" node="7nDaBAKznND" />
+        <node concept="37HLsf" id="2gRBml1Sjlw" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027808" />
+          <ref role="37HLr8" node="7nDaBAKznND" />
           <ref role="1C2YfU" node="7nDaBAKznNF" resolve="Fragment_8496368874152623339" />
         </node>
       </node>
@@ -2274,15 +2276,15 @@
           <node concept="3Tm1VV" id="7j$WnoQO5f_" role="1B3o_S" />
           <node concept="3clFbS" id="7nDaBAKzIQg" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzIQh" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5fc" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOf" node="7j$WnoQO5fc" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzIQj" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152717715" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzIQl" resolve="VPToFragment_8496368874152717717" />
-                <ref role="25GeQm" node="7nDaBAKzIQn" resolve="PeoplBlockReference_8496368874152717719" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbI" resolve="ModuleToFragment_5157572018661606126" />
+                <ref role="25GeQm" node="2gRBml1Sjl$" resolve="FeatureGroupReference_2609727567307027812" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5fg" role="9aQI4">
                 <node concept="XkiVB" id="7j$WnoQPP9Y" role="3cqZAp">
@@ -2348,9 +2350,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzIQn" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152717719" />
-            <ref role="ocbYS" node="7nDaBAKzIQh" />
+          <node concept="37HLsf" id="2gRBml1Sjl$" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027812" />
+            <ref role="37HLr8" node="7nDaBAKzIQh" />
             <ref role="1C2YfU" node="7nDaBAKzIQj" resolve="Fragment_8496368874152717715" />
           </node>
         </node>
@@ -2369,15 +2371,15 @@
           <node concept="3Tm1VV" id="7j$WnoQO5fI" role="1B3o_S" />
           <node concept="3clFbS" id="7nDaBAKzJx2" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzJx3" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5fA" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOf" node="7j$WnoQO5fA" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzJx5" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152720453" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzJx7" resolve="VPToFragment_8496368874152720455" />
-                <ref role="25GeQm" node="7nDaBAKzJx9" resolve="PeoplBlockReference_8496368874152720457" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbL" resolve="ModuleToFragment_5157572018661606129" />
+                <ref role="25GeQm" node="2gRBml1SjlC" resolve="FeatureGroupReference_2609727567307027816" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5fF" role="9aQI4">
                 <node concept="XkiVB" id="7j$WnoQPPc3" role="3cqZAp">
@@ -2389,9 +2391,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzJx9" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152720457" />
-            <ref role="ocbYS" node="7nDaBAKzJx3" />
+          <node concept="37HLsf" id="2gRBml1SjlC" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027816" />
+            <ref role="37HLr8" node="7nDaBAKzJx3" />
             <ref role="1C2YfU" node="7nDaBAKzJx5" resolve="Fragment_8496368874152720453" />
           </node>
         </node>
@@ -2407,15 +2409,15 @@
           <node concept="3Tm1VV" id="7j$WnoQO5fQ" role="1B3o_S" />
           <node concept="3clFbS" id="7nDaBAKzOQR" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzOQS" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5fJ" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOf" node="7j$WnoQO5fJ" resolve="DroidClientConfig.Builder" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzOQU" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152742330" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzOQW" resolve="VPToFragment_8496368874152742332" />
-                <ref role="25GeQm" node="7nDaBAKzOQY" resolve="PeoplBlockReference_8496368874152742334" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbO" resolve="ModuleToFragment_5157572018661606132" />
+                <ref role="25GeQm" node="2gRBml1SjlG" resolve="FeatureGroupReference_2609727567307027820" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5fN" role="9aQI4">
                 <node concept="XkiVB" id="7j$WnoQPPc4" role="3cqZAp">
@@ -2427,9 +2429,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzOQY" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152742334" />
-            <ref role="ocbYS" node="7nDaBAKzOQS" />
+          <node concept="37HLsf" id="2gRBml1SjlG" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027820" />
+            <ref role="37HLr8" node="7nDaBAKzOQS" />
             <ref role="1C2YfU" node="7nDaBAKzOQU" resolve="Fragment_8496368874152742330" />
           </node>
         </node>
@@ -2448,15 +2450,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzHP0" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzHP1" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5fR" resolve="maxTotalConnection" />
+              <ref role="bkjOf" node="7j$WnoQO5fR" resolve="maxTotalConnection" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzHP3" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152713539" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzHP5" resolve="VPToFragment_8496368874152713541" />
-                <ref role="25GeQm" node="7nDaBAKzHP7" resolve="PeoplBlockReference_8496368874152713543" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbR" resolve="ModuleToFragment_5157572018661606135" />
+                <ref role="25GeQm" node="2gRBml1SjlK" resolve="FeatureGroupReference_2609727567307027824" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5fU" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5fV" role="3cqZAp">
@@ -2478,9 +2480,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzHP7" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152713543" />
-            <ref role="ocbYS" node="7nDaBAKzHP1" />
+          <node concept="37HLsf" id="2gRBml1SjlK" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027824" />
+            <ref role="37HLr8" node="7nDaBAKzHP1" />
             <ref role="1C2YfU" node="7nDaBAKzHP3" resolve="Fragment_8496368874152713539" />
           </node>
         </node>
@@ -2499,15 +2501,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzPxl" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzPxm" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5g5" resolve="defaultMaxTotalConnectionPerRoute" />
+              <ref role="bkjOf" node="7j$WnoQO5g5" resolve="defaultMaxTotalConnectionPerRoute" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzPxo" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152745048" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzPxq" resolve="VPToFragment_8496368874152745050" />
-                <ref role="25GeQm" node="7nDaBAKzPxs" resolve="PeoplBlockReference_8496368874152745052" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbU" resolve="ModuleToFragment_5157572018661606138" />
+                <ref role="25GeQm" node="2gRBml1SjlO" resolve="FeatureGroupReference_2609727567307027828" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5g8" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5g9" role="3cqZAp">
@@ -2529,9 +2531,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzPxs" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152745052" />
-            <ref role="ocbYS" node="7nDaBAKzPxm" />
+          <node concept="37HLsf" id="2gRBml1SjlO" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027828" />
+            <ref role="37HLr8" node="7nDaBAKzPxm" />
             <ref role="1C2YfU" node="7nDaBAKzPxo" resolve="Fragment_8496368874152745048" />
           </node>
         </node>
@@ -2558,15 +2560,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzOce" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzOcf" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5gj" resolve="maxTotalConnectionPerRoute" />
+              <ref role="bkjOf" node="7j$WnoQO5gj" resolve="maxTotalConnectionPerRoute" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzOch" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152739601" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzOcj" resolve="VPToFragment_8496368874152739603" />
-                <ref role="25GeQm" node="7nDaBAKzOcl" resolve="PeoplBlockReference_8496368874152739605" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsbX" resolve="ModuleToFragment_5157572018661606141" />
+                <ref role="25GeQm" node="2gRBml1SjlS" resolve="FeatureGroupReference_2609727567307027832" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5go" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5gp" role="3cqZAp">
@@ -2591,9 +2593,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzOcl" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152739605" />
-            <ref role="ocbYS" node="7nDaBAKzOcf" />
+          <node concept="37HLsf" id="2gRBml1SjlS" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027832" />
+            <ref role="37HLr8" node="7nDaBAKzOcf" />
             <ref role="1C2YfU" node="7nDaBAKzOch" resolve="Fragment_8496368874152739601" />
           </node>
         </node>
@@ -2619,15 +2621,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzMbu" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzMbv" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5g$" resolve="maxTotalConnectionPerRoute" />
+              <ref role="bkjOf" node="7j$WnoQO5g$" resolve="maxTotalConnectionPerRoute" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzMbx" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152731361" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzMbz" resolve="VPToFragment_8496368874152731363" />
-                <ref role="25GeQm" node="7nDaBAKzMb_" resolve="PeoplBlockReference_8496368874152731365" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsc0" resolve="ModuleToFragment_5157572018661606144" />
+                <ref role="25GeQm" node="2gRBml1SjlW" resolve="FeatureGroupReference_2609727567307027836" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5gD" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5gE" role="3cqZAp">
@@ -2655,9 +2657,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzMb_" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152731365" />
-            <ref role="ocbYS" node="7nDaBAKzMbv" />
+          <node concept="37HLsf" id="2gRBml1SjlW" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027836" />
+            <ref role="37HLr8" node="7nDaBAKzMbv" />
             <ref role="1C2YfU" node="7nDaBAKzMbx" resolve="Fragment_8496368874152731361" />
           </node>
         </node>
@@ -2690,15 +2692,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzHaR" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzHaS" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5gQ" resolve="credentialsProvider" />
+              <ref role="bkjOf" node="7j$WnoQO5gQ" resolve="credentialsProvider" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzHaU" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152710842" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzHaW" resolve="VPToFragment_8496368874152710844" />
-                <ref role="25GeQm" node="7nDaBAKzHaY" resolve="PeoplBlockReference_8496368874152710846" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsc3" resolve="ModuleToFragment_5157572018661606147" />
+                <ref role="25GeQm" node="2gRBml1Sjm0" resolve="FeatureGroupReference_2609727567307027840" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5gT" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5gU" role="3cqZAp">
@@ -2720,9 +2722,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzHaY" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152710846" />
-            <ref role="ocbYS" node="7nDaBAKzHaS" />
+          <node concept="37HLsf" id="2gRBml1Sjm0" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027840" />
+            <ref role="37HLr8" node="7nDaBAKzHaS" />
             <ref role="1C2YfU" node="7nDaBAKzHaU" resolve="Fragment_8496368874152710842" />
           </node>
         </node>
@@ -2746,15 +2748,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzLwC" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzLwD" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5h5" resolve="defaultCredentials" />
+              <ref role="bkjOf" node="7j$WnoQO5h5" resolve="defaultCredentials" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzLwF" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152728619" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzLwH" resolve="VPToFragment_8496368874152728621" />
-                <ref role="25GeQm" node="7nDaBAKzLwJ" resolve="PeoplBlockReference_8496368874152728623" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsc6" resolve="ModuleToFragment_5157572018661606150" />
+                <ref role="25GeQm" node="2gRBml1Sjm4" resolve="FeatureGroupReference_2609727567307027844" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5ha" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5hb" role="3cqZAp">
@@ -2811,9 +2813,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzLwJ" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152728623" />
-            <ref role="ocbYS" node="7nDaBAKzLwD" />
+          <node concept="37HLsf" id="2gRBml1Sjm4" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027844" />
+            <ref role="37HLr8" node="7nDaBAKzLwD" />
             <ref role="1C2YfU" node="7nDaBAKzLwF" resolve="Fragment_8496368874152728619" />
           </node>
         </node>
@@ -2846,15 +2848,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzKb8" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzKb9" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5hv" resolve="sslSocketFactory" />
+              <ref role="bkjOf" node="7j$WnoQO5hv" resolve="sslSocketFactory" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzKbb" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152723147" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzKbd" resolve="VPToFragment_8496368874152723149" />
-                <ref role="25GeQm" node="7nDaBAKzKbf" resolve="PeoplBlockReference_8496368874152723151" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsc9" resolve="ModuleToFragment_5157572018661606153" />
+                <ref role="25GeQm" node="2gRBml1Sjm8" resolve="FeatureGroupReference_2609727567307027848" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5hy" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5hz" role="3cqZAp">
@@ -2876,9 +2878,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzKbf" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152723151" />
-            <ref role="ocbYS" node="7nDaBAKzKb9" />
+          <node concept="37HLsf" id="2gRBml1Sjm8" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027848" />
+            <ref role="37HLr8" node="7nDaBAKzKb9" />
             <ref role="1C2YfU" node="7nDaBAKzKbb" resolve="Fragment_8496368874152723147" />
           </node>
         </node>
@@ -2911,15 +2913,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzMQ0" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzMQ1" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5hI" resolve="plainSocketFactory" />
+              <ref role="bkjOf" node="7j$WnoQO5hI" resolve="plainSocketFactory" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzMQ3" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152734083" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzMQ5" resolve="VPToFragment_8496368874152734085" />
-                <ref role="25GeQm" node="7nDaBAKzMQ7" resolve="PeoplBlockReference_8496368874152734087" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOscc" resolve="ModuleToFragment_5157572018661606156" />
+                <ref role="25GeQm" node="2gRBml1Sjmc" resolve="FeatureGroupReference_2609727567307027852" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5hL" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5hM" role="3cqZAp">
@@ -2941,9 +2943,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzMQ7" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152734087" />
-            <ref role="ocbYS" node="7nDaBAKzMQ1" />
+          <node concept="37HLsf" id="2gRBml1Sjmc" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027852" />
+            <ref role="37HLr8" node="7nDaBAKzMQ1" />
             <ref role="1C2YfU" node="7nDaBAKzMQ3" resolve="Fragment_8496368874152734083" />
           </node>
         </node>
@@ -2964,15 +2966,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzQc1" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzQc2" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5hX" resolve="proxy" />
+              <ref role="bkjOf" node="7j$WnoQO5hX" resolve="proxy" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzQc4" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152747780" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzQc6" resolve="VPToFragment_8496368874152747782" />
-                <ref role="25GeQm" node="7nDaBAKzQc8" resolve="PeoplBlockReference_8496368874152747784" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOscf" resolve="ModuleToFragment_5157572018661606159" />
+                <ref role="25GeQm" node="2gRBml1Sjmg" resolve="FeatureGroupReference_2609727567307027856" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5i0" role="9aQI4">
                 <node concept="3cpWs6" id="7j$WnoQO5i1" role="3cqZAp">
@@ -2987,9 +2989,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzQc8" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152747784" />
-            <ref role="ocbYS" node="7nDaBAKzQc2" />
+          <node concept="37HLsf" id="2gRBml1Sjmg" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027856" />
+            <ref role="37HLr8" node="7nDaBAKzQc2" />
             <ref role="1C2YfU" node="7nDaBAKzQc4" resolve="Fragment_8496368874152747780" />
           </node>
         </node>
@@ -3017,15 +3019,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzNw$" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzNw_" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5i7" resolve="proxy" />
+              <ref role="bkjOf" node="7j$WnoQO5i7" resolve="proxy" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzNwB" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152736807" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzNwD" resolve="VPToFragment_8496368874152736809" />
-                <ref role="25GeQm" node="7nDaBAKzNwF" resolve="PeoplBlockReference_8496368874152736811" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOsci" resolve="ModuleToFragment_5157572018661606162" />
+                <ref role="25GeQm" node="2gRBml1Sjmk" resolve="FeatureGroupReference_2609727567307027860" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5ic" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQO5id" role="3cqZAp">
@@ -3065,9 +3067,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzNwF" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152736811" />
-            <ref role="ocbYS" node="7nDaBAKzNw_" />
+          <node concept="37HLsf" id="2gRBml1Sjmk" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027860" />
+            <ref role="37HLr8" node="7nDaBAKzNw_" />
             <ref role="1C2YfU" node="7nDaBAKzNwB" resolve="Fragment_8496368874152736807" />
           </node>
         </node>
@@ -3081,15 +3083,15 @@
           </node>
           <node concept="3clFbS" id="7nDaBAKzKPy" role="3clF47">
             <node concept="2wexfA" id="7nDaBAKzKPz" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKznMv" resolve="DroidClientConfig" />
-              <ref role="ojxmB" node="7j$WnoQO5iu" resolve="build" />
+              <ref role="bkjOf" node="7j$WnoQO5iu" resolve="build" />
+              <ref role="bkjOb" node="7nDaBAKznMv" resolve="DroidClientConfig" />
               <node concept="1V74GB" id="7nDaBAKzKP_" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_8496368874152725861" />
                 <ref role="1V74Hf" to="x0nt:7nDaBAKzKPB" resolve="VPToFragment_8496368874152725863" />
-                <ref role="25GeQm" node="7nDaBAKzKPD" resolve="PeoplBlockReference_8496368874152725865" />
                 <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
                 <ref role="3aRQVk" to="x0nt:4ujo6NbOscl" resolve="ModuleToFragment_5157572018661606165" />
+                <ref role="25GeQm" node="2gRBml1Sjmo" resolve="FeatureGroupReference_2609727567307027864" />
               </node>
               <node concept="3clFbS" id="7j$WnoQO5iv" role="9aQI4">
                 <node concept="3cpWs6" id="7j$WnoQO5iw" role="3cqZAp">
@@ -3103,9 +3105,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="7nDaBAKzKPD" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_8496368874152725865" />
-            <ref role="ocbYS" node="7nDaBAKzKPz" />
+          <node concept="37HLsf" id="2gRBml1Sjmo" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027864" />
+            <ref role="37HLr8" node="7nDaBAKzKPz" />
             <ref role="1C2YfU" node="7nDaBAKzKP_" resolve="Fragment_8496368874152725861" />
           </node>
         </node>
@@ -3121,7 +3123,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKznNN">
     <property role="TrG5h" value="JestClientFactory" />
-    <node concept="3GWJoq" id="7nDaBAKznNO" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKznNO" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="JestClientFactory" />
       <property role="1EXbeo" value="false" />
@@ -3167,8 +3169,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQNUlk" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznNY" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznNO" resolve="JestClientFactory" />
-            <ref role="ojxmB" node="7j$WnoQNUlj" resolve="getObject" />
+            <ref role="bkjOf" node="7j$WnoQNUlj" resolve="getObject" />
+            <ref role="bkjOb" node="7nDaBAKznNO" resolve="JestClientFactory" />
             <node concept="3clFbS" id="7nDaBAKznNZ" role="9aQI4">
               <node concept="3cpWs8" id="7j$WnoQNUlm" role="3cqZAp">
                 <node concept="3cpWsn" id="7j$WnoQNUll" role="3cpWs9">
@@ -3990,9 +3992,9 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623360" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznO2" resolve="VPToFragment_8496368874152623362" />
-              <ref role="25GeQm" node="7nDaBAKznO4" resolve="PeoplBlockReference_8496368874152623364" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOu5I" resolve="ModuleToFragment_5157572018661613934" />
+              <ref role="25GeQm" node="2gRBml1Sjms" resolve="FeatureGroupReference_2609727567307027868" />
             </node>
           </node>
         </node>
@@ -4000,9 +4002,9 @@
         <node concept="3uibUv" id="7j$WnoQNUoK" role="3clF45">
           <ref role="3uigEE" to="fcgr:7j$WnoQO5za" resolve="JestClient" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKznO4" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623364" />
-          <ref role="ocbYS" node="7nDaBAKznNY" />
+        <node concept="37HLsf" id="2gRBml1Sjms" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027868" />
+          <ref role="37HLr8" node="7nDaBAKznNY" />
           <ref role="1C2YfU" node="7nDaBAKznO0" resolve="Fragment_8496368874152623360" />
         </node>
       </node>
@@ -4019,8 +4021,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNUoO" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKznO6" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKznNO" resolve="JestClientFactory" />
-            <ref role="ojxmB" node="7j$WnoQNUoL" resolve="setDroidClientConfig" />
+            <ref role="bkjOf" node="7j$WnoQNUoL" resolve="setDroidClientConfig" />
+            <ref role="bkjOb" node="7nDaBAKznNO" resolve="JestClientFactory" />
             <node concept="3clFbS" id="7nDaBAKznO7" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQNUoP" role="3cqZAp">
                 <node concept="37vLTI" id="7j$WnoQNUoQ" role="3clFbG">
@@ -4040,17 +4042,17 @@
               <property role="32Xqk$" value="chosenModule" />
               <property role="TrG5h" value="Fragment_8496368874152623368" />
               <ref role="1V74Hf" to="x0nt:7nDaBAKznOa" resolve="VPToFragment_8496368874152623370" />
-              <ref role="25GeQm" node="7nDaBAKznOc" resolve="PeoplBlockReference_8496368874152623372" />
               <ref role="a64iB" to="x0nt:4ujo6NbOlD8" resolve="Android" />
               <ref role="3aRQVk" to="x0nt:4ujo6NbOu5L" resolve="ModuleToFragment_5157572018661613937" />
+              <ref role="25GeQm" node="2gRBml1Sjmw" resolve="FeatureGroupReference_2609727567307027872" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNUoV" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQNUoW" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKznOc" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152623372" />
-          <ref role="ocbYS" node="7nDaBAKznO6" />
+        <node concept="37HLsf" id="2gRBml1Sjmw" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027872" />
+          <ref role="37HLr8" node="7nDaBAKznO6" />
           <ref role="1C2YfU" node="7nDaBAKznO8" resolve="Fragment_8496368874152623368" />
         </node>
       </node>

@@ -38,6 +38,7 @@
         <reference id="7037608403905758472" name="connectedModule" index="mGtU6" />
       </concept>
       <concept id="7037608403905313313" name="de.htwsaar.peopl.core.structure.ImpliesOperation" flags="ng" index="mJI6J" />
+      <concept id="6975064677845858429" name="de.htwsaar.peopl.core.structure.Constraint" flags="ng" index="oF10z" />
       <concept id="6648222251507162664" name="de.htwsaar.peopl.core.structure.VariabilityDataStorage" flags="ng" index="2$Fqj1">
         <child id="6648222251507162671" name="vp" index="2$Fqj6" />
       </concept>
@@ -412,26 +413,30 @@
         </node>
       </node>
     </node>
-    <node concept="mJI6J" id="74e0r53UvI5" role="2tDTRo">
-      <node concept="1Wc70l" id="74e0r53UvIj" role="3uHU7w">
-        <node concept="mGrBK" id="74e0r53UvID" role="3uHU7w">
-          <ref role="mGtU6" node="1yv_rrpLC_T" resolve="Overflow" />
+    <node concept="oF10z" id="3FPp8XKxMSY" role="2tDTRo">
+      <node concept="mJI6J" id="3FPp8XKxMVR" role="3clFbG">
+        <node concept="1Wc70l" id="3FPp8XKxMXR" role="3uHU7w">
+          <node concept="mGrBK" id="3FPp8XKxMZ3" role="3uHU7w">
+            <ref role="mGtU6" node="1yv_rrpLC_T" resolve="Overflow" />
+          </node>
+          <node concept="mGrBK" id="3FPp8XKxMWQ" role="3uHU7B">
+            <ref role="mGtU6" node="1yv_rrpLv2I" resolve="Underflow" />
+          </node>
         </node>
-        <node concept="mGrBK" id="74e0r53UvIc" role="3uHU7B">
-          <ref role="mGtU6" node="1yv_rrpLv2I" resolve="Underflow" />
+        <node concept="mGrBK" id="3FPp8XKxMU0" role="3uHU7B">
+          <ref role="mGtU6" node="1RNHMnnKzo" resolve="Base" />
         </node>
-      </node>
-      <node concept="mGrBK" id="74e0r53UvHY" role="3uHU7B">
-        <ref role="mGtU6" node="1RNHMnnKzo" resolve="Base" />
       </node>
     </node>
-    <node concept="mGrBK" id="4$luMkalyKj" role="2tDTRo">
-      <ref role="mGtU6" node="1RNHMnnKzo" resolve="Base" />
+    <node concept="oF10z" id="3FPp8XKxN11" role="2tDTRo">
+      <node concept="mGrBK" id="3FPp8XKxN29" role="3clFbG">
+        <ref role="mGtU6" node="1RNHMnnKzo" resolve="Base" />
+      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="1RNHMnnKzp">
     <property role="TrG5h" value="Stack" />
-    <ref role="2M0niE" node="3lU2mYIT_x5" />
+    <ref role="2M0niE" node="1RNHMnnKzq" />
     <node concept="u25OH" id="1RNHMnnKzq" role="2M0niC">
       <node concept="2Hijyl" id="1RNHMnnKzr" role="2Hjnvt">
         <node concept="u2itq" id="3cWsfR6x5an" role="3clFbG">

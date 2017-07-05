@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="0" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -374,11 +374,11 @@
                       <ref role="3cqZAo" node="4HKw9xXxjo4" resolve="modConf" />
                     </node>
                     <node concept="3TrEf2" id="GdEQ2CAMhA" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sj65:4NJLQZxCF2M" />
+                      <ref role="3Tt5mk" to="sj65:4NJLQZxCF2M" resolve="moduleExpression" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="GdEQ2CAMhB" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:fzclF8k" />
+                    <ref role="3Tt5mk" to="tpee:fzclF8k" resolve="expression" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="GdEQ2CAMhC" role="2OqNvi">
@@ -594,7 +594,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="6WkKb53DvoK" role="2OqNvi">
-                    <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" />
+                    <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" resolve="activeConfig" />
                   </node>
                 </node>
               </node>
@@ -646,7 +646,7 @@
                       </node>
                     </node>
                     <node concept="3TrEf2" id="6WkKb53Dv__" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" />
+                      <ref role="3Tt5mk" to="sj65:1hL$JiAsepu" resolve="activeConfig" />
                     </node>
                   </node>
                 </node>
@@ -842,11 +842,11 @@
           <node concept="3cpWsn" id="1GERpNhjSRQ" role="3cpWs9">
             <property role="TrG5h" value="dialog" />
             <node concept="3uibUv" id="1GERpNhjSRR" role="1tU5fm">
-              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="ConfigEvalDialog" />
+              <ref role="3uigEE" to="1z58:1GERpNha2AT" resolve="EvaluationDialog" />
             </node>
             <node concept="2ShNRf" id="1GERpNhjSTv" role="33vP2m">
               <node concept="1pGfFk" id="1GERpNhjSTu" role="2ShVmc">
-                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="ConfigEvalDialog" />
+                <ref role="37wK5l" to="1z58:1GERpNha32a" resolve="EvaluationDialog" />
                 <node concept="2YIFZM" id="1GERpNhjTw0" role="37wK5m">
                   <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
                   <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
@@ -1014,7 +1014,7 @@
                         <ref role="3cqZAo" node="1GERpNhjVg8" resolve="modConf" />
                       </node>
                       <node concept="3Tsc0h" id="1GERpNhjVGI" role="2OqNvi">
-                        <ref role="3TtcxE" to="sj65:1hL$JiAseps" />
+                        <ref role="3TtcxE" to="sj65:1hL$JiAseps" resolve="configs" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="1GERpNhjVGJ" role="2OqNvi">

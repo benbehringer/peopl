@@ -173,7 +173,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -183,6 +182,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -588,7 +588,7 @@
               </node>
               <node concept="YCak7" id="7zTQQdmKQs3" role="2OqNvi" />
             </node>
-            <node concept="1PgB_6" id="7zTQQdmKROd" role="2OqNvi" />
+            <node concept="3YRAZt" id="7zTQQdmKROd" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="7zTQQdmKYcw" role="3cqZAp" />
@@ -1020,7 +1020,7 @@
               </node>
               <node concept="YCak7" id="7zTQQdmL6X7" role="2OqNvi" />
             </node>
-            <node concept="1PgB_6" id="7zTQQdmL6X8" role="2OqNvi" />
+            <node concept="3YRAZt" id="7zTQQdmL6X8" role="2OqNvi" />
           </node>
         </node>
         <node concept="3clFbH" id="7zTQQdmL6X9" role="3cqZAp" />

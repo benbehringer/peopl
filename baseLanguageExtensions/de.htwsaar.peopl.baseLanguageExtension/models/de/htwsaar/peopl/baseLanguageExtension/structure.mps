@@ -70,6 +70,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
   </registry>
   <node concept="1TIwiD" id="7bzdNbiQijk">
@@ -278,20 +285,28 @@
     <property role="EcuMT" value="5180534983473073745" />
     <property role="TrG5h" value="PeoplStaticFieldRef" />
     <property role="34LRSv" value=".&lt;static f&gt;" />
-    <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
-    <node concept="1TJgyj" id="4v$XhUGpTOt" role="1TKVEi">
-      <property role="IQ2ns" value="5180534983473208605" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="classifier" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
+    <ref role="1TJDcQ" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+    <node concept="1X3_iC" id="7GbrX0ckAYi" role="lGtFl">
+      <property role="3V$3am" value="linkDeclaration" />
+      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
+      <node concept="1TJgyj" id="4v$XhUGpTOt" role="8Wnug">
+        <property role="IQ2ns" value="5180534983473208605" />
+        <property role="20lmBu" value="reference" />
+        <property role="20kJfa" value="classifier" />
+        <property role="20lbJX" value="1" />
+        <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
+      </node>
     </node>
-    <node concept="1TJgyj" id="4v$XhUGpTW5" role="1TKVEi">
-      <property role="IQ2ns" value="5180534983473209093" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="staticFieldDeclaration" />
-      <ref role="20lvS9" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
-      <ref role="20ksaX" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+    <node concept="1X3_iC" id="7GbrX0ckAYn" role="lGtFl">
+      <property role="3V$3am" value="linkDeclaration" />
+      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1169125787135/1071489727083" />
+      <node concept="1TJgyj" id="4v$XhUGpTW5" role="8Wnug">
+        <property role="IQ2ns" value="5180534983473209093" />
+        <property role="20lmBu" value="reference" />
+        <property role="20kJfa" value="staticFieldDeclaration" />
+        <ref role="20lvS9" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
+        <ref role="20ksaX" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+      </node>
     </node>
   </node>
 </model>

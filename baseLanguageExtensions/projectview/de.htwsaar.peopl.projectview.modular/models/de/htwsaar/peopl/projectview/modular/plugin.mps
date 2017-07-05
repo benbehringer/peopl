@@ -4,8 +4,8 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
@@ -15,7 +15,7 @@
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -397,7 +397,6 @@
         <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
-        <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
       <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
@@ -471,7 +470,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1140133623887" name="jetbrains.mps.lang.smodel.structure.Node_DeleteOperation" flags="nn" index="1PgB_6" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -484,6 +482,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2166,11 +2165,15 @@
     <node concept="Xl_RD" id="3dIcPvM6TOe" role="3GFWDq">
       <property role="Xl_RC" value="Modular View" />
     </node>
-    <node concept="2YIFZM" id="1Eg6dA78rCw" role="37b278">
-      <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-      <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-      <node concept="3nh3qo" id="1Eg6dA78rCx" role="37wK5m">
-        <ref role="3nh3qp" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+    <node concept="1X3_iC" id="7GbrX0bnpXI" role="lGtFl">
+      <property role="3V$3am" value="icon" />
+      <property role="3V$3ak" value="1f1b4a81-113d-4b88-9b67-2bae3e4f8128/8309912865649284702/5782973724855443006" />
+      <node concept="2YIFZM" id="1Eg6dA78rCw" role="8Wnug">
+        <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
+        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+        <node concept="3nh3qo" id="1Eg6dA78rCx" role="37wK5m">
+          <ref role="3nh3qp" to="xf8r:7Ufy5VQFkPw" resolve="ModuleDefinition" />
+        </node>
       </node>
     </node>
   </node>
@@ -5007,7 +5010,7 @@
                       </node>
                       <node concept="1uHKPH" id="NRjk71BEAd" role="2OqNvi" />
                     </node>
-                    <node concept="1PgB_6" id="NRjk71BGip" role="2OqNvi" />
+                    <node concept="3YRAZt" id="NRjk71BGip" role="2OqNvi" />
                   </node>
                 </node>
                 <node concept="2Gpval" id="19glLi5L5t_" role="3cqZAp">
@@ -5020,7 +5023,7 @@
                         <node concept="2GrUjf" id="19glLi5L6Ds" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="19glLi5L5tB" resolve="attribute" />
                         </node>
-                        <node concept="1PgB_6" id="19glLi5L6PA" role="2OqNvi" />
+                        <node concept="3YRAZt" id="19glLi5L6PA" role="2OqNvi" />
                       </node>
                     </node>
                   </node>
@@ -8653,7 +8656,7 @@
                     <node concept="37vLTw" id="7R0bsHOOW1l" role="2Oq$k0">
                       <ref role="3cqZAo" node="7R0bsHOOVJU" resolve="tmpClass" />
                     </node>
-                    <node concept="1PgB_6" id="7R0bsHOOUYa" role="2OqNvi" />
+                    <node concept="3YRAZt" id="7R0bsHOOUYa" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -8874,7 +8877,7 @@
                 <node concept="2GrUjf" id="7k_gvOUrviq" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="7k_gvOUrv7D" resolve="tmpPeoplClass" />
                 </node>
-                <node concept="1PgB_6" id="7k_gvOUrvqb" role="2OqNvi" />
+                <node concept="3YRAZt" id="7k_gvOUrvqb" role="2OqNvi" />
               </node>
             </node>
           </node>
@@ -9267,7 +9270,7 @@
                                 <ref role="2WH_rO" node="470MJsrNjSM" resolve="peoplClass" />
                               </node>
                             </node>
-                            <node concept="1PgB_6" id="470MJsrYUEC" role="2OqNvi" />
+                            <node concept="3YRAZt" id="470MJsrYUEC" role="2OqNvi" />
                           </node>
                         </node>
                       </node>
@@ -9357,7 +9360,7 @@
                                 </node>
                                 <node concept="1mfA1w" id="470MJss1pJ6" role="2OqNvi" />
                               </node>
-                              <node concept="1PgB_6" id="470MJss1S_k" role="2OqNvi" />
+                              <node concept="3YRAZt" id="470MJss1S_k" role="2OqNvi" />
                             </node>
                           </node>
                         </node>
@@ -9422,7 +9425,7 @@
                                 </node>
                                 <node concept="1mfA1w" id="470MJsrU5rC" role="2OqNvi" />
                               </node>
-                              <node concept="1PgB_6" id="470MJsrU5Cp" role="2OqNvi" />
+                              <node concept="3YRAZt" id="470MJsrU5Cp" role="2OqNvi" />
                             </node>
                           </node>
                         </node>

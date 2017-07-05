@@ -2,7 +2,7 @@
 <model ref="r:466cb57b-2a70-4c77-b408-c20dab64f61f(de.htwsaar.peopl.core.variabilityDeclaration.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -754,7 +754,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4GdSHYm3JJy">
-    <ref role="13h7C2" to="ovfz:4GdSHYm3JJh" resolve="DependencyCheckingFUnction" />
+    <ref role="13h7C2" to="ovfz:4GdSHYm3JJh" resolve="DependencyCheckingFunction" />
     <node concept="13hLZK" id="4GdSHYm3JJz" role="13h7CW">
       <node concept="3clFbS" id="4GdSHYm3JJ$" role="2VODD2" />
     </node>

@@ -13,7 +13,7 @@
   <imports>
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="frz3" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.methods(Jest_new/)" />
+    <import index="frz3" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.client.methods(Jest/)" />
     <import index="x0nt" ref="r:cb4e30dd-584a-40ec-8a59-8a7b1c91a0d3(peoplConfig)" />
   </imports>
   <registry>
@@ -89,6 +89,16 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
+        <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
+        <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
+      </concept>
+      <concept id="4028078182582291660" name="de.htwsaar.peopl.core.structure.IFeatureGroupRef" flags="ng" index="37HLsf">
+        <reference id="4028078182582291723" name="referencedGroup" index="37HLr8" />
+      </concept>
+      <concept id="763904935699076689" name="de.htwsaar.peopl.core.structure.CompilationUnitContainer" flags="ng" index="3k6N$G">
+        <child id="763904935699076819" name="compilationUnits" index="3k6NAI" />
+      </concept>
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
@@ -101,16 +111,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
-        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
-      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -142,11 +144,11 @@
   </registry>
   <node concept="H$gyE" id="7nDaBAKzmAm">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" />
+    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" resolve="Jest" />
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmAn">
     <property role="TrG5h" value="HttpGetWithEntity" />
-    <node concept="3GWJoq" id="7nDaBAKzmAo" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmAo" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="HttpGetWithEntity" />
       <property role="1EXbeo" value="false" />
@@ -171,8 +173,8 @@
         <node concept="3cqZAl" id="7j$WnoQNYxv" role="3clF45" />
         <node concept="3clFbS" id="7j$WnoQNYxw" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmAy" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQNYxu" resolve="HttpGetWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQNYxu" resolve="HttpGetWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmAz" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpL" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -184,14 +186,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmAA" resolve="VPToFragment_8496368874152618406" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmAB" resolve="ModuleToFragment_8496368874152618407" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmAC" resolve="PeoplBlockReference_8496368874152618408" />
+              <ref role="25GeQm" node="2gRBml1Sj5g" resolve="FeatureGroupReference_2609727567307026768" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNYxy" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmAC" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618408" />
-          <ref role="ocbYS" node="7nDaBAKzmAy" />
+        <node concept="37HLsf" id="2gRBml1Sj5g" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026768" />
+          <ref role="37HLr8" node="7nDaBAKzmAy" />
           <ref role="1C2YfU" node="7nDaBAKzmA$" resolve="Fragment_8496368874152618404" />
         </node>
       </node>
@@ -208,8 +210,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNYxB" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmAE" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQNYxz" resolve="HttpGetWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQNYxz" resolve="HttpGetWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmAF" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpM" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -229,14 +231,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmAI" resolve="VPToFragment_8496368874152618414" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmAJ" resolve="ModuleToFragment_8496368874152618415" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmAK" resolve="PeoplBlockReference_8496368874152618416" />
+              <ref role="25GeQm" node="2gRBml1Sj5k" resolve="FeatureGroupReference_2609727567307026772" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNYxG" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmAK" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618416" />
-          <ref role="ocbYS" node="7nDaBAKzmAE" />
+        <node concept="37HLsf" id="2gRBml1Sj5k" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026772" />
+          <ref role="37HLr8" node="7nDaBAKzmAE" />
           <ref role="1C2YfU" node="7nDaBAKzmAG" resolve="Fragment_8496368874152618412" />
         </node>
       </node>
@@ -251,8 +253,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNYxL" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmAM" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQNYxH" resolve="HttpGetWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQNYxH" resolve="HttpGetWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmAN" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpN" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -276,14 +278,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmAQ" resolve="VPToFragment_8496368874152618422" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmAR" resolve="ModuleToFragment_8496368874152618423" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmAS" resolve="PeoplBlockReference_8496368874152618424" />
+              <ref role="25GeQm" node="2gRBml1Sj5o" resolve="FeatureGroupReference_2609727567307026776" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNYxR" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmAS" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618424" />
-          <ref role="ocbYS" node="7nDaBAKzmAM" />
+        <node concept="37HLsf" id="2gRBml1Sj5o" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026776" />
+          <ref role="37HLr8" node="7nDaBAKzmAM" />
           <ref role="1C2YfU" node="7nDaBAKzmAO" resolve="Fragment_8496368874152618420" />
         </node>
       </node>
@@ -296,8 +298,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNYxU" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmAU" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQNYxS" resolve="getMethod" />
+            <ref role="bkjOf" node="7j$WnoQNYxS" resolve="getMethod" />
+            <ref role="bkjOb" node="7nDaBAKzmAo" resolve="HttpGetWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmAV" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQNYxV" role="3cqZAp">
                 <node concept="10M0yZ" id="7pCVAX3X7fx" role="3cqZAk">
@@ -312,15 +314,15 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmAY" resolve="VPToFragment_8496368874152618430" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmAZ" resolve="ModuleToFragment_8496368874152618431" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmB0" resolve="PeoplBlockReference_8496368874152618432" />
+              <ref role="25GeQm" node="2gRBml1Sj5s" resolve="FeatureGroupReference_2609727567307026780" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNYxX" role="1B3o_S" />
         <node concept="17QB3L" id="7j$WnoTKMk3" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmB0" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618432" />
-          <ref role="ocbYS" node="7nDaBAKzmAU" />
+        <node concept="37HLsf" id="2gRBml1Sj5s" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026780" />
+          <ref role="37HLr8" node="7nDaBAKzmAU" />
           <ref role="1C2YfU" node="7nDaBAKzmAW" resolve="Fragment_8496368874152618428" />
         </node>
       </node>
@@ -328,7 +330,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmB4">
     <property role="TrG5h" value="HttpDeleteWithEntity" />
-    <node concept="3GWJoq" id="7nDaBAKzmB5" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmB5" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="HttpDeleteWithEntity" />
       <property role="1EXbeo" value="false" />
@@ -353,8 +355,8 @@
         <node concept="3cqZAl" id="7j$WnoQO1U8" role="3clF45" />
         <node concept="3clFbS" id="7j$WnoQO1U9" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmBf" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQO1U7" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQO1U7" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmBg" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpT" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -366,14 +368,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmBj" resolve="VPToFragment_8496368874152618451" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmBk" resolve="ModuleToFragment_8496368874152618452" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmBl" resolve="PeoplBlockReference_8496368874152618453" />
+              <ref role="25GeQm" node="2gRBml1Sj5w" resolve="FeatureGroupReference_2609727567307026784" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO1Ub" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmBl" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618453" />
-          <ref role="ocbYS" node="7nDaBAKzmBf" />
+        <node concept="37HLsf" id="2gRBml1Sj5w" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026784" />
+          <ref role="37HLr8" node="7nDaBAKzmBf" />
           <ref role="1C2YfU" node="7nDaBAKzmBh" resolve="Fragment_8496368874152618449" />
         </node>
       </node>
@@ -390,8 +392,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO1Ug" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmBn" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQO1Uc" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQO1Uc" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmBo" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpU" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -411,14 +413,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmBr" resolve="VPToFragment_8496368874152618459" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmBs" resolve="ModuleToFragment_8496368874152618460" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmBt" resolve="PeoplBlockReference_8496368874152618461" />
+              <ref role="25GeQm" node="2gRBml1Sj5$" resolve="FeatureGroupReference_2609727567307026788" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO1Ul" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmBt" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618461" />
-          <ref role="ocbYS" node="7nDaBAKzmBn" />
+        <node concept="37HLsf" id="2gRBml1Sj5$" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026788" />
+          <ref role="37HLr8" node="7nDaBAKzmBn" />
           <ref role="1C2YfU" node="7nDaBAKzmBp" resolve="Fragment_8496368874152618457" />
         </node>
       </node>
@@ -433,8 +435,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO1Uq" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmBv" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQO1Um" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOf" node="7j$WnoQO1Um" resolve="HttpDeleteWithEntity" />
+            <ref role="bkjOb" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmBw" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPTpV" role="3cqZAp">
                 <ref role="37wK5l" to="frz3:~HttpEntityEnclosingRequestBase.&lt;init&gt;()" resolve="HttpEntityEnclosingRequestBase" />
@@ -458,14 +460,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmBz" resolve="VPToFragment_8496368874152618467" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmB$" resolve="ModuleToFragment_8496368874152618468" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmB_" resolve="PeoplBlockReference_8496368874152618469" />
+              <ref role="25GeQm" node="2gRBml1Sj5C" resolve="FeatureGroupReference_2609727567307026792" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO1Uw" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmB_" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618469" />
-          <ref role="ocbYS" node="7nDaBAKzmBv" />
+        <node concept="37HLsf" id="2gRBml1Sj5C" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026792" />
+          <ref role="37HLr8" node="7nDaBAKzmBv" />
           <ref role="1C2YfU" node="7nDaBAKzmBx" resolve="Fragment_8496368874152618465" />
         </node>
       </node>
@@ -478,8 +480,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO1Uz" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmBB" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
-            <ref role="ojxmB" node="7j$WnoQO1Ux" resolve="getMethod" />
+            <ref role="bkjOf" node="7j$WnoQO1Ux" resolve="getMethod" />
+            <ref role="bkjOb" node="7nDaBAKzmB5" resolve="HttpDeleteWithEntity" />
             <node concept="3clFbS" id="7nDaBAKzmBC" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO1U$" role="3cqZAp">
                 <node concept="10M0yZ" id="7pCVAX3X7fA" role="3cqZAk">
@@ -494,15 +496,15 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmBF" resolve="VPToFragment_8496368874152618475" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmBG" resolve="ModuleToFragment_8496368874152618476" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmBH" resolve="PeoplBlockReference_8496368874152618477" />
+              <ref role="25GeQm" node="2gRBml1Sj5G" resolve="FeatureGroupReference_2609727567307026796" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO1UA" role="1B3o_S" />
         <node concept="17QB3L" id="7j$WnoTKMk7" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmBH" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618477" />
-          <ref role="ocbYS" node="7nDaBAKzmBB" />
+        <node concept="37HLsf" id="2gRBml1Sj5G" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026796" />
+          <ref role="37HLr8" node="7nDaBAKzmBB" />
           <ref role="1C2YfU" node="7nDaBAKzmBD" resolve="Fragment_8496368874152618473" />
         </node>
       </node>

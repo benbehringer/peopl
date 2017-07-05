@@ -11,17 +11,17 @@
     <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
   </languages>
   <imports>
-    <import index="71il" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.test(Jest_new/)" />
-    <import index="talx" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action.index(Jest_new/)" />
+    <import index="71il" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.test(Jest/)" />
+    <import index="talx" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action.index(Jest/)" />
     <import index="9pym" ref="r:dc5d80ad-cebb-43a0-94f1-47a5e5414f06(io.searchbox.action)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="fcgr" ref="r:51721a43-bbd1-4edc-af1d-75408a5d4a04(io.searchbox.client)" />
-    <import index="k6qn" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action.admin.indices.create(Jest_new/)" />
-    <import index="x6ue" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.client(Jest_new/)" />
-    <import index="2wk1" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action(Jest_new/)" />
+    <import index="k6qn" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action.admin.indices.create(Jest/)" />
+    <import index="x6ue" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.client(Jest/)" />
+    <import index="2wk1" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.elasticsearch.action(Jest/)" />
     <import index="ccp3" ref="r:e043797f-8cdc-4af0-b634-2765c1bb8dad(io.searchbox.client.http)" />
-    <import index="rjhg" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.junit(Jest_new/)" />
+    <import index="rjhg" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.junit(Jest/)" />
     <import index="x0nt" ref="r:cb4e30dd-584a-40ec-8a59-8a7b1c91a0d3(peoplConfig)" />
   </imports>
   <registry>
@@ -101,6 +101,16 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
+        <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
+        <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
+      </concept>
+      <concept id="4028078182582291660" name="de.htwsaar.peopl.core.structure.IFeatureGroupRef" flags="ng" index="37HLsf">
+        <reference id="4028078182582291723" name="referencedGroup" index="37HLr8" />
+      </concept>
+      <concept id="763904935699076689" name="de.htwsaar.peopl.core.structure.CompilationUnitContainer" flags="ng" index="3k6N$G">
+        <child id="763904935699076819" name="compilationUnits" index="3k6NAI" />
+      </concept>
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
@@ -113,16 +123,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
-        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
-      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -158,7 +160,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmEP">
     <property role="TrG5h" value="TypeExist" />
-    <node concept="3GWJoq" id="7nDaBAKzmEQ" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmEQ" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="TypeExist" />
       <property role="1EXbeo" value="false" />
@@ -190,8 +192,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNS9f" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmF0" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmEQ" resolve="TypeExist" />
-            <ref role="ojxmB" node="7j$WnoQNS9b" resolve="TypeExist" />
+            <ref role="bkjOf" node="7j$WnoQNS9b" resolve="TypeExist" />
+            <ref role="bkjOb" node="7nDaBAKzmEQ" resolve="TypeExist" />
             <node concept="3clFbS" id="7nDaBAKzmF1" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPKsW" role="3cqZAp">
                 <ref role="37wK5l" to="9pym:7j$WnoQO08Q" resolve="GenericResultAbstractAction" />
@@ -214,14 +216,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmF4" resolve="VPToFragment_8496368874152618692" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmF5" resolve="ModuleToFragment_8496368874152618693" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmF6" resolve="PeoplBlockReference_8496368874152618694" />
+              <ref role="25GeQm" node="2gRBml1Sjda" resolve="FeatureGroupReference_2609727567307027274" />
             </node>
           </node>
         </node>
         <node concept="3Tmbuc" id="7j$WnoQNS9l" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmF6" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618694" />
-          <ref role="ocbYS" node="7nDaBAKzmF0" />
+        <node concept="37HLsf" id="2gRBml1Sjda" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027274" />
+          <ref role="37HLr8" node="7nDaBAKzmF0" />
           <ref role="1C2YfU" node="7nDaBAKzmF2" resolve="Fragment_8496368874152618690" />
         </node>
       </node>
@@ -234,8 +236,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNS9o" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmF8" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmEQ" resolve="TypeExist" />
-            <ref role="ojxmB" node="7j$WnoQNS9m" resolve="getRestMethodName" />
+            <ref role="bkjOf" node="7j$WnoQNS9m" resolve="getRestMethodName" />
+            <ref role="bkjOb" node="7nDaBAKzmEQ" resolve="TypeExist" />
             <node concept="3clFbS" id="7nDaBAKzmF9" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQNS9p" role="3cqZAp">
                 <node concept="Xl_RD" id="7j$WnoQNS9q" role="3cqZAk">
@@ -249,15 +251,15 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmFc" resolve="VPToFragment_8496368874152618700" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmFd" resolve="ModuleToFragment_8496368874152618701" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmFe" resolve="PeoplBlockReference_8496368874152618702" />
+              <ref role="25GeQm" node="2gRBml1Sjde" resolve="FeatureGroupReference_2609727567307027278" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNS9r" role="1B3o_S" />
         <node concept="17QB3L" id="7j$WnoTmOF9" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmFe" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618702" />
-          <ref role="ocbYS" node="7nDaBAKzmF8" />
+        <node concept="37HLsf" id="2gRBml1Sjde" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027278" />
+          <ref role="37HLr8" node="7nDaBAKzmF8" />
           <ref role="1C2YfU" node="7nDaBAKzmFa" resolve="Fragment_8496368874152618698" />
         </node>
       </node>
@@ -288,15 +290,15 @@
           <node concept="3Tm1VV" id="7j$WnoQNS91" role="1B3o_S" />
           <node concept="3clFbS" id="3pykJoM5ZU8" role="3clF47">
             <node concept="2wexfA" id="3pykJoM5ZU9" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKzmEQ" resolve="TypeExist" />
-              <ref role="ojxmB" node="7j$WnoQNS8T" resolve="TypeExist.Builder" />
+              <ref role="bkjOf" node="7j$WnoQNS8T" resolve="TypeExist.Builder" />
+              <ref role="bkjOb" node="7nDaBAKzmEQ" resolve="TypeExist" />
               <node concept="1V74GB" id="3pykJoM5ZUb" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_3918785843121618571" />
                 <ref role="1V74Hf" to="x0nt:3pykJoM5ZUd" resolve="VPToFragment_3918785843121618573" />
                 <ref role="3aRQVk" to="x0nt:3pykJoM5ZUe" resolve="ModuleToFragment_3918785843121618574" />
                 <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-                <ref role="25GeQm" node="3pykJoM5ZUf" resolve="PeoplBlockReference_3918785843121618575" />
+                <ref role="25GeQm" node="2gRBml1Sjdi" resolve="FeatureGroupReference_2609727567307027282" />
               </node>
               <node concept="3clFbS" id="7j$WnoQNS8X" role="9aQI4">
                 <node concept="3clFbF" id="7j$WnoQNS8Y" role="3cqZAp">
@@ -310,9 +312,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="3pykJoM5ZUf" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_3918785843121618575" />
-            <ref role="ocbYS" node="3pykJoM5ZU9" />
+          <node concept="37HLsf" id="2gRBml1Sjdi" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027282" />
+            <ref role="37HLr8" node="3pykJoM5ZU9" />
             <ref role="1C2YfU" node="3pykJoM5ZUb" resolve="Fragment_3918785843121618571" />
           </node>
         </node>
@@ -329,15 +331,15 @@
           </node>
           <node concept="3clFbS" id="3pykJoM5YZx" role="3clF47">
             <node concept="2wexfA" id="3pykJoM5YZy" role="3cqZAp">
-              <ref role="ojxm_" node="7nDaBAKzmEQ" resolve="TypeExist" />
-              <ref role="ojxmB" node="7j$WnoQNS92" resolve="build" />
+              <ref role="bkjOf" node="7j$WnoQNS92" resolve="build" />
+              <ref role="bkjOb" node="7nDaBAKzmEQ" resolve="TypeExist" />
               <node concept="1V74GB" id="3pykJoM5YZ$" role="lGtFl">
                 <property role="32Xqk$" value="chosenModule" />
                 <property role="TrG5h" value="Fragment_3918785843121614820" />
                 <ref role="1V74Hf" to="x0nt:3pykJoM5YZA" resolve="VPToFragment_3918785843121614822" />
                 <ref role="3aRQVk" to="x0nt:3pykJoM5YZB" resolve="ModuleToFragment_3918785843121614823" />
                 <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-                <ref role="25GeQm" node="3pykJoM5YZC" resolve="PeoplBlockReference_3918785843121614824" />
+                <ref role="25GeQm" node="2gRBml1Sjdm" resolve="FeatureGroupReference_2609727567307027286" />
               </node>
               <node concept="3clFbS" id="7j$WnoQNS94" role="9aQI4">
                 <node concept="3cpWs6" id="7j$WnoQNS95" role="3cqZAp">
@@ -351,9 +353,9 @@
               </node>
             </node>
           </node>
-          <node concept="ocbFV" id="3pykJoM5YZC" role="lGtFl">
-            <property role="TrG5h" value="PeoplBlockReference_3918785843121614824" />
-            <ref role="ocbYS" node="3pykJoM5YZy" />
+          <node concept="37HLsf" id="2gRBml1Sjdm" role="lGtFl">
+            <property role="TrG5h" value="FeatureGroupReference_2609727567307027286" />
+            <ref role="37HLr8" node="3pykJoM5YZy" />
             <ref role="1C2YfU" node="3pykJoM5YZ$" resolve="Fragment_3918785843121614820" />
           </node>
         </node>

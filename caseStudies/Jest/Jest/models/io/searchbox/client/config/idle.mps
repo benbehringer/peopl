@@ -13,10 +13,10 @@
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="up3q" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.nio.conn(Jest_new/)" />
+    <import index="up3q" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.nio.conn(Jest/)" />
     <import index="45kb" ref="r:e04685b0-c14e-4ddf-a7e6-c17a3838833e(io.searchbox.client.config)" />
-    <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest_new/)" />
-    <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest_new/)" />
+    <import index="73zw" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.apache.http.conn(Jest/)" />
+    <import index="jqqh" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:org.slf4j(Jest/)" />
     <import index="wyx4" ref="448297de-2f83-4b90-91dc-940b8d4ae21d/java:com.google.common.util.concurrent(Jest/)" />
     <import index="x0nt" ref="r:cb4e30dd-584a-40ec-8a59-8a7b1c91a0d3(peoplConfig)" />
   </imports>
@@ -161,6 +161,16 @@
       </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
+        <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
+        <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
+      </concept>
+      <concept id="4028078182582291660" name="de.htwsaar.peopl.core.structure.IFeatureGroupRef" flags="ng" index="37HLsf">
+        <reference id="4028078182582291723" name="referencedGroup" index="37HLr8" />
+      </concept>
+      <concept id="763904935699076689" name="de.htwsaar.peopl.core.structure.CompilationUnitContainer" flags="ng" index="3k6N$G">
+        <child id="763904935699076819" name="compilationUnits" index="3k6NAI" />
+      </concept>
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
@@ -173,16 +183,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
-        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
-      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -251,7 +253,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmBM">
     <property role="TrG5h" value="HttpReapableConnectionManager" />
-    <node concept="3GWJoq" id="7nDaBAKzmBN" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmBN" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="HttpReapableConnectionManager" />
       <property role="1EXbeo" value="false" />
@@ -504,7 +506,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmCf">
     <property role="TrG5h" value="IdleConnectionReaper" />
-    <node concept="3GWJoq" id="7nDaBAKzmCg" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmCg" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="IdleConnectionReaper" />
       <property role="1EXbeo" value="false" />
@@ -577,8 +579,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO57y" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmCq" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
-            <ref role="ojxmB" node="7j$WnoQO57s" resolve="IdleConnectionReaper" />
+            <ref role="bkjOf" node="7j$WnoQO57s" resolve="IdleConnectionReaper" />
+            <ref role="bkjOb" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
             <node concept="3clFbS" id="7nDaBAKzmCr" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQO57z" role="3cqZAp">
                 <node concept="37vLTI" id="7j$WnoQO57$" role="3clFbG">
@@ -613,14 +615,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmCu" resolve="VPToFragment_8496368874152618526" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmCv" resolve="ModuleToFragment_8496368874152618527" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmCw" resolve="PeoplBlockReference_8496368874152618528" />
+              <ref role="25GeQm" node="2gRBml1Sj5K" resolve="FeatureGroupReference_2609727567307026800" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQO57J" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmCw" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618528" />
-          <ref role="ocbYS" node="7nDaBAKzmCq" />
+        <node concept="37HLsf" id="2gRBml1Sj5K" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026800" />
+          <ref role="37HLr8" node="7nDaBAKzmCq" />
           <ref role="1C2YfU" node="7nDaBAKzmCs" resolve="Fragment_8496368874152618524" />
         </node>
       </node>
@@ -636,8 +638,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO57N" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmCy" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
-            <ref role="ojxmB" node="7j$WnoQO57K" resolve="runOneIteration" />
+            <ref role="bkjOf" node="7j$WnoQO57K" resolve="runOneIteration" />
+            <ref role="bkjOb" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
             <node concept="3clFbS" id="7nDaBAKzmCz" role="9aQI4">
               <node concept="3clFbF" id="7j$WnoQO57O" role="3cqZAp">
                 <node concept="2OqwBi" id="7j$WnoQPc3b" role="3clFbG">
@@ -685,15 +687,15 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmCA" resolve="VPToFragment_8496368874152618534" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmCB" resolve="ModuleToFragment_8496368874152618535" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmCC" resolve="PeoplBlockReference_8496368874152618536" />
+              <ref role="25GeQm" node="2gRBml1Sj5O" resolve="FeatureGroupReference_2609727567307026804" />
             </node>
           </node>
         </node>
         <node concept="3Tmbuc" id="7j$WnoQO57V" role="1B3o_S" />
         <node concept="3cqZAl" id="7j$WnoQO57W" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmCC" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618536" />
-          <ref role="ocbYS" node="7nDaBAKzmCy" />
+        <node concept="37HLsf" id="2gRBml1Sj5O" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026804" />
+          <ref role="37HLr8" node="7nDaBAKzmCy" />
           <ref role="1C2YfU" node="7nDaBAKzmC$" resolve="Fragment_8496368874152618532" />
         </node>
       </node>
@@ -706,8 +708,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO57Z" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmCE" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
-            <ref role="ojxmB" node="7j$WnoQO57X" resolve="scheduler" />
+            <ref role="bkjOf" node="7j$WnoQO57X" resolve="scheduler" />
+            <ref role="bkjOb" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
             <node concept="3clFbS" id="7nDaBAKzmCF" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQO580" role="3cqZAp">
                 <node concept="2YIFZM" id="7pCVAX45QWG" role="3cqZAk">
@@ -741,7 +743,7 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmCI" resolve="VPToFragment_8496368874152618542" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmCJ" resolve="ModuleToFragment_8496368874152618543" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmCK" resolve="PeoplBlockReference_8496368874152618544" />
+              <ref role="25GeQm" node="2gRBml1Sj5S" resolve="FeatureGroupReference_2609727567307026808" />
             </node>
           </node>
         </node>
@@ -749,9 +751,9 @@
         <node concept="3uibUv" id="7j$WnoQO586" role="3clF45">
           <ref role="3uigEE" to="wyx4:~AbstractScheduledService$Scheduler" resolve="AbstractScheduledService.Scheduler" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKzmCK" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618544" />
-          <ref role="ocbYS" node="7nDaBAKzmCE" />
+        <node concept="37HLsf" id="2gRBml1Sj5S" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026808" />
+          <ref role="37HLr8" node="7nDaBAKzmCE" />
           <ref role="1C2YfU" node="7nDaBAKzmCG" resolve="Fragment_8496368874152618540" />
         </node>
       </node>
@@ -764,8 +766,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO589" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmCM" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
-            <ref role="ojxmB" node="7j$WnoQO587" resolve="executor" />
+            <ref role="bkjOf" node="7j$WnoQO587" resolve="executor" />
+            <ref role="bkjOb" node="7nDaBAKzmCg" resolve="IdleConnectionReaper" />
             <node concept="3clFbS" id="7nDaBAKzmCN" role="9aQI4">
               <node concept="3cpWs8" id="7j$WnoQO58b" role="3cqZAp">
                 <node concept="3cpWsn" id="7j$WnoQO58a" role="3cpWs9">
@@ -926,7 +928,7 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmCQ" resolve="VPToFragment_8496368874152618550" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmCR" resolve="ModuleToFragment_8496368874152618551" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmCS" resolve="PeoplBlockReference_8496368874152618552" />
+              <ref role="25GeQm" node="2gRBml1Sj5W" resolve="FeatureGroupReference_2609727567307026812" />
             </node>
           </node>
         </node>
@@ -934,9 +936,9 @@
         <node concept="3uibUv" id="7j$WnoQO58O" role="3clF45">
           <ref role="3uigEE" to="5zyv:~ScheduledExecutorService" resolve="ScheduledExecutorService" />
         </node>
-        <node concept="ocbFV" id="7nDaBAKzmCS" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618552" />
-          <ref role="ocbYS" node="7nDaBAKzmCM" />
+        <node concept="37HLsf" id="2gRBml1Sj5W" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307026812" />
+          <ref role="37HLr8" node="7nDaBAKzmCM" />
           <ref role="1C2YfU" node="7nDaBAKzmCO" resolve="Fragment_8496368874152618548" />
         </node>
       </node>

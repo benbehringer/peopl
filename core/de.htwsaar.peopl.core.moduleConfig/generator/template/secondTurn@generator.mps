@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -206,7 +206,7 @@
                             <ref role="2Gs0qQ" node="3fgD4aX6Dr2" resolve="fragInter" />
                           </node>
                           <node concept="3TrEf2" id="3fgD4aX6NrQ" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                            <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                           </node>
                         </node>
                         <node concept="37vLTw" id="3fgD4aX7MMc" role="37vLTJ">
@@ -230,7 +230,7 @@
                               <ref role="2Gs0qQ" node="3fgD4aX6Dr2" resolve="fragInter" />
                             </node>
                             <node concept="3TrEf2" id="3fgD4aX6LIv" role="2OqNvi">
-                              <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" />
+                              <ref role="3Tt5mk" to="xf8r:6K8EDSn5e6V" resolve="fragmentReference" />
                             </node>
                           </node>
                           <node concept="1mfA1w" id="14Zo09OrZEe" role="2OqNvi" />
@@ -259,7 +259,7 @@
                             <node concept="30H73N" id="3fgD4aX6EX3" role="1eOMHV" />
                           </node>
                           <node concept="3TrEf2" id="3fgD4aX6GSa" role="2OqNvi">
-                            <ref role="3Tt5mk" to="xf8r:2LgBOmLVOSa" />
+                            <ref role="3Tt5mk" to="xf8r:2LgBOmLVOSa" resolve="placeholderIntermediate" />
                           </node>
                         </node>
                         <node concept="1mfA1w" id="3fgD4aX6HyT" role="2OqNvi" />
@@ -268,7 +268,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="3fgD4aX6JMt" role="2OqNvi">
-                  <ref role="3TtcxE" to="xf8r:6K8EDSn5e6Y" />
+                  <ref role="3TtcxE" to="xf8r:6K8EDSn5e6Y" resolve="fragmentIntermediates" />
                 </node>
               </node>
             </node>

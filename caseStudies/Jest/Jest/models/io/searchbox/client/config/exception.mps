@@ -111,6 +111,16 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+      <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
+        <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
+        <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
+      </concept>
+      <concept id="4028078182582291660" name="de.htwsaar.peopl.core.structure.IFeatureGroupRef" flags="ng" index="37HLsf">
+        <reference id="4028078182582291723" name="referencedGroup" index="37HLr8" />
+      </concept>
+      <concept id="763904935699076689" name="de.htwsaar.peopl.core.structure.CompilationUnitContainer" flags="ng" index="3k6N$G">
+        <child id="763904935699076819" name="compilationUnits" index="3k6NAI" />
+      </concept>
       <concept id="8402393385210523575" name="de.htwsaar.peopl.core.structure.FragmentUpdater" flags="ng" index="1C2YfN">
         <reference id="8402393385210523582" name="fragmentToUpdate" index="1C2YfU" />
       </concept>
@@ -123,16 +133,8 @@
       </concept>
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
-      <concept id="5367334895054757981" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockReference" flags="ng" index="ocbFV">
-        <reference id="5367334895054759198" name="myPeoplBlockStatement" index="ocbYS" />
-      </concept>
-      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplBlockStatement" flags="ng" index="2wexfA">
-        <reference id="5367334895053082371" name="definingClass" index="ojxm_" />
-        <reference id="5367334895053082369" name="definingMethod" index="ojxmB" />
-      </concept>
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh">
-        <child id="5089003046184340442" name="peoplClasses" index="2abgUk" />
-      </concept>
+      <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
       <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
@@ -165,11 +167,11 @@
   </registry>
   <node concept="H$gyE" id="7nDaBAKzmE1">
     <property role="TrG5h" value="ConfigurationLink" />
-    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" />
+    <ref role="H$gyF" to="x0nt:7nDaBAKyLlN" resolve="Jest" />
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmE2">
     <property role="TrG5h" value="CouldNotConnectException" />
-    <node concept="3GWJoq" id="7nDaBAKzmE3" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmE3" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="CouldNotConnectException" />
       <property role="1EXbeo" value="false" />
@@ -214,8 +216,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQNWPx" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmEd" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmE3" resolve="CouldNotConnectException" />
-            <ref role="ojxmB" node="7j$WnoQNWPr" resolve="CouldNotConnectException" />
+            <ref role="bkjOf" node="7j$WnoQNWPr" resolve="CouldNotConnectException" />
+            <ref role="bkjOb" node="7nDaBAKzmE3" resolve="CouldNotConnectException" />
             <node concept="3clFbS" id="7nDaBAKzmEe" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPei$" role="3cqZAp">
                 <ref role="37wK5l" to="guwi:~IOException.&lt;init&gt;(java.lang.String,java.lang.Throwable)" resolve="IOException" />
@@ -251,14 +253,14 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmEh" resolve="VPToFragment_8496368874152618641" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmEi" resolve="ModuleToFragment_8496368874152618642" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmEj" resolve="PeoplBlockReference_8496368874152618643" />
+              <ref role="25GeQm" node="2gRBml1SjcY" resolve="FeatureGroupReference_2609727567307027262" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNWPH" role="1B3o_S" />
-        <node concept="ocbFV" id="7nDaBAKzmEj" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618643" />
-          <ref role="ocbYS" node="7nDaBAKzmEd" />
+        <node concept="37HLsf" id="2gRBml1SjcY" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027262" />
+          <ref role="37HLr8" node="7nDaBAKzmEd" />
           <ref role="1C2YfU" node="7nDaBAKzmEf" resolve="Fragment_8496368874152618639" />
         </node>
       </node>
@@ -268,8 +270,8 @@
         <property role="od$2w" value="false" />
         <node concept="3clFbS" id="7j$WnoQNWPJ" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmEl" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmE3" resolve="CouldNotConnectException" />
-            <ref role="ojxmB" node="7j$WnoQNWPI" resolve="getHost" />
+            <ref role="bkjOf" node="7j$WnoQNWPI" resolve="getHost" />
+            <ref role="bkjOb" node="7nDaBAKzmE3" resolve="CouldNotConnectException" />
             <node concept="3clFbS" id="7nDaBAKzmEm" role="9aQI4">
               <node concept="3cpWs6" id="7j$WnoQNWPK" role="3cqZAp">
                 <node concept="37vLTw" id="7j$WnoQNWPL" role="3cqZAk">
@@ -283,15 +285,15 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmEp" resolve="VPToFragment_8496368874152618649" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmEq" resolve="ModuleToFragment_8496368874152618650" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmEr" resolve="PeoplBlockReference_8496368874152618651" />
+              <ref role="25GeQm" node="2gRBml1Sjd2" resolve="FeatureGroupReference_2609727567307027266" />
             </node>
           </node>
         </node>
         <node concept="3Tm1VV" id="7j$WnoQNWPM" role="1B3o_S" />
         <node concept="17QB3L" id="7j$WnoT7FLC" role="3clF45" />
-        <node concept="ocbFV" id="7nDaBAKzmEr" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618651" />
-          <ref role="ocbYS" node="7nDaBAKzmEl" />
+        <node concept="37HLsf" id="2gRBml1Sjd2" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027266" />
+          <ref role="37HLr8" node="7nDaBAKzmEl" />
           <ref role="1C2YfU" node="7nDaBAKzmEn" resolve="Fragment_8496368874152618647" />
         </node>
       </node>
@@ -311,7 +313,7 @@
   </node>
   <node concept="2SvMkh" id="7nDaBAKzmEv">
     <property role="TrG5h" value="NoServerConfiguredException" />
-    <node concept="3GWJoq" id="7nDaBAKzmEw" role="2abgUk">
+    <node concept="3GWJoq" id="7nDaBAKzmEw" role="3k6NAI">
       <property role="2bfB8j" value="true" />
       <property role="TrG5h" value="NoServerConfiguredException" />
       <property role="1EXbeo" value="false" />
@@ -351,8 +353,8 @@
         </node>
         <node concept="3clFbS" id="7j$WnoQO5dZ" role="3clF47">
           <node concept="2wexfA" id="7nDaBAKzmEE" role="3cqZAp">
-            <ref role="ojxm_" node="7nDaBAKzmEw" resolve="NoServerConfiguredException" />
-            <ref role="ojxmB" node="7j$WnoQO5dV" resolve="NoServerConfiguredException" />
+            <ref role="bkjOf" node="7j$WnoQO5dV" resolve="NoServerConfiguredException" />
+            <ref role="bkjOb" node="7nDaBAKzmEw" resolve="NoServerConfiguredException" />
             <node concept="3clFbS" id="7nDaBAKzmEF" role="9aQI4">
               <node concept="XkiVB" id="7j$WnoQPei_" role="3cqZAp">
                 <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
@@ -367,7 +369,7 @@
               <ref role="1V74Hf" to="x0nt:7nDaBAKzmEI" resolve="VPToFragment_8496368874152618670" />
               <ref role="3aRQVk" to="x0nt:7nDaBAKzmEJ" resolve="ModuleToFragment_8496368874152618671" />
               <ref role="a64iB" to="x0nt:7nDaBAKyLlM" resolve="Base" />
-              <ref role="25GeQm" node="7nDaBAKzmEK" resolve="PeoplBlockReference_8496368874152618672" />
+              <ref role="25GeQm" node="2gRBml1Sjd6" resolve="FeatureGroupReference_2609727567307027270" />
             </node>
           </node>
         </node>
@@ -394,9 +396,9 @@
             </node>
           </node>
         </node>
-        <node concept="ocbFV" id="7nDaBAKzmEK" role="lGtFl">
-          <property role="TrG5h" value="PeoplBlockReference_8496368874152618672" />
-          <ref role="ocbYS" node="7nDaBAKzmEE" />
+        <node concept="37HLsf" id="2gRBml1Sjd6" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_2609727567307027270" />
+          <ref role="37HLr8" node="7nDaBAKzmEE" />
           <ref role="1C2YfU" node="7nDaBAKzmEG" resolve="Fragment_8496368874152618668" />
         </node>
       </node>

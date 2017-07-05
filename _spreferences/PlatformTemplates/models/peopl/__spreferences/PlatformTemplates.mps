@@ -2,7 +2,7 @@
 <model ref="r:6b36d553-160d-4543-9389-707dba7d9a1f(peopl.__spreferences.PlatformTemplates)">
   <persistence version="9" />
   <languages>
-    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="1" />
+    <use id="2d7fadf5-33f6-4e80-a78f-0f739add2bde" name="com.mbeddr.core.buildconfig" version="4" />
   </languages>
   <imports />
   <registry>
@@ -19,6 +19,10 @@
         <property id="3963667026125442601" name="gdb" index="3r8Kw1" />
         <property id="3963667026125442676" name="make" index="3r8Kxs" />
       </concept>
+      <concept id="5323740605968447019" name="com.mbeddr.core.buildconfig.structure.Platform" flags="ng" index="2AWWZO">
+        <child id="1485382076185232212" name="targets" index="3anu1O" />
+      </concept>
+      <concept id="1485382076184236780" name="com.mbeddr.core.buildconfig.structure.Target" flags="ng" index="3abb7c" />
       <concept id="2736179788492003936" name="com.mbeddr.core.buildconfig.structure.IDebuggablePlatform" flags="ng" index="1FkSt_">
         <property id="2736179788492003937" name="debugOptions" index="1FkSt$" />
       </concept>
@@ -38,6 +42,18 @@
         <property role="3r8Kxs" value="make" />
         <property role="2AWWZI" value="-std=c99" />
         <property role="1FkSt$" value="-g" />
+        <node concept="3abb7c" id="7c4Z5e$9q3y" role="3anu1O">
+          <property role="TrG5h" value="Win32" />
+        </node>
+        <node concept="3abb7c" id="7c4Z5e$9q3z" role="3anu1O">
+          <property role="TrG5h" value="MacOSX" />
+        </node>
+        <node concept="3abb7c" id="7c4Z5e$9q3$" role="3anu1O">
+          <property role="TrG5h" value="Linux" />
+        </node>
+        <node concept="3abb7c" id="7c4Z5e$9q3_" role="3anu1O">
+          <property role="TrG5h" value="portable" />
+        </node>
       </node>
     </node>
   </node>

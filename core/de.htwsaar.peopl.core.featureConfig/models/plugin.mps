@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="0" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -851,7 +851,7 @@
                         <ref role="3Tt5mk" to="nsly:39ZsZHfyBNj" resolve="singleModuleConfiguration" />
                       </node>
                     </node>
-                    <node concept="1PgB_6" id="4_RlJpmjD0B" role="2OqNvi" />
+                    <node concept="1PgB_6" id="7GbrX0bMLtx" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -995,8 +995,8 @@
                 </node>
                 <node concept="TSZUe" id="63qf$RmfUsn" role="2OqNvi">
                   <node concept="2OqwBi" id="63qf$RmfUso" role="25WWJ7">
-                    <node concept="3TrEf2" id="63qf$RmfUsq" role="2OqNvi">
-                      <ref role="3Tt5mk" to="nsly:66EASTR6Ok8" resolve="feature" />
+                    <node concept="3TrEf2" id="7GbrX0bMLVI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="nsly:21326cAYBZ3" resolve="feature" />
                     </node>
                     <node concept="2GrUjf" id="63qf$RmfUsp" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="63qf$RmfUs7" resolve="feature" />
@@ -5206,7 +5206,7 @@
                         <ref role="3Tt5mk" to="nsly:39ZsZHfyBNj" resolve="singleModuleConfiguration" />
                       </node>
                     </node>
-                    <node concept="1PgB_6" id="72Mw9zmomD6" role="2OqNvi" />
+                    <node concept="1PgB_6" id="7GbrX0bNbKi" role="2OqNvi" />
                   </node>
                 </node>
               </node>

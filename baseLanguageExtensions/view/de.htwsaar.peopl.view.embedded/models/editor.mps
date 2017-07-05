@@ -2,7 +2,7 @@
 <model ref="r:b9af1d4b-9f8d-4932-97ba-1e092dacefa7(de.htwsaar.peopl.view.embedded.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="4" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="7" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -46,7 +46,6 @@
         <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
-        <property id="1140524450554" name="vertical" index="2czwfN" />
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
@@ -70,9 +69,6 @@
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
-      </concept>
-      <concept id="562388756457499018" name="jetbrains.mps.lang.editor.structure.MigratedToAnnotation" flags="ng" index="xBawi">
-        <reference id="562388756457499129" name="migratedTo" index="xBaxx" />
       </concept>
       <concept id="562388756460228274" name="jetbrains.mps.lang.editor.structure.MigrateManuallyAnnotation" flags="ng" index="xG$WE" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
@@ -180,7 +176,6 @@
         <child id="4202667662392416064" name="transformationMenu" index="3vIgyS" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
-        <property id="1073389446425" name="vertical" index="3EZMnw" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
@@ -203,7 +198,6 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ng" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
-      <concept id="8233876857994246075" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ApplySideTransforms" flags="ng" index="3JiINr" />
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
@@ -381,7 +375,6 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
-      <concept id="1172323065820" name="jetbrains.mps.lang.smodel.structure.Node_GetConceptOperation" flags="nn" index="3NT_Vc" />
       <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
         <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
@@ -611,7 +604,7 @@
                       </node>
                       <node concept="1mIQ4w" id="4djIVIfk3im" role="2OqNvi">
                         <node concept="chp4Y" id="4djIVIfk3in" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -634,7 +627,7 @@
                           <node concept="1eOMI4" id="4djIVIfk3iy" role="2Oq$k0">
                             <node concept="10QFUN" id="4djIVIfk3iz" role="1eOMHV">
                               <node concept="3Tqbb2" id="4djIVIfk3i$" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="4djIVIfk3i_" role="10QFUP">
                                 <ref role="3cqZAo" node="4djIVIfk3i3" resolve="currentRoot" />
@@ -913,7 +906,7 @@
                       </node>
                       <node concept="1mIQ4w" id="2XgcNHGak5u" role="2OqNvi">
                         <node concept="chp4Y" id="2XgcNHGak5v" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -937,7 +930,7 @@
                             <node concept="1eOMI4" id="2XgcNHGak5E" role="2Oq$k0">
                               <node concept="10QFUN" id="2XgcNHGak5F" role="1eOMHV">
                                 <node concept="3Tqbb2" id="2XgcNHGak5G" role="10QFUM">
-                                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                                 </node>
                                 <node concept="37vLTw" id="2XgcNHGak5H" role="10QFUP">
                                   <ref role="3cqZAo" node="2XgcNHGak5b" resolve="currentRoot" />
@@ -1080,7 +1073,6 @@
         </node>
       </node>
       <node concept="3EZMnI" id="hT0Kxcl" role="1QoS34">
-        <property role="3EZMnw" value="true" />
         <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
         <node concept="VPM3Z" id="hVXAmy6" role="3F10Kt" />
         <node concept="pj6Ft" id="7zOahLfmuf_" role="3F10Kt">
@@ -1102,7 +1094,6 @@
         </node>
         <node concept="l2Vlx" id="i0qsPtC" role="2iSdaV" />
         <node concept="3F2HdR" id="hT0KxlR" role="3EZMnx">
-          <property role="2czwfN" value="true" />
           <ref role="1NtTu8" to="tpee:fzcqZ_x" resolve="statement" />
           <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
           <node concept="3F0ifn" id="hT0KxlS" role="2czzBI">
@@ -1340,7 +1331,7 @@
                       </node>
                       <node concept="1mIQ4w" id="4qYOtWHqbWT" role="2OqNvi">
                         <node concept="chp4Y" id="4qYOtWHqbWU" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -1363,7 +1354,7 @@
                           <node concept="1eOMI4" id="4qYOtWHqbX5" role="2Oq$k0">
                             <node concept="10QFUN" id="4qYOtWHqbX6" role="1eOMHV">
                               <node concept="3Tqbb2" id="4qYOtWHqbX7" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="4qYOtWHqbX8" role="10QFUP">
                                 <ref role="3cqZAo" node="4qYOtWHqbWA" resolve="currentRoot" />
@@ -1778,7 +1769,7 @@
                   </node>
                   <node concept="1mIQ4w" id="5TY3FAIW_Os" role="2OqNvi">
                     <node concept="chp4Y" id="5TY3FAIW_Ot" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -1810,7 +1801,7 @@
                         <node concept="1eOMI4" id="5TY3FAIW_OC" role="2Oq$k0">
                           <node concept="10QFUN" id="5TY3FAIW_OD" role="1eOMHV">
                             <node concept="3Tqbb2" id="5TY3FAIW_OE" role="10QFUM">
-                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="5TY3FAIW_OF" role="10QFUP">
                               <ref role="3cqZAo" node="5TY3FAIW_O9" resolve="currentRoot" />
@@ -2078,7 +2069,6 @@
       <property role="3V$3am" value="cellModel" />
       <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
       <node concept="3EZMnI" id="6yJzWwRpJYc" role="8Wnug">
-        <property role="3EZMnw" value="true" />
         <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
         <node concept="VPM3Z" id="6yJzWwRpJYd" role="3F10Kt" />
         <node concept="pj6Ft" id="6yJzWwRpJYe" role="3F10Kt">
@@ -2100,7 +2090,6 @@
         </node>
         <node concept="l2Vlx" id="6yJzWwRpJYm" role="2iSdaV" />
         <node concept="3F2HdR" id="6yJzWwRpJYn" role="3EZMnx">
-          <property role="2czwfN" value="true" />
           <ref role="1NtTu8" to="tpee:fzcqZ_x" resolve="statement" />
           <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
           <node concept="3F0ifn" id="6yJzWwRpJYo" role="2czzBI">
@@ -2218,7 +2207,6 @@
         </node>
       </node>
       <node concept="3EZMnI" id="6Y_AHW5ckZ_" role="1QoS34">
-        <property role="3EZMnw" value="true" />
         <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
         <node concept="VPM3Z" id="6Y_AHW5ckZA" role="3F10Kt" />
         <node concept="pj6Ft" id="6Y_AHW5ckZB" role="3F10Kt">
@@ -2240,7 +2228,6 @@
         </node>
         <node concept="l2Vlx" id="6Y_AHW5ckZJ" role="2iSdaV" />
         <node concept="3F2HdR" id="6Y_AHW5ckZK" role="3EZMnx">
-          <property role="2czwfN" value="true" />
           <ref role="1NtTu8" to="tpee:fzcqZ_x" resolve="statement" />
           <ref role="1ERwB7" to="i3mx:7ASwjV8tHjA" resolve="BasicModularity_StatementList_Actions" />
           <node concept="3F0ifn" id="6Y_AHW5ckZL" role="2czzBI">
@@ -2340,7 +2327,7 @@
                 <node concept="2OqwBi" id="y$c9ZEA0Nj" role="3fr31v">
                   <node concept="1mIQ4w" id="y$c9ZEA0Nk" role="2OqNvi">
                     <node concept="chp4Y" id="y$c9ZEA0Nl" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="y$c9ZEA0Nm" role="2Oq$k0">
@@ -2360,12 +2347,12 @@
             <node concept="3cpWsn" id="y$c9ZEA0Nq" role="3cpWs9">
               <property role="TrG5h" value="tmpPeoplClass" />
               <node concept="3Tqbb2" id="y$c9ZEA0Nr" role="1tU5fm">
-                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
               </node>
               <node concept="1eOMI4" id="y$c9ZEA0Ns" role="33vP2m">
                 <node concept="10QFUN" id="y$c9ZEA0Nt" role="1eOMHV">
                   <node concept="3Tqbb2" id="y$c9ZEA0Nu" role="10QFUM">
-                    <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                    <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                   </node>
                   <node concept="2OqwBi" id="y$c9ZEA0Nv" role="10QFUP">
                     <node concept="2YIFZM" id="y$c9ZEA0Nw" role="2Oq$k0">
@@ -2436,7 +2423,6 @@
       <node concept="3EZMnI" id="4NyX2wRM1ga" role="3EZMnx">
         <node concept="l2Vlx" id="4NyX2wROrkc" role="2iSdaV" />
         <node concept="3EZMnI" id="ht5HNpA" role="3EZMnx">
-          <property role="3EZMnw" value="false" />
           <node concept="3F0A7n" id="ht5I49u" role="3EZMnx">
             <ref role="1ERwB7" to="tpen:ht5InvJ" resolve="AbstractLoopStatement_Label_Actions" />
             <ref role="1k5W1q" to="tpen:6aaE4aM9P_2" resolve="Label" />
@@ -2518,16 +2504,6 @@
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
           <node concept="VPxyj" id="4h85nIl_mZW" role="3F10Kt">
             <property role="VOm3f" value="true" />
-          </node>
-          <node concept="1X3_iC" id="q735wx1k$h" role="lGtFl">
-            <property role="3V$3am" value="styleItem" />
-            <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-            <node concept="2V7CMv" id="42hlkH_pTDh" role="8Wnug">
-              <property role="2V7CMs" value="ext_1_RTransform" />
-              <node concept="xBawi" id="q735wx1k$g" role="lGtFl">
-                <ref role="xBaxx" to="tpen:1wEcoXjIFnP" resolve="loopLabelsAndIfStatement" />
-              </node>
-            </node>
           </node>
           <node concept="OXEIz" id="4h85nIkJW4x" role="P5bDN">
             <node concept="UkePV" id="4h85nIkJW4y" role="OY2wv">
@@ -2614,7 +2590,7 @@
                   </node>
                   <node concept="1mIQ4w" id="6iY27bOCyyN" role="2OqNvi">
                     <node concept="chp4Y" id="6iY27bOCyyO" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -2649,7 +2625,7 @@
                       <node concept="1eOMI4" id="6iY27bOCyz4" role="2Oq$k0">
                         <node concept="10QFUN" id="6iY27bOCyz5" role="1eOMHV">
                           <node concept="3Tqbb2" id="6iY27bOCyz6" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="37vLTw" id="6iY27bOCyz7" role="10QFUP">
                             <ref role="3cqZAo" node="6iY27bOCyyw" resolve="currentRoot" />
@@ -2762,7 +2738,7 @@
                     </node>
                     <node concept="1mIQ4w" id="6iY27bOCyM7" role="2OqNvi">
                       <node concept="chp4Y" id="6iY27bOCyM8" role="cj9EA">
-                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -2797,7 +2773,7 @@
                         <node concept="1eOMI4" id="6iY27bOCyMo" role="2Oq$k0">
                           <node concept="10QFUN" id="6iY27bOCyMp" role="1eOMHV">
                             <node concept="3Tqbb2" id="6iY27bOCyMq" role="10QFUM">
-                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="6iY27bOCyMr" role="10QFUP">
                               <ref role="3cqZAo" node="6iY27bOCyLO" resolve="currentRoot" />
@@ -2859,7 +2835,6 @@
       <node concept="2iRkQZ" id="1KlbCrsBbWF" role="2iSdaV" />
     </node>
     <node concept="3EZMnI" id="1KlbCrsBbWG" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="1KlbCrsBbWH" role="3EZMnx">
         <property role="3F0ifm" value="label" />
         <node concept="VPxyj" id="1KlbCrsBbWI" role="3F10Kt">
@@ -2908,7 +2883,6 @@
     <property role="TrG5h" value="Colored_CatchClause_Component" />
     <ref role="1XX52x" to="tpee:gWTDmSJ" resolve="CatchClause" />
     <node concept="3EZMnI" id="gWTDPLd" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="LD5Jc" id="50moBti4Gi9" role="3F10Kt">
         <property role="LDHlv" value="next-line" />
       </node>
@@ -2986,7 +2960,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCxtv" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCxtw" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -3021,7 +2995,7 @@
                           <node concept="1eOMI4" id="6iY27bOCxtK" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCxtL" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCxtM" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCxtN" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCxtc" resolve="currentRoot" />
@@ -3268,7 +3242,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOC$QP" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOC$QQ" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -3303,7 +3277,7 @@
                           <node concept="1eOMI4" id="6iY27bOC$R6" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOC$R7" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOC$R8" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOC$R9" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOC$Qy" resolve="currentRoot" />
@@ -3396,7 +3370,6 @@
     <property role="TrG5h" value="Colored_TryStatement_Component" />
     <ref role="1XX52x" to="tpee:gMGUZlm" resolve="TryStatement" />
     <node concept="3EZMnI" id="gMGVrzc" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <ref role="1ERwB7" to="tpen:1CJSrHA7vHo" resolve="BigStatement_comment_action" />
       <node concept="3EZMnI" id="1CMrqIail1W" role="3EZMnx">
         <node concept="l2Vlx" id="4XXs7nZZYlR" role="2iSdaV" />
@@ -3462,7 +3435,7 @@
                   </node>
                   <node concept="1mIQ4w" id="6iY27bOCydm" role="2OqNvi">
                     <node concept="chp4Y" id="6iY27bOCydn" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -3497,7 +3470,7 @@
                       <node concept="1eOMI4" id="6iY27bOCydB" role="2Oq$k0">
                         <node concept="10QFUN" id="6iY27bOCydC" role="1eOMHV">
                           <node concept="3Tqbb2" id="6iY27bOCydD" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="37vLTw" id="6iY27bOCydE" role="10QFUP">
                             <ref role="3cqZAo" node="6iY27bOCyd3" resolve="currentRoot" />
@@ -3655,20 +3628,11 @@
                   <property role="1413C4" value="try" />
                 </node>
                 <node concept="VPxyj" id="i212D7R" role="3F10Kt" />
-                <node concept="1X3_iC" id="q735wx1k$e" role="lGtFl">
-                  <property role="3V$3am" value="styleItem" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-                  <node concept="2V7CMv" id="19cklmQAuUd" role="8Wnug">
-                    <property role="2V7CMs" value="default_RTransform" />
-                    <node concept="xBawi" id="q735wx1k$d" role="lGtFl" />
-                  </node>
-                </node>
                 <node concept="A1WHr" id="q735wx1k$c" role="3vIgyS">
                   <ref role="2ZyFGn" to="tpee:gMGUZlm" resolve="TryStatement" />
                 </node>
               </node>
               <node concept="3F2HdR" id="i212RdX" role="3EZMnx">
-                <property role="2czwfN" value="false" />
                 <ref role="1NtTu8" to="tpee:gWTEX_W" resolve="catchClause" />
                 <node concept="l2Vlx" id="i212RdZ" role="2czzBx" />
                 <node concept="3F0ifn" id="i214ZMe" role="2czzBI">
@@ -3741,7 +3705,6 @@
     <property role="TrG5h" value="Colored_TryCatchStatement_Component" />
     <ref role="1XX52x" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
     <node concept="3EZMnI" id="gWSgCIA" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <ref role="1ERwB7" to="tpen:1CJSrHA7vHo" resolve="BigStatement_comment_action" />
       <node concept="3EZMnI" id="4XXs7o01i5x" role="3EZMnx">
         <node concept="l2Vlx" id="4XXs7o01i5y" role="2iSdaV" />
@@ -3807,7 +3770,7 @@
                   </node>
                   <node concept="1mIQ4w" id="6iY27bOCxXg" role="2OqNvi">
                     <node concept="chp4Y" id="6iY27bOCxXh" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -3842,7 +3805,7 @@
                       <node concept="1eOMI4" id="6iY27bOCxXx" role="2Oq$k0">
                         <node concept="10QFUN" id="6iY27bOCxXy" role="1eOMHV">
                           <node concept="3Tqbb2" id="6iY27bOCxXz" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="37vLTw" id="6iY27bOCxX$" role="10QFUP">
                             <ref role="3cqZAo" node="6iY27bOCxWX" resolve="currentRoot" />
@@ -3980,21 +3943,12 @@
                 <property role="3F0ifm" value="}" />
                 <ref role="1ERwB7" to="tpen:434bMCvs85p" resolve="TryCatchStatement_DeleteBodyEndingBrace" />
                 <ref role="1k5W1q" to="tpen:hFD5_7H" resolve="RightBrace" />
-                <node concept="1X3_iC" id="q735wx1k$k" role="lGtFl">
-                  <property role="3V$3am" value="styleItem" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-                  <node concept="2V7CMv" id="i0ujYNQ" role="8Wnug">
-                    <property role="2V7CMs" value="default_RTransform" />
-                    <node concept="xBawi" id="q735wx1k$j" role="lGtFl" />
-                  </node>
-                </node>
                 <node concept="VPxyj" id="i0ujYNR" role="3F10Kt" />
                 <node concept="A1WHr" id="q735wx1k$i" role="3vIgyS">
                   <ref role="2ZyFGn" to="tpee:gWSfAtL" resolve="TryCatchStatement" />
                 </node>
               </node>
               <node concept="3F2HdR" id="gWTEwVz" role="3EZMnx">
-                <property role="2czwfN" value="true" />
                 <ref role="1ERwB7" to="tpen:19cklmQRQ9N" resolve="UnwrapStatementListContainer" />
                 <ref role="1NtTu8" to="tpee:gWTEbCv" resolve="catchClause" />
                 <node concept="LD5Jc" id="hH5CYNI" role="3F10Kt">
@@ -4043,7 +3997,6 @@
     <property role="TrG5h" value="Colored_ModuleChooser_CatchClause_Component" />
     <ref role="1XX52x" to="tpee:gWTDmSJ" resolve="CatchClause" />
     <node concept="3EZMnI" id="50moBti4O_4" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="LD5Jc" id="50moBti4O_5" role="3F10Kt">
         <property role="LDHlv" value="next-line" />
       </node>
@@ -4136,7 +4089,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCxJz" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCxJ$" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -4171,7 +4124,7 @@
                           <node concept="1eOMI4" id="6iY27bOCxJO" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCxJP" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCxJQ" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCxJR" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCxJg" resolve="currentRoot" />
@@ -4418,7 +4371,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOC$pv" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOC$pw" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -4453,7 +4406,7 @@
                           <node concept="1eOMI4" id="6iY27bOC$pK" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOC$pL" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOC$pM" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOC$pN" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOC$pc" resolve="currentRoot" />
@@ -4562,7 +4515,6 @@
     <property role="TrG5h" value="Colored_SynchronizedStatement_Component" />
     <ref role="1XX52x" to="tpee:h1HWtzo" resolve="SynchronizedStatement" />
     <node concept="3EZMnI" id="66GxBPk$FQy" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3EZMnI" id="66GxBPk$FQz" role="3EZMnx">
         <node concept="2iRkQZ" id="66GxBPk$FQ$" role="2iSdaV" />
         <node concept="3EZMnI" id="66GxBPk$FQ_" role="3EZMnx">
@@ -4635,7 +4587,7 @@
                     </node>
                     <node concept="1mIQ4w" id="66GxBPk$FTC" role="2OqNvi">
                       <node concept="chp4Y" id="66GxBPk$FTD" role="cj9EA">
-                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -4670,7 +4622,7 @@
                         <node concept="1eOMI4" id="66GxBPk$FTT" role="2Oq$k0">
                           <node concept="10QFUN" id="66GxBPk$FTU" role="1eOMHV">
                             <node concept="3Tqbb2" id="66GxBPk$FTV" role="10QFUM">
-                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="66GxBPk$FTW" role="10QFUP">
                               <ref role="3cqZAo" node="66GxBPk$FTl" resolve="currentRoot" />
@@ -4786,7 +4738,7 @@
                       </node>
                       <node concept="1mIQ4w" id="66GxBPk$G3X" role="2OqNvi">
                         <node concept="chp4Y" id="66GxBPk$G3Y" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -4821,7 +4773,7 @@
                           <node concept="1eOMI4" id="66GxBPk$G4e" role="2Oq$k0">
                             <node concept="10QFUN" id="66GxBPk$G4f" role="1eOMHV">
                               <node concept="3Tqbb2" id="66GxBPk$G4g" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="66GxBPk$G4h" role="10QFUP">
                                 <ref role="3cqZAo" node="66GxBPk$G3E" resolve="currentRoot" />
@@ -4898,7 +4850,6 @@
     <property role="TrG5h" value="Colored_IfStatement_Component" />
     <ref role="1XX52x" to="tpee:fzclF8n" resolve="IfStatement" />
     <node concept="3EZMnI" id="5cacDZVspcm" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <ref role="1ERwB7" to="tpen:1CJSrHA7vHo" resolve="BigStatement_comment_action" />
       <node concept="3EZMnI" id="5cacDZVspcn" role="3EZMnx">
         <node concept="l2Vlx" id="5cacDZVspco" role="2iSdaV" />
@@ -5005,7 +4956,7 @@
                   </node>
                   <node concept="1mIQ4w" id="6iY27bOCwdY" role="2OqNvi">
                     <node concept="chp4Y" id="6iY27bOCwdZ" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -5040,7 +4991,7 @@
                       <node concept="1eOMI4" id="6iY27bOCwef" role="2Oq$k0">
                         <node concept="10QFUN" id="6iY27bOCweg" role="1eOMHV">
                           <node concept="3Tqbb2" id="6iY27bOCweh" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="37vLTw" id="6iY27bOCwei" role="10QFUP">
                             <ref role="3cqZAo" node="6iY27bOCwdF" resolve="currentRoot" />
@@ -5269,22 +5220,11 @@
                 <node concept="VPM3Z" id="5cacDZVsph1" role="3F10Kt">
                   <property role="VOm3f" value="true" />
                 </node>
-                <node concept="1X3_iC" id="q735wx1k$b" role="lGtFl">
-                  <property role="3V$3am" value="styleItem" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-                  <node concept="2V7CMv" id="5cacDZVsph2" role="8Wnug">
-                    <property role="2V7CMs" value="ext_1_RTransform" />
-                    <node concept="xBawi" id="q735wx1k$a" role="lGtFl">
-                      <ref role="xBaxx" to="tpen:1wEcoXjIDUL" resolve="ifStatement" />
-                    </node>
-                  </node>
-                </node>
                 <node concept="A1WHu" id="q735wx1k$9" role="3vIgyS">
                   <ref role="A1WHt" to="tpen:1wEcoXjIDUL" resolve="ifStatement" />
                 </node>
               </node>
               <node concept="3F2HdR" id="5cacDZVsph3" role="3EZMnx">
-                <property role="2czwfN" value="true" />
                 <ref role="1NtTu8" to="tpee:hzeNLa7" resolve="elsifClauses" />
                 <node concept="pkWqt" id="5cacDZVsph4" role="pqm2j">
                   <node concept="3clFbS" id="5cacDZVsph5" role="2VODD2">
@@ -5308,7 +5248,6 @@
                 <node concept="l2Vlx" id="5cacDZVsphe" role="2czzBx" />
               </node>
               <node concept="3EZMnI" id="5cacDZVsphf" role="3EZMnx">
-                <property role="3EZMnw" value="false" />
                 <node concept="3EZMnI" id="5cacDZVsphg" role="3EZMnx">
                   <node concept="2iRkQZ" id="5cacDZVsphh" role="2iSdaV" />
                   <node concept="3F0ifn" id="5cacDZVsphi" role="3EZMnx">
@@ -5376,7 +5315,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6iY27bOCCgh" role="2OqNvi">
                                 <node concept="chp4Y" id="6iY27bOCCgi" role="cj9EA">
-                                  <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                  <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                                 </node>
                               </node>
                             </node>
@@ -5411,7 +5350,7 @@
                                   <node concept="1eOMI4" id="6iY27bOCCgy" role="2Oq$k0">
                                     <node concept="10QFUN" id="6iY27bOCCgz" role="1eOMHV">
                                       <node concept="3Tqbb2" id="6iY27bOCCg$" role="10QFUM">
-                                        <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                        <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                                       </node>
                                       <node concept="37vLTw" id="6iY27bOCCg_" role="10QFUP">
                                         <ref role="3cqZAo" node="6iY27bOCCfY" resolve="currentRoot" />
@@ -5609,7 +5548,7 @@
                         </node>
                         <node concept="1mIQ4w" id="6iY27bOCCT2" role="2OqNvi">
                           <node concept="chp4Y" id="6iY27bOCCT3" role="cj9EA">
-                            <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                         </node>
                       </node>
@@ -5644,7 +5583,7 @@
                             <node concept="1eOMI4" id="6iY27bOCCTj" role="2Oq$k0">
                               <node concept="10QFUN" id="6iY27bOCCTk" role="1eOMHV">
                                 <node concept="3Tqbb2" id="6iY27bOCCTl" role="10QFUM">
-                                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                                 </node>
                                 <node concept="37vLTw" id="6iY27bOCCTm" role="10QFUP">
                                   <ref role="3cqZAo" node="6iY27bOCCSJ" resolve="currentRoot" />
@@ -5770,7 +5709,6 @@
     <property role="TrG5h" value="Colored_ModuleChooser_ElseifClause_Component" />
     <ref role="1XX52x" to="tpee:hzeNFgq" resolve="ElsifClause" />
     <node concept="3EZMnI" id="1JhlnCF5jKU" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3EZMnI" id="1JhlnCF5jKV" role="3EZMnx">
         <node concept="l2Vlx" id="1JhlnCF5jKW" role="2iSdaV" />
         <node concept="3EZMnI" id="1JhlnCF5jKX" role="3EZMnx">
@@ -6006,7 +5944,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCwZO" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCwZP" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -6041,7 +5979,7 @@
                           <node concept="1eOMI4" id="6iY27bOCx05" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCx06" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCx07" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCx08" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCwZx" resolve="currentRoot" />
@@ -6283,7 +6221,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCA58" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCA59" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -6318,7 +6256,7 @@
                           <node concept="1eOMI4" id="6iY27bOCA5p" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCA5q" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCA5r" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCA5s" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCA4P" resolve="currentRoot" />
@@ -6391,7 +6329,6 @@
     <property role="TrG5h" value="Colored_ElseifClause_Component" />
     <ref role="1XX52x" to="tpee:hzeNFgq" resolve="ElsifClause" />
     <node concept="3EZMnI" id="hzePLP2" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3EZMnI" id="5r6V25mNCEI" role="3EZMnx">
         <node concept="l2Vlx" id="5r6V25mNCEJ" role="2iSdaV" />
         <node concept="3EZMnI" id="1cEwl2PnNSs" role="3EZMnx">
@@ -6589,7 +6526,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCvB0" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCvB1" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -6624,7 +6561,7 @@
                           <node concept="1eOMI4" id="6iY27bOCvBh" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCvBi" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCvBj" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCvBk" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCvAH" resolve="currentRoot" />
@@ -6866,7 +6803,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCEet" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCEeu" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -6901,7 +6838,7 @@
                           <node concept="1eOMI4" id="6iY27bOCEeI" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCEeJ" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCEeK" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCEeL" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCEea" resolve="currentRoot" />
@@ -6993,7 +6930,6 @@
     <property role="3GE5qa" value="IntegratedFull.Statement.Wrapper.For" />
     <ref role="1XX52x" to="tpee:gDDw8bY" resolve="ForStatement" />
     <node concept="3EZMnI" id="1KlbCrsBkUm" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="1KlbCrsBkUn" role="3EZMnx">
         <property role="3F0ifm" value="label" />
         <node concept="VPxyj" id="1KlbCrsBkUo" role="3F10Kt">
@@ -7035,11 +6971,9 @@
       <ref role="1ERwB7" to="tpen:1CJSrHA7vHo" resolve="BigStatement_comment_action" />
       <node concept="2iRkQZ" id="24LNot8IJ_h" role="2iSdaV" />
       <node concept="3EZMnI" id="gDDwm4q" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
         <node concept="3EZMnI" id="4XXs7nZZteY" role="3EZMnx">
           <node concept="l2Vlx" id="4XXs7nZZ$ZQ" role="2iSdaV" />
           <node concept="3EZMnI" id="ht5R_DH" role="3EZMnx">
-            <property role="3EZMnw" value="false" />
             <node concept="3F0A7n" id="ht5R_DI" role="3EZMnx">
               <ref role="1ERwB7" to="tpen:ht5InvJ" resolve="AbstractLoopStatement_Label_Actions" />
               <ref role="1k5W1q" to="tpen:6aaE4aM9P_2" resolve="Label" />
@@ -7121,16 +7055,6 @@
             <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
             <node concept="VPxyj" id="4h85nIlGjn9" role="3F10Kt">
               <property role="VOm3f" value="true" />
-            </node>
-            <node concept="1X3_iC" id="q735wx1kzW" role="lGtFl">
-              <property role="3V$3am" value="styleItem" />
-              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-              <node concept="2V7CMv" id="42hlkH_pTDb" role="8Wnug">
-                <property role="2V7CMs" value="ext_1_RTransform" />
-                <node concept="xBawi" id="q735wx1kzV" role="lGtFl">
-                  <ref role="xBaxx" to="tpen:1wEcoXjIFnP" resolve="loopLabelsAndIfStatement" />
-                </node>
-              </node>
             </node>
             <node concept="OXEIz" id="4h85nIkJYVE" role="P5bDN">
               <node concept="UkePV" id="4h85nIkJYVH" role="OY2wv">
@@ -7291,7 +7215,7 @@
                     </node>
                     <node concept="1mIQ4w" id="2XgcNHGa$sP" role="2OqNvi">
                       <node concept="chp4Y" id="2XgcNHGa$sQ" role="cj9EA">
-                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -7326,7 +7250,7 @@
                         <node concept="1eOMI4" id="2XgcNHGa$t1" role="2Oq$k0">
                           <node concept="10QFUN" id="2XgcNHGa$t2" role="1eOMHV">
                             <node concept="3Tqbb2" id="2XgcNHGa$t3" role="10QFUM">
-                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                              <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="2XgcNHGa$t4" role="10QFUP">
                               <ref role="3cqZAo" node="2XgcNHGa$sD" resolve="currentRoot" />
@@ -7449,7 +7373,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCJRJ" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCJRK" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -7484,7 +7408,7 @@
                           <node concept="1eOMI4" id="6iY27bOCJS0" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCJS1" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCJS2" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCJS3" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCJRs" resolve="currentRoot" />
@@ -7547,7 +7471,6 @@
       <ref role="2$4xQ3" to="tqa7:2W3sxLBwz$f" resolve="integrateContent" />
     </node>
     <node concept="3EZMnI" id="1KlbCrsBnIz" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="1KlbCrsBnI$" role="3EZMnx">
         <property role="3F0ifm" value="label" />
         <node concept="VPxyj" id="1KlbCrsBnI_" role="3F10Kt">
@@ -7580,10 +7503,8 @@
     <property role="TrG5h" value="Colored_ForEachStatement_Component" />
     <ref role="1XX52x" to="tp2q:gMGpvep" resolve="ForEachStatement" />
     <node concept="3EZMnI" id="gMGtcd7" role="2wV5jI">
-      <property role="3EZMnw" value="true" />
       <node concept="3EZMnI" id="4NyX2wRMu_k" role="3EZMnx">
         <node concept="3EZMnI" id="ht5S3X4" role="3EZMnx">
-          <property role="3EZMnw" value="false" />
           <node concept="pkWqt" id="ht5S3X7" role="pqm2j">
             <node concept="3clFbS" id="ht5S3X8" role="2VODD2">
               <node concept="3clFbF" id="ht5S3X9" role="3cqZAp">
@@ -7663,16 +7584,6 @@
           <property role="3F0ifm" value="foreach" />
           <ref role="1ERwB7" to="tpen:5qguV_rpt7X" resolve="Delete_Loop" />
           <ref role="1k5W1q" to="tpen:hgVS8CF" resolve="KeyWord" />
-          <node concept="1X3_iC" id="q735wx1k$n" role="lGtFl">
-            <property role="3V$3am" value="styleItem" />
-            <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-            <node concept="2V7CMv" id="42hlkH_pTDg" role="8Wnug">
-              <property role="2V7CMs" value="ext_1_RTransform" />
-              <node concept="xBawi" id="q735wx1k$m" role="lGtFl">
-                <ref role="xBaxx" to="tpen:1wEcoXjIFnP" resolve="loopLabelsAndIfStatement" />
-              </node>
-            </node>
-          </node>
           <node concept="A1WHu" id="q735wx1k$l" role="3vIgyS">
             <ref role="A1WHt" to="tpen:1wEcoXjIFnP" resolve="loopLabelsAndIfStatement" />
           </node>
@@ -7699,7 +7610,7 @@
                           <ref role="3Tt5mk" to="tp2q:gMGsD4q" resolve="inputSequence" />
                         </node>
                       </node>
-                      <node concept="3NT_Vc" id="hsmEPeG" role="2OqNvi" />
+                      <node concept="2yIwOk" id="7c4Z5e$9iUk" role="2OqNvi" />
                     </node>
                     <node concept="3O6GUB" id="hsmEQb9" role="2OqNvi">
                       <node concept="chp4Y" id="h$TI4Xl" role="3QVz_e">
@@ -7776,7 +7687,7 @@
                   </node>
                   <node concept="1mIQ4w" id="2XgcNHGaIbs" role="2OqNvi">
                     <node concept="chp4Y" id="2XgcNHGaIbt" role="cj9EA">
-                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -7811,7 +7722,7 @@
                       <node concept="1eOMI4" id="2XgcNHGaIbH" role="2Oq$k0">
                         <node concept="10QFUN" id="2XgcNHGaIbI" role="1eOMHV">
                           <node concept="3Tqbb2" id="2XgcNHGaIbJ" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="37vLTw" id="2XgcNHGaIbK" role="10QFUP">
                             <ref role="3cqZAo" node="2XgcNHGaIb9" resolve="currentRoot" />
@@ -7932,7 +7843,7 @@
                       </node>
                       <node concept="1mIQ4w" id="6iY27bOCKtr" role="2OqNvi">
                         <node concept="chp4Y" id="6iY27bOCKts" role="cj9EA">
-                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                          <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -7967,7 +7878,7 @@
                           <node concept="1eOMI4" id="6iY27bOCKtG" role="2Oq$k0">
                             <node concept="10QFUN" id="6iY27bOCKtH" role="1eOMHV">
                               <node concept="3Tqbb2" id="6iY27bOCKtI" role="10QFUM">
-                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                               </node>
                               <node concept="37vLTw" id="6iY27bOCKtJ" role="10QFUP">
                                 <ref role="3cqZAo" node="6iY27bOCKt8" resolve="currentRoot" />
@@ -8227,7 +8138,7 @@
                   <node concept="2OqwBi" id="61l2320ImKI" role="3fr31v">
                     <node concept="1mIQ4w" id="61l2320ImKK" role="2OqNvi">
                       <node concept="chp4Y" id="61l2320ImKL" role="cj9EA">
-                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="5mmbC3y9tL7" role="2Oq$k0">
@@ -8247,12 +8158,12 @@
               <node concept="3cpWsn" id="WatvMJLp3A" role="3cpWs9">
                 <property role="TrG5h" value="tmpPeoplClass" />
                 <node concept="3Tqbb2" id="WatvMJLp3B" role="1tU5fm">
-                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                  <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                 </node>
                 <node concept="1eOMI4" id="61l2320IoZW" role="33vP2m">
                   <node concept="10QFUN" id="61l2320IoZT" role="1eOMHV">
                     <node concept="3Tqbb2" id="61l2320Ipd4" role="10QFUM">
-                      <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                      <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                     </node>
                     <node concept="2OqwBi" id="5mmbC3y9vbR" role="10QFUP">
                       <node concept="2YIFZM" id="5mmbC3y9vbS" role="2Oq$k0">
@@ -9177,7 +9088,6 @@
     <node concept="3EZMnI" id="2yW2wuKYc0s" role="2wV5jI">
       <node concept="l2Vlx" id="2yW2wuKYc0t" role="2iSdaV" />
       <node concept="3EZMnI" id="hiARCQG" role="3EZMnx">
-        <property role="3EZMnw" value="true" />
         <node concept="1QoScp" id="2yW2wuKX75o" role="3EZMnx">
           <property role="1QpmdY" value="true" />
           <node concept="pkWqt" id="2yW2wuKX75r" role="3e4ffs">
@@ -9207,7 +9117,7 @@
                     </node>
                     <node concept="1mIQ4w" id="2yW2wuKZoBl" role="2OqNvi">
                       <node concept="chp4Y" id="2yW2wuKZoBm" role="cj9EA">
-                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                        <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -9225,7 +9135,7 @@
                       <node concept="1eOMI4" id="2yW2wuKZoAV" role="2Oq$k0">
                         <node concept="10QFUN" id="2yW2wuKZoAW" role="1eOMHV">
                           <node concept="3Tqbb2" id="2yW2wuKZoAX" role="10QFUM">
-                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                           <node concept="2OqwBi" id="2yW2wuKZoAY" role="10QFUP">
                             <node concept="2YIFZM" id="2yW2wuKZoAZ" role="2Oq$k0">
@@ -9338,21 +9248,6 @@
             <node concept="VPxyj" id="2bl07wFRp5m" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
-            <node concept="1X3_iC" id="q735wx1k$8" role="lGtFl">
-              <property role="3V$3am" value="menuDescriptor" />
-              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/1164826688380" />
-              <node concept="OXEIz" id="2bl07wFRRjD" role="8Wnug">
-                <node concept="1X3_iC" id="q735wx1k$7" role="lGtFl">
-                  <property role="3V$3am" value="cellMenuPart" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1164824717996/1164824815888" />
-                  <node concept="3JiINr" id="6jGHGcLuQse" role="8Wnug">
-                    <node concept="xBawi" id="q735wx1k$6" role="lGtFl">
-                      <ref role="xBaxx" node="q735wx1kzE" resolve="FieldDeclaration_ApplySideTransforms" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="pkWqt" id="hHJNPqZ" role="pqm2j">
               <node concept="3clFbS" id="hHJNPr0" role="2VODD2">
                 <node concept="3clFbF" id="hHJNPr1" role="3cqZAp">
@@ -9379,21 +9274,6 @@
             <node concept="VPxyj" id="2bl07wFRRzF" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
-            <node concept="1X3_iC" id="q735wx1k$r" role="lGtFl">
-              <property role="3V$3am" value="menuDescriptor" />
-              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/1164826688380" />
-              <node concept="OXEIz" id="2bl07wFRRMN" role="8Wnug">
-                <node concept="1X3_iC" id="q735wx1k$q" role="lGtFl">
-                  <property role="3V$3am" value="cellMenuPart" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1164824717996/1164824815888" />
-                  <node concept="3JiINr" id="6jGHGcLuQsi" role="8Wnug">
-                    <node concept="xBawi" id="q735wx1k$p" role="lGtFl">
-                      <ref role="xBaxx" node="q735wx1kzE" resolve="FieldDeclaration_ApplySideTransforms" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="pkWqt" id="7tJT$hTbYyb" role="pqm2j">
               <node concept="3clFbS" id="7tJT$hTbYyc" role="2VODD2">
                 <node concept="3clFbF" id="7tJT$hTbYyd" role="3cqZAp">
@@ -9419,21 +9299,6 @@
             </node>
             <node concept="VPxyj" id="2M3Wf90PSZr" role="3F10Kt">
               <property role="VOm3f" value="true" />
-            </node>
-            <node concept="1X3_iC" id="q735wx1kzT" role="lGtFl">
-              <property role="3V$3am" value="menuDescriptor" />
-              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/1164826688380" />
-              <node concept="OXEIz" id="2bl07wFRS1Z" role="8Wnug">
-                <node concept="1X3_iC" id="q735wx1kzS" role="lGtFl">
-                  <property role="3V$3am" value="cellMenuPart" />
-                  <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1164824717996/1164824815888" />
-                  <node concept="3JiINr" id="6jGHGcLuQsm" role="8Wnug">
-                    <node concept="xBawi" id="q735wx1kzR" role="lGtFl">
-                      <ref role="xBaxx" node="q735wx1kzE" resolve="FieldDeclaration_ApplySideTransforms" />
-                    </node>
-                  </node>
-                </node>
-              </node>
             </node>
             <node concept="pkWqt" id="i34GaHN" role="pqm2j">
               <node concept="3clFbS" id="i34GaHO" role="2VODD2">
@@ -9477,7 +9342,6 @@
             <ref role="1ERwB7" to="tpen:2msP5$jRMSZ" resolve="FieldDeclaration_Name_Actions" />
           </node>
           <node concept="3EZMnI" id="hiARCQL" role="3EZMnx">
-            <property role="3EZMnw" value="false" />
             <node concept="pkWqt" id="hiARCQO" role="pqm2j">
               <node concept="3clFbS" id="hiARCQP" role="2VODD2">
                 <node concept="3cpWs6" id="hiARCQQ" role="3cqZAp">
@@ -9529,7 +9393,6 @@
       </node>
     </node>
     <node concept="3EZMnI" id="hiAREl4" role="6VMZX">
-      <property role="3EZMnw" value="true" />
       <node concept="3F0ifn" id="hiARErs" role="3EZMnx">
         <property role="3F0ifm" value="annotations:" />
         <node concept="ljvvj" id="i0Dzb5I" role="3F10Kt">
@@ -9537,7 +9400,6 @@
         </node>
       </node>
       <node concept="3F2HdR" id="hiARErt" role="3EZMnx">
-        <property role="2czwfN" value="false" />
         <ref role="1NtTu8" to="tpee:hiAJF2X" resolve="annotation" />
         <node concept="ljvvj" id="i0Dzb5J" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -9564,6 +9426,7 @@
   </node>
   <node concept="3ICXOK" id="q735wx1kzE">
     <property role="TrG5h" value="FieldDeclaration_ApplySideTransforms" />
+    <property role="3GE5qa" value="IntegrateFields" />
     <ref role="aqKnT" to="tpee:fz12cDC" resolve="FieldDeclaration" />
     <node concept="1Qtc8_" id="q735wx1kzF" role="IW6Ez">
       <node concept="3cWJ9i" id="q735wx1kzG" role="1Qtc8$">
