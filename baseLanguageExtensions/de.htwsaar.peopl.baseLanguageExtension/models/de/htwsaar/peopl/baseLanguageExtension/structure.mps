@@ -58,6 +58,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -273,10 +274,25 @@
       <ref role="PrY4T" to="xf8r:4GsCNocFo6a" resolve="IFeatureGroupVariableRef" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2yEo8dq$Umg">
-    <property role="EcuMT" value="2930260624834536848" />
-    <property role="TrG5h" value="FeatureBlockStaticFieldRefBaseLang" />
-    <ref role="1TJDcQ" to="tpee:f_0M0x6" resolve="StaticFieldReference" />
+  <node concept="1TIwiD" id="4v$XhUGpoTh">
+    <property role="EcuMT" value="5180534983473073745" />
+    <property role="TrG5h" value="PeoplStaticFieldRef" />
+    <property role="34LRSv" value=".&lt;static f&gt;" />
+    <ref role="1TJDcQ" to="tpee:fz7vLUo" resolve="VariableReference" />
+    <node concept="1TJgyj" id="4v$XhUGpTOt" role="1TKVEi">
+      <property role="IQ2ns" value="5180534983473208605" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="classifier" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:g7pOWCK" resolve="Classifier" />
+    </node>
+    <node concept="1TJgyj" id="4v$XhUGpTW5" role="1TKVEi">
+      <property role="IQ2ns" value="5180534983473209093" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="staticFieldDeclaration" />
+      <ref role="20lvS9" to="tpee:f$Wx3kv" resolve="StaticFieldDeclaration" />
+      <ref role="20ksaX" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+    </node>
   </node>
 </model>
 
