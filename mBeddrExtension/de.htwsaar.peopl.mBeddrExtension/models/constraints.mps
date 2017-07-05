@@ -193,6 +193,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
   </registry>
   <node concept="1M2fIO" id="3nhXnhIzlDB">
@@ -851,8 +852,11 @@
             <node concept="2YIFZM" id="7c4Z5e$9p_z" role="3cqZAk">
               <ref role="37wK5l" to="o8zo:3jEbQoczdCs" resolve="forResolvableElements" />
               <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
-              <node concept="37vLTw" id="7c4Z5e$9p_$" role="37wK5m">
-                <ref role="3cqZAo" node="7c4Z5e$9pq0" resolve="declarations" />
+              <node concept="2OqwBi" id="3Dwi9zoOgFj" role="37wK5m">
+                <node concept="37vLTw" id="7c4Z5e$9p_$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7c4Z5e$9pq0" resolve="declarations" />
+                </node>
+                <node concept="1VAtEI" id="3Dwi9zoOnCL" role="2OqNvi" />
               </node>
             </node>
           </node>
