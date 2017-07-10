@@ -13,6 +13,7 @@
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection" version="0" />
     <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
@@ -278,6 +279,18 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+    </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
       <concept id="1205752633985" name="jetbrains.mps.baseLanguage.classifiers.structure.ThisClassifierExpression" flags="nn" index="2WthIp">
         <reference id="1218736638915" name="classifier" index="32nkFo" />
@@ -425,7 +438,6 @@
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
-      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
@@ -5213,6 +5225,11 @@
     <property role="TrG5h" value="ConstraintAspectHook" />
     <node concept="2uRRBT" id="3QJg2U1p$Je" role="2uRRB$">
       <node concept="3clFbS" id="3QJg2U1p$Jf" role="2VODD2">
+        <node concept="3SKdUt" id="236e5DLJ45q" role="3cqZAp">
+          <node concept="3SKdUq" id="236e5DLJ45s" role="3SKWNk">
+            <property role="3SKdUp" value="find the constraints descriptor for StaticFiledReference, we use Reflection for this" />
+          </node>
+        </node>
         <node concept="2Gpval" id="3QJg2U1p3aU" role="3cqZAp">
           <node concept="2GrKxI" id="3QJg2U1p3aW" role="2Gsz3X">
             <property role="TrG5h" value="entry" />
@@ -5234,31 +5251,9 @@
           <node concept="3clFbS" id="3QJg2U1p3b0" role="2LFqv$">
             <node concept="3clFbJ" id="3QJg2U1pa9K" role="3cqZAp">
               <node concept="3clFbS" id="3QJg2U1pa9M" role="3clFbx">
-                <node concept="34ab3g" id="3QJg2U1p5dZ" role="3cqZAp">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="3QJg2U1p80o" role="34bqiv">
-                    <node concept="2OqwBi" id="3QJg2U1p8th" role="3uHU7w">
-                      <node concept="2GrUjf" id="3QJg2U1p8aG" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="3QJg2U1p3aW" resolve="entry" />
-                      </node>
-                      <node concept="3AV6Ez" id="3QJg2U1p8LM" role="2OqNvi" />
-                    </node>
-                    <node concept="3cpWs3" id="3QJg2U1p7lA" role="3uHU7B">
-                      <node concept="3cpWs3" id="3QJg2U1p6pj" role="3uHU7B">
-                        <node concept="Xl_RD" id="3QJg2U1p5e1" role="3uHU7B">
-                          <property role="Xl_RC" value="entry " />
-                        </node>
-                        <node concept="2OqwBi" id="3QJg2U1p6AV" role="3uHU7w">
-                          <node concept="2GrUjf" id="3QJg2U1p6pS" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="3QJg2U1p3aW" resolve="entry" />
-                          </node>
-                          <node concept="3AY5_j" id="3QJg2U1p6UI" role="2OqNvi" />
-                        </node>
-                      </node>
-                      <node concept="Xl_RD" id="3QJg2U1p7vI" role="3uHU7w">
-                        <property role="Xl_RC" value="   " />
-                      </node>
-                    </node>
+                <node concept="3SKdUt" id="236e5DLJ51b" role="3cqZAp">
+                  <node concept="3SKdUq" id="236e5DLJ51d" role="3SKWNk">
+                    <property role="3SKdUp" value="Override constraints aspect with custom one" />
                   </node>
                 </node>
                 <node concept="3clFbF" id="3QJg2U1qr7v" role="3cqZAp">
@@ -5295,31 +5290,6 @@
                     <property role="Xl_RC" value="jetbrains.mps.baseLanguage.constraints.StaticFieldReference_Constraints" />
                   </node>
                 </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="3QJg2U1qz32" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="3QJg2U1qofM" role="8Wnug">
-            <node concept="2OqwBi" id="3QJg2U1qqo7" role="3clFbG">
-              <node concept="2OqwBi" id="3QJg2U1qpwd" role="2Oq$k0">
-                <node concept="2OqwBi" id="3QJg2U1qoLt" role="2Oq$k0">
-                  <node concept="2YIFZM" id="3QJg2U1qosP" role="2Oq$k0">
-                    <ref role="37wK5l" to="vndm:~ConceptRegistry.getInstance():jetbrains.mps.smodel.language.ConceptRegistry" resolve="getInstance" />
-                    <ref role="1Pybhc" to="vndm:~ConceptRegistry" resolve="ConceptRegistry" />
-                  </node>
-                  <node concept="1PnCL0" id="3QJg2U1qpaS" role="2OqNvi">
-                    <ref role="2Oxat5" to="vndm:~ConceptRegistry.myConstraintsRegistry" resolve="myConstraintsRegistry" />
-                  </node>
-                </node>
-                <node concept="1PnCL0" id="3QJg2U1qpZY" role="2OqNvi">
-                  <ref role="2Oxat5" to="vndm:~ConstraintsRegistry.myConstraintsDescriptors" resolve="myConstraintsDescriptors" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3QJg2U1qqYq" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~Map.replace(java.lang.Object,java.lang.Object):java.lang.Object" resolve="replace" />
               </node>
             </node>
           </node>
@@ -6150,6 +6120,18 @@
       <node concept="3Tm6S6" id="3QJg2U1q2oC" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="3QJg2U1q1Mp" role="jymVt" />
+    <node concept="3UR2Jj" id="236e5DLJ2Ef" role="lGtFl">
+      <node concept="TZ5HA" id="236e5DLJ2Eg" role="TZ5H$">
+        <node concept="1dT_AC" id="236e5DLJ2Eh" role="1dT_Ay">
+          <property role="1dT_AB" value="This class is a custom constraints aspect for StaticFieldReference. We need this to extend the normal behavior" />
+        </node>
+      </node>
+      <node concept="TZ5HA" id="236e5DLJ3id" role="TZ5H$">
+        <node concept="1dT_AC" id="236e5DLJ3ie" role="1dT_Ay">
+          <property role="1dT_AB" value="on runtime. See ConstraintAspectHook to understand how we swap the behavior." />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
