@@ -2,8 +2,7 @@
 <model ref="r:cea9c09e-d2ae-4c23-9561-49ffb11a5e7d(de.htwsaar.peopl.core.featureConfig.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
@@ -233,13 +232,13 @@
                           <ref role="1YBMHb" node="2Td5c7RXEtL" resolve="partition" />
                         </node>
                         <node concept="3Tsc0h" id="2Td5c7RXW_x" role="2OqNvi">
-                          <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" />
+                          <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" resolve="module" />
                         </node>
                       </node>
                       <node concept="1uHKPH" id="2Td5c7RXW_y" role="2OqNvi" />
                     </node>
                     <node concept="3TrEf2" id="2Td5c7RXW_z" role="2OqNvi">
-                      <ref role="3Tt5mk" to="sj65:_uCk0nlSox" />
+                      <ref role="3Tt5mk" to="sj65:_uCk0nlSox" resolve="connectedModule" />
                     </node>
                   </node>
                 </node>
@@ -259,7 +258,7 @@
                         <ref role="1YBMHb" node="2Td5c7RXEtL" resolve="partition" />
                       </node>
                       <node concept="3TrEf2" id="2Td5c7RXWls" role="2OqNvi">
-                        <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" />
+                        <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" resolve="operation" />
                       </node>
                     </node>
                   </node>
@@ -275,7 +274,7 @@
                   <ref role="1YBMHb" node="2Td5c7RXEtL" resolve="partition" />
                 </node>
                 <node concept="3TrEf2" id="2Td5c7RXE_g" role="2OqNvi">
-                  <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" />
+                  <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" resolve="operation" />
                 </node>
               </node>
               <node concept="1mIQ4w" id="2Td5c7RXEKg" role="2OqNvi">
@@ -302,7 +301,7 @@
                           <ref role="1YBMHb" node="2Td5c7RXEtL" resolve="partition" />
                         </node>
                         <node concept="3TrEf2" id="2Td5c7RXX8H" role="2OqNvi">
-                          <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" />
+                          <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" resolve="operation" />
                         </node>
                       </node>
                     </node>
@@ -320,7 +319,7 @@
               <ref role="1YBMHb" node="2Td5c7RXEtL" resolve="partition" />
             </node>
             <node concept="3TrEf2" id="2Td5c7RZk1g" role="2OqNvi">
-              <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" />
+              <ref role="3Tt5mk" to="nsly:39ZsZHfxBN4" resolve="operation" />
             </node>
           </node>
         </node>
@@ -376,7 +375,7 @@
             <ref role="1YBMHb" node="2Td5c7S0Eo6" resolve="variant" />
           </node>
           <node concept="3Tsc0h" id="2Td5c7S0XxR" role="2OqNvi">
-            <ref role="3TtcxE" to="nsly:66EASTR58zF" />
+            <ref role="3TtcxE" to="nsly:66EASTR58zF" resolve="features" />
           </node>
         </node>
         <node concept="3clFbS" id="2Td5c7S0XxS" role="2LFqv$">
@@ -391,7 +390,7 @@
                     <ref role="2Gs0qQ" node="2Td5c7S0XxO" resolve="featureConnector" />
                   </node>
                   <node concept="3TrEf2" id="21326cAYTun" role="2OqNvi">
-                    <ref role="3Tt5mk" to="nsly:21326cAYBZ3" />
+                    <ref role="3Tt5mk" to="nsly:21326cAYBZ3" resolve="feature" />
                   </node>
                 </node>
               </node>
@@ -435,7 +434,7 @@
             </node>
           </node>
           <node concept="3Tsc0h" id="2Td5c7S0Fnt" role="2OqNvi">
-            <ref role="3TtcxE" to="nsly:66EASTR5D5G" />
+            <ref role="3TtcxE" to="nsly:66EASTR5D5G" resolve="constraints" />
           </node>
         </node>
         <node concept="3clFbS" id="2Td5c7S0Eoi" role="2LFqv$">
@@ -478,7 +477,7 @@
                         <ref role="3cqZAo" node="2Td5c7S0Eog" resolve="constraint" />
                       </node>
                       <node concept="2qgKlT" id="2Td5c7S11U_" role="2OqNvi">
-                        <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                        <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                         <node concept="10Nm6u" id="2Td5c7S11UA" role="37wK5m" />
                       </node>
                     </node>
@@ -552,7 +551,7 @@
                     <ref role="3cqZAo" node="5rorRdUx4SX" resolve="modCon" />
                   </node>
                   <node concept="3TrEf2" id="5rorRdUx83o" role="2OqNvi">
-                    <ref role="3Tt5mk" to="sj65:_uCk0nlSox" />
+                    <ref role="3Tt5mk" to="sj65:_uCk0nlSox" resolve="connectedModule" />
                   </node>
                 </node>
               </node>
@@ -570,7 +569,7 @@
             <ref role="1YBMHb" node="5rorRdUwY$M" resolve="partition" />
           </node>
           <node concept="3Tsc0h" id="5rorRdUx5e7" role="2OqNvi">
-            <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" />
+            <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" resolve="module" />
           </node>
         </node>
       </node>
@@ -610,7 +609,7 @@
                 <ref role="1YBMHb" node="5rorRdUwY$M" resolve="partition" />
               </node>
               <node concept="3Tsc0h" id="5rorRdUxY4K" role="2OqNvi">
-                <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" />
+                <ref role="3TtcxE" to="nsly:2DTnhFmOPUK" resolve="module" />
               </node>
             </node>
             <node concept="3clFbS" id="5rorRdUxXTz" role="2LFqv$">

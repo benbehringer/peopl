@@ -3960,7 +3960,7 @@
                                               </node>
                                             </node>
                                             <node concept="2qgKlT" id="4ex3EegQePi" role="2OqNvi">
-                                              <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                                              <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                                               <node concept="10Nm6u" id="4ex3EegQePj" role="37wK5m" />
                                             </node>
                                           </node>
@@ -7981,7 +7981,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="1Wx$SqGEeaT" role="2OqNvi">
-                            <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                            <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                             <node concept="10Nm6u" id="1Wx$SqGEeaU" role="37wK5m" />
                           </node>
                         </node>
@@ -8336,7 +8336,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="2KSGnDx_ZHX" role="2OqNvi">
-                            <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                            <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                             <node concept="10Nm6u" id="2KSGnDx_ZHY" role="37wK5m" />
                           </node>
                         </node>
@@ -8739,7 +8739,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="3Up0yGxPnxk" role="2OqNvi">
-                            <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                            <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                             <node concept="10Nm6u" id="3Up0yGxPnxl" role="37wK5m" />
                           </node>
                         </node>
@@ -12284,7 +12284,7 @@
                             </node>
                           </node>
                           <node concept="2qgKlT" id="2KSGnDx$Z1Z" role="2OqNvi">
-                            <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                            <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                             <node concept="10Nm6u" id="2KSGnDx$Z20" role="37wK5m" />
                           </node>
                         </node>

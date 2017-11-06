@@ -382,7 +382,7 @@
                   </node>
                 </node>
                 <node concept="2qgKlT" id="GdEQ2CAMhC" role="2OqNvi">
-                  <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                  <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                   <node concept="10Nm6u" id="GdEQ2CAMhD" role="37wK5m" />
                 </node>
               </node>

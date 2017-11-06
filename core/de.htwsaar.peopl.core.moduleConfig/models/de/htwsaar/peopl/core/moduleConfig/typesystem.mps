@@ -2,8 +2,7 @@
 <model ref="r:7456fa3c-7b7e-44e4-ab51-3653a304475a(de.htwsaar.peopl.core.moduleConfig.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="0" />
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
@@ -964,7 +963,7 @@
                               </node>
                             </node>
                             <node concept="2qgKlT" id="4p4J_SJv7K1" role="2OqNvi">
-                              <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                              <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                               <node concept="2OqwBi" id="4p4J_SJvggj" role="37wK5m">
                                 <node concept="2JrnkZ" id="4p4J_SJvge8" role="2Oq$k0">
                                   <node concept="2OqwBi" id="4p4J_SJvfYA" role="2JrQYb">

@@ -40,6 +40,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="4bff7bbe-ce5f-432e-84bf-60809cb9987c(com.mbeddr.mpsutil.intentions.runtime)" version="0" />
     <module reference="e3f46ef7-61eb-4bce-9e09-9c1792246fd2(de.htwsaar.fileUpload)" version="0" />
     <module reference="9f1f4432-4bb8-4cf7-8c40-c78c9f1c6b00(de.htwsaar.peopl.utils.interactionMonitoring)" version="0" />
   </dependencyVersions>

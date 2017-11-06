@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
+    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4137,7 +4137,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="m30d52HxVI" role="2OqNvi">
-                        <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                        <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                         <node concept="10Nm6u" id="m30d52HxVJ" role="37wK5m" />
                       </node>
                     </node>
@@ -8755,7 +8755,7 @@
                         </node>
                       </node>
                       <node concept="2qgKlT" id="72Mw9zmomY0" role="2OqNvi">
-                        <ref role="37wK5l" to="tpek:hEwJgmp" resolve="eval" />
+                        <ref role="37wK5l" to="tpek:i1LP2xI" resolve="getCompileTimeConstantValue" />
                         <node concept="10Nm6u" id="72Mw9zmomY1" role="37wK5m" />
                       </node>
                     </node>

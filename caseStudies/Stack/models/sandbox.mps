@@ -218,6 +218,13 @@
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
     </language>
+    <language id="4c4bbb77-dae4-40ac-9819-555675af7c56" name="de.htwsaar.peopl.core.view.modular">
+      <concept id="763904935699803294" name="de.htwsaar.peopl.core.view.modular.structure.ModularCompilationUnit" flags="ng" index="3k50fz">
+        <property id="763904935699804171" name="moduleReferenceName" index="3k51XQ" />
+        <reference id="763904935699805692" name="module" index="3k51E1" />
+        <reference id="763904935699804173" name="compilationUnit" index="3k51XK" />
+      </concept>
+    </language>
   </registry>
   <node concept="H$gyE" id="1RNHMnnKzu">
     <property role="TrG5h" value="ConfigurationLink" />
@@ -1030,6 +1037,27 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="HxVAF" to="fmn5:1yv_rrpLv2I" resolve="Underflow" />
     <ref role="HxVAD" node="1yv_rrpLv1H" resolve="Stack" />
+  </node>
+  <node concept="HxVAC" id="5IrunUX62TV">
+    <property role="3k51XQ" value="module" />
+    <property role="TrG5h" value="Base::Stack" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="3k51E1" to="fmn5:1RNHMnnKzo" resolve="Base" />
+    <ref role="3k51XK" node="1yv_rrpLv1H" resolve="Stack" />
+  </node>
+  <node concept="HxVAC" id="5IrunUX63nr">
+    <property role="3k51XQ" value="module" />
+    <property role="TrG5h" value="Underflow::Stack" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="3k51E1" to="fmn5:1yv_rrpLv2I" resolve="Underflow" />
+    <ref role="3k51XK" node="1yv_rrpLv1H" resolve="Stack" />
+  </node>
+  <node concept="HxVAC" id="5IrunUX63Pm">
+    <property role="3k51XQ" value="module" />
+    <property role="TrG5h" value="Overflow::Stack" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="3k51E1" to="fmn5:1yv_rrpLC_T" resolve="Overflow" />
+    <ref role="3k51XK" node="1yv_rrpLv1H" resolve="Stack" />
   </node>
 </model>
 
