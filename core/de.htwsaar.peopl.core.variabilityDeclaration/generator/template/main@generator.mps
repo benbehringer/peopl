@@ -347,6 +347,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -3977,22 +3978,51 @@
       <node concept="3Tm1VV" id="3FjUMSPqk2I" role="1B3o_S" />
       <node concept="3bZ5Sz" id="3FjUMSPqk2J" role="3clF45" />
       <node concept="3clFbS" id="3FjUMSPqk2K" role="3clF47">
-        <node concept="3cpWs6" id="3FjUMSPqrRt" role="3cqZAp">
-          <node concept="35c_gC" id="3FjUMSPqscn" role="3cqZAk">
-            <ref role="35c_gD" to="ovfz:7BIYFTBzC0t" resolve="AlternativeConfig" />
-            <node concept="29HgVG" id="3FjUMSPqsd5" role="lGtFl">
-              <node concept="3NFfHV" id="3FjUMSPqsdo" role="3NFExx">
-                <node concept="3clFbS" id="3FjUMSPqsdp" role="2VODD2">
-                  <node concept="3clFbF" id="3FjUMSPqsfa" role="3cqZAp">
-                    <node concept="2OqwBi" id="3FjUMSPqss8" role="3clFbG">
-                      <node concept="2OqwBi" id="3FjUMSPqshr" role="2Oq$k0">
-                        <node concept="30H73N" id="3FjUMSPqsf9" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="3FjUMSPqsma" role="2OqNvi">
+        <node concept="3cpWs6" id="roAxhtirUp" role="3cqZAp">
+          <node concept="35c_gC" id="roAxhtiBbk" role="3cqZAk">
+            <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
+          </node>
+          <node concept="1W57fq" id="roAxhtiS9V" role="lGtFl">
+            <node concept="3IZrLx" id="roAxhtiS9X" role="3IZSJc">
+              <node concept="3clFbS" id="roAxhtiS9Z" role="2VODD2">
+                <node concept="3clFbF" id="roAxhtievx" role="3cqZAp">
+                  <node concept="2OqwBi" id="roAxhtievz" role="3clFbG">
+                    <node concept="2OqwBi" id="roAxhtiev$" role="2Oq$k0">
+                      <node concept="2OqwBi" id="roAxhtiev_" role="2Oq$k0">
+                        <node concept="30H73N" id="roAxhtievA" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="roAxhtievB" role="2OqNvi">
                           <ref role="3Tt5mk" to="ovfz:4UuYCFbLufU" resolve="featureGroupConfig" />
                         </node>
                       </node>
-                      <node concept="3TrEf2" id="3FjUMSPqsz3" role="2OqNvi">
+                      <node concept="3TrEf2" id="roAxhtievC" role="2OqNvi">
                         <ref role="3Tt5mk" to="ovfz:3FjUMSPqeCm" resolve="inheritedGroupConcept" />
+                      </node>
+                    </node>
+                    <node concept="3w_OXm" id="roAxhtievD" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="gft3U" id="roAxhtjqP6" role="UU_$l">
+              <node concept="3cpWs6" id="3FjUMSPqrRt" role="gfFT$">
+                <node concept="35c_gC" id="3FjUMSPqscn" role="3cqZAk">
+                  <ref role="35c_gD" to="tpck:gw2VY9q" resolve="BaseConcept" />
+                  <node concept="29HgVG" id="3FjUMSPqsd5" role="lGtFl">
+                    <node concept="3NFfHV" id="3FjUMSPqsdo" role="3NFExx">
+                      <node concept="3clFbS" id="3FjUMSPqsdp" role="2VODD2">
+                        <node concept="3cpWs6" id="roAxhtjE$X" role="3cqZAp">
+                          <node concept="2OqwBi" id="roAxhtjE$Y" role="3cqZAk">
+                            <node concept="2OqwBi" id="roAxhtjE$Z" role="2Oq$k0">
+                              <node concept="30H73N" id="roAxhtjE_0" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="roAxhtjE_1" role="2OqNvi">
+                                <ref role="3Tt5mk" to="ovfz:4UuYCFbLufU" resolve="featureGroupConfig" />
+                              </node>
+                            </node>
+                            <node concept="3TrEf2" id="roAxhtjE_2" role="2OqNvi">
+                              <ref role="3Tt5mk" to="ovfz:3FjUMSPqeCm" resolve="inheritedGroupConcept" />
+                            </node>
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -4001,6 +4031,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="roAxhtimx4" role="3cqZAp" />
       </node>
       <node concept="2AHcQZ" id="3FjUMSPqr9H" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />

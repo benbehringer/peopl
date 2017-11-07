@@ -1879,6 +1879,26 @@
                           <node concept="3clFbJ" id="5d4JtKqSI3b" role="3cqZAp">
                             <node concept="3clFbS" id="5d4JtKqSI3d" role="3clFbx">
                               <node concept="3clFbH" id="4uCbWdTKLvG" role="3cqZAp" />
+                              <node concept="34ab3g" id="3uf6gw9wOYl" role="3cqZAp">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="3cpWs3" id="3uf6gw9wOYm" role="34bqiv">
+                                  <node concept="2OqwBi" id="3uf6gw9wOYn" role="3uHU7w">
+                                    <node concept="2OqwBi" id="3uf6gw9wOYo" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3uf6gw9wOYp" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4uCbWdTKLvj" resolve="node" />
+                                      </node>
+                                      <node concept="2yIwOk" id="3uf6gw9wOYq" role="2OqNvi" />
+                                    </node>
+                                    <node concept="liA8E" id="3uf6gw9A$vS" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="3uf6gw9wOYs" role="3uHU7B">
+                                    <property role="Xl_RC" value="add: runtime for node of type " />
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbH" id="3uf6gw9wOOo" role="3cqZAp" />
                               <node concept="3SKdUt" id="4uCbWdTKLvH" role="3cqZAp">
                                 <node concept="3SKdUq" id="4uCbWdTKLvI" role="3SKWNk">
                                   <property role="3SKdUp" value="we invalidate the cache if we work in a product line configuration" />
@@ -1949,6 +1969,12 @@
                               </node>
                               <node concept="3clFbJ" id="4uCbWdTKLwc" role="3cqZAp">
                                 <node concept="3clFbS" id="4uCbWdTKLwd" role="3clFbx">
+                                  <node concept="34ab3g" id="3uf6gw9AA6T" role="3cqZAp">
+                                    <property role="35gtTG" value="warn" />
+                                    <node concept="Xl_RD" id="3uf6gw9AA6U" role="34bqiv">
+                                      <property role="Xl_RC" value="add getInheritedFeatureGroupConcept" />
+                                    </node>
+                                  </node>
                                   <node concept="3SKdUt" id="4uCbWdTKLwe" role="3cqZAp">
                                     <node concept="3SKdUq" id="4uCbWdTKLwf" role="3SKWNk">
                                       <property role="3SKdUp" value="we do not explicitly alter StatementLists and thus ignore them" />
@@ -2258,18 +2284,21 @@
                                     </node>
                                   </node>
                                 </node>
-                                <node concept="3fqX7Q" id="3FjUMSPqYsi" role="3clFbw">
-                                  <node concept="2YIFZM" id="3FjUMSPqYGN" role="3fr31v">
-                                    <ref role="37wK5l" to="i8bi:5IkW5anFeil" resolve="isInstanceOf" />
-                                    <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
-                                    <node concept="37vLTw" id="3FjUMSPqZ8n" role="37wK5m">
-                                      <ref role="3cqZAo" node="4uCbWdTKLvj" resolve="node" />
+                                <node concept="3fqX7Q" id="roAxhte6kz" role="3clFbw">
+                                  <node concept="2YIFZM" id="roAxhte6k$" role="3fr31v">
+                                    <ref role="37wK5l" to="i8bi:4eGV4eCfRwY" resolve="isExactly" />
+                                    <ref role="1Pybhc" to="i8bi:5IkW5anF8_6" resolve="SConceptOperations" />
+                                    <node concept="2OqwBi" id="roAxhte6k_" role="37wK5m">
+                                      <node concept="37vLTw" id="roAxhte6kA" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4uCbWdTKLvj" resolve="node" />
+                                      </node>
+                                      <node concept="2yIwOk" id="roAxhte6kB" role="2OqNvi" />
                                     </node>
-                                    <node concept="2OqwBi" id="3FjUMSPqZdd" role="37wK5m">
-                                      <node concept="37vLTw" id="3FjUMSPqZbb" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="roAxhte6kC" role="37wK5m">
+                                      <node concept="37vLTw" id="roAxhte6kD" role="2Oq$k0">
                                         <ref role="3cqZAo" node="EpVRRuNNSx" resolve="runtime" />
                                       </node>
-                                      <node concept="liA8E" id="3FjUMSPqZh7" role="2OqNvi">
+                                      <node concept="liA8E" id="roAxhte6kE" role="2OqNvi">
                                         <ref role="37wK5l" to="ikxv:3FjUMSPqh_l" resolve="getInheritedFeatureGroupConcept" />
                                       </node>
                                     </node>
@@ -2593,7 +2622,25 @@
                           <node concept="3clFbJ" id="2UiiERP29Ke" role="3cqZAp">
                             <node concept="3clFbS" id="2UiiERP29Kg" role="3clFbx">
                               <node concept="3clFbH" id="2UiiERP29Kf" role="3cqZAp" />
-                              <node concept="3clFbH" id="2UiiERP283b" role="3cqZAp" />
+                              <node concept="34ab3g" id="3uf6gw9wMEH" role="3cqZAp">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="3cpWs3" id="3uf6gw9wNqR" role="34bqiv">
+                                  <node concept="2OqwBi" id="3uf6gw9wOdE" role="3uHU7w">
+                                    <node concept="2OqwBi" id="3uf6gw9wNAo" role="2Oq$k0">
+                                      <node concept="37vLTw" id="3uf6gw9wNsq" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4uCbWdTKLz3" resolve="node" />
+                                      </node>
+                                      <node concept="2yIwOk" id="3uf6gw9wNTE" role="2OqNvi" />
+                                    </node>
+                                    <node concept="liA8E" id="3uf6gw9AzJJ" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~Object.toString():java.lang.String" resolve="toString" />
+                                    </node>
+                                  </node>
+                                  <node concept="Xl_RD" id="3uf6gw9wMEJ" role="3uHU7B">
+                                    <property role="Xl_RC" value="remove: runtime for node of type " />
+                                  </node>
+                                </node>
+                              </node>
                               <node concept="3SKdUt" id="4uCbWdTKLzn" role="3cqZAp">
                                 <node concept="3SKdUq" id="4uCbWdTKLzo" role="3SKWNk">
                                   <property role="3SKdUp" value="we invalidate the cache if we work in a product line configuration" />
@@ -2766,8 +2813,17 @@
                                   </node>
                                 </node>
                               </node>
+                              <node concept="3clFbH" id="3uf6gw9EYcz" role="3cqZAp" />
+                              <node concept="3clFbH" id="3uf6gw9F7n8" role="3cqZAp" />
                               <node concept="3clFbJ" id="4uCbWdTKLzS" role="3cqZAp">
                                 <node concept="3clFbS" id="4uCbWdTKLzT" role="3clFbx">
+                                  <node concept="3clFbH" id="3uf6gw9A_y9" role="3cqZAp" />
+                                  <node concept="34ab3g" id="3uf6gw9A_KW" role="3cqZAp">
+                                    <property role="35gtTG" value="warn" />
+                                    <node concept="Xl_RD" id="3uf6gw9A_KY" role="34bqiv">
+                                      <property role="Xl_RC" value="remove: getInheritedFeatureGroupConcept" />
+                                    </node>
+                                  </node>
                                   <node concept="3SKdUt" id="4uCbWdTKLzU" role="3cqZAp">
                                     <node concept="3SKdUq" id="4uCbWdTKLzV" role="3SKWNk">
                                       <property role="3SKdUp" value="we do not explicitly alter StatementLists and thus ignore them" />
@@ -2991,17 +3047,20 @@
                                   </node>
                                 </node>
                                 <node concept="3fqX7Q" id="32xgP8_tQcw" role="3clFbw">
-                                  <node concept="2YIFZM" id="32xgP8_tQlY" role="3fr31v">
-                                    <ref role="37wK5l" to="i8bi:5IkW5anFeil" resolve="isInstanceOf" />
-                                    <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
-                                    <node concept="37vLTw" id="32xgP8_tQn2" role="37wK5m">
-                                      <ref role="3cqZAo" node="4uCbWdTKLz3" resolve="node" />
+                                  <node concept="2YIFZM" id="roAxhte5VJ" role="3fr31v">
+                                    <ref role="37wK5l" to="i8bi:4eGV4eCfRwY" resolve="isExactly" />
+                                    <ref role="1Pybhc" to="i8bi:5IkW5anF8_6" resolve="SConceptOperations" />
+                                    <node concept="2OqwBi" id="roAxhte68q" role="37wK5m">
+                                      <node concept="37vLTw" id="roAxhte5VK" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="4uCbWdTKLz3" resolve="node" />
+                                      </node>
+                                      <node concept="2yIwOk" id="roAxhte6je" role="2OqNvi" />
                                     </node>
-                                    <node concept="2OqwBi" id="32xgP8_tQqS" role="37wK5m">
-                                      <node concept="37vLTw" id="32xgP8_tQpr" role="2Oq$k0">
+                                    <node concept="2OqwBi" id="roAxhte5VL" role="37wK5m">
+                                      <node concept="37vLTw" id="roAxhte5VM" role="2Oq$k0">
                                         <ref role="3cqZAo" node="32xgP8_tPSc" resolve="runtime" />
                                       </node>
-                                      <node concept="liA8E" id="32xgP8_tQxr" role="2OqNvi">
+                                      <node concept="liA8E" id="roAxhte5VN" role="2OqNvi">
                                         <ref role="37wK5l" to="ikxv:3FjUMSPqh_l" resolve="getInheritedFeatureGroupConcept" />
                                       </node>
                                     </node>
@@ -3342,14 +3401,10 @@
                           </node>
                           <node concept="3clFbJ" id="tJvfxNmbAJ" role="3cqZAp">
                             <node concept="3clFbS" id="tJvfxNmbAL" role="3clFbx">
-                              <node concept="1X3_iC" id="tJvfxNy114" role="lGtFl">
-                                <property role="3V$3am" value="statement" />
-                                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                <node concept="34ab3g" id="tJvfxNs4gs" role="8Wnug">
-                                  <property role="35gtTG" value="warn" />
-                                  <node concept="Xl_RD" id="tJvfxNs4gu" role="34bqiv">
-                                    <property role="Xl_RC" value="detach referred group" />
-                                  </node>
+                              <node concept="34ab3g" id="tJvfxNs4gs" role="3cqZAp">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="Xl_RD" id="tJvfxNs4gu" role="34bqiv">
+                                  <property role="Xl_RC" value="detach referred group" />
                                 </node>
                               </node>
                               <node concept="3clFbF" id="tJvfxNme5q" role="3cqZAp">
@@ -3394,14 +3449,10 @@
                               </node>
                             </node>
                           </node>
-                          <node concept="1X3_iC" id="tJvfxNy14H" role="lGtFl">
-                            <property role="3V$3am" value="statement" />
-                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                            <node concept="34ab3g" id="tJvfxNe_C4" role="8Wnug">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="tJvfxNe_C6" role="34bqiv">
-                                <property role="Xl_RC" value="detach updater" />
-                              </node>
+                          <node concept="34ab3g" id="tJvfxNe_C4" role="3cqZAp">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="Xl_RD" id="tJvfxNe_C6" role="34bqiv">
+                              <property role="Xl_RC" value="detach updater" />
                             </node>
                           </node>
                           <node concept="3clFbF" id="6C85IR0rhJq" role="3cqZAp">
@@ -3808,14 +3859,10 @@
                               <property role="3SKdUp" value="repairing references" />
                             </node>
                           </node>
-                          <node concept="1X3_iC" id="tJvfxNy0Y7" role="lGtFl">
-                            <property role="3V$3am" value="statement" />
-                            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                            <node concept="34ab3g" id="tJvfxNe_tw" role="8Wnug">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="tJvfxNe_ty" role="34bqiv">
-                                <property role="Xl_RC" value="repair updater" />
-                              </node>
+                          <node concept="34ab3g" id="tJvfxNe_tw" role="3cqZAp">
+                            <property role="35gtTG" value="warn" />
+                            <node concept="Xl_RD" id="tJvfxNe_ty" role="34bqiv">
+                              <property role="Xl_RC" value="repair updater" />
                             </node>
                           </node>
                           <node concept="3clFbF" id="7W6xH3UHN$j" role="3cqZAp">
@@ -3841,14 +3888,10 @@
                           <node concept="3clFbH" id="tJvfxNmluO" role="3cqZAp" />
                           <node concept="3clFbJ" id="tJvfxNmlAr" role="3cqZAp">
                             <node concept="3clFbS" id="tJvfxNmlAs" role="3clFbx">
-                              <node concept="1X3_iC" id="tJvfxNy0ZD" role="lGtFl">
-                                <property role="3V$3am" value="statement" />
-                                <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                <node concept="34ab3g" id="tJvfxNs5wF" role="8Wnug">
-                                  <property role="35gtTG" value="warn" />
-                                  <node concept="Xl_RD" id="tJvfxNs5wH" role="34bqiv">
-                                    <property role="Xl_RC" value="repair group" />
-                                  </node>
+                              <node concept="34ab3g" id="tJvfxNs5wF" role="3cqZAp">
+                                <property role="35gtTG" value="warn" />
+                                <node concept="Xl_RD" id="tJvfxNs5wH" role="34bqiv">
+                                  <property role="Xl_RC" value="repair group" />
                                 </node>
                               </node>
                               <node concept="3clFbF" id="tJvfxNmlAt" role="3cqZAp">

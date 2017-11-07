@@ -96,7 +96,6 @@
         <child id="5665240855309837223" name="replaceableNode" index="25mL$H" />
         <child id="5665240855312100028" name="definingContainerConcept" index="25tD0Q" />
         <child id="5665240855312100032" name="definingNodeConcept" index="25tD1a" />
-        <child id="4238990257982859798" name="inheritedGroupConcept" index="fIK4S" />
       </concept>
       <concept id="9122230446655927851" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeBlock" flags="ng" index="aHlDD">
         <child id="9122230446655928259" name="wrappeeConcept" index="aHlI1" />
@@ -634,9 +633,6 @@
       </node>
       <node concept="1G2zp1" id="1WMwngv1_Lb" role="25tD1a">
         <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
-      </node>
-      <node concept="1G2zp1" id="3FjUMSPqUK2" role="fIK4S">
-        <ref role="35c_gD" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
       </node>
     </node>
     <node concept="18sGMC" id="1WMwngv1_Ip" role="18sCgF">

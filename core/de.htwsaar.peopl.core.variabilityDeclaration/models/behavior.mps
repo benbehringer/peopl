@@ -11,6 +11,7 @@
     <import index="ovfz" ref="r:eb6286b8-ef89-4955-b26e-5b8680512c44(de.htwsaar.peopl.core.variabilityDeclaration.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -69,6 +70,11 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1068580123160" name="condition" index="3clFbw" />
+        <child id="1068580123161" name="ifTrue" index="3clFbx" />
+      </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -102,6 +108,10 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -110,6 +120,9 @@
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz">
         <reference id="6677504323281689839" name="conceptDeclaraton" index="3bZ5Sy" />
+      </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -464,6 +477,35 @@
   </node>
   <node concept="13h7C7" id="4DWUWsTbU$D">
     <ref role="13h7C2" to="ovfz:7BIYFTBzC0t" resolve="AlternativeConfig" />
+    <node concept="13i0hz" id="roAxhte27F" role="13h7CS">
+      <property role="TrG5h" value="test" />
+      <node concept="3Tm1VV" id="roAxhte27G" role="1B3o_S" />
+      <node concept="3cqZAl" id="roAxhte2a5" role="3clF45" />
+      <node concept="3clFbS" id="roAxhte27I" role="3clF47">
+        <node concept="3clFbJ" id="3uf6gw9EYt7" role="3cqZAp">
+          <node concept="3clFbS" id="3uf6gw9EYt9" role="3clFbx">
+            <node concept="3clFbH" id="3uf6gw9EYt8" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="3uf6gw9FafV" role="3clFbw">
+            <node concept="2OqwBi" id="3uf6gw9F8eM" role="2Oq$k0">
+              <node concept="37vLTw" id="3uf6gw9EYEV" role="2Oq$k0">
+                <ref role="3cqZAo" node="roAxhte2eG" resolve="node" />
+              </node>
+              <node concept="2yIwOk" id="3uf6gw9F9Yf" role="2OqNvi" />
+            </node>
+            <node concept="3O6GUB" id="3uf6gw9FaHi" role="2OqNvi">
+              <node concept="chp4Y" id="3uf6gw9FaQ6" role="3QVz_e">
+                <ref role="cht4Q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="roAxhte2eG" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="roAxhte2eF" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13hLZK" id="4DWUWsTbU$E" role="13h7CW">
       <node concept="3clFbS" id="4DWUWsTbU$F" role="2VODD2">
         <node concept="3clFbF" id="4DWUWsTdAIh" role="3cqZAp">
