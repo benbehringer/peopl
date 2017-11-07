@@ -825,10 +825,10 @@
           <ref role="1NtTu8" to="ovfz:4UuYCFbLXh$" resolve="concreteFeatureGroup" />
         </node>
         <node concept="3F0ifn" id="3FjUMSPqeDC" role="3EZMnx">
-          <property role="3F0ifm" value="inherits" />
+          <property role="3F0ifm" value="wraps" />
         </node>
         <node concept="3F1sOY" id="3FjUMSPqeDQ" role="3EZMnx">
-          <ref role="1NtTu8" to="ovfz:3FjUMSPqeCm" resolve="inheritedGroupConcept" />
+          <ref role="1NtTu8" to="ovfz:3FjUMSPqeCm" resolve="wrappedGroupConcept" />
         </node>
       </node>
       <node concept="3EZMnI" id="4UuYCFbU6Ga" role="3EZMnx">

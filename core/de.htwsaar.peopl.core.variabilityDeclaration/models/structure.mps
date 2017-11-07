@@ -364,7 +364,7 @@
     </node>
     <node concept="1TJgyj" id="3FjUMSPqeCm" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="inheritedGroupConcept" />
+      <property role="20kJfa" value="wrappedGroupConcept" />
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="4238990257982859798" />
       <ref role="20lvS9" node="5ifx4GSxr8a" resolve="ConceptIdRefExpressionSimple" />
