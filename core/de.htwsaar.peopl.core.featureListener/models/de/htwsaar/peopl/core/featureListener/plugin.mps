@@ -26,6 +26,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
+    <import index="gzfr" ref="r:4493c001-9956-4b69-8c92-9141ac8f5b4e(de.htwsaar.peopl.core.listener.plugin)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -191,6 +192,14 @@
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
@@ -1283,25 +1292,49 @@
     <property role="TrG5h" value="FeatureProjectListener" />
     <node concept="2uRRBT" id="26M783K_kat" role="2uRRB$">
       <node concept="3clFbS" id="26M783K_kau" role="2VODD2">
-        <node concept="2Gpval" id="7qo5jFk$_Or" role="3cqZAp">
-          <node concept="2GrKxI" id="7qo5jFk$_Ot" role="2Gsz3X">
-            <property role="TrG5h" value="model" />
+        <node concept="3clFbF" id="1VVxE8DwEmM" role="3cqZAp">
+          <node concept="2YIFZM" id="1VVxE8DwEpo" role="3clFbG">
+            <ref role="37wK5l" node="71KyjIiRFEP" resolve="rememberModuleReloadListener" />
+            <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="FeaturePeoplListenerCache" />
+            <node concept="2YIFZM" id="1VVxE8DwEuq" role="37wK5m">
+              <ref role="37wK5l" to="gzfr:8K4WCaTW55" resolve="addClassloadListener" />
+              <ref role="1Pybhc" to="gzfr:8K4WCaTVOA" resolve="PeoplClassLoadListener" />
+              <node concept="1KvdUw" id="1VVxE8DwEv0" role="37wK5m" />
+            </node>
           </node>
-          <node concept="3clFbS" id="7qo5jFk$_Ov" role="2LFqv$">
-            <node concept="3clFbF" id="6cQtm9g7Ta0" role="3cqZAp">
-              <node concept="2YIFZM" id="26M783K_klV" role="3clFbG">
-                <ref role="37wK5l" node="4abErjGKlAI" resolve="addFeatureListener" />
-                <ref role="1Pybhc" node="3qAcRklgaM6" resolve="FeatureListener" />
-                <node concept="2GrUjf" id="26M783K_knt" role="37wK5m">
-                  <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
+        </node>
+        <node concept="3clFbH" id="1VVxE8DwEeA" role="3cqZAp" />
+        <node concept="1QHqEK" id="1VVxE8DwCeE" role="3cqZAp">
+          <node concept="1QHqEC" id="1VVxE8DwCeG" role="1QHqEI">
+            <node concept="3clFbS" id="1VVxE8DwCeI" role="1bW5cS">
+              <node concept="2Gpval" id="7qo5jFk$_Or" role="3cqZAp">
+                <node concept="2GrKxI" id="7qo5jFk$_Ot" role="2Gsz3X">
+                  <property role="TrG5h" value="model" />
+                </node>
+                <node concept="3clFbS" id="7qo5jFk$_Ov" role="2LFqv$">
+                  <node concept="3clFbF" id="6cQtm9g7Ta0" role="3cqZAp">
+                    <node concept="2YIFZM" id="26M783K_klV" role="3clFbG">
+                      <ref role="1Pybhc" node="3qAcRklgaM6" resolve="FeatureListener" />
+                      <ref role="37wK5l" node="4abErjGKlAI" resolve="addFeatureListener" />
+                      <node concept="2GrUjf" id="26M783K_knt" role="37wK5m">
+                        <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7qo5jFk$_X8" role="2GsD0m">
+                  <node concept="1KvdUw" id="7qo5jFk$_TG" role="2Oq$k0" />
+                  <node concept="liA8E" id="7qo5jFk$Aqn" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
+                  </node>
                 </node>
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="7qo5jFk$_X8" role="2GsD0m">
-            <node concept="1KvdUw" id="7qo5jFk$_TG" role="2Oq$k0" />
-            <node concept="liA8E" id="7qo5jFk$Aqn" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
+          <node concept="2OqwBi" id="1VVxE8DwCE0" role="ukAjM">
+            <node concept="1KvdUw" id="1VVxE8DwChu" role="2Oq$k0" />
+            <node concept="liA8E" id="1VVxE8DwDMv" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
             </node>
           </node>
         </node>
