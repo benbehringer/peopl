@@ -5,10 +5,9 @@
   <property name="build.layout" location="${build.dir}/artifacts/peoplCore" />
   <property name="mps_home_core" location="${basedir}/../../../../Applications/MPS 2017.2.app/Contents" />
   <property name="artifacts.mps" location="${mps_home_core}" />
-  <property name="artifacts.mbeddr" location="${mps_home_core}/plugins" />
   <property name="artifacts.mps-sl-all" location="${mps_home_core}/plugins" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
-  <property file="${artifacts.mbeddr}/build.properties" prefix="import.mbeddr" />
+  <property file="${artifacts.mps-sl-all}/build.properties" prefix="import.mps-sl-all" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
   <property name="mps.date" value="${import.mps.mps.date}" />
   <property name="mps.build.vcs.number" value="${import.mps.mps.build.vcs.number}" />
@@ -16,19 +15,7 @@
   <property name="mps.idea.platform.build.number" value="${import.mps.mps.idea.platform.build.number}" />
   <property name="mps.mps.build.counter" value="${import.mps.mps.mps.build.counter}" />
   <property name="mpsBootstrapCore.version" value="${import.mps.mpsBootstrapCore.version}" />
-  <property name="mbeddr.major.version" value="${import.mbeddr.mbeddr.major.version}" />
-  <property name="mbeddr.minor.version" value="${import.mbeddr.mbeddr.minor.version}" />
-  <property name="mbeddr.build" value="${import.mbeddr.mbeddr.build}" />
-  <property name="mbeddr.mbeddr.version" value="${import.mbeddr.mbeddr.mbeddr.version}" />
-  <property name="com.mbeddr.platform.major.version" value="${import.mbeddr.com.mbeddr.platform.major.version}" />
-  <property name="com.mbeddr.platform.minor.version" value="${import.mbeddr.com.mbeddr.platform.minor.version}" />
-  <property name="com.mbeddr.platform.build" value="${import.mbeddr.com.mbeddr.platform.build}" />
-  <property name="com.mbeddr.platform.mbeddr.version" value="${import.mbeddr.com.mbeddr.platform.mbeddr.version}" />
-  <property name="mps-sl-all.versionNumber" value="${import.mbeddr.mps-sl-all.versionNumber}" />
-  <property name="spawner.major.version" value="${import.mbeddr.spawner.major.version}" />
-  <property name="spawner.minor.version" value="${import.mbeddr.spawner.minor.version}" />
-  <property name="spawner.build" value="${import.mbeddr.spawner.build}" />
-  <property name="spawner.mbeddr.version" value="${import.mbeddr.spawner.mbeddr.version}" />
+  <property name="mps-sl-all.versionNumber" value="${import.mps-sl-all.mps-sl-all.versionNumber}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -1230,139 +1217,6 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.product-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.product-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages" />
-    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.runtime.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.runtime.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.runtime.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.mpsutil.projectview.extended.runtime" type="solution" uuid="732373f1-0d48-4122-bb43-c1606db4baca">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="com.mbeddr.mpsutil.projectview.extended.runtime-src.jar" descriptor="com.mbeddr.mpsutil.projectview.extended.runtime.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.extended.runtime.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" />
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.runtime.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended.runtime-models">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.extended.runtime-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/com.mbeddr.mpsutil.projectview.extended.runtime.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended.runtime-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.mpsutil.projectview.extended" type="language" uuid="1f1b4a81-113d-4b88-9b67-2bae3e4f8128">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="com.mbeddr.mpsutil.projectview.extended-src.jar" descriptor="com.mbeddr.mpsutil.projectview.extended.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.extended.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" />
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended.jar" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended-generator.jar" />
-    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended-generator.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended-generator.jar/META-INF/module.xml">
-      <module namespace="com.mbeddr.mpsutil.projectview.extended#8411785813236466884" type="generator" uuid="a3049271-b3dd-4434-9b83-30c34057d5df">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="com.mbeddr.mpsutil.projectview.extended-src.jar" descriptor="com.mbeddr.mpsutil.projectview.extended.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.extended-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
-      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.extended-generator.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended-generator-template">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended-languageModels">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.extended-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/com.mbeddr.mpsutil.projectview.extended.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview" prefix="module/../com.mbeddr.mpsutil.projectview" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended-generator-template" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended-languageModels" prefix="module/languageModels" />
-    </jar>
     <zip destfile="${build.layout}/peoplCore.zip">
       <zipfileset file="${basedir}/mbeddr/helper/org.apache.commons/lib/commons-csv-1.0/commons-csv-1.0.jar" prefix="peoplCore/lib" />
       <zipfileset file="${basedir}/mbeddr/helper/org.apache.commons/lib/commons-io-2.4/commons-io-2.4.jar" prefix="peoplCore/lib" />
@@ -1371,7 +1225,7 @@
       <zipfileset file="${basedir}/mbeddr/helper/org.apache.commons/lib/commons-math3-3.3/commons-math3-3.3.jar" prefix="peoplCore/lib" />
       <fileset dir="${build.tmp}/default/peoplCore.zip" />
     </zip>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mbeddr.major.version=${mbeddr.major.version}${line.separator}mbeddr.minor.version=${mbeddr.minor.version}${line.separator}mbeddr.build=${mbeddr.build}${line.separator}mbeddr.mbeddr.version=${mbeddr.mbeddr.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}${line.separator}spawner.major.version=${spawner.major.version}${line.separator}spawner.minor.version=${spawner.minor.version}${line.separator}spawner.build=${spawner.build}${line.separator}spawner.mbeddr.version=${spawner.mbeddr.version}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}mps-sl-all.versionNumber=${mps-sl-all.versionNumber}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -1385,7 +1239,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core#3071473864244849393, java.compile.java.modules.cycle.2, java.compile.de.htwsaar.peopl.core.runtime, java.compile.de.htwsaar.peopl.core.statistics, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.moduleConfig#6563451082523326250, java.compile.de.htwsaar.peopl.core.variabilityDeclaration, java.compile.de.htwsaar.peopl.core.variabilityDeclaration#1236568064986937898, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.de.htwsaar.peopl.core.toolsLanguage, java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000, java.compile.de.htwsaar.peopl.core.tools, java.compile.de.htwsaar.peopl.core.listener, java.compile.de.htwsaar.peopl.core.featureConfig, java.compile.de.htwsaar.peopl.core.featureConfig#7037608403905312523, java.compile.de.htwsaar.peopl.core.modularTypeChecking, java.compile.de.htwsaar.peopl.core.featureListener, java.compile.de.htwsaar.peopl.core.view.modular, java.compile.de.htwsaar.peopl.core.view.modular#763904935699801265, java.compile.de.htwsaar.peopl.core.view.annotative, java.compile.de.htwsaar.peopl.core.view.annotative#2402362384312156136, java.compile.de.htwsaar.peopl.core.view.embedded, java.compile.de.htwsaar.peopl.core.view.embedded#5509652143918834059, java.compile.de.htwsaar.peopl.core.view.hiding, java.compile.de.htwsaar.peopl.core.view.hiding#5509652143918828818, java.compile.de.htwsaar.peopl.core.view.preprocessor, java.compile.de.htwsaar.peopl.core.view.preprocessor#3387676811032598941, java.compile.de.htwsaar.peopl.core.view.product, java.compile.de.htwsaar.peopl.core.view.product#5509652143918833881, java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, java.compile.com.mbeddr.mpsutil.projectview.extended, java.compile.com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core#3071473864244849393, java.compile.java.modules.cycle.2, java.compile.de.htwsaar.peopl.core.runtime, java.compile.de.htwsaar.peopl.core.statistics, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.moduleConfig#6563451082523326250, java.compile.de.htwsaar.peopl.core.variabilityDeclaration, java.compile.de.htwsaar.peopl.core.variabilityDeclaration#1236568064986937898, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.de.htwsaar.peopl.core.toolsLanguage, java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000, java.compile.de.htwsaar.peopl.core.tools, java.compile.de.htwsaar.peopl.core.listener, java.compile.de.htwsaar.peopl.core.featureConfig, java.compile.de.htwsaar.peopl.core.featureConfig#7037608403905312523, java.compile.de.htwsaar.peopl.core.modularTypeChecking, java.compile.de.htwsaar.peopl.core.featureListener, java.compile.de.htwsaar.peopl.core.view.modular, java.compile.de.htwsaar.peopl.core.view.modular#763904935699801265, java.compile.de.htwsaar.peopl.core.view.annotative, java.compile.de.htwsaar.peopl.core.view.annotative#2402362384312156136, java.compile.de.htwsaar.peopl.core.view.embedded, java.compile.de.htwsaar.peopl.core.view.embedded#5509652143918834059, java.compile.de.htwsaar.peopl.core.view.hiding, java.compile.de.htwsaar.peopl.core.view.hiding#5509652143918828818, java.compile.de.htwsaar.peopl.core.view.preprocessor, java.compile.de.htwsaar.peopl.core.view.preprocessor#3387676811032598941, java.compile.de.htwsaar.peopl.core.view.product, java.compile.de.htwsaar.peopl.core.view.product#5509652143918833881, java.compile.java.modules.cycle.3, java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, java.compile.com.mbeddr.mpsutil.projectview.extended, java.compile.com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
   
   <target name="processResources" />
   
@@ -1437,6 +1291,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.analyzers.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
@@ -2997,7 +2852,59 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended.runtime" depends="fetchDependencies">
+  <target name="java.compile.java.modules.cycle.3" depends="fetchDependencies">
+    <mkdir dir="${build.tmp}/java.modules.cycle.3" />
+    <javac destdir="${build.tmp}/java.modules.cycle.3" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.checkedName.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.plugin.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended.runtime" depends="java.compile.java.modules.cycle.3, fetchDependencies">
     <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -3031,19 +2938,25 @@
         <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.3" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended" depends="java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, fetchDependencies">
-    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
+  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended" depends="java.compile.java.modules.cycle.3, fetchDependencies">
+    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -3064,7 +2977,6 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -3085,17 +2997,18 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <pathelement path="${build.tmp}/java.modules.cycle.3" />
       </classpath>
     </javac>
   </target>
   
   <target name="java.compile.com.mbeddr.mpsutil.projectview.extended#8411785813236466884" depends="java.compile.com.mbeddr.mpsutil.projectview.extended, java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, fetchDependencies">
-    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
+    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
     <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended#8411785813236466884" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -3140,8 +3053,7 @@
   </target>
   
   <target name="cleanSources">
-    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
-    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
+    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
     <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core/generator/source_gen" />
@@ -3164,6 +3076,7 @@
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.hiding/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.modular/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.product/source_gen" />
+    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.annotative/generator/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.embedded/generator/source_gen" />
