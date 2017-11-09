@@ -203,7 +203,7 @@
   </registry>
   <node concept="1M2fIO" id="10KxddmzpFI">
     <property role="3GE5qa" value="CoreExtensions" />
-    <ref role="1M2myG" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+    <ref role="1M2myG" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
     <node concept="1X3_iC" id="5P7c6ta9OVO" role="lGtFl">
       <property role="3V$3am" value="property" />
       <property role="3V$3ak" value="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1/1213093968558/1213098023997" />
@@ -219,7 +219,7 @@
                     <node concept="2Rf3mk" id="10KxddmztVC" role="2OqNvi">
                       <node concept="1xMEDy" id="10KxddmztVE" role="1xVPHs">
                         <node concept="chp4Y" id="10Kxddmzuoo" role="ri$Ld">
-                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                         </node>
                       </node>
                     </node>

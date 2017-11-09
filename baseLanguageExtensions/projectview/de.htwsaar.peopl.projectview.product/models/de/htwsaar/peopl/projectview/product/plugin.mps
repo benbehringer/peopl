@@ -8,7 +8,7 @@
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview.extended" version="1" />
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
@@ -127,9 +127,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview">
-      <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
-      <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
+    <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview.extended">
+      <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.extended.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
+      <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.extended.structure.TreeNodeElement" flags="ng" index="14aYG3">
         <property id="2060920582881084732" name="forceAbstract" index="38sH__" />
         <reference id="8309912865649343723" name="parent" index="14a85i" />
         <reference id="4600337039046510231" name="extends" index="3GDMyY" />
@@ -143,7 +143,7 @@
         <child id="8171045391095993151" name="isApplicable" index="3aIZ52" />
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
-      <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
+      <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.extended.structure.ProjectView" flags="ng" index="14aYJB">
         <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
         <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
         <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
@@ -153,7 +153,7 @@
         <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
-      <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
+      <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.extended.structure.QueryElementReference" flags="ng" index="14b0Wr">
         <reference id="8309912865649636121" name="element" index="14b0Uw" />
       </concept>
     </language>
@@ -614,7 +614,7 @@
             </node>
           </node>
           <node concept="2RRcyG" id="$Xellbdds$" role="2OqNvi">
-            <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+            <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
           </node>
         </node>
         <node concept="3$u5V9" id="$Xellbdozs" role="2OqNvi">
@@ -839,7 +839,7 @@
       <property role="3V$3ak" value="1f1b4a81-113d-4b88-9b67-2bae3e4f8128/8309912865649284702/5782973724855443006" />
       <node concept="2YIFZM" id="L5cqXOblku" role="8Wnug">
         <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-        <ref role="37wK5l" to="xnls:~IconManager.getIconFor(jetbrains.mps.vfs.IFile):javax.swing.Icon" resolve="getIconFor" />
+        <ref role="37wK5l" to="xnls:~IconManager.getIconFor(jetbrains.mps.smodel.MPSModuleOwner):javax.swing.Icon" resolve="getIconFor" />
         <node concept="2OqwBi" id="L5cqXObmcW" role="37wK5m">
           <node concept="2YIFZM" id="L5cqXObmbf" role="2Oq$k0">
             <ref role="1Pybhc" to="3ju5:~FileSystem" resolve="FileSystem" />

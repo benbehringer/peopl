@@ -2994,7 +2994,7 @@
                       <node concept="2Xjw5R" id="9isFdPBqZY" role="2OqNvi">
                         <node concept="1xMEDy" id="9isFdPBr00" role="1xVPHs">
                           <node concept="chp4Y" id="9isFdPBr45" role="ri$Ld">
-                            <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                            <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                           </node>
                         </node>
                       </node>
@@ -3023,7 +3023,7 @@
                 <ref role="3cqZAo" node="9isFdPBiQe" resolve="currentMethod" />
               </node>
               <node concept="35c_gC" id="1RjkcfJ5_Oj" role="37wK5m">
-                <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
               </node>
             </node>
           </node>
@@ -3149,7 +3149,7 @@
                         <node concept="2Xjw5R" id="5rOrZhwsiAj" role="2OqNvi">
                           <node concept="1xMEDy" id="5rOrZhwsiAk" role="1xVPHs">
                             <node concept="chp4Y" id="5rOrZhwsiAl" role="ri$Ld">
-                              <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                              <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                             </node>
                           </node>
                         </node>
@@ -3591,7 +3591,7 @@
               </node>
               <node concept="1mIQ4w" id="1jtqHQglGTq" role="2OqNvi">
                 <node concept="chp4Y" id="1jtqHQglGTr" role="cj9EA">
-                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                 </node>
               </node>
             </node>
@@ -6400,7 +6400,7 @@
   </node>
   <node concept="13h7C7" id="4qvLkVcGXOx">
     <property role="3GE5qa" value="CoreExtensions" />
-    <ref role="13h7C2" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+    <ref role="13h7C2" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
     <node concept="13i0hz" id="5CbVY30ukpn" role="13h7CS">
       <property role="TrG5h" value="initialize" />
       <node concept="3Tm1VV" id="5CbVY30ukpo" role="1B3o_S" />
@@ -6414,12 +6414,12 @@
           <node concept="3cpWsn" id="2cTrEv0BG0s" role="3cpWs9">
             <property role="TrG5h" value="peoplClass" />
             <node concept="3Tqbb2" id="2cTrEv0BG0n" role="1tU5fm">
-              <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+              <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
             </node>
             <node concept="2ShNRf" id="2cTrEv0BGo$" role="33vP2m">
               <node concept="3zrR0B" id="2cTrEv0BGoy" role="2ShVmc">
                 <node concept="3Tqbb2" id="2cTrEv0BGoz" role="3zrR0E">
-                  <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                  <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                 </node>
               </node>
             </node>
@@ -6581,7 +6581,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5CbVY30ukpv" role="3clF45">
-        <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+        <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
       </node>
       <node concept="37vLTG" id="5CbVY30vuQe" role="3clF46">
         <property role="TrG5h" value="module" />
@@ -8618,7 +8618,7 @@
   </node>
   <node concept="13h7C7" id="62a2r2cuggK">
     <property role="3GE5qa" value="CoreExtensions" />
-    <ref role="13h7C2" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+    <ref role="13h7C2" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
     <node concept="13i0hz" id="7AMSGoNaqUR" role="13h7CS">
       <property role="TrG5h" value="makeAlternative" />
       <node concept="3Tm1VV" id="7AMSGoNaqUS" role="1B3o_S" />
@@ -8719,7 +8719,7 @@
       <node concept="37vLTG" id="7AMSGoNat6J" role="3clF46">
         <property role="TrG5h" value="originalClass" />
         <node concept="3Tqbb2" id="7AMSGoNatem" role="1tU5fm">
-          <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+          <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
         </node>
       </node>
       <node concept="37vLTG" id="7AMSGoNasQt" role="3clF46">
@@ -9076,7 +9076,7 @@
           </node>
         </node>
         <node concept="3Tqbb2" id="5QzpmcRaD9h" role="3clF45">
-          <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+          <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
         </node>
         <node concept="37vLTG" id="5QzpmcRaDaN" role="3clF46">
           <property role="TrG5h" value="classNode" />
@@ -9466,7 +9466,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5NSnWZogt1" role="3clF45">
-        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
       </node>
       <node concept="37vLTG" id="5NSnWZogt2" role="3clF46">
         <property role="TrG5h" value="classNode" />
@@ -9484,7 +9484,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="5CbVY30tvte" role="3clF45">
-        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
       </node>
     </node>
     <node concept="13i0hz" id="9AU9SVJ5Fc" role="13h7CS">
@@ -9810,7 +9810,7 @@
         </node>
       </node>
       <node concept="3Tqbb2" id="6N529L4__2B" role="3clF45">
-        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+        <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
       </node>
       <node concept="37vLTG" id="2lPOYvWks2O" role="3clF46">
         <property role="TrG5h" value="modDef" />
@@ -9836,7 +9836,7 @@
               <ref role="37wK5l" node="7AMSGoNaqUR" resolve="makeAlternative" />
               <node concept="10QFUN" id="EpVRRuxml4" role="37wK5m">
                 <node concept="3Tqbb2" id="EpVRRuxmlM" role="10QFUM">
-                  <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                  <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                 </node>
                 <node concept="37vLTw" id="EpVRRuxiIW" role="10QFUP">
                   <ref role="3cqZAo" node="EpVRRuxeay" resolve="originalCompilationUnit" />
@@ -9878,7 +9878,7 @@
               <node concept="1eOMI4" id="EpVRRuxnlZ" role="37wK5m">
                 <node concept="10QFUN" id="EpVRRuxnlW" role="1eOMHV">
                   <node concept="3Tqbb2" id="EpVRRuxnmQ" role="10QFUM">
-                    <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                    <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                   </node>
                   <node concept="37vLTw" id="EpVRRuxnoR" role="10QFUP">
                     <ref role="3cqZAo" node="EpVRRuxeaI" resolve="compilationUnit" />

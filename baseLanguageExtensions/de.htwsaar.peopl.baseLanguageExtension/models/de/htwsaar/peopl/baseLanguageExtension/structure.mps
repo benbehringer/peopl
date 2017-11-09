@@ -94,7 +94,7 @@
     </node>
   </node>
   <node concept="1TIwiD" id="6qqyTRuTqUc">
-    <property role="TrG5h" value="PeoplEntryPoint" />
+    <property role="TrG5h" value="JavaCompilationUnitContainer" />
     <property role="3GE5qa" value="CoreExtensions" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="class container" />
@@ -115,7 +115,7 @@
       <property role="20kJfa" value="peoplClasses" />
       <property role="20lbJX" value="0..n" />
       <property role="IQ2ns" value="5089003046184340442" />
-      <ref role="20lvS9" node="62a2r2cufYE" resolve="PeoplClassConcept" />
+      <ref role="20lvS9" node="62a2r2cufYE" resolve="JavaCompilationUnit" />
       <node concept="asaX9" id="EpVRRuQk4c" role="lGtFl" />
     </node>
     <node concept="1QGGSu" id="q735wx1hf4" role="rwd14">
@@ -128,7 +128,7 @@
     <property role="EcuMT" value="8086856244347204253" />
   </node>
   <node concept="1TIwiD" id="62a2r2cufYE">
-    <property role="TrG5h" value="PeoplClassConcept" />
+    <property role="TrG5h" value="JavaCompilationUnit" />
     <property role="34LRSv" value="class" />
     <property role="R4oN_" value="Class declaration" />
     <property role="3GE5qa" value="CoreExtensions" />
@@ -246,7 +246,7 @@
     <node concept="M6xJ_" id="2cTrEv0BoRj" role="lGtFl">
       <property role="Hh88m" value="ConvertToPeoplSolution" />
       <node concept="trNpa" id="2cTrEv0Bp4l" role="EQaZv">
-        <ref role="trN6q" node="6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+        <ref role="trN6q" node="6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
       </node>
       <node concept="tn0Fv" id="2cTrEv0Bp4n" role="HhnKV">
         <property role="tnX3d" value="false" />

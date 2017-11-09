@@ -564,7 +564,7 @@
   </node>
   <node concept="24kQdi" id="4qvLkVcGXtu">
     <property role="3GE5qa" value="CoreExtensions" />
-    <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+    <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
     <node concept="1X3_iC" id="EpVRRuQ2cC" role="lGtFl">
       <property role="3V$3am" value="cellModel" />
       <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
@@ -5051,7 +5051,7 @@
                 </node>
                 <node concept="1mIQ4w" id="q735wx1gQ2" role="2OqNvi">
                   <node concept="chp4Y" id="q735wx1gQ3" role="cj9EA">
-                    <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                    <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                   </node>
                 </node>
               </node>

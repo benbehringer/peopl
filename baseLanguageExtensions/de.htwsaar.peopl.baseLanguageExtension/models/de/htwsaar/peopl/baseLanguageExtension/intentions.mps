@@ -2175,7 +2175,7 @@
               <node concept="2Xjw5R" id="6N529L4_FGx" role="2OqNvi">
                 <node concept="1xMEDy" id="6N529L4_FGy" role="1xVPHs">
                   <node concept="chp4Y" id="6N529L4_FGz" role="ri$Ld">
-                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                   </node>
                 </node>
               </node>
@@ -2219,7 +2219,7 @@
                     <node concept="2Xjw5R" id="7rSRKyCHsAe" role="2OqNvi">
                       <node concept="1xMEDy" id="7rSRKyCHsAg" role="1xVPHs">
                         <node concept="chp4Y" id="7rSRKyCHsBJ" role="ri$Ld">
-                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                         </node>
                       </node>
                     </node>
@@ -2257,7 +2257,7 @@
                   <node concept="2Xjw5R" id="6N529L4_EhK" role="2OqNvi">
                     <node concept="1xMEDy" id="6N529L4_EhM" role="1xVPHs">
                       <node concept="chp4Y" id="6N529L4_Ejk" role="ri$Ld">
-                        <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                        <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -3514,7 +3514,7 @@
                   </node>
                   <node concept="1mIQ4w" id="1fM6qkDX_Y5" role="2OqNvi">
                     <node concept="chp4Y" id="1fM6qkDX_Y6" role="cj9EA">
-                      <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                      <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                     </node>
                   </node>
                 </node>
@@ -4318,7 +4318,7 @@
                                       </node>
                                       <node concept="1mIQ4w" id="68etZLB6K_H" role="2OqNvi">
                                         <node concept="chp4Y" id="68etZLB6K_I" role="cj9EA">
-                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                         </node>
                                       </node>
                                     </node>

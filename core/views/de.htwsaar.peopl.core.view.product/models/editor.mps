@@ -16,6 +16,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="uyk2" ref="r:90e7ce4f-7c8a-47f2-b0f1-ffed8abff122(de.htwsaar.peopl.core.moduleConfig.behavior)" implicit="true" />
   </imports>
@@ -903,12 +904,12 @@
             <node concept="3clFbS" id="4g8OQuQ4yui" role="2LFqv$">
               <node concept="3clFbJ" id="4g8OQuQ4yMR" role="3cqZAp">
                 <node concept="2OqwBi" id="4g8OQuQ4yR6" role="3clFbw">
-                  <node concept="2YIFZM" id="2FDAt5Wpys7" role="2Oq$k0">
-                    <ref role="37wK5l" to="zur:2FDAt5WpyrK" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                  <node concept="2YIFZM" id="6Et2dEQP1os" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                   </node>
                   <node concept="liA8E" id="4g8OQuQ4yTI" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="2GrUjf" id="4g8OQuQ5fNx" role="37wK5m">
                       <ref role="2Gs0qQ" node="4g8OQuQ4yug" resolve="compilationUnit" />
                     </node>

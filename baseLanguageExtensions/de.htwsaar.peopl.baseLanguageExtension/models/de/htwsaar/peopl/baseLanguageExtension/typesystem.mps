@@ -1701,7 +1701,7 @@
                           </node>
                           <node concept="1mIQ4w" id="6coTyb6lyh_" role="2OqNvi">
                             <node concept="chp4Y" id="6coTyb6lyhA" role="cj9EA">
-                              <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                              <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                             </node>
                           </node>
                         </node>
@@ -1716,7 +1716,7 @@
                           </node>
                           <node concept="1mIQ4w" id="6D3NPsjdjcC" role="2OqNvi">
                             <node concept="chp4Y" id="6D3NPsjdjeN" role="cj9EA">
-                              <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                              <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                             </node>
                           </node>
                         </node>
@@ -2654,7 +2654,7 @@
           </node>
           <node concept="1mIQ4w" id="7iFculrSJhF" role="2OqNvi">
             <node concept="chp4Y" id="7iFculrSJij" role="cj9EA">
-              <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+              <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
             </node>
           </node>
         </node>

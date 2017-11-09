@@ -812,7 +812,7 @@
                         </node>
                         <node concept="1mIQ4w" id="3qO9G22r4bm" role="2OqNvi">
                           <node concept="chp4Y" id="3qO9G22r4cg" role="cj9EA">
-                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                           </node>
                         </node>
                       </node>
@@ -1098,7 +1098,7 @@
                                       <ref role="3cqZAo" node="4ex3EegL6Ib" resolve="model" />
                                     </node>
                                     <node concept="2RRcyG" id="4ex3EegL82I" role="2OqNvi">
-                                      <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                      <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                     </node>
                                   </node>
                                 </node>
@@ -1223,7 +1223,7 @@
                               <node concept="1eOMI4" id="7U4gdfRwjbz" role="2Oq$k0">
                                 <node concept="10QFUN" id="7U4gdfRwiNk" role="1eOMHV">
                                   <node concept="3Tqbb2" id="7U4gdfRwiOT" role="10QFUM">
-                                    <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                    <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                   </node>
                                   <node concept="2OqwBi" id="7U4gdfRwiEl" role="10QFUP">
                                     <node concept="37vLTw" id="7U4gdfRwiEm" role="2Oq$k0">
@@ -1254,7 +1254,7 @@
                         </node>
                         <node concept="1mIQ4w" id="7U4gdfRwiCj" role="2OqNvi">
                           <node concept="chp4Y" id="7U4gdfRwiCO" role="cj9EA">
-                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                           </node>
                         </node>
                       </node>

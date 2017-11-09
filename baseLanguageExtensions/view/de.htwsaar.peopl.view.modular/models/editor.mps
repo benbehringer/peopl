@@ -52,7 +52,6 @@
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="nbbm" ref="r:6f6e71ac-6c1f-4bc8-a51c-d21393eb8765(de.htwsaar.peopl.baseLanguageExtension.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
-    <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
     <import index="2gtk" ref="r:bc8063f9-de2b-445f-b5f5-bad59c142cdb(de.htwsaar.peopl.core.view.modular.editor)" />
     <import index="k3nr" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.ide.editor(MPS.Editor/)" />
@@ -1046,7 +1045,7 @@
                               <node concept="2Xjw5R" id="6$ovYNE36MV" role="2OqNvi">
                                 <node concept="1xMEDy" id="6$ovYNE36MW" role="1xVPHs">
                                   <node concept="chp4Y" id="6$ovYNE36MX" role="ri$Ld">
-                                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                   </node>
                                 </node>
                               </node>
@@ -1191,7 +1190,7 @@
                               <node concept="2Xjw5R" id="7FjaDxhCtY1" role="2OqNvi">
                                 <node concept="1xMEDy" id="7FjaDxhCtY2" role="1xVPHs">
                                   <node concept="chp4Y" id="7FjaDxhCtY3" role="ri$Ld">
-                                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                   </node>
                                 </node>
                               </node>
@@ -1314,7 +1313,7 @@
                             <node concept="2Xjw5R" id="61l2320JSa9" role="2OqNvi">
                               <node concept="1xMEDy" id="61l2320JSab" role="1xVPHs">
                                 <node concept="chp4Y" id="61l2320JTCO" role="ri$Ld">
-                                  <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                  <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                 </node>
                               </node>
                             </node>
@@ -1835,7 +1834,7 @@
                 <node concept="pncrf" id="4WtnmUdRxlq" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="4WtnmUdRxlr" role="2OqNvi">
                   <node concept="chp4Y" id="4WtnmUdRxls" role="cj9EA">
-                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                   </node>
                 </node>
               </node>
@@ -1862,7 +1861,7 @@
                   <node concept="pncrf" id="4WtnmUdRl$f" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="4WtnmUdRlL2" role="2OqNvi">
                     <node concept="chp4Y" id="4WtnmUdRlVV" role="cj9EA">
-                      <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                      <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -1987,7 +1986,7 @@
                                   <node concept="2Xjw5R" id="5950iCtI_RT" role="2OqNvi">
                                     <node concept="1xMEDy" id="5950iCtI_RV" role="1xVPHs">
                                       <node concept="chp4Y" id="5950iCtIA15" role="ri$Ld">
-                                        <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                        <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                       </node>
                                     </node>
                                   </node>
@@ -2156,7 +2155,7 @@
                   <node concept="pncrf" id="NRjk71CyqP" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="NRjk71CyqQ" role="2OqNvi">
                     <node concept="chp4Y" id="NRjk71CyqR" role="cj9EA">
-                      <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                      <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                     </node>
                   </node>
                 </node>
@@ -13851,7 +13850,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="43jzTaI8GdD">
-    <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+    <ref role="1XX52x" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
     <node concept="2aJ2om" id="43jzTaI8Kym" role="CpUAK">
       <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="modular" />
     </node>
@@ -13870,7 +13869,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="49iY_BmQqzT">
-    <ref role="1XX52x" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+    <ref role="1XX52x" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
     <node concept="2aJ2om" id="49iY_BmQuSL" role="CpUAK">
       <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="modular" />
     </node>

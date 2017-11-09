@@ -125,6 +125,7 @@
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
+        <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
@@ -150,6 +151,7 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="1170075670744" name="jetbrains.mps.baseLanguage.structure.SynchronizedStatement" flags="nn" index="1HWtB8">
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
@@ -185,8 +187,8 @@
     </language>
     <language id="fe78a547-334d-4401-802e-373d6ba57db0" name="de.htwsaar.peopl.baseLanguageExtension">
       <concept id="8278521231462442196" name="de.htwsaar.peopl.baseLanguageExtension.structure.FeatureBlock" flags="ng" index="2wexfA" />
-      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplEntryPoint" flags="ng" index="2SvMkh" />
-      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.PeoplClassConcept" flags="ig" index="3GWJoq" />
+      <concept id="7393375248447811212" name="de.htwsaar.peopl.baseLanguageExtension.structure.JavaCompilationUnitContainer" flags="ng" index="2SvMkh" />
+      <concept id="6956383228302786474" name="de.htwsaar.peopl.baseLanguageExtension.structure.JavaCompilationUnit" flags="ig" index="3GWJoq" />
     </language>
     <language id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular">
       <concept id="1514132034719907512" name="de.htwsaar.peopl.view.modular.structure.ModularJavaCompilationUnit" flags="ng" index="HxVAC">
@@ -393,9 +395,7 @@
                 <node concept="3clFbS" id="yOFyOwe_f6" role="3clFbx">
                   <node concept="3lLJVk" id="yOFyOweAgZ" role="lGtFl" />
                   <node concept="2wexfA" id="yOFyOweAgG" role="3cqZAp">
-                    <node concept="3clFbS" id="yOFyOweAgH" role="9aQI4">
-                      <node concept="3clFbH" id="yOFyOwe_f5" role="3cqZAp" />
-                    </node>
+                    <node concept="3clFbS" id="yOFyOweAgH" role="9aQI4" />
                     <node concept="1V74GB" id="yOFyOweAgI" role="lGtFl">
                       <property role="32Xqk$" value="chosenModule" />
                       <property role="TrG5h" value="Fragment_627317756948800558" />
@@ -460,7 +460,11 @@
                 </node>
               </node>
               <node concept="2wexfA" id="yOFyOweAgS" role="3cqZAp">
-                <node concept="3clFbS" id="yOFyOweAgT" role="9aQI4" />
+                <node concept="3clFbS" id="yOFyOweAgT" role="9aQI4">
+                  <node concept="3clFbH" id="roAxhtXJ9t" role="3cqZAp" />
+                  <node concept="3clFbH" id="roAxhtXKsK" role="3cqZAp" />
+                  <node concept="3clFbH" id="roAxhtXKsV" role="3cqZAp" />
+                </node>
                 <node concept="1V74GB" id="yOFyOweAgU" role="lGtFl">
                   <property role="32Xqk$" value="chosenModule" />
                   <property role="TrG5h" value="Fragment_627317756948800570" />
@@ -1058,6 +1062,48 @@
     <property role="3GE5qa" value="tmp.basicModularity" />
     <ref role="3k51E1" to="fmn5:1yv_rrpLC_T" resolve="Overflow" />
     <ref role="3k51XK" node="1yv_rrpLv1H" resolve="Stack" />
+  </node>
+  <node concept="2SvMkh" id="roAxhujCO5">
+    <property role="TrG5h" value="Test" />
+    <node concept="3GWJoq" id="roAxhujCYf" role="3k6NAI">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="Test" />
+      <node concept="3Tm1VV" id="roAxhujCYg" role="1B3o_S" />
+      <node concept="1V74GB" id="roAxhujCYi" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_493313571469299602" />
+        <ref role="1V74Hf" to="fmn5:roAxhujCYk" resolve="VPToFragment_493313571469299604" />
+        <ref role="a64iB" to="fmn5:1RNHMnnKzo" resolve="Base" />
+        <ref role="3aRQVk" to="fmn5:roAxhujD9T" resolve="ModuleToFragment_493313571469300345" />
+      </node>
+    </node>
+  </node>
+  <node concept="2SvMkh" id="5q6qiIL1mmi">
+    <property role="TrG5h" value="NewClass" />
+    <node concept="3GWJoq" id="5q6qiIL1mmj" role="3k6NAI">
+      <property role="2bfB8j" value="true" />
+      <property role="TrG5h" value="NewClass" />
+      <node concept="3Tm1VV" id="5q6qiIL1mmk" role="1B3o_S" />
+      <node concept="1V74GB" id="5q6qiIL1mml" role="lGtFl">
+        <property role="32Xqk$" value="chosenModule" />
+        <property role="TrG5h" value="Fragment_6234786370515461525" />
+        <ref role="1V74Hf" to="fmn5:5q6qiIL1mmn" resolve="VPToFragment_6234786370515461527" />
+        <ref role="a64iB" to="fmn5:1RNHMnnKzo" resolve="Base" />
+        <ref role="3aRQVk" to="fmn5:5q6qiIL1mmq" resolve="ModuleToFragment_6234786370515461530" />
+      </node>
+      <node concept="2tJIrI" id="5q6qiIL1mms" role="jymVt" />
+    </node>
+  </node>
+  <node concept="HxVAC" id="5q6qiIL1nN3">
+    <property role="3k51XQ" value="module" />
+    <property role="TrG5h" value="Base::NewClass" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="3k51E1" to="fmn5:1RNHMnnKzo" resolve="Base" />
+    <ref role="3k51XK" node="5q6qiIL1mmj" resolve="NewClass" />
+  </node>
+  <node concept="3HP615" id="5q6qiIL2TXy">
+    <property role="TrG5h" value="Fuzzy" />
+    <node concept="3Tm1VV" id="5q6qiIL2TXz" role="1B3o_S" />
   </node>
 </model>
 

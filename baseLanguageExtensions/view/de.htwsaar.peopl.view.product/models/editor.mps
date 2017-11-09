@@ -49,6 +49,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpc5" ref="r:00000000-0000-4000-0000-011c89590299(jetbrains.mps.lang.editor.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -6300,12 +6301,12 @@
                   <node concept="1v1jN8" id="N9a1bTFk_G" role="2OqNvi" />
                 </node>
                 <node concept="2OqwBi" id="N9a1bTFCXR" role="3uHU7w">
-                  <node concept="2YIFZM" id="2FDAt5WpysG" role="2Oq$k0">
-                    <ref role="37wK5l" to="zur:2FDAt5WpyrK" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                  <node concept="2YIFZM" id="roAxhtY7fx" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                   </node>
                   <node concept="liA8E" id="N9a1bTFD3D" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="12_Ws6" id="N9a1bTFDfa" role="37wK5m" />
                   </node>
                 </node>
@@ -6854,12 +6855,12 @@
                   <node concept="1v1jN8" id="N9a1bTIkeY" role="2OqNvi" />
                 </node>
                 <node concept="2OqwBi" id="N9a1bTIkeZ" role="3uHU7w">
-                  <node concept="2YIFZM" id="2FDAt5WpyrU" role="2Oq$k0">
-                    <ref role="37wK5l" to="zur:2FDAt5WpyrK" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                  <node concept="2YIFZM" id="roAxhtY7g0" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                   </node>
                   <node concept="liA8E" id="N9a1bTIkf1" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="12_Ws6" id="N9a1bTIkvZ" role="37wK5m" />
                   </node>
                 </node>
@@ -7004,12 +7005,12 @@
                   <node concept="1v1jN8" id="N9a1bTL2l6" role="2OqNvi" />
                 </node>
                 <node concept="2OqwBi" id="N9a1bTL2l7" role="3uHU7w">
-                  <node concept="2YIFZM" id="2FDAt5Wpysx" role="2Oq$k0">
-                    <ref role="37wK5l" to="zur:2FDAt5WpyrK" resolve="getInstance" />
-                    <ref role="1Pybhc" to="zur:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                  <node concept="2YIFZM" id="roAxhtY7gg" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                   </node>
                   <node concept="liA8E" id="N9a1bTL2l9" role="2OqNvi">
-                    <ref role="37wK5l" to="zur:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="12_Ws6" id="N9a1bTL2la" role="37wK5m" />
                   </node>
                 </node>
