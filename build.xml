@@ -177,48 +177,6 @@
       <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.runtime-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar/META-INF/module.xml">
-      <module namespace="de.htwsaar.peopl.core.statistics" type="solution" uuid="e5c3c271-3e96-406d-8829-9ddb2dbd9e7f">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="de.htwsaar.peopl.core.statistics-src.jar" descriptor="de.htwsaar.peopl.core.statistics.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.statistics.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.statistics-models">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.statistics-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.statistics-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.moduleConfig.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.moduleConfig.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.moduleConfig.jar/META-INF/module.xml">
@@ -421,130 +379,6 @@
       <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.variabilityDeclaration.runtime-models" prefix="module/models" />
     </jar>
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar/META-INF/module.xml">
-      <module namespace="de.htwsaar.peopl.core.toolsLanguage" type="language" uuid="c7fb82d0-90f3-4c08-b61c-d6ac12547689">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="de.htwsaar.peopl.core.toolsLanguage-src.jar" descriptor="de.htwsaar.peopl.core.toolsLanguage.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.toolsLanguage.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar/META-INF/module.xml">
-      <module namespace="de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" type="generator" uuid="df999683-b7da-4db6-bb3d-a89824bf9763">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="de.htwsaar.peopl.core.toolsLanguage-src.jar" descriptor="de.htwsaar.peopl.core.toolsLanguage.mpl" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.toolsLanguage-generator.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
-      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-generator-template">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-models">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.toolsLanguage-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-generator-template" prefix="module/generator/template" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-models" prefix="module/models" />
-    </jar>
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar" />
-    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar/META-INF" />
-    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar/META-INF/module.xml">
-      <module namespace="de.htwsaar.peopl.core.tools" type="solution" uuid="1786aae1-e029-4751-836d-843552f745c0">
-        <dependencies>
-          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
-          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
-          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
-          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
-          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
-          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
-          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
-          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
-          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
-          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
-        </dependencies>
-        <classpath>
-          <entry path="." />
-        </classpath>
-        <sources jar="de.htwsaar.peopl.core.tools-src.jar" descriptor="de.htwsaar.peopl.core.tools.msd" />
-      </module>
-    </echoxml>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.tools.jar" duplicate="preserve">
-      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools" includes="icons/**, resources/**" />
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
-      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar" />
-    </jar>
-    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.tools-models">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
-    </copyModels>
-    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.tools-src.jar" duplicate="preserve">
-      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen">
-        <exclude name="**/trace.info" />
-        <exclude name="**/exports" />
-        <exclude name="**/checkpoints" />
-        <exclude name="**/*.mps" />
-      </fileset>
-      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" prefix="module" />
-      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.tools-models" prefix="module/models" />
-    </jar>
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.listener.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.listener.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.listener.jar/META-INF/module.xml">
@@ -743,6 +577,49 @@
     </jar>
     <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages" />
     <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages/view" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.view.runtime.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.view.runtime.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.view.runtime.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.view.runtime" type="solution" uuid="ce83f8b6-7083-46ac-a998-a482d839c1d3">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.view.runtime-src.jar" descriptor="de.htwsaar.peopl.core.view.runtime.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/view/de.htwsaar.peopl.core.view.runtime.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.view.runtime" />
+      <fileset dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.view.runtime.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.runtime-models">
+      <fileset dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/view/de.htwsaar.peopl.core.view.runtime-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.runtime-models" prefix="module/models" />
+    </jar>
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.view.modular.jar" />
     <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.view.modular.jar/META-INF" />
     <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.view.modular.jar/META-INF/module.xml">
@@ -1217,6 +1094,522 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.product-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-views-de.htwsaar.peopl.core.view.product-models" prefix="module/models" />
     </jar>
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages" />
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.runtime.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.runtime.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview.runtime.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.projectview.runtime" type="solution" uuid="732373f1-0d48-4122-bb43-c1606db4baca">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.mpsutil.projectview.runtime-src.jar" descriptor="com.mbeddr.mpsutil.projectview.runtime.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.runtime.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" />
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.runtime.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.runtime-models">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.runtime-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.runtime-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.projectview" type="language" uuid="1f1b4a81-113d-4b88-9b67-2bae3e4f8128">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2af156ab-65c1-4a62-bd0d-ea734f71eab6(jetbrains.mps.dataFlow.runtime)" />
+          <module ref="34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="528ff3b9-5fc4-40dd-931f-c6ce3650640e(jetbrains.mps.lang.migration.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="8fe4c62a-2020-4ff4-8eda-f322a55bdc9f(jetbrains.mps.refactoring.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.mpsutil.projectview-src.jar" descriptor="com.mbeddr.mpsutil.projectview.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" />
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview-generator.jar" />
+    <mkdir dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/com.mbeddr.mpsutil.projectview-generator.jar/META-INF/module.xml">
+      <module namespace="com.mbeddr.mpsutil.projectview#8411785813236466884" type="generator" uuid="a3049271-b3dd-4434-9b83-30c34057d5df">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="com.mbeddr.mpsutil.projectview-src.jar" descriptor="com.mbeddr.mpsutil.projectview.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview#8411785813236466884" />
+      <fileset dir="${build.tmp}/default/com.mbeddr.mpsutil.projectview-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview-generator-template">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview-languageModels">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/mbeddrForPeopl/com.mbeddr.mpsutil.projectview-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview.extended" prefix="module/../com.mbeddr.mpsutil.projectview.extended" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/mbeddr-projectview-com.mbeddr.mpsutil.projectview-languageModels" prefix="module/languageModels" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages" />
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.peoplTest.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.peoplTest.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.peoplTest.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.peoplTest" type="solution" uuid="12e8cf89-309c-4b58-a376-760ee3c49ffd">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.peoplTest-src.jar" descriptor="de.htwsaar.peopl.core.peoplTest.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.peoplTest.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.peoplTest" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.peoplTest.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.peoplTest-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.peoplTest-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.peoplTest-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.csvWriter.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.csvWriter.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.csvWriter.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.csvWriter" type="solution" uuid="616b8ded-0758-40d6-b432-75316b617a98">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.csvWriter-src.jar" descriptor="de.htwsaar.peopl.core.csvWriter.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.csvWriter.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.csvWriter" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.csvWriter.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.csvWriter-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.csvWriter-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.csvWriter-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.tools" type="solution" uuid="1786aae1-e029-4751-836d-843552f745c0">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.tools-src.jar" descriptor="de.htwsaar.peopl.core.tools.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.tools.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.tools.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.tools-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.tools-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.tools-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.toolsLanguage" type="language" uuid="c7fb82d0-90f3-4c08-b61c-d6ac12547689">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.toolsLanguage-src.jar" descriptor="de.htwsaar.peopl.core.toolsLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.toolsLanguage.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" type="generator" uuid="df999683-b7da-4db6-bb3d-a89824bf9763">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.toolsLanguage-src.jar" descriptor="de.htwsaar.peopl.core.toolsLanguage.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.toolsLanguage-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.toolsLanguage-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-generator-template">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/template" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.toolsLanguage-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-generator-template" prefix="module/generator/template" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.toolsLanguage-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.statistics" type="solution" uuid="e5c3c271-3e96-406d-8829-9ddb2dbd9e7f">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.statistics-src.jar" descriptor="de.htwsaar.peopl.core.statistics.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.statistics.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.statistics.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.statistics-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.statistics-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.statistics-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.coreStatisticsExtension.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.core.coreStatisticsExtension.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.core.coreStatisticsExtension.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.core.coreStatisticsExtension" type="solution" uuid="5812f512-e947-4fb9-808f-a0060bbc8e0b">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.core.coreStatisticsExtension-src.jar" descriptor="de.htwsaar.peopl.core.coreStatisticsExtension.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.coreStatisticsExtension.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.core.coreStatisticsExtension" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.core.coreStatisticsExtension.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.coreStatisticsExtension-models">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/tools/de.htwsaar.peopl.core.coreStatisticsExtension-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/core-de.htwsaar.peopl.core.coreStatisticsExtension-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages" />
+    <mkdir dir="${build.tmp}/default/peoplCore.zip/peoplCore/languages/projectview" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.projectview.common" type="solution" uuid="97329234-5bcc-41a4-9e8a-4b598c93e695">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.projectview.common-src.jar" descriptor="de.htwsaar.peopl.projectview.common.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/projectview/de.htwsaar.peopl.projectview.common.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" />
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.projectview.common.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.common-models">
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/projectview/de.htwsaar.peopl.projectview.common-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.common-models" prefix="module/models" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.modular.jar" />
+    <mkdir dir="${build.tmp}/default/de.htwsaar.peopl.projectview.modular.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/de.htwsaar.peopl.projectview.modular.jar/META-INF/module.xml">
+      <module namespace="de.htwsaar.peopl.projectview.modular" type="solution" uuid="6d7d9b46-11d1-41f3-b43e-12253328b43f">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" />
+          <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
+          <module ref="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
+          <module ref="732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)" />
+          <module ref="7037b32c-9607-4f8e-81bd-1f028a4c117b(de.slisson.mps.reflection.runtime)" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
+          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
+          <module ref="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
+        </dependencies>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="de.htwsaar.peopl.projectview.modular-src.jar" descriptor="de.htwsaar.peopl.projectview.modular.msd" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/projectview/de.htwsaar.peopl.projectview.modular.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.modular" />
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular" includes="icons/**, resources/**" />
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/de.htwsaar.peopl.projectview.modular.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.modular-models">
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.tmp}/default/peoplCore.zip/peoplCore/languages/projectview/de.htwsaar.peopl.projectview.modular-src.jar" duplicate="preserve">
+      <fileset dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/baseLanguageExtensions-projectview-de.htwsaar.peopl.projectview.modular-models" prefix="module/models" />
+    </jar>
     <zip destfile="${build.layout}/peoplCore.zip">
       <zipfileset file="${basedir}/mbeddr/helper/org.apache.commons/lib/commons-csv-1.0/commons-csv-1.0.jar" prefix="peoplCore/lib" />
       <zipfileset file="${basedir}/mbeddr/helper/org.apache.commons/lib/commons-io-2.4/commons-io-2.4.jar" prefix="peoplCore/lib" />
@@ -1239,7 +1632,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core#3071473864244849393, java.compile.java.modules.cycle.2, java.compile.de.htwsaar.peopl.core.runtime, java.compile.de.htwsaar.peopl.core.statistics, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.moduleConfig#6563451082523326250, java.compile.de.htwsaar.peopl.core.variabilityDeclaration, java.compile.de.htwsaar.peopl.core.variabilityDeclaration#1236568064986937898, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.de.htwsaar.peopl.core.toolsLanguage, java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000, java.compile.de.htwsaar.peopl.core.tools, java.compile.de.htwsaar.peopl.core.listener, java.compile.de.htwsaar.peopl.core.featureConfig, java.compile.de.htwsaar.peopl.core.featureConfig#7037608403905312523, java.compile.de.htwsaar.peopl.core.modularTypeChecking, java.compile.de.htwsaar.peopl.core.featureListener, java.compile.de.htwsaar.peopl.core.view.modular, java.compile.de.htwsaar.peopl.core.view.modular#763904935699801265, java.compile.de.htwsaar.peopl.core.view.annotative, java.compile.de.htwsaar.peopl.core.view.annotative#2402362384312156136, java.compile.de.htwsaar.peopl.core.view.embedded, java.compile.de.htwsaar.peopl.core.view.embedded#5509652143918834059, java.compile.de.htwsaar.peopl.core.view.hiding, java.compile.de.htwsaar.peopl.core.view.hiding#5509652143918828818, java.compile.de.htwsaar.peopl.core.view.preprocessor, java.compile.de.htwsaar.peopl.core.view.preprocessor#3387676811032598941, java.compile.de.htwsaar.peopl.core.view.product, java.compile.de.htwsaar.peopl.core.view.product#5509652143918833881, java.compile.java.modules.cycle.3, java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, java.compile.com.mbeddr.mpsutil.projectview.extended, java.compile.com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
+  <target name="compileJava" depends="java.compile.java.modules.cycle.1, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core#3071473864244849393, java.compile.java.modules.cycle.2, java.compile.de.htwsaar.peopl.core.runtime, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.moduleConfig#6563451082523326250, java.compile.de.htwsaar.peopl.core.variabilityDeclaration, java.compile.de.htwsaar.peopl.core.variabilityDeclaration#1236568064986937898, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.de.htwsaar.peopl.core.listener, java.compile.de.htwsaar.peopl.core.featureConfig, java.compile.de.htwsaar.peopl.core.featureConfig#7037608403905312523, java.compile.de.htwsaar.peopl.core.modularTypeChecking, java.compile.de.htwsaar.peopl.core.featureListener, java.compile.de.htwsaar.peopl.core.view.runtime, java.compile.de.htwsaar.peopl.core.view.modular, java.compile.de.htwsaar.peopl.core.view.modular#763904935699801265, java.compile.de.htwsaar.peopl.core.view.annotative, java.compile.de.htwsaar.peopl.core.view.annotative#2402362384312156136, java.compile.de.htwsaar.peopl.core.view.embedded, java.compile.de.htwsaar.peopl.core.view.embedded#5509652143918834059, java.compile.de.htwsaar.peopl.core.view.hiding, java.compile.de.htwsaar.peopl.core.view.hiding#5509652143918828818, java.compile.de.htwsaar.peopl.core.view.preprocessor, java.compile.de.htwsaar.peopl.core.view.preprocessor#3387676811032598941, java.compile.de.htwsaar.peopl.core.view.product, java.compile.de.htwsaar.peopl.core.view.product#5509652143918833881, java.compile.de.htwsaar.peopl.projectview.common, java.compile.de.htwsaar.peopl.projectview.modular, java.compile.java.modules.cycle.3, java.compile.com.mbeddr.mpsutil.projectview.runtime, java.compile.com.mbeddr.mpsutil.projectview, java.compile.com.mbeddr.mpsutil.projectview#8411785813236466884, java.compile.de.htwsaar.peopl.core.peoplTest, java.compile.de.htwsaar.peopl.core.csvWriter, java.compile.de.htwsaar.peopl.core.tools, java.compile.de.htwsaar.peopl.core.toolsLanguage, java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000, java.compile.de.htwsaar.peopl.core.statistics, java.compile.de.htwsaar.peopl.core.coreStatisticsExtension" />
   
   <target name="processResources" />
   
@@ -1266,6 +1659,7 @@
       <library file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
       <library file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.jar" />
       <library file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+      <library file="${artifacts.mps-sl-all}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.checkedDots.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -1343,20 +1737,24 @@
       <library file="${artifacts.mps}/lib/mps-tuples.jar" />
       <library file="${artifacts.mps}/lib/mps-workbench.jar" />
       <library file="${artifacts.mps}/plugins/mps-core/languages/util/jetbrains.mps.core.properties.jar" />
+      <library file="${artifacts.mps}/plugins/mps-make/solutions/jetbrains.mps.ide.make.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
       <chunk>
-        <module file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/com.mbeddr.mpsutil.projectview.extended.mpl" />
-        <module file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/com.mbeddr.mpsutil.projectview.extended.runtime.msd" />
+        <module file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" />
+        <module file="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" />
+        <module file="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" />
+        <module file="${basedir}/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.featureListener/de.htwsaar.peopl.core.featureListener.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.modularTypeChecking/de.htwsaar.peopl.core.modularTypeChecking.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" />
+        <module file="${basedir}/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" />
         <module file="${basedir}/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" />
@@ -1368,9 +1766,12 @@
         <module file="${basedir}/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" />
         <module file="${basedir}/core/views/de.htwsaar.peopl.core.view.modular/de.htwsaar.peopl.core.view.modular.mpl" />
         <module file="${basedir}/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" />
+        <module file="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" />
+        <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" />
       </chunk>
       <chunk>
         <module file="${basedir}/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" />
+        <module file="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" />
       </chunk>
       <chunk />
       <jvmargs>
@@ -1652,51 +2053,6 @@
     </javac>
   </target>
   
-  <target name="java.compile.de.htwsaar.peopl.core.statistics" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.tools, fetchDependencies">
-    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
   <target name="java.compile.de.htwsaar.peopl.core.moduleConfig" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.tools, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.moduleConfig/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.moduleConfig" />
@@ -1954,132 +2310,6 @@
     </javac>
   </target>
   
-  <target name="java.compile.de.htwsaar.peopl.core.toolsLanguage" depends="fetchDependencies">
-    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" depends="java.compile.de.htwsaar.peopl.core.toolsLanguage, fetchDependencies">
-    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
-  <target name="java.compile.de.htwsaar.peopl.core.tools" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.toolsLanguage, fetchDependencies">
-    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
-    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" fork="true" encoding="utf8" includeantruntime="false" debug="true">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
-        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/log4j.jar" />
-        <fileset file="${artifacts.mps}/lib/jdom.jar" />
-        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
-        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-      </classpath>
-    </javac>
-  </target>
-  
   <target name="java.compile.de.htwsaar.peopl.core.listener" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.java.modules.cycle.2, fetchDependencies">
     <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.listener/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.listener" />
@@ -2302,6 +2532,52 @@
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.view.runtime" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.peoplTest, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.view.runtime" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.view.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.peoplTest" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -2852,13 +3128,132 @@
     </javac>
   </target>
   
+  <target name="java.compile.de.htwsaar.peopl.projectview.common" depends="java.compile.com.mbeddr.mpsutil.projectview, java.compile.com.mbeddr.mpsutil.projectview.runtime, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.variabilityDeclaration.runtime, java.compile.de.htwsaar.peopl.core.view.modular, fetchDependencies">
+    <mkdir dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.moduleConfig" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.view.modular" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.baseLanguage.lightweightdsl.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.extension.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-io-2.4.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-math3-3.3.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-primitives-1.0.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-csv-1.0.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/miglayout-4.0-swing.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/miglayout-4.0.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.projectview.modular" depends="java.compile.com.mbeddr.mpsutil.projectview, java.compile.com.mbeddr.mpsutil.projectview.runtime, java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.view.modular, java.compile.de.htwsaar.peopl.projectview.common, fetchDependencies">
+    <mkdir dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.modular" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.projectview.modular" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.moduleConfig" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.view.modular" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.projectview.common" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps-sl-all}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-io-2.4.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-lang3-3.3.2.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-math3-3.3.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-primitives-1.0.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/commons-csv-1.0.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/miglayout-4.0-swing.jar" />
+        <fileset file="${artifacts.mps-sl-all}/mps-apache-commons/lib/miglayout-4.0.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="java.compile.java.modules.cycle.3" depends="fetchDependencies">
     <mkdir dir="${build.tmp}/java.modules.cycle.3" />
     <javac destdir="${build.tmp}/java.modules.cycle.3" fork="true" encoding="utf8" nowarn="true" includeantruntime="false">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -2904,13 +3299,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended.runtime" depends="java.compile.java.modules.cycle.3, fetchDependencies">
-    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.com.mbeddr.mpsutil.projectview.runtime" depends="java.compile.java.modules.cycle.3, fetchDependencies">
+    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -2950,13 +3345,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended" depends="java.compile.java.modules.cycle.3, fetchDependencies">
-    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.com.mbeddr.mpsutil.projectview" depends="java.compile.java.modules.cycle.3, fetchDependencies">
+    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -3002,13 +3397,13 @@
     </javac>
   </target>
   
-  <target name="java.compile.com.mbeddr.mpsutil.projectview.extended#8411785813236466884" depends="java.compile.com.mbeddr.mpsutil.projectview.extended, java.compile.com.mbeddr.mpsutil.projectview.extended.runtime, fetchDependencies">
-    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended#8411785813236466884" />
-    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended#8411785813236466884" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+  <target name="java.compile.com.mbeddr.mpsutil.projectview#8411785813236466884" depends="java.compile.com.mbeddr.mpsutil.projectview, java.compile.com.mbeddr.mpsutil.projectview.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview#8411785813236466884" />
+    <javac destdir="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview#8411785813236466884" fork="true" encoding="utf8" includeantruntime="false" debug="true">
       <compilerarg value="-Xlint:none" />
       <src>
-        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
+        <path location="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
@@ -3029,8 +3424,8 @@
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended" />
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.extended.runtime" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview" />
+        <pathelement path="${build.tmp}/java/out/com.mbeddr.mpsutil.projectview.runtime" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -3052,11 +3447,318 @@
     </javac>
   </target>
   
+  <target name="java.compile.de.htwsaar.peopl.core.peoplTest" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.csvWriter, java.compile.de.htwsaar.peopl.core.moduleConfig, java.compile.de.htwsaar.peopl.core.runtime, fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.peoplTest" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.peoplTest" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.peoplTest/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.csvWriter" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.moduleConfig" />
+        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/lib/jetbrains.mps.lang.test.util.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.runtime" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-make/solutions/jetbrains.mps.ide.make.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.resources.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.csvWriter" depends="fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.csvWriter" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.csvWriter" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.csvWriter/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.tools" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.toolsLanguage, fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.toolsLanguage" depends="fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" depends="java.compile.de.htwsaar.peopl.core.toolsLanguage, fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.toolsLanguage" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.statistics" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.tools, fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
+  <target name="java.compile.de.htwsaar.peopl.core.coreStatisticsExtension" depends="java.compile.de.htwsaar.peopl.core, java.compile.de.htwsaar.peopl.core.statistics, java.compile.de.htwsaar.peopl.core.tools, fetchDependencies">
+    <mkdir dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/de.htwsaar.peopl.core.coreStatisticsExtension" />
+    <javac destdir="${build.tmp}/java/out/de.htwsaar.peopl.core.coreStatisticsExtension" fork="true" encoding="utf8" includeantruntime="false" debug="true">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-logging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-messaging.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-boot-util.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.statistics" />
+        <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.core.tools" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/log4j.jar" />
+        <fileset file="${artifacts.mps}/lib/jdom.jar" />
+        <fileset file="${artifacts.mps}/lib/trove4j.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.6.2.jar" />
+        <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+      </classpath>
+    </javac>
+  </target>
+  
   <target name="cleanSources">
-    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/source_gen" />
-    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/source_gen" />
+    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/source_gen" />
+    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core/generator/source_gen" />
+    <delete dir="${basedir}/core/de.htwsaar.peopl.core.coreStatisticsExtension/source_gen" />
+    <delete dir="${basedir}/core/de.htwsaar.peopl.core.csvWriter/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.featureConfig/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.featureConfig/generator/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.featureListener/source_gen" />
@@ -3064,6 +3766,7 @@
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.modularTypeChecking/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.moduleConfig/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.moduleConfig/generator/source_gen" />
+    <delete dir="${basedir}/core/de.htwsaar.peopl.core.peoplTest/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.runtime/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.statistics/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.tools/source_gen" />
@@ -3076,7 +3779,9 @@
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.hiding/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.modular/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.product/source_gen" />
-    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/generator/source_gen" />
+    <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.runtime/source_gen" />
+    <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/source_gen" />
+    <delete dir="${basedir}/mbeddr/projectview/com.mbeddr.mpsutil.projectview/generator/source_gen" />
     <delete dir="${basedir}/core/de.htwsaar.peopl.core.toolsLanguage/generator/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.annotative/generator/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.embedded/generator/source_gen" />
@@ -3084,6 +3789,7 @@
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.modular/generator/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.preprocessor/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.product/generator/source_gen" />
+    <delete dir="${basedir}/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/source_gen" />
     <delete dir="${basedir}/core/views/de.htwsaar.peopl.core.view.preprocessor/generator/source_gen" />
   </target>
 </project>

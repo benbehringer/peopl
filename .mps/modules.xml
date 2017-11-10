@@ -49,8 +49,8 @@
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.commonHeaders/de.htwsaar.peopl.commonHeaders.msd" folder="mBeddrExtension" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/de.htwsaar.peopl.mBeddrExtension.runtime.msd" folder="mBeddrExtension" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.mpl" folder="mBeddrExtension" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended.runtime/com.mbeddr.mpsutil.projectview.extended.runtime.msd" folder="mBeddr" />
-      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.extended/com.mbeddr.mpsutil.projectview.extended.mpl" folder="mBeddr" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="mBeddr" />
+      <modulePath path="$PROJECT_DIR$/mbeddr/projectview/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="mBeddr" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="moritzTests" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
