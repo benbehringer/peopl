@@ -2,13 +2,12 @@
 <model ref="r:4d990c53-c6e5-44ae-b575-79c9ee132976(de.htwsaar.peopl.projectview.product.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="4" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="4" />
-    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview.extended" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
   </languages>
   <imports>
     <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.htwsaar.peopl.core.structure)" />
@@ -21,7 +20,6 @@
     <import index="7e8u" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree(MPS.Platform/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="xnls" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.icons(MPS.Platform/)" />
-    <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
@@ -30,9 +28,8 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="ddhc" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ide(MPS.IDEA/)" />
     <import index="3s15" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench(MPS.Workbench/)" />
-    <import index="glw5" ref="r:9838b9ca-11cf-447d-b177-b4094fe1336b(de.htwsaar.peopl.view.product.structure)" />
-    <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
-    <import index="1lrk" ref="r:2f8f249f-6319-4ab7-b925-76c22beecc9a(de.htwsaar.peopl.baseLanguageExtension.behavior)" />
+    <import index="1z58" ref="r:95fdc01b-0a7f-404e-8369-02c32db7f7ba(de.htwsaar.peopl.core.moduleConfig.plugin)" />
+    <import index="imq3" ref="r:744546b3-28d0-4d16-91c8-8f406ef84c6e(com.mbeddr.mpsutil.projectview.runtime)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
@@ -127,9 +124,9 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview.extended">
-      <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.extended.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
-      <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.extended.structure.TreeNodeElement" flags="ng" index="14aYG3">
+    <language id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview">
+      <concept id="8309912865649381503" name="com.mbeddr.mpsutil.projectview.structure.MPSProjectExpression" flags="ng" index="14a6R6" />
+      <concept id="8309912865649284794" name="com.mbeddr.mpsutil.projectview.structure.TreeNodeElement" flags="ng" index="14aYG3">
         <property id="2060920582881084732" name="forceAbstract" index="38sH__" />
         <reference id="8309912865649343723" name="parent" index="14a85i" />
         <reference id="4600337039046510231" name="extends" index="3GDMyY" />
@@ -143,17 +140,16 @@
         <child id="8171045391095993151" name="isApplicable" index="3aIZ52" />
         <child id="4600337039045802034" name="type" index="3GGxor" />
       </concept>
-      <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.extended.structure.ProjectView" flags="ng" index="14aYJB">
+      <concept id="8309912865649284702" name="com.mbeddr.mpsutil.projectview.structure.ProjectView" flags="ng" index="14aYJB">
         <property id="5597588939837555688" name="rebuildOnRepoChange" index="280Iaj" />
         <property id="5597588939837555683" name="rebuildOnMake" index="280Iao" />
         <property id="5597588939837555679" name="rebuildOnClassLoad" index="280Ia$" />
         <property id="5597588939837555676" name="rebuildOnFileChange" index="280IaB" />
         <property id="8171045391093046227" name="priority" index="3aPfAI" />
         <child id="8309912865649284891" name="elements" index="14aYEy" />
-        <child id="5782973724855443006" name="icon" index="37b278" />
         <child id="4600337039047025779" name="label" index="3GFWDq" />
       </concept>
-      <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.extended.structure.QueryElementReference" flags="ng" index="14b0Wr">
+      <concept id="8309912865649636002" name="com.mbeddr.mpsutil.projectview.structure.QueryElementReference" flags="ng" index="14b0Wr">
         <reference id="8309912865649636121" name="element" index="14b0Uw" />
       </concept>
     </language>
@@ -167,9 +163,6 @@
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
-      </concept>
-      <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
-        <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -577,12 +570,12 @@
             <node concept="3clFbS" id="475mIV34ZEw" role="1bW5cS">
               <node concept="3clFbF" id="475mIV34ZEx" role="3cqZAp">
                 <node concept="2OqwBi" id="475mIV34V98" role="3clFbG">
-                  <node concept="2YIFZM" id="475mIV34V99" role="2Oq$k0">
-                    <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
-                    <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
+                  <node concept="2YIFZM" id="5AVGK5A49G" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
                   </node>
                   <node concept="liA8E" id="475mIV34V9a" role="2OqNvi">
-                    <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
                     <node concept="37vLTw" id="475mIV34ZRc" role="37wK5m">
                       <ref role="3cqZAo" node="475mIV34ZEF" resolve="it" />
                     </node>
@@ -614,7 +607,7 @@
             </node>
           </node>
           <node concept="2RRcyG" id="$Xellbdds$" role="2OqNvi">
-            <ref role="2RRcyH" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
+            <ref role="2RRcyH" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
           </node>
         </node>
         <node concept="3$u5V9" id="$Xellbdozs" role="2OqNvi">
@@ -635,14 +628,14 @@
                       <node concept="1bVj0M" id="$XellbeUEg" role="23t8la">
                         <node concept="3clFbS" id="$XellbeUEh" role="1bW5cS">
                           <node concept="3clFbF" id="3sb$Fkl6j0x" role="3cqZAp">
-                            <node concept="2OqwBi" id="3sb$Fkl6j8Z" role="3clFbG">
-                              <node concept="2YIFZM" id="3sb$Fkl6j4n" role="2Oq$k0">
-                                <ref role="37wK5l" to="1lrk:5h5WElAiemo" resolve="getInstance" />
-                                <ref role="1Pybhc" to="1lrk:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                            <node concept="2OqwBi" id="5AVGK5A4rG" role="3clFbG">
+                              <node concept="2YIFZM" id="5AVGK5A4rH" role="2Oq$k0">
+                                <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                                <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
                               </node>
-                              <node concept="liA8E" id="3sb$Fkl6jdX" role="2OqNvi">
-                                <ref role="37wK5l" to="1lrk:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
-                                <node concept="37vLTw" id="3sb$Fkl6jig" role="37wK5m">
+                              <node concept="liA8E" id="5AVGK5A4rI" role="2OqNvi">
+                                <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                                <node concept="37vLTw" id="5AVGK5A4rJ" role="37wK5m">
                                   <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
                                 </node>
                               </node>
@@ -879,11 +872,12 @@
         </node>
       </node>
     </node>
-    <node concept="2YIFZM" id="3KxWXtV6hAL" role="37b278">
-      <ref role="37wK5l" to="xnls:~IconManager.getIconForConceptFQName(java.lang.String):javax.swing.Icon" resolve="getIconForConceptFQName" />
-      <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
-      <node concept="3nh3qo" id="3KxWXtV6hAM" role="37wK5m">
-        <ref role="3nh3qp" to="glw5:57rZcVzwhY3" resolve="ProductView" />
+    <node concept="1X3_iC" id="5AVGK5AkGs" role="lGtFl">
+      <property role="3V$3am" value="icon" />
+      <property role="3V$3ak" value="1f1b4a81-113d-4b88-9b67-2bae3e4f8128/8309912865649284702/5782973724855443006" />
+      <node concept="2YIFZM" id="5AVGK5A4FW" role="8Wnug">
+        <ref role="1Pybhc" to="xnls:~IconManager" resolve="IconManager" />
+        <ref role="37wK5l" to="xnls:~IconManager.getIconFor(java.lang.String):javax.swing.Icon" resolve="getIconFor" />
       </node>
     </node>
   </node>

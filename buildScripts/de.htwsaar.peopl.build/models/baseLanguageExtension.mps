@@ -8,8 +8,8 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="f4pb" ref="r:374e1735-a231-46dd-a619-5049c447cd2e(de.htwsaar.peopl.build.core)" />
-    <import index="a9xt" ref="r:94cb03cf-8a98-43a8-b48c-ad1caf0a27aa(de.htwsaar.peopl.build.mbeddr)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" implicit="true" />
+    <import index="a9xt" ref="r:94cb03cf-8a98-43a8-b48c-ad1caf0a27aa(de.htwsaar.peopl.build.mBeddrExtension)" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.slisson.mps.all.build)" />
   </imports>
   <registry>
     <language id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build">
@@ -123,7 +123,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAY9" role="m$_w8">
         <node concept="3Mxwew" id="F_DJLMfAYl" role="3MwsjC">
-          <property role="3MwjfP" value="0.6.14" />
+          <property role="3MwjfP" value="1.1" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
@@ -134,12 +134,18 @@
       <node concept="m$f5U" id="7BuGGlfGdGB" role="m$_yh">
         <ref role="m$f5T" node="F_DJLMfAYF" resolve="dep" />
       </node>
+      <node concept="m$f5U" id="1Gq8bgqe0cZ" role="m$_yh">
+        <ref role="m$f5T" node="4RAsyl5PvNH" resolve="dep.view" />
+      </node>
       <node concept="m$_yC" id="5kp5FYUdNe9" role="m$_yJ">
         <ref role="m$_y1" to="f4pb:6$EUgyMHd8q" resolve="peoplCore" />
       </node>
+      <node concept="m$_yC" id="1Gq8bgqdQAm" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6Y0V2RJk3uw" resolve="de.itemis.mps.selection" />
+      </node>
       <node concept="3_J27D" id="6$Z0QXuTVY2" role="3s6cr7">
         <node concept="3Mxwew" id="6$Z0QXuTVY4" role="3MwsjC">
-          <property role="3MwjfP" value="A set of additions to PEoPL's core based on MPS baselanguage. For instance, adding support for views and better editing experience." />
+          <property role="3MwjfP" value="Tailoring PEoPL to MPS' baseLanguage (Java)." />
         </node>
       </node>
     </node>
@@ -443,22 +449,10 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6L5O" resolve="jetbrains.mps.lang.extension" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5ZyLyheqJZI" role="3bR37C">
-          <node concept="3bR9La" id="5ZyLyheqJZJ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:3dzs$xJmzUl" resolve="de.htwsaar.peopl.core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5ZyLyheqJZK" role="3bR37C">
           <node concept="3bR9La" id="5ZyLyheqJZL" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5ZyLyheqJZM" role="3bR37C">
-          <node concept="3bR9La" id="5ZyLyheqJZN" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:5ZyLyheqt4I" resolve="de.htwsaar.peopl.core.statistics" />
           </node>
         </node>
         <node concept="1SiIV0" id="5ZyLyheqJZO" role="3bR37C">
@@ -491,34 +485,34 @@
             <ref role="3bR37D" node="F_DJLMfB6Y" resolve="de.htwsaar.peopl.baseLanguageExtension" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5ZyLyheqJZY" role="3bR37C">
-          <node concept="3bR9La" id="5ZyLyheqJZZ" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:7xhAsCIyutx" resolve="de.htwsaar.peopl.core.moduleConfig" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1BbwgJJDxFx" role="3bR37C">
-          <node concept="3bR9La" id="1BbwgJJDxFy" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:1BbwgJJDvgN" resolve="de.htwsaar.peopl.core.csvWriter" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1BbwgJJDxFz" role="3bR37C">
-          <node concept="3bR9La" id="1BbwgJJDxF$" role="1SiIV1">
-            <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:5ZyLyheqsYc" resolve="de.htwsaar.peopl.core.tools" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7BuGGlfGdIu" role="3bR37C">
           <node concept="3bR9La" id="7BuGGlfGdIv" role="1SiIV1">
             <property role="3bR36h" value="false" />
             <ref role="3bR37D" to="f4pb:tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7BuGGlfGdIw" role="3bR37C">
-          <node concept="3bR9La" id="7BuGGlfGdIx" role="1SiIV1">
+        <node concept="1SiIV0" id="1Gq8bgqdPOl" role="3bR37C">
+          <node concept="3bR9La" id="1Gq8bgqdPOm" role="1SiIV1">
             <property role="3bR36h" value="false" />
-            <ref role="3bR37D" to="f4pb:roAxhtZ_FX" resolve="de.htwsaar.peopl.core.statistics" />
+            <ref role="3bR37D" to="f4pb:5AVGK5yqxj" resolve="de.htwsaar.peopl.core.statistics" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Gq8bgqdPOn" role="3bR37C">
+          <node concept="3bR9La" id="1Gq8bgqdPOo" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:5AVGK5yp86" resolve="de.htwsaar.peopl.core.csvWriter" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Gq8bgqdPOp" role="3bR37C">
+          <node concept="3bR9La" id="1Gq8bgqdPOq" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:5AVGK5ypBt" resolve="de.htwsaar.peopl.core.tools" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1Gq8bgqdPOr" role="3bR37C">
+          <node concept="3bR9La" id="1Gq8bgqdPOs" role="1SiIV1">
+            <property role="3bR36h" value="false" />
+            <ref role="3bR37D" to="f4pb:roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
       </node>
@@ -939,6 +933,15 @@
     </node>
     <node concept="2sgV4H" id="5kp5FYUdNp5" role="1l3spa">
       <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="peoplCore" />
+    </node>
+    <node concept="2sgV4H" id="roAxhu0Y5b" role="1l3spa">
+      <ref role="1l3spb" to="90a9:2Xjt3l56m0V" resolve="mps-sl-all" />
+      <node concept="398BVA" id="roAxhu0Y8A" role="2JcizS">
+        <ref role="398BVh" node="5kp5FYUd_wi" resolve="mps_home_dep" />
+        <node concept="2Ry0Ak" id="roAxhu0Y8B" role="iGT6I">
+          <property role="2Ry0Am" value="plugins" />
+        </node>
+      </node>
     </node>
     <node concept="398rNT" id="5kp5FYUd_wi" role="1l3spd">
       <property role="TrG5h" value="mps_home_dep" />
