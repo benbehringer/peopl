@@ -1,0 +1,15 @@
+# Common IDEs
+*.iml
+.idea/
+build/
+data/
+target/
+.project
+.settings
+.classpath
+.DS_Store
+jest/lib
+local.*
+lib/
+*.versionsBackup
+
