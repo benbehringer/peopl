@@ -12,10 +12,10 @@
     <dependency reexport="false">f4a807b3-557e-4f92-89bc-d43f4be25649(de.htwsaar.peopl.mBeddrExtension)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
-    <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">42727bc4-0771-4379-872f-090530265ce4(de.htwsaar.peopl.core.moduleConfig)</dependency>
     <dependency reexport="false">6d7d9b46-11d1-41f3-b43e-12253328b43f(de.htwsaar.peopl.projectview.modular)</dependency>
+    <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />

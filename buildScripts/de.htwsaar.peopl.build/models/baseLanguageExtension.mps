@@ -128,7 +128,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
         <node concept="3Mxwew" id="F_DJLMfAYh" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL BaseLanguage Extension" />
+          <property role="3MwjfP" value="PEoPL BaseLanguage (Java) Extension" />
         </node>
       </node>
       <node concept="m$f5U" id="7BuGGlfGdGB" role="m$_yh">

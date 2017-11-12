@@ -9,7 +9,6 @@
   <property name="artifacts.mbeddr" location="${mps_home}/plugins" />
   <property name="artifacts.mps-sl-all" location="${mps_home}/plugins" />
   <property name="artifacts.com.mbeddr.platform" location="${mps_home}/plugins" />
-  <property name="artifacts.mpsHttpSupportPlugin" location="${mps_home}/plugins" />
   <property file="${artifacts.peoplCore}/build.properties" prefix="import.peoplCore" />
   <property file="${artifacts.mbeddr}/build.properties" prefix="import.mbeddr" />
   <property name="mps.build.number" value="${import.peoplCore.mps.build.number}" />
@@ -49,13 +48,12 @@
     <mkdir dir="${build.tmp}/default/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/META-INF" />
     <echoxml file="${build.tmp}/default/peoplMbeddrPluginsBundle.zip/peoplMbeddrPluginsBundle/META-INF/plugin.xml">
       <idea-plugin version="2" xmlns:xi="http://www.w3.org/2001/XInclude">
-        <id>peoplMbeddrPluginsBundle</id>
-        <name>PEoPL-mbeddr Plugin Bundle</name>
+        <id>peoplMBeddrCExtension</id>
+        <name>PEoPL mBeddr C Extension</name>
         <description>Tailoring PEoPL to mBeddr C.</description>
         <version>1.1</version>
         <depends>peoplCore</depends>
         <depends>com.mbeddr.core</depends>
-        <depends>httpSupport</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -209,16 +207,8 @@
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" />
           <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" />
           <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" />
-          <module ref="984f0332-8a86-4f5c-9184-03eae96b5d16(com.mbeddr.core.expressions.runtime)" />
-          <module ref="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" />
-          <module ref="fd28f7ed-d277-425b-a282-684ac4cbead6(com.mbeddr.mpsutil.breadcrumb.runtime)" />
-          <module ref="94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)" />
-          <module ref="eedc5a6f-c2e8-4009-a7ab-5fc307bf77ec(com.mbeddr.mpsutil.multilingual.common.runtime)" />
-          <module ref="e78f91af-08a8-4a7a-bed6-b22739ed069a(com.mbeddr.mpsutil.spreferences.runtime)" />
-          <module ref="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" />
           <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" />
           <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" />
-          <module ref="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" />
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" />
@@ -311,7 +301,6 @@
       <plugin path="${artifacts.mps-sl-all}/mps-apache-commons" />
       <plugin path="${artifacts.mps-sl-all}/mps-multiline" />
       <plugin path="${artifacts.mps-sl-all}/mps-richtext" />
-      <plugin path="${artifacts.mps}/plugins/http-support" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <plugin path="${artifacts.mps}/plugins/mps-debugger-api" />
@@ -500,7 +489,6 @@
         <module file="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.mpl" />
         <module file="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/de.htwsaar.peopl.mBeddrExtension.runtime.msd" />
       </chunk>
-      <chunk />
       <jvmargs>
         <arg value="-Xmx512m" />
       </jvmargs>
@@ -743,8 +731,6 @@
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <pathelement path="${build.tmp}/java/out/de.htwsaar.peopl.mBeddrExtension" />
-        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -760,22 +746,14 @@
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.editor-support/com.mbeddr.mpsutil.editor.utils.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/com.mbeddr.mpsutil.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.multilingual/com.mbeddr.mpsutil.multilingual.common.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.spreferences/com.mbeddr.mpsutil.spreferences.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/com.mbeddr.mpsutil.suppresswarning/com.mbeddr.mpsutil.suppresswarning.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/core/de.htwsaar.peopl.core.moduleConfig-generator.jar" />
-        <fileset file="${artifacts.mps-sl-all}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
         <fileset file="${artifacts.mps-sl-all}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
-        <fileset file="${artifacts.mps-sl-all}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
         <fileset file="${artifacts.mps-sl-all}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
@@ -789,7 +767,6 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.structure.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.typesystem.jar" />
-        <fileset dir="${artifacts.mps-sl-all}/mps-multiline/lib" includes="diff_match_patch.jar" />
       </classpath>
     </javac>
   </target>
@@ -797,7 +774,7 @@
   <target name="cleanSources">
     <delete dir="${basedir}/mBeddrExtension/de.htwsaar.peopl.commonHeaders/source_gen" />
     <delete dir="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/source_gen" />
-    <delete dir="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/source_gen" />
     <delete dir="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/generator/source_gen" />
+    <delete dir="${basedir}/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/source_gen" />
   </target>
 </project>

@@ -59,8 +59,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps">
@@ -119,7 +129,7 @@
       <ref role="1l3spb" to="f4pb:3dzs$xJmzO6" resolve="peoplCore" />
     </node>
     <node concept="m$_wf" id="4RAsyl5JUem" role="3989C9">
-      <property role="m$_wk" value="peoplMbeddrPluginsBundle" />
+      <property role="m$_wk" value="peoplMBeddrCExtension" />
       <node concept="3_J27D" id="4RAsyl5JUeo" role="m_cZH">
         <node concept="3Mxwew" id="4RAsyl5JUe$" role="3MwsjC">
           <property role="3MwjfP" value="peoplMbeddrPluginsBundle" />
@@ -132,7 +142,7 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5JUes" role="m$_yQ">
         <node concept="3Mxwew" id="4RAsyl5JUeC" role="3MwsjC">
-          <property role="3MwjfP" value="PEoPL-mbeddr Plugin Bundle" />
+          <property role="3MwjfP" value="PEoPL mBeddr C Extension" />
         </node>
       </node>
       <node concept="3_J27D" id="6PAwBzqWsPo" role="3s6cr7">
@@ -149,8 +159,12 @@
       <node concept="m$_yC" id="1Gq8bgqepuM" role="m$_yJ">
         <ref role="m$_y1" to="p6ld:7uZw0yZ43Jz" resolve="com.mbeddr.core" />
       </node>
-      <node concept="m$_yC" id="1Gq8bgqgxBT" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
+      <node concept="1X3_iC" id="4a8ba2u1GCz" role="lGtFl">
+        <property role="3V$3am" value="dependencies" />
+        <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932/6592112598314499028" />
+        <node concept="m$_yC" id="1Gq8bgqgxBT" role="8Wnug">
+          <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4RAsyl5JUeR" role="3989C9">
@@ -417,7 +431,7 @@
     <node concept="1l3spV" id="4RAsyl5JUdz" role="1l3spN">
       <node concept="3981dG" id="5XBak60DmqR" role="39821P">
         <node concept="m$_wl" id="5XBak60DmqV" role="39821P">
-          <ref role="m_rDy" node="4RAsyl5JUem" resolve="peoplMbeddrPluginsBundle" />
+          <ref role="m_rDy" node="4RAsyl5JUem" resolve="peoplMBeddrCExtension" />
         </node>
         <node concept="3_J27D" id="5XBak60DmqT" role="Nbhlr">
           <node concept="3Mxwew" id="5XBak60DmqU" role="3MwsjC">
@@ -487,12 +501,13 @@
         </node>
       </node>
     </node>
-    <node concept="2sgV4H" id="1Gq8bgqgxAt" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:6pse5qHNfTX" resolve="mpsHttpSupportPlugin" />
-      <node concept="398BVA" id="1Gq8bgqgxAX" role="2JcizS">
-        <ref role="398BVh" node="4RAsyl5JUdH" resolve="mps_home" />
-        <node concept="2Ry0Ak" id="1Gq8bgqgxBh" role="iGT6I">
-          <property role="2Ry0Am" value="plugins" />
+    <node concept="1X3_iC" id="4a8ba2u1GCU" role="lGtFl">
+      <property role="3V$3am" value="dependencies" />
+      <property role="3V$3ak" value="798100da-4f0a-421a-b991-71f8c50ce5d2/5617550519002745363/5617550519002745381" />
+      <node concept="2sgV4H" id="1Gq8bgqgxAt" role="8Wnug">
+        <ref role="1l3spb" to="ffeo:6pse5qHNfTX" resolve="mpsHttpSupportPlugin" />
+        <node concept="398BVA" id="1Gq8bgqgxAX" role="2JcizS">
+          <ref role="398BVh" node="4RAsyl5JUdH" resolve="mps_home" />
         </node>
       </node>
     </node>

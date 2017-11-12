@@ -3,8 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
-    <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
-    <use id="f4a807b3-557e-4f92-89bc-d43f4be25649" name="de.htwsaar.peopl.mBeddrExtension" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -144,7 +142,7 @@
               <node concept="2OqwBi" id="6WaQT5n9oqT" role="3clFbG">
                 <node concept="30H73N" id="6WaQT5n9oiL" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="6WaQT5n9oGn" role="2OqNvi">
-                  <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" />
+                  <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
                 </node>
               </node>
             </node>
@@ -170,7 +168,7 @@
                       <node concept="2OqwBi" id="5OqwB2_Uuso" role="2Oq$k0">
                         <node concept="30H73N" id="5OqwB2_Uusp" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="5OqwB2_Uusq" role="2OqNvi">
-                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                         </node>
                       </node>
                       <node concept="1uHKPH" id="5OqwB2_Uusr" role="2OqNvi" />
@@ -178,7 +176,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="5OqwB2_UvsA" role="2OqNvi">
-                  <ref role="3TtcxE" to="vs0r:7XSydqUV$I" />
+                  <ref role="3TtcxE" to="vs0r:7XSydqUV$I" resolve="constraints" />
                 </node>
               </node>
             </node>
@@ -201,7 +199,7 @@
                       <node concept="2OqwBi" id="5OqwB2_Uc95" role="2Oq$k0">
                         <node concept="30H73N" id="5OqwB2_Uc96" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="5OqwB2_Uc97" role="2OqNvi">
-                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                         </node>
                       </node>
                       <node concept="1uHKPH" id="5OqwB2_Uc98" role="2OqNvi" />
@@ -209,7 +207,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="5OqwB2_UdeD" role="2OqNvi">
-                  <ref role="3TtcxE" to="x27k:19a6$uAA8hU" />
+                  <ref role="3TtcxE" to="x27k:19a6$uAA8hU" resolve="imports" />
                 </node>
               </node>
             </node>
@@ -233,7 +231,7 @@
                       <node concept="2OqwBi" id="7MpTifTEtu9" role="2Oq$k0">
                         <node concept="30H73N" id="7MpTifTEtpx" role="2Oq$k0" />
                         <node concept="3Tsc0h" id="7MpTifTEtC8" role="2OqNvi">
-                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                          <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                         </node>
                       </node>
                       <node concept="1uHKPH" id="7MpTifTEuAp" role="2OqNvi" />
@@ -241,7 +239,7 @@
                   </node>
                 </node>
                 <node concept="3Tsc0h" id="7MpTifTEvWb" role="2OqNvi">
-                  <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" />
+                  <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
                 </node>
               </node>
             </node>
@@ -268,7 +266,7 @@
                     <node concept="2OqwBi" id="7MpTifTErkb" role="2Oq$k0">
                       <node concept="30H73N" id="7MpTifTErfD" role="2Oq$k0" />
                       <node concept="3Tsc0h" id="7MpTifTEru7" role="2OqNvi">
-                        <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" />
+                        <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
                       </node>
                     </node>
                     <node concept="1uHKPH" id="7MpTifTEssf" role="2OqNvi" />
