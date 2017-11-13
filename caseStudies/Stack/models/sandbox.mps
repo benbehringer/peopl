@@ -494,7 +494,8 @@
                 <node concept="3clFbS" id="yOFyOweAgT" role="9aQI4">
                   <node concept="3clFbH" id="roAxhtXJ9t" role="3cqZAp" />
                   <node concept="3clFbH" id="roAxhtXKsK" role="3cqZAp" />
-                  <node concept="3clFbH" id="roAxhtXKsV" role="3cqZAp" />
+                  <node concept="3clFbH" id="3Y8gUrjk1_D" role="3cqZAp" />
+                  <node concept="3clFbH" id="O4Xi83V4n2" role="3cqZAp" />
                 </node>
                 <node concept="1V74GB" id="yOFyOweAgU" role="lGtFl">
                   <property role="32Xqk$" value="chosenModule" />
@@ -502,6 +503,25 @@
                   <ref role="1V74Hf" to="fmn5:yOFyOweAgW" resolve="VPToFragment_627317756948800572" />
                   <ref role="3aRQVk" to="fmn5:yOFyOweAgX" resolve="ModuleToFragment_627317756948800573" />
                   <ref role="a64iB" to="fmn5:1yv_rrpLC_T" resolve="Overflow" />
+                </node>
+              </node>
+              <node concept="2wexfA" id="O4Xi83V4$B" role="3cqZAp">
+                <ref role="bkjOb" node="1yv_rrpLv1H" resolve="Stack" />
+                <ref role="bkjOf" node="1yv_rrpLv38" resolve="push" />
+                <node concept="3clFbS" id="O4Xi83V4$C" role="9aQI4">
+                  <node concept="3SKdUt" id="O4Xi83V51W" role="3cqZAp">
+                    <node concept="3SKdUq" id="O4Xi83V51X" role="3SKWNk">
+                      <property role="3SKdUp" value="test mf" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1V74GB" id="O4Xi83V4$D" role="lGtFl">
+                  <property role="32Xqk$" value="chosenModule" />
+                  <property role="TrG5h" value="Fragment_938144148843415849" />
+                  <ref role="1V74Hf" to="fmn5:O4Xi83V4$F" resolve="VPToFragment_938144148843415851" />
+                  <ref role="3aRQVk" to="fmn5:O4Xi83V4$G" resolve="ModuleToFragment_938144148843415852" />
+                  <ref role="a64iB" to="fmn5:1RNHMnnKzo" resolve="Base" />
+                  <ref role="25GeQm" node="O4Xi83V4$H" resolve="FeatureGroupReference_938144148843415853" />
                 </node>
               </node>
             </node>
@@ -549,6 +569,11 @@
           <property role="TrG5h" value="FeatureGroupReference_4248412390724932112" />
           <ref role="37HLr8" node="3Eijk1saGFm" />
           <ref role="1C2YfU" node="3Eijk1saGFo" resolve="Fragment_4220520739619130072" />
+        </node>
+        <node concept="37HLsf" id="O4Xi83V4$H" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_938144148843415853" />
+          <ref role="1C2YfU" node="O4Xi83V4$D" resolve="Fragment_938144148843415849" />
+          <ref role="37HLr8" node="O4Xi83V4$B" />
         </node>
       </node>
       <node concept="2tJIrI" id="1yv_rrpLv2i" role="jymVt" />
