@@ -156,6 +156,12 @@
         <child id="1170075728144" name="expression" index="1HWFw0" />
         <child id="1170075736412" name="block" index="1HWHxc" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
@@ -358,6 +364,26 @@
               <ref role="25GeQm" node="3FPp8XKxL8c" resolve="FeatureGroupReference_4248412390724932108" />
             </node>
           </node>
+          <node concept="3clFbH" id="1mtEYS5g6xW" role="3cqZAp" />
+          <node concept="2wexfA" id="1mtEYS5g6I1" role="3cqZAp">
+            <ref role="bkjOb" node="1yv_rrpLv1H" resolve="Stack" />
+            <ref role="bkjOf" node="5pEbcVRWLdf" resolve="Stack" />
+            <node concept="3clFbS" id="1mtEYS5g6I2" role="9aQI4">
+              <node concept="3SKdUt" id="1mtEYS5g6I9" role="3cqZAp">
+                <node concept="3SKdUq" id="1mtEYS5g6Ia" role="3SKWNk">
+                  <property role="3SKdUp" value="" />
+                </node>
+              </node>
+            </node>
+            <node concept="1V74GB" id="1mtEYS5g6I3" role="lGtFl">
+              <property role="32Xqk$" value="chosenModule" />
+              <property role="TrG5h" value="Fragment_1557590084918733699" />
+              <ref role="1V74Hf" to="fmn5:1mtEYS5g6I5" resolve="VPToFragment_1557590084918733701" />
+              <ref role="3aRQVk" to="fmn5:1mtEYS5g6I6" resolve="ModuleToFragment_1557590084918733702" />
+              <ref role="a64iB" to="fmn5:1RNHMnnKzo" resolve="Base" />
+              <ref role="25GeQm" node="1mtEYS5g6I7" resolve="FeatureGroupReference_1557590084918733703" />
+            </node>
+          </node>
         </node>
         <node concept="3Tm1VV" id="5pEbcVRWL3D" role="1B3o_S" />
         <node concept="37vLTG" id="5pEbcVRWLnb" role="3clF46">
@@ -368,6 +394,11 @@
           <property role="TrG5h" value="FeatureGroupReference_4248412390724932108" />
           <ref role="37HLr8" node="3lU2mYIT$WA" />
           <ref role="1C2YfU" node="3lU2mYIT$WC" resolve="Fragment_3853402806449229608" />
+        </node>
+        <node concept="37HLsf" id="1mtEYS5g6I7" role="lGtFl">
+          <property role="TrG5h" value="FeatureGroupReference_1557590084918733703" />
+          <ref role="1C2YfU" node="1mtEYS5g6I3" resolve="Fragment_1557590084918733699" />
+          <ref role="37HLr8" node="1mtEYS5g6I1" />
         </node>
       </node>
       <node concept="2tJIrI" id="5pEbcVRWKAe" role="jymVt" />
