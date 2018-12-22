@@ -705,7 +705,7 @@
       <node concept="37vLTG" id="6AfKkED_M3V" role="3clF46">
         <property role="TrG5h" value="entryPoint" />
         <node concept="3Tqbb2" id="6AfKkED_M3U" role="1tU5fm">
-          <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+          <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
         </node>
       </node>
     </node>
@@ -736,7 +736,7 @@
                                     <ref role="2Gs0qQ" node="6AfKkED_L4E" resolve="root" />
                                   </node>
                                   <node concept="3Tqbb2" id="6AfKkED_MnS" role="10QFUM">
-                                    <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                    <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                   </node>
                                 </node>
                               </node>
@@ -751,7 +751,7 @@
                         <node concept="liA8E" id="6AfKkED_Lp0" role="2OqNvi">
                           <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                           <node concept="35c_gC" id="6AfKkED_LOC" role="37wK5m">
-                            <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                            <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                           </node>
                         </node>
                       </node>
@@ -926,13 +926,13 @@
             <property role="TrG5h" value="targetEntryPoints" />
             <node concept="2hMVRd" id="48zfXGK1eUt" role="1tU5fm">
               <node concept="3Tqbb2" id="48zfXGK1eUu" role="2hN53Y">
-                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
               </node>
             </node>
             <node concept="2ShNRf" id="48zfXGK1eUv" role="33vP2m">
               <node concept="2i4dXS" id="48zfXGK1eUw" role="2ShVmc">
                 <node concept="3Tqbb2" id="48zfXGK1eUx" role="HW$YZ">
-                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                 </node>
               </node>
             </node>
@@ -943,13 +943,13 @@
             <property role="TrG5h" value="searchEntryPoints" />
             <node concept="2hMVRd" id="48zfXGK1eU$" role="1tU5fm">
               <node concept="3Tqbb2" id="48zfXGK1eU_" role="2hN53Y">
-                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
               </node>
             </node>
             <node concept="2ShNRf" id="48zfXGK1eUA" role="33vP2m">
               <node concept="2i4dXS" id="48zfXGK1eUB" role="2ShVmc">
                 <node concept="3Tqbb2" id="48zfXGK1eUC" role="HW$YZ">
-                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                 </node>
               </node>
             </node>
@@ -987,12 +987,12 @@
               <node concept="3cpWsn" id="48zfXGK1eUR" role="3cpWs9">
                 <property role="TrG5h" value="peoplEntryPoint" />
                 <node concept="3Tqbb2" id="48zfXGK1eUS" role="1tU5fm">
-                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                 </node>
                 <node concept="2ShNRf" id="48zfXGK1eUT" role="33vP2m">
                   <node concept="3zrR0B" id="48zfXGK1eUU" role="2ShVmc">
                     <node concept="3Tqbb2" id="48zfXGK1eUV" role="3zrR0E">
-                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                     </node>
                   </node>
                 </node>
@@ -1216,7 +1216,7 @@
               <node concept="3cpWsn" id="48zfXGK1eWi" role="3cpWs9">
                 <property role="TrG5h" value="referencedEntryPoint" />
                 <node concept="3Tqbb2" id="48zfXGK1eWj" role="1tU5fm">
-                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                  <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                 </node>
                 <node concept="10Nm6u" id="48zfXGK1eWk" role="33vP2m" />
               </node>
@@ -4338,14 +4338,14 @@
           <node concept="3cpWsn" id="3BzdcH2LxSY" role="3cpWs9">
             <property role="TrG5h" value="entryPoint" />
             <node concept="3Tqbb2" id="3BzdcH2LxST" role="1tU5fm">
-              <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+              <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
             </node>
             <node concept="10QFUN" id="3BzdcH2Ly4S" role="33vP2m">
               <node concept="37vLTw" id="3BzdcH2LxUV" role="10QFUP">
                 <ref role="3cqZAo" node="3BzdcH2Lw3p" resolve="node" />
               </node>
               <node concept="3Tqbb2" id="3BzdcH2Ly4T" role="10QFUM">
-                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
               </node>
             </node>
           </node>
@@ -4774,7 +4774,7 @@
                                                           <node concept="liA8E" id="3BzdcH2J0j_" role="2OqNvi">
                                                             <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                                                             <node concept="35c_gC" id="3BzdcH2J0sm" role="37wK5m">
-                                                              <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                                              <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                                             </node>
                                                           </node>
                                                         </node>
@@ -4790,7 +4790,7 @@
                                                                 <node concept="1eOMI4" id="3BzdcH2M5Ka" role="2Oq$k0">
                                                                   <node concept="10QFUN" id="3BzdcH2M5K7" role="1eOMHV">
                                                                     <node concept="3Tqbb2" id="3BzdcH2M5Vd" role="10QFUM">
-                                                                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                                                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                                                     </node>
                                                                     <node concept="2GrUjf" id="3BzdcH2M64u" role="10QFUP">
                                                                       <ref role="2Gs0qQ" node="3BzdcH2IZaQ" resolve="root" />
@@ -4828,7 +4828,7 @@
                                                             <node concept="liA8E" id="3BzdcH31wwp" role="2OqNvi">
                                                               <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
                                                               <node concept="35c_gC" id="3BzdcH31xdm" role="37wK5m">
-                                                                <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                                                <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                                               </node>
                                                             </node>
                                                           </node>

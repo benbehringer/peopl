@@ -594,9 +594,6 @@
           <ref role="37HLr8" node="3Eijk1saGFm" />
           <ref role="1C2YfU" node="3Eijk1saGFo" resolve="Fragment_4220520739619130072" />
         </node>
-        <node concept="37HLsf" id="O4Xi83V4$H" role="lGtFl">
-          <property role="TrG5h" value="FeatureGroupReference_938144148843415853" />
-        </node>
       </node>
       <node concept="2tJIrI" id="1yv_rrpLv2i" role="jymVt" />
       <node concept="3clFb_" id="1yv_rrpLv4J" role="jymVt">
