@@ -147,12 +147,14 @@
     </language>
     <language id="f4a807b3-557e-4f92-89bc-d43f4be25649" name="de.htwsaar.peopl.mBeddrExtension">
       <concept id="2248001499747998825" name="de.htwsaar.peopl.mBeddrExtension.structure.FeatureBlock" flags="ng" index="0ddOt" />
+      <concept id="6590308113117381855" name="de.htwsaar.peopl.mBeddrExtension.structure.ModularCCompilationUnit" flags="ng" index="21MvUg" />
       <concept id="763904935703686235" name="de.htwsaar.peopl.mBeddrExtension.structure.CCompilationUnitContainer" flags="ng" index="3kkccA" />
       <concept id="763904935703659790" name="de.htwsaar.peopl.mBeddrExtension.structure.CCompilationUnit" flags="ng" index="3kkiDN" />
       <concept id="3878150634562475877" name="de.htwsaar.peopl.mBeddrExtension.structure.FeatureBlockVarRefMBeddr" flags="ng" index="1rna8h" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -192,6 +194,13 @@
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
+    </language>
+    <language id="4c4bbb77-dae4-40ac-9819-555675af7c56" name="de.htwsaar.peopl.core.view.modular">
+      <concept id="763904935699803294" name="de.htwsaar.peopl.core.view.modular.structure.ModularCompilationUnit" flags="ng" index="3k50fz">
+        <property id="763904935699804171" name="moduleReferenceName" index="3k51XQ" />
+        <reference id="763904935699805692" name="module" index="3k51E1" />
+        <reference id="763904935699804173" name="compilationUnit" index="3k51XK" />
+      </concept>
     </language>
   </registry>
   <node concept="H$gyE" id="1WMwngv1zUE">
@@ -237,9 +246,8 @@
           <node concept="c0U19" id="6naEs2fSV5r" role="3XIRFZ">
             <node concept="3XIRFW" id="6naEs2fSV5s" role="c0U17">
               <node concept="3lLJVk" id="6naEs2fSV7x" role="lGtFl" />
-              <node concept="0ddOt" id="4AWdyVHYAaE" role="3XIRFZ">
-                <ref role="bkjOf" node="7MpTifTF$GV" resolve="test" />
-                <node concept="3XISUE" id="4AWdyVHYFm6" role="3XIRFZ" />
+              <node concept="3XISUE" id="4AWdyVHYFm6" role="3XIRFZ" />
+              <node concept="0ddOt" id="5oqJggcvx4_" role="3XIRFZ">
                 <node concept="1_9egQ" id="4AWdyVHYFmf" role="3XIRFZ">
                   <node concept="3pqW6w" id="4AWdyVHYFoh" role="1_9egR">
                     <node concept="3TlMh9" id="4AWdyVHYFtr" role="3TlMhJ">
@@ -250,17 +258,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3XISUE" id="4AWdyVHYAaF" role="3XIRFZ" />
-                <node concept="3XISUE" id="4bMiMtlcLZ3" role="3XIRFZ" />
-                <node concept="1V74GB" id="4AWdyVHYAaG" role="lGtFl">
-                  <property role="32Xqk$" value="chosenModule" />
-                  <property role="TrG5h" value="Fragment_5313181235579347628" />
-                  <ref role="1V74Hf" to="9err:4AWdyVHYAaI" resolve="VPToFragment_5313181235579347630" />
-                  <ref role="3aRQVk" to="9err:4AWdyVHYAaJ" resolve="ModuleToFragment_5313181235579347631" />
-                  <ref role="a64iB" to="9err:1WMwngv1zU$" resolve="Base" />
-                  <ref role="25GeQm" node="4AWdyVHYAaK" resolve="FeatureGroupReference_5313181235579347632" />
-                </node>
               </node>
+              <node concept="3XISUE" id="4bMiMtlcLZ3" role="3XIRFZ" />
+              <node concept="3XISUE" id="4AWdyVHYAaF" role="3XIRFZ" />
               <node concept="0ddOt" id="SI0i2Shuwo" role="3XIRFZ">
                 <ref role="bkjOf" node="7MpTifTF$GV" resolve="test" />
                 <node concept="1V74GB" id="SI0i2Shuwq" role="lGtFl">
@@ -406,11 +406,6 @@
           <property role="TrG5h" value="FeatureGroupReference_8978459274815359909" />
           <ref role="37HLr8" node="7MpTifTF$Iv" />
           <ref role="1C2YfU" node="7MpTifTF$Ix" resolve="Fragment_8978459274815359905" />
-        </node>
-        <node concept="37HLsf" id="4AWdyVHYAaK" role="lGtFl">
-          <property role="TrG5h" value="FeatureGroupReference_5313181235579347632" />
-          <ref role="37HLr8" node="4AWdyVHYAaE" />
-          <ref role="1C2YfU" node="4AWdyVHYAaG" resolve="Fragment_5313181235579347628" />
         </node>
         <node concept="37HLsf" id="4AWdyVI0n_N" role="lGtFl">
           <property role="TrG5h" value="FeatureGroupReference_5313181235579812211" />
@@ -1453,6 +1448,13 @@
         <ref role="3aRQVk" to="9err:5U25eoPgV9a" resolve="ModuleToFragment_6810028565506273866" />
       </node>
     </node>
+  </node>
+  <node concept="21MvUg" id="7dLNjSLc1iN">
+    <property role="3k51XQ" value="module" />
+    <property role="TrG5h" value="Base::MeinCTest" />
+    <property role="3GE5qa" value="tmp.basicModularity" />
+    <ref role="3k51E1" to="9err:1WMwngv1zU$" resolve="Base" />
+    <ref role="3k51XK" node="3FjUMSPqezM" resolve="MeinCTest" />
   </node>
 </model>
 
