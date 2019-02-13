@@ -6,9 +6,7 @@
     </modelRoot>
   </models>
   <sourcePath />
-  <languageVersions>
-    <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
-  </languageVersions>
+  <languageVersions />
   <dependencyVersions>
     <module reference="~_PreferencesModule#peopl.__spreferences.CodeReviewPreferences(peopl.__spreferences.CodeReviewPreferences)" version="0" />
   </dependencyVersions>

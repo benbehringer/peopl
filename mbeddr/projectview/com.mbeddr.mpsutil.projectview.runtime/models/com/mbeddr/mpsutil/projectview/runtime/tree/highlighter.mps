@@ -42,6 +42,7 @@
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" />
     <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
     <import index="2gg1" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors(MPS.Core/)" />
+    <import index="d6hs" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.errors.item(MPS.Core/)" />
     <import index="1m72" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.components(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -4356,29 +4357,28 @@
                                 <ref role="1Y3XeK" to="yyf4:~Processor" resolve="Processor" />
                                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                                 <node concept="3Tm1VV" id="6B7erwvEDhy" role="1B3o_S" />
-                                <node concept="3clFb_" id="6B7erwvEDhz" role="jymVt">
+                                <node concept="3clFb_" id="49cm4bxJzGd" role="jymVt">
+                                  <property role="1EzhhJ" value="false" />
                                   <property role="TrG5h" value="process" />
                                   <property role="DiZV1" value="false" />
                                   <property role="od$2w" value="false" />
-                                  <node concept="2AHcQZ" id="6B7erwvEDh$" role="2AJF6D">
-                                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-                                  </node>
-                                  <node concept="37vLTG" id="6B7erwvEDh_" role="3clF46">
+                                  <node concept="3Tm1VV" id="49cm4bxJzGe" role="1B3o_S" />
+                                  <node concept="10P_77" id="49cm4bxJzGg" role="3clF45" />
+                                  <node concept="37vLTG" id="49cm4bxJzGh" role="3clF46">
                                     <property role="TrG5h" value="problem" />
-                                    <property role="3TUv4t" value="false" />
-                                    <node concept="3uibUv" id="6B7erwvEDhA" role="1tU5fm">
-                                      <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
+                                    <node concept="3uibUv" id="49cm4bxJzGl" role="1tU5fm">
+                                      <ref role="3uigEE" to="d6hs:~ModelReportItem" resolve="ModelReportItem" />
                                     </node>
                                   </node>
-                                  <node concept="3clFbS" id="6B7erwvEDhB" role="3clF47">
+                                  <node concept="3clFbS" id="49cm4bxJzGm" role="3clF47">
                                     <node concept="3clFbJ" id="6B7erwvEDhC" role="3cqZAp">
                                       <node concept="3clFbC" id="6B7erwvEDhD" role="3clFbw">
                                         <node concept="2OqwBi" id="6B7erwvEJtJ" role="3uHU7B">
-                                          <node concept="37vLTw" id="6B7erwvEJtI" role="2Oq$k0">
-                                            <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
+                                          <node concept="37vLTw" id="49cm4bxJ$Za" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="49cm4bxJzGh" resolve="problem" />
                                           </node>
                                           <node concept="liA8E" id="6B7erwvEJtK" role="2OqNvi">
-                                            <ref role="37wK5l" to="6if8:~ValidationProblem.getSeverity():jetbrains.mps.errors.MessageStatus" resolve="getSeverity" />
+                                            <ref role="37wK5l" to="d6hs:~ReportItem.getSeverity():jetbrains.mps.errors.MessageStatus" resolve="getSeverity" />
                                           </node>
                                         </node>
                                         <node concept="Rm8GO" id="eN_bhYMG1r" role="3uHU7w">
@@ -4396,11 +4396,11 @@
                                               <node concept="liA8E" id="6B7erwvEJu6" role="2OqNvi">
                                                 <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
                                                 <node concept="2OqwBi" id="6B7erwvEJuh" role="37wK5m">
-                                                  <node concept="37vLTw" id="6B7erwvEJug" role="2Oq$k0">
-                                                    <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
+                                                  <node concept="37vLTw" id="49cm4bxJ_RK" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="49cm4bxJzGh" resolve="problem" />
                                                   </node>
                                                   <node concept="liA8E" id="6B7erwvEJui" role="2OqNvi">
-                                                    <ref role="37wK5l" to="6if8:~ValidationProblem.getMessage():java.lang.String" resolve="getMessage" />
+                                                    <ref role="37wK5l" to="d6hs:~ReportItem.getMessage():java.lang.String" resolve="getMessage" />
                                                   </node>
                                                 </node>
                                               </node>
@@ -4417,11 +4417,11 @@
                                             <node concept="liA8E" id="6B7erwvEJuu" role="2OqNvi">
                                               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object):boolean" resolve="add" />
                                               <node concept="2OqwBi" id="6B7erwvEJuD" role="37wK5m">
-                                                <node concept="37vLTw" id="6B7erwvEJuC" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="6B7erwvEDh_" resolve="problem" />
+                                                <node concept="37vLTw" id="49cm4bxJ_qy" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="49cm4bxJzGh" resolve="problem" />
                                                 </node>
                                                 <node concept="liA8E" id="6B7erwvEJuE" role="2OqNvi">
-                                                  <ref role="37wK5l" to="6if8:~ValidationProblem.getMessage():java.lang.String" resolve="getMessage" />
+                                                  <ref role="37wK5l" to="d6hs:~ReportItem.getMessage():java.lang.String" resolve="getMessage" />
                                                 </node>
                                               </node>
                                             </node>
@@ -4435,11 +4435,12 @@
                                       </node>
                                     </node>
                                   </node>
-                                  <node concept="3Tm1VV" id="6B7erwvEDhS" role="1B3o_S" />
-                                  <node concept="10P_77" id="6B7erwvEDhT" role="3clF45" />
+                                  <node concept="2AHcQZ" id="49cm4bxJzGn" role="2AJF6D">
+                                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                                  </node>
                                 </node>
-                                <node concept="3uibUv" id="6B7erwvEDhU" role="2Ghqu4">
-                                  <ref role="3uigEE" to="6if8:~ValidationProblem" resolve="ValidationProblem" />
+                                <node concept="3uibUv" id="49cm4bxJzBN" role="2Ghqu4">
+                                  <ref role="3uigEE" to="d6hs:~ModelReportItem" resolve="ModelReportItem" />
                                 </node>
                               </node>
                             </node>

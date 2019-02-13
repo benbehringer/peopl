@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
-    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="1" />
+    <use id="f159adf4-3c93-40f9-9c5a-1f245a8697af" name="jetbrains.mps.lang.aspect" version="2" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -612,7 +612,7 @@
                         </node>
                         <node concept="1mIQ4w" id="5jSU_dFQpF1" role="2OqNvi">
                           <node concept="chp4Y" id="5jSU_dFQpFy" role="cj9EA">
-                            <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                            <ref role="cht4Q" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                           </node>
                         </node>
                       </node>
@@ -623,7 +623,7 @@
                               <node concept="1eOMI4" id="5jSU_dFQpNr" role="2Oq$k0">
                                 <node concept="10QFUN" id="5jSU_dFQpNo" role="1eOMHV">
                                   <node concept="3Tqbb2" id="5jSU_dFQqN9" role="10QFUM">
-                                    <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+                                    <ref role="ehGHo" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
                                   </node>
                                   <node concept="37vLTw" id="5jSU_dFQqOa" role="10QFUP">
                                     <ref role="3cqZAo" node="5jSU_dFQpv4" resolve="node" />

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="3" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="5" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -50,10 +50,17 @@
         <child id="5617550519002745378" name="macros" index="1l3spd" />
         <child id="5617550519002745372" name="layout" index="1l3spN" />
       </concept>
+      <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
+        <property id="8654221991637384184" name="pattern" index="3qWCbO" />
+      </concept>
       <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="841011766566059607" name="jetbrains.mps.build.structure.BuildStringNotEmpty" flags="ng" index="3_J27D" />
+      <concept id="5248329904287794596" name="jetbrains.mps.build.structure.BuildInputFiles" flags="ng" index="3LXTmp">
+        <child id="5248329904287794598" name="dir" index="3LXTmr" />
+        <child id="5248329904287794679" name="selectors" index="3LXTna" />
+      </concept>
       <concept id="4903714810883702019" name="jetbrains.mps.build.structure.BuildTextStringPart" flags="ng" index="3Mxwew">
         <property id="4903714810883755350" name="text" index="3MwjfP" />
       </concept>
@@ -98,11 +105,15 @@
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <property id="1500819558096356884" name="doNotCompile" index="2GAjPV" />
+        <child id="5253498789149547825" name="sources" index="3bR31x" />
         <child id="5253498789149547704" name="dependencies" index="3bR37C" />
       </concept>
       <concept id="5253498789149585690" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyOnModule" flags="ng" index="3bR9La">
         <property id="5253498789149547713" name="reexport" index="3bR36h" />
         <reference id="5253498789149547705" name="module" index="3bR37D" />
+      </concept>
+      <concept id="763829979718664966" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleResources" flags="ng" index="3rtmxn">
+        <child id="763829979718664967" name="files" index="3rtmxm" />
       </concept>
       <concept id="5507251971038816436" name="jetbrains.mps.build.mps.structure.BuildMps_Generator" flags="ng" index="1yeLz9" />
       <concept id="4278635856200794926" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleDependencyExtendLanguage" flags="ng" index="1Busua">
@@ -163,7 +174,7 @@
         <property role="3V$3am" value="dependencies" />
         <property role="3V$3ak" value="0cf935df-4699-4e9c-a132-fa109541cba3/6592112598314498932/6592112598314499028" />
         <node concept="m$_yC" id="1Gq8bgqgxBT" role="8Wnug">
-          <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="httpSupport" />
+          <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
         </node>
       </node>
     </node>
@@ -239,6 +250,21 @@
             <ref role="3bR37D" to="f4pb:roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
           </node>
         </node>
+        <node concept="3rtmxn" id="4TLsuWLv4um" role="3bR31x">
+          <node concept="3LXTmp" id="4TLsuWLv4un" role="3rtmxm">
+            <node concept="3qWCbU" id="4TLsuWLv4uo" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="4TLsuWLv4up" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4TLsuWLv4uq" role="iGT6I">
+                <property role="2Ry0Am" value="mBeddrExtension" />
+                <node concept="2Ry0Ak" id="4TLsuWLv4ur" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.htwsaar.peopl.mBeddrExtension.runtime" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1Gq8bgqepr_" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -252,6 +278,21 @@
               <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
               <node concept="2Ry0Ak" id="1Gq8bgqeprX" role="2Ry0An">
                 <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4TLsuWLv4vJ" role="3bR31x">
+          <node concept="3LXTmp" id="4TLsuWLv4vK" role="3rtmxm">
+            <node concept="3qWCbU" id="4TLsuWLv4vL" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="4TLsuWLv4vM" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4TLsuWLv4vN" role="iGT6I">
+                <property role="2Ry0Am" value="mBeddrExtension" />
+                <node concept="2Ry0Ak" id="4TLsuWLv4vO" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
+                </node>
               </node>
             </node>
           </node>
@@ -422,6 +463,21 @@
             <node concept="3bR9La" id="1Gq8bgqepvW" role="1SiIV1">
               <property role="3bR36h" value="false" />
               <ref role="3bR37D" to="f4pb:roAxhtZ_e$" resolve="de.htwsaar.peopl.core.moduleConfig#6563451082523326250" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4TLsuWLv4w5" role="3bR31x">
+          <node concept="3LXTmp" id="4TLsuWLv4w6" role="3rtmxm">
+            <node concept="3qWCbU" id="4TLsuWLv4w7" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="4TLsuWLv4w8" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4TLsuWLv4w9" role="iGT6I">
+                <property role="2Ry0Am" value="mBeddrExtension" />
+                <node concept="2Ry0Ak" id="4TLsuWLv4wa" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.htwsaar.peopl.mBeddrExtension" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

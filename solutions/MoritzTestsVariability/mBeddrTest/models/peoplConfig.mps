@@ -624,13 +624,6 @@
           <ref role="1V74G_" to="u3ai:roAxhtxX7P" resolve="Fragment_493313571456274933" />
         </node>
       </node>
-      <node concept="1V74G3" id="5oqJggcvx4B" role="2$Fqj6">
-        <property role="TrG5h" value="VP_6204479261743386919" />
-        <node concept="1V74G$" id="5oqJggcvx4C" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_6204479261743386920" />
-          <ref role="1V74G_" to="u3ai:5oqJggcvx4A" resolve="Fragment_6204479261743386918" />
-        </node>
-      </node>
     </node>
   </node>
   <node concept="2M0niJ" id="1WMwngv1zU_">

@@ -8436,7 +8436,7 @@
                             <ref role="37wK5l" node="7PuCnELAR27" resolve="getTree" />
                           </node>
                           <node concept="liA8E" id="7PvgUNuOLtj" role="2OqNvi">
-                            <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                            <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                           </node>
                         </node>
                         <node concept="3uibUv" id="7PvgUNuOLtk" role="10QFUM">
@@ -8882,7 +8882,7 @@
                               <ref role="37wK5l" node="7PuCnELAR27" resolve="getTree" />
                             </node>
                             <node concept="liA8E" id="Ggg0Z6Y9uo" role="2OqNvi">
-                              <ref role="37wK5l" to="dxuu:~JTree.getModel():javax.swing.tree.TreeModel" resolve="getModel" />
+                              <ref role="37wK5l" to="7e8u:~MPSTree.getModel():javax.swing.tree.DefaultTreeModel" resolve="getModel" />
                             </node>
                           </node>
                           <node concept="3uibUv" id="Ggg0Z6Y9up" role="10QFUM">

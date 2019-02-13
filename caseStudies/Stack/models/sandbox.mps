@@ -311,7 +311,6 @@
               <ref role="25GeQm" node="1nXJNmlaBOF" resolve="FeatureGroupReference_1584632880761044267" />
             </node>
             <node concept="3clFbS" id="1nXJNmlaB5$" role="9aQI4">
-              <node concept="3clFbH" id="1nXJNmlaD5r" role="3cqZAp" />
               <node concept="3clFbF" id="3cWsfR6xgl1" role="3cqZAp">
                 <node concept="2YIFZM" id="3cWsfR6xguj" role="3clFbG">
                   <ref role="1Pybhc" to="q7tw:~BasicConfigurator" resolve="BasicConfigurator" />
@@ -358,6 +357,13 @@
             </node>
           </node>
           <node concept="3clFbH" id="5oqJggcvvI9" role="3cqZAp" />
+          <node concept="3clFbH" id="4SLP7DwC9Zn" role="3cqZAp" />
+          <node concept="3SKdUt" id="4SLP7DwCa6H" role="3cqZAp">
+            <node concept="3SKdUq" id="4SLP7DwCa6I" role="3SKWNk">
+              <property role="3SKdUp" value="asdf" />
+            </node>
+          </node>
+          <node concept="3clFbH" id="4SLP7DwCadH" role="3cqZAp" />
         </node>
         <node concept="37HLsf" id="1nXJNmlaBOF" role="lGtFl">
           <property role="TrG5h" value="FeatureGroupReference_1584632880761044267" />
@@ -367,9 +373,6 @@
         <node concept="37vLTG" id="1nXJNmlaChw" role="3clF46">
           <property role="TrG5h" value="size" />
           <node concept="10Oyi0" id="1nXJNmlaChv" role="1tU5fm" />
-        </node>
-        <node concept="37HLsf" id="5oqJggcvvNT" role="lGtFl">
-          <property role="TrG5h" value="FeatureGroupReference_6204479261743381753" />
         </node>
       </node>
       <node concept="2tJIrI" id="1nXJNmla_CW" role="jymVt" />
@@ -388,6 +391,8 @@
         </node>
         <node concept="3clFbS" id="3Eijk1saFPu" role="3clF47">
           <node concept="3clFbH" id="1nXJNmlOFXm" role="3cqZAp" />
+          <node concept="3clFbH" id="4SLP7DwC5Hq" role="3cqZAp" />
+          <node concept="3clFbH" id="4SLP7DwC5Ic" role="3cqZAp" />
           <node concept="1HWtB8" id="4BnE3LKXA7i" role="3cqZAp">
             <node concept="37vLTw" id="4BnE3LKXA7j" role="1HWFw0">
               <ref role="3cqZAo" node="1yv_rrpLv7B" resolve="arrayStackData" />

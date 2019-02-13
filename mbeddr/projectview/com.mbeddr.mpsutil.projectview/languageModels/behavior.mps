@@ -136,7 +136,6 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
@@ -734,27 +733,24 @@
       <node concept="3Tm1VV" id="3ZnFyBjv4V3" role="1B3o_S" />
       <node concept="17QB3L" id="3ZnFyBjv4Ve" role="3clF45" />
       <node concept="3clFbS" id="3ZnFyBjv4V5" role="3clF47">
-        <node concept="3clFbF" id="3ZnFyBjv4VQ" role="3cqZAp">
-          <node concept="3cpWs3" id="3ZnFyBjv3OH" role="3clFbG">
-            <node concept="2OqwBi" id="3ZnFyBjv42E" role="3uHU7w">
-              <node concept="13iPFW" id="3ZnFyBjv5yS" role="2Oq$k0" />
-              <node concept="3TrcHB" id="3ZnFyBjv4DB" role="2OqNvi">
+        <node concept="3clFbF" id="49cm4bxJCOd" role="3cqZAp">
+          <node concept="3cpWs3" id="49cm4bxJESD" role="3clFbG">
+            <node concept="2OqwBi" id="49cm4bxJFcP" role="3uHU7w">
+              <node concept="13iPFW" id="49cm4bxJESV" role="2Oq$k0" />
+              <node concept="3TrcHB" id="49cm4bxJFsL" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
-            <node concept="3cpWs3" id="3ZnFyBjv3uj" role="3uHU7B">
-              <node concept="2YIFZM" id="3ZnFyBjv2_D" role="3uHU7B">
-                <ref role="37wK5l" to="w1kc:~SModelStereotype.withoutStereotype(java.lang.String):java.lang.String" resolve="withoutStereotype" />
+            <node concept="3cpWs3" id="49cm4bxJDHx" role="3uHU7B">
+              <node concept="2YIFZM" id="49cm4bxJCQS" role="3uHU7B">
                 <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                <node concept="2OqwBi" id="3ZnFyBjv37H" role="37wK5m">
-                  <node concept="2OqwBi" id="3ZnFyBjv2Lz" role="2Oq$k0">
-                    <node concept="13iPFW" id="3ZnFyBjv5eF" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="3ZnFyBjv5qE" role="2OqNvi" />
-                  </node>
-                  <node concept="LkI2h" id="3ZnFyBjv3l0" role="2OqNvi" />
+                <ref role="37wK5l" to="w1kc:~SModelStereotype.getStereotype(org.jetbrains.mps.openapi.model.SModel):java.lang.String" resolve="getStereotype" />
+                <node concept="2OqwBi" id="3ZnFyBjv2Lz" role="37wK5m">
+                  <node concept="13iPFW" id="3ZnFyBjv5eF" role="2Oq$k0" />
+                  <node concept="I4A8Y" id="3ZnFyBjv5qE" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="Xl_RD" id="3ZnFyBjv3uy" role="3uHU7w">
+              <node concept="Xl_RD" id="49cm4bxJDKx" role="3uHU7w">
                 <property role="Xl_RC" value="." />
               </node>
             </node>
