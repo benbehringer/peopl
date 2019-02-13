@@ -1628,21 +1628,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="511fZqnsAAd" role="3cqZAp">
-          <node concept="3K4zz7" id="511fZqnsB0r" role="3clFbG">
-            <node concept="37vLTw" id="511fZqnsB9o" role="3K4E3e">
-              <ref role="3cqZAo" node="511fZqnszP4" resolve="icon" />
-            </node>
-            <node concept="3y3z36" id="511fZqnsAJ_" role="3K4Cdx">
-              <node concept="10Nm6u" id="511fZqnsASk" role="3uHU7w" />
-              <node concept="37vLTw" id="511fZqnsAAb" role="3uHU7B">
-                <ref role="3cqZAo" node="511fZqnszP4" resolve="icon" />
-              </node>
-            </node>
-            <node concept="10M0yZ" id="511fZqnsB9J" role="3K4GZi">
-              <ref role="1PxDUh" to="rvbb:~Icons" resolve="Icons" />
-              <ref role="3cqZAo" to="xnls:~IdeIcons.DEFAULT_ICON" resolve="DEFAULT_ICON" />
-            </node>
+        <node concept="3SKdUt" id="1w9PSKIeBo" role="3cqZAp">
+          <node concept="3SKdUq" id="1w9PSKIeBq" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Return default icon: icon != null ? icon : Icons.DEFAULT_ICON" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="1w9PSKIe8z" role="3cqZAp">
+          <node concept="37vLTw" id="1w9PSKIe8x" role="3clFbG">
+            <ref role="3cqZAo" node="511fZqnszP4" resolve="icon" />
           </node>
         </node>
       </node>
