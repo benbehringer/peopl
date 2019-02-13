@@ -140,9 +140,6 @@
     <property role="34LRSv" value="node" />
     <property role="EcuMT" value="6841588423541859468" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="5VMd6L4CMiX" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="nvbgyAd3gU">
     <property role="TrG5h" value="VariabilityConceptFunction" />
@@ -447,9 +444,6 @@
     <property role="R4oN_" value="node&lt;fragment&gt; to check" />
     <property role="EcuMT" value="3387676811032903588" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-    <node concept="PrWs8" id="2W3sxLBsrY_" role="PzmwI">
-      <ref role="PrY4T" to="tpck:1_TrU5E6oyb" resolve="IDontSubstituteByDefault" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5HPu$ZqLL4M">
     <property role="TrG5h" value="ProjectViewConfig" />

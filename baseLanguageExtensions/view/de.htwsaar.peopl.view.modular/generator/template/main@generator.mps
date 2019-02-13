@@ -2,7 +2,7 @@
 <model ref="r:5a625423-18e7-492d-8b61-6851a116c671(de.htwsaar.peopl.view.modular.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="0" />
     <use id="3b64420c-53d0-4c15-9e71-c9cecf76d9db" name="de.htwsaar.peopl.view.modular" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -47,7 +47,7 @@
     <property role="TrG5h" value="main" />
     <property role="3$yP7D" value="true" />
     <node concept="aNPBN" id="7jpD5uwQySq" role="aQYdv">
-      <ref role="aOQi4" to="ao9j:1k3hL0SxfUS" resolve="TmpPeoplClassConcept" />
+      <ref role="aOQi4" to="ao9j:1k3hL0SxfUS" resolve="ModularJavaCompilationUnit" />
       <node concept="aO8KQ" id="7jpD5uwQySt" role="aOLnb">
         <node concept="3clFbS" id="7jpD5uwQySu" role="2VODD2">
           <node concept="3clFbF" id="7jpD5uwQz$v" role="3cqZAp">

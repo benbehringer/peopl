@@ -2,7 +2,7 @@
 <model ref="r:607f9dd1-7ad6-4332-9892-806ff03da60c(de.htwsaar.peopl.core.featureConfig.generator.template.main@generator)">
   <persistence version="9" />
   <languages>
-    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="0" />
+    <use id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator" version="2" />
   </languages>
   <imports />
   <registry>

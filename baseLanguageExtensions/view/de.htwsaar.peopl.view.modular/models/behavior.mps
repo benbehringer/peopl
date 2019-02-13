@@ -2,7 +2,7 @@
 <model ref="r:cb848a2c-837a-4a77-9437-095eddffdfa6(de.htwsaar.peopl.view.modular.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -112,7 +112,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -306,7 +306,7 @@
         <node concept="37vLTG" id="7boOmZ483Y1" role="3clF46">
           <property role="TrG5h" value="pClassCon" />
           <node concept="3Tqbb2" id="7boOmZ484uF" role="1tU5fm">
-            <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+            <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
           </node>
         </node>
         <node concept="37vLTG" id="7boOmZ487f_" role="3clF46">
@@ -355,7 +355,7 @@
                 <node concept="1eOMI4" id="5HPu$ZqLsCu" role="2Oq$k0">
                   <node concept="10QFUN" id="5HPu$ZqLsCr" role="1eOMHV">
                     <node concept="3Tqbb2" id="5HPu$ZqLsEy" role="10QFUM">
-                      <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                      <ref role="ehGHo" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                     </node>
                     <node concept="2OqwBi" id="5HPu$ZqLsgd" role="10QFUP">
                       <node concept="13iPFW" id="5HPu$ZqLsde" role="2Oq$k0" />

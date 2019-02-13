@@ -3,14 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
   </languages>
   <imports>
     <import index="4b2m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.util.messages(MPS.IDEA/)" />
@@ -267,7 +267,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -2179,7 +2179,6 @@
     <property role="3GE5qa" value="ext" />
     <node concept="2tJIrI" id="7mR4HHEZ0IW" role="jymVt" />
     <node concept="3clFb_" id="7mR4HHEYYLF" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="addListener" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -2206,7 +2205,6 @@
     <property role="3GE5qa" value="ext" />
     <property role="TrG5h" value="IExt_MonitoringListenerRemove" />
     <node concept="3clFb_" id="5zwmFkqkiL3" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="removeMonitoringListener" />
       <node concept="3clFbS" id="5zwmFkqkiL6" role="3clF47" />
@@ -2220,7 +2218,6 @@
     <property role="TrG5h" value="IExt_ModularityHandle" />
     <node concept="2tJIrI" id="5FCOv167f_1" role="jymVt" />
     <node concept="3clFb_" id="5FCOv167cnt" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getTrueRootNode" />
       <node concept="3clFbS" id="5FCOv167cnw" role="3clF47" />
@@ -2256,7 +2253,6 @@
     <property role="3GE5qa" value="ext" />
     <property role="TrG5h" value="IExt_Identifier" />
     <node concept="3clFb_" id="2G0ABEx9Nrt" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="identify" />
       <node concept="3clFbS" id="2G0ABEx9Nrw" role="3clF47" />

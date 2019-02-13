@@ -2,15 +2,15 @@
 <model ref="r:4493c001-9956-4b69-8c92-9141ac8f5b4e(de.htwsaar.peopl.core.listener.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="4" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="-1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="11" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="12" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -328,7 +328,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -534,7 +534,6 @@
     <property role="3GE5qa" value="extension" />
     <node concept="2tJIrI" id="4abErjGKsNT" role="jymVt" />
     <node concept="3clFb_" id="7U4gdfRwfpu" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="changeNameOfCompilationUnitContainer" />
       <node concept="3clFbS" id="7U4gdfRwfpx" role="3clF47" />
@@ -548,7 +547,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3fIGxWm8_Ny" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="updateModuleInfo" />
       <node concept="3clFbS" id="3fIGxWm8_N_" role="3clF47" />
@@ -567,7 +565,6 @@
     </node>
     <node concept="2tJIrI" id="5mBUYe9Yxf5" role="jymVt" />
     <node concept="3clFb_" id="6JE$RZ4X6Wd" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="automaticFeatureBaseCodeGroupCreation" />
       <node concept="3clFbS" id="6JE$RZ4X6Wg" role="3clF47" />
@@ -579,7 +576,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="6JE$RZ51ER4" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="signOffFeatureBaseCodeGroup" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -4996,7 +4992,6 @@
     <property role="3GE5qa" value="extension" />
     <node concept="2tJIrI" id="3GqAm$HxRsp" role="jymVt" />
     <node concept="3clFb_" id="3GqAm$HxRCo" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isInConfig" />
       <node concept="3clFbS" id="3GqAm$HxRCr" role="3clF47" />
@@ -5013,7 +5008,6 @@
     <property role="3GE5qa" value="extension" />
     <property role="TrG5h" value="IExt_PeoplModularViewListenerExtension" />
     <node concept="3clFb_" id="1kEVEWPq7Dm" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="TrG5h" value="getModularCompilationUnitModuleName" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
@@ -5023,7 +5017,6 @@
       <node concept="17QB3L" id="1kEVEWPqa6S" role="3clF45" />
     </node>
     <node concept="3clFb_" id="1kEVEWPr6Xf" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="setModularCompilationUnitName" />
       <node concept="37vLTG" id="1kEVEWPr9ju" role="3clF46">

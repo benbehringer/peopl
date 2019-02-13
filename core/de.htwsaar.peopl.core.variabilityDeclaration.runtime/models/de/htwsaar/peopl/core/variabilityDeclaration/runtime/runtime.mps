@@ -2,12 +2,12 @@
 <model ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
     <use id="9ded098b-ad6a-4657-bfd9-48636cfe8bc3" name="jetbrains.mps.lang.traceable" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="8" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
@@ -31,9 +31,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
-        <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
-      </concept>
+      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -91,7 +89,6 @@
     <property role="TrG5h" value="IVariabilityAspectRuntime" />
     <node concept="2tJIrI" id="4UuYCFbLF4h" role="jymVt" />
     <node concept="3clFb_" id="2FVYQByNiL2" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canAssignVariability" />
       <node concept="3clFbS" id="2FVYQByNiL5" role="3clF47" />
@@ -110,7 +107,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="2FVYQByNiMr" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canHaveAlternative" />
       <node concept="3clFbS" id="2FVYQByNiMu" role="3clF47" />
@@ -122,7 +118,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="2xG5o$wDyan" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isMatchingDescriptor" />
       <node concept="3clFbS" id="2xG5o$wDyaq" role="3clF47" />
@@ -134,7 +129,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="4FBHDTanz2x" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="nodeIsNonOptional" />
       <node concept="3clFbS" id="4FBHDTanz2$" role="3clF47" />
@@ -146,7 +140,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="14mWR7tAT06" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="nodeConceptIsNonOptional" />
       <node concept="3clFbS" id="14mWR7tAT09" role="3clF47" />
@@ -158,7 +151,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="14mWR7tCvg_" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getNonOptionalConcepts" />
       <node concept="3clFbS" id="14mWR7tCvgC" role="3clF47" />
@@ -168,7 +160,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="14mWR7tvcar" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="assignAlternative" />
       <node concept="3clFbS" id="14mWR7tvcau" role="3clF47" />
@@ -182,7 +173,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="1h5QCpZ1bzS" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="requiresSpecializedAlternativeNodeCreation" />
       <node concept="3clFbS" id="1h5QCpZ1bzV" role="3clF47" />
@@ -194,7 +184,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="1h5QCpZ1bGT" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="createSpecializedAlternative" />
       <node concept="3clFbS" id="1h5QCpZ1bGW" role="3clF47" />
@@ -207,7 +196,6 @@
     </node>
     <node concept="2tJIrI" id="7wEfe$EdXQz" role="jymVt" />
     <node concept="3clFb_" id="7wEfe$EdXFH" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="assignWrapper" />
       <node concept="3clFbS" id="7wEfe$EdXFK" role="3clF47" />
@@ -228,7 +216,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3_Ts9HS9L3L" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isWrapper" />
       <node concept="3clFbS" id="3_Ts9HS9L3O" role="3clF47" />
@@ -240,7 +227,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7wEfe$EdYNZ" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canBeAttributedAsWrapper" />
       <node concept="3clFbS" id="7wEfe$EdYO2" role="3clF47" />
@@ -252,7 +238,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7wEfe$EdYSi" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canBeAttributedAsWrappee" />
       <node concept="3clFbS" id="7wEfe$EdYSl" role="3clF47" />
@@ -264,7 +249,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="7wEfe$EdXIu" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="canBeWrapped" />
       <node concept="3clFbS" id="7wEfe$EdXIx" role="3clF47" />
@@ -278,7 +262,6 @@
     <node concept="2tJIrI" id="4UuYCFbLF6x" role="jymVt" />
     <node concept="2tJIrI" id="4UuYCFbLFX1" role="jymVt" />
     <node concept="3clFb_" id="4UuYCFbLFH5" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getReplaceableConcept" />
       <node concept="3clFbS" id="4UuYCFbLFH8" role="3clF47" />
@@ -293,7 +276,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="4UuYCFbM5x0" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getConcreteFeatureGroupConcept" />
       <node concept="3clFbS" id="4UuYCFbM5x3" role="3clF47" />
@@ -303,7 +285,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="3FjUMSPqh_l" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getInheritedFeatureGroupConcept" />
       <node concept="3clFbS" id="3FjUMSPqh_o" role="3clF47" />
@@ -311,7 +292,6 @@
       <node concept="3bZ5Sz" id="3FjUMSPqhoF" role="3clF45" />
     </node>
     <node concept="3clFb_" id="4UuYCFbYo4w" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getDefininingNodeConcept" />
       <node concept="3clFbS" id="4UuYCFbYo4z" role="3clF47" />
@@ -319,7 +299,6 @@
       <node concept="3bZ5Sz" id="4UuYCFbYo3a" role="3clF45" />
     </node>
     <node concept="3clFb_" id="4UuYCFbYoa4" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getDefiningContainerConcept" />
       <node concept="3clFbS" id="4UuYCFbYoa7" role="3clF47" />
@@ -327,7 +306,6 @@
       <node concept="3bZ5Sz" id="4UuYCFbYo8E" role="3clF45" />
     </node>
     <node concept="3clFb_" id="5HPu$ZqLMzB" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getModularCompilationUnitConcept" />
       <node concept="3clFbS" id="5HPu$ZqLMzE" role="3clF47" />
@@ -336,7 +314,6 @@
     </node>
     <node concept="2tJIrI" id="2W3sxLBt1NS" role="jymVt" />
     <node concept="3clFb_" id="2W3sxLBt1Tj" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isFragmentHandledByConceptEditor" />
       <node concept="3clFbS" id="2W3sxLBt1Tm" role="3clF47" />
@@ -350,7 +327,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="2W3sxLBt25F" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="isColoringHandledByConceptEditor" />
       <node concept="3clFbS" id="2W3sxLBt25I" role="3clF47" />
@@ -364,7 +340,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="25mTXKUG7Aa" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="requiresHorizontalLine" />
       <node concept="3clFbS" id="25mTXKUG7Ad" role="3clF47" />
@@ -378,7 +353,6 @@
     <node concept="2tJIrI" id="5iaKOVQxjfL" role="jymVt" />
     <node concept="2tJIrI" id="5iaKOVQxjq_" role="jymVt" />
     <node concept="3clFb_" id="7aLWWlGsXzd" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="updateModuleInfo" />
       <node concept="3clFbS" id="7aLWWlGsXzg" role="3clF47" />
@@ -403,7 +377,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="5iaKOVQxjVs" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getBaseModuleProvider" />
       <node concept="3clFbS" id="5iaKOVQxjVv" role="3clF47" />
@@ -415,7 +388,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="5iaKOVQxkyc" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getBaseModule" />
       <node concept="3clFbS" id="5iaKOVQxkyf" role="3clF47" />
@@ -429,7 +401,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="5iaKOVQ$aHi" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getBaseCompilationUnitModule" />
       <node concept="3clFbS" id="5iaKOVQ$aHl" role="3clF47" />
@@ -443,7 +414,6 @@
       </node>
     </node>
     <node concept="3clFb_" id="6tC4kQdURgU" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="getName" />
       <node concept="3clFbS" id="6tC4kQdURgX" role="3clF47" />
@@ -451,7 +421,6 @@
       <node concept="17QB3L" id="6tC4kQdURgS" role="3clF45" />
     </node>
     <node concept="3clFb_" id="4GdSHYm35B1" role="jymVt">
-      <property role="1EzhhJ" value="true" />
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="checkDependencies" />
       <node concept="3clFbS" id="4GdSHYm35B4" role="3clF47" />
