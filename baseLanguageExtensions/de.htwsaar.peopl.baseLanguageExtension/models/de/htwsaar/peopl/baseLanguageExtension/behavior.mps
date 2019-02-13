@@ -9388,6 +9388,11 @@
             <property role="3SKdUp" value="BaseConcept" />
           </node>
         </node>
+        <node concept="3SKdUt" id="2E4pk3w$__b" role="3cqZAp">
+          <node concept="3SKdUq" id="2E4pk3w$__c" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: this.alias = classNode.alias" />
+          </node>
+        </node>
         <node concept="3clFbF" id="1_00ihD5H9n" role="3cqZAp">
           <node concept="37vLTI" id="1_00ihD5H9o" role="3clFbG">
             <node concept="2OqwBi" id="1_00ihD5H9p" role="37vLTx">

@@ -4,9 +4,9 @@
   <languages>
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="8" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="11" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="5" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="6" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="1" />
@@ -2217,7 +2217,7 @@
                                   <node concept="liA8E" id="64eR99jQkzp" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="35c_gC" id="64eR99jQleY" role="37wK5m">
-                                      <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                      <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                     </node>
                                   </node>
                                 </node>
@@ -2234,7 +2234,7 @@
                                   <node concept="liA8E" id="64eR99jRrTY" role="2OqNvi">
                                     <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
                                     <node concept="35c_gC" id="64eR99jRsBh" role="37wK5m">
-                                      <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                      <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                     </node>
                                   </node>
                                 </node>
@@ -2476,7 +2476,7 @@
                 </node>
                 <node concept="1mIQ4w" id="1IVGVoWxG0U" role="2OqNvi">
                   <node concept="chp4Y" id="1IVGVoWxG1v" role="cj9EA">
-                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                   </node>
                 </node>
               </node>
@@ -3422,7 +3422,7 @@
                                     <node concept="2Xjw5R" id="5tqlr2bKwn1" role="2OqNvi">
                                       <node concept="1xMEDy" id="5tqlr2bKwn3" role="1xVPHs">
                                         <node concept="chp4Y" id="5tqlr2bKwsb" role="ri$Ld">
-                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="PeoplClassConcept" />
+                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
                                         </node>
                                       </node>
                                     </node>
@@ -5144,7 +5144,7 @@
                                 <node concept="1eOMI4" id="64eR99jUzfy" role="2Oq$k0">
                                   <node concept="10QFUN" id="64eR99jUzfv" role="1eOMHV">
                                     <node concept="3Tqbb2" id="64eR99jUzp1" role="10QFUM">
-                                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                                     </node>
                                     <node concept="37vLTw" id="64eR99jUyUY" role="10QFUP">
                                       <ref role="3cqZAo" node="64eR99jUrvm" resolve="node" />
@@ -5187,7 +5187,7 @@
                         </node>
                         <node concept="1mIQ4w" id="64eR99jUxj0" role="2OqNvi">
                           <node concept="chp4Y" id="64eR99jUxjI" role="cj9EA">
-                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="PeoplEntryPoint" />
+                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
                           </node>
                         </node>
                       </node>
