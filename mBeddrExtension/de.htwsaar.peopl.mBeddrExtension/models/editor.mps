@@ -7258,6 +7258,12 @@
     <node concept="3clFbW" id="7CRh4pHuaNL" role="jymVt">
       <node concept="3cqZAl" id="7CRh4pHuaNM" role="3clF45" />
       <node concept="3clFbS" id="7CRh4pHuaNO" role="3clF47">
+        <node concept="XkiVB" id="5_GXIwnbpAl" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="5_GXIwnbpTh" role="37wK5m">
+            <ref role="3cqZAo" node="7CRh4pHuaQj" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="7CRh4pHuaSp" role="3cqZAp">
           <node concept="37vLTI" id="7CRh4pHuaT2" role="3clFbG">
             <node concept="37vLTw" id="7CRh4pHuaTA" role="37vLTx">
@@ -7600,7 +7606,7 @@
                 <ref role="3cqZAo" node="7CRh4pHwaoJ" resolve="handler" />
               </node>
               <node concept="liA8E" id="7CRh4pHweZM" role="2OqNvi">
-                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
                 <node concept="37vLTw" id="7CRh4pHweZN" role="37wK5m">
                   <ref role="3cqZAo" node="3Mm3FE9TENh" resolve="myEditorContext" />
                 </node>
@@ -7814,7 +7820,7 @@
                   <ref role="3cqZAo" node="7CRh4pHwaoJ" resolve="handler" />
                 </node>
                 <node concept="liA8E" id="7CRh4pHwmbu" role="2OqNvi">
-                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
                 </node>
               </node>
             </node>
@@ -8797,7 +8803,7 @@
         <node concept="3cqZAl" id="7CRh4pHuLmM" role="3clF45" />
         <node concept="3clFbS" id="7CRh4pHuLmO" role="3clF47">
           <node concept="XkiVB" id="7CRh4pHuLxZ" role="3cqZAp">
-            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
+            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
             <node concept="37vLTw" id="7CRh4pHuLzB" role="37wK5m">
               <ref role="3cqZAo" node="7CRh4pHuLn1" resolve="ownerNode" />
             </node>

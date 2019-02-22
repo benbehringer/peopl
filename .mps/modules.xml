@@ -8,9 +8,9 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.runtime/de.htwsaar.peopl.baseLanguageExtension.runtime.msd" folder="peopl.coreExtensionBaseLanguage" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension.statistics/de.htwsaar.peopl.baseLanguageExtension.statistics.msd" folder="peopl.coreExtensionBaseLanguage" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/de.htwsaar.peopl.baseLanguageExtension/de.htwsaar.peopl.baseLanguageExtension.mpl" folder="peopl.coreExtensionBaseLanguage" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/de.htwsaar.peopl.projectview.common.msd" folder="peopl.core.projectview" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.modular/de.htwsaar.peopl.projectview.modular.msd" folder="peopl.core.projectview" />
+      <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.product/de.htwsaar.peopl.projectview.product.msd" folder="peopl.core.projectview" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.embedded/de.htwsaar.peopl.view.embedded.mpl" folder="peopl.coreExtensionBaseLanguage" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.hiding/de.htwsaar.peopl.view.hiding.mpl" folder="peopl.coreExtensionBaseLanguage" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.modular/de.htwsaar.peopl.view.modular.mpl" folder="peopl.coreExtensionBaseLanguage" />
@@ -18,31 +18,31 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.htwsaar.peopl.view.product/de.htwsaar.peopl.view.product.mpl" folder="peopl.coreExtensionBaseLanguage" />
       <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="playground" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureListener/de.htwsaar.peopl.core.featureListener.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaaar.peopl.core.satSolver/de.htwsaaar.peopl.core.satSolver.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.coreStatisticsExtension/de.htwsaar.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.csvWriter/de.htwsaar.peopl.core.csvWriter.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core.featureConfig" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureListener/de.htwsaar.peopl.core.featureListener.msd" folder="peopl.core.featureConfig" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.essential" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.modularTypeChecking/de.htwsaar.peopl.core.modularTypeChecking.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.modularTypeChecking/de.htwsaar.peopl.core.modularTypeChecking.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" folder="peopl.core.essential" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.shortcuts.runtime/de.htwsaar.peopl.core.shortcuts.runtime.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.shortcuts/de.htwsaar.peopl.core.shortcuts.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.shortcuts.runtime/de.htwsaar.peopl.core.shortcuts.runtime.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.shortcuts/de.htwsaar.peopl.core.shortcuts.mpl" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.statistics/de.htwsaar.peopl.core.statistics.msd" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.tools/de.htwsaar.peopl.core.tools.msd" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.toolsLanguage/de.htwsaar.peopl.core.toolsLanguage.mpl" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core.essential" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.annotative/de.htwsaar.peopl.core.view.annotative.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.embedded/de.htwsaar.peopl.core.view.embedded.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.annotative/de.htwsaar.peopl.core.view.annotative.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.embedded/de.htwsaar.peopl.core.view.embedded.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.modular/de.htwsaar.peopl.core.view.modular.mpl" folder="peopl.core.essential" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" folder="peopl.core" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" folder="peopl.core" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.preprocessor/de.htwsaar.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.product/de.htwsaar.peopl.core.view.product.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.runtime/de.htwsaar.peopl.core.view.runtime.msd" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/languages/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang/de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.commonHeaders/de.htwsaar.peopl.commonHeaders.msd" folder="peopl.coreExtensionMbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/de.htwsaar.peopl.mBeddrExtension.runtime.msd" folder="peopl.coreExtensionMbeddrC" />

@@ -565,6 +565,12 @@
     <node concept="3clFbW" id="6bj2b$tHC_U" role="jymVt">
       <node concept="3cqZAl" id="6bj2b$tHC_V" role="3clF45" />
       <node concept="3clFbS" id="6bj2b$tHC_X" role="3clF47">
+        <node concept="XkiVB" id="5_GXIwnbgiw" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="5_GXIwnbgmA" role="37wK5m">
+            <ref role="3cqZAo" node="6bj2b$tHCBI" resolve="node" />
+          </node>
+        </node>
         <node concept="3clFbF" id="6bj2b$tHCSp" role="3cqZAp">
           <node concept="37vLTI" id="6bj2b$tHCUu" role="3clFbG">
             <node concept="37vLTw" id="6bj2b$tHCVv" role="37vLTx">
@@ -681,7 +687,7 @@
                 <ref role="3cqZAo" node="6CtlALKqxFj" resolve="handler" />
               </node>
               <node concept="liA8E" id="6CtlALKq_Cj" role="2OqNvi">
-                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
                 <node concept="37vLTw" id="6CtlALKq_F5" role="37wK5m">
                   <ref role="3cqZAo" node="6bj2b$tHCJ4" resolve="myEditorContext" />
                 </node>
@@ -834,7 +840,7 @@
                   <ref role="3cqZAo" node="6CtlALKqxFj" resolve="handler" />
                 </node>
                 <node concept="liA8E" id="6CtlALKqOcO" role="2OqNvi">
-                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
                 </node>
               </node>
             </node>
@@ -889,7 +895,7 @@
         <node concept="3cqZAl" id="6bj2b$tHLRE" role="3clF45" />
         <node concept="3clFbS" id="6bj2b$tHLRG" role="3clF47">
           <node concept="XkiVB" id="6bj2b$tHLWr" role="3cqZAp">
-            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
+            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
             <node concept="37vLTw" id="6bj2b$tHLWM" role="37wK5m">
               <ref role="3cqZAo" node="6bj2b$tHLS1" resolve="ownerNode" />
             </node>
@@ -1145,12 +1151,6 @@
         <node concept="3Tm1VV" id="6HiUIyL73i8" role="1B3o_S" />
         <node concept="3uibUv" id="6HiUIyL73ia" role="3clF45">
           <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
-        </node>
-        <node concept="37vLTG" id="6HiUIyL73ib" role="3clF46">
-          <property role="TrG5h" value="editorContext" />
-          <node concept="3uibUv" id="6HiUIyL73ic" role="1tU5fm">
-            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
-          </node>
         </node>
         <node concept="37vLTG" id="6HiUIyL73id" role="3clF46">
           <property role="TrG5h" value="elementNode" />
@@ -1427,9 +1427,6 @@
                   </node>
                   <node concept="liA8E" id="6HiUIyL74bp" role="2OqNvi">
                     <ref role="37wK5l" to="iwf0:~BaseConceptEditor.createEditorCell(jetbrains.mps.openapi.editor.EditorContext,org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createEditorCell" />
-                    <node concept="37vLTw" id="6HiUIyL74bq" role="37wK5m">
-                      <ref role="3cqZAo" to="emqf:~AbstractCellListHandler.myEditorContext" resolve="myEditorContext" />
-                    </node>
                     <node concept="2OqwBi" id="6HiUIyL74br" role="37wK5m">
                       <node concept="2OqwBi" id="6HiUIyL74bs" role="2Oq$k0">
                         <node concept="2OqwBi" id="6HiUIyL74bt" role="2Oq$k0">
