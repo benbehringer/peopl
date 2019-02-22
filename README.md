@@ -11,11 +11,11 @@ Installation instructions:
 - Download the mbeddr [2018.3.3](https://github.com/mbeddr/mbeddr.core/releases/download/nightly-623/com.mbeddr.allInOne-1.2.21270.9e34c0a-MPS-2018.3.3.zip) plugins
 - Copy the mbeddr plugins into MPS. 
 ```
-cp -r ./com.mbeddr.allInOne_2017_2_0/plugins/* /Applications/MPS\ 2017.2.2.app/Contents/plugins/
+cp -r ./com.mbeddr.allInOne-1.2.21270.9e34c0a-MPS-2018.3.3/plugins/* /Applications/MPS\ 2018.3.3.app/Contents/plugins/
 ```
 - Remove mbeddr's projectview plugins, since we currently provide them with PEoPL 
 ```
-find /Applications/MPS\ 2017.2.2.app/Contents/plugins/ -type f -name '*projectview*' -exec rm -rf {} \;
+find /Applications/MPS\ 2017.3.3.app/Contents/plugins/ -type f -name '*projectview*' -exec rm -rf {} \;
 ```
 - Open MPS and load the PEoPL project (this branch)
 - Make the project (multiple times), while ignoring type checking errors (i.e., it should compile nevertheless)
