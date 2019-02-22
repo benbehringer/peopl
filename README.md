@@ -19,5 +19,5 @@ find /Applications/MPS\ 2017.3.3.app/Contents/plugins/ -type f -name '*projectvi
 ```
 - Open MPS and load the PEoPL project (this branch)
 - Make the project (multiple times), while ignoring type checking errors (i.e., it should compile nevertheless)
-- If you experience problems while building build go to the directory peopl->core and build "essential", "tools", "view" (right click the directories and choose rebuild). Then goto the peopl directory and build "coreExtensionBaseLanguage".
+- If you experience problems while building go to the directory peopl->core and build "essential", "tools", "view" (right click the directories and choose rebuild). Then go to the peopl directory and build "coreExtensionBaseLanguage".
 - Open the "Stack" solution and play with the classes
