@@ -136,9 +136,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -611,9 +611,9 @@
             <node concept="3cpWsb" id="3GyZupR5HYh" role="1tU5fm" />
           </node>
         </node>
-        <node concept="34ab3g" id="3GyZupR5HYi" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="3GyZupR5HYj" role="34bqiv">
+        <node concept="2xdQw9" id="VY0JpF2YIp" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="3GyZupR5HYj" role="9lYJi">
             <node concept="Xl_RD" id="3GyZupR5HYk" role="3uHU7w">
               <property role="Xl_RC" value=" ms" />
             </node>
@@ -1043,9 +1043,9 @@
             <node concept="3cpWsb" id="7zTQQdmL6Xg" role="1tU5fm" />
           </node>
         </node>
-        <node concept="34ab3g" id="7zTQQdmL6Xh" role="3cqZAp">
-          <property role="35gtTG" value="info" />
-          <node concept="3cpWs3" id="7zTQQdmL6Xi" role="34bqiv">
+        <node concept="2xdQw9" id="VY0JpF2YIN" role="3cqZAp">
+          <property role="2xdLsb" value="info" />
+          <node concept="3cpWs3" id="7zTQQdmL6Xi" role="9lYJi">
             <node concept="Xl_RD" id="7zTQQdmL6Xj" role="3uHU7w">
               <property role="Xl_RC" value=" ms" />
             </node>

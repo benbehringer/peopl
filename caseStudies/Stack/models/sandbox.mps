@@ -207,9 +207,9 @@
       <concept id="6294437645951090041" name="de.htwsaar.peopl.view.embedded.structure.ShowMethodAnnotations" flags="ng" index="3sAez9" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -500,9 +500,9 @@
           </node>
           <node concept="2wexfA" id="74e0r53Uu77" role="3cqZAp">
             <node concept="3clFbS" id="74e0r53Uu78" role="9aQI4">
-              <node concept="34ab3g" id="74e0r53Uub_" role="3cqZAp">
-                <property role="35gtTG" value="info" />
-                <node concept="3cpWs3" id="74e0r53UulS" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF2YHP" role="3cqZAp">
+                <property role="2xdLsb" value="info" />
+                <node concept="3cpWs3" id="74e0r53UulS" role="9lYJi">
                   <node concept="Xl_RD" id="74e0r53Uuqs" role="3uHU7B">
                     <property role="Xl_RC" value="push(): total number of operations: " />
                   </node>
@@ -571,9 +571,9 @@
                   </node>
                   <node concept="2wexfA" id="74e0r53UtmR" role="3cqZAp">
                     <node concept="3clFbS" id="74e0r53UtmS" role="9aQI4">
-                      <node concept="34ab3g" id="74e0r53Uvsm" role="3cqZAp">
-                        <property role="35gtTG" value="info" />
-                        <node concept="3cpWs3" id="74e0r53Uvsn" role="34bqiv">
+                      <node concept="2xdQw9" id="VY0JpF2YI1" role="3cqZAp">
+                        <property role="2xdLsb" value="info" />
+                        <node concept="3cpWs3" id="74e0r53Uvsn" role="9lYJi">
                           <node concept="Xl_RD" id="74e0r53Uvso" role="3uHU7B">
                             <property role="Xl_RC" value="pop(): total number of operations: " />
                           </node>
@@ -899,9 +899,9 @@
               <node concept="3clFbH" id="5pEbcVRWOdS" role="3cqZAp" />
               <node concept="2$JKZl" id="5pEbcVRWOi4" role="3cqZAp">
                 <node concept="3clFbS" id="5pEbcVRWOi6" role="2LFqv$">
-                  <node concept="34ab3g" id="74e0r53Urk5" role="3cqZAp">
-                    <property role="35gtTG" value="info" />
-                    <node concept="2YIFZM" id="74e0r53UrnL" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF2YId" role="3cqZAp">
+                    <property role="2xdLsb" value="info" />
+                    <node concept="2YIFZM" id="74e0r53UrnL" role="9lYJi">
                       <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                       <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
                       <node concept="2OqwBi" id="74e0r53Urlm" role="37wK5m">

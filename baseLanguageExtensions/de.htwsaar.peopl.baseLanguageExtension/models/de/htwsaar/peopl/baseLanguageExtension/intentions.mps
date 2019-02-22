@@ -241,9 +241,9 @@
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -508,9 +508,9 @@
         <node concept="1X3_iC" id="5rOrZhwuJeE" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="2gqGZyjT0Kt" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="2gqGZyjT28_" role="34bqiv">
+          <node concept="2xdQw9" id="VY0JpF30j7" role="8Wnug">
+            <property role="2xdLsb" value="warn" />
+            <node concept="3cpWs3" id="2gqGZyjT28_" role="9lYJi">
               <node concept="Xl_RD" id="2gqGZyjT2iS" role="3uHU7B">
                 <property role="Xl_RC" value="Choosen Module" />
               </node>
@@ -1412,9 +1412,9 @@
             <node concept="2es0OD" id="1lp5jtrbF9T" role="2OqNvi">
               <node concept="1bVj0M" id="1lp5jtrbF9V" role="23t8la">
                 <node concept="3clFbS" id="1lp5jtrbF9W" role="1bW5cS">
-                  <node concept="34ab3g" id="1lp5jtr3DWw" role="3cqZAp">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="3cpWs3" id="1lp5jtr3EL7" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30jl" role="3cqZAp">
+                    <property role="2xdLsb" value="warn" />
+                    <node concept="3cpWs3" id="1lp5jtr3EL7" role="9lYJi">
                       <node concept="2OqwBi" id="1lp5jtr3FpD" role="3uHU7w">
                         <node concept="2JrnkZ" id="1lp5jtr3FhP" role="2Oq$k0">
                           <node concept="37vLTw" id="1lp5jtr3ERH" role="2JrQYb">
@@ -3082,9 +3082,9 @@
         <node concept="1X3_iC" id="68etZLB7zOt" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="68etZLB7bAE" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="68etZLB7bPd" role="34bqiv">
+          <node concept="2xdQw9" id="VY0JpF30j_" role="8Wnug">
+            <property role="2xdLsb" value="warn" />
+            <node concept="3cpWs3" id="68etZLB7bPd" role="9lYJi">
               <node concept="37vLTw" id="68etZLB7bRm" role="3uHU7w">
                 <ref role="3cqZAo" node="5rOrZhwu0mG" resolve="annotatedNode" />
               </node>
@@ -3871,9 +3871,9 @@
               <node concept="1X3_iC" id="2voXLpKX2L3" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="CBkP0djUT8" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="CBkP0djUTa" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30jJ" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="Xl_RD" id="CBkP0djUTa" role="9lYJi">
                     <property role="Xl_RC" value="unassign wrapper" />
                   </node>
                 </node>

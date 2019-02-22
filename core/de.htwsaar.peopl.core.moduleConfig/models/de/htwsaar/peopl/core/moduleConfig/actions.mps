@@ -109,9 +109,9 @@
       <concept id="5584396657084920670" name="jetbrains.mps.lang.actions.structure.NodeSetupFunction_EnclosingNode" flags="nn" index="1r4N1M" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -144,7 +144,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -238,9 +238,9 @@
           <node concept="1X3_iC" id="jenxS68yWb" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="7t9Yo1qRmRY" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="7t9Yo1qRmZN" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF2YV_" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="3cpWs3" id="7t9Yo1qRmZN" role="9lYJi">
                 <node concept="1r4N1M" id="7t9Yo1qRn2Q" role="3uHU7w" />
                 <node concept="Xl_RD" id="7t9Yo1qRmS0" role="3uHU7B">
                   <property role="Xl_RC" value="enclosing node: " />
@@ -251,9 +251,9 @@
           <node concept="1X3_iC" id="jenxS68yWc" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="7t9Yo1qRn7O" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="7t9Yo1qRnfx" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF2YVJ" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="3cpWs3" id="7t9Yo1qRnfx" role="9lYJi">
                 <node concept="1r4Lsj" id="7t9Yo1qRni8" role="3uHU7w" />
                 <node concept="Xl_RD" id="7t9Yo1qRn7Q" role="3uHU7B">
                   <property role="Xl_RC" value="new node: " />
@@ -264,9 +264,9 @@
           <node concept="1X3_iC" id="jenxS68yWd" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="7t9Yo1qRqYi" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="7t9Yo1qRr6E" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF2YVT" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="3cpWs3" id="7t9Yo1qRr6E" role="9lYJi">
                 <node concept="Xl_RD" id="7t9Yo1qRqYk" role="3uHU7B">
                   <property role="Xl_RC" value="current model: " />
                 </node>
@@ -291,9 +291,9 @@
               <node concept="1X3_iC" id="jenxS68yGq" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="7t9Yo1qRnlU" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="7t9Yo1qRnrJ" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF2YW3" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="7t9Yo1qRnrJ" role="9lYJi">
                     <node concept="2OqwBi" id="7t9Yo1qRnI5" role="3uHU7w">
                       <node concept="2GrUjf" id="7t9Yo1qRns3" role="2Oq$k0">
                         <ref role="2Gs0qQ" node="7t9Yo1qQQ1M" resolve="currentModel" />
@@ -335,9 +335,9 @@
                   <node concept="1X3_iC" id="jenxS68yMJ" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="7t9Yo1qRnYi" role="8Wnug">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="7t9Yo1qRnYk" role="34bqiv">
+                    <node concept="2xdQw9" id="VY0JpF2YWh" role="8Wnug">
+                      <property role="2xdLsb" value="warn" />
+                      <node concept="Xl_RD" id="7t9Yo1qRnYk" role="9lYJi">
                         <property role="Xl_RC" value="found config" />
                       </node>
                     </node>
@@ -350,9 +350,9 @@
                       <node concept="1X3_iC" id="jenxS68yQB" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="34ab3g" id="7t9Yo1qRo4U" role="8Wnug">
-                          <property role="35gtTG" value="warn" />
-                          <node concept="3cpWs3" id="7t9Yo1qRoeW" role="34bqiv">
+                        <node concept="2xdQw9" id="VY0JpF2YWn" role="8Wnug">
+                          <property role="2xdLsb" value="warn" />
+                          <node concept="3cpWs3" id="7t9Yo1qRoeW" role="9lYJi">
                             <node concept="2OqwBi" id="7t9Yo1qRoyy" role="3uHU7w">
                               <node concept="2GrUjf" id="7t9Yo1qRofg" role="2Oq$k0">
                                 <ref role="2Gs0qQ" node="7t9Yo1qQQLp" resolve="currentRoot" />
@@ -383,9 +383,9 @@
                           <node concept="1X3_iC" id="jenxS68yTx" role="lGtFl">
                             <property role="3V$3am" value="statement" />
                             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                            <node concept="34ab3g" id="7t9Yo1qRoJ1" role="8Wnug">
-                              <property role="35gtTG" value="warn" />
-                              <node concept="Xl_RD" id="7t9Yo1qRoJ3" role="34bqiv">
+                            <node concept="2xdQw9" id="VY0JpF2YW_" role="8Wnug">
+                              <property role="2xdLsb" value="warn" />
+                              <node concept="Xl_RD" id="7t9Yo1qRoJ3" role="9lYJi">
                                 <property role="Xl_RC" value="found product line config" />
                               </node>
                             </node>
@@ -462,9 +462,9 @@
           </node>
           <node concept="3clFbJ" id="4xZ$jUAQZET" role="3cqZAp">
             <node concept="3clFbS" id="4xZ$jUAQZEV" role="3clFbx">
-              <node concept="34ab3g" id="4xZ$jUAQZYA" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <node concept="3cpWs3" id="4xZ$jUAR0gM" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF2YWF" role="3cqZAp">
+                <property role="2xdLsb" value="error" />
+                <node concept="3cpWs3" id="4xZ$jUAR0gM" role="9lYJi">
                   <node concept="Xl_RD" id="4xZ$jUAR0hM" role="3uHU7w">
                     <property role="Xl_RC" value=") or a product line configuration there." />
                   </node>

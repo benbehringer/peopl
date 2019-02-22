@@ -287,11 +287,10 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1383,9 +1382,9 @@
             <node concept="1X3_iC" id="3GodQGBYEx_" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="34ab3g" id="a7wTKjrs5y" role="8Wnug">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="a7wTKjrs5$" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF2YWT" role="8Wnug">
+                <property role="2xdLsb" value="warn" />
+                <node concept="Xl_RD" id="a7wTKjrs5$" role="9lYJi">
                   <property role="Xl_RC" value=" case1" />
                 </node>
               </node>
@@ -1713,9 +1712,9 @@
               <node concept="1X3_iC" id="3GodQGBYEzk" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="a7wTKjrwbQ" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="a7wTKjrwbS" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF2YWZ" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="Xl_RD" id="a7wTKjrwbS" role="9lYJi">
                     <property role="Xl_RC" value=" case 2" />
                   </node>
                 </node>
@@ -1994,9 +1993,9 @@
               <node concept="1X3_iC" id="3GodQGBYEBE" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="a7wTKjr$gQ" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="a7wTKjr$gS" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF2YX5" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="Xl_RD" id="a7wTKjr$gS" role="9lYJi">
                     <property role="Xl_RC" value=" case 3" />
                   </node>
                 </node>
@@ -2004,9 +2003,9 @@
               <node concept="1X3_iC" id="3GodQGBYE_7" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="4Y0OrDTUMbV" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="3cpWs3" id="4Y0OrDTUQkM" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF2YXb" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="3cpWs3" id="4Y0OrDTUQkM" role="9lYJi">
                     <node concept="2OqwBi" id="4Y0OrDTURxD" role="3uHU7w">
                       <node concept="37vLTw" id="4Y0OrDTUQ$I" role="2Oq$k0">
                         <ref role="3cqZAo" node="1s5U4YkbQDx" resolve="moduleList" />
@@ -4922,9 +4921,9 @@
               </node>
               <node concept="3clFbJ" id="j0dRPTs5YV" role="3cqZAp">
                 <node concept="3clFbS" id="j0dRPTs5YX" role="3clFbx">
-                  <node concept="34ab3g" id="j0dRPTsbyP" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="j0dRPTsbyR" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF2YXp" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="j0dRPTsbyR" role="9lYJi">
                       <property role="Xl_RC" value="ModConfBuilder -&gt; removeSingleElementSetsFromChains  : Size 0 list found !! All lists should be at least size 1" />
                     </node>
                   </node>
@@ -6225,13 +6224,12 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="5BOueCCLQai" role="TDEfX">
-                      <node concept="34ab3g" id="5BOueCCLQaj" role="3cqZAp">
-                        <property role="35gtTG" value="info" />
-                        <property role="34fQS0" value="true" />
-                        <node concept="Xl_RD" id="5BOueCCLQak" role="34bqiv">
+                      <node concept="2xdQw9" id="VY0JpF2YXv" role="3cqZAp">
+                        <property role="2xdLsb" value="info" />
+                        <node concept="Xl_RD" id="5BOueCCLQak" role="9lYJi">
                           <property role="Xl_RC" value="There are some minor issues while calculating the active fragments, but the product configuration is fine." />
                         </node>
-                        <node concept="37vLTw" id="5BOueCCLQal" role="34bMjA">
+                        <node concept="37vLTw" id="5BOueCCLQal" role="9lYJj">
                           <ref role="3cqZAo" node="5BOueCCLQag" resolve="e" />
                         </node>
                       </node>

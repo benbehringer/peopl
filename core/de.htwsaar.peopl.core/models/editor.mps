@@ -46,7 +46,6 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="v5it" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.vcs.log.graph.utils(MPS.IDEA/)" />
     <import index="qvne" ref="r:8ff33705-85bf-4855-805c-06d68fbe233c(jetbrains.mps.editor.runtime.descriptor)" />
-    <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.htwsaar.peopl.core.editor)" />
     <import index="7oz1" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.configuration(MPS.Editor/)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
   </imports>
@@ -488,10 +487,6 @@
         <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
         <child id="5721587534047265375" name="throwable" index="9lYJj" />
-      </concept>
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
       </concept>
     </language>
     <language id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal">
@@ -2232,9 +2227,9 @@
           <node concept="1X3_iC" id="T6eAVcKxAV" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="2myhIIWIX_T" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="2myhIIWIX_V" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF30Yn" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="Xl_RD" id="2myhIIWIX_V" role="9lYJi">
                 <property role="Xl_RC" value="Moving Module -&gt; UP" />
               </node>
             </node>
@@ -2313,9 +2308,9 @@
           <node concept="1X3_iC" id="T6eAVcKxAN" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="2myhIIWIXAZ" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="Xl_RD" id="2myhIIWIXB0" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF30Yt" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="Xl_RD" id="2myhIIWIXB0" role="9lYJi">
                 <property role="Xl_RC" value="Moving Module -&gt; DOWN" />
               </node>
             </node>
@@ -5535,10 +5530,17 @@
       </node>
       <node concept="10Nm6u" id="Eft$85y1IS" role="33vP2m" />
     </node>
+    <node concept="2tJIrI" id="VY0JpEUP7V" role="jymVt" />
     <node concept="2tJIrI" id="Eft$85xElk" role="jymVt" />
     <node concept="3clFbW" id="Eft$85xGy9" role="jymVt">
       <node concept="3cqZAl" id="Eft$85xGya" role="3clF45" />
       <node concept="3clFbS" id="Eft$85xGyc" role="3clF47">
+        <node concept="XkiVB" id="VY0JpEUOIC" role="3cqZAp">
+          <ref role="37wK5l" to="exr9:~AbstractCellProvider.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode)" resolve="AbstractCellProvider" />
+          <node concept="37vLTw" id="VY0JpEUOYf" role="37wK5m">
+            <ref role="3cqZAo" node="Eft$85xGLm" resolve="node" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="22P$DZt9phb" role="3cqZAp">
           <node concept="3cpWsn" id="22P$DZt9phc" role="3cpWs9">
             <property role="TrG5h" value="mySModule" />
@@ -5561,9 +5563,9 @@
         </node>
         <node concept="3clFbJ" id="Eft$85xZQ9" role="3cqZAp">
           <node concept="3clFbS" id="Eft$85xZQb" role="3clFbx">
-            <node concept="34ab3g" id="Eft$85y0jb" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="3cpWs3" id="696_AADu0c8" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpEV08w" role="3cqZAp">
+              <property role="2xdLsb" value="error" />
+              <node concept="3cpWs3" id="696_AADu0c8" role="9lYJi">
                 <node concept="2OqwBi" id="696_AADu33I" role="3uHU7w">
                   <node concept="2OqwBi" id="696_AADu2WJ" role="2Oq$k0">
                     <node concept="37vLTw" id="696_AADu2Vf" role="2Oq$k0">
@@ -5779,9 +5781,9 @@
             <node concept="1X3_iC" id="3VRNfcH6ptW" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="34ab3g" id="6nZxEcYh$mg" role="8Wnug">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="6nZxEcYh$mi" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30Yz" role="8Wnug">
+                <property role="2xdLsb" value="warn" />
+                <node concept="Xl_RD" id="6nZxEcYh$mi" role="9lYJi">
                   <property role="Xl_RC" value="create cell" />
                 </node>
               </node>
@@ -5792,9 +5794,9 @@
                 <node concept="1X3_iC" id="3VRNfcH6pGV" role="lGtFl">
                   <property role="3V$3am" value="statement" />
                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                  <node concept="34ab3g" id="2mqHjRKGNDm" role="8Wnug">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="Xl_RD" id="2mqHjRKGNDo" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30YD" role="8Wnug">
+                    <property role="2xdLsb" value="warn" />
+                    <node concept="Xl_RD" id="2mqHjRKGNDo" role="9lYJi">
                       <property role="Xl_RC" value="providers is not empty" />
                     </node>
                   </node>
@@ -14570,9 +14572,9 @@
                   <node concept="1X3_iC" id="6naEs2g6gUA" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="6naEs2g6gUB" role="8Wnug">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="3cpWs3" id="6naEs2g6gUC" role="34bqiv">
+                    <node concept="2xdQw9" id="VY0JpF30YJ" role="8Wnug">
+                      <property role="2xdLsb" value="warn" />
+                      <node concept="3cpWs3" id="6naEs2g6gUC" role="9lYJi">
                         <node concept="Xl_RD" id="6naEs2g6gUD" role="3uHU7B">
                           <property role="Xl_RC" value="traverserID: " />
                         </node>

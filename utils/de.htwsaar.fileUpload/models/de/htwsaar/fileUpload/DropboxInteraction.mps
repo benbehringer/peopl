@@ -241,11 +241,10 @@
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167228628751" name="hasException" index="34fQS0" />
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
-        <child id="1167227561449" name="exception" index="34bMjA" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1119,13 +1118,12 @@
                   </node>
                 </node>
               </node>
-              <node concept="34ab3g" id="4dcC0gKTjW" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="4dcC0gKTjY" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30lD" role="3cqZAp">
+                <property role="2xdLsb" value="error" />
+                <node concept="Xl_RD" id="4dcC0gKTjY" role="9lYJi">
                   <property role="Xl_RC" value="Error uploading to Dropbox: " />
                 </node>
-                <node concept="37vLTw" id="4dcC0gKTk0" role="34bMjA">
+                <node concept="37vLTw" id="4dcC0gKTk0" role="9lYJj">
                   <ref role="3cqZAo" node="5I0bs5jxOCU" resolve="e" />
                 </node>
               </node>
@@ -1173,10 +1171,9 @@
                   </node>
                 </node>
               </node>
-              <node concept="34ab3g" id="4dcC0gKU2S" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="3cpWs3" id="4dcC0gKVRi" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30lL" role="3cqZAp">
+                <property role="2xdLsb" value="error" />
+                <node concept="3cpWs3" id="4dcC0gKVRi" role="9lYJi">
                   <node concept="Xl_RD" id="4dcC0gKW0W" role="3uHU7w">
                     <property role="Xl_RC" value="\&quot;: " />
                   </node>
@@ -1189,7 +1186,7 @@
                     </node>
                   </node>
                 </node>
-                <node concept="37vLTw" id="4dcC0gKU2W" role="34bMjA">
+                <node concept="37vLTw" id="4dcC0gKU2W" role="9lYJj">
                   <ref role="3cqZAo" node="5I0bs5jxXqB" resolve="e" />
                 </node>
               </node>
@@ -2024,13 +2021,12 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="34ab3g" id="4dcC0gKOGD" role="3cqZAp">
-                          <property role="35gtTG" value="error" />
-                          <property role="34fQS0" value="true" />
-                          <node concept="Xl_RD" id="4dcC0gKOGF" role="34bqiv">
+                        <node concept="2xdQw9" id="VY0JpF30m1" role="3cqZAp">
+                          <property role="2xdLsb" value="error" />
+                          <node concept="Xl_RD" id="4dcC0gKOGF" role="9lYJi">
                             <property role="Xl_RC" value="Error uploading to Dropbox: " />
                           </node>
-                          <node concept="37vLTw" id="4dcC0gKOGH" role="34bMjA">
+                          <node concept="37vLTw" id="4dcC0gKOGH" role="9lYJj">
                             <ref role="3cqZAo" node="5I0bs5jyV_R" resolve="e" />
                           </node>
                         </node>
@@ -2170,13 +2166,12 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="34ab3g" id="4dcC0gKIQr" role="3cqZAp">
-                          <property role="35gtTG" value="error" />
-                          <property role="34fQS0" value="true" />
-                          <node concept="Xl_RD" id="4dcC0gKIQt" role="34bqiv">
+                        <node concept="2xdQw9" id="VY0JpF30m9" role="3cqZAp">
+                          <property role="2xdLsb" value="error" />
+                          <node concept="Xl_RD" id="4dcC0gKIQt" role="9lYJi">
                             <property role="Xl_RC" value="Error uploading to Dropbox: " />
                           </node>
-                          <node concept="37vLTw" id="4dcC0gKIQv" role="34bMjA">
+                          <node concept="37vLTw" id="4dcC0gKIQv" role="9lYJj">
                             <ref role="3cqZAo" node="5I0bs5jzasC" resolve="e" />
                           </node>
                         </node>
@@ -2222,13 +2217,12 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="34ab3g" id="4dcC0gKCOf" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <property role="34fQS0" value="true" />
-                    <node concept="Xl_RD" id="4dcC0gKCOh" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30mh" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="4dcC0gKCOh" role="9lYJi">
                       <property role="Xl_RC" value="Error uploading to Dropbox: " />
                     </node>
-                    <node concept="37vLTw" id="4dcC0gKCOj" role="34bMjA">
+                    <node concept="37vLTw" id="4dcC0gKCOj" role="9lYJj">
                       <ref role="3cqZAo" node="5I0bs5jzqeQ" resolve="e" />
                     </node>
                   </node>
@@ -2281,10 +2275,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="34ab3g" id="4dcC0gKt9C" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <property role="34fQS0" value="true" />
-                    <node concept="3cpWs3" id="4dcC0gK_2D" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30mp" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="3cpWs3" id="4dcC0gK_2D" role="9lYJi">
                       <node concept="Xl_RD" id="4dcC0gK_Jf" role="3uHU7w">
                         <property role="Xl_RC" value="\&quot;" />
                       </node>
@@ -2297,7 +2290,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="37vLTw" id="4dcC0gKt9G" role="34bMjA">
+                    <node concept="37vLTw" id="4dcC0gKt9G" role="9lYJj">
                       <ref role="3cqZAo" node="5I0bs5jzAZo" resolve="e" />
                     </node>
                   </node>
@@ -2361,9 +2354,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="4dcC0gKhyp" role="3cqZAp">
-          <property role="35gtTG" value="error" />
-          <node concept="3cpWs3" id="4dcC0gKoR0" role="34bqiv">
+        <node concept="2xdQw9" id="VY0JpF30mD" role="3cqZAp">
+          <property role="2xdLsb" value="error" />
+          <node concept="3cpWs3" id="4dcC0gKoR0" role="9lYJi">
             <node concept="2OqwBi" id="4dcC0gKqJh" role="3uHU7w">
               <node concept="37vLTw" id="4dcC0gKq1S" role="2Oq$k0">
                 <ref role="3cqZAo" node="5I0bs5jy5Wq" resolve="thrown" />
@@ -2488,13 +2481,12 @@
                   </node>
                 </node>
               </node>
-              <node concept="34ab3g" id="4dcC0gKdDc" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <property role="34fQS0" value="true" />
-                <node concept="Xl_RD" id="4dcC0gKdDe" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30mR" role="3cqZAp">
+                <property role="2xdLsb" value="error" />
+                <node concept="Xl_RD" id="4dcC0gKdDe" role="9lYJi">
                   <property role="Xl_RC" value="Error uploading to Dropbox: interrupted during backoff." />
                 </node>
-                <node concept="37vLTw" id="4dcC0gKe8f" role="34bMjA">
+                <node concept="37vLTw" id="4dcC0gKe8f" role="9lYJj">
                   <ref role="3cqZAo" node="5I0bs5jyJey" resolve="e" />
                 </node>
               </node>

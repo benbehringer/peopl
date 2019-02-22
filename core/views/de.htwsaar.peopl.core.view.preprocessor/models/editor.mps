@@ -293,9 +293,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -2768,9 +2768,9 @@
                                 <node concept="1X3_iC" id="7abbsUVdsCC" role="lGtFl">
                                   <property role="3V$3am" value="statement" />
                                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                  <node concept="34ab3g" id="7abbsUVaeLs" role="8Wnug">
-                                    <property role="35gtTG" value="warn" />
-                                    <node concept="3cpWs3" id="7abbsUVaeUp" role="34bqiv">
+                                  <node concept="2xdQw9" id="VY0JpF2Yyl" role="8Wnug">
+                                    <property role="2xdLsb" value="warn" />
+                                    <node concept="3cpWs3" id="7abbsUVaeUp" role="9lYJi">
                                       <node concept="2OqwBi" id="7abbsUVaf9z" role="3uHU7w">
                                         <node concept="37vLTw" id="7abbsUVaf3R" role="2Oq$k0">
                                           <ref role="3cqZAo" node="6naEs2g9nl0" resolve="wrappeeNodeCell" />
@@ -2858,9 +2858,9 @@
                                           <node concept="1X3_iC" id="7abbsUVdsBD" role="lGtFl">
                                             <property role="3V$3am" value="statement" />
                                             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                            <node concept="34ab3g" id="7abbsUVazKE" role="8Wnug">
-                                              <property role="35gtTG" value="warn" />
-                                              <node concept="3cpWs3" id="7abbsUVazNK" role="34bqiv">
+                                            <node concept="2xdQw9" id="VY0JpF2Yyz" role="8Wnug">
+                                              <property role="2xdLsb" value="warn" />
+                                              <node concept="3cpWs3" id="7abbsUVazNK" role="9lYJi">
                                                 <node concept="Xl_RD" id="7abbsUVazKG" role="3uHU7B">
                                                   <property role="Xl_RC" value="traverserID: " />
                                                 </node>
@@ -3007,9 +3007,9 @@
                                       </node>
                                       <node concept="3clFbJ" id="7abbsUV5BK1" role="3cqZAp">
                                         <node concept="3clFbS" id="7abbsUV5BK2" role="3clFbx">
-                                          <node concept="34ab3g" id="7abbsUV5BK3" role="3cqZAp">
-                                            <property role="35gtTG" value="warn" />
-                                            <node concept="Xl_RD" id="7abbsUV5BK4" role="34bqiv">
+                                          <node concept="2xdQw9" id="VY0JpF2YyL" role="3cqZAp">
+                                            <property role="2xdLsb" value="warn" />
+                                            <node concept="Xl_RD" id="7abbsUV5BK4" role="9lYJi">
                                               <property role="Xl_RC" value="wrappee is not null" />
                                             </node>
                                           </node>
@@ -3120,9 +3120,9 @@
                                 <node concept="1X3_iC" id="7abbsUV5BKJ" role="lGtFl">
                                   <property role="3V$3am" value="statement" />
                                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                  <node concept="34ab3g" id="7abbsUV5BKK" role="8Wnug">
-                                    <property role="35gtTG" value="warn" />
-                                    <node concept="2OqwBi" id="7abbsUV5BKL" role="34bqiv">
+                                  <node concept="2xdQw9" id="VY0JpF2YyR" role="8Wnug">
+                                    <property role="2xdLsb" value="warn" />
+                                    <node concept="2OqwBi" id="7abbsUV5BKL" role="9lYJi">
                                       <node concept="2OqwBi" id="7abbsUV5BKM" role="2Oq$k0">
                                         <node concept="2OqwBi" id="7abbsUV5BKN" role="2Oq$k0">
                                           <node concept="2OqwBi" id="7abbsUV5BKO" role="2Oq$k0">
@@ -3343,9 +3343,9 @@
                                           <node concept="1X3_iC" id="7abbsUVftD3" role="lGtFl">
                                             <property role="3V$3am" value="statement" />
                                             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                            <node concept="34ab3g" id="7abbsUVftD4" role="8Wnug">
-                                              <property role="35gtTG" value="warn" />
-                                              <node concept="3cpWs3" id="7abbsUVftD5" role="34bqiv">
+                                            <node concept="2xdQw9" id="VY0JpF2Yzd" role="8Wnug">
+                                              <property role="2xdLsb" value="warn" />
+                                              <node concept="3cpWs3" id="7abbsUVftD5" role="9lYJi">
                                                 <node concept="Xl_RD" id="7abbsUVftD6" role="3uHU7B">
                                                   <property role="Xl_RC" value="traverserID: " />
                                                 </node>
@@ -3848,9 +3848,9 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="6naEs2g9nli" role="3clF47">
-                      <node concept="34ab3g" id="6naEs2ga59o" role="3cqZAp">
-                        <property role="35gtTG" value="warn" />
-                        <node concept="Xl_RD" id="6naEs2ga59p" role="34bqiv">
+                      <node concept="2xdQw9" id="VY0JpF2Yzr" role="3cqZAp">
+                        <property role="2xdLsb" value="warn" />
+                        <node concept="Xl_RD" id="6naEs2ga59p" role="9lYJi">
                           <property role="Xl_RC" value=" am anfang " />
                         </node>
                       </node>
@@ -4048,9 +4048,9 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="34ab3g" id="6naEs2g9YIQ" role="3cqZAp">
-                        <property role="35gtTG" value="warn" />
-                        <node concept="Xl_RD" id="6naEs2g9YIS" role="34bqiv">
+                      <node concept="2xdQw9" id="VY0JpF2Yzx" role="3cqZAp">
+                        <property role="2xdLsb" value="warn" />
+                        <node concept="Xl_RD" id="6naEs2g9YIS" role="9lYJi">
                           <property role="Xl_RC" value=" yoyoyoyoyo " />
                         </node>
                       </node>
@@ -4328,9 +4328,9 @@
                   <node concept="1X3_iC" id="6naEs2g6gUA" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="6naEs2g6gUB" role="8Wnug">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="3cpWs3" id="6naEs2g6gUC" role="34bqiv">
+                    <node concept="2xdQw9" id="VY0JpF2YzB" role="8Wnug">
+                      <property role="2xdLsb" value="warn" />
+                      <node concept="3cpWs3" id="6naEs2g6gUC" role="9lYJi">
                         <node concept="Xl_RD" id="6naEs2g6gUD" role="3uHU7B">
                           <property role="Xl_RC" value="traverserID: " />
                         </node>

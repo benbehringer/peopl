@@ -439,9 +439,9 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal">
@@ -3550,9 +3550,9 @@
               </node>
               <node concept="9aQIb" id="4Yf2ORmUT_" role="9aQIa">
                 <node concept="3clFbS" id="4Yf2ORmUTA" role="9aQI4">
-                  <node concept="34ab3g" id="3Mm3FE9S$67" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="3Mm3FE9S$69" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30jP" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="3Mm3FE9S$69" role="9lYJi">
                       <property role="Xl_RC" value="Peopl: Ooops, we didn't see this use case coming. Please report." />
                     </node>
                   </node>
@@ -4088,9 +4088,9 @@
               </node>
               <node concept="9aQIb" id="4Yf2ORmlS5" role="9aQIa">
                 <node concept="3clFbS" id="4Yf2ORmlS6" role="9aQI4">
-                  <node concept="34ab3g" id="4ZBSC83_y8x" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="4ZBSC83_y8y" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30jV" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="4ZBSC83_y8y" role="9lYJi">
                       <property role="Xl_RC" value="Peopl: Ooops, we didn't see this use case coming. Please report." />
                     </node>
                   </node>
@@ -7060,9 +7060,9 @@
               <node concept="1X3_iC" id="y$c9ZEA0N7" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="y$c9ZEA0N8" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="y$c9ZEA0N9" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30k1" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="Xl_RD" id="y$c9ZEA0N9" role="9lYJi">
                     <property role="Xl_RC" value="no peopl class" />
                   </node>
                 </node>
@@ -7471,9 +7471,9 @@
           </node>
           <node concept="9aQIb" id="7CRh4pHun5u" role="9aQIa">
             <node concept="3clFbS" id="7CRh4pHun5v" role="9aQI4">
-              <node concept="34ab3g" id="7CRh4pHun7A" role="3cqZAp">
-                <property role="35gtTG" value="error" />
-                <node concept="Xl_RD" id="7CRh4pHun7C" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30k7" role="3cqZAp">
+                <property role="2xdLsb" value="error" />
+                <node concept="Xl_RD" id="7CRh4pHun7C" role="9lYJi">
                   <property role="Xl_RC" value="Not in basicModularity editor context" />
                 </node>
               </node>
@@ -12190,9 +12190,9 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="5p4tr4ldR4B" role="3eOfB_">
-                  <node concept="34ab3g" id="1Xb0dGx3FlW" role="3cqZAp">
-                    <property role="35gtTG" value="warn" />
-                    <node concept="Xl_RD" id="1Xb0dGx3FlY" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30kd" role="3cqZAp">
+                    <property role="2xdLsb" value="warn" />
+                    <node concept="Xl_RD" id="1Xb0dGx3FlY" role="9lYJi">
                       <property role="Xl_RC" value="insert at original keyword" />
                     </node>
                   </node>
@@ -12680,9 +12680,9 @@
               </node>
               <node concept="9aQIb" id="5p4tr4lf7f0" role="9aQIa">
                 <node concept="3clFbS" id="5p4tr4lf7f1" role="9aQI4">
-                  <node concept="34ab3g" id="5p4tr4lf80A" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="5p4tr4lf80B" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30kj" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="5p4tr4lf80B" role="9lYJi">
                       <property role="Xl_RC" value="Peopl: Ooops, we didn't see this use case coming. Please report." />
                     </node>
                   </node>
@@ -12858,9 +12858,9 @@
               </node>
               <node concept="9aQIb" id="5p4tr4lfseY" role="9aQIa">
                 <node concept="3clFbS" id="5p4tr4lfseZ" role="9aQI4">
-                  <node concept="34ab3g" id="5p4tr4lfsf0" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="5p4tr4lfsf1" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30kp" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="5p4tr4lfsf1" role="9lYJi">
                       <property role="Xl_RC" value="Peopl: Ooops, we didn't see this use case coming. Please report." />
                     </node>
                   </node>
@@ -15877,9 +15877,9 @@
           <node concept="1X3_iC" id="5TgnL0JsEWE" role="lGtFl">
             <property role="3V$3am" value="statement" />
             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="34ab3g" id="5scI5LoAuO3" role="8Wnug">
-              <property role="35gtTG" value="warn" />
-              <node concept="3cpWs3" id="5scI5LoA_bs" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF30kv" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="3cpWs3" id="5scI5LoA_bs" role="9lYJi">
                 <node concept="0IXxy" id="5scI5LoA_cv" role="3uHU7w" />
                 <node concept="Xl_RD" id="5scI5LoAuO5" role="3uHU7B">
                   <property role="Xl_RC" value="node: " />
@@ -16481,9 +16481,9 @@
             </node>
             <node concept="9aQIb" id="3Mm3FE9SUxR" role="9aQIa">
               <node concept="3clFbS" id="3Mm3FE9SUxS" role="9aQI4">
-                <node concept="34ab3g" id="5TgnL0Ju2gd" role="3cqZAp">
-                  <property role="35gtTG" value="error" />
-                  <node concept="Xl_RD" id="5TgnL0Ju2ge" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30kD" role="3cqZAp">
+                  <property role="2xdLsb" value="error" />
+                  <node concept="Xl_RD" id="5TgnL0Ju2ge" role="9lYJi">
                     <property role="Xl_RC" value="Peopl: Ooops, we didn't see this use case coming. Please report." />
                   </node>
                 </node>
@@ -16535,9 +16535,9 @@
               <node concept="1X3_iC" id="q735wx1eu3" role="lGtFl">
                 <property role="3V$3am" value="statement" />
                 <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                <node concept="34ab3g" id="q735wx1eu4" role="8Wnug">
-                  <property role="35gtTG" value="warn" />
-                  <node concept="Xl_RD" id="q735wx1eu5" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30kJ" role="8Wnug">
+                  <property role="2xdLsb" value="warn" />
+                  <node concept="Xl_RD" id="q735wx1eu5" role="9lYJi">
                     <property role="Xl_RC" value="original typed" />
                   </node>
                 </node>
@@ -16826,9 +16826,9 @@
                     </node>
                   </node>
                 </node>
-                <node concept="34ab3g" id="q735wx1exs" role="3cqZAp">
-                  <property role="35gtTG" value="info" />
-                  <node concept="3cpWs3" id="q735wx1ext" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30kP" role="3cqZAp">
+                  <property role="2xdLsb" value="info" />
+                  <node concept="3cpWs3" id="q735wx1ext" role="9lYJi">
                     <node concept="Xl_RD" id="q735wx1exu" role="3uHU7w">
                       <property role="Xl_RC" value=" ms" />
                     </node>
@@ -17022,9 +17022,9 @@
         <node concept="3clFbH" id="1EW$7SZesq_" role="3cqZAp" />
         <node concept="3clFbJ" id="1EW$7SZestm" role="3cqZAp">
           <node concept="3clFbS" id="1EW$7SZesto" role="3clFbx">
-            <node concept="34ab3g" id="1b04$NJmhVH" role="3cqZAp">
-              <property role="35gtTG" value="error" />
-              <node concept="Xl_RD" id="1b04$NJmhVJ" role="34bqiv">
+            <node concept="2xdQw9" id="VY0JpF30lf" role="3cqZAp">
+              <property role="2xdLsb" value="error" />
+              <node concept="Xl_RD" id="1b04$NJmhVJ" role="9lYJi">
                 <property role="Xl_RC" value="Method_Reorder -&gt; Constructor : Parameter not ok" />
               </node>
             </node>
@@ -19045,9 +19045,9 @@
             </node>
             <node concept="3clFbJ" id="1EW$7SZT1We" role="3cqZAp">
               <node concept="3clFbS" id="1EW$7SZT1Wg" role="3clFbx">
-                <node concept="34ab3g" id="5Xrza7sU3Ft" role="3cqZAp">
-                  <property role="35gtTG" value="error" />
-                  <node concept="Xl_RD" id="5Xrza7sU3Fv" role="34bqiv">
+                <node concept="2xdQw9" id="VY0JpF30ll" role="3cqZAp">
+                  <property role="2xdLsb" value="error" />
+                  <node concept="Xl_RD" id="5Xrza7sU3Fv" role="9lYJi">
                     <property role="Xl_RC" value="Function_Reorderer -&gt; moveSiblingToMaps : no Fragment found on statement =&gt; ERROR =&gt; not moving sibling in any hashMap" />
                   </node>
                 </node>

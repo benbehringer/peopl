@@ -138,9 +138,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -237,9 +237,9 @@
         <node concept="1X3_iC" id="4C0llQLjMAg" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="3Stpzi4hapf" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="Xl_RD" id="3Stpzi4haph" role="34bqiv">
+          <node concept="2xdQw9" id="VY0JpF30WV" role="8Wnug">
+            <property role="2xdLsb" value="warn" />
+            <node concept="Xl_RD" id="3Stpzi4haph" role="9lYJi">
               <property role="Xl_RC" value="Pre Gen Script : SetFillingFragmentAnnotations" />
             </node>
           </node>
@@ -274,9 +274,9 @@
         <node concept="1X3_iC" id="2mxUwyW8qkS" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="34ab3g" id="7t9Yo1qQ1je" role="8Wnug">
-            <property role="35gtTG" value="warn" />
-            <node concept="3cpWs3" id="7t9Yo1qQ1jf" role="34bqiv">
+          <node concept="2xdQw9" id="VY0JpF30X1" role="8Wnug">
+            <property role="2xdLsb" value="warn" />
+            <node concept="3cpWs3" id="7t9Yo1qQ1jf" role="9lYJi">
               <node concept="Xl_RD" id="7t9Yo1qQ1jg" role="3uHU7B">
                 <property role="Xl_RC" value="SetFillingFragmentAnnotations: current model: " />
               </node>
@@ -290,9 +290,9 @@
             <node concept="1X3_iC" id="3keUGxJe5ar" role="lGtFl">
               <property role="3V$3am" value="statement" />
               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="34ab3g" id="7t9Yo1qQ817" role="8Wnug">
-                <property role="35gtTG" value="warn" />
-                <node concept="Xl_RD" id="7t9Yo1qQ818" role="34bqiv">
+              <node concept="2xdQw9" id="VY0JpF30Xb" role="8Wnug">
+                <property role="2xdLsb" value="warn" />
+                <node concept="Xl_RD" id="7t9Yo1qQ818" role="9lYJi">
                   <property role="Xl_RC" value="naming convention is okay" />
                 </node>
               </node>
@@ -335,9 +335,9 @@
                     <node concept="1X3_iC" id="3keUGxJe5e0" role="lGtFl">
                       <property role="3V$3am" value="statement" />
                       <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                      <node concept="34ab3g" id="7t9Yo1qR$6S" role="8Wnug">
-                        <property role="35gtTG" value="warn" />
-                        <node concept="Xl_RD" id="7t9Yo1qR$6U" role="34bqiv">
+                      <node concept="2xdQw9" id="VY0JpF30Xh" role="8Wnug">
+                        <property role="2xdLsb" value="warn" />
+                        <node concept="Xl_RD" id="7t9Yo1qR$6U" role="9lYJi">
                           <property role="Xl_RC" value="configure via link" />
                         </node>
                       </node>
@@ -369,9 +369,9 @@
                       <node concept="1X3_iC" id="4xZ$jUAQPGp" role="lGtFl">
                         <property role="3V$3am" value="statement" />
                         <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                        <node concept="34ab3g" id="7t9Yo1qQ2Tz" role="8Wnug">
-                          <property role="35gtTG" value="warn" />
-                          <node concept="Xl_RD" id="7t9Yo1qQ2T_" role="34bqiv">
+                        <node concept="2xdQw9" id="VY0JpF30Xn" role="8Wnug">
+                          <property role="2xdLsb" value="warn" />
+                          <node concept="Xl_RD" id="7t9Yo1qQ2T_" role="9lYJi">
                             <property role="Xl_RC" value="no configuration =&gt; start searching" />
                           </node>
                         </node>
@@ -393,9 +393,9 @@
                             <node concept="1X3_iC" id="jenxS68z1t" role="lGtFl">
                               <property role="3V$3am" value="statement" />
                               <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                              <node concept="34ab3g" id="7t9Yo1qRnlU" role="8Wnug">
-                                <property role="35gtTG" value="warn" />
-                                <node concept="3cpWs3" id="7t9Yo1qRnrJ" role="34bqiv">
+                              <node concept="2xdQw9" id="VY0JpF30Xt" role="8Wnug">
+                                <property role="2xdLsb" value="warn" />
+                                <node concept="3cpWs3" id="7t9Yo1qRnrJ" role="9lYJi">
                                   <node concept="2OqwBi" id="7t9Yo1qRnI5" role="3uHU7w">
                                     <node concept="2GrUjf" id="7t9Yo1qRns3" role="2Oq$k0">
                                       <ref role="2Gs0qQ" node="7t9Yo1qQQ1M" resolve="currentModule" />
@@ -418,9 +418,9 @@
                                 <node concept="1X3_iC" id="jenxS68zvD" role="lGtFl">
                                   <property role="3V$3am" value="statement" />
                                   <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                                  <node concept="34ab3g" id="7t9Yo1qRo4U" role="8Wnug">
-                                    <property role="35gtTG" value="warn" />
-                                    <node concept="3cpWs3" id="7t9Yo1qRoeW" role="34bqiv">
+                                  <node concept="2xdQw9" id="VY0JpF30XF" role="8Wnug">
+                                    <property role="2xdLsb" value="warn" />
+                                    <node concept="3cpWs3" id="7t9Yo1qRoeW" role="9lYJi">
                                       <node concept="2OqwBi" id="7t9Yo1qRoyy" role="3uHU7w">
                                         <node concept="2GrUjf" id="7t9Yo1qRofg" role="2Oq$k0">
                                           <ref role="2Gs0qQ" node="7t9Yo1qQQLp" resolve="currentRoot" />
@@ -476,9 +476,9 @@
                                   </node>
                                   <node concept="9aQIb" id="jenxS68Brg" role="9aQIa">
                                     <node concept="3clFbS" id="jenxS68Brh" role="9aQI4">
-                                      <node concept="34ab3g" id="jenxS68Bus" role="3cqZAp">
-                                        <property role="35gtTG" value="error" />
-                                        <node concept="Xl_RD" id="jenxS68Buu" role="34bqiv">
+                                      <node concept="2xdQw9" id="VY0JpF30XT" role="3cqZAp">
+                                        <property role="2xdLsb" value="error" />
+                                        <node concept="Xl_RD" id="jenxS68Buu" role="9lYJi">
                                           <property role="Xl_RC" value="Found more than one product line configuration." />
                                         </node>
                                       </node>
@@ -585,9 +585,9 @@
                               </node>
                               <node concept="9aQIb" id="7MpTifTJ1cJ" role="9aQIa">
                                 <node concept="3clFbS" id="7MpTifTJ1cK" role="9aQI4">
-                                  <node concept="34ab3g" id="jenxS68BM9" role="3cqZAp">
-                                    <property role="35gtTG" value="error" />
-                                    <node concept="Xl_RD" id="jenxS68BMb" role="34bqiv">
+                                  <node concept="2xdQw9" id="VY0JpF30XZ" role="3cqZAp">
+                                    <property role="2xdLsb" value="error" />
+                                    <node concept="Xl_RD" id="jenxS68BMb" role="9lYJi">
                                       <property role="Xl_RC" value="Couldn't find a product line configuration. Please create one." />
                                     </node>
                                   </node>
@@ -623,9 +623,9 @@
                   <node concept="1X3_iC" id="3keUGxJe5f2" role="lGtFl">
                     <property role="3V$3am" value="statement" />
                     <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="34ab3g" id="7t9Yo1qQ3LX" role="8Wnug">
-                      <property role="35gtTG" value="warn" />
-                      <node concept="Xl_RD" id="7t9Yo1qQ3LZ" role="34bqiv">
+                    <node concept="2xdQw9" id="VY0JpF30Y5" role="8Wnug">
+                      <property role="2xdLsb" value="warn" />
+                      <node concept="Xl_RD" id="7t9Yo1qQ3LZ" role="9lYJi">
                         <property role="Xl_RC" value="calculate and set filling fragments" />
                       </node>
                     </node>
@@ -669,9 +669,9 @@
               </node>
               <node concept="9aQIb" id="5rOrZhw_o9b" role="9aQIa">
                 <node concept="3clFbS" id="5rOrZhw_o9c" role="9aQI4">
-                  <node concept="34ab3g" id="5rOrZhw_oaJ" role="3cqZAp">
-                    <property role="35gtTG" value="error" />
-                    <node concept="Xl_RD" id="5rOrZhw_oaL" role="34bqiv">
+                  <node concept="2xdQw9" id="VY0JpF30Yb" role="3cqZAp">
+                    <property role="2xdLsb" value="error" />
+                    <node concept="Xl_RD" id="5rOrZhw_oaL" role="9lYJi">
                       <property role="Xl_RC" value="Generator -&gt; SetFillingFramgentAnnotations -&gt; Found more than one product line configuration" />
                     </node>
                   </node>

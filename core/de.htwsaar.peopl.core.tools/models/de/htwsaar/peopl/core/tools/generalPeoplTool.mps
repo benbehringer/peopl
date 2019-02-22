@@ -20,6 +20,8 @@
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="9oh" ref="r:de82dfab-9448-49ba-813e-2b0579f7fb15(jetbrains.mps.ide.platform.actions)" />
+    <import index="z2i8" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.icons(MPS.IDEA/)" />
     <import index="v7ux" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui.content(MPS.IDEA/)" implicit="true" />
   </imports>
   <registry>
@@ -179,29 +181,31 @@
     <node concept="3clFbW" id="6q8vRaHH$gk" role="jymVt">
       <node concept="3cqZAl" id="6q8vRaHH$gl" role="3clF45" />
       <node concept="3clFbS" id="6q8vRaHH$gn" role="3clF47">
-        <node concept="XkiVB" id="6q8vRaHHBSD" role="3cqZAp">
-          <ref role="37wK5l" to="71xd:~BaseProjectTool.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,int,javax.swing.Icon,com.intellij.openapi.wm.ToolWindowAnchor,boolean)" resolve="BaseProjectTool" />
+        <node concept="XkiVB" id="2Ic4of8PAuY" role="3cqZAp">
+          <ref role="37wK5l" to="71xd:~BaseProjectTool.&lt;init&gt;(com.intellij.openapi.project.Project,java.lang.String,java.util.Map,javax.swing.Icon,com.intellij.openapi.wm.ToolWindowAnchor,boolean,boolean)" resolve="BaseProjectTool" />
           <node concept="2YIFZM" id="6q8vRaHHBTO" role="37wK5m">
-            <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
             <ref role="1Pybhc" to="alof:~ProjectHelper" resolve="ProjectHelper" />
+            <ref role="37wK5l" to="alof:~ProjectHelper.toIdeaProject(jetbrains.mps.project.Project):com.intellij.openapi.project.Project" resolve="toIdeaProject" />
             <node concept="37vLTw" id="6q8vRaHHBTP" role="37wK5m">
               <ref role="3cqZAo" node="6q8vRaHH$Bk" resolve="mpsProject" />
             </node>
           </node>
-          <node concept="37vLTw" id="6q8vRaHHBWA" role="37wK5m">
-            <ref role="3cqZAo" node="6q8vRaHHBg0" resolve="id" />
+          <node concept="Xl_RD" id="2Ic4of8PAWF" role="37wK5m">
+            <property role="Xl_RC" value="General PEoPL Tool" />
           </node>
-          <node concept="3cmrfG" id="6q8vRaHHBZz" role="37wK5m">
-            <property role="3cmrfH" value="0" />
+          <node concept="10Nm6u" id="5_d5WPPmRMg" role="37wK5m" />
+          <node concept="10M0yZ" id="2Ic4of8PBmT" role="37wK5m">
+            <ref role="1PxDUh" to="z2i8:~AllIcons$Toolwindows" resolve="AllIcons.Toolwindows" />
+            <ref role="3cqZAo" to="z2i8:~AllIcons$Toolwindows.ToolWindowInspection" resolve="ToolWindowInspection" />
           </node>
-          <node concept="10Nm6u" id="6q8vRaHHC1T" role="37wK5m" />
-          <node concept="10M0yZ" id="6q8vRaHHC5e" role="37wK5m">
-            <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
+          <node concept="10M0yZ" id="2Ic4of8PX22" role="37wK5m">
             <ref role="1PxDUh" to="jkny:~ToolWindowAnchor" resolve="ToolWindowAnchor" />
+            <ref role="3cqZAo" to="jkny:~ToolWindowAnchor.BOTTOM" resolve="BOTTOM" />
           </node>
-          <node concept="3clFbT" id="6q8vRaHHC8G" role="37wK5m">
-            <property role="3clFbU" value="true" />
+          <node concept="3clFbT" id="5_d5WPPmRVv" role="37wK5m">
+            <property role="3clFbU" value="false" />
           </node>
+          <node concept="3clFbT" id="2Ic4of8PXbD" role="37wK5m" />
         </node>
       </node>
       <node concept="3Tm1VV" id="6q8vRaHH$ge" role="1B3o_S" />

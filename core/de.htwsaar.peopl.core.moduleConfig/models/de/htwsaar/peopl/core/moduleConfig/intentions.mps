@@ -148,9 +148,9 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -400,9 +400,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="3e2$E$Vh2UH" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="3e2$E$Vh2UI" role="34bqiv">
+        <node concept="2xdQw9" id="VY0JpF305d" role="3cqZAp">
+          <property role="2xdLsb" value="warn" />
+          <node concept="3cpWs3" id="3e2$E$Vh2UI" role="9lYJi">
             <node concept="Xl_RD" id="3e2$E$Vh2UJ" role="3uHU7w">
               <property role="Xl_RC" value=" ms" />
             </node>
@@ -425,9 +425,9 @@
             </node>
           </node>
         </node>
-        <node concept="34ab3g" id="GdEQ2CANe3" role="3cqZAp">
-          <property role="35gtTG" value="warn" />
-          <node concept="3cpWs3" id="GdEQ2CANLq" role="34bqiv">
+        <node concept="2xdQw9" id="VY0JpF305x" role="3cqZAp">
+          <property role="2xdLsb" value="warn" />
+          <node concept="3cpWs3" id="GdEQ2CANLq" role="9lYJi">
             <node concept="2OqwBi" id="GdEQ2CAO2B" role="3uHU7w">
               <node concept="37vLTw" id="GdEQ2CANQT" role="2Oq$k0">
                 <ref role="3cqZAo" node="GdEQ2CAMaC" resolve="frags" />
