@@ -95,6 +95,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="4bff7bbe-ce5f-432e-84bf-60809cb9987c(com.mbeddr.mpsutil.intentions.runtime)" version="0" />
+    <module reference="fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.baseLanguageExtension)" version="0" />
     <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="0" />
     <module reference="e5c3c271-3e96-406d-8829-9ddb2dbd9e7f(de.htwsaar.peopl.core.statistics)" version="0" />
     <module reference="1786aae1-e029-4751-836d-843552f745c0(de.htwsaar.peopl.core.tools)" version="0" />

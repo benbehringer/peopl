@@ -6,6 +6,7 @@
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="53a2e8ff-4795-41ec-949d-d5c6bc4895de" name="com.mbeddr.mpsutil.breadcrumb.editor" version="0" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -47,6 +48,7 @@
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
     <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="wcxw" ref="r:b9f36c08-4a75-4513-9277-a390d3426e0f(jetbrains.mps.editor.runtime.impl.cellActions)" />
+    <import index="jgwk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells.traversal(MPS.Editor/)" />
     <import index="gj7z" ref="r:b16002b4-3e9f-4cda-b9e1-53c91cafb2e8(de.htwsaar.peopl.mBeddrExtension.structure)" implicit="true" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -54,6 +56,7 @@
     <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -869,7 +872,7 @@
                 <ref role="3cqZAo" node="27QooFz44mH" resolve="handler" />
               </node>
               <node concept="liA8E" id="27QooFz4bzq" role="2OqNvi">
-                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.openapi.editor.EditorContext,jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
+                <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createCells(jetbrains.mps.nodeEditor.cellLayout.CellLayout,boolean):jetbrains.mps.nodeEditor.cells.EditorCell_Collection" resolve="createCells" />
                 <node concept="37vLTw" id="27QooFz4bHH" role="37wK5m">
                   <ref role="3cqZAo" node="27QooFz3ixx" resolve="myEditorContext" />
                 </node>
@@ -1105,7 +1108,7 @@
                   <ref role="3cqZAo" node="27QooFz44mH" resolve="handler" />
                 </node>
                 <node concept="liA8E" id="27QooFz4l8S" role="2OqNvi">
-                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
+                  <ref role="37wK5l" to="p9jd:~RefNodeListHandler.getElementRole():java.lang.String" resolve="getElementRole" />
                 </node>
               </node>
             </node>
@@ -1827,7 +1830,7 @@
         <node concept="3cqZAl" id="27QooFz3D07" role="3clF45" />
         <node concept="3clFbS" id="27QooFz3D09" role="3clF47">
           <node concept="XkiVB" id="27QooFz3D93" role="3cqZAp">
-            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,java.lang.String,jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
+            <ref role="37wK5l" to="p9jd:~RefNodeListHandler.&lt;init&gt;(jetbrains.mps.openapi.editor.EditorContext,boolean)" resolve="RefNodeListHandler" />
             <node concept="37vLTw" id="27QooFz3D9J" role="37wK5m">
               <ref role="3cqZAo" node="27QooFz3D1$" resolve="ownerNode" />
             </node>
@@ -4406,23 +4409,55 @@
             <node concept="10Nm6u" id="4Yf2ORkNVw" role="33vP2m" />
           </node>
         </node>
-        <node concept="3cpWs8" id="4Yf2ORkNYu" role="3cqZAp">
-          <node concept="3cpWsn" id="4Yf2ORkNYv" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="4Yf2ORkNYw" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+        <node concept="3clFbH" id="5Is4imHacCk" role="3cqZAp" />
+        <node concept="3SKdUt" id="5Is4imHafJI" role="3cqZAp">
+          <node concept="3SKdUq" id="5Is4imHafJJ" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Is4imHafJK" role="3cqZAp">
+          <node concept="3cpWsn" id="5Is4imHafJL" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="5Is4imHafJM" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
             </node>
-            <node concept="2ShNRf" id="4Yf2ORkO0b" role="33vP2m">
-              <node concept="1pGfFk" id="4Yf2ORl6p_" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="37vLTw" id="4Yf2ORl6sh" role="37wK5m">
-                  <ref role="3cqZAo" node="4Yf2ORjnB4" resolve="selectedCell" />
-                </node>
-                <node concept="37vLTw" id="4Yf2ORl6vo" role="37wK5m">
-                  <ref role="3cqZAo" node="4Yf2ORjnD0" resolve="forwardSearch" />
-                </node>
-                <node concept="3clFbT" id="4Yf2ORl6xq" role="37wK5m">
-                  <property role="3clFbU" value="false" />
+            <node concept="2YIFZM" id="5Is4imHafJN" role="33vP2m">
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <node concept="37vLTw" id="5Is4imHafJO" role="37wK5m">
+                <ref role="3cqZAo" node="4Yf2ORjnB4" resolve="selectedCell" />
+              </node>
+              <node concept="37vLTw" id="5Is4imHafJP" role="37wK5m">
+                <ref role="3cqZAo" node="4Yf2ORjnB4" resolve="selectedCell" />
+              </node>
+              <node concept="3clFbT" id="5Is4imHafJQ" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Is4imHadaY" role="3cqZAp" />
+        <node concept="1X3_iC" id="5Is4imHagju" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="4Yf2ORkNYu" role="8Wnug">
+            <node concept="3cpWsn" id="4Yf2ORkNYv" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="4Yf2ORkNYw" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="4Yf2ORkO0b" role="33vP2m">
+                <node concept="1pGfFk" id="4Yf2ORl6p_" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="37vLTw" id="4Yf2ORl6sh" role="37wK5m">
+                    <ref role="3cqZAo" node="4Yf2ORjnB4" resolve="selectedCell" />
+                  </node>
+                  <node concept="37vLTw" id="4Yf2ORl6vo" role="37wK5m">
+                    <ref role="3cqZAo" node="4Yf2ORjnD0" resolve="forwardSearch" />
+                  </node>
+                  <node concept="3clFbT" id="4Yf2ORl6xq" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -4432,8 +4467,8 @@
           <node concept="2GrKxI" id="4Yf2ORl6$D" role="2Gsz3X">
             <property role="TrG5h" value="cell" />
           </node>
-          <node concept="37vLTw" id="4Yf2ORl6BD" role="2GsD0m">
-            <ref role="3cqZAo" node="4Yf2ORkNYv" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="5Is4imHah3n" role="2GsD0m">
+            <ref role="3cqZAo" node="5Is4imHafJL" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="4Yf2ORl6$H" role="2LFqv$">
             <node concept="3clFbJ" id="4Yf2ORl6DC" role="3cqZAp">
@@ -13979,23 +14014,55 @@
             <node concept="10Nm6u" id="5p4tr4l5Bud" role="33vP2m" />
           </node>
         </node>
-        <node concept="3cpWs8" id="5p4tr4laJFR" role="3cqZAp">
-          <node concept="3cpWsn" id="5p4tr4laJFS" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="5p4tr4laJFT" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+        <node concept="3clFbH" id="5Is4imH8ITv" role="3cqZAp" />
+        <node concept="3SKdUt" id="VY0JpFrzz_" role="3cqZAp">
+          <node concept="3SKdUq" id="VY0JpFrzzA" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="VY0JpFpZ0A" role="3cqZAp">
+          <node concept="3cpWsn" id="VY0JpFpZ0B" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="VY0JpFpZ0C" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
             </node>
-            <node concept="2ShNRf" id="5p4tr4laJMa" role="33vP2m">
-              <node concept="1pGfFk" id="5p4tr4laKjz" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="37vLTw" id="5p4tr4laKpU" role="37wK5m">
-                  <ref role="3cqZAo" node="5p4tr4l5ArY" resolve="selectedCell" />
-                </node>
-                <node concept="37vLTw" id="5p4tr4laKw$" role="37wK5m">
-                  <ref role="3cqZAo" node="5p4tr4l5AAE" resolve="forwardSearch" />
-                </node>
-                <node concept="3clFbT" id="5p4tr4laK_n" role="37wK5m">
-                  <property role="3clFbU" value="false" />
+            <node concept="2YIFZM" id="VY0JpFpO7F" role="33vP2m">
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <node concept="37vLTw" id="VY0JpFpOlN" role="37wK5m">
+                <ref role="3cqZAo" node="5p4tr4l5ArY" resolve="selectedCell" />
+              </node>
+              <node concept="37vLTw" id="VY0JpFpS8Z" role="37wK5m">
+                <ref role="3cqZAo" node="5p4tr4l5ArY" resolve="selectedCell" />
+              </node>
+              <node concept="3clFbT" id="VY0JpFpSqp" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Is4imH8IXF" role="3cqZAp" />
+        <node concept="1X3_iC" id="5Is4imH8LD1" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="5p4tr4laJFR" role="8Wnug">
+            <node concept="3cpWsn" id="5p4tr4laJFS" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="5p4tr4laJFT" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="5p4tr4laJMa" role="33vP2m">
+                <node concept="1pGfFk" id="5p4tr4laKjz" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="37vLTw" id="5p4tr4laKpU" role="37wK5m">
+                    <ref role="3cqZAo" node="5p4tr4l5ArY" resolve="selectedCell" />
+                  </node>
+                  <node concept="37vLTw" id="5p4tr4laKw$" role="37wK5m">
+                    <ref role="3cqZAo" node="5p4tr4l5AAE" resolve="forwardSearch" />
+                  </node>
+                  <node concept="3clFbT" id="5p4tr4laK_n" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -14005,8 +14072,8 @@
           <node concept="2GrKxI" id="5p4tr4laPgn" role="2Gsz3X">
             <property role="TrG5h" value="cell" />
           </node>
-          <node concept="37vLTw" id="5p4tr4laPow" role="2GsD0m">
-            <ref role="3cqZAo" node="5p4tr4laJFS" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="5Is4imH8Nfw" role="2GsD0m">
+            <ref role="3cqZAo" node="VY0JpFpZ0B" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="5p4tr4laPgr" role="2LFqv$">
             <node concept="3clFbJ" id="5p4tr4laPvv" role="3cqZAp">
@@ -14203,6 +14270,11 @@
                 <node concept="3clFbH" id="5p4tr4lbk2O" role="3cqZAp" />
                 <node concept="3clFbJ" id="5p4tr4lbkRY" role="3cqZAp">
                   <node concept="3clFbS" id="5p4tr4lbkS0" role="3clFbx">
+                    <node concept="3SKdUt" id="5Is4imH9Vu2" role="3cqZAp">
+                      <node concept="3SKdUq" id="5Is4imH9Vu3" role="3SKWNk">
+                        <property role="3SKdUp" value="TODO: replaced cell.getRole() with cell.getSRole. Check whether this works..." />
+                      </node>
+                    </node>
                     <node concept="3clFbJ" id="5p4tr4lbm_r" role="3cqZAp">
                       <node concept="3clFbS" id="5p4tr4lbm_t" role="3clFbx">
                         <node concept="3clFbJ" id="5p4tr4lbxsC" role="3cqZAp">
@@ -14276,12 +14348,17 @@
                           <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
                           <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                         </node>
-                        <node concept="2OqwBi" id="5p4tr4lbmLZ" role="3uHU7B">
-                          <node concept="2GrUjf" id="5p4tr4lbmCm" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="5p4tr4laPgn" resolve="cell" />
+                        <node concept="2OqwBi" id="5Is4imH8Rmk" role="3uHU7B">
+                          <node concept="2OqwBi" id="5p4tr4lbmLZ" role="2Oq$k0">
+                            <node concept="2GrUjf" id="5p4tr4lbmCm" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="5p4tr4laPgn" resolve="cell" />
+                            </node>
+                            <node concept="liA8E" id="5p4tr4lbngt" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getSRole" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="5p4tr4lbngt" role="2OqNvi">
-                            <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+                          <node concept="liA8E" id="5Is4imH9THL" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                           </node>
                         </node>
                       </node>
@@ -20164,23 +20241,54 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="1EW$7SZUiPR" role="3clF47">
-        <node concept="3cpWs8" id="1EW$7SZWyQM" role="3cqZAp">
-          <node concept="3cpWsn" id="1EW$7SZWyQN" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="1EW$7SZWyQO" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+        <node concept="3SKdUt" id="5Is4imHaA4Q" role="3cqZAp">
+          <node concept="3SKdUq" id="5Is4imHaA4R" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Is4imHaA4S" role="3cqZAp">
+          <node concept="3cpWsn" id="5Is4imHaA4T" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="5Is4imHaA4U" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
             </node>
-            <node concept="2ShNRf" id="1EW$7SZWyVy" role="33vP2m">
-              <node concept="1pGfFk" id="1EW$7SZWzAB" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="37vLTw" id="1EW$7SZWzFk" role="37wK5m">
-                  <ref role="3cqZAo" node="1EW$7SZUj_h" resolve="selectedCell" />
-                </node>
-                <node concept="37vLTw" id="1EW$7SZWzL6" role="37wK5m">
-                  <ref role="3cqZAo" node="7o3bbrGlGm3" resolve="addRelativeToBaseCodeAsNextSibling" />
-                </node>
-                <node concept="3clFbT" id="1EW$7SZWzQm" role="37wK5m">
-                  <property role="3clFbU" value="false" />
+            <node concept="2YIFZM" id="5Is4imHaA4V" role="33vP2m">
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <node concept="37vLTw" id="5Is4imHaA4W" role="37wK5m">
+                <ref role="3cqZAo" node="1EW$7SZUj_h" resolve="selectedCell" />
+              </node>
+              <node concept="37vLTw" id="5Is4imHaA4X" role="37wK5m">
+                <ref role="3cqZAo" node="1EW$7SZUj_h" resolve="selectedCell" />
+              </node>
+              <node concept="37vLTw" id="5Is4imHaCzN" role="37wK5m">
+                <ref role="3cqZAo" node="7o3bbrGlGm3" resolve="addRelativeToBaseCodeAsNextSibling" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Is4imHa_9X" role="3cqZAp" />
+        <node concept="1X3_iC" id="5Is4imHaBea" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="1EW$7SZWyQM" role="8Wnug">
+            <node concept="3cpWsn" id="1EW$7SZWyQN" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="1EW$7SZWyQO" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="1EW$7SZWyVy" role="33vP2m">
+                <node concept="1pGfFk" id="1EW$7SZWzAB" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="37vLTw" id="1EW$7SZWzFk" role="37wK5m">
+                    <ref role="3cqZAo" node="1EW$7SZUj_h" resolve="selectedCell" />
+                  </node>
+                  <node concept="37vLTw" id="1EW$7SZWzL6" role="37wK5m">
+                    <ref role="3cqZAo" node="7o3bbrGlGm3" resolve="addRelativeToBaseCodeAsNextSibling" />
+                  </node>
+                  <node concept="3clFbT" id="1EW$7SZWzQm" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -20190,8 +20298,8 @@
           <node concept="2GrKxI" id="1EW$7SZWzYP" role="2Gsz3X">
             <property role="TrG5h" value="currentCell" />
           </node>
-          <node concept="37vLTw" id="1EW$7SZW$6v" role="2GsD0m">
-            <ref role="3cqZAo" node="1EW$7SZWyQN" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="5Is4imHaCTC" role="2GsD0m">
+            <ref role="3cqZAo" node="5Is4imHaA4T" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="1EW$7SZWzYT" role="2LFqv$">
             <node concept="3clFbJ" id="1EW$7SZW$cw" role="3cqZAp">
@@ -22083,28 +22191,69 @@
           </node>
         </node>
         <node concept="3clFbH" id="2e7WWQbmUm2" role="3cqZAp" />
-        <node concept="3cpWs8" id="2e7WWQbmUsY" role="3cqZAp">
-          <node concept="3cpWsn" id="2e7WWQbmUsZ" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="2e7WWQbmUt0" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+        <node concept="3SKdUt" id="5Is4imHbFpZ" role="3cqZAp">
+          <node concept="3SKdUq" id="5Is4imHbFq0" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5Is4imHbFq1" role="3cqZAp">
+          <node concept="3cpWsn" id="5Is4imHbFq2" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="5Is4imHbFq3" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
             </node>
-            <node concept="2ShNRf" id="2e7WWQbmUyQ" role="33vP2m">
-              <node concept="1pGfFk" id="2e7WWQbmVev" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="2OqwBi" id="2e7WWQbmVsR" role="37wK5m">
-                  <node concept="37vLTw" id="2e7WWQbmVjz" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
-                  </node>
-                  <node concept="liA8E" id="2e7WWQbmVEO" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
-                  </node>
+            <node concept="2YIFZM" id="5Is4imHbFq4" role="33vP2m">
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <node concept="2OqwBi" id="5Is4imHbG1z" role="37wK5m">
+                <node concept="37vLTw" id="5Is4imHbG1$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
                 </node>
-                <node concept="3clFbT" id="2e7WWQbmVM0" role="37wK5m">
-                  <property role="3clFbU" value="true" />
+                <node concept="liA8E" id="5Is4imHbG1_" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
                 </node>
-                <node concept="3clFbT" id="2e7WWQbmVQ1" role="37wK5m">
-                  <property role="3clFbU" value="false" />
+              </node>
+              <node concept="2OqwBi" id="5Is4imHbGkY" role="37wK5m">
+                <node concept="37vLTw" id="5Is4imHbGkZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+                </node>
+                <node concept="liA8E" id="5Is4imHbGl0" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                </node>
+              </node>
+              <node concept="3clFbT" id="5Is4imHbHjh" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="5Is4imHbF4Q" role="3cqZAp" />
+        <node concept="1X3_iC" id="5Is4imHbGCw" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="2e7WWQbmUsY" role="8Wnug">
+            <node concept="3cpWsn" id="2e7WWQbmUsZ" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="2e7WWQbmUt0" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="2e7WWQbmUyQ" role="33vP2m">
+                <node concept="1pGfFk" id="2e7WWQbmVev" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="2OqwBi" id="2e7WWQbmVsR" role="37wK5m">
+                    <node concept="37vLTw" id="2e7WWQbmVjz" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+                    </node>
+                    <node concept="liA8E" id="2e7WWQbmVEO" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                    </node>
+                  </node>
+                  <node concept="3clFbT" id="2e7WWQbmVM0" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="3clFbT" id="2e7WWQbmVQ1" role="37wK5m">
+                    <property role="3clFbU" value="false" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -22114,8 +22263,8 @@
           <node concept="2GrKxI" id="2e7WWQbmVZ3" role="2Gsz3X">
             <property role="TrG5h" value="cell" />
           </node>
-          <node concept="37vLTw" id="2e7WWQbmW7e" role="2GsD0m">
-            <ref role="3cqZAo" node="2e7WWQbmUsZ" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="5Is4imHbHDm" role="2GsD0m">
+            <ref role="3cqZAo" node="5Is4imHbFq2" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="2e7WWQbmVZ7" role="2LFqv$">
             <node concept="3clFbJ" id="2e7WWQbmWeC" role="3cqZAp">
@@ -22166,12 +22315,17 @@
                           <ref role="3cqZAo" to="2gtk:~ProjectActions_ActionGroup.ID" resolve="ORIGINAL_KEYWORD" />
                           <ref role="1PxDUh" to="2gtk:7CRh4pHv356" resolve="PeoplRoleHelper" />
                         </node>
-                        <node concept="2OqwBi" id="2e7WWQbn5FG" role="3uHU7B">
-                          <node concept="2GrUjf" id="2e7WWQbn5yO" role="2Oq$k0">
-                            <ref role="2Gs0qQ" node="2e7WWQbmVZ3" resolve="cell" />
+                        <node concept="2OqwBi" id="5Is4imHbJ3$" role="3uHU7B">
+                          <node concept="2OqwBi" id="2e7WWQbn5FG" role="2Oq$k0">
+                            <node concept="2GrUjf" id="2e7WWQbn5yO" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="2e7WWQbmVZ3" resolve="cell" />
+                            </node>
+                            <node concept="liA8E" id="2e7WWQbn61W" role="2OqNvi">
+                              <ref role="37wK5l" to="f4zo:~EditorCell.getSRole():org.jetbrains.mps.openapi.language.SConceptFeature" resolve="getSRole" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="2e7WWQbn61W" role="2OqNvi">
-                            <ref role="37wK5l" to="f4zo:~EditorCell.getRole():java.lang.String" resolve="getRole" />
+                          <node concept="liA8E" id="5Is4imHbJNo" role="2OqNvi">
+                            <ref role="37wK5l" to="c17a:~SNamedElement.getName():java.lang.String" resolve="getName" />
                           </node>
                         </node>
                       </node>

@@ -15,6 +15,7 @@
       </models>
       <external-templates />
       <languageVersions>
+        <language slang="l:fe78a547-334d-4401-802e-373d6ba57db0:de.htwsaar.peopl.baseLanguageExtension" version="0" />
         <language slang="l:1a3a0b62-fb00-47d1-8423-98da4001b216:de.htwsaar.peopl.core" version="0" />
         <language slang="l:3b64420c-53d0-4c15-9e71-c9cecf76d9db:de.htwsaar.peopl.view.modular" version="-1" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -40,6 +41,7 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+        <module reference="fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.baseLanguageExtension)" version="0" />
         <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="0" />
         <module reference="3b64420c-53d0-4c15-9e71-c9cecf76d9db(de.htwsaar.peopl.view.modular)" version="0" />
         <module reference="593552ad-3983-4cd2-a060-a409b68f4aae(de.htwsaar.peopl.view.modular#7318492937659888230)" version="0" />
@@ -66,7 +68,6 @@
     <dependency reexport="false">4c4bbb77-dae4-40ac-9819-555675af7c56(de.htwsaar.peopl.core.view.modular)</dependency>
     <dependency reexport="false">2fc3109b-8318-40ba-8227-7efc814f41ef(de.htwsaar.peopl.core.variabilityDeclaration.runtime)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
-    <dependency reexport="false">fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.baseLanguageExtension)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:a0ab8c10-c118-4755-ba27-3853435cf524:de.itemis.mps.tooltips" version="-1" />
@@ -130,6 +131,7 @@
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>fe78a547-334d-4401-802e-373d6ba57db0(de.htwsaar.peopl.baseLanguageExtension)</extendedLanguage>
     <extendedLanguage>1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)</extendedLanguage>
   </extendedLanguages>
 </language>

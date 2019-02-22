@@ -10,6 +10,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
     <use id="df345b11-b8c7-4213-ac66-48d2a9b75d88" name="jetbrains.mps.baseLanguageInternal" version="0" />
     <use id="b56fbef2-5461-4b30-b8d3-8d727c262dec" name="de.htwsaar.peopl.core.variabilityDeclaration" version="0" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -5220,7 +5221,6 @@
         </node>
         <node concept="PMmxH" id="hHIJHyV" role="3EZMnx">
           <ref role="PMmxG" to="tpen:h9AUA0X" resolve="_Component_Visibility" />
-          <ref role="1ERwB7" to="tpen:h9EA$1S" resolve="_InstanceMethodDeclaration_AddAbstract" />
           <node concept="A1WHu" id="nBYAaxCgRT" role="3vIgyS">
             <ref role="A1WHt" node="3PynP9l__8w" resolve="StaticTransform" />
           </node>
@@ -5351,8 +5351,12 @@
               </node>
             </node>
           </node>
-          <node concept="A1WHu" id="nBYAaxC_YI" role="3vIgyS">
-            <ref role="A1WHt" node="3PynP9l__8w" resolve="StaticTransform" />
+          <node concept="1X3_iC" id="VY0JpFzk_j" role="lGtFl">
+            <property role="3V$3am" value="transformationMenu" />
+            <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/4202667662392416064" />
+            <node concept="A1WHu" id="nBYAaxC_YI" role="8Wnug">
+              <ref role="A1WHt" node="3PynP9l__8w" resolve="StaticTransform" />
+            </node>
           </node>
         </node>
         <node concept="l2Vlx" id="i0HIZvn" role="2iSdaV" />
@@ -5379,8 +5383,12 @@
         <property role="1$x2rV" value="&lt;no return type&gt;" />
         <property role="1cu_pB" value="2" />
         <ref role="1NtTu8" to="tpee:fzclF7X" resolve="returnType" />
-        <node concept="A1WHu" id="1btKFvJphq0" role="3vIgyS">
-          <ref role="A1WHt" node="3PynP9l__8w" resolve="StaticTransform" />
+        <node concept="1X3_iC" id="VY0JpFzkJ9" role="lGtFl">
+          <property role="3V$3am" value="transformationMenu" />
+          <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389214265/4202667662392416064" />
+          <node concept="A1WHu" id="1btKFvJphq0" role="8Wnug">
+            <ref role="A1WHt" node="3PynP9l__8w" resolve="StaticTransform" />
+          </node>
         </node>
       </node>
       <node concept="PMmxH" id="hfRTI2S" role="3EZMnx">

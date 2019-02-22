@@ -63,6 +63,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -75,7 +76,6 @@
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_">
         <property id="1178608670077" name="isAbstract" index="1EzhhJ" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -701,54 +701,54 @@
       <node concept="3clFbS" id="7c4Z5e$9oYW" role="2VODD2">
         <node concept="3clFbJ" id="7c4Z5e$9oYX" role="3cqZAp">
           <node concept="22lmx$" id="7c4Z5e$9oYY" role="3clFbw">
-            <node concept="3clFbC" id="7c4Z5e$9oYZ" role="3uHU7w">
-              <node concept="35c_gC" id="7c4Z5e$9oZv" role="3uHU7w">
+            <node concept="17R0WA" id="VY0JpFaY5c" role="3uHU7w">
+              <node concept="2DD5aU" id="VY0JpFaY5d" role="3uHU7B" />
+              <node concept="35c_gC" id="VY0JpFaY5e" role="3uHU7w">
                 <ref role="35c_gD" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
               </node>
-              <node concept="2DD5aU" id="7c4Z5e$9oZu" role="3uHU7B" />
             </node>
             <node concept="22lmx$" id="7c4Z5e$9oZ2" role="3uHU7B">
               <node concept="22lmx$" id="7c4Z5e$9oZ3" role="3uHU7B">
                 <node concept="22lmx$" id="7c4Z5e$9oZ4" role="3uHU7B">
                   <node concept="22lmx$" id="7c4Z5e$9oZ5" role="3uHU7B">
                     <node concept="22lmx$" id="7c4Z5e$9oZ6" role="3uHU7B">
-                      <node concept="3clFbC" id="7c4Z5e$9oZ7" role="3uHU7B">
-                        <node concept="2DD5aU" id="7c4Z5e$9oZw" role="3uHU7B" />
-                        <node concept="35c_gC" id="7c4Z5e$9oZx" role="3uHU7w">
+                      <node concept="17R0WA" id="VY0JpFaWcF" role="3uHU7B">
+                        <node concept="2DD5aU" id="VY0JpFaWcG" role="3uHU7B" />
+                        <node concept="35c_gC" id="VY0JpFaWcH" role="3uHU7w">
                           <ref role="35c_gD" to="xf8r:66EASTR6M9Y" resolve="DepModuleConnector" />
                         </node>
                       </node>
-                      <node concept="3clFbC" id="7c4Z5e$9oZa" role="3uHU7w">
-                        <node concept="2DD5aU" id="7c4Z5e$9oZy" role="3uHU7B" />
-                        <node concept="35c_gC" id="7c4Z5e$9oZz" role="3uHU7w">
+                      <node concept="17R0WA" id="VY0JpFaYZM" role="3uHU7w">
+                        <node concept="2DD5aU" id="VY0JpFaYZN" role="3uHU7B" />
+                        <node concept="35c_gC" id="VY0JpFaYZO" role="3uHU7w">
                           <ref role="35c_gD" to="xf8r:66EASTR57Cx" resolve="ImpliesOperation" />
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbC" id="7c4Z5e$9oZd" role="3uHU7w">
-                      <node concept="2DD5aU" id="7c4Z5e$9oZ$" role="3uHU7B" />
-                      <node concept="35c_gC" id="7c4Z5e$9oZ_" role="3uHU7w">
+                    <node concept="17R0WA" id="VY0JpFaVdE" role="3uHU7w">
+                      <node concept="2DD5aU" id="VY0JpFaVdF" role="3uHU7B" />
+                      <node concept="35c_gC" id="VY0JpFaVdG" role="3uHU7w">
                         <ref role="35c_gD" to="xf8r:63cq5TSog52" resolve="XorOperation" />
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbC" id="7c4Z5e$9oZg" role="3uHU7w">
-                    <node concept="2DD5aU" id="7c4Z5e$9oZA" role="3uHU7B" />
-                    <node concept="35c_gC" id="7c4Z5e$9oZB" role="3uHU7w">
+                  <node concept="17R0WA" id="VY0JpFaZTR" role="3uHU7w">
+                    <node concept="2DD5aU" id="VY0JpFaZTS" role="3uHU7B" />
+                    <node concept="35c_gC" id="VY0JpFaZTT" role="3uHU7w">
                       <ref role="35c_gD" to="xf8r:6flM_ZX01WJ" resolve="OneOutOfManyOperation" />
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbC" id="7c4Z5e$9oZj" role="3uHU7w">
-                  <node concept="2DD5aU" id="7c4Z5e$9oZC" role="3uHU7B" />
-                  <node concept="35c_gC" id="7c4Z5e$9oZD" role="3uHU7w">
+                <node concept="17R0WA" id="VY0JpFaX9J" role="3uHU7w">
+                  <node concept="2DD5aU" id="VY0JpFaX9K" role="3uHU7B" />
+                  <node concept="35c_gC" id="VY0JpFaX9L" role="3uHU7w">
                     <ref role="35c_gD" to="tpee:fHWc73I" resolve="AndExpression" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbC" id="7c4Z5e$9oZm" role="3uHU7w">
-                <node concept="2DD5aU" id="7c4Z5e$9oZE" role="3uHU7B" />
-                <node concept="35c_gC" id="7c4Z5e$9oZF" role="3uHU7w">
+              <node concept="17R0WA" id="VY0JpFb0Lz" role="3uHU7w">
+                <node concept="2DD5aU" id="VY0JpFb0L$" role="3uHU7B" />
+                <node concept="35c_gC" id="VY0JpFb0L_" role="3uHU7w">
                   <ref role="35c_gD" to="tpee:fI2lmyv" resolve="OrExpression" />
                 </node>
               </node>

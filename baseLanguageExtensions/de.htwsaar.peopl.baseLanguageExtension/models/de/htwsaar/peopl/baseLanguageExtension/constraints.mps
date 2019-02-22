@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -166,7 +165,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -526,14 +525,7 @@
                 <node concept="3cpWsn" id="7c4Z5e$9p25" role="3cpWs9">
                   <property role="TrG5h" value="currentWrapperCandidate" />
                   <node concept="3Tqbb2" id="7c4Z5e$9p26" role="1tU5fm" />
-                </node>
-              </node>
-              <node concept="3clFbF" id="7c4Z5e$9p27" role="3cqZAp">
-                <node concept="37vLTI" id="7c4Z5e$9p28" role="3clFbG">
-                  <node concept="37vLTw" id="7c4Z5e$9p29" role="37vLTJ">
-                    <ref role="3cqZAo" node="7c4Z5e$9p25" resolve="currentWrapperCandidate" />
-                  </node>
-                  <node concept="2OqwBi" id="7c4Z5e$9p2a" role="37vLTx">
+                  <node concept="2OqwBi" id="7c4Z5e$9p2a" role="33vP2m">
                     <node concept="35c_gC" id="7c4Z5e$9p2b" role="2Oq$k0">
                       <ref role="35c_gD" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
                     </node>

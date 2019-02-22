@@ -20,6 +20,7 @@
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="2gtk" ref="r:bc8063f9-de2b-445f-b5f5-bad59c142cdb(de.htwsaar.peopl.core.view.modular.editor)" />
     <import index="ikxv" ref="r:abdb5d51-6d46-46f9-89d6-37cb86a8d1e0(de.htwsaar.peopl.core.variabilityDeclaration.runtime.runtime)" />
+    <import index="jgwk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells.traversal(MPS.Editor/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="uqoo" ref="r:5a2b7110-9eae-49b6-927a-392ac5898414(de.htwsaar.peopl.baseLanguageExtension.structure)" implicit="true" />
@@ -2198,22 +2199,52 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="7o3bbrGpc3d" role="3clF47">
-        <node concept="3cpWs8" id="3aNrrk2PI_S" role="3cqZAp">
-          <node concept="3cpWsn" id="3aNrrk2PI_T" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="3aNrrk2PI_U" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+        <node concept="3SKdUt" id="VY0JpFpQXM" role="3cqZAp">
+          <node concept="3SKdUq" id="VY0JpFpQXN" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil.iterateTree works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="VY0JpFpZ0A" role="3cqZAp">
+          <node concept="3cpWsn" id="VY0JpFpZ0B" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="VY0JpFpZ0C" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
             </node>
-            <node concept="2ShNRf" id="3aNrrk2PIP2" role="33vP2m">
-              <node concept="1pGfFk" id="3aNrrk2PIOz" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="37vLTw" id="7o3bbrGpiIF" role="37wK5m">
-                  <ref role="3cqZAo" node="7o3bbrGpgte" resolve="selectedCell" />
+            <node concept="2YIFZM" id="VY0JpFpO7F" role="33vP2m">
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <node concept="37vLTw" id="VY0JpFpOlN" role="37wK5m">
+                <ref role="3cqZAo" node="7o3bbrGpgte" resolve="selectedCell" />
+              </node>
+              <node concept="37vLTw" id="VY0JpFpS8Z" role="37wK5m">
+                <ref role="3cqZAo" node="7o3bbrGpgte" resolve="selectedCell" />
+              </node>
+              <node concept="3clFbT" id="VY0JpFpSqp" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="VY0JpFq2Ax" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="3aNrrk2PI_S" role="8Wnug">
+            <node concept="3cpWsn" id="3aNrrk2PI_T" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="3aNrrk2PI_U" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="3aNrrk2PIP2" role="33vP2m">
+                <node concept="1pGfFk" id="3aNrrk2PIOz" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="37vLTw" id="7o3bbrGpiIF" role="37wK5m">
+                    <ref role="3cqZAo" node="7o3bbrGpgte" resolve="selectedCell" />
+                  </node>
+                  <node concept="37vLTw" id="7o3bbrGpiot" role="37wK5m">
+                    <ref role="3cqZAo" node="7o3bbrGlGm3" resolve="addRelativeToBaseCodeAsNextSibling" />
+                  </node>
+                  <node concept="3clFbT" id="3aNrrk2PIXA" role="37wK5m" />
                 </node>
-                <node concept="37vLTw" id="7o3bbrGpiot" role="37wK5m">
-                  <ref role="3cqZAo" node="7o3bbrGlGm3" resolve="addRelativeToBaseCodeAsNextSibling" />
-                </node>
-                <node concept="3clFbT" id="3aNrrk2PIXA" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -2223,8 +2254,8 @@
           <node concept="2GrKxI" id="7o3bbrGlrJV" role="2Gsz3X">
             <property role="TrG5h" value="currentCell" />
           </node>
-          <node concept="37vLTw" id="7o3bbrGlrP5" role="2GsD0m">
-            <ref role="3cqZAo" node="3aNrrk2PI_T" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="VY0JpFq5zN" role="2GsD0m">
+            <ref role="3cqZAo" node="VY0JpFpZ0B" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="7o3bbrGlrJZ" role="2LFqv$">
             <node concept="3clFbJ" id="7o3bbrGs38i" role="3cqZAp">
@@ -5130,32 +5161,74 @@
           </node>
         </node>
         <node concept="3clFbH" id="OCU8ijbXQ6" role="3cqZAp" />
+        <node concept="3SKdUt" id="VY0JpFqqgI" role="3cqZAp">
+          <node concept="3SKdUq" id="VY0JpFqqgJ" role="3SKWNk">
+            <property role="3SKdUp" value="todo: check whether transition from DfsTraverserIterable to CellTraversalUtil.iterateTree works" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="VY0JpFqqgK" role="3cqZAp">
+          <node concept="3cpWsn" id="VY0JpFqqgL" role="3cpWs9">
+            <property role="TrG5h" value="treeIterable" />
+            <node concept="3uibUv" id="VY0JpFqqgM" role="1tU5fm">
+              <ref role="3uigEE" to="jgwk:~CellTreeIterable" resolve="CellTreeIterable" />
+            </node>
+            <node concept="2YIFZM" id="VY0JpFqqgN" role="33vP2m">
+              <ref role="37wK5l" to="f4zo:~CellTraversalUtil.iterateTree(jetbrains.mps.openapi.editor.cells.EditorCell,jetbrains.mps.openapi.editor.cells.EditorCell,boolean):jetbrains.mps.openapi.editor.cells.traversal.CellTreeIterable" resolve="iterateTree" />
+              <ref role="1Pybhc" to="f4zo:~CellTraversalUtil" resolve="CellTraversalUtil" />
+              <node concept="2OqwBi" id="VY0JpFqr2j" role="37wK5m">
+                <node concept="37vLTw" id="VY0JpFqr2k" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+                </node>
+                <node concept="liA8E" id="VY0JpFqr2l" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="VY0JpFqrtJ" role="37wK5m">
+                <node concept="37vLTw" id="VY0JpFqrtK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+                </node>
+                <node concept="liA8E" id="VY0JpFqrtL" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                </node>
+              </node>
+              <node concept="3clFbT" id="VY0JpFqqgQ" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="VY0JpFqpOC" role="3cqZAp" />
+        <node concept="3clFbH" id="VY0JpFqpQh" role="3cqZAp" />
         <node concept="3SKdUt" id="OCU8ijcaig" role="3cqZAp">
           <node concept="3SKdUq" id="OCU8ijcaih" role="3SKWNk">
             <property role="3SKdUp" value="TODO: we shouldn't use the DFStraverser anymore, travers the AST instead" />
           </node>
         </node>
-        <node concept="3cpWs8" id="7o3bbrGlEpK" role="3cqZAp">
-          <node concept="3cpWsn" id="7o3bbrGlEpL" role="3cpWs9">
-            <property role="TrG5h" value="dfsTraverser" />
-            <node concept="3uibUv" id="7o3bbrGlEpM" role="1tU5fm">
-              <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
-            </node>
-            <node concept="2ShNRf" id="7o3bbrGlEpN" role="33vP2m">
-              <node concept="1pGfFk" id="7o3bbrGlEpO" role="2ShVmc">
-                <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
-                <node concept="2OqwBi" id="7o3bbrGlEpP" role="37wK5m">
-                  <node concept="37vLTw" id="7o3bbrGlEpQ" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+        <node concept="1X3_iC" id="VY0JpFqrTn" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3cpWs8" id="7o3bbrGlEpK" role="8Wnug">
+            <node concept="3cpWsn" id="7o3bbrGlEpL" role="3cpWs9">
+              <property role="TrG5h" value="dfsTraverser" />
+              <node concept="3uibUv" id="7o3bbrGlEpM" role="1tU5fm">
+                <ref role="3uigEE" to="f4zo:~DfsTraverserIterable" resolve="DfsTraverserIterable" />
+              </node>
+              <node concept="2ShNRf" id="7o3bbrGlEpN" role="33vP2m">
+                <node concept="1pGfFk" id="7o3bbrGlEpO" role="2ShVmc">
+                  <ref role="37wK5l" to="f4zo:~DfsTraverserIterable.&lt;init&gt;(jetbrains.mps.openapi.editor.cells.EditorCell,boolean,boolean)" resolve="DfsTraverserIterable" />
+                  <node concept="2OqwBi" id="7o3bbrGlEpP" role="37wK5m">
+                    <node concept="37vLTw" id="7o3bbrGlEpQ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7o3bbrGlnmQ" resolve="editorContext" />
+                    </node>
+                    <node concept="liA8E" id="7o3bbrGlEpR" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="7o3bbrGlEpR" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorContext.getSelectedCell():jetbrains.mps.openapi.editor.cells.EditorCell" resolve="getSelectedCell" />
+                  <node concept="3clFbT" id="7o3bbrGlEpS" role="37wK5m">
+                    <property role="3clFbU" value="true" />
                   </node>
+                  <node concept="3clFbT" id="7o3bbrGlEpT" role="37wK5m" />
                 </node>
-                <node concept="3clFbT" id="7o3bbrGlEpS" role="37wK5m">
-                  <property role="3clFbU" value="true" />
-                </node>
-                <node concept="3clFbT" id="7o3bbrGlEpT" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -5174,8 +5247,8 @@
           <node concept="2GrKxI" id="7o3bbrGlEpV" role="2Gsz3X">
             <property role="TrG5h" value="cell" />
           </node>
-          <node concept="37vLTw" id="7o3bbrGlEpW" role="2GsD0m">
-            <ref role="3cqZAo" node="7o3bbrGlEpL" resolve="dfsTraverser" />
+          <node concept="37vLTw" id="VY0JpFqsDE" role="2GsD0m">
+            <ref role="3cqZAo" node="VY0JpFqqgL" resolve="treeIterable" />
           </node>
           <node concept="3clFbS" id="7o3bbrGlEpX" role="2LFqv$">
             <node concept="3clFbJ" id="OCU8ijfd5M" role="3cqZAp">

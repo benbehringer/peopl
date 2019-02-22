@@ -41,7 +41,6 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="562388756460228274" name="jetbrains.mps.lang.editor.structure.MigrateManuallyAnnotation" flags="ng" index="xG$WE" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
         <reference id="6718020819487620874" name="menu" index="A1WHt" />
@@ -54,9 +53,6 @@
       </concept>
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
-      </concept>
-      <concept id="1214320119173" name="jetbrains.mps.lang.editor.structure.SideTransformAnchorTagStyleClassItem" flags="ng" index="2V7CMv">
-        <property id="1214320119174" name="tag" index="2V7CMs" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -274,17 +270,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -5031,14 +5019,6 @@
         <ref role="1NtTu8" to="tpee:gDDuvdF" resolve="variable" />
         <ref role="1ERwB7" to="tpen:ETMmLKkRnQ" resolve="HandleFirstForLoopVar" />
         <ref role="34QXea" to="tpen:ETMmLKnkcF" resolve="AddForStatementVar" />
-        <node concept="1X3_iC" id="q735wx1gT9" role="lGtFl">
-          <property role="3V$3am" value="styleItem" />
-          <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
-          <node concept="2V7CMv" id="Tj67gFBCDv" role="8Wnug">
-            <property role="2V7CMs" value="ext_2_RTransform" />
-            <node concept="xG$WE" id="q735wx1gT8" role="lGtFl" />
-          </node>
-        </node>
       </node>
       <node concept="3EZMnI" id="Tj67gFBhgj" role="3EZMnx">
         <node concept="VPM3Z" id="Tj67gFBhgk" role="3F10Kt">
