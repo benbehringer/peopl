@@ -118,6 +118,9 @@
       <property role="IQ2ns" value="9153151524794690374" />
       <ref role="20lvS9" node="7irj4gs$aYR" resolve="FragmentUpdater" />
     </node>
+    <node concept="PrWs8" id="1EQ1Eip_G6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
     <node concept="PrWs8" id="31jQQFwurnr" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -136,6 +139,9 @@
       <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="6242855909345491563" />
       <ref role="20lvS9" node="6K8EDSn5e6T" resolve="Fragment" />
+    </node>
+    <node concept="PrWs8" id="1EQ1Eip5A2" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
     <node concept="PrWs8" id="6nmwsNvm4OK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -174,6 +180,9 @@
     <node concept="PrWs8" id="67jSsTBwaAH" role="PzmwI">
       <ref role="PrY4T" node="67jSsTBwa$C" resolve="IColor" />
     </node>
+    <node concept="PrWs8" id="6ljESTEDZOG" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
+    </node>
     <node concept="1QGGSu" id="q735wx1dZ3" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/peoplModuleAlternative_javaModule.png" />
     </node>
@@ -204,6 +213,9 @@
     </node>
     <node concept="PrWs8" id="7l1ua4yAdEc" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="6ljESTEE8MQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
     <node concept="1QGGSu" id="q735wx1dZ5" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/peoplModulesAlternative_layout.png" />

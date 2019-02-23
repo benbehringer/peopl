@@ -4,6 +4,7 @@
   <languages>
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="13" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
@@ -13,7 +14,8 @@
     <import index="evo" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.newTypesystem.context(MPS.Core/)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
+    <import index="k2t0" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.checkers(MPS.Core/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -56,6 +58,9 @@
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -75,6 +80,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -83,6 +89,10 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
@@ -114,7 +124,6 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
-      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -128,6 +137,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -176,107 +186,122 @@
                     <node concept="3cqZAl" id="1wmvoNaDr86" role="3clF45" />
                     <node concept="3Tm1VV" id="1wmvoNaDr87" role="1B3o_S" />
                     <node concept="3clFbS" id="1wmvoNaDr89" role="3clF47">
-                      <node concept="3clFbJ" id="1wmvoNaDrsq" role="3cqZAp">
-                        <node concept="1Wc70l" id="uqAlwJ_Rpq" role="3clFbw">
-                          <node concept="3y3z36" id="uqAlwJ_XZy" role="3uHU7B">
-                            <node concept="10Nm6u" id="uqAlwJ_Ybe" role="3uHU7w" />
-                            <node concept="2OqwBi" id="uqAlwJ_SpH" role="3uHU7B">
-                              <node concept="37vLTw" id="uqAlwJ_RGo" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
-                              </node>
-                              <node concept="liA8E" id="uqAlwJ_Wzq" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                      <node concept="3clFbJ" id="6obNs3jy4Jc" role="3cqZAp">
+                        <node concept="3clFbS" id="6obNs3jy4Je" role="3clFbx">
+                          <node concept="3cpWs8" id="3Iq6nuQUrpy" role="3cqZAp">
+                            <node concept="3cpWsn" id="3Iq6nuQUrp_" role="3cpWs9">
+                              <property role="TrG5h" value="editedNode" />
+                              <node concept="3Tqbb2" id="3Iq6nuQUrpw" role="1tU5fm" />
+                              <node concept="2OqwBi" id="3Iq6nuQUvbR" role="33vP2m">
+                                <node concept="37vLTw" id="3Iq6nuQUvbS" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                                </node>
+                                <node concept="liA8E" id="3Iq6nuQUvbT" role="2OqNvi">
+                                  <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                                </node>
                               </node>
                             </node>
                           </node>
-                          <node concept="2OqwBi" id="1wmvoNaDs9m" role="3uHU7w">
-                            <node concept="2OqwBi" id="1wmvoNaDry6" role="2Oq$k0">
-                              <node concept="37vLTw" id="1wmvoNaDrth" role="2Oq$k0">
-                                <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                          <node concept="3clFbJ" id="1wmvoNaDrsq" role="3cqZAp">
+                            <node concept="2OqwBi" id="6ljESTECPHh" role="3clFbw">
+                              <node concept="2OqwBi" id="6ljESTECFig" role="2Oq$k0">
+                                <node concept="37vLTw" id="6ljESTECDru" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3Iq6nuQUrp_" resolve="editedNode" />
+                                </node>
+                                <node concept="2yIwOk" id="6ljESTECKuj" role="2OqNvi" />
                               </node>
-                              <node concept="liA8E" id="1wmvoNaDs7X" role="2OqNvi">
-                                <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                              <node concept="liA8E" id="6ljESTECVrz" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
+                                <node concept="35c_gC" id="6ljESTECY1f" role="37wK5m">
+                                  <ref role="35c_gD" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                                </node>
                               </node>
                             </node>
-                            <node concept="liA8E" id="1wmvoNaDsdR" role="2OqNvi">
-                              <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
-                              <node concept="35c_gC" id="1wmvoNaDsf5" role="37wK5m">
-                                <ref role="35c_gD" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                            <node concept="3clFbS" id="1wmvoNaDrss" role="3clFbx">
+                              <node concept="3SKdUt" id="3lvBWtL7hZY" role="3cqZAp">
+                                <node concept="3SKdUq" id="3lvBWtL7i00" role="3SKWNk">
+                                  <property role="3SKdUp" value="With this workaorund we change the node which provides the base for the typechecking" />
+                                </node>
+                              </node>
+                              <node concept="3SKdUt" id="3lvBWtL7ifu" role="3cqZAp">
+                                <node concept="3SKdUq" id="3lvBWtL7ifw" role="3SKWNk">
+                                  <property role="3SKdUp" value="at first we have to release the typecheckingContext of our editorcomponent because" />
+                                </node>
+                              </node>
+                              <node concept="3SKdUt" id="3lvBWtL7irI" role="3cqZAp">
+                                <node concept="3SKdUq" id="3lvBWtL7irK" role="3SKWNk">
+                                  <property role="3SKdUp" value="it points to the modularCompilationUnit. Instead we want the typecheckingcontext to" />
+                                </node>
+                              </node>
+                              <node concept="3SKdUt" id="3lvBWtL7iBZ" role="3cqZAp">
+                                <node concept="3SKdUq" id="3lvBWtL7iC1" role="3SKWNk">
+                                  <property role="3SKdUp" value="point to the compilationUnit" />
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="622kMIlpkqX" role="3cqZAp">
+                                <node concept="2OqwBi" id="622kMIlpkud" role="3clFbG">
+                                  <node concept="2YIFZM" id="622kMIlpkto" role="2Oq$k0">
+                                    <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                                    <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                                  </node>
+                                  <node concept="liA8E" id="622kMIlpk$0" role="2OqNvi">
+                                    <ref role="37wK5l" to="u78q:~TypeContextManager.releaseTypecheckingContext(jetbrains.mps.typesystem.inference.ITypeContextOwner):void" resolve="releaseTypecheckingContext" />
+                                    <node concept="37vLTw" id="622kMIlpk_6" role="37wK5m">
+                                      <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbF" id="77FQfzmYf$" role="3cqZAp">
+                                <node concept="2OqwBi" id="77FQfzmYf_" role="3clFbG">
+                                  <node concept="2YIFZM" id="77FQfzmYfA" role="2Oq$k0">
+                                    <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
+                                    <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
+                                  </node>
+                                  <node concept="liA8E" id="77FQfzmYfB" role="2OqNvi">
+                                    <ref role="37wK5l" to="u78q:~TypeContextManager.acquireTypecheckingContext(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypeContextOwner):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="acquireTypecheckingContext" />
+                                    <node concept="2OqwBi" id="77FQfzmYfC" role="37wK5m">
+                                      <node concept="1eOMI4" id="77FQfzmYfD" role="2Oq$k0">
+                                        <node concept="10QFUN" id="77FQfzmYfE" role="1eOMHV">
+                                          <node concept="3Tqbb2" id="77FQfzmYfF" role="10QFUM">
+                                            <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                                          </node>
+                                          <node concept="2OqwBi" id="77FQfzmYfG" role="10QFUP">
+                                            <node concept="37vLTw" id="622kMIlpkb2" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                                            </node>
+                                            <node concept="liA8E" id="77FQfzmYfI" role="2OqNvi">
+                                              <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                                            </node>
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="3TrEf2" id="77FQfzmYfJ" role="2OqNvi">
+                                        <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" resolve="compilationUnit" />
+                                      </node>
+                                    </node>
+                                    <node concept="37vLTw" id="622kMIlpkdj" role="37wK5m">
+                                      <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                                    </node>
+                                  </node>
+                                </node>
                               </node>
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbS" id="1wmvoNaDrss" role="3clFbx">
-                          <node concept="3SKdUt" id="3lvBWtL7hZY" role="3cqZAp">
-                            <node concept="3SKdUq" id="3lvBWtL7i00" role="3SKWNk">
-                              <property role="3SKdUp" value="With this workaorund we change the node which provides the base for the typechecking" />
+                        <node concept="3y3z36" id="uqAlwJ_XZy" role="3clFbw">
+                          <node concept="10Nm6u" id="uqAlwJ_Ybe" role="3uHU7w" />
+                          <node concept="2OqwBi" id="uqAlwJ_SpH" role="3uHU7B">
+                            <node concept="37vLTw" id="uqAlwJ_RGo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
                             </node>
-                          </node>
-                          <node concept="3SKdUt" id="3lvBWtL7ifu" role="3cqZAp">
-                            <node concept="3SKdUq" id="3lvBWtL7ifw" role="3SKWNk">
-                              <property role="3SKdUp" value="at first we have to release the typecheckingContext of our editorcomponent because" />
-                            </node>
-                          </node>
-                          <node concept="3SKdUt" id="3lvBWtL7irI" role="3cqZAp">
-                            <node concept="3SKdUq" id="3lvBWtL7irK" role="3SKWNk">
-                              <property role="3SKdUp" value="it points to the modularCompilationUnit. Instead we want the typecheckingcontext to" />
-                            </node>
-                          </node>
-                          <node concept="3SKdUt" id="3lvBWtL7iBZ" role="3cqZAp">
-                            <node concept="3SKdUq" id="3lvBWtL7iC1" role="3SKWNk">
-                              <property role="3SKdUp" value="point to the compilationUnit" />
-                            </node>
-                          </node>
-                          <node concept="3clFbF" id="622kMIlpkqX" role="3cqZAp">
-                            <node concept="2OqwBi" id="622kMIlpkud" role="3clFbG">
-                              <node concept="2YIFZM" id="622kMIlpkto" role="2Oq$k0">
-                                <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-                                <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                              </node>
-                              <node concept="liA8E" id="622kMIlpk$0" role="2OqNvi">
-                                <ref role="37wK5l" to="u78q:~TypeContextManager.releaseTypecheckingContext(jetbrains.mps.typesystem.inference.ITypeContextOwner):void" resolve="releaseTypecheckingContext" />
-                                <node concept="37vLTw" id="622kMIlpk_6" role="37wK5m">
-                                  <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="3clFbF" id="77FQfzmYf$" role="3cqZAp">
-                            <node concept="2OqwBi" id="77FQfzmYf_" role="3clFbG">
-                              <node concept="2YIFZM" id="77FQfzmYfA" role="2Oq$k0">
-                                <ref role="37wK5l" to="u78q:~TypeContextManager.getInstance():jetbrains.mps.typesystem.inference.TypeContextManager" resolve="getInstance" />
-                                <ref role="1Pybhc" to="u78q:~TypeContextManager" resolve="TypeContextManager" />
-                              </node>
-                              <node concept="liA8E" id="77FQfzmYfB" role="2OqNvi">
-                                <ref role="37wK5l" to="u78q:~TypeContextManager.acquireTypecheckingContext(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.ITypeContextOwner):jetbrains.mps.typesystem.inference.TypeCheckingContext" resolve="acquireTypecheckingContext" />
-                                <node concept="2OqwBi" id="77FQfzmYfC" role="37wK5m">
-                                  <node concept="1eOMI4" id="77FQfzmYfD" role="2Oq$k0">
-                                    <node concept="10QFUN" id="77FQfzmYfE" role="1eOMHV">
-                                      <node concept="3Tqbb2" id="77FQfzmYfF" role="10QFUM">
-                                        <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
-                                      </node>
-                                      <node concept="2OqwBi" id="77FQfzmYfG" role="10QFUP">
-                                        <node concept="37vLTw" id="622kMIlpkb2" role="2Oq$k0">
-                                          <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
-                                        </node>
-                                        <node concept="liA8E" id="77FQfzmYfI" role="2OqNvi">
-                                          <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
-                                        </node>
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="3TrEf2" id="77FQfzmYfJ" role="2OqNvi">
-                                    <ref role="3Tt5mk" to="vmgn:EpVRRuzv0d" resolve="compilationUnit" />
-                                  </node>
-                                </node>
-                                <node concept="37vLTw" id="622kMIlpkdj" role="37wK5m">
-                                  <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
-                                </node>
-                              </node>
+                            <node concept="liA8E" id="uqAlwJ_Wzq" role="2OqNvi">
+                              <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
                             </node>
                           </node>
                         </node>
                       </node>
+                      <node concept="3clFbH" id="6obNs3jxL6N" role="3cqZAp" />
                     </node>
                   </node>
                   <node concept="3clFb_" id="1wmvoNaDr8b" role="jymVt">

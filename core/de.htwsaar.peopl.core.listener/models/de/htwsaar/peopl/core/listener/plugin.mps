@@ -740,7 +740,7 @@
                               <property role="3SKdUp" value="Name of the class changed, thus we update the name of the peopl entry point" />
                             </node>
                           </node>
-                          <node concept="1X3_iC" id="4uCbWdTKLq1" role="lGtFl">
+                          <node concept="1X3_iC" id="5LbYfUmkPwT" role="lGtFl">
                             <property role="3V$3am" value="statement" />
                             <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
                             <node concept="3clFbF" id="4uCbWdTKLq2" role="8Wnug">

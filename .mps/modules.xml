@@ -24,7 +24,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureConfig/de.htwsaar.peopl.core.featureConfig.mpl" folder="peopl.core.featureConfig" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.featureListener/de.htwsaar.peopl.core.featureListener.msd" folder="peopl.core.featureConfig" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.listener/de.htwsaar.peopl.core.listener.msd" folder="peopl.core.essential" />
-      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.modularTypeChecking/de.htwsaar.peopl.core.modularTypeChecking.msd" folder="peopl.core.tools" />
+      <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.modularTypeChecking/de.htwsaar.peopl.core.modularTypeChecking.msd" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.moduleConfig/de.htwsaar.peopl.core.moduleConfig.mpl" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.peoplTest/de.htwsaar.peopl.core.peoplTest.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.runtime/de.htwsaar.peopl.core.runtime.msd" folder="peopl.core.essential" />
