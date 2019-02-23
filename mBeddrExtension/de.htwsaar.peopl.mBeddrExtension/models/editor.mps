@@ -6377,8 +6377,12 @@
                       <property role="VOm3f" value="true" />
                     </node>
                   </node>
-                  <node concept="pj6Ft" id="7apEgWbIFgo" role="3F10Kt">
-                    <property role="VOm3f" value="false" />
+                  <node concept="1X3_iC" id="7k0JwrrySvP" role="lGtFl">
+                    <property role="3V$3am" value="styleItem" />
+                    <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+                    <node concept="pj6Ft" id="7apEgWbIFgo" role="8Wnug">
+                      <property role="VOm3f" value="false" />
+                    </node>
                   </node>
                   <node concept="2iRkQZ" id="3r83Ks0g8fR" role="2czzBx" />
                   <node concept="ljvvj" id="7apEgWbIFgq" role="3F10Kt">
@@ -6468,8 +6472,12 @@
           <node concept="3F2HdR" id="5_l8w1EmTdN" role="3EZMnx">
             <ref role="1NtTu8" to="x27k:5_l8w1EmTdh" resolve="contents" />
             <ref role="APP_o" to="r4b4:$hL4249ROO" resolve="deleteEmptyStuffInCollection" />
-            <node concept="pj6Ft" id="7apEgWbIFgt" role="3F10Kt">
-              <property role="VOm3f" value="true" />
+            <node concept="1X3_iC" id="7k0JwrryR6J" role="lGtFl">
+              <property role="3V$3am" value="styleItem" />
+              <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1219418625346/1219418656006" />
+              <node concept="pj6Ft" id="7apEgWbIFgt" role="8Wnug">
+                <property role="VOm3f" value="true" />
+              </node>
             </node>
             <node concept="2iRkQZ" id="1Fd_UL3AQRY" role="2czzBx" />
             <node concept="ljvvj" id="7apEgWbIFgv" role="3F10Kt">

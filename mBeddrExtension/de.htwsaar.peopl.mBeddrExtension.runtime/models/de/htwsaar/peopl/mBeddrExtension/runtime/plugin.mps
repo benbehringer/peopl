@@ -1273,7 +1273,7 @@
       </node>
     </node>
     <node concept="1QGGSu" id="2bP_SOPZ6fq" role="3Uehp1">
-      <property role="1iqoE4" value="/Users/moritz/git/peopl-final/peopl/baseLanguageExtensions/projectview/de.htwsaar.peopl.projectview.common/icons/peopl_solution.png" />
+      <property role="1iqoE4" value="${module}/icons/peopl_solution.png" />
     </node>
   </node>
   <node concept="312cEu" id="7zTQQdmTweG">
