@@ -51,8 +51,16 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+        <child id="7348800710862477686" name="contextHints" index="3XTboT" />
+      </concept>
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1164914519156" name="jetbrains.mps.lang.editor.structure.CellMenuPart_ReplaceNode_CustomNodeConcept" flags="ng" index="UkePV">
         <reference id="1164914727930" name="replacementConcept" index="Ul1FP" />
+      </concept>
+      <concept id="1214317859050" name="jetbrains.mps.lang.editor.structure.LayoutConstraintStyleClassItem" flags="ln" index="2UZ17K">
+        <property id="1214317859051" name="layoutConstraint" index="2UZ17L" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
@@ -119,6 +127,9 @@
       <concept id="1163613035599" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_Query" flags="in" index="3GJtP1" />
       <concept id="1163613549566" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_parameterObject" flags="nn" index="3GLrbK" />
       <concept id="1163613822479" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Abstract_editedNode" flags="nn" index="3GMtW1" />
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
+      </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
@@ -9162,6 +9173,21 @@
         </node>
       </node>
       <node concept="l2Vlx" id="i0v3HkN" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="4RMdefoe9PF">
+    <property role="TrG5h" value="WrapperPreProcessor" />
+    <ref role="1XX52x" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
+    <node concept="1PE4EZ" id="4RMdefoe9PJ" role="1PM95z">
+      <ref role="1PE7su" to="tqa7:6naEs2gb4$n" resolve="Wrapper" />
+    </node>
+    <node concept="2SsqMj" id="6naEs2gb4DE" role="2wV5jI">
+      <node concept="2UZ17K" id="6naEs2gb4DF" role="3F10Kt">
+        <property role="2UZ17L" value="noflow" />
+      </node>
+    </node>
+    <node concept="2aJ2om" id="6CV4gxdWige" role="3XTboT">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrwzX" resolve="preprocessor" />
     </node>
   </node>
 </model>
