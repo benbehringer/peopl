@@ -51,6 +51,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -97,6 +98,11 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -108,6 +114,7 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -170,19 +177,32 @@
                     <node concept="3Tm1VV" id="1wmvoNaDr87" role="1B3o_S" />
                     <node concept="3clFbS" id="1wmvoNaDr89" role="3clF47">
                       <node concept="3clFbJ" id="1wmvoNaDrsq" role="3cqZAp">
-                        <node concept="2OqwBi" id="1wmvoNaDs9m" role="3clFbw">
-                          <node concept="2OqwBi" id="1wmvoNaDry6" role="2Oq$k0">
-                            <node concept="37vLTw" id="1wmvoNaDrth" role="2Oq$k0">
-                              <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
-                            </node>
-                            <node concept="liA8E" id="1wmvoNaDs7X" role="2OqNvi">
-                              <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                        <node concept="1Wc70l" id="uqAlwJ_Rpq" role="3clFbw">
+                          <node concept="3y3z36" id="uqAlwJ_XZy" role="3uHU7B">
+                            <node concept="10Nm6u" id="uqAlwJ_Ybe" role="3uHU7w" />
+                            <node concept="2OqwBi" id="uqAlwJ_SpH" role="3uHU7B">
+                              <node concept="37vLTw" id="uqAlwJ_RGo" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                              </node>
+                              <node concept="liA8E" id="uqAlwJ_Wzq" role="2OqNvi">
+                                <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                              </node>
                             </node>
                           </node>
-                          <node concept="liA8E" id="1wmvoNaDsdR" role="2OqNvi">
-                            <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
-                            <node concept="35c_gC" id="1wmvoNaDsf5" role="37wK5m">
-                              <ref role="35c_gD" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                          <node concept="2OqwBi" id="1wmvoNaDs9m" role="3uHU7w">
+                            <node concept="2OqwBi" id="1wmvoNaDry6" role="2Oq$k0">
+                              <node concept="37vLTw" id="1wmvoNaDrth" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1wmvoNaDr84" resolve="editorComponent" />
+                              </node>
+                              <node concept="liA8E" id="1wmvoNaDs7X" role="2OqNvi">
+                                <ref role="37wK5l" to="exr9:~EditorComponent.getEditedNode():org.jetbrains.mps.openapi.model.SNode" resolve="getEditedNode" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="1wmvoNaDsdR" role="2OqNvi">
+                              <ref role="37wK5l" to="mhbf:~SNode.isInstanceOfConcept(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isInstanceOfConcept" />
+                              <node concept="35c_gC" id="1wmvoNaDsf5" role="37wK5m">
+                                <ref role="35c_gD" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                              </node>
                             </node>
                           </node>
                         </node>
