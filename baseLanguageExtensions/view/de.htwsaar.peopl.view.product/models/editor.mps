@@ -337,7 +337,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1073063089578" name="jetbrains.mps.baseLanguage.structure.SuperMethodCall" flags="nn" index="3nyPlj" />
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
@@ -1759,24 +1758,6 @@
         <property role="DiZV1" value="false" />
         <property role="2aFKle" value="false" />
         <node concept="3clFbS" id="6bj2b$tJQfQ" role="3clF47">
-          <node concept="1X3_iC" id="7k0JwrrMBka" role="lGtFl">
-            <property role="3V$3am" value="statement" />
-            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-            <node concept="3cpWs8" id="6bj2b$tJR1A" role="8Wnug">
-              <node concept="3cpWsn" id="6bj2b$tJR1B" role="3cpWs9">
-                <property role="TrG5h" value="elementCell" />
-                <node concept="3uibUv" id="6bj2b$tJYWD" role="1tU5fm">
-                  <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
-                </node>
-                <node concept="3nyPlj" id="6bj2b$tJR29" role="33vP2m">
-                  <ref role="37wK5l" to="emqf:~AbstractCellListHandler.createNodeCell(org.jetbrains.mps.openapi.model.SNode):jetbrains.mps.openapi.editor.cells.EditorCell" resolve="createNodeCell" />
-                  <node concept="37vLTw" id="6bj2b$tJR5$" role="37wK5m">
-                    <ref role="3cqZAo" node="6bj2b$tJQJk" resolve="elementNode" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3cpWs8" id="7k0JwrrMFFz" role="3cqZAp">
             <node concept="3cpWsn" id="7k0JwrrMFF$" role="3cpWs9">
               <property role="TrG5h" value="elementCell" />
