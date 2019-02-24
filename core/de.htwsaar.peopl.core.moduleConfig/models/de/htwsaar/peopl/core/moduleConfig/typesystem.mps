@@ -12,6 +12,7 @@
     <import index="sj65" ref="r:83c394ce-b4ba-4c19-ab0a-e77d2b8cbfa7(de.htwsaar.peopl.core.moduleConfig.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -181,6 +182,9 @@
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -789,6 +793,16 @@
           <node concept="3x8VRR" id="13Nq08zudw1" role="2OqNvi" />
         </node>
         <node concept="3clFbS" id="4p4J_SJv1m3" role="3clFbx">
+          <node concept="1X3_iC" id="2PRwrhqjX7y" role="lGtFl">
+            <property role="3V$3am" value="statement" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+            <node concept="2xdQw9" id="2PRwrhqjiLL" role="8Wnug">
+              <property role="2xdLsb" value="warn" />
+              <node concept="Xl_RD" id="2PRwrhqjiLN" role="9lYJi">
+                <property role="Xl_RC" value="moduleExpression" />
+              </node>
+            </node>
+          </node>
           <node concept="3SKdUt" id="5YIQQiOD5nd" role="3cqZAp">
             <node concept="3SKdUq" id="5YIQQiOD5ne" role="3SKWNk">
               <property role="3SKdUp" value="we populate all modules from the current module definition" />
@@ -830,6 +844,31 @@
             <node concept="3clFbS" id="5YIQQiOD5Ss" role="2LFqv$">
               <node concept="3clFbJ" id="3keR7iadSkM" role="3cqZAp">
                 <node concept="3clFbS" id="3keR7iadSkO" role="3clFbx">
+                  <node concept="1X3_iC" id="2PRwrhqjXTZ" role="lGtFl">
+                    <property role="3V$3am" value="statement" />
+                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                    <node concept="2xdQw9" id="2PRwrhqg59s" role="8Wnug">
+                      <property role="2xdLsb" value="warn" />
+                      <node concept="3cpWs3" id="2PRwrhqh8kr" role="9lYJi">
+                        <node concept="2OqwBi" id="2PRwrhqiJe2" role="3uHU7w">
+                          <node concept="2OqwBi" id="2PRwrhqh8zv" role="2Oq$k0">
+                            <node concept="2GrUjf" id="2PRwrhqh8lC" role="2Oq$k0">
+                              <ref role="2Gs0qQ" node="5YIQQiOD5So" resolve="moduleConnector" />
+                            </node>
+                            <node concept="3TrEf2" id="2PRwrhqhRhc" role="2OqNvi">
+                              <ref role="3Tt5mk" to="sj65:_uCk0nlSox" resolve="connectedModule" />
+                            </node>
+                          </node>
+                          <node concept="3TrcHB" id="2PRwrhqiJGb" role="2OqNvi">
+                            <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="2PRwrhqg59u" role="3uHU7B">
+                          <property role="Xl_RC" value="add module: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="3clFbF" id="5YIQQiOD6iK" role="3cqZAp">
                     <node concept="2OqwBi" id="5YIQQiOD6tK" role="3clFbG">
                       <node concept="37vLTw" id="5YIQQiOD6iJ" role="2Oq$k0">
