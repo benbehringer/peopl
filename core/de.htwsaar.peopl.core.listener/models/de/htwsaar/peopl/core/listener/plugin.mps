@@ -2217,10 +2217,10 @@
                               <node concept="3uibUv" id="32xgP8_tPSd" role="1tU5fm">
                                 <ref role="3uigEE" to="ikxv:2FVYQByNitn" resolve="IVariabilityAspectRuntime" />
                               </node>
-                              <node concept="2YIFZM" id="32xgP8_tQ5V" role="33vP2m">
-                                <ref role="37wK5l" to="zur:2W3sxLBsmXN" resolve="getRuntimeForNode" />
+                              <node concept="2YIFZM" id="3KDIIR1byUe" role="33vP2m">
+                                <ref role="37wK5l" to="zur:5MWIJNXoNBa" resolve="getRuntimeForNodeDebug" />
                                 <ref role="1Pybhc" to="zur:2W3sxLBsmTY" resolve="VariabilityProvider" />
-                                <node concept="37vLTw" id="32xgP8_tQ6O" role="37wK5m">
+                                <node concept="37vLTw" id="3KDIIR1byUf" role="37wK5m">
                                   <ref role="3cqZAo" node="4uCbWdTKLz3" resolve="node" />
                                 </node>
                               </node>

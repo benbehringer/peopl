@@ -14675,11 +14675,6 @@
     <node concept="2aJ2om" id="6naEs2fW$wf" role="CpUAK">
       <ref role="2$4xQ3" node="2W3sxLBrs3A" resolve="annotative" />
     </node>
-    <node concept="1X3_iC" id="37$6Hus6isL" role="lGtFl">
-      <property role="3V$3am" value="cellModel" />
-      <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
-      <node concept="B$lHz" id="7jaF$uU698" role="8Wnug" />
-    </node>
   </node>
   <node concept="PKFIW" id="6naEs2gb4$n">
     <property role="3GE5qa" value="Extensions.Wrapper" />
