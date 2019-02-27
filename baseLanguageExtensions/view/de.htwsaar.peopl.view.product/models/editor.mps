@@ -414,9 +414,6 @@
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -531,17 +528,6 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="6bj2b$tHCL2" role="1B3o_S" />
       <node concept="3Tqbb2" id="6bj2b$tHCM8" role="1tU5fm" />
-    </node>
-    <node concept="2tJIrI" id="6bj2b$tHXms" role="jymVt" />
-    <node concept="312cEg" id="6bj2b$tHXWE" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="fillingFrags" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tm1VV" id="6bj2b$tHXMX" role="1B3o_S" />
-      <node concept="2I9FWS" id="6bj2b$tHXWC" role="1tU5fm">
-        <ref role="2I9WkF" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
-      </node>
     </node>
     <node concept="2tJIrI" id="6bj2b$tHXvU" role="jymVt" />
     <node concept="Wx3nA" id="3Mm3FE9TEOA" role="jymVt">
