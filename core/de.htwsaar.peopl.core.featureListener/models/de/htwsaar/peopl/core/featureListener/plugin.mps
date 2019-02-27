@@ -33,10 +33,7 @@
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
-      <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy">
-        <child id="481983775135178836" name="initBlock" index="2uRRB$" />
-        <child id="481983775135178837" name="disposeBlock" index="2uRRB_" />
-      </concept>
+      <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy" />
       <concept id="481983775135178819" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDisposeBlock" flags="in" index="2uRRBN" />
       <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -1289,62 +1286,70 @@
   </node>
   <node concept="2uRRBy" id="26M783K_kas">
     <property role="TrG5h" value="FeatureProjectListener" />
-    <node concept="2uRRBT" id="26M783K_kat" role="2uRRB$">
-      <node concept="3clFbS" id="26M783K_kau" role="2VODD2">
-        <node concept="3clFbF" id="1VVxE8DwEmM" role="3cqZAp">
-          <node concept="2YIFZM" id="1VVxE8DwEpo" role="3clFbG">
-            <ref role="37wK5l" node="71KyjIiRFEP" resolve="rememberModuleReloadListener" />
-            <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="FeaturePeoplListenerCache" />
-            <node concept="2YIFZM" id="1VVxE8DwEuq" role="37wK5m">
-              <ref role="37wK5l" to="gzfr:8K4WCaTW55" resolve="addClassloadListener" />
-              <ref role="1Pybhc" to="gzfr:8K4WCaTVOA" resolve="PeoplClassLoadListener" />
-              <node concept="1KvdUw" id="1VVxE8DwEv0" role="37wK5m" />
+    <node concept="1X3_iC" id="3KDIIR1vipZ" role="lGtFl">
+      <property role="3V$3am" value="initBlock" />
+      <property role="3V$3ak" value="ef7bf5ac-d06c-4342-b11d-e42104eb9343/481983775135178834/481983775135178836" />
+      <node concept="2uRRBT" id="26M783K_kat" role="8Wnug">
+        <node concept="3clFbS" id="26M783K_kau" role="2VODD2">
+          <node concept="3clFbF" id="1VVxE8DwEmM" role="3cqZAp">
+            <node concept="2YIFZM" id="1VVxE8DwEpo" role="3clFbG">
+              <ref role="37wK5l" node="71KyjIiRFEP" resolve="rememberModuleReloadListener" />
+              <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="FeaturePeoplListenerCache" />
+              <node concept="2YIFZM" id="1VVxE8DwEuq" role="37wK5m">
+                <ref role="37wK5l" to="gzfr:8K4WCaTW55" resolve="addClassloadListener" />
+                <ref role="1Pybhc" to="gzfr:8K4WCaTVOA" resolve="PeoplClassLoadListener" />
+                <node concept="1KvdUw" id="1VVxE8DwEv0" role="37wK5m" />
+              </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbH" id="1VVxE8DwEeA" role="3cqZAp" />
-        <node concept="1QHqEK" id="1VVxE8DwCeE" role="3cqZAp">
-          <node concept="1QHqEC" id="1VVxE8DwCeG" role="1QHqEI">
-            <node concept="3clFbS" id="1VVxE8DwCeI" role="1bW5cS">
-              <node concept="2Gpval" id="7qo5jFk$_Or" role="3cqZAp">
-                <node concept="2GrKxI" id="7qo5jFk$_Ot" role="2Gsz3X">
-                  <property role="TrG5h" value="model" />
-                </node>
-                <node concept="3clFbS" id="7qo5jFk$_Ov" role="2LFqv$">
-                  <node concept="3clFbF" id="6cQtm9g7Ta0" role="3cqZAp">
-                    <node concept="2YIFZM" id="26M783K_klV" role="3clFbG">
-                      <ref role="1Pybhc" node="3qAcRklgaM6" resolve="FeatureListener" />
-                      <ref role="37wK5l" node="4abErjGKlAI" resolve="addFeatureListener" />
-                      <node concept="2GrUjf" id="26M783K_knt" role="37wK5m">
-                        <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
+          <node concept="3clFbH" id="1VVxE8DwEeA" role="3cqZAp" />
+          <node concept="1QHqEK" id="1VVxE8DwCeE" role="3cqZAp">
+            <node concept="1QHqEC" id="1VVxE8DwCeG" role="1QHqEI">
+              <node concept="3clFbS" id="1VVxE8DwCeI" role="1bW5cS">
+                <node concept="2Gpval" id="7qo5jFk$_Or" role="3cqZAp">
+                  <node concept="2GrKxI" id="7qo5jFk$_Ot" role="2Gsz3X">
+                    <property role="TrG5h" value="model" />
+                  </node>
+                  <node concept="3clFbS" id="7qo5jFk$_Ov" role="2LFqv$">
+                    <node concept="3clFbF" id="6cQtm9g7Ta0" role="3cqZAp">
+                      <node concept="2YIFZM" id="26M783K_klV" role="3clFbG">
+                        <ref role="1Pybhc" node="3qAcRklgaM6" resolve="FeatureListener" />
+                        <ref role="37wK5l" node="4abErjGKlAI" resolve="addFeatureListener" />
+                        <node concept="2GrUjf" id="26M783K_knt" role="37wK5m">
+                          <ref role="2Gs0qQ" node="7qo5jFk$_Ot" resolve="model" />
+                        </node>
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="2OqwBi" id="7qo5jFk$_X8" role="2GsD0m">
-                  <node concept="1KvdUw" id="7qo5jFk$_TG" role="2Oq$k0" />
-                  <node concept="liA8E" id="7qo5jFk$Aqn" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
+                  <node concept="2OqwBi" id="7qo5jFk$_X8" role="2GsD0m">
+                    <node concept="1KvdUw" id="7qo5jFk$_TG" role="2Oq$k0" />
+                    <node concept="liA8E" id="7qo5jFk$Aqn" role="2OqNvi">
+                      <ref role="37wK5l" to="z1c3:~Project.getProjectModels():java.lang.Iterable" resolve="getProjectModels" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
-          </node>
-          <node concept="2OqwBi" id="1VVxE8DwCE0" role="ukAjM">
-            <node concept="1KvdUw" id="1VVxE8DwChu" role="2Oq$k0" />
-            <node concept="liA8E" id="1VVxE8DwDMv" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+            <node concept="2OqwBi" id="1VVxE8DwCE0" role="ukAjM">
+              <node concept="1KvdUw" id="1VVxE8DwChu" role="2Oq$k0" />
+              <node concept="liA8E" id="1VVxE8DwDMv" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository():org.jetbrains.mps.openapi.module.SRepository" resolve="getRepository" />
+              </node>
             </node>
           </node>
         </node>
       </node>
     </node>
-    <node concept="2uRRBN" id="26M783K_MPv" role="2uRRB_">
-      <node concept="3clFbS" id="26M783K_MPw" role="2VODD2">
-        <node concept="3clFbF" id="26M783K_MVE" role="3cqZAp">
-          <node concept="2YIFZM" id="26M783K_MX5" role="3clFbG">
-            <ref role="37wK5l" node="71KyjIiRGkJ" resolve="removeALLOldListener" />
-            <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="FeaturePeoplListenerCache" />
+    <node concept="1X3_iC" id="3KDIIR1viBK" role="lGtFl">
+      <property role="3V$3am" value="disposeBlock" />
+      <property role="3V$3ak" value="ef7bf5ac-d06c-4342-b11d-e42104eb9343/481983775135178834/481983775135178837" />
+      <node concept="2uRRBN" id="26M783K_MPv" role="8Wnug">
+        <node concept="3clFbS" id="26M783K_MPw" role="2VODD2">
+          <node concept="3clFbF" id="26M783K_MVE" role="3cqZAp">
+            <node concept="2YIFZM" id="26M783K_MX5" role="3clFbG">
+              <ref role="37wK5l" node="71KyjIiRGkJ" resolve="removeALLOldListener" />
+              <ref role="1Pybhc" node="71KyjIiR_Tj" resolve="FeaturePeoplListenerCache" />
+            </node>
           </node>
         </node>
       </node>

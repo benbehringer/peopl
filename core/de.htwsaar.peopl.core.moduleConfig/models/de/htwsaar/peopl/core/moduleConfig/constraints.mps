@@ -15,7 +15,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -82,46 +82,46 @@
             </node>
           </node>
           <node concept="22lmx$" id="7c4Z5e$9oXR" role="3clFbw">
-            <node concept="3clFbC" id="7c4Z5e$9oXS" role="3uHU7w">
-              <node concept="35c_gC" id="7c4Z5e$9oYh" role="3uHU7w">
+            <node concept="17R0WA" id="3KDIIR1_bgv" role="3uHU7w">
+              <node concept="2DD5aU" id="3KDIIR1_bgw" role="3uHU7B" />
+              <node concept="35c_gC" id="3KDIIR1_bgx" role="3uHU7w">
                 <ref role="35c_gD" to="sj65:_uCk0nlSos" resolve="Overriding" />
               </node>
-              <node concept="2DD5aU" id="7c4Z5e$9oYg" role="3uHU7B" />
             </node>
             <node concept="22lmx$" id="7c4Z5e$9oXV" role="3uHU7B">
               <node concept="22lmx$" id="7c4Z5e$9oXW" role="3uHU7B">
                 <node concept="22lmx$" id="7c4Z5e$9oXX" role="3uHU7B">
                   <node concept="22lmx$" id="7c4Z5e$9oXY" role="3uHU7B">
-                    <node concept="3clFbC" id="7c4Z5e$9oXZ" role="3uHU7B">
-                      <node concept="2DD5aU" id="7c4Z5e$9oYi" role="3uHU7B" />
-                      <node concept="35c_gC" id="7c4Z5e$9oYj" role="3uHU7w">
+                    <node concept="17R0WA" id="3KDIIR1_8gr" role="3uHU7B">
+                      <node concept="2DD5aU" id="3KDIIR1_8gs" role="3uHU7B" />
+                      <node concept="35c_gC" id="3KDIIR1_8gt" role="3uHU7w">
                         <ref role="35c_gD" to="sj65:_uCk0nlSoq" resolve="Addition" />
                       </node>
                     </node>
-                    <node concept="3clFbC" id="7c4Z5e$9oY2" role="3uHU7w">
-                      <node concept="2DD5aU" id="7c4Z5e$9oYk" role="3uHU7B" />
-                      <node concept="35c_gC" id="7c4Z5e$9oYl" role="3uHU7w">
+                    <node concept="17R0WA" id="3KDIIR1_a86" role="3uHU7w">
+                      <node concept="2DD5aU" id="3KDIIR1_a87" role="3uHU7B" />
+                      <node concept="35c_gC" id="3KDIIR1_a88" role="3uHU7w">
                         <ref role="35c_gD" to="sj65:_uCk0nlSow" resolve="ModuleConnector" />
                       </node>
                     </node>
                   </node>
-                  <node concept="3clFbC" id="7c4Z5e$9oY5" role="3uHU7w">
-                    <node concept="2DD5aU" id="7c4Z5e$9oYm" role="3uHU7B" />
-                    <node concept="35c_gC" id="7c4Z5e$9oYn" role="3uHU7w">
+                  <node concept="17R0WA" id="3KDIIR1_8TQ" role="3uHU7w">
+                    <node concept="2DD5aU" id="3KDIIR1_8TR" role="3uHU7B" />
+                    <node concept="35c_gC" id="3KDIIR1_8TS" role="3uHU7w">
                       <ref role="35c_gD" to="tpee:fJfqX4d" resolve="NotExpression" />
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbC" id="7c4Z5e$9oY8" role="3uHU7w">
-                  <node concept="2DD5aU" id="7c4Z5e$9oYo" role="3uHU7B" />
-                  <node concept="35c_gC" id="7c4Z5e$9oYp" role="3uHU7w">
+                <node concept="17R0WA" id="3KDIIR1_aH1" role="3uHU7w">
+                  <node concept="2DD5aU" id="3KDIIR1_aH2" role="3uHU7B" />
+                  <node concept="35c_gC" id="3KDIIR1_aH3" role="3uHU7w">
                     <ref role="35c_gD" to="sj65:_uCk0nlSor" resolve="Subtraction" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbC" id="7c4Z5e$9oYb" role="3uHU7w">
-                <node concept="2DD5aU" id="7c4Z5e$9oYq" role="3uHU7B" />
-                <node concept="35c_gC" id="7c4Z5e$9oYr" role="3uHU7w">
+              <node concept="17R0WA" id="3KDIIR1_9xI" role="3uHU7w">
+                <node concept="2DD5aU" id="3KDIIR1_9xJ" role="3uHU7B" />
+                <node concept="35c_gC" id="3KDIIR1_9xK" role="3uHU7w">
                   <ref role="35c_gD" to="tpee:fHeOMHZ" resolve="ParenthesizedExpression" />
                 </node>
               </node>
