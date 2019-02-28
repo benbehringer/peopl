@@ -1,7 +1,7 @@
 PEoPL–Projectional Editing of Product Lines
 ==
 
-Notice that this branch is currently unstable. There are still problems if you use Windows (Mac and Linux should work okay-ish).
+Notice that this branch is currently unstable. There might be still problems if you use Windows (Mac and Linux should work okay-ish).
 
 At this point we have a stable version in the main branch that requires a modified version of MPS 3.4 (see http://peopl.de). This branch provides a more advanced version that does not require a modified version of MPS and supports mbeddr C (http://mbeddr.com) and Java. 
 
@@ -15,7 +15,7 @@ cp -r ./com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4/plugins/* /Applicatio
 ```
 - Remove mbeddr's projectview plugins, since we currently provide them with PEoPL 
 ```
-find /Applications/MPS\ 2017.3.4.app/Contents/plugins/ -type f -name '*projectview*' -exec rm -rf {} \;
+find /Applications/MPS\ 2018.3.4.app/Contents/plugins/ -type f -name '*projectview*' -exec rm -rf {} \;
 ```
 - Open MPS and load the PEoPL project (this branch)
 - Make the project (multiple times), while ignoring type checking errors (i.e., it should compile nevertheless)
