@@ -6244,7 +6244,7 @@
                             </node>
                           </node>
                           <node concept="liA8E" id="4ZcOZGx7ayn" role="2OqNvi">
-                            <ref role="37wK5l" to="lui2:~ModelAccess.executeUndoTransparentCommand(java.lang.Runnable):void" resolve="executeUndoTransparentCommand" />
+                            <ref role="37wK5l" to="lui2:~ModelAccess.executeCommandInEDT(java.lang.Runnable):void" resolve="executeCommandInEDT" />
                             <node concept="1bVj0M" id="4ZcOZGx7aAP" role="37wK5m">
                               <node concept="3clFbS" id="4ZcOZGx7aAQ" role="1bW5cS">
                                 <node concept="3cpWs8" id="4ZcOZGwXAT4" role="3cqZAp">
