@@ -3,7 +3,7 @@ PEoPL–Projectional Editing of Product Lines
 
 Notice that this branch is currently unstable. There might be still problems if you use Windows (Mac and Linux should work okay-ish).
 
-At this point we have a stable version in the main branch that requires a modified version of MPS 3.4 (see http://peopl.de). This branch provides a more advanced version that does not require a modified version of MPS and supports mbeddr C (http://mbeddr.com) and Java. 
+At this point we have a stable version in the branch [peopl-mps-3.3.6](https://github.com/benbehringer/peopl/tree/peopl-mps-3.3.6) that requires a modified version of MPS 3.4 (see http://peopl.de for instructions on howto use it). This branch provides a more advanced version that does not require a modified version of MPS and supports mbeddr C (http://mbeddr.com) and Java. 
 
 Installation instructions:
 --
