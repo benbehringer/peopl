@@ -593,6 +593,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -720,7 +723,6 @@
         </node>
       </node>
       <node concept="3F2HdR" id="6ioAFJ$qtJg" role="3EZMnx">
-        <ref role="1ERwB7" to="j4gk:7apEgWbJM1a" resolve="deleteStatement" />
         <ref role="APP_o" to="r4b4:$hL4249ROO" resolve="deleteEmptyStuffInCollection" />
         <ref role="1NtTu8" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
         <node concept="1HlG4h" id="6NQSyUTrl0o" role="2czzBI">
@@ -14136,6 +14138,58 @@
         </node>
       </node>
     </node>
+    <node concept="1hA7zw" id="7ng5nVjWR0I" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="7ng5nVjWR0J" role="1hA7z_">
+        <node concept="3clFbS" id="7ng5nVjWR0K" role="2VODD2">
+          <node concept="2xdQw9" id="7ng5nVjX1WW" role="3cqZAp">
+            <property role="2xdLsb" value="warn" />
+            <node concept="Xl_RD" id="7ng5nVjX1WY" role="9lYJi">
+              <property role="Xl_RC" value="delete statement" />
+            </node>
+          </node>
+          <node concept="3clFbJ" id="7apEgWbJM1r" role="3cqZAp">
+            <node concept="3clFbS" id="7apEgWbJM1s" role="3clFbx">
+              <node concept="3clFbF" id="7apEgWbJM2c" role="3cqZAp">
+                <node concept="2OqwBi" id="7apEgWbJM2e" role="3clFbG">
+                  <node concept="0IXxy" id="7apEgWbJM2d" role="2Oq$k0" />
+                  <node concept="3YRAZt" id="7apEgWbJM2i" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6ASs6LmXJN0" role="3clFbw">
+              <node concept="2OqwBi" id="6ASs6LmXJfI" role="2Oq$k0">
+                <node concept="0IXxy" id="6ASs6LmXJaS" role="2Oq$k0" />
+                <node concept="2yIwOk" id="6ASs6LmXJ$z" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="6ASs6LmXK8m" role="2OqNvi">
+                <node concept="chp4Y" id="6ASs6LmXKa8" role="3QVz_e">
+                  <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="7apEgWbJM2j" role="9aQIa">
+              <node concept="3clFbS" id="7apEgWbJM2k" role="9aQI4">
+                <node concept="3clFbF" id="7apEgWbJM1e" role="3cqZAp">
+                  <node concept="2OqwBi" id="7apEgWbJM1g" role="3clFbG">
+                    <node concept="0IXxy" id="7apEgWbJM1f" role="2Oq$k0" />
+                    <node concept="1P9Npp" id="7apEgWbJM1k" role="2OqNvi">
+                      <node concept="2ShNRf" id="7apEgWbJM1m" role="1P9ThW">
+                        <node concept="3zrR0B" id="7apEgWbJM1o" role="2ShVmc">
+                          <node concept="3Tqbb2" id="7apEgWbJM1p" role="3zrR0E">
+                            <ref role="ehGHo" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="325Ffw" id="5scI5Lo$dDc">
     <property role="TrG5h" value="mBeddr_Statement_KeyMap" />
@@ -24028,11 +24082,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="1X3_iC" id="7ng5nVjQ3Ke" role="lGtFl">
-      <property role="3V$3am" value="cellModel" />
-      <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
-      <node concept="Rtstu" id="7ng5nVjOQd_" role="8Wnug" />
     </node>
   </node>
 </model>
