@@ -8,6 +8,7 @@
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -74,6 +75,15 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
+      <concept id="2877762237607058140" name="de.slisson.mps.conditionalEditor.structure.NextEditor" flags="ng" index="Rtstu" />
+      <concept id="2877762237606985499" name="de.slisson.mps.conditionalEditor.structure.EditorCondition" flags="ig" index="RtMap" />
+      <concept id="2877762237606934069" name="de.slisson.mps.conditionalEditor.structure.ConditionalConceptEditorDeclaration" flags="ig" index="RtYIR">
+        <property id="2877762237607078183" name="priority" index="Rtri_" />
+        <property id="8436908933892732653" name="uniqueName" index="3NULOk" />
+        <child id="2877762237607015161" name="condition" index="RtEXV" />
+      </concept>
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
@@ -691,17 +701,6 @@
   </registry>
   <node concept="24kQdi" id="1WMwngv2W_8">
     <ref role="1XX52x" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
-    <node concept="1X3_iC" id="6KRMdN3SrTu" role="lGtFl">
-      <property role="3V$3am" value="cellModel" />
-      <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
-      <node concept="3EZMnI" id="1WMwngv2W_a" role="8Wnug">
-        <node concept="l2Vlx" id="1WMwngv2W_d" role="2iSdaV" />
-        <node concept="3F2HdR" id="1WMwngv2W_o" role="3EZMnx">
-          <ref role="1NtTu8" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
-          <node concept="2iRkQZ" id="2Ei5o1HKBwi" role="2czzBx" />
-        </node>
-      </node>
-    </node>
     <node concept="3EZMnI" id="3CmSUB7Fp_z" role="2wV5jI">
       <property role="S$Qs1" value="true" />
       <node concept="l2Vlx" id="4hj596uNbyH" role="2iSdaV" />
@@ -887,9 +886,6 @@
       <node concept="3XFhqQ" id="4M2A3x_zDm1" role="3EZMnx" />
       <node concept="B$lHz" id="4M2A3x_zAB4" role="3EZMnx" />
       <node concept="l2Vlx" id="4M2A3x_zAB0" role="2iSdaV" />
-    </node>
-    <node concept="2aJ2om" id="4M2A3x_zDSn" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>
   <node concept="24kQdi" id="4AWdyVI0t6s">
@@ -14141,19 +14137,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5scI5Lo$dxz">
-    <ref role="1XX52x" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="3EZMnI" id="5scI5Lo$dya" role="2wV5jI">
-      <ref role="1ERwB7" node="5scI5Loz69o" resolve="mBeddr_Statement_Actions" />
-      <ref role="34QXea" node="5scI5Lo$dDc" resolve="mBeddr_Statement_KeyMap" />
-      <node concept="B$lHz" id="5scI5Lo$dyh" role="3EZMnx" />
-      <node concept="l2Vlx" id="5scI5Lo$dyd" role="2iSdaV" />
-    </node>
-    <node concept="2aJ2om" id="5scI5Lo$dy7" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
-    </node>
-    <node concept="B$lHz" id="5scI5Lo$dyk" role="6VMZX" />
-  </node>
   <node concept="325Ffw" id="5scI5Lo$dDc">
     <property role="TrG5h" value="mBeddr_Statement_KeyMap" />
     <ref role="1chiOs" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
@@ -24025,6 +24008,32 @@
       <node concept="3Tm6S6" id="6KRMdN3EMPA" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6KRMdN3G3sa" role="jymVt" />
+  </node>
+  <node concept="RtYIR" id="7ng5nVjKPq2">
+    <property role="Rtri_" value="100" />
+    <property role="3NULOk" value="extensionMbeddrC" />
+    <ref role="1XX52x" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+    <node concept="3EZMnI" id="7ng5nVjKPKr" role="2wV5jI">
+      <ref role="34QXea" node="5scI5Lo$dDc" resolve="mBeddr_Statement_KeyMap" />
+      <ref role="1ERwB7" node="5scI5Loz69o" resolve="mBeddr_Statement_Actions" />
+      <node concept="l2Vlx" id="7ng5nVjKPKt" role="2iSdaV" />
+      <node concept="Rtstu" id="7ng5nVjKPK$" role="3EZMnx" />
+    </node>
+    <node concept="Rtstu" id="7ng5nVjKPKD" role="6VMZX" />
+    <node concept="RtMap" id="7ng5nVjKUdJ" role="RtEXV">
+      <node concept="3clFbS" id="7ng5nVjKUdK" role="2VODD2">
+        <node concept="3clFbF" id="7ng5nVjKUl7" role="3cqZAp">
+          <node concept="3clFbT" id="7ng5nVjKUl6" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1X3_iC" id="7ng5nVjQ3Ke" role="lGtFl">
+      <property role="3V$3am" value="cellModel" />
+      <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1080736578640/1080736633877" />
+      <node concept="Rtstu" id="7ng5nVjOQd_" role="8Wnug" />
+    </node>
   </node>
 </model>
 

@@ -13,6 +13,7 @@
     <dependency reexport="false">2fc3109b-8318-40ba-8227-7efc814f41ef(de.htwsaar.peopl.core.variabilityDeclaration.runtime)</dependency>
     <dependency reexport="false">12e8cf89-309c-4b58-a376-760ee3c49ffd(de.htwsaar.peopl.core.peoplTest)</dependency>
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
+    <dependency reexport="false">5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -42,6 +43,7 @@
     <module reference="12e8cf89-309c-4b58-a376-760ee3c49ffd(de.htwsaar.peopl.core.peoplTest)" version="0" />
     <module reference="2fc3109b-8318-40ba-8227-7efc814f41ef(de.htwsaar.peopl.core.variabilityDeclaration.runtime)" version="0" />
     <module reference="ce83f8b6-7083-46ac-a998-a482d839c1d3(de.htwsaar.peopl.core.view.runtime)" version="0" />
+    <module reference="5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
     <module reference="2e24a298-44d1-4697-baec-5c424fed3a3b(jetbrains.mps.editorlang.runtime)" version="0" />
