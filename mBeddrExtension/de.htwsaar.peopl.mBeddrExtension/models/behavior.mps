@@ -162,12 +162,6 @@
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
-      </concept>
-    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -2313,14 +2307,6 @@
       <ref role="13i0hy" to="rj8d:3LB9aGm4C$b" resolve="getContributedLocalVariables" />
       <node concept="3Tm1VV" id="6IyHh70Mqgw" role="1B3o_S" />
       <node concept="3clFbS" id="6IyHh70Mqhn" role="3clF47">
-        <node concept="2xdQw9" id="6IyHh70OJCi" role="3cqZAp">
-          <property role="2xdLsb" value="warn" />
-          <node concept="Xl_RD" id="6IyHh70OJCk" role="9lYJi">
-            <property role="Xl_RC" value="getting contributed local variables" />
-          </node>
-        </node>
-        <node concept="3clFbH" id="6IyHh70P0xI" role="3cqZAp" />
-        <node concept="3clFbH" id="6IyHh70P2jH" role="3cqZAp" />
         <node concept="3cpWs6" id="6IyHh70OJAY" role="3cqZAp">
           <node concept="BsUDl" id="6IyHh70Pifg" role="3cqZAk">
             <ref role="37wK5l" node="3tkxRydYUUs" resolve="getLocalVariableDeclarations" />
