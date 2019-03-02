@@ -29,6 +29,7 @@
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" />
     <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
+    <import index="461n" ref="r:3b46a963-6deb-4d82-bdc0-36b5d9297fcf(de.slisson.mps.conditionalEditor.hints.editor)" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -75,6 +76,7 @@
       <concept id="1223387125302" name="jetbrains.mps.lang.editor.structure.QueryFunction_Boolean" flags="in" index="3nzxsE" />
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
+        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
@@ -110,6 +112,9 @@
       </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -173,6 +178,12 @@
         <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -597,7 +608,6 @@
     <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="RtMap" id="r0NGcX0zaR" role="RtEXV">
       <node concept="3clFbS" id="r0NGcX0zaS" role="2VODD2">
-        <node concept="3clFbH" id="6IyHh70u2kY" role="3cqZAp" />
         <node concept="3clFbF" id="7MjEgnL5n4V" role="3cqZAp">
           <node concept="2OqwBi" id="7MjEgnL5n4W" role="3clFbG">
             <node concept="2OqwBi" id="7MjEgnL5n4X" role="2Oq$k0">
@@ -715,8 +725,23 @@
           </node>
         </node>
       </node>
+      <node concept="pkWqt" id="5_ZFCFS2xd6" role="pqm2j">
+        <node concept="3clFbS" id="5_ZFCFS2xd7" role="2VODD2">
+          <node concept="2xdQw9" id="5_ZFCFS2ygc" role="3cqZAp">
+            <property role="2xdLsb" value="warn" />
+            <node concept="Xl_RD" id="5_ZFCFS2yge" role="9lYJi">
+              <property role="Xl_RC" value="drawing non-optional alternative" />
+            </node>
+          </node>
+          <node concept="3clFbF" id="5_ZFCFS2xvH" role="3cqZAp">
+            <node concept="3clFbT" id="5_ZFCFS2xvG" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="2aJ2om" id="6IyHh70u6dj" role="CpUAK">
+    <node concept="2aJ2om" id="5_ZFCFS2oE4" role="CpUAK">
       <ref role="2$4xQ3" to="tqa7:2W3sxLBrs3A" resolve="annotative" />
     </node>
   </node>

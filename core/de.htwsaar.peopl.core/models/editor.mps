@@ -9613,6 +9613,11 @@
       <property role="TrG5h" value="integrateFields" />
       <property role="2BUmq6" value="Integrates available filed declarations into current FOP-editor." />
     </node>
+    <node concept="2BsEeg" id="5_ZFCFRVBha" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="peopl_views_doNotUseThisHintManually" />
+      <property role="2BUmq6" value="This hint is used by PEoPL internally. Don't enable it!" />
+    </node>
   </node>
   <node concept="PKFIW" id="42BtosU6dz3">
     <property role="3GE5qa" value="Core" />
