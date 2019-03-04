@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="MPSProject">
-    <projectModules />
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.projectview.runtime/com.mbeddr.mpsutil.projectview.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.mpsutil.projectview/com.mbeddr.mpsutil.projectview.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/de.peopl.build.mbeddr.projectview.msd" folder="" />
+    </projectModules>
   </component>
 </project>
