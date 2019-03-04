@@ -19,7 +19,7 @@
     <import index="bmdq" ref="r:213c0ec8-7a7d-462f-b835-dc4baeccdaa2(de.htwsaar.peopl.core.view.modular.behavior)" />
     <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" />
     <import index="rj8d" ref="r:da9fd96f-5c71-45ab-b2da-1aa6232ec67f(com.mbeddr.core.statements.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -39,6 +39,7 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
@@ -219,6 +220,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -265,6 +269,7 @@
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
+      <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -2596,6 +2601,131 @@
       <node concept="3Tqbb2" id="EpVRRuMcJ4" role="3clF45">
         <ref role="ehGHo" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
       </node>
+    </node>
+    <node concept="13i0hz" id="4U1U8XSnlpw" role="13h7CS">
+      <property role="TrG5h" value="getContainers" />
+      <ref role="13i0hy" to="kpvh:4U1U8XSmYvX" resolve="getContainers" />
+      <node concept="3Tm1VV" id="4U1U8XSnlpx" role="1B3o_S" />
+      <node concept="3clFbS" id="4U1U8XSnlpD" role="3clF47">
+        <node concept="3clFbF" id="4U1U8XSnm6m" role="3cqZAp">
+          <node concept="2OqwBi" id="4U1U8XSnx0A" role="3clFbG">
+            <node concept="2OqwBi" id="4U1U8XSnmC8" role="2Oq$k0">
+              <node concept="13iPFW" id="4U1U8XSnm6l" role="2Oq$k0" />
+              <node concept="2qgKlT" id="4U1U8XSnwBh" role="2OqNvi">
+                <ref role="37wK5l" to="qd6m:1H6zsul0og9" resolve="allFunctions" />
+              </node>
+            </node>
+            <node concept="ANE8D" id="4U1U8XSnxkK" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="4U1U8XSnlpE" role="3clF45">
+        <node concept="3Tqbb2" id="4U1U8XSnlpF" role="_ZDj9" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="4U1U8XSze6$" role="13h7CS">
+      <property role="TrG5h" value="addFeatureGroupInMethod" />
+      <ref role="13i0hy" to="kpvh:4U1U8XSxAlL" resolve="addFeatureGroupInMethod" />
+      <node concept="3Tm1VV" id="4U1U8XSze6_" role="1B3o_S" />
+      <node concept="3clFbS" id="4U1U8XSze6G" role="3clF47">
+        <node concept="3clFbJ" id="4U1U8XSxJ5Y" role="3cqZAp">
+          <node concept="1Wc70l" id="4U1U8XSyYAL" role="3clFbw">
+            <node concept="2OqwBi" id="4U1U8XSz3CS" role="3uHU7B">
+              <node concept="2OqwBi" id="4U1U8XSz1Y3" role="2Oq$k0">
+                <node concept="37vLTw" id="4U1U8XSz1K1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4U1U8XSze6H" resolve="featureGroup" />
+                </node>
+                <node concept="2yIwOk" id="4U1U8XSz3a7" role="2OqNvi" />
+              </node>
+              <node concept="3O6GUB" id="4U1U8XSz4yp" role="2OqNvi">
+                <node concept="chp4Y" id="4U1U8XSzh7J" role="3QVz_e">
+                  <ref role="cht4Q" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
+                </node>
+              </node>
+            </node>
+            <node concept="1eOMI4" id="4U1U8XSyZnb" role="3uHU7w">
+              <node concept="22lmx$" id="4U1U8XSyZFa" role="1eOMHV">
+                <node concept="2OqwBi" id="4U1U8XSz0Ja" role="3uHU7w">
+                  <node concept="2OqwBi" id="4U1U8XSyZRY" role="2Oq$k0">
+                    <node concept="37vLTw" id="4U1U8XSyZHR" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4U1U8XSze6J" resolve="method" />
+                    </node>
+                    <node concept="2yIwOk" id="4U1U8XSz0fY" role="2OqNvi" />
+                  </node>
+                  <node concept="3O6GUB" id="4U1U8XSz1$o" role="2OqNvi">
+                    <node concept="chp4Y" id="4U1U8XSzrFi" role="3QVz_e">
+                      <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="4U1U8XSxK9h" role="3uHU7B">
+                  <node concept="2OqwBi" id="4U1U8XSxJnK" role="2Oq$k0">
+                    <node concept="37vLTw" id="4U1U8XSxJ6i" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4U1U8XSze6J" resolve="method" />
+                    </node>
+                    <node concept="2yIwOk" id="4U1U8XSxJHY" role="2OqNvi" />
+                  </node>
+                  <node concept="liA8E" id="4U1U8XSxKkJ" role="2OqNvi">
+                    <ref role="37wK5l" to="c17a:~SAbstractConcept.isSubConceptOf(org.jetbrains.mps.openapi.language.SAbstractConcept):boolean" resolve="isSubConceptOf" />
+                    <node concept="35c_gC" id="4U1U8XSxKld" role="37wK5m">
+                      <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4U1U8XSxJ60" role="3clFbx">
+            <node concept="3clFbF" id="4U1U8XSxKnE" role="3cqZAp">
+              <node concept="2OqwBi" id="4U1U8XSyvEE" role="3clFbG">
+                <node concept="2OqwBi" id="4U1U8XSzIrp" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4U1U8XSzmvV" role="2Oq$k0">
+                    <node concept="1eOMI4" id="4U1U8XSxKnC" role="2Oq$k0">
+                      <node concept="10QFUN" id="4U1U8XSxKn_" role="1eOMHV">
+                        <node concept="3Tqbb2" id="4U1U8XSxKnZ" role="10QFUM">
+                          <ref role="ehGHo" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                        </node>
+                        <node concept="37vLTw" id="4U1U8XSxKt2" role="10QFUP">
+                          <ref role="3cqZAo" node="4U1U8XSze6J" resolve="method" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="4U1U8XSznXf" role="2OqNvi">
+                      <ref role="37wK5l" to="qd6m:71UKpntnl7S" resolve="getStatementList" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="4U1U8XSzTiS" role="2OqNvi">
+                    <ref role="3TtcxE" to="c4fa:3CmSUB7Fp_m" resolve="statements" />
+                  </node>
+                </node>
+                <node concept="2Ke4WJ" id="4U1U8XSyM0I" role="2OqNvi">
+                  <node concept="1eOMI4" id="4U1U8XSyRPj" role="25WWJ7">
+                    <node concept="10QFUN" id="4U1U8XSyRPg" role="1eOMHV">
+                      <node concept="3Tqbb2" id="4U1U8XSyTu8" role="10QFUM">
+                        <ref role="ehGHo" to="gj7z:1WMwngv1_LD" resolve="FeatureBlock" />
+                      </node>
+                      <node concept="37vLTw" id="4U1U8XSyWTz" role="10QFUP">
+                        <ref role="3cqZAo" node="4U1U8XSze6H" resolve="featureGroup" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4U1U8XSze6H" role="3clF46">
+        <property role="TrG5h" value="featureGroup" />
+        <node concept="3Tqbb2" id="4U1U8XSze6I" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4U1U8XSze6J" role="3clF46">
+        <property role="TrG5h" value="method" />
+        <node concept="3Tqbb2" id="4U1U8XSze6K" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="4U1U8XSze6L" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="EpVRRuMiUa">

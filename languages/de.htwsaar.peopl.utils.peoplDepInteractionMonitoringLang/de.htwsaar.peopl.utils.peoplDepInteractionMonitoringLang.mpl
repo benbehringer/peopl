@@ -54,6 +54,7 @@
     <dependency reexport="false">6c47f9d7-fdd4-4969-8397-f702ca657e61(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring)</dependency>
     <dependency reexport="false">1786aae1-e029-4751-836d-843552f745c0(de.htwsaar.peopl.core.tools)</dependency>
     <dependency reexport="false">e5c3c271-3e96-406d-8829-9ddb2dbd9e7f(de.htwsaar.peopl.core.statistics)</dependency>
+    <dependency reexport="false">4c4bbb77-dae4-40ac-9819-555675af7c56(de.htwsaar.peopl.core.view.modular)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -100,6 +101,7 @@
     <module reference="e5c3c271-3e96-406d-8829-9ddb2dbd9e7f(de.htwsaar.peopl.core.statistics)" version="0" />
     <module reference="1786aae1-e029-4751-836d-843552f745c0(de.htwsaar.peopl.core.tools)" version="0" />
     <module reference="c7fb82d0-90f3-4c08-b61c-d6ac12547689(de.htwsaar.peopl.core.toolsLanguage)" version="0" />
+    <module reference="4c4bbb77-dae4-40ac-9819-555675af7c56(de.htwsaar.peopl.core.view.modular)" version="0" />
     <module reference="9f1f4432-4bb8-4cf7-8c40-c78c9f1c6b00(de.htwsaar.peopl.utils.interactionMonitoring)" version="0" />
     <module reference="6c47f9d7-fdd4-4969-8397-f702ca657e61(de.htwsaar.peopl.utils.peoplDepInteractionMonitoring)" version="0" />
     <module reference="03db04b3-21e9-4f04-8c35-3167fd61921e(de.htwsaar.peopl.utils.peoplDepInteractionMonitoringLang)" version="0" />

@@ -12,6 +12,7 @@
     <import index="1ve4" ref="r:0d5528c0-94d4-4e31-b0e5-fe9fb61b8942(de.htwsaar.peopl.baseLanguageExtension.plugin)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="vmgn" ref="r:7cd1167b-efc8-4d05-a923-06bef39a3eb7(de.htwsaar.peopl.core.view.modular.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -202,8 +203,8 @@
                       <node concept="3clFbS" id="F_DJLM6XNN" role="3clFbx">
                         <node concept="3cpWs6" id="F_DJLM6Y4k" role="3cqZAp">
                           <node concept="2OqwBi" id="F_DJLM6YbF" role="3cqZAk">
-                            <node concept="3TrEf2" id="F_DJLM6YIa" role="2OqNvi">
-                              <ref role="3Tt5mk" to="ao9j:1k3hL0SxfUV" resolve="myModule" />
+                            <node concept="3TrEf2" id="4U1U8XSlkS4" role="2OqNvi">
+                              <ref role="3Tt5mk" to="vmgn:EpVRRuzvnW" resolve="module" />
                             </node>
                             <node concept="1eOMI4" id="F_DJLM6YAI" role="2Oq$k0">
                               <node concept="10QFUN" id="F_DJLM6YiQ" role="1eOMHV">

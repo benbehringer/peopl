@@ -14107,6 +14107,44 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="4U1U8XSmYvX" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getContainers" />
+      <node concept="3Tm1VV" id="4U1U8XSmYvY" role="1B3o_S" />
+      <node concept="_YKpA" id="4U1U8XSmYRn" role="3clF45">
+        <node concept="3Tqbb2" id="4U1U8XSmYRz" role="_ZDj9" />
+      </node>
+      <node concept="3clFbS" id="4U1U8XSmYw0" role="3clF47" />
+      <node concept="P$JXv" id="4U1U8XSmYS6" role="lGtFl">
+        <node concept="TZ5HA" id="4U1U8XSmYS7" role="TZ5H$">
+          <node concept="1dT_AC" id="4U1U8XSmYS8" role="1dT_Ay">
+            <property role="1dT_AB" value="This method returns a list of containers, e.g., methods in Java and C" />
+          </node>
+        </node>
+        <node concept="x79VA" id="4U1U8XSmYS9" role="3nqlJM">
+          <property role="x79VB" value="list of containers" />
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4U1U8XSxAlL" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="addFeatureGroupInMethod" />
+      <node concept="3Tm1VV" id="4U1U8XSxAlM" role="1B3o_S" />
+      <node concept="3cqZAl" id="4U1U8XSxAmx" role="3clF45" />
+      <node concept="3clFbS" id="4U1U8XSxAlO" role="3clF47" />
+      <node concept="37vLTG" id="4U1U8XSyNGm" role="3clF46">
+        <property role="TrG5h" value="featureGroup" />
+        <node concept="3Tqbb2" id="4U1U8XSyNGA" role="1tU5fm">
+          <ref role="ehGHo" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4U1U8XSxAod" role="3clF46">
+        <property role="TrG5h" value="method" />
+        <node concept="3Tqbb2" id="4U1U8XSxAoc" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="13hLZK" id="EpVRRuwK$Z" role="13h7CW">
       <node concept="3clFbS" id="EpVRRuwK_0" role="2VODD2" />
     </node>
