@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BUNDLES_DIR="com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4"
-DECOMPILE_DIR="decompiled_src"
+DECOMPILE_DIR="decompiled_com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4"
 INCLUDE_ONLY="com.mbeddr"
 DECOMPILER="/Applications/IntelliJ\ IDEA\ CE.app/Contents/plugins/java-decompiler/lib/java-decompiler.jar"
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"

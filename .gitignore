@@ -7,3 +7,4 @@ build/
 **/source_gen.caches/**
 **/classes_gen/**
 misc.xml
+**/decompiled*/**
