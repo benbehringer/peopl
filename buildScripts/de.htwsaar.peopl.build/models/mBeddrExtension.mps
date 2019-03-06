@@ -180,6 +180,37 @@
     </node>
     <node concept="2G$12M" id="4RAsyl5JUeR" role="3989C9">
       <property role="TrG5h" value="mBeddrExtension" />
+      <node concept="1E1JtA" id="1Gq8bgqepr_" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="de.htwsaar.peopl.commonHeaders" />
+        <property role="3LESm3" value="26957839-7fdc-490e-a16f-db97b2df5cb1" />
+        <node concept="55IIr" id="1Gq8bgqeprC" role="3LF7KH">
+          <node concept="2Ry0Ak" id="1Gq8bgqeprN" role="iGT6I">
+            <property role="2Ry0Am" value="mBeddrExtension" />
+            <node concept="2Ry0Ak" id="1Gq8bgqeprS" role="2Ry0An">
+              <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
+              <node concept="2Ry0Ak" id="1Gq8bgqeprX" role="2Ry0An">
+                <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4TLsuWLv4vJ" role="3bR31x">
+          <node concept="3LXTmp" id="4TLsuWLv4vK" role="3rtmxm">
+            <node concept="3qWCbU" id="4TLsuWLv4vL" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="55IIr" id="4TLsuWLv4vM" role="3LXTmr">
+              <node concept="2Ry0Ak" id="4TLsuWLv4vN" role="iGT6I">
+                <property role="2Ry0Am" value="mBeddrExtension" />
+                <node concept="2Ry0Ak" id="4TLsuWLv4vO" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="1Gq8bgqepr7" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="de.htwsaar.peopl.mBeddrExtension.runtime" />
@@ -258,37 +289,6 @@
         <node concept="1SiIV0" id="4U1U8XSevX$" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSevX_" role="1SiIV1">
             <ref role="3bR37D" to="f4pb:roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtA" id="1Gq8bgqepr_" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.commonHeaders" />
-        <property role="3LESm3" value="26957839-7fdc-490e-a16f-db97b2df5cb1" />
-        <node concept="55IIr" id="1Gq8bgqeprC" role="3LF7KH">
-          <node concept="2Ry0Ak" id="1Gq8bgqeprN" role="iGT6I">
-            <property role="2Ry0Am" value="mBeddrExtension" />
-            <node concept="2Ry0Ak" id="1Gq8bgqeprS" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
-              <node concept="2Ry0Ak" id="1Gq8bgqeprX" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders.msd" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3rtmxn" id="4TLsuWLv4vJ" role="3bR31x">
-          <node concept="3LXTmp" id="4TLsuWLv4vK" role="3rtmxm">
-            <node concept="3qWCbU" id="4TLsuWLv4vL" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="55IIr" id="4TLsuWLv4vM" role="3LXTmr">
-              <node concept="2Ry0Ak" id="4TLsuWLv4vN" role="iGT6I">
-                <property role="2Ry0Am" value="mBeddrExtension" />
-                <node concept="2Ry0Ak" id="4TLsuWLv4vO" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.commonHeaders" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
       </node>
