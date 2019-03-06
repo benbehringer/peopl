@@ -11666,11 +11666,6 @@
       <node concept="3Tm1VV" id="6BiMxHy_alz" role="1B3o_S" />
       <node concept="10P_77" id="6BiMxHy_aoN" role="3clF45" />
       <node concept="3clFbS" id="6BiMxHy_al_" role="3clF47">
-        <node concept="3SKdUt" id="26HCxWILEmf" role="3cqZAp">
-          <node concept="3SKdUq" id="26HCxWILEmh" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: is this really correct? should be isNull imho" />
-          </node>
-        </node>
         <node concept="3cpWs6" id="6BiMxHy_aoQ" role="3cqZAp">
           <node concept="2OqwBi" id="6BiMxHy_azC" role="3cqZAk">
             <node concept="2OqwBi" id="6BiMxHy_ar4" role="2Oq$k0">
@@ -13667,6 +13662,30 @@
       <node concept="37vLTG" id="4UuYCFc7kiU" role="3clF46">
         <property role="TrG5h" value="contentNode" />
         <node concept="3Tqbb2" id="4UuYCFc7kiT" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5bKH2l1b6rQ" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="moveContentToOtherNode" />
+      <node concept="3Tm1VV" id="5bKH2l1b6rR" role="1B3o_S" />
+      <node concept="10P_77" id="5bKH2l1cbob" role="3clF45" />
+      <node concept="3clFbS" id="5bKH2l1b6rT" role="3clF47" />
+      <node concept="37vLTG" id="5bKH2l1b6rU" role="3clF46">
+        <property role="TrG5h" value="contentNode" />
+        <node concept="3Tqbb2" id="5bKH2l1b6rV" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="13i0hz" id="5bKH2l1hbUs" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="moveContentAsNextSiblingOfOtherNode" />
+      <node concept="3Tm1VV" id="5bKH2l1hbUt" role="1B3o_S" />
+      <node concept="10P_77" id="5bKH2l1hd0M" role="3clF45" />
+      <node concept="3clFbS" id="5bKH2l1hbUv" role="3clF47" />
+      <node concept="37vLTG" id="5bKH2l1hd36" role="3clF46">
+        <property role="TrG5h" value="sibling" />
+        <node concept="3Tqbb2" id="5bKH2l1hd35" role="1tU5fm" />
       </node>
     </node>
     <node concept="13i0hz" id="2e7WWQbaogE" role="13h7CS">

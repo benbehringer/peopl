@@ -96,6 +96,7 @@
         <child id="5665240855309837223" name="replaceableNode" index="25mL$H" />
         <child id="5665240855312100028" name="definingContainerConcept" index="25tD0Q" />
         <child id="5665240855312100032" name="definingNodeConcept" index="25tD1a" />
+        <child id="4238990257982859798" name="wrappedGroupConcept" index="fIK4S" />
       </concept>
       <concept id="9122230446655927851" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeBlock" flags="ng" index="aHlDD">
         <child id="9122230446655928259" name="wrappeeConcept" index="aHlI1" />
@@ -207,7 +208,7 @@
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
         <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="linkRole" index="3V$3am" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
       </concept>
       <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
@@ -633,6 +634,9 @@
       </node>
       <node concept="1G2zp1" id="1WMwngv1_Lb" role="25tD1a">
         <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
+      </node>
+      <node concept="1G2zp1" id="5bKH2l1aNuG" role="fIK4S">
+        <ref role="35c_gD" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
       </node>
     </node>
     <node concept="18sGMC" id="1WMwngv1_Ip" role="18sCgF">
