@@ -52,7 +52,7 @@
         <id>peoplMBeddrCExtension</id>
         <name>PEoPL mBeddr C Extension</name>
         <description>Tailoring PEoPL to mBeddr C.</description>
-        <version>2018.3.4</version>
+        <version>2018.3.5</version>
         <depends>peoplCore</depends>
         <depends>com.mbeddr.core</depends>
         
@@ -596,7 +596,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.blext.runtime.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.expressions.runtime.jar" />
@@ -653,7 +653,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
@@ -721,7 +721,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.debugger/languages/com.mbeddr.core.debugger/com.mbeddr.core.debug.jar" />
@@ -801,7 +801,7 @@
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
         <fileset file="${artifacts.mps}/lib/trove4j.jar" />
-        <fileset file="${artifacts.mps}/lib/ecj-4.7.2.jar" />
+        <fileset file="${artifacts.mps}/lib/ecj-4.10.jar" />
         <fileset dir="${artifacts.mps}/lib" includes="*.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base-generator.jar" />
