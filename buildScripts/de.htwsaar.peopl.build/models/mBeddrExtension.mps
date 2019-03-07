@@ -481,6 +481,26 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1PwIjsITED$" role="3bR37C">
+          <node concept="3bR9La" id="1PwIjsITED_" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:2N1CSrzSKpi" resolve="com.mbeddr.mpsutil.plantuml.node" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1PwIjsITEDA" role="3bR37C">
+          <node concept="3bR9La" id="1PwIjsITEDB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LbO" resolve="jetbrains.mps.lang.traceable" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1PwIjsITEDC" role="3bR37C">
+          <node concept="3bR9La" id="1PwIjsITEDD" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:2mU72gDx9ye" resolve="com.mbeddr.mpsutil.jung" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1PwIjsITEDE" role="3bR37C">
+          <node concept="3bR9La" id="1PwIjsITEDF" role="1SiIV1">
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="4RAsyl5JUdy" role="auvoZ" />
