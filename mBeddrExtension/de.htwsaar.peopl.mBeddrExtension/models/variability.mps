@@ -11,8 +11,9 @@
     <import index="k146" ref="r:5209fc71-bade-45c9-9079-f2d474f0d6ca(com.mbeddr.core.util.structure)" />
     <import index="zur" ref="r:9c6a428b-c86f-4c32-b1d0-2615a01d262f(de.htwsaar.peopl.core.plugin)" />
     <import index="y54n" ref="r:9c15e354-92cb-47e0-8d53-9e77df1450b4(de.htwsaar.peopl.mBeddrExtension.typesystem)" />
-    <import index="gj7z" ref="r:b16002b4-3e9f-4cda-b9e1-53c91cafb2e8(de.htwsaar.peopl.mBeddrExtension.structure)" implicit="true" />
+    <import index="clbe" ref="r:61d840b4-12c1-49ea-b142-b2a1550a9b15(com.mbeddr.core.udt.structure)" />
     <import index="mj1l" ref="r:c371cf98-dcc8-4a43-8eb8-8a8096de18b2(com.mbeddr.core.expressions.structure)" implicit="true" />
+    <import index="gj7z" ref="r:b16002b4-3e9f-4cda-b9e1-53c91cafb2e8(de.htwsaar.peopl.mBeddrExtension.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.htwsaar.peopl.core.behavior)" implicit="true" />
@@ -245,14 +246,14 @@
         </node>
       </node>
       <node concept="1J2_sD" id="1WMwngv1Dpl" role="uo7M2">
+        <node concept="1G2zp1" id="1PwIjsIgcRl" role="1J3lNl">
+          <ref role="35c_gD" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+        </node>
+        <node concept="1G2zp1" id="1PwIjsIgd4d" role="1J3lNl">
+          <ref role="35c_gD" to="mj1l:1LDGRqyYkTP" resolve="IVariableDeclaration" />
+        </node>
         <node concept="1G2zp1" id="1WMwngv1Dpn" role="1J3lNl">
           <ref role="35c_gD" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-        </node>
-        <node concept="1G2zp1" id="1WMwngv1Dpy" role="1J3lNl">
-          <ref role="35c_gD" to="x27k:5IYyAOzCrre" resolve="GlobalVariableDeclaration" />
-        </node>
-        <node concept="1G2zp1" id="1WMwngv1DpK" role="1J3lNl">
-          <ref role="35c_gD" to="x27k:5_l8w1EmTvx" resolve="Function" />
         </node>
         <node concept="1G2zp1" id="1WMwngv9XhE" role="1J3lNl">
           <ref role="35c_gD" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
