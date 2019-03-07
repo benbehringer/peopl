@@ -22,7 +22,7 @@ Now you can either use the peopl plugins or build PEoPL's sources:
 #### Installing the plugins
 - Open MPS and select "Configure->Plugins"
 - Select the configuration symbol and then "Install plugins from Disk".
-- Select and install each zip file downloaded from the [plugins folder](https://github.com/benbehringer/peopl/tree/master/plugins)
+- Select and install each zip file downloaded from the [build/artifacts folder](https://github.com/benbehringer/peopl/tree/master/build/artifacts)
 - Open the "Stack" solution and play with the classes
 
 #### Building PEoPL's sources
