@@ -730,8 +730,10 @@
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.modules.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.pointers.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.statements.jar" />
+        <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.udt.jar" />
         <fileset file="${artifacts.mbeddr}/mbeddr.core/languages/com.mbeddr.core/com.mbeddr.core.util.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/group.breadcrumb/com.mbeddr.mpsutil.breadcrumb.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.mpsutil/languages/group.breadcrumb/com.mbeddr.mpsutil.breadcrumb.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />

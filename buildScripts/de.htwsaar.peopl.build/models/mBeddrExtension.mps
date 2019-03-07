@@ -476,6 +476,11 @@
             <ref role="1Busuk" to="f4pb:roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1PwIjsIh0ZA" role="3bR37C">
+          <node concept="3bR9La" id="1PwIjsIh0ZB" role="1SiIV1">
+            <ref role="3bR37D" to="p6ld:7uZw0yZ43Mi" resolve="com.mbeddr.core.udt" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="4RAsyl5JUdy" role="auvoZ" />
