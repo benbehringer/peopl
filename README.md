@@ -19,7 +19,7 @@ cp ./peopl/mbeddr.projectview/gen-from-peopl/* /Applications/MPS\ 2018.3.app/Con
 
 Now you can either use the peopl plugins or build PEoPL's sources:
 
-#### Installing the plugins
+#### Installing the PEoPL plugins
 - Open MPS and select "Configure->Plugins"
 - Select the configuration symbol and then "Install plugins from Disk".
 - Select and install each zip file downloaded from the [build/artifacts folder](https://github.com/benbehringer/peopl/tree/master/build/artifacts)
