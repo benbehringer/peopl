@@ -47,7 +47,6 @@
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.mpl" folder="peopl.coreExtensionMbeddrC" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="playground" />
-      <modulePath path="$PROJECT_DIR$/solutions/mBeddrCTests.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoringAnalysis/de.htwsaar.peopl.utils.interactionMonitoringAnalysis.msd" folder="peopl.utils" />
