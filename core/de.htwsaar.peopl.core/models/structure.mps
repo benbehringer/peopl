@@ -65,13 +65,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
   </registry>
   <node concept="1TIwiD" id="6K8EDSn5e6T">
@@ -609,12 +602,8 @@
         <property role="tnX3d" value="true" />
       </node>
     </node>
-    <node concept="1X3_iC" id="3bq4PhyGe2u" role="lGtFl">
-      <property role="3V$3am" value="implements" />
-      <property role="3V$3ak" value="c72da2b9-7cce-4447-8389-f407dc1158b7/1071489090640/1169129564478" />
-      <node concept="PrWs8" id="3KDIIR1qdeS" role="8Wnug">
-        <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
-      </node>
+    <node concept="PrWs8" id="3KDIIR1qdeS" role="PzmwI">
+      <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
   </node>
   <node concept="PlHQZ" id="EpVRRuwHnf">
