@@ -130,9 +130,7 @@
       <concept id="6599015909051999302" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ParametrizedConceptExclusion" flags="ng" index="3dD$T7">
         <child id="6599015909051999303" name="conceptFunction" index="3dD$T6" />
       </concept>
-      <concept id="6599015909051313275" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptExclusion" flags="ng" index="3dGWpU">
-        <child id="6599015909051313277" name="applicableConcepts" index="3dGWpW" />
-      </concept>
+      <concept id="6599015909051313275" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptExclusion" flags="ng" index="3dGWpU" />
       <concept id="8658800205706496875" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperWrappeeRelationship" flags="ng" index="1i7ju2" />
       <concept id="8658800205706496852" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.WrapperDeclaration" flags="ng" index="1i7juX">
         <property id="5665240855309640876" name="lang" index="25n1SA" />
@@ -237,21 +235,21 @@
           <node concept="3clFbS" id="6EuWR7Xm$GD" role="2VODD2">
             <node concept="3clFbF" id="6EuWR7Xm$T8" role="3cqZAp">
               <node concept="1Wc70l" id="6EuWR7XmAbc" role="3clFbG">
-                <node concept="2OqwBi" id="6EuWR7XmBBw" role="3uHU7w">
-                  <node concept="2OqwBi" id="6EuWR7XmAB$" role="2Oq$k0">
-                    <node concept="qkh3w" id="6EuWR7XmAnX" role="2Oq$k0" />
-                    <node concept="1mfA1w" id="6EuWR7XmBbp" role="2OqNvi" />
+                <node concept="2OqwBi" id="6EuWR7XFf$k" role="3uHU7w">
+                  <node concept="2OqwBi" id="6EuWR7XFf$l" role="2Oq$k0">
+                    <node concept="qkh3w" id="6EuWR7XFf$m" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="6EuWR7XFf$n" role="2OqNvi" />
                   </node>
-                  <node concept="1mIQ4w" id="6EuWR7XmCgT" role="2OqNvi">
-                    <node concept="chp4Y" id="6EuWR7XmCxj" role="cj9EA">
-                      <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                  <node concept="1mIQ4w" id="6EuWR7XFf$o" role="2OqNvi">
+                    <node concept="chp4Y" id="6EuWR7XFBYn" role="cj9EA">
+                      <ref role="cht4Q" to="c4fa:5Xsg2EBpBVN" resolve="IStatmentListContainer" />
                     </node>
                   </node>
                 </node>
                 <node concept="2OqwBi" id="6EuWR7Xm_5f" role="3uHU7B">
                   <node concept="qkh3w" id="6EuWR7Xm$T7" role="2Oq$k0" />
                   <node concept="1mIQ4w" id="6EuWR7Xm_wr" role="2OqNvi">
-                    <node concept="chp4Y" id="6EuWR7Xm_Hf" role="cj9EA">
+                    <node concept="chp4Y" id="6EuWR7XFrwF" role="cj9EA">
                       <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
                     </node>
                   </node>
@@ -303,14 +301,7 @@
           <ref role="35c_gD" to="51wr:6GqYvBOf2Xb" resolve="ModuleRef" />
         </node>
       </node>
-      <node concept="3dGWpU" id="1WMwngv3mrH" role="uo7M0">
-        <node concept="1G2zp1" id="1WMwngv3mrO" role="3dGWpW">
-          <ref role="35c_gD" to="c4fa:7k_CvRMmYVM" resolve="WhileStatement" />
-        </node>
-        <node concept="1G2zp1" id="1WMwngv3mrZ" role="3dGWpW">
-          <ref role="35c_gD" to="c4fa:7k_CvRMnubc" resolve="DoWhileStatement" />
-        </node>
-      </node>
+      <node concept="3dGWpU" id="1WMwngv3mrH" role="uo7M0" />
     </node>
     <node concept="uo7Ez" id="1WMwngv1_Ij" role="uo7X4">
       <property role="1NiXfp" value="true" />
