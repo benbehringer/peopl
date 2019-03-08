@@ -107,6 +107,7 @@
       <concept id="6841588423541859468" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_node" flags="ng" index="qkh3w" />
       <concept id="8786235618734538780" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.AssignVariabilityConfig" flags="ng" index="uo7Ey">
         <child id="8786235618734540350" name="simpleExclusion" index="uo7M0" />
+        <child id="8786235618734540351" name="parametrizedExclusions" index="uo7M1" />
         <child id="8786235618734540348" name="simpleInclusion" index="uo7M2" />
         <child id="8786235618734540349" name="parametrizedInclusions" index="uo7M3" />
       </concept>
@@ -124,6 +125,9 @@
         <child id="3387676811032903355" name="fragmentHandledByConceptEditor" index="18sGMB" />
       </concept>
       <concept id="3387676811032903588" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ConceptFunctionParameter_fragment" flags="ng" index="18sGQS" />
+      <concept id="6599015909051999302" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.ParametrizedConceptExclusion" flags="ng" index="3dD$T7">
+        <child id="6599015909051999303" name="conceptFunction" index="3dD$T6" />
+      </concept>
       <concept id="6599015909051313275" name="de.htwsaar.peopl.core.variabilityDeclaration.structure.SimpleConceptExclusion" flags="ng" index="3dGWpU">
         <child id="6599015909051313277" name="applicableConcepts" index="3dGWpW" />
       </concept>
@@ -226,6 +230,35 @@
   <node concept="1J2_sJ" id="1WMwngv1_Ih">
     <property role="TrG5h" value="mBeddr" />
     <node concept="uo7Ey" id="1WMwngv1_Ii" role="uo7X6">
+      <node concept="3dD$T7" id="6EuWR7Xm$GB" role="uo7M1">
+        <node concept="2zUL$M" id="6EuWR7Xm$GC" role="3dD$T6">
+          <node concept="3clFbS" id="6EuWR7Xm$GD" role="2VODD2">
+            <node concept="3clFbF" id="6EuWR7Xm$T8" role="3cqZAp">
+              <node concept="1Wc70l" id="6EuWR7XmAbc" role="3clFbG">
+                <node concept="2OqwBi" id="6EuWR7XmBBw" role="3uHU7w">
+                  <node concept="2OqwBi" id="6EuWR7XmAB$" role="2Oq$k0">
+                    <node concept="qkh3w" id="6EuWR7XmAnX" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="6EuWR7XmBbp" role="2OqNvi" />
+                  </node>
+                  <node concept="1mIQ4w" id="6EuWR7XmCgT" role="2OqNvi">
+                    <node concept="chp4Y" id="6EuWR7XmCxj" role="cj9EA">
+                      <ref role="cht4Q" to="x27k:5_l8w1EmTvx" resolve="Function" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6EuWR7Xm_5f" role="3uHU7B">
+                  <node concept="qkh3w" id="6EuWR7Xm$T7" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="6EuWR7Xm_wr" role="2OqNvi">
+                    <node concept="chp4Y" id="6EuWR7Xm_Hf" role="cj9EA">
+                      <ref role="cht4Q" to="c4fa:3CmSUB7Fp_l" resolve="StatementList" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1J2_sI" id="22w$VQNfGQ5" role="uo7M3">
         <node concept="2zUL$M" id="22w$VQNfGQ6" role="1J3lk9">
           <node concept="3clFbS" id="22w$VQNfGQ7" role="2VODD2">
