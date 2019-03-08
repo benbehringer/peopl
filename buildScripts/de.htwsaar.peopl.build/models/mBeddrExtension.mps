@@ -501,6 +501,11 @@
             <ref role="3bR37D" to="p6ld:7uZw0yZ43JM" resolve="com.mbeddr.core.statements" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6EuWR7XGzHr" role="3bR37C">
+          <node concept="3bR9La" id="6EuWR7XGzHs" role="1SiIV1">
+            <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="55IIr" id="4RAsyl5JUdy" role="auvoZ" />
