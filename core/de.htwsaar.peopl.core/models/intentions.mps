@@ -5225,6 +5225,18 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6O5WzZw4hOo" role="3clF47">
+        <node concept="3clFbH" id="6mp8BJMA_bq" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMA$Be" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMA$35" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyP2" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyOT" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyOL" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyOE" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyO$" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAyOv" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAygt" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAx2x" role="lGtFl" />
+        <node concept="3clFbH" id="6mp8BJMAwtp" role="lGtFl" />
         <node concept="3cpWs8" id="6O5WzZw4n_t" role="3cqZAp">
           <node concept="3cpWsn" id="6O5WzZw4n_u" role="3cpWs9">
             <property role="TrG5h" value="runtime" />
@@ -5238,6 +5250,17 @@
                 <ref role="3cqZAo" node="6O5WzZw4hRN" resolve="node" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6mp8BJMABUa" role="3cqZAp">
+          <node concept="3clFbS" id="6mp8BJMABUc" role="3clFbx">
+            <node concept="3cpWs6" id="6mp8BJMAMD7" role="3cqZAp" />
+          </node>
+          <node concept="3clFbC" id="6mp8BJMAPbL" role="3clFbw">
+            <node concept="37vLTw" id="6mp8BJMAHG7" role="3uHU7B">
+              <ref role="3cqZAo" node="6O5WzZw4n_u" resolve="runtime" />
+            </node>
+            <node concept="10Nm6u" id="6mp8BJMAJup" role="3uHU7w" />
           </node>
         </node>
         <node concept="3cpWs8" id="6O5WzZw4k_b" role="3cqZAp">
@@ -5344,12 +5367,6 @@
             <node concept="3clFbH" id="5bKH2l19b71" role="3cqZAp" />
             <node concept="3clFbJ" id="5bKH2l19bht" role="3cqZAp">
               <node concept="3clFbS" id="5bKH2l19bhv" role="3clFbx">
-                <node concept="2xdQw9" id="5bKH2l16M2P" role="3cqZAp">
-                  <property role="2xdLsb" value="warn" />
-                  <node concept="Xl_RD" id="5bKH2l16M2R" role="9lYJi">
-                    <property role="Xl_RC" value="Is a feature block, but no base code" />
-                  </node>
-                </node>
                 <node concept="3SKdUt" id="5bKH2l15s_U" role="3cqZAp">
                   <node concept="3SKdUq" id="5bKH2l15s_V" role="3SKWNk">
                     <property role="3SKdUp" value="check whether the feature group is in a base code block" />
@@ -5389,18 +5406,13 @@
                                   </node>
                                   <node concept="3x8VRR" id="5bKH2l15rry" role="2OqNvi" />
                                 </node>
-                                <node concept="2YIFZM" id="5bKH2l15lcI" role="3uHU7B">
-                                  <ref role="1Pybhc" to="i8bi:5IkW5anFcyt" resolve="SNodeOperations" />
-                                  <ref role="37wK5l" to="i8bi:5IkW5anFeil" resolve="isInstanceOf" />
-                                  <node concept="37vLTw" id="5bKH2l15lcJ" role="37wK5m">
+                                <node concept="2OqwBi" id="6mp8BJM_dza" role="3uHU7B">
+                                  <node concept="37vLTw" id="6mp8BJM_d6Q" role="2Oq$k0">
                                     <ref role="3cqZAo" node="5bKH2l15kg4" resolve="it" />
                                   </node>
-                                  <node concept="2OqwBi" id="5bKH2l15lcK" role="37wK5m">
-                                    <node concept="37vLTw" id="5bKH2l15lcL" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="6O5WzZw4n_u" resolve="runtime" />
-                                    </node>
-                                    <node concept="liA8E" id="5bKH2l15lcM" role="2OqNvi">
-                                      <ref role="37wK5l" to="ikxv:4UuYCFbM5x0" resolve="getConcreteFeatureGroupConcept" />
+                                  <node concept="1mIQ4w" id="6mp8BJM_fYV" role="2OqNvi">
+                                    <node concept="chp4Y" id="6mp8BJM_gjy" role="cj9EA">
+                                      <ref role="cht4Q" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
                                     </node>
                                   </node>
                                 </node>
