@@ -59,7 +59,7 @@
     <property role="34LRSv" value="ImplementationModule container" />
     <property role="R4oN_" value="Container for (multiple, alternative) ImplementationModules" />
     <property role="EcuMT" value="763904935703686235" />
-    <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
+    <ref role="1TJDcQ" to="x27k:5_l8w1EmTde" resolve="ImplementationModule" />
     <node concept="PrWs8" id="EpVRRuMiU1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
