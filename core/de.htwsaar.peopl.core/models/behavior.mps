@@ -13274,6 +13274,15 @@
         <node concept="3Tqbb2" id="2e7WWQb9qJv" role="1tU5fm" />
       </node>
     </node>
+    <node concept="13i0hz" id="6fzSuMDsEUT" role="13h7CS">
+      <property role="13i0iv" value="true" />
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="distanceToMember" />
+      <property role="2Ki8OM" value="true" />
+      <node concept="3Tm1VV" id="6fzSuMDsEUU" role="1B3o_S" />
+      <node concept="10Oyi0" id="6fzSuMDsG0I" role="3clF45" />
+      <node concept="3clFbS" id="6fzSuMDsEUW" role="3clF47" />
+    </node>
     <node concept="13i0hz" id="6BiMxHyACXd" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />

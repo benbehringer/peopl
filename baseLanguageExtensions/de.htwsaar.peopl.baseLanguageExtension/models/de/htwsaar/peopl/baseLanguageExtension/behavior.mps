@@ -4254,6 +4254,25 @@
       </node>
       <node concept="10P_77" id="5bKH2l1ifC2" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="6fzSuMDtsGa" role="13h7CS">
+      <property role="TrG5h" value="distanceToMember" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="kpvh:6fzSuMDsEUT" resolve="distanceToMember" />
+      <node concept="3Tm1VV" id="6fzSuMDtsGb" role="1B3o_S" />
+      <node concept="3clFbS" id="6fzSuMDtsGe" role="3clF47">
+        <node concept="3SKdUt" id="6fzSuMDtGMk" role="3cqZAp">
+          <node concept="3SKdUq" id="6fzSuMDtGMm" role="3SKWNk">
+            <property role="3SKdUp" value="the statement list is the only element between the feature block and the statement, so distance is one" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6fzSuMDtGDh" role="3cqZAp">
+          <node concept="3cmrfG" id="6fzSuMDtGDg" role="3clFbG">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="6fzSuMDtsGf" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="4qvLkVcGXOx">
     <property role="3GE5qa" value="CoreExtensions" />

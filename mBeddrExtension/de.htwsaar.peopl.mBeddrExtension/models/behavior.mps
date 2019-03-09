@@ -26,6 +26,7 @@
     <import index="ln2k" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:2b6ea9fa-3d7f-4d82-86fe-4fd697fec5a2(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.behavior)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="10jo" ref="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62/r:6e32694b-6dd1-4530-b48f-4e3bf97b2744(com.mbeddr.mpsutil.jung/com.mbeddr.mpsutil.jung.structure)" />
+    <import index="iqxh" ref="r:3ff8d811-87f2-49a7-b8a3-5cb1e610f6d2(com.mbeddr.core.buildconfig.typesystem)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2661,6 +2662,25 @@
         <node concept="3Tqbb2" id="5bKH2l1hdGc" role="1tU5fm" />
       </node>
       <node concept="10P_77" id="5bKH2l1hdGd" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="6fzSuMDuj_g" role="13h7CS">
+      <property role="TrG5h" value="distanceToMember" />
+      <property role="2Ki8OM" value="true" />
+      <ref role="13i0hy" to="kpvh:6fzSuMDsEUT" resolve="distanceToMember" />
+      <node concept="3Tm1VV" id="6fzSuMDuj_h" role="1B3o_S" />
+      <node concept="3clFbS" id="6fzSuMDuj_k" role="3clF47">
+        <node concept="3SKdUt" id="6fzSuMDtGMk" role="3cqZAp">
+          <node concept="3SKdUq" id="6fzSuMDtGMm" role="3SKWNk">
+            <property role="3SKdUp" value="there is no grouping element between the feature block and the statement, so distance is zero" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6fzSuMDuzEM" role="3cqZAp">
+          <node concept="3cmrfG" id="6fzSuMDuzEL" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="10Oyi0" id="6fzSuMDuj_l" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="EpVRRuMcIE">
