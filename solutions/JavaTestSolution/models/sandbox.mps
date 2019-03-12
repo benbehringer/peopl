@@ -135,7 +135,6 @@
             <property role="3SKdUp" value="outer test" />
           </node>
         </node>
-        <node concept="3clFbH" id="2SJ$OJYIFOB" role="3cqZAp" />
         <node concept="3clFbJ" id="5M2TpbBiJm8" role="3cqZAp">
           <node concept="3clFbS" id="5M2TpbBiJma" role="3clFbx">
             <node concept="3SKdUt" id="52q9FSN$ptR" role="3cqZAp">
@@ -143,10 +142,9 @@
                 <property role="3SKdUp" value="inner test" />
               </node>
             </node>
-            <node concept="3clFbH" id="2SJ$OJYFVVQ" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJYIFVT" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJYIFVZ" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJYIKm1" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo6u" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo6E" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo6R" role="3cqZAp" />
             <node concept="3lLJVk" id="2SJ$OJYCVJO" role="lGtFl" />
           </node>
           <node concept="3clFbT" id="52q9FSNwfxo" role="3clFbw">
@@ -180,6 +178,9 @@
             </node>
             <node concept="3clFbH" id="2SJ$OJYIFY7" role="3cqZAp" />
             <node concept="3clFbH" id="2SJ$OJYIFz4" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo8c" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo8i" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZTo8p" role="3cqZAp" />
           </node>
           <node concept="1V74GB" id="6m4IJn2RfYa" role="lGtFl">
             <property role="32Xqk$" value="chosenModule" />
@@ -190,7 +191,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="6m4IJn2PUaG" role="3cqZAp" />
-        <node concept="3clFbH" id="2SJ$OJYIFAx" role="3cqZAp" />
         <node concept="3clFbH" id="2SJ$OJYIFG$" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="6m4IJn2P3rq" role="1B3o_S" />

@@ -15,10 +15,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
-      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
-        <property id="7862711839422615217" name="text" index="t5JxN" />
-      </concept>
       <concept id="6054523464626862044" name="jetbrains.mps.lang.structure.structure.AttributeInfo_IsMultiple" flags="ng" index="tn0Fv">
         <property id="6054523464626875854" name="value" index="tnX3d" />
       </concept>
@@ -609,28 +605,6 @@
     <node concept="PrWs8" id="3KDIIR1qdeS" role="PzmwI">
       <ref role="PrY4T" to="tpck:2WmWrdnSpX3" resolve="ISuppressErrors" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="EpVRRuwHnf">
-    <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="CompilationUnit" />
-    <property role="EcuMT" value="763904935699076559" />
-    <node concept="asaX9" id="5M2TpbAZZcQ" role="lGtFl" />
-    <node concept="t5JxF" id="5M2TpbB09TY" role="lGtFl">
-      <property role="t5JxN" value="To be removed. We will add an annotation that allows PEoPL to mark arbitrary compilation units." />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="EpVRRuwHph">
-    <property role="3GE5qa" value="Core" />
-    <property role="TrG5h" value="CompilationUnitContainer" />
-    <property role="EcuMT" value="763904935699076689" />
-    <node concept="1TJgyj" id="EpVRRuwHrj" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="compilationUnits" />
-      <property role="20lbJX" value="1..n" />
-      <property role="IQ2ns" value="763904935699076819" />
-      <ref role="20lvS9" node="EpVRRuwHnf" resolve="CompilationUnit" />
-    </node>
-    <node concept="asaX9" id="5M2TpbAZZc2" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="4GsCNocFo6a">
     <property role="EcuMT" value="5412380304728752522" />

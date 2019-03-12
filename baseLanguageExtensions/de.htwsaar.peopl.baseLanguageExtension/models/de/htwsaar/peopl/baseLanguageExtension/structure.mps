@@ -31,10 +31,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
-        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -43,7 +41,6 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
-        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -93,52 +90,10 @@
       <ref role="PrY4T" to="xf8r:6BiMxHywUCU" resolve="IFeatureGroup" />
     </node>
   </node>
-  <node concept="1TIwiD" id="6qqyTRuTqUc">
-    <property role="TrG5h" value="JavaCompilationUnitContainer" />
-    <property role="3GE5qa" value="CoreExtensions" />
-    <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="class container" />
-    <property role="R4oN_" value="Container for (multiple, alternative) classes" />
-    <property role="EcuMT" value="7393375248447811212" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4qvLkVcILpe" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="5otajSr$_DL" role="PzmwI">
-      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
-    </node>
-    <node concept="PrWs8" id="EpVRRuxMFC" role="PzmwI">
-      <ref role="PrY4T" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
-    </node>
-    <node concept="1TJgyj" id="4qvLkVcGGJq" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="peoplClasses" />
-      <property role="20lbJX" value="0..n" />
-      <property role="IQ2ns" value="5089003046184340442" />
-      <ref role="20lvS9" node="62a2r2cufYE" resolve="JavaCompilationUnit" />
-      <node concept="asaX9" id="EpVRRuQk4c" role="lGtFl" />
-    </node>
-    <node concept="1QGGSu" id="q735wx1hf4" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/peoplClass.png" />
-    </node>
-    <node concept="asaX9" id="5M2TpbB09TW" role="lGtFl" />
-  </node>
   <node concept="PlHQZ" id="70Uiey1XJat">
     <property role="TrG5h" value="VariabilityHelper" />
     <property role="3GE5qa" value="Helper" />
     <property role="EcuMT" value="8086856244347204253" />
-  </node>
-  <node concept="1TIwiD" id="62a2r2cufYE">
-    <property role="TrG5h" value="JavaCompilationUnit" />
-    <property role="34LRSv" value="class" />
-    <property role="R4oN_" value="Class declaration" />
-    <property role="3GE5qa" value="CoreExtensions" />
-    <property role="EcuMT" value="6956383228302786474" />
-    <ref role="1TJDcQ" to="tpee:fz12cDA" resolve="ClassConcept" />
-    <node concept="PrWs8" id="EpVRRux90C" role="PzmwI">
-      <ref role="PrY4T" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
-    </node>
-    <node concept="asaX9" id="5M2TpbB050X" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="4DWAEpij21t">
     <property role="TrG5h" value="PeoplBlockReference" />
@@ -232,27 +187,6 @@
       <property role="TrG5h" value="isFromOutsidePeopl" />
       <property role="IQ2nx" value="8406867990575681283" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2cTrEv0BjOO">
-    <property role="TrG5h" value="ConvertToPeoplSolution" />
-    <property role="EcuMT" value="2538181531770109236" />
-    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
-    <node concept="1TJgyj" id="2cTrEv0BjOP" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="myClass" />
-      <property role="20lbJX" value="1" />
-      <property role="IQ2ns" value="2538181531770109237" />
-      <ref role="20lvS9" to="tpee:fz12cDA" resolve="ClassConcept" />
-    </node>
-    <node concept="M6xJ_" id="2cTrEv0BoRj" role="lGtFl">
-      <property role="Hh88m" value="ConvertToPeoplSolution" />
-      <node concept="trNpa" id="2cTrEv0Bp4l" role="EQaZv">
-        <ref role="trN6q" node="6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
-      </node>
-      <node concept="tn0Fv" id="2cTrEv0Bp4n" role="HhnKV">
-        <property role="tnX3d" value="false" />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="3KxWXtV6gL_">

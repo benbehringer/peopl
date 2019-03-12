@@ -94,9 +94,7 @@
       </node>
       <node concept="37vLTG" id="EpVRRuxQ7Z" role="3clF46">
         <property role="TrG5h" value="compilationUnit" />
-        <node concept="3Tqbb2" id="EpVRRuxQ87" role="1tU5fm">
-          <ref role="ehGHo" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
-        </node>
+        <node concept="3Tqbb2" id="EpVRRuxQ87" role="1tU5fm" />
       </node>
       <node concept="37vLTG" id="EpVRRuxQ8m" role="3clF46">
         <property role="TrG5h" value="currentModel" />

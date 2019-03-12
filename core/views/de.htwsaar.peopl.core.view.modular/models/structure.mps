@@ -52,7 +52,7 @@
       <property role="20kJfa" value="compilationUnit" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="763904935699804173" />
-      <ref role="20lvS9" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
     <node concept="1TJgyj" id="EpVRRuzvnW" role="1TKVEi">
       <property role="20lmBu" value="reference" />

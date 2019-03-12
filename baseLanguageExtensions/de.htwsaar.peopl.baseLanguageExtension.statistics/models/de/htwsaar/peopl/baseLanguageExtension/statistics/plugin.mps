@@ -281,8 +281,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
-      <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -2194,61 +2192,17 @@
                   <node concept="3Tqbb2" id="64eR99jQmzD" role="10QFUM">
                     <ref role="ehGHo" to="tpck:h0TrEE$" resolve="INamedConcept" />
                   </node>
-                  <node concept="2OqwBi" id="64eR99jQl_K" role="10QFUP">
-                    <node concept="2OqwBi" id="64eR99jQioC" role="2Oq$k0">
-                      <node concept="2OqwBi" id="64eR99jQheo" role="2Oq$k0">
-                        <node concept="37vLTw" id="64eR99jQgP5" role="2Oq$k0">
-                          <ref role="3cqZAo" node="64eR99jQ3zP" resolve="fragment" />
-                        </node>
-                        <node concept="z$bX8" id="64eR99jQhRl" role="2OqNvi" />
-                      </node>
-                      <node concept="3zZkjj" id="64eR99jQjk2" role="2OqNvi">
-                        <node concept="1bVj0M" id="64eR99jQjk4" role="23t8la">
-                          <node concept="3clFbS" id="64eR99jQjk5" role="1bW5cS">
-                            <node concept="3clFbF" id="64eR99jQjKO" role="3cqZAp">
-                              <node concept="1Wc70l" id="64eR99jRtnw" role="3clFbG">
-                                <node concept="2OqwBi" id="64eR99jQkiZ" role="3uHU7B">
-                                  <node concept="2OqwBi" id="64eR99jQjTq" role="2Oq$k0">
-                                    <node concept="37vLTw" id="64eR99jQjKN" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="64eR99jQjk6" resolve="it" />
-                                    </node>
-                                    <node concept="2yIwOk" id="64eR99jQk66" role="2OqNvi" />
-                                  </node>
-                                  <node concept="liA8E" id="64eR99jQkzp" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                                    <node concept="35c_gC" id="64eR99jQleY" role="37wK5m">
-                                      <ref role="35c_gD" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="2OqwBi" id="64eR99jRrBp" role="3uHU7w">
-                                  <node concept="2OqwBi" id="64eR99jRrb6" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="64eR99jRqL5" role="2Oq$k0">
-                                      <node concept="37vLTw" id="64eR99jRqlS" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="64eR99jQjk6" resolve="it" />
-                                      </node>
-                                      <node concept="1mfA1w" id="64eR99jRqYW" role="2OqNvi" />
-                                    </node>
-                                    <node concept="2yIwOk" id="64eR99jRrr9" role="2OqNvi" />
-                                  </node>
-                                  <node concept="liA8E" id="64eR99jRrTY" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object):boolean" resolve="equals" />
-                                    <node concept="35c_gC" id="64eR99jRsBh" role="37wK5m">
-                                      <ref role="35c_gD" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                          <node concept="Rh6nW" id="64eR99jQjk6" role="1bW2Oz">
-                            <property role="TrG5h" value="it" />
-                            <node concept="2jxLKc" id="64eR99jQjk7" role="1tU5fm" />
-                          </node>
+                  <node concept="2OqwBi" id="64eR99jQheo" role="10QFUP">
+                    <node concept="37vLTw" id="64eR99jQgP5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="64eR99jQ3zP" resolve="fragment" />
+                    </node>
+                    <node concept="2Xjw5R" id="2SJ$OJZRqyV" role="2OqNvi">
+                      <node concept="1xMEDy" id="2SJ$OJZRqyX" role="1xVPHs">
+                        <node concept="chp4Y" id="2SJ$OJZRrlF" role="ri$Ld">
+                          <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                         </node>
                       </node>
                     </node>
-                    <node concept="1uHKPH" id="64eR99jQlNV" role="2OqNvi" />
                   </node>
                 </node>
               </node>
@@ -2475,8 +2429,8 @@
                   <ref role="3cqZAo" node="64eR99jQp_N" resolve="ancestor" />
                 </node>
                 <node concept="1mIQ4w" id="1IVGVoWxG0U" role="2OqNvi">
-                  <node concept="chp4Y" id="1IVGVoWxG1v" role="cj9EA">
-                    <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
+                  <node concept="chp4Y" id="2SJ$OJYROc9" role="cj9EA">
+                    <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                   </node>
                 </node>
               </node>
@@ -3421,8 +3375,8 @@
                                     </node>
                                     <node concept="2Xjw5R" id="5tqlr2bKwn1" role="2OqNvi">
                                       <node concept="1xMEDy" id="5tqlr2bKwn3" role="1xVPHs">
-                                        <node concept="chp4Y" id="5tqlr2bKwsb" role="ri$Ld">
-                                          <ref role="cht4Q" to="uqoo:62a2r2cufYE" resolve="JavaCompilationUnit" />
+                                        <node concept="chp4Y" id="2SJ$OJYS9fs" role="ri$Ld">
+                                          <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                                         </node>
                                       </node>
                                     </node>
@@ -5139,23 +5093,8 @@
                       <node concept="3clFbS" id="64eR99jUwnG" role="3clFbx">
                         <node concept="3clFbF" id="64eR99jUxZO" role="3cqZAp">
                           <node concept="d57v9" id="64eR99jUymY" role="3clFbG">
-                            <node concept="2OqwBi" id="64eR99jU_N1" role="37vLTx">
-                              <node concept="2OqwBi" id="64eR99jUzwm" role="2Oq$k0">
-                                <node concept="1eOMI4" id="64eR99jUzfy" role="2Oq$k0">
-                                  <node concept="10QFUN" id="64eR99jUzfv" role="1eOMHV">
-                                    <node concept="3Tqbb2" id="64eR99jUzp1" role="10QFUM">
-                                      <ref role="ehGHo" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
-                                    </node>
-                                    <node concept="37vLTw" id="64eR99jUyUY" role="10QFUP">
-                                      <ref role="3cqZAo" node="64eR99jUrvm" resolve="node" />
-                                    </node>
-                                  </node>
-                                </node>
-                                <node concept="3Tsc0h" id="64eR99jUzEo" role="2OqNvi">
-                                  <ref role="3TtcxE" to="uqoo:4qvLkVcGGJq" resolve="peoplClasses" />
-                                </node>
-                              </node>
-                              <node concept="34oBXx" id="64eR99jUHzb" role="2OqNvi" />
+                            <node concept="3cmrfG" id="2SJ$OJYRGwe" role="37vLTx">
+                              <property role="3cmrfH" value="1" />
                             </node>
                             <node concept="37vLTw" id="64eR99jUxZM" role="37vLTJ">
                               <ref role="3cqZAo" node="64eR99jUrvf" resolve="numberOfClasses" />
@@ -5186,8 +5125,8 @@
                           <ref role="3cqZAo" node="64eR99jUrvm" resolve="node" />
                         </node>
                         <node concept="1mIQ4w" id="64eR99jUxj0" role="2OqNvi">
-                          <node concept="chp4Y" id="64eR99jUxjI" role="cj9EA">
-                            <ref role="cht4Q" to="uqoo:6qqyTRuTqUc" resolve="JavaCompilationUnitContainer" />
+                          <node concept="chp4Y" id="2SJ$OJYRES4" role="cj9EA">
+                            <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
                           </node>
                         </node>
                       </node>

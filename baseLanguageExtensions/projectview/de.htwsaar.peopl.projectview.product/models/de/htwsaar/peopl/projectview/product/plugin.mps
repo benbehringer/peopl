@@ -165,9 +165,6 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -192,9 +189,7 @@
       </concept>
       <concept id="1240325842691" name="jetbrains.mps.baseLanguage.collections.structure.AsSequenceOperation" flags="nn" index="39bAoz" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
-      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
   <node concept="2DaZZR" id="4qaqn3ZSwxw" />
@@ -608,56 +603,29 @@
               </node>
             </node>
           </node>
-          <node concept="2RRcyG" id="$Xellbdds$" role="2OqNvi">
-            <ref role="2RRcyH" to="xf8r:EpVRRuwHph" resolve="CompilationUnitContainer" />
-          </node>
+          <node concept="2RRcyG" id="$Xellbdds$" role="2OqNvi" />
         </node>
-        <node concept="3$u5V9" id="$Xellbdozs" role="2OqNvi">
-          <node concept="1bVj0M" id="$Xellbdozu" role="23t8la">
-            <node concept="3clFbS" id="$Xellbdozv" role="1bW5cS">
-              <node concept="3clFbF" id="$XellbdoDi" role="3cqZAp">
-                <node concept="2OqwBi" id="$XellbeW2e" role="3clFbG">
-                  <node concept="2OqwBi" id="$Xellbd$bA" role="2Oq$k0">
-                    <node concept="2OqwBi" id="$XellbdoGX" role="2Oq$k0">
-                      <node concept="37vLTw" id="$XellbdoDh" role="2Oq$k0">
-                        <ref role="3cqZAo" node="$Xellbdozw" resolve="it" />
-                      </node>
-                      <node concept="3Tsc0h" id="4oksXpGS9U6" role="2OqNvi">
-                        <ref role="3TtcxE" to="xf8r:EpVRRuwHrj" resolve="compilationUnits" />
-                      </node>
-                    </node>
-                    <node concept="3zZkjj" id="$XellbeUEe" role="2OqNvi">
-                      <node concept="1bVj0M" id="$XellbeUEg" role="23t8la">
-                        <node concept="3clFbS" id="$XellbeUEh" role="1bW5cS">
-                          <node concept="3clFbF" id="3sb$Fkl6j0x" role="3cqZAp">
-                            <node concept="2OqwBi" id="5AVGK5A4rG" role="3clFbG">
-                              <node concept="2YIFZM" id="5AVGK5A4rH" role="2Oq$k0">
-                                <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
-                                <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
-                              </node>
-                              <node concept="liA8E" id="5AVGK5A4rI" role="2OqNvi">
-                                <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
-                                <node concept="37vLTw" id="5AVGK5A4rJ" role="37wK5m">
-                                  <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Rh6nW" id="$XellbeUEi" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="$XellbeUEj" role="1tU5fm" />
-                        </node>
-                      </node>
+        <node concept="3zZkjj" id="$XellbeUEe" role="2OqNvi">
+          <node concept="1bVj0M" id="$XellbeUEg" role="23t8la">
+            <node concept="3clFbS" id="$XellbeUEh" role="1bW5cS">
+              <node concept="3clFbF" id="3sb$Fkl6j0x" role="3cqZAp">
+                <node concept="2OqwBi" id="5AVGK5A4rG" role="3clFbG">
+                  <node concept="2YIFZM" id="5AVGK5A4rH" role="2Oq$k0">
+                    <ref role="37wK5l" to="1z58:2FDAt5WpyrK" resolve="getInstance" />
+                    <ref role="1Pybhc" to="1z58:$Xellbfuo$" resolve="CalculatedFragmentCacheHelper" />
+                  </node>
+                  <node concept="liA8E" id="5AVGK5A4rI" role="2OqNvi">
+                    <ref role="37wK5l" to="1z58:5BOueCCLQ9p" resolve="checkCacheAndRebuildIfNecessary" />
+                    <node concept="37vLTw" id="5AVGK5A4rJ" role="37wK5m">
+                      <ref role="3cqZAo" node="$XellbeUEi" resolve="it" />
                     </node>
                   </node>
-                  <node concept="1uHKPH" id="$XellbeWaA" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="Rh6nW" id="$Xellbdozw" role="1bW2Oz">
+            <node concept="Rh6nW" id="$XellbeUEi" role="1bW2Oz">
               <property role="TrG5h" value="it" />
-              <node concept="2jxLKc" id="$Xellbdozx" role="1tU5fm" />
+              <node concept="2jxLKc" id="$XellbeUEj" role="1tU5fm" />
             </node>
           </node>
         </node>
