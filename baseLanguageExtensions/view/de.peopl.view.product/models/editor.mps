@@ -7118,34 +7118,41 @@
     <node concept="RtMap" id="5M2TpbBotFn" role="RtEXV">
       <node concept="3clFbS" id="5M2TpbBotFo" role="2VODD2">
         <node concept="3clFbF" id="5M2TpbB3sbd" role="3cqZAp">
-          <node concept="1Wc70l" id="2SJ$OJYGNRt" role="3clFbG">
-            <node concept="2YIFZM" id="5M2TpbBdx_S" role="3uHU7w">
-              <ref role="1Pybhc" to="kpvh:5M2TpbBdma8" resolve="ASTHelper" />
-              <ref role="37wK5l" to="kpvh:5M2TpbBdn9j" resolve="isBaseCode" />
-              <node concept="pncrf" id="5M2TpbBdxH_" role="37wK5m" />
-            </node>
-            <node concept="2YIFZM" id="2SJ$OJYEsoL" role="3uHU7B">
-              <ref role="37wK5l" to="17ze:2Gf5rX4UYa" resolve="containsHint" />
-              <ref role="1Pybhc" to="17ze:6IyHh711JcP" resolve="Hint" />
-              <node concept="2OqwBi" id="2SJ$OJYEsoM" role="37wK5m">
-                <node concept="2OqwBi" id="2SJ$OJYEsoN" role="2Oq$k0">
-                  <node concept="2OqwBi" id="2SJ$OJYEsoO" role="2Oq$k0">
-                    <node concept="1Q80Hx" id="2SJ$OJYEsoP" role="2Oq$k0" />
-                    <node concept="liA8E" id="2SJ$OJYEsoQ" role="2OqNvi">
-                      <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+          <node concept="1Wc70l" id="7KWzwoaYGXL" role="3clFbG">
+            <node concept="1Wc70l" id="2SJ$OJYGNRt" role="3uHU7B">
+              <node concept="2YIFZM" id="2SJ$OJYEsoL" role="3uHU7B">
+                <ref role="37wK5l" to="17ze:2Gf5rX4UYa" resolve="containsHint" />
+                <ref role="1Pybhc" to="17ze:6IyHh711JcP" resolve="Hint" />
+                <node concept="2OqwBi" id="2SJ$OJYEsoM" role="37wK5m">
+                  <node concept="2OqwBi" id="2SJ$OJYEsoN" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2SJ$OJYEsoO" role="2Oq$k0">
+                      <node concept="1Q80Hx" id="2SJ$OJYEsoP" role="2Oq$k0" />
+                      <node concept="liA8E" id="2SJ$OJYEsoQ" role="2OqNvi">
+                        <ref role="37wK5l" to="cj4x:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="2SJ$OJYEsoR" role="2OqNvi">
+                      <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="2SJ$OJYEsoR" role="2OqNvi">
-                    <ref role="37wK5l" to="cj4x:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                  <node concept="liA8E" id="2SJ$OJYEsoS" role="2OqNvi">
+                    <ref role="37wK5l" to="22ra:~Updater.getInitialEditorHints():java.lang.String[]" resolve="getInitialEditorHints" />
                   </node>
                 </node>
-                <node concept="liA8E" id="2SJ$OJYEsoS" role="2OqNvi">
-                  <ref role="37wK5l" to="22ra:~Updater.getInitialEditorHints():java.lang.String[]" resolve="getInitialEditorHints" />
+                <node concept="2pYGij" id="2SJ$OJYEsoT" role="37wK5m">
+                  <ref role="2pYH_C" to="tqa7:2W3sxLBrwzR" resolve="coloredProduct" />
                 </node>
               </node>
-              <node concept="2pYGij" id="2SJ$OJYEsoT" role="37wK5m">
-                <ref role="2pYH_C" to="tqa7:2W3sxLBrwzR" resolve="coloredProduct" />
+              <node concept="2YIFZM" id="5M2TpbBdx_S" role="3uHU7w">
+                <ref role="1Pybhc" to="kpvh:5M2TpbBdma8" resolve="ASTHelper" />
+                <ref role="37wK5l" to="kpvh:5M2TpbBdn9j" resolve="isBaseCode" />
+                <node concept="pncrf" id="5M2TpbBdxH_" role="37wK5m" />
               </node>
+            </node>
+            <node concept="2YIFZM" id="7KWzwoaVCiF" role="3uHU7w">
+              <ref role="37wK5l" to="1lrk:7KWzwoaVB5s" resolve="isBaseCode" />
+              <ref role="1Pybhc" to="1lrk:7KWzwoaV$g8" resolve="JavaASTHelper" />
+              <node concept="pncrf" id="7KWzwoaVCs4" role="37wK5m" />
             </node>
           </node>
         </node>
