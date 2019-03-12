@@ -115,7 +115,7 @@
     <node concept="1TJgyj" id="4NJLQZxCF2M" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="moduleExpression" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <property role="IQ2ns" value="5543868949657202866" />
       <ref role="20lvS9" node="4NJLQZxDJZU" resolve="ModuleExpression" />
     </node>
