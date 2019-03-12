@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(de.htwsaar.peopl.build.core)">
+<model ref="r:374e1735-a231-46dd-a619-5049c447cd2e(de.peopl.build.core)">
   <persistence version="9" />
   <languages>
     <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
@@ -122,7 +122,6 @@
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
-        <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
@@ -157,7 +156,7 @@
       <node concept="m$f5U" id="5AVGK5zTar" role="m$_yh">
         <ref role="m$f5T" node="5AVGK5yowr" resolve="tools" />
       </node>
-      <node concept="m$f5U" id="roAxhu1eVM" role="m$_yh">
+      <node concept="m$f5U" id="4QFMMDOU6mC" role="m$_yh">
         <ref role="m$f5T" node="3dzs$xJmzUb" resolve="view" />
       </node>
       <node concept="m$f5U" id="5bKH2l0R5PF" role="m$_yh">
@@ -184,6 +183,9 @@
       <node concept="m$_yC" id="5bKH2l0S3eD" role="m$_yJ">
         <ref role="m$_y1" to="al5i:64SK4bcO2rO" resolve="com.mbeddr.mpsutil.projectview" />
       </node>
+      <node concept="m$_yC" id="4QFMMDOU6mR" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:6SVXTgIe8wD" resolve="de.itemis.mps.celllayout" />
+      </node>
       <node concept="3_J27D" id="6$Z0QXuTVX5" role="3s6cr7">
         <node concept="3Mxwew" id="6$Z0QXuTVX7" role="3MwsjC">
           <property role="3MwjfP" value="PEoPL's core, which allows adding variability to arbitrary AST elements." />
@@ -193,16 +195,15 @@
     <node concept="2G$12M" id="roAxhu1e5n" role="3989C9">
       <property role="TrG5h" value="essential" />
       <node concept="1E1JtA" id="roAxhtZyN8" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.listener" />
+        <property role="TrG5h" value="de.peopl.core.listener" />
         <property role="3LESm3" value="025f762f-786f-4451-80b1-6bae4ee9fdde" />
         <node concept="55IIr" id="roAxhtZyNb" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtZyRA" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhtZyTw" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.listener" />
+              <property role="2Ry0Am" value="de.peopl.core.listener" />
               <node concept="2Ry0Ak" id="roAxhtZyUN" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.listener.msd" />
+                <property role="2Ry0Am" value="de.peopl.core.listener.msd" />
               </node>
             </node>
           </node>
@@ -214,12 +215,12 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZyWG" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZyWH" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZyWI" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZyWJ" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZyWK" role="3bR37C">
@@ -229,7 +230,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZyWM" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZyWN" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZyWO" role="3bR37C">
@@ -270,7 +271,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZ_ci" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZ_cj" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
+            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4u0" role="3bR31x">
@@ -282,7 +283,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4u4" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4u5" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.listener" />
+                  <property role="2Ry0Am" value="de.peopl.core.listener" />
                 </node>
               </node>
             </node>
@@ -315,16 +316,15 @@
         </node>
       </node>
       <node concept="1E1JtA" id="roAxhu1cvV" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.modularTypeChecking" />
+        <property role="TrG5h" value="de.peopl.core.modularTypeChecking" />
         <property role="3LESm3" value="664678ed-ae46-4193-896c-0b984c4b6f63" />
         <node concept="55IIr" id="roAxhu1cvY" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhu1c_N" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhu1cDs" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.modularTypeChecking" />
+              <property role="2Ry0Am" value="de.peopl.core.modularTypeChecking" />
               <node concept="2Ry0Ak" id="roAxhu1cFT" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.modularTypeChecking.msd" />
+                <property role="2Ry0Am" value="de.peopl.core.modularTypeChecking.msd" />
               </node>
             </node>
           </node>
@@ -336,7 +336,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1cIl" role="3bR37C">
           <node concept="3bR9La" id="roAxhu1cIm" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
+            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4xl" role="3bR31x">
@@ -348,7 +348,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4xp" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4xq" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.modularTypeChecking" />
+                  <property role="2Ry0Am" value="de.peopl.core.modularTypeChecking" />
                 </node>
               </node>
             </node>
@@ -356,16 +356,15 @@
         </node>
       </node>
       <node concept="1E1JtA" id="roAxhtZ_kR" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.runtime" />
+        <property role="TrG5h" value="de.peopl.core.runtime" />
         <property role="3LESm3" value="de1c2f6b-fb29-4ab8-a4b9-29364d7dc761" />
         <node concept="55IIr" id="roAxhtZ_kU" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtZ_ps" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhtZ_si" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.runtime" />
-              <node concept="2Ry0Ak" id="roAxhtZ_ud" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.runtime.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.runtime" />
+              <node concept="2Ry0Ak" id="4QFMMDOU674" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.runtime.msd" />
               </node>
             </node>
           </node>
@@ -392,12 +391,12 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZA28" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZA29" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZA2a" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZA2b" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZA2c" role="3bR37C">
@@ -407,7 +406,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZA2e" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZA2f" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZA2g" role="3bR37C">
@@ -427,12 +426,12 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yWlz" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yWl$" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5yqxj" resolve="de.htwsaar.peopl.core.statistics" />
+            <ref role="3bR37D" node="5AVGK5yqxj" resolve="de.peopl.core.statistics" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yWl_" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yWlA" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.htwsaar.peopl.core.tools" />
+            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.peopl.core.tools" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4xs" role="3bR31x">
@@ -444,7 +443,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4xw" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4xx" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.runtime" />
+                  <property role="2Ry0Am" value="de.peopl.core.runtime" />
                 </node>
               </node>
             </node>
@@ -452,23 +451,22 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5$p$7" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.shortcuts.runtime" />
+        <property role="TrG5h" value="de.peopl.core.shortcuts.runtime" />
         <property role="3LESm3" value="c4f0d8d6-dbee-4e68-b6aa-416c93df4cbe" />
         <node concept="55IIr" id="5AVGK5$p$a" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5$pFh" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5$pIc" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts.runtime" />
-              <node concept="2Ry0Ak" id="5AVGK5$pQN" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts.runtime.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.shortcuts.runtime" />
+              <node concept="2Ry0Ak" id="4QFMMDOU676" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.shortcuts.runtime.msd" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5$pTF" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5$pTG" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4yR" role="3bR31x">
@@ -480,7 +478,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4yV" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4yW" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts.runtime" />
+                  <property role="2Ry0Am" value="de.peopl.core.shortcuts.runtime" />
                 </node>
               </node>
             </node>
@@ -488,23 +486,22 @@
         </node>
       </node>
       <node concept="1E1JtA" id="roAxhtY1bZ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+        <property role="TrG5h" value="de.peopl.core.variabilityDeclaration.runtime" />
         <property role="3LESm3" value="2fc3109b-8318-40ba-8227-7efc814f41ef" />
         <node concept="55IIr" id="roAxhtY1c2" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtY1dv" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhtY1ek" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
-              <node concept="2Ry0Ak" id="roAxhtY1eX" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration.runtime" />
+              <node concept="2Ry0Ak" id="4QFMMDOU678" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration.runtime.msd" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1fn" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1fo" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1fp" role="3bR37C">
@@ -532,7 +529,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4x4" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4x5" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+                  <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration.runtime" />
                 </node>
               </node>
             </node>
@@ -540,16 +537,15 @@
         </node>
       </node>
       <node concept="1E1JtD" id="tJvfxNIiF_" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core" />
+        <property role="TrG5h" value="de.peopl.core" />
         <property role="3LESm3" value="1a3a0b62-fb00-47d1-8423-98da4001b216" />
         <node concept="55IIr" id="tJvfxNIiFL" role="3LF7KH">
           <node concept="2Ry0Ak" id="tJvfxNIiFR" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="tJvfxNIiHn" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core" />
-              <node concept="2Ry0Ak" id="tJvfxNIiNj" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.mpl" />
+              <property role="2Ry0Am" value="de.peopl.core" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67a" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.mpl" />
               </node>
             </node>
           </node>
@@ -592,7 +588,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1j2" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1j3" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1j4" role="3bR37C">
@@ -636,7 +632,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhtY1jk" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core#3071473864244849393" />
+          <property role="TrG5h" value="de.peopl.core#3071473864244849393" />
           <property role="3LESm3" value="c9a56e63-3222-4b77-a7ff-0dd9a6ca29db" />
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4vo" role="3bR31x">
@@ -648,7 +644,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4vs" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4vt" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core" />
+                  <property role="2Ry0Am" value="de.peopl.core" />
                 </node>
               </node>
             </node>
@@ -667,16 +663,15 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhtY14T" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.moduleConfig" />
+        <property role="TrG5h" value="de.peopl.core.moduleConfig" />
         <property role="3LESm3" value="42727bc4-0771-4379-872f-090530265ce4" />
         <node concept="55IIr" id="roAxhtY14W" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtY15l" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhtY15I" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.moduleConfig" />
-              <node concept="2Ry0Ak" id="roAxhtY15Z" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.moduleConfig.mpl" />
+              <property role="2Ry0Am" value="de.peopl.core.moduleConfig" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67c" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.moduleConfig.mpl" />
               </node>
             </node>
           </node>
@@ -688,7 +683,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1i7" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1i8" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1i9" role="3bR37C">
@@ -698,7 +693,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1ib" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1ic" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1id" role="3bR37C">
@@ -739,7 +734,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZ_eu" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZ_ev" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZyN8" resolve="de.htwsaar.peopl.core.listener" />
+            <ref role="3bR37D" node="roAxhtZyN8" resolve="de.peopl.core.listener" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZ_ew" role="3bR37C">
@@ -749,15 +744,15 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZ_ey" role="3bR37C">
           <node concept="1Busua" id="roAxhtZ_ez" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhtZ_e$" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.moduleConfig#6563451082523326250" />
+          <property role="TrG5h" value="de.peopl.core.moduleConfig#6563451082523326250" />
           <property role="3LESm3" value="25c04871-4119-41c0-bd98-e7f0992f3991" />
           <node concept="1SiIV0" id="roAxhtZ_e_" role="3bR37C">
             <node concept="3bR9La" id="roAxhtZ_eA" role="1SiIV1">
-              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
             </node>
           </node>
           <node concept="1SiIV0" id="roAxhtZ_eB" role="3bR37C">
@@ -772,13 +767,13 @@
           </node>
           <node concept="1SiIV0" id="roAxhtZA3T" role="3bR37C">
             <node concept="3bR9La" id="roAxhtZA3U" role="1SiIV1">
-              <ref role="3bR37D" node="roAxhtZ_kR" resolve="de.htwsaar.peopl.core.runtime" />
+              <ref role="3bR37D" node="roAxhtZ_kR" resolve="de.peopl.core.runtime" />
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yWsp" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yWsq" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.htwsaar.peopl.core.tools" />
+            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.peopl.core.tools" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4uH" role="3bR31x">
@@ -790,7 +785,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4uL" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4uM" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.moduleConfig" />
+                  <property role="2Ry0Am" value="de.peopl.core.moduleConfig" />
                 </node>
               </node>
             </node>
@@ -798,28 +793,27 @@
         </node>
         <node concept="1SiIV0" id="4U1U8XSb_Y8" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSb_Y9" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5ynCA" resolve="de.htwsaar.peopl.core.view.runtime" />
+            <ref role="3bR37D" node="5AVGK5ynCA" resolve="de.peopl.core.view.runtime" />
           </node>
         </node>
       </node>
       <node concept="1E1JtD" id="5AVGK5$oYZ" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.shortcuts" />
+        <property role="TrG5h" value="de.peopl.core.shortcuts" />
         <property role="3LESm3" value="161c12a2-d911-4beb-b2a3-fd23ec0ae175" />
         <node concept="55IIr" id="5AVGK5$oZ2" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5$p64" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5$pkn" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts" />
-              <node concept="2Ry0Ak" id="5AVGK5$pq8" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts.mpl" />
+              <property role="2Ry0Am" value="de.peopl.core.shortcuts" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67e" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.shortcuts.mpl" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5$pWH" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5$pWI" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5$pWJ" role="3bR37C">
@@ -828,7 +822,7 @@
           </node>
         </node>
         <node concept="1E0d5M" id="5AVGK5$pWL" role="1E1XAP">
-          <ref role="1E0d5P" node="5AVGK5$p$7" resolve="de.htwsaar.peopl.core.shortcuts.runtime" />
+          <ref role="1E0d5P" node="5AVGK5$p$7" resolve="de.peopl.core.shortcuts.runtime" />
         </node>
         <node concept="1SiIV0" id="5AVGK5$pWM" role="3bR37C">
           <node concept="1Busua" id="5AVGK5$pWN" role="1SiIV1">
@@ -836,11 +830,11 @@
           </node>
         </node>
         <node concept="1yeLz9" id="5AVGK5$pWO" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.shortcuts#2071792397521310722" />
+          <property role="TrG5h" value="de.peopl.core.shortcuts#2071792397521310722" />
           <property role="3LESm3" value="3609d246-4154-4dce-94f1-0d1914883a88" />
           <node concept="1SiIV0" id="5AVGK5$pWP" role="3bR37C">
             <node concept="3bR9La" id="5AVGK5$pWQ" role="1SiIV1">
-              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
             </node>
           </node>
           <node concept="1SiIV0" id="5AVGK5$pWR" role="3bR37C">
@@ -858,7 +852,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4ye" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4yf" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.shortcuts" />
+                  <property role="2Ry0Am" value="de.peopl.core.shortcuts" />
                 </node>
               </node>
             </node>
@@ -866,16 +860,15 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhtY17D" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.variabilityDeclaration" />
+        <property role="TrG5h" value="de.peopl.core.variabilityDeclaration" />
         <property role="3LESm3" value="b56fbef2-5461-4b30-b8d3-8d727c262dec" />
         <node concept="55IIr" id="roAxhtY17G" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtY18U" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="roAxhtY19n" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration" />
-              <node concept="2Ry0Ak" id="roAxhtY19O" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration.mpl" />
+              <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67g" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration.mpl" />
               </node>
             </node>
           </node>
@@ -887,7 +880,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1ag" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1ah" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1ai" role="3bR37C">
@@ -907,7 +900,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1ao" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1ap" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY17D" resolve="de.htwsaar.peopl.core.variabilityDeclaration" />
+            <ref role="3bR37D" node="roAxhtY17D" resolve="de.peopl.core.variabilityDeclaration" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtY1aq" role="3bR37C">
@@ -922,11 +915,11 @@
         </node>
         <node concept="1SiIV0" id="roAxhtY1fV" role="3bR37C">
           <node concept="3bR9La" id="roAxhtY1fW" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1E0d5M" id="roAxhtY1fX" role="1E1XAP">
-          <ref role="1E0d5P" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+          <ref role="1E0d5P" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
         </node>
         <node concept="1SiIV0" id="roAxhtY1fY" role="3bR37C">
           <node concept="1Busua" id="roAxhtY1fZ" role="1SiIV1">
@@ -939,7 +932,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhtY1g2" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.variabilityDeclaration#1236568064986937898" />
+          <property role="TrG5h" value="de.peopl.core.variabilityDeclaration#1236568064986937898" />
           <property role="3LESm3" value="86570020-206b-4110-9574-878c5b2fb126" />
           <node concept="1SiIV0" id="roAxhtY1g3" role="3bR37C">
             <node concept="3bR9La" id="roAxhtY1g4" role="1SiIV1">
@@ -948,7 +941,7 @@
           </node>
           <node concept="1SiIV0" id="roAxhtY1g5" role="3bR37C">
             <node concept="3bR9La" id="roAxhtY1g6" role="1SiIV1">
-              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+              <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
             </node>
           </node>
           <node concept="1SiIV0" id="roAxhtY1g7" role="3bR37C">
@@ -1016,7 +1009,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4uZ" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4v0" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.variabilityDeclaration" />
+                  <property role="2Ry0Am" value="de.peopl.core.variabilityDeclaration" />
                 </node>
               </node>
             </node>
@@ -1032,18 +1025,17 @@
     <node concept="2G$12M" id="5AVGK5ynjn" role="3989C9">
       <property role="TrG5h" value="projectview" />
       <node concept="1E1JtA" id="5AVGK5ynya" role="2G$12L">
-        <property role="TrG5h" value="de.htwsaar.peopl.projectview.common" />
+        <property role="TrG5h" value="de.peopl.projectview.common" />
         <property role="3LESm3" value="97329234-5bcc-41a4-9e8a-4b598c93e695" />
-        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="5AVGK5ynyd" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5yrLl" role="iGT6I">
             <property role="2Ry0Am" value="baseLanguageExtensions" />
             <node concept="2Ry0Ak" id="5AVGK5yrUh" role="2Ry0An">
               <property role="2Ry0Am" value="projectview" />
               <node concept="2Ry0Ak" id="5AVGK5ys0g" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.common" />
-                <node concept="2Ry0Ak" id="5AVGK5ys6f" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.common.msd" />
+                <property role="2Ry0Am" value="de.peopl.projectview.common" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67i" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.projectview.common.msd" />
                 </node>
               </node>
             </node>
@@ -1066,12 +1058,12 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5ys9k" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ys9l" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ys9m" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ys9n" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ys9o" role="3bR37C">
@@ -1096,7 +1088,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5ys9A" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ys9B" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
+            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4yv" role="3bR31x">
@@ -1110,7 +1102,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4y$" role="2Ry0An">
                   <property role="2Ry0Am" value="projectview" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4y_" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.common" />
+                    <property role="2Ry0Am" value="de.peopl.projectview.common" />
                   </node>
                 </node>
               </node>
@@ -1134,18 +1126,17 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5ysgJ" role="2G$12L">
-        <property role="TrG5h" value="de.htwsaar.peopl.projectview.modular" />
+        <property role="TrG5h" value="de.peopl.projectview.modular" />
         <property role="3LESm3" value="6d7d9b46-11d1-41f3-b43e-12253328b43f" />
-        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="5AVGK5ysgM" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5ysns" role="iGT6I">
             <property role="2Ry0Am" value="baseLanguageExtensions" />
             <node concept="2Ry0Ak" id="5AVGK5yst_" role="2Ry0An">
               <property role="2Ry0Am" value="projectview" />
               <node concept="2Ry0Ak" id="5AVGK5yszI" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.modular" />
-                <node concept="2Ry0Ak" id="5AVGK5ysDR" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.modular.msd" />
+                <property role="2Ry0Am" value="de.peopl.projectview.modular" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67k" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.projectview.modular.msd" />
                 </node>
               </node>
             </node>
@@ -1159,17 +1150,17 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5ysGX" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ysGY" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5ynya" resolve="de.htwsaar.peopl.projectview.common" />
+            <ref role="3bR37D" node="5AVGK5ynya" resolve="de.peopl.projectview.common" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ysGZ" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ysH0" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ysH1" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ysH2" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ysH3" role="3bR37C">
@@ -1210,7 +1201,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5ysHn" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ysHo" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
+            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4ue" role="3bR31x">
@@ -1224,7 +1215,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4uj" role="2Ry0An">
                   <property role="2Ry0Am" value="projectview" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4uk" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.modular" />
+                    <property role="2Ry0Am" value="de.peopl.projectview.modular" />
                   </node>
                 </node>
               </node>
@@ -1238,7 +1229,7 @@
         </node>
         <node concept="1SiIV0" id="4U1U8XSBXgl" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSBXgm" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="5bKH2l0R5Rn" role="3bR37C">
@@ -1253,18 +1244,17 @@
         </node>
       </node>
       <node concept="1E1JtA" id="1Gq8bgqdiWp" role="2G$12L">
-        <property role="TrG5h" value="de.htwsaar.peopl.projectview.product" />
+        <property role="TrG5h" value="de.peopl.projectview.product" />
         <property role="3LESm3" value="b6142a83-3492-4283-8cef-a5f4103cb306" />
-        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="1Gq8bgqdiWq" role="3LF7KH">
           <node concept="2Ry0Ak" id="1Gq8bgqdiWr" role="iGT6I">
             <property role="2Ry0Am" value="baseLanguageExtensions" />
             <node concept="2Ry0Ak" id="1Gq8bgqdiWs" role="2Ry0An">
               <property role="2Ry0Am" value="projectview" />
               <node concept="2Ry0Ak" id="1Gq8bgqdiWt" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.product" />
-                <node concept="2Ry0Ak" id="1Gq8bgqdj4K" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.product.msd" />
+                <property role="2Ry0Am" value="de.peopl.projectview.product" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67m" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.projectview.product.msd" />
                 </node>
               </node>
             </node>
@@ -1272,17 +1262,17 @@
         </node>
         <node concept="1SiIV0" id="1Gq8bgqdiWx" role="3bR37C">
           <node concept="3bR9La" id="2VrfBvvq4tG" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5ynya" resolve="de.htwsaar.peopl.projectview.common" />
+            <ref role="3bR37D" node="5AVGK5ynya" resolve="de.peopl.projectview.common" />
           </node>
         </node>
         <node concept="1SiIV0" id="1Gq8bgqdiWz" role="3bR37C">
           <node concept="3bR9La" id="1Gq8bgqdiW$" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="1Gq8bgqdiW_" role="3bR37C">
           <node concept="3bR9La" id="1Gq8bgqdiWA" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="1Gq8bgqdiWF" role="3bR37C">
@@ -1321,7 +1311,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4uE" role="2Ry0An">
                   <property role="2Ry0Am" value="projectview" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4uF" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.projectview.product" />
+                    <property role="2Ry0Am" value="de.peopl.projectview.product" />
                   </node>
                 </node>
               </node>
@@ -1348,23 +1338,22 @@
     <node concept="2G$12M" id="5AVGK5yowr" role="3989C9">
       <property role="TrG5h" value="tools" />
       <node concept="1E1JtA" id="5AVGK5yr3C" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.coreStatisticsExtension" />
+        <property role="TrG5h" value="de.peopl.core.coreStatisticsExtension" />
         <property role="3LESm3" value="5812f512-e947-4fb9-808f-a0060bbc8e0b" />
         <node concept="55IIr" id="5AVGK5yr3F" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5yr7W" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5yrmu" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.coreStatisticsExtension" />
+              <property role="2Ry0Am" value="de.peopl.core.coreStatisticsExtension" />
               <node concept="2Ry0Ak" id="5AVGK5yrve" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.coreStatisticsExtension.msd" />
+                <property role="2Ry0Am" value="de.peopl.core.coreStatisticsExtension.msd" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yry9" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yrya" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yryb" role="3bR37C">
@@ -1374,7 +1363,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yryd" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yrye" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5yqxj" resolve="de.htwsaar.peopl.core.statistics" />
+            <ref role="3bR37D" node="5AVGK5yqxj" resolve="de.peopl.core.statistics" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yryf" role="3bR37C">
@@ -1397,7 +1386,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4vl" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4vm" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.coreStatisticsExtension" />
+                  <property role="2Ry0Am" value="de.peopl.core.coreStatisticsExtension" />
                 </node>
               </node>
             </node>
@@ -1405,16 +1394,15 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5yp86" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.csvWriter" />
+        <property role="TrG5h" value="de.peopl.core.csvWriter" />
         <property role="3LESm3" value="616b8ded-0758-40d6-b432-75316b617a98" />
         <node concept="55IIr" id="5AVGK5yp89" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5ypbi" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5ypj3" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.csvWriter" />
-              <node concept="2Ry0Ak" id="5AVGK5ypog" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.csvWriter.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.csvWriter" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67o" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.csvWriter.msd" />
               </node>
             </node>
           </node>
@@ -1443,7 +1431,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4v6" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4v7" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.csvWriter" />
+                  <property role="2Ry0Am" value="de.peopl.core.csvWriter" />
                 </node>
               </node>
             </node>
@@ -1451,16 +1439,15 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5yoJI" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.peoplTest" />
+        <property role="TrG5h" value="de.peopl.core.peoplTest" />
         <property role="3LESm3" value="12e8cf89-309c-4b58-a376-760ee3c49ffd" />
         <node concept="55IIr" id="5AVGK5yoJL" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5yoMl" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5yoTU" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.peoplTest" />
-              <node concept="2Ry0Ak" id="5AVGK5yoYZ" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.peoplTest.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.peoplTest" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67q" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.peoplTest.msd" />
               </node>
             </node>
           </node>
@@ -1498,7 +1485,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yp1H" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yp1I" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yp1J" role="3bR37C">
@@ -1508,7 +1495,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yp1L" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yp1M" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yp1N" role="3bR37C">
@@ -1538,7 +1525,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yptI" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yptJ" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5yp86" resolve="de.htwsaar.peopl.core.csvWriter" />
+            <ref role="3bR37D" node="5AVGK5yp86" resolve="de.peopl.core.csvWriter" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yptK" role="3bR37C">
@@ -1548,7 +1535,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yptM" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yptN" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ_kR" resolve="de.htwsaar.peopl.core.runtime" />
+            <ref role="3bR37D" node="roAxhtZ_kR" resolve="de.peopl.core.runtime" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4wr" role="3bR31x">
@@ -1560,7 +1547,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4wv" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4ww" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.peoplTest" />
+                  <property role="2Ry0Am" value="de.peopl.core.peoplTest" />
                 </node>
               </node>
             </node>
@@ -1568,23 +1555,22 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5yqxj" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.statistics" />
+        <property role="TrG5h" value="de.peopl.core.statistics" />
         <property role="3LESm3" value="e5c3c271-3e96-406d-8829-9ddb2dbd9e7f" />
         <node concept="55IIr" id="5AVGK5yqxm" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5yq_m" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5yqN$" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.statistics" />
-              <node concept="2Ry0Ak" id="5AVGK5yqTj" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.statistics.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.statistics" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67s" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.statistics.msd" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yqWa" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yqWb" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yqWc" role="3bR37C">
@@ -1596,7 +1582,7 @@
         <node concept="1SiIV0" id="5AVGK5yqWe" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yqWf" role="1SiIV1">
             <property role="3bR36h" value="true" />
-            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.htwsaar.peopl.core.tools" />
+            <ref role="3bR37D" node="5AVGK5ypBt" resolve="de.peopl.core.tools" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yqWg" role="3bR37C">
@@ -1613,7 +1599,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4tX" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4tY" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.statistics" />
+                  <property role="2Ry0Am" value="de.peopl.core.statistics" />
                 </node>
               </node>
             </node>
@@ -1621,16 +1607,15 @@
         </node>
       </node>
       <node concept="1E1JtA" id="5AVGK5ypBt" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.tools" />
+        <property role="TrG5h" value="de.peopl.core.tools" />
         <property role="3LESm3" value="1786aae1-e029-4751-836d-843552f745c0" />
         <node concept="55IIr" id="5AVGK5ypBw" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5ypEY" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5ypPz" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.tools" />
-              <node concept="2Ry0Ak" id="5AVGK5ypUS" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.tools.msd" />
+              <property role="2Ry0Am" value="de.peopl.core.tools" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67u" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.tools.msd" />
               </node>
             </node>
           </node>
@@ -1642,7 +1627,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yqnh" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yqni" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yqnj" role="3bR37C">
@@ -1658,7 +1643,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yWBk" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yWBl" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5yq15" resolve="de.htwsaar.peopl.core.toolsLanguage" />
+            <ref role="3bR37D" node="5AVGK5yq15" resolve="de.peopl.core.toolsLanguage" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4yY" role="3bR31x">
@@ -1670,7 +1655,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4z2" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4z3" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.tools" />
+                  <property role="2Ry0Am" value="de.peopl.core.tools" />
                 </node>
               </node>
             </node>
@@ -1688,22 +1673,21 @@
         </node>
       </node>
       <node concept="1E1JtD" id="5AVGK5yq15" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.toolsLanguage" />
+        <property role="TrG5h" value="de.peopl.core.toolsLanguage" />
         <property role="3LESm3" value="c7fb82d0-90f3-4c08-b61c-d6ac12547689" />
         <node concept="55IIr" id="5AVGK5yq18" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5yq4F" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="5AVGK5yqfg" role="2Ry0An">
-              <property role="2Ry0Am" value="de.htwsaar.peopl.core.toolsLanguage" />
-              <node concept="2Ry0Ak" id="5AVGK5yqk_" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.toolsLanguage.mpl" />
+              <property role="2Ry0Am" value="de.peopl.core.toolsLanguage" />
+              <node concept="2Ry0Ak" id="4QFMMDOU67w" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.toolsLanguage.mpl" />
               </node>
             </node>
           </node>
         </node>
         <node concept="1yeLz9" id="5AVGK5yqqj" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.toolsLanguage#5460644090726734000" />
+          <property role="TrG5h" value="de.peopl.core.toolsLanguage#5460644090726734000" />
           <property role="3LESm3" value="df999683-b7da-4db6-bb3d-a89824bf9763" />
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4wT" role="3bR31x">
@@ -1715,7 +1699,7 @@
               <node concept="2Ry0Ak" id="4TLsuWLv4wX" role="iGT6I">
                 <property role="2Ry0Am" value="core" />
                 <node concept="2Ry0Ak" id="4TLsuWLv4wY" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.toolsLanguage" />
+                  <property role="2Ry0Am" value="de.peopl.core.toolsLanguage" />
                 </node>
               </node>
             </node>
@@ -1725,9 +1709,54 @@
     </node>
     <node concept="2G$12M" id="3dzs$xJmzUb" role="3989C9">
       <property role="TrG5h" value="view" />
+      <node concept="1E1JtA" id="4QFMMDOU6aW" role="2G$12L">
+        <property role="TrG5h" value="de.peopl.core.styleclass.runtime" />
+        <property role="3LESm3" value="7f6e2c3d-5e22-4577-a63b-2e68b49d4ea2" />
+        <node concept="55IIr" id="4QFMMDOU6dU" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4QFMMDOU6e0" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="4QFMMDOU6e5" role="2Ry0An">
+              <property role="2Ry0Am" value="de.peopl.core.styleclass.runtime" />
+              <node concept="2Ry0Ak" id="4QFMMDOU6ea" role="2Ry0An">
+                <property role="2Ry0Am" value="de.peopl.core.styleclass.runtime.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kI" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kJ" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:64TsoMQT2qP" resolve="de.slisson.mps.hacks.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kK" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kM" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kN" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kO" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kP" role="1SiIV1">
+            <property role="3bR36h" value="true" />
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kQ" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kR" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6lI" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6lJ" role="1SiIV1">
+            <ref role="3bR37D" node="4QFMMDOU6hd" resolve="de.peopl.core.styleclass" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="5AVGK5ynCA" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.runtime" />
+        <property role="TrG5h" value="de.peopl.core.view.runtime" />
         <property role="3LESm3" value="ce83f8b6-7083-46ac-a998-a482d839c1d3" />
         <node concept="55IIr" id="5AVGK5ynCD" role="3LF7KH">
           <node concept="2Ry0Ak" id="5AVGK5ynG$" role="iGT6I">
@@ -1735,9 +1764,9 @@
             <node concept="2Ry0Ak" id="5AVGK5ynXD" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="5AVGK5yo2$" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.runtime" />
-                <node concept="2Ry0Ak" id="5AVGK5yo7v" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.runtime.msd" />
+                <property role="2Ry0Am" value="de.peopl.core.view.runtime" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67y" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.runtime.msd" />
                 </node>
               </node>
             </node>
@@ -1745,7 +1774,7 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5yob5" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5yob6" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5yob7" role="3bR37C">
@@ -1766,12 +1795,12 @@
         </node>
         <node concept="1SiIV0" id="5AVGK5ypx2" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ypx3" role="1SiIV1">
-            <ref role="3bR37D" node="5AVGK5yoJI" resolve="de.htwsaar.peopl.core.peoplTest" />
+            <ref role="3bR37D" node="5AVGK5yoJI" resolve="de.peopl.core.peoplTest" />
           </node>
         </node>
         <node concept="1SiIV0" id="5AVGK5ypx4" role="3bR37C">
           <node concept="3bR9La" id="5AVGK5ypx5" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4yB" role="3bR31x">
@@ -1785,7 +1814,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4yG" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4yH" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.runtime" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.runtime" />
                   </node>
                 </node>
               </node>
@@ -1804,23 +1833,93 @@
         </node>
         <node concept="1SiIV0" id="4U1U8XSb_Yq" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSb_Yr" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="4QFMMDOU6hd" role="2G$12L">
+        <property role="TrG5h" value="de.peopl.core.styleclass" />
+        <property role="3LESm3" value="95c69a43-6127-4b32-9e8f-c687264ed752" />
+        <node concept="55IIr" id="4QFMMDOU6hg" role="3LF7KH">
+          <node concept="2Ry0Ak" id="4QFMMDOU6k$" role="iGT6I">
+            <property role="2Ry0Am" value="core" />
+            <node concept="2Ry0Ak" id="4QFMMDOU6kD" role="2Ry0An">
+              <property role="2Ry0Am" value="de.peopl.core.styleclass.mpl" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kS" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kT" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kU" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kW" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6kY" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6kZ" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2Xjt3l57hht" resolve="de.slisson.mps.reflection.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6l0" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6l1" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6SVXTgIel8z" resolve="de.itemis.mps.editor.celllayout.styles" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6l2" role="3bR37C">
+          <node concept="1Busua" id="4QFMMDOU6l3" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6L4X" resolve="jetbrains.mps.lang.editor" />
+          </node>
+        </node>
+        <node concept="1yeLz9" id="4QFMMDOU6l4" role="1TViLv">
+          <property role="TrG5h" value="de.peopl.core.styleclass#01" />
+          <property role="3LESm3" value="48cc2704-8a48-468c-ad0b-0081f182dd33" />
+          <node concept="1SiIV0" id="4QFMMDOU6l5" role="3bR37C">
+            <node concept="3bR9La" id="4QFMMDOU6l6" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7YI57w6K0iE" resolve="jetbrains.mps.lang.editor#1129914002149" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4QFMMDOU6l7" role="3bR37C">
+            <node concept="3bR9La" id="4QFMMDOU6l8" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4QFMMDOU6l9" role="3bR37C">
+            <node concept="3bR9La" id="4QFMMDOU6la" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:2Qa9MYMHrcB" resolve="jetbrains.mps.editorlang.runtime" />
+            </node>
+          </node>
+          <node concept="1SiIV0" id="4QFMMDOU6lM" role="3bR37C">
+            <node concept="3bR9La" id="4QFMMDOU6lN" role="1SiIV1">
+              <ref role="3bR37D" node="4QFMMDOU6aW" resolve="de.peopl.core.styleclass.runtime" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6lK" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6lL" role="1SiIV1">
+            <ref role="3bR37D" node="4QFMMDOU6aW" resolve="de.peopl.core.styleclass.runtime" />
           </node>
         </node>
       </node>
       <node concept="1E1JtD" id="2VrfBvvr$MM" role="2G$12L">
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.annotative" />
+        <property role="TrG5h" value="de.peopl.core.view.annotative" />
         <property role="3LESm3" value="37d6e9a4-fa76-4514-b3e3-2aaf2d2f8d9e" />
-        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="2VrfBvvr$MP" role="3LF7KH">
           <node concept="2Ry0Ak" id="2VrfBvvr$Pi" role="iGT6I">
             <property role="2Ry0Am" value="core" />
             <node concept="2Ry0Ak" id="2VrfBvvr$Pl" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="2VrfBvvr$Pq" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.annotative" />
-                <node concept="2Ry0Ak" id="2VrfBvvr$Pv" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.annotative.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.annotative" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67$" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.annotative.mpl" />
                 </node>
               </node>
             </node>
@@ -1833,7 +1932,7 @@
         </node>
         <node concept="1SiIV0" id="2VrfBvvr$Pz" role="3bR37C">
           <node concept="3bR9La" id="2VrfBvvr$P$" role="1SiIV1">
-            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="3bR37D" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="2VrfBvvr$P_" role="3bR37C">
@@ -1863,7 +1962,7 @@
         </node>
         <node concept="1SiIV0" id="2VrfBvvr$PJ" role="3bR37C">
           <node concept="3bR9La" id="2VrfBvvr$PK" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1E0d5M" id="2VrfBvvr$PL" role="1E1XAP">
@@ -1871,7 +1970,7 @@
         </node>
         <node concept="1SiIV0" id="2VrfBvvr$PM" role="3bR37C">
           <node concept="1Busua" id="2VrfBvvr$PN" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1SiIV0" id="2VrfBvvr$PO" role="3bR37C">
@@ -1880,7 +1979,7 @@
           </node>
         </node>
         <node concept="1yeLz9" id="2VrfBvvr$PQ" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.annotative#2402362384312156136" />
+          <property role="TrG5h" value="de.peopl.core.view.annotative#2402362384312156136" />
           <property role="3LESm3" value="f8064174-7a19-4b25-8f26-e167c41d569b" />
         </node>
         <node concept="1E0d5M" id="2VrfBvvr_5J" role="1E1XAP">
@@ -1888,8 +1987,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhu1eyY" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.embedded" />
+        <property role="TrG5h" value="de.peopl.core.view.embedded" />
         <property role="3LESm3" value="64f023eb-0dd8-492c-9315-628fb5a85b14" />
         <node concept="55IIr" id="roAxhu1eyZ" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhu1ez0" role="iGT6I">
@@ -1897,9 +1995,9 @@
             <node concept="2Ry0Ak" id="roAxhu1ez1" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="roAxhu1ez2" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.embedded" />
-                <node concept="2Ry0Ak" id="roAxhu1f92" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.embedded.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.embedded" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67A" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.embedded.mpl" />
                 </node>
               </node>
             </node>
@@ -1907,16 +2005,16 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1ezi" role="3bR37C">
           <node concept="1Busua" id="roAxhu1ezj" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhu1ezk" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.embedded#5509652143918834059" />
+          <property role="TrG5h" value="de.peopl.core.view.embedded#5509652143918834059" />
           <property role="3LESm3" value="7b526e2d-665d-4263-b253-8386165d7ced" />
         </node>
         <node concept="1SiIV0" id="roAxhu1foy" role="3bR37C">
           <node concept="3bR9La" id="roAxhu1foz" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.htwsaar.peopl.core.view.modular" />
+            <ref role="3bR37D" node="roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4xz" role="3bR31x">
@@ -1930,7 +2028,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4xC" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4xD" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.embedded" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.embedded" />
                   </node>
                 </node>
               </node>
@@ -1944,8 +2042,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhu1eQh" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.hiding" />
+        <property role="TrG5h" value="de.peopl.core.view.hiding" />
         <property role="3LESm3" value="2cf3f452-72a5-4cc5-b35f-2261cc501014" />
         <node concept="55IIr" id="roAxhu1eQi" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhu1eQj" role="iGT6I">
@@ -1953,9 +2050,9 @@
             <node concept="2Ry0Ak" id="roAxhu1eQk" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="roAxhu1eQl" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.hiding" />
-                <node concept="2Ry0Ak" id="roAxhu1fg9" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.hiding.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.hiding" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67C" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.hiding.mpl" />
                 </node>
               </node>
             </node>
@@ -1963,11 +2060,11 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1eQ_" role="3bR37C">
           <node concept="1Busua" id="roAxhu1eQA" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhu1eQB" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.hiding#5509652143918828818" />
+          <property role="TrG5h" value="de.peopl.core.view.hiding#5509652143918828818" />
           <property role="3LESm3" value="2bd021d4-da9e-4e0c-b005-5d07236afa2e" />
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4yJ" role="3bR31x">
@@ -1981,7 +2078,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4yO" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4yP" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.hiding" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.hiding" />
                   </node>
                 </node>
               </node>
@@ -1990,8 +2087,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhtZ$VX" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.modular" />
+        <property role="TrG5h" value="de.peopl.core.view.modular" />
         <property role="3LESm3" value="4c4bbb77-dae4-40ac-9819-555675af7c56" />
         <node concept="55IIr" id="roAxhtZ$W0" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhtZ_0n" role="iGT6I">
@@ -1999,9 +2095,9 @@
             <node concept="2Ry0Ak" id="roAxhtZ_6x" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="roAxhtZ_7W" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.modular" />
-                <node concept="2Ry0Ak" id="roAxhtZ_9n" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.modular.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.modular" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67E" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.modular.mpl" />
                 </node>
               </node>
             </node>
@@ -2034,21 +2130,21 @@
         </node>
         <node concept="1SiIV0" id="roAxhtZ_aT" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZ_aU" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtZyN8" resolve="de.htwsaar.peopl.core.listener" />
+            <ref role="3bR37D" node="roAxhtZyN8" resolve="de.peopl.core.listener" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZ_aV" role="3bR37C">
           <node concept="3bR9La" id="roAxhtZ_aW" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhtZ_aX" role="3bR37C">
           <node concept="1Busua" id="roAxhtZ_aY" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhtZ_aZ" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.modular#763904935699801265" />
+          <property role="TrG5h" value="de.peopl.core.view.modular#763904935699801265" />
           <property role="3LESm3" value="5ae444e4-f2d2-4942-a820-1f9cf7dd06aa" />
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4ut" role="3bR31x">
@@ -2062,7 +2158,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4uy" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4uz" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.modular" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.modular" />
                   </node>
                 </node>
               </node>
@@ -2071,8 +2167,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhu1ftp" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.preprocessor" />
+        <property role="TrG5h" value="de.peopl.core.view.preprocessor" />
         <property role="3LESm3" value="6571aa6a-9d16-40e0-866d-db25c3c7d9c8" />
         <node concept="55IIr" id="roAxhu1ftq" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhu1ftr" role="iGT6I">
@@ -2080,9 +2175,9 @@
             <node concept="2Ry0Ak" id="roAxhu1fts" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="roAxhu1ftt" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.preprocessor" />
-                <node concept="2Ry0Ak" id="roAxhu1fA2" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.preprocessor.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.preprocessor" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67G" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.preprocessor.mpl" />
                 </node>
               </node>
             </node>
@@ -2090,11 +2185,11 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1ftv" role="3bR37C">
           <node concept="1Busua" id="roAxhu1ftw" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhu1ftx" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.preprocessor#3387676811032598941" />
+          <property role="TrG5h" value="de.peopl.core.view.preprocessor#3387676811032598941" />
           <property role="3LESm3" value="0ab674ba-b75b-4843-a39f-0c8a58e1daf1" />
         </node>
         <node concept="1SiIV0" id="roAxhu1fFz" role="3bR37C">
@@ -2114,7 +2209,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1fFD" role="3bR37C">
           <node concept="3bR9La" id="roAxhu1fFE" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4wc" role="3bR31x">
@@ -2128,7 +2223,7 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4wh" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4wi" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.preprocessor" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.preprocessor" />
                   </node>
                 </node>
               </node>
@@ -2152,8 +2247,7 @@
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhu1fLs" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="de.htwsaar.peopl.core.view.product" />
+        <property role="TrG5h" value="de.peopl.core.view.product" />
         <property role="3LESm3" value="4924e85e-7b88-45ad-8ae8-36aec992fa63" />
         <node concept="55IIr" id="roAxhu1fLt" role="3LF7KH">
           <node concept="2Ry0Ak" id="roAxhu1fLu" role="iGT6I">
@@ -2161,9 +2255,9 @@
             <node concept="2Ry0Ak" id="roAxhu1fLv" role="2Ry0An">
               <property role="2Ry0Am" value="views" />
               <node concept="2Ry0Ak" id="roAxhu1fLw" role="2Ry0An">
-                <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.product" />
-                <node concept="2Ry0Ak" id="roAxhu1fTi" role="2Ry0An">
-                  <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.product.mpl" />
+                <property role="2Ry0Am" value="de.peopl.core.view.product" />
+                <node concept="2Ry0Ak" id="4QFMMDOU67I" role="2Ry0An">
+                  <property role="2Ry0Am" value="de.peopl.core.view.product.mpl" />
                 </node>
               </node>
             </node>
@@ -2171,11 +2265,11 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1fLy" role="3bR37C">
           <node concept="1Busua" id="roAxhu1fLz" role="1SiIV1">
-            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.htwsaar.peopl.core" />
+            <ref role="1Busuk" node="tJvfxNIiF_" resolve="de.peopl.core" />
           </node>
         </node>
         <node concept="1yeLz9" id="roAxhu1fL$" role="1TViLv">
-          <property role="TrG5h" value="de.htwsaar.peopl.core.view.product#5509652143918833881" />
+          <property role="TrG5h" value="de.peopl.core.view.product#5509652143918833881" />
           <property role="3LESm3" value="21661992-c836-4cc9-9469-555d93a4f14c" />
         </node>
         <node concept="1SiIV0" id="roAxhu1fL_" role="3bR37C">
@@ -2185,7 +2279,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1fLF" role="3bR37C">
           <node concept="3bR9La" id="roAxhu1fLG" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.htwsaar.peopl.core.variabilityDeclaration.runtime" />
+            <ref role="3bR37D" node="roAxhtY1bZ" resolve="de.peopl.core.variabilityDeclaration.runtime" />
           </node>
         </node>
         <node concept="1SiIV0" id="roAxhu1fVk" role="3bR37C">
@@ -2200,7 +2294,7 @@
         </node>
         <node concept="1SiIV0" id="roAxhu1fVo" role="3bR37C">
           <node concept="3bR9La" id="roAxhu1fVp" role="1SiIV1">
-            <ref role="3bR37D" node="roAxhtY14T" resolve="de.htwsaar.peopl.core.moduleConfig" />
+            <ref role="3bR37D" node="roAxhtY14T" resolve="de.peopl.core.moduleConfig" />
           </node>
         </node>
         <node concept="3rtmxn" id="4TLsuWLv4xU" role="3bR31x">
@@ -2214,11 +2308,21 @@
                 <node concept="2Ry0Ak" id="4TLsuWLv4xZ" role="2Ry0An">
                   <property role="2Ry0Am" value="views" />
                   <node concept="2Ry0Ak" id="4TLsuWLv4y0" role="2Ry0An">
-                    <property role="2Ry0Am" value="de.htwsaar.peopl.core.view.product" />
+                    <property role="2Ry0Am" value="de.peopl.core.view.product" />
                   </node>
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU67K" role="3bR37C">
+          <node concept="1Busua" id="4QFMMDOU67L" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4QFMMDOU6lO" role="3bR37C">
+          <node concept="3bR9La" id="4QFMMDOU6lP" role="1SiIV1">
+            <ref role="3bR37D" node="4QFMMDOU6hd" resolve="de.peopl.core.styleclass" />
           </node>
         </node>
       </node>

@@ -16,7 +16,7 @@
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.peopl.view.modular/de.peopl.view.modular.mpl" folder="peopl.extension.baselanguage.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.peopl.view.preprocessor/de.peopl.view.preprocessor.mpl" folder="peopl.extension.baselanguage.view" />
       <modulePath path="$PROJECT_DIR$/baseLanguageExtensions/view/de.peopl.view.product/de.peopl.view.product.mpl" folder="peopl.extension.baselanguage.view" />
-      <modulePath path="$PROJECT_DIR$/buildScripts/de.htwsaar.peopl.build/de.htwsaar.peopl.build.msd" folder="build" />
+      <modulePath path="$PROJECT_DIR$/buildScripts/de.peopl.build/de.peopl.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/caseStudies/Stack/Stack.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/core/de.peopl.core.coreStatisticsExtension/de.peopl.core.coreStatisticsExtension.msd" folder="peopl.core.tools" />
       <modulePath path="$PROJECT_DIR$/core/de.peopl.core.csvWriter/de.peopl.core.csvWriter.msd" folder="peopl.core.tools" />
@@ -46,8 +46,7 @@
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.commonHeaders/de.peopl.commonHeaders.msd" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension.runtime/de.peopl.mBeddrExtension.runtime.msd" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension/de.peopl.mBeddrExtension.mpl" folder="peopl.extension.mbeddrC" />
-      <modulePath path="$PROJECT_DIR$/solutions/CTests/CTests.msd" folder="playground" />
-      <modulePath path="$PROJECT_DIR$/solutions/JavaTestSolution/JavaTestSolution.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/JavaTestSolution/JavaTestSolution.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/de.peopl.core.styleclass.runtime/de.peopl.core.styleclass.runtime.msd" folder="peopl.core.view" />
