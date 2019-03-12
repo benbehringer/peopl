@@ -46,6 +46,7 @@
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.commonHeaders/de.peopl.commonHeaders.msd" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension.runtime/de.peopl.mBeddrExtension.runtime.msd" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension/de.peopl.mBeddrExtension.mpl" folder="peopl.extension.mbeddrC" />
+      <modulePath path="$PROJECT_DIR$/solutions/CTestSolution/CTestSolution.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaTestSolution/JavaTestSolution.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="playground" />
