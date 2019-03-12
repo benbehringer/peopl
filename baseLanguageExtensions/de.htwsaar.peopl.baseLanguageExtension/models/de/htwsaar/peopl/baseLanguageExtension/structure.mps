@@ -121,6 +121,7 @@
     <node concept="1QGGSu" id="q735wx1hf4" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/peoplClass.png" />
     </node>
+    <node concept="asaX9" id="5M2TpbB09TW" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="70Uiey1XJat">
     <property role="TrG5h" value="VariabilityHelper" />
@@ -137,6 +138,7 @@
     <node concept="PrWs8" id="EpVRRux90C" role="PzmwI">
       <ref role="PrY4T" to="xf8r:EpVRRuwHnf" resolve="CompilationUnit" />
     </node>
+    <node concept="asaX9" id="5M2TpbB050X" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="4DWAEpij21t">
     <property role="TrG5h" value="PeoplBlockReference" />
