@@ -34,6 +34,7 @@
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration.runtime/de.htwsaar.peopl.core.variabilityDeclaration.runtime.msd" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core.variabilityDeclaration/de.htwsaar.peopl.core.variabilityDeclaration.mpl" folder="peopl.core.essential" />
       <modulePath path="$PROJECT_DIR$/core/de.htwsaar.peopl.core/de.htwsaar.peopl.core.mpl" folder="peopl.core.essential" />
+      <modulePath path="$PROJECT_DIR$/core/de.peopl.core.styleclass.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.annotative/de.htwsaar.peopl.core.view.annotative.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.embedded/de.htwsaar.peopl.core.view.embedded.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.htwsaar.peopl.core.view.hiding/de.htwsaar.peopl.core.view.hiding.mpl" folder="peopl.core.view" />
@@ -46,8 +47,10 @@
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.runtime/de.htwsaar.peopl.mBeddrExtension.runtime.msd" folder="peopl.coreExtensionMbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.htwsaar.peopl.mBeddrExtension/de.htwsaar.peopl.mBeddrExtension.mpl" folder="peopl.coreExtensionMbeddrC" />
       <modulePath path="$PROJECT_DIR$/solutions/CTests/CTests.msd" folder="playground" />
+      <modulePath path="$PROJECT_DIR$/solutions/JavaTestSolution/JavaTestSolution.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/FeatureContainerTest/FeatureContainerTest.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/MoritzTestsVariability/mBeddrTest/mBeddrTest.msd" folder="playground" />
+      <modulePath path="$PROJECT_DIR$/solutions/de.peopl.core.styleclass.runtime/de.peopl.core.styleclass.runtime.msd" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.fileUpload/de.htwsaar.fileUpload.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoring/de.htwsaar.peopl.utils.interactionMonitoring.msd" folder="peopl.utils" />
       <modulePath path="$PROJECT_DIR$/utils/de.htwsaar.peopl.utils.interactionMonitoringAnalysis/de.htwsaar.peopl.utils.interactionMonitoringAnalysis.msd" folder="peopl.utils" />
