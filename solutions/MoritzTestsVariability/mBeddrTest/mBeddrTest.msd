@@ -7,9 +7,9 @@
   </models>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">f4a807b3-557e-4f92-89bc-d43f4be25649(de.htwsaar.peopl.mBeddrExtension)</dependency>
+    <dependency reexport="false">f4a807b3-557e-4f92-89bc-d43f4be25649(de.peopl.mBeddrExtension)</dependency>
     <dependency reexport="false">~_PreferencesModule#peopl.__spreferences.PlatformTemplates(peopl.__spreferences.PlatformTemplates)</dependency>
-    <dependency reexport="false">26957839-7fdc-490e-a16f-db97b2df5cb1(de.htwsaar.peopl.commonHeaders)</dependency>
+    <dependency reexport="false">26957839-7fdc-490e-a16f-db97b2df5cb1(de.peopl.commonHeaders)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="5" />
@@ -39,10 +39,10 @@
     <language slang="l:c788b046-2019-4656-8b60-8bb9bbb177b5:com.mbeddr.mpsutil.review" version="0" />
     <language slang="l:7a060fae-09e0-4372-be36-6696d6554c0e:com.mbeddr.mpsutil.review.annotation" version="0" />
     <language slang="l:c1c2a88a-323c-4605-a37d-9ab77a2ccbd2:com.mbeddr.mpsutil.suppresswarning" version="0" />
-    <language slang="l:1a3a0b62-fb00-47d1-8423-98da4001b216:de.htwsaar.peopl.core" version="0" />
-    <language slang="l:42727bc4-0771-4379-872f-090530265ce4:de.htwsaar.peopl.core.moduleConfig" version="0" />
-    <language slang="l:4c4bbb77-dae4-40ac-9819-555675af7c56:de.htwsaar.peopl.core.view.modular" version="0" />
     <language slang="l:f4a807b3-557e-4f92-89bc-d43f4be25649:de.htwsaar.peopl.mBeddrExtension" version="0" />
+    <language slang="l:1a3a0b62-fb00-47d1-8423-98da4001b216:de.peopl.core" version="0" />
+    <language slang="l:42727bc4-0771-4379-872f-090530265ce4:de.peopl.core.moduleConfig" version="0" />
+    <language slang="l:4c4bbb77-dae4-40ac-9819-555675af7c56:de.peopl.core.view.modular" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
     <language slang="l:ed6d7656-532c-4bc2-81d1-af945aeb8280:jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -79,11 +79,11 @@
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="c1c2a88a-323c-4605-a37d-9ab77a2ccbd2(com.mbeddr.mpsutil.suppresswarning)" version="0" />
-    <module reference="26957839-7fdc-490e-a16f-db97b2df5cb1(de.htwsaar.peopl.commonHeaders)" version="0" />
-    <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.htwsaar.peopl.core)" version="0" />
-    <module reference="4c4bbb77-dae4-40ac-9819-555675af7c56(de.htwsaar.peopl.core.view.modular)" version="0" />
-    <module reference="f4a807b3-557e-4f92-89bc-d43f4be25649(de.htwsaar.peopl.mBeddrExtension)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
+    <module reference="26957839-7fdc-490e-a16f-db97b2df5cb1(de.peopl.commonHeaders)" version="0" />
+    <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.peopl.core)" version="0" />
+    <module reference="4c4bbb77-dae4-40ac-9819-555675af7c56(de.peopl.core.view.modular)" version="0" />
+    <module reference="f4a807b3-557e-4f92-89bc-d43f4be25649(de.peopl.mBeddrExtension)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />

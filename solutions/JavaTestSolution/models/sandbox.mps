@@ -142,8 +142,8 @@
                 <property role="3SKdUp" value="inner test" />
               </node>
             </node>
-            <node concept="3clFbH" id="2SJ$OJZTo6u" role="3cqZAp" />
             <node concept="3clFbH" id="2SJ$OJZTo6E" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZU7p7" role="3cqZAp" />
             <node concept="3clFbH" id="2SJ$OJZTo6R" role="3cqZAp" />
             <node concept="3lLJVk" id="2SJ$OJYCVJO" role="lGtFl" />
           </node>
@@ -176,11 +176,10 @@
                 <property role="3SKdUp" value="some feature code" />
               </node>
             </node>
-            <node concept="3clFbH" id="2SJ$OJYIFY7" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJYIFz4" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJZTo8c" role="3cqZAp" />
-            <node concept="3clFbH" id="2SJ$OJZTo8i" role="3cqZAp" />
             <node concept="3clFbH" id="2SJ$OJZTo8p" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZU7qe" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZU7qm" role="3cqZAp" />
+            <node concept="3clFbH" id="2SJ$OJZU7nU" role="3cqZAp" />
           </node>
           <node concept="1V74GB" id="6m4IJn2RfYa" role="lGtFl">
             <property role="32Xqk$" value="chosenModule" />

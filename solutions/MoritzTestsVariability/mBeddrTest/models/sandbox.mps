@@ -2,8 +2,8 @@
 <model ref="r:9dcef2a2-6e57-41b7-b5e8-e92e14113811(sandbox)">
   <persistence version="9" />
   <languages>
-    <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core" version="0" />
-    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig" version="0" />
+    <use id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.peopl.core" version="0" />
+    <use id="42727bc4-0771-4379-872f-090530265ce4" name="de.peopl.core.moduleConfig" version="0" />
     <use id="f4a807b3-557e-4f92-89bc-d43f4be25649" name="de.htwsaar.peopl.mBeddrExtension" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="ed6d7656-532c-4bc2-81d1-af945aeb8280" name="jetbrains.mps.baseLanguage.blTypes" version="0" />
@@ -14,7 +14,7 @@
   <imports>
     <import index="9err" ref="r:af154ac4-9353-4cc5-b3d5-3b134603ae15(peoplConfig)" />
     <import index="5bw2" ref="r:6b36d553-160d-4543-9389-707dba7d9a1f(peopl.__spreferences.PlatformTemplates)" />
-    <import index="wttv" ref="r:2491c8a9-60fd-45fc-b778-085c252af80a(de.htwsaar.peopl.commonHeaders.headers)" />
+    <import index="wttv" ref="r:2491c8a9-60fd-45fc-b778-085c252af80a(de.peopl.commonHeaders.headers)" />
   </imports>
   <registry>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
@@ -73,7 +73,7 @@
         <reference id="8719112291175211414" name="template" index="2xfifS" />
       </concept>
     </language>
-    <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.htwsaar.peopl.core">
+    <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.peopl.core">
       <concept id="7625379338057394746" name="de.htwsaar.peopl.core.structure.IFeatureGroup" flags="ng" index="bkm0x">
         <reference id="7625379338057414416" name="definingContainer" index="bkjOb" />
         <reference id="7625379338057414420" name="definingNode" index="bkjOf" />
@@ -161,7 +161,7 @@
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
-    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.htwsaar.peopl.core.moduleConfig">
+    <language id="42727bc4-0771-4379-872f-090530265ce4" name="de.peopl.core.moduleConfig">
       <concept id="8595675693488599338" name="de.htwsaar.peopl.core.moduleConfig.structure.ConfigurationLink" flags="ng" index="H$gyE">
         <reference id="8595675693488599339" name="productLineConfigurations" index="H$gyF" />
       </concept>
@@ -195,7 +195,7 @@
       <concept id="8860443239512128094" name="com.mbeddr.core.expressions.structure.TrueLiteral" flags="ng" index="3TlMhK" />
       <concept id="4375898003726285486" name="com.mbeddr.core.expressions.structure.PostIncrementExpression" flags="ng" index="3TM6Ey" />
     </language>
-    <language id="4c4bbb77-dae4-40ac-9819-555675af7c56" name="de.htwsaar.peopl.core.view.modular">
+    <language id="4c4bbb77-dae4-40ac-9819-555675af7c56" name="de.peopl.core.view.modular">
       <concept id="763904935699803294" name="de.htwsaar.peopl.core.view.modular.structure.ModularCompilationUnit" flags="ng" index="3k50fz">
         <property id="763904935699804171" name="moduleReferenceName" index="3k51XQ" />
         <reference id="763904935699805692" name="module" index="3k51E1" />
