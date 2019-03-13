@@ -39,6 +39,7 @@
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.peopl.core.behavior)" />
+    <import index="17ze" ref="r:1d1b7c21-78ab-422c-9cd5-20e6bc04ad41(de.peopl.core.intentions)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" implicit="true" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -4380,12 +4381,34 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="4GZL8hUdtMQ" role="3clFbw">
-                <node concept="2GrUjf" id="4GZL8hUdt8s" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="488dyeENXk9" resolve="editorComponent" />
+              <node concept="1Wc70l" id="4GZL8hUez6r" role="3clFbw">
+                <node concept="2OqwBi" id="4GZL8hUdtMQ" role="3uHU7B">
+                  <node concept="2GrUjf" id="4GZL8hUdt8s" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="488dyeENXk9" resolve="editorComponent" />
+                  </node>
+                  <node concept="liA8E" id="4GZL8hUdPZ2" role="2OqNvi">
+                    <ref role="37wK5l" to="z60i:~Component.isShowing():boolean" resolve="isShowing" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="4GZL8hUdPZ2" role="2OqNvi">
-                  <ref role="37wK5l" to="z60i:~Component.isShowing():boolean" resolve="isShowing" />
+                <node concept="2YIFZM" id="4GZL8hUeUEe" role="3uHU7w">
+                  <ref role="37wK5l" to="17ze:2Gf5rX4UYa" resolve="containsHint" />
+                  <ref role="1Pybhc" to="17ze:6IyHh711JcP" resolve="Hint" />
+                  <node concept="2OqwBi" id="4GZL8hUe_x7" role="37wK5m">
+                    <node concept="2OqwBi" id="4GZL8hUe$2s" role="2Oq$k0">
+                      <node concept="2GrUjf" id="4GZL8hUezmo" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="488dyeENXk9" resolve="editorComponent" />
+                      </node>
+                      <node concept="liA8E" id="4GZL8hUe_a4" role="2OqNvi">
+                        <ref role="37wK5l" to="exr9:~EditorComponent.getUpdater():jetbrains.mps.openapi.editor.update.Updater" resolve="getUpdater" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4GZL8hUeTF_" role="2OqNvi">
+                      <ref role="37wK5l" to="22ra:~Updater.getInitialEditorHints():java.lang.String[]" resolve="getInitialEditorHints" />
+                    </node>
+                  </node>
+                  <node concept="2pYGij" id="6IyHh711HO6" role="37wK5m">
+                    <ref role="2pYH_C" to="tqa7:2W3sxLBrwzM" resolve="product" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -4695,6 +4718,11 @@
                     <node concept="3cqZAl" id="1wmvoNaDr86" role="3clF45" />
                     <node concept="3Tm1VV" id="1wmvoNaDr87" role="1B3o_S" />
                     <node concept="3clFbS" id="1wmvoNaDr89" role="3clF47">
+                      <node concept="3SKdUt" id="4GZL8hUes3l" role="3cqZAp">
+                        <node concept="3SKdUq" id="4GZL8hUes3m" role="3SKWNk">
+                          <property role="3SKdUp" value="TODO: provide means to turn the automatic editor rebuild off" />
+                        </node>
+                      </node>
                       <node concept="3cpWs8" id="4ZcOZGwXAT4" role="3cqZAp">
                         <node concept="3cpWsn" id="4ZcOZGwXAT7" role="3cpWs9">
                           <property role="TrG5h" value="editedNode" />
