@@ -41,9 +41,6 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
-        <property id="1070475926801" name="value" index="Xl_RC" />
-      </concept>
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
@@ -142,12 +139,6 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
-      </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
-        <property id="6332851714983843871" name="severity" index="2xdLsb" />
-        <child id="5721587534047265374" name="message" index="9lYJi" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -485,12 +476,6 @@
             </node>
             <node concept="9aQIb" id="1cYvLMlKlg4" role="9aQIa">
               <node concept="3clFbS" id="1cYvLMlKlg5" role="9aQI4">
-                <node concept="2xdQw9" id="1cYvLMlZgyf" role="3cqZAp">
-                  <property role="2xdLsb" value="warn" />
-                  <node concept="Xl_RD" id="1cYvLMlZgyh" role="9lYJi">
-                    <property role="Xl_RC" value="find the statement" />
-                  </node>
-                </node>
                 <node concept="3clFbF" id="1cYvLMlL2Ao" role="3cqZAp">
                   <node concept="2YIFZM" id="1cYvLMlL4nY" role="3clFbG">
                     <ref role="1Pybhc" node="1cYvLMkgB0P" resolve="FeatureBlockVarRef_Helper" />
