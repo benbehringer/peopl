@@ -1728,12 +1728,12 @@
   <node concept="312cEu" id="1GfZLHumrVq">
     <property role="TrG5h" value="PeoplNamingHelper" />
     <node concept="Wx3nA" id="~ProjectActions_ActionGroup.ID" role="jymVt">
-      <property role="TrG5h" value="STD_CONFIG_MODEL" />
+      <property role="TrG5h" value="STD_CONFIG_FOLDER" />
       <property role="3TUv4t" value="true" />
       <node concept="3Tm1VV" id="1k3hL0Suk9T" role="1B3o_S" />
       <node concept="17QB3L" id="2H0DQTMFfyS" role="1tU5fm" />
       <node concept="Xl_RD" id="1k3hL0Suk9V" role="33vP2m">
-        <property role="Xl_RC" value="peoplConfig" />
+        <property role="Xl_RC" value="config" />
       </node>
     </node>
     <node concept="Wx3nA" id="1GfZLHunQDv" role="jymVt">
@@ -1754,7 +1754,7 @@
       <node concept="3Tm1VV" id="1GfZLHumxOc" role="1B3o_S" />
       <node concept="17QB3L" id="1GfZLHumxXm" role="1tU5fm" />
       <node concept="Xl_RD" id="1GfZLHumxZk" role="33vP2m">
-        <property role="Xl_RC" value="Base" />
+        <property role="Xl_RC" value="Example Feature" />
       </node>
     </node>
     <node concept="Wx3nA" id="1GfZLHumy$G" role="jymVt">
@@ -1765,9 +1765,21 @@
       <node concept="3Tm1VV" id="1GfZLHumy$H" role="1B3o_S" />
       <node concept="17QB3L" id="1GfZLHumy$I" role="1tU5fm" />
       <node concept="Xl_RD" id="1GfZLHumy$J" role="33vP2m">
-        <property role="Xl_RC" value="ModuleDefinitions" />
+        <property role="Xl_RC" value="Example Feature Definitions" />
       </node>
     </node>
+    <node concept="Wx3nA" id="56MlstWZ2EE" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="STD_PRODUCT_LINE_CONFIGURATION_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="56MlstWZ2EF" role="1B3o_S" />
+      <node concept="17QB3L" id="56MlstWZ2EG" role="1tU5fm" />
+      <node concept="Xl_RD" id="56MlstWZ2EH" role="33vP2m">
+        <property role="Xl_RC" value="Example Product Line Configurations" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="56MlstWZ2E1" role="jymVt" />
     <node concept="Wx3nA" id="7s2UsmIZSUi" role="jymVt">
       <property role="2dlcS1" value="false" />
       <property role="2dld4O" value="false" />

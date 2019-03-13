@@ -17,6 +17,7 @@
     <dependency reexport="false">6d7d9b46-11d1-41f3-b43e-12253328b43f(de.peopl.projectview.modular)</dependency>
     <dependency reexport="false">019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)</dependency>
     <dependency reexport="false">4c4bbb77-dae4-40ac-9819-555675af7c56(de.peopl.core.view.modular)</dependency>
+    <dependency reexport="false">97329234-5bcc-41a4-9e8a-4b598c93e695(de.peopl.projectview.common)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />
@@ -61,6 +62,7 @@
     <module reference="4c4bbb77-dae4-40ac-9819-555675af7c56(de.peopl.core.view.modular)" version="0" />
     <module reference="f4a807b3-557e-4f92-89bc-d43f4be25649(de.peopl.mBeddrExtension)" version="0" />
     <module reference="7f1ab53e-f316-48b0-8d3c-d0c66136e7c5(de.peopl.mBeddrExtension.runtime)" version="0" />
+    <module reference="97329234-5bcc-41a4-9e8a-4b598c93e695(de.peopl.projectview.common)" version="0" />
     <module reference="6d7d9b46-11d1-41f3-b43e-12253328b43f(de.peopl.projectview.modular)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
