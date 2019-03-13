@@ -3113,7 +3113,7 @@
               <node concept="Tc6Ow" id="4abErjGKn14" role="2ShVmc">
                 <node concept="17QB3L" id="4abErjGKn15" role="HW$YZ" />
                 <node concept="Xl_RD" id="4abErjGKn16" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl" />
+                  <property role="Xl_RC" value="de.peopl" />
                 </node>
                 <node concept="Xl_RD" id="4abErjGKn17" role="HW$Y0">
                   <property role="Xl_RC" value="de.slisson" />
@@ -3137,7 +3137,7 @@
                   <property role="Xl_RC" value="checkpoints" />
                 </node>
                 <node concept="Xl_RD" id="6y6YKC7BcL1" role="HW$Y0">
-                  <property role="Xl_RC" value="de.htwsaar.peopl.build" />
+                  <property role="Xl_RC" value="de.peopl.build" />
                 </node>
               </node>
             </node>
@@ -3219,7 +3219,7 @@
             <node concept="liA8E" id="3GqAm$Hxy$7" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence):boolean" resolve="contains" />
               <node concept="10M0yZ" id="3GqAm$HxuD$" role="37wK5m">
-                <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_MODEL" />
+                <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_FOLDER" />
                 <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplNamingHelper" />
               </node>
             </node>
