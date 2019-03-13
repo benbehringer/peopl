@@ -3439,7 +3439,7 @@
                         <node concept="liA8E" id="48zfXGK1gVK" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
                           <node concept="10M0yZ" id="48zfXGK1gVL" role="37wK5m">
-                            <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_MODEL" />
+                            <ref role="3cqZAo" to="zur:~ProjectActions_ActionGroup.ID" resolve="STD_CONFIG_FOLDER" />
                             <ref role="1PxDUh" to="zur:1GfZLHumrVq" resolve="PeoplNamingHelper" />
                           </node>
                         </node>
@@ -5764,6 +5764,26 @@
       <node concept="3Tm1VV" id="2yEo8dqra9a" role="1B3o_S" />
       <node concept="3Tqbb2" id="2yEo8dqrgzg" role="3clF45" />
       <node concept="3clFbS" id="2yEo8dqra9c" role="3clF47">
+        <node concept="3SKdUt" id="1cYvLMlxywi" role="3cqZAp">
+          <node concept="3SKdUq" id="1cYvLMlxywj" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: this heavily depends on the specification used in the variability runtime" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="1cYvLMlx$HY" role="3cqZAp">
+          <node concept="3SKdUq" id="1cYvLMlx$I0" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: is there a better way to deal with wrapping nodes" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="1cYvLMlx$R7" role="3cqZAp">
+          <node concept="3SKdUq" id="1cYvLMlx$R8" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: for instance, the scope provider depends on this to populate the completion menu" />
+          </node>
+        </node>
+        <node concept="3SKdUt" id="1cYvLMlx_0j" role="3cqZAp">
+          <node concept="3SKdUq" id="1cYvLMlx_0k" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: if some wrapper is missing the completion menu might be incomplete!!!" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="2yEo8dqrgY8" role="3cqZAp">
           <node concept="3cpWsn" id="2yEo8dqrgY9" role="3cpWs9">
             <property role="TrG5h" value="currentNode" />
