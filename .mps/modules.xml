@@ -37,13 +37,16 @@
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.annotative/de.peopl.core.view.annotative.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.embedded/de.peopl.core.view.embedded.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.hiding/de.peopl.core.view.hiding.mpl" folder="peopl.core.view" />
-      <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.modular/de.peopl.core.view.modular.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.modular/de.peopl.core.view.modular.mpl" folder="peopl.core.view.deprecated" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.module/de.peopl.core.view.module.mpl" folder="peopl.core.view" />
+      <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.module/runtime/de.peopl.core.view.module.runtime.msd" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.preprocessor/de.peopl.core.view.preprocessor.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.product/de.peopl.core.view.product.mpl" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/core/views/de.peopl.core.view.runtime/de.peopl.core.view.runtime.msd" folder="peopl.core.view" />
       <modulePath path="$PROJECT_DIR$/languages/de.peopl.utils.peoplDepInteractionMonitoringLang/de.peopl.utils.peoplDepInteractionMonitoringLang.mpl" folder="peopl.extension.baselanguage.utils" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.commonHeaders/de.peopl.commonHeaders.msd" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension.runtime/de.peopl.mBeddrExtension.runtime.msd" folder="peopl.extension.mbeddrC" />
+      <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension.view.module/de.peopl.mBeddrExtension.view.module.mpl" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/mBeddrExtension/de.peopl.mBeddrExtension/de.peopl.mBeddrExtension.mpl" folder="peopl.extension.mbeddrC" />
       <modulePath path="$PROJECT_DIR$/solutions/CSolution/CSolution.msd" folder="playground" />
       <modulePath path="$PROJECT_DIR$/solutions/JavaSolution/JavaSolution.msd" folder="playground" />

@@ -338,9 +338,9 @@
     </language>
   </registry>
   <node concept="24kQdi" id="EpVRRuzvo4">
-    <ref role="1XX52x" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+    <ref role="1XX52x" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
     <node concept="2aJ2om" id="EpVRRuzvDY" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="modular" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="deprecatedModular" />
     </node>
     <node concept="3EZMnI" id="1k3hL0Sx_i2" role="2wV5jI">
       <node concept="2iRkQZ" id="1k3hL0Sx_i3" role="2iSdaV" />
@@ -563,7 +563,7 @@
                         <node concept="2i4dXS" id="2CxLvPSk_gb" role="2ShVmc">
                           <node concept="17QB3L" id="2CxLvPSk_Bi" role="HW$YZ" />
                           <node concept="2pYGij" id="43jzTaI8KQa" role="HW$Y0">
-                            <ref role="2pYH_C" to="tqa7:2W3sxLBwzzW" resolve="modular" />
+                            <ref role="2pYH_C" to="tqa7:2W3sxLBwzzW" resolve="deprecatedModular" />
                           </node>
                         </node>
                       </node>
@@ -667,7 +667,7 @@
                         <node concept="1eOMI4" id="5HPu$ZqK5Up" role="2Oq$k0">
                           <node concept="10QFUN" id="5HPu$ZqK5Um" role="1eOMHV">
                             <node concept="3Tqbb2" id="5HPu$ZqK60d" role="10QFUM">
-                              <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                              <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="5HPu$ZqK6eT" role="10QFUP">
                               <ref role="3cqZAo" node="5HPu$ZqK2Yj" resolve="currentRoot" />
@@ -705,7 +705,7 @@
                     </node>
                     <node concept="1mIQ4w" id="5HPu$ZqK40L" role="2OqNvi">
                       <node concept="chp4Y" id="5HPu$ZqK44J" role="cj9EA">
-                        <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                        <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -765,7 +765,7 @@
   <node concept="24kQdi" id="5HPu$ZqK76Y">
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="5HPu$ZqK77t" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="modular" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzW" resolve="deprecatedModular" />
     </node>
     <node concept="1X3_iC" id="1_hkweg7xr5" role="lGtFl">
       <property role="3V$3am" value="cellModel" />
@@ -837,7 +837,7 @@
                         <node concept="1eOMI4" id="1_hkweg8nCZ" role="2Oq$k0">
                           <node concept="10QFUN" id="1_hkweg8nD0" role="1eOMHV">
                             <node concept="3Tqbb2" id="1_hkweg8nD1" role="10QFUM">
-                              <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                              <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
                             </node>
                             <node concept="37vLTw" id="1_hkweg8nD2" role="10QFUP">
                               <ref role="3cqZAo" node="1_hkweg8nCI" resolve="currentRoot" />
@@ -875,7 +875,7 @@
                     </node>
                     <node concept="1mIQ4w" id="1_hkweg8nDg" role="2OqNvi">
                       <node concept="chp4Y" id="1_hkweg8nDh" role="cj9EA">
-                        <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+                        <ref role="cht4Q" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
                       </node>
                     </node>
                   </node>
@@ -979,7 +979,7 @@
                                 <node concept="2i4dXS" id="7UC2Upt70J5" role="2ShVmc">
                                   <node concept="17QB3L" id="7UC2Upt71mN" role="HW$YZ" />
                                   <node concept="2pYGij" id="7UC2Upt71pE" role="HW$Y0">
-                                    <ref role="2pYH_C" to="tqa7:2W3sxLBwzzO" resolve="moduleExplorer" />
+                                    <ref role="2pYH_C" to="tqa7:2W3sxLBwzzO" resolve="deprecatedModuleExplorer" />
                                   </node>
                                 </node>
                               </node>
@@ -1495,14 +1495,14 @@
       <node concept="2iRkQZ" id="5HPu$ZqKbvk" role="2iSdaV" />
     </node>
     <node concept="2aJ2om" id="5HPu$ZqKbve" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzO" resolve="moduleExplorer" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzO" resolve="deprecatedModuleExplorer" />
     </node>
   </node>
   <node concept="24kQdi" id="1_hkweg7crG">
     <property role="3GE5qa" value="ModularExplorer" />
     <ref role="1XX52x" to="xf8r:6K8EDSn5e6T" resolve="Fragment" />
     <node concept="2aJ2om" id="1_hkweg7csm" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzO" resolve="moduleExplorer" />
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBwzzO" resolve="deprecatedModuleExplorer" />
     </node>
     <node concept="1j7BWu" id="2VKAcbrXq8t" role="2wV5jI">
       <node concept="3EZMnI" id="2VKAcbrXtEt" role="1j7ClA">

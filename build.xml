@@ -52,7 +52,7 @@
         <id>peoplMBeddrCExtension</id>
         <name>PEoPL mBeddr C Extension</name>
         <description>Tailoring PEoPL to mBeddr C.</description>
-        <version>2018.3.5</version>
+        <version>2018.3.6</version>
         <depends>peoplCore</depends>
         <depends>com.mbeddr.core</depends>
         

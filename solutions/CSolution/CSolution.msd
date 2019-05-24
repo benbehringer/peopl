@@ -28,6 +28,7 @@
     <language slang="l:42727bc4-0771-4379-872f-090530265ce4:de.peopl.core.moduleConfig" version="0" />
     <language slang="l:64f023eb-0dd8-492c-9315-628fb5a85b14:de.peopl.core.view.embedded" version="0" />
     <language slang="l:4c4bbb77-dae4-40ac-9819-555675af7c56:de.peopl.core.view.modular" version="0" />
+    <language slang="l:641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c:de.peopl.core.view.module" version="0" />
     <language slang="l:f4a807b3-557e-4f92-89bc-d43f4be25649:de.peopl.mBeddrExtension" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="8" />

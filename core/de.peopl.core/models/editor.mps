@@ -9588,29 +9588,34 @@
       <property role="TrG5h" value="preprocessor" />
       <property role="2BUmq6" value="C-preprocessor-like annotations." />
     </node>
+    <node concept="2BsEeg" id="7KoG6YFU5Oh" role="2ABdcP">
+      <property role="2gpH_U" value="true" />
+      <property role="TrG5h" value="module" />
+      <property role="2BUmq6" value="Modular view on a compilation unit." />
+    </node>
     <node concept="2BsEeg" id="2W3sxLBwzzO" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="moduleExplorer" />
+      <property role="TrG5h" value="deprecatedModuleExplorer" />
       <property role="2BUmq6" value="Module Explorer" />
     </node>
     <node concept="2BsEeg" id="2W3sxLBwzzW" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="modular" />
+      <property role="TrG5h" value="deprecatedModular" />
       <property role="2BUmq6" value="Modular AHEAD-like editors." />
     </node>
     <node concept="2BsEeg" id="2W3sxLBwz$5" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateMarkers" />
+      <property role="TrG5h" value="deprecatedIntegrateMarkers" />
       <property role="2BUmq6" value="Integrates annotation markers into FOP-like methods on demand." />
     </node>
     <node concept="2BsEeg" id="2W3sxLBwz$f" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateContent" />
+      <property role="TrG5h" value="deprecatedIntegrateContent" />
       <property role="2BUmq6" value="Integrates annotations and their content into FOP-like methods on demand." />
     </node>
     <node concept="2BsEeg" id="2W3sxLBwz$q" role="2ABdcP">
       <property role="2gpH_U" value="true" />
-      <property role="TrG5h" value="integrateFields" />
+      <property role="TrG5h" value="deprecatedIntegrateFields" />
       <property role="2BUmq6" value="Integrates available filed declarations into current FOP-editor." />
     </node>
     <node concept="2BsEeg" id="5_ZFCFRVBha" role="2ABdcP">

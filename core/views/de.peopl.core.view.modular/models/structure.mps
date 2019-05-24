@@ -10,6 +10,7 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -34,13 +35,16 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
   <node concept="PlHQZ" id="EpVRRuzuMu">
-    <property role="TrG5h" value="ModularCompilationUnit" />
+    <property role="TrG5h" value="DeprecatedModularCompilationUnit" />
     <property role="EcuMT" value="763904935699803294" />
     <node concept="1TJgyi" id="EpVRRuzv0b" role="1TKVEl">
       <property role="TrG5h" value="moduleReferenceName" />
@@ -64,6 +68,7 @@
     <node concept="PrWs8" id="7_jGzxM2AE5" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="asaX9" id="7KoG6YFV9ro" role="lGtFl" />
   </node>
 </model>
 

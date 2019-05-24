@@ -76,14 +76,14 @@
     </language>
   </registry>
   <node concept="13h7C7" id="EpVRRuzyM3">
-    <ref role="13h7C2" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+    <ref role="13h7C2" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
     <node concept="13i0hz" id="EpVRRuxQ7m" role="13h7CS">
       <property role="13i0iv" value="true" />
       <property role="13i0it" value="true" />
       <property role="TrG5h" value="configureNode" />
       <node concept="3Tm1VV" id="EpVRRuxQ7n" role="1B3o_S" />
       <node concept="3Tqbb2" id="EpVRRuxQ7J" role="3clF45">
-        <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="ModularCompilationUnit" />
+        <ref role="ehGHo" to="vmgn:EpVRRuzuMu" resolve="DeprecatedModularCompilationUnit" />
       </node>
       <node concept="3clFbS" id="EpVRRuxQ7p" role="3clF47" />
       <node concept="37vLTG" id="EpVRRuxQ7N" role="3clF46">
