@@ -452,6 +452,9 @@
       <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
         <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
       </concept>
+      <concept id="1172326502327" name="jetbrains.mps.lang.smodel.structure.Concept_IsExactlyOperation" flags="nn" index="3O6GUB">
+        <child id="1206733650006" name="conceptArgument" index="3QVz_e" />
+      </concept>
       <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
         <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
@@ -11854,9 +11857,26 @@
                   </node>
                 </node>
               </node>
-              <node concept="3fqX7Q" id="6QmCjLQPU4p" role="3eO9$A">
-                <node concept="37vLTw" id="6QmCjLQY6Wr" role="3fr31v">
-                  <ref role="3cqZAo" node="6QmCjLQFnrW" resolve="foundBaseCodeGlobally" />
+              <node concept="1Wc70l" id="6QmCjLRv2or" role="3eO9$A">
+                <node concept="3fqX7Q" id="6QmCjLRv9c7" role="3uHU7w">
+                  <node concept="2OqwBi" id="6QmCjLRv9c9" role="3fr31v">
+                    <node concept="2OqwBi" id="6QmCjLRv9ca" role="2Oq$k0">
+                      <node concept="37vLTw" id="6QmCjLRv9cb" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6QmCjLQRnVR" resolve="statement" />
+                      </node>
+                      <node concept="2yIwOk" id="6QmCjLRv9cc" role="2OqNvi" />
+                    </node>
+                    <node concept="3O6GUB" id="6QmCjLRv9cd" role="2OqNvi">
+                      <node concept="chp4Y" id="6QmCjLRv9ce" role="3QVz_e">
+                        <ref role="cht4Q" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="6QmCjLQPU4p" role="3uHU7B">
+                  <node concept="37vLTw" id="6QmCjLQY6Wr" role="3fr31v">
+                    <ref role="3cqZAo" node="6QmCjLQFnrW" resolve="foundBaseCodeGlobally" />
+                  </node>
                 </node>
               </node>
             </node>

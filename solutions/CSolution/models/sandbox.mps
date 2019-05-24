@@ -30,11 +30,22 @@
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
+      <concept id="1679452829930336984" name="com.mbeddr.core.statements.structure.CommentStatement" flags="ng" index="1QiMYF">
+        <child id="8624890525768479139" name="textblock" index="3SJzmv" />
+      </concept>
       <concept id="4185783222026475238" name="com.mbeddr.core.statements.structure.LocalVariableDeclaration" flags="ng" index="3XIRlf" />
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
       <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
     </language>
     <language id="1a3a0b62-fb00-47d1-8423-98da4001b216" name="de.peopl.core">
       <concept id="7049226118380955944" name="de.peopl.core.structure.IColor" flags="ng" index="6kOzA">
@@ -75,6 +86,11 @@
     <language id="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c" name="de.peopl.core.view.module">
       <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk">
         <reference id="8942091053816110338" name="module" index="3nWePH" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
       </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
@@ -297,8 +313,8 @@
         <ref role="3aRQVk" node="6QmCjLRg27J" resolve="ModuleToFragment_7896676277711544815" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="6QmCjLRg1S0" role="N3F5h">
-      <property role="TrG5h" value="empty_1558723342493_8" />
+    <node concept="2NXPZ9" id="6QmCjLRuWBT" role="N3F5h">
+      <property role="TrG5h" value="empty_1558726413307_16" />
     </node>
     <node concept="1S7NMz" id="6QmCjLRg2d2" role="N3F5h">
       <property role="TrG5h" value="bField" />
@@ -311,8 +327,8 @@
         <ref role="3aRQVk" node="6QmCjLRg2gr" resolve="ModuleToFragment_7896676277711545371" />
       </node>
     </node>
-    <node concept="2NXPZ9" id="6QmCjLRg27V" role="N3F5h">
-      <property role="TrG5h" value="empty_1558723380806_12" />
+    <node concept="2NXPZ9" id="6QmCjLRuW_k" role="N3F5h">
+      <property role="TrG5h" value="empty_1558726412025_15" />
     </node>
     <node concept="N3Fnx" id="1cYvLMlV0Fz" role="N3F5h">
       <property role="TrG5h" value="main" />
@@ -340,7 +356,15 @@
             <property role="TrG5h" value="mainB" />
             <node concept="26Vqpq" id="1cYvLMlV15h" role="2C2TGm" />
           </node>
-          <node concept="3XISUE" id="6QmCjLQWqIW" role="3XIRFZ" />
+          <node concept="1QiMYF" id="6QmCjLRuWIS" role="3XIRFZ">
+            <node concept="OjmMv" id="6QmCjLRuWIU" role="3SJzmv">
+              <node concept="19SGf9" id="6QmCjLRuWIV" role="OjmMu">
+                <node concept="19SUe$" id="6QmCjLRuWIW" role="19SJt6">
+                  <property role="19SUeA" value="this is some comment in B" />
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="1V74GB" id="1cYvLMlV11f" role="lGtFl">
             <property role="32Xqk$" value="chosenModule" />
             <property role="TrG5h" value="Fragment_1386685496027779151" />
