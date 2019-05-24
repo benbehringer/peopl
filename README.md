@@ -6,11 +6,11 @@ At this point we have a stable version in the branch [peopl-mps-3.3.6](https://g
 
 ## Installation instructions:
 
-- Get and install [MPS 2018.3.4](https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+2018.3+Download+Page)
+- Get and install [MPS 2018.3.6](https://confluence.jetbrains.com/display/MPS/JetBrains+MPS+2018.3+Download+Page)
 - Download the mbeddr [2018.3.4](https://github.com/mbeddr/mbeddr.core/releases/download/nightly-624/com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4.zip) plugins
 - Copy the mbeddr plugins into MPS. 
 ```
-cp -r ./com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4/plugins/* /Applications/MPS\ 2018.3.4.app/Contents/plugins/
+cp -r ./com.mbeddr.allInOne-1.2.21286.4e0beda-MPS-2018.3.4/plugins/* /Applications/MPS\ 2018.3.6.app/Contents/plugins/
 ```
 - Replace mbeddr's projectview plugins with the versions provided with PEoPL 
 ```
