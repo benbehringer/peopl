@@ -73,7 +73,9 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c" name="de.peopl.core.view.module">
-      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
+      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk">
+        <reference id="8942091053816110338" name="module" index="3nWePH" />
+      </concept>
     </language>
     <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
       <concept id="8967919205527146149" name="com.mbeddr.core.modules.structure.ReturnStatement" flags="ng" index="2BFjQ_">
@@ -281,6 +283,7 @@
     </node>
     <node concept="1S7NMz" id="6QmCjLRg1Z5" role="N3F5h">
       <property role="TrG5h" value="baseField" />
+      <property role="2OOxQR" value="true" />
       <node concept="26Vqpq" id="6QmCjLRg1Z3" role="2C2TGm" />
     </node>
     <node concept="1S7NMz" id="6QmCjLRg24y" role="N3F5h">
@@ -421,7 +424,9 @@
     <node concept="2NXPZ9" id="1cYvLMlV0Fu" role="N3F5h">
       <property role="TrG5h" value="empty_1552489483829_8" />
     </node>
-    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl" />
+    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl">
+      <ref role="3nWePH" node="56MlstWZqGn" resolve="A" />
+    </node>
   </node>
 </model>
 

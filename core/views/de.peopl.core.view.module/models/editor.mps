@@ -42,6 +42,9 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
       <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
@@ -552,7 +555,12 @@
           </node>
         </node>
       </node>
-      <node concept="35HoNQ" id="1_hkweg7xsg" role="1QoVPY" />
+      <node concept="35HoNQ" id="1_hkweg7xsg" role="1QoVPY">
+        <node concept="VSNWy" id="6QmCjLRtMsx" role="3F10Kt">
+          <property role="1lJzqX" value="0" />
+        </node>
+        <node concept="VPM3Z" id="6QmCjLRtMsA" role="3F10Kt" />
+      </node>
       <node concept="2SsqMj" id="1_hkweg7xrd" role="1QoS34" />
     </node>
   </node>
