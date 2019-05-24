@@ -535,6 +535,8 @@
       <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/tools/de.peopl.core.statistics.jar" />
       <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/tools/de.peopl.core.tools.jar" />
       <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/tools/de.peopl.core.toolsLanguage.jar" />
+      <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.styleclass.jar" />
+      <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.styleclass.runtime.jar" />
       <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.view.modular.jar" />
       <library file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.view.runtime.jar" />
       <chunk>
@@ -671,6 +673,7 @@
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.moduleConfig.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.view.modular.jar" />
+        <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/projectview/de.peopl.projectview.common.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/projectview/de.peopl.projectview.modular.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
@@ -746,6 +749,7 @@
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.listener.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.moduleConfig.jar" />
+        <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.styleclass.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/essential/de.peopl.core.variabilityDeclaration.runtime.jar" />
         <fileset file="${build.tmp}/deps/peoplCore/peoplCore.zip/peoplCore/languages/view/de.peopl.core.view.modular.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
@@ -753,6 +757,7 @@
         <fileset file="${artifacts.de.itemis.mps.extensions}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
         <fileset file="${artifacts.de.itemis.mps.extensions}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
@@ -761,6 +766,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.access.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.smodel.jar" />

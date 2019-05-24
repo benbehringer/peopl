@@ -135,7 +135,7 @@
       </node>
       <node concept="3_J27D" id="F_DJLMfAY9" role="m$_w8">
         <node concept="3Mxwew" id="F_DJLMfAYl" role="3MwsjC">
-          <property role="3MwjfP" value="2018.3.5" />
+          <property role="3MwjfP" value="2018.3.6" />
         </node>
       </node>
       <node concept="3_J27D" id="F_DJLMfAYb" role="m$_yQ">
@@ -269,6 +269,21 @@
         <node concept="1SiIV0" id="4U1U8XSevVm" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSevVn" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1d41uYMTVPB" resolve="jetbrains.mps.lang.scopes.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5brtibJq_4X" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJq_4Y" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1qi" resolve="jetbrains.mps.ide" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5brtibJq_4Z" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJq_50" role="1SiIV1">
+            <ref role="3bR37D" to="f4pb:5AVGK5ynya" resolve="de.peopl.projectview.common" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5brtibJq_51" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJq_52" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>

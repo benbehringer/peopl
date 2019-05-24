@@ -147,7 +147,7 @@
       </node>
       <node concept="3_J27D" id="4RAsyl5JUeq" role="m$_w8">
         <node concept="3Mxwew" id="4RAsyl5JUeG" role="3MwsjC">
-          <property role="3MwjfP" value="2018.3.5" />
+          <property role="3MwjfP" value="2018.3.6" />
         </node>
       </node>
       <node concept="3_J27D" id="4RAsyl5JUes" role="m$_yQ">
@@ -286,6 +286,11 @@
         <node concept="1SiIV0" id="4U1U8XSevX$" role="3bR37C">
           <node concept="3bR9La" id="4U1U8XSevX_" role="1SiIV1">
             <ref role="3bR37D" to="f4pb:roAxhtZ$VX" resolve="de.peopl.core.view.modular" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5brtibJqMLX" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJqMLY" role="1SiIV1">
+            <ref role="3bR37D" to="f4pb:5AVGK5ynya" resolve="de.peopl.projectview.common" />
           </node>
         </node>
       </node>
@@ -500,6 +505,11 @@
         <node concept="1SiIV0" id="6EuWR7XGzHr" role="3bR37C">
           <node concept="3bR9La" id="6EuWR7XGzHs" role="1SiIV1">
             <ref role="3bR37D" to="p6ld:WadEn6CWbr" resolve="com.mbeddr.core.buildconfig" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5brtibJqMLZ" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJqMM0" role="1SiIV1">
+            <ref role="3bR37D" to="f4pb:4QFMMDOU6hd" resolve="de.peopl.core.styleclass" />
           </node>
         </node>
       </node>

@@ -142,7 +142,7 @@
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8u" role="m$_w8">
         <node concept="3Mxwew" id="6$EUgyMHdbq" role="3MwsjC">
-          <property role="3MwjfP" value="2018.3.5" />
+          <property role="3MwjfP" value="2018.3.6" />
         </node>
       </node>
       <node concept="3_J27D" id="6$EUgyMHd8w" role="m$_yQ">
@@ -1984,6 +1984,11 @@
         </node>
         <node concept="1E0d5M" id="2VrfBvvr_5J" role="1E1XAP">
           <ref role="1E0d5P" to="al5i:2Z2H3pkY6Sh" resolve="com.mbeddr.mpsutil.userstyles.runtime" />
+        </node>
+        <node concept="1SiIV0" id="5brtibJq3eM" role="3bR37C">
+          <node concept="3bR9La" id="5brtibJq3eN" role="1SiIV1">
+            <ref role="3bR37D" node="4QFMMDOU6hd" resolve="de.peopl.core.styleclass" />
+          </node>
         </node>
       </node>
       <node concept="1E1JtD" id="roAxhu1eyY" role="2G$12L">

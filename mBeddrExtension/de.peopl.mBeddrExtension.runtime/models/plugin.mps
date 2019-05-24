@@ -302,7 +302,7 @@
   </registry>
   <node concept="2DaZZR" id="5p4tr4ltTo2" />
   <node concept="sE7Ow" id="5p4tr4ltYY2">
-    <property role="TrG5h" value="RefineFunctionAction" />
+    <property role="TrG5h" value="RefineFunctionAction_TBF" />
     <property role="2uzpH1" value="Refine Function" />
     <node concept="1DS2jV" id="3272v3NXn0n" role="1NuT2Z">
       <property role="TrG5h" value="currentEditorContext" />
@@ -951,7 +951,7 @@
   <node concept="Zd50a" id="1AUTTVC2uYl">
     <property role="TrG5h" value="mBeddrKeyMap" />
     <node concept="Zd509" id="1AUTTVC2uYo" role="Zd508">
-      <ref role="1bYAoF" node="5p4tr4ltYY2" resolve="RefineFunctionAction" />
+      <ref role="1bYAoF" node="5p4tr4ltYY2" resolve="RefineFunctionAction_TBF" />
       <node concept="pLAjd" id="1AUTTVC2uYq" role="Zd501">
         <property role="pLAjc" value="ctrl+alt+shift" />
         <property role="pLAjf" value="R" />
