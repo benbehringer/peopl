@@ -12020,7 +12020,7 @@
           </node>
           <node concept="3cpWs8" id="73Ulf5dt9_H" role="3cqZAp">
             <node concept="3cpWsn" id="73Ulf5dt9_K" role="3cpWs9">
-              <property role="TrG5h" value="willBeProjected" />
+              <property role="TrG5h" value="canBeProjected" />
               <node concept="10P_77" id="73Ulf5dt9_F" role="1tU5fm" />
               <node concept="22lmx$" id="6QmCjLRsrWk" role="33vP2m">
                 <node concept="3clFbC" id="6QmCjLQ_f_v" role="3uHU7B">
@@ -12078,7 +12078,20 @@
               </node>
             </node>
           </node>
-          <node concept="3clFbH" id="73Ulf5dsTc5" role="3cqZAp" />
+          <node concept="3cpWs8" id="73Ulf5dz5WB" role="3cqZAp">
+            <node concept="3cpWsn" id="73Ulf5dz5WE" role="3cpWs9">
+              <property role="TrG5h" value="isBaseCode" />
+              <node concept="10P_77" id="73Ulf5dz5W_" role="1tU5fm" />
+              <node concept="2YIFZM" id="73Ulf5dym0G" role="33vP2m">
+                <ref role="37wK5l" to="agtv:7KWzwoaVB5s" resolve="isBaseCode" />
+                <ref role="1Pybhc" to="agtv:69CO60y8ld8" resolve="CASTHelper" />
+                <node concept="37vLTw" id="73Ulf5dym53" role="37wK5m">
+                  <ref role="3cqZAo" node="6QmCjLQRnVR" resolve="statement" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbH" id="73Ulf5dz9AG" role="3cqZAp" />
           <node concept="3clFbJ" id="73Ulf5doTV9" role="3cqZAp">
             <node concept="3clFbS" id="73Ulf5doTVb" role="3clFbx">
               <node concept="3SKdUt" id="6QmCjLQIjgy" role="3cqZAp">
@@ -12167,7 +12180,7 @@
                 <node concept="1Wc70l" id="73Ulf5dwm6s" role="3clFbw">
                   <node concept="3fqX7Q" id="73Ulf5dwpBi" role="3uHU7w">
                     <node concept="37vLTw" id="73Ulf5dwpFU" role="3fr31v">
-                      <ref role="3cqZAo" node="73Ulf5dt9_K" resolve="willBeProjected" />
+                      <ref role="3cqZAo" node="73Ulf5dt9_K" resolve="canBeProjected" />
                     </node>
                   </node>
                   <node concept="3fqX7Q" id="73Ulf5du1Pc" role="3uHU7B">
@@ -12217,38 +12230,32 @@
                   <node concept="3clFbT" id="73Ulf5dxtDk" role="37vLTx">
                     <property role="3clFbU" value="true" />
                   </node>
-                  <node concept="37vLTw" id="73Ulf5dxtDu" role="37vLTJ">
+                  <node concept="37vLTw" id="73Ulf5dz_Bo" role="37vLTJ">
                     <ref role="3cqZAo" node="6QmCjLQFnrW" resolve="foundBaseCodeGlobally" />
                   </node>
                 </node>
               </node>
-              <node concept="3clFbJ" id="73Ulf5dyivq" role="3cqZAp">
-                <node concept="3clFbS" id="73Ulf5dyivs" role="3clFbx">
-                  <node concept="3SKdUt" id="6QmCjLRroCZ" role="3cqZAp">
-                    <node concept="3SKdUq" id="6QmCjLRroD0" role="3SKWNk">
-                      <property role="3SKdUp" value="simple base code or annotated function's base code" />
-                    </node>
-                  </node>
-                  <node concept="3cpWs6" id="6QmCjLQzT6_" role="3cqZAp">
-                    <node concept="1rXfSq" id="6QmCjLQzT6A" role="3cqZAk">
-                      <ref role="37wK5l" node="6KRMdN3Nmcb" resolve="internalCreateNodeCell" />
-                      <node concept="37vLTw" id="6QmCjLQzT6B" role="37wK5m">
-                        <ref role="3cqZAo" node="6QmCjLQRnVR" resolve="statement" />
-                      </node>
-                    </node>
-                  </node>
+              <node concept="3SKdUt" id="6QmCjLRroCZ" role="3cqZAp">
+                <node concept="3SKdUq" id="6QmCjLRroD0" role="3SKWNk">
+                  <property role="3SKdUp" value="simple base code or annotated function's base code" />
                 </node>
-                <node concept="2YIFZM" id="73Ulf5dym0G" role="3clFbw">
-                  <ref role="37wK5l" to="agtv:7KWzwoaVB5s" resolve="isBaseCode" />
-                  <ref role="1Pybhc" to="agtv:69CO60y8ld8" resolve="CASTHelper" />
-                  <node concept="37vLTw" id="73Ulf5dym53" role="37wK5m">
+              </node>
+              <node concept="3cpWs6" id="6QmCjLQzT6_" role="3cqZAp">
+                <node concept="1rXfSq" id="6QmCjLQzT6A" role="3cqZAk">
+                  <ref role="37wK5l" node="6KRMdN3Nmcb" resolve="internalCreateNodeCell" />
+                  <node concept="37vLTw" id="6QmCjLQzT6B" role="37wK5m">
                     <ref role="3cqZAo" node="6QmCjLQRnVR" resolve="statement" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="37vLTw" id="73Ulf5dtejg" role="3clFbw">
-              <ref role="3cqZAo" node="73Ulf5dt9_K" resolve="willBeProjected" />
+            <node concept="1Wc70l" id="73Ulf5dztYM" role="3clFbw">
+              <node concept="37vLTw" id="73Ulf5dzwh4" role="3uHU7w">
+                <ref role="3cqZAo" node="73Ulf5dz5WE" resolve="isBaseCode" />
+              </node>
+              <node concept="37vLTw" id="73Ulf5dtejg" role="3uHU7B">
+                <ref role="3cqZAo" node="73Ulf5dt9_K" resolve="canBeProjected" />
+              </node>
             </node>
           </node>
           <node concept="3clFbH" id="73Ulf5duobl" role="3cqZAp" />
