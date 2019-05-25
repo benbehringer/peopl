@@ -20537,37 +20537,47 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6KRMdN3EMHN" role="3cqZAp">
-          <node concept="2OqwBi" id="6KRMdN3EMHO" role="3clFbG">
-            <node concept="37vLTw" id="6KRMdN3EMHP" role="2Oq$k0">
-              <ref role="3cqZAo" node="6KRMdN3EMHJ" resolve="style" />
-            </node>
-            <node concept="liA8E" id="6KRMdN3EMHQ" role="2OqNvi">
-              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="10M0yZ" id="6KRMdN3EMHR" role="37wK5m">
-                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-                <ref role="3cqZAo" to="5ueo:~StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE" resolve="INDENT_LAYOUT_ON_NEW_LINE" />
+        <node concept="3clFbJ" id="73Ulf5dTvB$" role="3cqZAp">
+          <node concept="3clFbS" id="73Ulf5dTvBA" role="3clFbx">
+            <node concept="3clFbF" id="6KRMdN3EMHN" role="3cqZAp">
+              <node concept="2OqwBi" id="6KRMdN3EMHO" role="3clFbG">
+                <node concept="37vLTw" id="6KRMdN3EMHP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6KRMdN3EMHJ" resolve="style" />
+                </node>
+                <node concept="liA8E" id="6KRMdN3EMHQ" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+                  <node concept="10M0yZ" id="6KRMdN3EMHR" role="37wK5m">
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE" resolve="INDENT_LAYOUT_ON_NEW_LINE" />
+                  </node>
+                  <node concept="1rXfSq" id="6KRMdN3EMHS" role="37wK5m">
+                    <ref role="37wK5l" node="6KRMdN3EMMw" resolve="_StyleParameter_QueryFunction_u338ov_a0c0" />
+                  </node>
+                </node>
               </node>
-              <node concept="1rXfSq" id="6KRMdN3EMHS" role="37wK5m">
-                <ref role="37wK5l" node="6KRMdN3EMMw" resolve="_StyleParameter_QueryFunction_u338ov_a0c0" />
+            </node>
+            <node concept="3clFbF" id="6KRMdN3EMHT" role="3cqZAp">
+              <node concept="2OqwBi" id="6KRMdN3EMHU" role="3clFbG">
+                <node concept="37vLTw" id="6KRMdN3EMHV" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6KRMdN3EMHJ" resolve="style" />
+                </node>
+                <node concept="liA8E" id="6KRMdN3EMHW" role="2OqNvi">
+                  <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
+                  <node concept="10M0yZ" id="6KRMdN3EMHX" role="37wK5m">
+                    <ref role="3cqZAo" to="5ueo:~StyleAttributes.INDENT_LAYOUT_INDENT" resolve="INDENT_LAYOUT_INDENT" />
+                    <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
+                  </node>
+                  <node concept="3clFbT" id="6KRMdN3EMHY" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="6KRMdN3EMHT" role="3cqZAp">
-          <node concept="2OqwBi" id="6KRMdN3EMHU" role="3clFbG">
-            <node concept="37vLTw" id="6KRMdN3EMHV" role="2Oq$k0">
-              <ref role="3cqZAo" node="6KRMdN3EMHJ" resolve="style" />
-            </node>
-            <node concept="liA8E" id="6KRMdN3EMHW" role="2OqNvi">
-              <ref role="37wK5l" to="hox0:~Style.set(jetbrains.mps.openapi.editor.style.StyleAttribute,java.lang.Object):void" resolve="set" />
-              <node concept="10M0yZ" id="6KRMdN3EMHX" role="37wK5m">
-                <ref role="3cqZAo" to="5ueo:~StyleAttributes.INDENT_LAYOUT_INDENT" resolve="INDENT_LAYOUT_INDENT" />
-                <ref role="1PxDUh" to="5ueo:~StyleAttributes" resolve="StyleAttributes" />
-              </node>
-              <node concept="3clFbT" id="6KRMdN3EMHY" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
+          <node concept="1rXfSq" id="73Ulf5dTyNa" role="3clFbw">
+            <ref role="37wK5l" node="6KRMdN3LInL" resolve="showBraces" />
+            <node concept="37vLTw" id="73Ulf5dTz26" role="37wK5m">
+              <ref role="3cqZAo" node="6KRMdN3GpbZ" resolve="myNode" />
             </node>
           </node>
         </node>
