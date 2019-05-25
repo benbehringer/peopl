@@ -348,9 +348,6 @@
   </node>
   <node concept="N3F5e" id="1cYvLMlV0Fl">
     <property role="TrG5h" value="Test" />
-    <node concept="2NXPZ9" id="6QmCjLRg1Tr" role="N3F5h">
-      <property role="TrG5h" value="empty_1558723342901_10" />
-    </node>
     <node concept="1S7NMz" id="6QmCjLRg1Z5" role="N3F5h">
       <property role="TrG5h" value="baseField" />
       <property role="2OOxQR" value="true" />
