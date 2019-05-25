@@ -92,9 +92,7 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c" name="de.peopl.core.view.module">
-      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk">
-        <reference id="8942091053816110338" name="module" index="3nWePH" />
-      </concept>
+      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -555,9 +553,7 @@
       </node>
       <node concept="19Rifw" id="6QmCjLRAxm3" role="2C2TGm" />
     </node>
-    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl">
-      <ref role="3nWePH" node="56MlstWZqGn" resolve="A" />
-    </node>
+    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl" />
   </node>
 </model>
 
