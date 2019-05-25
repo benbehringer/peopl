@@ -71,6 +71,7 @@
       <concept id="2609645270097215192" name="de.peopl.core.structure.Wrapper" flags="ng" index="3lQQLj">
         <reference id="6962576431435524750" name="wrappee" index="1_Aa3I" />
       </concept>
+      <concept id="8942091053816110331" name="de.peopl.core.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
       <concept id="7784659551878701469" name="de.peopl.core.structure.VP" flags="ng" index="1V74G3">
         <child id="7784659551878701502" name="fragmentIntermediates" index="1V74Gw" />
       </concept>
@@ -90,9 +91,6 @@
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="6113173064528067332" name="com.mbeddr.core.pointers.structure.StringType" flags="ng" index="Pu267" />
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
-    </language>
-    <language id="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c" name="de.peopl.core.view.module">
-      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -474,13 +472,6 @@
             <ref role="3aRQVk" node="6QmCjLRxsrX" resolve="ModuleToFragment_7896676277716109053" />
           </node>
         </node>
-        <node concept="1QiMYF" id="73Ulf5daoTb" role="3XIRFZ">
-          <node concept="OjmMv" id="73Ulf5daoTd" role="3SJzmv">
-            <node concept="19SGf9" id="73Ulf5daoTe" role="OjmMu">
-              <node concept="19SUe$" id="73Ulf5daoTf" role="19SJt6" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="26Vqph" id="1cYvLMlV0FB" role="2C2TGm" />
       <node concept="19RgSI" id="1cYvLMlV0FC" role="1UOdpc">
@@ -553,7 +544,7 @@
       </node>
       <node concept="19Rifw" id="6QmCjLRAxm3" role="2C2TGm" />
     </node>
-    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl" />
+    <node concept="3nWeMk" id="73Ulf5dllCt" role="lGtFl" />
   </node>
 </model>
 

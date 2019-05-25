@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="xf8r" ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.peopl.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="nntk" ref="r:61143c97-0dc6-4930-9886-439f10f6b060(de.peopl.core.view.module.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -84,12 +84,12 @@
               <node concept="2Sf5sV" id="7KoG6YFVCg5" role="2Oq$k0" />
               <node concept="3CFZ6_" id="7KoG6YFVC$M" role="2OqNvi">
                 <node concept="3CFYIy" id="7KoG6YFVCCU" role="3CFYIz">
-                  <ref role="3CFYIx" to="nntk:7KoG6YFU5NV" resolve="ModularCompilationUnit" />
+                  <ref role="3CFYIx" to="xf8r:7KoG6YFU5NV" resolve="ModularCompilationUnit" />
                 </node>
               </node>
             </node>
             <node concept="WFELt" id="7KoG6YFVIix" role="2OqNvi">
-              <ref role="1A0vxQ" to="nntk:7KoG6YFU5NV" resolve="ModularCompilationUnit" />
+              <ref role="1A0vxQ" to="xf8r:7KoG6YFU5NV" resolve="ModularCompilationUnit" />
             </node>
           </node>
         </node>

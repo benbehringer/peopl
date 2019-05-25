@@ -49,7 +49,6 @@
     <import index="v5it" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.vcs.log.graph.utils(MPS.IDEA/)" />
     <import index="qvne" ref="r:8ff33705-85bf-4855-805c-06d68fbe233c(jetbrains.mps.editor.runtime.descriptor)" />
     <import index="7oz1" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.configuration(MPS.Editor/)" />
-    <import index="tqa7" ref="r:f308752e-3f64-402f-b991-5934cac8ce7a(de.peopl.core.editor)" />
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="kcid" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cellLayout(MPS.Editor/)" />
     <import index="nivk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.editor.runtime.descriptor(MPS.Editor/)" />
@@ -58,6 +57,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="jgwk" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells.traversal(MPS.Editor/)" />
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
+    <import index="nntk" ref="r:61143c97-0dc6-4930-9886-439f10f6b060(de.peopl.core.view.module.structure)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="kpvh" ref="r:8bec8270-1a9a-452e-8d38-fa0c75e303af(de.peopl.core.behavior)" implicit="true" />
   </imports>
@@ -16526,6 +16526,10 @@
     <property role="3GE5qa" value="Extensions.Wrapper" />
     <ref role="1XX52x" to="xf8r:2gRkCJLV3Vo" resolve="Wrapper" />
     <node concept="2SsqMj" id="6QmCjLRvMlq" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="7KoG6YFU5Oc">
+    <ref role="1XX52x" to="xf8r:7KoG6YFU5NV" resolve="ModularCompilationUnit" />
+    <node concept="2SsqMj" id="7KoG6YFU5Oe" role="2wV5jI" />
   </node>
 </model>
 

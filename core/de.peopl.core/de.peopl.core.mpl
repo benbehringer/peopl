@@ -68,6 +68,7 @@
     <dependency reexport="false">742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)</dependency>
     <dependency reexport="true">2e24a298-44d1-4697-baec-5c424fed3a3b(jetbrains.mps.editorlang.runtime)</dependency>
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
+    <dependency reexport="false">641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c(de.peopl.core.view.module)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:05f762a9-99f5-4971-a9ed-5a6481dc2be4:de.itemis.mps.selection.intentions" version="0" />
@@ -116,6 +117,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="1a3a0b62-fb00-47d1-8423-98da4001b216(de.peopl.core)" version="2" />
     <module reference="2fc3109b-8318-40ba-8227-7efc814f41ef(de.peopl.core.variabilityDeclaration.runtime)" version="0" />
+    <module reference="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c(de.peopl.core.view.module)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />

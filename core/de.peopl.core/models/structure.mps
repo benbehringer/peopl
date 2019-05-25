@@ -2,6 +2,7 @@
 <model ref="r:477f41a6-4bb9-4382-a9df-29a1cb4813ee(de.peopl.core.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="7" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -609,6 +610,26 @@
   <node concept="PlHQZ" id="4GsCNocFo6a">
     <property role="EcuMT" value="5412380304728752522" />
     <property role="TrG5h" value="IFeatureGroupVariableRef" />
+  </node>
+  <node concept="1TIwiD" id="7KoG6YFU5NV">
+    <property role="EcuMT" value="8942091053816110331" />
+    <property role="TrG5h" value="ModularCompilationUnit" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="7KoG6YFU5NW" role="lGtFl">
+      <property role="Hh88m" value="ModularCompilationUnit" />
+      <node concept="tn0Fv" id="7KoG6YFU5NY" role="HhnKV">
+        <property role="tnX3d" value="true" />
+      </node>
+      <node concept="trNpa" id="7KoG6YFU5O0" role="EQaZv">
+        <ref role="trN6q" to="tpck:gw2VY9q" resolve="BaseConcept" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="7KoG6YFU5O2" role="1TKVEi">
+      <property role="IQ2ns" value="8942091053816110338" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="module" />
+      <ref role="20lvS9" node="6K8EDSn5d7G" resolve="Module" />
+    </node>
   </node>
 </model>
 
