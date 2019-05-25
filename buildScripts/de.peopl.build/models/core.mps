@@ -122,6 +122,7 @@
         <child id="9200313594498201639" name="generator" index="1TViLv" />
       </concept>
       <concept id="322010710375871467" name="jetbrains.mps.build.mps.structure.BuildMps_AbstractModule" flags="ng" index="3LEN3z">
+        <property id="8369506495128725901" name="compact" index="BnDLt" />
         <property id="322010710375892619" name="uuid" index="3LESm3" />
         <child id="322010710375956261" name="path" index="3LF7KH" />
       </concept>
@@ -539,6 +540,7 @@
       <node concept="1E1JtD" id="tJvfxNIiF_" role="2G$12L">
         <property role="TrG5h" value="de.peopl.core" />
         <property role="3LESm3" value="1a3a0b62-fb00-47d1-8423-98da4001b216" />
+        <property role="BnDLt" value="true" />
         <node concept="55IIr" id="tJvfxNIiFL" role="3LF7KH">
           <node concept="2Ry0Ak" id="tJvfxNIiFR" role="iGT6I">
             <property role="2Ry0Am" value="core" />

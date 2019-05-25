@@ -41,7 +41,6 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
-      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -71,7 +70,9 @@
       <concept id="2609645270097215192" name="de.peopl.core.structure.Wrapper" flags="ng" index="3lQQLj">
         <reference id="6962576431435524750" name="wrappee" index="1_Aa3I" />
       </concept>
-      <concept id="8942091053816110331" name="de.peopl.core.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
+      <concept id="8942091053816110331" name="de.peopl.core.structure.ModularCompilationUnit" flags="ng" index="3nWeMk">
+        <reference id="8942091053816110338" name="module" index="3nWePH" />
+      </concept>
       <concept id="7784659551878701469" name="de.peopl.core.structure.VP" flags="ng" index="1V74G3">
         <child id="7784659551878701502" name="fragmentIntermediates" index="1V74Gw" />
       </concept>
@@ -226,10 +227,6 @@
       <property role="2_7ToJ" value="102" />
       <property role="2_7ToH" value="204" />
       <property role="3_QSL4" value="-10040320" />
-      <node concept="3aRQSP" id="6QmCjLQ4N3p" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_7896676277691822297" />
-        <ref role="3aRQSO" node="6QmCjLQ4LZY" resolve="Fragment_7896676277691817982" />
-      </node>
       <node concept="3aRQSP" id="73Ulf5d$eJ4" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_8140912671790787524" />
         <ref role="3aRQSO" node="73Ulf5d$er3" resolve="Fragment_8140912671790786243" />
@@ -248,13 +245,6 @@
         <node concept="1V74G$" id="1cYvLMlV11h" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_1386685496027779153" />
           <ref role="1V74G_" node="1cYvLMlV11f" resolve="Fragment_1386685496027779151" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="6QmCjLQ4LZZ" role="2$Fqj6">
-        <property role="TrG5h" value="VP_7896676277691817983" />
-        <node concept="1V74G$" id="6QmCjLQ4N3r" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_7896676277691822299" />
-          <ref role="1V74G_" node="6QmCjLQ4LZY" resolve="Fragment_7896676277691817982" />
         </node>
       </node>
       <node concept="1V74G3" id="6QmCjLQ4Osf" role="2$Fqj6">
@@ -318,13 +308,6 @@
         <node concept="1V74G$" id="73Ulf5d$er5" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_8140912671790786245" />
           <ref role="1V74G_" node="73Ulf5d$er3" resolve="Fragment_8140912671790786243" />
-        </node>
-      </node>
-      <node concept="1V74G3" id="73Ulf5d$erc" role="2$Fqj6">
-        <property role="TrG5h" value="VP_8140912671790786252" />
-        <node concept="1V74G$" id="73Ulf5d$erd" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_8140912671790786253" />
-          <ref role="1V74G_" node="73Ulf5d$erb" resolve="Fragment_8140912671790786251" />
         </node>
       </node>
     </node>
@@ -431,9 +414,6 @@
           <node concept="3XIRFW" id="6QmCjLRvIfA" role="c0U17">
             <node concept="c0U19" id="73Ulf5d$dHP" role="3XIRFZ">
               <node concept="3XIRFW" id="73Ulf5d$dHQ" role="c0U17">
-                <node concept="3XISUE" id="73Ulf5dVnIu" role="3XIRFZ" />
-                <node concept="3XISUE" id="73Ulf5dXaEI" role="3XIRFZ" />
-                <node concept="3XISUE" id="73Ulf5dXaHj" role="3XIRFZ" />
                 <node concept="3XIRlf" id="1cYvLMlV0OM" role="3XIRFZ">
                   <property role="TrG5h" value="mainBaseInWrapper" />
                   <node concept="26Vqpq" id="1cYvLMlV0OK" role="2C2TGm" />
@@ -571,7 +551,9 @@
       </node>
       <node concept="19Rifw" id="6QmCjLRAxm3" role="2C2TGm" />
     </node>
-    <node concept="3nWeMk" id="73Ulf5dllCt" role="lGtFl" />
+    <node concept="3nWeMk" id="73Ulf5dllCt" role="lGtFl">
+      <ref role="3nWePH" node="56MlstWZqGn" resolve="A" />
+    </node>
   </node>
 </model>
 
