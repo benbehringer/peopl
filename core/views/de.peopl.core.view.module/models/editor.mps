@@ -42,6 +42,10 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
+        <property id="1221209241505" name="value" index="1lJzqX" />
+      </concept>
+      <concept id="8313721352726366579" name="jetbrains.mps.lang.editor.structure.CellModel_Empty" flags="ng" index="35HoNQ" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -53,9 +57,6 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <child id="1142887637401" name="renderingCondition" index="pqm2j" />
-      </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -66,6 +67,12 @@
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
+      </concept>
+      <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
+        <property id="1088613081987" name="vertical" index="1QpmdY" />
+        <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
+        <child id="1088612958265" name="ifTrueCellModel" index="1QoS34" />
+        <child id="1088612973955" name="ifFalseCellModel" index="1QoVPY" />
       </concept>
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
@@ -351,9 +358,11 @@
     <node concept="2aJ2om" id="6QmCjLQ2AzM" role="CpUAK">
       <ref role="2$4xQ3" to="tqa7:7KoG6YFU5Oh" resolve="module" />
     </node>
-    <node concept="2SsqMj" id="73Ulf5cNUB7" role="2wV5jI">
-      <node concept="pkWqt" id="73Ulf5cNUC1" role="pqm2j">
-        <node concept="3clFbS" id="73Ulf5cNUC2" role="2VODD2">
+    <node concept="1QoScp" id="73Ulf5daryr" role="2wV5jI">
+      <property role="1QpmdY" value="true" />
+      <node concept="2SsqMj" id="73Ulf5darEB" role="1QoS34" />
+      <node concept="pkWqt" id="73Ulf5daryu" role="3e4ffs">
+        <node concept="3clFbS" id="73Ulf5daryw" role="2VODD2">
           <node concept="3cpWs8" id="73Ulf5cNUJs" role="3cqZAp">
             <node concept="3cpWsn" id="73Ulf5cNUJt" role="3cpWs9">
               <property role="TrG5h" value="currentRoot" />
@@ -445,6 +454,12 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="35HoNQ" id="73Ulf5darEG" role="1QoVPY">
+        <node concept="VSNWy" id="73Ulf5darEL" role="3F10Kt">
+          <property role="1lJzqX" value="0" />
+        </node>
+        <node concept="VPM3Z" id="73Ulf5darEQ" role="3F10Kt" />
       </node>
     </node>
   </node>
