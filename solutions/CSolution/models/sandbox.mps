@@ -27,6 +27,10 @@
       </concept>
     </language>
     <language id="a9d69647-0840-491e-bf39-2eb0805d2011" name="com.mbeddr.core.statements">
+      <concept id="6275792049641600983" name="com.mbeddr.core.statements.structure.IfStatement" flags="ng" index="c0U19">
+        <child id="6275792049641600984" name="condition" index="c0U16" />
+        <child id="6275792049641600985" name="thenPart" index="c0U17" />
+      </concept>
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
       </concept>
@@ -63,6 +67,10 @@
       <concept id="6242855909345491562" name="de.peopl.core.structure.ModuleToFragmentIntermediate" flags="ng" index="3aRQSP">
         <reference id="6242855909345491563" name="fragmentReference" index="3aRQSO" />
       </concept>
+      <concept id="2609645270097570911" name="de.peopl.core.structure.Wrappee" flags="ng" index="3lLJVk" />
+      <concept id="2609645270097215192" name="de.peopl.core.structure.Wrapper" flags="ng" index="3lQQLj">
+        <reference id="6962576431435524750" name="wrappee" index="1_Aa3I" />
+      </concept>
       <concept id="7784659551878701469" name="de.peopl.core.structure.VP" flags="ng" index="1V74G3">
         <child id="7784659551878701502" name="fragmentIntermediates" index="1V74Gw" />
       </concept>
@@ -84,9 +92,7 @@
       <concept id="5679441017214012545" name="com.mbeddr.core.pointers.structure.ArrayType" flags="ng" index="3J0A42" />
     </language>
     <language id="641e32d1-eaf3-47fb-b1a8-6c5a0b2e5a6c" name="de.peopl.core.view.module">
-      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk">
-        <reference id="8942091053816110338" name="module" index="3nWePH" />
-      </concept>
+      <concept id="8942091053816110331" name="de.peopl.core.view.module.structure.ModularCompilationUnit" flags="ng" index="3nWeMk" />
     </language>
     <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
       <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
@@ -112,7 +118,12 @@
       </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="7892328519581704407" name="com.mbeddr.core.modules.structure.Argument" flags="ng" index="19RgSI" />
-      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz" />
+      <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
+        <reference id="6610873504380357355" name="var" index="1S7826" />
+      </concept>
+      <concept id="6610873504380335822" name="com.mbeddr.core.modules.structure.GlobalVariableDeclaration" flags="ng" index="1S7NMz">
+        <child id="2771264470558526601" name="init" index="1cecVj" />
+      </concept>
     </language>
     <language id="f4a807b3-557e-4f92-89bc-d43f4be25649" name="de.peopl.mBeddrExtension">
       <concept id="2248001499747998825" name="de.peopl.mBeddrExtension.structure.FeatureBlock" flags="ng" index="0ddOt" />
@@ -150,6 +161,11 @@
         <child id="318113533128716676" name="type" index="2C2TGm" />
       </concept>
       <concept id="7892328519581699353" name="com.mbeddr.core.expressions.structure.VoidType" flags="ng" index="19Rifw" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
+      <concept id="8860443239512128052" name="com.mbeddr.core.expressions.structure.BinaryExpression" flags="ng" index="3TlMgq">
+        <child id="8860443239512128064" name="left" index="3TlMhI" />
+        <child id="8860443239512128065" name="right" index="3TlMhJ" />
+      </concept>
       <concept id="8860443239512128103" name="com.mbeddr.core.expressions.structure.NumberLiteral" flags="ng" index="3TlMh9" />
     </language>
   </registry>
@@ -166,10 +182,6 @@
         <property role="TrG5h" value="ModuleToFragment_7896676277691828135" />
         <ref role="3aRQSO" node="6QmCjLQ4Ose" resolve="Fragment_7896676277691827982" />
       </node>
-      <node concept="3aRQSP" id="6QmCjLR168m" role="3aRQVq">
-        <property role="TrG5h" value="ModuleToFragment_7896676277707629078" />
-        <ref role="3aRQSO" node="6QmCjLR165W" resolve="Fragment_7896676277707628924" />
-      </node>
       <node concept="3aRQSP" id="6QmCjLRcQFb" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_7896676277710711499" />
         <ref role="3aRQSO" node="6QmCjLRcQDW" resolve="Fragment_7896676277710711420" />
@@ -177,6 +189,10 @@
       <node concept="3aRQSP" id="6QmCjLRg27J" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_7896676277711544815" />
         <ref role="3aRQSO" node="6QmCjLRg27k" resolve="Fragment_7896676277711544788" />
+      </node>
+      <node concept="3aRQSP" id="73Ulf5cSdA9" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_8140912671779248521" />
+        <ref role="3aRQSO" node="73Ulf5cSd_E" resolve="Fragment_8140912671779248490" />
       </node>
     </node>
     <node concept="1V77HM" id="1cYvLMm56Ym" role="288GmO">
@@ -196,6 +212,14 @@
       <node concept="3aRQSP" id="6QmCjLRg2gr" role="3aRQVq">
         <property role="TrG5h" value="ModuleToFragment_7896676277711545371" />
         <ref role="3aRQSO" node="6QmCjLRg2fY" resolve="Fragment_7896676277711545342" />
+      </node>
+      <node concept="3aRQSP" id="6QmCjLRvJsj" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_7896676277715662611" />
+        <ref role="3aRQSO" node="6QmCjLRvJbt" resolve="Fragment_7896676277715661533" />
+      </node>
+      <node concept="3aRQSP" id="6QmCjLRxsrX" role="3aRQVq">
+        <property role="TrG5h" value="ModuleToFragment_7896676277716109053" />
+        <ref role="3aRQSO" node="6QmCjLRxsmt" resolve="Fragment_7896676277716108701" />
       </node>
     </node>
     <node concept="1V77HM" id="1cYvLMm56Yq" role="288GmO">
@@ -238,13 +262,6 @@
           <ref role="1V74G_" node="6QmCjLQ4Ose" resolve="Fragment_7896676277691827982" />
         </node>
       </node>
-      <node concept="1V74G3" id="6QmCjLR165X" role="2$Fqj6">
-        <property role="TrG5h" value="VP_7896676277707628925" />
-        <node concept="1V74G$" id="6QmCjLR165Y" role="1V74Gw">
-          <property role="TrG5h" value="VPToFragment_7896676277707628926" />
-          <ref role="1V74G_" node="6QmCjLR165W" resolve="Fragment_7896676277707628924" />
-        </node>
-      </node>
       <node concept="1V74G3" id="6QmCjLRcQDX" role="2$Fqj6">
         <property role="TrG5h" value="VP_7896676277710711421" />
         <node concept="1V74G$" id="6QmCjLRcQDY" role="1V74Gw">
@@ -271,6 +288,27 @@
         <node concept="1V74G$" id="6QmCjLRg2g0" role="1V74Gw">
           <property role="TrG5h" value="VPToFragment_7896676277711545344" />
           <ref role="1V74G_" node="6QmCjLRg2fY" resolve="Fragment_7896676277711545342" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="6QmCjLRvJbu" role="2$Fqj6">
+        <property role="TrG5h" value="VP_7896676277715661534" />
+        <node concept="1V74G$" id="6QmCjLRvJbv" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_7896676277715661535" />
+          <ref role="1V74G_" node="6QmCjLRvJbt" resolve="Fragment_7896676277715661533" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="6QmCjLRxsmu" role="2$Fqj6">
+        <property role="TrG5h" value="VP_7896676277716108702" />
+        <node concept="1V74G$" id="6QmCjLRxsmv" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_7896676277716108703" />
+          <ref role="1V74G_" node="6QmCjLRxsmt" resolve="Fragment_7896676277716108701" />
+        </node>
+      </node>
+      <node concept="1V74G3" id="73Ulf5cSd_F" role="2$Fqj6">
+        <property role="TrG5h" value="VP_8140912671779248491" />
+        <node concept="1V74G$" id="73Ulf5cSd_G" role="1V74Gw">
+          <property role="TrG5h" value="VPToFragment_8140912671779248492" />
+          <ref role="1V74G_" node="73Ulf5cSd_E" resolve="Fragment_8140912671779248490" />
         </node>
       </node>
     </node>
@@ -301,6 +339,9 @@
       <property role="TrG5h" value="baseField" />
       <property role="2OOxQR" value="true" />
       <node concept="26Vqpq" id="6QmCjLRg1Z3" role="2C2TGm" />
+      <node concept="3TlMh9" id="6QmCjLRvIIH" role="1cecVj">
+        <property role="2hmy$m" value="0" />
+      </node>
     </node>
     <node concept="1S7NMz" id="6QmCjLRg24y" role="N3F5h">
       <property role="TrG5h" value="aField" />
@@ -387,13 +428,50 @@
             <ref role="1V74Hf" node="6QmCjLQ4N3r" resolve="VPToFragment_7896676277691822299" />
           </node>
         </node>
-        <node concept="3XIRlf" id="1cYvLMlV0OM" role="3XIRFZ">
-          <property role="TrG5h" value="mainBase" />
-          <node concept="26Vqpq" id="1cYvLMlV0OK" role="2C2TGm" />
+        <node concept="c0U19" id="6QmCjLRvIf_" role="3XIRFZ">
+          <node concept="3XIRFW" id="6QmCjLRvIfA" role="c0U17">
+            <node concept="3XIRlf" id="1cYvLMlV0OM" role="3XIRFZ">
+              <property role="TrG5h" value="mainBaseInWrapper" />
+              <node concept="26Vqpq" id="1cYvLMlV0OK" role="2C2TGm" />
+            </node>
+            <node concept="2BFjQ_" id="6QmCjLRxsfN" role="3XIRFZ">
+              <node concept="3TlMh9" id="6QmCjLRxshS" role="2BFjQA">
+                <property role="2hmy$m" value="1" />
+              </node>
+            </node>
+            <node concept="3lLJVk" id="6QmCjLRvJby" role="lGtFl" />
+          </node>
+          <node concept="3TlM44" id="6QmCjLRvIo7" role="c0U16">
+            <node concept="3TlMh9" id="6QmCjLRvIsm" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="1S7827" id="6QmCjLRvIjL" role="3TlMhI">
+              <ref role="1S7826" node="6QmCjLRg1Z5" resolve="baseField" />
+            </node>
+          </node>
+          <node concept="1V74GB" id="6QmCjLRvJbt" role="lGtFl">
+            <property role="32Xqk$" value="chosenModule" />
+            <property role="TrG5h" value="Fragment_7896676277715661533" />
+            <ref role="1V74Hf" node="6QmCjLRvJbv" resolve="VPToFragment_7896676277715661535" />
+            <ref role="a64iB" node="1cYvLMm56Ym" resolve="B" />
+            <ref role="3aRQVk" node="6QmCjLRvJsj" resolve="ModuleToFragment_7896676277715662611" />
+          </node>
+          <node concept="3lQQLj" id="6QmCjLRvJbx" role="lGtFl">
+            <ref role="1_Aa3I" node="6QmCjLRvJby" />
+          </node>
         </node>
-        <node concept="2BFjQ_" id="1cYvLMlV0FH" role="3XIRFZ">
-          <node concept="3TlMh9" id="1cYvLMlV0FI" role="2BFjQA">
-            <property role="2hmy$m" value="0" />
+        <node concept="0ddOt" id="6QmCjLRxsms" role="3XIRFZ">
+          <node concept="2BFjQ_" id="1cYvLMlV0FH" role="3XIRFZ">
+            <node concept="3TlMh9" id="1cYvLMlV0FI" role="2BFjQA">
+              <property role="2hmy$m" value="0" />
+            </node>
+          </node>
+          <node concept="1V74GB" id="6QmCjLRxsmt" role="lGtFl">
+            <property role="32Xqk$" value="chosenModule" />
+            <property role="TrG5h" value="Fragment_7896676277716108701" />
+            <ref role="1V74Hf" node="6QmCjLRxsmv" resolve="VPToFragment_7896676277716108703" />
+            <ref role="a64iB" node="1cYvLMm56Ym" resolve="B" />
+            <ref role="3aRQVk" node="6QmCjLRxsrX" resolve="ModuleToFragment_7896676277716109053" />
           </node>
         </node>
       </node>
@@ -411,9 +489,6 @@
     </node>
     <node concept="2NXPZ9" id="6QmCjLQ4O2Z" role="N3F5h">
       <property role="TrG5h" value="empty_1558690595732_1" />
-    </node>
-    <node concept="2NXPZ9" id="1cYvLMlV0Fq" role="N3F5h">
-      <property role="TrG5h" value="empty_1552489483692_7" />
     </node>
     <node concept="N3Fnx" id="6QmCjLRcQBt" role="N3F5h">
       <property role="TrG5h" value="test" />
@@ -448,9 +523,30 @@
     <node concept="2NXPZ9" id="1cYvLMlV0Fu" role="N3F5h">
       <property role="TrG5h" value="empty_1552489483829_8" />
     </node>
-    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl">
-      <ref role="3nWePH" node="56MlstWZqGn" resolve="A" />
+    <node concept="N3Fnx" id="6QmCjLRAxnd" role="N3F5h">
+      <property role="TrG5h" value="anotherTest" />
+      <node concept="3XIRFW" id="6QmCjLRAxnf" role="3XIRFX">
+        <node concept="0ddOt" id="73Ulf5cSd_D" role="3XIRFZ">
+          <node concept="3XIRlf" id="73Ulf5cSdAs" role="3XIRFZ">
+            <property role="TrG5h" value="anotherTestA" />
+            <node concept="26Vqpq" id="73Ulf5cSdAq" role="2C2TGm" />
+          </node>
+          <node concept="1V74GB" id="73Ulf5cSd_E" role="lGtFl">
+            <property role="32Xqk$" value="chosenModule" />
+            <property role="TrG5h" value="Fragment_8140912671779248490" />
+            <ref role="1V74Hf" node="73Ulf5cSd_G" resolve="VPToFragment_8140912671779248492" />
+            <ref role="a64iB" node="56MlstWZqGn" resolve="A" />
+            <ref role="3aRQVk" node="73Ulf5cSdA9" resolve="ModuleToFragment_8140912671779248521" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="73Ulf5cSdBm" role="3XIRFZ">
+          <property role="TrG5h" value="anotherTestBaseCode" />
+          <node concept="26Vqpq" id="73Ulf5cSdBk" role="2C2TGm" />
+        </node>
+      </node>
+      <node concept="19Rifw" id="6QmCjLRAxm3" role="2C2TGm" />
     </node>
+    <node concept="3nWeMk" id="7KoG6YFVRZL" role="lGtFl" />
   </node>
 </model>
 
