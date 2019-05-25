@@ -22900,8 +22900,8 @@
     <property role="3GE5qa" value="Statement" />
     <property role="3NULOk" value="baseCode" />
     <ref role="1XX52x" to="c4fa:3CmSUB7FmO3" resolve="Statement" />
-    <node concept="2aJ2om" id="73Ulf5dW2X0" role="CpUAK">
-      <ref role="2$4xQ3" to="tqa7:7KoG6YFU5Oh" resolve="module" />
+    <node concept="2aJ2om" id="73Ulf5dXba4" role="CpUAK">
+      <ref role="2$4xQ3" to="tqa7:2W3sxLBrwzM" resolve="product" />
     </node>
     <node concept="RtMap" id="73Ulf5dW2cs" role="RtEXV">
       <node concept="3clFbS" id="73Ulf5dW2ct" role="2VODD2">
