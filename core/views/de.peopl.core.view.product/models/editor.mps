@@ -114,6 +114,7 @@
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -749,6 +750,7 @@
         <ref role="PMmxG" node="2SJ$OJYDdJI" resolve="VariantInfoComponent" />
       </node>
       <node concept="3EZMnI" id="6m4IJn2PZo7" role="3EZMnx">
+        <node concept="3XFhqQ" id="73Ulf5dHAdJ" role="3EZMnx" />
         <node concept="3tD6jV" id="52q9FSNki0z" role="3F10Kt">
           <ref role="3tD7wE" to="7kq2:52q9FSLXKOX" resolve="_vertical_bar_x_start" />
           <node concept="3sjG9q" id="52q9FSNki0_" role="3tD6jU">

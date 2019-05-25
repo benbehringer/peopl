@@ -41,7 +41,6 @@
       <concept id="4185783222026475861" name="com.mbeddr.core.statements.structure.StatementList" flags="ng" index="3XIRFW">
         <child id="4185783222026475862" name="statements" index="3XIRFZ" />
       </concept>
-      <concept id="4185783222026464515" name="com.mbeddr.core.statements.structure.Statement" flags="ng" index="3XISUE" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -425,20 +424,6 @@
             <ref role="1V74Hf" node="1cYvLMlV11h" resolve="VPToFragment_1386685496027779153" />
             <ref role="a64iB" node="1cYvLMm56Ym" resolve="B" />
             <ref role="3aRQVk" node="8MyaHhNKuR" resolve="ModuleToFragment_158339206304696247" />
-          </node>
-        </node>
-        <node concept="0ddOt" id="6QmCjLQ4LZX" role="3XIRFZ">
-          <node concept="3XIRlf" id="6QmCjLQ4M4P" role="3XIRFZ">
-            <property role="TrG5h" value="mainC" />
-            <node concept="26Vqpq" id="6QmCjLQ4M4N" role="2C2TGm" />
-          </node>
-          <node concept="3XISUE" id="6QmCjLQWqKK" role="3XIRFZ" />
-          <node concept="1V74GB" id="6QmCjLQ4LZY" role="lGtFl">
-            <property role="32Xqk$" value="chosenModule" />
-            <property role="TrG5h" value="Fragment_7896676277691817982" />
-            <ref role="a64iB" node="1cYvLMm56Yq" resolve="C" />
-            <ref role="3aRQVk" node="6QmCjLQ4N3p" resolve="ModuleToFragment_7896676277691822297" />
-            <ref role="1V74Hf" node="6QmCjLQ4N3r" resolve="VPToFragment_7896676277691822299" />
           </node>
         </node>
         <node concept="c0U19" id="6QmCjLRvIf_" role="3XIRFZ">
